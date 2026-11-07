@@ -1,0 +1,761 @@
+{% extends "base.html" %}
+{% block title %}{{ meta.title }}{% endblock %}
+
+{% block content %}
+<div class="detail-page">
+
+    <nav class="breadcrumb">
+        <a href="{{ url_for('dashboard') }}">Releases</a>
+        <span class="breadcrumb-sep">/</span>
+        <span class="breadcrumb-current">{{ meta.title }}</span>
+    </nav>
+
+    <!-- Header -->
+    <div class="detail-hero">
+        <div class="detail-header-row">
+            <div class="detail-artwork-wrap">
+                <div class="detail-artwork">
+                    {% if artwork_url %}
+                    <img src="{{ artwork_url }}" alt="{{ meta.title }}">
+                    {% else %}
+                    <span class="card-artwork-placeholder">No artwork</span>
+                    {% endif %}
+                </div>
+                <form method="POST" action="{{ url_for('release_artwork', slug=rel.slug) }}" enctype="multipart/form-data" class="artwork-upload">
+                    <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+                    <label class="btn btn-secondary btn-sm upload-btn">
+                        Upload Artwork
+                        <input type="file" name="artwork" accept="image/*" onchange="this.form.submit()" hidden>
+                    </label>
+                </form>
+            </div>
+            <div class="detail-header-info">
+                <div class="detail-title">
+                    <h1>{{ meta.title }}</h1>
+                    <span class="badge badge-{{ meta.release_type|lower }}">{{ meta.release_type }}</span>
+                </div>
+                <div class="detail-meta">
+                    <span>{{ rel.release_date }}</span>
+                    <span class="countdown">({{ rel.release_date|days_until }})</span>
+                    {% if meta.genre_primary %}
+                    <span class="genre">{{ meta.genre_primary }}{% if meta.genre_secondary %} / {{ meta.genre_secondary }}{% endif %}</span>
+                    {% endif %}
+                </div>
+                <div class="detail-progress">
+                    <div class="progress-bar progress-bar-lg">
+                        <div class="progress-fill{% if pct == 100 %} complete{% endif %}" style="width: {{ pct }}%"></div>
+                    </div>
+                    <span class="progress-text checklist-progress">{{ done }}/{{ total }} tasks ({{ pct }}%)</span>
+                </div>
+                <div class="detail-actions">
+                    <a href="{{ url_for('release_edit', slug=rel.slug) }}" class="btn btn-secondary btn-sm">Edit Release</a>
+                    <button class="btn btn-secondary btn-sm btn-validate" data-slug="{{ rel.slug }}">Validate</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Validation Panel (hidden by default) -->
+    <div class="validate-panel" id="validate-panel"></div>
+
+    <!-- Next Deadline -->
+    {% if next_dl %}
+    <div class="next-deadline-banner{% if next_dl.id in overdue_tl %} overdue{% endif %}">
+        <strong>Next:</strong> {{ next_dl.label }} — {{ next_dl.date }} ({{ next_dl.date|days_until }})
+    </div>
+    {% endif %}
+
+    <!-- Bandcamp Friday Alert -->
+    {% if bandcamp_friday %}
+    <div class="bcf-banner">
+        <strong>Bandcamp Friday {{ bandcamp_friday.date }}</strong> is
+        {% if bandcamp_friday.days_away > 0 %}
+            {{ bandcamp_friday.days_away }} day{{ 's' if bandcamp_friday.days_away != 1 else '' }} after your release
+        {% else %}
+            {{ bandcamp_friday.days_away|abs }} day{{ 's' if bandcamp_friday.days_away|abs != 1 else '' }} before your release
+        {% endif %}
+        — consider shifting to capture zero commission
+    </div>
+    {% endif %}
+
+    <!-- Calendar Grid -->
+    <section class="section collapsible" id="section-calendar">
+        <div class="section-header section-toggle">
+            <h2>Release Calendar</h2>
+            <button type="button" class="btn-collapse" aria-label="Toggle calendar" aria-expanded="true">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+        </div>
+        <div class="section-body">
+            <div class="cal-grid-wrap">
+                <div class="cal-nav">
+                    <button type="button" class="btn btn-secondary btn-sm cal-prev" aria-label="Previous month">&larr;</button>
+                    <span class="cal-month-label"></span>
+                    <button type="button" class="btn btn-secondary btn-sm cal-next" aria-label="Next month">&rarr;</button>
+                </div>
+                {% for month_data in cal_grid.months %}
+                <div class="cal-month" data-month-idx="{{ loop.index0 }}">
+                    <table class="cal-table">
+                        <thead>
+                            <tr>
+                                <th>Mon</th><th>Tue</th><th>Wed</th><th>Thu</th><th>Fri</th><th>Sat</th><th>Sun</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for week in month_data.weeks %}
+                            <tr>
+                                {% for cell in week %}
+                                {% if cell %}
+                                <td class="cal-cell{% if cell.is_today %} cal-today{% endif %}{% if cell.is_release_day %} cal-release-day{% endif %}{% if cell.bandcamp_friday %} cal-bcf{% endif %}{% if cell.tasks %} cal-has-items{% endif %}">
+                                    <div class="cal-day-num">{{ cell.day }}</div>
+                                    {% if cell.bandcamp_friday %}
+                                    <span class="cal-bcf-badge">BC Fri</span>
+                                    {% endif %}
+                                    {% if cell.is_release_day %}
+                                    <span class="cal-release-badge">RELEASE</span>
+                                    {% endif %}
+                                    {% for item in cell.tasks %}
+                                    <span class="cal-pill cal-cat-{{ item.category }}{% if item.done %} cal-pill-done{% endif %}"
+                                          data-slug="{{ rel.slug }}"
+                                          data-task-id="{{ item.id }}"
+                                          data-done="{{ 'true' if item.done else 'false' }}"
+                                          title="{{ item.label }}">
+                                        {{ item.short or item.label }}
+                                    </span>
+                                    {% endfor %}
+                                </td>
+                                {% else %}
+                                <td class="cal-cell cal-empty"></td>
+                                {% endif %}
+                                {% endfor %}
+                            </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </section>
+
+    <!-- Metadata -->
+    <section class="section">
+        <h2>Metadata</h2>
+        <div class="meta-grid">
+            <div class="meta-item"><span class="meta-label">Artist</span><span class="meta-value">{{ meta.artist }}</span></div>
+            <div class="meta-item"><span class="meta-label">Copyright</span><span class="meta-value">{{ meta.copyright or '—' }}</span></div>
+            <div class="meta-item"><span class="meta-label">Catalog #</span><span class="meta-value">{{ meta.catalog_number or '—' }}</span></div>
+            {% if meta.description %}
+            <div class="meta-item meta-wide"><span class="meta-label">Description</span><span class="meta-value">{{ meta.description }}</span></div>
+            {% endif %}
+        </div>
+    </section>
+
+    <!-- Distribution -->
+    <section class="section">
+        <h2>Distribution</h2>
+        <div class="meta-grid">
+            <div class="meta-item">
+                <span class="meta-label">Distributor</span>
+                <span class="meta-value">{{ dist.distributor or '—' }}</span>
+            </div>
+            <div class="meta-item">
+                <span class="meta-label">Status</span>
+                <span class="meta-value">
+                    <span class="dist-status dist-status-{{ dist.get('status', 'draft') }}">{{ dist.get('status', 'draft')|title }}</span>
+                </span>
+            </div>
+            <div class="meta-item">
+                <span class="meta-label">UPC</span>
+                <span class="meta-value">{{ dist.upc or '—' }}</span>
+            </div>
+            <div class="meta-item">
+                <span class="meta-label">Release ID</span>
+                <span class="meta-value">{{ dist.get('distributor_id') or '—' }}</span>
+            </div>
+            {% if dist.submitted_date %}
+            <div class="meta-item">
+                <span class="meta-label">Submitted</span>
+                <span class="meta-value">{{ dist.submitted_date }}</span>
+            </div>
+            {% endif %}
+            {% if dist.get('approved_date') %}
+            <div class="meta-item">
+                <span class="meta-label">Approved</span>
+                <span class="meta-value">{{ dist.approved_date }}</span>
+            </div>
+            {% endif %}
+            {% if dist.live_date %}
+            <div class="meta-item">
+                <span class="meta-label">Live</span>
+                <span class="meta-value">{{ dist.live_date }}</span>
+            </div>
+            {% endif %}
+            {% if dist.notes %}
+            <div class="meta-item meta-wide">
+                <span class="meta-label">Notes</span>
+                <span class="meta-value">{{ dist.notes }}</span>
+            </div>
+            {% endif %}
+        </div>
+    </section>
+
+    <!-- Tracks -->
+    <section class="section">
+        <div class="section-header">
+            <h2>Tracks ({{ rel.tracks|length }})</h2>
+            <a href="{{ url_for('track_new', slug=rel.slug) }}" class="btn btn-accent btn-sm">+ Add Track</a>
+        </div>
+        {% if rel.tracks %}
+        <table class="tracks-table">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Title</th>
+                    <th>BPM</th>
+                    <th>Key</th>
+                    <th>Duration</th>
+                    <th>Genre</th>
+                    <th>ISRC</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for t in rel.tracks %}
+                <tr>
+                    <td>{{ t.number }}</td>
+                    <td>{{ t.title }}</td>
+                    <td>{{ t.bpm or '—' }}</td>
+                    <td>{{ t.key or '—' }}</td>
+                    <td>{{ t.duration or '—' }}</td>
+                    <td>{{ t.genre_primary or '—' }}</td>
+                    <td>{{ t.isrc or '—' }}</td>
+                    <td class="track-actions">
+                        <a href="{{ url_for('track_edit', slug=rel.slug, num=t.number) }}" class="btn-link">Edit</a>
+                        <form method="POST" action="{{ url_for('track_delete', slug=rel.slug, num=t.number) }}" class="inline-form">
+                            <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+                            <button type="submit" class="btn-link btn-delete">Delete</button>
+                        </form>
+                    </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        {% else %}
+        <p class="empty-hint">No tracks yet. Add your first track to get started.</p>
+        {% endif %}
+    </section>
+
+    <!-- Clip pack (System 79, S10): timecodes per track, never audio files -->
+    <style>
+    .clip-track { padding: 14px 0; border-top: 1px solid var(--border-color, #2a2a2a); }
+    .clip-track:first-of-type { border-top: none; }
+    .clip-track h3 { font-size: 15px; margin: 0 0 8px; }
+    .clip-summary { display: grid; grid-template-columns: max-content 1fr; gap: 4px 14px; font-size: 13px; margin: 0 0 10px; }
+    .clip-summary dt { color: var(--text-secondary); }
+    .clip-summary dd { margin: 0; }
+    .clip-errors { margin: 6px 0 10px; padding: 8px 12px; border-radius: 6px; background: #2e1a1a; color: var(--color-overdue-text, #e08a8a); font-size: 13px; list-style: disc inside; }
+    .clip-form { display: none; margin-top: 6px; }
+    .clip-form.visible { display: block; }
+    .clip-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(170px, 1fr)); gap: 8px 10px; margin-bottom: 10px; }
+    .clip-grid .form-group { margin-bottom: 0; }
+    .clip-hint { font-size: 12px; color: var(--text-secondary); margin: 0 0 8px; }
+    .clip-used { margin-top: 10px; }
+    .clip-used input, .clip-used select { width: 100%; font-size: 13px; padding: 4px 6px; background: var(--bg-tertiary, #1c1c1c); color: inherit; border: 1px solid var(--border-color, #2a2a2a); border-radius: 4px; }
+    .clip-used td, .clip-used th { font-size: 13px; }
+    .clip-head { display: flex; align-items: center; justify-content: space-between; gap: 10px; }
+    </style>
+    <section class="section" id="section-clips">
+        <div class="section-header">
+            <h2>Clip pack</h2>
+            <span class="brand-muted">seconds, not frames; masters go out silent, the song is added in each app</span>
+        </div>
+        {% if clip_rows %}
+        {% for row in clip_rows %}
+        {% set errs = clip_errors.get(row.number) %}
+        {% set draft = clip_draft.get(row.number) %}
+        {% set f = draft.form if (draft and draft.action == 'save') else row.form %}
+        {% set add = draft.form if (draft and draft.action == 'add_used') else {} %}
+        <div class="clip-track" id="clips-{{ row.number }}">
+            <div class="clip-head">
+                <h3>{{ row.number }}. {{ row.title }}</h3>
+                <button type="button" class="btn btn-secondary btn-sm clip-toggle" data-target="clip-form-{{ row.number }}">Edit</button>
+            </div>
+            <dl class="clip-summary">
+                <dt>TikTok 60 s window</dt><dd>{{ row.summary.tiktok }}</dd>
+                <dt>Hook bar (fixed audio section)</dt><dd>{{ row.summary.hook_bar }}</dd>
+                <dt>Spotify Canvas</dt><dd>{{ row.summary.canvas }}</dd>
+                <dt>Shorts Preview</dt><dd>{{ row.summary.shorts_preview }}</dd>
+            </dl>
+            {% if errs %}
+            <ul class="clip-errors">
+                {% for e in errs %}<li>{{ e }}</li>{% endfor %}
+            </ul>
+            {% endif %}
+            <form method="POST" action="{{ url_for('release_clips', slug=rel.slug, num=row.number) }}"
+                  class="clip-form{% if errs and draft and draft.action == 'save' %} visible{% endif %}" id="clip-form-{{ row.number }}">
+                <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+                <input type="hidden" name="action" value="save">
+                <p class="clip-hint">Times as seconds (72.5) or m:ss (1:12.5). The hook bar must sit inside the TikTok window. Canvas: 3 to 8 s, {{ clip_canvas_rules }}.</p>
+                <div class="clip-grid">
+                    <div class="form-group"><label for="tiktok_start_{{ row.number }}">TikTok clip start</label>
+                        <input type="text" id="tiktok_start_{{ row.number }}" name="tiktok_start" value="{{ f.get('tiktok_start', '') }}" placeholder="1:12"></div>
+                    <div class="form-group"><label for="hook_start_{{ row.number }}">Hook bar start</label>
+                        <input type="text" id="hook_start_{{ row.number }}" name="hook_start" value="{{ f.get('hook_start', '') }}" placeholder="1:12"></div>
+                    <div class="form-group"><label for="hook_length_{{ row.number }}">Hook bar length (s)</label>
+                        <input type="text" id="hook_length_{{ row.number }}" name="hook_length" value="{{ f.get('hook_length', '') }}" placeholder="3.5"></div>
+                    <div class="form-group"><label for="canvas_length_{{ row.number }}">Canvas loop (s, 3 to 8)</label>
+                        <input type="text" id="canvas_length_{{ row.number }}" name="canvas_length" value="{{ f.get('canvas_length', '') }}" placeholder="5"></div>
+                    <div class="form-group"><label for="canvas_height_{{ row.number }}">Canvas height (px, 720 to 1080)</label>
+                        <input type="text" id="canvas_height_{{ row.number }}" name="canvas_height" value="{{ f.get('canvas_height', '') }}" placeholder="1080"></div>
+                    <div class="form-group"><label for="canvas_source_{{ row.number }}">Canvas source footage</label>
+                        <input type="text" id="canvas_source_{{ row.number }}" name="canvas_source" value="{{ f.get('canvas_source', '') }}" placeholder="file or shot note"></div>
+                    <div class="form-group"><label for="preview_start_{{ row.number }}">Shorts Preview start</label>
+                        <input type="text" id="preview_start_{{ row.number }}" name="preview_start" value="{{ f.get('preview_start', '') }}" placeholder="only if Symphonic delivers it"></div>
+                    <div class="form-group"><label for="preview_duration_{{ row.number }}">Shorts Preview duration (s, 30 to 60)</label>
+                        <input type="text" id="preview_duration_{{ row.number }}" name="preview_duration" value="{{ f.get('preview_duration', '') }}" placeholder="45"></div>
+                    <div class="form-group"><label for="preview_start_date_{{ row.number }}">Shorts Preview live from</label>
+                        <input type="date" id="preview_start_date_{{ row.number }}" name="preview_start_date" value="{{ f.get('preview_start_date', '') }}"></div>
+                </div>
+                <div class="form-group">
+                    <label><input type="checkbox" name="canvas_confirmed" value="on" {% if f.get('canvas_confirmed') %}checked{% endif %}> Canvas rules checked ({{ clip_canvas_rules }})</label>
+                </div>
+                <div class="form-actions">
+                    <button type="submit" class="btn btn-accent btn-sm">Save clip pack</button>
+                    <button type="button" class="btn btn-secondary btn-sm clip-toggle" data-target="clip-form-{{ row.number }}">Cancel</button>
+                </div>
+            </form>
+            <table class="tracks-table clip-used">
+                <thead><tr><th>Platform</th><th>Post id or URL</th><th>Date</th><th>Cut</th><th>Kind</th><th></th></tr></thead>
+                <tbody>
+                    {% for u in row.used_in %}
+                    <tr>
+                        <td>{{ u.platform }}</td>
+                        <td>{% if u.post.startswith('http') %}<a href="{{ u.post }}" target="_blank" rel="noopener">{{ u.post[:50] }}{% if u.post|length > 50 %}...{% endif %}</a>{% else %}{{ u.post }}{% endif %}</td>
+                        <td>{{ u.date }}</td>
+                        <td>{{ u.cut }}</td>
+                        <td>{{ u.kind or 'post' }}</td>
+                        <td class="track-actions">
+                            <form method="POST" action="{{ url_for('release_clips', slug=rel.slug, num=row.number) }}" class="inline-form">
+                                <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+                                <input type="hidden" name="action" value="remove_used">
+                                <input type="hidden" name="index" value="{{ loop.index0 }}">
+                                <button type="submit" class="btn-link btn-delete">Remove</button>
+                            </form>
+                        </td>
+                    </tr>
+                    {% else %}
+                    <tr><td colspan="6" class="empty-hint">Not used anywhere yet. One cut never goes twice to the same platform; a different first frame is a different cut.</td></tr>
+                    {% endfor %}
+                    <tr>
+                        <form method="POST" action="{{ url_for('release_clips', slug=rel.slug, num=row.number) }}" id="clip-add-{{ row.number }}"></form>
+                        <td><select name="platform" form="clip-add-{{ row.number }}">
+                            {% for pl in clip_platforms %}<option value="{{ pl }}" {% if add.get('platform') == pl %}selected{% endif %}>{{ pl }}</option>{% endfor %}
+                        </select></td>
+                        <td><input type="text" name="post" form="clip-add-{{ row.number }}" value="{{ add.get('post', '') }}" placeholder="post id or URL"></td>
+                        <td><input type="date" name="date" form="clip-add-{{ row.number }}" value="{{ add.get('date', today) }}"></td>
+                        <td><input type="text" name="cut" form="clip-add-{{ row.number }}" value="{{ add.get('cut', '') }}" placeholder="label or hash"></td>
+                        <td><select name="kind" form="clip-add-{{ row.number }}">
+                            {% for k in clip_kinds %}<option value="{{ k }}" {% if add.get('kind', 'post') == k %}selected{% endif %}>{{ k }}</option>{% endfor %}
+                        </select></td>
+                        <td class="track-actions">
+                            <input type="hidden" name="csrf_token" value="{{ csrf_token() }}" form="clip-add-{{ row.number }}">
+                            <input type="hidden" name="action" value="add_used" form="clip-add-{{ row.number }}">
+                            <button type="submit" class="btn btn-accent btn-sm" form="clip-add-{{ row.number }}">Add</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        {% endfor %}
+        {% else %}
+        <p class="empty-hint">No tracks yet. Add a track and its clip pack appears here.</p>
+        {% endif %}
+    </section>
+    <script>
+    document.querySelectorAll('.clip-toggle').forEach(function (btn) {
+        btn.addEventListener('click', function () {
+            var f = document.getElementById(this.getAttribute('data-target'));
+            if (f) f.classList.toggle('visible');
+        });
+    });
+    </script>
+
+    {% if title_font %}
+    <style>{% for f in title_font.faces[:1] %}@font-face { font-family: "{{ f.family }}"; src: {{ f.src|safe }}; }{% endfor %}</style>
+    <section class="section" id="section-title-font">
+        <div class="section-header"><h2>Title font</h2><span class="brand-muted">brand.title_font of this release</span></div>
+        <div class="section-body">
+            <a class="font-card font-card-wide" href="{{ url_for('font_detail', fid=title_font.id) }}?t={{ meta.title|urlencode }}">
+                <div class="font-specimen" {% if title_font.faces %}style="font-family: '{{ title_font.faces[0].family }}', serif"{% endif %}><span class="font-sample">{{ meta.title }}</span></div>
+                <div class="font-card-body"><div class="font-card-title">{{ title_font.name }}</div><div class="archive-chips"><span class="font-badge font-badge-{{ title_font.licence|replace(' ', '-') }}">{{ title_font.badge }}</span></div></div>
+            </a>
+        </div>
+    </section>
+    {% endif %}
+
+    <section class="section" id="section-effects">
+        <div class="section-header"><h2>Effects</h2><a class="brand-muted" href="{{ url_for('effects_page_view', release=rel.slug) }}">{{ 'edit the set' if release_effects else 'choose effects for this release' }}</a></div>
+        {% if release_effects %}
+        <div class="section-body fx-row">
+            {% for c in release_effects %}
+            <a class="fx-card" href="{{ url_for('effect_detail', eid=c.r.id) }}" style="text-decoration:none">
+                <div class="fx-thumb">{% if c.r.example %}<img src="{{ url_for('effect_example', eid=c.r.id) }}" alt="{{ c.r.name }}" loading="lazy">{% endif %}</div>
+                <div class="fx-body"><div class="fx-title">{{ c.r.name }}</div>
+                <div class="archive-chips">{% for u in c.used_in %}<span class="archive-chip">{{ u }}</span>{% else %}<span class="brand-muted">where: not set</span>{% endfor %}<span class="fx-tag {{ 'fx-safe' if c.r.face_safe else 'fx-ai' }}">{{ 'safe on your face' if c.r.face_safe else 'AI' }}</span></div></div>
+            </a>
+            {% endfor %}
+        </div>
+        {% endif %}
+    </section>
+
+    {% if archive_refs %}
+    <section class="section" id="section-archive">
+        <div class="section-header"><h2>References</h2><span class="brand-muted">Shadow Archive entries Amir tagged for this release</span></div>
+        <div class="section-body archive-grid archive-grid-small">
+            {% for r in archive_refs %}
+            <a class="archive-card" href="{{ url_for('archive_detail', rid=r.id) }}">
+                <div class="archive-thumb">{% if r.thumb %}<img src="{{ url_for('archive_thumb', rid=r.id) }}" alt="{{ r.title }}" loading="lazy">{% endif %}<span class="archive-kind">{{ r.kind }}</span></div>
+                <div class="archive-card-body"><div class="archive-card-title">{{ r.title }}</div><div class="brand-muted archive-card-meta">{{ r.id }} · {{ r.weight }}{% if r.release_notes %} · {{ r.release_notes }}{% endif %}</div></div>
+            </a>
+            {% endfor %}
+        </div>
+    </section>
+    {% endif %}
+
+    <!-- Checklist -->
+    {% if make %}
+    <section class="section" id="section-make">
+        <div class="section-header"><h2>Make</h2><span class="brand-muted">the fixed set for the {{ rel.lane }} lane: what exists on disk, and the tool that makes it</span></div>
+        <div class="section-body">
+            <table class="brand-table make-table">
+                <tbody>
+                {% for m in make %}
+                <tr>
+                    <td class="make-state">{% if m.made %}<span class="badge badge-done">made</span>{% else %}<span class="badge badge-info">not yet</span>{% endif %}</td>
+                    <td><div>{{ m.label }}</div>{% if m.files %}<div class="brand-muted make-files">{% for f in m.files %}{{ f }}<br>{% endfor %}</div>{% endif %}</td>
+                    <td class="brand-muted make-how">{{ m.how }}{% if m.id == 'fmt_cover' %} <a href="{{ url_for('artwork_resizer_page', release=rel.slug) }}">Open the Artwork Resizer</a>{% endif %}</td>
+                </tr>
+                {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </section>
+    {% endif %}
+
+    <section class="section collapsible" id="section-checklist">
+        <div class="section-header section-toggle">
+            <h2>Checklist</h2>
+            <button type="button" class="btn-collapse" aria-label="Toggle checklist" aria-expanded="true">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+        </div>
+        <div class="section-body">
+            {% for cat_label, items in ordered_categories %}
+            <div class="checklist-category">
+                <h3>{{ cat_label }}</h3>
+                {% for item in items %}
+                <label class="checklist-item{% if item.done %} done{% endif %}{% if item.id in overdue_cl %} overdue{% endif %}">
+                    <input type="checkbox"
+                           data-slug="{{ rel.slug }}"
+                           data-task-id="{{ item.id }}"
+                           {% if item.done %}checked{% endif %}>
+                    <span class="item-label">{{ item.label }}</span>
+                    {% if tooltips.get(item.id) %}
+                    <span class="item-info" data-tip="{{ tooltips[item.id] }}">&#9432;</span>
+                    {% endif %}
+                    {% if item.done and item.done_date %}
+                    <span class="item-date done-date">Done {{ item.done_date }}</span>
+                    {% elif item.due_date %}
+                    <span class="item-date{% if item.id in overdue_cl %} overdue-text{% endif %}">{{ item.due_date|days_until }}</span>
+                    {% endif %}
+                </label>
+                {% endfor %}
+            </div>
+            {% endfor %}
+        </div>
+    </section>
+
+    <!-- Timeline -->
+    <section class="section collapsible" id="section-timeline">
+        <div class="section-header section-toggle">
+            <h2>Timeline</h2>
+            <button type="button" class="btn-collapse" aria-label="Toggle timeline" aria-expanded="true">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+        </div>
+        <div class="section-body">
+            {% if tl_pre %}
+            <h3 class="timeline-phase-label">Pre-Release</h3>
+            <div class="timeline">
+                {% for m in tl_pre %}
+                <div class="milestone{% if m.done %} done{% endif %}{% if m.id in overdue_tl %} overdue{% endif %}">
+                    <div class="milestone-dot"></div>
+                    <div class="milestone-content">
+                        <span class="milestone-label">{{ m.label }}</span>
+                        <span class="milestone-date">{{ m.date }}{% if not m.done %} — {{ m.date|days_until }}{% endif %}</span>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+            {% endif %}
+
+            {% if tl_post %}
+            <h3 class="timeline-phase-label timeline-phase-post">Post-Release</h3>
+            <div class="timeline">
+                {% for m in tl_post %}
+                <div class="milestone{% if m.done %} done{% endif %}{% if m.id in overdue_tl %} overdue{% endif %}">
+                    <div class="milestone-dot"></div>
+                    <div class="milestone-content">
+                        <span class="milestone-label">{{ m.label }}</span>
+                        <span class="milestone-date">{{ m.date }}{% if not m.done %} — {{ m.date|days_until }}{% endif %}</span>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+            {% endif %}
+        </div>
+    </section>
+
+    <!-- SEO Copy -->
+    {% set seo = rel.get('seo_copy', {}) %}
+    <section class="section collapsible" id="section-seo-copy">
+        <div class="section-header section-toggle">
+            <h2>SEO Copy</h2>
+            <button type="button" class="btn-collapse" aria-label="Toggle SEO copy" aria-expanded="true">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+        </div>
+        <div class="section-body">
+            {% if seo %}
+            <p class="trim-hint">
+                Generated {{ seo.get('generated_at', '')|truncate(10, True, '') }}
+                {% if seo.get('tone') %} / tone: {{ seo.tone }}{% endif %}
+                <a href="{{ url_for('seo_copy_page', release=rel.slug) }}" class="btn btn-secondary btn-sm" style="margin-left:8px;">Regenerate</a>
+            </p>
+
+            {% set platforms = [
+                ('SoundCloud', 'soundcloud', [('Description', 'description')]),
+                ('Instagram', 'instagram', [('Caption', 'caption'), ('Hashtags', 'hashtags')]),
+                ('YouTube', 'youtube', [('Titles', 'titles'), ('Description', 'description')]),
+                ('Bandcamp', 'bandcamp', [('About', 'about'), ('Tags', 'tags')]),
+                ('Beatport', 'beatport', [('Description', 'description')]),
+                ('Spotify', 'spotify', [('Pitch', 'pitch'), ('Artist Pick', 'artist_pick')]),
+                ('Apple Music', 'apple_music', [('Bio', 'bio')]),
+            ] %}
+
+            {% for label, key, fields in platforms %}
+                {% set pdata = seo.get(key, {}) %}
+                {% if pdata %}
+                <div class="seo-platform-card">
+                    <h3>{{ label }}</h3>
+                    {% for flabel, fkey in fields %}
+                        {% set val = pdata.get(fkey, '') %}
+                        {% if val %}
+                        <div class="seo-field">
+                            <div class="seo-field-header">
+                                <span class="seo-field-label">{{ flabel }}</span>
+                                {% if val is string %}
+                                <span class="char-counter">{{ val|length }} chars</span>
+                                {% endif %}
+                                <button type="button" class="btn btn-secondary btn-sm seo-copy-btn"
+                                        data-text="{{ (val if val is string else val|join(', '))|e }}">Copy</button>
+                            </div>
+                            <div class="seo-field-body">
+                                {% if val is string %}
+                                    {{ val|e|replace('\n', '<br>'|safe) }}
+                                {% elif val is iterable %}
+                                    <span class="seo-tag-list">
+                                    {% for item in val %}
+                                        <span class="seo-tag">{{ item|e }}</span>
+                                    {% endfor %}
+                                    </span>
+                                {% endif %}
+                            </div>
+                        </div>
+                        {% endif %}
+                    {% endfor %}
+                </div>
+                {% endif %}
+            {% endfor %}
+
+            {% set premiere = seo.get('premiere_contacts', []) %}
+            {% if premiere %}
+            <div class="seo-platform-card">
+                <h3>Premiere Contacts</h3>
+                {% for c in premiere %}
+                <div class="seo-field">
+                    <div class="seo-field-body">
+                        <strong>{{ c.name }}</strong>
+                        {% if c.url %} — <a href="{{ c.url }}" target="_blank">{{ c.url|truncate(50) }}</a>{% endif %}
+                        {% if c.reason %}<br><span class="trim-hint">{{ c.reason }}</span>{% endif %}
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+            {% endif %}
+
+            {% else %}
+            <p class="empty-hint">No copy generated yet.
+                <a href="{{ url_for('seo_copy_page', release=rel.slug) }}">Generate SEO copy</a>
+                or use <code>/release-prep {{ meta.title }}</code> in Claude Code.
+            </p>
+            {% endif %}
+        </div>
+    </section>
+
+    <!-- Platform Links -->
+    <section class="section">
+        <div class="section-header">
+            <h2>Platform Links</h2>
+            <button class="btn btn-secondary btn-sm" id="toggle-links-form">Edit Links</button>
+        </div>
+        <div class="links-display">
+            {% set has_links = rel.platform_links.values()|select|list|length > 0 %}
+            {% if has_links %}
+            <div class="links-grid">
+                {% for platform, url in rel.platform_links.items() %}
+                {% if url %}
+                <div class="link-item">
+                    <span class="link-platform">{{ platform|platform_label }}</span>
+                    <a href="{{ url }}" target="_blank" class="link-url">{{ url[:50] }}{% if url|length > 50 %}...{% endif %}</a>
+                </div>
+                {% endif %}
+                {% endfor %}
+            </div>
+            {% else %}
+            <p class="empty-hint">No links yet. Add them as platforms go live.</p>
+            {% endif %}
+        </div>
+        <form method="POST" action="{{ url_for('release_links', slug=rel.slug) }}" class="links-form" id="links-form">
+            <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+            <div class="links-form-grid">
+                {% for platform in ALL_PLATFORMS %}
+                <div class="form-group">
+                    <label for="link-{{ platform }}">{{ platform|platform_label }}</label>
+                    <input type="url" id="link-{{ platform }}" name="{{ platform }}"
+                           value="{{ rel.platform_links.get(platform, '') }}"
+                           placeholder="https://...">
+                </div>
+                {% endfor %}
+            </div>
+            <div class="form-actions">
+                <button type="submit" class="btn btn-accent btn-sm">Save Links</button>
+                <button type="button" class="btn btn-secondary btn-sm" id="cancel-links">Cancel</button>
+            </div>
+        </form>
+    </section>
+
+
+</div>
+<script>
+document.querySelectorAll('.seo-copy-btn').forEach(function(btn) {
+    btn.addEventListener('click', function() {
+        var text = this.getAttribute('data-text')
+            .replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&quot;/g, '"').replace(/&amp;/g, '&');
+        navigator.clipboard.writeText(text).then(function() {
+            btn.textContent = 'Copied!';
+            setTimeout(function() { btn.textContent = 'Copy'; }, 1500);
+        });
+    });
+});
+
+// ---- Calendar Grid ----
+(function() {
+    var months = document.querySelectorAll('.cal-month');
+    var label = document.querySelector('.cal-month-label');
+    var prevBtn = document.querySelector('.cal-prev');
+    var nextBtn = document.querySelector('.cal-next');
+    if (!months.length) return;
+
+    // Default to month containing today; fall back to release day month, then first
+    var currentIdx = 0;
+    var todayIdx = -1;
+    var releaseIdx = -1;
+    months.forEach(function(m, i) {
+        if (m.querySelector('.cal-today')) todayIdx = i;
+        if (m.querySelector('.cal-release-day')) releaseIdx = i;
+    });
+    if (todayIdx >= 0) currentIdx = todayIdx;
+    else if (releaseIdx >= 0) currentIdx = releaseIdx;
+
+    function showMonth(idx) {
+        months.forEach(function(m, i) {
+            m.style.display = (i === idx) ? 'block' : 'none';
+        });
+        // Extract month name from the table's first data cell or use month index
+        var firstCell = months[idx].querySelector('.cal-cell:not(.cal-empty) .cal-day-num');
+        if (firstCell) {
+            var dateStr = firstCell.closest('.cal-cell').querySelector('.cal-pill');
+            // Use a data attribute approach instead -- read from month_data
+        }
+        // Month names are embedded as data attributes
+        var monthNames = {{ cal_grid.months|map(attribute='month_name')|list|tojson }};
+        label.textContent = monthNames[idx] || '';
+        prevBtn.disabled = (idx === 0);
+        nextBtn.disabled = (idx === months.length - 1);
+    }
+
+    prevBtn.addEventListener('click', function() {
+        if (currentIdx > 0) { currentIdx--; showMonth(currentIdx); }
+    });
+    nextBtn.addEventListener('click', function() {
+        if (currentIdx < months.length - 1) { currentIdx++; showMonth(currentIdx); }
+    });
+
+    showMonth(currentIdx);
+
+    // Click calendar pills to toggle done state
+    document.querySelectorAll('.cal-pill').forEach(function(pill) {
+        pill.addEventListener('click', function() {
+            var slug = this.dataset.slug;
+            var taskId = this.dataset.taskId;
+            var isDone = this.dataset.done === 'true';
+            var action = isDone ? 'uncheck' : 'check';
+            var el = this;
+
+            fetch('/api/release/' + slug + '/' + action + '/' + taskId, { method: 'POST' })
+                .then(function(res) {
+                    if (!res.ok) throw new Error('failed');
+                    return res.json();
+                })
+                .then(function(data) {
+                    var newDone = !isDone;
+                    el.dataset.done = newDone ? 'true' : 'false';
+                    if (newDone) {
+                        el.classList.add('cal-pill-done');
+                    } else {
+                        el.classList.remove('cal-pill-done');
+                    }
+
+                    // Sync checklist checkbox if visible
+                    var cb = document.querySelector('.checklist-item input[data-task-id="' + taskId + '"]');
+                    if (cb) {
+                        cb.checked = newDone;
+                        var item = cb.closest('.checklist-item');
+                        if (newDone) {
+                            item.classList.add('done');
+                            item.classList.remove('overdue');
+                        } else {
+                            item.classList.remove('done');
+                        }
+                    }
+
+                    // Update progress
+                    var prog = document.querySelector('.checklist-progress');
+                    if (prog && data.total) {
+                        var pct = Math.round(data.done * 100 / data.total);
+                        prog.textContent = data.done + '/' + data.total + ' tasks (' + pct + '%)';
+                        var fill = document.querySelector('.detail-progress .progress-fill');
+                        if (fill) {
+                            fill.style.width = pct + '%';
+                            if (pct === 100) fill.classList.add('complete');
+                            else fill.classList.remove('complete');
+                        }
+                    }
+                });
+        });
+    });
+})();
+</script>
+{% endblock %}

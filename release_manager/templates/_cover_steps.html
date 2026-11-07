@@ -1,0 +1,34 @@
+{# Cover workflow step bar (Half the Night main artwork, 2026-11-05). NOW marks the stage we are on; move it when a stage closes. #}
+{% set NOW = 5 %}
+{% set ep = request.endpoint %}
+{% set steps = [
+    (1, 'Elements', url_for('playground_elements', slug=rel.slug), ep == 'playground_elements'),
+    (2, 'Colours', url_for('playground_colours', slug=rel.slug), ep == 'playground_colours'),
+    (3, 'Effects', url_for('playground_wall', slug=rel.slug), ep == 'playground_wall' and not request.args.get('cmp')),
+    (4, 'Compare + mix', url_for('playground_wall', slug=rel.slug, cmp=1), ep == 'playground_wall' and request.args.get('cmp')),
+    (5, 'Layout: font, text, rules', url_for('playground_layout', slug=rel.slug), ep == 'playground_layout'),
+    (6, 'Final pick', None, False),
+    (7, 'Second opinion', None, False),
+    (8, 'Canva + export', None, False),
+] %}
+<style>
+.cover-steps { display: flex; flex-wrap: wrap; gap: 4px; align-items: stretch; margin: 0 0 14px; font-size: 13px; }
+.cover-steps a, .cover-steps span.st { display: flex; align-items: center; gap: 6px; padding: 7px 12px; border: 1px solid var(--border-light); color: var(--text-secondary); text-decoration: none; background: #141210; }
+.cover-steps .num { font-weight: 700; }
+.cover-steps .done { color: #9fbf8f; }
+.cover-steps .now { border-color: #d8c39a; color: #d8c39a; }
+.cover-steps .here { background: #d8c39a; color: #111; border-color: #d8c39a; }
+.cover-steps span.st.later { opacity: .45; }
+.cover-steps .grid { margin-left: auto; }
+</style>
+<div class="cover-steps">
+    {% for n, label, href, here in steps %}
+        {% set cls = 'here' if here else ('now' if n == NOW else ('done' if n < NOW else 'later')) %}
+        {% if href %}
+            <a class="{{ cls }}" href="{{ href }}"><span class="num">{{ '✓' if n < NOW else n }}</span>{{ label }}{% if n == NOW %} · you are here{% endif %}</a>
+        {% else %}
+            <span class="st {{ cls }}"><span class="num">{{ n }}</span>{{ label }}</span>
+        {% endif %}
+    {% endfor %}
+    <a class="grid" href="{{ url_for('playground_iggrid', slug=rel.slug) }}">▦ IG grid</a>
+</div>

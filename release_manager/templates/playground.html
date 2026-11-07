@@ -1,0 +1,623 @@
+{% extends "base.html" %}
+{% block title %}Playground{% endblock %}
+{% block content %}
+<style>
+{% for f in fonts %}@font-face { font-family: "{{ f.family }}"; src: {{ f.src|safe }}; font-display: block; }
+{% endfor %}
+</style>
+<div class="fonts-page pg-page">
+    <h1>Artwork playground{% if rel %}: {{ rel.metadata.title }}{% endif %}</h1>
+    {% if rel %}<p><a href="{{ url_for('playground_wall', slug=rel.slug) }}">→ Effects wall: every look at once, one knob</a></p>{% endif %}
+    {% if not rel %}
+        <p class="form-subtitle">No release has a base artwork yet. A release gets one when its brand.playground.base is set.</p>
+        {% for r in rels %}<p><a href="{{ url_for('playground_page', slug=r.slug) }}">{{ r.metadata.title }}</a></p>{% endfor %}
+    {% else %}
+    <p class="form-subtitle">Try looks, colour, one accent and fonts on the base art. Everything happens in the browser; nothing is saved until you download. Fonts marked TRIAL or NOT owned are for looking only.</p>
+
+    <div class="pg-layout">
+        <aside class="pg-controls">
+            {% if covers %}
+            <h3>Cover</h3>
+            <div class="pg-fontrow"><button type="button" class="pg-arrow" data-for="pg-cover" data-d="-1" title="previous cover">◀</button><select id="pg-cover"><option value="">release base</option>{% for c in covers %}<option value="{{ c.name }}">{{ c.label }}</option>{% endfor %}</select><button type="button" class="pg-arrow" data-for="pg-cover" data-d="1" title="next cover">▶</button></div>
+            <p class="brand-muted">Covers come from any artwork folder named playground-covers/{{ rel.slug }}.</p>
+            {% endif %}
+            <h3>Look</h3>
+            <div class="pg-fontrow"><button type="button" class="pg-arrow" data-for="pg-look" data-d="-1" title="previous look">◀</button><select id="pg-look"><option value="">original</option>{% for l in looks %}<option value="{{ l.key }}">{{ l.code }} {{ l.name }}</option>{% endfor %}</select><button type="button" class="pg-arrow" data-for="pg-look" data-d="1" title="next look">▶</button><button type="button" class="pg-arrow pg-xlook" title="remove this look from the list">✕</button></div>
+            <p class="brand-muted pg-hidden-note" id="pg-look-hidden"></p>
+            <label>strength <input type="range" id="pg-look-amt" min="0" max="100" value="100"></label>
+            <label>size <input type="range" id="pg-look-scale" min="1" max="4" step="1" value="1"></label>
+            <label>blend <select id="pg-look-blend"><option value="source-over">normal</option><option value="multiply">multiply (darker)</option><option value="screen">screen (lighter)</option><option value="overlay">overlay</option><option value="luminosity">luminosity</option><option value="difference">difference</option></select></label>
+            <h3>Second look (on top of the first)</h3>
+            <div class="pg-fontrow"><button type="button" class="pg-arrow" data-for="pg-look2" data-d="-1" title="previous look">◀</button><select id="pg-look2"><option value="">none</option>{% for l in looks %}<option value="{{ l.key }}">{{ l.code }} {{ l.name }}</option>{% endfor %}</select><button type="button" class="pg-arrow" data-for="pg-look2" data-d="1" title="next look">▶</button></div>
+            <label>strength <input type="range" id="pg-look2-amt" min="0" max="100" value="40"></label>
+            <label>size <input type="range" id="pg-look2-scale" min="1" max="4" step="1" value="1"></label>
+            <label>blend <select id="pg-look2-blend"><option value="source-over">normal</option><option value="multiply">multiply (darker)</option><option value="screen">screen (lighter)</option><option value="overlay">overlay</option><option value="luminosity">luminosity</option><option value="difference">difference</option></select></label>
+            {% if ramp %}
+            <h3>Release palette ({{ ramp.name }})</h3>
+            <div class="pg-ramp">{% for c in ramp.stops %}<span style="background:{{ c }}" title="{{ c }}"></span>{% endfor %}</div>
+            <label>palette <select id="pg-ramp-mode"><option value="">off</option><option value="straight">straight (keeps the darks)</option><option value="shares">middle tones (the brief's shares)</option></select></label>
+            <label>amount <input type="range" id="pg-ramp-amt" min="0" max="100" value="100"></label>
+            <p class="brand-muted">Goes on after the looks, so everything ends in the release colours. Leave the colour mood on "original paper" with it.</p>
+            {% endif %}
+            <h3>Colour mood</h3>
+            <select id="pg-mood"><option value="">original paper</option>{% for k, m in moods.items() %}<option value="{{ k }}" data-light="{{ m.light }}" data-dark="{{ m.dark }}">{{ k }} {{ m.name }}</option>{% endfor %}</select>
+            <label>brightness <input type="range" id="pg-bri" min="70" max="130" value="100"></label>
+            <label>contrast <input type="range" id="pg-con" min="70" max="150" value="100"></label>
+            <label>grain <input type="range" id="pg-grain" min="0" max="40" value="0"></label>
+            <h3>Accent (one at most)</h3>
+            <div class="pg-swatches">{% for n, c in accents %}<button type="button" class="pg-sw{% if not c %} on{% endif %}" data-c="{{ c }}" title="{{ n }}" style="background:{{ c or 'transparent' }}">{% if not c %}none{% endif %}</button>{% endfor %}</div>
+            <label>on <select id="pg-accent-on"><option value="title">title</option><option value="name">name</option><option value="both">both</option></select></label>
+            <h3>Text colour</h3>
+            <label>text <select id="pg-ink"><option value="">mood ink</option>{% if ramp %}<option value="ramp-light">palette, lightest</option><option value="ramp-dark">palette, darkest</option>{% endif %}<option value="custom">custom</option></select> <input type="color" id="pg-ink-col" value="#e9dfc9"></label>
+            <h3>Title</h3>
+            <input type="text" id="pg-title" value="{{ rel.metadata.title }}">
+            <label>fonts <select id="pg-title-show" class="pg-show" data-text="title"><option value="all">all fonts</option><option value="have">fonts we have (owned + free)</option><option value="mac">we have + Mac system fonts</option><option value="trial">trials only (looking)</option></select></label>
+            <div class="pg-fontrow"><button type="button" class="pg-arrow" data-for="pg-title-font" data-d="-1" title="previous font">◀</button><select id="pg-title-font" class="pg-font"></select><button type="button" class="pg-arrow" data-for="pg-title-font" data-d="1" title="next font">▶</button><button type="button" class="pg-arrow pg-x" data-for="pg-title-font" data-text="title" title="remove this font from this text's list">✕</button></div>
+            <p class="brand-muted pg-hidden-note" id="pg-title-hidden"></p>
+            <label>size <input type="range" id="pg-title-size" min="20" max="90" value="34"></label>
+            <label>spacing <input type="range" id="pg-title-track" min="0" max="40" value="15"></label>
+            <label>height <input type="range" id="pg-title-y" min="700" max="1040" value="968"> <span class="brand-muted" id="pg-title-y-note"></span></label>
+            <label><input type="checkbox" id="pg-title-caps" checked> capitals</label>
+            <h3>Name on the axis</h3>
+            <input type="text" id="pg-name" value="{{ pg.name or 'inch of shadow' }}">
+            <label>fonts <select id="pg-name-show" class="pg-show" data-text="name"><option value="all">all fonts</option><option value="have">fonts we have (owned + free)</option><option value="mac">we have + Mac system fonts</option><option value="trial">trials only (looking)</option></select></label>
+            <div class="pg-fontrow"><button type="button" class="pg-arrow" data-for="pg-name-font" data-d="-1" title="previous font">◀</button><select id="pg-name-font" class="pg-font"></select><button type="button" class="pg-arrow" data-for="pg-name-font" data-d="1" title="next font">▶</button><button type="button" class="pg-arrow pg-x" data-for="pg-name-font" data-text="name" title="remove this font from this text's list">✕</button></div>
+            <p class="brand-muted pg-hidden-note" id="pg-name-hidden"></p>
+            <label>size <input type="range" id="pg-name-size" min="12" max="60" value="30"></label>
+            <label>spacing <input type="range" id="pg-name-track" min="0" max="24" value="8"></label>
+            <label><input type="checkbox" id="pg-name-caps"> capitals</label>
+            <h3>Whole cover colour</h3>
+            <label>hue <input type="range" id="pg-hue" min="-180" max="180" value="0"></label>
+            <label>saturation <input type="range" id="pg-sat" min="0" max="250" value="100"></label>
+            <label>sepia <input type="range" id="pg-sep" min="0" max="100" value="0"></label>
+            <label>blur <input type="range" id="pg-blur" min="0" max="8" step="0.5" value="0"></label>
+            <label><input type="checkbox" id="pg-inv"> invert (negative)</label>
+            <label>tint <input type="color" id="pg-tint" value="#b3262e"> <input type="range" id="pg-tint-amt" min="0" max="100" value="0"></label>
+            <label>tint mode <select id="pg-tint-mode"><option value="color">colour</option><option value="multiply">multiply</option><option value="screen">screen</option><option value="overlay">overlay</option><option value="soft-light">soft light</option><option value="hue">hue only</option></select></label>
+            <label>duotone dark <input type="color" id="pg-duo-d" value="#0f0d0c"> light <input type="color" id="pg-duo-l" value="#d6d1c8"></label>
+            <label>duotone amount <input type="range" id="pg-duo-amt" min="0" max="100" value="0"></label>
+            <label>vignette <input type="range" id="pg-vig" min="0" max="100" value="0"></label>
+            <h3>Accent layer (on top of every filter)</h3>
+            {% if has_accent_layer %}
+            <label><input type="checkbox" id="pg-acl-on" checked> show the accent layer</label>
+            <label>opacity <input type="range" id="pg-acl-amt" min="0" max="100" value="100"></label>
+            <label><input type="checkbox" id="pg-acl-recolour"> recolour it with the 10 colour below</label>
+            <p class="brand-muted">Its colour stays true whatever the mood, tint or duotone.</p>
+            {% else %}
+            <p class="brand-muted">No accent layer for this release yet (brand.playground.accent_layer: a transparent PNG with only the coloured bits).</p>
+            {% endif %}
+            <h3>Colours 60 · 30 · 10</h3>
+            <label>60 main (paper) <input type="color" id="pg-c60" value="#d6d1c8"></label>
+            <label>30 second (ink) <input type="color" id="pg-c30" value="#0f0d0c"></label>
+            <label>10 accent (lenses) <input type="color" id="pg-c10" value="#ce9646"></label>
+            <label><input type="checkbox" id="pg-c-on"> paint the whole cover in the 60 and 30 colours</label>
+            <label>amount <input type="range" id="pg-c-amt" min="0" max="100" value="100"></label>
+            <p class="brand-muted">The 10 colour goes on the accent layer when "recolour" is on. Light parts take the 60, dark parts the 30.</p>
+            <h3>Guides (screen only, never in the download)</h3>
+            <label><input type="checkbox" id="pg-g-thirds"> rule of thirds</label>
+            <label><input type="checkbox" id="pg-g-golden"> golden ratio (38 / 62)</label>
+            <label><input type="checkbox" id="pg-g-centre"> centre cross</label>
+            <label><input type="checkbox" id="pg-g-safe"> safe margin (5%)</label>
+            <div class="pg-buttons">
+                <button type="button" class="btn btn-secondary btn-sm" id="pg-dl">Download square PNG</button>
+                <button type="button" class="btn btn-secondary btn-sm" id="pg-dl-rec">Download record PNG</button>
+                <button type="button" class="btn btn-secondary btn-sm" id="pg-reset">Reset</button>
+            </div>
+            <p class="brand-muted" id="pg-font-note"></p>
+        </aside>
+
+        <section class="pg-main">
+            <div class="pg-toolbar">
+                <button type="button" class="btn btn-secondary btn-sm" id="pg-undo" title="Undo (Cmd+Z)">↶ Undo</button>
+                <button type="button" class="btn btn-secondary btn-sm" id="pg-redo" title="Redo (Shift+Cmd+Z)">↷ Redo</button>
+                <button type="button" class="btn btn-secondary btn-sm" id="pg-compare" title="Hold to see the cover without looks and palette">Hold: without effects</button>
+                <span class="pg-sep"></span>
+                <input type="text" id="pg-vname" placeholder="name this version" maxlength="60">
+                <button type="button" class="btn btn-secondary btn-sm" id="pg-vsave">💾 Save version</button>
+                <select id="pg-vlist"><option value="">saved versions…</option></select>
+                <button type="button" class="btn btn-secondary btn-sm" id="pg-vload">Open</button>
+                <button type="button" class="btn btn-secondary btn-sm" id="pg-vdel" title="delete this saved version">Delete</button>
+                <span class="brand-muted pg-vmsg" id="pg-vmsg"></span>
+            </div>
+            <div class="pg-stage"><canvas id="pg-master" width="1080" height="1080"></canvas><canvas id="pg-guides" width="1080" height="1080"></canvas></div>
+            <div class="pg-rules">
+                <canvas id="pg-pie" width="132" height="132"></canvas>
+                <div class="pg-rules-text" id="pg-rules-text"></div>
+            </div>
+            <div class="pg-previews">
+                <div class="pg-prev"><div class="pg-prev-label">Spotify (stores: the record version)</div>
+                    <div class="pg-spotify"><canvas id="pg-sp" width="480" height="480"></canvas><div class="pg-sp-t" id="pg-sp-t"></div><div class="pg-sp-a">Inch of Shadow</div></div></div>
+                <div class="pg-prev"><div class="pg-prev-label">Record 2c, full size</div><canvas id="pg-rec" width="1080" height="1080"></canvas></div>
+                <div class="pg-prev"><div class="pg-prev-label">Instagram (the art alone)</div>
+                    <div class="pg-ig"><div class="pg-ig-h"><span class="pg-ig-av"></span>inch_of_shadow</div><canvas id="pg-ig" width="1080" height="1080"></canvas></div></div>
+            </div>
+        </section>
+    </div>
+    {% endif %}
+</div>
+{% if rel %}
+<script>
+(function () {
+    var FONTS = {{ fonts|tojson }};
+    var SK = 'pg-state-' + {{ rel.slug|tojson }};
+    var SLUG = {{ rel.slug|tojson }};
+    var N = 1080, CX = 540, CY = {{ (pg.axis_y or 470)|int }}, R = 330;
+    var $ = function (id) { return document.getElementById(id); };
+    var master = $('pg-master'), mctx = master.getContext('2d', {willReadFrequently: true});
+    var baseImg = new Image(), accent = '', raw = null;
+    var TEXTS = {title: {sel: 'pg-title-font', show: 'pg-title-show', def: 'marcellus'},
+                 name: {sel: 'pg-name-font', show: 'pg-name-show', def: 'marcellus'}};
+    // fonts removed with the X, kept per text (title / name / corner text)
+    var HK = 'pg-fonts-hidden-' + SLUG, HIDDEN = {title: {}, name: {}, micro: {}};
+    try {
+        var h0 = JSON.parse(localStorage.getItem(HK) || '{}');
+        if (h0.title || h0.name || h0.micro) HIDDEN = {title: h0.title || {}, name: h0.name || {}, micro: h0.micro || {}};
+        else { HIDDEN.title = Object.assign({}, h0); HIDDEN.name = Object.assign({}, h0); }   // older single list
+    } catch (e) {}
+    function saveHidden() { try { localStorage.setItem(HK, JSON.stringify(HIDDEN)); } catch (e) {} }
+    function shown(f, mode) {
+        if (mode === 'have') return f.licence === 'owned' || f.licence === 'free';
+        if (mode === 'mac') return f.licence === 'owned' || f.licence === 'free' || f.licence === 'system';
+        if (mode === 'trial') return f.licence === 'trial';
+        return true;
+    }
+    function fillText(k) {
+        var t = TEXTS[k], sel = $(t.sel), cur = sel.value, mode = $(t.show).value; sel.innerHTML = '';
+        FONTS.filter(function (f) { return !HIDDEN[k][f.id] && shown(f, mode); }).forEach(function (f) {
+            var o = document.createElement('option'); o.value = f.family;
+            o.textContent = f.name + ' · ' + f.badge; if (!f.public_ok) o.style.color = '#c99';
+            sel.appendChild(o);
+        });
+        if (cur && Array.prototype.some.call(sel.options, function (o) { return o.value === cur; })) sel.value = cur;
+        else { var d = FONTS.find(function (f) { return f.id === t.def; }); if (d) sel.value = d.family; if (sel.selectedIndex < 0) sel.selectedIndex = 0; }
+        var n = Object.keys(HIDDEN[k]).length, el = $('pg-' + k + '-hidden');
+        el.innerHTML = n ? n + ' font' + (n > 1 ? 's' : '') + ' removed here. <a href="#" data-unhide="' + k + '">Bring them back</a>' : '';
+        var a = el.querySelector('a'); if (a) a.onclick = function (e) { e.preventDefault(); HIDDEN[k] = {}; saveHidden(); fillText(k); draw(); };
+    }
+    function fillAll() { Object.keys(TEXTS).forEach(fillText); }
+    fillAll();
+    document.querySelectorAll('.pg-show').forEach(function (s) { s.addEventListener('change', function () { fillText(s.dataset.text); draw(); }); });
+    document.querySelectorAll('.pg-x').forEach(function (b) {
+        b.addEventListener('click', function () {
+            var k = b.dataset.text, sel = $(TEXTS[k].sel), f = FONTS.find(function (x) { return x.family === sel.value; });
+            if (!f || sel.options.length <= 1) return;
+            var i = sel.selectedIndex; HIDDEN[k][f.id] = 1; saveHidden();
+            sel.options[i].remove(); sel.selectedIndex = Math.min(i, sel.options.length - 1);
+            fillText(k); draw();
+        });
+    });
+    // looks removed with the X (kept on this computer, part of undo)
+    var LHK = 'pg-looks-hidden-' + SLUG, LHID = {};
+    try { LHID = JSON.parse(localStorage.getItem(LHK) || '{}'); } catch (e) { LHID = {}; }
+    var LOOKOPTS = Array.prototype.map.call($('pg-look').options, function (o) { return {v: o.value, t: o.textContent}; });
+    function fillLooks() {
+        var sel = $('pg-look'), cur = sel.value; sel.innerHTML = '';
+        LOOKOPTS.forEach(function (o) { if (o.v && LHID[o.v]) return; var e = document.createElement('option'); e.value = o.v; e.textContent = o.t; sel.appendChild(e); });
+        sel.value = Array.prototype.some.call(sel.options, function (o) { return o.value === cur; }) ? cur : '';
+        var n = Object.keys(LHID).length, el = $('pg-look-hidden');
+        el.innerHTML = n ? n + ' look' + (n > 1 ? 's' : '') + ' removed. <a href="#">Bring them back</a>' : '';
+        var a = el.querySelector('a'); if (a) a.onclick = function (e) { e.preventDefault(); LHID = {}; try { localStorage.removeItem(LHK); } catch (x) {} fillLooks(); draw(); };
+    }
+    fillLooks();
+    document.querySelector('.pg-xlook').addEventListener('click', function () {
+        var sel = $('pg-look'); if (!sel.value) return;
+        var i = sel.selectedIndex; LHID[sel.value] = 1; try { localStorage.setItem(LHK, JSON.stringify(LHID)); } catch (e) {}
+        sel.options[i].remove(); sel.selectedIndex = Math.min(i, sel.options.length - 1);
+        fillLooks(); loadBase();
+    });
+    var origImg = new Image();
+    origImg.onload = function () { draw(); };
+    var BVER = {{ bver|tojson }}, AVER = {{ aver|tojson }};
+    var RAMP = {{ (ramp or {})|tojson }}, bypass = false;
+    function imgURL(look, scale) {
+        var c = $('pg-cover') ? $('pg-cover').value : '';
+        return '/playground/' + encodeURIComponent(SLUG) + '/image?' + (c ? 'cover=' + encodeURIComponent(c) + '&' : '') +
+            (look ? 'look=' + encodeURIComponent(look) + '&scale=' + scale + '&' : '') + 'v=' + BVER;
+    }
+    function loadOrig() { origImg.src = imgURL('', 1); }
+    // C: the accent layer, drawn after every filter so its colour survives
+    var accImg = null;
+    {% if has_accent_layer %}accImg = new Image(); accImg.onload = function () { draw(); }; accImg.src = '/playground/' + encodeURIComponent(SLUG) + '/accent?v=' + AVER;{% endif %}
+    function accentLayer(ctx, sx, sy, sw, sh, dx, dy, dw, dh) {
+        if (!accImg || !accImg.complete || !accImg.naturalWidth || !$('pg-acl-on') || !$('pg-acl-on').checked) return;
+        var k = accImg.naturalWidth / N, src = accImg;
+        if ($('pg-acl-recolour').checked) {
+            var t = document.createElement('canvas'); t.width = accImg.naturalWidth; t.height = accImg.naturalHeight; var tc = t.getContext('2d');
+            tc.drawImage(accImg, 0, 0); tc.globalCompositeOperation = 'color'; tc.fillStyle = $('pg-c10').value; tc.fillRect(0, 0, t.width, t.height);
+            tc.globalCompositeOperation = 'destination-in'; tc.drawImage(accImg, 0, 0); src = t;
+        }
+        ctx.save(); ctx.globalAlpha = +$('pg-acl-amt').value / 100;
+        ctx.drawImage(src, sx * k, sy * k, sw * k, sh * k, dx, dy, dw, dh); ctx.restore();
+    }
+    function loadBase() {
+        var look = $('pg-look').value;
+        if (!look) { baseImg = origImg; draw(); return; }
+        var img = new Image();
+        img.onload = function () { baseImg = img; draw(); };
+        img.src = imgURL(look, $('pg-look-scale').value);
+    }
+    var baseImg2 = null;
+    function loadBase2() {
+        var look = $('pg-look2').value;
+        if (!look) { baseImg2 = null; draw(); return; }
+        var img = new Image();
+        img.onload = function () { baseImg2 = img; draw(); };
+        img.src = imgURL(look, $('pg-look2-scale').value);
+    }
+    function loadAll() { loadOrig(); loadBase(); loadBase2(); }
+    // the release palette: luminance -> the ramp; 'shares' re-spreads the tones to the brief's shares,
+    // ranked on a blurred copy so flat areas keep one tone (paper grain is not blown up)
+    function rampLayer(ctx, size) {
+        var mode = $('pg-ramp-mode') ? $('pg-ramp-mode').value : '';
+        if (!mode || !RAMP.stops || bypass) return;
+        var amt = +$('pg-ramp-amt').value / 100; if (!amt) return;
+        var cols = RAMP.stops.map(hex), stops = [0, 0.10, 0.30, 0.50, 0.70, 0.90, 1.0];
+        var id = ctx.getImageData(0, 0, size, size), d = id.data, n = size * size, sm = null;
+        if (mode === 'shares') {
+            var t = document.createElement('canvas'); t.width = t.height = size;
+            var tc = t.getContext('2d', {willReadFrequently: true}); tc.filter = 'blur(' + Math.max(1, 2.4 * size / N) + 'px)'; tc.drawImage(ctx.canvas, 0, 0, size, size);
+            sm = tc.getImageData(0, 0, size, size).data;
+            var hist = new Array(32).fill(0), q = new Uint8Array(n);
+            for (var i = 0, k = 0; k < n; i += 4, k++) { q[k] = Math.round((0.299 * sm[i] + 0.587 * sm[i + 1] + 0.114 * sm[i + 2]) / 255 * 31); hist[q[k]]++; }
+            var sh = RAMP.shares || [17, 35, 36, 12], P = [0], acc = 0; sh.forEach(function (v) { acc += v / 100; P.push(acc); });
+            var T = [0, 0.10, 0.30, 0.70, 1.0], mid = [], cum = 0;
+            for (var b = 0; b < 32; b++) { cum += hist[b]; mid.push((cum - hist[b] / 2) / n); }
+            var interp = function (x, xs, ys) { for (var j = 1; j < xs.length; j++) if (x <= xs[j]) return ys[j - 1] + (ys[j] - ys[j - 1]) * (x - xs[j - 1]) / ((xs[j] - xs[j - 1]) || 1); return ys[ys.length - 1]; };
+        }
+        for (var p = 0, m = 0; m < n; p += 4, m++) {
+            var L = (0.299 * d[p] + 0.587 * d[p + 1] + 0.114 * d[p + 2]) / 255, tt = L;
+            if (sm) { var Ls = (0.299 * sm[p] + 0.587 * sm[p + 1] + 0.114 * sm[p + 2]) / 255; tt = interp(mid[q[m]], P, T) + (L - Ls) * 0.35; }
+            tt = Math.max(0, Math.min(1, tt));
+            var s = 1; while (s < stops.length - 1 && tt > stops[s]) s++;
+            var f = (tt - stops[s - 1]) / (stops[s] - stops[s - 1]), c0 = cols[s - 1], c1 = cols[s];
+            for (var ch = 0; ch < 3; ch++) d[p + ch] = d[p + ch] * (1 - amt) + (c0[ch] + (c1[ch] - c0[ch]) * f) * amt;
+        }
+        ctx.putImageData(id, 0, 0);
+    }
+    // capitals off: the text as typed; if it was typed all in capitals, show it as Title Case
+    var SMALL = {a: 1, an: 1, and: 1, the: 1, of: 1, in: 1, on: 1, to: 1, for: 1};
+    function caseFor(text, caps) {
+        if (caps) return text.toUpperCase();
+        if (text !== text.toUpperCase()) return text;
+        return text.toLowerCase().split(' ').map(function (w, i) { return i && SMALL[w] ? w : w.charAt(0).toUpperCase() + w.slice(1); }).join(' ');
+    }
+    function hex(h) { h = h.replace('#', ''); return [parseInt(h.substr(0, 2), 16), parseInt(h.substr(2, 2), 16), parseInt(h.substr(4, 2), 16)]; }
+    function tracked(ctx, text, cx, y, size, track, family, fill) {
+        ctx.font = size + 'px "' + family + '", serif'; ctx.fillStyle = fill; ctx.textBaseline = 'top';
+        var ws = Array.prototype.map.call(text, function (c) { return ctx.measureText(c).width; });
+        var tw = ws.reduce(function (a, b) { return a + b; }, 0) + track * (text.length - 1), x = cx - tw / 2;
+        Array.prototype.forEach.call(text, function (c, i) { ctx.fillText(c, x, y); x += ws[i] + track; });
+    }
+    function artLayer(ctx, size) {
+        var mood = $('pg-mood').selectedOptions[0];
+        ctx.save();
+        ctx.filter = 'brightness(' + $('pg-bri').value + '%) contrast(' + $('pg-con').value + '%)';
+        ctx.drawImage(origImg, 0, 0, size, size);
+        if (!bypass && $('pg-look').value && baseImg !== origImg) {
+            ctx.globalAlpha = $('pg-look-amt').value / 100;
+            ctx.globalCompositeOperation = $('pg-look-blend').value;
+            ctx.drawImage(baseImg, 0, 0, size, size);
+        }
+        if (!bypass && $('pg-look2').value && baseImg2) {
+            ctx.globalAlpha = $('pg-look2-amt').value / 100;
+            ctx.globalCompositeOperation = $('pg-look2-blend').value;
+            ctx.drawImage(baseImg2, 0, 0, size, size);
+        }
+        ctx.restore();
+        rampLayer(ctx, size);
+        var light = mood && mood.dataset.light ? hex(mood.dataset.light) : null, dark = mood && mood.dataset.dark ? hex(mood.dataset.dark) : null;
+        var g = +$('pg-grain').value;
+        if (light || g) {
+            var id = ctx.getImageData(0, 0, size, size), d = id.data;
+            for (var i = 0; i < d.length; i += 4) {
+                if (light) {
+                    var t = Math.min(1, (0.299 * d[i] + 0.587 * d[i + 1] + 0.114 * d[i + 2]) / 212);
+                    d[i] = dark[0] + (light[0] - dark[0]) * t; d[i + 1] = dark[1] + (light[1] - dark[1]) * t; d[i + 2] = dark[2] + (light[2] - dark[2]) * t;
+                }
+                if (g) { var n = (Math.random() - 0.5) * g * 2; d[i] += n; d[i + 1] += n; d[i + 2] += n; }
+            }
+            ctx.putImageData(id, 0, 0);
+        }
+    }
+    function inkCol() {
+        var k = $('pg-ink').value;
+        if (k === 'custom') return $('pg-ink-col').value;
+        if (k === 'ramp-light' && RAMP.stops) return RAMP.stops[RAMP.stops.length - 1];
+        if (k === 'ramp-dark' && RAMP.stops) return RAMP.stops[0];
+        var m = $('pg-mood').selectedOptions[0]; return m && m.dataset.dark ? m.dataset.dark : '#0F0D0C';
+    }
+    function texts(ctx, scale, withName, withTitle) {
+        var on = $('pg-accent-on').value, ink = inkCol();
+        var tCol = accent && (on === 'title' || on === 'both') ? accent : ink;
+        var nCol = accent && (on === 'name' || on === 'both') ? accent : ink;
+        var title = $('pg-title').value, name = $('pg-name').value;
+        title = caseFor(title, $('pg-title-caps').checked);
+        name = caseFor(name, $('pg-name-caps').checked);
+        if (withTitle) tracked(ctx, title, N / 2 * scale, +$('pg-title-y').value * scale, +$('pg-title-size').value * scale, +$('pg-title-track').value * scale, $('pg-title-font').value, tCol);
+        if (withName) {
+            var ns = +$('pg-name-size').value;
+            tracked(ctx, name, (CX + R - 40) * scale, (CY - 16 - ns) * scale, ns * scale, +$('pg-name-track').value * scale, $('pg-name-font').value, nCol);
+        }
+    }
+    function coverPass(ctx, S) {
+        var hue = +$('pg-hue').value, sat = +$('pg-sat').value, sep = +$('pg-sep').value, bl = +$('pg-blur').value, inv = $('pg-inv').checked;
+        if (hue || sat !== 100 || sep || bl || inv) {
+            var c = document.createElement('canvas'); c.width = S; c.height = S; c.getContext('2d', {willReadFrequently: true}).drawImage(ctx.canvas, 0, 0);
+            ctx.save(); ctx.filter = 'hue-rotate(' + hue + 'deg) saturate(' + sat + '%) sepia(' + sep + '%) blur(' + bl * S / N + 'px)' + (inv ? ' invert(100%)' : '');
+            ctx.clearRect(0, 0, S, S); ctx.drawImage(c, 0, 0); ctx.restore();
+        }
+        var da = +$('pg-duo-amt').value / 100;
+        if (da) {
+            var dd = hex($('pg-duo-d').value), dl = hex($('pg-duo-l').value), id = ctx.getImageData(0, 0, S, S), d = id.data;
+            for (var i = 0; i < d.length; i += 4) {
+                var t = (0.299 * d[i] + 0.587 * d[i + 1] + 0.114 * d[i + 2]) / 255;
+                for (var k = 0; k < 3; k++) d[i + k] = d[i + k] * (1 - da) + (dd[k] + (dl[k] - dd[k]) * t) * da;
+            }
+            ctx.putImageData(id, 0, 0);
+        }
+        var ta = +$('pg-tint-amt').value / 100;
+        if (ta) { ctx.save(); ctx.globalAlpha = ta; ctx.globalCompositeOperation = $('pg-tint-mode').value; ctx.fillStyle = $('pg-tint').value; ctx.fillRect(0, 0, S, S); ctx.restore(); }
+        var ca = $('pg-c-on').checked ? +$('pg-c-amt').value / 100 : 0;
+        if (ca) {
+            var c6 = hex($('pg-c60').value), c3 = hex($('pg-c30').value), cid = ctx.getImageData(0, 0, S, S), cd = cid.data;
+            for (var ci = 0; ci < cd.length; ci += 4) {
+                var ct = (0.299 * cd[ci] + 0.587 * cd[ci + 1] + 0.114 * cd[ci + 2]) / 255;
+                for (var ck = 0; ck < 3; ck++) cd[ci + ck] = cd[ci + ck] * (1 - ca) + (c3[ck] + (c6[ck] - c3[ck]) * ct) * ca;
+            }
+            ctx.putImageData(cid, 0, 0);
+        }
+        var va = +$('pg-vig').value / 100;
+        if (va) {
+            var g = ctx.createRadialGradient(S / 2, S / 2, S * 0.25, S / 2, S / 2, S * 0.75);
+            g.addColorStop(0, 'rgba(0,0,0,0)'); g.addColorStop(1, 'rgba(0,0,0,' + (0.85 * va) + ')');
+            ctx.save(); ctx.fillStyle = g; ctx.fillRect(0, 0, S, S); ctx.restore();
+        }
+    }
+    // draw(): the cover redraws once per screen frame while a fader moves; the previews and the
+    // rules check (the slow parts) wait until the fader has been still for a moment
+    var drawQueued = false, slowTimer = null;
+    function draw() {
+        if (drawQueued) return; drawQueued = true;
+        requestAnimationFrame(function () {
+            drawQueued = false; drawCover(true);
+            clearTimeout(slowTimer); slowTimer = setTimeout(function () { drawCover(false); drawSlow(); }, 260);
+        });
+    }
+    var work = document.createElement('canvas'); work.width = work.height = N / 2;
+    var wctx = work.getContext('2d', {willReadFrequently: true});
+    function drawCover(fast) {
+        if (!origImg.complete || !origImg.naturalWidth) return;
+        saveState();
+        if (fast) {                                   // half size: 4x fewer pixels while you drag
+            artLayer(wctx, N / 2); texts(wctx, 0.5, true, true); coverPass(wctx, N / 2);
+            mctx.drawImage(work, 0, 0, N, N);
+        } else {
+            artLayer(mctx, N); texts(mctx, 1, true, true); coverPass(mctx, N);
+        }
+        accentLayer(mctx, 0, 0, N, N, 0, 0, N, N);
+        guides();
+    }
+    function drawSlow() {
+        if (!origImg.complete || !origImg.naturalWidth) return;
+        rulesCheck();
+        var ig = $('pg-ig').getContext('2d'); ig.drawImage(master, 0, 0);
+        drawRecord($('pg-rec').getContext('2d'), 1080);
+        var sp = $('pg-sp').getContext('2d'); sp.drawImage($('pg-rec'), 0, 0, 480, 480);
+        $('pg-sp-t').textContent = $('pg-title').value;
+        var tf = FONTS.find(function (f) { return f.family === $('pg-title-font').value; });
+        var nf = FONTS.find(function (f) { return f.family === $('pg-name-font').value; });
+        var warn = [tf, nf].filter(function (f) { return f && !f.public_ok; }).map(function (f) { return f.name + ' (' + f.badge + ')'; });
+        $('pg-font-note').textContent = warn.length ? 'Not for public work: ' + warn.join(', ') : '';
+    }
+    function drawRecord(ctx, S) {
+        var m = $('pg-mood').selectedOptions[0];
+        ctx.fillStyle = m && m.dataset.light ? m.dataset.light : '#D6D1C8'; ctx.fillRect(0, 0, S, S);
+        var rr = S * 0.31, x = S / 2, y = S * 0.43;
+        ctx.fillStyle = '#0F0D0C'; ctx.beginPath(); ctx.arc(x, y, rr, 0, Math.PI * 2); ctx.fill();
+        var tmp = document.createElement('canvas'); tmp.width = N; tmp.height = N; var t = tmp.getContext('2d', {willReadFrequently: true});
+        artLayer(t, N); texts(t, 1, true, false);
+        var ar = rr * 0.9, src = R + 60;
+        ctx.save(); ctx.beginPath(); ctx.arc(x, y, ar, 0, Math.PI * 2); ctx.clip();
+        ctx.drawImage(tmp, CX - src, CY - src, src * 2, src * 2, x - ar, y - ar, ar * 2, ar * 2); ctx.restore();
+        ctx.fillStyle = '#0F0D0C'; ctx.beginPath(); ctx.arc(x, y, S * 0.008, 0, Math.PI * 2); ctx.fill();
+        var title = caseFor($('pg-title').value, $('pg-title-caps').checked);
+        var on = $('pg-accent-on').value, ink = inkCol();
+        tracked(ctx, title, x, y + rr + S * 0.07, +$('pg-title-size').value * S / N, +$('pg-title-track').value * S / N, $('pg-title-font').value, accent && (on === 'title' || on === 'both') ? accent : ink);
+        tracked(ctx, 'INCH OF SHADOW', x, y + rr + S * 0.13, 15 * S / N, 8 * S / N, $('pg-name-font').value, accent && (on === 'name' || on === 'both') ? accent : '#46403a');
+        coverPass(ctx, S);
+        ctx.save(); ctx.beginPath(); ctx.arc(x, y, ar, 0, Math.PI * 2); ctx.clip();
+        accentLayer(ctx, CX - src, CY - src, src * 2, src * 2, x - ar, y - ar, ar * 2, ar * 2); ctx.restore();
+    }
+    // A: guides on a separate canvas over the cover (never part of the download)
+    function guides() {
+        var g = $('pg-guides').getContext('2d'); g.clearRect(0, 0, N, N);
+        function line(x1, y1, x2, y2, col, w, dash) { g.strokeStyle = col; g.lineWidth = w; g.setLineDash(dash || []); g.beginPath(); g.moveTo(x1, y1); g.lineTo(x2, y2); g.stroke(); }
+        function grid(f, col, dash) { f.forEach(function (t) { line(t * N, 0, t * N, N, col, 2, dash); line(0, t * N, N, t * N, col, 2, dash); }); }
+        if ($('pg-g-thirds').checked) grid([1 / 3, 2 / 3], 'rgba(210,40,40,.85)');
+        if ($('pg-g-golden').checked) grid([0.382, 0.618], 'rgba(214,160,40,.95)', [14, 8]);
+        if ($('pg-g-centre').checked) { line(N / 2, 0, N / 2, N, 'rgba(40,120,220,.8)', 2); line(0, N / 2, N, N / 2, 'rgba(40,120,220,.8)', 2); }
+        if ($('pg-g-safe').checked) { g.setLineDash([6, 6]); g.strokeStyle = 'rgba(40,160,90,.9)'; g.lineWidth = 2; g.strokeRect(N * 0.05, N * 0.05, N * 0.9, N * 0.9); }
+        g.setLineDash([]);
+    }
+    // B: the rules, measured live on the finished cover
+    function rulesCheck() {
+        var S = 96, c = document.createElement('canvas'); c.width = S; c.height = S;
+        var x = c.getContext('2d', {willReadFrequently: true}); x.drawImage(master, 0, 0, S, S);
+        var d = x.getImageData(0, 0, S, S).data, px = [], i, j;
+        for (i = 0; i < d.length; i += 4) px.push([d[i], d[i + 1], d[i + 2]]);
+        // three colours by k-means, seeded at the lightest, middle and darkest pixels
+        var byL = px.slice().sort(function (a, b) { return (a[0] + a[1] + a[2]) - (b[0] + b[1] + b[2]); });
+        var cen = [byL[byL.length - 1], byL[Math.floor(byL.length / 2)], byL[0]].map(function (p) { return p.slice(); });
+        var lab = new Array(px.length);
+        for (var it = 0; it < 10; it++) {
+            var sum = [[0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0]];
+            for (i = 0; i < px.length; i++) {
+                var best = 0, bd = 1e9;
+                for (j = 0; j < 3; j++) { var dr = px[i][0] - cen[j][0], dg = px[i][1] - cen[j][1], db = px[i][2] - cen[j][2], dd = dr * dr + dg * dg + db * db; if (dd < bd) { bd = dd; best = j; } }
+                lab[i] = best; sum[best][0] += px[i][0]; sum[best][1] += px[i][1]; sum[best][2] += px[i][2]; sum[best][3]++;
+            }
+            for (j = 0; j < 3; j++) if (sum[j][3]) cen[j] = [sum[j][0] / sum[j][3], sum[j][1] / sum[j][3], sum[j][2] / sum[j][3]];
+        }
+        var cnt = [0, 0, 0]; lab.forEach(function (l) { cnt[l]++; });
+        var parts = [0, 1, 2].map(function (k) { return {c: cen[k], p: cnt[k] / px.length}; }).sort(function (a, b) { return b.p - a.p; });
+        // light / mid / dark values and the empty space (pixels close to the main colour)
+        var v = [0, 0, 0], empty = 0, m0 = parts[0].c;
+        px.forEach(function (p) {
+            var L = (0.299 * p[0] + 0.587 * p[1] + 0.114 * p[2]) / 255; v[L > 0.7 ? 0 : L > 0.35 ? 1 : 2]++;
+            if (Math.abs(p[0] - m0[0]) + Math.abs(p[1] - m0[1]) + Math.abs(p[2] - m0[2]) < 45) empty++;
+        });
+        v = v.map(function (n) { return n / px.length; }); empty /= px.length;
+        // the accent = pixels in a clearly different, saturated colour from the main one (ink and paper don't count)
+        function hsv(p) { var r = p[0] / 255, g = p[1] / 255, b = p[2] / 255, mx = Math.max(r, g, b), mn = Math.min(r, g, b), dl = mx - mn, h = 0;
+            if (dl) { h = mx === r ? ((g - b) / dl) % 6 : mx === g ? (b - r) / dl + 2 : (r - g) / dl + 4; h *= 60; if (h < 0) h += 360; }
+            return [h, mx ? dl / mx : 0, mx]; }
+        var mh = hsv(m0), accN = 0, accSum = [0, 0, 0];
+        var full = mctx.getImageData(0, 0, N, N).data, tot = N * N / 4;      // every 2nd pixel each way: small sparks (lenses) still count
+        for (var yy = 0; yy < N; yy += 2) for (var xx = 0; xx < N; xx += 2) { i = (yy * N + xx) * 4; var p = [full[i], full[i + 1], full[i + 2]], q = hsv(p), dh = Math.abs(q[0] - mh[0]); dh = Math.min(dh, 360 - dh);
+            if (q[1] > 0.35 && q[2] > 0.25 && (dh > 35 || mh[1] < 0.12)) { accN++; accSum[0] += p[0]; accSum[1] += p[1]; accSum[2] += p[2]; } }
+        var vs = v.slice().sort(function (a, b) { return b - a; });
+        // the pie, in the cover's own three colours
+        var pc = $('pg-pie').getContext('2d'), a0 = -Math.PI / 2; pc.clearRect(0, 0, 132, 132);
+        parts.forEach(function (q) {
+            var a1 = a0 + q.p * Math.PI * 2; pc.beginPath(); pc.moveTo(66, 66); pc.arc(66, 66, 60, a0, a1); pc.closePath();
+            pc.fillStyle = 'rgb(' + q.c.map(Math.round).join(',') + ')'; pc.fill(); pc.strokeStyle = '#222'; pc.lineWidth = 1; pc.stroke(); a0 = a1;
+        });
+        var pct = function (f) { return Math.round(f * 100); };
+        var ok = function (b) { return b ? '✓' : '✗'; };
+        var acc = accN / tot, accCol = accN ? 'rgb(' + accSum.map(function (x) { return Math.round(x / accN); }).join(',') + ')' : '';
+        $('pg-rules-text').innerHTML =
+            '<b>Colour 60 · 30 · 10</b>: the three main colours ' + pct(parts[0].p) + ' · ' + pct(parts[1].p) + ' · ' + pct(parts[2].p) + '<br>' +
+            '<b>Accent</b> (a clearly different colour): ' + (accN < 4 ? '0%' : acc < 0.01 ? (accN * 4) + ' px (' + (acc * 100).toFixed(acc < 0.001 ? 3 : 2) + '%)' : pct(acc) + '%') +
+            (accN >= 4 ? ' <span class="pg-swatch" style="background:' + accCol + '"></span>' : '') +
+            ' <span class="' + (accN >= 4 && acc <= 0.15 ? 'pg-ok' : 'pg-no') + '">' + ok(accN >= 4 && acc <= 0.15) + (accN < 4 ? ' missing' : acc > 0.15 ? ' too big for an accent' : acc < 0.03 ? ' a spark, far below 10% (fine for a tiny focal point)' : ' there') + '</span><br>' +
+            '<b>Values 70 · 20 · 10</b> (light · mid · dark): ' + pct(v[0]) + ' · ' + pct(v[1]) + ' · ' + pct(v[2]) +
+            ' <span class="' + (vs[1] >= 0.1 ? 'pg-ok' : 'pg-no') + '">' + ok(vs[1] >= 0.1) + (vs[1] >= 0.1 ? ' depth' : ' few mid tones') + '</span><br>' +
+            '<b>Negative space</b> (target 70% or more): ' + pct(empty) + '% <span class="' + (empty >= 0.7 ? 'pg-ok' : 'pg-no') + '">' + ok(empty >= 0.7) + '</span><br>' +
+            '<b>Never 50/50</b>: the main colour is ' + pct(parts[0].p) + '% <span class="' + (parts[0].p >= 0.55 ? 'pg-ok' : 'pg-no') + '">' + ok(parts[0].p >= 0.55) + '</span><br>' +
+            '<span class="brand-muted">Axis at ' + Math.round(CY / N * 1000) / 10 + '% from the top (thirds 33 / 67, golden 38 / 62). Title middle at ' + Math.round((+$('pg-title-y').value + +$('pg-title-size').value * 0.5) / N * 1000) / 10 + '% (bottom third band 67 to 100, its middle 83). Measured on the square, text included.</span>';
+    }
+    document.querySelectorAll('.pg-controls input, .pg-controls select').forEach(function (el) {
+        el.addEventListener(el.type === 'range' || el.type === 'text' || el.type === 'color' ? 'input' : 'change', function () {
+            if (el.id === 'pg-c60' || el.id === 'pg-c30') $('pg-c-on').checked = true;          // picking a 60/30 colour turns the paint on
+            if (el.id === 'pg-c10' && $('pg-acl-recolour')) $('pg-acl-recolour').checked = true; // picking the 10 recolours the lenses
+            if (el.id === 'pg-cover') loadAll();
+            else if (el.id === 'pg-look' || el.id === 'pg-look-scale') loadBase();
+            else if (el.id === 'pg-look2' || el.id === 'pg-look2-scale') loadBase2(); else draw();
+        });
+    });
+    document.querySelectorAll('.pg-sw').forEach(function (b) {
+        b.addEventListener('click', function () { document.querySelectorAll('.pg-sw').forEach(function (x) { x.classList.remove('on'); }); b.classList.add('on'); accent = b.dataset.c; draw(); });
+    });
+    document.querySelectorAll('.pg-arrow[data-d]').forEach(function (b) {
+        b.addEventListener('click', function () {
+            var sel = $(b.dataset.for), n = sel.options.length;
+            sel.selectedIndex = (sel.selectedIndex + (+b.dataset.d) + n) % n;
+            if (sel.id === 'pg-cover') loadAll(); else if (sel.id === 'pg-look') loadBase(); else if (sel.id === 'pg-look2') loadBase2(); else draw();
+        });
+    });
+    // keyboard: with a font menu focused, left/right arrows step through the fonts
+    document.querySelectorAll('.pg-font').forEach(function (sel) {
+        sel.addEventListener('keydown', function (e) {
+            if (e.key !== 'ArrowLeft' && e.key !== 'ArrowRight') return;
+            e.preventDefault(); var n = sel.options.length;
+            sel.selectedIndex = (sel.selectedIndex + (e.key === 'ArrowRight' ? 1 : -1) + n) % n; draw();
+        });
+    });
+    function dl(canvas, name) { canvas.toBlob(function (b) { var a = document.createElement('a'); a.href = URL.createObjectURL(b); a.download = name; a.click(); }); }
+    $('pg-dl').onclick = function () { clearTimeout(slowTimer); drawCover(false); drawSlow(); dl(master, SLUG + '-square.png'); };
+    $('pg-dl-rec').onclick = function () { clearTimeout(slowTimer); drawCover(false); drawSlow(); dl($('pg-rec'), SLUG + '-record.png'); };
+    $('pg-reset').onclick = function () { try { localStorage.removeItem(SK); } catch (e) {} location.reload(); };
+    // keep the work across refreshes (this computer only); Reset clears it. Undo / Redo walk the history.
+    var HIST = [], HI = -1, applying = false, lastPush = 0;
+    function snapshot() {
+        var st = {accent: accent, hidden: JSON.parse(JSON.stringify(HIDDEN)), lookHidden: JSON.parse(JSON.stringify(LHID))};
+        document.querySelectorAll('.pg-controls input[id], .pg-controls select[id]').forEach(function (el) { st[el.id] = el.type === 'checkbox' ? el.checked : el.value; });
+        return st;
+    }
+    function saveState() {
+        var st = snapshot(), js = JSON.stringify(st);
+        try { localStorage.setItem(SK, js); } catch (e) {}
+        if (applying) return;
+        if (HI >= 0 && JSON.stringify(HIST[HI]) === js) return;
+        var now = Date.now();
+        if (HI >= 0 && now - lastPush < 700 && HI === HIST.length - 1) HIST[HI] = st;   // one slider drag = one step
+        else { HIST = HIST.slice(0, HI + 1); HIST.push(st); HI = HIST.length - 1; if (HIST.length > 200) { HIST.shift(); HI--; } }
+        lastPush = now; undoButtons();
+    }
+    function undoButtons() { $('pg-undo').disabled = HI <= 0; $('pg-redo').disabled = HI >= HIST.length - 1; }
+    function applyState(st) {
+        if (st.hidden) HIDDEN = {title: st.hidden.title || {}, name: st.hidden.name || {}, micro: st.hidden.micro || {}};
+        else if (st['pg-font-show']) { st['pg-title-show'] = st['pg-name-show'] = st['pg-font-show']; }
+        if (st.lookHidden) { LHID = st.lookHidden; try { localStorage.setItem(LHK, JSON.stringify(LHID)); } catch (e) {} fillLooks(); }
+        Object.keys(st).forEach(function (id) {
+            var el = $(id); if (!el || /-font$/.test(id)) return;
+            if (el.type === 'checkbox') el.checked = !!st[id]; else el.value = st[id];
+        });
+        fillAll();
+        Object.keys(TEXTS).forEach(function (k) { var id = TEXTS[k].sel; if (st[id] && Array.prototype.some.call($(id).options, function (o) { return o.value === st[id]; })) $(id).value = st[id]; });
+        accent = st.accent || '';
+        document.querySelectorAll('.pg-sw').forEach(function (b) { b.classList.toggle('on', (b.dataset.c || '') === accent); });
+    }
+    function jump(to) {
+        if (to < 0 || to >= HIST.length) return;
+        var prevLook = imgKey();
+        HI = to; applying = true; applyState(HIST[HI]); saveHidden();
+        if (imgKey() !== prevLook) loadAll(); else draw();
+        applying = false; undoButtons();
+    }
+    function imgKey() { return [$('pg-cover') ? $('pg-cover').value : '', $('pg-look').value, $('pg-look-scale').value, $('pg-look2').value, $('pg-look2-scale').value].join('|'); }
+    // hold to compare: the cover without looks and palette while the button is pressed
+    (function () {
+        var b = $('pg-compare'), on = function (e) { e.preventDefault(); bypass = true; drawCover(false); }, off = function () { if (bypass) { bypass = false; drawCover(false); } };
+        b.addEventListener('mousedown', on); b.addEventListener('touchstart', on);
+        ['mouseup', 'mouseleave', 'touchend', 'touchcancel'].forEach(function (ev) { b.addEventListener(ev, off); });
+    })();
+    $('pg-undo').onclick = function () { jump(HI - 1); };
+    $('pg-redo').onclick = function () { jump(HI + 1); };
+    document.addEventListener('keydown', function (e) {
+        if (!(e.metaKey || e.ctrlKey) || e.key.toLowerCase() !== 'z') return;
+        if (document.activeElement && document.activeElement.type === 'text') return;   // typing: the field's own undo
+        e.preventDefault(); if (e.shiftKey) jump(HI + 1); else jump(HI - 1);
+    });
+    // saved versions: kept in the release file, so they stay on every computer and browser
+    var VAPI = '/api/playground/' + encodeURIComponent(SLUG) + '/versions', VERS = [];
+    function vmsg(t) { $('pg-vmsg').textContent = t; if (t) setTimeout(function () { if ($('pg-vmsg').textContent === t) $('pg-vmsg').textContent = ''; }, 4000); }
+    function showVersions(list) {
+        VERS = list || []; var sel = $('pg-vlist'), cur = sel.value;
+        sel.innerHTML = '<option value="">saved versions (' + VERS.length + ')…</option>';
+        VERS.slice().reverse().forEach(function (v) { var o = document.createElement('option'); o.value = v.name; o.textContent = v.name + ' · ' + v.saved; sel.appendChild(o); });
+        if (cur) sel.value = cur;
+    }
+    fetch(VAPI).then(function (r) { return r.json(); }).then(function (d) { showVersions(d.versions); }).catch(function () {});
+    $('pg-vsave').onclick = function () {
+        var name = $('pg-vname').value.trim();
+        if (!name) { vmsg('give it a name first'); $('pg-vname').focus(); return; }
+        fetch(VAPI, {method: 'POST', headers: {'Content-Type': 'application/json'}, body: JSON.stringify({name: name, state: snapshot()})})
+            .then(function (r) { return r.json().then(function (d) { if (!r.ok) throw new Error(d.error); return d; }); })
+            .then(function (d) { showVersions(d.versions); $('pg-vlist').value = name; $('pg-vname').value = ''; vmsg('saved "' + name + '"'); })
+            .catch(function (e) { vmsg('not saved: ' + e.message); });
+    };
+    $('pg-vload').onclick = function () {
+        var v = VERS.find(function (x) { return x.name === $('pg-vlist').value; }); if (!v) { vmsg('pick a version first'); return; }
+        var prevLook = imgKey();
+        applying = true; applyState(v.state); saveHidden(); applying = false;
+        if (imgKey() !== prevLook) loadAll(); else draw();
+        vmsg('opened "' + v.name + '"');
+    };
+    $('pg-vdel').onclick = function () {
+        var name = $('pg-vlist').value; if (!name) { vmsg('pick a version first'); return; }
+        if (!confirm('Delete the saved version "' + name + '"?')) return;
+        fetch(VAPI + '/delete', {method: 'POST', headers: {'Content-Type': 'application/json'}, body: JSON.stringify({name: name})})
+            .then(function () { return fetch(VAPI); }).then(function (r) { return r.json(); }).then(function (d) { $('pg-vlist').value = ''; showVersions(d.versions); vmsg('deleted "' + name + '"'); });
+    };
+    (function restore() {
+        var st; try { st = JSON.parse(localStorage.getItem(SK) || 'null'); } catch (e) { st = null; }
+        if (st) applyState(st);
+    })();
+    undoButtons();
+    document.fonts.ready.then(function () { Promise.all(FONTS.map(function (f) { return document.fonts.load('40px "' + f.family + '"').catch(function () {}); })).then(draw); });
+    loadAll();
+})();
+</script>
+{% endif %}
+{% endblock %}

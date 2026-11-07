@@ -1,0 +1,20 @@
+{
+  "note": "Every backup Claude makes is recorded here; the Dashboard reads it. Dates are the backup folder names on the drive.",
+  "backups": [
+    {
+      "date": "2026-09-24",
+      "where": "/Volumes/Intenso/Inch of Shadow BACKUP/2026-09-24",
+      "what": "the system: code with history, youtube without renders, videos, .claude, Claude's memory. Not the assets (Amir's call)."
+    },
+    {
+      "date": "2026-10-19",
+      "where": "/Volumes/Intenso/Inch of Shadow BACKUP/2026-10-19",
+      "what": "FULL: the whole Inch of Shadow folder (19 GB), the whole ~/.claude, a git bundle of Inchofshadowcode and the list of uncommitted files. Recorded here on 2026-11-04 (was missing)."
+    },
+    {
+      "date": "2026-10-25",
+      "where": "/Volumes/Intenso/PROJECTS BACKUP/2026-10-25",
+      "what": "Ableton PROJECTS, Amir's picked list: 20 full projects + 13 changed-only (38.6 GB). NOT in: DONE, Doom changes, Men Machine Remix and a few small ones. Recorded here on 2026-11-04 (was missing)."
+    }
+  ]
+}

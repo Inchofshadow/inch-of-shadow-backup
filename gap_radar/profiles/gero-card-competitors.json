@@ -1,0 +1,22 @@
+{
+  "name": "gero-card-competitors",
+  "question": "What do users say about Wirex and other crypto debit cards (fees, cashback, top-up, KYC, card blocks, support, country limits, self-custody)?",
+  "system_extra": "Context: research for a self-custody crypto debit card tied to a Cardano wallet. Group by theme (fees, cashback cuts, top-up and FX, KYC and onboarding, frozen cards or accounts, support, country availability, self-custody vs exchange custody). For each theme name the cards it hits (Wirex, Cardano Card, Crypto.com, Nexo, RedotPay, Coinbase Card, Bitpanda, Plutus, SecondFi card, others), how often it repeats, and quote 1-2 short user lines with links. Mark what a switching user would want from a new card. Ignore referral-code spam.",
+  "output_dir": "/Users/amir/Desktop/Gero/gap-radar-reports/gero-card-competitors/",
+  "crowding": false,
+  "sources": {
+    "reddit": {
+      "subs": ["Wirex", "Crypto_com", "nexo", "CryptoCurrency", "cardano"],
+      "phrases": ["\"wirex\"", "\"crypto card\"", "\"debit card\"", "\"cashback\"", "\"card fees\"", "\"card frozen\"", "\"cardano card\""]
+    },
+    "hn_queries": ["crypto debit card", "wirex"],
+    "stackexchange": {"sites": [], "queries": []},
+    "youtube_queries": ["wirex card review", "best crypto debit card", "crypto card cashback comparison", "cardano card wirex"],
+    "github_queries": [],
+    "appstore": {
+      "genres": [],
+      "app_ids": ["6762381032", "1262148500", "1455341917", "6449689356", "886427730", "1447326389"]
+    },
+    "hikerapi": {"hashtags": [], "accounts": [], "max_calls": 0}
+  }
+}

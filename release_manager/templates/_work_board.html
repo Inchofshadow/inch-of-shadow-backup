@@ -1,0 +1,161 @@
+{# Work page, bottom section: the Control Panel board, read-only tower view of
+   plans/control-panel/tickets.json (was board.html). Cards come from /api/board/cards. #}
+<section class="work-section" id="board-section">
+    <section class="cp-block" id="cp-block">
+        <div class="cp-head">
+            <div>
+                <div class="k">Separate board</div>
+                <h2>Control Panel</h2>
+                <p class="form-subtitle">Brand for the song era. Own file, own rules, not mixed into the tickets above. Top to bottom is build order; each floor unlocks the next.{% if board %} Source: plans/control-panel/tickets.json, updated {{ board.updated }}.{% endif %}</p>
+            </div>
+        </div>
+        {% if cp %}
+        <div class="board-kpis">
+            <div class="board-kpi"><div class="k">Open</div><div class="v" id="cp-open">{{ cp.open }}</div></div>
+            <div class="board-kpi"><div class="k">Waiting on you</div><div class="v gold">{{ cp.waiting }}</div></div>
+            <div class="board-kpi"><div class="k">Floor now</div><div class="v" id="cp-floor">{{ cp.floor }} of 6</div></div>
+            <div class="board-kpi"><div class="k">Deadline</div><div class="v">{{ cp.deadline or "none" }}</div></div>
+        </div>
+        {% else %}
+        <div class="board-kpis">
+            <div class="board-kpi"><div class="k">Open</div><div class="v" id="cp-open">board unavailable</div></div>
+            <div class="board-kpi"><div class="k">Floor now</div><div class="v" id="cp-floor">?</div></div>
+        </div>
+        {% endif %}
+    </section>
+{% if board_error %}
+    <div class="board-error">
+        <strong>plans/control-panel/tickets.json is not valid.</strong>
+        <pre>{{ board_error }}</pre>
+    </div>
+{% elif board %}
+    <div class="board-filters" id="board-filters">
+        <button class="chip on" data-filter="hide-done">Hide done</button>
+        <button class="chip" data-filter="waiting">Waiting on Amir</button>
+        <button class="chip" data-filter="lane:Control Panel">Control Panel</button>
+        <button class="chip" data-filter="lane:Marketing">Marketing</button>
+        {% for cat in board.categories %}
+        <button class="chip" data-filter="cat:{{ cat.slug }}">{{ cat.name }}</button>
+        {% endfor %}
+    </div>
+    <div class="board-legend">
+        <span><i class="sw cat-words"></i>Words</span>
+        <span><i class="sw cat-look"></i>Look</span>
+        <span><i class="sw cat-formats"></i>Formats</span>
+        <span><i class="sw cat-machine"></i>Machine</span>
+        <span><i class="sw cat-measure"></i>Measurement</span>
+        <span><i class="sw cat-mkt"></i>Marketing</span>
+    </div>
+
+    <div class="tower">
+    {% for f in board.floors %}
+        {% if not loop.first %}<div class="connector">unlocks</div>{% endif %}
+        <div class="floor{% if f.is_current %} current{% endif %}{% if f.n == 6 %} mk{% endif %}" data-floor="{{ f.n }}">
+            <div class="floor-label">
+                <div class="n">{{ f.n }}</div>
+                <div class="name">{{ f.name }}</div>
+                <div class="needs">{% if f.after %}after floor {{ f.after }}{% else %}start here{% endif %}</div>
+                {% if f.is_current %}<div class="status">building now</div>{% endif %}
+            </div>
+            <div class="cards">
+            {% for c in f.tickets %}
+                <button class="tcard cat-{{ c.category_slug if c.lane == 'Control Panel' else 'mkt' }}"
+                        data-id="{{ c.id }}" data-status="{{ c.status }}" data-lane="{{ c.lane }}" data-cat="{{ c.category_slug }}">
+                    <span class="row"><span class="tid">{{ c.id }}</span><span class="pill st-{{ c.status }}">{{ c.status }}</span></span>
+                    <span class="ttitle">{{ c.title }}</span>
+                    {% if c.needs %}<span class="dep">needs {{ c.needs|join(", ") }}</span>{% endif %}
+                </button>
+            {% else %}
+                <div class="tghost">{% if f.n == 5 %}parent added when floor 3 is decided{% elif f.n == 6 %}opens after the Control Panel{% else %}empty{% endif %}</div>
+            {% endfor %}
+            </div>
+        </div>
+    {% endfor %}
+    </div>
+
+    <section class="tdetail" id="tdetail" hidden>
+        <div class="head">
+            <div><span class="lanechip" id="b-lane"></span><h2 id="b-title"></h2></div>
+            <span class="pill" id="b-status"></span>
+        </div>
+        <div class="field"><div class="k">Why</div><div class="v" id="b-why"></div></div>
+        <div class="field"><div class="k">Serves</div><div class="v" id="b-serves"></div></div>
+        <div class="field"><div class="k">Question</div><div class="v" id="b-question"></div></div>
+        <div class="field"><div class="k">References</div><div class="v" id="b-references"></div></div>
+        <div class="field"><div class="k">Needs</div><div class="v" id="b-needs"></div></div>
+        <div class="field"><div class="k">Unblocks</div><div class="v" id="b-unblocks"></div></div>
+        <div class="field"><div class="k">Outputs</div><div class="v" id="b-outputs"></div></div>
+        <div class="field"><div class="k">Decision</div><div class="v" id="b-decision"></div></div>
+        <div class="field"><div class="k">Notes</div><div class="v" id="b-notes"></div></div>
+    </section>
+
+    <script>
+    fetch('/api/board/cards').then(function (r) { return r.json(); }).then(function (cards) {
+        var root = document.getElementById('board-section');
+        var byId = {};
+        cards.forEach(function (c) { byId[c.id] = c; });
+
+        var state = { hideDone: true, waiting: false, lane: null, cat: null };
+        function applyFilters() {
+            root.querySelectorAll('.tcard').forEach(function (el) {
+                var st = el.dataset.status, lane = el.dataset.lane, cat = el.dataset.cat, show = true;
+                if (state.hideDone && st === 'done') show = false;
+                if (state.waiting && st !== 'proposed') show = false;
+                if (state.lane && lane !== state.lane) show = false;
+                if (state.cat && cat !== state.cat) show = false;
+                el.hidden = !show;
+            });
+        }
+        document.getElementById('board-filters').addEventListener('click', function (e) {
+            var b = e.target.closest('button'); if (!b) return;
+            var f = b.dataset.filter;
+            if (f === 'hide-done') { state.hideDone = !state.hideDone; b.classList.toggle('on', state.hideDone); }
+            else if (f === 'waiting') { state.waiting = !state.waiting; b.classList.toggle('on', state.waiting); }
+            else if (f.indexOf('lane:') === 0) {
+                var lane = f.slice(5);
+                state.lane = (state.lane === lane) ? null : lane;
+                root.querySelectorAll('[data-filter^="lane:"]').forEach(function (x) {
+                    x.classList.toggle('on', x.dataset.filter === 'lane:' + state.lane);
+                });
+            }
+            else if (f.indexOf('cat:') === 0) {
+                var cat = f.slice(4);
+                state.cat = (state.cat === cat) ? null : cat;
+                root.querySelectorAll('[data-filter^="cat:"]').forEach(function (x) {
+                    x.classList.toggle('on', x.dataset.filter === 'cat:' + state.cat);
+                });
+            }
+            applyFilters();
+        });
+
+        function text(id, value) { document.getElementById(id).textContent = value || 'none'; }
+        function list(id, items, fmt) {
+            var el = document.getElementById(id); el.textContent = '';
+            if (!items || !items.length) { el.textContent = 'none'; return; }
+            var ul = document.createElement('ul');
+            items.forEach(function (it) { var li = document.createElement('li'); li.textContent = fmt ? fmt(it) : it; ul.appendChild(li); });
+            el.appendChild(ul);
+        }
+        function open(id) {
+            var c = byId[id]; if (!c) return;
+            root.querySelectorAll('.tcard.open').forEach(function (x) { x.classList.remove('open'); });
+            root.querySelector('.tcard[data-id="' + id + '"]').classList.add('open');
+            text('b-lane', c.lane + ' · ' + c.category + ' · floor ' + c.floor + (c.size ? ' · size ' + c.size : '') + (c.model ? ' · model ' + c.model : ''));
+            text('b-title', c.id + ' ' + c.title);
+            var st = document.getElementById('b-status'); st.textContent = c.status; st.className = 'pill st-' + c.status;
+            text('b-why', c.why); text('b-serves', c.serves); text('b-question', c.question);
+            list('b-references', c.references, function (r) { return (r.type ? r.type + ': ' : '') + (r.path_or_url || '') + (r.note ? ' (' + r.note + ')' : ''); });
+            list('b-needs', c.needs); list('b-unblocks', c.unblocks); list('b-outputs', c.outputs);
+            text('b-decision', c.decision ? c.decision + (c.decided_on ? ' (' + c.decided_on + ')' : '') : '');
+            list('b-notes', c.notes);
+            var d = document.getElementById('tdetail'); d.hidden = false;
+            d.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        }
+        root.querySelectorAll('.tcard').forEach(function (el) {
+            el.addEventListener('click', function () { open(el.dataset.id); });
+        });
+        applyFilters();
+    });
+    </script>
+{% endif %}
+</section>

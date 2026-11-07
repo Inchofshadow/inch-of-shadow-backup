@@ -1,0 +1,269 @@
+[
+ {
+  "name": "Age and era confessions in the nostalgia frame",
+  "insight": "The most repeated opening move in comments is stating one's age or era, then tying the music to a memory: clubs in Belgium, DC or Mexico City, a discman in '93, radio shows taped at night. Older listeners announce they are still dancing or that they only now found the genre. New beat, EBM and gothic dance sets trigger this most.",
+  "examples": [
+   "I'm 56 and never knew",
+   "elder goth here",
+   "creature of the 80's and 90's",
+   "now I am 64",
+   "taking me back to '93",
+   "nostalgia pura",
+   "a mis 52 años"
+  ],
+  "evidence_ids": [
+   2,
+   6,
+   106,
+   107,
+   110,
+   126,
+   134,
+   195,
+   221,
+   276,
+   278,
+   281,
+   282,
+   284,
+   296,
+   299
+  ],
+  "use": "Some of you danced to this in Belgian clubs before I was born. I still hear those rooms in every kick I program.",
+  "strength": 5
+ },
+ {
+  "name": "Track ID and tracklist requests by timestamp",
+  "insight": "The most common question by far is what a track is, almost always pinned to a minute mark, plus direct requests for a full tracklist. Other commenters answer each other, and pinned tracklists get thanked as a gesture of care.",
+  "examples": [
+   "track in the 1:50",
+   "could this be the tracklist",
+   "canción del minuto 27:00",
+   "track list porfa",
+   "rola del minuto 17:45",
+   "waiting for the track ID guy"
+  ],
+  "evidence_ids": [
+   74,
+   95,
+   180,
+   240,
+   241,
+   286,
+   301,
+   302,
+   303,
+   305,
+   307
+  ],
+  "use": "The track at 2:14 is not out yet. Ask below and I will tell you when it is.",
+  "strength": 5
+ },
+ {
+  "name": "Timestamped peak moments and transitions",
+  "insight": "Listeners mark the exact second a transition or drop hit them. Praise for mixing craft shows up as a timestamp plus words like mind blowing or lost it, which also invites others to jump to that moment.",
+  "examples": [
+   "39:00 best transition",
+   "transition at 29:22",
+   "when Testure comes in",
+   "energy in the room at 33:53",
+   "39min",
+   "at exactly almost 1 hour"
+  ],
+  "evidence_ids": [
+   96,
+   115,
+   125,
+   132,
+   133,
+   135,
+   152,
+   213,
+   216,
+   259
+  ],
+  "use": "Skip to 3:40. That is where the bass stops asking permission.",
+  "strength": 5
+ },
+ {
+  "name": "Surprise drop of old industrial and EBM classics",
+  "insight": "Gothic and EBM crowds react most to an unexpected classic in a modern set: Skinny Puppy, Lords of Acid, Thrill Kill Cult, Björk. They write about not expecting it and about the jolt it gave them.",
+  "examples": [
+   "was NOT expecting that Skinny Puppy drop",
+   "woke up like a sleeper agent",
+   "the Lords are here",
+   "not expecting Army of Me",
+   "adding in the Lords was genius"
+  ],
+  "evidence_ids": [
+   106,
+   107,
+   119,
+   120,
+   123,
+   128,
+   130,
+   140
+  ],
+  "use": "I did not plan to sample an old EBM record on this one. It asked to be in there.",
+  "strength": 4
+ },
+ {
+  "name": "Repeat listening and sets that grow over time",
+  "insight": "People report playing the same set daily or coming back over and over, and say it keeps getting better as it goes or with each listen. Several say they play a new upload start to finish right away.",
+  "examples": [
+   "almost every day since it came out",
+   "I come back to this set all the time",
+   "gets better every time",
+   "kept getting better",
+   "1000 plays coming",
+   "instantly play it from beginning to end"
+  ],
+  "evidence_ids": [
+   23,
+   29,
+   70,
+   122,
+   136,
+   145,
+   150,
+   162,
+   185,
+   196
+  ],
+  "use": "This one is slow to open on purpose. By the third listen you will hear the second bassline.",
+  "strength": 4
+ },
+ {
+  "name": "FOMO and wish I was there",
+  "insight": "Viewers far from the event say they envy the people in the room, want to go to a gothic disco rave someday, or plan to fly in. Distance and other hemispheres come up often.",
+  "examples": [
+   "envious of every person who got to be there",
+   "wish I was there",
+   "rarely get FOMO",
+   "makes me wish I was there",
+   "want to go to a gothic disco rave",
+   "once you see him live"
+  ],
+  "evidence_ids": [
+   19,
+   116,
+   148,
+   156,
+   179,
+   183,
+   198,
+   237,
+   243
+  ],
+  "use": "For everyone who wrote that they could not be in Berlin that night, this is the room as it sounded.",
+  "strength": 4
+ },
+ {
+  "name": "Soundtrack for work, study, chores and sleep",
+  "insight": "Long mixes get used as background for working, writing papers, studying, the gym, kitchen dancing or sleeping. People often say the background music turned into dancing.",
+  "examples": [
+   "go-to vibe session when I'm working",
+   "love to listen while I work",
+   "makes the slow work day better",
+   "background groove for a final paper",
+   "dancing around my kitchen",
+   "perfect sleeping music"
+  ],
+  "evidence_ids": [
+   13,
+   67,
+   127,
+   146,
+   175,
+   211,
+   312,
+   320
+  ],
+  "use": "Made for 2am but it works at a desk too. Tell me where you play it.",
+  "strength": 4
+ },
+ {
+  "name": "Discovery through a clip, then the full set",
+  "insight": "Many write that they stumbled on a set by accident, saw a clip on Instagram and went looking for the whole thing, or never knew dark disco existed. Short clips clearly feed long listens.",
+  "examples": [
+   "stumbled upon this",
+   "accidentally found this",
+   "saw a clip on IG and had to find the full set",
+   "seeing this ALL over Instagram",
+   "never heard of before this",
+   "discovered completely organically"
+  ],
+  "evidence_ids": [
+   2,
+   17,
+   117,
+   139,
+   188,
+   190,
+   199,
+   215,
+   320
+  ],
+  "use": "If you only know the reel, the full track is longer and darker. Link in bio.",
+  "strength": 4
+ },
+ {
+  "name": "Let the music speak: no phones, no talking",
+  "insight": "Crowds without phones get loud praise, and a host talking over a set drew a wave of complaints. Fans value an undistracted floor and room for the DJ.",
+  "examples": [
+   "no phones on the dancefloor",
+   "amount of people NOT on phones",
+   "where are their phones",
+   "crowd respected the dj",
+   "constant talking over the set",
+   "just let us enjoy the music"
+  ],
+  "evidence_ids": [
+   0,
+   105,
+   111,
+   137,
+   201,
+   202,
+   203,
+   204,
+   205,
+   209
+  ],
+  "use": "No phones in that room, so I only have this one clip. The rest stays with the people who were there.",
+  "strength": 4
+ },
+ {
+  "name": "Goth disco feeling words: dark, Halloween, black and red, energy",
+  "insight": "The feeling is named through goth imagery and party energy at once: a disco goth heart, Halloween every day, black and red nights, Dracula and Dark Souls jokes, bats. It mixes with blunt energy words like unmatched, monster beat and bangers. Some also argue about what counts as dark wave or new beat.",
+  "examples": [
+   "disco goth heart",
+   "halloween every day",
+   "all Black and Red",
+   "energy is unmatched",
+   "the beat is a monster",
+   "not a very dark wave disco",
+   "not precisely new beat"
+  ],
+  "evidence_ids": [
+   1,
+   5,
+   8,
+   14,
+   19,
+   21,
+   22,
+   24,
+   121,
+   124,
+   131,
+   157,
+   163,
+   297,
+   300
+  ],
+  "use": "Not goth, not disco. Something in between that still wants you to move.",
+  "strength": 3
+ }
+]

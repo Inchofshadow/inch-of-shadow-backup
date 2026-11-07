@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!-- DRAFT, NOT INSTALLED (Income 5, 2026-11-05). Weekly Gap Radar, Sunday 05:00 (no IG session that day).
+     Install only on Amir's yes to the spend rules:
+       1. set radar_cap_usd_month + ios_reserve_usd_month in gap_radar/schedule.json
+       2. cp this file to ~/Library/LaunchAgents/com.inchofshadow.gap-radar.plist
+       3. launchctl load ~/Library/LaunchAgents/com.inchofshadow.gap-radar.plist
+     Remove: launchctl unload that file, then delete it. -->
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.inchofshadow.gap-radar</string>
+    <key>ProgramArguments</key>
+    <array>
+        <string>/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/bin/python3.9</string>
+        <string>/Users/amir/Desktop/Inch of Shadow/Inchofshadowcode/gap_radar/schedule.py</string>
+    </array>
+    <key>WorkingDirectory</key>
+    <string>/Users/amir/Desktop/Inch of Shadow/Inchofshadowcode</string>
+    <key>StartCalendarInterval</key>
+    <dict><key>Weekday</key><integer>0</integer><key>Hour</key><integer>5</integer><key>Minute</key><integer>0</integer></dict>
+    <key>StandardOutPath</key>
+    <string>/Users/amir/Desktop/Inch of Shadow/Inchofshadowcode/docs/reports/gap-radar-launchd.log</string>
+    <key>StandardErrorPath</key>
+    <string>/Users/amir/Desktop/Inch of Shadow/Inchofshadowcode/docs/reports/gap-radar-launchd.log</string>
+</dict>
+</plist>

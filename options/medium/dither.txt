@@ -1,0 +1,1 @@
+Medium: error-diffusion dither, fine dots in two colours, like an early computer screen or printer output.

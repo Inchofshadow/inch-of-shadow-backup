@@ -1,0 +1,116 @@
+file,length,key in name,measured,verdict
+Stickz VCT - Vocal One-Shots/Stickz VCT - Vocal One-Shot 01 - C.wav,0.4s,C,"C2 (131 Hz, conf 86)",MATCH
+Stickz VCT - Vocal One-Shots/Stickz VCT - Vocal One-Shot 02 - C.wav,0.3s,C,"C4 (521 Hz, conf 93)",MATCH
+Stickz VCT - Vocal One-Shots/Stickz VCT - Vocal One-Shot 03 - C.wav,0.6s,C,"C3 (260 Hz, conf 93)",MATCH
+Stickz VCT - Vocal One-Shots/Stickz VCT - Vocal One-Shot 04 - C.wav,0.4s,C,"C4 (520 Hz, conf 89)",MATCH
+Stickz VCT - Vocal One-Shots/Stickz VCT - Vocal One-Shot 05 - C.wav,0.3s,C,"C4 (525 Hz, conf 85)",MATCH
+Stickz VCT - Vocal One-Shots/Stickz VCT - Vocal One-Shot 06 - C.wav,0.2s,C,"C3 (260 Hz, conf 94)",MATCH
+Stickz VCT - Vocal One-Shots/Stickz VCT - Vocal One-Shot 07 - C.wav,0.7s,C,"C3 (261 Hz, conf 88)",MATCH
+Stickz VCT - Vocal One-Shots/Stickz VCT - Vocal One-Shot 08 - C.wav,0.3s,C,"C3 (261 Hz, conf 97)",MATCH
+Stickz VCT - Vocal One-Shots/Stickz VCT - Vocal One-Shot 09 - C.wav,0.2s,C,"C4 (525 Hz, conf 93)",MATCH
+Stickz VCT - Vocal One-Shots/Stickz VCT - Vocal One-Shot 10 - C.wav,0.3s,C,"C3 (261 Hz, conf 98)",MATCH
+Stickz VCT - Vocoded Loops/Stickz VCT - Vocoded Loop 01 - 90BPM A#min.wav,10.7s,A#min,"Fmin (r=0.84, next C#maj)",close (2nd/3rd guess)
+Stickz VCT - Vocoded Loops/Stickz VCT - Vocoded Loop 02 - 100BPM Dmaj.wav,19.2s,Dmaj,"Bmin (r=0.77, next Dmaj)",RELATIVE (same notes)
+Stickz VCT - Vocoded Loops/Stickz VCT - Vocoded Loop 03 - 100BPM Dmaj.wav,19.2s,Dmaj,"C#min (r=0.88, next Emaj)",DIFFERENT
+Stickz VCT - Vocoded Loops/Stickz VCT - Vocoded Loop 04 - 100BPM Emin.wav,9.6s,Emin,"Gmaj (r=0.83, next Bmin)",RELATIVE (same notes)
+Stickz VCT - Vocoded Loops/Stickz VCT - Vocoded Loop 05 - 100BPM Fmin.wav,9.6s,Fmin,"D#maj (r=0.67, next A#maj)",DIFFERENT
+Stickz VCT - Vocoded Loops/Stickz VCT - Vocoded Loop 06 - 128BPM C#min.wav,7.5s,C#min,"Emaj (r=0.71, next C#min)",RELATIVE (same notes)
+Stickz VCT - Vocoded Loops/Stickz VCT - Vocoded Loop 07 - 128BPM Fmin.wav,15.0s,Fmin,"Cmin (r=0.63, next Fmin)",close (2nd/3rd guess)
+Stickz VCT - Vocoded Loops/Stickz VCT - Vocoded Loop 08 - 128BPM Gmin.wav,7.5s,Gmin,"Dmin (r=0.77, next Gmin)",close (2nd/3rd guess)
+Stickz VCT - Vocoded Loops/Stickz VCT - Vocoded Loop 09 - 140BPM Cmin.wav,6.9s,Cmin,"Gmin (r=0.69, next D#maj)",close (2nd/3rd guess)
+Stickz VCT - Vocoded Loops/Stickz VCT - Vocoded Loop 10 - 140BPM D#min.wav,13.7s,D#min,"D#min (r=0.81, next D#maj)",MATCH
+Stickz VCT - Vocoded Loops/Stickz VCT - Vocoded Loop 11 - 140BPM Fmin.wav,6.9s,Fmin,"A#min (r=0.70, next Fmin)",close (2nd/3rd guess)
+Stickz VCT - Vocoded Loops/Stickz VCT - Vocoded Loop 12 - 140BPM Bmin.wav,6.9s,Bmin,"F#min (r=0.68, next Dmaj)",close (2nd/3rd guess)
+Stickz VCT - Vocoded Loops/Stickz VCT - Vocoded Loop 13 - 150BPM Gmaj.wav,12.8s,Gmaj,"Amaj (r=0.76, next Dmaj)",DIFFERENT
+Stickz VCT - Vocoded Loops/Stickz VCT - Vocoded Loop 14 - 150BPM G#min.wav,6.4s,G#min,"D#min (r=0.58, next Bmaj)",close (2nd/3rd guess)
+Stickz VCT - Vocoded Loops/Stickz VCT - Vocoded Loop 15 - 150BPM Amin.wav,6.4s,Amin,"Amin (r=0.65, next Cmaj)",MATCH
+Stickz VCT - Vocoded Loops/Stickz VCT - Vocoded Loop 16 - 150BPM A#min.wav,6.4s,A#min,"A#min (r=0.66, next C#maj)",MATCH
+Stickz VCT - Vocoded Loops/Stickz VCT - Vocoded Loop 17 - 150BPM Bmin.wav,6.4s,Bmin,"Dmaj (r=0.67, next Bmin)",RELATIVE (same notes)
+Stickz VCT - Vocoded Loops/Stickz VCT - Vocoded Loop 18 - 160BPM D#min.wav,12.0s,D#min,"F#maj (r=0.68, next D#min)",RELATIVE (same notes)
+Stickz VCT - Vocoded Loops/Stickz VCT - Vocoded Loop 19 - 160BPM Gmaj.wav,12.0s,Gmaj,"Dmaj (r=0.89, next Bmin)",DIFFERENT
+Stickz VCT - Vocoded Loops/Stickz VCT - Vocoded Loop 20 - 160BPM G#min.wav,12.0s,G#min,"Bmaj (r=0.90, next D#min)",RELATIVE (same notes)
+Stickz VCT - Vocoded Loops/Vocoded Layers/Stickz VCT - Vocoded Loop Layer 01 - 90BPM A#min.wav,10.7s,A#min,"A#min (r=0.82, next C#maj)",MATCH
+Stickz VCT - Vocoded Loops/Vocoded Layers/Stickz VCT - Vocoded Loop Layer 02 - 100BPM Dmaj.wav,19.2s,Dmaj,"Bmin (r=0.82, next Dmaj)",RELATIVE (same notes)
+Stickz VCT - Vocoded Loops/Vocoded Layers/Stickz VCT - Vocoded Loop Layer 03 - 100BPM Dmaj.wav,19.2s,Dmaj,"Amaj (r=0.86, next C#min)",DIFFERENT
+Stickz VCT - Vocoded Loops/Vocoded Layers/Stickz VCT - Vocoded Loop Layer 04 - 100BPM Emin.wav,9.6s,Emin,"Gmaj (r=0.91, next Dmaj)",RELATIVE (same notes)
+Stickz VCT - Vocoded Loops/Vocoded Layers/Stickz VCT - Vocoded Loop Layer 05 - 100BPM Fmin.wav,9.6s,Fmin,"Fmin (r=0.82, next Cmin)",MATCH
+Stickz VCT - Vocoded Loops/Vocoded Layers/Stickz VCT - Vocoded Loop Layer 06 - 128BPM C#min.wav,7.5s,C#min,"Emaj (r=0.89, next C#min)",RELATIVE (same notes)
+Stickz VCT - Vocoded Loops/Vocoded Layers/Stickz VCT - Vocoded Loop Layer 07 - 128BPM Fmin.wav,15.0s,Fmin,"Cmin (r=0.81, next Fmin)",close (2nd/3rd guess)
+Stickz VCT - Vocoded Loops/Vocoded Layers/Stickz VCT - Vocoded Loop Layer 08 - 128BPM Gmin.wav,7.5s,Gmin,"Dmin (r=0.75, next Dmaj)",close (2nd/3rd guess)
+Stickz VCT - Vocoded Loops/Vocoded Layers/Stickz VCT - Vocoded Loop Layer 09 - 140BPM Cmin.wav,6.9s,Cmin,"Cmin (r=0.91, next D#maj)",MATCH
+Stickz VCT - Vocoded Loops/Vocoded Layers/Stickz VCT - Vocoded Loop Layer 10 - 140BPM D#min.wav,13.7s,D#min,"D#min (r=0.72, next A#min)",MATCH
+Stickz VCT - Vocoded Loops/Vocoded Layers/Stickz VCT - Vocoded Loop Layer 11 - 140BPM Fmin.wav,6.9s,Fmin,"Fmin (r=0.87, next C#maj)",MATCH
+Stickz VCT - Vocoded Loops/Vocoded Layers/Stickz VCT - Vocoded Loop Layer 12 - 140BPM Bmin.wav,6.9s,Bmin,"Dmaj (r=0.81, next Bmin)",RELATIVE (same notes)
+Stickz VCT - Vocoded Loops/Vocoded Layers/Stickz VCT - Vocoded Loop Layer 13 - 150BPM Gmaj.wav,12.8s,Gmaj,"Dmaj (r=0.93, next Bmin)",close (2nd/3rd guess)
+Stickz VCT - Vocoded Loops/Vocoded Layers/Stickz VCT - Vocoded Loop Layer 14 - 150BPM G#min.wav,6.4s,G#min,"Bmaj (r=0.84, next D#min)",RELATIVE (same notes)
+Stickz VCT - Vocoded Loops/Vocoded Layers/Stickz VCT - Vocoded Loop Layer 15 - 150BPM Amin.wav,6.4s,Amin,"Amin (r=0.82, next Amaj)",MATCH
+Stickz VCT - Vocoded Loops/Vocoded Layers/Stickz VCT - Vocoded Loop Layer 16 - 150BPM A#min.wav,6.4s,A#min,"A#min (r=0.91, next C#maj)",MATCH
+Stickz VCT - Vocoded Loops/Vocoded Layers/Stickz VCT - Vocoded Loop Layer 17 - 150BPM Bmin.wav,6.4s,Bmin,"Dmaj (r=0.84, next Bmin)",RELATIVE (same notes)
+Stickz VCT - Vocoded Loops/Vocoded Layers/Stickz VCT - Vocoded Loop Layer 18 - 160BPM D#min.wav,12.0s,D#min,"D#min (r=0.73, next A#min)",MATCH
+Stickz VCT - Vocoded Loops/Vocoded Layers/Stickz VCT - Vocoded Loop Layer 19 - 160BPM Gmaj.wav,12.0s,Gmaj,"Dmaj (r=0.85, next Bmin)",DIFFERENT
+Stickz VCT - Vocoded Loops/Vocoded Layers/Stickz VCT - Vocoded Loop Layer 20 - 160BPM G#min.wav,12.0s,G#min,"Bmaj (r=0.89, next D#min)",RELATIVE (same notes)
+Stickz VCT - Vocal Chop Loops/Stickz VCT - Vocal Chop Loop 01 - 90BPM A#min.wav,10.7s,A#min,"Fmin (r=0.82, next C#maj)",close (2nd/3rd guess)
+Stickz VCT - Vocal Chop Loops/Stickz VCT - Vocal Chop Loop 02 - 100BPM Dmaj.wav,9.6s,Dmaj,"Emaj (r=0.82, next Amaj)",close (2nd/3rd guess)
+Stickz VCT - Vocal Chop Loops/Stickz VCT - Vocal Chop Loop 03 - 100BPM Dmaj.wav,9.6s,Dmaj,"C#min (r=0.80, next Emaj)",DIFFERENT
+Stickz VCT - Vocal Chop Loops/Stickz VCT - Vocal Chop Loop 04 - 100BPM Emin.wav,9.6s,Emin,"Gmaj (r=0.69, next Bmin)",RELATIVE (same notes)
+Stickz VCT - Vocal Chop Loops/Stickz VCT - Vocal Chop Loop 05 - 100BPM Fmin.wav,9.6s,Fmin,"A#min (r=0.61, next A#maj)",DIFFERENT
+Stickz VCT - Vocal Chop Loops/Stickz VCT - Vocal Chop Loop 06 - 128BPM C#min.wav,7.5s,C#min,"F#maj (r=0.73, next F#min)",DIFFERENT
+Stickz VCT - Vocal Chop Loops/Stickz VCT - Vocal Chop Loop 07 - 128BPM Fmin.wav,15.0s,Fmin,"Gmin (r=0.75, next A#maj)",DIFFERENT
+Stickz VCT - Vocal Chop Loops/Stickz VCT - Vocal Chop Loop 08 - 128BPM Gmin.wav,7.5s,Gmin,"Gmin (r=0.49, next Fmaj)",MATCH
+Stickz VCT - Vocal Chop Loops/Stickz VCT - Vocal Chop Loop 09 - 140BPM Cmin.wav,6.9s,Cmin,"Gmin (r=0.66, next D#maj)",close (2nd/3rd guess)
+Stickz VCT - Vocal Chop Loops/Stickz VCT - Vocal Chop Loop 10 - 140BPM D#min.wav,13.7s,D#min,"D#min (r=0.68, next D#maj)",MATCH
+Stickz VCT - Vocal Chop Loops/Stickz VCT - Vocal Chop Loop 11 - 140BPM Fmin.wav,6.9s,Fmin,"D#maj (r=0.65, next A#maj)",DIFFERENT
+Stickz VCT - Vocal Chop Loops/Stickz VCT - Vocal Chop Loop 12 - 140BPM Bmin.wav,6.9s,Bmin,"F#min (r=0.76, next C#maj)",DIFFERENT
+Stickz VCT - Vocal Chop Loops/Stickz VCT - Vocal Chop Loop 13 - 150BPM Gmaj.wav,6.4s,Gmaj,"Amaj (r=0.69, next Amin)",DIFFERENT
+Stickz VCT - Vocal Chop Loops/Stickz VCT - Vocal Chop Loop 14 - 150BPM G#min.wav,6.4s,G#min,"C#maj (r=0.57, next C#min)",DIFFERENT
+Stickz VCT - Vocal Chop Loops/Stickz VCT - Vocal Chop Loop 15 - 150BPM Amin.wav,6.4s,Amin,"Cmaj (r=0.56, next Dmin)",RELATIVE (same notes)
+Stickz VCT - Vocal Chop Loops/Stickz VCT - Vocal Chop Loop 16 - 150BPM A#min.wav,6.4s,A#min,"Cmin (r=0.56, next G#maj)",close (2nd/3rd guess)
+Stickz VCT - Vocal Chop Loops/Stickz VCT - Vocal Chop Loop 17 - 150BPM Bmin.wav,6.4s,Bmin,"C#min (r=0.47, next C#maj)",DIFFERENT
+Stickz VCT - Vocal Chop Loops/Stickz VCT - Vocal Chop Loop 18 - 160BPM D#min.wav,12.0s,D#min,"F#maj (r=0.68, next D#min)",RELATIVE (same notes)
+Stickz VCT - Vocal Chop Loops/Stickz VCT - Vocal Chop Loop 19 - 160BPM Gmaj.wav,12.0s,Gmaj,"Dmaj (r=0.87, next Bmin)",DIFFERENT
+Stickz VCT - Vocal Chop Loops/Stickz VCT - Vocal Chop Loop 20 - 160BPM G#min.wav,12.0s,G#min,"Bmaj (r=0.73, next D#min)",RELATIVE (same notes)
+Stickz VCT - Legacy Loops/Stickz VCT - Legacy Vocal Chop Loop 01 - 128BPM C#min.wav,7.5s,C#min,"Bmaj (r=0.75, next F#maj)",DIFFERENT
+Stickz VCT - Legacy Loops/Stickz VCT - Legacy Vocal Chop Loop 02 - 128BPM C#min.wav,7.5s,C#min,"Emaj (r=0.81, next C#min)",RELATIVE (same notes)
+Stickz VCT - Legacy Loops/Stickz VCT - Legacy Vocal Chop Loop 03 - 128BPM C#maj.wav,7.5s,C#maj,"G#maj (r=0.83, next C#maj)",close (2nd/3rd guess)
+Stickz VCT - Legacy Loops/Stickz VCT - Legacy Vocal Chop Loop 04 - 128BPM Dmaj.wav,7.5s,Dmaj,"Amaj (r=0.76, next F#min)",close (2nd/3rd guess)
+Stickz VCT - Legacy Loops/Stickz VCT - Legacy Vocal Chop Loop 05 - 128BPM D#min.wav,7.5s,D#min,"A#min (r=0.74, next A#maj)",close (2nd/3rd guess)
+Stickz VCT - Legacy Loops/Stickz VCT - Legacy Vocal Chop Loop 06 - 128BPM Emin.wav,7.5s,Emin,"Bmin (r=0.70, next Bmaj)",DIFFERENT
+Stickz VCT - Legacy Loops/Stickz VCT - Legacy Vocal Chop Loop 07 - 128BPM Emin.wav,7.5s,Emin,"Cmaj (r=0.66, next Gmaj)",close (2nd/3rd guess)
+Stickz VCT - Legacy Loops/Stickz VCT - Legacy Vocal Chop Loop 08 - 128BPM Fmin.wav,7.5s,Fmin,"D#maj (r=0.58, next Cmin)",close (2nd/3rd guess)
+Stickz VCT - Legacy Loops/Stickz VCT - Legacy Vocal Chop Loop 09 - 128BPM Fmin.wav,7.5s,Fmin,"Gmaj (r=0.65, next Gmin)",DIFFERENT
+Stickz VCT - Legacy Loops/Stickz VCT - Legacy Vocal Chop Loop 10 - 128BPM Fmaj.wav,7.5s,Fmaj,"Amin (r=0.68, next Fmaj)",close (2nd/3rd guess)
+Stickz VCT - Legacy Loops/Stickz VCT - Legacy Vocal Chop Loop 11 - 128BPM F#maj.wav,7.5s,F#maj,"F#maj (r=0.93, next C#maj)",MATCH
+Stickz VCT - Legacy Loops/Stickz VCT - Legacy Vocal Chop Loop 12 - 128BPM Gmin.wav,7.5s,Gmin,"Gmin (r=0.83, next Gmaj)",MATCH
+Stickz VCT - Legacy Loops/Stickz VCT - Legacy Vocal Chop Loop 13 - 128BPM Gmin.wav,7.5s,Gmin,"Dmin (r=0.79, next Cmaj)",DIFFERENT
+Stickz VCT - Legacy Loops/Stickz VCT - Legacy Vocal Chop Loop 14 - 128BPM Gmaj.wav,7.5s,Gmaj,"Bmin (r=0.70, next Bmaj)",DIFFERENT
+Stickz VCT - Legacy Loops/Stickz VCT - Legacy Vocal Chop Loop 15 - 128BPM Amin.wav,7.5s,Amin,"Emin (r=0.69, next Emaj)",DIFFERENT
+Stickz VCT - Legacy Loops/Stickz VCT - Legacy Vocal Chop Loop 16 - 128BPM Amin.wav,7.5s,Amin,"Cmaj (r=0.59, next Cmin)",RELATIVE (same notes)
+Stickz VCT - Legacy Loops/Stickz VCT - Legacy Vocal Chop Loop 17 - 128BPM Amaj.wav,7.5s,Amaj,"Emaj (r=0.71, next Bmaj)",DIFFERENT
+Stickz VCT - Legacy Loops/Stickz VCT - Legacy Vocal Chop Loop 18 - 128BPM A#maj.wav,7.5s,A#maj,"Fmin (r=0.74, next G#maj)",DIFFERENT
+Stickz VCT - Legacy Loops/Stickz VCT - Legacy Vocal Chop Loop 19 - 128BPM Bmin.wav,7.5s,Bmin,"Dmaj (r=0.59, next Bmin)",RELATIVE (same notes)
+Stickz VCT - Legacy Loops/Stickz VCT - Legacy Vocal Chop Loop 20 - 150BPM Cmin.wav,6.4s,Cmin,"Dmin (r=0.67, next Dmaj)",DIFFERENT
+Stickz VCT - Legacy Loops/Stickz VCT - Legacy Vocal Chop Loop 21 - 150BPM C#min.wav,6.4s,C#min,"Emaj (r=0.78, next Emin)",RELATIVE (same notes)
+Stickz VCT - Legacy Loops/Stickz VCT - Legacy Vocal Chop Loop 22 - 150BPM Dmin.wav,6.4s,Dmin,"Amin (r=0.79, next Cmaj)",close (2nd/3rd guess)
+Stickz VCT - Legacy Loops/Stickz VCT - Legacy Vocal Chop Loop 23 - 150BPM Dmin.wav,6.4s,Dmin,"Emin (r=0.62, next Emaj)",DIFFERENT
+Stickz VCT - Legacy Loops/Stickz VCT - Legacy Vocal Chop Loop 24 - 150BPM D#min.wav,6.4s,D#min,"F#maj (r=0.64, next A#min)",RELATIVE (same notes)
+Stickz VCT - Legacy Loops/Stickz VCT - Legacy Vocal Chop Loop 25 - 150BPM Fmin.wav,6.4s,Fmin,"Fmaj (r=0.71, next Cmaj)",DIFFERENT
+Stickz VCT - Legacy Loops/Stickz VCT - Legacy Vocal Chop Loop 26 - 150BPM Fmin.wav,6.4s,Fmin,"A#maj (r=0.84, next Dmin)",DIFFERENT
+Stickz VCT - Legacy Loops/Stickz VCT - Legacy Vocal Chop Loop 27 - 150BPM Fmaj.wav,6.4s,Fmaj,"Fmin (r=0.49, next Gmin)",DIFFERENT
+Stickz VCT - Legacy Loops/Stickz VCT - Legacy Vocal Chop Loop 28 - 150BPM F#min.wav,6.4s,F#min,"Amaj (r=0.57, next F#min)",RELATIVE (same notes)
+Stickz VCT - Legacy Loops/Stickz VCT - Legacy Vocal Chop Loop 29 - 150BPM Gmin.wav,6.4s,Gmin,"Amin (r=0.47, next Amaj)",DIFFERENT
+Stickz VCT - Legacy Loops/Stickz VCT - Legacy Vocal Chop Loop 30 - 150BPM Gmaj.wav,6.4s,Gmaj,"Dmaj (r=0.70, next Gmaj)",close (2nd/3rd guess)
+Stickz VCT - Legacy Loops/Stickz VCT - Legacy Vocal Chop Loop 31 - 150BPM G#min.wav,6.4s,G#min,"Bmaj (r=0.82, next G#min)",RELATIVE (same notes)
+Stickz VCT - Legacy Loops/Stickz VCT - Legacy Vocal Chop Loop 32 - 150BPM Amin.wav,6.4s,Amin,"Cmaj (r=0.81, next Cmin)",RELATIVE (same notes)
+Stickz VCT - Legacy Loops/Stickz VCT - Legacy Vocal Chop Loop 33 - 150BPM Amaj.wav,6.4s,Amaj,"Amin (r=0.47, next G#maj)",DIFFERENT
+Stickz VCT - Legacy Loops/Stickz VCT - Legacy Vocal Chop Loop 34 - 150BPM A#min.wav,6.4s,A#min,"C#min (r=0.50, next C#maj)",close (2nd/3rd guess)
+Stickz VCT - Legacy Loops/Stickz VCT - Legacy Vocal Chop Loop 35 - 150BPM Bmin.wav,6.4s,Bmin,"Dmaj (r=0.75, next F#min)",RELATIVE (same notes)
+Stickz VCT - Granular Loops/Stickz VCT - Granular Vocal Chops 01 - 100BPM Dmin.wav,4.8s,Dmin,"Amaj (r=0.70, next Amin)",close (2nd/3rd guess)
+Stickz VCT - Granular Loops/Stickz VCT - Granular Vocal Chops 02 - 100BPM A#min.wav,9.6s,A#min,"Fmin (r=0.73, next G#maj)",DIFFERENT
+Stickz VCT - Granular Loops/Stickz VCT - Granular Vocal Chops 03 - 140BPM C#min.wav,6.9s,C#min,"C#maj (r=0.71, next G#maj)",DIFFERENT
+Stickz VCT - Granular Loops/Stickz VCT - Granular Vocal Chops 04 - 140BPM Gmin.wav,6.9s,Gmin,"A#min (r=0.43, next Dmin)",close (2nd/3rd guess)
+Stickz VCT - Granular Loops/Stickz VCT - Granular Vocal Chops 05 - 150BPM G#min.wav,6.4s,G#min,"Bmaj (r=0.65, next Emaj)",RELATIVE (same notes)
+Stickz VCT - Granular Loops/Stickz VCT - Granular Vocal Chops 06 - 150BPM Bmin.wav,6.4s,Bmin,"F#min (r=0.61, next C#min)",DIFFERENT
+Stickz VCT - Granular Loops/Stickz VCT - Granular Vocal Chops 07 - 160BPM Cmin.wav,6.0s,Cmin,"A#maj (r=0.73, next Fmaj)",DIFFERENT
+Stickz VCT - Granular Loops/Stickz VCT - Granular Vocal Chops 08 - 160BPM Emin.wav,6.0s,Emin,"Gmaj (r=0.77, next Gmin)",RELATIVE (same notes)
+Stickz VCT - Granular Loops/Stickz VCT - Granular Vocal Chops 09 - 160BPM A#min.wav,6.0s,A#min,"Fmaj (r=0.64, next Fmin)",close (2nd/3rd guess)
+Stickz VCT - Granular Loops/Stickz VCT - Granular Vocal Chops 10 - 160BPM Bmin.wav,6.0s,Bmin,"Dmaj (r=0.84, next Dmin)",RELATIVE (same notes)

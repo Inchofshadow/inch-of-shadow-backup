@@ -1,0 +1,1145 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - banner [ref=e3]:
+      - generic [ref=e4]:
+        - generic [ref=e5]:
+          - link "SoundCloud" [ref=e7] [cursor=pointer]:
+            - /url: /
+            - img [ref=e9]
+            - text: SoundCloud
+          - navigation [ref=e11]:
+            - list [ref=e12]:
+              - listitem [ref=e13]:
+                - link "Home" [ref=e14] [cursor=pointer]:
+                  - /url: /discover
+              - listitem [ref=e15]:
+                - link "Feed" [ref=e16] [cursor=pointer]:
+                  - /url: /feed
+              - listitem [ref=e17]:
+                - link "Library" [ref=e18] [cursor=pointer]:
+                  - /url: /you/library
+        - search [ref=e20]:
+          - generic [ref=e21]:
+            - searchbox "Search" [ref=e22]
+            - button "Search" [ref=e23] [cursor=pointer]:
+              - img [ref=e25]
+              - generic [ref=e27]: Search
+        - generic [ref=e28]:
+          - generic [ref=e29]:
+            - button "Sign in" [ref=e30] [cursor=pointer]:
+              - generic: Sign in
+            - button "Create a SoundCloud account" [ref=e31] [cursor=pointer]:
+              - generic: Create account
+          - link "Upload" [ref=e33] [cursor=pointer]:
+            - /url: /upload
+            - generic [ref=e34]: Upload
+          - list [ref=e35]:
+            - listitem [ref=e36]:
+              - button "Settings and more" [ref=e37] [cursor=pointer]:
+                - generic [ref=e38]:
+                  - img [ref=e40]
+                  - generic [ref=e42]: Settings and more
+    - generic [ref=e43]:
+      - generic [ref=e47]:
+        - generic [ref=e51]:
+          - strong [ref=e52]: "Now available:"
+          - text: Get heard by up to 100 listeners on your next upload with Artist or Artist Pro.
+          - link "Learn More" [ref=e53] [cursor=pointer]:
+            - /url: https://checkout.soundcloud.com/artist?ref=t375#planPicker
+        - button "Close" [ref=e54] [cursor=pointer]:
+          - img [ref=e56]
+      - main [ref=e58]:
+        - generic [ref=e59]:
+          - generic [ref=e63]:
+            - generic "DARKDISCO.ORG’s avatar" [ref=e66] [cursor=pointer]
+            - generic [ref=e67]:
+              - heading "DARKDISCO.ORG" [level=2] [ref=e68]: DARKDISCO.ORG
+              - heading "B L N, Germany" [level=3] [ref=e69]
+              - heading "Artist Pro" [level=3] [ref=e70]:
+                - link "Artist Pro" [ref=e71] [cursor=pointer]:
+                  - /url: https://checkout.soundcloud.com/artist?ref=t071
+                  - generic "Artist Pro" [ref=e72]:
+                    - generic [ref=e74]:
+                      - img [ref=e75]
+                      - generic [ref=e77]: Artist Pro
+          - generic [ref=e81]:
+            - list [ref=e83]:
+              - listitem [ref=e84]:
+                - link "All" [ref=e85] [cursor=pointer]:
+                  - /url: /dark-disco
+              - listitem [ref=e86]:
+                - link "Popular tracks" [ref=e87] [cursor=pointer]:
+                  - /url: /dark-disco/popular-tracks
+              - listitem [ref=e88]:
+                - link "Tracks" [ref=e89]:
+                  - /url: /dark-disco/tracks
+              - listitem [ref=e90]:
+                - link "Albums" [ref=e91] [cursor=pointer]:
+                  - /url: /dark-disco/albums
+              - listitem [ref=e92]:
+                - link "Playlists" [ref=e93] [cursor=pointer]:
+                  - /url: /dark-disco/sets
+              - listitem [ref=e94]:
+                - link "Reposts" [ref=e95] [cursor=pointer]:
+                  - /url: /dark-disco/reposts
+            - generic [ref=e97]:
+              - link "Go to station" [ref=e98] [cursor=pointer]:
+                - /url: /discover/sets/artist-stations:539340573
+                - generic:
+                  - img
+                - generic: Station
+              - button "Follow" [ref=e99] [cursor=pointer]:
+                - generic:
+                  - img
+                - generic: Follow
+              - button "Share" [ref=e100] [cursor=pointer]:
+                - generic:
+                  - img
+                - generic: Share
+              - button "More" [ref=e101] [cursor=pointer]:
+                - generic:
+                  - img
+                - generic: More
+          - generic [ref=e102]:
+            - generic [ref=e106]:
+              - list [ref=e107]:
+                - listitem [ref=e108]:
+                  - 'group "Track: &gt;&gt; DARK DISCO <a href=\"/tags/182\">#182</a> podcast by Feel.MA &lt;&lt; by DARKDISCO.ORG" [ref=e109]':
+                    - generic [ref=e110]:
+                      - 'link ">> DARK DISCO #182 podcast by Feel.MA <<" [ref=e112] [cursor=pointer]':
+                        - /url: /dark-disco/dark-disco-182-podcast-by-feel
+                        - 'generic ">> DARK DISCO #182 podcast by Feel.MA <<" [ref=e114]'
+                      - generic [ref=e115]:
+                        - 'generic ">> DARK DISCO #182 podcast by Feel.MA <<" [ref=e117]':
+                          - generic [ref=e118]:
+                            - button "Play" [ref=e120] [cursor=pointer]:
+                              - generic:
+                                - generic:
+                                  - img
+                            - generic [ref=e121]:
+                              - link "DARKDISCO.ORG" [ref=e123] [cursor=pointer]:
+                                - /url: /dark-disco
+                              - 'link ">> DARK DISCO #182 podcast by Feel.MA <<" [ref=e124] [cursor=pointer]':
+                                - /url: /dark-disco/dark-disco-182-podcast-by-feel
+                            - time [ref=e127]:
+                              - generic [ref=e128]: Posted 1 day ago
+                              - text: 1 day ago
+                        - generic [ref=e140]:
+                          - textbox "Write a comment" [ref=e142]
+                          - button "Submit" [disabled] [ref=e143]:
+                            - generic:
+                              - img
+                        - generic [ref=e144]:
+                          - generic [ref=e147]:
+                            - button "Like" [ref=e148] [cursor=pointer]:
+                              - generic:
+                                - img
+                              - generic: "10"
+                            - button "Repost" [ref=e149] [cursor=pointer]:
+                              - generic:
+                                - img
+                              - generic: "2"
+                            - button "Share" [ref=e150] [cursor=pointer]:
+                              - generic:
+                                - img
+                            - button "Copy Link" [ref=e151] [cursor=pointer]:
+                              - generic:
+                                - img
+                            - button "More" [ref=e152] [cursor=pointer]:
+                              - generic:
+                                - img
+                          - list "Track stats" [ref=e155]:
+                            - listitem "73 plays" [ref=e156]:
+                              - generic [ref=e157]:
+                                - img [ref=e159]
+                                - generic [ref=e161]: 73 plays
+                                - text: "73"
+                            - listitem "4 comments" [ref=e162]:
+                              - link "View all comments" [ref=e163] [cursor=pointer]:
+                                - /url: /dark-disco/dark-disco-182-podcast-by-feel/comments
+                                - img [ref=e165]
+                                - generic [ref=e167]: View all comments
+                                - text: "4"
+                - listitem [ref=e168]:
+                  - 'group "Track: &gt;&gt; DARK DISCO <a href=\"/tags/181\">#181</a> podcast by Holywanderer &lt;&lt; by DARKDISCO.ORG" [ref=e169]':
+                    - generic [ref=e170]:
+                      - 'link ">> DARK DISCO #181 podcast by Holywanderer <<" [ref=e172] [cursor=pointer]':
+                        - /url: /dark-disco/dark-disco-181-podcast-by-holywanderer
+                        - 'generic ">> DARK DISCO #181 podcast by Holywanderer <<" [ref=e174]'
+                      - generic [ref=e175]:
+                        - 'generic ">> DARK DISCO #181 podcast by Holywanderer <<" [ref=e177]':
+                          - generic [ref=e178]:
+                            - button "Play" [ref=e180] [cursor=pointer]:
+                              - generic:
+                                - generic:
+                                  - img
+                            - generic [ref=e181]:
+                              - link "DARKDISCO.ORG" [ref=e183] [cursor=pointer]:
+                                - /url: /dark-disco
+                              - 'link ">> DARK DISCO #181 podcast by Holywanderer <<" [ref=e184] [cursor=pointer]':
+                                - /url: /dark-disco/dark-disco-181-podcast-by-holywanderer
+                            - generic [ref=e185]:
+                              - time [ref=e187]:
+                                - generic [ref=e188]: Posted 11 days ago
+                                - text: 11 days ago
+                              - link "# Electronic" [ref=e190] [cursor=pointer]:
+                                - /url: /tags/electronic
+                                - text: "#"
+                                - generic [ref=e191]: Electronic
+                        - generic [ref=e203]:
+                          - textbox "Write a comment" [ref=e205]
+                          - button "Submit" [disabled] [ref=e206]:
+                            - generic:
+                              - img
+                        - generic [ref=e207]:
+                          - generic [ref=e210]:
+                            - button "Like" [ref=e211] [cursor=pointer]:
+                              - generic:
+                                - img
+                              - generic: "53"
+                            - button "Repost" [ref=e212] [cursor=pointer]:
+                              - generic:
+                                - img
+                              - generic: "11"
+                            - button "Share" [ref=e213] [cursor=pointer]:
+                              - generic:
+                                - img
+                            - button "Copy Link" [ref=e214] [cursor=pointer]:
+                              - generic:
+                                - img
+                            - button "More" [ref=e215] [cursor=pointer]:
+                              - generic:
+                                - img
+                          - list "Track stats" [ref=e218]:
+                            - listitem "418 plays" [ref=e219]:
+                              - generic [ref=e220]:
+                                - img [ref=e222]
+                                - generic [ref=e224]: 418 plays
+                                - text: "418"
+                            - listitem "38 comments" [ref=e225]:
+                              - link "View all comments" [ref=e226] [cursor=pointer]:
+                                - /url: /dark-disco/dark-disco-181-podcast-by-holywanderer/comments
+                                - img [ref=e228]
+                                - generic [ref=e230]: View all comments
+                                - text: "38"
+                - listitem [ref=e231]:
+                  - 'group "Track: PREMIERE: § (Section) - One Step, One Life, One Promise about Myself ( VIVES ) by DARKDISCO.ORG" [ref=e232]':
+                    - generic [ref=e233]:
+                      - 'link "PREMIERE: § (Section) - One Step, One Life, One Promise about Myself ( VIVES )" [ref=e235] [cursor=pointer]':
+                        - /url: /dark-disco/premiere-section-one-step-one
+                        - 'generic "PREMIERE: § (Section) - One Step, One Life, One Promise about Myself ( VIVES )" [ref=e237]'
+                      - generic [ref=e238]:
+                        - 'generic "PREMIERE: § (Section) - One Step, One Life, One Promise about Myself ( VIVES )" [ref=e240]':
+                          - generic [ref=e241]:
+                            - button "Play" [ref=e243] [cursor=pointer]:
+                              - generic:
+                                - generic:
+                                  - img
+                            - generic [ref=e244]:
+                              - link "DARKDISCO.ORG" [ref=e246] [cursor=pointer]:
+                                - /url: /dark-disco
+                              - 'link "PREMIERE: § (Section) - One Step, One Life, One Promise about Myself ( VIVES )" [ref=e247] [cursor=pointer]':
+                                - /url: /dark-disco/premiere-section-one-step-one
+                            - generic [ref=e248]:
+                              - time [ref=e250]:
+                                - generic [ref=e251]: Posted 1 month ago
+                                - text: 1 month ago
+                              - link "# Electronic" [ref=e253] [cursor=pointer]:
+                                - /url: /tags/electronic
+                                - text: "#"
+                                - generic [ref=e254]: Electronic
+                        - generic [ref=e267]:
+                          - link [ref=e268] [cursor=pointer]:
+                            - /url: ""
+                          - paragraph [ref=e269]
+                        - generic [ref=e271]:
+                          - textbox "Write a comment" [ref=e273]
+                          - button "Submit" [disabled] [ref=e274]:
+                            - generic:
+                              - img
+                        - generic [ref=e275]:
+                          - generic [ref=e277]:
+                            - generic [ref=e278]:
+                              - button "Like" [ref=e279] [cursor=pointer]:
+                                - generic:
+                                  - img
+                                - generic: "28"
+                              - button "Repost" [ref=e280] [cursor=pointer]:
+                                - generic:
+                                  - img
+                                - generic: "10"
+                              - button "Share" [ref=e281] [cursor=pointer]:
+                                - generic:
+                                  - img
+                              - button "Copy Link" [ref=e282] [cursor=pointer]:
+                                - generic:
+                                  - img
+                              - button "More" [ref=e283] [cursor=pointer]:
+                                - generic:
+                                  - img
+                            - generic "SUPPORT HERE!" [ref=e285]:
+                              - link "SUPPORT HERE!" [ref=e286] [cursor=pointer]:
+                                - /url: https://gate.sc?url=https%3A%2F%2Fvives.bandcamp.com&token=2c01f2-1-1776995115157
+                                - generic:
+                                  - generic:
+                                    - img
+                          - list "Track stats" [ref=e289]:
+                            - listitem "311 plays" [ref=e290]:
+                              - generic [ref=e291]:
+                                - img [ref=e293]
+                                - generic [ref=e295]: 311 plays
+                                - text: "311"
+                            - listitem "2 comments" [ref=e296]:
+                              - link "View all comments" [ref=e297] [cursor=pointer]:
+                                - /url: /dark-disco/premiere-section-one-step-one/comments
+                                - img [ref=e299]
+                                - generic [ref=e301]: View all comments
+                                - text: "2"
+                - listitem [ref=e302]:
+                  - 'group "Track: &gt;&gt; DARK DISCO <a href=\"/tags/180\">#180</a> podcast by POLANSKI &lt;&lt; by DARKDISCO.ORG" [ref=e303]':
+                    - generic [ref=e304]:
+                      - 'link ">> DARK DISCO #180 podcast by POLANSKI <<" [ref=e306] [cursor=pointer]':
+                        - /url: /dark-disco/dark-disco-180-podcast-by-polanski
+                        - 'generic ">> DARK DISCO #180 podcast by POLANSKI <<" [ref=e308]'
+                      - generic [ref=e309]:
+                        - 'generic ">> DARK DISCO #180 podcast by POLANSKI <<" [ref=e311]':
+                          - generic [ref=e312]:
+                            - button "Play" [ref=e314] [cursor=pointer]:
+                              - generic:
+                                - generic:
+                                  - img
+                            - generic [ref=e315]:
+                              - link "DARKDISCO.ORG" [ref=e317] [cursor=pointer]:
+                                - /url: /dark-disco
+                              - 'link ">> DARK DISCO #180 podcast by POLANSKI <<" [ref=e318] [cursor=pointer]':
+                                - /url: /dark-disco/dark-disco-180-podcast-by-polanski
+                            - generic [ref=e319]:
+                              - time [ref=e321]:
+                                - generic [ref=e322]: Posted 2 months ago
+                                - text: 2 months ago
+                              - link "# Electronic" [ref=e324] [cursor=pointer]:
+                                - /url: /tags/electronic
+                                - text: "#"
+                                - generic [ref=e325]: Electronic
+                        - generic [ref=e329]:
+                          - textbox "Write a comment" [ref=e331]
+                          - button "Submit" [disabled] [ref=e332]:
+                            - generic:
+                              - img
+                        - generic [ref=e333]:
+                          - generic [ref=e336]:
+                            - button "Like" [ref=e337] [cursor=pointer]:
+                              - generic:
+                                - img
+                              - generic: "17"
+                            - button "Repost" [ref=e338] [cursor=pointer]:
+                              - generic:
+                                - img
+                              - generic: "2"
+                            - button "Share" [ref=e339] [cursor=pointer]:
+                              - generic:
+                                - img
+                            - button "Copy Link" [ref=e340] [cursor=pointer]:
+                              - generic:
+                                - img
+                            - button "More" [ref=e341] [cursor=pointer]:
+                              - generic:
+                                - img
+                          - list "Track stats" [ref=e344]:
+                            - listitem "392 plays" [ref=e345]:
+                              - generic [ref=e346]:
+                                - img [ref=e348]
+                                - generic [ref=e350]: 392 plays
+                                - text: "392"
+                            - listitem "5 comments" [ref=e351]:
+                              - link "View all comments" [ref=e352] [cursor=pointer]:
+                                - /url: /dark-disco/dark-disco-180-podcast-by-polanski/comments
+                                - img [ref=e354]
+                                - generic [ref=e356]: View all comments
+                                - text: "5"
+                - listitem [ref=e357]:
+                  - 'group "Track: PREMIERE: Reaky Reakson - Carpevita ( Midnight Resurrection ) by DARKDISCO.ORG" [ref=e358]':
+                    - generic [ref=e359]:
+                      - 'link "PREMIERE: Reaky Reakson - Carpevita ( Midnight Resurrection )" [ref=e361] [cursor=pointer]':
+                        - /url: /dark-disco/reaky-reakson-carpevita
+                        - 'generic "PREMIERE: Reaky Reakson - Carpevita ( Midnight Resurrection )" [ref=e363]'
+                      - generic [ref=e364]:
+                        - 'generic "PREMIERE: Reaky Reakson - Carpevita ( Midnight Resurrection )" [ref=e366]':
+                          - generic [ref=e367]:
+                            - button "Play" [ref=e369] [cursor=pointer]:
+                              - generic:
+                                - generic:
+                                  - img
+                            - generic [ref=e370]:
+                              - link "DARKDISCO.ORG" [ref=e372] [cursor=pointer]:
+                                - /url: /dark-disco
+                              - 'link "PREMIERE: Reaky Reakson - Carpevita ( Midnight Resurrection )" [ref=e373] [cursor=pointer]':
+                                - /url: /dark-disco/reaky-reakson-carpevita
+                            - generic [ref=e374]:
+                              - time [ref=e376]:
+                                - generic [ref=e377]: Posted 2 months ago
+                                - text: 2 months ago
+                              - link "# Techno" [ref=e379] [cursor=pointer]:
+                                - /url: /tags/techno
+                                - text: "#"
+                                - generic [ref=e380]: Techno
+                        - generic [ref=e384]:
+                          - textbox "Write a comment" [ref=e386]
+                          - button "Submit" [disabled] [ref=e387]:
+                            - generic:
+                              - img
+                        - generic [ref=e388]:
+                          - generic [ref=e391]:
+                            - button "Like" [ref=e392] [cursor=pointer]:
+                              - generic:
+                                - img
+                              - generic: "22"
+                            - button "Repost" [ref=e393] [cursor=pointer]:
+                              - generic:
+                                - img
+                              - generic: "3"
+                            - button "Share" [ref=e394] [cursor=pointer]:
+                              - generic:
+                                - img
+                            - button "Copy Link" [ref=e395] [cursor=pointer]:
+                              - generic:
+                                - img
+                            - button "More" [ref=e396] [cursor=pointer]:
+                              - generic:
+                                - img
+                          - list "Track stats" [ref=e399]:
+                            - listitem "408 plays" [ref=e400]:
+                              - generic [ref=e401]:
+                                - img [ref=e403]
+                                - generic [ref=e405]: 408 plays
+                                - text: "408"
+                            - listitem "1 comment" [ref=e406]:
+                              - link "View all comments" [ref=e407] [cursor=pointer]:
+                                - /url: /dark-disco/reaky-reakson-carpevita/comments
+                                - img [ref=e409]
+                                - generic [ref=e411]: View all comments
+                                - text: "1"
+                - listitem [ref=e412]:
+                  - 'group "Track: &gt;&gt; DARK DISCO <a href=\"/tags/179\">#179</a> podcast by DJ ABISAL&lt;&lt; by DARKDISCO.ORG" [ref=e413]':
+                    - generic [ref=e414]:
+                      - 'link ">> DARK DISCO #179 podcast by DJ ABISAL<<" [ref=e416] [cursor=pointer]':
+                        - /url: /dark-disco/podcast-179-dj-abisal
+                        - 'generic ">> DARK DISCO #179 podcast by DJ ABISAL<<" [ref=e418]'
+                      - generic [ref=e419]:
+                        - 'generic ">> DARK DISCO #179 podcast by DJ ABISAL<<" [ref=e421]':
+                          - generic [ref=e422]:
+                            - button "Play" [ref=e424] [cursor=pointer]:
+                              - generic:
+                                - generic:
+                                  - img
+                            - generic [ref=e425]:
+                              - link "DARKDISCO.ORG" [ref=e427] [cursor=pointer]:
+                                - /url: /dark-disco
+                              - 'link ">> DARK DISCO #179 podcast by DJ ABISAL<<" [ref=e428] [cursor=pointer]':
+                                - /url: /dark-disco/podcast-179-dj-abisal
+                            - generic [ref=e429]:
+                              - time [ref=e431]:
+                                - generic [ref=e432]: Posted 2 months ago
+                                - text: 2 months ago
+                              - link "# EBM" [ref=e434] [cursor=pointer]:
+                                - /url: /tags/ebm
+                                - text: "#"
+                                - generic [ref=e435]: EBM
+                        - generic [ref=e439]:
+                          - textbox "Write a comment" [ref=e441]
+                          - button "Submit" [disabled] [ref=e442]:
+                            - generic:
+                              - img
+                        - generic [ref=e443]:
+                          - generic [ref=e446]:
+                            - button "Like" [ref=e447] [cursor=pointer]:
+                              - generic:
+                                - img
+                              - generic: "32"
+                            - button "Repost" [ref=e448] [cursor=pointer]:
+                              - generic:
+                                - img
+                              - generic: "8"
+                            - button "Share" [ref=e449] [cursor=pointer]:
+                              - generic:
+                                - img
+                            - button "Copy Link" [ref=e450] [cursor=pointer]:
+                              - generic:
+                                - img
+                            - button "More" [ref=e451] [cursor=pointer]:
+                              - generic:
+                                - img
+                          - list "Track stats" [ref=e454]:
+                            - listitem "555 plays" [ref=e455]:
+                              - generic [ref=e456]:
+                                - img [ref=e458]
+                                - generic [ref=e460]: 555 plays
+                                - text: "555"
+                            - listitem "3 comments" [ref=e461]:
+                              - link "View all comments" [ref=e462] [cursor=pointer]:
+                                - /url: /dark-disco/podcast-179-dj-abisal/comments
+                                - img [ref=e464]
+                                - generic [ref=e466]: View all comments
+                                - text: "3"
+                - listitem [ref=e467]:
+                  - 'group "Track: PREMIERE: CAMBIAFORMA - Una luz inaccesible (Black.n Remix) // Of dolls and murder by DARKDISCO.ORG" [ref=e468]':
+                    - generic [ref=e469]:
+                      - 'link "PREMIERE: CAMBIAFORMA - Una luz inaccesible (Black.n Remix) // Of dolls and murder" [ref=e471] [cursor=pointer]':
+                        - /url: /dark-disco/premiere-cambiaforma-una-luz-inaccesible-blackn-remix-of-dolls-and-murder
+                        - 'generic "PREMIERE: CAMBIAFORMA - Una luz inaccesible (Black.n Remix) // Of dolls and murder" [ref=e473]'
+                      - generic [ref=e474]:
+                        - 'generic "PREMIERE: CAMBIAFORMA - Una luz inaccesible (Black.n Remix) // Of dolls and murder" [ref=e476]':
+                          - generic [ref=e477]:
+                            - button "Play" [ref=e479] [cursor=pointer]:
+                              - generic:
+                                - generic:
+                                  - img
+                            - generic [ref=e480]:
+                              - link "DARKDISCO.ORG" [ref=e482] [cursor=pointer]:
+                                - /url: /dark-disco
+                              - 'link "PREMIERE: CAMBIAFORMA - Una luz inaccesible (Black.n Remix) // Of dolls and murder" [ref=e483] [cursor=pointer]':
+                                - /url: /dark-disco/premiere-cambiaforma-una-luz-inaccesible-blackn-remix-of-dolls-and-murder
+                            - generic [ref=e484]:
+                              - time [ref=e486]:
+                                - generic [ref=e487]: Posted 2 months ago
+                                - text: 2 months ago
+                              - link "# Electronic" [ref=e489] [cursor=pointer]:
+                                - /url: /tags/electronic
+                                - text: "#"
+                                - generic [ref=e490]: Electronic
+                        - generic [ref=e494]:
+                          - textbox "Write a comment" [ref=e496]
+                          - button "Submit" [disabled] [ref=e497]:
+                            - generic:
+                              - img
+                        - generic [ref=e498]:
+                          - generic [ref=e500]:
+                            - generic [ref=e501]:
+                              - button "Like" [ref=e502] [cursor=pointer]:
+                                - generic:
+                                  - img
+                                - generic: "63"
+                              - button "Repost" [ref=e503] [cursor=pointer]:
+                                - generic:
+                                  - img
+                                - generic: "10"
+                              - button "Share" [ref=e504] [cursor=pointer]:
+                                - generic:
+                                  - img
+                              - button "Copy Link" [ref=e505] [cursor=pointer]:
+                                - generic:
+                                  - img
+                              - button "More" [ref=e506] [cursor=pointer]:
+                                - generic:
+                                  - img
+                            - generic "Support here!" [ref=e508]:
+                              - link "Support here!" [ref=e509] [cursor=pointer]:
+                                - /url: https://gate.sc?url=https%3A%2F%2Fofdollsandmurder.bandcamp.com&token=430f85-1-1776995115158
+                                - generic:
+                                  - generic:
+                                    - img
+                          - list "Track stats" [ref=e512]:
+                            - listitem "805 plays" [ref=e513]:
+                              - generic [ref=e514]:
+                                - img [ref=e516]
+                                - generic [ref=e518]: 805 plays
+                                - text: "805"
+                            - listitem "4 comments" [ref=e519]:
+                              - link "View all comments" [ref=e520] [cursor=pointer]:
+                                - /url: /dark-disco/premiere-cambiaforma-una-luz-inaccesible-blackn-remix-of-dolls-and-murder/comments
+                                - img [ref=e522]
+                                - generic [ref=e524]: View all comments
+                                - text: "4"
+                - listitem [ref=e525]:
+                  - 'group "Track: &gt;&gt; DARK DISCO <a href=\"/tags/178\">#178</a> podcast by TATIANA VAUGHAN &lt;&lt; by DARKDISCO.ORG" [ref=e526]':
+                    - generic [ref=e527]:
+                      - 'link ">> DARK DISCO #178 podcast by TATIANA VAUGHAN <<" [ref=e529] [cursor=pointer]':
+                        - /url: /dark-disco/dark-disco-178-podcast-by-tatiana-vaughan
+                        - 'generic ">> DARK DISCO #178 podcast by TATIANA VAUGHAN <<" [ref=e531]'
+                      - generic [ref=e532]:
+                        - 'generic ">> DARK DISCO #178 podcast by TATIANA VAUGHAN <<" [ref=e534]':
+                          - generic [ref=e535]:
+                            - button "Play" [ref=e537] [cursor=pointer]:
+                              - generic:
+                                - generic:
+                                  - img
+                            - generic [ref=e538]:
+                              - link "DARKDISCO.ORG" [ref=e540] [cursor=pointer]:
+                                - /url: /dark-disco
+                              - 'link ">> DARK DISCO #178 podcast by TATIANA VAUGHAN <<" [ref=e541] [cursor=pointer]':
+                                - /url: /dark-disco/dark-disco-178-podcast-by-tatiana-vaughan
+                            - generic [ref=e542]:
+                              - time [ref=e544]:
+                                - generic [ref=e545]: Posted 3 months ago
+                                - text: 3 months ago
+                              - link "# EBM" [ref=e547] [cursor=pointer]:
+                                - /url: /tags/ebm
+                                - text: "#"
+                                - generic [ref=e548]: EBM
+                        - generic [ref=e552]:
+                          - textbox "Write a comment" [ref=e554]
+                          - button "Submit" [disabled] [ref=e555]:
+                            - generic:
+                              - img
+                        - generic [ref=e556]:
+                          - generic [ref=e559]:
+                            - button "Like" [ref=e560] [cursor=pointer]:
+                              - generic:
+                                - img
+                              - generic: "126"
+                            - button "Repost" [ref=e561] [cursor=pointer]:
+                              - generic:
+                                - img
+                              - generic: "15"
+                            - button "Share" [ref=e562] [cursor=pointer]:
+                              - generic:
+                                - img
+                            - button "Copy Link" [ref=e563] [cursor=pointer]:
+                              - generic:
+                                - img
+                            - button "More" [ref=e564] [cursor=pointer]:
+                              - generic:
+                                - img
+                          - list "Track stats" [ref=e567]:
+                            - listitem "1,529 plays" [ref=e568]:
+                              - generic [ref=e569]:
+                                - img [ref=e571]
+                                - generic [ref=e573]: 1,529 plays
+                                - text: 1,529
+                            - listitem "17 comments" [ref=e574]:
+                              - link "View all comments" [ref=e575] [cursor=pointer]:
+                                - /url: /dark-disco/dark-disco-178-podcast-by-tatiana-vaughan/comments
+                                - img [ref=e577]
+                                - generic [ref=e579]: View all comments
+                                - text: "17"
+              - img [ref=e582]
+            - generic [ref=e585]:
+              - article [ref=e586]:
+                - table [ref=e587]:
+                  - rowgroup [ref=e588]:
+                    - row "Followers 7,054 Following 843 Tracks 347" [ref=e589]:
+                      - cell "Followers 7,054" [ref=e590]:
+                        - link "Followers 7,054" [ref=e591] [cursor=pointer]:
+                          - /url: /dark-disco/followers
+                          - heading "Followers" [level=3] [ref=e592]
+                          - generic [ref=e593]: 7,054
+                      - cell "Following 843" [ref=e594]:
+                        - link "Following 843" [ref=e595] [cursor=pointer]:
+                          - /url: /dark-disco/following
+                          - heading "Following" [level=3] [ref=e596]
+                          - generic [ref=e597]: "843"
+                      - cell "Tracks 347" [ref=e598]:
+                        - link "Tracks 347" [ref=e599] [cursor=pointer]:
+                          - /url: /dark-disco/tracks
+                          - heading "Tracks" [level=3] [ref=e600]
+                          - generic [ref=e601]: "347"
+                - generic [ref=e603]:
+                  - generic [ref=e606]:
+                    - paragraph [ref=e607]: electronic body music - electro - techno - synth/cold/minimal/dark wave - synth pop - Italo - dance punk - idm - goth - new beat - low fi - cool shit
+                    - paragraph [ref=e608]:
+                      - text: DARKDISCO.ORG aka
+                      - text: DARK DISCOTHEQUE ORGANISATION.
+                      - text: ">>>Spreading DARK sound with DISCO vibe.<<<"
+                    - paragraph [ref=e609]: Podcast / Events / Premieres / Label & more
+                    - paragraph [ref=e610]:
+                      - text: "PRE-/ORDER TUNES :"
+                      - link "darkdisco.bandcamp.com/releases" [ref=e611] [cursor=pointer]:
+                        - /url: https://gate.sc?url=https%3A%2F%2Fdarkdisco.bandcamp.com%2Freleases&token=cfcdc0-1-1776995114794
+                    - paragraph [ref=e612]: PAST!!! - >
+                    - paragraph [ref=e613]:
+                      - text: 14.01.23 - Sonletal x @
+                      - link "dark-disco" [ref=e614] [cursor=pointer]:
+                        - /url: /dark-disco
+                      - text: org, Costa Rica
+                      - text: 12.11.22 - whip.me x @
+                      - link "dark-disco" [ref=e615] [cursor=pointer]:
+                        - /url: /dark-disco
+                      - text: ", Lima, Peru"
+                      - text: 13.10.22 - Berlin, Sameheads
+                      - text: 10.09.22 - > Wyspa Tamka with Nikkatze, Shakti
+                      - link "www.facebook.com/events/1436659976798694/" [ref=e616] [cursor=pointer]:
+                        - /url: https://gate.sc?url=https%3A%2F%2Fwww.facebook.com%2Fevents%2F1436659976798694%2F&token=3e3fdb-1-1776995114794
+                    - paragraph [ref=e617]:
+                      - text: 11.05.22 -> @
+                      - link "berlin-bunny" [ref=e618] [cursor=pointer]:
+                        - /url: /berlin-bunny
+                      - text: bday @
+                      - link "dark-disco" [ref=e619] [cursor=pointer]:
+                        - /url: /dark-disco
+                      - link "fb.me/e/1CPP48HFU" [ref=e620] [cursor=pointer]:
+                        - /url: https://gate.sc?url=https%3A%2F%2Ffb.me%2Fe%2F1CPP48HFU&token=31698c-1-1776995114794
+                      - text: 12.02.22 - Projekt Lab, Poznan, PL
+                      - link "fb.me/e/1enmBMww4" [ref=e621] [cursor=pointer]:
+                        - /url: https://gate.sc?url=https%3A%2F%2Ffb.me%2Fe%2F1enmBMww4&token=cd117a-1-1776995114794
+                      - text: 11.02.22- Dream Baby Dream, Berlin
+                      - text: 03.12.21 - Wyspa Tamka, Wroclaw PL
+                      - link "www.facebook.com/events/4779502555448944" [ref=e622] [cursor=pointer]:
+                        - /url: https://gate.sc?url=https%3A%2F%2Fwww.facebook.com%2Fevents%2F4779502555448944&token=b6038a-1-1776995114794
+                    - paragraph [ref=e623]:
+                      - text: 18.09.21 - @
+                      - link "dark-disco" [ref=e624] [cursor=pointer]:
+                        - /url: /dark-disco
+                      - text: x lokkal kommunity, Szczecin, PL
+                      - text: 10.09.21 - @
+                      - link "dark-disco" [ref=e625] [cursor=pointer]:
+                        - /url: /dark-disco
+                      - text: ", Wyspa Tamka, Wroclaw PL"
+                      - text: 19.03.2020 Dark Disco @ Maze, Berlin - CANCELED - other event will follow
+                      - text: 24.01.2020 Dark Disco @ Safe Room, Bangkok, Thailand
+                      - text: 07.12.2019 Dark Disco @ Volnost, Seoul, South Korea
+                      - text: 06.12.2019 Dark Disco @ Oil Club, Shenzhen. China
+                      - text: 08.11.2019 - Dark Disco + Chaotic Cult = Chaos Disco , Wyspa Tamka, Wroclaw, Poland
+                      - text: "FB:"
+                      - link "www.facebook.com/events/1458049014372153/" [ref=e626] [cursor=pointer]:
+                        - /url: https://gate.sc?url=https%3A%2F%2Fwww.facebook.com%2Fevents%2F1458049014372153%2F&token=9e92d6-1-1776995114794
+                    - paragraph [ref=e627]:
+                      - text: 08.08.2019 - Romance Disaster LIVE @ Only Vinyl Thursday , BERLIN
+                      - text: "EVENT: > RA:"
+                      - link "www.residentadvisor.net/events/1299042" [ref=e628] [cursor=pointer]:
+                        - /url: https://gate.sc?url=https%3A%2F%2Fwww.residentadvisor.net%2Fevents%2F1299042&token=b9ae05-1-1776995114794
+                      - text: "FB:"
+                      - link "www.facebook.com/events/418984095357894/" [ref=e629] [cursor=pointer]:
+                        - /url: https://gate.sc?url=https%3A%2F%2Fwww.facebook.com%2Fevents%2F418984095357894%2F&token=f992c6-1-1776995114794
+                    - paragraph [ref=e630]: REQUEST ALL PLEASE THROUGH OUR EMAIL, THX :)
+                  - link "Show more" [ref=e631] [cursor=pointer]:
+                    - /url: "#"
+                - list [ref=e633]:
+                  - listitem [ref=e634]:
+                    - link "YouTube" [ref=e636] [cursor=pointer]:
+                      - /url: https://gate.sc?url=https%3A%2F%2Fwww.youtube.com%2F%40DARKDISCOORGANISATION&token=90b44e-1-1776995114795
+                      - img [ref=e638]
+                      - text: YouTube
+                  - listitem [ref=e640]:
+                    - link "BandCamp" [ref=e642] [cursor=pointer]:
+                      - /url: https://gate.sc?url=https%3A%2F%2Fdarkdisco.bandcamp.com%2F&token=2f53b5-1-1776995114795
+                      - img [ref=e644]
+                      - text: BandCamp
+                  - listitem [ref=e646]:
+                    - link "Facebook" [ref=e648] [cursor=pointer]:
+                      - /url: https://gate.sc?url=https%3A%2F%2Fwww.facebook.com%2Fdarkdisc0&token=8170fb-1-1776995114795
+                      - img [ref=e650]
+                      - text: Facebook
+                  - listitem [ref=e652]:
+                    - link "Facebook Group" [ref=e654] [cursor=pointer]:
+                      - /url: https://gate.sc?url=https%3A%2F%2Fwww.facebook.com%2Fgroups%2F721780851726082&token=e4d01-1-1776995114795
+                      - img [ref=e656]
+                      - text: Facebook Group
+                  - listitem [ref=e658]:
+                    - link "Instagram" [ref=e660] [cursor=pointer]:
+                      - /url: https://gate.sc?url=https%3A%2F%2Fwww.instagram.com%2Fdark_disc0%2F&token=8ce52c-1-1776995114795
+                      - img [ref=e662]
+                      - text: Instagram
+              - article [ref=e665]:
+                - link "1,310 likes View all" [ref=e666] [cursor=pointer]:
+                  - /url: /dark-disco/likes
+                  - heading "1,310 likes" [level=4] [ref=e667]:
+                    - generic [ref=e668]: 1,310 likes
+                  - generic [ref=e669]: View all
+                - list [ref=e672]:
+                  - listitem [ref=e673]:
+                    - generic [ref=e674]:
+                      - 'generic "MOTZ Premiere: Kutkh Jackdaw + DSD - Blood Sacrifice [AR001]" [ref=e677]'
+                      - generic [ref=e678]:
+                        - 'generic "MOTZ Premiere: Kutkh Jackdaw + DSD - Blood Sacrifice [AR001]" [ref=e679]':
+                          - generic [ref=e681]:
+                            - link "MOTZ" [ref=e683] [cursor=pointer]:
+                              - /url: /motztechno
+                            - 'link "MOTZ Premiere: Kutkh Jackdaw + DSD - Blood Sacrifice [AR001]" [ref=e684] [cursor=pointer]':
+                              - /url: /motztechno/motz-premiere-kutkh-jackdaw
+                              - generic [ref=e685]: "MOTZ Premiere: Kutkh Jackdaw + DSD - Blood Sacrifice [AR001]"
+                        - list "Track stats" [ref=e686]:
+                          - listitem "514 plays" [ref=e687]:
+                            - generic [ref=e688]:
+                              - img [ref=e690]
+                              - generic [ref=e692]: 514 plays
+                              - text: "514"
+                          - listitem "30 likes" [ref=e693]:
+                            - link "View all likes" [ref=e694] [cursor=pointer]:
+                              - /url: /motztechno/motz-premiere-kutkh-jackdaw/likes
+                              - img [ref=e696]
+                              - generic [ref=e698]: View all likes
+                              - text: "30"
+                          - listitem "6 reposts" [ref=e699]:
+                            - link "View all reposts" [ref=e700] [cursor=pointer]:
+                              - /url: /motztechno/motz-premiere-kutkh-jackdaw/reposts
+                              - img [ref=e702]
+                              - generic [ref=e705]: View all reposts
+                              - text: "6"
+                          - listitem "5 comments" [ref=e706]:
+                            - link "View all comments" [ref=e707] [cursor=pointer]:
+                              - /url: /motztechno/motz-premiere-kutkh-jackdaw/comments
+                              - img [ref=e709]
+                              - generic [ref=e711]: View all comments
+                              - text: "5"
+                  - listitem [ref=e712]:
+                    - generic [ref=e713]:
+                      - 'generic "PREMIERE: Semita Serpens - Vibrations of Humanity [DYST005]" [ref=e716]'
+                      - generic [ref=e717]:
+                        - 'generic "PREMIERE: Semita Serpens - Vibrations of Humanity [DYST005]" [ref=e718]':
+                          - generic [ref=e720]:
+                            - link "THE BRVTALIST" [ref=e722] [cursor=pointer]:
+                              - /url: /thebrvtalistxx
+                            - 'link "PREMIERE: Semita Serpens - Vibrations of Humanity [DYST005]" [ref=e723] [cursor=pointer]':
+                              - /url: /thebrvtalistxx/premiere-semita-serpens
+                              - generic [ref=e724]: "PREMIERE: Semita Serpens - Vibrations of Humanity [DYST005]"
+                        - list "Track stats" [ref=e725]:
+                          - listitem "533 plays" [ref=e726]:
+                            - generic [ref=e727]:
+                              - img [ref=e729]
+                              - generic [ref=e731]: 533 plays
+                              - text: "533"
+                          - listitem "24 likes" [ref=e732]:
+                            - link "View all likes" [ref=e733] [cursor=pointer]:
+                              - /url: /thebrvtalistxx/premiere-semita-serpens/likes
+                              - img [ref=e735]
+                              - generic [ref=e737]: View all likes
+                              - text: "24"
+                          - listitem "5 reposts" [ref=e738]:
+                            - link "View all reposts" [ref=e739] [cursor=pointer]:
+                              - /url: /thebrvtalistxx/premiere-semita-serpens/reposts
+                              - img [ref=e741]
+                              - generic [ref=e744]: View all reposts
+                              - text: "5"
+                  - listitem [ref=e745]:
+                    - generic [ref=e746]:
+                      - generic "Vanya Velin - Oxygen Drift [MLKL046]" [ref=e749]
+                      - generic [ref=e750]:
+                        - generic "Vanya Velin - Oxygen Drift [MLKL046]" [ref=e751]:
+                          - generic [ref=e753]:
+                            - link "Vanya Velin" [ref=e755] [cursor=pointer]:
+                              - /url: /molekulpage
+                            - link "Vanya Velin - Oxygen Drift [MLKL046]" [ref=e756] [cursor=pointer]:
+                              - /url: /molekulpage/vanya-velin-oxygen-drift-mlkl046-3
+                              - generic [ref=e757]: Vanya Velin - Oxygen Drift [MLKL046]
+                        - list "Track stats" [ref=e758]:
+                          - listitem "5,713 plays" [ref=e759]:
+                            - generic [ref=e760]:
+                              - img [ref=e762]
+                              - generic [ref=e764]: 5,713 plays
+                              - text: 5,713
+                          - listitem "403 likes" [ref=e765]:
+                            - link "View all likes" [ref=e766] [cursor=pointer]:
+                              - /url: /molekulpage/vanya-velin-oxygen-drift-mlkl046-3/likes
+                              - img [ref=e768]
+                              - generic [ref=e770]: View all likes
+                              - text: "403"
+                          - listitem "12 reposts" [ref=e771]:
+                            - link "View all reposts" [ref=e772] [cursor=pointer]:
+                              - /url: /molekulpage/vanya-velin-oxygen-drift-mlkl046-3/reposts
+                              - img [ref=e774]
+                              - generic [ref=e777]: View all reposts
+                              - text: "12"
+                          - listitem "15 comments" [ref=e778]:
+                            - link "View all comments" [ref=e779] [cursor=pointer]:
+                              - /url: /molekulpage/vanya-velin-oxygen-drift-mlkl046-3/comments
+                              - img [ref=e781]
+                              - generic [ref=e783]: View all comments
+                              - text: "15"
+              - article
+              - article [ref=e784]:
+                - link "Fans also like Refresh" [ref=e785] [cursor=pointer]:
+                  - /url: "#"
+                  - heading "Fans also like" [level=4] [ref=e786]:
+                    - generic [ref=e787]: Fans also like
+                  - generic [ref=e788]: Refresh
+                - list [ref=e791]:
+                  - listitem [ref=e792]:
+                    - generic [ref=e793]:
+                      - link "From Hell To Disco’s avatar" [ref=e797] [cursor=pointer]:
+                        - /url: /from-hell-to-disco
+                        - generic "From Hell To Disco’s avatar" [ref=e800]
+                      - generic [ref=e801]:
+                        - heading "From Hell To Disco" [level=3] [ref=e803]:
+                          - link "From Hell To Disco" [ref=e804] [cursor=pointer]:
+                            - /url: /from-hell-to-disco
+                        - generic "User stats" [ref=e807]:
+                          - list [ref=e808]:
+                            - listitem "789 followers" [ref=e809]:
+                              - link "789 followers" [ref=e810] [cursor=pointer]:
+                                - /url: /from-hell-to-disco/followers
+                                - img [ref=e812]
+                                - generic [ref=e815]: 789 followers
+                                - generic [ref=e816]: "789"
+                            - listitem "59 tracks" [ref=e817]:
+                              - link "59 tracks" [ref=e818] [cursor=pointer]:
+                                - /url: /from-hell-to-disco/tracks
+                                - img [ref=e820]
+                                - generic [ref=e822]: 59 tracks
+                                - generic [ref=e823]: "59"
+                      - button "Follow" [ref=e825] [cursor=pointer]:
+                        - generic: Follow
+                  - listitem [ref=e826]:
+                    - generic [ref=e827]:
+                      - link "𝑯𝑶𝑹𝑹𝑶𝑹 𝑺𝑯𝑶𝑾 💥’s avatar" [ref=e831] [cursor=pointer]:
+                        - /url: /horror-show-gmix
+                        - generic "𝑯𝑶𝑹𝑹𝑶𝑹 𝑺𝑯𝑶𝑾 💥’s avatar" [ref=e834]
+                      - generic [ref=e835]:
+                        - heading "𝑯𝑶𝑹𝑹𝑶𝑹 𝑺𝑯𝑶𝑾 💥" [level=3] [ref=e837]:
+                          - link "𝑯𝑶𝑹𝑹𝑶𝑹 𝑺𝑯𝑶𝑾 💥" [ref=e838] [cursor=pointer]:
+                            - /url: /horror-show-gmix
+                        - generic "User stats" [ref=e841]:
+                          - list [ref=e842]:
+                            - listitem "1,577 followers" [ref=e843]:
+                              - link "1,577 followers" [ref=e844] [cursor=pointer]:
+                                - /url: /horror-show-gmix/followers
+                                - img [ref=e846]
+                                - generic [ref=e849]: 1,577 followers
+                                - generic [ref=e850]: 1,577
+                            - listitem "134 tracks" [ref=e851]:
+                              - link "134 tracks" [ref=e852] [cursor=pointer]:
+                                - /url: /horror-show-gmix/tracks
+                                - img [ref=e854]
+                                - generic [ref=e856]: 134 tracks
+                                - generic [ref=e857]: "134"
+                      - button "Follow" [ref=e859] [cursor=pointer]:
+                        - generic: Follow
+                  - listitem [ref=e860]:
+                    - generic [ref=e861]:
+                      - link "Carmilla Sioux’s avatar" [ref=e865] [cursor=pointer]:
+                        - /url: /carmillasioux
+                        - generic "Carmilla Sioux’s avatar" [ref=e868]
+                      - generic [ref=e869]:
+                        - heading "Carmilla Sioux" [level=3] [ref=e871]:
+                          - link "Carmilla Sioux" [ref=e872] [cursor=pointer]:
+                            - /url: /carmillasioux
+                        - generic "User stats" [ref=e875]:
+                          - list [ref=e876]:
+                            - listitem "1,041 followers" [ref=e877]:
+                              - link "1,041 followers" [ref=e878] [cursor=pointer]:
+                                - /url: /carmillasioux/followers
+                                - img [ref=e880]
+                                - generic [ref=e883]: 1,041 followers
+                                - generic [ref=e884]: 1,041
+                            - listitem "33 tracks" [ref=e885]:
+                              - link "33 tracks" [ref=e886] [cursor=pointer]:
+                                - /url: /carmillasioux/tracks
+                                - img [ref=e888]
+                                - generic [ref=e890]: 33 tracks
+                                - generic [ref=e891]: "33"
+                      - button "Follow" [ref=e893] [cursor=pointer]:
+                        - generic: Follow
+              - article [ref=e894]:
+                - link "843 following View all" [ref=e895] [cursor=pointer]:
+                  - /url: /dark-disco/following
+                  - heading "843 following" [level=4] [ref=e896]:
+                    - generic [ref=e897]: 843 following
+                  - generic [ref=e898]: View all
+                - list [ref=e901]:
+                  - listitem [ref=e902]:
+                    - generic [ref=e903]:
+                      - link "SoFabYouDie’s avatar" [ref=e907] [cursor=pointer]:
+                        - /url: /sofabyoudie
+                        - generic "SoFabYouDie’s avatar" [ref=e910]
+                      - generic [ref=e911]:
+                        - heading "SoFabYouDie" [level=3] [ref=e913]:
+                          - link "SoFabYouDie" [ref=e914] [cursor=pointer]:
+                            - /url: /sofabyoudie
+                        - generic "User stats" [ref=e917]:
+                          - list [ref=e918]:
+                            - listitem "255 followers" [ref=e919]:
+                              - link "255 followers" [ref=e920] [cursor=pointer]:
+                                - /url: /sofabyoudie/followers
+                                - img [ref=e922]
+                                - generic [ref=e925]: 255 followers
+                                - generic [ref=e926]: "255"
+                            - listitem "1 track" [ref=e927]:
+                              - link "1 track" [ref=e928] [cursor=pointer]:
+                                - /url: /sofabyoudie/tracks
+                                - img [ref=e930]
+                                - generic [ref=e932]: 1 track
+                                - generic [ref=e933]: "1"
+                      - button "Follow" [ref=e935] [cursor=pointer]:
+                        - generic: Follow
+                  - listitem [ref=e936]:
+                    - generic [ref=e937]:
+                      - link "Rebeka Warrior’s avatar" [ref=e941] [cursor=pointer]:
+                        - /url: /rebekawarrior
+                        - generic "Rebeka Warrior’s avatar" [ref=e944]
+                      - generic [ref=e945]:
+                        - heading "Rebeka Warrior" [level=3] [ref=e947]:
+                          - link "Rebeka Warrior" [ref=e948] [cursor=pointer]:
+                            - /url: /rebekawarrior
+                        - generic "User stats" [ref=e951]:
+                          - list [ref=e952]:
+                            - listitem "1,543 followers" [ref=e953]:
+                              - link "1,543 followers" [ref=e954] [cursor=pointer]:
+                                - /url: /rebekawarrior/followers
+                                - img [ref=e956]
+                                - generic [ref=e959]: 1,543 followers
+                                - generic [ref=e960]: 1,543
+                            - listitem "32 tracks" [ref=e961]:
+                              - link "32 tracks" [ref=e962] [cursor=pointer]:
+                                - /url: /rebekawarrior/tracks
+                                - img [ref=e964]
+                                - generic [ref=e966]: 32 tracks
+                                - generic [ref=e967]: "32"
+                      - button "Follow" [ref=e969] [cursor=pointer]:
+                        - generic: Follow
+                  - listitem [ref=e970]:
+                    - generic [ref=e971]:
+                      - link "Cybergoth’s avatar" [ref=e975] [cursor=pointer]:
+                        - /url: /cybergoth-361399767
+                        - generic "Cybergoth’s avatar" [ref=e978]
+                      - generic [ref=e979]:
+                        - heading "Cybergoth" [level=3] [ref=e981]:
+                          - link "Cybergoth" [ref=e982] [cursor=pointer]:
+                            - /url: /cybergoth-361399767
+                        - generic "User stats" [ref=e985]:
+                          - list [ref=e986]:
+                            - listitem "10 followers" [ref=e987]:
+                              - link "10 followers" [ref=e988] [cursor=pointer]:
+                                - /url: /cybergoth-361399767/followers
+                                - img [ref=e990]
+                                - generic [ref=e993]: 10 followers
+                                - generic [ref=e994]: "10"
+                            - listitem "1 track" [ref=e995]:
+                              - link "1 track" [ref=e996] [cursor=pointer]:
+                                - /url: /cybergoth-361399767/tracks
+                                - img [ref=e998]
+                                - generic [ref=e1000]: 1 track
+                                - generic [ref=e1001]: "1"
+                      - button "Follow" [ref=e1003] [cursor=pointer]:
+                        - generic: Follow
+              - article [ref=e1004]:
+                - link "Latest Comments View all" [ref=e1005] [cursor=pointer]:
+                  - /url: /dark-disco/comments
+                  - heading "Latest Comments" [level=4] [ref=e1006]:
+                    - generic [ref=e1007]: Latest Comments
+                  - generic [ref=e1008]: View all
+                - list [ref=e1011]:
+                  - listitem [ref=e1012]:
+                    - generic [ref=e1013]:
+                      - generic [ref=e1015]:
+                        - text: "on"
+                        - 'link "PREMIERE: SFRMHL - Eyes (Vittorio di Mango Remix) [ DARKDISCO.ORG ]" [ref=e1016] [cursor=pointer]':
+                          - /url: /keyimagazine/premiere-sfrmhl-eyes-vittorio
+                      - generic [ref=e1017]: “thank you for the premiere <3”
+                      - time [ref=e1019]:
+                        - generic [ref=e1020]: Posted 2 months ago
+                        - text: 2 months ago
+                  - listitem [ref=e1021]:
+                    - generic [ref=e1022]:
+                      - generic [ref=e1024]:
+                        - text: "on"
+                        - 'link "PREMIERE: Julia Govor - UMBRELLA [ JUJUKA Music ]" [ref=e1025] [cursor=pointer]':
+                          - /url: /keyimagazine/premiere-julia-govor-umbrella-jujuka-music
+                      - generic [ref=e1026]: “<3”
+                      - time [ref=e1028]:
+                        - generic [ref=e1029]: Posted 2 months ago
+                        - text: 2 months ago
+                  - listitem [ref=e1030]:
+                    - generic [ref=e1031]:
+                      - generic [ref=e1033]:
+                        - text: "on"
+                        - 'link "PREMIERE: Leona Jacewska - OKAY [ Slow Motion Records ]" [ref=e1034] [cursor=pointer]':
+                          - /url: /keyimagazine/premiere-leona-jacewska-okay
+                      - generic [ref=e1035]: “!!”
+                      - time [ref=e1037]:
+                        - generic [ref=e1038]: Posted 2 months ago
+                        - text: 2 months ago
+              - article [ref=e1039]:
+                - generic [ref=e1040]:
+                  - heading "Go mobile" [level=4] [ref=e1041]:
+                    - generic [ref=e1042]: Go mobile
+                  - generic "Dismiss"
+                - generic [ref=e1044]:
+                  - link "Download on the App Store" [ref=e1045] [cursor=pointer]:
+                    - /url: https://itunes.apple.com/us/app/soundcloud/id336353151?mt=8
+                  - link "Get it on Google Play" [ref=e1046] [cursor=pointer]:
+                    - /url: https://play.google.com/store/apps/details?id=com.soundcloud.android&hl=us&referrer=utm_source%3Dsoundcloud%26utm_medium%3Dweb%26utm_campaign%3Dweb_xsell_user_page
+              - generic [ref=e1047]:
+                - link "Legal" [ref=e1048] [cursor=pointer]:
+                  - /url: /terms-of-use
+                - text: ·
+                - generic [ref=e1049]:
+                  - link "Verträge hier kündigen" [ref=e1050] [cursor=pointer]:
+                    - /url: /pages/signed-out/cancel
+                  - text: ⁃
+                - link "Privacy" [ref=e1051] [cursor=pointer]:
+                  - /url: /pages/privacy
+                - text: ·
+                - link "Cookie Policy" [ref=e1052] [cursor=pointer]:
+                  - /url: /pages/cookies
+                - text: ·
+                - link "Cookie Manager" [ref=e1053] [cursor=pointer]:
+                  - /url: "#"
+                - text: ·
+                - link "Imprint" [ref=e1054] [cursor=pointer]:
+                  - /url: /imprint
+                - text: ·
+                - link "Artist Resources" [ref=e1055] [cursor=pointer]:
+                  - /url: https://soundcloud.com/getstarted/getheard
+                - text: ·
+                - link "Newsroom" [ref=e1056] [cursor=pointer]:
+                  - /url: https://soundcloud.com/company/newsroom
+                - text: ·
+                - link "Charts" [ref=e1057] [cursor=pointer]:
+                  - /url: /charts/top
+                - text: ·
+                - link "Transparency Reports" [ref=e1058] [cursor=pointer]:
+                  - /url: /transparency-reports
+                - 'button "Language: English (US)" [ref=e1060] [cursor=pointer]'
+    - contentinfo "miniplayer" [ref=e1061]:
+      - generic [ref=e1062]:
+        - generic:
+          - generic:
+            - generic:
+              - generic: Next up
+              - button "Clear"
+              - button "Hide queue":
+                - generic:
+                  - img
+        - generic [ref=e1063]:
+          - button "Skip to previous" [ref=e1064] [cursor=pointer]:
+            - generic:
+              - img
+            - text: Skip to previous
+          - button "Play current" [ref=e1065]:
+            - generic [ref=e1066]:
+              - img [ref=e1068]
+              - text: Play current
+          - button "Skip to next" [ref=e1070]:
+            - generic:
+              - img
+            - text: Skip to next
+          - button "Shuffle" [ref=e1072] [cursor=pointer]:
+            - generic:
+              - img
+            - text: Shuffle
+          - button "Repeat track" [ref=e1074] [cursor=pointer]:
+            - generic:
+              - generic:
+                - img
+              - text: Repeat track
+          - generic [ref=e1077]:
+            - generic [ref=e1078]: Volume
+            - button [ref=e1080] [cursor=pointer]:
+              - generic:
+                - generic:
+                  - img
+            - slider "Volume"
+  - generic:
+    - dialog "Cookies & Tracking" [ref=e1088]:
+      - generic [ref=e1090]:
+        - generic [ref=e1092]:
+          - heading "Cookies & Tracking" [level=2] [ref=e1093]
+          - generic [ref=e1094]: When clicking on “I accept”, you agree that we and our 999 partners may store and/or access information on your device, such as unique IDs in cookies to process personal data. You may accept or manage your choices by clicking below, including your right to object where legitimate interest is used. You can withdraw your consent or manage your choices at any time in your settings or the cookie manager. For additional info please refer to our Privacy Policy. Your choices will be signaled to our partners and will not affect browsing data.
+          - generic [ref=e1095]:
+            - text: "Where we have your email address, we and The Trade Desk (our advertising partner) will use it to create a unique advertising identifier (the EUID). Your identifier will be encrypted and shared with different sites and advertisers who may, subject to your choices, use it to show you personalized ads. Learn more:"
+            - link "EUID Privacy Notice" [ref=e1096] [cursor=pointer]:
+              - /url: https://www.transparentadvertising.eu/privacy
+            - text: . To withdraw consent, please visit
+            - link "EUID Transparency and Control Portal" [ref=e1097] [cursor=pointer]:
+              - /url: https://transparentadvertising.eu/
+            - text: .
+            - paragraph
+          - generic [ref=e1098]:
+            - heading "Personalized Ads" [level=3] [ref=e1099]
+            - paragraph [ref=e1101]:
+              - text: Use precise geolocation data. Actively scan device characteristics for identification. Store and/or access information on a device. Personalised advertising and content, advertising and content measurement, audience research and services development.
+              - button "List of Partners" [ref=e1102] [cursor=pointer]
+        - generic [ref=e1104]:
+          - button "I Accept" [ref=e1105] [cursor=pointer]
+          - button "Reject All" [ref=e1106] [cursor=pointer]
+          - button "Manage Preferences, Opens the preference center dialog" [ref=e1107] [cursor=pointer]: Manage Preferences
+    - text: Filters Manage Preferences

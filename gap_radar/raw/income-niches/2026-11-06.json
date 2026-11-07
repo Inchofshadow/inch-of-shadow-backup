@@ -1,0 +1,1472 @@
+[
+ {
+  "src": "reddit r/QuickBooks",
+  "title": "QBO Reports update frustrates me yet again. You can NO LONGER just click on the Line 101 Sales and Revenue total! GRR! But, I worked out a multistep convoluted workaround until they FIX IT!",
+  "text": "Have you ever been frustrated you cannot see what line 101 Sales is on QBO's GST/HST Module? The solution used to be that you could click into the detail from the GST/HST Summary Report! I used to love showing people this 'hack', and then changing the report grouping from 'customer' to 'GL account' to enable us to see in seconds any transactions accidentally marked as \"Exempt\" instead of \"Out of Scope\" (That distinction matters! Using that phrase ironically as a human now!). We could also see the totals by Income Account and compare to the P&L to see if any sales were inadvertently marked as Out of Scope that shouldn't be. But QBO's changes to the QBO Reports have caused that detail report t",
+  "url": "https://www.reddit.com/r/QuickBooks/comments/1w14we5/qbo_reports_update_frustrates_me_yet_again_you/",
+  "date": "2026-08-28"
+ },
+ {
+  "src": "reddit r/QuickBooks",
+  "title": "Is there anything wrong with doing manual journal entries for my nonprofit?",
+  "text": "Disclaimer: I am a new user to QBO. I’m a CPA but I’ve never used quickbooks in my life. I just started a nonprofit and wanted to use QBO for the first time for bookkeeping purposes. Things are definitely funky here in QBO. Anyways, is there anything wrong with doing manual journal entries for everything? Seems like nonprofits functionality within QBO is slim. I need to be able to capture my contributions and recognize my expenses, and I can’t seem to figure that bit out in QBO. Yes I’ve changed my terminology to pledges, donors, and 990. My chart of accounts still has not updated so I’m a bit confused. submitted by /u/Bizarrmenian [link] [comments]",
+  "url": "https://www.reddit.com/r/QuickBooks/comments/1rk5psk/is_there_anything_wrong_with_doing_manual_journal/",
+  "date": "2026-03-03"
+ },
+ {
+  "src": "reddit r/QuickBooks",
+  "title": "QBO why would I want to charge my customers' cards right from the invoice without their permission and before they can even review the charges? And WHY do I have to manually turn it off every single t",
+  "text": "There needs to be an account-level setting to turn this off, but the greedy, money-grabbing intuit has not bothered to add that option yet. I've wasted hours chatting and talking on the phone with support, only for the support agents to be just as surprised as I was to find out about this. submitted by /u/What_is_good97 [link] [comments]",
+  "url": "https://www.reddit.com/r/QuickBooks/comments/1tdymla/qbo_why_would_i_want_to_charge_my_customers_cards/",
+  "date": "2026-05-15"
+ },
+ {
+  "src": "reddit r/QuickBooks",
+  "title": "Anyone automating Stripe imports into QuickBooks or still doing it manually?",
+  "text": "Been processing payments through Stripe for a side project and getting the data into QuickBooks is taking way longer than it should. Curious if anyone has found a clean workflow for this — are you exporting CSVs manually, using a third party sync tool, or something else entirely? submitted by /u/FreePipe4239 [link] [comments]",
+  "url": "https://www.reddit.com/r/QuickBooks/comments/1rpr8mi/anyone_automating_stripe_imports_into_quickbooks/",
+  "date": "2026-03-10"
+ },
+ {
+  "src": "reddit r/QuickBooks",
+  "title": "QuickBooks Manual File Upload Glitch",
+  "text": "For the past hour I have been trying to manually upload a file of bank transactions and this screen keeps popping up after clicking file --> manual upload. I fucking hate quickbooks https://preview.redd.it/z3gauqvoyclg1.png?width=2551&format=png&auto=webp&s=2fdfb5223c0ec7a449e2d026613c8751f9ab8774 submitted by /u/Transportation-Hairy [link] [comments]",
+  "url": "https://www.reddit.com/r/QuickBooks/comments/1rd338o/quickbooks_manual_file_upload_glitch/",
+  "date": "2026-02-24"
+ },
+ {
+  "src": "reddit r/QuickBooks",
+  "title": "AI to analyze QuickBooks P&L instead of spreadsheets?",
+  "text": "I have always done P&L analysis the usual way: export data from QuickBooks, build pivots, calculate margins, try to explain why numbers changed. Recently I connected my QB data to an AI assistant and just started asking questions in plain English like “Which months had the worst profit?\", “What caused expenses to spike in Q2?” Based on my actual revenue, expenses and trends, the answers were really specific and it flagged things like seasonal revenue drops. Just curious if you trusting AI with financial analysis or still sticking with Excel and manual P&L reviews? submitted by /u/dungie79 [link] [comments]",
+  "url": "https://www.reddit.com/r/QuickBooks/comments/1r72aig/ai_to_analyze_quickbooks_pl_instead_of/",
+  "date": "2026-02-17"
+ },
+ {
+  "src": "reddit r/QuickBooks",
+  "title": "AMEX Parent Card Issue Workaround",
+  "text": "I have a workaround for AMEX when it only allows you to bring in the parent account. Connect all the cards separately, and then create a parent account for the account with the cards as subs. Rec the parent. Hope this helps someone. submitted by /u/NiceDonkey3417 [link] [comments]",
+  "url": "https://www.reddit.com/r/QuickBooks/comments/1td2qrh/amex_parent_card_issue_workaround/",
+  "date": "2026-05-14"
+ },
+ {
+  "src": "reddit r/TaxPros",
+  "title": "Pricing using an excel spreadsheet",
+  "text": "I was listening to a podcast the other day and the person mentioned using an excel sheet to determine client fees. For those of you that determine your client fees using an excel spreadsheet. How do you do it? Do you list the forms needed and apply a dollar amount per form? Do you base it on the type of documents (W-2, 1099, etc.) to be collected and apply a minimum time and dollar amount to each form? or a combination of both? submitted by /u/MrNic83 [link] [comments]",
+  "url": "https://www.reddit.com/r/taxpros/comments/1syysi1/pricing_using_an_excel_spreadsheet/",
+  "date": "2026-04-29"
+ },
+ {
+  "src": "reddit r/TaxPros",
+  "title": "I'm the CPA & Former IRS Agent Who Went Solo A Year Ago--Here's How I Did",
+  "text": "Hello my fellow bean counters, You might remember me from this post a year ago: IRS Revenue Agent Possibly Going Solo--Tech Stack and Business Advice Needed: r/taxpros Long story short, I did eventually leave the Internal Revenue Service and started my own remote tax and accounting practice in May 2025. From there, I set out establishing systems, putting my name out there, and doing god-only-knows amounts of networking. I'll touch on some major points/topics and try and answer as many questions in this thread as I can. I will also provide my business P&L so you can guys can see true revenue & costs and get an idea of what a new remote tax & accounting firm costs. Tech Stack & Other Tools: Ta",
+  "url": "https://www.reddit.com/r/taxpros/comments/1t033xm/im_the_cpa_former_irs_agent_who_went_solo_a_year/",
+  "date": "2026-04-30"
+ },
+ {
+  "src": "reddit r/TaxPros",
+  "title": "I am done with TaxGPT forever.",
+  "text": "I am fuming right now. Our firm bought roughly $10k in seats and credits. We have been customers since early last year. We were sold on the product roadmap and got to try the Agent Andrew feature. It wasn’t very good in the beginning but the CEO told us they were working on it. A year later and it still flags a ton of false positives, can’t read checkboxes, and takes more time to review its answers than our managers just doing it manually. They now have an “automated tax prep” that has broken every time I’ve seen it used. The only successful data entry I’ve seen was it putting the name of the taxpayer into Proconnect which took about 20 minutes. On top of that they just double-charged us for",
+  "url": "https://www.reddit.com/r/taxpros/comments/1vhihjv/i_am_done_with_taxgpt_forever/",
+  "date": "2026-08-06"
+ },
+ {
+  "src": "reddit r/TaxPros",
+  "title": "Solo CPA — how are people doing 300+ returns??",
+  "text": "Solo CPA here. I keep seeing people say they do 300–500 returns and I honestly don’t get how. I have ~100–150 clients. So far I’ve done around 60–70 returns and billed about $100K YTD (includes retainers + some bookkeeping). A lot of my clients have rentals, Schedule C, multi-state, military, brokerage statements, sometimes crypto. Each return takes a few hours, so realistically I can only do 2–3 per day. When I quote ~$400+ for simpler returns, many don’t move forward, so I’m not really building that base. No staff, fully remote, and a lot of time goes into chasing missing docs. Curious how others are making this work. submitted by /u/Financial_Question80 [link] [comments]",
+  "url": "https://www.reddit.com/r/taxpros/comments/1s0leiu/solo_cpa_how_are_people_doing_300_returns/",
+  "date": "2026-03-22"
+ },
+ {
+  "src": "reddit r/TaxPros",
+  "title": "Process Improvement for Next Season",
+  "text": "One click away from signing up for Taxdome. Then I pause. The reason why I want it is for automations and keeping everything in one place. But… Anchor is my engagement platform and I like the professional look of it (though I would be open to exploring TD for this) Stanford Tax is what I use for intake and I honestly can’t imagine giving that up. It works so well. TD payments through Stripe seem to be an issue (this subs consensus) which would remove the biggest benefit of auto releasing the returns upon payment, if I use Anchor. TD signatures seem to be clunky (again, according to feedback of others). Bottom line is I want pipelines on autopilot, but with this setup and issues mentioned abo",
+  "url": "https://www.reddit.com/r/taxpros/comments/1x7jf9u/process_improvement_for_next_season/",
+  "date": "2026-10-16"
+ },
+ {
+  "src": "reddit r/TaxPros",
+  "title": "12 months since starting my own firm. Here is what I learned.",
+  "text": "I left public accounting in December of last year and went out on my own. I didn't have a set plan but knew that I wanted to work for myself and here is my learnings along the way: Pick a Niche: Once, you start you are probably thinking that I will be a generalist so that I take in all the revenue opportunities but I would focus on one niche. The reason is that by focusing on the niche you will know the ins and outs of the tax code and will be able to provide tax advisory services as an up sell. Also, you will get clients referred to you by other CPA's who know your specialization. I went with the startup taxes route because I am interested in helping founders and doing entity structuring as",
+  "url": "https://www.reddit.com/r/taxpros/comments/1q0l8k3/12_months_since_starting_my_own_firm_here_is_what/",
+  "date": "2025-12-31"
+ },
+ {
+  "src": "reddit r/TaxPros",
+  "title": "What are your old-school accounting tools that have survived the test of time?",
+  "text": "Sitting next to a tax partner last night and she brought up TValue which I haven’t even thought of in 10 years. Mine is TicTieCalculate. What is yours? submitted by /u/Rare-Piccolo3778 [link] [comments]",
+  "url": "https://www.reddit.com/r/taxpros/comments/1vc54vi/what_are_your_oldschool_accounting_tools_that/",
+  "date": "2026-07-31"
+ },
+ {
+  "src": "reddit r/VideoEditing",
+  "title": "Clips not syncing at clap point in Final Cut Pro X manually or in Multicam Angles Editor",
+  "text": "Hi! As you can see above, my top clip won't land properly aligned with the middle clip to align the audio together. Same thing if I try to move the middle and bottom clips. I've never had this happen before. All shot on the same framerate. I'm not moving to fast. Where the top clip moves to is the very next \"acceptable\" position. And apparently, I can't free-range edit. It has to line up with the timeline's frames. But everything was shot at 4K 30 FPS. I don't understand why I am experiencing this problem. Running on 2021 Macbook Pro 15 inch, 16 GB RAM. Final Cut Pro X version 12.3. iPhone video: MPEG-4 AAC, Timed Metadata, HEVC Dimensions 3840 × 2160 Osmo Pocket 3 Timecode, MPEG-4 AAC, HEVC",
+  "url": "https://www.reddit.com/r/VideoEditing/comments/1x564f6/clips_not_syncing_at_clap_point_in_final_cut_pro/",
+  "date": "2026-10-13"
+ },
+ {
+  "src": "reddit r/VideoEditing",
+  "title": "So Claude can now edit videos and I’m having a bit of a panic attack.",
+  "text": "Basically, yesterday I saw a video that showed that you can now use Claude to edit videos and it does so in like ultra speeds. Now, I’m sure you lose a bit of creative control that you would otherwise keep if you did it manually in davinci resolve or whatever, but I am freaking out a little cause I really was looking to make video editing my career and suddenly I’m seeing a technology that for some employers would make me obsolete. I feel like I’m in the same ship as graphic designers, where like, they’re still valuable for people who want a specialized look over some basic ai template, but the market got reduced because most people don’t care about using a “good enough” ai template. I worry",
+  "url": "https://www.reddit.com/r/VideoEditing/comments/1wavkzc/so_claude_can_now_edit_videos_and_im_having_a_bit/",
+  "date": "2026-09-08"
+ },
+ {
+  "src": "reddit r/VideoEditing",
+  "title": "Feeling completely burnt out by manual sync editing. Are there any shortcuts for cutting visuals to music tracks?",
+  "text": "I’m a hobbyist editor working on putting together short visual edits and music sequences for fun. The creative side of mapping out the vibe is great, but the actual technical process of manual syncing is starting to drain me completely. Right now, my workflow is just pulling down stock clips, tossing them into my timeline, and manually slicing and shifting every single cut so it aligns perfectly with the downbeats, transient peaks, or drops in the audio track. Splicing a 60-second sequence takes me ages, and if I want to swap a clip out later, it throws the whole timeline rhythm off and I have to re-edit the surrounding cuts. Before I burn out entirely on this project, I wanted to ask how yo",
+  "url": "https://www.reddit.com/r/VideoEditing/comments/1tgzobv/feeling_completely_burnt_out_by_manual_sync/",
+  "date": "2026-05-18"
+ },
+ {
+  "src": "reddit r/VideoEditing",
+  "title": "This might sound stupid but how do I edit a video in this Ringo Sheena? Is it like a format or is it all done by hand?",
+  "text": "Example https://vm.tiktok.com/ZNRJB2J3j/ https://vm.tiktok.com/ZNRJk3duT/ submitted by /u/PerP1Exe [link] [comments]",
+  "url": "https://www.reddit.com/r/VideoEditing/comments/1p5msxh/this_might_sound_stupid_but_how_do_i_edit_a_video/",
+  "date": "2025-11-24"
+ },
+ {
+  "src": "reddit r/VideoEditing",
+  "title": "Reframing Video manually in Premier pro but viewing the original resolution",
+  "text": "https://preview.redd.it/3mos8ytg9t9g1.png?width=587&format=png&auto=webp&s=a06785adf6fb035f9957a85dcaa07f0a319a3e7e Trying to create a short from a 4k Video. The problem is that when I set the Sequence Settings size to 1080x1920, the 4k is getting cut. Now I need to create motion to move my active frame window on to the action and move around The problem is this is very challenging because I can only see a small view port. My subject of the action keeps changing and it's hidden outside of what I can see, so I'm missing it. What would be really helpful is to be able to view the whole thing (with the outside frame grayed out), with the active frame active. This way I can see what's changing, w",
+  "url": "https://www.reddit.com/r/VideoEditing/comments/1px8j6x/reframing_video_manually_in_premier_pro_but/",
+  "date": "2025-12-27"
+ },
+ {
+  "src": "reddit r/VideoEditing",
+  "title": "Anyone else tired of manually logging every single cut for film analysis? I built a quick tool to auto-generate Contact Sheets in one click.",
+  "text": "Hey everyone, I'm an editor and a huge film analysis enthusiast. I genuinely love studying the pacing and structure of great videos (think famous ads, master filmmakers’ work, or competitor content). The pain, however, is the ridiculously tedious process of manually logging every single cut, timecode. It absolutely drains my research motivation. 😩 So, I built a simple, browser-based tool called gridyclip . It automatically detects video shots and creates an editable storyboard/shot list in seconds. Drop & Detect: Upload your video, and the system instantly analyzes it to pinpoint every cut. Export: Get a clean, structured Excel sheet or a visual JPG Contact Sheet. This has honestly saved me ",
+  "url": "https://www.reddit.com/r/VideoEditing/comments/1pcvky5/anyone_else_tired_of_manually_logging_every/",
+  "date": "2025-12-03"
+ },
+ {
+  "src": "reddit r/VideoEditing",
+  "title": "How do you organize and edit 20+ hours of footage into a long-form YouTube series (with 3 different audience versions)?",
+  "text": "Hi everyone! I'm working on a personal life documentation project for YouTube and I'm overwhelmed by the editing side. I'd love to hear how people who edit long form content actually approach it. The project: I record myself during nightly sessions where I talk and leave messages to my future self. Each night produces roughly 4h of video recordings and audios. I currently have around 2.3TB of raw material that I want to release in sections, like mini series. The first section covers about 20h of media and should become ~5 20min episodes. The tricky part is that I'm targeting three audiences: Private : an edited version only for me, published privately on YouTube. Close friends : a private Yo",
+  "url": "https://www.reddit.com/r/VideoEditing/comments/1wxtwn1/how_do_you_organize_and_edit_20_hours_of_footage/",
+  "date": "2026-10-04"
+ },
+ {
+  "src": "reddit r/photography",
+  "title": "Is shooting Manual a big thing?",
+  "text": "Had the opportunity to talk with three others recently for sports photos outdoors (plenty of light, lots of action). All of them shoot in manual. Which surprises me as the camera has more information to work with and is a lot faster than any of use - although it gets things wrong a lot. Personally I shoot in either shutterspeed or aperture prio mode and I give the other two parameters (ISO included) to the camera to work with. I frequently dial in exposure compensation, depending on the brightness of the background versus my subject. I recon that as soon as you use auto-iso, or 'over/under-exposure mode' or a histogram - you are using the exposure meter anyway, so you might as well cut yours",
+  "url": "https://www.reddit.com/r/photography/comments/1vdjnel/is_shooting_manual_a_big_thing/",
+  "date": "2026-08-02"
+ },
+ {
+  "src": "reddit r/photography",
+  "title": "question about manual controls",
+  "text": "I’m pretty new to photography on a camera, and right now I usually shoot fully manual, I control ISO, aperture, and shutter speed myself. But I’ve noticed a lot of people leave one of those on Auto, and now I’m wondering if I’m making things harder for myself for no reason. Is it better to shoot fully manual as a beginner, or is it smarter to leave one setting on Auto? If so, which one do you usually leave on Auto (ISO, shutter speed, or aperture)?, in what situations?, and why? I mostly want to learn properly, but also not miss shots because I’m overthinking settings. Would appreciate beginner-friendly explanations. submitted by /u/SadPrize6815 [link] [comments]",
+  "url": "https://www.reddit.com/r/photography/comments/1s5t4mf/question_about_manual_controls/",
+  "date": "2026-03-28"
+ },
+ {
+  "src": "reddit r/photography",
+  "title": "Are you guys using the same platform for gallery delivery + website?",
+  "text": "Beginning my photography business. I understand this may be a topic of discussion already in this sub, but to be honest I’m super overwhelmed with all of the information since I’m just starting out and want to make sure I invest the limited money I have right now into the correct platform. For context, I’m a beginner portrait photographer that functions on Instagram, but I have been getting a lot of inquiries lately and think it’s time for me to set up my website. I currently use Instagram as a portfolio and Google Drive for gallery delivery. I know PixieSet is pretty popular for portfolio + gallery delivery, but the cost is pretty steep. I’d like broad customization capability for my websit",
+  "url": "https://www.reddit.com/r/photography/comments/1vxdp1k/are_you_guys_using_the_same_platform_for_gallery/",
+  "date": "2026-08-24"
+ },
+ {
+  "src": "reddit r/photography",
+  "title": "I shoot manual. With spot metering, how do you apply the Zone System in your shots?",
+  "text": "I'm a photography enthusiast. I shoot manual. Besides composition, white balance, exposure, f-stop and the standard camera settings, I've been practicing the zone system. Yes, it is true, like all cameras including cell phones, my Canon DSLR sets everything to 18% grey. I know this because when I switch an image to black and white, everything seemed washed out. To make sure white is white and black is black, I'd typically manually set my exposure against whatever is WHITE in my frame, and move my exposure meter to between +1 and +2 (by changing ISO, while keeping my desired f-stop and appropriate shutter speed at my desired numbers). Finally, I'd then focus and recompose to lock in that corr",
+  "url": "https://www.reddit.com/r/photography/comments/1pxgqlq/i_shoot_manual_with_spot_metering_how_do_you/",
+  "date": "2025-12-28"
+ },
+ {
+  "src": "reddit r/photography",
+  "title": "Flickering when shooting a 3D print timelapse, even when all settings are manual (as far as i can tell)",
+  "text": "Hello all, I have been making some 3D printing timelapses for fun but I ran into the issue where i can have very noticable flickering between layer shots. (For those who don't know what 3D printing timelapses are, when you 3D print an object the machine places a layer, for every layer you take a picture and then stich them together). It is really driving me crazy because I have no idea whats causing it. I thought it might have been my soft boxes or some light from outside thats bleeding inside (the room is not 100% free from daylight) but when i did the same print twice the flickering started happening on almost the exact same frames. This is my current setup: - Nikon D7100, fully manual (M ",
+  "url": "https://www.reddit.com/r/photography/comments/1tp1x5v/flickering_when_shooting_a_3d_print_timelapse/",
+  "date": "2026-05-27"
+ },
+ {
+  "src": "reddit r/photography",
+  "title": "Manual iPad photography?",
+  "text": "I will be teaching an introductory photography course to kids this summer. I was supposed to have access to old DSLRs, but now I don't. I could get an iPad for each student though. Is there any kind of app that will allow the kids to simulate changing shutter speed, aperture, and ISO? I'd like them to see how, for example, taking a photo at 1/30 is different than taking the same photo at 1/1000; how depth of field changes with aperture; how ISO affects exposure settings and image quality; etc. Is there a way to do this or simulate it effectively with an iPad app? submitted by /u/AztecPilot1MY [link] [comments]",
+  "url": "https://www.reddit.com/r/photography/comments/1tamnct/manual_ipad_photography/",
+  "date": "2026-05-12"
+ },
+ {
+  "src": "reddit r/photography",
+  "title": "I need reading glasses. Wondering what that will do with my manual focusing?",
+  "text": "So, ive been away from photography for about 5-6 years. Recently (like within the last year or 2) I've been relying on reading glasses to read things (I just put them on to make this post). The ones I have on now are +1.5 so its not too terrible. I'm just wondering if I need to use them when taking pictures or not. I use 2 relics. A Canon 40D for just out and about and doing detailed DOF stuff with a wide aperture. And I have a Canon 5D Mark II I use for professional portrait work and things of that nature... my money maker if you will. But I'd like to get back into the more professional money making aspect of it and I dont want the photos to be all blurry while not using my readers. I can s",
+  "url": "https://www.reddit.com/r/photography/comments/1phkchq/i_need_reading_glasses_wondering_what_that_will/",
+  "date": "2025-12-08"
+ },
+ {
+  "src": "reddit r/realestateinvesting",
+  "title": "Spreadsheet showdown",
+  "text": "Any folks here who have a great investment model spreadsheet want to share a copy/post it to help others learn and to show off their skills? This could also help people improve their current models with new ideas. submitted by /u/ImANobodyWhoAreYou [link] [comments]",
+  "url": "https://www.reddit.com/r/realestateinvesting/comments/1pjna1f/spreadsheet_showdown/",
+  "date": "2025-12-11"
+ },
+ {
+  "src": "reddit r/realestateinvesting",
+  "title": "Large investor ban",
+  "text": "President Donald Trump has announced a plan to ban large institutional investors from buying single-family homes in the United States. Nobody really knows what this means at the moment but curious what others think. According to Trump \"People live in homes, not corporations,\" but aren't we all corporate investors? submitted by /u/Antique-File-7189 [link] [comments]",
+  "url": "https://www.reddit.com/r/realestateinvesting/comments/1q7f7y6/large_investor_ban/",
+  "date": "2026-01-08"
+ },
+ {
+  "src": "reddit r/realestateinvesting",
+  "title": "Broker Insulted by My offer on 6 plex",
+  "text": "EDIT #2: Thank you everyone for the engagement here, I never expected this to get the traction with my first post and i'm sorry I can't respond to everyone. Glad to hear that submitting an offer like this isn't wrong or frowned upon and glad to see other people who see the math and reasoning behind the number I offered. A lot of good ideas and advice came out of this for so I'm very thankful for that. I eval deals weekly and may share one that gets a little closer. Next time I'll share a PDF of my sheet and some pics so people can get a better understanding. I'm working on one now, and I would truly love to get opinions! EDIT: Would like to add something here... Commercial properties in any ",
+  "url": "https://www.reddit.com/r/realestateinvesting/comments/1q5u3r1/broker_insulted_by_my_offer_on_6_plex/",
+  "date": "2026-01-06"
+ },
+ {
+  "src": "reddit r/realestateinvesting",
+  "title": "How do you know if it’s burnout or a sign to sell?",
+  "text": "Looking for some perspective from experienced investors, ideally with +10 properties. Has anyone gone through a period where it felt like almost every property had an issue at the same time? This year I’ve dealt with lengthy/difficult turnovers, voucher payment reductions, tenants behind in rent, tenant-related issues that escalated into municipal enforcement. It’s been one thing after another. To be fair, I know some of this is a result of choices I’ve made. I intentionally invested in properties within stable, working- and middle-class neighborhoods, but in tenant segments and strategies that tend to offer higher returns in exchange for more active management. That tradeoff has generally w",
+  "url": "https://www.reddit.com/r/realestateinvesting/comments/1vbbmk1/how_do_you_know_if_its_burnout_or_a_sign_to_sell/",
+  "date": "2026-07-31"
+ },
+ {
+  "src": "reddit r/realestateinvesting",
+  "title": "The \"1% Rule\" Trap: Why I walked away from a 14% Gross Yield Duplex today (Analysis)",
+  "text": "I spent the morning analyzing a Duplex that, on the surface, looked like a home run. I wanted to share the breakdown to show why \"napkin math\" is dangerous in the 2026 market. The \"Zillow\" View (The Dream): Price: $185k Rent: $2,150/mo Gross Yield: ~13.9% The 1% Rule: Passed with flying colors (1.16%). Most generic calculator apps would scream \"BUY\". But I ran it through my own deep-dive spreadsheet where I can see every formula, and the reality is brutal. The \"Real\" View (The Trap): Rate: 6.875% (30yr fixed) Vacancy: 8% (It's a C-Class area, let's be real) Management: 10% (Remote investing) CapEx/Maintenance: Budgeted $3,000/yr (Old building, stuff breaks). Taxes: $4,200/yr The Result? Stab",
+  "url": "https://www.reddit.com/r/realestateinvesting/comments/1q8hs57/the_1_rule_trap_why_i_walked_away_from_a_14_gross/",
+  "date": "2026-01-09"
+ },
+ {
+  "src": "reddit r/realestateinvesting",
+  "title": "Looking for an app for rental properties.",
+  "text": "I own 2 small trailer parks and a few other duplexes etc. in total around 40 units. I’d like to get an app to see charts and graphs and to also document repairs that I do etc. I keep looking at different ones but my big concern is 80% of these people pay cash so I’m not sure if it’s really worth it. Right now I use an excel spreadsheet to document rent before we deposit. It would be cool to have something that i can take pictures of receipts and upload to each unit. Any ideas? submitted by /u/blownnova548 [link] [comments]",
+  "url": "https://www.reddit.com/r/realestateinvesting/comments/1se6mtw/looking_for_an_app_for_rental_properties/",
+  "date": "2026-04-06"
+ },
+ {
+  "src": "reddit r/realestateinvesting",
+  "title": "Blatant Self-Promotion Thread: July 14, 2026",
+  "text": "Monthly Blatant Self-Promotion Thread (Within Reason) Welcome to this monthly series. This post will repeat monthly, on the 14th of every month. This is your opportunity to promote a blog you run, a YouTube Channel, real estate related business, or additional content that otherwise may be removed from the sub. This thread will be lightly moderated and the Mods do not endorse or condone any information found on content linked within this thread. Perform your due diligence. Caveat emptor! Rules No coaching and mentoring Must be real estate related Pass the 'within reason' test submitted by /u/AutoModerator [link] [comments]",
+  "url": "https://www.reddit.com/r/realestateinvesting/comments/1uw17hc/blatant_selfpromotion_thread_july_14_2026/",
+  "date": "2026-07-14"
+ },
+ {
+  "src": "reddit r/teaching",
+  "title": "These kids don’t know how to be original. Every response needs to be a copy and paste or their brains just short circuit…",
+  "text": "I had students create their own monster story. It needed to be original. Just a paragraph. The amount of students who just copy and pasted an established monster was TOO damn high. When I told them it needed to be a new monster, I might as well just have asked them to write in Greek… I straight up told a kid in Honors they need to think and apply themselves and I was not giving them ideas. submitted by /u/Emergency-Pepper3537 [link] [comments]",
+  "url": "https://www.reddit.com/r/teaching/comments/1x1ufla/these_kids_dont_know_how_to_be_original_every/",
+  "date": "2026-10-09"
+ },
+ {
+  "src": "reddit r/teaching",
+  "title": "I'm in disbelief. I was let go during the first week and a half of school.",
+  "text": "I got hired at a private school several months ago as a math and PE teacher. I told them that 14 years ago, I taught social studies and elementary education. I never taught math and never taught PE. I was assured that it was okay, as long as I had the ability to teach I could pick up everything along the way. During pre-planning there was almost no direction as to how I should be getting my classroom ready. The nine different new systems I had to learn, how I could brush up on my math skills in a way that would pertain to what I would be teaching. ALL of the students loved me! Every teacher told me how they could not stop talking about Mr.W! Yes I did initially struggle to teach six through ",
+  "url": "https://www.reddit.com/r/teaching/comments/1vt3u8m/im_in_disbelief_i_was_let_go_during_the_first/",
+  "date": "2026-08-20"
+ },
+ {
+  "src": "reddit r/teaching",
+  "title": "ufli teachers manual glossary",
+  "text": "my best friend is in college for teaching. she has a downloaded file of the book but it is missing the first few pages are missing. if there is anyone out there with a book who could send me a few pictures of the glossary please help her out!!!! submitted by /u/chloerae22 [link] [comments]",
+  "url": "https://www.reddit.com/r/teaching/comments/1wp4u71/ufli_teachers_manual_glossary/",
+  "date": "2026-09-24"
+ },
+ {
+  "src": "reddit r/teaching",
+  "title": "I have built a Personalised Report card comment with my mom (hopefully you like it)",
+  "text": "Hello Reddit, With the help of my mom (an elementary school teacher) we built a personalised report card comment generator in the primary sector field. We know teachers are often busy but even more when it's the end of term and writing comments can be quite a lengthy and a repetitive task .. We know teachers are in the best position to comment about their students and obviously the goal is not to replace that personal touch and delegate it to AI. But mainly our goal is to save them time and make it enjoyable and generate tailored feedback from the start and adjust it accordingly if necessary. The usage of the website is open-access and free because want it to be available to anyone who needs",
+  "url": "https://www.reddit.com/r/teaching/comments/1t06kgm/i_have_built_a_personalised_report_card_comment/",
+  "date": "2026-04-30"
+ },
+ {
+  "src": "reddit r/teaching",
+  "title": "Burning out",
+  "text": "Another year ending. My high-school students refuse to read actual books. Even the English majors-to-be are using Spark Notes and AI summaries in lieu of classic texts. They are increasingly so bereft of attention span, they can’t handle watching a two-hour film. They will burst into my classroom, desperate to be permitted to be somewhere, anywhere else. They will say, “Are we just watching the movie today?” as if it’s a terrible chore. Many of them are incapable of writing an in-class essay by hand. Literally incapable of producing legible words on a page. They have been seduced into believing actual learning can happen via Tik Tok, that “dates don’t matter as much as ideas,” that using AI ",
+  "url": "https://www.reddit.com/r/teaching/comments/1t65dld/burning_out/",
+  "date": "2026-05-07"
+ },
+ {
+  "src": "reddit r/teaching",
+  "title": "Exhausted with teachers using AI",
+  "text": "Hello, I'm a teacher in my fourth year teaching. I personally really dislike AI. Our school gave us an AI tool to use, and its apparently for teachers, but personally whenever I have tried to use it, it was completely incorrect. Besides that AI clearly does not understand content or how to teach, I also think the environmental impact is not worth using AI for, and that its also hypocritical that we as teachers expect students to complete their own work without the usage of AI, but that people are still willing to use it. I refuse to use AI in my lessons for those reasons. Recently, I found out that many of my coworkers heavily rely on AI. When I say heavily rely, I mean like copy and pasting",
+  "url": "https://www.reddit.com/r/teaching/comments/1pc04az/exhausted_with_teachers_using_ai/",
+  "date": "2025-12-02"
+ },
+ {
+  "src": "reddit r/teaching",
+  "title": "Ethical/Legal issues around requiring drafts before grading final.",
+  "text": "Teaching Juniors and we're on our narrative/creative writing unit. We got lucky this year and the district swapped laptops for iPads. On the whole we finally had justification enough to enforce pen and paper. Reduced AI cheating = yay! That said, some students still try and end run around it by having AI do the heavy lifting and they just copy it out on paper by hand. To combat this, I'm requiring pre-writing and multiple draft/peer review stages. I also wanted to implement a rule that, if any of their pre-writing packet was missing/not turned in, I wouldn't grade their narratives. Department said admin probably wouldn't support that. Two questions: * is this mean/wrong of me? * if so, why? ",
+  "url": "https://www.reddit.com/r/teaching/comments/1wjqwg5/ethicallegal_issues_around_requiring_drafts/",
+  "date": "2026-09-18"
+ },
+ {
+  "src": "reddit r/sysadmin",
+  "title": "Why is reading the logs and the manual so hard",
+  "text": "I am a tier 3 at a medium sized MSP. We have a client that is the government of a small village near by. They have multiple locations and want to be able to view their traffic cameras, park cameras, buildings cameras, etc. from any of the 3 location. So one of our tier 2 guys has this ticket because the cameras don't work at one of the locations. He asks me for help a couple weeks ago, I tell him the best way forward is to have the co-managed IT guy we work with try to connect to the cameras from that location, then just look at the firewall logs to see what is being blocked. 2 weeks later, he sends me the ticket. Guess what he didn't do? Look at any logs. Kept adding and removing firewall r",
+  "url": "https://www.reddit.com/r/sysadmin/comments/1tv3g2h/why_is_reading_the_logs_and_the_manual_so_hard/",
+  "date": "2026-06-02"
+ },
+ {
+  "src": "reddit r/sysadmin",
+  "title": "\"How do you guys handle large file transfers without users resorting to email attachments or insecure workarounds?\"",
+  "text": "Pretty much the title. For reference I'm currently using Beam Transfer (beam-transfer.org). But I have been wanting to find some more Tools in case Beam Transfer somewhat doesnt work anymore. (We need a Tool letting us Transfer up to 800GB of file size.) Edit: Thank you, for this unexpected amount of advice! We are still new here and need to learn a lot. That's why this really means a lot to us. submitted by /u/kiritoova20_10 [link] [comments]",
+  "url": "https://www.reddit.com/r/sysadmin/comments/1ts909f/how_do_you_guys_handle_large_file_transfers/",
+  "date": "2026-05-30"
+ },
+ {
+  "src": "reddit r/sysadmin",
+  "title": "What's the most clever hack or workaround you're proudest of?",
+  "text": "In the vein of \"if it's stupid, but it works, it isn't stupid.\" Most clever hack you've ever come up with to solve a real-world problem? submitted by /u/vocatus [link] [comments]",
+  "url": "https://www.reddit.com/r/sysadmin/comments/1u3hyxk/whats_the_most_clever_hack_or_workaround_youre/",
+  "date": "2026-06-12"
+ },
+ {
+  "src": "reddit r/sysadmin",
+  "title": "IT Support Analyst asked to manually sort user emails",
+  "text": "I've recently started work as an IT Support Analyst at a small company (only around 30 employees that actually use a computer). Most of my work so far has been establishing company policies around Security and putting systems in place to manage company devices, as well as helpdesk-type work. However, last night I got an email saying my boss has assigned me to a task. The task description is \"Categorise [Employee Name]'s emails into folders\". My boss is fairly technical. IT Support is a new role created within the company. I have a hunch the task might've been passed down by his boss, who is also new at the company. Am I right to be annoyed that I'm being asked to cover this task, and how sho",
+  "url": "https://www.reddit.com/r/sysadmin/comments/1qc40u9/it_support_analyst_asked_to_manually_sort_user/",
+  "date": "2026-01-13"
+ },
+ {
+  "src": "reddit r/sysadmin",
+  "title": "Users get the message \"Location is turned off in system settings\" when working with Word files in Windows. Microsoft suggests \"let Word track your location\" as a workaround",
+  "text": "https://support.microsoft.com/en-us/office/users-get-the-message-location-is-turned-off-in-system-settings-when-working-with-word-files-in-windows-de089f8f-2a35-48da-a844-961de46eefc4 Super annoying issue we've been dealing with lately. Location access is disabled for many users in our environment, for good reason. A bug in Word pesters them anytime they open and save a Word file from OneDrive that \"location is turned off\". A week later, Microsoft acknowledges this issue, with a real corker of a Workaround suggestion: \"Just go ahead and grant location access to WebView2 so you can use Word.\" I get it's only a workaround until the bug is fixed, but what a backhanded suggestion. Like location ",
+  "url": "https://www.reddit.com/r/sysadmin/comments/1qopsou/users_get_the_message_location_is_turned_off_in/",
+  "date": "2026-01-27"
+ },
+ {
+  "src": "reddit r/sysadmin",
+  "title": "When temporary workarounds become business critical",
+  "text": "We have a few ops/admin tools that all technically have reports, dashboards, exports, and integrations. And yet on mondays, someone manually copies numbers into a google sheet because that’s the version leadership actually reads. It was supposed to be temporary. We’ve tried to automate it more than once. Someone gets assigned. A script appears. An integration gets half-built. Then one field changes, an export breaks, the owner moves teams, and somehow the sheet survives. atp it has outlived multiple people who confidently said, “I’ll fix this properly.” Everyone knows it’s fragile. Nobody likes it. the business depends on it now, so it keeps getting patched instead of replaced. I’m wondering",
+  "url": "https://www.reddit.com/r/sysadmin/comments/1udqzsg/when_temporary_workarounds_become_business/",
+  "date": "2026-06-23"
+ },
+ {
+  "src": "reddit r/sysadmin",
+  "title": "The workaround for SMS 2FA retirement is kinda nuts",
+  "text": "EDIT: this is mostly the ideal solution for MSPs, not single companies. But it may still apply based on your users' knowledge level and company hardware. I got out ahead of this project because it was a light day. If you didn't hear, MS is shutting down SMS 2FA on Feb 1st 2027 because SS7 is comically insecure. They're also shutting down the phone call system on the same day, to ensure the most people get locked out of their accounts as possible (I assume). But enrolling users in MS Authenticator is like asking a cat to juggle. You have to actively tell them not to hit \"log into work account\" when they first launch it. It's idiotic and counterintuitive. We're an MSP so we've been hitting \"I ",
+  "url": "https://www.reddit.com/r/sysadmin/comments/1w5jene/the_workaround_for_sms_2fa_retirement_is_kinda/",
+  "date": "2026-09-02"
+ },
+ {
+  "src": "reddit r/Bookkeeping",
+  "title": "How are people handling bank reconciliation at higher volume",
+  "text": "Transaction volume has been climbing and manual reconciliation is getting harder to keep up with. Trying to understand what setups actually hold up once things scale beyond a few accounts submitted by /u/Dry_Situation2589 [link] [comments]",
+  "url": "https://www.reddit.com/r/Bookkeeping/comments/1t9urob/how_are_people_handling_bank_reconciliation_at/",
+  "date": "2026-05-11"
+ },
+ {
+  "src": "reddit r/Bookkeeping",
+  "title": "How much of your month is still just retyping numbers off pdfs by hand",
+  "text": "Retyping numbers off vendor PDFs east up the first week of my month. Landed here because the company needed someone to keep the books and nobody else would do it. Pulling invoice totals and dates off a stack of PDFs into a spreadsheet holds everything else up as data has to be right before it reconciles, which means spot-checking everything anyway. For people doing this day in day out how much is still going in by hand and has anything out there earned enough trust yet that you would let it near the raw data without checking every line? submitted by /u/Miler-Malmil [link] [comments]",
+  "url": "https://www.reddit.com/r/Bookkeeping/comments/1uv72v0/how_much_of_your_month_is_still_just_retyping/",
+  "date": "2026-07-13"
+ },
+ {
+  "src": "reddit r/Bookkeeping",
+  "title": "I’m having a lot of trouble with the bank reconciliation for the church I keep the books for",
+  "text": "Some background: I took over the books for a small church bc I’m a CPA and they needed the help. I was fresh out of college with no real experience, which I told them. I ended up filing their form 990-EZ for 2023 and 2024. I essentially had to reconstruct their books off of the bank statements, which was a miserable nightmare, and I think I got it substantially correct. Well as a part of my lack of experience, I got really behind on the monthly bank recs up until recently, and I’ve been trying to straighten everything out. I got 2025 down to $3.xx difference between book and bank since I’ve been preparing to file the form 990. I decided to reconcile January 2026 so I could see if it was off ",
+  "url": "https://www.reddit.com/r/Bookkeeping/comments/1t37qkv/im_having_a_lot_of_trouble_with_the_bank/",
+  "date": "2026-05-04"
+ },
+ {
+  "src": "reddit r/Bookkeeping",
+  "title": "Do most people move off spreadsheets for managing business and personal finances",
+  "text": "I've been using spreadsheets to track both business and personal finances and it worked at first but now it's getting messy fast. too many categories too many updates and I don't fully trust it anymore. submitted by /u/2daytrending [link] [comments]",
+  "url": "https://www.reddit.com/r/Bookkeeping/comments/1uwx43u/do_most_people_move_off_spreadsheets_for_managing/",
+  "date": "2026-07-15"
+ },
+ {
+  "src": "reddit r/Bookkeeping",
+  "title": "QB Spreadsheet Sync",
+  "text": "I am learning spreadsheet sync because I have very large JE's I'm hoping to automate in excel, and I cannot figure out how to have QB Spreadsheet Sync operate more than one function within an excel file. Can it really not pull a report on one sheet, and import a JE on another sheet? It keeps threatening to delete all of the data in the excel file. submitted by /u/tofuti-kline [link] [comments]",
+  "url": "https://www.reddit.com/r/Bookkeeping/comments/1widdqa/qb_spreadsheet_sync/",
+  "date": "2026-09-16"
+ },
+ {
+  "src": "reddit r/Bookkeeping",
+  "title": "QuickBooks no longer allowing manual payroll tax payments or return filinh",
+  "text": "Anyone else get the email starting June 30th you can no longer turn off automated payments or filing? This can't go poorple at all....... submitted by /u/NorthJelly6378 [link] [comments]",
+  "url": "https://www.reddit.com/r/Bookkeeping/comments/1s4hq61/quickbooks_no_longer_allowing_manual_payroll_tax/",
+  "date": "2026-03-26"
+ },
+ {
+  "src": "reddit r/Bookkeeping",
+  "title": "Calculating payroll by hand",
+  "text": "I have one employee and razor thin margins. Probably won’t be able to pay myself this year. Payroll software like Gusto costs like $60 bucks a month. Is it relatively easy to calculate everything for a California business by hand? What all does it entail? Thanks! submitted by /u/Steeltank33 [link] [comments]",
+  "url": "https://www.reddit.com/r/Bookkeeping/comments/1r7lys7/calculating_payroll_by_hand/",
+  "date": "2026-02-17"
+ },
+ {
+  "src": "reddit r/Accounting",
+  "title": "I automated a bank reconciliation process. Now my company wants it rebuilt in AI. What would you do?",
+  "text": "I'm a Senior Accountant and spent alot of time building an automated bank reconciliation process in Excel. It reduced the process from about 1.5 days to around an hour and has been working very well. Now my company is pushing AI adoption and wants to see if the process can be recreated in Claude. I'm happy to explain the logic, document the process, and help others understand it. My hesitation is that I already built a working solution, and now I'm being asked to help rebuild it in a different tool that I don't really consider part of my expertise. If you were in my shoes, what would you do? Would you lead the AI effort, just explain the logic, or take a different approach? Edit: Thanks ever",
+  "url": "https://www.reddit.com/r/Accounting/comments/1ue5zr7/i_automated_a_bank_reconciliation_process_now_my/",
+  "date": "2026-06-24"
+ },
+ {
+  "src": "reddit r/Accounting",
+  "title": "Controller just disappeared during month end close",
+  "text": "I’ve been at a midsize O&G company for about 4 months as a Senior Accountant. Small, lean accounting team and I reported directly to the Controller, who hired me. Her plan when she hired me was for me to eventually grow into the Assistant Controller role. She wasn’t exactly a people person, but she was nice enough. Half the time I couldn’t tell if she was mad at me, annoyed, stressed, or completely fine lol. Accounting here is definitely an afterthought. Old ERP, tons of manual processes, not much communication between departments, the usual fun stuff. Anyway, she didn’t show up Monday. Didn’t show up Tuesday either. Her laptop was still sitting in her office, so everyone was basically like…",
+  "url": "https://www.reddit.com/r/Accounting/comments/1x0tnms/controller_just_disappeared_during_month_end_close/",
+  "date": "2026-10-08"
+ },
+ {
+  "src": "reddit r/Accounting",
+  "title": "is it normal to spend 3 days manually typing data from pdfs?",
+  "text": "first year associate here. client just sent over 6 months of bank statements and invoices as scanned pdfs (some look like they were taken with a toaster). manager wants me to recon everything by friday. i tried converting them using adobe but the formatting in excel is a disaster, merged cells everywhere. been copy pasting and typing manually since 8am. pls tell me there's a better way or is this just my life now? submitted by /u/MandyB92 [link] [comments]",
+  "url": "https://www.reddit.com/r/Accounting/comments/1p3gya9/is_it_normal_to_spend_3_days_manually_typing_data/",
+  "date": "2025-11-22"
+ },
+ {
+  "src": "reddit r/Accounting",
+  "title": "Controller disappeared during month end close: Update! I became the Accounting Manager!",
+  "text": "Well, here’s update #3 😂 For those who haven’t seen my previous posts, about three weeks ago our Controller randomly resigned right in the middle of month end close. I had only been with the company for about five months as a Senior Accountant, and suddenly I found myself taking over pretty much the entire accounting department. For the past three weeks, I’ve been running the day to day accounting operations, overseeing AP and AR, handling month end close, and working directly with our CFO. It’s definitely been a lot, but also a great learning experience. Well, today our CFO called me into his office and officially offered me the Accounting Manager position with a 20% raise! I GOT THE PROMOT",
+  "url": "https://www.reddit.com/r/Accounting/comments/1xk0q4f/controller_disappeared_during_month_end_close/",
+  "date": "2026-10-31"
+ },
+ {
+  "src": "reddit r/Accounting",
+  "title": "Broken windows theory: If you hand me an optically unclean spreadsheet (unchanged dates, hard keyed numbers, old irrelevant tickmarks and documentation, messy layout), it makes me doubt the quality of",
+  "text": "Optically clean workbooks tell me you likely did the workbook right. As a reviewer, I shouldn't have to reperform what you did to validate it. Your documentation alone should take me on a journey that tells me why you are comfortable with the assertion being supported and makes me agree with you Messy workbooks with broken external links, old dates, old tickmarks, hard keyed numbers, multiple colors that overwhelm the senses, just means I have to take longer to figure out wtf you did I don't want to leave review notes. I just want to trust your work so that my boss doesn't drop a shit ton of notes on me . So let's make both our lives easier submitted by /u/GushStasis [link] [comments]",
+  "url": "https://www.reddit.com/r/Accounting/comments/1sxm9gr/broken_windows_theory_if_you_hand_me_an_optically/",
+  "date": "2026-04-28"
+ },
+ {
+  "src": "reddit r/Accounting",
+  "title": "Why do accounting managers get pressed about month end close being extended?",
+  "text": "The world's not going to end if it takes us a couple more days to close out everything. Actually it spreads the work out more evenly. Don't understand this obsessions with having to close in 4-5 days. submitted by /u/Affectionate-Owl-178 [link] [comments]",
+  "url": "https://www.reddit.com/r/Accounting/comments/1rpvf1b/why_do_accounting_managers_get_pressed_about/",
+  "date": "2026-03-10"
+ },
+ {
+  "src": "reddit r/editors",
+  "title": "End card versioning across 4 durations × 3 ratios × multiple end card variants. Is anyone else doing this manually still?",
+  "text": "Working on a broadcast/digital campaign delivery today and hit the usual wall, every end card variant needs appending to every duration and every aspect ratio. On a complex job that's 40-50+ sequences to build manually. I've been doing this long enough that I've developed a pretty systematic way of working through it but it still takes ages and there's always a risk of human error, wrong end card on the wrong sequence, wrong naming, missed versions. Curious how others approach this. Do you have a system, a script, anything that makes this less painful? Or is everyone just grinding through it manually? submitted by /u/Curtpirecy [link] [comments]",
+  "url": "https://www.reddit.com/r/editors/comments/1sq5lss/end_card_versioning_across_4_durations_3_ratios/",
+  "date": "2026-04-19"
+ },
+ {
+  "src": "reddit r/editors",
+  "title": "[Avid 2023] is there a better way to add a thumbnail of a shot next to its timecode in google sheet? I know Marker window can export a pdf, but I cannot extract the column with the framegrabs so that ",
+  "text": "submitted by /u/Miserable-Piano-415 [link] [comments]",
+  "url": "https://www.reddit.com/r/editors/comments/1s2q4qu/avid_2023_is_there_a_better_way_to_add_a/",
+  "date": "2026-03-24"
+ },
+ {
+  "src": "reddit r/editors",
+  "title": "Shooting a doc on film without always slating - any ideas to make my life less hellish in post?",
+  "text": "Ok, I know this is a ridiculous question and the answer is “just slate“. But hear me out. I’m making a documentary that involves very sensitive/intimate participants and situations. it will be mostly just animated audio with an amount of 16mm from a crystal sync camera. I am foreseeing times when slating would be inappropriate or just impossible. I know this is going to be a manual lip sync situation, but I was wondering if there might be any tools to make this easier? For example, is there a way I could record in and out times via mixer timecode remotely (say, on a phone or iPad) so I at least have a general frame of reference? submitted by /u/EmbodiedProject [link] [comments]",
+  "url": "https://www.reddit.com/r/editors/comments/1x0phdf/shooting_a_doc_on_film_without_always_slating_any/",
+  "date": "2026-10-08"
+ },
+ {
+  "src": "reddit r/editors",
+  "title": "I couldn't afford an enterprise MAM, so I built one. Blaze is 100% local, features Semantic Search, and Free for r/editors Beta testers",
+  "text": "Hey r/editors , Some of you might remember a post I made about 6 months ago. The backstory: I’ve been an editor for almost 30 years. Last year, I needed to find a specific clip from terabytes of footage shot two years prior. My choices were: spend three days manually scrubbing drives, or buy a MAM (Media Asset Manager). The \"pro\" options gave me sticker shock. They were either enterprise-level expensive, required uploading footage to the cloud, or were opaque regarding data privacy. So, I decided to build the tool I actually needed. One year of nights, weekends, and endless coffee later, I’m ready to introduce: Blaze. What is Blaze? Blaze is an on-premise, intelligent search engine for your ",
+  "url": "https://www.reddit.com/r/editors/comments/1qi2fnd/i_couldnt_afford_an_enterprise_mam_so_i_built_one/",
+  "date": "2026-01-20"
+ },
+ {
+  "src": "reddit r/editors",
+  "title": "Vision editor has given me the timeline with no sound synced and no scratch track - am I right to be annoyed?",
+  "text": "Looking for some insight from vision / sound editors. Genuinely wondering if me being annoyed at this is reasonable, or whether this is an expected part of doing post sound. Context: this is an unpaid shoot, but we’re all industry professionals. I did a shoot a few months back where I ran on location sound. I also agreed to do post sound. Both of these I do professionally, but in a TV broadcast capacity, so all audio is sent straight from the mixer to the camera and is always synced. The vision editor was also the DOP and camera op, using his own camera. He’s just completed the vision edit and colour grade, and given me the timeline to now do post sound on. I had agreed to do this as I thoug",
+  "url": "https://www.reddit.com/r/editors/comments/1xc5w4g/vision_editor_has_given_me_the_timeline_with_no/",
+  "date": "2026-10-22"
+ },
+ {
+  "src": "reddit r/editors",
+  "title": "Best solution(s) for editing projects between working remotely and in the office?",
+  "text": "I currently work and edit 100% in the office for the company I work for but have recently had discussions about working a couple a days a week from home. I am the sole \"video guy\" here so they put me in charge of how I can make this work. In the office I work from a Mac studio desktop and am able to work from our local server which contains all the footage and project files (I work in both Adobe Premiere and DaVinci Resolve). I'm hardwired in with a CAT6 so the connection is fast and I have no issues with speed. But that wouldn't be the case from home. My question is what would be the best solution for working back and forth, between home and the office? Do I load the project on an SSD every",
+  "url": "https://www.reddit.com/r/editors/comments/1xm7jb1/best_solutions_for_editing_projects_between/",
+  "date": "2026-11-02"
+ },
+ {
+  "src": "reddit r/msp",
+  "title": "From Manual Contracts to Automated Onboarding",
+  "text": "submitted by /u/bang_switch40 [link] [comments]",
+  "url": "https://www.reddit.com/r/msp/comments/1xeq8gs/from_manual_contracts_to_automated_onboarding/",
+  "date": "2026-10-25"
+ },
+ {
+  "src": "reddit r/msp",
+  "title": "Anyone got a sane way to track firmware CVEs across a Fortinet/Cisco fleet or is it just me + a spreadsheet",
+  "text": "ok so this is probably a me problem but. We run mostly FortiGate with some Cisco mixed in and every month I'm basically manually checking PSIRT advisories against a spreadsheet of what version each box is on. Which one's exposed, what release fixes it, is the jump safe. Missed a FortiOS SSL-VPN one by like three weeks last year because it landed while I was buried in something else and nothing yelled at me about it. Fine in the end but that's the kind of thing that keeps me up. what does everyone else do? Does your RMM or Auvik/Domotz actually go \"this box is on a vulnerable version, upgrade to X\" or does it just log the version number and leave the CVE part to you? Because mine just tells m",
+  "url": "https://www.reddit.com/r/msp/comments/1v4nyqk/anyone_got_a_sane_way_to_track_firmware_cves/",
+  "date": "2026-07-23"
+ },
+ {
+  "src": "reddit r/msp",
+  "title": "Should we auto-approve drivers on a monthly basis, or keep manual approvals only?",
+  "text": "We’re sitting on 54k declined drivers and trying to decide if monthly auto-approval makes sense or if approvals should always stay manual. Auto-approval could clear backlog fast, but there’s obvious risk. Manual review is safer but doesn’t scale well. • Is auto-approval ever worth it? • What guardrails would you put in place? • At what scale does manual review break down? submitted by /u/jeemjoota [link] [comments]",
+  "url": "https://www.reddit.com/r/msp/comments/1pyv9vo/should_we_autoapprove_drivers_on_a_monthly_basis/",
+  "date": "2025-12-29"
+ },
+ {
+  "src": "reddit r/msp",
+  "title": "KB5089549 causing legacy/niche driver issues - Whats your workaround?",
+  "text": "We have been fighting update KB5089549 (at least i think) that has stopped some niche software for some clients from installing their drivers and stopped already installed drivers from working. From the looks of things the 100 hour audit didn't take place or failed to take in account the drivers from a few of our clients. Anyone else experiencing this? Any workaround on this? Since its included in the cumulative update there is no way that I know how to exclude just that one KB. The official way (ACfB policy) I am not certain is a scalable way of handling this across all the orgs we manage long term. So far its been a niche CNC program, radio diagnostic program, and someone's ancient scanner",
+  "url": "https://www.reddit.com/r/msp/comments/1te2m4t/kb5089549_causing_legacyniche_driver_issues_whats/",
+  "date": "2026-05-15"
+ },
+ {
+  "src": "reddit r/msp",
+  "title": "Service or tool for managing certificate/secret expiry and renewal, and other manual renewals?",
+  "text": "What tools do you guys use for managing renewals for certificates, secrets, and other things that need to be manually renewed and that doesn't have a built-in notification mechanism? Any recommendations for services, or perhaps other tricks or routines you've established that you've found works? submitted by /u/nikolai_nyegaard [link] [comments]",
+  "url": "https://www.reddit.com/r/msp/comments/1rdb15z/service_or_tool_for_managing_certificatesecret/",
+  "date": "2026-02-24"
+ },
+ {
+  "src": "reddit r/msp",
+  "title": "\"MSP: ‘Hyper-V Migration Can’t Be Scripted’—Also: ‘Your Employees Can Do It Manually’\"",
+  "text": "The owner of the MSP claimed scripting the migration is impossible because “computers would have to be booted and the admin profile logged in.” Naturally, they don’t want their techs doing the manual migration either—they expect the client’s staff to follow an SOP that the MSP writes. I'm not crazy, right? Please tell me this is batshit. submitted by /u/UncleRicoInEightyTwo [link] [comments]",
+  "url": "https://www.reddit.com/r/msp/comments/1qx6rgq/msp_hyperv_migration_cant_be_scriptedalso_your/",
+  "date": "2026-02-06"
+ },
+ {
+  "src": "reddit r/EtsySellers",
+  "title": "POD first or making the shirts by hand?",
+  "text": "I am really interested in creating shirts with DTF transfers myself. Now I am thinking that maybe I don’t want to spend the money on the inventory before I know if these things could actually sell. Any recommendations of if I go the POD route, what companies link well with Etsy? submitted by /u/bacon4life [link] [comments]",
+  "url": "https://www.reddit.com/r/EtsySellers/comments/1xhsizv/pod_first_or_making_the_shirts_by_hand/",
+  "date": "2026-10-28"
+ },
+ {
+  "src": "reddit r/EtsySellers",
+  "title": "New to etsy: how do I ship some products manually and some calculated?",
+  "text": "Im starting an Etsy shop to sell stickers and prints of my artwork. I'd like to sell the stickers with the cheapest shipping possible by sending them in a greeting card, and the prints would go out in rigid mailers with etsys standard shipping options. I cant seem to figure out how to ship one product for $1 (to cover stamp and card) and other products as the etsy standard shipping options. Is there an option to send a package for submitted by /u/solaceartwork [link] [comments]",
+  "url": "https://www.reddit.com/r/EtsySellers/comments/1wp4xq6/new_to_etsy_how_do_i_ship_some_products_manually/",
+  "date": "2026-09-24"
+ },
+ {
+  "src": "reddit r/EtsySellers",
+  "title": "What do you save for tax purposes besides the 1099 (and a spreadsheet)?",
+  "text": "I got my 1099 and reconciled it against my yearly sales numbers for last year. The gross amount on the 1099 is the website's Sales->Total Sales minus the sales tax Then there are expenses/income on the website for Refunds, Credits, Colorado Fee, Fees, Marketing, and Shipping. Plus my own cost-of-goods and general expenses. I have my own spreadsheet with ~1k sales that doesn't quite match up with those numbers. I assume I'm missing a few sales over the year. Should I just screenshot the Etsy Payment Account page for the 2025 and keep that for my records? Or download each month's CVS? Any other suggestions? I don't use Quickbooks or anything like that. Thanks. submitted by /u/idratherbgardenin",
+  "url": "https://www.reddit.com/r/EtsySellers/comments/1qpdg99/what_do_you_save_for_tax_purposes_besides_the/",
+  "date": "2026-01-28"
+ },
+ {
+  "src": "reddit r/EtsySellers",
+  "title": "How important is Alt Text for every image? Ai or Manually?",
+  "text": "Hi everyone! I've heard that alt text for images can be helpful for search. Are you writing alt text for each image manually or allowing Etsy to create AI alt text? I guess it's part of best practices and it would be best to write your own. Are you going back to each listing and doing this? submitted by /u/LatterRequirement532 [link] [comments]",
+  "url": "https://www.reddit.com/r/EtsySellers/comments/1sl140v/how_important_is_alt_text_for_every_image_ai_or/",
+  "date": "2026-04-14"
+ },
+ {
+  "src": "reddit r/EtsySellers",
+  "title": "Etsy order stuck in \"In Progress\" after adding tracking. Can't complete it manually.",
+  "text": "Hi everyone. I shipped an order and the tracking number added automatically, but it’s still stuck in the \"In Progress\" tab. All other orders added on \"Completed\" easy. For this one, the system won't let me complete it manually. The tracking number is attached correctly. Has anyone dealt with this recently? How did you fix it? Thanks! submitted by /u/EmmaRose_Cloud [link] [comments]",
+  "url": "https://www.reddit.com/r/EtsySellers/comments/1u3oxxf/etsy_order_stuck_in_in_progress_after_adding/",
+  "date": "2026-06-12"
+ },
+ {
+  "src": "reddit r/EtsySellers",
+  "title": "Is there a way deposits can be done manually or it always gets deposited based on what schedule you set?",
+  "text": "Hi Guys, I'm kinda new to etsy (2 months) and I made some small sale from my store. From what I understand, every deposit to your linked bank account has a small deposit fee. As a new shop, is there an option to keep your sales on etsy and not to automatically deposit it to the linked account? The deposit fee is large, so its not worth it for my shop since I only have a small net profit. I'm wondering if theres a way to manually deposit or hold your net profit until my shop have more sales? I haven't really made a deposit yet but its scheduled on April 6, so before then, I wanted to know if I can prevent doing the scheduled deposit. Any advice or insights are appreciated. Thank you! submitte",
+  "url": "https://www.reddit.com/r/EtsySellers/comments/1s8n6uf/is_there_a_way_deposits_can_be_done_manually_or/",
+  "date": "2026-03-31"
+ },
+ {
+  "src": "reddit r/weddingphotography",
+  "title": "1 week full gallery delivery - worth it?",
+  "text": "So my current editing set up means I can edit a full wedding gallery and deliver to clients within a week (roughly 1-1.5k images). My question is - am I 'ruining' the experience by being so efficient? Should I wait a bit more to allow some time for couples to 'forget' the details and be more excited? Sometimes I feel like being so quick is actually dampening the customer reactions. Curious to know your thoughts on this. submitted by /u/jayyyteeM [link] [comments]",
+  "url": "https://www.reddit.com/r/WeddingPhotography/comments/1w45lhc/1_week_full_gallery_delivery_worth_it/",
+  "date": "2026-09-01"
+ },
+ {
+  "src": "reddit r/weddingphotography",
+  "title": "How do you track gallery delivery + follow-ups without losing them in DMs?",
+  "text": "Wedding shooters who deliver galleries yourselves — what’s your system for “gallery ready → password → expiry → polite nudge”? I’ve been losing handoffs across Instagram DMs and notes. Curious what actually works for you (Notion, spreadsheet, CRM, something else). What broke for you before you found a setup that sticks? submitted by /u/North_Anything1541 [link] [comments]",
+  "url": "https://www.reddit.com/r/WeddingPhotography/comments/1wo18va/how_do_you_track_gallery_delivery_followups/",
+  "date": "2026-09-23"
+ },
+ {
+  "src": "reddit r/weddingphotography",
+  "title": "What's your actual gallery delivery workflow look like?",
+  "text": "I'm a photographer in Austria and I've been rethinking how I handle delivering finals to clients. Right now I feel like there's a gap between \"just send a Dropbox link\" and the full-blown all-in-one platforms that try to do everything. Curious what your workflow actually looks like end to end — do you use a dedicated gallery platform? Do clients actually use features like favorites or comments, or do they just download everything? And does anyone care about where their photos are hosted (EU vs US) or is that a non-issue? Would love to hear what works and what annoys you. submitted by /u/Unfair-Tie7084 [link] [comments]",
+  "url": "https://www.reddit.com/r/WeddingPhotography/comments/1r7ha4w/whats_your_actual_gallery_delivery_workflow_look/",
+  "date": "2026-02-17"
+ },
+ {
+  "src": "reddit r/weddingphotography",
+  "title": "Priority gallery delivery as paid add on?",
+  "text": "Hi everyone. I am curious to hear how other wedding photographers feel about offering priority or rush gallery delivery as an optional add-on. The idea would be to keep my standard turnaround time exactly the same, but allow couples to pay for their gallery to be edited and delivered sooner than the contracted window. For those who have experience with this: • Do you currently offer priority or rush delivery? • Has it worked well for you financially and for your workflow? • Did it feel ethical and fair to you long term? From a client perspective, I can see how some people would appreciate having the option. At the same time, I can understand how others might feel uncomfortable knowing a gall",
+  "url": "https://www.reddit.com/r/WeddingPhotography/comments/1q7n0e0/priority_gallery_delivery_as_paid_add_on/",
+  "date": "2026-01-08"
+ },
+ {
+  "src": "reddit r/weddingphotography",
+  "title": "Caterer had their own 2 content creators at the reception",
+  "text": "I shot a wedding a couple weekends ago on a private estate. The catering was wood fire pizza cooked on site and they had 2 content creators. The couple wanted to serve their guests the pizza by hand delivering the pies to each table but it was almost a fight to get “the shot” between the catering’s content creators, the hired videographer, hired content creator, and myself as the hired photographer. Seriously, 5 people trying to get the shot all at once. I was shocked that the catering content creators were in my way for this entire event. They were literally racing me and are in almost all of my shots. This is my 1st year solo and have never experienced this before, so I thought I’d come he",
+  "url": "https://www.reddit.com/r/WeddingPhotography/comments/1xmt96z/caterer_had_their_own_2_content_creators_at_the/",
+  "date": "2026-11-03"
+ },
+ {
+  "src": "reddit r/weddingphotography",
+  "title": "Have you had a client request you use no AI?",
+  "text": "I’ve been in business for over a decade and recently posted something on social media about how photoshop AI has made my life so much easier. A few days later, I got a message from a client getting married soon asking me not to use any AI when editing their wedding. It made me realize how much I actually rely on AI so much these days. From culling to editing to spot removal. I still manually edit every picture by hand, but AI is part of my workflow. Would you change it for a client or add something to your contract going forward stating you do use AI? I didn’t really know it was controversial to use AI from the client side until now. I feel like it’s industry standard to use AI at least a li",
+  "url": "https://www.reddit.com/r/WeddingPhotography/comments/1s0ufkv/have_you_had_a_client_request_you_use_no_ai/",
+  "date": "2026-03-22"
+ },
+ {
+  "src": "reddit r/podcasting",
+  "title": "Anyone else spending more time reviewing AI clips than it would take to just edit manually?",
+  "text": "I pay $58/month for Opus Clip, get 30 clips, and post only 2. Anyone else spending more time reviewing AI clips than it would take to just edit manually? submitted by /u/yerassyldesign [link] [comments]",
+  "url": "https://www.reddit.com/r/podcasting/comments/1ud8hlw/anyone_else_spending_more_time_reviewing_ai_clips/",
+  "date": "2026-06-23"
+ },
+ {
+  "src": "reddit r/podcasting",
+  "title": "Trying to manually remove echo and room noise of a podcast episode.",
+  "text": "Ive been editing some audio that was recored in another room than where it was normally recorded. There's a bit of room noise and echo and playback sounds like it was done in the bathroom. I have used descript and premiere pro's reduce reverb set on 5 with some eq's and it sounds a little over processed. Ive been listening to it back and spent more time than needed. What settings or ways has anyone used that's worked that can bring the sound to life and sound as close to studio quality as possible please. Thank you! submitted by /u/Positive-Respect-878 [link] [comments]",
+  "url": "https://www.reddit.com/r/podcasting/comments/1pr8lhh/trying_to_manually_remove_echo_and_room_noise_of/",
+  "date": "2025-12-20"
+ },
+ {
+  "src": "reddit r/podcasting",
+  "title": "Getting around Zencastr AI chat* How to manually publish a finished episode while their system is screwy",
+  "text": "*almost, they really gon' make you use it Do you love the infantilizing new AI chat system but it's failing to publish your audio-only file because their system can't render its own video you don't want? Here's the totally intuitive manual process it took support 26 hours to share: From your Zencastr dashboard, click New Recording , then select Upload File. Choose the finished audio or video file you want to use for the episode and wait for the upload to complete. Once the upload finishes, Zencastr will create a new Chat containing that file. In the Producer chat, type “Produce,” then select “Make an Episode.” These two actions allow Zencastr to process the externally edited file and prepare",
+  "url": "https://www.reddit.com/r/podcasting/comments/1wnn605/getting_around_zencastr_ai_chat_how_to_manually/",
+  "date": "2026-09-22"
+ },
+ {
+  "src": "reddit r/podcasting",
+  "title": "Manual Clipping in Riverside",
+  "text": "We use Riverside to produce our podcast, and if you're familiar they have a feature called \"Magic Clips\". I like the feature, get some pretty decent clips to edit out of it. However, when I try to create specific clips with magic clips, by putting in the specific keywords, I'd say it only gets the right moment about 60 percent of the time. Does anyone who uses Riverside know a better way to clip a specific moment? Is this an easy feat that I've somehow completely whiffed on? submitted by /u/FlickFightsPodcast [link] [comments]",
+  "url": "https://www.reddit.com/r/podcasting/comments/1u1nelv/manual_clipping_in_riverside/",
+  "date": "2026-06-10"
+ },
+ {
+  "src": "reddit r/podcasting",
+  "title": "PodBean Users: Workaround to Video on Apple AND Spotify?",
+  "text": "I work for a video company that does video podcasts, we post the audio on PodBean and video on YouTube. We use PodBean as a host. We have our RSS and HSL feed setup on Apple and RSS for Spotify. I know the workaround for Spotify is to go to Spotify for Creators and upload the video that corresponds to the podcast episode. However, now since I want video on Apple too, I went to upload the .mp4 so Apple can stream it using the HSL feed. But when I do, it tells me Spotify uses \"passthrough\" so therefore they will take the episode down. I know I can switch to having Spotify be our hosts, but I don't want to manually have to upload to YouTube, PodBean, AND Spotify every time. Plus, I want our Pod",
+  "url": "https://www.reddit.com/r/podcasting/comments/1sg30nn/podbean_users_workaround_to_video_on_apple_and/",
+  "date": "2026-04-08"
+ },
+ {
+  "src": "reddit r/podcasting",
+  "title": "Lack of Japanese Speaking Host - looking for workaround",
+  "text": "My podcast has English speaking guests and Japanese speaking guests, different episodes. I'm the host for the English, no one at the charity wants to step up and record the intros, etc. What I wanted to do was record Co-Pilot since 'she' does excellent voice in Japanese. But Microsoft won't allow that. (Even though CP told me she could until she couldn't.) Is there a similar voice app that will do the same? Google translate sounds like AI. Is there an Apple setup for this. I use Audacity, tried the VBA and it works with GT perfectly, except for the awful voice. There is the Anime voice app, haven't tried it yet. Any suggestions would be appreciated. submitted by /u/TT-Only [link] [comments]",
+  "url": "https://www.reddit.com/r/podcasting/comments/1ren80t/lack_of_japanese_speaking_host_looking_for/",
+  "date": "2026-02-25"
+ },
+ {
+  "src": "reddit r/audioengineering",
+  "title": "Are phase correction plugins worth using or is manual adjustment still the better approach?",
+  "text": "I've always been a bit skeptical about phase correction plugins. Not because I think phase issues aren't real, but because I've heard mixed results from automatic alignment tools. Sometimes they seem to improve things, other times the drums end up sounding weird or losing some of their punch. Manually adjusting polarity, all pass filters and timing can get good results, but it's also pretty time consuming when you're dealing with a lot of microphones... I'm curious what other engineers are using these days. Are there any plugins that genuinely make a noticeable difference to your mixes, or do you still prefer handling everything manually? Also interested in whether anyone has compared differ",
+  "url": "https://www.reddit.com/r/audioengineering/comments/1xma6yi/are_phase_correction_plugins_worth_using_or_is/",
+  "date": "2026-11-02"
+ },
+ {
+  "src": "reddit r/audioengineering",
+  "title": "How do you guys keep track of your manuals for all your gear?",
+  "text": "I was looking at my pedal board today and was thinking “man, I wish I just had some folder with all my manuals organized in there to quickly reference”. Are any of you diligent enough to do this? Are there any existing tools you guys use to easily keep track of this? I’m surprised nothing general exists after doing a quick search. It would be nice to quickly reference all my manuals rather than do what I have been and googling them every time I want to search something submitted by /u/Hairyfatugly [link] [comments]",
+  "url": "https://www.reddit.com/r/audioengineering/comments/1v4sni1/how_do_you_guys_keep_track_of_your_manuals_for/",
+  "date": "2026-07-23"
+ },
+ {
+  "src": "reddit r/audioengineering",
+  "title": "Do you usually match levels for a comped vocal manually? Or do you find just adding compression later to be “good enough”?",
+  "text": "Do you usually match levels for a comped vocal manually? Or do you find just adding compression later to be “good enough”? submitted by /u/tonetonitony [link] [comments]",
+  "url": "https://www.reddit.com/r/audioengineering/comments/1t6k44y/do_you_usually_match_levels_for_a_comped_vocal/",
+  "date": "2026-05-07"
+ },
+ {
+  "src": "reddit r/audioengineering",
+  "title": "Mackie Audio manuals easter egg: OSHA exposure chart says \"105db: Chaz screaming at Troy about deadlines.\"",
+  "text": "I was browsing the user manual for a Mackie mixer / recording interface (Onyx16) when I came upon this gem in the warning section about minimizing exposure to loud sounds. They give the standard OSHA regulations, then provide a helpful chart to understand how much time you can be exposed to loud sounds before hearing damage occurs. https://imgur.com/gallery/SUk9kNY Does anyone know this bit of Mackie lore? Who are Chaz and Troy, and why is the one screaming at the other about deadlines all the time? :D This chart is in a bunch of Mackie product user manuals, apparently. submitted by /u/eaglebtc [link] [comments]",
+  "url": "https://www.reddit.com/r/audioengineering/comments/1u81qft/mackie_audio_manuals_easter_egg_osha_exposure/",
+  "date": "2026-06-17"
+ },
+ {
+  "src": "reddit r/audioengineering",
+  "title": "Desperately seeking old product manual! (Carvin MX1608)",
+  "text": "I’ve got my hands on an early 80s (‘82 I believe) Carvin MX1608 mixer, and I’m trying to find if there’s any kind souls who might have access to a manual for it. Carvin didn’t seem interested in helping, best they could do was point me to their MX1602 model. I’m looking for owners manual, tech specs, really anything that can help me service this particular machine. Hoping the powerful minds of reddit can blow the dust off some old material! Thanks yall! submitted by /u/Specific_Roll4024 [link] [comments]",
+  "url": "https://www.reddit.com/r/audioengineering/comments/1wixd1z/desperately_seeking_old_product_manual_carvin/",
+  "date": "2026-09-17"
+ },
+ {
+  "src": "reddit r/audioengineering",
+  "title": "Cubase issue: Import/Convert Rack Instrument as Track Instrument (or easy workaround)",
+  "text": "Hi everyone, I am facing a recurring workflow issue in Cubase and I'm looking for either a hidden workaround or want to submit this as a formal feature request. My Goal: I want to import a VST instrument track from an older project into a new project. In the original project, this instrument was set up as a Rack Instrument. In the new project, I strictly want to import/convert it into a modern Track Instrument (Instrument Track) – including all loaded audio plugins (inserts/mixer channel strip settings). The Problem: The traditional way using Track Presets does not work cleanly with Rack Instruments because Cubase splits the technical data into a MIDI track and an Audio Output track. If you ",
+  "url": "https://www.reddit.com/r/audioengineering/comments/1wkpm28/cubase_issue_importconvert_rack_instrument_as/",
+  "date": "2026-09-19"
+ },
+ {
+  "src": "stackexchange softwarerecs",
+  "title": "Easy automated network tests (for showing ISP network engineers)",
+  "text": "I’m looking for a tool that will output many detailed charts showing the “Internet Quality” of a given network. My internet is crap. I pay for a gigabit fiber-to-the-home connection , but it’s crap. If I try to connect to popular services (facebook, google, speedtest servers inside the country), then everything works great. But if I try to access servers on other continents (without CDNs in my own country), bounce through reliable proxy servers, and/or peg the bandwidth to what I'm paying-for, then the Internet does not work properly. If I call the ISP and have a network engineer come-out, they’ll probably just open an ookla speedtest (that connects to a local server in my city), show me an ",
+  "url": "https://softwarerecs.stackexchange.com/questions/95197/easy-automated-network-tests-for-showing-isp-network-engineers",
+  "date": "2026-02-18",
+  "score": 1
+ },
+ {
+  "src": "stackexchange softwarerecs",
+  "title": "Software to enhance German text for TTS",
+  "text": "When converting German text to speech (TTS), I find that many AI models make a lot of mistakes, even the big commercial suppliers like OpenAI and ElevenLabs. I found that the following text works particularly well for testing: Dezember 2025: Der Bitcoin-Kurs sinkt auf 74000€. Some of the problems include: \" 1. \" is pronounced as \"ersten\" or \"erstens\" instead of \"erster\". \" 2025 \" is pronounced as \"zweitausffünfundzwanzig\" or similar. \" 74000 \" is pronounced as \"27000\", \"47000\", \"77000\" or simply broken like \" 2025 \". \" € \" may not be pronounced at all or results in a early cut off (like \"Eu\"). So, the AI models seem to have problems with: large numbers special characters This happens across ",
+  "url": "https://softwarerecs.stackexchange.com/questions/94991/software-to-enhance-german-text-for-tts",
+  "date": "2025-12-09",
+  "score": 2
+ },
+ {
+  "src": "stackexchange softwarerecs",
+  "title": "Batch convert icon files into individual PNGs",
+  "text": "Windows icons (.ICO files) contain many small images. These files were used in applications for years (at least I know them from 1996 until 2018). Nowadays, it seems that WPF applications require PNG files instead. Therefore I am looking for this software: converts an ICO file into several PNGs PNGs are distinguishable by size and colors (e.g. icon1_16x16_16c.png ) is gratis, open-source preferred runs on Windows 10+ is a command line program can process hundreds of ICOs in one run I have tried: ico2png-cli , but I simply can't get used to those JavaScript NPM things",
+  "url": "https://softwarerecs.stackexchange.com/questions/94905/batch-convert-icon-files-into-individual-pngs",
+  "date": "2025-11-13",
+  "score": 0
+ },
+ {
+  "src": "youtube 'QuickBooks month-end close tutorial'",
+  "title": "How to Do a Month-End Close in QuickBooks Online (Step by Step)",
+  "text": "Really appreciate how you frame the close as confirming the books are complete before anyone relies on the reports — that's the mindset shift that matters. And the point about reconciling loans, lines of credit, and notes payable, not just the checking and savings accounts, is one I wish more bookkeepers heard. Those are exactly the accounts that quietly stay unreconciled for months.",
+  "url": "https://www.youtube.com/watch?v=O4X9fNFzty8&lc=Ugxb6jhzPy6nXWK-ftp4AaABAg",
+  "date": "2026-10-01",
+  "likes": 1
+ },
+ {
+  "src": "youtube 'QuickBooks month-end close tutorial'",
+  "title": "How to Do a Month-End Close in QuickBooks Online (Step by Step)",
+  "text": "Hello, thank you for sharing your knowledge. I am an accountant from Brazil, and I am looking to learn more about the bookkeeping market in the United States. I have a question regarding payroll; I would appreciate it if you could answer it. I’ve seen some professionals in the field mention that they do not handle payroll processing—only the accounting entries. If that’s the case, who actually handles the payroll? Do clients need to hire a separate company for that? This seems a bit unusual to me, as in Brazil, the accounting firm is responsible for managing the entire payroll process. I’ll be watching your videos to learn more. Thank you.",
+  "url": "https://www.youtube.com/watch?v=O4X9fNFzty8&lc=UgwHlCsEShMN0y83TcZ4AaABAg",
+  "date": "2026-11-01",
+  "likes": 1
+ },
+ {
+  "src": "youtube 'bank reconciliation workflow small business'",
+  "title": "Claude's Cowork Mode Automated My Monthly Close – Here's What Happened",
+  "text": "Awesome video! I love that you structured the prompts to get the same output each month.",
+  "url": "https://www.youtube.com/watch?v=z-MKw_9kNYA&lc=UgzyRaQs5B_1Xa-tHD94AaABAg",
+  "date": "2026-02-26",
+  "likes": 2
+ },
+ {
+  "src": "youtube 'bank reconciliation workflow small business'",
+  "title": "Claude's Cowork Mode Automated My Monthly Close – Here's What Happened",
+  "text": "Good stuff! Excellent guide and very easy to follow",
+  "url": "https://www.youtube.com/watch?v=z-MKw_9kNYA&lc=UgwL7wIx7-95BtZ2M6R4AaABAg",
+  "date": "2026-02-22",
+  "likes": 0
+ },
+ {
+  "src": "youtube 'bank reconciliation workflow small business'",
+  "title": "Claude's Cowork Mode Automated My Monthly Close – Here's What Happened",
+  "text": "What files did you give Claude access to? What was the source of the info? Just a trial balance?",
+  "url": "https://www.youtube.com/watch?v=z-MKw_9kNYA&lc=Ugz_4KCZNfo--MXmDBh4AaABAg",
+  "date": "2026-04-15",
+  "likes": 2
+ },
+ {
+  "src": "youtube 'bank reconciliation workflow small business'",
+  "title": "Claude's Cowork Mode Automated My Monthly Close – Here's What Happened",
+  "text": "Great explanation! Learnt something valuable today!",
+  "url": "https://www.youtube.com/watch?v=z-MKw_9kNYA&lc=UgwcOSNiQ3944ivf63V4AaABAg",
+  "date": "2026-02-24",
+  "likes": 0
+ },
+ {
+  "src": "youtube 'bank reconciliation workflow small business'",
+  "title": "Claude's Cowork Mode Automated My Monthly Close – Here's What Happened",
+  "text": "Great video! I really enjoy your content here and on Linkedin and FMI. Thanks!",
+  "url": "https://www.youtube.com/watch?v=z-MKw_9kNYA&lc=Ugw-tQcsbVQ-Lc0gGXF4AaABAg",
+  "date": "2026-02-21",
+  "likes": 1
+ },
+ {
+  "src": "youtube 'bank reconciliation workflow small business'",
+  "title": "Claude's Cowork Mode Automated My Monthly Close – Here's What Happened",
+  "text": "Excellent video! Please share the plugin. Thank you!",
+  "url": "https://www.youtube.com/watch?v=z-MKw_9kNYA&lc=UgxLu84ih_I6EYmLk9Z4AaABAg",
+  "date": "2026-06-01",
+  "likes": 0
+ },
+ {
+  "src": "youtube 'bank reconciliation workflow small business'",
+  "title": "Claude's Cowork Mode Automated My Monthly Close – Here's What Happened",
+  "text": "Problem is working with a general ledger software program and not excel files",
+  "url": "https://www.youtube.com/watch?v=z-MKw_9kNYA&lc=UgwRFozH5GFqFunToYR4AaABAg",
+  "date": "2026-09-15",
+  "likes": 0
+ },
+ {
+  "src": "youtube 'bank reconciliation workflow small business'",
+  "title": "Claude's Cowork Mode Automated My Monthly Close – Here's What Happened",
+  "text": "Great video, thanks! I wonder why Anthropic is not pushing connectors (MCPs) to access enterprise applications like SAP, SAGE, MS Dynamics etc..",
+  "url": "https://www.youtube.com/watch?v=z-MKw_9kNYA&lc=Ugwnk6x1gTRLu__yZul4AaABAg",
+  "date": "2026-03-03",
+  "likes": 0
+ },
+ {
+  "src": "youtube 'bank reconciliation workflow small business'",
+  "title": "Claude's Cowork Mode Automated My Monthly Close – Here's What Happened",
+  "text": "I asked Claude about this. It says, itself, that the errors are silent, and the error rate, liability exposure, and data security concerns make it inadvisable to use in this manner. The reliability for actual bookkeeping work is immature.",
+  "url": "https://www.youtube.com/watch?v=z-MKw_9kNYA&lc=UgydpvQzC-nwBveJqE14AaABAg",
+  "date": "2026-06-26",
+  "likes": 0
+ },
+ {
+  "src": "youtube 'bank reconciliation workflow small business'",
+  "title": "Claude's Cowork Mode Automated My Monthly Close – Here's What Happened",
+  "text": "It did not show in the video how you shared the TB and the bank statements to the Cowork, can you explain?",
+  "url": "https://www.youtube.com/watch?v=z-MKw_9kNYA&lc=Ugx_aEmsNYmqWf8AeG54AaABAg",
+  "date": "2026-03-18",
+  "likes": 0
+ },
+ {
+  "src": "youtube 'bank reconciliation workflow small business'",
+  "title": "Claude's Cowork Mode Automated My Monthly Close – Here's What Happened",
+  "text": "Great. Can you share the synthetic data files for this example",
+  "url": "https://www.youtube.com/watch?v=z-MKw_9kNYA&lc=UgybpjRDktJCMwBJzI94AaABAg",
+  "date": "2026-03-20",
+  "likes": 1
+ },
+ {
+  "src": "youtube 'bank reconciliation workflow small business'",
+  "title": "Claude's Cowork Mode Automated My Monthly Close – Here's What Happened",
+  "text": "You a feeding this bank statements and records, are you not concerned about security and privacy?",
+  "url": "https://www.youtube.com/watch?v=z-MKw_9kNYA&lc=UgwAhfMajNILQ1SOlft4AaABAg",
+  "date": "2026-02-26",
+  "likes": 0
+ },
+ {
+  "src": "youtube 'bank reconciliation workflow small business'",
+  "title": "How to reconcile your accounts in QuickBooks Online",
+  "text": "Good, but it's even more better if you explaining how a doing reconciliation in real from start to end",
+  "url": "https://www.youtube.com/watch?v=YTss2L7Fo3Q&lc=UgxvkKc2VjEe28AWvUV4AaABAg",
+  "date": "2026-06-29",
+  "likes": 0
+ },
+ {
+  "src": "youtube 'bank reconciliation workflow small business'",
+  "title": "How to reconcile your accounts in QuickBooks Online",
+  "text": "How to find discrepancies when the Bank Statement that was uploaded doesn't match the QuickBooks list of transactions within the statement period? I have trouble finding the discrepancy when it doesn't match and get a $0. I look through the transactions (between Bank Statement and QuickBooks' list of transactions) and make sure they are all marked off with a check mark, but there is still a negative -$145 difference, for example. What methods to use to find discrepancies each time that makes it easy to figure out and get a $0 or match? Thank you!",
+  "url": "https://www.youtube.com/watch?v=YTss2L7Fo3Q&lc=Ugzlnjqf6AlWC2RDTI14AaABAg",
+  "date": "2026-07-05",
+  "likes": 3
+ },
+ {
+  "src": "youtube 'bank reconciliation workflow small business'",
+  "title": "How to reconcile your accounts in QuickBooks Online",
+  "text": "How do I delete all previous reconciliations? I’ve discovered a huge discrepancy and need to start completely over from the beginning.",
+  "url": "https://www.youtube.com/watch?v=YTss2L7Fo3Q&lc=UgzFMeQO0QlEEP-VmJp4AaABAg",
+  "date": "2026-02-20",
+  "likes": 6
+ },
+ {
+  "src": "youtube 'Lightroom export workflow wedding'",
+  "title": "Raw Files to Final Wedding Photo Gallery in Adobe Lightroom Classic",
+  "text": "Get 1500 free edits with Imagen by signing up here: https://imagenai.com/taylorjackson-imagen",
+  "url": "https://www.youtube.com/watch?v=F--agb4jbr0&lc=Ugy06NmebccbL6qwOcB4AaABAg",
+  "date": "2026-08-10",
+  "likes": 1
+ },
+ {
+  "src": "youtube 'Lightroom export workflow wedding'",
+  "title": "Raw Files to Final Wedding Photo Gallery in Adobe Lightroom Classic",
+  "text": "Thanks so much for doing this! I’ve been using ai culling but I’ve found that it can’t always tell a bad photo from an emotional photo, mom wiping her tears from her eye or a great laughing picture, etc. I’m also concerned it will completely miss certain photos on the shot list, or maybe an imperfect picture of a couple people who aren’t represented anywhere else in the gallery. This has made me still do a second pass with a manual cull, which makes the ai helpful but not a huge time saver. Have you trusted this enough to where you don’t go back through to make sure it didn’t miss anything? Also I’ve been dying to ask you, what’s your total time investment from bringing the cards home to del",
+  "url": "https://www.youtube.com/watch?v=F--agb4jbr0&lc=UgwfN-KEFaI0Gsv5h2l4AaABAg",
+  "date": "2026-08-10",
+  "likes": 1
+ },
+ {
+  "src": "youtube 'Lightroom export workflow wedding'",
+  "title": "Raw Files to Final Wedding Photo Gallery in Adobe Lightroom Classic",
+  "text": "How will Imagen fare for Indian weddings? There are differences for white weddings vs Indian weddings, we have rituals etc, will it be able to reconigze that?",
+  "url": "https://www.youtube.com/watch?v=F--agb4jbr0&lc=UgzdWDRY3b8hDQldGmF4AaABAg",
+  "date": "2026-08-10",
+  "likes": 1
+ },
+ {
+  "src": "youtube 'Lightroom export workflow wedding'",
+  "title": "The Best Instagram Export Settings for Adobe Lightroom 2026",
+  "text": "this has been EXCELLENT thank you so much for sharing and for your hard work ❤",
+  "url": "https://www.youtube.com/watch?v=SOvThNZ7BL4&lc=Ugx94S4hBOuenwZuhWh4AaABAg",
+  "date": "2026-10-10",
+  "likes": 1
+ },
+ {
+  "src": "youtube 'Lightroom export workflow wedding'",
+  "title": "The Best Instagram Export Settings for Adobe Lightroom 2026",
+  "text": "Thank you!! This has been driving me nuts for literally YEARS. I've tried everything. This is the only thing that has worked!",
+  "url": "https://www.youtube.com/watch?v=SOvThNZ7BL4&lc=UgzYgtpi9E5lGA2z2014AaABAg",
+  "date": "2026-03-27",
+  "likes": 6
+ },
+ {
+  "src": "youtube 'Lightroom export workflow wedding'",
+  "title": "The Best Instagram Export Settings for Adobe Lightroom 2026",
+  "text": "1080 px is no longer the maximum, Instagram internally upscales to 1440 px (if smaller), i.e. in terms of 3:4 ratio, it is 1440 x 1920 px now.",
+  "url": "https://www.youtube.com/watch?v=SOvThNZ7BL4&lc=UgzYzz5hTWs1cv8KC5Z4AaABAg",
+  "date": "2026-06-26",
+  "likes": 2
+ },
+ {
+  "src": "youtube 'Lightroom export workflow wedding'",
+  "title": "The Best Instagram Export Settings for Adobe Lightroom 2026",
+  "text": "Leaving the H to empty, gives an error , it needs to have a value of at least 1, so what do I put it as?",
+  "url": "https://www.youtube.com/watch?v=SOvThNZ7BL4&lc=UgwSZuSwDZu92e5SbRF4AaABAg",
+  "date": "2026-05-02",
+  "likes": 2
+ },
+ {
+  "src": "youtube 'Lightroom export workflow wedding'",
+  "title": "The Best Instagram Export Settings for Adobe Lightroom 2026",
+  "text": "Instagram has supported higher resolutions than 1080 pixels for a long time. I never understand why all these 'Sizing for Instagram' posts insist on telling us 1080. 1440 width images have been everywhere for years, and I think IG might even support even higher more recently.",
+  "url": "https://www.youtube.com/watch?v=SOvThNZ7BL4&lc=UgxFJjbfRYychi5bVUV4AaABAg",
+  "date": "2025-12-15",
+  "likes": 26
+ },
+ {
+  "src": "youtube 'Lightroom export workflow wedding'",
+  "title": "The Best Instagram Export Settings for Adobe Lightroom 2026",
+  "text": "hey, helpful video but what about horizontal images?",
+  "url": "https://www.youtube.com/watch?v=SOvThNZ7BL4&lc=UgzGOsyOq-70at3es1B4AaABAg",
+  "date": "2026-08-31",
+  "likes": 0
+ },
+ {
+  "src": "youtube 'Lightroom export workflow wedding'",
+  "title": "The Best Instagram Export Settings for Adobe Lightroom 2026",
+  "text": "All I gotta say is, good shit! Nice video and well worth watching to understand the small details!",
+  "url": "https://www.youtube.com/watch?v=SOvThNZ7BL4&lc=Ugyux13PjuEbO3qVHop4AaABAg",
+  "date": "2026-03-18",
+  "likes": 0
+ },
+ {
+  "src": "youtube 'Lightroom export workflow wedding'",
+  "title": "The Best Instagram Export Settings for Adobe Lightroom 2026",
+  "text": "Nicely explained! Thank you so much for this. I shall try it for my next upload to Instagram 😊",
+  "url": "https://www.youtube.com/watch?v=SOvThNZ7BL4&lc=UgyNjPr6AAwvrwA2RdF4AaABAg",
+  "date": "2026-04-06",
+  "likes": 0
+ },
+ {
+  "src": "youtube 'Lightroom export workflow wedding'",
+  "title": "The Best Instagram Export Settings for Adobe Lightroom 2026",
+  "text": "Thanks Pat! I didn't know you would post from the web, its going to make my process straight forward 😎",
+  "url": "https://www.youtube.com/watch?v=SOvThNZ7BL4&lc=UgwIQMdGiHGvAkB5lrN4AaABAg",
+  "date": "2025-12-16",
+  "likes": 1
+ },
+ {
+  "src": "youtube 'Lightroom export workflow wedding'",
+  "title": "The Best Instagram Export Settings for Adobe Lightroom 2026",
+  "text": "I suppose if we’re not using Lightroom classic those settings are just not presented to me? I don’t see those dimension and resolution boxes unfortunately.",
+  "url": "https://www.youtube.com/watch?v=SOvThNZ7BL4&lc=UgzmgjjzRUMWVR3cGb54AaABAg",
+  "date": "2026-05-25",
+  "likes": 0
+ },
+ {
+  "src": "youtube 'Lightroom export workflow wedding'",
+  "title": "The Best Instagram Export Settings for Adobe Lightroom 2026",
+  "text": "Yeay, you're the best 👌 thanks for the insightful tips",
+  "url": "https://www.youtube.com/watch?v=SOvThNZ7BL4&lc=Ugy_wNL-NFflqyLqGrR4AaABAg",
+  "date": "2025-12-15",
+  "likes": 0
+ },
+ {
+  "src": "youtube 'Lightroom export workflow wedding'",
+  "title": "The Best Instagram Export Settings for Adobe Lightroom 2026",
+  "text": "Very interesting video. Thanks for your work.",
+  "url": "https://www.youtube.com/watch?v=SOvThNZ7BL4&lc=Ugxc6OrnFZQxPAHvWbV4AaABAg",
+  "date": "2025-12-15",
+  "likes": 1
+ },
+ {
+  "src": "youtube 'Lightroom export workflow wedding'",
+  "title": "The Best Instagram Export Settings for Adobe Lightroom 2026",
+  "text": "hi Pat, thankyou so much for this video, it's really interesting, I do have a question tho', if you shoot landscape, not in 4:5 or 1:1, but like 16:9, does the settings also apply the same ? or is there a slight changes in the export setting ? thankyou so much beforehand !",
+  "url": "https://www.youtube.com/watch?v=SOvThNZ7BL4&lc=Ugy5iMqbHo7nP5w9W2J4AaABAg",
+  "date": "2026-01-08",
+  "likes": 4
+ },
+ {
+  "src": "youtube 'Lightroom export workflow wedding'",
+  "title": "The Best Instagram Export Settings for Adobe Lightroom 2026",
+  "text": "What is your method on uploading to instagram from your computer with our losing quality?",
+  "url": "https://www.youtube.com/watch?v=SOvThNZ7BL4&lc=UgyUfRRxxaNnDoQGLeJ4AaABAg",
+  "date": "2026-03-03",
+  "likes": 0
+ },
+ {
+  "src": "youtube 'Lightroom export workflow wedding'",
+  "title": "The Best Instagram Export Settings for Adobe Lightroom 2026",
+  "text": "always loved your vids pat, but when following along, it wont let me leave the Height blank, I have to put a number starting with at least 1, does that matter?",
+  "url": "https://www.youtube.com/watch?v=SOvThNZ7BL4&lc=UgxN8xtr_VSl8h8NSTd4AaABAg",
+  "date": "2026-01-14",
+  "likes": 1
+ },
+ {
+  "src": "youtube 'Lightroom export workflow wedding'",
+  "title": "The Best Instagram Export Settings for Adobe Lightroom 2026",
+  "text": "it would've been interesting to see all the other export presets you had there :')",
+  "url": "https://www.youtube.com/watch?v=SOvThNZ7BL4&lc=Ugx92EILavoOr7Fm8OB4AaABAg",
+  "date": "2025-12-15",
+  "likes": 1
+ },
+ {
+  "src": "youtube 'Lightroom export workflow wedding'",
+  "title": "The Best Instagram Export Settings for Adobe Lightroom 2026",
+  "text": "Do these settings apply to Facebook as well? Thanks!",
+  "url": "https://www.youtube.com/watch?v=SOvThNZ7BL4&lc=UgzVbadRZq2CZH_ITTp4AaABAg",
+  "date": "2026-01-05",
+  "likes": 0
+ },
+ {
+  "src": "youtube 'Lightroom export workflow wedding'",
+  "title": "The Best Instagram Export Settings for Adobe Lightroom 2026",
+  "text": "I would like to ask is there any different if shoot with a7cr or a7c2 with the same lens and setting will any of these body will out perform better in low light?",
+  "url": "https://www.youtube.com/watch?v=SOvThNZ7BL4&lc=Ugzz4dmKo-WN2A3jyst4AaABAg",
+  "date": "2025-12-18",
+  "likes": 0
+ },
+ {
+  "src": "youtube 'Lightroom export workflow wedding'",
+  "title": "The Best Instagram Export Settings for Adobe Lightroom 2026",
+  "text": "I put original size to instagram and i dont see difrent witch your settings",
+  "url": "https://www.youtube.com/watch?v=SOvThNZ7BL4&lc=UgzDNftQiBkN9Z4Oumt4AaABAg",
+  "date": "2025-12-21",
+  "likes": 1
+ },
+ {
+  "src": "youtube 'Lightroom export workflow wedding'",
+  "title": "The Best Instagram Export Settings for Adobe Lightroom 2026",
+  "text": "This is the most frustrating process ever.. I've seen different export settings from so many people. Most common I've seen is 80-85% quality and for pixels 1080 Long Edge. Why width to height over long edge?",
+  "url": "https://www.youtube.com/watch?v=SOvThNZ7BL4&lc=Ugxf9lLQrghBc1kpFTl4AaABAg",
+  "date": "2026-05-22",
+  "likes": 0
+ },
+ {
+  "src": "youtube 'Lightroom export workflow wedding'",
+  "title": "The Best Instagram Export Settings for Adobe Lightroom 2026",
+  "text": "Whens the last time you saw a photo on your instagram feed? I checked the other day and didnt see a single one. Only video.",
+  "url": "https://www.youtube.com/watch?v=SOvThNZ7BL4&lc=Ugyj_W-ucky8JpttCNl4AaABAg",
+  "date": "2025-12-15",
+  "likes": 7
+ },
+ {
+  "src": "youtube 'Lightroom export workflow wedding'",
+  "title": "The Best Instagram Export Settings for Adobe Lightroom 2026",
+  "text": "Has anyone actually tested this side by side? I have gotten the best results by throwing the largest image possible at Instagram, so a full 42 megapixel export at 100% with no compression. If you go slightly over 1080 or 1440 it will compress and look bad, but when it compresses an 8K image it still looks a lot sharper than a 1080p image",
+  "url": "https://www.youtube.com/watch?v=SOvThNZ7BL4&lc=Ugw-FjdQaI2ifjpBix14AaABAg",
+  "date": "2025-12-15",
+  "likes": 3
+ },
+ {
+  "src": "youtube 'Lightroom export workflow wedding'",
+  "title": "The Best Instagram Export Settings for Adobe Lightroom 2026",
+  "text": "I did some tests exporting the photo at 1080 pixels on the long side, but it doesn’t work well. Uploading heavier files to Instagram gives much better results. It would be great to hear other opinions to understand this better.",
+  "url": "https://www.youtube.com/watch?v=SOvThNZ7BL4&lc=Ugz0CVdPbmzvEp6y8Xx4AaABAg",
+  "date": "2026-01-23",
+  "likes": 1
+ },
+ {
+  "src": "youtube 'Lightroom export workflow wedding'",
+  "title": "The Best Instagram Export Settings for Adobe Lightroom 2026",
+  "text": "do you have a proper workflow to export HDR photos to Instagram that WILL actually show an HDR as intended to be?",
+  "url": "https://www.youtube.com/watch?v=SOvThNZ7BL4&lc=UgzZ8KG_hfMMkkU5TEF4AaABAg",
+  "date": "2025-12-16",
+  "likes": 0
+ },
+ {
+  "src": "youtube 'Lightroom export workflow wedding'",
+  "title": "Lightroom Classic Made Easy - Importing and Organizing Photos",
+  "text": "Thank you!! Im messing with my Lightroom for over a month now.. finally got some structure in there",
+  "url": "https://www.youtube.com/watch?v=ki9TP_T0ScA&lc=UgzhOQtFMKvtMcJtVcZ4AaABAg",
+  "date": "2026-10-18",
+  "likes": 2
+ },
+ {
+  "src": "youtube 'Lightroom export workflow wedding'",
+  "title": "Lightroom Classic Made Easy - Importing and Organizing Photos",
+  "text": "So two questions: 1 - What’s the benefit of using the date format MM-DD-YY over the ISO date format YYYY-MM-DD? With the ISO format a directory full of files will automatically sort, with your format the files will sort by month. 2 - You refer to the COLLECTION as a FOLDER. You don’t actually show the folder you are importing into (your image is blocking the destination portion of the import screen).",
+  "url": "https://www.youtube.com/watch?v=ki9TP_T0ScA&lc=UgyqeApaY7sFLyIVihl4AaABAg",
+  "date": "2026-10-26",
+  "likes": 1
+ },
+ {
+  "src": "youtube 'report card comments teacher'",
+  "title": "Report card remarks for students | Teacher's remarks for students report card #remarks #reportcard",
+  "text": "Merci please remarkt child dexlexia diffuclt",
+  "url": "https://www.youtube.com/watch?v=kQFQqgRUsBU&lc=Ugye2_6LqybZI9VQqp14AaABAg",
+  "date": "2026-10-13",
+  "likes": 0
+ },
+ {
+  "src": "youtube 'sysadmin automation script tips'",
+  "title": "How to Automate Tasks with Bash Scripts in Kali Linux: Beginner-Friendly Guide",
+  "text": "please try backing up files by using bash scripting in kali",
+  "url": "https://www.youtube.com/watch?v=D1bFxQPGh9I&lc=UgwmFxoc-PvFc5SARiR4AaABAg",
+  "date": "2026-02-06",
+  "likes": 0
+ },
+ {
+  "src": "youtube 'sysadmin automation script tips'",
+  "title": "Claude Code + Ansible: Is AI Actually Useful for Sysadmins?",
+  "text": "Check out my updated version of this course! https://learnlinux.link/ansible",
+  "url": "https://www.youtube.com/watch?v=VeM6ENfZANo&lc=Ugy9l6swfyPoqJyo48Z4AaABAg",
+  "date": "2026-08-15",
+  "likes": 0
+ },
+ {
+  "src": "youtube 'sysadmin automation script tips'",
+  "title": "Claude Code + Ansible: Is AI Actually Useful for Sysadmins?",
+  "text": "When it comes to development, I suppose that using AI would be like asking a smart friend to help you with your homework: it does speed up the process significantly, but you still need to know the language of the assignment in order to review the work and know that it won’t turn out badly when you hand it over to be graded.",
+  "url": "https://www.youtube.com/watch?v=VeM6ENfZANo&lc=UgyovIGwoGsuEi2rCmF4AaABAg",
+  "date": "2026-03-28",
+  "likes": 4
+ },
+ {
+  "src": "youtube 'sysadmin automation script tips'",
+  "title": "Claude Code + Ansible: Is AI Actually Useful for Sysadmins?",
+  "text": "Im glad to hear a non-brain-dead, thoroughly hands-on experience-based opinion on AI. I've started to use it for devops, carefully inching towards what it can help with and I can tell its definitely a multiplier > 1 as well. This video gave me some ideas and I'm thankful for that.",
+  "url": "https://www.youtube.com/watch?v=VeM6ENfZANo&lc=UgxQlqCbf8p7K2ogjTJ4AaABAg",
+  "date": "2026-04-11",
+  "likes": 3
+ },
+ {
+  "src": "youtube 'sysadmin automation script tips'",
+  "title": "Claude Code + Ansible: Is AI Actually Useful for Sysadmins?",
+  "text": "Jay it's the most AI interresting video ive seen so far. You were already since many years in a Linux rabbit hole but now again with a AI one. It remind me of Minecraft recipe book that help newbies to craft stuff, but i never use it, i want to be able to play my favorite game by heart.",
+  "url": "https://www.youtube.com/watch?v=VeM6ENfZANo&lc=UgzHUpFzss_1epQjFWZ4AaABAg",
+  "date": "2026-03-25",
+  "likes": 1
+ },
+ {
+  "src": "youtube 'sysadmin automation script tips'",
+  "title": "Claude Code + Ansible: Is AI Actually Useful for Sysadmins?",
+  "text": "So, in a nutshell - it can check for issues, make lots of suggestions, but you must evaluate each yourself to see if any are viable. So it can help, but cannot do it for you.",
+  "url": "https://www.youtube.com/watch?v=VeM6ENfZANo&lc=Ugx0eQ28gCM-BhkXmhp4AaABAg",
+  "date": "2026-03-25",
+  "likes": 3
+ },
+ {
+  "src": "youtube 'sysadmin automation script tips'",
+  "title": "Claude Code + Ansible: Is AI Actually Useful for Sysadmins?",
+  "text": "Very very nice work! I too am impressed with AI newest coding capabilities! Actually gives more than it takes now..😂😅😮 with a little redirection once in awhile...😊",
+  "url": "https://www.youtube.com/watch?v=VeM6ENfZANo&lc=UgzG29UTlHaD-MlCnll4AaABAg",
+  "date": "2026-03-25",
+  "likes": 1
+ },
+ {
+  "src": "youtube 'sysadmin automation script tips'",
+  "title": "Claude Code + Ansible: Is AI Actually Useful for Sysadmins?",
+  "text": "i susally use ai wen i need help example im new still to hyprland and ricing so i ask ai to help me but its not always working fine ( example i asked for a help to configure somethign on my waybar it didnt work so i even try to ask for a full config code and it still didnt work other time it work fine",
+  "url": "https://www.youtube.com/watch?v=VeM6ENfZANo&lc=UgyVl7WJGlgZC-UqX6p4AaABAg",
+  "date": "2026-03-25",
+  "likes": 1
+ },
+ {
+  "src": "youtube 'sysadmin automation script tips'",
+  "title": "Claude Code + Ansible: Is AI Actually Useful for Sysadmins?",
+  "text": "AI, like anything else, is a tool that you use when it can solve a problem. Letting AI run rampant on a system for sysadmin job is not something I would want since stability and correctness is what I am looking for when I manage systems.",
+  "url": "https://www.youtube.com/watch?v=VeM6ENfZANo&lc=UgyJxcm7XL6xJJRX8ol4AaABAg",
+  "date": "2026-03-24",
+  "likes": 2
+ },
+ {
+  "src": "youtube 'sysadmin automation script tips'",
+  "title": "Claude Code + Ansible: Is AI Actually Useful for Sysadmins?",
+  "text": "For me, AI has been helpful with my NixOS set up, since the language is not very useful outside the NixOS domain. It was able to help me get my stuff organized in a nice way, that’s hard to gleam from docs and limited examples online.",
+  "url": "https://www.youtube.com/watch?v=VeM6ENfZANo&lc=UgxA712JqrgpUeEFsTp4AaABAg",
+  "date": "2026-03-27",
+  "likes": 0
+ },
+ {
+  "src": "youtube 'sysadmin automation script tips'",
+  "title": "Claude Code + Ansible: Is AI Actually Useful for Sysadmins?",
+  "text": "FOSS alternative to Claude Code? Would love to see that go along with Ansible and more, some free and open source alternative to Claude Code. Please make a video on how to run locally run AI on Linux and its usage and real world application as a SysAdmin, IT Support Specialist, DevOps guy etc..",
+  "url": "https://www.youtube.com/watch?v=VeM6ENfZANo&lc=UgzdxI25DcRV11tSVC54AaABAg",
+  "date": "2026-04-20",
+  "likes": 0
+ },
+ {
+  "src": "youtube 'sysadmin automation script tips'",
+  "title": "Claude Code + Ansible: Is AI Actually Useful for Sysadmins?",
+  "text": "Well, I hope it's better than Copilot. 2 times I've seen it insert the Ansible task that's the equivalent of \"chmod -R 755 /tmp\" No bueno. Too bad my employer only allows copilot.",
+  "url": "https://www.youtube.com/watch?v=VeM6ENfZANo&lc=UgydfNixGmQ6WirPuch4AaABAg",
+  "date": "2026-03-30",
+  "likes": 1
+ },
+ {
+  "src": "youtube 'sysadmin automation script tips'",
+  "title": "Claude Code + Ansible: Is AI Actually Useful for Sysadmins?",
+  "text": "This is a great video. Of course I say that because you echo my position on AI. 🤣 AI shouldn't replace human oversight or validation. It is simply a tool to improve productivity and if done right, it will improve the human using it too as well as making outcomes predictable and repeatable with less manual effort. I think AI-assisted automation is the best place for it in devops and sysadmin arenas as well as development.",
+  "url": "https://www.youtube.com/watch?v=VeM6ENfZANo&lc=Ugzc9RxgSk2MIEjS8-14AaABAg",
+  "date": "2026-03-25",
+  "likes": 0
+ },
+ {
+  "src": "youtube 'sysadmin automation script tips'",
+  "title": "Claude Code + Ansible: Is AI Actually Useful for Sysadmins?",
+  "text": "I have about 60 local and remote VM/CTs so I have a dedicated folder with a hierarchy of servers and each one has a _journal/ folder with per day journals and a _notes.md that has a a record of unique features and a summary of recent work and any TODOs and after about 6 months claude now has an excellent idea of my small \"fleet\". I just tell it do something in yolo mode and off it goes. No ansible needed.",
+  "url": "https://www.youtube.com/watch?v=VeM6ENfZANo&lc=UgyAiMn8qxZk-DaFZ3Z4AaABAg",
+  "date": "2026-03-25",
+  "likes": 0
+ },
+ {
+  "src": "youtube 'sysadmin automation script tips'",
+  "title": "Claude Code + Ansible: Is AI Actually Useful for Sysadmins?",
+  "text": "To be honest I used AI as tool to give me a starting point, not in programming but in other fields, I have an issue or I want to build/implement something I ask it it gives me the options and I know from where I can start my research. I don't use claude or chatgpt, I run my models locally, I gave them search and other tools for reseach and it is honestly decent at that. I never used them for advanced stuff for programming or anything similar. For example I might have an issue with a CNC machine, I describe the issue and it points me in a direction I follow that direction to see if it truly can be an answer",
+  "url": "https://www.youtube.com/watch?v=VeM6ENfZANo&lc=UgwYu9ZBD3BtQ_mHho54AaABAg",
+  "date": "2026-03-25",
+  "likes": 0
+ },
+ {
+  "src": "youtube 'sysadmin automation script tips'",
+  "title": "Claude Code + Ansible: Is AI Actually Useful for Sysadmins?",
+  "text": "Interested in the e-book, but not much info about it available. How many pages? What topics are covered? Does it deal with all distros? (and lots more) etc. Can you update the page with more info?",
+  "url": "https://www.youtube.com/watch?v=VeM6ENfZANo&lc=UgxsSH6WbUkDdGbzxNB4AaABAg",
+  "date": "2026-03-24",
+  "likes": 1
+ },
+ {
+  "src": "youtube 'sysadmin automation script tips'",
+  "title": "Claude Code + Ansible: Is AI Actually Useful for Sysadmins?",
+  "text": "Looks like you know your stuff, so far i have learned just enough to screw things up in spectacular fashion and able to fix it with the help of AIs explanations.",
+  "url": "https://www.youtube.com/watch?v=VeM6ENfZANo&lc=UgyNPas6LZ0LRkbFdFB4AaABAg",
+  "date": "2026-03-24",
+  "likes": 2
+ },
+ {
+  "src": "youtube 'sysadmin automation script tips'",
+  "title": "Claude Code + Ansible: Is AI Actually Useful for Sysadmins?",
+  "text": "yes you are on the right track treat claude code as a pair programmer, on the sysadmin side I have removed ansible completely and have had claude code developed a series of scripts to do my mundane work, these scripts can be run on test vms to check first, so deploy, report, update scripts which are given a list of endpoints to act on, the real win for me is an email every morning with a status report on all my and client servers",
+  "url": "https://www.youtube.com/watch?v=VeM6ENfZANo&lc=Ugzj_GHo4QMx5d9kT5J4AaABAg",
+  "date": "2026-03-29",
+  "likes": 0
+ },
+ {
+  "src": "youtube 'sysadmin automation script tips'",
+  "title": "Claude Code + Ansible: Is AI Actually Useful for Sysadmins?",
+  "text": "I'm new to Linux, and let me tell you: migrating from Windows to Linux involves some work and a certain learning curve. However, using AI has really smoothed out the process for me.",
+  "url": "https://www.youtube.com/watch?v=VeM6ENfZANo&lc=Ugy3upAWjV9P_7G78kJ4AaABAg",
+  "date": "2026-03-26",
+  "likes": 0
+ },
+ {
+  "src": "youtube 'sysadmin automation script tips'",
+  "title": "Claude Code + Ansible: Is AI Actually Useful for Sysadmins?",
+  "text": "So you are using AI on your Ansible code. Then, the code is run on your CI/CD pipeline. What I have been doing is discarding Ansible altogether and asking the agents (OpenCode) to run the commands on the servers via passwordless SSH. If everything turns out to be ok, ask the agent to write a Markdown file explaining what was done. Using Claude Code Sonnet 4.5, the results were very good. I was able to set up a MailServer/NextCloud combo really fast. But I was starting from a fresh install, with no production services running. I agree that using production servers is not a safe approach.",
+  "url": "https://www.youtube.com/watch?v=VeM6ENfZANo&lc=UgyqF1RcRr5ss7rFuJF4AaABAg",
+  "date": "2026-03-26",
+  "likes": 1
+ },
+ {
+  "src": "youtube 'sysadmin automation script tips'",
+  "title": "Claude Code + Ansible: Is AI Actually Useful for Sysadmins?",
+  "text": "I only use it in certain cases but there are some things I'm absolutely not going to change my mind on at all. One is integration! No AI integration on the machines! I know cell phones and the like are already doomed but on my system, I will control if and when AI is used and where it is used. AI MUST be separate and apart and can be removed at any time! That means if a app uses any sort of cloud AI, it will not stay installed for long! Localized is fine. This is the way I feel about it and everyone is fine to have their opinions. Have I used/experimented with AI? Sure. I had it have me go way deeper than I need to in order to get the answer to an app issue. I had it also attempt to help a s",
+  "url": "https://www.youtube.com/watch?v=VeM6ENfZANo&lc=UgwNn0Lnbj4kTEHs3mV4AaABAg",
+  "date": "2026-03-26",
+  "likes": 1
+ },
+ {
+  "src": "youtube 'sysadmin automation script tips'",
+  "title": "Claude Code + Ansible: Is AI Actually Useful for Sysadmins?",
+  "text": "I think of AI like any power tool or machine. In the hands of a skilled tradesman it's valuable for intended uses, in the hands of an idiot it's useless or dangerous. Even more important for us to keep in mind is that a powerful tool can cause a lot of damage if not used with care. We've already seen plenty of AI users figuratively \"chop off their arm\". An additional risk is that \"AI\" is non-deterministic. So even if it performs the same task correctly 100 times, the next time it may be completely wrong. Caveat emptor!",
+  "url": "https://www.youtube.com/watch?v=VeM6ENfZANo&lc=Ugy8QWYSYqUlyT4kb5d4AaABAg",
+  "date": "2026-03-27",
+  "likes": 1
+ },
+ {
+  "src": "youtube 'sysadmin automation script tips'",
+  "title": "Claude Code + Ansible: Is AI Actually Useful for Sysadmins?",
+  "text": "AI can speed up infrastructure automation, but sysadmins still need to review every playbook before touching production.",
+  "url": "https://www.youtube.com/watch?v=VeM6ENfZANo&lc=UgwkWa6VZIhpr94NRbh4AaABAg",
+  "date": "2026-08-21",
+  "likes": 0
+ },
+ {
+  "src": "youtube 'sysadmin automation script tips'",
+  "title": "Claude Code + Ansible: Is AI Actually Useful for Sysadmins?",
+  "text": "Am I taking crazy pills? Around 16:55, you asked it to consolidate two variables if their usages overlapped. It said they did not overlap, but you were missing one of them in variables_default.yml. It asked you if you wanted it to add that variable there, and you said yes. Then the actual set of changes had absolutely nothing to do with that? In fact, it didn't even patch variables_default.yml. It looks like it made a bunch of changes related to power settings and ssh config instead. Am I missing something?",
+  "url": "https://www.youtube.com/watch?v=VeM6ENfZANo&lc=UgwFLzVDPdo6vT2NnSV4AaABAg",
+  "date": "2026-03-25",
+  "likes": 3
+ },
+ {
+  "src": "youtube 'sysadmin automation script tips'",
+  "title": "The IT Skill That Got Me Hired (30 Users, 1 Script)",
+  "text": "👇 Grab the CSV template + full script. https://drive.google.com/drive/folders/18pajixt0I9xmfkWSsRuhXGeH0lLwNYNF?usp=sharing What would you automate first? Let me know.",
+  "url": "https://www.youtube.com/watch?v=jVyb1kJgzCc&lc=Ugw9pMgKhLJob72KSj54AaABAg",
+  "date": "2026-06-09",
+  "likes": 0
+ },
+ {
+  "src": "youtube 'sysadmin automation script tips'",
+  "title": "The IT Skill That Got Me Hired (30 Users, 1 Script)",
+  "text": "Or hear me out, you do what software engineers do which is to create a database seeder, which allows you to create as many dummy users as you want.",
+  "url": "https://www.youtube.com/watch?v=jVyb1kJgzCc&lc=UgyErrsJVBi-SamiuKh4AaABAg",
+  "date": "2026-06-09",
+  "likes": 1
+ },
+ {
+  "src": "youtube 'tax preparer workflow software'",
+  "title": "Tax Software Smart Accounting Firms Are Switching To In 2026",
+  "text": "📩 Stay sharp on what’s changing in accounting firm tech and AI. Get my weekly newsletter: https://www.jasononfirms.com/newsletter 🚀 Join almost 700 firm owners sharing real numbers, real results, and real lessons: https://www.rlz.io/",
+  "url": "https://www.youtube.com/watch?v=iSdlMXVniKc&lc=UgxyirJH7J-aEXpPSWR4AaABAg",
+  "date": "2025-12-17",
+  "likes": 0
+ },
+ {
+  "src": "youtube 'tax preparer workflow software'",
+  "title": "Tax Software Smart Accounting Firms Are Switching To In 2026",
+  "text": "I work for a tax franchise and our software is Drake, but for individual returns it's basically Drake Online. I LOVE it! It's so much easier than desktop drake! As I look at opening my own office, away from the franchise (which is why i'm watching your video), I think the cost for Drake Online is ridiculous (which is why I'm searching). The initial cost isn't bad, but then the cost per return, if you do 100's, is very high. Thanks for all the information you're putting out!",
+  "url": "https://www.youtube.com/watch?v=iSdlMXVniKc&lc=UgwkzaXnK9caAVv8rT94AaABAg",
+  "date": "2026-03-14",
+  "likes": 5
+ },
+ {
+  "src": "youtube 'tax preparer workflow software'",
+  "title": "Tax Software Smart Accounting Firms Are Switching To In 2026",
+  "text": "“The blue are just cheapskates… but blue” was too funny for no reason. Such helpful video, thank you!",
+  "url": "https://www.youtube.com/watch?v=iSdlMXVniKc&lc=UgwXI_mnuGX3P2BHZ2B4AaABAg",
+  "date": "2026-04-19",
+  "likes": 2
+ },
+ {
+  "src": "youtube 'tax preparer workflow software'",
+  "title": "Tax Software Smart Accounting Firms Are Switching To In 2026",
+  "text": "Solid breakdown, Jason. The point about switching tax software rarely being the real time-saver hits home. We see this daily with firms - performance, uptime, and support often make a bigger difference than the software itself. Glad to be part of the conversation around where real efficiency actually comes from for tax firms.",
+  "url": "https://www.youtube.com/watch?v=iSdlMXVniKc&lc=UgyE297wMf56H59D_2R4AaABAg",
+  "date": "2026-02-05",
+  "likes": 1
+ },
+ {
+  "src": "youtube 'tax preparer workflow software'",
+  "title": "Tax Software Smart Accounting Firms Are Switching To In 2026",
+  "text": "I still like Drake, also. But we have lots of locations. So, we use ultra tax.",
+  "url": "https://www.youtube.com/watch?v=iSdlMXVniKc&lc=UgzPwwuQZ_mBaHZforx4AaABAg",
+  "date": "2025-12-22",
+  "likes": 4
+ },
+ {
+  "src": "youtube 'tax preparer workflow software'",
+  "title": "Tax Software Smart Accounting Firms Are Switching To In 2026",
+  "text": "Screenshots and tax software is an antonym not just an oxymoron. Added bonus the oxy Morons that wrote the apps never prepared returns, let alone interfaced with a tax client",
+  "url": "https://www.youtube.com/watch?v=iSdlMXVniKc&lc=UgyRfuWlPOmrZUOLdlh4AaABAg",
+  "date": "2025-12-19",
+  "likes": 4
+ },
+ {
+  "src": "youtube 'tax preparer workflow software'",
+  "title": "Tax Software Smart Accounting Firms Are Switching To In 2026",
+  "text": "ProConnect user here and have been for years. It really does all I need to it to do and with the added tax advisory platform, it is great for my smaller firm. But am I an Intuit fan? No. They still annoy me. LOL",
+  "url": "https://www.youtube.com/watch?v=iSdlMXVniKc&lc=UgwZx8FrBJPT3U7VSoN4AaABAg",
+  "date": "2025-12-19",
+  "likes": 6
+ },
+ {
+  "src": "youtube 'tax preparer workflow software'",
+  "title": "Tax Software Smart Accounting Firms Are Switching To In 2026",
+  "text": "Yes it is still Intuit…but the transition from Lacerte to ProConnect wasn’t too bad.",
+  "url": "https://www.youtube.com/watch?v=iSdlMXVniKc&lc=UgzmSq2RLsBFybnVXD14AaABAg",
+  "date": "2025-12-18",
+  "likes": 4
+ },
+ {
+  "src": "youtube 'tax preparer workflow software'",
+  "title": "Tax Software Smart Accounting Firms Are Switching To In 2026",
+  "text": "Very intriguing what you said about into it and pro series I’ve been using pro series since 2012 and now you have me thinking if they might discontinue the desktop version at some point which is what I use..",
+  "url": "https://www.youtube.com/watch?v=iSdlMXVniKc&lc=UgwIsiWefJs1ZdtfwJh4AaABAg",
+  "date": "2026-11-03",
+  "likes": 0
+ },
+ {
+  "src": "youtube 'tax preparer workflow software'",
+  "title": "Tax Software Smart Accounting Firms Are Switching To In 2026",
+  "text": "Lots of good info, thanks for the video!",
+  "url": "https://www.youtube.com/watch?v=iSdlMXVniKc&lc=UgznBeYt2f3VqkF2KFF4AaABAg",
+  "date": "2026-03-29",
+  "likes": 1
+ },
+ {
+  "src": "youtube 'tax preparer workflow software'",
+  "title": "Tax Software Smart Accounting Firms Are Switching To In 2026",
+  "text": "Drake customer service isn't what it used to be, unfortunately. I agree about OTP but not about TaxAct Professional. I tried it for 2 years - switched back to Drake in the middle of tax season year 2. Probably great in a more retail setting with basic returns, but I do a lot with main street businesses and real estate investors and the depreciation module alone is enough to make me crazy. I'm just...so frustrated.",
+  "url": "https://www.youtube.com/watch?v=iSdlMXVniKc&lc=UgyFcVAhBZbfZv6u8Nd4AaABAg",
+  "date": "2026-03-19",
+  "likes": 1
+ },
+ {
+  "src": "youtube 'tax preparer workflow software'",
+  "title": "Tax Software Smart Accounting Firms Are Switching To In 2026",
+  "text": "Would you make a move from proconnect to LaCert or Ultratax?",
+  "url": "https://www.youtube.com/watch?v=iSdlMXVniKc&lc=UgxaRESej_bM1G0J_l94AaABAg",
+  "date": "2026-09-06",
+  "likes": 0
+ },
+ {
+  "src": "youtube 'tax preparer workflow software'",
+  "title": "Tax Software Smart Accounting Firms Are Switching To In 2026",
+  "text": "hi what can you say about blockchain and AI",
+  "url": "https://www.youtube.com/watch?v=iSdlMXVniKc&lc=UgxtcCE1Hc2nKDZFDH14AaABAg",
+  "date": "2025-12-28",
+  "likes": 0
+ },
+ {
+  "src": "youtube 'tax preparer workflow software'",
+  "title": "Tax Software Smart Accounting Firms Are Switching To In 2026",
+  "text": "so what do you think about taxwise online? we began in 2008 with taxwise desktop and migrated to online version in 2012. we really like it. before taxwise was Proseries then Lacerte; too many issues there. we are currently being courted by ultra tax, but I'm thinking of demoing ATX (online version, if they have it), cuz same family as taxwise. Any opinions are greatly appreciated.",
+  "url": "https://www.youtube.com/watch?v=iSdlMXVniKc&lc=UgxBtELt1FRwGq3m-hJ4AaABAg",
+  "date": "2026-03-16",
+  "likes": 0
+ },
+ {
+  "src": "youtube 'tax preparer workflow software'",
+  "title": "Tax Software Smart Accounting Firms Are Switching To In 2026",
+  "text": "You never explained WHY you didn’t like crosslink",
+  "url": "https://www.youtube.com/watch?v=iSdlMXVniKc&lc=UgzlFvzox9TPt0ROJtR4AaABAg",
+  "date": "2026-02-16",
+  "likes": 0
+ },
+ {
+  "src": "youtube 'tax preparer workflow software'",
+  "title": "Tax Software Smart Accounting Firms Are Switching To In 2026",
+  "text": "Drake was great but now doesn't support the product that has multiple flaws, I've used Drake for 15 years and this is my last. Data and fields from prior years doesn't flow forward in the current product. Since the Drake family sold the company costs have risen and it takes 30 minutes to reach support. The new support people are reading from scripts and have no idea how the software works and don't understand taxes. I was here looking for a replacement. I was considering Crosslink. What is wrong with Crosslink?",
+  "url": "https://www.youtube.com/watch?v=iSdlMXVniKc&lc=UgxzxUI0ej0EN4sXgiN4AaABAg",
+  "date": "2026-02-25",
+  "likes": 5
+ },
+ {
+  "src": "youtube 'tax preparer workflow software'",
+  "title": "Tax Software Smart Accounting Firms Are Switching To In 2026",
+  "text": "What are your thoughts about My Tax Prep Office…fully online?",
+  "url": "https://www.youtube.com/watch?v=iSdlMXVniKc&lc=Ugw6wDl6zGM2ntx52Jl4AaABAg",
+  "date": "2026-01-01",
+  "likes": 2
+ },
+ {
+  "src": "youtube 'tax preparer workflow software'",
+  "title": "Tax Software Smart Accounting Firms Are Switching To In 2026",
+  "text": "Im contemplating increasing my tax help business from a small commitment two a handful of clients that I can easily manage. I've been preparing taxes for a few family members for several years. It sound like Instead or Drake would be great options, price being my major concern. I generally use TaxAct, also considering TaxAct Professional, but costs are increasing with them. What would you recommend, invest cost being the biggest factor, for someone trying to build a small business around tax consulting and preparation? I really enjoyed the video.",
+  "url": "https://www.youtube.com/watch?v=iSdlMXVniKc&lc=UgxmPPsGEGBQotMoTCd4AaABAg",
+  "date": "2026-01-31",
+  "likes": 2
+ },
+ {
+  "src": "youtube 'tax preparer workflow software'",
+  "title": "Tax Software Smart Accounting Firms Are Switching To In 2026",
+  "text": "Solo firm owner using Drake: saw the Verito ad and now I am wondering if I should be using a hosting service or is this meant for firms with more users?",
+  "url": "https://www.youtube.com/watch?v=iSdlMXVniKc&lc=UgynO0aCYFONdiXtV294AaABAg",
+  "date": "2025-12-18",
+  "likes": 5
+ },
+ {
+  "src": "youtube 'tax preparer workflow software'",
+  "title": "Tax Software Smart Accounting Firms Are Switching To In 2026",
+  "text": "There's one more: Free Tax USA for Tax Preparers. It actually allows for entry of an PTIN and EFIN.",
+  "url": "https://www.youtube.com/watch?v=iSdlMXVniKc&lc=UgxM6R8LeXFjXwdQtoJ4AaABAg",
+  "date": "2025-12-18",
+  "likes": 3
+ },
+ {
+  "src": "youtube 'tax preparer workflow software'",
+  "title": "Tax Software Smart Accounting Firms Are Switching To In 2026",
+  "text": "u giving me headache , this video is so stupid.",
+  "url": "https://www.youtube.com/watch?v=iSdlMXVniKc&lc=UgwuMcEI90lDBy1LnE54AaABAg",
+  "date": "2026-05-05",
+  "likes": 1
+ },
+ {
+  "src": "youtube 'tax preparer workflow software'",
+  "title": "Is Any AI Tax Software Actually Working Right Now?",
+  "text": "I agree and they only do a bit nothing complex",
+  "url": "https://www.youtube.com/watch?v=hC9CSGghEjY&lc=Ugx4JDwqbTU3TdStrRh4AaABAg",
+  "date": "2026-08-19",
+  "likes": 3
+ }
+]

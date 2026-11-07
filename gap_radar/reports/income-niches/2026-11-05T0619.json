@@ -1,0 +1,1039 @@
+[
+ {
+  "name": "Late-rent detection and Schedule E auto-ledger for 1–10 unit landlords",
+  "pain": "Small landlords check bank apps daily or copy numbers from portals into Excel every week. One reports about 600 hours over 3 years. Full PM suites feel bloated or rigid, so many go back to spreadsheets and then forget to update them.",
+  "who_pays": "US landlords with 1–10 units who already buy spreadsheet templates or pay for PM apps",
+  "evidence_ids": [
+   84,
+   86,
+   87,
+   92,
+   95,
+   138,
+   141,
+   142,
+   148,
+   151,
+   154,
+   487
+  ],
+  "pay_signal": "Weekly 2–4 hour manual updates (86). Rent roll and Schedule E templates are sold on Etsy (487). Users dislike paid apps as overkill or rigid (92,141,151). People are drowning in multiple spreadsheets (148).",
+  "product_idea": "Lightweight web app built for under 10 units. The landlord forwards payment notification emails (Zelle, Venmo, portal) or uploads a bank CSV. Claude matches payments to tenants and tags expenses to Schedule E lines. A Telegram or email alert fires the morning rent is late. Exports a Schedule E per property.",
+  "build_weeks": 5,
+  "fit_for_us": 3,
+  "known_competitors": "Stessa, Baselane, TurboTenant, Avail, RentRedi, Etsy spreadsheet templates; crowded at the top, but the 'no bank-link, alert-first' angle is thinner",
+  "check_next": "Search r/Landlord for complaints about Stessa/Baselane bank sync and late-rent alerts. Test whether landlords will forward payment emails instead of linking a bank.",
+  "crowding": {
+   "verdict": "crowded",
+   "reason": "Stessa, Baselane and Landlord Studio already auto-tag Schedule E and track rent for free at under 10 units, with paid tiers people buy; the 'no bank link, alert first' angle is a different way in, not an unmet need.",
+   "competitors": [
+    {
+     "name": "Stessa",
+     "price": "Free; Manage $15/mo, Pro $35/mo (or $12/$28 billed yearly)",
+     "url": "https://www.capterra.com/p/181042/Stessa/pricing/",
+     "verified": true
+    },
+    {
+     "name": "Baselane",
+     "price": "Free Core; Smart $25/mo or $20/mo billed yearly",
+     "url": "https://www.turbotenant.com/reviews/baselane/",
+     "verified": true
+    },
+    {
+     "name": "Landlord Studio",
+     "price": "GO free up to 3 units; paid about $12-$28/mo",
+     "url": "https://www.softwareadvice.com/property/landlord-studio-profile/",
+     "verified": true
+    },
+    {
+     "name": "REI Hub",
+     "price": "$15-$80/mo",
+     "url": "https://www.softwareadvice.com/product/522823-REI-Hub/",
+     "verified": true
+    },
+    {
+     "name": "RentRedi",
+     "price": "$29.95/mo monthly or $12/mo billed yearly; no free plan",
+     "url": "https://www.rentspree.com/blog/rentredi-review",
+     "verified": true
+    },
+    {
+     "name": "TurboTenant",
+     "price": "Free; Essentials $149/yr, Pro $199/yr for 1-10 units",
+     "url": "https://getvantric.com/compare/turbotenant",
+     "verified": true
+    },
+    {
+     "name": "Etsy Schedule E / rental tracker templates",
+     "price": "about $1.45-$10 one-time",
+     "url": "https://www.etsy.com/market/schedule_e_spreadsheet?page=5",
+     "verified": true
+    },
+    {
+     "name": "Avail",
+     "price": "unknown",
+     "url": "",
+     "verified": false
+    }
+   ],
+   "pay_proof": [
+    {
+     "claim": "RentRedi has no free plan and charges $12-$29.95/mo to individual landlords",
+     "url": "https://www.rentspree.com/blog/rentredi-review",
+     "verified": true
+    },
+    {
+     "claim": "Stessa sells paid Manage ($15/mo) and Pro ($35/mo) plans on top of its free plan",
+     "url": "https://www.capterra.com/p/181042/Stessa/pricing/",
+     "verified": true
+    },
+    {
+     "claim": "Baselane sells a Smart plan at $25/mo ($20 billed yearly) for automatic tagging and AI bookkeeping",
+     "url": "https://www.turbotenant.com/reviews/baselane/",
+     "verified": true
+    },
+    {
+     "claim": "TurboTenant charges $149-$199/yr for paid plans at 1-10 units",
+     "url": "https://getvantric.com/compare/turbotenant",
+     "verified": true
+    },
+    {
+     "claim": "REI Hub charges $15/mo and up for rental accounting alone; users rate it 4.16 for value for money",
+     "url": "https://www.softwareadvice.com/product/522823-REI-Hub/",
+     "verified": true
+    },
+    {
+     "claim": "Etsy rental income and expense spreadsheet listing has 699 reviews, on sale for $1.45",
+     "url": "https://www.etsy.com/market/rental_income_and_expense_spreadsheet",
+     "verified": true
+    },
+    {
+     "claim": "Etsy property spreadsheet with Schedule E categories sells for $10",
+     "url": "https://www.etsy.com/market/schedule_e_spreadsheet?page=5",
+     "verified": true
+    }
+   ],
+   "cost_usd": 0.6407,
+   "web_searches": 8
+  }
+ },
+ {
+  "name": "Vendor COI and recurring inspection due-date tracker for small property managers",
+  "pain": "Managers build their own sheets to track vendor certificates of insurance and fire/life-safety inspection cycles (extinguishers, backflow, hoods, alarms). Missed dates mean fines or failed inspections. NetVendor ignores small PMs.",
+  "who_pays": "Small residential and commercial property management companies (1–50 buildings)",
+  "evidence_ids": [
+   90,
+   96,
+   97
+  ],
+  "pay_signal": "NetVendor, a paid service, effectively turned away a new PM (96), who calls DIY spreadsheets a last resort. Missed inspections cause fines (97). A user built a custom COI sheet after finding nothing decent (90).",
+  "product_idea": "Upload COI PDFs; Claude extracts the insurer, coverage limits, additional insured and expiry date. Automated emails ask vendors for renewed COIs before expiry. A per-property inspection calendar sends Telegram or email reminders. Self-serve at $29–79/month.",
+  "build_weeks": 4,
+  "fit_for_us": 4,
+  "known_competitors": "NetVendor, myCOI, Jones, TrustLayer (enterprise and sales-led); PM suites have weak COI modules",
+  "check_next": "Price-check myCOI and TrustLayer minimums. Post the COI sheet columns from 90 and ask commenters whether they'd pay for auto-extraction plus vendor chasing.",
+  "crowding": {
+   "verdict": "crowded",
+   "reason": "Several self-serve COI trackers with automated renewal requests already sell at $0–79/month, and BCS has a free tier for up to 25 vendors that reportedly includes AI extraction; the inspection-calendar half was not checked.",
+   "competitors": [
+    {
+     "name": "BCS",
+     "price": "Free up to 25 vendors; $0.95/vendor/month self-service; $17.80/vendor/year full-service with $10,000/year minimum",
+     "url": "https://www.getbcs.com/pricing-and-plans",
+     "verified": true
+    },
+    {
+     "name": "SubDoc",
+     "price": "$20/month Pro plan for up to 100 vendors",
+     "url": "https://subdoc.io/blog/affordable-coi-tracking-software",
+     "verified": true
+    },
+    {
+     "name": "TrackMyVendor",
+     "price": "$39/month unlimited vendors",
+     "url": "https://trackmyvendor.com/mycoi-alternatives",
+     "verified": true
+    },
+    {
+     "name": "COISoftware",
+     "price": "Starter $49/month, Plus $149/month ($24/$74 per month billed yearly)",
+     "url": "https://coisoftware.com/coi-tracking-software-pricing",
+     "verified": true
+    },
+    {
+     "name": "CertChase",
+     "price": "Free up to 12 subs, then $2/sub/month, max $175",
+     "url": "https://certchasehq.com/compare/best-coi-tracking-software-for-small-contractors/",
+     "verified": true
+    },
+    {
+     "name": "Certificial",
+     "price": "Free up to 5 suppliers; Professional from $99/month (per a competitor's page)",
+     "url": "https://coisoftware.com/coi-tracking-software-pricing",
+     "verified": false
+    },
+    {
+     "name": "Proof",
+     "price": "Free up to 10 vendors; $50/month up to 50; $120/month unlimited (per a competitor's page; Proof's own site not seen)",
+     "url": "https://certchasehq.com/compare/best-coi-tracking-software-for-small-contractors/",
+     "verified": false
+    },
+    {
+     "name": "myCOI",
+     "price": "Custom quote; third-party estimate $30–60/vendor/year",
+     "url": "https://trackmyvendor.com/mycoi-alternatives",
+     "verified": false
+    },
+    {
+     "name": "TrustLayer",
+     "price": "TrustRadius lists a free Basic plan plus starting prices of $195 and $9,950; no plans published by vendor",
+     "url": "https://www.trustradius.com/products/trustlayer.io/pricing",
+     "verified": true
+    },
+    {
+     "name": "NetVendor",
+     "price": "unknown",
+     "url": "https://www.capterra.com/p/234066/NetVendor/",
+     "verified": false
+    }
+   ],
+   "pay_proof": [
+    {
+     "claim": "BCS publishes paid self-service ($0.95/vendor/month) and full-service ($17.80/vendor/year, $10,000 annual minimum) COI tracking plans",
+     "url": "https://www.getbcs.com/pricing-and-plans",
+     "verified": true
+    },
+    {
+     "claim": "CertFocus self-service runs $6–8/vendor/year with a $7,500 minimum plus $3,500–4,800 setup",
+     "url": "https://certchasehq.com/compare/best-coi-tracking-software-for-small-contractors/",
+     "verified": true
+    },
+    {
+     "claim": "Small businesses tracking under ~100 vendors should expect $300–1,800/year on published monthly COI plans",
+     "url": "https://coisoftware.com/coi-tracking-software-pricing",
+     "verified": true
+    },
+    {
+     "claim": "Self-serve COI tools like SubDoc cost $0–55/month",
+     "url": "https://subdoc.io/blog/affordable-coi-tracking-software",
+     "verified": true
+    }
+   ],
+   "cost_usd": 0.5105,
+   "web_searches": 8
+  }
+ },
+ {
+  "name": "PDF statement and invoice to spreadsheet extraction for bookkeepers",
+  "pain": "Bookkeepers retype vendor invoice totals and old bank statement transactions from PDFs, which eats the first week of each month. Bank feeds don't reach far enough back, and QBO/Xero matching fails on real-world transactions.",
+  "who_pays": "Freelance bookkeepers and small firms doing catch-up and cleanup work",
+  "evidence_ids": [
+   102,
+   202,
+   116,
+   200,
+   114,
+   110
+  ],
+  "pay_signal": "PDF retyping takes up the first week of the month (102). 40+ billable hours went to a 450-transaction catch-up (110). A user asks for a low-cost extraction tool (202). People fall back to spreadsheets despite paying for QBO and Xero (200).",
+  "product_idea": "Drag-drop batch PDF statements and invoices into a web app. Claude extracts the transactions into a QBO/Xero-ready CSV with running-balance checks to flag extraction errors. Bundle a duplicate and missing-entry finder for cleaning up historical reconciliations.",
+  "build_weeks": 4,
+  "fit_for_us": 3,
+  "known_competitors": "DocuClipper, ProperSoft, Dext, Hubdoc, AutoEntry, Nanonets; crowded, so differentiate on catch-up cleanup and balance verification",
+  "check_next": "Run 20 real bank statement PDFs through Claude and measure accuracy. Check DocuClipper pricing per page versus our near-zero AI cost.",
+  "crowding": {
+   "verdict": "crowded",
+   "reason": "At least 5 paid PDF statement/invoice-to-CSV/QBO converters with public pricing exist (DocuClipper, ProperConvert, MoneyThumb, Bank Statement Converter, Dext) plus Hubdoc free with Xero, and balance-reconciliation checks are already a headline feature; only the duplicate/missing-entry cleanup angle is unverified.",
+   "competitors": [
+    {
+     "name": "DocuClipper",
+     "price": "$29/mo (60 pages), $74/mo (300), $159/mo (640)",
+     "url": "https://www.docuclipper.com/blog/best-bank-statement-converter/",
+     "verified": true
+    },
+    {
+     "name": "ProperConvert (ProperSoft)",
+     "price": "$19.99/mo or $179.99/yr",
+     "url": "https://www.propersoft.net/solutions/compare/quickbankconvert/",
+     "verified": true
+    },
+    {
+     "name": "MoneyThumb 2qbo Convert Pro",
+     "price": "$599.95-$699.95",
+     "url": "https://www.moneythumb.com/shop/2qbo-convert-pro-plus/",
+     "verified": true
+    },
+    {
+     "name": "Bank Statement Converter",
+     "price": "$30/mo (400 pages) to $99/mo (4,000 pages); free tier",
+     "url": "https://www.propersoft.net/solutions/compare/bankstatementconverter/",
+     "verified": true
+    },
+    {
+     "name": "Dext",
+     "price": "from $31.50 per user/month",
+     "url": "https://www.capterra.com/p/160189/Dext/",
+     "verified": true
+    },
+    {
+     "name": "Hubdoc",
+     "price": "free with Xero; $12/mo standalone",
+     "url": "https://www.datamolino.com/blog/pricing-and-features-autoentry-vs-hubdoc-vs-dext-vs-datamolino-in-2026/",
+     "verified": true
+    },
+    {
+     "name": "AutoEntry (Sage)",
+     "price": "from $12/mo (50 credits) to $285/mo (1,500 credits)",
+     "url": "https://www.trustradius.com/products/sage-autoentry/pricing",
+     "verified": true
+    },
+    {
+     "name": "Nanonets",
+     "price": "$0.30/page pay-as-you-go (2024 figure)",
+     "url": "https://nanonets.com/blog/best-bank-statement-extraction-software/",
+     "verified": true
+    },
+    {
+     "name": "CapyParse",
+     "price": "from $20/mo",
+     "url": "https://capyparse.com/blog/capyparse-vs-nanonets",
+     "verified": true
+    },
+    {
+     "name": "Documentric",
+     "price": "$19/mo for 300 pages",
+     "url": "https://www.documentric.com/vs/moneythumb",
+     "verified": true
+    },
+    {
+     "name": "LedgerDocs",
+     "price": "unknown",
+     "url": "https://www.ledgerdocs.com/convert-pdf-bank-statements-to-csv/",
+     "verified": false
+    },
+    {
+     "name": "Bank Statement PDF to CSV Converter (Balance-Verified) on Apify",
+     "price": "pay per statement, ~$0.04/page OCR",
+     "url": "https://apify.com/businessquik/bank-statement-extractor",
+     "verified": true
+    }
+   ],
+   "pay_proof": [
+    {
+     "claim": "Dext is rated 4.3 from 175 reviews on Software Advice, with pricing from $31.50/month",
+     "url": "https://www.softwareadvice.com/accounting/receipt-bank-profile/",
+     "verified": true
+    },
+    {
+     "claim": "MoneyThumb sells its 2qbo Convert Pro PDF-statement-to-QuickBooks licence for $599.95-$699.95",
+     "url": "https://www.moneythumb.com/shop/2qbo-convert-pro-plus/",
+     "verified": true
+    },
+    {
+     "claim": "DocuClipper sells tiered paid plans up to $159/mo for bank statement and invoice extraction, aimed at accountants and bookkeepers",
+     "url": "https://www.docuclipper.com/blog/best-bank-statement-converter/",
+     "verified": true
+    },
+    {
+     "claim": "Bank Statement Converter runs paid tiers of $30, $60 and $99/mo above a free tier",
+     "url": "https://www.propersoft.net/solutions/compare/bankstatementconverter/",
+     "verified": true
+    },
+    {
+     "claim": "MoneyThumb users have called its pricing 'deceptive', which shows they paid for statement conversion",
+     "url": "https://capyparse.com/blog/moneythumb-review",
+     "verified": true
+    }
+   ],
+   "cost_usd": 0.5686,
+   "web_searches": 8
+  }
+ },
+ {
+  "name": "Spotify playlist curator growth analytics",
+  "pain": "Curators can't tell why followers drop or which added tracks helped. Indie artists log release and promo results in spreadsheets by hand.",
+  "who_pays": "Independent playlist curators and indie artists or small labels running playlist pitching",
+  "evidence_ids": [
+   172,
+   164,
+   158,
+   161
+  ],
+  "pay_signal": "A curator tracks manually in spreadsheets and notes (172). 80% of release time goes to admin, including updating the curator spreadsheet (164). $400 went to promo with outcomes logged in a spreadsheet (158).",
+  "product_idea": "Connect playlists through the Spotify API to get daily follower snapshots and an add/remove history. The app correlates follower changes with track changes. Telegram alerts fire on drops or spikes. An artist view tracks which playlists their song landed on and for how long.",
+  "build_weeks": 3,
+  "fit_for_us": 5,
+  "known_competitors": "Chartmetric, Soundcharts (expensive, label-focused), Artist.Tools, PlaylistSupply",
+  "check_next": "Confirm the Spotify Web API still exposes follower counts and track lists for third-party playlists after the 2024 API restrictions. Price Artist.Tools.",
+  "crowding": {
+   "verdict": "crowded",
+   "reason": "artist.tools already gives curators daily follower charts, full add/remove history, a playlist dashboard and campaign tracking for $15/mo, and PlaylistSupply, Viberate, Songstats and Chartmetric cover the rest cheaply; only the follower/track correlation and Telegram alerts are missing, which is a feature, not a product.",
+   "competitors": [
+    {
+     "name": "artist.tools",
+     "price": "$15/month or $99/year (Artist plan)",
+     "url": "https://help.artist.tools/account-and-billing/pricing",
+     "verified": true
+    },
+    {
+     "name": "PlaylistSupply",
+     "price": "$19.99 first month, then $24.99/month (Basic)",
+     "url": "https://playlistsupply.com/blog/playlistsupply-vs-members-media/",
+     "verified": true
+    },
+    {
+     "name": "Viberate",
+     "price": "unknown",
+     "url": "https://www.viberate.com/artist-stats/spotify-tracker/",
+     "verified": false
+    },
+    {
+     "name": "Songstats",
+     "price": "about $12-13/month (Artist), per third-party review",
+     "url": "https://resources.onestowatch.com/honest-songstats-reviews-independent-artists/",
+     "verified": true
+    },
+    {
+     "name": "Chartmetric",
+     "price": "from US$140/year per GetApp; $10-$150/month per third-party guide",
+     "url": "https://www.getapp.ca/software/2035171/chartmetric",
+     "verified": true
+    },
+    {
+     "name": "SpotOnTrack",
+     "price": "€29.99/month (stated on artist.tools comparison page, not SpotOnTrack's own site)",
+     "url": "https://www.artist.tools/compare/spotontrack",
+     "verified": false
+    },
+    {
+     "name": "Soundcharts",
+     "price": "unknown",
+     "url": "https://www.artist.tools/compare/soundcharts",
+     "verified": false
+    },
+    {
+     "name": "Apify Spotify Playlist Tracker (northbell)",
+     "price": "unknown",
+     "url": "https://apify.com/northbell/spotify-playlist-tracker",
+     "verified": false
+    }
+   ],
+   "pay_proof": [
+    {
+     "claim": "artist.tools sells paid plans: Artist $15/month or $99/year, plus a team rate",
+     "url": "https://help.artist.tools/account-and-billing/pricing",
+     "verified": true
+    },
+    {
+     "claim": "PlaylistSupply charges $24.99/month after a $19.99 first month (Basic plan)",
+     "url": "https://playlistsupply.com/blog/playlistsupply-vs-members-media/",
+     "verified": true
+    },
+    {
+     "claim": "Chartmetric paid plans start from US$140/year (GetApp listing)",
+     "url": "https://www.getapp.ca/software/2035171/chartmetric",
+     "verified": true
+    },
+    {
+     "claim": "Independent-artist review discusses whether Songstats' ~$13/month price is worth it",
+     "url": "https://resources.onestowatch.com/honest-songstats-reviews-independent-artists/",
+     "verified": true
+    },
+    {
+     "claim": "Artists spend $300-$1,000+ per PlaylistPush campaign (stated by competitor PlaylistSupply)",
+     "url": "https://playlistsupply.com/blog/playlistsupply-vs-playlistpush/",
+     "verified": true
+    }
+   ],
+   "cost_usd": 0.6727,
+   "web_searches": 8
+  }
+ },
+ {
+  "name": "Post-production paperwork generator (TC script, cue sheets, shot lists with thumbnails)",
+  "pain": "Editors hand-build distributor-required TCScripts or post-production scripts. These list every music, dialogue and footage cue with in and out timecodes. Editors also can't easily get framegrab thumbnails next to timecodes in Sheets, and they track review rounds in Premiere description fields.",
+  "who_pays": "Freelance documentary and commercial editors and post supervisors facing distributor deliverables",
+  "evidence_ids": [
+   183,
+   174,
+   182,
+   190,
+   181,
+   188
+  ],
+  "pay_signal": "A first TCScript for a distributor is 'absolutely killing' one editor (183). Avid's marker export can't put framegrabs in Sheets (174). A 20-year post supervisor is still juggling spreadsheets and email chains (182). Translation versioning is done by hand (188).",
+  "product_idea": "Upload an EDL, AAF or XML plus a proxy export. The tool outputs a formatted post-production script: transcribed dialogue (Claude), music cues with durations, and a footage source list. It also outputs a shot list with thumbnails and a VFX turnover sheet, exported to XLSX or Google Sheets.",
+  "build_weeks": 6,
+  "fit_for_us": 4,
+  "known_competitors": "EDL-X, Cue sheet tools like RightsUp and Soundmouse (music only), Simon Says, Avid ScriptSync",
+  "check_next": "Ask r/editors which distributor templates (BBC, Netflix, Arte) are most requested. Test parsing Avid and Premiere EDLs plus Whisper or Claude for the dialogue column.",
+  "crowding": {
+   "verdict": "crowded",
+   "reason": "Free tools (EditingTools.io, Filmscribe, Autocuesheet, KlausVFX) already cover cue sheets, VFX sheets and frame grabs from EDL/XML, and Closed Caption Creator exports CCSLs; only a narrow full-TCScript self-serve gap remains, with no price or payment proof found for it.",
+   "competitors": [
+    {
+     "name": "EditingTools.io Music Cue Sheet / Cue Sheet Manager",
+     "price": "free; PRO tier needed for AAF (PRO price unknown)",
+     "url": "https://editingtools.io/cuesheetmanager/",
+     "verified": true
+    },
+    {
+     "name": "EditingTools.io VFX Sheet Creator",
+     "price": "free (beta)",
+     "url": "https://editingtools.io/vfxsheet/",
+     "verified": true
+    },
+    {
+     "name": "EditingTools.io Video Stills",
+     "price": "free up to 300 images",
+     "url": "https://editingtools.io/videostills/",
+     "verified": true
+    },
+    {
+     "name": "Filmscribe.ai Music Cue Sheet",
+     "price": "free",
+     "url": "https://filmscribe.ai/en/tools/music-cue-sheet",
+     "verified": true
+    },
+    {
+     "name": "Autocuesheet",
+     "price": "free",
+     "url": "https://autocuesheet.com/",
+     "verified": true
+    },
+    {
+     "name": "Cue Sheet Pro",
+     "price": "$15/mo individual, $59/mo team, $149/mo studio",
+     "url": "https://www.cuesheetpro.com/",
+     "verified": true
+    },
+    {
+     "name": "KlausVFX",
+     "price": "free",
+     "url": "https://github.com/sarmadvfx1/KlausVFX",
+     "verified": true
+    },
+    {
+     "name": "Marker Exporter for Premiere Pro",
+     "price": "unknown",
+     "url": "https://exchange.adobe.com/apps/cc/edd8fa87/marker-exporter-for-premiere-pro",
+     "verified": false
+    },
+    {
+     "name": "Closed Caption Creator (CCSL exporter)",
+     "price": "unknown",
+     "url": "https://www.closedcaptioncreator.com/solutions/ccsl.html",
+     "verified": false
+    },
+    {
+     "name": "EDL-X",
+     "price": "$99.99 (2013 article)",
+     "url": "https://larryjordan.com/articles/fcpx-create-edls/",
+     "verified": true
+    },
+    {
+     "name": "Gotham CCSL (service)",
+     "price": "per-minute, amount unknown",
+     "url": "https://www.gothamccsl.com/ccsl-creation/",
+     "verified": false
+    }
+   ],
+   "pay_proof": [
+    {
+     "claim": "Cue Sheet Pro lists EDL-to-cue-sheet subscriptions at $15/$59/$149 per month (asking price, no sales data seen)",
+     "url": "https://www.cuesheetpro.com/",
+     "verified": true
+    },
+    {
+     "claim": "EDL-X sold for $99.99 on the Mac App Store (2013)",
+     "url": "https://larryjordan.com/articles/fcpx-create-edls/",
+     "verified": true
+    },
+    {
+     "claim": "Gotham CCSL sells per-minute CCSL creation for distributor and streamer delivery (rate not seen)",
+     "url": "https://www.gothamccsl.com/ccsl-creation/",
+     "verified": false
+    },
+    {
+     "claim": "EditingTools.io charges for a PRO tier needed for AAF cue-sheet uploads (price not seen)",
+     "url": "https://editingtools.io/cuesheetmanager/",
+     "verified": false
+    }
+   ],
+   "cost_usd": 0.7299,
+   "web_searches": 8
+  }
+ },
+ {
+  "name": "Offline drive archive catalog for videographers and editors",
+  "pain": "Editors and wedding videographers with 20+ archive drives can't tell what's on each drive without plugging it in. They keep a Google sheet per drive by hand.",
+  "who_pays": "Freelance editors, wedding and event videographers with drive closets",
+  "evidence_ids": [
+   27,
+   178,
+   14,
+   32
+  ],
+  "pay_signal": "An editor of nearly 20 years maintains a manual spreadsheet per drive (178). A videographer asks how others do this at scale (27). Existing catalog apps either cost money or are bad (14). Users dread manually organizing files after shoots (32).",
+  "product_idea": "Small desktop scanner that indexes a drive, pulls video metadata and poster frames, and uploads the index to a searchable web catalog. Search by client, date or camera. Auto-generates a printable drive label. One-time $39 or a cheap subscription.",
+  "build_weeks": 4,
+  "fit_for_us": 3,
+  "known_competitors": "NeoFinder, DiskCatalogMaker, WinCatalog, Kyno, Hedge (offload only)",
+  "check_next": "Check NeoFinder reviews for complaints from video users (missing thumbnails, Mac-only). Validate demand with a landing page posted to r/editors and r/videography.",
+  "crowding": {
+   "verdict": "crowded",
+   "reason": "NeoFinder ($39), DiskCatalogMaker, WinCatalog, Kyno and video-specific ClipCatalog already do offline drive cataloging with video metadata and thumbnails at one-time prices of $39-$80 that buyers pay.",
+   "competitors": [
+    {
+     "name": "NeoFinder",
+     "price": "$39 Private License (one-time); $149 2-user Business",
+     "url": "https://www.cdfinder.de/press-kit.html",
+     "verified": true
+    },
+    {
+     "name": "DiskCatalogMaker",
+     "price": "$79.99 on Mac App Store ($38.99 per third-party blog)",
+     "url": "https://apps.apple.com/us/app/diskcatalogmaker/id414859893?mt=12",
+     "verified": true
+    },
+    {
+     "name": "WinCatalog",
+     "price": "$49.95 Personal / $89.95 Professional (sale $39.96 / $71.96)",
+     "url": "https://www.wincatalog.com/order.html",
+     "verified": true
+    },
+    {
+     "name": "Kyno",
+     "price": "$159 one-time (+$79/yr updates per review)",
+     "url": "https://www.capterra.com/p/203547/Kyno/",
+     "verified": true
+    },
+    {
+     "name": "ClipCatalog",
+     "price": "unknown",
+     "url": "https://clipcatalogpro.com/features/external-drives",
+     "verified": false
+    },
+    {
+     "name": "Fast Video Cataloger",
+     "price": "$197 one-time (per third-party guide)",
+     "url": "https://cyme.io/en/blog/best-video-management-software/",
+     "verified": true
+    },
+    {
+     "name": "Peakto",
+     "price": "From $10/mo annual or $270 perpetual (per third-party guide)",
+     "url": "https://cyme.io/en/blog/best-video-management-software/",
+     "verified": true
+    },
+    {
+     "name": "Tusk",
+     "price": "$49 first 100 / $79 after, one-time (vendor's own blog)",
+     "url": "https://tuskbackup.com/blog/best-disk-cataloging-apps-mac",
+     "verified": true
+    }
+   ],
+   "pay_proof": [
+    {
+     "claim": "App Store reviewer paid $80 for DiskCatalogMaker to catalog about 100 hard drives",
+     "url": "https://apps.apple.com/us/app/diskcatalogmaker/id414859893?mt=12",
+     "verified": true
+    },
+    {
+     "claim": "Video editor with many archive drives pays $39 for NeoFinder and keeps the catalog on Google Drive to search from anywhere",
+     "url": "https://medium.com/@projectileobjects/data-management-for-video-editors-and-digital-professionals-catalog-archive-clone-882ff46e4637",
+     "verified": true
+    },
+    {
+     "claim": "NeoFinder sells paid Private ($39) and Business ($149) licenses plus paid upgrades from $25",
+     "url": "https://www.cdfinder.de/press-kit.html",
+     "verified": true
+    },
+    {
+     "claim": "Kyno sells for $159 one-time with $79 for an extra year of updates",
+     "url": "https://pixelvalleystudio.com/pmf-articles/kyno-media-management-for-video-editing",
+     "verified": true
+    }
+   ],
+   "cost_usd": 0.6644,
+   "web_searches": 8
+  }
+ },
+ {
+  "name": "Venue blog post generator for wedding photographers (SEO pipeline)",
+  "pain": "Organic social reach for still photos has collapsed. Blogging reliably brings leads, but writing a venue post per wedding with credits and alt text is time-consuming. Vendor contacts sit scattered across emails and business cards.",
+  "who_pays": "Solo wedding photographers already paying for galleries, CRMs and courses",
+  "evidence_ids": [
+   40,
+   328,
+   329,
+   47,
+   42
+  ],
+  "pay_signal": "One photographer gets leads within a day or two of every blog post (40). Venue blog courses and guides are sold to photographers (329). Viewers call SEO tips invaluable (328). There are recurring workarounds for vendor and gallery handoff tracking (47,42).",
+  "product_idea": "Upload 15–25 selects plus the venue name and vendor list. Claude writes an SEO venue post with venue details, a vendor credits block and per-image alt text and filenames. It exports to WordPress or Showit, and a vendor rolodex builds up from the credits.",
+  "build_weeks": 4,
+  "fit_for_us": 5,
+  "known_competitors": "Narrative Publish (layout, not writing), generic AI writers, SEO courses like Photography Workflows",
+  "check_next": "Ask 10 wedding photographers how long a venue post takes them. Check whether Narrative Publish has added AI text and what it charges.",
+  "crowding": {
+   "verdict": "open",
+   "reason": "Only kits, courses and DIY Claude guides compete, and none combine writing, alt text, filenames, export and a vendor list, while photographers already pay for venue-blog AI and SEO courses; my search was cut short.",
+   "competitors": [
+    {
+     "name": "Venue Blog BFF (Photography Workflows)",
+     "price": "$97",
+     "url": "https://photographyworkflows.com/venue-blog-bff",
+     "verified": true
+    },
+    {
+     "name": "Alex Knight Education - Wedding Blog Publishing Workflow (Claude guide)",
+     "price": "unknown",
+     "url": "https://learn.alexknightstudio.com/guides/blog-automation",
+     "verified": false
+    },
+    {
+     "name": "Kick Ass Photographers wedding blog post generators",
+     "price": "unknown",
+     "url": "https://kickassphotographers.com/wedding-blog-post-generators/",
+     "verified": false
+    },
+    {
+     "name": "Fuel Your Photos Venue Guide Course (with CustomGPTs)",
+     "price": "unknown",
+     "url": "https://www.fuelyourphotos.com/venue-guide-course/",
+     "verified": false
+    },
+    {
+     "name": "Narrative Publish (layout only, no writing)",
+     "price": "$6/$9/$15 per month",
+     "url": "https://narrative.so/publish/pricing",
+     "verified": true
+    },
+    {
+     "name": "ImageSEO (WordPress alt text + filenames)",
+     "price": "unknown (10 photos free)",
+     "url": "https://imageseo.io/photography/",
+     "verified": false
+    }
+   ],
+   "pay_proof": [
+    {
+     "claim": "AI venue blog writing assistant for wedding photographers sold at $97",
+     "url": "https://photographyworkflows.com/venue-blog-bff",
+     "verified": true
+    },
+    {
+     "claim": "Narrative Publish blog tool for photographers has paid tiers at $6, $9 and $15 per month",
+     "url": "https://narrative.so/publish/pricing",
+     "verified": true
+    },
+    {
+     "claim": "SEO for Wedding Photographers course costs $199",
+     "url": "https://photobugcommunity.thinkific.com/courses/seo-for-wedding-photographers",
+     "verified": true
+    },
+    {
+     "claim": "Fuel Your Photos SEO course for photographers is $699, and the same site sells a venue guide course",
+     "url": "https://www.fuelyourphotos.com/seo-course/",
+     "verified": true
+    },
+    {
+     "claim": "Photographers paid $49 for BlogStomp blog-prep software and called it a no-brainer (older review, may not be the current price)",
+     "url": "https://abbygraceblog.com/blogstomp/",
+     "verified": true
+    }
+   ],
+   "cost_usd": 1.0437,
+   "web_searches": 8
+  }
+ },
+ {
+  "name": "True per-listing profit tracker for Etsy sellers",
+  "pain": "Sellers reconcile 1099s, fees, refunds, marketing and shipping against homemade spreadsheets that don't match. They ask for templates or build their own.",
+  "who_pays": "Small Etsy sellers (handmade, POD, digital)",
+  "evidence_ids": [
+   121,
+   124,
+   213,
+   128,
+   122
+  ],
+  "pay_signal": "Sellers buy or build profit templates (124,213), and digital ledger templates are sold on Etsy itself (122,128). A 1k-sale spreadsheet doesn't reconcile with the 1099 (121).",
+  "product_idea": "Upload the Etsy payment and order CSVs, or connect through the Etsy API. The tool computes net profit per listing after every fee, ad and shipping cost, adds a 1099 reconciliation view, and exports for taxes. Freemium web tool, with SEO pages targeting 'Etsy fee calculator' queries.",
+  "build_weeks": 3,
+  "fit_for_us": 3,
+  "known_competitors": "Craftybase, Profitable, Etsy fee calculators, ShopUp, many spreadsheet templates",
+  "check_next": "Compare Craftybase pricing and reviews. Check the Etsy API rate limits for ledger and payment data.",
+  "crowding": {
+   "verdict": "crowded",
+   "reason": "ProfitTree (free plan, from $5.99/mo, 10k users), Graav, Marginest, Listadum and Craftybase already track Etsy profit per listing after fees, ads and shipping, and free fee calculators (EverBee, Craftybase) already rank in search.",
+   "competitors": [
+    {
+     "name": "ProfitTree",
+     "price": "Free; $5.99/mo annual or $9.99/mo monthly Starter; up to $49.99/mo Pro",
+     "url": "https://profittree.io/",
+     "verified": true
+    },
+    {
+     "name": "Graav",
+     "price": "$9.99/month (7-day trial)",
+     "url": "https://graav.io/graav-vs-profittree",
+     "verified": true
+    },
+    {
+     "name": "Marginest",
+     "price": "unknown (14-day Pro trial)",
+     "url": "https://marginest.com/etsy-profit-tracker",
+     "verified": false
+    },
+    {
+     "name": "Listadum",
+     "price": "unknown",
+     "url": "https://www.listadum.com/features/profit-tracking",
+     "verified": false
+    },
+    {
+     "name": "Craftybase",
+     "price": "$20/mo annual or $25/mo monthly per one source; $49-$79/mo per another",
+     "url": "https://www.itqlick.com/craftybase/pricing",
+     "verified": false
+    },
+    {
+     "name": "EverBee Etsy Fee Calculator",
+     "price": "Free (paid plans from $19.99/mo)",
+     "url": "https://www.everbee.io/etsy-fee-calculator",
+     "verified": true
+    },
+    {
+     "name": "Hoda Finance Etsy Profit Tracker (Excel)",
+     "price": "$49 one-time",
+     "url": "https://hodacfo.com/etsy-profit-tracker",
+     "verified": true
+    }
+   ],
+   "pay_proof": [
+    {
+     "claim": "ProfitTree sells paid profit-tracking plans from $5.99/mo up to $49.99/mo; 3.9 stars from 42 ratings and 10,000 users",
+     "url": "https://revenuegeeks.com/software/profittree",
+     "verified": true
+    },
+    {
+     "claim": "Graav charges $9.99/month for Etsy profit, fee and ad-attribution dashboards",
+     "url": "https://graav.io/graav-vs-profittree",
+     "verified": true
+    },
+    {
+     "claim": "Etsy profit tracker Excel workbook sold for $49",
+     "url": "https://hodacfo.com/etsy-profit-tracker",
+     "verified": true
+    },
+    {
+     "claim": "Paid human service reconciling Etsy 1099-Ks each tax season (price not seen)",
+     "url": "https://shop.paperandspark.com/products/etsy-reconciliation-service",
+     "verified": true
+    },
+    {
+     "claim": "Craftybase paid plans start around $20-$25/month",
+     "url": "https://www.itqlick.com/craftybase/pricing",
+     "verified": false
+    }
+   ],
+   "cost_usd": 0.6005,
+   "web_searches": 4
+  }
+ },
+ {
+  "name": "Photo and voice inspection report generator for small landlords and PMs",
+  "pain": "After walkthroughs, landlords spend 45 minutes per unit at a desk turning photos and notes into reports. Photos and contractor pictures get lost in phones and shared folders.",
+  "who_pays": "Small landlords, short-term rental hosts, and small PM firms",
+  "evidence_ids": [
+   88,
+   99,
+   151
+  ],
+  "pay_signal": "A 3-unit owner spends 20 minutes onsite plus 45 minutes at the desk per property (88). Inspection documentation is called messy across spreadsheets, folders and phones (99). A landlord scaling to 4 properties loses contractor pics (151).",
+  "product_idea": "Mobile web app: snap photos and record voice notes room by room. Claude writes a structured move-in/move-out or maintenance report with an issue list. Outputs a PDF and a comparison against the previous inspection.",
+  "build_weeks": 5,
+  "fit_for_us": 3,
+  "known_competitors": "zInspector, HappyCo, Inspect & Cover, RentCheck, Snappt",
+  "check_next": "Check RentCheck and zInspector pricing for 1–10 units. Test Claude's report quality on a sample photo set.",
+  "crowding": {
+   "verdict": "crowded",
+   "reason": "zInspector (AI walk-and-talk reports, free up to 5 properties) and RentCheck (free up to 10 units) plus several cheap and AI-native paid apps already cover voice/photo-to-report inspections for small landlords.",
+   "competitors": [
+    {
+     "name": "zInspector",
+     "price": "Free up to 5 properties; Core $22/month",
+     "url": "https://www.toolsforhumans.ai/ai-tools/zinspector",
+     "verified": true
+    },
+    {
+     "name": "RentCheck",
+     "price": "Free up to 10 units; Pro $1/unit/month",
+     "url": "https://www.trustradius.com/products/rentcheck/pricing",
+     "verified": true
+    },
+    {
+     "name": "myInspections",
+     "price": "$8/month Landlord plan",
+     "url": "https://www.myinspections.com/pricing",
+     "verified": true
+    },
+    {
+     "name": "Tap Inspect",
+     "price": "$150 for 20 inspections or $90/month unlimited",
+     "url": "https://www.adalo.com/posts/apps-for-landlords/",
+     "verified": true
+    },
+    {
+     "name": "Smart Property Check",
+     "price": "Free download with in-app purchases, 7-day trial; subscription price unknown",
+     "url": "https://apps.apple.com/us/app/smart-property-check/id6754345916",
+     "verified": true
+    },
+    {
+     "name": "Property Inspection AI",
+     "price": "Free with in-app purchases; first inspection free; paid price unknown",
+     "url": "https://apps.apple.com/us/app/property-inspection-ai/id6783044291",
+     "verified": true
+    },
+    {
+     "name": "TurnAudit",
+     "price": "$19/month first property, $12 each additional",
+     "url": "https://www.conduit.ai/blog/best-ai-property-inspection-software-vacation-rentals",
+     "verified": true
+    },
+    {
+     "name": "HappyCo",
+     "price": "Quote-based",
+     "url": "https://www.buildium.com/blog/best-property-management-inspection-software/",
+     "verified": true
+    }
+   ],
+   "pay_proof": [
+    {
+     "claim": "myInspections sells a $8/month Landlord plan with unlimited inspections",
+     "url": "https://www.myinspections.com/pricing",
+     "verified": true
+    },
+    {
+     "claim": "zInspector paid Core plan starts at $22/month; 4.7 stars from 10 reviews on Software Advice",
+     "url": "https://www.softwareadvice.com/home-inspections/zinspector-profile/",
+     "verified": true
+    },
+    {
+     "claim": "RentCheck Pro plan priced at $1 per unit per month",
+     "url": "https://www.trustradius.com/products/rentcheck/pricing",
+     "verified": true
+    },
+    {
+     "claim": "Tap Inspect sells 20 inspections for $150 or unlimited for $90/month",
+     "url": "https://www.adalo.com/posts/apps-for-landlords/",
+     "verified": true
+    },
+    {
+     "claim": "TurnAudit charges vacation rental operators $19/month for the first property and $12 per additional property",
+     "url": "https://www.conduit.ai/blog/best-ai-property-inspection-software-vacation-rentals",
+     "verified": true
+    }
+   ],
+   "cost_usd": 0.4368,
+   "web_searches": 8
+  }
+ },
+ {
+  "name": "Podcast analytics consolidation and history archive",
+  "pain": "Spotify's new analytics shows only the last 30 days, with confusing plays versus streams numbers. Producers export to spreadsheets and sort by hand. Hosts like Buzzsprout lack APIs to feed dashboards. Networks track ad inventory in spreadsheets.",
+  "who_pays": "Independent podcasters, producers managing client shows, small podcast networks",
+  "evidence_ids": [
+   61,
+   65,
+   64,
+   62,
+   63
+  ],
+  "pay_signal": "Producers already pay for hosting but want an API and webhooks to wire into dashboards and Claude (64). Old analytics are lost, forcing spreadsheet exports (65). Apple Podcasts Connect access for client data is a struggle (63). Networks track ad inventory by spreadsheet (62).",
+  "product_idea": "Scheduled importer for Spotify for Creators, Apple and host CSV exports that archives daily episode stats forever. It produces a unified per-episode dashboard and a weekly Claude-written summary, sent via email or Telegram. A network tier adds a host-read ad inventory calendar.",
+  "build_weeks": 5,
+  "fit_for_us": 3,
+  "known_competitors": "Chartable (shut down), Podtrac, Podscribe, OP3, host dashboards",
+  "check_next": "Determine which stats can be pulled automatically from Spotify and Apple versus manual CSV upload. Survey r/podcasting producers about post-Chartable gaps.",
+  "crowding": {
+   "verdict": "crowded",
+   "reason": "PodAnalyst already unifies Apple+Spotify per-episode stats with auto-insights and reports on a free plan, alongside paid CoHost, Podstatus, Podgagement and Podder; only the ad-inventory calendar is unchecked.",
+   "competitors": [
+    {
+     "name": "PodAnalyst",
+     "price": "Free Community plan; paid Pro/Network price unknown",
+     "url": "https://podanalyst.com/",
+     "verified": true
+    },
+    {
+     "name": "CoHost",
+     "price": "From $89/month",
+     "url": "https://cohostpodcasting.com/feature/consumption-data/",
+     "verified": true
+    },
+    {
+     "name": "Podstatus",
+     "price": "$7.99/mo or $59.99/year (Solo)",
+     "url": "https://podstatus.com/",
+     "verified": true
+    },
+    {
+     "name": "Podgagement",
+     "price": "From $9/month per podcast",
+     "url": "https://sourceforge.net/software/product/Podgagement/",
+     "verified": true
+    },
+    {
+     "name": "Podder",
+     "price": "$19/mo Analytics plan (limited-time 50% off)",
+     "url": "https://www.podderapp.com/",
+     "verified": true
+    },
+    {
+     "name": "OP3",
+     "price": "Free",
+     "url": "https://www.podderapp.com/post/podder-vs-op3",
+     "verified": true
+    }
+   ],
+   "pay_proof": [
+    {
+     "claim": "Podstatus sells podcast tracking incl. OP3 downloads at $7.99/mo or $59.99/yr",
+     "url": "https://podstatus.com/",
+     "verified": true
+    },
+    {
+     "claim": "CoHost analytics with Apple/Spotify consumption data starts at $89/month",
+     "url": "https://quillpodcasting.com/blog-posts/podcast-hosting-platform",
+     "verified": true
+    },
+    {
+     "claim": "Podgagement pricing starts at $9/month per podcast",
+     "url": "https://sourceforge.net/software/product/Podgagement/",
+     "verified": true
+    },
+    {
+     "claim": "Podder Analytics plan is $19/mo",
+     "url": "https://www.podderapp.com/",
+     "verified": true
+    },
+    {
+     "claim": "PodAnalyst has paying Pro and Network subscribers (Readout available to them)",
+     "url": "https://podnews.net/press-release/podanalyst-40-million",
+     "verified": true
+    },
+    {
+     "claim": "PodAnalyst premium tier around $50/month (mentioned in conversation on a podcast episode)",
+     "url": "https://weekly.podnews.net/1538779/episodes/18346765-better-podcast-analytics-with-podanalyst-plus-tiktok-doesn-t-launch-a-podcast",
+     "verified": false
+    }
+   ],
+   "cost_usd": 0.9959,
+   "web_searches": 8
+  }
+ }
+]

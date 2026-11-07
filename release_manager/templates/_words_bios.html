@@ -1,0 +1,421 @@
+{# Words page, Bios tab (RM 2.0 slice 3): was its own page; words.html includes it. #}
+    <p class="form-subtitle">Manage your artist bios across all platforms. Edit, generate, compare, and apply.</p>
+
+    <!-- Artist Variables (collapsible) -->
+    <div class="section">
+        <details id="bio-vars-details">
+            <summary><h2 style="display:inline;">Artist Variables</h2></summary>
+            <div class="bio-vars-grid">
+                <div class="form-group">
+                    <label>Keywords</label>
+                    <div class="bio-tag-container" id="bio-var-keywords" data-field="keywords">
+                        {% for kw in profile.get('keywords', []) %}
+                        <span class="bio-var-tag">{{ kw }}<button type="button" class="bio-var-tag-rm">x</button></span>
+                        {% endfor %}
+                        <input type="text" class="bio-var-add" placeholder="Add keyword..." />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>Labels</label>
+                    <div class="bio-tag-container" id="bio-var-labels" data-field="labels">
+                        {% for lb in profile.get('labels', []) %}
+                        <span class="bio-var-tag">{{ lb }}<button type="button" class="bio-var-tag-rm">x</button></span>
+                        {% endfor %}
+                        <input type="text" class="bio-var-add" placeholder="Add label..." />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>Venues</label>
+                    <div class="bio-tag-container" id="bio-var-venues" data-field="venues">
+                        {% for v in profile.get('venues', []) %}
+                        <span class="bio-var-tag">{{ v }}<button type="button" class="bio-var-tag-rm">x</button></span>
+                        {% endfor %}
+                        <input type="text" class="bio-var-add" placeholder="Add venue..." />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>Booking Email</label>
+                    <input type="email" class="form-input" id="bio-var-email" value="{{ profile.get('booking_email', '') }}" />
+                </div>
+            </div>
+            <div class="form-actions">
+                <button type="button" class="btn btn-secondary btn-sm" id="bio-save-vars-btn">Save Variables</button>
+                <span class="seo-status" id="bio-vars-status"></span>
+            </div>
+        </details>
+    </div>
+
+    <!-- Generate Button -->
+    <div class="form-actions" style="margin-bottom: 1.5rem;">
+        <button type="button" class="btn btn-accent" id="bio-generate-btn">Generate All Bios</button>
+        <button type="button" class="btn btn-secondary" id="bio-both-btn" title="Claude and GPT each write every bio; nothing is saved until you press Use This">Write with both</button>
+        <span class="seo-status" id="bio-gen-status"></span>
+    </div>
+
+    <!-- Platform Cards -->
+    <div id="bio-cards">
+        {% set bios = profile.get('bios', {}) %}
+        {% set edit_urls = profile.get('edit_urls', {}) %}
+        {% for pid in platform_order %}
+            {% set bio = bios.get(pid, {}) %}
+            {% set label = platform_labels.get(pid, pid) %}
+            {% set limit = bio.get('char_limit') %}
+            {% set edit_url = edit_urls.get(pid.replace('_intro','').replace('_full',''), '') %}
+            <div class="bio-card" data-platform="{{ pid }}">
+                <div class="bio-card-header">
+                    <span class="bio-card-title">{{ label }}{% if limit %} ({{ limit }} chars){% endif %}</span>
+                    {% if edit_url %}
+                    <a href="{{ edit_url }}" target="_blank" rel="noopener" class="bio-edit-link">Edit on {{ label.split(' - ')[0] }} &#8599;</a>
+                    {% endif %}
+                </div>
+                <div class="bio-card-body">
+                    <div class="bio-side bio-current">
+                        <div class="bio-side-label">Current Bio</div>
+                        <textarea class="bio-textarea" data-platform="{{ pid }}" data-limit="{{ limit or '' }}">{{ bio.get('current', '') }}</textarea>
+                        <div class="bio-side-footer">
+                            <span class="char-counter bio-char-count"></span>
+                            <button type="button" class="btn btn-secondary btn-sm bio-save-edit-btn" data-platform="{{ pid }}">Save Edit</button>
+                            <button type="button" class="btn btn-secondary btn-sm bio-copy-btn" data-side="current" data-platform="{{ pid }}">Copy</button>
+                        </div>
+                    </div>
+                    <div class="bio-side bio-generated" style="display:none;">
+                        <div class="bio-side-label bio-gen-label">Generated Bio</div>
+                        <div class="bio-gen-text" data-platform="{{ pid }}"></div>
+                        <div class="bio-side-footer">
+                            <span class="char-counter bio-gen-char-count"></span>
+                            <button type="button" class="btn btn-accent btn-sm bio-use-btn" data-platform="{{ pid }}">Use This</button>
+                            <button type="button" class="btn btn-secondary btn-sm bio-copy-btn" data-side="generated" data-platform="{{ pid }}">Copy</button>
+                        </div>
+                    </div>
+                    <div class="bio-side bio-generated-b" style="display:none;">
+                        <div class="bio-side-label">GPT</div>
+                        <div class="bio-gen-text bio-gen-text-b" data-platform="{{ pid }}"></div>
+                        <div class="bio-side-footer">
+                            <span class="char-counter bio-gen-char-count-b"></span>
+                            <button type="button" class="btn btn-accent btn-sm bio-use-btn-b" data-platform="{{ pid }}">Use This</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="bio-card-actions">
+                    <button type="button" class="btn btn-secondary btn-sm bio-undo-btn" data-platform="{{ pid }}" {% if not bio.get('previous') %}disabled{% endif %}>Undo</button>
+                    <button type="button" class="btn btn-sm bio-applied-btn {% if bio.get('applied') %}bio-applied-active{% endif %}" data-platform="{{ pid }}">
+                        {% if bio.get('applied') %}Applied &#10003;{% else %}Mark Applied{% endif %}
+                    </button>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+
+<script>
+(function () {
+    var generateBtn = document.getElementById('bio-generate-btn');
+    var genStatus   = document.getElementById('bio-gen-status');
+    var saveVarsBtn = document.getElementById('bio-save-vars-btn');
+    var varsStatus  = document.getElementById('bio-vars-status');
+
+    // -- Character counters --
+    function updateCharCount(textarea) {
+        var card = textarea.closest('.bio-card');
+        var counter = card.querySelector('.bio-current .bio-char-count');
+        var limit = textarea.dataset.limit ? parseInt(textarea.dataset.limit) : null;
+        var len = textarea.value.length;
+        if (limit) {
+            counter.textContent = len + ' / ' + limit;
+            counter.className = 'char-counter bio-char-count';
+            if (len > limit) counter.classList.add('char-over');
+            else if (len > limit * 0.9) counter.classList.add('char-warn');
+            else counter.classList.add('char-ok');
+        } else {
+            counter.textContent = len + ' chars';
+            counter.className = 'char-counter bio-char-count';
+        }
+    }
+
+    // Set textarea height based on char limit so no scrolling is needed
+    var limitToHeight = {
+        '256': '100px',
+        '400': '140px',
+        '1000': '280px',
+        '1500': '380px',
+        '4000': '500px',
+    };
+
+    document.querySelectorAll('.bio-textarea').forEach(function (ta) {
+        updateCharCount(ta);
+        ta.addEventListener('input', function () { updateCharCount(this); });
+        var limit = ta.dataset.limit;
+        if (limit && limitToHeight[limit]) {
+            ta.style.minHeight = limitToHeight[limit];
+        } else if (!limit) {
+            ta.style.minHeight = '200px';
+        }
+    });
+
+    // -- Save Edit --
+    document.querySelectorAll('.bio-save-edit-btn').forEach(function (btn) {
+        btn.addEventListener('click', function () {
+            var pid = this.dataset.platform;
+            var ta = document.querySelector('.bio-textarea[data-platform="' + pid + '"]');
+            fetch('/api/bios/save', {
+                method: 'PUT',
+                headers: {'Content-Type': 'application/json'},
+                body: JSON.stringify({ platform: pid, bio: ta.value, source: 'edit' }),
+            }).then(function (r) { return r.json(); }).then(function (d) {
+                if (d.ok) { btn.textContent = 'Saved!'; setTimeout(function () { btn.textContent = 'Save Edit'; }, 1500); }
+            });
+        });
+    });
+
+    // -- Copy --
+    document.querySelectorAll('.bio-copy-btn').forEach(function (btn) {
+        btn.addEventListener('click', function () {
+            var pid = this.dataset.platform;
+            var side = this.dataset.side;
+            var text = '';
+            if (side === 'current') {
+                text = document.querySelector('.bio-textarea[data-platform="' + pid + '"]').value;
+            } else {
+                text = document.querySelector('.bio-gen-text[data-platform="' + pid + '"]').textContent;
+            }
+            navigator.clipboard.writeText(text).then(function () {
+                btn.textContent = 'Copied!';
+                setTimeout(function () { btn.textContent = 'Copy'; }, 1500);
+            });
+        });
+    });
+
+    // -- Undo --
+    document.querySelectorAll('.bio-undo-btn').forEach(function (btn) {
+        btn.addEventListener('click', function () {
+            var pid = this.dataset.platform;
+            fetch('/api/bios/undo', {
+                method: 'PUT',
+                headers: {'Content-Type': 'application/json'},
+                body: JSON.stringify({ platform: pid }),
+            }).then(function (r) { return r.json(); }).then(function (d) {
+                if (d.ok) { location.reload(); }
+                else if (d.error) { alert(d.error); }
+            });
+        });
+    });
+
+    // -- Applied --
+    document.querySelectorAll('.bio-applied-btn').forEach(function (btn) {
+        btn.addEventListener('click', function () {
+            var pid = this.dataset.platform;
+            var self = this;
+            fetch('/api/bios/applied', {
+                method: 'PUT',
+                headers: {'Content-Type': 'application/json'},
+                body: JSON.stringify({ platform: pid }),
+            }).then(function (r) { return r.json(); }).then(function (d) {
+                if (d.ok) {
+                    self.textContent = 'Applied \u2713';
+                    self.classList.add('bio-applied-active');
+                }
+            });
+        });
+    });
+
+    // -- Use This --
+    document.querySelectorAll('.bio-use-btn').forEach(function (btn) {
+        btn.addEventListener('click', function () {
+            var pid = this.dataset.platform;
+            var genText = document.querySelector('.bio-gen-text[data-platform="' + pid + '"]').textContent;
+            var ta = document.querySelector('.bio-textarea[data-platform="' + pid + '"]');
+            fetch('/api/bios/save', {
+                method: 'PUT',
+                headers: {'Content-Type': 'application/json'},
+                body: JSON.stringify({ platform: pid, bio: genText, source: 'generate', written_by: 'claude' }),
+            }).then(function (r) { return r.json(); }).then(function (d) {
+                if (d.ok) {
+                    ta.value = genText;
+                    updateCharCount(ta);
+                    // Enable undo
+                    var undoBtn = document.querySelector('.bio-undo-btn[data-platform="' + pid + '"]');
+                    if (undoBtn) undoBtn.disabled = false;
+                    // Reset applied
+                    var appliedBtn = document.querySelector('.bio-applied-btn[data-platform="' + pid + '"]');
+                    if (appliedBtn) {
+                        appliedBtn.textContent = 'Mark Applied';
+                        appliedBtn.classList.remove('bio-applied-active');
+                    }
+                    btn.textContent = 'Accepted!';
+                    setTimeout(function () { btn.textContent = 'Use This'; }, 1500);
+                }
+            });
+        });
+    });
+
+    // -- Generate All --
+    generateBtn.addEventListener('click', function () {
+        generateBtn.disabled = true;
+        genStatus.textContent = 'Generating bios...';
+
+        fetch('/api/bios/generate', {
+            method: 'POST',
+            headers: {'Content-Type': 'application/json'},
+            body: '{}',
+        }).then(function (r) { return r.json(); }).then(function (d) {
+            generateBtn.disabled = false;
+            if (d.limit_note) alert(d.limit_note);   // monthly Claude API limit
+            if (d.error) {
+                genStatus.textContent = 'Error: ' + d.error;
+                return;
+            }
+            var bios = d.bios || {};
+            genStatus.textContent = '';
+            document.querySelectorAll('.bio-generated-b').forEach(function (x) { x.style.display = 'none'; });
+            document.querySelectorAll('.bio-gen-label').forEach(function (x) { x.textContent = 'Generated Bio'; });
+            if (bios._usage) {
+                genStatus.textContent = 'Tokens: ' + bios._usage.input_tokens + ' in / ' + bios._usage.output_tokens + ' out';
+            }
+
+            // Show generated bios
+            document.querySelectorAll('.bio-card').forEach(function (card) {
+                var pid = card.dataset.platform;
+                var genSide = card.querySelector('.bio-generated');
+                var genTextEl = card.querySelector('.bio-gen-text');
+                var genCounter = card.querySelector('.bio-gen-char-count');
+                var text = bios[pid] || '';
+
+                genTextEl.textContent = text;
+                genSide.style.display = '';
+
+                // Match height to textarea
+                var ta = card.querySelector('.bio-textarea');
+                if (ta) genTextEl.style.minHeight = ta.style.minHeight;
+
+                var limit = card.querySelector('.bio-textarea').dataset.limit;
+                limit = limit ? parseInt(limit) : null;
+                var len = text.length;
+                if (limit) {
+                    genCounter.textContent = len + ' / ' + limit;
+                    genCounter.className = 'char-counter bio-gen-char-count';
+                    if (len > limit) genCounter.classList.add('char-over');
+                    else if (len > limit * 0.9) genCounter.classList.add('char-warn');
+                    else genCounter.classList.add('char-ok');
+                } else {
+                    genCounter.textContent = len + ' chars';
+                    genCounter.className = 'char-counter bio-gen-char-count';
+                }
+            });
+        }).catch(function () {
+            generateBtn.disabled = false;
+            genStatus.textContent = 'Network error';
+        });
+    });
+
+    // -- Machine-27: Write with both (Claude and GPT side by side; nothing saved until Use This) --
+    var bothBtn = document.getElementById('bio-both-btn');
+    function countInto(el, text, limit) {
+        var len = text.length;
+        el.textContent = limit ? len + ' / ' + limit : len + ' chars';
+        el.className = 'char-counter';
+        if (limit) el.classList.add(len > limit ? 'char-over' : (len > limit * 0.9 ? 'char-warn' : 'char-ok'));
+    }
+    if (bothBtn) bothBtn.addEventListener('click', function () {
+        bothBtn.disabled = true; generateBtn.disabled = true;
+        genStatus.textContent = 'Claude and GPT are writing...';
+        fetch('/api/bios/generate-both', {method: 'POST', headers: {'Content-Type': 'application/json'}, body: '{}'})
+        .then(function (r) { return r.json(); }).then(function (d) {
+            bothBtn.disabled = false; generateBtn.disabled = false;
+            if (d.limit_note) alert(d.limit_note);   // monthly Claude API limit
+            if (d.error) { genStatus.textContent = 'Error: ' + d.error; return; }
+            var a = (d.bios || {}).claude || {}, b = (d.bios || {}).openai || {}, errs = d.errors || {};
+            genStatus.textContent = Object.keys(errs).map(function (k) { return errs[k]; }).join(' / ');
+            document.querySelectorAll('.bio-card').forEach(function (card) {
+                var pid = card.dataset.platform;
+                var limit = card.querySelector('.bio-textarea').dataset.limit;
+                limit = limit ? parseInt(limit) : null;
+                var sideA = card.querySelector('.bio-generated'), sideB = card.querySelector('.bio-generated-b');
+                if (d.bios.claude) {
+                    card.querySelector('.bio-gen-text').textContent = a[pid] || '';
+                    card.querySelector('.bio-gen-label').textContent = 'Claude';
+                    countInto(card.querySelector('.bio-gen-char-count'), a[pid] || '', limit);
+                    sideA.style.display = '';
+                } else sideA.style.display = 'none';
+                if (d.bios.openai) {
+                    card.querySelector('.bio-gen-text-b').textContent = b[pid] || '';
+                    countInto(card.querySelector('.bio-gen-char-count-b'), b[pid] || '', limit);
+                    sideB.style.display = '';
+                } else sideB.style.display = 'none';
+            });
+        }).catch(function () { bothBtn.disabled = false; generateBtn.disabled = false; genStatus.textContent = 'Network error'; });
+    });
+    document.querySelectorAll('.bio-use-btn-b').forEach(function (btn) {
+        btn.addEventListener('click', function () {
+            var pid = this.dataset.platform;
+            var text = document.querySelector('.bio-gen-text-b[data-platform="' + pid + '"]').textContent;
+            var ta = document.querySelector('.bio-textarea[data-platform="' + pid + '"]');
+            fetch('/api/bios/save', {method: 'PUT', headers: {'Content-Type': 'application/json'},
+                body: JSON.stringify({platform: pid, bio: text, source: 'generate', written_by: 'openai'})})
+            .then(function (r) { return r.json(); }).then(function (d) {
+                if (!d.ok) { alert(d.error || 'Could not save.'); return; }
+                ta.value = text; updateCharCount(ta);
+                var undoBtn = document.querySelector('.bio-undo-btn[data-platform="' + pid + '"]');
+                if (undoBtn) undoBtn.disabled = false;
+                var appliedBtn = document.querySelector('.bio-applied-btn[data-platform="' + pid + '"]');
+                if (appliedBtn) { appliedBtn.textContent = 'Mark Applied'; appliedBtn.classList.remove('bio-applied-active'); }
+                btn.textContent = 'Accepted!';
+                setTimeout(function () { btn.textContent = 'Use This'; }, 1500);
+            });
+        });
+    });
+
+    // -- Save Variables --
+    function getTagValues(containerId) {
+        var tags = [];
+        document.querySelectorAll('#' + containerId + ' .bio-var-tag').forEach(function (tag) {
+            var text = tag.childNodes[0].textContent.trim();
+            if (text) tags.push(text);
+        });
+        return tags;
+    }
+
+    // Wire up tag removal
+    document.querySelectorAll('.bio-var-tag-rm').forEach(function (btn) {
+        btn.addEventListener('click', function () { this.parentElement.remove(); });
+    });
+
+    // Wire up tag addition
+    document.querySelectorAll('.bio-var-add').forEach(function (input) {
+        input.addEventListener('keydown', function (e) {
+            if (e.key === 'Enter' && this.value.trim()) {
+                e.preventDefault();
+                var val = this.value.trim();
+                var tag = document.createElement('span');
+                tag.className = 'bio-var-tag';
+                tag.appendChild(document.createTextNode(val));
+                var rm = document.createElement('button');
+                rm.type = 'button';
+                rm.className = 'bio-var-tag-rm';
+                rm.textContent = 'x';
+                rm.addEventListener('click', function () { tag.remove(); });
+                tag.appendChild(rm);
+                this.parentElement.insertBefore(tag, this);
+                this.value = '';
+            }
+        });
+    });
+
+    saveVarsBtn.addEventListener('click', function () {
+        var data = {
+            keywords: getTagValues('bio-var-keywords'),
+            labels: getTagValues('bio-var-labels'),
+            venues: getTagValues('bio-var-venues'),
+            booking_email: document.getElementById('bio-var-email').value,
+        };
+        fetch('/api/bios/profile', {
+            method: 'PUT',
+            headers: {'Content-Type': 'application/json'},
+            body: JSON.stringify(data),
+        }).then(function (r) { return r.json(); }).then(function (d) {
+            if (d.ok) {
+                varsStatus.textContent = 'Saved!';
+                setTimeout(function () { varsStatus.textContent = ''; }, 1500);
+            }
+        });
+    });
+})();
+</script>

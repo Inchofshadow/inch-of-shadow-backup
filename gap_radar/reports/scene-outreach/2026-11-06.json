@@ -1,0 +1,168 @@
+[
+ {
+  "name": "NTS (THE NTS GUIDE TO…)",
+  "insight": "Online radio station whose 'NTS Guide To' themed mix series gets shared across post-punk and coldwave communities. Shared editions include Canadian post-punk, industrial and synth wave, dub-influenced post-punk and '90s doom. Coldwave fans also use NTS shows as a discovery source, identifying minimal wave tracks they hear there. Location is not stated in the posts.",
+  "examples": [
+   "Canadian post-punk/industrial/synth wave guide shared, poster loves the series",
+   "Dub & reggae post-punk guide called an interesting listen",
+   "Coldwave playlist built from tracks heard on NTS and Shazammed",
+   "New NTS user asking for DJ and selector recommendations",
+   "YouTube commenters praising another banger selection"
+  ],
+  "evidence_ids": [
+   4,
+   5,
+   29,
+   30,
+   49,
+   50,
+   51,
+   52,
+   53
+  ],
+  "use": "check the outlet's own page",
+  "strength": 4
+ },
+ {
+  "name": "Tinzo",
+  "insight": "DJ and YouTube channel posting dark disco sets filmed at themed events, such as a Brooklyn warehouse party with costumes. The DJ duo Tinzo + Jojo tours. Commenters praise her genre-blending mixing, and the sets introduce newcomers to dark disco.",
+  "examples": [
+   "Fan says a new Tinzo mix makes a good day",
+   "Viewer aged 56 discovered dark disco through this set",
+   "Costumes and decor matching the dark vibe singled out",
+   "Praise for how she blends genres into one mix"
+  ],
+  "evidence_ids": [
+   32,
+   33,
+   34,
+   35,
+   36,
+   37
+  ],
+  "use": "Attend: the channel points to the Tinzo + Jojo tour dates (tinzoandjojo.com) and asks for no phones on the dancefloor.",
+  "strength": 3
+ },
+ {
+  "name": "Book Club Radio",
+  "insight": "Brooklyn-based outlet and party brand that films gothic dance and EBM DJ sets in themed locations, such as Georgi's 'Dracula's Castle' set. It also runs the Book Club Radio Music Festival in Brooklyn. Fans praise its DJs' showmanship and its phone-free crowds.",
+  "examples": [
+   "Georgi's gothic dance & EBM set with a full tracklist posted in the comments",
+   "Fan calls both of her book clubs amazing",
+   "Viewer happy that the crowd is not on phones",
+   "Festival returning to Brooklyn on October 2nd and 3rd"
+  ],
+  "evidence_ids": [
+   44,
+   45,
+   46,
+   47,
+   48
+  ],
+  "use": "Attend: festival tickets are sold via Shotgun, as linked in the video description.",
+  "strength": 3
+ },
+ {
+  "name": "Aether Sounds",
+  "insight": "YouTube channel releasing a new darkwave or dark ambient mix every Friday. Its 'Best of 2025' mix covers gothic, coldwave and baritone ritual sounds. It draws an international audience (Brazil, Germany) and comments compare it to Neurotic Fish and VNV Nation.",
+  "examples": [
+   "Weekly Friday darkwave/dark ambient mix",
+   "Listeners asking where to download the opening track",
+   "Older German wave fan subscribing after the mix",
+   "Brazilian commenter praising the selection"
+  ],
+  "evidence_ids": [
+   38,
+   39,
+   40,
+   41,
+   42,
+   43
+  ],
+  "use": "check the outlet's own page",
+  "strength": 3
+ },
+ {
+  "name": "MARTYR",
+  "insight": "YouTube DJ mix channel, with 'OVERDRIVE' as an EBM and new beat mix at 120-126 BPM. Commenters engage to boost it in the algorithm and call it the best set of the day.",
+  "examples": [
+   "Listener says they needed this mix today",
+   "Commenting and liking to help the algorithm",
+   "Expected industrial but enjoyed the electronic EBM direction"
+  ],
+  "evidence_ids": [
+   54,
+   55,
+   56,
+   57
+  ],
+  "use": "check the outlet's own page",
+  "strength": 2
+ },
+ {
+  "name": "Exorcism",
+  "insight": "Numbered YouTube mix series (Mix 58) spanning dark wave, minimal wave, cold wave, goth, post-punk and electro. Listeners leave enthusiastic thank-you comments.",
+  "examples": [
+   "Thanks for the fantastic music",
+   "Listener says their spirit is dancing"
+  ],
+  "evidence_ids": [
+   60,
+   61,
+   62
+  ],
+  "use": "check the outlet's own page",
+  "strength": 2
+ },
+ {
+  "name": "Dark Entries",
+  "insight": "Record label known for reissuing early-80s European darkwave, coldwave and post-punk electronics. It is used as a shorthand for that sound when people share mixes, and noted as the reissuer of obscure tracks.",
+  "examples": [
+   "Mix poster says if you know Dark Entries you know what to expect",
+   "Ski Patrol repress by Dark Entries noted as a vinyl transfer"
+  ],
+  "evidence_ids": [
+   2,
+   17
+  ],
+  "use": "check the outlet's own page",
+  "strength": 2
+ },
+ {
+  "name": "CLUB CHEEK",
+  "insight": "London club night in Brixton hosting a darkwave and EBM gig followed by a 3am late club night.",
+  "examples": [
+   "Darkwave and EBM gig plus late club night on 30/01/2026"
+  ],
+  "evidence_ids": [
+   1
+  ],
+  "use": "Attend: the event is listed for 30/01/2026 in Brixton, London.",
+  "strength": 1
+ },
+ {
+  "name": "La Belle Électrique Takeover",
+  "insight": "New format with the Grenoble venue La Belle Électrique: a radio show broadcast before a late-night Italo disco/dark disco party, featuring local artists going b2b.",
+  "examples": [
+   "Actress M and Moodfino b2b warm-up radio show before the 12.09.2026 party"
+  ],
+  "evidence_ids": [
+   31
+  ],
+  "use": "Attend or tune in to the pre-party radio show; otherwise check the outlet's own page.",
+  "strength": 1
+ },
+ {
+  "name": "Maggie Rollins",
+  "insight": "DJ behind a coldwave & EBM mix on YouTube; a commenter praises the mixing and transitions and calls the channel hosting it the best DJ channel on YouTube.",
+  "examples": [
+   "Coldwave & EBM mix 'It's electric where you find it'",
+   "Mixing skill and transitions praised"
+  ],
+  "evidence_ids": [
+   58
+  ],
+  "use": "check the outlet's own page",
+  "strength": 1
+ }
+]

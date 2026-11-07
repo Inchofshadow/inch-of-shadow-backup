@@ -1,0 +1,182 @@
+{
+  "schema_version": 1,
+  "slug": "clip-pack-test-single",
+  "created_at": "2026-11-06T22:00:00",
+  "updated_at": "2026-11-06T22:00:00",
+  "metadata": {
+    "title": "Clip Pack Test",
+    "artist": "Inch of Shadow",
+    "release_type": "Single",
+    "genre_primary": "EBM",
+    "genre_secondary": "",
+    "catalog_number": "",
+    "copyright": "2026 Inch of Shadow",
+    "copyright_p": "2026 Inch of Shadow",
+    "description": "",
+    "language": "en",
+    "explicit": false
+  },
+  "release_date": "2026-12-18",
+  "distribution": {
+    "distributor": "Symphonic",
+    "distributor_id": "",
+    "upc": "",
+    "status": "draft",
+    "submitted_date": "",
+    "approved_date": "",
+    "live_date": "",
+    "notes": ""
+  },
+  "tracks": [
+    {
+      "number": 1,
+      "title": "Night Walk",
+      "artist": "Inch of Shadow",
+      "featured_artist": "",
+      "remix_artist": "",
+      "bpm": 118,
+      "key": "",
+      "duration": "3:40",
+      "isrc": "",
+      "genre_primary": "",
+      "genre_secondary": "",
+      "credits": {
+        "producer": "Inch of Shadow",
+        "mixer": "Inch of Shadow",
+        "mastering": "Inch of Shadow",
+        "writer": "Amir Miller"
+      },
+      "notes": ""
+    },
+    {
+      "number": 2,
+      "title": "Half Light",
+      "artist": "Inch of Shadow",
+      "featured_artist": "",
+      "remix_artist": "",
+      "bpm": 112,
+      "key": "",
+      "duration": "4:05",
+      "isrc": "",
+      "genre_primary": "",
+      "genre_secondary": "",
+      "credits": {
+        "producer": "Inch of Shadow",
+        "mixer": "Inch of Shadow",
+        "mastering": "Inch of Shadow",
+        "writer": "Amir Miller"
+      },
+      "notes": ""
+    }
+  ],
+  "platform_links": {
+    "spotify": "",
+    "apple_music": "",
+    "beatport": "",
+    "traxsource": "",
+    "bandcamp": "",
+    "soundcloud": "",
+    "audius": "",
+    "catalog": "",
+    "youtube_music": "",
+    "deezer": "",
+    "tidal": ""
+  },
+  "platform_tags": {
+    "spotify": {
+      "genre": "",
+      "subgenres": [],
+      "moods": [],
+      "cultures": []
+    },
+    "beatport": {
+      "genre": "",
+      "subgenre": ""
+    },
+    "traxsource": {
+      "genre": ""
+    },
+    "bandcamp": {
+      "tags": []
+    }
+  },
+  "checklist": [],
+  "timeline": [],
+  "notes": "keep me",
+  "outcomes": {
+    "stats": {
+      "spotify_streams": 12
+    }
+  },
+  "clips": {
+    "version": 1,
+    "tracks": [
+      {
+        "number": 1,
+        "tiktok": {
+          "start": 72.0
+        },
+        "hook_bar": {
+          "start": 72.0,
+          "length": 3.5
+        },
+        "canvas": {
+          "length": 5.0,
+          "source": "night-walk-loop.mp4",
+          "height_px": 1080,
+          "confirmed": true
+        },
+        "shorts_preview": {
+          "start": 60.0,
+          "duration": 45.0,
+          "start_date": "2026-12-04"
+        },
+        "used_in": [
+          {
+            "platform": "instagram",
+            "post": "https://www.instagram.com/reel/abc/",
+            "date": "2026-11-20",
+            "cut": "A1",
+            "kind": "post"
+          },
+          {
+            "platform": "tiktok",
+            "post": "7421",
+            "date": "2026-11-20",
+            "cut": "A1",
+            "kind": "post"
+          },
+          {
+            "platform": "instagram",
+            "post": "https://www.instagram.com/reel/xyz/",
+            "date": "2026-11-22",
+            "cut": "A2",
+            "kind": "post"
+          }
+        ]
+      },
+      {
+        "number": 2,
+        "tiktok": {
+          "start": null
+        },
+        "hook_bar": {
+          "start": null,
+          "length": null
+        },
+        "canvas": {
+          "length": null,
+          "source": "",
+          "height_px": null,
+          "confirmed": false
+        },
+        "shorts_preview": {
+          "start": null,
+          "duration": null,
+          "start_date": ""
+        },
+        "used_in": []
+      }
+    ]
+  }
+}

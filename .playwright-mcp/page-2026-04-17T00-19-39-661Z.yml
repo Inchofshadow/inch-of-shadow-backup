@@ -1,0 +1,126 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - generic [ref=e3]:
+      - generic [ref=e4]:
+        - generic [ref=e5]:
+          - link [ref=e7] [cursor=pointer]:
+            - /url: /
+            - img [ref=e8]
+          - generic [ref=e12]:
+            - link [ref=e13] [cursor=pointer]:
+              - /url: /search?query=
+              - img [ref=e14]
+            - textbox "Search by release, tag, user, hub, or post" [ref=e17]
+        - generic [ref=e19]:
+          - generic [ref=e20]:
+            - button "Log in / sign up" [ref=e22] [cursor=pointer]:
+              - paragraph [ref=e23]: Log in / sign up
+            - link "Editorial" [ref=e24] [cursor=pointer]:
+              - /url: /editorial
+            - link "Iceberg" [ref=e25] [cursor=pointer]:
+              - /url: /iceberg
+            - button "Upload" [ref=e26] [cursor=pointer]:
+              - paragraph [ref=e27]: Upload
+            - button "Post" [ref=e28] [cursor=pointer]:
+              - paragraph [ref=e29]: Post
+            - button [ref=e32] [cursor=pointer]:
+              - img [ref=e34]
+          - button:
+            - paragraph
+      - main [ref=e38]:
+        - generic [ref=e40]:
+          - generic [ref=e41]:
+            - generic [ref=e43]:
+              - img [ref=e45]
+              - paragraph [ref=e49]: darkdisco
+            - generic [ref=e50]:
+              - paragraph [ref=e51]: "#darkdisco"
+              - button "Follow" [ref=e57] [cursor=pointer]
+          - generic [ref=e60]:
+            - generic [ref=e63]:
+              - button "releases" [ref=e64] [cursor=pointer]:
+                - heading "releases" [level=1] [ref=e65]
+              - button "posts" [ref=e66] [cursor=pointer]:
+                - heading "posts" [level=1] [ref=e67]
+            - generic [ref=e70]:
+              - generic [ref=e71]:
+                - generic "Grid view" [ref=e72]:
+                  - button [disabled] [ref=e73]:
+                    - img [ref=e74]
+                - generic "List view" [ref=e79]:
+                  - button [ref=e80] [cursor=pointer]:
+                    - img [ref=e81]
+              - generic [ref=e89]:
+                - combobox [ref=e90]:
+                  - option "Recently added"
+                  - option "Earliest"
+                  - option "Popular today"
+                  - option "Popular this week" [selected]
+                  - option "Popular this month"
+                  - option "Popular all time"
+                  - option "Undiscovered"
+                - img
+        - generic [ref=e120]:
+          - generic [ref=e123]:
+            - paragraph [ref=e124]: followers (0)
+            - list [ref=e125]:
+              - generic [ref=e127]:
+                - text: No followers yet.
+                - button "Be the first to follow" [ref=e128] [cursor=pointer]
+          - generic [ref=e129]:
+            - paragraph [ref=e130]: Now on iOS and Android.
+            - button "Get the app" [ref=e131] [cursor=pointer]:
+              - paragraph [ref=e132]: Get the app
+          - generic [ref=e133]:
+            - img [ref=e135]
+            - paragraph [ref=e138]: Enjoying Nina?
+            - button "Invite a friend" [ref=e140] [cursor=pointer]:
+              - paragraph [ref=e141]: Invite a friend
+          - generic [ref=e142]:
+            - generic [ref=e143]:
+              - link "About" [ref=e144] [cursor=pointer]:
+                - /url: /about
+                - paragraph [ref=e145]: About
+              - link "FAQ" [ref=e146] [cursor=pointer]:
+                - /url: https://help.ninaprotocol.com
+                - paragraph [ref=e147]: FAQ
+              - link "Terms" [ref=e148] [cursor=pointer]:
+                - /url: https://nina-protocol.notion.site/Nina-Protocol-Terms-of-Service-45db765d2ccf4000946af0af2ee491b9
+                - paragraph [ref=e149]: Terms
+            - generic [ref=e150]:
+              - link "Instagram" [ref=e151] [cursor=pointer]:
+                - /url: https://www.instagram.com/ninaprotocol/
+                - paragraph [ref=e152]: Instagram
+              - link "X" [ref=e153] [cursor=pointer]:
+                - /url: https://x.com/ninaprotocol
+                - paragraph [ref=e154]: X
+              - link "Discord" [ref=e155] [cursor=pointer]:
+                - /url: https://discord.gg/ePkqJqSBgj
+                - paragraph [ref=e156]: Discord
+              - link "Soundcloud" [ref=e157] [cursor=pointer]:
+                - /url: https://soundcloud.com/ninaprotocol
+                - paragraph [ref=e158]: Soundcloud
+            - paragraph [ref=e159]: © 2026 Nina Protocol
+    - generic:
+      - generic [ref=e161]:
+        - heading "Now Playing" [level=1] [ref=e163]
+        - heading "Playing Next" [level=1] [ref=e167] [cursor=pointer]
+      - generic [ref=e171]:
+        - generic [ref=e172]:
+          - paragraph [ref=e173]: 0:00
+          - paragraph [ref=e177]: 0:00
+        - generic [ref=e178]:
+          - generic [ref=e179]:
+            - button [ref=e180] [cursor=pointer]:
+              - img [ref=e181]
+            - button [ref=e184] [cursor=pointer]:
+              - img [ref=e185]
+            - button [ref=e187] [cursor=pointer]:
+              - img [ref=e188]
+          - button [ref=e193] [cursor=pointer]:
+            - img [ref=e194]
+          - button [ref=e198] [cursor=pointer]:
+            - img [ref=e199]
+          - button [ref=e203] [cursor=pointer]:
+            - img [ref=e204]
+  - alert [ref=e214]

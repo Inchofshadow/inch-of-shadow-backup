@@ -1,0 +1,107 @@
+{% extends "base.html" %}
+{% block title %}Fonts{% endblock %}
+{% block content %}
+<style>
+{% for r in shown %}{% for f in r.faces %}@font-face { font-family: "{{ f.family }}"; src: {{ f.src|safe }}; font-display: swap; }
+{% endfor %}{% endfor %}
+</style>
+<div class="fonts-page">
+    <h1>Fonts</h1>
+    <p class="form-subtitle">Amir's font research in one place, each face set live from the file on this Mac. {{ total }} faces · {{ counts.mac }} on this Mac · {{ counts.canva }} in Canva. Only <strong>OWNED</strong> and <strong>FREE</strong> faces may go into public work; <strong>TRIAL</strong> is for looking only.</p>
+
+    {% if error %}<div class="alert alert-error">{{ error }}</div>{% endif %}
+
+    <div class="fonts-tester">
+        <input type="text" id="fonts-text" value="{{ text }}" placeholder="Type a title: Misty Night" aria-label="Specimen text">
+        <label><input type="checkbox" id="fonts-caps"> capitals</label>
+        <label>max size <input type="range" id="fonts-size" min="24" max="120" value="72"></label>
+        <label class="fonts-swatch">on <select id="fonts-bg"><option value="dark">warm black</option><option value="light">platinum</option></select></label>
+    </div>
+
+    <form method="get" class="shoot-filters fonts-filters">
+        <input type="hidden" name="t" value="{{ text }}">
+        <select name="group"><option value="">every group</option>{% for g in counts.group %}<option value="{{ g.value }}" {% if args.get('group') == g.value %}selected{% endif %}>{{ g.value }}. {{ g.label.split(':')[0] }} ({{ g.count }})</option>{% endfor %}</select>
+        <select name="status"><option value="">any status</option>{% for s in counts.status %}{% if s.count %}<option value="{{ s.value }}" {% if args.get('status') == s.value %}selected{% endif %}>{{ s.value }} ({{ s.count }})</option>{% endif %}{% endfor %}</select>
+        <select name="licence"><option value="">any licence</option>{% for s in counts.licence %}{% if s.count %}<option value="{{ s.value }}" {% if args.get('licence') == s.value %}selected{% endif %}>{{ s.value }} ({{ s.count }})</option>{% endif %}{% endfor %}</select>
+        <select name="where"><option value="">anywhere</option><option value="mac" {% if args.get('where') == 'mac' %}selected{% endif %}>on this Mac</option><option value="nofile" {% if args.get('where') == 'nofile' %}selected{% endif %}>no file</option><option value="canva" {% if args.get('where') == 'canva' %}selected{% endif %}>in Canva</option></select>
+        <select name="sort"><option value="group" {% if sort == 'group' %}selected{% endif %}>by group</option><option value="status" {% if sort == 'status' %}selected{% endif %}>by status</option><option value="name" {% if sort == 'name' %}selected{% endif %}>by name</option></select>
+        <input type="search" name="q" value="{{ args.get('q', '') }}" placeholder="a word: deco, Cure, romantic...">
+        <button type="submit" class="btn btn-secondary btn-sm">Filter</button>
+        <a href="{{ url_for('fonts_page_view') }}" class="btn btn-secondary btn-sm">Clear</a>
+        <span class="brand-muted">{{ shown|length }} of {{ total }}</span>
+    </form>
+
+    <div class="fonts-grid" id="fonts-grid">
+        {% for r in shown %}
+        <a class="font-card" href="{{ url_for('font_detail', fid=r.id) }}{% if text %}?t={{ text|urlencode }}{% endif %}">
+            <div class="font-specimen{% if not r.faces %} font-specimen-none{% endif %}" {% if r.faces %}style="font-family: '{{ r.faces[0].family }}', serif"{% endif %}>
+                {% if r.faces %}<span class="font-sample">{{ text or r.name }}</span>{% else %}<span class="font-nofile">no file on this Mac</span>{% endif %}
+            </div>
+            <div class="font-card-body">
+                <div class="font-card-title">{{ r.name }}</div>
+                <div class="archive-chips">
+                    <span class="font-badge font-badge-{{ r.licence|replace(' ', '-') }}">{{ r.badge }}</span>
+                    <span class="archive-chip font-status-{{ r.status|replace(' ', '-') }}">{{ r.status }}</span>
+                    <span class="archive-chip">{{ r.group }}</span>
+                    {% if r.canva == 'yes' %}<span class="archive-chip">Canva</span>{% endif %}
+                    {% if r.n_styles > 1 %}<span class="archive-chip">{{ r.n_styles }} styles</span>{% endif %}
+                </div>
+                {% if r.seen_on %}<p class="font-card-seen">{{ r.seen_on|truncate(150) }}</p>{% endif %}
+            </div>
+        </a>
+        {% endfor %}
+    </div>
+</div>
+<script>
+(function () {
+    var t = document.getElementById('fonts-text'), caps = document.getElementById('fonts-caps'),
+        size = document.getElementById('fonts-size'), bg = document.getElementById('fonts-bg');
+    var store = function (k, v) { try { localStorage.setItem('fonts-' + k, v); } catch (e) {} };
+    var load = function (k) { try { return localStorage.getItem('fonts-' + k); } catch (e) { return null; } };
+    if (load('caps') === '1') caps.checked = true;
+    if (load('size')) size.value = load('size');
+    if (load('bg')) bg.value = load('bg');
+    function apply() {
+        document.querySelectorAll('.font-sample').forEach(function (el) {
+            var card = el.closest('.font-card');
+            el.textContent = t.value || card.querySelector('.font-card-title').textContent;
+        });
+        var grid = document.getElementById('fonts-grid');
+        grid.style.setProperty('--sample-size', size.value + 'px');
+        fit();
+        grid.classList.toggle('fonts-caps', caps.checked);
+        grid.classList.toggle('fonts-light', bg.value === 'light');
+        document.querySelectorAll('.font-card').forEach(function (a) {
+            var u = new URL(a.href); if (t.value) u.searchParams.set('t', t.value); else u.searchParams.delete('t'); a.href = u.toString();
+        });
+        document.querySelectorAll('input[name="t"]').forEach(function (h) { h.value = t.value; });
+    }
+    // every sample fills the same width of its box (the slider is the largest size allowed),
+    // so a narrow face and a wide face read at the same visual size
+    function fit() {
+        var max = parseInt(size.value, 10);
+        document.querySelectorAll('.fonts-grid .font-sample').forEach(function (el) {
+            var box = el.parentElement, w = box.clientWidth * 0.82, h = box.clientHeight * 0.78;
+            el.style.fontSize = '100px';
+            var r = el.getBoundingClientRect();
+            if (!r.width) return;
+            var px = Math.min(max, 100 * w / r.width, 100 * h / r.height);
+            el.style.fontSize = Math.max(12, Math.floor(px)) + 'px';
+        });
+    }
+    if (document.fonts) {
+        // fonts load lazily as cards come into use; ask for all of them, re-fit as each arrives
+        var fams = Array.prototype.map.call(document.querySelectorAll('.fonts-grid .font-specimen[style]'),
+            function (b) { return b.style.fontFamily.split(',')[0]; });
+        Promise.all(fams.map(function (f) { return document.fonts.load('72px ' + f).catch(function () {}); })).then(fit);
+        document.fonts.addEventListener && document.fonts.addEventListener('loadingdone', fit);
+    }
+    window.addEventListener('resize', fit);
+    t.addEventListener('input', apply);
+    caps.addEventListener('change', function () { store('caps', caps.checked ? '1' : '0'); apply(); });
+    size.addEventListener('input', function () { store('size', size.value); apply(); });
+    bg.addEventListener('change', function () { store('bg', bg.value); apply(); });
+    apply();
+})();
+</script>
+{% endblock %}

@@ -1,0 +1,109 @@
+{
+  "months": {
+    "2026-10": {
+      "usd": 0.49117,
+      "calls": 11,
+      "by": {
+        "review": {
+          "usd": 0.19659,
+          "calls": 6
+        },
+        "copy": {
+          "usd": 0.0799,
+          "calls": 1
+        },
+        "bios": {
+          "usd": 0.13941,
+          "calls": 1
+        },
+        "weekly stats": {
+          "usd": 0.07527,
+          "calls": 3
+        }
+      }
+    },
+    "2026-11": {
+      "usd": 70.56051,
+      "calls": 126,
+      "by": {
+        "weekly stats": {
+          "usd": 0.02117,
+          "calls": 1
+        },
+        "gap_radar": {
+          "usd": 2.06135,
+          "calls": 2
+        },
+        "gap_radar_crowding": {
+          "usd": 62.21908,
+          "calls": 91
+        },
+        "gap_radar_producer-tools": {
+          "usd": 1.41871,
+          "calls": 3
+        },
+        "gap_radar_profile_review": {
+          "usd": 0.16516,
+          "calls": 11
+        },
+        "gap_radar_income-niches": {
+          "usd": 0.98589,
+          "calls": 3
+        },
+        "gap_radar_song-ideas": {
+          "usd": 0.36856,
+          "calls": 2
+        },
+        "gap_radar_brand-marketing": {
+          "usd": 0.36258,
+          "calls": 2
+        },
+        "gap_radar_ig-hooks": {
+          "usd": 0.39327,
+          "calls": 2
+        },
+        "gap_radar_music-seo": {
+          "usd": 0.64631,
+          "calls": 2
+        },
+        "gap_radar_scene-outreach": {
+          "usd": 0.09707,
+          "calls": 1
+        },
+        "gap_radar_money-back": {
+          "usd": 0.2771,
+          "calls": 1
+        },
+        "gap_radar_deal-alerts": {
+          "usd": 0.33626,
+          "calls": 1
+        },
+        "gap_radar_free-stuff-berlin": {
+          "usd": 0.26816,
+          "calls": 1
+        },
+        "gap_radar_before-you-sign": {
+          "usd": 0.3583,
+          "calls": 1
+        },
+        "gap_radar_regret-check": {
+          "usd": 0.34104,
+          "calls": 1
+        },
+        "gap_radar_income-trades": {
+          "usd": 0.2405,
+          "calls": 1
+        }
+      }
+    }
+  },
+  "last": {
+    "what": "gap_radar_crowding",
+    "model": "claude-opus-5-5",
+    "made": "2026-11-07T12:18:46",
+    "input_tokens": 140311,
+    "output_tokens": 5827,
+    "cost_usd": 0.75778,
+    "web_searches": 8
+  }
+}

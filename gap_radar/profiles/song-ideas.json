@@ -1,0 +1,55 @@
+{
+  "name": "song-ideas",
+  "question": "Which feelings, scenes, places, situations and life stories do darkwave, post-punk and coldwave listeners describe when they talk about the songs that hit them?",
+  "system_extra": "Context: Inch of Shadow is a Berlin artist (Amir): dark dance wave, sitting on dark disco, EBM, coldwave, acid, electro and techno; from 2026 also songs with his own vocals. This feeds his songwriting (lyrics drafts). Return THEMES: the feeling, the scene\nor image, the situation in a listener's life, and the tension in it (for example a ritual, a place,\na time of night, a relationship state). examples = 2-4 very short paraphrases in your own words of what\nlisteners describe. NEVER quote, copy or rebuild song lyrics, not even a line; never name a song as the\ntheme. name = the theme in 2-6 words. use = one concrete angle a new song could take on it. Prefer\nthemes that recur across different artists and sources over one fandom's in-jokes.",
+  "output_dir": "gap_radar/reports/song-ideas",
+  "crowding": false,
+  "sources": {
+    "reddit": {
+      "subs": [
+        "postpunk",
+        "darkwave",
+        "coldwave",
+        "goth",
+        "gothsubculture",
+        "thecure"
+      ],
+      "phrases": [
+        "\"makes me feel\"",
+        "\"reminds me of\"",
+        "\"got me through\"",
+        "\"this song is about\"",
+        "\"listen to when\"",
+        "\"night drive\"",
+        "\"3am\"",
+        "\"empty city\"",
+        "\"sad but danceable\"",
+        "\"crying on the dancefloor\"",
+        "\"winter\""
+      ]
+    },
+    "hn_queries": [],
+    "stackexchange": {
+      "sites": [],
+      "queries": []
+    },
+    "youtube_queries": [
+      "Molchat Doma",
+      "Boy Harsher",
+      "Drab Majesty",
+      "She Past Away",
+      "Lebanon Hanover",
+      "R. Missing"
+    ],
+    "github_queries": [],
+    "appstore": {
+      "genres": [],
+      "app_ids": []
+    },
+    "hikerapi": {
+      "hashtags": [],
+      "accounts": [],
+      "max_calls": 0
+    }
+  }
+}

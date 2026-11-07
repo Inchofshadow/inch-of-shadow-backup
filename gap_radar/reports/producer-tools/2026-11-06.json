@@ -1,0 +1,1031 @@
+[
+ {
+  "name": "Genre-specific micro preset and MIDI packs for acid, EBM and dark disco",
+  "pain": "Producers want small, focused packs for one sound, such as acid patches with matching MIDI patterns, EBM bass racks, or aggrotech and rave-EBM drums. Existing packs are broad, or tutorials stop short of giving usable sounds.",
+  "who_pays": "Bedroom and semi-pro techno, acid and EBM producers using Serum, Vital or Ableton racks",
+  "evidence_ids": [
+   577,
+   599,
+   608,
+   606,
+   604,
+   609,
+   584,
+   591,
+   586
+  ],
+  "pay_signal": "Explicit 'I'd buy that' for a Serum acid micro pack with MIDI patterns (577). EBM racks are already sold through a shop with discount codes (599). Repeated requests for niche drum sounds and sample sources (608, 609, 591).",
+  "product_idea": "Build it: 'Inch of Shadow' micro packs, each with about 30 Vital/Serum patches plus a MIDI groove library plus Ableton racks, for acid lines, EBM sequenced bass and dark disco drums. Use it: his own studio patches become the source material. Note the Vital version mismatch problem (586) and ship patches for the stable version.",
+  "build_weeks": 3,
+  "fit_for_us": 5,
+  "known_competitors": "Studio Brootle EBM racks (599); tutorial-channel packs (577, 586)",
+  "check_next": "List acid/EBM micro packs on Gumroad and Splice and their prices. Post a free 5-patch EBM bass teaser and measure email signups.",
+  "crowding": {
+   "verdict": "crowded",
+   "reason": "Acid Serum preset+MIDI packs and EBM Serum/Ableton rack packs already exist from several sellers at about $10-$40, plus free EBM racks and free Vital acid presets; only dark disco and aggrotech preset+MIDI packs look thin, and their demand is unproven.",
+   "competitors": [
+    {
+     "name": "Tonepusher - Old School EBM (Serum, 50 presets)",
+     "price": "$15",
+     "url": "https://www.adsrsounds.com/product/presets/tonepusher-old-school-ebm-serum-presets/",
+     "verified": true
+    },
+    {
+     "name": "Tonepusher - Electronic Body Music (Serum/Serum 2)",
+     "price": "unknown",
+     "url": "https://www.tonepusher.com/product-page/electronic-body-music",
+     "verified": false
+    },
+    {
+     "name": "Studio Brootle - 16 EBM, Industrial and EBM Techno Racks (Ableton)",
+     "price": "$18 (sale, regular $35)",
+     "url": "https://studiobrootle.myshopify.com/products/studio-brootle-16-ebm-industrial-and-ebm-techno-racks-ableton-live-preset-pack",
+     "verified": true
+    },
+    {
+     "name": "Studio Brootle - free EBM techno racks with tutorials",
+     "price": "free",
+     "url": "https://www.studiobrootle.com/ebm-techno-rack-for-ableton/",
+     "verified": true
+    },
+    {
+     "name": "Revealed Serum 2 Acid Anarchy (50 presets + 50 MIDI)",
+     "price": "unknown",
+     "url": "https://www.revealedrecordings.com/releases/revealed-serum-2-acid-anarchy",
+     "verified": false
+    },
+    {
+     "name": "Sample Agency - Acid Techno (50 Serum 2 presets + MIDI)",
+     "price": "unknown",
+     "url": "https://sample.agency/products/acid-techno",
+     "verified": false
+    },
+    {
+     "name": "Etsy - Hard Techno Acid Pack (Serum presets, Ableton racks, MIDI, WAV)",
+     "price": "$9.61 (sale, original $14.78)",
+     "url": "https://www.etsy.com/listing/4497937000/hard-techno-acid-pack-serum-presets",
+     "verified": true
+    },
+    {
+     "name": "Teknovault - Acid Techno Presets Vol. 1 (Serum, Sylenth1, Vital)",
+     "price": "$9.99",
+     "url": "https://teknovault.com/products/acid-techno-presets-vol-1",
+     "verified": true
+    },
+    {
+     "name": "Julien Earle - BEST Serum Acid 303 Presets + Loops (WAV+MIDI+presets)",
+     "price": "unknown",
+     "url": "https://julienearle.bandcamp.com/album/best-serum-acid-303-presets-loops-kntxt-t78-kozlov-jaess-reinier-zonneveld-amelie-lens-style-free-bonus-drumloops",
+     "verified": false
+    },
+    {
+     "name": "Vital Preset Pack ACID v.2 (50 presets, free)",
+     "price": "$0",
+     "url": "https://payhip.com/b/5oV9t",
+     "verified": true
+    },
+    {
+     "name": "Easy Sounds - Indie and Dark Disco Tools (drum samples)",
+     "price": "$22.51",
+     "url": "https://www.lootaudio.com/category/sample-packs/easy-sounds/indie-and-dark-disco-tools-",
+     "verified": true
+    },
+    {
+     "name": "Loopmasters - EBM Drum Shots (1,574 one-shots)",
+     "price": "unknown",
+     "url": "https://www.loopmasters.com/genres/176-Industrial-Techno/products/18357-EBM-Drum-Shots",
+     "verified": false
+    }
+   ],
+   "pay_proof": [
+    {
+     "claim": "Tonepusher Old School EBM Serum soundset sells for $15 USD",
+     "url": "https://rekkerd.org/tonepusher-launches-old-school-ebm-soundset-for-serum/",
+     "verified": true
+    },
+    {
+     "claim": "Old School EBM on ADSR rated 4.7 stars from 3 reviews, $15",
+     "url": "https://www.adsrsounds.com/product/presets/tonepusher-old-school-ebm-serum-presets/",
+     "verified": true
+    },
+    {
+     "claim": "Studio Brootle EBM and IDM Ableton preset packs launched starting from $28 USD with a coupon code",
+     "url": "https://rekkerd.org/studio-brootle-launches-ebm-idm-preset-packs-for-ableton-live/",
+     "verified": true
+    },
+    {
+     "claim": "Studio Brootle 60 Industrial Techno Racks sells at $39 USD",
+     "url": "https://studiobrootle.myshopify.com/products/sb05-studio-brootle-60-industrial-techno-racks",
+     "verified": true
+    },
+    {
+     "claim": "Hades 300+ Serum presets aimed at EBM/Mid-Tempo sells for $21",
+     "url": "https://soundslikeyoumusic.com/products/hades-serum-presets",
+     "verified": true
+    },
+    {
+     "claim": "Ghosthack Vitalism techno Vital presets (50 patches) sells for $25",
+     "url": "https://www.ghosthack.de/vitalism-techno-vital-presets",
+     "verified": true
+    },
+    {
+     "claim": "Etsy acid pack with Serum presets, Ableton racks and MIDI listed at $9.61 (sale from $14.78)",
+     "url": "https://www.etsy.com/listing/4497937000/hard-techno-acid-pack-serum-presets",
+     "verified": true
+    }
+   ],
+   "cost_usd": 1.2651,
+   "web_searches": 8
+  }
+ },
+ {
+  "name": "All-in-one analysis meter M4L device (scope, stereo, spectrum, key)",
+  "pain": "Ableton lacks a native oscilloscope. Many viewers ask which stereo, phase or spectrum meter a creator uses. Users want key finding inside the meter they already bought, but the existing key finder M4L device has a poor interface.",
+  "who_pays": "Ableton Suite users doing sound design, mixing and their own mastering",
+  "evidence_ids": [
+   3,
+   642,
+   644,
+   628,
+   631,
+   637,
+   652,
+   622
+  ],
+  "pay_signal": "One user bought Swiss Army Meter days ago and still wants a key finder and a slim mode (642). Another says 'gonna buy it' (644). Repeated 'what is that meter' questions (628, 631, 637, 652, 622).",
+  "product_idea": "Both. Use it: Swiss Army Meter for now. Build it: a compact M4L 'scope + correlation + key/scale finder' strip with a slim mode, aimed at synth patching and mixdown checks.",
+  "build_weeks": 4,
+  "fit_for_us": 4,
+  "known_competitors": "Swiss Army Meter (Noir Labs), JB KeyFinder (642)",
+  "check_next": "Test Swiss Army Meter for missing features. Prototype key detection in Max using an existing pitch-class approach and check its accuracy on his own stems.",
+  "crowding": {
+   "verdict": "unclear",
+   "reason": "Scope, stereo and spectrum meters are crowded and cheap (Swiss Army Meter at $10, Decibel, SPAN) and key finding is covered (free Live Key, JB KeyFinder at $4+); only the scope + key + slim-mode combo looks unserved, and whether Swiss Army Meter or native Live 12 already cover it is unchecked.",
+   "competitors": [
+    {
+     "name": "Swiss Army Meter (Noir Labs)",
+     "price": "$10 (page also shows a $15 buy button)",
+     "url": "https://noirlabs.co/products/swiss-army-meter",
+     "verified": true
+    },
+    {
+     "name": "JB KeyFinder",
+     "price": "$4+",
+     "url": "https://jbfx.gumroad.com/l/keyfinder",
+     "verified": true
+    },
+    {
+     "name": "Live Key (Side Brain)",
+     "price": "free (newsletter signup)",
+     "url": "https://sidebrain.net/live-key/",
+     "verified": true
+    },
+    {
+     "name": "Oscilloscope (Supertramp162)",
+     "price": "free (maxforlive.com library)",
+     "url": "https://max4.live/device/13328/oscilloscope/",
+     "verified": true
+    },
+    {
+     "name": "ODIOSKOP (I-Mable)",
+     "price": "unknown",
+     "url": "https://vstopia.com/max-for-live-devices/odioskop",
+     "verified": false
+    },
+    {
+     "name": "Keyfinder for Live (Beat Lab Academy)",
+     "price": "free",
+     "url": "https://beatlabacademy.com/keyfinder-for-live/",
+     "verified": true
+    },
+    {
+     "name": "Decibel (Process.Audio)",
+     "price": "unknown",
+     "url": "https://process.audio/en/products/decibel",
+     "verified": false
+    },
+    {
+     "name": "Voxengo SPAN Plus",
+     "price": "unknown",
+     "url": "https://www.voxengo.com/product/spanplus/",
+     "verified": false
+    },
+    {
+     "name": "Mixed In Key Live",
+     "price": "$58",
+     "url": "https://www.gearnews.com/mixed-in-key-live-get-the-tempo-key-and-scale-of-any-music-anywhere/",
+     "verified": true
+    },
+    {
+     "name": "Mixed In Key Studio Edition",
+     "price": "$58",
+     "url": "https://plugindeals.net/price-history/Mixed-In-Key-Mixed-In-Key-Studio-Edition/rec4fzSlLwzbniW2j/",
+     "verified": true
+    }
+   ],
+   "pay_proof": [
+    {
+     "claim": "Swiss Army Meter is sold as a one-time $10 Max for Live purchase",
+     "url": "https://www.gearnews.com/swiss-army-knife-tools-studio/",
+     "verified": true
+    },
+    {
+     "claim": "Swiss Army Meter is a commercial (paid) device with 17 user comments on max4.live",
+     "url": "https://max4.live/device/9055/swiss-army-meter/",
+     "verified": true
+    },
+    {
+     "claim": "A reviewer called Swiss Army Meter an absolute steal at $3 versus about $200 for iZotope Insight",
+     "url": "https://elphnt.io/max-for-live-5-powerful-devices-you-need-to-have/",
+     "verified": true
+    },
+    {
+     "claim": "JB KeyFinder sells for $4+ with a 5.0 rating from 3 reviews; one review praises accuracy but calls the UI confusing",
+     "url": "https://jbfx.gumroad.com/l/keyfinder",
+     "verified": true
+    },
+    {
+     "claim": "Mixed In Key Studio Edition key-detection plugin lists at $58",
+     "url": "https://plugindeals.net/price-history/Mixed-In-Key-Mixed-In-Key-Studio-Edition/rec4fzSlLwzbniW2j/",
+     "verified": true
+    },
+    {
+     "claim": "Mixed In Key Live key/scale/BPM detector sells for USD 58",
+     "url": "https://www.gearnews.com/mixed-in-key-live-get-the-tempo-key-and-scale-of-any-music-anywhere/",
+     "verified": true
+    }
+   ],
+   "cost_usd": 0.6282,
+   "web_searches": 8
+  }
+ },
+ {
+  "name": "Live-performance helper devices for Ableton (momentary FX, reverb kill, chain overview, macro curves)",
+  "pain": "Live players find momentary effects fiddly to set up through drum racks and MIDI mapping. They cannot instantly kill reverb tails, cannot view a whole FX chain at once mid-set, cannot launch clips immediately yet quantized, and want more than 16 macros with custom mapping curves.",
+  "who_pays": "Ableton users performing live hybrid sets with controllers or Push",
+  "evidence_ids": [
+   4,
+   30,
+   31,
+   20,
+   7,
+   616,
+   668
+  ],
+  "pay_signal": "Users explicitly ask for an M4L or third-party fix (4). One user would pay to stop using Stream Deck (668). Users have paid for Suite but build clunky workarounds (20, 31).",
+  "product_idea": "Build it: a 'Perform Kit' M4L bundle with these parts: a one-knob momentary FX throw, a reverb/delay tail kill, a remote chain-parameter overview, and a macro mapper with curves and banks. He can use it in his own live sets.",
+  "build_weeks": 5,
+  "fit_for_us": 4,
+  "known_competitors": "ClyphX Pro, Isotonik devices, Cycling74 audio routing devices (12)",
+  "check_next": "Search maxforlive.com for momentary-FX and macro-curve devices and read their reviews. Prototype the reverb kill first, since it is the smallest scope.",
+  "crowding": {
+   "verdict": "crowded",
+   "reason": "Macro curves/banks are covered by Ableton's Performer (included with Live 12 Suite) plus free maxforlive.com mappers, and momentary FX already has paid and free devices; only tail-kill/chain-overview remain unchecked.",
+   "competitors": [
+    {
+     "name": "Ableton Performance Pack (Performer, Variations) by Iftah",
+     "price": "Included with Live 12 Suite",
+     "url": "https://www.ableton.com/en/packs/performance-pack/",
+     "verified": true
+    },
+    {
+     "name": "ClyphX Pro by nativeKONTROL",
+     "price": "£66.00",
+     "url": "https://isotonikstudios.com/product/clyphx-pro-g-controls/",
+     "verified": true
+    },
+    {
+     "name": "Push Momentary Effects (Max for Live device)",
+     "price": "unknown",
+     "url": "https://isotonikstudios.com/essential-momentary-effects-techniques-for-expressive-live-performance/",
+     "verified": false
+    },
+    {
+     "name": "Multimapper32MIDI by mothergarage",
+     "price": "unknown",
+     "url": "https://maxforlive.com/library/device/5230/multimapper32midi",
+     "verified": false
+    },
+    {
+     "name": "Honey-Mapper by Vayner",
+     "price": "unknown",
+     "url": "https://maxforlive.com/library/device/3993/honey-mapper",
+     "verified": false
+    },
+    {
+     "name": "-ASK- Meta Macro 8x by Askondo",
+     "price": "unknown",
+     "url": "https://maxforlive.com/library/device/8791/ask-meta-macro-8x",
+     "verified": false
+    },
+    {
+     "name": "Momentary Knob by servicelab",
+     "price": "unknown",
+     "url": "https://maxforlive.com/library/device/3883/momentary-knob",
+     "verified": false
+    },
+    {
+     "name": "Isotonik FX by Isotonik Studios",
+     "price": "£13.33",
+     "url": "https://isotonikstudios.com/product/isotonik-fx/",
+     "verified": true
+    }
+   ],
+   "pay_proof": [
+    {
+     "claim": "ClyphX Pro sells for £66.00 at Isotonik Studios",
+     "url": "https://isotonikstudios.com/product/clyphx-pro-g-controls/",
+     "verified": true
+    },
+    {
+     "claim": "Paid ClyphX Pro add-ons exist: G-Controls £19.00",
+     "url": "https://isotonikstudios.com/product/clyphx-pro-g-controls/",
+     "verified": true
+    },
+    {
+     "claim": "Paid ClyphX Pro add-ons exist: Bindings £22.00",
+     "url": "https://isotonikstudios.com/product/clyphx-pro-bindings/",
+     "verified": true
+    },
+    {
+     "claim": "Isotonik sells Push performance M4L devices: Push Cue Mode £15.00, Push Mute Mode £13.33",
+     "url": "https://isotonikstudios.com/product/isotonik-fx/",
+     "verified": true
+    }
+   ],
+   "cost_usd": 0.8166,
+   "web_searches": 8
+  }
+ },
+ {
+  "name": "Voice / natural-language control of Ableton",
+  "pain": "Producers want to control Ableton by talking to it, for example for technical how-to questions or hands-free operation. The need is strongest for users with visual impairment or a missing hand. The demo device people saw is not released.",
+  "who_pays": "Ableton users with accessibility needs, beginners, and Stream Deck users",
+  "evidence_ids": [
+   659,
+   660,
+   671,
+   673,
+   675,
+   668,
+   666,
+   677,
+   676
+  ],
+  "pay_signal": "'Is this something you are selling', 'I'd love to try' (675). 'I'd be very interested in getting one' (671). Repeated 'please release' and 'when' comments (659, 673).",
+  "product_idea": "Build it: an M4L device plus a local bridge that maps spoken commands to Live API actions (create track, load device, arm, set tempo, answer how-to questions). Build it with Claude Code.",
+  "build_weeks": 6,
+  "fit_for_us": 4,
+  "known_competitors": "Unreleased demo device in video (659); Stream Deck plugins (51, 668)",
+  "check_next": "Check whether the demo creator released anything. Check Ableton's terms for LLM-driven control. Estimate token cost per command (674).",
+  "crowding": {
+   "verdict": "crowded",
+   "reason": "The planned Max for Live + AI bridge already exists free (Producer Pal, two ableton-mcp projects) and VIXSOUND and Grip already sell voice control; no proof found that anyone pays for voice control itself.",
+   "competitors": [
+    {
+     "name": "Producer Pal",
+     "price": "free (open source, MIT)",
+     "url": "https://producer-pal.org/",
+     "verified": true
+    },
+    {
+     "name": "ableton-mcp (ahujasid)",
+     "price": "free (open source)",
+     "url": "https://github.com/ahujasid/ableton-mcp",
+     "verified": false
+    },
+    {
+     "name": "ableton-mcp (jpoindexter)",
+     "price": "free (open source)",
+     "url": "https://github.com/jpoindexter/ableton-mcp",
+     "verified": false
+    },
+    {
+     "name": "VIXSOUND",
+     "price": "unknown",
+     "url": "https://vixsound.com/blog/hands-free-ableton-voice-control-vixsound",
+     "verified": false
+    },
+    {
+     "name": "Grip",
+     "price": "unknown",
+     "url": "https://www.gripforlive.com/",
+     "verified": false
+    },
+    {
+     "name": "Ableton Live 12 built-in screen reader support",
+     "price": "included with Live",
+     "url": "https://www.ableton.com/en/live-manual/12/accessibility-and-keyboard-navigation/",
+     "verified": true
+    },
+    {
+     "name": "HJF Plugins Ableton (Stream Deck)",
+     "price": "$39.99 (lite version free)",
+     "url": "https://marketplace.elgato.com/product/ableton-plugin-loader-9c7d4f08-8219-416e-8aca-42cd72a153e4",
+     "verified": true
+    },
+    {
+     "name": "SideshowFX Ableton Live Pro for Stream Deck Plus",
+     "price": "$34.99",
+     "url": "https://www.sideshowfx.net/ableton-live-pro-stream-deck-plus",
+     "verified": true
+    }
+   ],
+   "pay_proof": [
+    {
+     "claim": "HJF's full Ableton Stream Deck plugin sells for $39.99 on the Elgato Marketplace (paid Live-control add-on, not voice)",
+     "url": "https://marketplace.elgato.com/product/ableton-plugin-loader-9c7d4f08-8219-416e-8aca-42cd72a153e4",
+     "verified": true
+    },
+    {
+     "claim": "SideshowFX sells an Ableton Live Pro pack for Stream Deck Plus at $34.99 (paid Live-control add-on, not voice)",
+     "url": "https://www.sideshowfx.net/ableton-live-pro-stream-deck-plus",
+     "verified": true
+    },
+    {
+     "claim": "VIXSOUND is a commercial voice/chat control product for Ableton Live; its price and sales were not seen",
+     "url": "https://vixsound.com/blog/hands-free-ableton-voice-control-vixsound",
+     "verified": false
+    }
+   ],
+   "cost_usd": 0.7257,
+   "web_searches": 8
+  }
+ },
+ {
+  "name": "Loop prep tool for hardware samplers (BPM-stretch, slice, export for Tonverk/Digitakt)",
+  "pain": "The Tonverk has no time-stretch or BPM detection. Users want time-stretch and slicing without workarounds, the Digitakt II caps slices at 64, Bitwig's sampler has no time-stretch, and getting samples onto boxes is clunky.",
+  "who_pays": "Elektron and other groovebox owners who use loops and breaks",
+  "evidence_ids": [
+   74,
+   107,
+   131,
+   146,
+   224,
+   116,
+   120
+  ],
+  "pay_signal": "Users bought $1,300+ hardware and still need external workarounds (107, 74). Someone built a free iOS uploader because no tool existed (116).",
+  "product_idea": "Build it: a web tool that takes a loop, detects BPM, time-stretches it to a target tempo, auto-slices it to a grid that fits the box's limits, and exports a pre-sliced WAV or slice chain. Use it for his own hardware jams.",
+  "build_weeks": 3,
+  "fit_for_us": 4,
+  "known_competitors": "Ableton warp and resample; Elektron Transfer; Model-TG uploader (116)",
+  "check_next": "Confirm the Tonverk and Digitakt II slice and file formats. Test the quality of browser time-stretching (Rubber Band compiled to WebAssembly).",
+  "crowding": {
+   "verdict": "crowded",
+   "reason": "DigiChain is one dominant free option that already chains, slices to grid limits (including Tonverk) and time-stretches; ReCycle and Elektron Transfer are also free, and no one is shown paying for a hardware loop-prep tool.",
+   "competitors": [
+    {
+     "name": "DigiChain (web + desktop)",
+     "price": "free (open source; price not stated on pages seen)",
+     "url": "https://github.com/brian3kb/digichain",
+     "verified": false
+    },
+    {
+     "name": "Reason Studios ReCycle 2.5",
+     "price": "free (was $99 sale / $249 regular)",
+     "url": "https://synthanatomy.com/2025/04/reason-studios-recycle-new-2-5-version-of-the-iconic-sample-tool-and-its-now-free.html",
+     "verified": true
+    },
+    {
+     "name": "Elektron Transfer",
+     "price": "free",
+     "url": "https://www.elektron.se/support-downloads/transfer",
+     "verified": true
+    },
+    {
+     "name": "Serato Sample",
+     "price": "$129",
+     "url": "https://www.pluginboutique.com/product/1-Instruments/5-Sampler/4113-Serato-Sample",
+     "verified": true
+    },
+    {
+     "name": "Koala Sampler",
+     "price": "$4.99 + in-app purchases",
+     "url": "https://apps.apple.com/us/app/koala-sampler-beat-maker/id1449584007",
+     "verified": true
+    },
+    {
+     "name": "Free Tonverk Multisample & Subtrack helper tools",
+     "price": "free",
+     "url": "https://www.elektronauts.com/t/free-tools-for-tonverk-multisample-subtrack-building-new-links/239331",
+     "verified": true
+    }
+   ],
+   "pay_proof": [
+    {
+     "claim": "Serato Sample (chop + time-stretch sampler plugin) sells for $129",
+     "url": "https://www.pluginboutique.com/product/1-Instruments/5-Sampler/4113-Serato-Sample",
+     "verified": true
+    },
+    {
+     "claim": "Koala Sampler costs $4.99 and sells a SAMURAI in-app purchase that includes timestretch and auto-chop",
+     "url": "https://mwm.ai/apps/koala-sampler/1449584007",
+     "verified": true
+    },
+    {
+     "claim": "ReCycle loop slicer sold at $99 sale / $249 regular before going free",
+     "url": "https://www.proaudiodesign.com/products/reason-studio-recycle-2-2",
+     "verified": true
+    },
+    {
+     "claim": "Tonverk owners complain that a 2K sampler lacks time-stretch and slicing (pain, not payment)",
+     "url": "https://www.elektronauts.com/t/tonverk-user-thread/238631/2369",
+     "verified": true
+    }
+   ],
+   "cost_usd": 0.4767,
+   "web_searches": 8
+  }
+ },
+ {
+  "name": "Elektron project, song mode and sample management companion",
+  "pain": "Digitakt II users cannot keep a computer folder in sync with the box's samples. They had to re-enter Song Mode manually when merging songs into one live project. They cannot change a sound once and have it apply across patterns. Old firmware versions are not archived.",
+  "who_pays": "Digitakt II, Digitone II and Tonverk owners writing full tracks or live sets",
+  "evidence_ids": [
+   120,
+   124,
+   121,
+   137,
+   552,
+   111
+  ],
+  "pay_signal": "One user asks outright for a 'Song Mode mgmt tool' and already uses elk-herd (124). Owners of expensive hardware repeatedly complain about the workflow (120, 121, 552).",
+  "product_idea": "Build it: a desktop or web companion that exports and imports Song Mode as text, does a sample diff and sync against a folder, and reports per-pattern parameter changes. Feasibility depends on Elektron's SysEx for MK2 devices. Use it: elk-herd for DT1.",
+  "build_weeks": 6,
+  "fit_for_us": 3,
+  "known_competitors": "elk-herd (124), Elektron Transfer, Overbridge",
+  "check_next": "Research whether the Digitakt II SysEx project format has been reverse-engineered (check the elk-herd repo and firmware mod scene, 111, 486).",
+  "crowding": {
+   "verdict": "unclear",
+   "reason": "Free tools (elk-herd, Elektron Transfer, ALISEO, Elektroid) already cover sample and project management; Song Mode is unserved but seems blocked because song data can't be read from the device, and the only paid tool found ($8.99 SaveProj) has 0 ratings.",
+   "competitors": [
+    {
+     "name": "elk-herd",
+     "price": "free",
+     "url": "https://www.elektronauts.com/t/elk-herd-3-3-release/230353",
+     "verified": true
+    },
+    {
+     "name": "Elektron Transfer",
+     "price": "free",
+     "url": "https://www.elektron.se/support-downloads/transfer",
+     "verified": false
+    },
+    {
+     "name": "ALISEO (iPad, beta)",
+     "price": "free beta",
+     "url": "https://www.elektronauts.com/t/beta-aliseo-an-ipad-sample-manager-audio-recorder-and-project-backup-tool-for-digitakt-ii/255080",
+     "verified": true
+    },
+    {
+     "name": "[FUNC] SaveProj (A4 MKII Mac version; Digitakt version for Linux, DT2 support unknown)",
+     "price": "8.99 USD",
+     "url": "https://func-saveproj.softwar.io/",
+     "verified": true
+    },
+    {
+     "name": "Elektroid",
+     "price": "free (GPLv3)",
+     "url": "https://github.com/dagargo/elektroid",
+     "verified": true
+    },
+    {
+     "name": "Overbridge",
+     "price": "unknown",
+     "url": "",
+     "verified": false
+    }
+   ],
+   "pay_proof": [
+    {
+     "claim": "[FUNC] SaveProj, an Elektron project/pattern manager, sells for 8.99 USD on the Mac App Store (0 ratings)",
+     "url": "https://func-saveproj.softwar.io/",
+     "verified": true
+    },
+    {
+     "claim": "Digitakt II project files sell on Gumroad for €14+ (content, not tooling)",
+     "url": "https://wolfganggrows.gumroad.com/l/gfrfz",
+     "verified": true
+    },
+    {
+     "claim": "User explicitly requests a Song Mode management tool for a merged DT2 live project (demand, not payment)",
+     "url": "https://www.elektronauts.com/t/song-mode-mgmt-tool/255102",
+     "verified": true
+    }
+   ],
+   "cost_usd": 0.9462,
+   "web_searches": 8
+  }
+ },
+ {
+  "name": "MIDI clock sync diagnostics and fixer",
+  "pain": "Synths and grooveboxes drift or fail to lock to external clock. Arpeggiators start off-clock, sequencers do not start or reset, and some setups have duplicate-note bugs. Users cannot tell which device is at fault.",
+  "who_pays": "DAWless and hybrid hardware producers recording jams to Ableton",
+  "evidence_ids": [
+   69,
+   84,
+   91,
+   95,
+   117,
+   147,
+   148,
+   249,
+   281,
+   60,
+   89
+  ],
+  "pay_signal": "One user is considering buying a Multiclock and MRCC because jitter is a dealbreaker (95). A paid-app review asks for MIDI clock input (281). Owners of paid gear push vendors for fixes (69).",
+  "product_idea": "Build it: a Web MIDI clock analyzer that measures jitter and drift, logs start, stop and SPP messages, and finds the device at fault. An optional M4L clock sender could start transport with an offset. Use it: Multiclock if a hardware master clock is needed.",
+  "build_weeks": 2,
+  "fit_for_us": 4,
+  "known_competitors": "E-RM Multiclock, MRCC (95), generic MIDI monitors",
+  "check_next": "Check whether a clock-jitter tester for Web MIDI already exists. Measure Chrome's Web MIDI timestamp precision on macOS.",
+  "crowding": {
+   "verdict": "unclear",
+   "reason": "Hardware fixers are crowded (Multiclock, midiclock+, Midronome, MRCC) and clearly paid for, but fault-finding diagnostics have only weak or free tools and no sourced proof that anyone pays for diagnostics alone",
+   "competitors": [
+    {
+     "name": "E-RM Multiclock",
+     "price": "from $533 (Equipboard)",
+     "url": "https://equipboard.com/items/e-rm-multiclock",
+     "verified": true
+    },
+    {
+     "name": "E-RM midiclock+",
+     "price": "unknown",
+     "url": "https://www.e-rm.de/midiclock/",
+     "verified": false
+    },
+    {
+     "name": "Midronome MIDI Master Clock",
+     "price": "$224.86 used (Reverb, ended listing)",
+     "url": "https://reverb.com/item/73322612-midronome-midi-master-clock-sync-device-like-the-e-rm-multiclock",
+     "verified": true
+    },
+    {
+     "name": "Conductive Labs MRCC",
+     "price": "$215-$439 (Equipboard)",
+     "url": "https://equipboard.com/items/conductive-labs-mrcc",
+     "verified": true
+    },
+    {
+     "name": "MidiBus (iOS clock generator + clock accuracy monitor)",
+     "price": "unknown",
+     "url": "https://apps.apple.com/us/app/midibus/id648856167",
+     "verified": false
+    },
+    {
+     "name": "MidiPace (macOS clock de-jitter)",
+     "price": "unknown",
+     "url": "https://apps.apple.com/us/app/midipace/id1451831297?mt=12",
+     "verified": false
+    },
+    {
+     "name": "MIDICLOCKDETECT",
+     "price": "free",
+     "url": "https://freeshell.de/~rocket/midi/midiclockdetect/",
+     "verified": true
+    },
+    {
+     "name": "midijitter (Linux CLI)",
+     "price": "free (open source)",
+     "url": "https://github.com/martinsolberg/midijitter",
+     "verified": true
+    }
+   ],
+   "pay_proof": [
+    {
+     "claim": "E-RM Multiclock sells from $533, rated 4.8, review mentions a $600 price tag",
+     "url": "https://equipboard.com/items/e-rm-multiclock",
+     "verified": true
+    },
+    {
+     "claim": "Used Multiclock sold on eBay at US $515",
+     "url": "https://www.ebay.com/itm/277420738275",
+     "verified": true
+    },
+    {
+     "claim": "Midronome funded via Kickstarter with 89 EUR early-bird backer price",
+     "url": "https://www.elektronauts.com/t/midronome-kickstarter-midi-master-clock/169509",
+     "verified": true
+    },
+    {
+     "claim": "Midronome resold on Reverb at $237.82",
+     "url": "https://reverb.com/es/item/79274842-midronome-midi-master-clock-2023-black",
+     "verified": true
+    },
+    {
+     "claim": "MRCC listed at $439 at Perfect Circuit",
+     "url": "https://equipboard.com/items/conductive-labs-mrcc",
+     "verified": true
+    }
+   ],
+   "cost_usd": 0.6012,
+   "web_searches": 8
+  }
+ },
+ {
+  "name": "Live set transitions and per-song tempo/scene management",
+  "pain": "Loading the next Live set stops the music. Bitwig can only have one song active. Bitwig 6 lost per-scene tempo. Hardware sequencers cannot switch projects on the downbeat. Moving from session to arrangement is a chore.",
+  "who_pays": "Live electronic performers using Ableton, Bitwig or hardware sequencers",
+  "evidence_ids": [
+   32,
+   220,
+   219,
+   165,
+   176,
+   133,
+   18,
+   124
+  ],
+  "pay_signal": "Performers with paid rigs (Push, UAD, Eloquencer) build elaborate workarounds such as a second drum machine or reset clocks (32, 165, 176).",
+  "product_idea": "Build it: an M4L 'setlist' device that turns one large set into navigable songs, with per-song tempo, key notes and a scene-range jump, plus a session-to-arrangement recorder helper. Use it for his own live shows.",
+  "build_weeks": 4,
+  "fit_for_us": 4,
+  "known_competitors": "ClyphX Pro, Setlist-type M4L devices (not in posts)",
+  "check_next": "Interview 3 to 5 live performers about their song-change workflow. Review existing setlist M4L devices on maxforlive.com.",
+  "crowding": {
+   "verdict": "crowded",
+   "reason": "Ableton per-song navigation and tempo already covered by native scene tempo, AbleSet ($129-$269), ClyphX Pro (£66), Scene Setlist and several free M4L setlist devices; Bitwig and hardware gaps were not checked and the M4L idea does not serve them.",
+   "competitors": [
+    {
+     "name": "AbleSet (Leolabs)",
+     "price": "$129 Intro / $179 Standard / $269 Pro",
+     "url": "https://ableset.com/",
+     "verified": true
+    },
+    {
+     "name": "ClyphX Pro (nativeKONTROL)",
+     "price": "£66.00",
+     "url": "https://isotonikstudios.com/product/clyphx-pro/",
+     "verified": true
+    },
+    {
+     "name": "Scene Setlist (Ableton Drummer)",
+     "price": "unknown",
+     "url": "https://isotonikstudios.com/product/scene-setlist/",
+     "verified": false
+    },
+    {
+     "name": "SpaceList setlist manager",
+     "price": "unknown (listed as Commercial license)",
+     "url": "https://maxforlive.com/library/device/10987/space-list-setlist-manager",
+     "verified": false
+    },
+    {
+     "name": "The Playlister - Ableton Setlist Manager (beonlabs)",
+     "price": "unknown",
+     "url": "https://lame.buanzo.org/max4live_blog/navigating-setlists-with-the-playlister-in-ableton-live.html",
+     "verified": false
+    },
+    {
+     "name": "Liveset Setlist Manager",
+     "price": "unknown",
+     "url": "https://maxforlive.com/library/device/14679/liveset-setlist-manager",
+     "verified": false
+    },
+    {
+     "name": "SetPilot",
+     "price": "free (open source)",
+     "url": "https://setpilot.live/",
+     "verified": true
+    },
+    {
+     "name": "Ableton Live native Scene Tempo and Time Signature",
+     "price": "included in Live 11+",
+     "url": "https://help.ableton.com/hc/en-us/articles/5595081962524-Scene-Tempo-and-Time-Signature",
+     "verified": true
+    }
+   ],
+   "pay_proof": [
+    {
+     "claim": "AbleSet sells three paid tiers ($129/$179/$269) and offers bulk licenses at 10-15% off",
+     "url": "https://ableset.com/",
+     "verified": true
+    },
+    {
+     "claim": "Softpedia lists AbleSet buy links at $129 Intro, $179 Standard, $269 Pro",
+     "url": "https://www.softpedia.com/get/Multimedia/Audio/Other-AUDIO-Tools/AbleSet.shtml",
+     "verified": true
+    },
+    {
+     "claim": "ClyphX Pro sells for £66 with paid add-ons such as G-Controls at £19",
+     "url": "https://isotonikstudios.com/product/clyphx-pro/",
+     "verified": true
+    },
+    {
+     "claim": "Scene Setlist M4L device is listed with a Commercial license",
+     "url": "https://maxforlive.com/library/device/8744/scene-setlist-by-ableton-drummer",
+     "verified": true
+    },
+    {
+     "claim": "AbleSet's developer said that before AbleSet he only found a $300 setlist plugin",
+     "url": "https://forum.ableton.com/viewtopic.php?t=239326",
+     "verified": true
+    },
+    {
+     "claim": "SetPilot describes itself as a free alternative to paid Max for Live setlist devices",
+     "url": "https://github.com/AshHenbrey/setpilot",
+     "verified": true
+    }
+   ],
+   "cost_usd": 0.6204,
+   "web_searches": 8
+  }
+ },
+ {
+  "name": "Musical MIDI generators (text-to-chords, probability rhythms, humanize, scale lock)",
+  "pain": "Users want to paste chord symbols as text and get MIDI. They also want probability-based note lengths that evolve over time, humanization, multiple chord types in one pattern, and scale snapping. Many existing M4L devices feel overcomplicated.",
+  "who_pays": "Ableton producers who write sequences and chord-based tracks",
+  "evidence_ids": [
+   11,
+   29,
+   49,
+   134,
+   144,
+   613,
+   679
+  ],
+  "pay_signal": "A $19 M4L sequencer is praised (679). Users ask for plugin solutions to specific generative tasks (11, 29).",
+  "product_idea": "Build it: simple, single-purpose M4L MIDI tools for Live 12's Generate/Transform tabs, starting with chord-text-to-MIDI and a weighted rhythm generator. Keep the UI minimal.",
+  "build_weeks": 3,
+  "fit_for_us": 3,
+  "known_competitors": "Augur (679), Sting (617), Scaler, Ableton's built-in generators",
+  "check_next": "Check whether Live 12 MIDI Tools already cover text-to-chords. Search maxforlive.com for 'chord symbol'.",
+  "crowding": {
+   "verdict": "crowded",
+   "reason": "Chord-text-to-MIDI already exists as a paid Live 12 MIDI Tool (M2TM Chords, €15) and a free one (Degrees & Modifiers); probability rhythm tools, humanize and scale awareness are covered by paid M4L tools and Live 12 itself.",
+   "competitors": [
+    {
+     "name": "M2TM Chords (Midi-2-the-Max)",
+     "price": "€15.00 at launch",
+     "url": "https://thebeatcommunity.com/2024/07/08/midi-2-the-max-release-m2tm-chords-for-ableton-live-12/",
+     "verified": true
+    },
+    {
+     "name": "Degrees & Modifiers (zya)",
+     "price": "free (GitHub)",
+     "url": "https://github.com/zya/degrees-and-modifiers",
+     "verified": true
+    },
+    {
+     "name": "Metapulse by Manifest Audio",
+     "price": "$9.17",
+     "url": "https://isotonikstudios.com/product-category/maxforlive/live-12-midi-tools/",
+     "verified": true
+    },
+    {
+     "name": "Chance TEN by LDM Design",
+     "price": "unknown",
+     "url": "https://isotonikstudios.com/product/chance-ten-probability-based-inspiration/",
+     "verified": false
+    },
+    {
+     "name": "Scaler 3",
+     "price": "$69.00 sale / $99.00 regular",
+     "url": "https://www.pluginboutique.com/product/3-Studio-Tools/93-Music-Theory-Tools/14563-Scaler-3",
+     "verified": true
+    },
+    {
+     "name": "Humanizer Pro (Wide Blue Sound)",
+     "price": "unknown",
+     "url": "https://www.widebluesound.com/humanizer/",
+     "verified": false
+    },
+    {
+     "name": "Ableton Live 12 built-in generators (Rhythm, Seed, Shape, Stacks, Euclidean) + scale awareness",
+     "price": "included with Live 12",
+     "url": "https://www.soundonsound.com/techniques/ableton-live-12-midi-generators",
+     "verified": true
+    },
+    {
+     "name": "Augur (ijo audio)",
+     "price": "$19",
+     "url": "https://www.youtube.com/watch?v=elQ6XXmfX4k",
+     "verified": true
+    }
+   ],
+   "pay_proof": [
+    {
+     "claim": "M2TM Chords, a type-chord-symbols Live 12 MIDI Tool, sells for €15.00",
+     "url": "https://thebeatcommunity.com/2024/07/08/midi-2-the-max-release-m2tm-chords-for-ableton-live-12/",
+     "verified": true
+    },
+    {
+     "claim": "Manifest Audio MIDI Tools bundle (37 Max for Live MIDI Tools) priced $122 sale / $161 regular",
+     "url": "https://store.attackmagazine.com/en-us/products/manifest-audio-bundle",
+     "verified": true
+    },
+    {
+     "claim": "Manifest Audio MIDI Toolset 001 priced £29.99",
+     "url": "https://isotonikstudios.com/product/midi-toolset-001-by-manifest-audio/",
+     "verified": true
+    },
+    {
+     "claim": "Single Live 12 MIDI Tools sell for $7.50-$9.17 (Vector, Metapulse)",
+     "url": "https://isotonikstudios.com/product-category/maxforlive/live-12-midi-tools/",
+     "verified": true
+    },
+    {
+     "claim": "Fractional Stretch Live 12 MIDI Transformation tool sold on Gumroad for $7+",
+     "url": "https://stevieschmidt.gumroad.com/l/fxlxyu",
+     "verified": true
+    },
+    {
+     "claim": "Augur generative M4L sequencer sold at $19 and promoted in reviews",
+     "url": "https://www.youtube.com/watch?v=elQ6XXmfX4k",
+     "verified": true
+    },
+    {
+     "claim": "Scaler 3 sells at $69 sale / $99 full price",
+     "url": "https://www.pluginboutique.com/product/3-Studio-Tools/93-Music-Theory-Tools/14563-Scaler-3",
+     "verified": true
+    }
+   ],
+   "cost_usd": 0.7178,
+   "web_searches": 8
+  }
+ },
+ {
+  "name": "Stem and multitrack export and QC",
+  "pain": "Engineers spend too long checking stems for sync, missing audio, odd stereo, mismatched lengths and bad naming. Beginners do not know how to group stems. Groovebox users cannot get per-track stems with master FX, and sampler apps cannot export performed stems.",
+  "who_pays": "Self-mixing producers, assistant engineers, and groovebox users sending stems to mixers",
+  "evidence_ids": [
+   194,
+   1,
+   259,
+   125,
+   140,
+   108,
+   222
+  ],
+  "pay_signal": "A paid-app user demands stem export (259). An assistant engineer describes a recurring time cost (194). Elektron owners search for workarounds (125, 140).",
+  "product_idea": "Build it: a drag-and-drop web tool that checks a stem folder for sample rate, length and offset alignment, silence, mono-in-stereo and naming. It outputs a report and a renaming template. Use it for his own exports to collaborators and mastering.",
+  "build_weeks": 2,
+  "fit_for_us": 4,
+  "known_competitors": "None named in posts; DAW batch export",
+  "check_next": "Ask r/audioengineering what QC tools engineers use. Prototype the checker with the Web Audio API on his own stem folders.",
+  "crowding": {
+   "verdict": "crowded",
+   "reason": "Stem Checker already does exactly this (length, silence, dual-mono, sample rate, batch rename), has been reviewed by Sound On Sound, and offers a free drag-and-drop browser version, with AudioQC, MonoChecker and MonoMate overlapping.",
+   "competitors": [
+    {
+     "name": "Stem Checker (macOS app)",
+     "price": "unknown",
+     "url": "https://apps.apple.com/us/app/stem-checker/id6754171408?mt=12",
+     "verified": false
+    },
+    {
+     "name": "Stem Checker Free Online Stem Delivery Checker",
+     "price": "Free",
+     "url": "https://www.kvraudio.com/product/free-online-stem-delivery-checker-by-stem-checker",
+     "verified": true
+    },
+    {
+     "name": "AudioQC",
+     "price": "unknown",
+     "url": "https://audioqc.app/",
+     "verified": false
+    },
+    {
+     "name": "MonoChecker (Darklight Audio)",
+     "price": "unknown",
+     "url": "https://darklightaudio.com/monochecker",
+     "verified": false
+    },
+    {
+     "name": "MonoMate",
+     "price": "unknown",
+     "url": "https://monomate.app/",
+     "verified": false
+    },
+    {
+     "name": "LineWave QC",
+     "price": "$5.99 one-time",
+     "url": "https://spritetriage.itch.io/linewave-qc",
+     "verified": true
+    }
+   ],
+   "pay_proof": [
+    {
+     "claim": "LineWave QC, an offline batch WAV QC tool, sells as a one-time purchase of $5.99",
+     "url": "https://spritetriage.itch.io/linewave-qc",
+     "verified": true
+    },
+    {
+     "claim": "Digitakt Overbridge multitrack template sold on Gumroad for $2+ with 3 ratings",
+     "url": "https://pvcdk.gumroad.com/l/cstl-Template",
+     "verified": true
+    },
+    {
+     "claim": "Stem Checker is sold through the Mac App Store as a paid stem QC app (price not seen)",
+     "url": "https://apps.apple.com/us/app/stem-checker/id6754171408?mt=12",
+     "verified": false
+    }
+   ],
+   "cost_usd": 0.829,
+   "web_searches": 8
+  }
+ }
+]

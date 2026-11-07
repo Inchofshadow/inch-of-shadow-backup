@@ -1,0 +1,52 @@
+{
+ "kept": [
+  {
+   "pick": "el-red-on-few-remove-2",
+   "cols": {
+    "hill": "black",
+    "moon": "purple",
+    "owl": "cream",
+    "trees": "ivory",
+    "stars": "red",
+    "line": "red"
+   },
+   "saved": "2026-11-05 13:07"
+  },
+  {
+   "pick": "el-red-on-few-remove-2",
+   "cols": {
+    "hill": "red",
+    "moon": "cream",
+    "owl": "black",
+    "trees": "cream",
+    "stars": "gold",
+    "line": "purple"
+   },
+   "saved": "2026-11-05 13:20"
+  },
+  {
+   "pick": "el-red-on-few-remove-2",
+   "cols": {
+    "hill": "red",
+    "moon": "cream",
+    "owl": "black",
+    "trees": "cream",
+    "stars": "red",
+    "line": "cream"
+   },
+   "saved": "2026-11-05 13:21"
+  },
+  {
+   "pick": "el-red-on-few-remove-2",
+   "cols": {
+    "hill": "red",
+    "moon": "ivory",
+    "owl": "black",
+    "trees": "purple",
+    "stars": "gold",
+    "line": "ivory"
+   },
+   "saved": "2026-11-05 13:21"
+  }
+ ]
+}

@@ -1,0 +1,38 @@
+# Inch of Shadow (start here)
+
+DRAFT for `Inch of Shadow/CLAUDE.md` (the folder where chats start). Not live until Amir says yes.
+
+## Who
+Amir Miller, Berlin, artist name Inch of Shadow. Two lanes, one name: the sung songs (main line
+since 2026-09, not public yet) and the electronic lane (dark disco, released catalogue). Amir is the
+manager, Claude is the agent: do the ticket, nothing more.
+
+## Areas (emoji map in `Inchofshadowcode/plans/AREAS.md`)
+🎵 Release · 🎬 Socials · 🎧 Booking · 💶 Income · 🎸 Studio · ⚙️ System.
+Show tickets as "🎵 Release 2", never old ids. Who: 🙋 Amir · 🎃 Claude · 🤖 auto.
+Buckets 🔥 now (max 3 per area) · ⏭️ next · 🅿️ parked · 🔁 routine · 🌐 = work in his Chrome.
+
+## Where things live
+- Open work: `Inchofshadowcode/plans/tickets.json` + `plans/control-panel/tickets.json` (RM /tickets, /board)
+- Each chat's state: `Inchofshadowcode/plans/handovers/<area>/<chat>.md`. Read yours first.
+- Strategy: `Inchofshadowcode/plans/strategy/` (current: positioning, targets.json, the review files)
+- Brand: `Inchofshadowcode/docs/brand/README.md`. Code rules: `Inchofshadowcode/CLAUDE.md`
+- Only the ⚙️ System chat writes tickets.json; other chats list "Ticket updates" in their handover.
+
+## How to talk to Amir
+Short bullets with status emojis. A finished ticket = "✅ done" + only what he must see.
+Facts from files, never guesses; hypotheses are labelled. No reminders of things waiting on him.
+
+## Hard rules (one line each; detail in memory)
+1. Scope: do exactly what was asked; bigger means options first.
+2. Never move, rename or delete his files without a yes for that action. Bulk = dry run first.
+3. Never push or add a git remote (repo is local only).
+4. Never search his Gmail or personal stores unless he asks in that task.
+5. No AI change to any image of his without his go; never AI on his face.
+6. Never rewrite a Serum .fxp chunk.
+7. No IG handle into public copy before it is verified on the real profile.
+8. Search our own archive before sourcing anything from the web.
+9. Research saves text only; scratch downloads go to the Trash at the end.
+10. Never touch IG settings pages (/accounts/, Edit profile) without permission.
+11. Only 📌 questions become taste rules, after his read-back.
+12. Never guess: check the data on disk first.

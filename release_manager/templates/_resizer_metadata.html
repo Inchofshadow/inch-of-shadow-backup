@@ -1,0 +1,53 @@
+{# Metadata to embed in the exported files: the same block on both resizer pages. #}
+<details class="rz-block rz-meta"{% if (posted_meta or {}).get('mode') in ('release', 'manual') or preselected_release %} open{% endif %}>
+    <summary><span class="rz-h">Metadata</span> <span class="brand-muted">optional: title, artist, copyright inside the files. Platforms strip it on upload; no GPS or camera data is ever added.</span></summary>
+        
+        <div class="metadata-mode">
+            {% set pm_mode = (posted_meta or {}).get('mode', '') %}
+            <label class="format-option">
+                <input type="radio" name="metadata_mode" value="none"{% if (not posted_meta and not preselected_release) or pm_mode == 'none' %} checked{% endif %}> None
+            </label>
+            <label class="format-option">
+                <input type="radio" name="metadata_mode" value="release"{% if (preselected_release and not posted_meta) or pm_mode == 'release' %} checked{% endif %}> From release
+            </label>
+            <label class="format-option">
+                <input type="radio" name="metadata_mode" value="manual"{% if pm_mode == 'manual' %} checked{% endif %}> Manual
+            </label>
+        </div>
+
+        <div class="metadata-fields" id="metadata-release-fields" style="display:none;">
+            <div class="form-group">
+                <label for="metadata_release">Release</label>
+                <select id="metadata_release" name="metadata_release">
+                    <option value="">-- Select release --</option>
+                    {% for r in release_options %}
+                    <option value="{{ r.slug }}"{% if r.slug == preselected_release %} selected{% endif %}>{{ r.title }} ({{ r.type }})</option>
+                    {% endfor %}
+                </select>
+            </div>
+        </div>
+
+        <div class="metadata-fields metadata-manual-fields" id="metadata-manual-fields" style="display:none;">
+            <div class="form-group">
+                <label for="meta_title">Title</label>
+                <input type="text" id="meta_title" name="meta_title" placeholder="Track or release title" value="{{ (posted_meta or {}).get('title', '') if posted_meta else '' }}">
+            </div>
+            <div class="form-group">
+                <label for="meta_artist">Artist</label>
+                <input type="text" id="meta_artist" name="meta_artist" placeholder="Inch of Shadow" value="{{ (posted_meta or {}).get('artist', 'Inch of Shadow') if posted_meta else 'Inch of Shadow' }}">
+            </div>
+            <div class="form-group">
+                <label for="meta_copyright">Copyright</label>
+                <input type="text" id="meta_copyright" name="meta_copyright" placeholder="2026 Inch of Shadow" value="{{ (posted_meta or {}).get('copyright', '') if posted_meta else '' }}">
+            </div>
+            <div class="form-group">
+                <label for="meta_genre">Genre</label>
+                <input type="text" id="meta_genre" name="meta_genre" placeholder="e.g. Dark Disco / Acid" value="{{ (posted_meta or {}).get('genre', '') if posted_meta else '' }}">
+            </div>
+            <div class="form-group">
+                <label for="meta_description">Description</label>
+                <input type="text" id="meta_description" name="meta_description" placeholder="Optional description" value="{{ (posted_meta or {}).get('description', '') if posted_meta else '' }}">
+            </div>
+        </div>
+
+</details>

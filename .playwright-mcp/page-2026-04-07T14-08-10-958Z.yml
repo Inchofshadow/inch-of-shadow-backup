@@ -1,0 +1,305 @@
+- generic [active] [ref=e1]:
+  - link "Skip to content" [ref=e2] [cursor=pointer]:
+    - /url: "#main-content"
+  - generic [ref=e3]:
+    - navigation "Main navigation" [ref=e4]:
+      - link "I Inch of Shadow" [ref=e5] [cursor=pointer]:
+        - /url: /
+        - generic [ref=e6]: I
+        - generic [ref=e7]: Inch of Shadow
+      - link "New Release" [ref=e8] [cursor=pointer]:
+        - /url: /release/new
+        - img [ref=e9]
+        - generic [ref=e10]: New Release
+      - generic [ref=e11]:
+        - generic [ref=e12]:
+          - generic [ref=e13]: Releases
+          - link "Dashboard" [ref=e14] [cursor=pointer]:
+            - /url: /
+            - img [ref=e15]
+            - generic [ref=e20]: Dashboard
+        - generic [ref=e21]:
+          - generic [ref=e22]: Tools
+          - link "Autopilot" [ref=e23] [cursor=pointer]:
+            - /url: /autopilot
+            - img [ref=e24]
+            - generic [ref=e27]: Autopilot
+          - link "Artwork Resizer" [ref=e28] [cursor=pointer]:
+            - /url: /artwork-resizer
+            - img [ref=e29]
+            - generic [ref=e33]: Artwork Resizer
+          - link "Video Resizer" [ref=e34] [cursor=pointer]:
+            - /url: /video-resizer
+            - img [ref=e35]
+            - generic [ref=e38]: Video Resizer
+          - link "SEO Copy" [ref=e39] [cursor=pointer]:
+            - /url: /seo-copy
+            - img [ref=e40]
+            - generic [ref=e43]: SEO Copy
+        - generic [ref=e44]:
+          - generic [ref=e45]: Outreach
+          - link "Engagement" [ref=e46] [cursor=pointer]:
+            - /url: /engagement
+            - img [ref=e47]
+            - generic [ref=e52]: Engagement
+          - link "Promotion" [ref=e53] [cursor=pointer]:
+            - /url: /promotion
+            - img [ref=e54]
+            - generic [ref=e57]: Promotion
+        - generic [ref=e58]:
+          - generic [ref=e59]: Analytics
+          - link "Stats Dashboard" [ref=e60] [cursor=pointer]:
+            - /url: /stats
+            - img [ref=e61]
+            - generic [ref=e62]: Stats Dashboard
+      - generic [ref=e63]:
+        - link "Settings" [ref=e64] [cursor=pointer]:
+          - /url: /palette
+          - img [ref=e65]
+          - generic [ref=e68]: Settings
+        - button "Toggle sidebar" [ref=e69] [cursor=pointer]:
+          - img [ref=e70]
+    - generic [ref=e73]:
+      - banner [ref=e74]:
+        - navigation "Breadcrumb" [ref=e76]:
+          - link "Releases" [ref=e77] [cursor=pointer]:
+            - /url: /
+          - generic [ref=e78]: /
+          - generic [ref=e79]: Engagement
+      - main [ref=e80]:
+        - generic [ref=e81]:
+          - generic [ref=e82]:
+            - heading "Daily Engagement" [level=1] [ref=e83]
+            - paragraph [ref=e84]: Discover new accounts, engage with your scene, grow your following.
+          - generic [ref=e85]:
+            - generic [ref=e86]:
+              - text: "Active follows:"
+              - strong [ref=e87]: "0"
+            - generic [ref=e88]:
+              - text: "Today:"
+              - strong [ref=e89]: "0"
+            - combobox "Active release — queue is boosted toward matching contacts" [ref=e90]:
+              - option "No release context"
+              - option "Farewell (EP)" [selected]
+            - combobox "Filter by category" [ref=e91]:
+              - option "All categories" [selected]
+              - option "DJs only"
+              - option "Labels only"
+              - option "Media only"
+              - option "Promoters only"
+            - button "Refresh" [ref=e92] [cursor=pointer]
+        - generic [ref=e93]:
+          - img "Release artwork" [ref=e95]
+          - generic [ref=e96]:
+            - heading "Farewell" [level=2] [ref=e97]
+            - generic [ref=e99]: EBM / Acid
+        - generic [ref=e100]:
+          - generic [ref=e101]:
+            - generic [ref=e102]:
+              - img [ref=e103]
+              - heading "Instagram" [level=2] [ref=e106]
+              - generic [ref=e107]: Today
+            - generic [ref=e109]: 0/10
+          - generic [ref=e110]:
+            - generic [ref=e111]:
+              - generic [ref=e112]: P
+              - generic [ref=e113]:
+                - generic [ref=e114]:
+                  - heading "piekemusik" [level=3] [ref=e115]
+                  - generic "Click to change category" [ref=e116] [cursor=pointer]: dj
+                - generic [ref=e117]:
+                  - generic [ref=e118]: No genre
+                  - button "Tag" [ref=e119] [cursor=pointer]
+              - link "Open Profile" [ref=e120] [cursor=pointer]:
+                - /url: https://www.instagram.com/_u/piekemusik
+              - generic [ref=e121]:
+                - generic [ref=e122]: Never
+                - generic [ref=e123]:
+                  - button "Done" [ref=e124] [cursor=pointer]
+                  - button "Skip" [ref=e125] [cursor=pointer]
+                  - button "Remove" [ref=e126] [cursor=pointer]
+            - generic [ref=e127]:
+              - generic [ref=e128]: R
+              - generic [ref=e129]:
+                - generic [ref=e130]:
+                  - heading "rossimissionsf" [level=3] [ref=e131]
+                  - generic "Click to change category" [ref=e132] [cursor=pointer]: venue
+                - generic [ref=e133]:
+                  - generic [ref=e134]: No genre
+                  - button "Tag" [ref=e135] [cursor=pointer]
+                  - generic [ref=e136]: San Francisco
+              - link "Open Profile" [ref=e137] [cursor=pointer]:
+                - /url: https://www.instagram.com/_u/rossimissionsf
+              - generic [ref=e138]:
+                - generic [ref=e139]: Never
+                - generic [ref=e140]:
+                  - button "Done" [ref=e141] [cursor=pointer]
+                  - button "Skip" [ref=e142] [cursor=pointer]
+                  - button "Remove" [ref=e143] [cursor=pointer]
+            - generic [ref=e144]:
+              - generic [ref=e145]: H
+              - generic [ref=e146]:
+                - generic [ref=e147]:
+                  - heading "hopestradio" [level=3] [ref=e148]
+                  - generic "Click to change category" [ref=e149] [cursor=pointer]: media
+                - generic [ref=e150]:
+                  - generic [ref=e151]: Electronic / Underground
+                  - button "Tag" [ref=e152] [cursor=pointer]
+              - link "Open Profile" [ref=e153] [cursor=pointer]:
+                - /url: https://www.instagram.com/_u/hopestradio
+              - generic [ref=e154]:
+                - generic [ref=e155]: Never
+                - generic [ref=e156]:
+                  - button "Done" [ref=e157] [cursor=pointer]
+                  - button "Skip" [ref=e158] [cursor=pointer]
+                  - button "Remove" [ref=e159] [cursor=pointer]
+            - generic [ref=e160]:
+              - generic [ref=e161]: A
+              - generic [ref=e162]:
+                - generic [ref=e163]:
+                  - heading "artoffact_records" [level=3] [ref=e164]
+                  - generic "Click to change category" [ref=e165] [cursor=pointer]: label
+                - generic [ref=e166]:
+                  - generic [ref=e167]: Industrial / EBM / Post-Punk
+                  - button "Tag" [ref=e168] [cursor=pointer]
+                  - generic [ref=e169]: Toronto
+              - link "Open Profile" [ref=e170] [cursor=pointer]:
+                - /url: https://www.instagram.com/_u/artoffact_records
+              - generic [ref=e171]:
+                - generic [ref=e172]: Never
+                - generic [ref=e173]:
+                  - button "Done" [ref=e174] [cursor=pointer]
+                  - button "Skip" [ref=e175] [cursor=pointer]
+                  - button "Remove" [ref=e176] [cursor=pointer]
+            - generic [ref=e177]:
+              - generic [ref=e178]: L
+              - generic [ref=e179]:
+                - generic [ref=e180]:
+                  - heading "lunacy_berlin" [level=3] [ref=e181]
+                  - generic "Click to change category" [ref=e182] [cursor=pointer]: promoter
+                - generic [ref=e183]:
+                  - generic [ref=e184]: Dark / Industrial / EBM
+                  - button "Tag" [ref=e185] [cursor=pointer]
+                  - generic [ref=e186]: Berlin
+              - link "Open Profile" [ref=e187] [cursor=pointer]:
+                - /url: https://www.instagram.com/_u/lunacy_berlin
+              - generic [ref=e188]:
+                - generic [ref=e189]: "Last: 2026-04-02"
+                - generic [ref=e190]:
+                  - button "Done" [ref=e191] [cursor=pointer]
+                  - button "Skip" [ref=e192] [cursor=pointer]
+                  - button "Remove" [ref=e193] [cursor=pointer]
+            - generic [ref=e194]:
+              - generic [ref=e195]: S
+              - generic [ref=e196]:
+                - generic [ref=e197]:
+                  - heading "sync_berlin" [level=3] [ref=e198]
+                  - generic "Click to change category" [ref=e199] [cursor=pointer]: dj
+                - generic [ref=e200]:
+                  - generic [ref=e201]: Techno / Electronic
+                  - button "Tag" [ref=e202] [cursor=pointer]
+                  - generic [ref=e203]: Berlin
+              - link "Open Profile" [ref=e204] [cursor=pointer]:
+                - /url: https://www.instagram.com/_u/sync_berlin
+              - generic [ref=e205]:
+                - generic [ref=e206]: Never
+                - generic [ref=e207]:
+                  - button "Done" [ref=e208] [cursor=pointer]
+                  - button "Skip" [ref=e209] [cursor=pointer]
+                  - button "Remove" [ref=e210] [cursor=pointer]
+            - generic [ref=e211]:
+              - generic [ref=e212]: P
+              - generic [ref=e213]:
+                - generic [ref=e214]:
+                  - heading "periodicarecords" [level=3] [ref=e215]
+                  - generic "Click to change category" [ref=e216] [cursor=pointer]: label
+                - generic [ref=e217]:
+                  - generic [ref=e218]: Electronic / Funk / Disco
+                  - button "Tag" [ref=e219] [cursor=pointer]
+                  - generic [ref=e220]: Naples
+              - link "Open Profile" [ref=e221] [cursor=pointer]:
+                - /url: https://www.instagram.com/_u/periodicarecords
+              - generic [ref=e222]:
+                - generic [ref=e223]: Never
+                - generic [ref=e224]:
+                  - button "Done" [ref=e225] [cursor=pointer]
+                  - button "Skip" [ref=e226] [cursor=pointer]
+                  - button "Remove" [ref=e227] [cursor=pointer]
+            - generic [ref=e228]:
+              - generic [ref=e229]: H
+              - generic [ref=e230]:
+                - generic [ref=e231]:
+                  - heading "hypecaptureuk" [level=3] [ref=e232]
+                  - generic "Click to change category" [ref=e233] [cursor=pointer]: media
+                - generic [ref=e234]:
+                  - generic [ref=e235]: Electronic
+                  - button "Tag" [ref=e236] [cursor=pointer]
+                  - generic [ref=e237]: UK
+              - link "Open Profile" [ref=e238] [cursor=pointer]:
+                - /url: https://www.instagram.com/_u/hypecaptureuk
+              - generic [ref=e239]:
+                - generic [ref=e240]: Never
+                - generic [ref=e241]:
+                  - button "Done" [ref=e242] [cursor=pointer]
+                  - button "Skip" [ref=e243] [cursor=pointer]
+                  - button "Remove" [ref=e244] [cursor=pointer]
+            - generic [ref=e245]:
+              - generic [ref=e246]: S
+              - generic [ref=e247]:
+                - generic [ref=e248]:
+                  - heading "stream_informer" [level=3] [ref=e249]
+                  - generic "Click to change category" [ref=e250] [cursor=pointer]: media
+                - generic [ref=e251]:
+                  - generic [ref=e252]: No genre
+                  - button "Tag" [ref=e253] [cursor=pointer]
+              - link "Open Profile" [ref=e254] [cursor=pointer]:
+                - /url: https://www.instagram.com/_u/stream_informer
+              - generic [ref=e255]:
+                - generic [ref=e256]: Never
+                - generic [ref=e257]:
+                  - button "Done" [ref=e258] [cursor=pointer]
+                  - button "Skip" [ref=e259] [cursor=pointer]
+                  - button "Remove" [ref=e260] [cursor=pointer]
+            - generic [ref=e261]:
+              - generic [ref=e262]: U
+              - generic [ref=e263]:
+                - generic [ref=e264]:
+                  - heading "Unhuman" [level=3] [ref=e265]
+                  - generic "Click to change category" [ref=e266] [cursor=pointer]: dj
+                - generic [ref=e267]:
+                  - generic [ref=e268]: EBM / Industrial / Noise
+                  - button "Tag" [ref=e269] [cursor=pointer]
+                  - generic [ref=e270]: Berlin
+              - link "Open Profile" [ref=e271] [cursor=pointer]:
+                - /url: https://www.instagram.com/_u/unhuman_official
+              - generic [ref=e272]:
+                - generic [ref=e273]: Never
+                - generic [ref=e274]:
+                  - button "Done" [ref=e275] [cursor=pointer]
+                  - button "Skip" [ref=e276] [cursor=pointer]
+                  - button "Remove" [ref=e277] [cursor=pointer]
+        - generic [ref=e278]:
+          - generic [ref=e279]:
+            - generic [ref=e280]:
+              - img [ref=e281]
+              - heading "SoundCloud" [level=2] [ref=e283]
+              - generic [ref=e284]: Today
+            - generic [ref=e286]: 4/5
+          - generic [ref=e287]: All SoundCloud engagement done for today.
+        - button "Discover & Follow 3" [ref=e289] [cursor=pointer]:
+          - generic [ref=e290]:
+            - img [ref=e291]
+            - heading "Discover & Follow" [level=2] [ref=e294]
+            - generic [ref=e295]: "3"
+          - img [ref=e296]
+        - button "Comment Generator" [ref=e299] [cursor=pointer]:
+          - generic [ref=e300]:
+            - img [ref=e301]
+            - heading "Comment Generator" [level=2] [ref=e303]
+          - img [ref=e304]
+        - button "Recent Activity 31" [ref=e307] [cursor=pointer]:
+          - generic [ref=e308]:
+            - img [ref=e309]
+            - heading "Recent Activity" [level=2] [ref=e312]
+            - generic [ref=e313]: "31"
+          - img [ref=e314]

@@ -1,0 +1,947 @@
+[
+ {
+  "machine": "AkaiXR10",
+  "old": "Misc 01 AkaiXR10.wav",
+  "corr": 1.0,
+  "source": "Studio Real Drum Machines/Akai XR-10/Perc/cs_xr10_agogo_h.wav",
+  "orig": "cs_xr10_agogo_h.wav",
+  "type": "Agogo",
+  "new": "Agogo 01 AkaiXR10.wav"
+ },
+ {
+  "machine": "AkaiXR10",
+  "old": "Misc 02 AkaiXR10.wav",
+  "corr": 1.0,
+  "source": "Studio Real Drum Machines/Akai XR-10/Perc/cs_xr10_cabasa.wav",
+  "orig": "cs_xr10_cabasa.wav",
+  "type": "Cabasa",
+  "new": "Cabasa 01 AkaiXR10.wav"
+ },
+ {
+  "machine": "AkaiXR10",
+  "old": "Misc 03 AkaiXR10.wav",
+  "corr": 1.0,
+  "source": "Studio Real Drum Machines/Akai XR-10/Perc/cs_xr10_chop.wav",
+  "orig": "cs_xr10_chop.wav",
+  "type": "Chop",
+  "new": "Chop 01 AkaiXR10.wav"
+ },
+ {
+  "machine": "AkaiXR10",
+  "old": "Misc 04 AkaiXR10.wav",
+  "corr": 1.0,
+  "source": "Studio Real Drum Machines/Akai XR-10/FX Hit/cs_xr10_hits.wav",
+  "orig": "cs_xr10_hits.wav",
+  "type": "Hit",
+  "new": "Hit 01 AkaiXR10.wav"
+ },
+ {
+  "machine": "AkaiXR10",
+  "old": "Misc 05 AkaiXR10.wav",
+  "corr": 1.0,
+  "source": "Studio Real Drum Machines/Akai XR-10/FX Hit/cs_xr10_squeak_l.wav",
+  "orig": "cs_xr10_squeak_l.wav",
+  "type": "Squeak",
+  "new": "Squeak 01 AkaiXR10.wav"
+ },
+ {
+  "machine": "AkaiXR10",
+  "old": "Misc 06 AkaiXR10.wav",
+  "corr": 1.0,
+  "source": "Studio Real Drum Machines/Akai XR-10/Perc/cs_xr10_timbales_l.wav",
+  "orig": "cs_xr10_timbales_l.wav",
+  "type": "Timbale",
+  "new": "Timbale 01 AkaiXR10.wav"
+ },
+ {
+  "machine": "AkaiXR10",
+  "old": "Misc 07 AkaiXR10.wav",
+  "corr": 1.0,
+  "source": "Studio Real Drum Machines/Akai XR-10/Perc/cs_xr10_triangle_l.wav",
+  "orig": "cs_xr10_triangle_l.wav",
+  "type": "Triangle",
+  "new": "Triangle 01 AkaiXR10.wav"
+ },
+ {
+  "machine": "AlesisSR16",
+  "old": "Misc 01 AlesisSR16.wav",
+  "corr": 1.0,
+  "source": "Studio Real Drum Machines/Alesis SR-16/Percussion/Block.wav",
+  "orig": "Block.wav",
+  "type": "Block",
+  "new": "Block 01 AlesisSR16.wav"
+ },
+ {
+  "machine": "AlesisSR16",
+  "old": "Misc 02 AlesisSR16.wav",
+  "corr": 1.0,
+  "source": "Studio Real Drum Machines/Alesis SR-16/Percussion/Finger.wav",
+  "orig": "Finger.wav",
+  "type": "Snap",
+  "new": "Snap 01 AlesisSR16.wav"
+ },
+ {
+  "machine": "AlesisSR16",
+  "old": "Misc 03 AlesisSR16.wav",
+  "corr": 1.0,
+  "source": "Studio Real Drum Machines/Alesis SR-16/Snaredrums/Snaredrum-01.wav",
+  "orig": "Snaredrum-01.wav",
+  "type": "Snare",
+  "new": "Snare 01 AlesisSR16.wav"
+ },
+ {
+  "machine": "AlesisSR16",
+  "old": "Misc 04 AlesisSR16.wav",
+  "corr": 1.0,
+  "source": "Studio Real Drum Machines/Alesis SR-16/Snaredrums/Snaredrum-03.wav",
+  "orig": "Snaredrum-03.wav",
+  "type": "Snare",
+  "new": "Snare 02 AlesisSR16.wav"
+ },
+ {
+  "machine": "AlesisSR16",
+  "old": "Misc 05 AlesisSR16.wav",
+  "corr": 1.0,
+  "source": "Studio Real Drum Machines/Alesis SR-16/Snaredrums/Snaredrum-06.wav",
+  "orig": "Snaredrum-06.wav",
+  "type": "Snare",
+  "new": "Snare 03 AlesisSR16.wav"
+ },
+ {
+  "machine": "AlesisSR16",
+  "old": "Misc 06 AlesisSR16.wav",
+  "corr": 1.0,
+  "source": "Studio Real Drum Machines/Alesis SR-16/Snaredrums/Snaredrum-08.wav",
+  "orig": "Snaredrum-08.wav",
+  "type": "Snare",
+  "new": "Snare 04 AlesisSR16.wav"
+ },
+ {
+  "machine": "AlesisSR16",
+  "old": "Misc 07 AlesisSR16.wav",
+  "corr": 1.0,
+  "source": "Studio Real Drum Machines/Alesis SR-16/Snaredrums/Snaredrum-10.wav",
+  "orig": "Snaredrum-10.wav",
+  "type": "Snare",
+  "new": "Snare 05 AlesisSR16.wav"
+ },
+ {
+  "machine": "AlesisSR16",
+  "old": "Misc 08 AlesisSR16.wav",
+  "corr": 1.0,
+  "source": "Studio Real Drum Machines/Alesis SR-16/Snaredrums/Snaredrum-12.wav",
+  "orig": "Snaredrum-12.wav",
+  "type": "Snare",
+  "new": "Snare 06 AlesisSR16.wav"
+ },
+ {
+  "machine": "KawaiR100",
+  "old": "Misc 01 KawaiR100.wav",
+  "corr": 1.0,
+  "source": "Studio Real Drum Machines/Kawai R-50e & R-100/Kawai R-100/Clap & Snare/Kawai_R-100_BRUSHCH3.wav",
+  "orig": "Kawai_R-100_BRUSHCH3.wav",
+  "type": "Brush",
+  "new": "Brush 01 KawaiR100.wav"
+ },
+ {
+  "machine": "KawaiR100",
+  "old": "Misc 02 KawaiR100.wav",
+  "corr": 1.0,
+  "source": "Studio Real Drum Machines/Kawai R-50e & R-100/Kawai R-100/Percs/Kawai_R-100_CHIMECH3.wav",
+  "orig": "Kawai_R-100_CHIMECH3.wav",
+  "type": "Chime",
+  "new": "Chime 01 KawaiR100.wav"
+ },
+ {
+  "machine": "KawaiR100",
+  "old": "Misc 03 KawaiR100.wav",
+  "corr": 1.0,
+  "source": "Studio Real Drum Machines/Kawai R-50e & R-100/Kawai R-100/Percs/Kawai_R-100_CONGHCH3.wav",
+  "orig": "Kawai_R-100_CONGHCH3.wav",
+  "type": "CongaHi",
+  "new": "CongaHi 01 KawaiR100.wav"
+ },
+ {
+  "machine": "KawaiR100",
+  "old": "Misc 04 KawaiR100.wav",
+  "corr": 1.0,
+  "source": "Studio Real Drum Machines/Kawai R-50e & R-100/Kawai R-100/Percs/Kawai_R-100_CONGLCH3.wav",
+  "orig": "Kawai_R-100_CONGLCH3.wav",
+  "type": "CongaLo",
+  "new": "CongaLo 01 KawaiR100.wav"
+ },
+ {
+  "machine": "KawaiR100",
+  "old": "Misc 05 KawaiR100.wav",
+  "corr": 1.0,
+  "source": "Studio Real Drum Machines/Kawai R-50e & R-100/Kawai R-100/Crash & Ride/Kawai_R-100_CRASHCH3.wav",
+  "orig": "Kawai_R-100_CRASHCH3.wav",
+  "type": "Crash",
+  "new": "Crash 01 KawaiR100.wav"
+ },
+ {
+  "machine": "KawaiR100",
+  "old": "Misc 06 KawaiR100.wav",
+  "corr": 1.0,
+  "source": "Studio Real Drum Machines/Kawai R-50e & R-100/Kawai R-100/Percs/Kawai_R-100_QUIJACH3.wav",
+  "orig": "Kawai_R-100_QUIJACH3.wav",
+  "type": "Guiro",
+  "new": "Guiro 01 KawaiR100.wav"
+ },
+ {
+  "machine": "KawaiR100",
+  "old": "Misc 07 KawaiR100.wav",
+  "corr": 1.0,
+  "source": "Studio Real Drum Machines/Kawai R-50e & R-100/Kawai R-100/Clap & Snare/Kawai_R-100_RIMSHCH3.wav",
+  "orig": "Kawai_R-100_RIMSHCH3.wav",
+  "type": "Rim",
+  "new": "Rim 01 KawaiR100.wav"
+ },
+ {
+  "machine": "KawaiR100",
+  "old": "Misc 08 KawaiR100.wav",
+  "corr": 1.0,
+  "source": "Studio Real Drum Machines/Kawai R-50e & R-100/Kawai R-100/HiHats/Kawai_R-100_SHAKECH3.wav",
+  "orig": "Kawai_R-100_SHAKECH3.wav",
+  "type": "Shaker",
+  "new": "Shaker 01 KawaiR100.wav"
+ },
+ {
+  "machine": "KawaiR100",
+  "old": "Misc 09 KawaiR100.wav",
+  "corr": 1.0,
+  "source": "Studio Real Drum Machines/Kawai R-50e & R-100/Kawai R-100/Percs/Kawai_R-100_TRIALCH3.wav",
+  "orig": "Kawai_R-100_TRIALCH3.wav",
+  "type": "Triangle",
+  "new": "Triangle 01 KawaiR100.wav"
+ },
+ {
+  "machine": "KawaiR100",
+  "old": "Misc 10 KawaiR100.wav",
+  "corr": 1.0,
+  "source": "Studio Real Drum Machines/Kawai R-50e & R-100/Kawai R-100/Percs/Kawai_R-100_TRIAMCH3.wav",
+  "orig": "Kawai_R-100_TRIAMCH3.wav",
+  "type": "Triangle",
+  "new": "Triangle 02 KawaiR100.wav"
+ },
+ {
+  "machine": "KawaiR100",
+  "old": "Misc 11 KawaiR100.wav",
+  "corr": 1.0,
+  "source": "Studio Real Drum Machines/Kawai R-50e & R-100/Kawai R-100/Clap & Snare/Kawai_R-100_WOODBCH3.wav",
+  "orig": "Kawai_R-100_WOODBCH3.wav",
+  "type": "Block",
+  "new": "Block 01 KawaiR100.wav"
+ },
+ {
+  "machine": "KawaiR50e",
+  "old": "Misc 01 KawaiR50e.wav",
+  "corr": 1.0,
+  "source": "Studio Real Drum Machines/Kawai R-50e & R-100/Kawai R-50e/Misc/Kawai R-50e Click.wav",
+  "orig": "Kawai R-50e Click.wav",
+  "type": "Click",
+  "new": "Click 01 KawaiR50e.wav"
+ },
+ {
+  "machine": "KawaiR50e",
+  "old": "Misc 02 KawaiR50e.wav",
+  "corr": 1.0,
+  "source": "Studio Real Drum Machines/Kawai R-50e & R-100/Kawai R-50e/Snares/Kawai R-50e Finger Snap.wav",
+  "orig": "Kawai R-50e Finger Snap.wav",
+  "type": "Snap",
+  "new": "Snap 01 KawaiR50e.wav"
+ },
+ {
+  "machine": "KawaiR50e",
+  "old": "Misc 03 KawaiR50e.wav",
+  "corr": 1.0,
+  "source": "Studio Real Drum Machines/Kawai R-50e & R-100/Kawai R-50e/Misc/Kawai R-50e Orc. Hit 1.wav",
+  "orig": "Kawai R-50e Orc. Hit 1.wav",
+  "type": "Hit",
+  "new": "Hit 01 KawaiR50e.wav"
+ },
+ {
+  "machine": "KawaiR50e",
+  "old": "Misc 04 KawaiR50e.wav",
+  "corr": 1.0,
+  "source": "Studio Real Drum Machines/Kawai R-50e & R-100/Kawai R-50e/Misc/Kawai R-50e Orc. Hit 2.wav",
+  "orig": "Kawai R-50e Orc. Hit 2.wav",
+  "type": "Hit",
+  "new": "Hit 02 KawaiR50e.wav"
+ },
+ {
+  "machine": "KawaiR50e",
+  "old": "Misc 05 KawaiR50e.wav",
+  "corr": 1.0,
+  "source": "Studio Real Drum Machines/Kawai R-50e & R-100/Kawai R-50e/Misc/Kawai R-50e Timpani.wav",
+  "orig": "Kawai R-50e Timpani.wav",
+  "type": "Timpani",
+  "new": "Timpani 01 KawaiR50e.wav"
+ },
+ {
+  "machine": "LM1",
+  "old": "Misc 01 LM1.wav",
+  "corr": 1.0,
+  "source": "Tape Drum Machines Vol.1 /LM-1/LM1_BD1_aOrig.wav",
+  "orig": "LM1_BD1_aOrig.wav",
+  "type": "Kick",
+  "new": "Kick 01 LM1.wav"
+ },
+ {
+  "machine": "LM1",
+  "old": "Misc 02 LM1.wav",
+  "corr": 1.0,
+  "source": "Tape Drum Machines Vol.1 /LM-1/LM1_BD1_T2A.wav",
+  "orig": "LM1_BD1_T2A.wav",
+  "type": "Kick",
+  "new": "Kick 02 LM1.wav"
+ },
+ {
+  "machine": "LM1",
+  "old": "Misc 03 LM1.wav",
+  "corr": 1.0,
+  "source": "Tape Drum Machines Vol.1 /LM-1/LM1_BD2_aOrig.wav",
+  "orig": "LM1_BD2_aOrig.wav",
+  "type": "Kick",
+  "new": "Kick 03 LM1.wav"
+ },
+ {
+  "machine": "LM1",
+  "old": "Misc 04 LM1.wav",
+  "corr": 1.0,
+  "source": "Tape Drum Machines Vol.1 /LM-1/LM1_BD3_aOrig.wav",
+  "orig": "LM1_BD3_aOrig.wav",
+  "type": "Kick",
+  "new": "Kick 04 LM1.wav"
+ },
+ {
+  "machine": "LM1",
+  "old": "Misc 05 LM1.wav",
+  "corr": 1.0,
+  "source": "Tape Drum Machines Vol.1 /LM-1/LM1_BDLoud.wav",
+  "orig": "LM1_BDLoud.wav",
+  "type": "Kick",
+  "new": "Kick 05 LM1.wav"
+ },
+ {
+  "machine": "LM1",
+  "old": "Misc 06 LM1.wav",
+  "corr": 1.0,
+  "source": "Tape Drum Machines Vol.1 /LM-1/LM1_BDSoft_aOrig.wav",
+  "orig": "LM1_BDSoft_aOrig.wav",
+  "type": "Kick",
+  "new": "Kick 06 LM1.wav"
+ },
+ {
+  "machine": "LM1",
+  "old": "Misc 07 LM1.wav",
+  "corr": 1.0,
+  "source": "Tape Drum Machines Vol.1 /LM-1/LM1_Cabasa_aOrig.wav",
+  "orig": "LM1_Cabasa_aOrig.wav",
+  "type": "Cabasa",
+  "new": "Cabasa 01 LM1.wav"
+ },
+ {
+  "machine": "Linn9000",
+  "old": "Misc 01 Linn9000.wav",
+  "corr": 1.0,
+  "source": "Studio Real Drum Machines/Linn 9000/Linn 9000 bell.wav",
+  "orig": "Linn 9000 bell.wav",
+  "type": "Bell",
+  "new": "Bell 01 Linn9000.wav"
+ },
+ {
+  "machine": "Linn9000",
+  "old": "Misc 02 Linn9000.wav",
+  "corr": 1.0,
+  "source": "Studio Real Drum Machines/Linn 9000/Linn 9000 cabasa.wav",
+  "orig": "Linn 9000 cabasa.wav",
+  "type": "Cabasa",
+  "new": "Cabasa 01 Linn9000.wav"
+ },
+ {
+  "machine": "Linn9000",
+  "old": "Misc 03 Linn9000.wav",
+  "corr": 1.0,
+  "source": "Studio Real Drum Machines/Linn 9000/Linn 9000 stick.wav",
+  "orig": "Linn 9000 stick.wav",
+  "type": "Stick",
+  "new": "Stick 01 Linn9000.wav"
+ },
+ {
+  "machine": "Linn9000",
+  "old": "Misc 04 Linn9000.wav",
+  "corr": 1.0,
+  "source": "Studio Real Drum Machines/Linn 9000/Ping.wav",
+  "orig": "Ping.wav",
+  "type": "Ping",
+  "new": "Ping 01 Linn9000.wav"
+ },
+ {
+  "machine": "Linn9000",
+  "old": "Misc 05 Linn9000.wav",
+  "corr": 1.0,
+  "source": "Studio Real Drum Machines/Linn 9000/Snaredrum.wav",
+  "orig": "Snaredrum.wav",
+  "type": "Snare",
+  "new": "Snare 02 Linn9000.wav"
+ },
+ {
+  "machine": "LinnDrum",
+  "old": "Misc 01 LinnDrum.wav",
+  "corr": 1.0,
+  "source": "Tape Drum Machines Vol.2/Samples/LinnDrum/LinnDrm_Cabasa_aOrig.wav",
+  "orig": "LinnDrm_Cabasa_aOrig.wav",
+  "type": "Cabasa",
+  "new": "Cabasa 01 LinnDrum.wav"
+ },
+ {
+  "machine": "OberheimDMX",
+  "old": "Misc 01 OberheimDMX.wav",
+  "corr": 1.0,
+  "source": "Studio Real Drum Machines/Oberheim DMX/bong_Oberheim_DMX.wav",
+  "orig": "bong_Oberheim_DMX.wav",
+  "type": "Bongo",
+  "new": "Bongo 01 OberheimDMX.wav"
+ },
+ {
+  "machine": "OberheimDMX",
+  "old": "Misc 02 OberheimDMX.wav",
+  "corr": 1.0,
+  "source": "Studio Real Drum Machines/Oberheim DMX/Hicabasa_Oberheim_DMX.wav",
+  "orig": "Hicabasa_Oberheim_DMX.wav",
+  "type": "Cabasa",
+  "new": "Cabasa 01 OberheimDMX.wav"
+ },
+ {
+  "machine": "OberheimDMX",
+  "old": "Misc 03 OberheimDMX.wav",
+  "corr": 1.0,
+  "source": "Studio Real Drum Machines/Oberheim DMX/Hitimb_Oberheim_DMX.wav",
+  "orig": "Hitimb_Oberheim_DMX.wav",
+  "type": "Timbale",
+  "new": "Timbale 01 OberheimDMX.wav"
+ },
+ {
+  "machine": "OberheimDMX",
+  "old": "Misc 04 OberheimDMX.wav",
+  "corr": 1.0,
+  "source": "Studio Real Drum Machines/Oberheim DMX/Lowtimb_Oberheim_DMX.wav",
+  "orig": "Lowtimb_Oberheim_DMX.wav",
+  "type": "Timbale",
+  "new": "Timbale 02 OberheimDMX.wav"
+ },
+ {
+  "machine": "OberheimDMX",
+  "old": "Misc 05 OberheimDMX.wav",
+  "corr": 1.0,
+  "source": "Studio Real Drum Machines/Oberheim DMX/Midtimb_Oberheim_DMX.wav",
+  "orig": "Midtimb_Oberheim_DMX.wav",
+  "type": "Timbale",
+  "new": "Timbale 03 OberheimDMX.wav"
+ },
+ {
+  "machine": "RolandR8",
+  "old": "Misc 01 RolandR8.wav",
+  "corr": 1.0,
+  "source": "Studio Real Drum Machines/Roland R8/v_Roland_R8.wav",
+  "orig": "v_Roland_R8.wav",
+  "type": "Perc",
+  "new": "Perc 03 RolandR8.wav"
+ },
+ {
+  "machine": "RolandTR727",
+  "old": "Misc 01 RolandTR727.wav",
+  "corr": 1.0,
+  "source": "Studio Real Drum Machines/Roland TR-727/ChimesTR-727.wav",
+  "orig": "ChimesTR-727.wav",
+  "type": "Chime",
+  "new": "Chime 01 RolandTR727.wav"
+ },
+ {
+  "machine": "RolandTR727",
+  "old": "Misc 02 RolandTR727.wav",
+  "corr": 1.0,
+  "source": "Studio Real Drum Machines/Roland TR-727/High_TimbaTR-727.wav",
+  "orig": "High_TimbaTR-727.wav",
+  "type": "Timbale",
+  "new": "Timbale 01 RolandTR727.wav"
+ },
+ {
+  "machine": "RolandTR727",
+  "old": "Misc 03 RolandTR727.wav",
+  "corr": 1.0,
+  "source": "Studio Real Drum Machines/Roland TR-727/Low_TimbaTR-727.wav",
+  "orig": "Low_TimbaTR-727.wav",
+  "type": "Timbale",
+  "new": "Timbale 02 RolandTR727.wav"
+ },
+ {
+  "machine": "RolandTR727",
+  "old": "Misc 04 RolandTR727.wav",
+  "corr": 1.0,
+  "source": "Studio Real Drum Machines/Roland TR-727/MaracasTR-727.wav",
+  "orig": "MaracasTR-727.wav",
+  "type": "Maraca",
+  "new": "Maraca 01 RolandTR727.wav"
+ },
+ {
+  "machine": "RolandTR727",
+  "old": "Misc 05 RolandTR727.wav",
+  "corr": 1.0,
+  "source": "Studio Real Drum Machines/Roland TR-727/QuijadaTR-727.wav",
+  "orig": "QuijadaTR-727.wav",
+  "type": "Guiro",
+  "new": "Guiro 01 RolandTR727.wav"
+ },
+ {
+  "machine": "RolandTR727",
+  "old": "Misc 06 RolandTR727.wav",
+  "corr": 1.0,
+  "source": "Studio Real Drum Machines/Roland TR-727/Wistl2TR-727.wav",
+  "orig": "Wistl2TR-727.wav",
+  "type": "Whistle",
+  "new": "Whistle 01 RolandTR727.wav"
+ },
+ {
+  "machine": "RolandTR727",
+  "old": "Misc 07 RolandTR727.wav",
+  "corr": 1.0,
+  "source": "Studio Real Drum Machines/Roland TR-727/WistlTR-727.wav",
+  "orig": "WistlTR-727.wav",
+  "type": "Whistle",
+  "new": "Whistle 02 RolandTR727.wav"
+ },
+ {
+  "machine": "TR626",
+  "old": "Misc 01 TR626.wav",
+  "corr": 1.0,
+  "source": "Tape Drum Machines Vol.2/Samples/TR-626/TR626_Agogo_Hi_aOrig.wav",
+  "orig": "TR626_Agogo_Hi_aOrig.wav",
+  "type": "Agogo",
+  "new": "Agogo 01 TR626.wav"
+ },
+ {
+  "machine": "TR626",
+  "old": "Misc 02 TR626.wav",
+  "corr": 1.0,
+  "source": "Tape Drum Machines Vol.2/Samples/TR-626/TR626_Agogo_Low_aOrig.wav",
+  "orig": "TR626_Agogo_Low_aOrig.wav",
+  "type": "Agogo",
+  "new": "Agogo 02 TR626.wav"
+ },
+ {
+  "machine": "TR626",
+  "old": "Misc 03 TR626.wav",
+  "corr": 1.0,
+  "source": "Tape Drum Machines Vol.2/Samples/TR-626/TR626_TimbHi_aOrig.wav",
+  "orig": "TR626_TimbHi_aOrig.wav",
+  "type": "Timbale",
+  "new": "Timbale 01 TR626.wav"
+ },
+ {
+  "machine": "TR626",
+  "old": "Misc 04 TR626.wav",
+  "corr": 1.0,
+  "source": "Tape Drum Machines Vol.2/Samples/TR-626/TR626_TimbLo_aOrig.wav",
+  "orig": "TR626_TimbLo_aOrig.wav",
+  "type": "Timbale",
+  "new": "Timbale 02 TR626.wav"
+ },
+ {
+  "machine": "Tom",
+  "old": "Misc 01 Tom.wav",
+  "corr": 1.0,
+  "source": "Tape Drum Machines Vol.1 /Tom/Tom_Lazer_Cart_aOrig.wav",
+  "orig": "Tom_Lazer_Cart_aOrig.wav",
+  "type": "Laser",
+  "new": "Laser 01 Tom.wav"
+ },
+ {
+  "machine": "Tom",
+  "old": "Misc 02 Tom.wav",
+  "corr": 1.0,
+  "source": "Tape Drum Machines Vol.1 /Tom/Tom_Scratch_Cart.wav",
+  "orig": "Tom_Scratch_Cart.wav",
+  "type": "Scratch",
+  "new": "Scratch 01 Tom.wav"
+ },
+ {
+  "machine": "Tom",
+  "old": "Misc 03 Tom.wav",
+  "corr": 1.0,
+  "source": "Tape Drum Machines Vol.1 /Tom/Tom_Spash_Cart.wav",
+  "orig": "Tom_Spash_Cart.wav",
+  "type": "Tom",
+  "new": "Tom 01 Tom.wav"
+ },
+ {
+  "machine": "Tom",
+  "old": "Misc 04 Tom.wav",
+  "corr": 1.0,
+  "source": "Tape Drum Machines Vol.1 /Tom/Tom_Tom1_Int_aOrig.wav",
+  "orig": "Tom_Tom1_Int_aOrig.wav",
+  "type": "Tom",
+  "new": "Tom 02 Tom.wav"
+ },
+ {
+  "machine": "Tom",
+  "old": "Misc 05 Tom.wav",
+  "corr": 1.0,
+  "source": "Tape Drum Machines Vol.1 /Tom/Tom_Tom2_Int_aOrig.wav",
+  "orig": "Tom_Tom2_Int_aOrig.wav",
+  "type": "Tom",
+  "new": "Tom 03 Tom.wav"
+ },
+ {
+  "machine": "Tom",
+  "old": "Misc 06 Tom.wav",
+  "corr": 1.0,
+  "source": "Tape Drum Machines Vol.1 /Tom/Tom_Tom_Cart_aOrig.wav",
+  "orig": "Tom_Tom_Cart_aOrig.wav",
+  "type": "Tom",
+  "new": "Tom 04 Tom.wav"
+ },
+ {
+  "machine": "UnivoxMicroRhythmer12",
+  "old": "Misc 01 UnivoxMicroRhythmer12.wav",
+  "corr": 1.0,
+  "source": "Studio Real Drum Machines/Univox Micro-Rhythmer 12/UNIVOXb1.wav",
+  "orig": "UNIVOXb1.wav",
+  "type": "Kick",
+  "new": "Kick 01 UnivoxMicroRhythmer12.wav"
+ },
+ {
+  "machine": "UnivoxMicroRhythmer12",
+  "old": "Misc 02 UnivoxMicroRhythmer12.wav",
+  "corr": 1.0,
+  "source": "Studio Real Drum Machines/Univox Micro-Rhythmer 12/UNIVOXbd.wav",
+  "orig": "UNIVOXbd.wav",
+  "type": "Kick",
+  "new": "Kick 02 UnivoxMicroRhythmer12.wav"
+ },
+ {
+  "machine": "UnivoxMicroRhythmer12",
+  "old": "Misc 03 UnivoxMicroRhythmer12.wav",
+  "corr": 1.0,
+  "source": "Studio Real Drum Machines/Univox Micro-Rhythmer 12/UNIVOXch.wav",
+  "orig": "UNIVOXch.wav",
+  "type": "HiHat",
+  "new": "HiHat 01 UnivoxMicroRhythmer12.wav"
+ },
+ {
+  "machine": "UnivoxMicroRhythmer12",
+  "old": "Misc 04 UnivoxMicroRhythmer12.wav",
+  "corr": 0.9999,
+  "source": "Studio Real Drum Machines/Univox Micro-Rhythmer 12/UNIVOXoh.wav",
+  "orig": "UNIVOXoh.wav",
+  "type": "OpenHat",
+  "new": "OpenHat 01 UnivoxMicroRhythmer12.wav"
+ },
+ {
+  "machine": "UnivoxMicroRhythmer12",
+  "old": "Misc 05 UnivoxMicroRhythmer12.wav",
+  "corr": 1.0,
+  "source": "Studio Real Drum Machines/Univox Micro-Rhythmer 12/UNIVOXsd.wav",
+  "orig": "UNIVOXsd.wav",
+  "type": "Snare",
+  "new": "Snare 01 UnivoxMicroRhythmer12.wav"
+ },
+ {
+  "machine": "YamahaRX11",
+  "old": "Misc 01 YamahaRX11.wav",
+  "corr": 1.0,
+  "source": "Studio Real Drum Machines/Yamaha RX11/CLHAT1_YAMAHA_Rx11.wav",
+  "orig": "CLHAT1_YAMAHA_Rx11.wav",
+  "type": "HiHat",
+  "new": "HiHat 01 YamahaRX11.wav"
+ },
+ {
+  "machine": "YamahaRX11",
+  "old": "Misc 02 YamahaRX11.wav",
+  "corr": 1.0,
+  "source": "Studio Real Drum Machines/Yamaha RX11/CLHAT2_YAMAHA_Rx11.wav",
+  "orig": "CLHAT2_YAMAHA_Rx11.wav",
+  "type": "HiHat",
+  "new": "HiHat 02 YamahaRX11.wav"
+ },
+ {
+  "machine": "YamahaRX11",
+  "old": "Misc 03 YamahaRX11.wav",
+  "corr": 1.0,
+  "source": "Studio Real Drum Machines/Yamaha RX11/OPHAT1_YAMAHA_Rx11.wav",
+  "orig": "OPHAT1_YAMAHA_Rx11.wav",
+  "type": "OpenHat",
+  "new": "OpenHat 01 YamahaRX11.wav"
+ },
+ {
+  "machine": "YamahaRX11",
+  "old": "Misc 04 YamahaRX11.wav",
+  "corr": 1.0,
+  "source": "Studio Real Drum Machines/Yamaha RX11/OPHAT2_YAMAHA_Rx11.wav",
+  "orig": "OPHAT2_YAMAHA_Rx11.wav",
+  "type": "OpenHat",
+  "new": "OpenHat 02 YamahaRX11.wav"
+ },
+ {
+  "machine": "YamahaRX120",
+  "old": "Misc 01 YamahaRX120.wav",
+  "corr": 1.0,
+  "source": "Studio Real Drum Machines/Yamaha RX-Series/Yamaha RX120/Percs/RX-120 Agogo High.wav",
+  "orig": "RX-120 Agogo High.wav",
+  "type": "Agogo",
+  "new": "Agogo 01 YamahaRX120.wav"
+ },
+ {
+  "machine": "YamahaRX120",
+  "old": "Misc 02 YamahaRX120.wav",
+  "corr": 1.0,
+  "source": "Studio Real Drum Machines/Yamaha RX-Series/Yamaha RX120/Clap & Snare/RX-120 Claps.wav",
+  "orig": "RX-120 Claps.wav",
+  "type": "Clap",
+  "new": "Clap 01 YamahaRX120.wav"
+ },
+ {
+  "machine": "YamahaRX120",
+  "old": "Misc 03 YamahaRX120.wav",
+  "corr": 1.0,
+  "source": "Studio Real Drum Machines/Yamaha RX-Series/Yamaha RX120/Percs/RX-120 Cuica Low.wav",
+  "orig": "RX-120 Cuica Low.wav",
+  "type": "Cuica",
+  "new": "Cuica 01 YamahaRX120.wav"
+ },
+ {
+  "machine": "YamahaRX5 I",
+  "old": "Misc 01 RX5-I.wav",
+  "corr": 1.0,
+  "source": "Studio Real Drum Machines/Yamaha RX-Series/Yamaha RX5/Percs/Yamaha RX-5 Timbale Hi.wav",
+  "orig": "Yamaha RX-5 Timbale Hi.wav",
+  "type": "Timbale",
+  "new": "Timbale 01 RX5-I.wav"
+ },
+ {
+  "machine": "YamahaRX5 I",
+  "old": "Misc 02 RX5-I.wav",
+  "corr": 1.0,
+  "source": "Studio Real Drum Machines/Yamaha RX-Series/Yamaha RX5/Percs/Yamaha RX-5 Timpani.wav",
+  "orig": "Yamaha RX-5 Timpani.wav",
+  "type": "Timpani",
+  "new": "Timpani 01 RX5-I.wav"
+ },
+ {
+  "machine": "YamahaRX5 I",
+  "old": "Misc 03 RX5-I.wav",
+  "corr": 1.0,
+  "source": "Studio Real Drum Machines/Yamaha RX-Series/Yamaha RX5/Percs/Yamaha RX5 Castenet.wav",
+  "orig": "Yamaha RX5 Castenet.wav",
+  "type": "Castanet",
+  "new": "Castanet 01 RX5-I.wav"
+ },
+ {
+  "machine": "YamahaRX5 I",
+  "old": "Misc 04 RX5-I.wav",
+  "corr": 1.0,
+  "source": "Studio Real Drum Machines/Yamaha RX-Series/Yamaha RX5/Percs/Yamaha RX5 Cuica.wav",
+  "orig": "Yamaha RX5 Cuica.wav",
+  "type": "Cuica",
+  "new": "Cuica 01 RX5-I.wav"
+ },
+ {
+  "machine": "YamahaRX5 II",
+  "old": "Misc 01 RX5-II.wav",
+  "corr": 1.0,
+  "source": "Tape Drum Machines Vol.2/Samples/RX-5/RX5_Castanet_aOrig.wav",
+  "orig": "RX5_Castanet_aOrig.wav",
+  "type": "Castanet",
+  "new": "Castanet 01 RX5-II.wav"
+ },
+ {
+  "machine": "YamahaRX5 II",
+  "old": "Misc 02 RX5-II.wav",
+  "corr": 1.0,
+  "source": "Tape Drum Machines Vol.2/Samples/RX-5/RX5_China_02_aOrig.wav",
+  "orig": "RX5_China_02_aOrig.wav",
+  "type": "China",
+  "new": "China 01 RX5-II.wav"
+ },
+ {
+  "machine": "YamahaRX5 II",
+  "old": "Misc 03 RX5-II.wav",
+  "corr": 1.0,
+  "source": "Tape Drum Machines Vol.2/Samples/RX-5/RX5_TimbaleHLow_aOrig.wav",
+  "orig": "RX5_TimbaleHLow_aOrig.wav",
+  "type": "Timbale",
+  "new": "Timbale 01 RX5-II.wav"
+ },
+ {
+  "machine": "YamahaRX7",
+  "old": "Misc 01 YamahaRX7.wav",
+  "corr": 1.0,
+  "source": "Studio Real Drum Machines/Yamaha RX-Series/Yamaha RX7/Perc/Yamaha RX7 agogo hi.wav",
+  "orig": "Yamaha RX7 agogo hi.wav",
+  "type": "Agogo",
+  "new": "Agogo 01 YamahaRX7.wav"
+ },
+ {
+  "machine": "YamahaRX7",
+  "old": "Misc 02 YamahaRX7.wav",
+  "corr": 1.0,
+  "source": "Studio Real Drum Machines/Yamaha RX-Series/Yamaha RX7/Perc/Yamaha RX7 bell tree.wav",
+  "orig": "Yamaha RX7 bell tree.wav",
+  "type": "BellTree",
+  "new": "BellTree 01 YamahaRX7.wav"
+ },
+ {
+  "machine": "YamahaRX7",
+  "old": "Misc 03 YamahaRX7.wav",
+  "corr": 1.0,
+  "source": "Studio Real Drum Machines/Yamaha RX-Series/Yamaha RX7/Perc/Yamaha RX7 castnet.wav",
+  "orig": "Yamaha RX7 castnet.wav",
+  "type": "Castanet",
+  "new": "Castanet 01 YamahaRX7.wav"
+ },
+ {
+  "machine": "YamahaRX7",
+  "old": "Misc 04 YamahaRX7.wav",
+  "corr": 1.0,
+  "source": "Studio Real Drum Machines/Yamaha RX-Series/Yamaha RX7/Perc/Yamaha RX7 claves.wav",
+  "orig": "Yamaha RX7 claves.wav",
+  "type": "Clave",
+  "new": "Clave 01 YamahaRX7.wav"
+ },
+ {
+  "machine": "YamahaRX7",
+  "old": "Misc 05 YamahaRX7.wav",
+  "corr": 1.0,
+  "source": "Studio Real Drum Machines/Yamaha RX-Series/Yamaha RX7/FX Hit/Yamaha RX7 doorslm.wav",
+  "orig": "Yamaha RX7 doorslm.wav",
+  "type": "Door",
+  "new": "Door 01 YamahaRX7.wav"
+ },
+ {
+  "machine": "YamahaRX7",
+  "old": "Misc 06 YamahaRX7.wav",
+  "corr": 1.0,
+  "source": "Studio Real Drum Machines/Yamaha RX-Series/Yamaha RX7/Kick/Yamaha RX7 fbd.wav",
+  "orig": "Yamaha RX7 fbd.wav",
+  "type": "Kick",
+  "new": "Kick 02 YamahaRX7.wav"
+ },
+ {
+  "machine": "YamahaRX7",
+  "old": "Misc 07 YamahaRX7.wav",
+  "corr": 1.0,
+  "source": "Studio Real Drum Machines/Yamaha RX-Series/Yamaha RX7/FX Hit/Yamaha RX7 gun.wav",
+  "orig": "Yamaha RX7 gun.wav",
+  "type": "Gun",
+  "new": "Gun 01 YamahaRX7.wav"
+ },
+ {
+  "machine": "YamahaRX7",
+  "old": "Misc 08 YamahaRX7.wav",
+  "corr": 1.0,
+  "source": "Studio Real Drum Machines/Yamaha RX-Series/Yamaha RX7/Kick/Yamaha RX7 hbd2.wav",
+  "orig": "Yamaha RX7 hbd2.wav",
+  "type": "Kick",
+  "new": "Kick 03 YamahaRX7.wav"
+ },
+ {
+  "machine": "YamahaRX7",
+  "old": "Misc 09 YamahaRX7.wav",
+  "corr": 1.0,
+  "source": "Studio Real Drum Machines/Yamaha RX-Series/Yamaha RX7/Kick/Yamaha RX7 pbd2.wav",
+  "orig": "Yamaha RX7 pbd2.wav",
+  "type": "Kick",
+  "new": "Kick 04 YamahaRX7.wav"
+ },
+ {
+  "machine": "YamahaRX7",
+  "old": "Misc 10 YamahaRX7.wav",
+  "corr": 1.0,
+  "source": "Studio Real Drum Machines/Yamaha RX-Series/Yamaha RX7/Cymbal/Yamaha RX7 rvs_edge.wav",
+  "orig": "Yamaha RX7 rvs_edge.wav",
+  "type": "Reverse",
+  "new": "Reverse 01 YamahaRX7.wav"
+ },
+ {
+  "machine": "YamahaRX7",
+  "old": "Misc 11 YamahaRX7.wav",
+  "corr": 1.0,
+  "source": "Studio Real Drum Machines/Yamaha RX-Series/Yamaha RX7/Perc/Yamaha RX7 timbll.wav",
+  "orig": "Yamaha RX7 timbll.wav",
+  "type": "Timbale",
+  "new": "Timbale 01 YamahaRX7.wav"
+ },
+ {
+  "machine": "YamahaRX7",
+  "old": "Misc 12 YamahaRX7.wav",
+  "corr": 1.0,
+  "source": "Studio Real Drum Machines/Yamaha RX-Series/Yamaha RX7/Perc/Yamaha RX7 vibraslap.wav",
+  "orig": "Yamaha RX7 vibraslap.wav",
+  "type": "Vibraslap",
+  "new": "Vibraslap 01 YamahaRX7.wav"
+ },
+ {
+  "machine": "YamahaRX7",
+  "old": "Misc 13 YamahaRX7.wav",
+  "corr": 1.0,
+  "source": "Studio Real Drum Machines/Yamaha RX-Series/Yamaha RX7/Snare/Yamaha RX7 hard sd2.wav",
+  "orig": "Yamaha RX7 hard sd2.wav",
+  "type": "Snare",
+  "new": "Snare 07 YamahaRX7.wav"
+ },
+ {
+  "machine": "YamahaRX7",
+  "old": "Misc 14 YamahaRX7.wav",
+  "corr": 1.0,
+  "source": "Studio Real Drum Machines/Yamaha RX-Series/Yamaha RX7/Snare/Pitched Snare Drums/Yamaha RX7 pitched sd1.wav",
+  "orig": "Yamaha RX7 pitched sd1.wav",
+  "type": "Snare",
+  "new": "Snare 08 YamahaRX7.wav"
+ },
+ {
+  "machine": "YamahaRY30",
+  "old": "Misc 01 YamahaRY30.wav",
+  "corr": 1.0,
+  "source": "Studio Real Drum Machines/Yamaha RY-30/Cabasa1_YAMAHA_RY-30.wav",
+  "orig": "Cabasa1_YAMAHA_RY-30.wav",
+  "type": "Cabasa",
+  "new": "Cabasa 01 YamahaRY30.wav"
+ },
+ {
+  "machine": "YamahaRY30",
+  "old": "Misc 02 YamahaRY30.wav",
+  "corr": 1.0,
+  "source": "Studio Real Drum Machines/Yamaha RY-30/Ridecup_YAMAHA_RY-30.wav",
+  "orig": "Ridecup_YAMAHA_RY-30.wav",
+  "type": "Ride",
+  "new": "Ride 01 YamahaRY30.wav"
+ },
+ {
+  "machine": "YamahaRY30",
+  "old": "Misc 03 YamahaRY30.wav",
+  "corr": 1.0,
+  "source": "Studio Real Drum Machines/Yamaha RY-30/Snap_YAMAHA_RY-30.wav",
+  "orig": "Snap_YAMAHA_RY-30.wav",
+  "type": "Snap",
+  "new": "Snap 01 YamahaRY30.wav"
+ },
+ {
+  "machine": "YamahaRY30",
+  "old": "Misc 04 YamahaRY30.wav",
+  "corr": 1.0,
+  "source": "Studio Real Drum Machines/Yamaha RY-30/Stick_YAMAHA_RY-30.wav",
+  "orig": "Stick_YAMAHA_RY-30.wav",
+  "type": "Stick",
+  "new": "Stick 01 YamahaRY30.wav"
+ },
+ {
+  "machine": "YamahaRY30",
+  "old": "Misc 05 YamahaRY30.wav",
+  "corr": 1.0,
+  "source": "Studio Real Drum Machines/Yamaha RY-30/Tomlow1_YAMAHA_RY-30.wav",
+  "orig": "Tomlow1_YAMAHA_RY-30.wav",
+  "type": "Tom",
+  "new": "Tom 01 YamahaRY30.wav"
+ }
+]

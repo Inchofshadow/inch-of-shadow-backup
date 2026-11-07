@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+{% block title %}Words{% endblock %}
+
+{% block content %}
+{# Words (RM 2.0 slice 3): SEO copy and Bios on one page, two tabs. /words and /seo-copy open on
+   SEO copy (the release page links /seo-copy?release=), /bios opens on Bios. Both tabs render;
+   a tab click shows its pane and puts its own address in the bar, so a reload stays on it. #}
+<div class="resizer-page words-page">
+    <h1>Words</h1>
+    <div class="board-filters" id="words-tabs" style="margin-bottom: 1.5rem;">
+        <a class="chip{% if tab == 'seo' %} on{% endif %}" data-pane="words-seo" href="{{ url_for('seo_copy_page', release=preselected_release or None) }}">SEO copy</a>
+        <a class="chip{% if tab == 'bios' %} on{% endif %}" data-pane="words-bios" href="{{ url_for('bios_page') }}">Bios</a>
+    </div>
+
+    <section class="words-pane" id="words-seo"{% if tab != 'seo' %} hidden{% endif %}>
+        {% include "_words_seo.html" %}
+    </section>
+
+    <section class="words-pane" id="words-bios"{% if tab != 'bios' %} hidden{% endif %}>
+        {% include "_words_bios.html" %}
+    </section>
+</div>
+
+<script>
+(function () {
+    var tabs = document.querySelectorAll('#words-tabs .chip');
+    tabs.forEach(function (tab) {
+        tab.addEventListener('click', function (e) {
+            e.preventDefault();
+            tabs.forEach(function (t) {
+                t.classList.toggle('on', t === tab);
+                document.getElementById(t.dataset.pane).hidden = (t !== tab);
+            });
+            if (window.history && history.replaceState) history.replaceState(null, '', tab.getAttribute('href'));
+        });
+    });
+}());
+</script>
+{% endblock %}

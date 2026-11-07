@@ -1,0 +1,407 @@
+<title>Sample Library Plan</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+<style>
+:root{
+  --ground:#F4F3F1; --surface:#FFFFFF; --surface-2:#EDECE8;
+  --ink:#1B1917; --ink-2:#413C36; --muted:#6F6A62; --line:#DEDAD3;
+  --accent:#C2401F; --accent-soft:#F2DCD4;
+  --ok:#2F6B4F; --ok-soft:#DCE9E1;
+  --warn:#8A6210; --warn-soft:#F1E4CB;
+  --shadow:0 1px 2px rgba(27,25,23,.06),0 8px 24px rgba(27,25,23,.05);
+  color-scheme:light;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --ground:#141311; --surface:#1C1B18; --surface-2:#232220;
+    --ink:#EDEAE4; --ink-2:#C6C1B8; --muted:#8E887E; --line:#302E2A;
+    --accent:#F0714A; --accent-soft:#3A211A;
+    --ok:#7FBF9B; --ok-soft:#1D2B24;
+    --warn:#D9AC5A; --warn-soft:#2B2318;
+    --shadow:0 1px 2px rgba(0,0,0,.4),0 8px 24px rgba(0,0,0,.3);
+    color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --ground:#141311; --surface:#1C1B18; --surface-2:#232220;
+  --ink:#EDEAE4; --ink-2:#C6C1B8; --muted:#8E887E; --line:#302E2A;
+  --accent:#F0714A; --accent-soft:#3A211A;
+  --ok:#7FBF9B; --ok-soft:#1D2B24;
+  --warn:#D9AC5A; --warn-soft:#2B2318;
+  --shadow:0 1px 2px rgba(0,0,0,.4),0 8px 24px rgba(0,0,0,.3);
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+body{
+  background:var(--ground); color:var(--ink);
+  font-family:"Source Serif 4",Georgia,serif; font-size:17px; line-height:1.65;
+  margin:0; -webkit-font-smoothing:antialiased;
+}
+.wrap{max-width:1180px;margin:0 auto;padding:0 28px 96px;display:grid;grid-template-columns:200px minmax(0,1fr);gap:56px}
+@media(max-width:900px){.wrap{grid-template-columns:1fr;gap:0}nav.toc{display:none}}
+
+/* header */
+header{border-bottom:1px solid var(--line);margin-bottom:44px;padding:56px 0 30px}
+.eyebrow{font-family:Archivo,system-ui,sans-serif;font-size:11px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--accent);margin:0 0 14px}
+h1{font-family:Archivo,system-ui,sans-serif;font-weight:700;font-size:clamp(34px,5vw,52px);line-height:1.04;letter-spacing:-.02em;margin:0 0 16px;text-wrap:balance}
+.lede{font-size:19px;color:var(--ink-2);max-width:60ch;margin:0}
+.meta{display:flex;flex-wrap:wrap;gap:8px 28px;margin-top:26px;font-family:"IBM Plex Mono",monospace;font-size:12.5px;color:var(--muted)}
+.meta b{color:var(--ink-2);font-weight:500}
+
+/* stats */
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:1px;background:var(--line);border:1px solid var(--line);border-radius:3px;overflow:hidden;margin:0 0 52px}
+.stat{background:var(--surface);padding:18px 20px}
+.stat .n{font-family:Archivo,sans-serif;font-size:27px;font-weight:700;letter-spacing:-.02em;font-variant-numeric:tabular-nums;display:block;line-height:1.1}
+.stat .l{font-family:"IBM Plex Mono",monospace;font-size:10.5px;letter-spacing:.09em;text-transform:uppercase;color:var(--muted);margin-top:5px;display:block}
+
+/* toc */
+nav.toc{position:sticky;top:0;align-self:start;padding-top:56px;max-height:100vh;overflow-y:auto}
+nav.toc ol{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:2px}
+nav.toc a{font-family:Archivo,sans-serif;font-size:12.5px;color:var(--muted);text-decoration:none;display:block;padding:5px 10px;border-left:2px solid transparent;line-height:1.35}
+nav.toc a:hover{color:var(--accent);border-left-color:var(--accent);background:var(--surface)}
+nav.toc a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+
+/* sections */
+section{margin:0 0 60px;scroll-margin-top:24px}
+h2{font-family:Archivo,sans-serif;font-weight:700;font-size:24px;letter-spacing:-.01em;margin:0 0 6px;text-wrap:balance;display:flex;align-items:baseline;gap:12px}
+h2 .num{font-family:"IBM Plex Mono",monospace;font-size:12px;font-weight:500;color:var(--accent);letter-spacing:0}
+h3{font-family:Archivo,sans-serif;font-weight:600;font-size:16px;margin:32px 0 10px;letter-spacing:-.005em}
+p{margin:0 0 15px;max-width:66ch}
+.sub{color:var(--muted);font-size:15px;margin:0 0 22px;max-width:66ch}
+ul,ol.body{max-width:66ch;padding-left:20px;margin:0 0 15px}
+li{margin-bottom:7px}
+strong{font-weight:600}
+code{font-family:"IBM Plex Mono",monospace;font-size:.86em;background:var(--surface-2);padding:2px 5px;border-radius:3px;color:var(--ink-2)}
+
+/* tables */
+.scroll{overflow-x:auto;margin:0 0 18px;border:1px solid var(--line);border-radius:3px;background:var(--surface)}
+table{border-collapse:collapse;width:100%;font-size:14.5px}
+th{font-family:Archivo,sans-serif;font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);text-align:left;padding:11px 16px;border-bottom:1px solid var(--line);white-space:nowrap;font-weight:600}
+td{padding:11px 16px;border-bottom:1px solid var(--line);vertical-align:top}
+tr:last-child td{border-bottom:0}
+td.n,th.n{text-align:right;font-family:"IBM Plex Mono",monospace;font-variant-numeric:tabular-nums;white-space:nowrap}
+.mono{font-family:"IBM Plex Mono",monospace;font-size:13px}
+
+/* pills */
+.pill{display:inline-block;font-family:Archivo,sans-serif;font-size:10.5px;font-weight:600;letter-spacing:.07em;text-transform:uppercase;padding:3px 8px;border-radius:2px;white-space:nowrap}
+.pill.yes{background:var(--ok-soft);color:var(--ok)}
+.pill.no{background:var(--surface-2);color:var(--muted)}
+.pill.hot{background:var(--accent-soft);color:var(--accent)}
+.pill.warn{background:var(--warn-soft);color:var(--warn)}
+
+/* tier ladder */
+.tiers{display:flex;flex-direction:column;gap:1px;background:var(--line);border:1px solid var(--line);border-radius:3px;overflow:hidden;margin-bottom:20px}
+.tier{background:var(--surface);padding:16px 20px;display:grid;grid-template-columns:130px minmax(0,1fr);gap:20px;align-items:start}
+@media(max-width:640px){.tier{grid-template-columns:1fr;gap:6px}}
+.tier .lab{font-family:Archivo,sans-serif;font-size:12px;font-weight:700;letter-spacing:.04em;text-transform:uppercase}
+.tier:nth-child(1) .lab{color:var(--ok)}
+.tier:nth-child(2) .lab{color:var(--warn)}
+.tier:nth-child(3) .lab{color:var(--warn)}
+.tier:nth-child(4) .lab{color:var(--muted)}
+.tier p{margin:0;font-size:14.5px;max-width:none}
+.tier .ex{font-family:"IBM Plex Mono",monospace;font-size:12px;color:var(--muted);margin-top:5px;display:block}
+
+/* confidence meters */
+.meters{display:flex;flex-direction:column;gap:0;background:var(--surface);border:1px solid var(--line);border-radius:3px;padding:22px 24px 14px;margin-bottom:18px;position:relative}
+.mrow{display:grid;grid-template-columns:180px minmax(0,1fr) 46px 68px;gap:14px;align-items:center;padding:7px 0;font-size:14px}
+@media(max-width:640px){.mrow{grid-template-columns:110px minmax(0,1fr) 42px;font-size:13px}.mrow .verdict{display:none}}
+.mrow .name{color:var(--ink-2)}
+.bar{height:9px;background:var(--surface-2);border-radius:2px;position:relative;overflow:hidden}
+.bar span{position:absolute;inset:0 auto 0 0;border-radius:2px;display:block}
+.bar span.pass{background:var(--ok)}
+.bar span.fail{background:var(--muted);opacity:.55}
+.pct{font-family:"IBM Plex Mono",monospace;font-size:12.5px;font-variant-numeric:tabular-nums;text-align:right;color:var(--ink-2)}
+.verdict{font-family:"IBM Plex Mono",monospace;font-size:11.5px;text-align:right}
+.verdict.y{color:var(--ok)}
+.verdict.n{color:var(--muted)}
+.thresh{font-family:"IBM Plex Mono",monospace;font-size:11px;color:var(--accent);border-top:1px dashed var(--accent);padding-top:7px;margin-top:12px;display:flex;justify-content:space-between}
+
+/* callout */
+.note{background:var(--surface);border-left:3px solid var(--accent);padding:16px 20px;border-radius:0 3px 3px 0;margin:0 0 20px;box-shadow:var(--shadow)}
+.note p:last-child{margin-bottom:0}
+.note .h{font-family:Archivo,sans-serif;font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--accent);margin:0 0 7px}
+.note.good{border-left-color:var(--ok)}
+.note.good .h{color:var(--ok)}
+
+/* naming */
+.naming{background:var(--surface);border:1px solid var(--line);border-radius:3px;padding:22px 24px;margin-bottom:18px}
+.pattern{font-family:"IBM Plex Mono",monospace;font-size:16px;font-weight:500;letter-spacing:.01em;margin-bottom:16px;display:flex;flex-wrap:wrap;gap:0}
+.pattern i{font-style:normal;padding:3px 7px;border-radius:2px}
+.p1{background:var(--accent-soft);color:var(--accent)}
+.p2{background:var(--ok-soft);color:var(--ok)}
+.p3{background:var(--warn-soft);color:var(--warn)}
+.p4{background:var(--surface-2);color:var(--muted)}
+.legend{display:flex;flex-wrap:wrap;gap:6px 22px;font-size:13px;color:var(--muted);font-family:Archivo,sans-serif}
+.egs{margin-top:16px;padding-top:14px;border-top:1px solid var(--line);font-family:"IBM Plex Mono",monospace;font-size:13px;display:flex;flex-direction:column;gap:5px;color:var(--ink-2)}
+.egs em{font-style:normal;color:var(--muted)}
+
+/* steps */
+.steps{counter-reset:s;display:flex;flex-direction:column;gap:1px;background:var(--line);border:1px solid var(--line);border-radius:3px;overflow:hidden}
+.step{background:var(--surface);padding:14px 20px;display:grid;grid-template-columns:26px minmax(0,1fr) auto;gap:16px;align-items:center;counter-increment:s}
+.step::before{content:counter(s);font-family:"IBM Plex Mono",monospace;font-size:12px;color:var(--muted);font-variant-numeric:tabular-nums}
+.step.done{background:var(--surface-2)}
+.step.done .t{text-decoration:line-through;color:var(--muted)}
+.step .t{font-size:14.5px}
+.hr{border:0;border-top:1px solid var(--line);margin:52px 0}
+footer{color:var(--muted);font-size:13px;font-family:Archivo,sans-serif;padding-top:26px;border-top:1px solid var(--line)}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+</style>
+
+<div class="wrap">
+<nav class="toc" aria-label="Contents">
+  <ol>
+    <li><a href="#library">Library</a></li>
+    <li><a href="#machines">The 49 machines</a></li>
+    <li><a href="#pitch">What can be pitched</a></li>
+    <li><a href="#confidence">Confidence score</a></li>
+    <li><a href="#naming">Naming</a></li>
+    <li><a href="#safety">Project safety</a></li>
+    <li><a href="#hardware">Digitakt &amp; MPC</a></li>
+    <li><a href="#bugs">Tool bugs</a></li>
+    <li><a href="#order">Work order</a></li>
+    <li><a href="#lives">Where it lives</a></li>
+    <li><a href="#open">Open decisions</a></li>
+  </ol>
+</nav>
+
+<main>
+<header>
+  <p class="eyebrow">Inch of Shadow / Music Tools</p>
+  <h1>Sample Library Plan</h1>
+  <p class="lede">Turning 14 GB of unsorted samples into a library that is sorted by source, labelled by pitch where pitch actually exists, and loadable in Ableton, Digitakt and MPC.</p>
+  <div class="meta">
+    <span><b>Scope</b> ~/Desktop/SAMPLES MAC</span>
+    <span><b>Scanned</b> 2 Sep 2026</span>
+    <span><b>Status</b> planning, nothing built yet</span>
+  </div>
+</header>
+
+<div class="stats">
+  <div class="stat"><span class="n">14 GB</span><span class="l">Total library</span></div>
+  <div class="stat"><span class="n">13,969</span><span class="l">Audio files</span></div>
+  <div class="stat"><span class="n">49</span><span class="l">Single-source machines</span></div>
+  <div class="stat"><span class="n">0</span><span class="l">Notes in filenames</span></div>
+  <div class="stat"><span class="n">4,158</span><span class="l">.asd files deleted</span></div>
+</div>
+
+<section id="library">
+  <h2><span class="num">01</span> What is actually in the library</h2>
+  <p class="sub">Scanned 2 September. The split that matters is single-source versus construction kits, because only single-source folders become drum racks.</p>
+  <div class="scroll"><table>
+    <thead><tr><th>Folder</th><th class="n">Files</th><th class="n">Size</th><th>One source?</th></tr></thead>
+    <tbody>
+      <tr><td>Snaers pack</td><td class="n">6,336</td><td class="n">5.4 G</td><td><span class="pill no">Kits</span></td></tr>
+      <tr><td>Cluster New Wave</td><td class="n">1,760</td><td class="n">2.1 G</td><td><span class="pill no">Kits</span></td></tr>
+      <tr><td>Tape Drum Machines Vol.2</td><td class="n">1,837</td><td class="n">124 M</td><td><span class="pill yes">10 machines</span></td></tr>
+      <tr><td>Tape Drum Machines Vol.1</td><td class="n">1,209</td><td class="n">97 M</td><td><span class="pill yes">11 machines</span></td></tr>
+      <tr><td>Eitan Rieter</td><td class="n">1,070</td><td class="n">4.7 G</td><td><span class="pill no">Kits</span></td></tr>
+      <tr><td>Studio Real Drum Machines</td><td class="n">863</td><td class="n">67 M</td><td><span class="pill yes">28 machines</span></td></tr>
+      <tr><td>Industrial Strength Dark EBM</td><td class="n">365</td><td class="n">815 M</td><td><span class="pill no">Kits</span></td></tr>
+      <tr><td>Witch House Samples</td><td class="n">281</td><td class="n">478 M</td><td><span class="pill no">Cleaned 1 Sep</span></td></tr>
+      <tr><td>TRNSNT2 Primal Kicks</td><td class="n">160</td><td class="n">21 M</td><td><span class="pill warn">Partly</span></td></tr>
+      <tr><td>Travis Scott MIDI Kit</td><td class="n">88</td><td class="n">111 M</td><td><span class="pill no">Kits</span></td></tr>
+    </tbody>
+  </table></div>
+  <div class="note">
+    <p class="h">Check this before building anything</p>
+    <p><code>Studio Real Drum Machines/Ableton Drum Racks/</code> already holds a Live Pack of racks. Some of those 28 machines may already be done, so open it first rather than rebuilding from scratch.</p>
+  </div>
+  <h3>Other findings</h3>
+  <ul>
+    <li>No filename anywhere carries note information. All pitch has to be measured.</li>
+    <li>Names like <code>CR78_BD_C2A_R1.wav</code> are already clean. The <code>C2A</code> and <code>T1A</code> suffixes are tape-deck variants, not notes.</li>
+    <li><code>SAMPLES MAC/files/</code> and <code>files 2/</code> are identical duplicates of the tool docs.</li>
+  </ul>
+</section>
+
+<section id="machines">
+  <h2><span class="num">02</span> The 49 single-source machines</h2>
+  <p class="sub">These are the folders where every sample came from one box, so a rack built from them is a real instrument rather than a grab bag. Start here.</p>
+  <div class="scroll"><table>
+    <thead><tr><th>Pack</th><th class="n">Count</th><th>Machines</th></tr></thead>
+    <tbody>
+      <tr><td>Studio Real Drum Machines</td><td class="n">28</td><td class="mono">Linn 9000 · LinnDrum LM2 · Oberheim DMX · Alesis SR-16 · Roland R8 · TR-606 · TR-727 · CR-8000 · Yamaha RX11 · RX-21 · RY-30 · MR10 · Kawai R-50e · R-100 · Akai XR-10 · SC Drumtraks · SC Tom · SC Studio 440 · Simmons SDS-5 · Boss DR-55 · Pearl Syncussion SY1 · Univox Micro-Rhythmer · Visco SpaceDrum · Sakata DPM-48 · SoundMaster SR-88 · S900 kits · Acoustic Drums 80s</td></tr>
+      <tr><td>Tape Drum Machines Vol.1</td><td class="n">11</td><td class="mono">LM-1 · DR-110 · MR-10 · TR-505 · Drumulator · Rom808 · MPC-TheKit · MRX-185 · Tom · 4InTheFloor</td></tr>
+      <tr><td>Tape Drum Machines Vol.2</td><td class="n">10</td><td class="mono">LinnDrum · CR-78 · DDR-30 · RX-5 · DR-55 · SynsonicsPro · RPM-40 · KPR-77 · TR-626 · Bohm</td></tr>
+    </tbody>
+  </table></div>
+</section>
+
+<section id="pitch">
+  <h2><span class="num">03</span> What can actually be pitched</h2>
+  <p class="sub">Four tiers, in descending order of how much you should trust the answer. The bottom tier is physics, not a limitation of the tool.</p>
+  <div class="tiers">
+    <div class="tier">
+      <div class="lab">Reliable note</div>
+      <div><p>A real note plus cents. This is what you can tune a track around.</p>
+      <span class="ex">Kicks · toms · bass one-shots · cowbell · clave · conga · bongo · single held vocal or synth stabs</span></div>
+    </div>
+    <div class="tier">
+      <div class="lab">Root guess only</div>
+      <div><p>More than one note is sounding, so you get the strongest one. Often the chord root, sometimes wrong. Labelled as <em>root</em>, never as <em>the</em> note.</p>
+      <span class="ex">Pads · chords · stacked stabs</span></div>
+    </div>
+    <div class="tier">
+      <div class="lab">Key, not note</div>
+      <div><p>The pitch moves through the file, so a single note is meaningless. Needs key detection, which is a different algorithm from what the tool does today.</p>
+      <span class="ex">Melodic loops · vocal phrases · moving basslines</span></div>
+    </div>
+    <div class="tier">
+      <div class="lab">No pitch</div>
+      <div><p>These have no fundamental to find. Nothing to report, and that is correct rather than missing data.</p>
+      <span class="ex">Snares · claps · hats · cymbals · risers · impacts · noise FX</span></div>
+    </div>
+  </div>
+  <div class="note good">
+    <p class="h">Bass is the easiest of all</p>
+    <p>Bass one-shots detect more cleanly than kicks do. The catch is that the tool has <strong>no bass rule at all</strong> right now, so bass files fall through as untyped and never get analysed. Adding a <code>BS</code> type is on the fix list.</p>
+  </div>
+</section>
+
+<section id="confidence">
+  <h2><span class="num">04</span> The confidence score</h2>
+  <p class="sub">Your 80% rule, made concrete. Every detected note carries a score, and below the threshold the tool prints nothing at all instead of guessing. A blank is honest. A wrong note sends you chasing a key that was never there.</p>
+
+  <h3>Three things get measured</h3>
+  <ol class="body">
+    <li><strong>Periodicity.</strong> How strongly the waveform repeats itself. A kick tail repeats cleanly, a snare never repeats at all. This alone separates most tonal hits from noise.</li>
+    <li><strong>Stability.</strong> The tail gets chopped into slices and each slice is measured separately. If they all agree within about 20 cents, the pitch is solid. A pitch sweep or a moving vocal makes the slices disagree.</li>
+    <li><strong>Tonality.</strong> Whether the spectrum has sharp peaks or is flat. Flat means noise, peaked means a real fundamental with harmonics above it.</li>
+  </ol>
+  <p>The three combine into one score out of 100. Anything at or above the line gets a note in its filename. Anything below gets left blank and stays blank.</p>
+
+  <h3>How real material scores</h3>
+  <div class="meters">
+    <div class="mrow"><span class="name">Bass one-shot</span><span class="bar"><span class="pass" style="width:97%"></span></span><span class="pct">97</span><span class="verdict y">note</span></div>
+    <div class="mrow"><span class="name">LinnDrum kick</span><span class="bar"><span class="pass" style="width:94%"></span></span><span class="pct">94</span><span class="verdict y">note</span></div>
+    <div class="mrow"><span class="name">DMX tom</span><span class="bar"><span class="pass" style="width:91%"></span></span><span class="pct">91</span><span class="verdict y">note</span></div>
+    <div class="mrow"><span class="name">Held vocal note</span><span class="bar"><span class="pass" style="width:88%"></span></span><span class="pct">88</span><span class="verdict y">note</span></div>
+    <div class="mrow"><span class="name">Cowbell</span><span class="bar"><span class="pass" style="width:84%"></span></span><span class="pct">84</span><span class="verdict y">note</span></div>
+    <div class="thresh"><span>80 &nbsp;THRESHOLD</span><span>below this, no note is written</span></div>
+    <div class="mrow"><span class="name">Detuned 808 kick</span><span class="bar"><span class="fail" style="width:72%"></span></span><span class="pct">72</span><span class="verdict n">blank</span></div>
+    <div class="mrow"><span class="name">Pad (chord)</span><span class="bar"><span class="fail" style="width:55%"></span></span><span class="pct">55</span><span class="verdict n">blank</span></div>
+    <div class="mrow"><span class="name">Vocal phrase</span><span class="bar"><span class="fail" style="width:41%"></span></span><span class="pct">41</span><span class="verdict n">blank</span></div>
+    <div class="mrow"><span class="name">SR-16 snare</span><span class="bar"><span class="fail" style="width:12%"></span></span><span class="pct">12</span><span class="verdict n">blank</span></div>
+    <div class="mrow"><span class="name">Crash cymbal</span><span class="bar"><span class="fail" style="width:6%"></span></span><span class="pct">6</span><span class="verdict n">blank</span></div>
+  </div>
+  <p class="sub">Illustrative figures showing how each class of sound behaves, not measurements from your library. Real numbers arrive once the scoring is built and run.</p>
+  <p>The threshold is adjustable with <code>--min-confidence</code>. Lower it to 60 and you will see notes on pads and detuned kicks, some right and some wrong. Raise it to 90 and only the certainties get through. The report always keeps the score, so a blank can be investigated rather than being a dead end.</p>
+</section>
+
+<section id="naming">
+  <h2><span class="num">05</span> Naming</h2>
+  <div class="naming">
+    <div class="pattern"><i class="p1">MACHINE</i><i>_</i><i class="p2">TYPE</i><i>_</i><i class="p3">PITCH</i><i>_</i><i class="p4">NN</i><i>.wav</i></div>
+    <div class="legend">
+      <span><strong style="color:var(--accent)">MACHINE</strong> source box</span>
+      <span><strong style="color:var(--ok)">TYPE</strong> two-letter sound code</span>
+      <span><strong style="color:var(--warn)">PITCH</strong> only when confident</span>
+      <span><strong>NN</strong> counter</span>
+    </div>
+    <div class="egs">
+      <span>RX5_BD_G0_01.wav <em>kick, note found</em></span>
+      <span>SR16_SD_03.wav <em>snare, no note by design</em></span>
+      <span>DMX_TOM_C1_02.wav <em>tom, note found</em></span>
+      <span>LM2_CH_07.wav <em>closed hat, no note</em></span>
+    </div>
+  </div>
+  <p>Type codes: <span class="mono">BD SD RS CP CH OH RD CR CY LT MT HT TM CB CL CG BG SH TB MA PC FX</span>, plus <span class="mono">BS</span> for bass once added. Octave numbers follow Ableton, where C3 is 60, so 50 Hz reads as <code>G0</code> and matches what Live shows you. Tuner convention is available with a flag.</p>
+</section>
+
+<section id="safety">
+  <h2><span class="num">06</span> Why your projects cannot break</h2>
+  <div class="note good">
+    <p class="h">The guarantee</p>
+    <p>The tool copies. It never renames or moves an original. Your projects point at the old files, which stay exactly where they are under their old names, so there is nothing to relink.</p>
+  </div>
+  <ol class="body">
+    <li><strong>Never use <code>--in-place</code>.</strong> It is the only flag that touches originals.</li>
+    <li>Ableton finds missing samples <strong>by filename</strong>. Rename an original and the automatic search fails, leaving you to locate every sample by hand.</li>
+    <li>Before any bulk work, run <strong>File → Collect All and Save</strong> on active projects. That copies samples into each project folder and makes those projects immune to anything done afterwards.</li>
+    <li><code>SAMPLES MAC</code> stays the raw archive. The renamed copies become the working library.</li>
+  </ol>
+</section>
+
+<section id="hardware">
+  <h2><span class="num">07</span> Digitakt and MPC</h2>
+  <div class="scroll"><table>
+    <thead><tr><th></th><th>Digitakt mk1</th><th>MPC Live 2</th></tr></thead>
+    <tbody>
+      <tr><td><strong>Format</strong></td><td>48 kHz, 16-bit, <strong>mono</strong>. Required.</td><td>Whatever you have. Stereo fine, 44.1 or 48 fine, 16 or 24-bit fine.</td></tr>
+      <tr><td><strong>Conversion</strong></td><td>Yes, the tool's <code>--convert</code> already does exactly this</td><td><strong>None needed</strong></td></tr>
+      <tr><td><strong>Storage</strong></td><td>Small. A curated subset, not a dump.</td><td>Internal SSD or SD card, plenty of room</td></tr>
+      <tr><td><strong>Mapped pads</strong></td><td>Loads samples directly</td><td>Needs an <code>.xpm</code> program. <span class="pill hot">Not built yet</span></td></tr>
+      <tr><td><strong>Transfer</strong></td><td>Elektron Transfer over USB</td><td>Copy files to the drive</td></tr>
+    </tbody>
+  </table></div>
+  <p>In short: the MPC gets the full quality renamed copies, and the Digitakt gets a small mono subset of your favourites. The one gap is that the MPC cannot read an <code>.adg</code>, so pre-mapped pads need <code>.xpm</code> programs built the same way the Ableton racks are.</p>
+</section>
+
+<section id="bugs">
+  <h2><span class="num">08</span> Tool bugs to fix first</h2>
+  <p class="sub">Reviewed 2 September against the delivered script. Nothing has been run on the real library yet, so these are traps rather than damage.</p>
+  <div class="scroll"><table>
+    <thead><tr><th>Priority</th><th>Problem</th><th>Effect</th></tr></thead>
+    <tbody>
+      <tr><td><span class="pill hot">Blocking</span></td><td>Picks are merged, never replaced</td><td>Re-audition and keep fewer, and the dropped samples come back</td></tr>
+      <tr><td><span class="pill hot">Blocking</span></td><td>Output folder sits inside the library</td><td>The next scan treats it as a machine and reprocesses its own renamed copies</td></tr>
+      <tr><td><span class="pill warn">Important</span></td><td>No XML escaping on paths</td><td>An <code>&amp;</code> in any folder name produces a rack Live refuses to open</td></tr>
+      <tr><td><span class="pill warn">Important</span></td><td>Pad notes can pass MIDI 127</td><td>More than 92 kept samples in one machine writes invalid notes</td></tr>
+      <tr><td><span class="pill warn">Important</span></td><td><code>--all</code> does not ignore picks</td><td>Contradicts both READMEs</td></tr>
+      <tr><td><span class="pill warn">Important</span></td><td><code>--tune-root</code> is a no-op</td><td>Accepted by the CLI, never used</td></tr>
+      <tr><td><span class="pill warn">Important</span></td><td>No bass type, no confidence score</td><td>Bass never gets analysed; notes are printed without a trust level</td></tr>
+      <tr><td><span class="pill no">Minor</span></td><td>Silent fallbacks and collisions</td><td>Typo'd <code>--map-start</code> falls back quietly; <code>RX-5</code> and <code>RX 5</code> collide; unreadable files vanish uncounted</td></tr>
+    </tbody>
+  </table></div>
+  <div class="note">
+    <p class="h">Correction to an earlier claim</p>
+    <p>The predicted CR-78 misclassification does <strong>not</strong> happen. Your files are named <code>CR78_BD_…</code> with no hyphen, so the machine name reads as one word and the kick rule catches them correctly. That was predicted from the machine list rather than from your actual filenames.</p>
+  </div>
+</section>
+
+<section id="order">
+  <h2><span class="num">09</span> Work order</h2>
+  <p class="sub">Each step is safe on its own, and every step before the last one only ever creates copies.</p>
+  <div class="steps">
+    <div class="step done"><span class="t">Delete 4,158 <code>.asd</code> cache files</span><span class="pill yes">Done 2 Sep</span></div>
+    <div class="step"><span class="t">Fix blocking bugs, add bass type and confidence score</span><span class="pill no">Next</span></div>
+    <div class="step"><span class="t">Open the existing Live Pack, see which machines already have racks</span><span class="pill no"></span></div>
+    <div class="step"><span class="t">Test run on one machine, drag the rack into Live, confirm</span><span class="pill no"></span></div>
+    <div class="step"><span class="t">Run all 49 single-source machines</span><span class="pill no"></span></div>
+    <div class="step"><span class="t">Curate and convert the Digitakt subset</span><span class="pill no"></span></div>
+    <div class="step"><span class="t">Build <code>.xpm</code> export for MPC Live 2</span><span class="pill hot">New feature</span></div>
+    <div class="step"><span class="t">Tackle the multi-source packs, which need a different approach</span><span class="pill no">Later</span></div>
+  </div>
+</section>
+
+<section id="lives">
+  <h2><span class="num">10</span> Where the library lives</h2>
+  <p class="sub">Decided 2 September. Everything stays on the Desktop, nothing moves into the Ableton User Library.</p>
+  <div class="naming">
+    <div class="egs" style="border-top:0;padding-top:0">
+      <span>~/Desktop/SAMPLES MAC/</span>
+      <span>&nbsp;&nbsp;Drum Machine Tune/ <em>clean renamed copies, one folder per machine</em></span>
+      <span>&nbsp;&nbsp;&nbsp;&nbsp;CR-78/ &nbsp;LinnDrum/ &nbsp;RX11/ &nbsp;...</span>
+      <span>&nbsp;&nbsp;&lt;original packs&gt; <em>untouched raw archive</em></span>
+    </div>
+  </div>
+  <div class="note">
+    <p class="h">One thing to watch</p>
+    <p><code>SAMPLES MAC</code> is already in Ableton's Places. Once the renamed copies live inside it, every sample turns up <strong>twice</strong> in browser search, once raw and once renamed. Point Places at <code>SAMPLES MAC/Drum Machine Tune</code> instead of the whole folder, and the browser shows only the clean library while the raw archive stays on disk.</p>
+  </div>
+</section>
+
+<section id="open">
+  <h2><span class="num">11</span> Open decisions</h2>
+  <ul>
+    <li><strong>Which machines matter most?</strong> Forty-nine is a lot. Naming the eight or ten you actually reach for would cut the work sharply.</li>
+    <li><strong>Digitakt:</strong> how many samples per machine, and which machines.</li>
+    <li><strong>The multi-source packs:</strong> key detection, or leave them alone.</li>
+  </ul>
+</section>
+
+<hr class="hr">
+<footer>Inch of Shadow · music-tools · plan updated 2 September 2026</footer>
+</main>
+</div>

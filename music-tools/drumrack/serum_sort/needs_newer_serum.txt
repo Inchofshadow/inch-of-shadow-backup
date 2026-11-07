@@ -1,0 +1,208 @@
+saved-with  file
+2.0.17  Film & TV & Games/Ozaka_Oz_Real_Nightmare.serumpreset
+2.0.18  Angel Core/Angelcore_lead.serumpreset
+2.0.18  Witch House/Keys_Vaporwave_Piano.serumpreset
+2.0.19  Angel Core/Key_Virtual_Heaven.serumpreset
+2.0.19  Track Remakes/LEAD_Lethal_Industry.serumpreset
+2.0.19  Witch House/BS_-_Pastel_Ghost_Bass.SerumPreset
+2.0.19  Witch House/OG_-_Ethereal_Goth.SerumPreset
+2.0.20  Angel Core/Shimmer_Choir_Pad.serumpreset
+2.0.20  Angel Core/Vocal_Morpher_v1.serumpreset
+2.0.20  Chiptune/PR_Kawaii_Chords.serumpreset
+2.0.20  Crystal Castles/Crystal_Castles.serumpreset
+2.0.20  Crystal Castles/pluck_lofi.serumpreset
+2.0.20  EBM & Industrial/BS_Ruthless_SQ_1.serumpreset
+2.0.20  EBM & Industrial/Goblin_Cyborg.serumpreset
+2.0.20  Film & TV & Games/Annihilation_Reese_Synth.serumpreset
+2.0.20  Film & TV & Games/Cinematic_Drums.serumpreset
+2.0.20  Film & TV & Games/Cinematic_Soft_Orchestra.serumpreset
+2.0.20  Film & TV & Games/Cinematic_Soft_Piano.serumpreset
+2.0.20  Film & TV & Games/Falling_Read_Description.serumpreset
+2.0.20  Film & TV & Games/Music_BoxBell.serumpreset
+2.0.20  Film & TV & Games/The_Musical_Pocket_Watch.serumpreset
+2.0.20  Film & TV & Games/The_Pump_Panel_Reconstruction.serumpreset
+2.0.20  Hip-Hop & Trap/808_VAMP.serumpreset
+2.0.20  Hip-Hop & Trap/Evil_Bells.serumpreset
+2.0.20  Hip-Hop & Trap/LEAD_Metro.serumpreset
+2.0.20  Hip-Hop & Trap/MENACE.serumpreset
+2.0.20  Hip-Hop & Trap/Pluggnb_Pan_Flute.serumpreset
+2.0.20  Hip-Hop & Trap/SYNTH_Alucard.serumpreset
+2.0.20  Hip-Hop & Trap/TalkBox.serumpreset
+2.0.20  Hip-Hop & Trap/UTOPIA.serumpreset
+2.0.20  Real Instruments/Church_Organ.serumpreset
+2.0.20  Real Instruments/Ocarina.serumpreset
+2.0.20  Real Instruments/Realistic_Accordion.serumpreset
+2.0.20  Real Instruments/Velocity_Sensitive_Accordion.serumpreset
+2.0.20  Real Instruments/Whistle_Lead.serumpreset
+2.0.20  Rock & Guitar/Electric_Guitar.serumpreset
+2.0.20  Rock & Guitar/KEYS_Not_Dead_Yet_5.serumpreset
+2.0.20  Track Remakes/RM_ChildrenRemix_Kit.serumpreset
+2.0.20  Witch House/Phase_Shifter.serumpreset
+2.0.21  Angel Core/Ambiet_Voice_Pad.serumpreset
+2.0.21  Cyberpunk & Darksynth/Crunch.serumpreset
+2.0.21  NODE Dark Crystal/NODE- Baptism (PAD2).SerumPreset
+2.0.21  NODE Dark Crystal/NODE- Char (Bass).SerumPreset
+2.0.21  NODE Dark Crystal/NODE-Baptism (Bass1).SerumPreset
+2.0.21  Real Instruments/analog_organ_evil_vibes.serumpreset
+2.0.22  Crystal Castles/crystal_castles_pluck.serumpreset
+2.0.22  Hip-Hop & Trap/ESDEEKID_PHANTOM_PAD.serumpreset
+2.0.22  Hip-Hop & Trap/FUNKY_BASS.serumpreset
+2.0.22  Track Remakes/MGMT_KIDS.serumpreset
+2.0.23  Angel Core/Crispy_Angelcore_Bass.serumpreset
+2.0.23  EBM & Industrial/SQ_Synthetic_2.serumpreset
+2.0.23  Hip-Hop & Trap/Static_Pool_Bell.serumpreset
+2.0.23  Track Remakes/Everything_in_its_right_place.serumpreset
+2.0.23  Track Remakes/Ghost_In_Your_Stereo_Bass.serumpreset
+2.0.23  Witch House/Destroy_keys.serumpreset
+2.0.23  Witch House/GOETHE_lead_cinematic_one.serumpreset
+2.0.23  Witch House/Stuck_Lead.serumpreset
+2.0.24  Ambient & Cinematic/KEYS_Promise_1.serumpreset
+2.0.24  Angel Core/Angelcore_lead_burn.serumpreset
+2.0.24  Angel Core/Angelcore_lead_help.serumpreset
+2.0.24  Angel Core/Angelcore_pluck_game.serumpreset
+2.0.24  Angel Core/Angelcore_reese_help_me.serumpreset
+2.0.24  Angel Core/Disturbing_breathe_in_Space.serumpreset
+2.0.24  Angel Core/PAD_Cloud_Choir_4.serumpreset
+2.0.24  EBM & Industrial/Sexy_Bass.serumpreset
+2.0.24  Film & TV & Games/BA_Knight_Rider.serumpreset
+2.0.24  Film & TV & Games/PL_Knight_Rider.serumpreset
+2.0.24  Track Remakes/9AM_ATB.serumpreset
+2.0.24  Track Remakes/KEYS_On_the_Pulse_1.serumpreset
+2.1.1   Film & TV & Games/SY_XFiles_Whistle.serumpreset
+2.1.2   Ambient & Cinematic/KEYS_Noir_2.serumpreset
+2.1.2   Ambient & Cinematic/LD_Darkest_Light_1.serumpreset
+2.1.2   Angel Core/Breakcore_Nitro_Pad.serumpreset
+2.1.2   Cyberpunk & Darksynth/SYN_Beamsplitter_1.serumpreset
+2.1.2   NODE Dark Crystal/NODE- Not In Love synth 1.SerumPreset
+2.1.2   Real Instruments/Hurdy_Gurdy.serumpreset
+2.1.2   Track Remakes/Zombie_Nation_Lead_Accurate.serumpreset
+2.1.4   Ambient & Cinematic/KEYS_DigiKing_1.serumpreset
+2.1.4   Angel Core/Anahera_Choir.serumpreset
+2.1.4   Angel Core/PAD_Rising_Angels.serumpreset
+2.1.4   Film & TV & Games/ARP_Street_Hawk.serumpreset
+2.1.4   Film & TV & Games/BA_Axel_F.serumpreset
+2.1.4   Film & TV & Games/BA_Ming.serumpreset
+2.1.4   Film & TV & Games/BL_Fantasia.serumpreset
+2.1.4   Film & TV & Games/BL_Resident_Evil.serumpreset
+2.1.4   Film & TV & Games/BRASS_Superman.serumpreset
+2.1.4   Film & TV & Games/BR_War_Rocky_IV.serumpreset
+2.1.4   Film & TV & Games/Halloween_Piano.serumpreset
+2.1.4   Film & TV & Games/LD_Axel_F.serumpreset
+2.1.4   Film & TV & Games/LD_Street_Hawk.serumpreset
+2.1.4   Film & TV & Games/Memories_of_Green_Piano.serumpreset
+2.1.4   Film & TV & Games/PL_Robocop.serumpreset
+2.1.4   NODE Dark Crystal/NODE- Baptism (Bass2) octaves.SerumPreset
+2.1.4   NODE Dark Crystal/NODE- Baptism (Bass2).SerumPreset
+2.1.4   NODE Dark Crystal/NODE- Char (Lead).SerumPreset
+2.1.4   NODE Dark Crystal/NODE- Chiptune 1.SerumPreset
+2.1.4   NODE Dark Crystal/NODE- Chiptune 2.SerumPreset
+2.1.4   NODE Dark Crystal/NODE- Chiptune 3 long.SerumPreset
+2.1.4   NODE Dark Crystal/NODE- Crim3 bass LOST.SerumPreset
+2.1.4   NODE Dark Crystal/NODE- Crim3 bass distored.SerumPreset
+2.1.4   NODE Dark Crystal/NODE- Crime3s lead LOST.SerumPreset
+2.1.4   NODE Dark Crystal/NODE- Crimewave Bass.SerumPreset
+2.1.4   NODE Dark Crystal/NODE- Crimewave intro chiptune.SerumPreset
+2.1.4   NODE Dark Crystal/NODE- Crimewave pluck.SerumPreset
+2.1.4   NODE Dark Crystal/NODE- Crystal Organ.SerumPreset
+2.1.4   NODE Dark Crystal/NODE- Distored Rise.SerumPreset
+2.1.4   NODE Dark Crystal/NODE- EMBRA bass by Luca Puebla.SerumPreset
+2.1.4   NODE Dark Crystal/NODE- EMBRA etereal flute.SerumPreset
+2.1.4   NODE Dark Crystal/NODE- EMBRA flute lead.SerumPreset
+2.1.4   NODE Dark Crystal/NODE- FX-8BITSGAME by luca.SerumPreset
+2.1.4   NODE Dark Crystal/NODE- Ghost arp.SerumPreset
+2.1.4   NODE Dark Crystal/NODE- Gran. texture 1.SerumPreset
+2.1.4   NODE Dark Crystal/NODE- Guitar Distorted Pick.SerumPreset
+2.1.4   NODE Dark Crystal/NODE- Not In Love BASS.SerumPreset
+2.1.4   NODE Dark Crystal/NODE- Not In Love Lead.SerumPreset
+2.1.4   NODE Dark Crystal/NODE- Reckless Chiptune.SerumPreset
+2.1.4   NODE Dark Crystal/NODE- Reckless LEAD low.SerumPreset
+2.1.4   NODE Dark Crystal/NODE- Reckless LEAD reverb.SerumPreset
+2.1.4   NODE Dark Crystal/NODE- Reckless LEAD.SerumPreset
+2.1.4   NODE Dark Crystal/NODE- Reese Bass 1.SerumPreset
+2.1.4   NODE Dark Crystal/NODE- STAY UGLY Bass.SerumPreset
+2.1.4   NODE Dark Crystal/NODE- STAY UGLY Lead 1.SerumPreset
+2.1.4   NODE Dark Crystal/NODE- STAY UGLY Lead 2.SerumPreset
+2.1.4   NODE Dark Crystal/NODE- STAY UGLY pluck.SerumPreset
+2.1.4   NODE Dark Crystal/NODE- Suffo pad inspired.SerumPreset
+2.1.4   NODE Dark Crystal/NODE- Suffocation BASS.SerumPreset
+2.1.4   NODE Dark Crystal/NODE- Suffocation Lead.SerumPreset
+2.1.4   NODE Dark Crystal/NODE- Suffocation synth bell.SerumPreset
+2.1.4   NODE Dark Crystal/NODE- Vanished Lead 2.SerumPreset
+2.1.4   NODE Dark Crystal/NODE- Vanished Lead.SerumPreset
+2.1.4   NODE Dark Crystal/NODE- Wierd alien pluck.SerumPreset
+2.1.4   NODE Dark Crystal/NODE- Wierd alien pluck2.SerumPreset
+2.1.4   NODE Dark Crystal/NODE- You May Not Rest BASS.SerumPreset
+2.1.4   NODE Dark Crystal/NODE- You May Not Rest.SerumPreset
+2.1.4   NODE Dark Crystal/NODE- bell by luca (NODEoriginal).SerumPreset
+2.1.4   NODE Dark Crystal/NODE- deep bass pluck.SerumPreset
+2.1.4   NODE Dark Crystal/NODE- deepcrime BASS.SerumPreset
+2.1.4   NODE Dark Crystal/NODE- flute detune.SerumPreset
+2.1.4   NODE Dark Crystal/NODE- wierd alien 2.SerumPreset
+2.1.4   NODE Dark Crystal/NODE- wierd alien 3.SerumPreset
+2.1.4   NODE Dark Crystal/NODE- wierd alien.SerumPreset
+2.1.4   NODE Dark Crystal/NODE-808 Witch 1.SerumPreset
+2.1.4   NODE Dark Crystal/NODE-Baptism (PAD1).SerumPreset
+2.1.4   NODE Dark Crystal/NODE-Baptism (Pluck).SerumPreset
+2.1.4   NODE Dark Crystal/NODE-Guitar distored.SerumPreset
+2.1.4   NODE Dark Crystal/NODE_BASS - Basic sine.SerumPreset
+2.1.4   NODE Dark Crystal/NODE_BASS - Basic square 2.SerumPreset
+2.1.4   NODE Dark Crystal/NODE_BASS - Basic square.SerumPreset
+2.1.4   NODE Dark Crystal/NODE_BASS - distored 2.SerumPreset
+2.1.4   NODE Dark Crystal/NODE_BASS - distored 3.SerumPreset
+2.1.4   NODE Dark Crystal/NODE_BASS - distored 4.SerumPreset
+2.1.4   NODE Dark Crystal/NODE_BASS -BASS Pulse Distorted.SerumPreset
+2.1.4   NODE Dark Crystal/NODE_BASS -BASS pluck.SerumPreset
+2.1.4   NODE Dark Crystal/NODE_BASS -distored 1.SerumPreset
+2.1.4   NODE Dark Crystal/NODE_BASS -plcuk deep.SerumPreset
+2.1.4   NODE Dark Crystal/NODE_Lead - Big Simple.SerumPreset
+2.1.4   NODE Dark Crystal/NODE_Lead - Crushed.SerumPreset
+2.1.4   NODE Dark Crystal/NODE_Lead - Crying Ghost.SerumPreset
+2.1.4   NODE Dark Crystal/NODE_Lead - Lead Distored (Doe Deer).SerumPreset
+2.1.4   NODE Dark Crystal/NODE_Lead - disstored.SerumPreset
+2.1.4   NODE Dark Crystal/NODE_PAD - Vibrato.SerumPreset
+2.1.4   NODE Dark Crystal/NODE_PAD - analog.SerumPreset
+2.1.4   NODE Dark Crystal/NODE_PAD - distored.SerumPreset
+2.1.4   NODE Dark Crystal/NODE_PAD - oldradio.SerumPreset
+2.1.4   NODE Dark Crystal/NODE_Pluck - Selfcontrol.SerumPreset
+2.1.4   NODE Dark Crystal/NODE_Pluck - Watersoft.SerumPreset
+2.1.4   NODE Dark Crystal/NODE_Pluck - distored.SerumPreset
+2.1.4   NODE Dark Crystal/NODE_Pluck - ghost.SerumPreset
+2.1.4   NODE Dark Crystal/NODE_Pluck - ghost2.SerumPreset
+2.1.4   NODE Dark Crystal/NODE_Pluck 0203.SerumPreset
+2.1.4   Real Instruments/Carneval_de_Paris_Accordion.serumpreset
+2.1.4   Real Instruments/Full_Contact_Koto.serumpreset
+2.1.4   Track Remakes/ANDKorgM1Strings01_SERUM2.serumpreset
+2.1.4   Track Remakes/BA_Into_The_Groove.serumpreset
+2.1.4   Track Remakes/BRASS_Into_The_Groove.serumpreset
+2.1.4   Track Remakes/FX_City_Siren.serumpreset
+2.1.4   Track Remakes/PL_A_Little_Respect.serumpreset
+2.1.4   Track Remakes/PL_Mysterious_Times.serumpreset
+2.1.4   Track Remakes/SY_Catch_22.serumpreset
+2.1.4   Track Remakes/SY_You_Spin_Me.serumpreset
+2.1.4   Track Remakes/The_Show.serumpreset
+2.1.5   Cyberpunk & Darksynth/PL_Neon_Stalker.serumpreset
+2.1.5   Film & TV & Games/Arboria_Flute.serumpreset
+2.1.5   Film & TV & Games/BA_Football_Fight.serumpreset
+2.1.5   Film & TV & Games/Indiana_Jones_Tuba.serumpreset
+2.1.5   Film & TV & Games/LD_Football_Fight.serumpreset
+2.1.5   Film & TV & Games/Remains.serumpreset
+2.1.5   Film & TV & Games/ST_Fallen.serumpreset
+2.1.5   Film & TV & Games/ST_Sorrow_Strings.serumpreset
+2.1.5   Film & TV & Games/SY_Eli.serumpreset
+2.1.5   Film & TV & Games/Star_Wars_Cantina.serumpreset
+2.1.5   Film & TV & Games/Star_Wars_Throne_Room.serumpreset
+2.1.5   Hip-Hop & Trap/IM_Travis_Scott_Rhyno_Bs.serumpreset
+2.1.5   Presetshare/KEYS_Endless_Sine.serumpreset
+2.1.5   Real Instruments/Colonel_Bogey_Whistle.serumpreset
+2.1.5   Real Instruments/Weird_Jaw_Harp_turned_Pluck.serumpreset
+2.1.5   Track Remakes/BA_Everything_Counts.serumpreset
+2.1.5   Track Remakes/Everything_Counts.serumpreset
+2.1.5   Track Remakes/Everything_Counts_Xylophone.serumpreset
+2.1.5   Track Remakes/GTR_Intro.serumpreset
+2.1.5   Track Remakes/Garden_Party_Bass.serumpreset
+2.1.5   Track Remakes/Garden_Party_Trumpet.serumpreset
+2.1.5   Track Remakes/ST_Radio_Strings.serumpreset
+2.1.5   Track Remakes/SY_Man_In_The_Moon.serumpreset
+2.1.5   Track Remakes/SY_Turbo_De_France.serumpreset
+2.1.5   Track Remakes/Vengaboys_Lead_Serum_2_ver.serumpreset
+2.1.5   Track Remakes/Vienna_Piano.serumpreset

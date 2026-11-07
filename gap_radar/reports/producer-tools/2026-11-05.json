@@ -1,0 +1,1110 @@
+[
+ {
+  "name": "Sample library finder: similar-sound search, dedupe, auto-chop and random browse",
+  "pain": "Producers lose time clicking through folders for a kick or snare that is 'almost right'. Sononym does similarity search but sits outside Ableton (24). Others want to remove duplicate samples (34), randomise browser results to escape alphabetical bias (32), and auto-split purchased sample-CD files into 1,500 single loops (26). Related asks: find which sets use a sample (28), see presets per plugin in Live 12 (1), hide junk factory presets (38), and keep a computer folder synced to Digitakt (78).",
+  "who_pays": "Ableton and hardware producers with large purchased sample libraries",
+  "evidence_ids": [
+   24,
+   26,
+   32,
+   34,
+   28,
+   1,
+   38,
+   78
+  ],
+  "pay_signal": "Some already pay for Sononym and still complain it is a separate app (24). Others bought sample CDs and accept an external tool to split them (26). Digitakt 2 owners complain about sample management on paid hardware (78).",
+  "product_idea": "Both. Use it: Sononym or XO for similarity search today. Build it: a small desktop or web app. It would scan a sample folder, fingerprint audio (MFCC plus spectral features), find near-duplicates, split long files on silence into named loops, and offer 'more like this' and 'random 20' views. It would also export a curated folder or Ableton Collection, with a one-way Digitakt sync folder as an add-on.",
+  "build_weeks": 5,
+  "fit_for_us": 5,
+  "known_competitors": "Sononym, XLN XO (drums only), ADSR Sample Manager, Atlas 2, Loopcloud, Ableton Collections; dedupe via generic duplicate finders",
+  "check_next": "Run a dedupe and similarity prototype on Amir's own kick and snare folders. Then check whether Ableton's browser can load a generated Collection or tag file so results appear inside Live.",
+  "crowding": {
+   "verdict": "crowded",
+   "reason": "Similarity search and dedupe of your own library are already sold by Sononym, XO, Atlas 2 and Cosmos (several work as in-DAW plugins), ADSR is free with dedupe, and Splice now does search-by-sound inside Ableton 12.3.",
+   "competitors": [
+    {
+     "name": "Sononym",
+     "price": "89 EUR / 99 USD one-time",
+     "url": "https://www.kvraudio.com/product/sononym-by-sononym",
+     "verified": true
+    },
+    {
+     "name": "XLN Audio XO",
+     "price": "$149.00",
+     "url": "https://www.pluginboutique.com/product/1-Instruments/64-Virtual-Instruments/5250-XO",
+     "verified": true
+    },
+    {
+     "name": "Algonaut Atlas 2",
+     "price": "$99 USD",
+     "url": "https://algonaut.audio/atlas-purchase/",
+     "verified": true
+    },
+    {
+     "name": "Waves Cosmos Sample Finder",
+     "price": "$29.99",
+     "url": "https://www.guideflow.com/blog/sample-library-software",
+     "verified": true
+    },
+    {
+     "name": "ADSR Sample Manager",
+     "price": "Free",
+     "url": "https://rekkerd.org/adsrs-free-sample-manager-offers-sample-manipulation-controls-ableton-link-aax-more-in-v1-5-update/",
+     "verified": true
+    },
+    {
+     "name": "Splice (Ableton Live 12.3 integration, Search with Sound)",
+     "price": "unknown",
+     "url": "https://splice.com/blog/splice-integration-ableton-live/",
+     "verified": true
+    },
+    {
+     "name": "Loopcloud 12-Month Studio Plan",
+     "price": "$169.95/year",
+     "url": "https://www.pluginboutique.com/products/10787-Loopcloud-12-Month-Studio-Plan",
+     "verified": true
+    }
+   ],
+   "pay_proof": [
+    {
+     "claim": "Sononym sells for 89 EUR incl. VAT or 99 USD in the US",
+     "url": "https://www.kvraudio.com/product/sononym-by-sononym",
+     "verified": true
+    },
+    {
+     "claim": "XO sells for $149 and is rated 4.8/5 from 31 customer ratings at Thomann",
+     "url": "https://www.thomannmusic.com/xln_audio_xo.htm",
+     "verified": true
+    },
+    {
+     "claim": "Atlas 2 full version sells for $99",
+     "url": "https://algonaut.audio/atlas-purchase/",
+     "verified": true
+    },
+    {
+     "claim": "Forum user flags Atlas 2 on sale for US $49 as a great price",
+     "url": "https://www.kvraudio.com/forum/viewtopic.php?p=9153768",
+     "verified": true
+    },
+    {
+     "claim": "Loopcloud 12-Month Studio Plan sells for $169.95",
+     "url": "https://www.pluginboutique.com/products/10787-Loopcloud-12-Month-Studio-Plan",
+     "verified": true
+    }
+   ],
+   "cost_usd": 0.8041,
+   "web_searches": 8
+  }
+ },
+ {
+  "name": "Stem and export helper: group FX baked in, take lanes, stem QC",
+  "pain": "Ableton cannot export single tracks with group FX but without the group, plus sends (27). Exporting all take lanes for a client means manual copying (17), and singers want take lanes split into tracks like Logic (41). Overbridge and Koala exports split or lose FX (98, 208). Engineers waste time checking stems for sync, length, stereo and naming errors (181) and batch-converting stereo to mono (177). Others want background rendering while they keep working (16).",
+  "who_pays": "Self-mixing producers, mix and mastering engineers, assistant engineers delivering stems",
+  "evidence_ids": [
+   27,
+   17,
+   41,
+   98,
+   208,
+   181,
+   177,
+   16
+  ],
+  "pay_signal": "Koala users complain inside a paid app (208). Client delivery requirements create time pressure (17, 181). There is an 11-year Live user plea (27).",
+  "product_idea": "Build it: 'StemCheck', a drag-and-drop web or desktop QC tool. It flags length mismatch, silent files, fake stereo, clipping, sample-rate or bit-depth mismatch and bad names. It batch-fixes mono, renaming and loudness, and outputs a delivery report PDF. A later M4L or Python helper could prepare an export-ready duplicate set (groups flattened, FX copied per track). Amir needs this himself as a self-mastering artist.",
+  "build_weeks": 4,
+  "fit_for_us": 4,
+  "known_competitors": "iZotope RX batch, SoundFlow scripts (Pro Tools focus), Sound Grinder, Audiofile Engineering tools, DAW-native stem export",
+  "check_next": "List the exact checks Amir does before sending stems or masters. Ask on r/audioengineering whether a free web QC tool with a paid batch tier would be used.",
+  "crowding": {
+   "verdict": "unclear",
+   "reason": "The StemCheck QC idea already exists as Stem Checker ($29.99 lifetime/$3.99 mo, plus a free web version) and AudioQC (€39, free browser tools), but both are young with no visible ratings or sales; the Ableton group-FX/take-lane export helper is unsolved natively but competitors there were not checked.",
+   "competitors": [
+    {
+     "name": "Stem Checker (Mac app)",
+     "price": "Free download with 2 sessions, then $3.99/month or $29.99 lifetime (rising to $39)",
+     "url": "https://stemchecker.io/",
+     "verified": true
+    },
+    {
+     "name": "Stem Checker (Mac App Store listing)",
+     "price": "Free with in-app purchases: Lifetime $29.99, Pro Monthly $3.99",
+     "url": "https://apps.apple.com/us/app/stem-checker/id6754171408?mt=12",
+     "verified": true
+    },
+    {
+     "name": "Free Online Stem Delivery Checker (by Stem Checker)",
+     "price": "free",
+     "url": "https://www.kvraudio.com/product/free-online-stem-delivery-checker-by-stem-checker",
+     "verified": true
+    },
+    {
+     "name": "AudioQC (Mac app + browser tools)",
+     "price": "€39 one-time; browser tools free",
+     "url": "https://audioqc.app/",
+     "verified": true
+    },
+    {
+     "name": "Ableton Live native export (group FX need manual solo-and-render workaround)",
+     "price": "unknown",
+     "url": "https://help.ableton.com/hc/en-us/articles/360000843404-Importing-and-exporting-stems",
+     "verified": false
+    },
+    {
+     "name": "iZotope RX batch processing",
+     "price": "unknown",
+     "url": "",
+     "verified": false
+    },
+    {
+     "name": "SoundFlow",
+     "price": "unknown",
+     "url": "",
+     "verified": false
+    },
+    {
+     "name": "Sound Grinder",
+     "price": "unknown",
+     "url": "",
+     "verified": false
+    }
+   ],
+   "pay_proof": [
+    {
+     "claim": "Stem Checker sells a $29.99 lifetime license and a $3.99/month subscription",
+     "url": "https://stemchecker.io/",
+     "verified": true
+    },
+    {
+     "claim": "Mac App Store lists Stem Checker in-app purchases: Lifetime $29.99, Pro Monthly $3.99",
+     "url": "https://apps.apple.com/us/app/stem-checker/id6754171408?mt=12",
+     "verified": true
+    },
+    {
+     "claim": "AudioQC sells its Mac QC app (including a stem checker) for €39 one-time",
+     "url": "https://audioqc.app/",
+     "verified": true
+    },
+    {
+     "claim": "Sound On Sound reviewed Stem Checker as a pre-session stem QC utility (press attention, not sales proof)",
+     "url": "https://www.soundonsound.com/reviews/stem-checker",
+     "verified": true
+    },
+    {
+     "claim": "Counter-signal: the Stem Checker App Store page shows too few ratings to display an overview, so sales volume is unproven",
+     "url": "https://apps.apple.com/us/app/stem-checker/id6754171408",
+     "verified": true
+    }
+   ],
+   "cost_usd": 1.1594,
+   "web_searches": 8
+  }
+ },
+ {
+  "name": "Ableton .als project forensics, index and session time tracker",
+  "pain": "Producers cannot find which Live sets use a given sample (28). They cannot recover which effects were on a frozen or flattened track (45). The global key is not saved with the project (25), and sending a project with all sounds included is confusing (47). Users also want accurate time tracking per session, but existing M4L trackers are unmaintained or buggy (9). Updating many M4L devices is a manual chore (6).",
+  "who_pays": "Ableton producers with years of archived projects",
+  "evidence_ids": [
+   28,
+   45,
+   25,
+   47,
+   9,
+   6
+  ],
+  "pay_signal": "People say existing M4L time trackers are outdated or inaccurate and that tracking 'would help me immensely' (9). This points to a demand for a maintained paid alternative.",
+  "product_idea": "Build it: a local app that parses gzipped .als XML across a whole drive. It would support: search by sample, plugin, device or preset; show the device chain and settings on each track, including frozen ones; report key, tempo and last-modified date; and list missing files. A companion M4L device would log active session time per project. It could sell cheaply on Gumroad or maxforlive.com, and is ideal for a Claude Code build.",
+  "build_weeks": 3,
+  "fit_for_us": 5,
+  "known_competitors": "Ableton 'Collect All and Save' (manual, per project), a few free .als parsers on GitHub, old M4L time trackers",
+  "check_next": "Parse 20 of Amir's own .als files to confirm sample paths and frozen-track device chains are readable. Then check maxforlive.com for current time-tracker devices and how recently they were updated.",
+  "crowding": {
+   "verdict": "crowded",
+   "reason": "At least 8 apps (SetCrate, Als Preview, Audyn, Crate, MAKID, Deckable, SetHours, Aevum) plus free GitHub tools already index .als files by sample, plugin, key and BPM, flag missing files and track session time; frozen-chain recovery is the only gap I found, too small for a product.",
+   "competitors": [
+    {
+     "name": "SetCrate",
+     "price": "unknown",
+     "url": "https://www.setcrate.app/",
+     "verified": false
+    },
+    {
+     "name": "Als Preview",
+     "price": "unknown",
+     "url": "https://als-preview.de/",
+     "verified": false
+    },
+    {
+     "name": "Audyn",
+     "price": "unknown",
+     "url": "https://audyn.app/",
+     "verified": false
+    },
+    {
+     "name": "Crate",
+     "price": "$5/month or $49/year",
+     "url": "https://getcrate.live/",
+     "verified": true
+    },
+    {
+     "name": "MAKID",
+     "price": "free plan + MAKID Pro (Pro price unknown)",
+     "url": "https://www.makidapp.com/",
+     "verified": false
+    },
+    {
+     "name": "Deckable",
+     "price": "unknown",
+     "url": "https://deckable.io/blog/ableton-live-project-organization",
+     "verified": false
+    },
+    {
+     "name": "SetHours",
+     "price": "unknown",
+     "url": "https://sethours.com/",
+     "verified": false
+    },
+    {
+     "name": "Aevum",
+     "price": "free tier + Pro (Pro price unknown)",
+     "url": "https://aevum-time-tracker.netlify.app/",
+     "verified": false
+    },
+    {
+     "name": "Time Tracker (M4L, abletonkurse)",
+     "price": "$12+",
+     "url": "https://abletonkurse.gumroad.com/l/time-tracker-Ableton",
+     "verified": true
+    },
+    {
+     "name": "Seula (open source)",
+     "price": "free",
+     "url": "https://github.com/UR91K/seula",
+     "verified": true
+    },
+    {
+     "name": "als-tools (open source)",
+     "price": "free",
+     "url": "https://github.com/luizen/als-tools",
+     "verified": true
+    },
+    {
+     "name": "ableton-project-processor (batch Collect All and Save)",
+     "price": "free",
+     "url": "https://github.com/hodel33/ableton-project-processor",
+     "verified": true
+    },
+    {
+     "name": "Plugin Hell",
+     "price": "free",
+     "url": "https://www.able-anal.com/",
+     "verified": true
+    }
+   ],
+   "pay_proof": [
+    {
+     "claim": "Crate charges $5/month or $49/year for an Ableton .als project manager",
+     "url": "https://getcrate.live/",
+     "verified": true
+    },
+    {
+     "claim": "M4L Time Tracker sold on Gumroad at $12+ with 2 ratings (currently under revision)",
+     "url": "https://abletonkurse.gumroad.com/l/time-tracker-Ableton",
+     "verified": true
+    },
+    {
+     "claim": "MAKID sells a paid Pro tier above its free plan",
+     "url": "https://www.makidapp.com/",
+     "verified": true
+    },
+    {
+     "claim": "Aevum producer time tracker has a Pro tier above Free Forever",
+     "url": "https://aevum-time-tracker.netlify.app/",
+     "verified": true
+    }
+   ],
+   "cost_usd": 0.6318,
+   "web_searches": 8
+  }
+ },
+ {
+  "name": "Elektron sample prep: tempo-exact loops, slice-to-kit and sample chains",
+  "pain": "Digitakt II users cannot cleanly extract an exact 16- or 32-bar loop from a long recording that captures FX tails (65). They cannot turn slices into kits (70), mute parts of a sliced sample (68), or get past the 64-slice limit against 128 steps (108). Kits and beats are tedious to set up from scratch (75, 89), and syncing sample folders is painful (78). There is clear appetite for offline processors such as 128s (74).",
+  "who_pays": "Digitakt, Digitakt II, Octatrack, Tonverk and Model:Samples owners",
+  "evidence_ids": [
+   65,
+   70,
+   68,
+   108,
+   74,
+   75,
+   78,
+   89
+  ],
+  "pay_signal": "128s Multisample Maker exists as a paid product because making multisamples is 'a real chore' (74). Users spend $1,000+ on hardware and still complain about workflow (78, 77).",
+  "product_idea": "Build it: a browser tool. Drop in a long recording, enter the BPM and get a bar-exact loop with the tail wrapped back to the start. It would also build evenly spaced sample chains for slice mode, split chains into per-pad kit files, and export one folder per kit. It could be sold with dark-disco and EBM kit packs made on it, so it doubles as a pack funnel.",
+  "build_weeks": 3,
+  "fit_for_us": 4,
+  "known_competitors": "ill.Gates 128s Multisample Maker, OctaChainer, Digichain, Elektron Transfer (basic), SP-404 workflows",
+  "check_next": "Try Digichain and OctaChainer to see what is missing for Digitakt II slice mode. Then post the tail-wrapped loop concept on Elektronauts for demand.",
+  "crowding": {
+   "verdict": "crowded",
+   "reason": "DigiChain is a dominant free browser tool for Digitakt chains, padded slices, slice-splitting and kits, alongside free OctaChainer and Elektron Transfer; only adjacent paid products found and no paid chain/loop tool.",
+   "competitors": [
+    {
+     "name": "DigiChain",
+     "price": "free (open-source web app; no price stated on pages seen)",
+     "url": "https://digichain.brianbar.net/",
+     "verified": false
+    },
+    {
+     "name": "OctaChainer 2",
+     "price": "free",
+     "url": "https://www.elektronauts.com/t/octachainer-2/253997",
+     "verified": true
+    },
+    {
+     "name": "Digitakt Sample Chain (Renoise tool)",
+     "price": "unknown",
+     "url": "https://forum.renoise.com/t/new-tool-3-4-digitakt-sample-chain/76404",
+     "verified": false
+    },
+    {
+     "name": "Elektron Transfer",
+     "price": "free",
+     "url": "https://www.elektron.se/support-downloads/transfer",
+     "verified": true
+    },
+    {
+     "name": "128s Multisample Maker (ill.Gates)",
+     "price": "$49 one-time",
+     "url": "https://producerdojo.com/128s-multimaker",
+     "verified": true
+    }
+   ],
+   "pay_proof": [
+    {
+     "claim": "128s Multisample Maker sells as a one-time $49 license with a 30-day trial (multisample tool, adjacent need)",
+     "url": "https://www.producerdojo.com/128s-sample-processor-license#!next-step",
+     "verified": true
+    },
+    {
+     "claim": "Elektron sells Digitakt II sound packs at $12",
+     "url": "https://www.elektron.se/shop/soundpacks",
+     "verified": true
+    },
+    {
+     "claim": "Isotonik Mega Pack for Digitakt priced at £29.00",
+     "url": "https://isotonikstudios.com/product/mega-pack/",
+     "verified": true
+    },
+    {
+     "claim": "Electronisounds Digitakt 2 7-pack bundle at $50 sale (original $140)",
+     "url": "https://www.electronisounds.com/digitakt-2/digitakt-2-discount-bundle-1",
+     "verified": true
+    },
+    {
+     "claim": "DigiSphere Digitakt sound pack sold on Gumroad from $16.71",
+     "url": "https://substan.gumroad.com/l/digisphere",
+     "verified": true
+    }
+   ],
+   "cost_usd": 0.8811,
+   "web_searches": 8
+  }
+ },
+ {
+  "name": "Genre preset and kick packs for dark disco, EBM and schranz",
+  "pain": "Producers are tired of dialing in FM plucks and screeches in Operator (423). Expensive kick plugins draw complaints (384), yet a kick-building plugin got instant buys (424, 425, 426, 430, 432). Users also want Ableton stock synths to sound more analog (315).",
+  "who_pays": "Techno, hard techno, EBM and dark disco producers using Ableton stock devices and Serum",
+  "evidence_ids": [
+   421,
+   423,
+   424,
+   425,
+   426,
+   430,
+   432,
+   384,
+   315
+  ],
+  "pay_signal": "Many 'bought immediately' comments on a kick plugin (424, 425, 432). One user explicitly asks the developer to release a screech and pluck product (423). Users are price-sensitive about premium kick plugins (384).",
+  "product_idea": "Build it: 'Inch of Shadow' Operator, Wavetable and Drift preset racks plus rumble-kick and EBM bass Drum Racks with macros. These would be stock-Ableton only, so there are no plugin dependencies. Sell on Gumroad or Bandcamp for €15–25, made from Amir's own studio sounds. Very realistic for one person, and it builds his artist brand.",
+  "build_weeks": 3,
+  "fit_for_us": 5,
+  "known_competitors": "Splice and ADSR packs, Sonic Academy KICK 3, Soma kick plugin, Loopmasters EBM/darkwave packs, hard-techno kick tools",
+  "check_next": "Audit Ableton-native dark disco and EBM preset packs on Gumroad and ADSR for gaps. Package 10 of Amir's best existing racks as a free sampler to test demand.",
+  "crowding": {
+   "verdict": "crowded",
+   "reason": "Studio Brootle already sells stock-Ableton industrial/EBM racks and rumble-kick racks for $5-35 and gives free rumble racks away; Loopmasters, Mind Flux and several schranz-specific sellers add more cheap Ableton packs.",
+   "competitors": [
+    {
+     "name": "Studio Brootle - 60 Industrial Techno Racks (stock Ableton only)",
+     "price": "unknown",
+     "url": "https://studiobrootle.myshopify.com/products/sb05-studio-brootle-60-industrial-techno-racks",
+     "verified": false
+    },
+    {
+     "name": "Studio Brootle - 50 Techno Stabs Ableton Preset Pack (incl. EBM stabs)",
+     "price": "$35.00 USD",
+     "url": "https://studiobrootle.myshopify.com/products/studio-brootle-50-techno-stabs-ableton-preset-pack",
+     "verified": true
+    },
+    {
+     "name": "Studio Brootle - Techno Rumble Rack for Live 12 Suite",
+     "price": "$5.00 USD",
+     "url": "https://studiobrootle.myshopify.com/products/techno-rumble-rack-for-12-suite",
+     "verified": true
+    },
+    {
+     "name": "Studio Brootle - free rumble kick racks",
+     "price": "free",
+     "url": "https://www.studiobrootle.com/909-rumble-rack-for-ableton/",
+     "verified": true
+    },
+    {
+     "name": "Julien Earle - Ultimate Techno Rumble Kick Rack For Ableton",
+     "price": "unknown",
+     "url": "https://julienearle.bandcamp.com/album/ultimate-techno-rumble-kick-rack-for-ableton-9-10",
+     "verified": false
+    },
+    {
+     "name": "Loopmasters - Ableton Operator Techno Presets",
+     "price": "unknown",
+     "url": "https://www.loopmasters.com/genres/40-Techno/products/10070-Ableton-Operator-Techno-Presets",
+     "verified": false
+    },
+    {
+     "name": "Loopmasters / Industrial Strength - Dark EBM",
+     "price": "unknown",
+     "url": "https://www.loopmasters.com/genres/176-Industrial-Techno/products/9000-Dark-EBM",
+     "verified": false
+    },
+    {
+     "name": "Mind Flux - Ableton Techno Presets Bundle 2",
+     "price": "£10.00",
+     "url": "https://www.mind-flux.com/sample-presets/ableton-operator-techno-presets",
+     "verified": true
+    },
+    {
+     "name": "Teknovault - Schranz Techno Production Suite (Ableton racks, kick builders)",
+     "price": "unknown",
+     "url": "https://teknovault.com/products/schranz-techo-production-suite",
+     "verified": false
+    },
+    {
+     "name": "Sample Agency - Schranz Core (Serum 2 presets)",
+     "price": "unknown",
+     "url": "https://sample.agency/products/schranz-core",
+     "verified": false
+    },
+    {
+     "name": "Sonic Academy KICK 3",
+     "price": "unknown",
+     "url": "https://www.kvraudio.com/product/kick-3-by-sonic-academy",
+     "verified": false
+    }
+   ],
+   "pay_proof": [
+    {
+     "claim": "Stock-Ableton techno preset pack sold at $35 (50 Techno Stabs, incl. EBM stabs)",
+     "url": "https://studiobrootle.myshopify.com/products/studio-brootle-50-techno-stabs-ableton-preset-pack",
+     "verified": true
+    },
+    {
+     "claim": "Paid rumble-kick rack for Ableton sold at $5",
+     "url": "https://studiobrootle.myshopify.com/products/techno-rumble-rack-for-12-suite",
+     "verified": true
+    },
+    {
+     "claim": "Studio Brootle lists 60 Industrial Techno Racks in its Best Sellers collection",
+     "url": "https://studiobrootle.myshopify.com/collections/best-sellers",
+     "verified": true
+    },
+    {
+     "claim": "Bandcamp rumble kick rack shows 4 fans who own it",
+     "url": "https://julienearle.bandcamp.com/album/ultimate-techno-rumble-kick-rack-for-ableton-9-10",
+     "verified": true
+    },
+    {
+     "claim": "Ableton Operator techno preset bundle sold at £10",
+     "url": "https://www.mind-flux.com/sample-presets/ableton-operator-techno-presets",
+     "verified": true
+    },
+    {
+     "claim": "Gearspace user says they purchased the KICK 3 upgrade",
+     "url": "https://gearspace.com/threads/sonic-academy-kick-3.1437142/",
+     "verified": true
+    }
+   ],
+   "cost_usd": 0.6011,
+   "web_searches": 8
+  }
+ },
+ {
+  "name": "Per-note expression and modulation M4L devices",
+  "pain": "Users want keytracking to pan each note of a polyphonic chord separately (4), and velocity or attack shaped over time on single notes (10). They want parameters modulated by note length (36), amplitude mapped to pitch (142), and macros constrained to a scale (48). Others want LFOs on p-locks and automatic ramps between steps (103, 64), and LFO-style modulation on any plugin without automation clips (170).",
+  "who_pays": "Ableton producers doing acid, EBM sequences and expressive synth lines; FL users wanting plugin-agnostic modulation",
+  "evidence_ids": [
+   4,
+   10,
+   36,
+   142,
+   48,
+   103,
+   64,
+   170
+  ],
+  "pay_signal": "Users point to paid Unfiltered Audio and ShaperBox modulation as the model they want for every plugin (170, 56). Several users are 'scratching heads' over hacky M4L workarounds (36).",
+  "product_idea": "Both. Use it: Ableton's built-in Modulators, the MIDI Expression Control device, and ShaperBox. Build it: a pack of focused M4L devices: note-length to parameter, per-voice keytrack to pan or filter by splitting MPE voices, pitch-to-gain tilt, a scale-quantized macro, and a step-ramp generator. Sell as a €15–20 pack on maxforlive.com or Gumroad.",
+  "build_weeks": 4,
+  "fit_for_us": 4,
+  "known_competitors": "Ableton stock Modulators and Expression Control, Max for Cats, Isotonik devices, ShaperBox 3, Bitwig (native modulators)",
+  "check_next": "Prototype the note-length modulator first, since it is the easiest M4L build. Check maxforlive.com for existing equivalents of each device.",
+  "crowding": {
+   "verdict": "crowded",
+   "reason": "Free tools already cover most of the pack (Ableton's built-in modulators, Note Triggered Modulator, MPE-distributor), paid modulation packs exist (K-Devices, Isotonik, Stepic), and the FL buyers can't use Max for Live at all; only pitch-to-gain tilt, scale macro and step ramps went unchecked.",
+   "competitors": [
+    {
+     "name": "Ableton Expression Control (built-in Max for Live modulator)",
+     "price": "included with Live",
+     "url": "https://www.ableton.com/en/live-manual/12/max-for-live-devices/",
+     "verified": false
+    },
+    {
+     "name": "Note Triggered Modulator (Dennis DeSantis)",
+     "price": "free",
+     "url": "https://dennisdesantis.com/max-for-live-devices/note-triggered-modulator",
+     "verified": true
+    },
+    {
+     "name": "MPE-distributor 1.0 (Sanders)",
+     "price": "unknown",
+     "url": "https://www.maxforlive.com/library/device/6984/mpe-distributor",
+     "verified": false
+    },
+    {
+     "name": "MPE Envelope",
+     "price": "unknown",
+     "url": "https://www.windmakeswaves.com/mpe-envelope",
+     "verified": false
+    },
+    {
+     "name": "Expressive Note Length 1.0",
+     "price": "unknown",
+     "url": "https://lame.buanzo.org/max4live_blog/exploring-expressive-note-length-in-ableton-live.html",
+     "verified": false
+    },
+    {
+     "name": "K-Devices Modulators 21",
+     "price": "unknown",
+     "url": "https://k-devices.com/products/modulators21/",
+     "verified": false
+    },
+    {
+     "name": "Isotonik Steps (Babumas Devices)",
+     "price": "unknown",
+     "url": "https://rekkerd.org/steps-max-for-live-step-sequencer-modulator-device/",
+     "verified": false
+    },
+    {
+     "name": "Isotonik Modulation Pack (Noiss COKO)",
+     "price": "unknown",
+     "url": "https://rekkerd.org/isotonik-studios-releases-modulation-pack-free-sempler-for-max-for-live/",
+     "verified": false
+    },
+    {
+     "name": "Stepic for Live (Devicemeister)",
+     "price": "unknown",
+     "url": "https://devicemeister.com/stepic-for-live/",
+     "verified": false
+    },
+    {
+     "name": "Cableguys ShaperBox 3",
+     "price": "$99 regular, $89 on sale (89 EUR at Cableguys)",
+     "url": "https://www.cableguys.com/shaperbox",
+     "verified": true
+    }
+   ],
+   "pay_proof": [
+    {
+     "claim": "ShaperBox 3 sells for $99, dropping to $89 on sale",
+     "url": "https://wavs.com/plugin-directory/shaperbox",
+     "verified": true
+    },
+    {
+     "claim": "ShaperBox 3 Bundle listed at $89 (down from $99) on Plugin Boutique",
+     "url": "https://www.pluginboutique.com/product/2-Effects/53-Multi-Effect-/9819-ShaperBox-3-Bundle",
+     "verified": true
+    },
+    {
+     "claim": "ShaperBox 3 resold secondhand for $85 on VI-Control",
+     "url": "https://vi-control.net/community/threads/cableguys-shaperbox-3-85.172427/",
+     "verified": true
+    },
+    {
+     "claim": "più MIDI pack of 13 Max for Live devices listed at $37.90 on Gumroad",
+     "url": "https://piumaxforlive.gumroad.com/",
+     "verified": true
+    },
+    {
+     "claim": "Ableton Drummer sells a 4-device Max for Live pack for $15+ and a one-button looping device for $25+ on Gumroad",
+     "url": "https://abletonkurse.gumroad.com/",
+     "verified": true
+    },
+    {
+     "claim": "dnksaus bundle of all its Max for Live devices listed at $33+ on Gumroad",
+     "url": "https://gumroad.com/music-and-sound-design/sound-design/plugins?tags=max+for+live",
+     "verified": true
+    },
+    {
+     "claim": "Isotonik sells Max for Live control devices such as Varispeed 4 for $20",
+     "url": "https://isotonikstudios.com/product-category/maxforlive/control-devices/?_page=2",
+     "verified": true
+    },
+    {
+     "claim": "Unfiltered Audio SpecOps listed at $30 on sale (regular $66)",
+     "url": "https://www.pluginboutique.com/product/2-Effects/53-Multi-Effect-/14926-Unfiltered-Audio-SpecOps",
+     "verified": true
+    }
+   ],
+   "cost_usd": 0.645,
+   "web_searches": 8
+  }
+ },
+ {
+  "name": "Plugin level matching and loudness targets",
+  "pain": "Users are tired of manually level-matching every plugin, especially compressors (15). They want a tool that says whether the vocal bus sits right for the genre (156). Others need to batch-hit LUFS and true-peak targets across many files (165), check the average level of exported video (190), and run whole-file Insight-style analysis (186). Some want transients brought up, the opposite of compression (146).",
+  "who_pays": "Self-mixing and self-mastering producers, audiobook and podcast editors",
+  "evidence_ids": [
+   15,
+   156,
+   165,
+   190,
+   186,
+   146
+  ],
+  "pay_signal": "One user is explicitly shopping for 'Max4live devices, third party plugins' to fix this (15). Others have paid gigs with LUFS specs to meet (165) or a boss demanding levels (190).",
+  "product_idea": "Both. Use it: Hornet AutoGain, Mastering The Mix LEVELS or REFERENCE, Youlean, or a transient designer for the expander need. Build it: a free M4L A/B gain-match pair (pre and post meters with auto-trim) as a lead magnet. Add a paid web batch tool that loudness-normalises folders to LUFS and true-peak targets and outputs reports.",
+  "build_weeks": 3,
+  "fit_for_us": 4,
+  "known_competitors": "Hornet AutoGain Pro, ADPTR Metric AB, Mastering The Mix LEVELS, Youlean Loudness Meter, Auphonic, iZotope RX batch",
+  "check_next": "Test whether an M4L pre/post pair can match RMS fast enough to be useful on a compressor. Then check Auphonic pricing as a ceiling for the batch tool.",
+  "crowding": {
+   "verdict": "crowded",
+   "reason": "Gain matching (HoRNet AutoGain Pro, Metric AB, LEVELS) and batch loudness (Auphonic freemium plus free open-source normalisers) are already well covered; only the genre vocal-bus check looks unproven and is unchecked.",
+   "competitors": [
+    {
+     "name": "HoRNet AutoGain Pro",
+     "price": "21,99 EUR",
+     "url": "https://www.hornetplugins.com/plugins/page/3/",
+     "verified": true
+    },
+    {
+     "name": "ADPTR Metric AB",
+     "price": "$279 list, $29-$99.99 on sale",
+     "url": "https://musicsoftwaredeals.com/price-history/metric-ab-by-adptr-audio/",
+     "verified": true
+    },
+    {
+     "name": "Mastering The Mix LEVELS",
+     "price": "$80",
+     "url": "https://www.pluginboutique.com/product/3-Studio-Tools/79-Metering/2676-LEVELS",
+     "verified": true
+    },
+    {
+     "name": "Youlean Loudness Meter 2 (free) / PRO",
+     "price": "free / PRO EUR 14.99 (reseller listing)",
+     "url": "https://pluginsboutique.com/products/youlean-loudness-meter-2-pro/",
+     "verified": true
+    },
+    {
+     "name": "Auphonic",
+     "price": "free tier, paid from $11/month",
+     "url": "https://toolradar.com/tools/auphonic/pricing",
+     "verified": true
+    },
+    {
+     "name": "ebu-norm-tools (open source)",
+     "price": "free",
+     "url": "https://github.com/chmaha/ebu-norm-tools",
+     "verified": true
+    },
+    {
+     "name": "LUFSNormalizer (open source)",
+     "price": "free",
+     "url": "https://github.com/vitaleaudio/LUFSNormalizer",
+     "verified": true
+    },
+    {
+     "name": "iZotope RX batch processing",
+     "price": "unknown",
+     "url": "",
+     "verified": false
+    }
+   ],
+   "pay_proof": [
+    {
+     "claim": "HoRNet AutoGain Pro sold at 26.99 EUR with paid 3.99 EUR upgrade to MK2",
+     "url": "https://gearspace.com/board/new-product-alert-2-older-threads/1119658-hornet-releases-autogain-2-0-a.html",
+     "verified": true
+    },
+    {
+     "claim": "HoRNet AutoGain Pro listed at 21,99 EUR, average user rating 4.50 from 4 reviews",
+     "url": "https://www.kvraudio.com/product/hornet-autogain-pro-by-hornet/reviews",
+     "verified": true
+    },
+    {
+     "claim": "Mastering The Mix LEVELS shows Sales: 477 and 4.9 stars from 20 reviews on ADSR",
+     "url": "https://www.adsrsounds.com/product/software/levels/",
+     "verified": true
+    },
+    {
+     "claim": "LEVELS sold at $80 or $6.70 monthly",
+     "url": "https://www.pluginboutique.com/product/3-Studio-Tools/79-Metering/2676-LEVELS",
+     "verified": true
+    },
+    {
+     "claim": "Auphonic paid plans start at $11/month (freemium)",
+     "url": "https://crozdesk.com/software/auphonic/pricing",
+     "verified": true
+    },
+    {
+     "claim": "Metric AB has a sale price history (lowest $39.99, last sale $99.99) against a $279 list price",
+     "url": "https://musicsoftwaredeals.com/price-history/metric-ab-by-adptr-audio/",
+     "verified": true
+    }
+   ],
+   "cost_usd": 0.5896,
+   "web_searches": 8
+  }
+ },
+ {
+  "name": "Vocal production helpers for producer-singers",
+  "pain": "Producers starting with vocals struggle with reverb baked into a hired vocalist's stems (51). Some want to use a room impulse response to remove room reflections (149). Ableton's take-lane comping is painful for stacks and harmonies (41). Harmonizer plugins shift by a fixed interval and sound off-key (58), and setting vocal level against the beat takes forever (156).",
+  "who_pays": "Electronic producers adding their own or hired vocals",
+  "evidence_ids": [
+   51,
+   149,
+   41,
+   58,
+   156,
+   172
+  ],
+  "pay_signal": "Users say they are 'down to get a new plug-in' (51) and have tried several paid harmonizers without satisfaction (58). There is also a market for paid vocal tuning services (172).",
+  "product_idea": "Mostly use it: iZotope RX or Supertone Clear for dereverb, Melodyne or Waves Harmony for scale-aware harmonies, and the level tools above. Build it, small: a take-lanes-to-tracks script and a vocal stack template rack (doubles, harmonies, throws) tuned for dark wave vocals, sold alongside the preset packs. Directly relevant to Amir's 2026 vocal work.",
+  "build_weeks": 2,
+  "fit_for_us": 3,
+  "known_competitors": "iZotope RX, Supertone Clear, Waves Clarity Vx DeReverb, Melodyne, Waves Harmony, Antares Harmony Engine, Logic take folders",
+  "check_next": "Check whether the Live 12 API exposes take lanes, so a take-lanes-to-tracks script is feasible. Test Supertone Clear versus RX dereverb on Amir's own vocal takes.",
+  "crowding": {
+   "verdict": "crowded",
+   "reason": "Dereverb and harmony tools are cheap ($29.99-$69) and established; Ableton vocal racks are sold by many shops and a Max for Live comping device exists. Only a dark wave stack rack niche looks thin.",
+   "competitors": [
+    {
+     "name": "Supertone CLEAR",
+     "price": "$69",
+     "url": "https://equipboard.com/items/supertone-clear",
+     "verified": true
+    },
+    {
+     "name": "Waves Clarity Vx DeReverb",
+     "price": "$29.99 (Sweetwater); $249 (Plugin Boutique)",
+     "url": "https://www.sweetwater.com/store/detail/ClarityVxVerb--waves-clarity-vx-dereverb-plug-in",
+     "verified": true
+    },
+    {
+     "name": "Waves Harmony",
+     "price": "$29.99 (sale from $199)",
+     "url": "https://www.pluginboutique.com/product/2-Effects/54-Vocal-Processing/13720-Waves-Harmony",
+     "verified": true
+    },
+    {
+     "name": "Melodyne 5 Assistant",
+     "price": "$249",
+     "url": "https://www.pluginboutique.com/product/3-Studio-Tools/48-Audio-Editor/6445-Melodyne-5-Assistant",
+     "verified": true
+    },
+    {
+     "name": "Melodyne 5 editor",
+     "price": "$199 retail; $159 upgrade from assistant",
+     "url": "https://shop.celemony.com/cgi-bin/WebObjects/CelemonyShop.woa/wa/shopEntry?task=displayDetail&article=510&country=US",
+     "verified": true
+    },
+    {
+     "name": "Comping Takes (Max for Live, MessinkiMusic)",
+     "price": "unknown",
+     "url": "https://maxforlive.com/library/device/6042/comping-takes",
+     "verified": true
+    },
+    {
+     "name": "WavMonopoly Ableton Vocal Preset Chains",
+     "price": "$49.99",
+     "url": "https://shop.wavmonopoly.com/collections/ableton-vocal-preset-packs",
+     "verified": true
+    },
+    {
+     "name": "Rys Up Audio Ableton Vocal Presets",
+     "price": "unknown",
+     "url": "https://rysupaudio.com/collections/ableton-vocal-presets",
+     "verified": true
+    },
+    {
+     "name": "Rob Late Ableton Racks (Vox FX, The Vocal Chain)",
+     "price": "unknown",
+     "url": "https://roblate.com/collections/ableton-racks",
+     "verified": true
+    },
+    {
+     "name": "Brian Funk VOCAL FX Ableton Live Pack",
+     "price": "unknown",
+     "url": "https://brianfunk.com/blog/vocalfx",
+     "verified": true
+    },
+    {
+     "name": "Darkwave Vocal Chain (JS aka The Best, UAD preset)",
+     "price": "unknown",
+     "url": "https://jsakathebest.com/product/darkwave-vocal-chain-moody-atmospheric-reverberant-preset/",
+     "verified": true
+    },
+    {
+     "name": "iZotope RX",
+     "price": "unknown",
+     "url": "",
+     "verified": false
+    },
+    {
+     "name": "Antares Harmony Engine",
+     "price": "unknown",
+     "url": "",
+     "verified": false
+    }
+   ],
+   "pay_proof": [
+    {
+     "claim": "Waves Clarity Vx DeReverb sells at $28 on Thomann with 4.4/5 from 7 customer ratings",
+     "url": "https://www.thomannmusic.com/waves_clarity_vx_dereverb.htm",
+     "verified": true
+    },
+    {
+     "claim": "Waves Harmony sells for $29.99 and has a Sweetwater customer reviews page",
+     "url": "https://www.sweetwater.com/store/detail/WavesHarmony--waves-harmony-vocal-generation-plug-in/reviews",
+     "verified": true
+    },
+    {
+     "claim": "Supertone CLEAR, a paid vocal dereverb plugin, sells for $69",
+     "url": "https://equipboard.com/items/supertone-clear",
+     "verified": true
+    },
+    {
+     "claim": "Melodyne 5 Assistant sells for $249",
+     "url": "https://www.pluginboutique.com/product/3-Studio-Tools/48-Audio-Editor/6445-Melodyne-5-Assistant",
+     "verified": true
+    },
+    {
+     "claim": "Ableton vocal preset chains sell for $49.99",
+     "url": "https://shop.wavmonopoly.com/collections/ableton-vocal-preset-packs",
+     "verified": true
+    }
+   ],
+   "cost_usd": 0.6962,
+   "web_searches": 8
+  }
+ },
+ {
+  "name": "Cross-track and hardware controller mapping with soft takeover",
+  "pain": "Users want one row of Push knobs controlling parameters on different tracks (44). They want previous/next track mapped to MIDI (43) and audio devices switched with one button (20). Controller values jump when Elektron patterns change levels (91). They want performance macros for external MIDI gear (105) and exclusive-solo footswitch control in AUM (232). Users praise Roto-Control for this kind of control but find it pricey (556, 562, 583).",
+  "who_pays": "Hybrid hardware and Ableton live performers",
+  "evidence_ids": [
+   44,
+   43,
+   20,
+   91,
+   105,
+   232,
+   556,
+   562,
+   583
+  ],
+  "pay_signal": "Users buy or consider pricey controllers like Roto-Control for this (583, 556). AUM complaints come from paid-app owners (232).",
+  "product_idea": "Both. Use it: Roto-Control, Isotonik Clyphx Pro, or Ableton's Multimap. Build it: an M4L 'Cross-Track Macro Bank' with soft takeover/pickup mode, track-select MIDI actions, and per-pattern value recall for Elektron users. Sell on maxforlive.com.",
+  "build_weeks": 3,
+  "fit_for_us": 3,
+  "known_competitors": "Clyphx Pro, Isotonik Mapper devices, Melda MIDI mappers, Roto-Control, Ableton Multimap (Live 12)",
+  "check_next": "Check what Live 12's Multimap and ClyphX Pro already cover. Then interview two hybrid live users about pattern-change value jumps.",
+  "crowding": {
+   "verdict": "crowded",
+   "reason": "Cross-track knob mapping and pickup/soft takeover are already free in Ableton (Multimap, Map8, built-in Takeover Mode) plus cheap paid tools like ClyphX Pro; only the Elektron per-pattern recall niche is unverified.",
+   "competitors": [
+    {
+     "name": "Ableton Multimap / Map8 (Max for Live Essentials)",
+     "price": "free",
+     "url": "https://sonicbloom.net/with-a-little-help-from-max-for-live-ultimate-one-knob-control/",
+     "verified": true
+    },
+    {
+     "name": "Ableton Live built-in Takeover Mode (Pick-Up / Value Scaling)",
+     "price": "free (included in Live)",
+     "url": "https://www.ableton.com/en/manual/midi-and-key-remote-control/",
+     "verified": true
+    },
+    {
+     "name": "ClyphX Pro (Isotonik Studios / nativeKONTROL)",
+     "price": "£28 (older article; current price not confirmed)",
+     "url": "https://rekkerd.org/nativekontrol-clyphx-pro-advanced-live-controller-updated-clyphx-pro-keys/",
+     "verified": true
+    },
+    {
+     "name": "Melbourne Instruments Roto-Control",
+     "price": "$439 / £389 / €454 (retail $449)",
+     "url": "https://www.gearnews.com/melbourne-instruments-roto-control-studio/",
+     "verified": true
+    },
+    {
+     "name": "Isotonik Live Mapper LE",
+     "price": "free / pay what you want",
+     "url": "https://isotonikstudios.com/product/live-mapper-le-by-isotonik-studios/",
+     "verified": true
+    },
+    {
+     "name": "MultiMap TS (maxforlive.com)",
+     "price": "free",
+     "url": "https://maxforlive.com/library/device/1832/multimap-ts",
+     "verified": true
+    },
+    {
+     "name": "CC map8 (maxforlive.com)",
+     "price": "free",
+     "url": "https://maxforlive.com/library/device/2560/cc-map8",
+     "verified": true
+    },
+    {
+     "name": "Mapul8tor (Sound Manufacture)",
+     "price": "unknown",
+     "url": "https://soundmanufacture.net/devices/mapul8tor",
+     "verified": false
+    }
+   ],
+   "pay_proof": [
+    {
+     "claim": "Roto-Control sells at $449 at Vintage King",
+     "url": "https://vintageking.com/products/melbourne-instruments-roto-control-midi-controller",
+     "verified": true
+    },
+    {
+     "claim": "Roto-Control sells at $449 at Perfect Circuit",
+     "url": "https://www.perfectcircuit.com/melbourne-instruments",
+     "verified": true
+    },
+    {
+     "claim": "ClyphX Pro is sold for £28 by Isotonik Studios",
+     "url": "https://rekkerd.org/nativekontrol-clyphx-pro-advanced-live-controller-updated-clyphx-pro-keys/",
+     "verified": true
+    },
+    {
+     "claim": "Isotonik sells small Push M4L utilities, e.g. Push: Mute Mode at £13.33",
+     "url": "https://isotonikstudios.com/product-category/isotonik-collective/isotonik-studios/",
+     "verified": true
+    }
+   ],
+   "cost_usd": 0.5253,
+   "web_searches": 8
+  }
+ },
+ {
+  "name": "Chord and harmony MIDI from text and scales",
+  "pain": "Composers hold large lists of chord symbols and want to paste text (Cm7, Gmin7) to get MIDI (31). They want expressive-chord style transforms usable as MIDI clips (35). Elektron users ask for Digitone 2 chord mode on other devices (62), and people want vocal melodies turned into MIDI (61).",
+  "who_pays": "Ableton producers writing harmony for dark wave and coldwave, and theory-minded composers",
+  "evidence_ids": [
+   31,
+   35,
+   62,
+   61,
+   58
+  ],
+  "pay_signal": "Mostly feature requests. The indirect signal is users having tried several paid harmony plugins (58). Pay evidence is weaker than for the other gaps.",
+  "product_idea": "Build it: an M4L MIDI Generator for Live 12's generator slot that turns pasted chord text into clips with voicing, inversion and strum options. Add a coldwave and darkwave progression library as a small paid data pack. Low build effort, and Amir would use it for songwriting.",
+  "build_weeks": 2,
+  "fit_for_us": 3,
+  "known_competitors": "Scaler 3, Captain Chords, Cthulhu, Ableton Live 12 MIDI generators, free chord-text scripts",
+  "check_next": "Search maxforlive.com and GitHub for existing 'chord symbol to MIDI' Live 12 generators. Test whether progression packs sell on Gumroad.",
+  "crowding": {
+   "verdict": "crowded",
+   "reason": "M2TM Chords already sells the exact idea (typed chord symbols to Live 12 clips with voicings and auto-inversion, 1,921 Gumroad sales, about €20), alongside Scaler 3, Cthulhu, Captain Plugins and several free text-to-MIDI tools.",
+   "competitors": [
+    {
+     "name": "M2TM Chords (Midi-2-the-Max)",
+     "price": "$22.79 on Gumroad (KVR lists 15€)",
+     "url": "https://midi2themax.gumroad.com/l/m2tm-chords?layout=profile",
+     "verified": true
+    },
+    {
+     "name": "Scaler 3",
+     "price": "$99 desktop, $19.99 iPad",
+     "url": "https://www.kvraudio.com/product/scaler-3-by-scaler-music",
+     "verified": true
+    },
+    {
+     "name": "Cthulhu (Xfer Records)",
+     "price": "$39",
+     "url": "https://xferrecords.com/products/cthulhu",
+     "verified": true
+    },
+    {
+     "name": "Captain Plugins bundle incl. Captain Chords (Mixed In Key)",
+     "price": "$99 bundle; Captain Chords alone unknown",
+     "url": "https://www.kvraudio.com/product/captain-plugins-by-mixed-in-key",
+     "verified": true
+    },
+    {
+     "name": "TexChord 2",
+     "price": "unknown",
+     "url": "https://mz-kb.com/en/texchord/",
+     "verified": false
+    },
+    {
+     "name": "Text to MIDI Converter (rhydlewis.net)",
+     "price": "free",
+     "url": "https://rhydlewis.net/tools/text-to-midi/",
+     "verified": true
+    },
+    {
+     "name": "Tuple (free M4L chord device)",
+     "price": "free",
+     "url": "https://github.com/c0remusic/tuple",
+     "verified": true
+    }
+   ],
+   "pay_proof": [
+    {
+     "claim": "M2TM Chords Gumroad page shows 1,921 sales of the typed-chord-to-clip Live 12 tool",
+     "url": "https://midi2themax.gumroad.com/l/m2tm-chords?layout=profile",
+     "verified": true
+    },
+    {
+     "claim": "M2TM Chords + DV bundle sold at €26 (list €40)",
+     "url": "https://midi2themax.gumroad.com/l/m2tm-chords-bundle?layout=profile",
+     "verified": true
+    },
+    {
+     "claim": "Cthulhu owners consider it highly valuable at $40",
+     "url": "https://equipboard.com/items/xfer-records-cthulhu",
+     "verified": true
+    },
+    {
+     "claim": "Scaler 3 sold at $99, discounted to $69 at Plugin Boutique",
+     "url": "https://www.pluginboutique.com/product/3-Studio-Tools/93-Music-Theory-Tools/14563-Scaler-3",
+     "verified": true
+    },
+    {
+     "claim": "Midi-2-the-Max also sells M2TM Progressions v.2 for €20",
+     "url": "https://www.kvraudio.com/developer/midi-2-the-max",
+     "verified": true
+    }
+   ],
+   "cost_usd": 0.6263,
+   "web_searches": 8
+  }
+ }
+]

@@ -1,0 +1,211 @@
+# Review package: d1dfa33..HEAD
+
+## Commits
+16f7b9c feat(stats): manual entries for IG reach, TikTok and Bandcamp followers, with a CLI
+
+## Files changed
+ stats/manual_entry.py               | 35 +++++++++++++++++++++++++++++++++++
+ stats/storage.py                    | 16 +++++++++++-----
+ stats_snapshots/manual_entries.json | 10 ++++++++++
+ tests/test_manual_entry.py          | 23 +++++++++++++++++++++++
+ 4 files changed, 79 insertions(+), 5 deletions(-)
+
+## Diff
+diff --git a/stats/manual_entry.py b/stats/manual_entry.py
+new file mode 100644
+index 0000000..13a7c4b
+--- /dev/null
++++ b/stats/manual_entry.py
+@@ -0,0 +1,35 @@
++"""Store one manual stats number with its date.
++
++Usage: python3 stats/manual_entry.py <platform> <metric> <value> [--date YYYY-MM-DD]
++"""
++
++from __future__ import annotations
++
++import argparse
++import json
++import sys
++from pathlib import Path
++
++sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
++
++from stats import storage  # noqa: E402
++
++
++def parse_value(raw: str):
++    return float(raw) if "." in raw else int(raw)
++
++
++def main(argv=None) -> int:
++    ap = argparse.ArgumentParser(description="Store a manual stats entry.")
++    ap.add_argument("platform", choices=storage.MANUAL_PLATFORMS)
++    ap.add_argument("metric")
++    ap.add_argument("value", type=parse_value)
++    ap.add_argument("--date", help="YYYY-MM-DD (default: today)")
++    args = ap.parse_args(argv)
++    entry = storage.save_manual_entry(args.platform, {args.metric: args.value}, date=args.date)
++    print(json.dumps(entry))
++    return 0
++
++
++if __name__ == "__main__":
++    sys.exit(main())
+diff --git a/stats/storage.py b/stats/storage.py
+index 6d8e68a..e3ce909 100644
+--- a/stats/storage.py
++++ b/stats/storage.py
+@@ -9,21 +9,22 @@ from __future__ import annotations
+ 
+ import json
+ import os
+ from datetime import datetime
+ from pathlib import Path
+ 
+ from scene_intelligence.json_io import atomic_write_json, load_json_checked
+ 
+ BASE_DIR = Path(__file__).parent.parent
+ SNAPSHOTS_DIR = BASE_DIR / "stats_snapshots"
+-MANUAL_FILE = SNAPSHOTS_DIR / "manual_entries.json"
++MANUAL_FILE = Path(os.getenv("STATS_MANUAL_FILE", SNAPSHOTS_DIR / "manual_entries.json"))
++MANUAL_PLATFORMS = ("bandcamp", "beatport", "apple_music", "instagram_insights", "tiktok")
+ 
+ 
+ def ensure_dir():
+     SNAPSHOTS_DIR.mkdir(exist_ok=True)
+ 
+ 
+ def save_snapshot(data: dict) -> str:
+     """Save a stats snapshot. Returns the filename."""
+     ensure_dir()
+     ts = datetime.now().strftime("%Y-%m-%dT%H-%M-%S")
+@@ -76,29 +77,34 @@ def load_snapshot(filename: str) -> dict | None:
+ 
+ def load_manual_entries() -> dict:
+     """Load manual platform entries. Corrupt-existing file = hard stop
+     (audit P2-10): the old empty fallback + save_manual_entry clobbered
+     the whole history."""
+     ensure_dir()
+     return load_json_checked(MANUAL_FILE, {"entries": []},
+                              what="manual stats entries")
+ 
+ 
+-def save_manual_entry(platform: str, data: dict) -> dict:
++def save_manual_entry(platform: str, data: dict, date: str | None = None) -> dict:
+     """Add a manual entry for a platform (Bandcamp, Beatport, Apple Music).
+ 
+     data can include: followers, plays, sales, revenue, chart_position, notes
++    date: optional "YYYY-MM-DD" overriding today (ValueError if malformed).
+     """
++    if date is not None:
++        datetime.strptime(date, "%Y-%m-%d")
++    else:
++        date = datetime.now().strftime("%Y-%m-%d")
+     entries = load_manual_entries()
+     entry = {
+         "platform": platform,
+-        "date": datetime.now().strftime("%Y-%m-%d"),
++        "date": date,
+         "timestamp": datetime.now().isoformat(timespec="seconds"),
+         **data,
+     }
+     entries["entries"].append(entry)
+     ensure_dir()
+     atomic_write_json(MANUAL_FILE, entries)
+     return entry
+ 
+ 
+ def get_manual_latest(platform: str) -> dict | None:
+@@ -137,21 +143,21 @@ def get_time_series(platform: str, metric: str, days: int = 30) -> list[dict]:
+         if date_str in seen_dates:
+             continue
+         seen_dates.add(date_str)
+ 
+         platform_data = snap.get("platforms", {}).get(platform, {})
+         value = platform_data.get(metric)
+         if value is not None:
+             series.append({"date": date_str, "value": value})
+ 
+     # Also include manual entries for manual platforms
+-    if platform in ("bandcamp", "beatport", "apple_music"):
++    if platform in MANUAL_PLATFORMS:
+         manual = load_manual_entries()
+         for entry in manual["entries"]:
+             if entry["platform"] != platform:
+                 continue
+             date_str = entry.get("date", "")
+             if date_str in seen_dates:
+                 continue
+             try:
+                 entry_date = datetime.strptime(date_str, "%Y-%m-%d")
+             except Exception:
+@@ -201,21 +207,21 @@ def get_growth(current: dict, previous: dict) -> dict:
+ 
+ def get_overview() -> dict:
+     """Build an overview combining latest API snapshot + latest manual entries + growth."""
+     snapshots = list_snapshots()
+     latest = snapshots[0] if snapshots else None
+     previous = snapshots[1] if len(snapshots) > 1 else None
+     platforms = latest.get("platforms", {}) if latest else {}
+     timestamp = latest.get("timestamp", "") if latest else ""
+ 
+     # Add manual platform latest
+-    for mp in ("bandcamp", "beatport", "apple_music"):
++    for mp in MANUAL_PLATFORMS:
+         entry = get_manual_latest(mp)
+         if entry:
+             platforms[mp] = entry
+ 
+     # Growth comparison
+     growth = get_growth(latest, previous) if latest and previous else {}
+ 
+     return {
+         "platforms": platforms,
+         "last_synced": timestamp,
+diff --git a/stats_snapshots/manual_entries.json b/stats_snapshots/manual_entries.json
+new file mode 100644
+index 0000000..944698d
+--- /dev/null
++++ b/stats_snapshots/manual_entries.json
+@@ -0,0 +1,10 @@
++{
++  "entries": [
++    {
++      "platform": "bandcamp",
++      "date": "2026-10-21",
++      "timestamp": "2026-11-02T00:06:37",
++      "followers": 51
++    }
++  ]
++}
+\ No newline at end of file
+diff --git a/tests/test_manual_entry.py b/tests/test_manual_entry.py
+new file mode 100644
+index 0000000..006fa89
+--- /dev/null
++++ b/tests/test_manual_entry.py
+@@ -0,0 +1,23 @@
++import json, os, subprocess, sys
++from stats import storage
++
++
++def test_manual_platforms_include_the_new_keys():
++    assert "instagram_insights" in storage.MANUAL_PLATFORMS and "tiktok" in storage.MANUAL_PLATFORMS
++
++
++def test_save_manual_entry_accepts_a_date(tmp_path, monkeypatch):
++    monkeypatch.setattr(storage, "MANUAL_FILE", tmp_path / "manual_entries.json")
++    monkeypatch.setattr(storage, "SNAPSHOTS_DIR", tmp_path)
++    e = storage.save_manual_entry("bandcamp", {"followers": 51}, date="2026-10-21")
++    assert e["date"] == "2026-10-21" and e["followers"] == 51
++    assert storage.get_time_series("bandcamp", "followers", days=400)[-1] == {"date": "2026-10-21", "value": 51}
++
++
++def test_cli_writes_an_entry(tmp_path):
++    env = {"STATS_MANUAL_FILE": str(tmp_path / "m.json")}
++    out = subprocess.run([sys.executable, "stats/manual_entry.py", "instagram_insights", "reach_30d", "1234", "--date", "2026-11-03"],
++                         capture_output=True, text=True, env={**os.environ, **env})
++    assert out.returncode == 0 and "reach_30d" in out.stdout
++    saved = json.loads((tmp_path / "m.json").read_text())["entries"][0]
++    assert saved["platform"] == "instagram_insights" and saved["reach_30d"] == 1234 and saved["date"] == "2026-11-03"

@@ -1,0 +1,197 @@
+{% extends "base.html" %}
+{% block title %}Review{% endblock %}
+
+{% block content %}
+<div class="board-page review-page" id="review-root" data-demo="{{ '1' if demo else '0' }}">
+    <div class="board-top">
+        <div>
+            <h1>Review</h1>
+            <p class="form-subtitle">Claude makes, you decide. Approve binds to the file's hash; a changed file comes back to you. Nothing here moves, deletes or posts.{% if demo %} Demo release, in memory only.{% endif %}</p>
+        </div>
+        <div class="board-kpis">
+            <div class="board-kpi"><div class="k">Needs you</div><div class="v gold">{{ view.counts['needs-you'] }}</div></div>
+            <div class="board-kpi"><div class="k">Held</div><div class="v">{{ view.counts.held }}</div></div>
+            <div class="board-kpi"><div class="k">From phone</div><div class="v">{{ view.counts.proposed }}</div></div>
+            <div class="board-kpi"><div class="k">Approved</div><div class="v">{{ view.counts.approved }}</div></div>
+            <div class="board-kpi"><div class="k">Change</div><div class="v">{{ view.counts.change }}</div></div>
+        </div>
+    </div>
+
+    <div class="board-filters rv-filters">
+        <a class="chip{% if not view.filter_release %} on{% endif %}" href="{{ url_for('review_page', area=view.filter_area or None, demo='1' if demo else None) }}">All releases</a>
+        {% for r in view.releases %}
+        <a class="chip{% if view.filter_release == r.slug %} on{% endif %}" href="{{ url_for('review_page', release=r.slug, area=view.filter_area or None, demo='1' if demo else None) }}">{{ r.title }} <span class="k">{{ r.n }}</span></a>
+        {% endfor %}
+        <span class="rv-sep"></span>
+        <a class="chip{% if not view.filter_area %} on{% endif %}" href="{{ url_for('review_page', release=view.filter_release or None, demo='1' if demo else None) }}">All areas</a>
+        {% for a in view.areas %}
+        <a class="chip{% if view.filter_area == a %} on{% endif %}" href="{{ url_for('review_page', release=view.filter_release or None, area=a, demo='1' if demo else None) }}">{{ view.area_emoji.get(a, '') }} {{ a }}</a>
+        {% endfor %}
+    </div>
+
+    <p class="rv-keys">Keys: <kbd>j</kbd> <kbd>k</kbd> move, <kbd>a</kbd> approve, <kbd>c</kbd> change (needs a note), <kbd>d</kbd> drop, <kbd>n</kbd> note. A held item (a failing chip) cannot be approved; it needs a new version.</p>
+
+    {% if not view.groups %}
+    <div class="rv-empty">Nothing to review. Items appear here when a release file carries a review block.</div>
+    {% endif %}
+
+    {% for g in view.groups %}
+    <section class="rv-release" id="rel-{{ g.slug }}">
+        <div class="o-batch-head">
+            <h2>{{ g.title }} <span class="k">{{ g.slug }}{% if g.updated %}, updated {{ g.updated[:16].replace('T', ' ') }}{% endif %}</span></h2>
+            <div class="o-counts">
+                <span class="pill rv-st-needs-you">{{ g.open|selectattr('state', 'equalto', 'needs-you')|list|length }} needs you</span>
+                <span class="pill rv-st-approved">{{ g.open|selectattr('state', 'equalto', 'approved')|list|length }} approved</span>
+                <span class="pill rv-st-dropped">{{ g.done|length }} done</span>
+            </div>
+        </div>
+
+        {% if not g.open %}
+        <div class="rv-empty">Nothing open on this release.</div>
+        {% endif %}
+
+        {% for it in g.open %}
+        <article class="rv-item st-{{ it.state }}{% if it.held %} is-held{% endif %}" data-slug="{{ it.slug }}" data-id="{{ it.id }}" data-state="{{ it.state }}" data-sha="{{ it.sha256 }}" tabindex="0">
+            <div class="rv-preview">
+                {% if it.is_video or it.is_image %}
+                <img src="{{ url_for('review_thumb', slug=it.slug, item_id=it.id, demo='1' if demo else None) }}" alt="" loading="lazy" onerror="this.parentNode.classList.add('rv-nothumb'); this.remove();">
+                <span class="rv-noimg">{{ it.kind }}</span>
+                {% else %}
+                <pre class="rv-text">{{ it.text_short }}</pre>
+                {% endif %}
+            </div>
+            <div class="rv-body">
+                <div class="rv-head">
+                    <span class="pill rv-st-{{ it.state }}">{{ it.state }}</span>
+                    {% if it.held %}<span class="pill rv-held">held</span>{% endif %}
+                    {% if it.proposed %}<span class="pill rv-proposal" title="from the phone {{ it.proposed.at[:16].replace('T', ' ') }}; nothing moves until you confirm here">phone: {{ it.proposed.action }}?</span>{% endif %}
+                    <h3>{{ it.label }}</h3>
+                    <span class="rv-meta">{{ it.area_emoji }} {{ it.kind }}, v{{ it.version }}{% if it.supersedes %} (replaces {{ it.supersedes }}){% endif %}, by {{ it.made_by }}, {{ it.created[:16].replace('T', ' ') }}</span>
+                </div>
+                <div class="rv-file">
+                    {% if it.name %}<span title="{{ it.path }}">{{ it.name }}</span> <span class="rv-dim">{{ it.size }}</span>{% endif %}
+                    {% if it.sha %}<span class="rv-dim" title="SHA-256">{{ it.sha }}</span>{% endif %}
+                    {% if it.destination %}<span class="rv-dim">for {{ it.destination|join(', ') }}</span>{% endif %}
+                    {% if it.probe.width %}<span class="rv-dim">{{ it.probe.width }}x{{ it.probe.height }}{% if it.probe.duration %}, {{ '%.1f'|format(it.probe.duration) }}s{% endif %}</span>{% endif %}
+                </div>
+                <div class="rv-chips">
+                    {% for c in it.chips %}
+                    <span class="rv-chip {{ c.tone }}" title="{{ c.reason }}">{{ c.name }}{% if c.tone == 'fail' and c.reason %}<i>{{ c.reason }}</i>{% endif %}{% if c.tone == 'ask' %}<i>{{ c.reason }}</i>{% endif %}</span>
+                    {% endfor %}
+                </div>
+                {% if it.proposed %}<p class="rv-note rv-proposed">phone proposes <b>{{ it.proposed.action }}</b>{% if it.proposed.note %}: {{ it.proposed.note }}{% endif %} ({{ it.proposed.at[:16].replace('T', ' ') }}). Nothing happens until you confirm here.</p>
+                {% elif it.note %}<p class="rv-note">{{ it.note }}</p>{% endif %}
+                {% if it.approved %}<p class="rv-note rv-ok">approved by {{ it.approved.by }} on {{ it.approved.at[:16].replace('T', ' ') }}, hash {{ it.approved.sha256[:12] }}</p>{% endif %}
+                <div class="rv-actions">
+                    <input type="text" class="rv-note-field" placeholder="note (needed for change)" maxlength="2000" data-key="n">
+                    <button type="button" class="btn btn-sm rv-btn rv-approve" data-action="approve" title="{% if it.held %}held: a failing chip, needs a new version{% elif it.state == 'change' %}waiting for the new version{% elif it.proposed and it.proposed.action == 'approve' %}a: confirm the phone proposal{% else %}a{% endif %}"{% if it.held or it.state == 'change' %} disabled{% endif %}>Approve</button>
+                    <button type="button" class="btn btn-sm rv-btn rv-change" data-action="change" title="{% if it.state == 'change' %}already asked{% else %}c{% endif %}"{% if it.state == 'change' %} disabled{% endif %}>Change</button>
+                    <button type="button" class="btn btn-sm rv-btn rv-drop" data-action="drop" title="d">Drop</button>
+                    <span class="rv-msg" aria-live="polite"></span>
+                </div>
+            </div>
+        </article>
+        {% endfor %}
+
+        {% if g.done %}
+        <details class="rv-done">
+            <summary>Done <span class="k">{{ g.done|length }}</span></summary>
+            {% for it in g.done %}
+            <div class="rv-done-row">
+                <span class="pill rv-st-{{ it.state }}">{{ it.state }}</span>
+                <span>{{ it.label }}</span>
+                <span class="rv-dim">{{ it.area_emoji }} {{ it.kind }}, v{{ it.version }}{% if it.superseded_by %}, replaced by {{ it.superseded_by }}{% endif %}{% if it.used %}, used on {{ it.used.where }}{% endif %}{% if it.name %}, {{ it.name }}{% endif %}</span>
+                {% if it.note %}<span class="rv-dim">{{ it.note }}</span>{% endif %}
+            </div>
+            {% endfor %}
+        </details>
+        {% endif %}
+    </section>
+    {% endfor %}
+</div>
+
+<script>
+(function () {
+    var root = document.getElementById('review-root');
+    if (!root) return;
+    var demo = root.getAttribute('data-demo') === '1';
+    var meta = document.querySelector('meta[name="csrf-token"]');
+    var csrf = meta ? meta.getAttribute('content') : '';
+    var items = Array.prototype.slice.call(root.querySelectorAll('.rv-item'));
+    var current = -1;
+
+    function select(i) {
+        if (!items.length) return;
+        i = Math.max(0, Math.min(items.length - 1, i));
+        items.forEach(function (el) { el.classList.remove('is-current'); });
+        current = i;
+        items[i].classList.add('is-current');
+        items[i].scrollIntoView({ block: 'nearest' });
+    }
+
+    function tick(el, action) {
+        var slug = el.getAttribute('data-slug'), id = el.getAttribute('data-id'), sha = el.getAttribute('data-sha') || '';
+        var field = el.querySelector('.rv-note-field');
+        var msg = el.querySelector('.rv-msg');
+        var note = field ? field.value.trim() : '';
+        var btn = el.querySelector('.rv-btn[data-action="' + action + '"]');
+        if (btn && btn.disabled) { msg.textContent = btn.getAttribute('title') || 'not now'; return; }
+        if (action === 'change' && !note) {
+            msg.textContent = 'write the note first';
+            if (field) field.focus();
+            return;
+        }
+        if (demo) { msg.textContent = 'demo: ticks are not saved'; return; }
+        el.querySelectorAll('.rv-btn').forEach(function (b) { b.disabled = true; });
+        msg.textContent = '...';
+        fetch('/api/review/' + encodeURIComponent(slug) + '/' + encodeURIComponent(id), {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json', 'X-CSRFToken': csrf },
+            body: JSON.stringify({ action: action, note: note, sha256: sha })
+        }).then(function (r) { return r.json().then(function (j) { return { ok: r.ok, body: j }; }); })
+          .then(function (res) {
+              if (res.ok && res.body.ok) {
+                  msg.textContent = res.body.item.state;
+                  window.location.reload();
+              } else {
+                  msg.textContent = (res.body && res.body.error) || 'refused';
+                  if (res.body && /changed|mismatch/.test(res.body.error || '')) { window.setTimeout(function () { window.location.reload(); }, 1200); }
+                  el.querySelectorAll('.rv-btn').forEach(function (b) { b.disabled = false; });
+              }
+          }).catch(function () {
+              msg.textContent = 'no answer from the server';
+              el.querySelectorAll('.rv-btn').forEach(function (b) { b.disabled = false; });
+          });
+    }
+
+    items.forEach(function (el, i) {
+        el.addEventListener('focusin', function () { select(i); });
+        el.addEventListener('click', function () { select(i); });
+        el.querySelectorAll('.rv-btn').forEach(function (b) {
+            b.addEventListener('click', function (ev) { ev.stopPropagation(); tick(el, b.getAttribute('data-action')); });
+        });
+    });
+
+    document.addEventListener('keydown', function (ev) {
+        if (ev.metaKey || ev.ctrlKey || ev.altKey) return;
+        var tag = (ev.target.tagName || '').toLowerCase();
+        if (tag === 'input' || tag === 'textarea') {
+            if (ev.key === 'Escape') { ev.target.blur(); }
+            return;
+        }
+        if (ev.key === 'j') { select(current + 1); ev.preventDefault(); }
+        else if (ev.key === 'k') { select(current - 1); ev.preventDefault(); }
+        else if (ev.key === 'a' || ev.key === 'c' || ev.key === 'd') {
+            if (current < 0) select(0);
+            if (current >= 0) { tick(items[current], { a: 'approve', c: 'change', d: 'drop' }[ev.key]); }
+            ev.preventDefault();
+        } else if (ev.key === 'n') {
+            if (current < 0) select(0);
+            if (current >= 0) { var f = items[current].querySelector('.rv-note-field'); if (f) f.focus(); }
+            ev.preventDefault();
+        }
+    });
+    if (items.length) select(0);
+})();
+</script>
+{% endblock %}

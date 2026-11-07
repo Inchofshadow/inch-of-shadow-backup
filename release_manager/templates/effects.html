@@ -1,0 +1,169 @@
+{% extends "base.html" %}
+{% block title %}Effects{% endblock %}
+{% macro card(r) %}
+<div class="fx-card{% if r.mine %} fx-mine{% endif %}" data-id="{{ r.id }}"{% if r.group %} data-group="{{ r.group }}"{% endif %}>
+    <a class="fx-thumb" href="{{ url_for('effect_detail', eid=r.id) }}"{% if r.example %} data-lb data-lb-src="{{ url_for('effect_example', eid=r.id) }}" data-lb-title="{{ r.name }}" data-lb-text="{{ r.what }}{{ '' if r.face_safe else ' · AI only, never on your face' }}" data-lb-href="{{ url_for('effect_detail', eid=r.id) }}"{% endif %}>
+        {% if r.example %}<img src="{{ url_for('effect_example', eid=r.id) }}" alt="{{ r.name }}" loading="lazy">{% else %}<span class="archive-nothumb">{{ r.what }}</span>{% endif %}
+        {% if not r.face_safe %}<span class="fx-ai-badge" title="AI only, never on your face">AI</span>{% endif %}
+    </a>
+    <div class="fx-body">
+        <div class="fx-title-row">
+            <a class="fx-title" href="{{ url_for('effect_detail', eid=r.id) }}">{{ r.name }}</a>
+            <span class="fx-marks">
+                <button type="button" class="fx-flag fx-sig" data-field="signature" aria-pressed="{{ 'true' if r.signature else 'false' }}" title="signature: part of the brand">{{ '◆' if r.signature else '◇' }}</button>
+                <button type="button" class="fx-flag fx-star" data-field="mine" aria-pressed="{{ 'true' if r.mine else 'false' }}" title="I like it">{{ '★' if r.mine else '☆' }}</button>
+            </span>
+        </div>
+        {% if release %}
+        <button type="button" class="fx-add{% if r.id in chosen_ids %} fx-add-in{% endif %}" data-in="{{ 'true' if r.id in chosen_ids else 'false' }}" title="{{ 'remove from ' ~ release.title if r.id in chosen_ids else 'add to ' ~ release.title }}">{{ '✓ in ' ~ release.title if r.id in chosen_ids else '+ ' ~ release.title }}</button>
+        {% endif %}
+    </div>
+</div>
+{% endmacro %}
+{% block content %}
+<div class="fonts-page fx-page">
+    <h1>Effects</h1>
+    {% if counts %}<p class="brand-muted" title="☆ = I like it · ◆ = signature · AI = never on your face, your go per image · examples from other creators stay private">{{ total }} effects · {{ counts.mine }} ☆</p>{% endif %}
+    {% if error %}<div class="alert alert-error">{{ error }}</div>{% endif %}
+
+    {% set k = args.get('kind') or 'still' %}
+    {% set base_args = {} %}{% for key, val in args.items() %}{% if key in ('release', 'make', 'mine', 'signature', 'q', 'family') %}{% set _ = base_args.update({key: val}) %}{% endif %}{% endfor %}
+    <div class="fx-toolbar">
+        <nav class="fx-tabs" aria-label="Photo or video">
+            <a href="{{ url_for('effects_page_view', kind='still', **base_args) }}" class="{{ 'on' if k == 'still' }}">Photo <span>{{ tab_counts.still if tab_counts else '' }}</span></a>
+            <a href="{{ url_for('effects_page_view', kind='motion', **base_args) }}" class="{{ 'on' if k == 'motion' }}">Video <span>{{ tab_counts.motion if tab_counts else '' }}</span></a>
+        </nav>
+        <button type="button" class="fx-expand" id="fx-expand-all" aria-pressed="false">See every row as a grid ▦</button>
+    </div>
+
+    <form method="get" class="shoot-filters fonts-filters" id="fx-form">
+        <select name="release" onchange="this.form.submit()" class="fx-release-pick">
+            <option value="">no release: browse everything</option>
+            {% for x in releases %}<option value="{{ x.slug }}" {% if release and release.slug == x.slug %}selected{% endif %}>{{ x.title }}</option>{% endfor %}
+        </select>
+        <input type="hidden" name="kind" value="{{ k }}">
+        <select name="make"><option value="">any way to make it</option><option value="safe" {% if args.get('make') == 'safe' %}selected{% endif %}>safe on my face</option>{% for k, v in makes.items() %}<option value="{{ k }}" {% if args.get('make') == k %}selected{% endif %}>{{ v }}</option>{% endfor %}</select>
+        <label><input type="checkbox" name="mine" value="1" {% if args.get('mine') %}checked{% endif %}> ☆ only</label>
+        <label><input type="checkbox" name="signature" value="1" {% if args.get('signature') %}checked{% endif %}> ◆ only</label>
+        <input type="search" name="q" value="{{ args.get('q', '') }}" placeholder="a word: glass, CCTV, flicker...">
+        <button type="submit" class="btn btn-secondary btn-sm">Filter</button>
+        <a href="{{ url_for('effects_page_view', release=release.slug if release else None, kind=k) }}" class="btn btn-secondary btn-sm">Clear</a>
+        <span class="brand-muted">{{ shown_n }} of {{ total }}</span>
+    </form>
+
+    {% if release %}
+    <section class="fx-release">
+        <div class="fx-row-head"><h2>{{ release.title }}: its effects ({{ chosen|length }})</h2><a class="brand-muted" href="{{ url_for('release_detail', slug=release.slug) }}">open the release</a></div>
+        {% if chosen %}
+        <div class="fx-row" data-lb-group>
+            {% for c in chosen %}
+            <div class="fx-card fx-chosen" data-id="{{ c.r.id }}">
+                <a class="fx-thumb" href="{{ url_for('effect_detail', eid=c.r.id) }}"{% if c.r.example %} data-lb data-lb-src="{{ url_for('effect_example', eid=c.r.id) }}" data-lb-title="{{ c.r.name }}" data-lb-text="{{ c.r.what }}" data-lb-href="{{ url_for('effect_detail', eid=c.r.id) }}"{% endif %}>{% if c.r.example %}<img src="{{ url_for('effect_example', eid=c.r.id) }}" alt="{{ c.r.name }}" loading="lazy">{% else %}<span class="archive-nothumb">no example yet</span>{% endif %}</a>
+                <div class="fx-body">
+                    <a class="fx-title" href="{{ url_for('effect_detail', eid=c.r.id) }}">{{ c.r.name }}</a>
+                    <div class="fx-uses">{% for u in uses %}<label><input type="checkbox" class="fx-use" value="{{ u }}" {% if u in c.used_in %}checked{% endif %}> {{ u }}</label>{% endfor %}</div>
+                    <button type="button" class="btn btn-secondary btn-sm fx-remove">remove</button>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+        {% else %}<p class="brand-muted">Nothing chosen yet. Under every picture below there is a gold <strong>+ {{ release.title }}</strong> button: click it to add that effect here.</p>{% endif %}
+    </section>
+    {% endif %}
+
+    <nav class="fx-jump">{% for row in rows %}<a href="#fam-{{ row.family }}" class="archive-chip">{{ row.label.split(' (')[0] }} · {{ row.cards|length }}</a>{% endfor %}</nav>
+
+    {% for row in rows %}
+    <section class="fx-family" id="fam-{{ row.family }}">
+        <div class="fx-row-head"><h2>{{ row.label }}</h2><button type="button" class="fx-expand fx-expand-row" aria-pressed="false">see all {{ row.cards|length }} ▦</button></div>
+        {% if row.groups %}<div class="fx-groups" role="group" aria-label="{{ row.label }} groups">
+            <button type="button" class="fx-group on" data-group="">All {{ row.cards|length }}</button>
+            {% for g in row.groups %}<button type="button" class="fx-group" data-group="{{ g.name }}">{{ g.name }} {{ g.n }}</button>{% endfor %}
+        </div>{% endif %}
+        <div class="fx-row" data-lb-group>{% for r in row.cards %}{{ card(r) }}{% endfor %}</div>
+    </section>
+    {% endfor %}
+</div>
+<script>
+(function () {
+    function setRow(sec, on) {
+        var row = sec.querySelector('.fx-row'), b = sec.querySelector('.fx-expand-row');
+        row.classList.toggle('fx-row-open', on);
+        b.setAttribute('aria-pressed', on ? 'true' : 'false');
+        b.textContent = on ? 'back to one line' : 'see all ' + row.querySelectorAll('.fx-card:not([hidden])').length + ' \u25A6';
+    }
+    var all = document.getElementById('fx-expand-all');
+    function setAll(on) {
+        document.querySelectorAll('.fx-family').forEach(function (sec) { setRow(sec, on); });
+        all.setAttribute('aria-pressed', on ? 'true' : 'false');
+        all.textContent = on ? 'Back to rows' : 'See every row as a grid \u25A6';
+        try { localStorage.setItem('fx-grid-all', on ? '1' : ''); } catch (e) {}
+    }
+    document.querySelectorAll('.fx-expand-row').forEach(function (b) {
+        b.addEventListener('click', function () { setRow(b.closest('.fx-family'), b.getAttribute('aria-pressed') !== 'true'); });
+    });
+    all.addEventListener('click', function () { setAll(all.getAttribute('aria-pressed') !== 'true'); });
+    try { if (localStorage.getItem('fx-grid-all')) setAll(true); } catch (e) {}
+    document.querySelectorAll('.fx-groups').forEach(function (bar) {
+        var sec = bar.closest('.fx-family');
+        bar.addEventListener('click', function (e) {
+            var b = e.target.closest('.fx-group'); if (!b) return;
+            bar.querySelectorAll('.fx-group').forEach(function (x) { x.classList.toggle('on', x === b); });
+            sec.querySelectorAll('.fx-row .fx-card').forEach(function (c) { c.hidden = !!b.dataset.group && c.dataset.group !== b.dataset.group; });
+            var row = sec.querySelector('.fx-row'); row.scrollLeft = 0;
+            var eb = sec.querySelector('.fx-expand-row');
+            if (eb.getAttribute('aria-pressed') !== 'true') eb.textContent = 'see all ' + row.querySelectorAll('.fx-card:not([hidden])').length + ' \u25A6';
+        });
+    });
+})();
+</script>
+<script>
+(function () {
+    var rel = {{ (release.slug if release else '')|tojson }};
+    function post(url, body) {
+        return fetch(url, {method: 'POST', headers: {'Content-Type': 'application/json'}, body: JSON.stringify(body)})
+            .then(function (r) { if (!r.ok) throw new Error(); return r.json(); });
+    }
+    document.querySelectorAll('.fx-flag').forEach(function (b) {
+        b.addEventListener('click', function () {
+            var id = b.closest('[data-id]').dataset.id, field = b.dataset.field, on = b.getAttribute('aria-pressed') !== 'true';
+            post('/api/effects/' + encodeURIComponent(id) + '/flag', {field: field, value: on}).then(function () {
+                document.querySelectorAll('.fx-card[data-id="' + id + '"] .fx-flag[data-field="' + field + '"]').forEach(function (x) {
+                    x.setAttribute('aria-pressed', on ? 'true' : 'false');
+                    x.textContent = field === 'mine' ? (on ? '★' : '☆') : (on ? '◆' : '◇');
+                    if (field === 'mine') x.closest('.fx-card').classList.toggle('fx-mine', on);
+                });
+            }).catch(function () { b.textContent = '!'; });
+        });
+    });
+    if (!rel) return;
+    function keepPlaceAndReload() {
+        try { sessionStorage.setItem('fx-scroll', String(window.scrollY)); } catch (e) {}
+        location.reload();
+    }
+    try {
+        var y = sessionStorage.getItem('fx-scroll');
+        if (y) { sessionStorage.removeItem('fx-scroll'); window.scrollTo(0, parseInt(y, 10) || 0); }
+    } catch (e) {}
+    var api = '/api/releases/' + encodeURIComponent(rel) + '/effects';
+    document.querySelectorAll('.fx-add').forEach(function (b) {
+        b.addEventListener('click', function () {
+            var id = b.closest('[data-id]').dataset.id, isIn = b.dataset.in === 'true';
+            b.disabled = true; b.textContent = isIn ? 'removing...' : 'adding...';
+            post(api, {id: id, remove: isIn}).then(keepPlaceAndReload).catch(function () { b.disabled = false; b.textContent = 'could not save, try again'; });
+        });
+    });
+    document.querySelectorAll('.fx-chosen').forEach(function (c) {
+        var id = c.dataset.id;
+        c.querySelectorAll('.fx-use').forEach(function (box) {
+            box.addEventListener('change', function () {
+                var used = Array.prototype.map.call(c.querySelectorAll('.fx-use:checked'), function (x) { return x.value; });
+                post(api, {id: id, used_in: used}).catch(function () { box.parentNode.style.color = '#e6c9c4'; });
+            });
+        });
+        c.querySelector('.fx-remove').addEventListener('click', function () { post(api, {id: id, remove: true}).then(keepPlaceAndReload); });
+    });
+})();
+</script>
+<script src="{{ url_for('static', filename='lightbox.js') }}?v=1"></script>
+{% endblock %}

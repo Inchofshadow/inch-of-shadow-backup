@@ -1,0 +1,144 @@
+{% extends "base.html" %}
+{% block title %}Home{% endblock %}
+
+{% block content %}
+<div class="dashboard home">
+    <h1>Home</h1>
+
+    {# 1. The score-board verdict line (release_manager/score_board.py, the same build as /stats) #}
+    <section class="ap-section home-block" id="home-verdict">
+        <div class="ap-section-header"><h2>Score board</h2></div>
+        <div class="top-line">
+            {% if verdict.line %}<a href="{{ url_for('stats_page') }}"><strong>{{ verdict.line }}</strong></a>
+            {% else %}<span class="stale">score board unreadable: {{ verdict.error }}</span> &middot; <a href="{{ url_for('stats_page') }}">Stats</a>{% endif %}
+        </div>
+        <div class="brand-muted">from the score board (stats targets + snapshots), details on Stats</div>
+    </section>
+
+    {# 2. Now: plans/tickets.json, bucket now, by area; next folded into a count; Control Panel open count #}
+    <section class="ap-section home-block" id="home-now">
+        <div class="ap-section-header"><h2>🔥 Now</h2></div>
+        {% if work.tickets_error %}<div class="stale">plans/tickets.json unreadable: {{ work.tickets_error }}</div>{% endif %}
+        {% for a in work.areas %}
+        <div class="home-area">
+            <div class="top-line"><span class="k">{{ a.label }}</span></div>
+            {% for t in a.tickets %}
+            <div class="ap-task-row"><span class="ap-task-label"><strong>{{ t.shown or t.id }}</strong> {{ t.title }}</span><span class="ap-task-release">{{ t.who }}</span><span class="ap-task-due">{{ t.next_step }}</span></div>
+            {% endfor %}
+        </div>
+        {% else %}
+        {% if not work.tickets_error %}<div class="brand-muted">no ticket in the now bucket</div>{% endif %}
+        {% endfor %}
+        <div class="top-line"><span class="k">Next</span><a href="{{ url_for('tickets_page') }}">{{ work.next }} ticket{{ '' if work.next == 1 else 's' }}</a> <span class="brand-muted">in plans/tickets.json</span></div>
+        <div class="top-line"><span class="k">Control Panel</span>{% if work.cp_open is not none %}<a href="{{ url_for('board_page') }}">{{ work.cp_open }} open</a> <span class="brand-muted">in plans/control-panel/tickets.json</span>{% else %}<span class="stale">unreadable: {{ work.cp_error }}</span>{% endif %}</div>
+    </section>
+
+    {# 3. Decisions waiting on Amir: open tickets with who amir or blocked_on naming him, both files; Review needs-you #}
+    <section class="ap-section home-block" id="home-decisions">
+        <div class="ap-section-header"><h2>Decisions waiting on Amir</h2><span class="ap-count">{{ work.decisions|length }}</span></div>
+        <div class="brand-muted">open tickets with who amir or blocked on Amir, from plans/tickets.json and plans/control-panel/tickets.json</div>
+        <div class="top-line"><span class="k">Review</span>{% if review_count is not none %}<a href="{{ url_for('review_page') }}">{{ review_count }} need{{ 's' if review_count == 1 else '' }} you</a> <span class="brand-muted">from the review blocks in releases/*.json</span>{% else %}<span class="stale">review blocks unreadable</span>{% endif %}</div>
+        {% set active = work.decisions|rejectattr('bucket', 'equalto', 'parked')|list %}
+        {% set parked = work.decisions|selectattr('bucket', 'equalto', 'parked')|list %}
+        {% for t in active %}
+        <div class="ap-task-row"><span class="ap-task-label"><strong>{{ t.shown or t.id }}</strong> {{ t.title }}</span><span class="ap-task-due">{{ t.next_step }}</span></div>
+        {% endfor %}
+        {% if parked %}
+        <details class="home-fold">
+            <summary>Parked: {{ parked|length }}</summary>
+            {% for t in parked %}
+            <div class="ap-task-row"><span class="ap-task-label"><strong>{{ t.shown or t.id }}</strong> {{ t.title }}</span><span class="ap-task-due">{{ t.next_step }}</span></div>
+            {% endfor %}
+        </details>
+        {% endif %}
+    </section>
+
+    {# 4. Next release: checklist progress, overdue items of unfinished releases, finished releases under Out #}
+    <section class="ap-section home-block" id="home-release">
+        <div class="ap-section-header"><h2>Next release</h2></div>
+        <div class="top-line"><span class="k">Next release</span>{% if lines.next %}<a href="{{ url_for('release_detail', slug=lines.next.slug) }}">{{ lines.next.title }}</a> &middot; {{ lines.next.date }} &middot; <strong>{% if lines.next.days == 0 %}today{% elif lines.next.days == 1 %}tomorrow{% else %}in {{ lines.next.days }} days{% endif %}</strong>{% else %}<span class="brand-muted">none scheduled</span>{% endif %}</div>
+        {% for r in open_releases %}
+        <div class="top-line"><span class="k">{% if lines.next and r.slug == lines.next.slug %}Checklist{% else %}Open{% endif %}</span><a href="{{ url_for('release_detail', slug=r.slug) }}">{{ r.title }}</a>{% if r.date %} &middot; {{ r.date }}{% endif %} &middot; {{ r.done }}/{{ r.total }} done <span class="brand-muted">checklist in releases/{{ r.slug }}.json</span></div>
+        {% endfor %}
+        {% if overdue %}
+        <div class="ap-section ap-section-overdue">
+            <div class="ap-section-header"><span class="ap-section-icon ap-icon-overdue">!</span><h2>Overdue</h2><span class="ap-count">{{ overdue|length }}</span></div>
+            {% for item in overdue %}
+            <div class="ap-task-row ap-task-overdue"><span class="ap-task-label">{{ item.label }}</span><span class="ap-task-release">{{ item.release }}</span><span class="ap-task-due">{{ item.days_late }}d late</span></div>
+            {% endfor %}
+        </div>
+        {% endif %}
+        {% if out_releases %}
+        <details class="home-fold">
+            <summary>Out: {{ out_releases|length }}</summary>
+            {% for r in out_releases %}
+            <div class="ap-task-row"><span class="ap-task-label"><a href="{{ url_for('release_detail', slug=r.slug) }}">{{ r.title }}</a></span><span class="ap-task-due">Out since {{ r.date }}</span></div>
+            {% endfor %}
+        </details>
+        {% endif %}
+        {% if not open_releases and not out_releases %}
+        <div class="brand-muted">No releases yet. <a href="{{ url_for('release_new') }}">Create one</a></div>
+        {% endif %}
+    </section>
+
+    <!-- Social Links (kept on Home by Amir, 2026-11-06) -->
+    <section class="socials-section">
+        <div class="socials-header">
+            <h2>Social Links</h2>
+            <button type="button" class="btn btn-accent btn-sm" id="copy-all-links">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: -2px;"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+                Copy All Links
+            </button>
+        </div>
+        <div class="socials-grid">
+            {% for name, url in social_links %}
+            <div class="social-row" data-platform="{{ name|lower }}" data-url="{{ url }}">
+                <span class="social-icon" data-platform="{{ name|lower }}"></span>
+                <div class="social-info">
+                    <span class="social-name">{{ name }}</span>
+                    <span class="social-url">{{ url }}</span>
+                </div>
+                <button type="button" class="social-copy" title="Copy link" aria-label="Copy {{ name }} link">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+                </button>
+            </div>
+            {% endfor %}
+        </div>
+    </section>
+
+    <!-- Footer: last backup (plans/control-panel/backups.json) and the photo drive (/Volumes/Intenso) -->
+    <div class="top-lines home-footer">
+        <div class="top-line"><span class="k">Last backup</span>{% if lines.backup %}{{ lines.backup.date }} &middot; <span class="{% if lines.backup.days > 14 %}stale{% endif %}">{% if lines.backup.days == 0 %}today{% else %}{{ lines.backup.days }} day{{ '' if lines.backup.days == 1 else 's' }} ago{% endif %}</span> <span class="brand-muted">plans/control-panel/backups.json</span>{% else %}<span class="stale">never recorded</span>{% endif %}</div>
+        <div class="top-line"><span class="k">Photo drive</span>{% if lines.drive %}<span class="ok">connected</span>{% else %}<span class="brand-muted">not connected</span>{% endif %}</div>
+    </div>
+
+    <!-- Copy Links Modal -->
+    <div class="modal-overlay" id="copy-modal">
+        <div class="modal">
+            <div class="modal-header">
+                <h3>Copy Links</h3>
+                <button type="button" class="modal-close" aria-label="Close">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="modal-options">
+                    <label class="modal-select-all">
+                        <input type="checkbox" id="select-all-platforms" checked>
+                        <strong>Select All</strong>
+                    </label>
+                    {% for name, url in social_links %}
+                    <label class="modal-platform-row">
+                        <input type="checkbox" class="modal-platform-cb" data-platform="{{ name }}" data-url="{{ url }}" checked>
+                        <span class="social-icon" data-platform="{{ name|lower }}"></span>
+                        <span>{{ name }}</span>
+                    </label>
+                    {% endfor %}
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-accent" id="modal-copy-btn">Copy Selected</button>
+                <button type="button" class="btn btn-secondary modal-cancel">Cancel</button>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

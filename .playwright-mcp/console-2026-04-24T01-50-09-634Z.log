@@ -1,0 +1,28 @@
+[     211ms] [INFO] You like to look under the hood? Why not help us build the engine? https://soundcloud.com/jobs @ https://a-v2.sndcdn.com/assets/55-e4adf979.js:40
+[     240ms] [WARNING] [GPT] This ad request is subject to Google's EU User Consent Policy. An IAB TCF signal was not received. This ad request will not be eligible for personalized ads.
+https://goo.gle/gpt-message#175 @ https://a-v2.sndcdn.com/assets/55-e4adf979.js:107
+[     243ms] [LOG] prebid-load.js loaded successfully. @ https://a-v2.sndcdn.com/assets/55-e4adf979.js:107
+[     510ms] [LOG] %craven%c Raven v1.19.15-60bzog background-color:#000;margin-left:1px;padding:1px 3px;font-size:0.75em;color:#ffffff; font-size:0.9em; @ https://a-v2.sndcdn.com/assets/55-e4adf979.js:107
+[     893ms] [WARNING] Error with Feature-Policy header: Unrecognized origin: 'none'. @ :0
+[     893ms] [WARNING] Error with Feature-Policy header: Unrecognized feature: 'ambient-light-sensor'. @ :0
+[     893ms] [WARNING] Error with Feature-Policy header: Unrecognized origin: 'none'. @ :0
+[     893ms] [WARNING] Error with Feature-Policy header: Unrecognized feature: 'battery'. @ :0
+[     893ms] [WARNING] Error with Feature-Policy header: Unrecognized origin: 'none'. @ :0
+[     893ms] [WARNING] Error with Feature-Policy header: Unrecognized origin: 'none'. @ :0
+[     893ms] [WARNING] Error with Feature-Policy header: Unrecognized feature: 'document-domain'. @ :0
+[     893ms] [WARNING] Error with Feature-Policy header: Unrecognized origin: 'none'. @ :0
+[     893ms] [WARNING] Error with Feature-Policy header: Unrecognized origin: 'none'. @ :0
+[     893ms] [WARNING] Error with Feature-Policy header: Unrecognized origin: 'none'. @ :0
+[     893ms] [WARNING] Error with Feature-Policy header: Unrecognized origin: 'none'. @ :0
+[     893ms] [WARNING] Error with Feature-Policy header: Unrecognized origin: 'none'. @ :0
+[     893ms] [WARNING] Error with Feature-Policy header: Unrecognized origin: 'none'. @ :0
+[     893ms] [WARNING] Error with Feature-Policy header: Unrecognized origin: 'none'. @ :0
+[     893ms] [WARNING] Error with Feature-Policy header: Unrecognized origin: 'none'. @ :0
+[     893ms] [WARNING] Error with Feature-Policy header: Unrecognized origin: 'none'. @ :0
+[     893ms] [WARNING] Error with Feature-Policy header: Unrecognized origin: 'none'. @ :0
+[     893ms] [WARNING] Error with Feature-Policy header: Unrecognized feature: 'wake-lock'. @ :0
+[     995ms] [ERROR] Failed to load resource: the server responded with a status of 400 (Bad Request) @ https://api-auth.soundcloud.com/oauth/authorize?client_id=RF8yvumNwWwVg0aX4r7fHqzIVAtO6nSI:0
+[    1117ms] [LOG] 1. onMount started @ https://velvetcake.soundcloud.com/_app/immutable/nodes/2.DR9guGpY.js:0
+[    5073ms] [WARNING] The resource https://securepubads.g.doubleclick.net/tag/js/gpt.js was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://soundcloud.com/the-ransom-note/tracks:0
+[    8678ms] [WARNING] The resource https://securepubads.g.doubleclick.net/tag/js/gpt.js was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://soundcloud.com/the-ransom-note/tracks:0
+[   13260ms] [WARNING] The resource https://securepubads.g.doubleclick.net/tag/js/gpt.js was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://soundcloud.com/the-ransom-note/tracks:0

@@ -1,0 +1,1130 @@
+{% extends "base.html" %}
+{% block title %}Layout{% endblock %}
+{% block content %}
+{% include "_cover_steps.html" %}
+<style>
+.main-content main:has(.lay-page) { max-width: none; }   /* this page uses the whole width */
+.lay-page { max-width: none; --gold: #d8c39a; --card: #161412; --line: rgba(216,195,154,.18); }
+.lay-head { display: flex; align-items: baseline; gap: 16px; flex-wrap: wrap; margin-bottom: 10px; }
+.lay-head h1 { margin: 0; font-size: 26px; }
+.lay-head .hint { color: var(--text-secondary); font-size: 14px; }
+/* wide screen: controls fill the space right of picture + saves; narrow screen: they drop under the picture */
+.lay-main { display: grid; grid-template-columns: max-content minmax(420px, 1fr); gap: 24px; align-items: start; }
+@media (max-width: 1400px) { .lay-main { grid-template-columns: minmax(0, 1fr); } }
+.lay-left { min-width: 0; }
+.tool { display: flex; flex-wrap: wrap; gap: 8px 14px; align-items: center; margin-bottom: 10px; width: 0; min-width: 100%; }   /* wraps to the picture's width */
+.pill { display: inline-flex; background: var(--card); border: 1px solid var(--line); border-radius: 999px; padding: 3px; gap: 2px; }
+.pill button { background: none; border: 0; color: var(--text-secondary); padding: 6px 12px; border-radius: 999px; cursor: pointer; font: inherit; font-size: 13px; white-space: nowrap; }
+.pill button.on { background: var(--gold); color: #111; }
+.pill .lbl { color: var(--text-secondary); font-size: 12px; padding: 6px 4px 6px 10px; }
+.tool .ibtn { background: var(--card); border: 1px solid var(--line); color: inherit; border-radius: 999px; padding: 6px 12px; cursor: pointer; font: inherit; font-size: 13px; }
+.tool label { font-size: 13px; color: var(--text-secondary); }
+.lay-stage { position: relative; width: min(calc((100vw - 300px) * 0.5), calc(100vh - 230px)); min-width: 320px; aspect-ratio: 1; border-radius: 6px; overflow: hidden; box-shadow: 0 8px 30px rgba(0,0,0,.45); }
+.lay-stage canvas { position: absolute; inset: 0; width: 100%; height: 100%; display: block; }
+#art { background: #000; }
+.fxbusy { position: absolute; left: 10px; bottom: 10px; background: rgba(15,13,12,.8); color: #d8c39a; font: 12px system-ui; padding: 5px 10px; border-radius: 999px; pointer-events: none; }
+.fxbusy[hidden] { display: none; }
+#guides { cursor: grab; touch-action: none; }
+#guides.drag { cursor: grabbing; }
+.acts { display: flex; gap: 10px; margin: 12px 0 0; flex-wrap: wrap; }
+.acts button { border-radius: 999px; padding: 9px 18px; font-size: 15px; }
+.lay-kept { display: flex; gap: 10px; overflow-x: auto; margin-top: 12px; padding-bottom: 6px; width: 0; min-width: 100%; }   /* never widens its column (it squeezed the controls, 11-06) */
+.lay-kept .k { flex: 0 0 120px; cursor: pointer; font-size: 11px; color: var(--text-secondary); }
+.lay-kept .k canvas { width: 120px; height: 120px; display: block; border-radius: 4px; border: 1px solid var(--line); }
+.lay-right { min-width: 0; display: flex; flex-direction: column; gap: 14px; }
+.card { min-width: 0; background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: 12px 14px; }
+.card h4 { margin: 0 0 10px; font-size: 12px; letter-spacing: .1em; text-transform: uppercase; color: var(--gold); font-weight: 600; }
+/* picture and saves about 60 : 30 of the row (the rest is air) */
+.stagewrap { display: grid; grid-template-columns: auto; gap: 14px; align-items: start; justify-content: start; }
+.stagewrap .saves { display: none !important; }   /* Amir 11-06: the colour-save column is not needed any more (the page keeps the save it is on) */
+.saves { display: grid; grid-template-columns: repeat(var(--sc, 2), var(--sv, 140px)); gap: 8px; align-content: start; }
+.saves .saveb { width: var(--sv, 96px); height: var(--sv, 96px); }
+.saveb { position: relative; padding: 0; border: 2px solid transparent; border-radius: 6px; overflow: hidden; background: #000; cursor: pointer; aspect-ratio: 1; }
+.saveb canvas { width: 100%; height: 100%; display: block; }
+.saveb b { position: absolute; left: 4px; top: 2px; font-size: 12px; color: #fff; text-shadow: 0 0 4px #000; }
+.saveb.on { border-color: var(--gold); }
+.tabs { display: flex; gap: 4px; border-bottom: 1px solid var(--line); }
+.tabs button { background: none; border: 0; border-bottom: 2px solid transparent; color: var(--text-secondary); padding: 9px 12px; cursor: pointer; font: inherit; font-size: 15px; }
+.tabs button.on { color: var(--gold); border-bottom-color: var(--gold); }
+.tabp { display: none; min-width: 0; padding-top: 14px; gap: 12px 32px; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); align-items: center; }
+.tabp.on { display: grid; }
+.tabp > .fgrid, .tabp > details, .tabp > .full { grid-column: 1 / -1; }
+.fgrid { display: flex; flex-wrap: wrap; gap: 8px; min-width: 0; }
+.fontb { flex: 1 1 170px; max-width: 260px; min-width: 0; overflow: hidden; background: #0e0c0b; border: 2px solid transparent; border-radius: 8px; padding: 10px 14px 6px; cursor: pointer; color: #e9dfc9; text-align: center; }
+.fontb .s { display: block; font-size: 22px; line-height: 1.05; white-space: nowrap; overflow: hidden; text-overflow: clip; }
+.fontb .s.small { font-size: 19px; letter-spacing: .08em; }
+.fontb .l { display: block; font: 11px system-ui; color: var(--text-secondary); margin-top: 6px; }
+.fontb.on { border-color: var(--gold); }
+.fontb[hidden] { display: none; }
+.fontb.gone { opacity: .35; }
+.fx-x { position: absolute; top: 3px; right: 5px; width: 20px; height: 20px; line-height: 20px; border-radius: 50%; font: 12px system-ui; color: #f1e6d0; background: rgba(90,20,12,.85); opacity: 0; }
+.fontb:hover .fx-x, .fontb.gone .fx-x { opacity: 1; }
+.fontb.gone .fx-x { background: #2f4a2a; }
+.fontb.on .l { color: var(--gold); }
+details.more summary { cursor: pointer; color: var(--text-secondary); font-size: 13px; margin: 4px 0 8px; }
+.row { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+.sl { display: grid; grid-template-columns: 96px 1fr 3.2em; align-items: center; gap: 10px; font-size: 13px; }
+.sl input { width: 100%; accent-color: var(--gold); }
+.sl .n { text-align: right; font-variant-numeric: tabular-nums; color: var(--text-secondary); }
+.sw { width: 30px; height: 30px; border-radius: 50%; border: 2px solid #3a3530; cursor: pointer; padding: 0; }
+.sw.on { border-color: #fff; box-shadow: 0 0 0 2px var(--gold); }
+.chip { background: #0e0c0b; color: inherit; border: 1px solid var(--line); border-radius: 999px; padding: 5px 10px; cursor: pointer; font: inherit; font-size: 12px; }
+.crow { display: grid; grid-template-columns: 70px 1fr auto; align-items: center; gap: 10px; padding: 4px 0; }
+.lockb { font-size: 14px; padding: 3px 9px; }
+.fxm { display: grid; grid-template-columns: minmax(140px, 200px) minmax(120px, 160px) 1fr 3.4em auto; gap: 10px; align-items: center; padding: 3px 0; }
+.fxm select { font: inherit; font-size: 13px; padding: 5px 8px; background: #0e0c0b; color: inherit; border: 1px solid var(--line); border-radius: 6px; }
+.fxm input { accent-color: var(--gold); width: 100%; }
+.fxm .n { text-align: right; font-variant-numeric: tabular-nums; color: var(--text-secondary); font-size: 13px; }
+.ab-modal { margin: 0 0 10px; }
+.lay-main.ab-on .tool { width: auto; }
+.lay-main.ab-on { grid-template-columns: minmax(0, 1fr); }   /* A/B takes the whole width; the editing controls wait */
+.lay-main.ab-on .lay-right, .lay-main.ab-on .acts, .lay-main.ab-on .lay-kept { display: none; }
+.ab-modal[hidden], .ab-pane[hidden], .ab-top [hidden], .stagewrap[hidden] { display: none !important; }
+.ab-top { display: flex; flex-wrap: wrap; gap: 12px 20px; align-items: center; margin-bottom: 14px; }
+.ab-panes { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; max-width: min(100%, calc((100vh - 230px) * 2 + 20px)); }
+.ab-panes.single { grid-template-columns: 1fr; max-width: min(100%, calc(100vh - 230px)); }
+.ab-pane canvas { width: 100%; aspect-ratio: 1; display: block; background: #000; border-radius: 6px; cursor: pointer; }
+.ab-pane .cap { display: flex; gap: 10px; align-items: center; padding: 6px 0; font-size: 14px; }
+.ab-pane .cap b { font-size: 22px; color: var(--gold); }
+.ab-pane .cap .lab { flex: 1; color: var(--text-secondary); }
+.ab-nav { display: flex; gap: 10px; align-items: center; padding: 8px 0; }
+.ab-nav button { background: #1a1816; color: inherit; border: 1px solid var(--line); font-size: 22px; width: 44px; height: 38px; cursor: pointer; border-radius: 6px; }
+.ab-nav input { flex: 1; accent-color: var(--gold); }
+.ab-nav .n { color: var(--text-secondary); min-width: 4em; text-align: right; font-variant-numeric: tabular-nums; }
+.tour[hidden], .tchamp[hidden], .gal[hidden] { display: none !important; }
+.galgrid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 14px; }
+.galgrid .g { cursor: pointer; }
+.galgrid .g canvas { width: 100%; aspect-ratio: 1; display: block; border-radius: 6px; border: 2px solid transparent; background: #000; }
+.galgrid .g:hover canvas { border-color: var(--gold); }
+.galgrid .g div { font-size: 12px; color: var(--text-secondary); padding: 4px 2px; }
+.tround { font-size: 20px; color: var(--gold); }
+.tpick { width: 100%; margin-top: 8px; }
+.tchamp { display: grid; grid-template-columns: min(60vh, 600px) 1fr; gap: 24px; align-items: center; margin-bottom: 14px; }
+.tchamp canvas { width: 100%; aspect-ratio: 1; border-radius: 6px; border: 2px solid var(--gold); }
+.tbracket { display: flex; gap: 18px; margin-top: 16px; overflow-x: auto; padding-bottom: 6px; }
+.tcol { flex: 0 0 auto; }
+.tcol h5 { margin: 0 0 6px; font-size: 12px; letter-spacing: .08em; text-transform: uppercase; color: var(--text-secondary); }
+.tmatch { display: flex; gap: 4px; margin-bottom: 8px; padding: 4px; border: 1px solid var(--line); border-radius: 6px; }
+.tmatch.now { border-color: var(--gold); }
+.tmatch .t { width: 64px; text-align: center; font-size: 10px; color: var(--text-secondary); }
+.tmatch .t canvas { width: 64px; height: 64px; display: block; border-radius: 3px; opacity: .55; }
+.tmatch .t.win canvas { opacity: 1; outline: 2px solid var(--gold); }
+.tmatch .t.lose canvas { opacity: .25; }
+.lay-main.ab-on .tool { width: auto; }
+.fxsum { font-size: 12px; color: var(--text-secondary); margin-top: 4px; }
+.crow .nm { font-size: 13px; color: var(--text-secondary); }
+.crow .sws { display: flex; gap: 8px; flex-wrap: wrap; }
+.chip.on { background: var(--gold); color: #111; }
+.chip.off { opacity: .4; text-decoration: line-through; }
+.sub { font-size: 13px; color: var(--text-secondary); }
+.check { display: inline-flex; gap: 6px; align-items: center; font-size: 14px; }
+.ig-box { background: #fff; border-radius: 12px; overflow: hidden; padding-top: 6px; }
+.ig-box .h { color: #111; font: 600 12px system-ui; padding: 0 8px 4px; }
+.ig-box canvas { width: 100%; display: block; }
+</style>
+<div class="fonts-page lay-page">
+    <div class="lay-head">
+        <h1>Layout</h1>
+        <span class="hint">Drag on the picture. Pick what you drag above it.</span>
+    </div>
+    <div class="lay-main">
+        <div class="lay-left">
+            <div class="tool">
+                <div class="pill" id="dragwhat"><span class="lbl">Drag</span><button data-v="text">✍️ Text</button><button data-v="moon">🌙 Moon</button><button data-v="star">⭐ Star</button><button data-v="newtree">🌳 New tree</button></div>
+                <div class="pill" id="guidesel"><span class="lbl">Guides</span><button data-v="thirds">Thirds</button><button data-v="phi">Golden</button><button data-v="spiral">Spiral</button><button data-v="centre">Centre</button></div>
+                <button type="button" class="ibtn" id="spin" title="Turn the golden spiral">🌀</button>
+                <button type="button" class="ibtn" id="snap" title="Put the text on the nearest strong point">🎯 Snap</button>
+                <label class="check"><input type="checkbox" id="magnet"> 🧲 Magnet</label>
+                <div class="pill" id="magic"><span class="lbl">Magic</span><button data-m="cols">🎲 Colours</button><button data-m="smart">✨ Smart colours</button><button data-m="fx">🎲 Effect</button><button data-m="nofx">✕ No effect</button><button data-m="comp" title="Moves the moon, the text and the trees. Colours and effects stay.">🎲 Composition</button></div>
+            </div>
+<div class="ab-modal" id="ab" hidden>
+    <div class="ab-top">
+        <div class="pill" id="abmode"><button data-v="side">Side by side</button><button data-v="one">One at a time</button></div>
+        <div class="pill" id="abshow" hidden><button data-v="0">A</button><button data-v="1">B</button></div>
+        <span class="sub">Your kept layouts. ‹ › or the slider under each picture. One at a time: click the picture or press space to flip.</span>
+        <button type="button" class="btn btn-secondary btn-sm" id="abclose">✍️ Back to editing (Esc)</button>
+    </div>
+    <div class="ab-panes" id="abpanes">
+        <div class="ab-pane"><div class="cap"><b>A</b><span class="lab"></span><button type="button" class="chip ab-load">Open in the editor</button></div><canvas width="1080" height="1080"></canvas>
+            <div class="ab-nav"><button type="button" data-d="-1">‹</button><input type="range" min="0" value="0"><button type="button" data-d="1">›</button><span class="n"></span></div></div>
+        <div class="ab-pane"><div class="cap"><b>B</b><span class="lab"></span><button type="button" class="chip ab-load">Open in the editor</button></div><canvas width="1080" height="1080"></canvas>
+            <div class="ab-nav"><button type="button" data-d="-1">‹</button><input type="range" min="0" value="0"><button type="button" data-d="1">›</button><span class="n"></span></div></div>
+    </div>
+</div>
+            <div class="gal" id="gal" hidden>
+                <div class="ab-top"><b class="tround">🖼 All my keeps</b>
+                    <div class="pill" id="galmode"><button data-v="own">Each with its own effect</button><button data-v="this">All with the effect I'm on now</button></div>
+                    <span class="sub" id="galinfo"></span>
+                    <button type="button" class="btn btn-secondary btn-sm" id="galclose">✍️ Back to editing (Esc)</button></div>
+                <div class="galgrid" id="galgrid"></div>
+            </div>
+            <div class="tour" id="tour" hidden>
+                <div class="ab-top"><b class="tround" id="tround"></b><span class="sub" id="tinfo"></span>
+                    <button type="button" class="chip" id="tundo">↩️ Undo pick</button><button type="button" class="chip" id="trestart">🔄 Start again</button>
+                    <button type="button" class="btn btn-secondary btn-sm" id="tclose">✍️ Back to editing (Esc)</button></div>
+                <div class="ab-panes" id="tpanes">
+                    <div class="ab-pane"><div class="cap"><b>A</b><span class="lab"></span></div><canvas width="1080" height="1080"></canvas><button type="button" class="btn btn-primary tpick">This one wins (←)</button></div>
+                    <div class="ab-pane"><div class="cap"><b>B</b><span class="lab"></span></div><canvas width="1080" height="1080"></canvas><button type="button" class="btn btn-primary tpick">This one wins (→)</button></div>
+                </div>
+                <div class="tchamp" id="tchamp" hidden><canvas width="1080" height="1080"></canvas>
+                    <div><h2>🏆 Winner</h2><div class="sub" id="tchampinfo"></div><button type="button" class="btn btn-primary" id="tchampopen">Open the winner in the editor</button></div></div>
+                <div class="tbracket" id="tbracket"></div>
+            </div>
+            <div class="stagewrap" id="stagewrap">
+                <div class="lay-stage" id="stage"><canvas id="art" width="1080" height="1080"></canvas><canvas id="guides" width="1080" height="1080"></canvas><div id="fxbusy" class="fxbusy" hidden>✨ adding the effect…</div></div>
+                <div class="saves" id="saves" title="Your colour saves"></div>
+            </div>
+            <div class="acts">
+                <button type="button" class="btn btn-primary" id="keep">⭐ Keep</button>
+                <button type="button" class="btn btn-secondary" id="undo">↩️ Undo</button>
+                <button type="button" class="btn btn-secondary" id="reset">🔄 Today's text</button>
+                <button type="button" class="btn btn-primary" id="abopen">⇄ Compare A / B</button>
+                <button type="button" class="btn btn-primary" id="galopen">🖼 All my keeps</button>
+                <button type="button" class="btn btn-primary" id="touropen">🏆 Tournament (last 10, no twins)</button>
+            </div>
+            <div class="lay-kept" id="kept"></div>
+        </div>
+        <div class="lay-right">
+            <div class="card"><h4>Text group (title + name together)</h4>
+                <label class="sl"><span>Group size</span><input type="range" id="gsize" min="0.03" max="0.3" step="0.001"><span class="n" id="gsizen"></span></label>
+                <div class="sub">Scales "Half the Night" and "Inch of Shadow" together and keeps them as one block. Dragging moves both.</div>
+                <label class="check" style="margin-top:8px"><input type="checkbox" id="showf"> Show removed fonts (<span class="fhn">0</span>)</label>
+            </div>
+            <div class="card">
+                <div class="tabs" id="tabs"><button data-t="title">🔤 Title</button><button data-t="name">✍️ Name</button><button data-t="els">🌙 Elements</button><button data-t="cols">🎨 Colours &amp; effect</button></div>
+                <div class="tabp" data-t="title">
+                    <div class="fgrid" id="fonts"></div>
+                    <details class="more"><summary>Other worlds (serif, slab, deco)</summary><div class="fgrid" id="fonts2"></div></details>
+                    <div class="row"><div class="pill" id="lines"><span class="lbl">Lines</span><button data-v="3">3</button><button data-v="2">2</button><button data-v="1">1</button></div>
+                        <div class="pill" id="align"><span class="lbl">Align</span><button data-v="left">⬅</button><button data-v="center">⬌</button><button data-v="right">➡</button></div></div>
+                    <label class="sl"><span>Size</span><input type="range" id="size" min="0.03" max="0.3" step="0.001"><span class="n" id="sizen"></span></label>
+                    <label class="sl"><span>Line spacing</span><input type="range" id="lead" min="-0.3" max="1" step="0.01"><span class="n" id="leadn"></span></label>
+                    <label class="sl"><span>Letter spacing</span><input type="range" id="track" min="-0.1" max="0.6" step="0.005"><span class="n" id="trackn"></span></label>
+                    <div class="row"><span class="sub">Colour</span><span class="row" id="colors"></span></div>
+                </div>
+                <div class="tabp" data-t="name">
+                    <div class="row"><label class="check"><input type="checkbox" id="name"> Show "Inch of Shadow"</label>
+                        <div class="pill" id="npos"><button data-v="under">Under title</button><button data-v="top">Top</button><button data-v="bottom">Bottom</button></div></div>
+                    <div class="fgrid" id="nfonts"></div>
+                    <label class="sl"><span>Size</span><input type="range" id="nsize" min="0.015" max="0.1" step="0.001"><span class="n" id="nsizen"></span></label>
+                    <label class="sl"><span>Letter spacing</span><input type="range" id="ntrack" min="-0.05" max="0.6" step="0.005"><span class="n" id="ntrackn"></span></label>
+                    <div class="row"><span class="sub">Colour</span><span class="row" id="ncolors"></span></div>
+                    <div class="sub">Your brand face Albertus Nova lives in Canva; Marcellus stands in for it here.</div>
+                </div>
+                <div class="tabp" data-t="cols">
+                    <div class="full" id="colrows"></div>
+                    <h4 class="full">✨ Effect on top <button type="button" class="chip lockb" id="fxlock" title="Lock the effect for 🎲 Effect">🔓</button></h4>
+                    <label class="check full"><input type="checkbox" id="fxall"> Show all 26 effects in the menus (also the ones removed from the wall)</label>
+                    <div class="full" id="fxmix"></div>
+                    <div class="row full"><button type="button" class="chip" id="colback">🔄 Back to the save's colours</button><button type="button" class="chip" id="colshuf">🎲 Shuffle</button></div>
+                </div>
+                <div class="tabp" data-t="els">
+                    <h4 class="full">🌙 Moon</h4>
+                    <label class="sl"><span>Size</span><input type="range" id="ms" min="0.4" max="2.5" step="0.01"><span class="n" id="msn"></span></label>
+                    <label class="sl"><span>🦉 Owl size</span><input type="range" id="os" min="0.4" max="1.8" step="0.01"><span class="n" id="osn"></span></label>
+                    <div class="row"><label class="check"><input type="checkbox" id="owl"> 🦉 Owl</label><button type="button" class="chip" id="moonreset">Moon back</button></div>
+                    <h4 class="full">⭐ Stars</h4>
+                    <div class="row"><label class="check"><input type="checkbox" id="stars"> All stars</label><button type="button" class="chip" id="starreset">Stars back</button></div>
+                    <div class="row full" id="starchips"></div>
+                    <h4 class="full">✂️ Cut-paper</h4>
+                    <div class="row full"><label class="check"><input type="checkbox" id="cutline"> Cut-paper lines (the light edges along the hill and trees)</label></div>
+                    <h4 class="full">🌳 New tree</h4>
+                    <div class="row full"><div class="pill" id="ntr"><span class="lbl">New tree</span><button data-v="left">instead of the left thin tree</button><button data-v="right">instead of the right small tree</button><button data-v="none">off</button></div></div>
+                    <div class="row"><label class="check"><input type="checkbox" id="ntf"> 🪞 Mirror</label></div>
+                    <label class="sl"><span>Size</span><input type="range" id="nts" min="0.15" max="0.9" step="0.005"><span class="n" id="ntsn"></span></label>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+(function () {
+    var LOOKS = {{ looks|tojson }}, FXHID = {{ (hidden or [])|tojson }};
+    var SLUG = {{ rel.slug|tojson }}, SAVES = {{ saves|tojson }}, PVER = {{ pver|tojson }}, IGFEED = {{ (igfeed or [])|tojson }};
+    var $ = function (id) { return document.getElementById(id); };
+    var C = {red: '#c12613', hillred: '#891010', purple: '#44214c', plum: '#2a1330', ivory: '#e2d6bc', cream: '#decdb2', black: '#0b0a09', gold: '#daaf60'};
+    var TEXTCOL = {cream: '#e9dfc9', ivory: '#e2d6bc', red: '#c12613', gold: '#daaf60', purple: '#44214c', black: '#0b0a09'};
+    var SKY = [9, 9, 7];
+    // title faces: macOS faces through local(), the free ones from our font folder
+    var LF = function (k) { return 'url(/playground/' + encodeURIComponent(SLUG) + '/layout/font?f=' + k + ')'; };
+    // title faces: first the condensed poster world of today's Futura, then the others
+    var FONTS = [
+        {k: 'futura', g: 1, label: 'Futura Cond', src: 'local("Futura-CondensedExtraBold"), local("Futura Condensed ExtraBold")', note: "today's face"},
+        {k: 'futuram', g: 1, label: 'Futura Cond Med', src: 'local("Futura-CondensedMedium"), local("Futura Condensed Medium")'},
+        {k: 'avenirc', g: 1, label: 'Avenir Cond', src: 'local("AvenirNextCondensed-Heavy"), local("Avenir Next Condensed Heavy")'},
+        {k: 'barlowc', g: 1, label: 'Barlow Cond (free)', src: LF('barlowc'), note: 'free (OFL) match for Avenir Cond'},
+        {k: 'helvc', g: 1, label: 'Helvetica Cond', src: 'local("HelveticaNeue-CondensedBlack"), local("Helvetica Neue Condensed Black")'},
+        {k: 'din', g: 1, label: 'DIN Cond', src: 'local("DINCondensed-Bold"), local("DIN Condensed Bold")'},
+        {k: 'impact', g: 1, label: 'Impact', src: 'local("Impact")'},
+        {k: 'mohave', g: 1, label: 'Mohave', src: LF('mohave')},
+        {k: 'gillub', g: 1, label: 'Gill Ultra', src: 'local("GillSans-UltraBold"), local("Gill Sans UltraBold")'},
+        {k: 'rockwell', g: 2, label: 'Rockwell', src: 'local("Rockwell-Bold"), local("Rockwell Bold")'},
+        {k: 'bodoni', g: 2, label: 'Bodoni', src: 'local("BodoniSvtyTwoITCTT-Bold"), local("Bodoni 72 Bold")'},
+        {k: 'gloock', g: 2, label: 'Gloock', src: LF('gloock')},
+        {k: 'viking', g: 2, label: 'Viking', src: LF('viking')}
+    ];
+    // name faces (the brand face is Albertus Nova in Canva; Marcellus is only its local stand-in)
+    var NFONTS = [
+        {k: 'marcellus', label: 'Marcellus', src: 'url(/static/fonts/Marcellus-Regular.ttf)', note: 'stand-in for Albertus Nova (brand face, Canva)'},
+        {k: 'unicook', label: 'UnifrakturCook · swan cover', src: LF('unicook'), note: 'the name on the swan and raven cover (your settings 4 and 5, Oct 17)'},
+        {k: 'eckmann', label: 'CAT Eckmann · swan cover v1', src: LF('eckmann'), note: 'the name in your settings 1 and 2 (Oct 14)'},
+        {k: 'unimag', label: 'UnifrakturMaguntia', src: LF('unimag'), note: 'same blackletter family, from that font session'},
+        {k: 'pirata', label: 'Pirata One', src: LF('pirata'), note: 'from that font session'},
+        {k: 'futuramd', label: 'Futura', src: 'local("Futura-Medium"), local("Futura Medium")'},
+        {k: 'avenir', label: 'Avenir', src: 'local("AvenirNext-Medium"), local("Avenir Next Medium")'},
+        {k: 'gill', label: 'Gill Sans', src: 'local("GillSans"), local("Gill Sans")'},
+        {k: 'optima', label: 'Optima', src: 'local("Optima-Regular"), local("Optima")'},
+        {k: 'copper', label: 'Copperplate', src: 'local("Copperplate"), local("Copperplate")'},
+        {k: 'didot', label: 'Didot', src: 'local("Didot"), local("Didot")'},
+        {k: 'dinalt', label: 'DIN', src: 'local("DINAlternate-Bold"), local("DIN Alternate Bold")'},
+        {k: 'jost3', label: 'Jost light', src: LF('jost3')},
+        {k: 'jost5', label: 'Jost', src: LF('jost5')}
+    ];
+    var FONTOK = {};
+    var fontLoads = FONTS.map(function (f) {
+        var ff = new FontFace('lf-' + f.k, f.src);
+        return ff.load().then(function (x) { document.fonts.add(x); FONTOK[f.k] = true; }).catch(function () { FONTOK[f.k] = false; });
+    });
+    NFONTS.forEach(function (f) { fontLoads.push(new FontFace('ln-' + f.k, f.src).load().then(function (x) { document.fonts.add(x); FONTOK['n' + f.k] = true; }).catch(function () { FONTOK['n' + f.k] = false; })); });
+    var P1 = {font: 'futura', lines: 3, align: 'left', x: 0.465, y: 0.245, size: 0.105, lead: 0.18, track: 0, color: 'cream', name: true, npos: 'under', nsize: 0.034, nfont: 'marcellus', ncolor: 'cream', ntrack: 0.12};
+    var DEF = Object.assign({save: SAVES.length - 1, mdx: 0, mdy: 0, ms: 1, owl: true, stars: true, flip: false, tree: '', line: -1, starset: '', treeset: '', cols: '', fx: '', fxw: 50, os: 1, nt: false, ntf: false, ntx: 0.6, nty: 0.64, nts: 0.42, ntr: 'none'}, P1);
+    var D = Object.assign({}, DEF);
+    function fromKept(k) { var o = Object.assign({}, DEF); KEYS.forEach(function (q) { if (k[q] !== undefined) o[q] = k[q]; }); return o; }   // a kept layout, complete
+    var V = {guides: {}, spin: 0, magnet: true, drag: 'text'};
+    try { var st = JSON.parse(localStorage.getItem('layout-' + SLUG) || '{}'); Object.assign(D, st.d || {}); Object.assign(V, st.v || {}); } catch (e) {}
+    if (D.save >= SAVES.length) D.save = SAVES.length - 1;
+    D.flip = false; D.tree = ''; D.treeset = '';   // only the save's own trees (11-05); the cut-paper line can be switched off (11-06)
+    if (D.line !== 0) D.line = -1;
+    Object.keys(P1).forEach(function (k) { if (D[k] === undefined) D[k] = P1[k]; });
+    if (D.os === undefined) D.os = 1; if (D.fxw === undefined) D.fxw = 50;
+    var PICKS = Object.keys(PVER);
+    function basePick(st) { return SAVES[st.save].pick; }
+    function pickFor(st) {   // the save's pick with the chosen middle tree and cut-paper line
+        var m = /^(el-[a-z]+-[a-z]+-[a-z]+-)([a-z]+)-([0-4])$/.exec(basePick(st)); if (!m) return basePick(st);
+        var p = m[1] + (st.tree || m[2]) + '-' + (st.line >= 0 ? st.line : m[3]);
+        return PICKS.indexOf(p) >= 0 ? p : basePick(st);
+    }
+    function treeOf(st) { var m = /-([a-z]+)-[0-4]$/.exec(basePick(st)); return st.tree || (m ? m[1] : 'remove'); }
+    function lineOf(st) { var m = /-([0-4])$/.exec(basePick(st)); return st.line >= 0 ? st.line : (m ? +m[1] : 0); }
+    function starsParse(st, n) { var out = []; for (var i = 0; i < n; i++) out.push([0, 0, 1]);
+        (st.starset || '').split(';').forEach(function (t, i) { var v = t.split(','); if (i < n && v.length === 3) out[i] = [+v[0] || 0, +v[1] || 0, +v[2] ? 1 : 0]; });
+        return out; }
+    function starsStr(arr) { return arr.every(function (a) { return !a[0] && !a[1] && a[2]; }) ? '' : arr.map(function (a) { return (Math.round(a[0] * 1e4) / 1e4) + ',' + (Math.round(a[1] * 1e4) / 1e4) + ',' + a[2]; }).join(';'); }
+    function persist() { try { localStorage.setItem('layout-' + SLUG, JSON.stringify({d: D, v: V})); } catch (e) {} }
+    var HIST = [];
+    function snapH() { HIST.push(JSON.stringify(D)); if (HIST.length > 80) HIST.shift(); }
+
+    // layers of a colour pick (same files as the colours page)
+    function file(p, f) { return '/playground/' + encodeURIComponent(SLUG) + '/colours/file?p=' + encodeURIComponent(p) + '&f=' + f + '&v=' + (PVER[p] || ''); }
+    function loadImg(u) { return new Promise(function (res, rej) { var i = new Image(); i.onload = function () { res(i); }; i.onerror = rej; i.src = u; }); }
+    function pix(im, N) { var c = document.createElement('canvas'); c.width = c.height = N; var x = c.getContext('2d', {willReadFrequently: true}); x.drawImage(im, 0, 0, N, N); return x.getImageData(0, 0, N, N).data; }
+    var ELS = ['hill', 'moon', 'owl', 'trees', 'stars', 'line'], SHADE = {hill: 1, moon: 1, trees: 1, line: 1};
+    var DATA = {};
+    function load(p) {
+        if (DATA[p]) return DATA[p];
+        DATA[p] = fetch(file(p, 'meta.json')).then(function (r) { return r.json(); }).then(function (meta) {
+            var names = ['base.jpg', 'shade.png'].concat(ELS.map(function (e) { return e + '.png'; }));
+            return Promise.all(names.map(function (n) { return loadImg(file(p, n)).catch(function () { return null; }); })).then(function (ims) {
+                var N = ims[0].naturalWidth, d = {meta: meta, N: N, base: pix(ims[0], N), shade: pix(ims[1], N), m: {}, im: {}};
+                ELS.forEach(function (e, i) { if (ims[i + 2]) { d.im[e] = ims[i + 2]; d.m[e] = pix(ims[i + 2], N); } });
+                // moon centre (fractions) from its mask
+                var sx = 0, sy = 0, n = 0, mm = d.m.moon;
+                for (var q = 0, p4 = 0; p4 < mm.length; p4 += 4, q++) if (mm[p4] > 127) { sx += q % N; sy += (q / N) | 0; n++; }
+                d.mc = n ? [sx / n / N, sy / n / N] : [0.72, 0.19];
+                var n2 = 0; for (var p6 = 0; p6 < mm.length; p6 += 4) if (mm[p6] > 20) n2++;
+                d.mr = n2 ? Math.sqrt(n2 / Math.PI) / N : 0.08;   // moon radius (fraction), soft edge included
+                d.comps = starComps(d);
+                return d;
+            });
+        });
+        return DATA[p];
+    }
+    function starComps(d) {   // each star as its own piece (pixels + centre), largest first, specks dropped
+        var m = d.m.stars, N = d.N; if (!m) return [];
+        var seen = new Uint8Array(N * N), out = [];
+        for (var q = 0; q < N * N; q++) {
+            if (seen[q] || m[q * 4] < 30) continue;
+            var stack = [q], pix = [], sx = 0, sy = 0; seen[q] = 1;
+            while (stack.length) { var c = stack.pop(), x = c % N, y = (c / N) | 0; pix.push(c); sx += x; sy += y;
+                for (var dy = -2; dy <= 2; dy++) for (var dx = -2; dx <= 2; dx++) { var xx = x + dx, yy = y + dy; if (xx < 0 || yy < 0 || xx >= N || yy >= N) continue;
+                    var k = yy * N + xx; if (!seen[k] && m[k * 4] >= 30) { seen[k] = 1; stack.push(k); } } }
+            if (pix.length >= 12) { // grow by the soft edge
+                var full = []; pix.forEach(function (c) { var x = c % N, y = (c / N) | 0; for (var dy = -2; dy <= 2; dy++) for (var dx = -2; dx <= 2; dx++) { var xx = x + dx, yy = y + dy; if (xx >= 0 && yy >= 0 && xx < N && yy < N) full.push(yy * N + xx); } });
+                out.push({pix: Array.from(new Set(full)), cx: sx / pix.length / N, cy: sy / pix.length / N, n: pix.length});
+            }
+        }
+        out.sort(function (a, b) { return a.cx - b.cx || a.cy - b.cy; });
+        return out;
+    }
+    function hex(h) { h = h.replace('#', ''); return [0, 2, 4].map(function (i) { return parseInt(h.substr(i, 2), 16); }); }
+    function moved(d, key, st) {   // mask of moon/owl moved and scaled around the moon centre
+        var N = d.N, c = document.createElement('canvas'); c.width = c.height = N; var x = c.getContext('2d', {willReadFrequently: true});
+        x.translate((d.mc[0] + st.mdx) * N, (d.mc[1] + st.mdy) * N); var k = st.ms * (key === 'owl' ? (st.os || 1) : 1); x.scale(k, k); x.translate(-d.mc[0] * N, -d.mc[1] * N);   // the owl has its own size on top (11-06)
+        x.drawImage(d.im[key], 0, 0, N, N);
+        return x.getImageData(0, 0, N, N).data;
+    }
+    var ARTCACHE = {}, ARTC = {}, ARTK = [];   // several pictures cached by state, so kept thumbnails don't evict the main one
+    // the new tree takes the place of one tree: that tree is lifted off (its place filled from the pixels beside it)
+    var REPL = {left: {c: [0.261, 0.471], foot: [0.335, 0.630], h: 0.40},   // the new tree stands right of the big trunk so its own trunk shows (11-06; was 0.227, glued)
+                right: {c: [0.836, 0.610], foot: [0.842, 0.684], h: 0.197}};
+    function treePiece(d, which) {
+        var key = 'tp_' + which; if (d[key] !== undefined) return d[key];
+        var m = d.m.trees, N = d.N, R = REPL[which]; if (!m || !R) return (d[key] = null);
+        var cx = Math.round(R.c[0] * N), cy = Math.round(R.c[1] * N), seed = -1, bd = 1e9;
+        for (var y = cy - 40; y <= cy + 40; y++) for (var x = cx - 40; x <= cx + 40; x++) {
+            if (x < 0 || y < 0 || x >= N || y >= N || m[(y * N + x) * 4] < 40) continue;
+            var dd = (x - cx) * (x - cx) + (y - cy) * (y - cy); if (dd < bd) { bd = dd; seed = y * N + x; } }
+        if (seed < 0) return (d[key] = null);
+        var seen = new Uint8Array(N * N), stack = [seed], pix = []; seen[seed] = 1;
+        while (stack.length) { var c = stack.pop(), x2 = c % N, y2 = (c / N) | 0; pix.push(c);
+            for (var dy = -1; dy <= 1; dy++) for (var dx = -1; dx <= 1; dx++) { var xx = x2 + dx, yy = y2 + dy; if (xx < 0 || yy < 0 || xx >= N || yy >= N) continue;
+                var k = yy * N + xx; if (!seen[k] && m[k * 4] >= 40) { seen[k] = 1; stack.push(k); } } }
+        // small loose bits right next to the tree (its grass foot is a separate piece) go with it, never a big tree
+        var near = {}; pix.forEach(function (c) { var x4 = c % N, y4 = (c / N) | 0; for (var dy = -6; dy <= 6; dy += 3) for (var dx = -6; dx <= 6; dx += 3) { var xx = x4 + dx, yy = y4 + dy; if (xx >= 0 && yy >= 0 && xx < N && yy < N) { var k2 = yy * N + xx; if (!seen[k2] && m[k2 * 4] >= 40) near[k2] = 1; } } });
+        Object.keys(near).forEach(function (k3) { k3 = +k3; if (seen[k3]) return; var st2 = [k3], bit = [], ok = true; seen[k3] = 2;
+            while (st2.length && ok) { var c2 = st2.pop(), x5 = c2 % N, y5 = (c2 / N) | 0; bit.push(c2); if (bit.length > 600) ok = false;
+                for (var dy = -1; dy <= 1; dy++) for (var dx = -1; dx <= 1; dx++) { var xx = x5 + dx, yy = y5 + dy; if (xx < 0 || yy < 0 || xx >= N || yy >= N) continue; var k4 = yy * N + xx; if (!seen[k4] && m[k4 * 4] >= 40) { seen[k4] = 2; st2.push(k4); } } }
+            if (ok) bit.forEach(function (c3) { pix.push(c3); }); });
+        var er = new Uint8Array(N * N);
+        pix.forEach(function (c) { var x3 = c % N, y3 = (c / N) | 0; for (var dy = -2; dy <= 2; dy++) for (var dx = -2; dx <= 2; dx++) { var xx = x3 + dx, yy = y3 + dy; if (xx >= 0 && yy >= 0 && xx < N && yy < N) er[yy * N + xx] = 1; } });
+        return (d[key] = er);
+    }
+    function liftTree(d, er) {
+        var N = d.N, out = {base: new Uint8ClampedArray(d.base), shade: new Uint8ClampedArray(d.shade), hill: new Uint8ClampedArray(d.m.hill),
+            line: d.m.line ? new Uint8ClampedArray(d.m.line) : null, trees: new Uint8ClampedArray(d.m.trees)};
+        for (var y = 0; y < N; y++) { var x = 0;
+            while (x < N) { if (!er[y * N + x]) { x++; continue; }
+                var s0 = x; while (x < N && er[y * N + x]) x++; var L0 = s0 - 1, R0 = x;
+                for (var xx = s0; xx < R0; xx++) {
+                    var src = L0 < 0 ? R0 : R0 >= N ? L0 : (xx - L0 <= R0 - xx ? L0 : R0); if (src < 0 || src >= N) continue;
+                    var t = (y * N + xx) * 4, f = (y * N + src) * 4;
+                    for (var ch = 0; ch < 4; ch++) { out.base[t + ch] = out.base[f + ch]; out.shade[t + ch] = out.shade[f + ch]; out.hill[t + ch] = out.hill[f + ch]; if (out.line) out.line[t + ch] = out.line[f + ch]; }
+                    out.trees[t] = out.trees[t + 1] = out.trees[t + 2] = 0;
+                } } }
+        return out;
+    }
+    // colours: the save's colours, with any element changed here on top (Amir 11-06: "the option to play with the colours")
+    var COLOPTS = {hill: ['hillred', 'red', 'purple', 'plum', 'ivory', 'cream', 'black'], moon: ['cream', 'ivory', 'red', 'purple', 'gold'], owl: ['black', 'purple', 'red', 'cream'],
+                   trees: ['cream', 'ivory', 'red', 'purple', 'black'], stars: ['gold', 'cream', 'red', 'purple'], line: ['ivory', 'cream', 'red', 'purple']};
+    var COLNAME = {hill: 'Hill', moon: 'Moon', owl: 'Owl', trees: 'Trees', stars: 'Stars', line: 'Cut line'};
+    function colsParse(t) { var o = {}; (t || '').split(';').forEach(function (kv) { var a = kv.split('='); if (a.length === 2 && COLOPTS[a[0]]) o[a[0]] = a[1]; }); return o; }
+    function colsStr(o) { return Object.keys(o).map(function (k) { return k + '=' + o[k]; }).join(';'); }
+    function colsOf(st) { return Object.assign({}, (SAVES[st.save] || {}).cols || {}, colsParse(st.cols)); }
+    var NTP = loadImg('/playground/' + encodeURIComponent(SLUG) + '/layout/extra?n=tree1.png').catch(function () { return null; });
+    function newTreeMask(N, st, im) {   // the new tree, foot at (ntx, nty), height nts of the picture
+        var c = document.createElement('canvas'); c.width = c.height = N; var x = c.getContext('2d', {willReadFrequently: true});
+        var h = st.nts * N, w = h * im.naturalWidth / im.naturalHeight;
+        x.translate(st.ntx * N, st.nty * N); if (st.ntf) x.scale(-1, 1);
+        x.drawImage(im, -w * 0.5, -h, w, h);
+        return x.getImageData(0, 0, N, N).data;
+    }
+    function artCanvas(st) {   // the picture without text, cached per save + element state
+        var sv = SAVES[st.save], pk = pickFor(st), key = [st.save, pk, st.mdx, st.mdy, st.ms, st.os, st.owl, st.stars, st.starset, st.nt, st.ntf, st.ntx, st.nty, st.nts, st.ntr, st.cols].join('|');
+        if (ARTC[key]) { ARTCACHE = {key: key, c: ARTC[key]}; return Promise.resolve(ARTC[key]); }
+        return Promise.all([load(pk), NTP]).then(function (r0) { var d = r0[0], ntimg = r0[1];
+            var N = d.N, out = new ImageData(N, N), o = out.data, b = d.base, sh = d.shade, om = d.m.moon;
+            var cv = colsOf(st);
+            var TE = null; if (st.nt && st.ntr && st.ntr !== 'none') { var er = treePiece(d, st.ntr); if (er) { TE = liftTree(d, er); b = TE.base; sh = TE.shade; } }
+            var mm = moved(d, 'moon', st), owm = d.m.owl ? moved(d, 'owl', st) : null, sk = d.m.stars;
+            if (!d.omd) {   // the moon's old place: full inside 1.15 r, fading out to 2 r so its soft glow goes too (a disc showed under effects, 11-06)
+                var cxp = d.mc[0] * N, cyp = d.mc[1] * N, R = d.mr * N, tr0 = d.m.trees, st0 = d.m.stars, sr = 0, sg = 0, sb = 0, sn = 0, sv0 = 0;
+                d.omd = new Uint8ClampedArray(N * N * 4);
+                for (var y0 = 0; y0 < N; y0++) for (var x0 = 0; x0 < N; x0++) { var dd = Math.hypot(x0 - cxp, y0 - cyp) / R, q0 = (y0 * N + x0) * 4;
+                    var w0 = dd <= 1.7 ? 1 : dd >= 3 ? 0 : 1 - (dd - 1.7) / 1.3;   // full to 1.5 r: the dark rim round the moon sits there w0 = w0 * w0 * (3 - 2 * w0);
+                    d.omd[q0] = d.omd[q0 + 1] = d.omd[q0 + 2] = Math.round(w0 * 255); d.omd[q0 + 3] = 255;
+                    if (dd > 3 && dd < 3.6 && !(tr0 && tr0[q0] > 20) && !(st0 && st0[q0] > 20) && !(d.m.hill && d.m.hill[q0] > 20)) { (d.skyS = d.skyS || []).push([d.base[q0], d.base[q0 + 1], d.base[q0 + 2]]); sn++; } }
+                if (sn > 50) { var med = function (i) { var v = d.skyS.map(function (t) { return t[i]; }).sort(function (a1, b1) { return a1 - b1; }); return v[v.length >> 1]; }; d.sky = [med(0), med(1), med(2)]; } else d.sky = SKY; d.skyS = null;   // median: faint branches don't darken it
+                d.skyGrain = 0;
+                // borrow real sky texture from a clear patch nearby, so effects find the same grain inside the old place
+                var bestO = null, bestBad = 1e9, cands = [[-2.4, 0], [2.4, 0], [-3.2, 0], [3.2, 0], [0, 2.4], [-2.4, 1.2], [2.4, 1.2], [-1.8, -1.2], [1.8, -1.2]];
+                cands.forEach(function (o) { var ox = Math.round(o[0] * R), oy = Math.round(o[1] * R), bad = 0, out = 0;
+                    for (var yy = Math.round(cyp - 2 * R); yy <= cyp + 2 * R; yy += 3) for (var xx = Math.round(cxp - 2 * R); xx <= cxp + 2 * R; xx += 3) {
+                        var X = xx + ox, Y = yy + oy; if (X < 0 || Y < 0 || X >= N || Y >= N) { out++; continue; } var t = (Y * N + X) * 4;
+                        if ((tr0 && tr0[t] > 20) || (st0 && st0[t] > 20) || (d.m.hill && d.m.hill[t] > 20) || (d.m.moon && d.m.moon[t] > 20)) bad++; }
+                    var sc = bad + out * 3; if (sc < bestBad) { bestBad = sc; bestO = [ox, oy]; } });
+                d.skyOff = bestO;
+                // the glow around the old moon, as a smooth low-pass of the picture: subtracting it keeps the grain but drops the glow
+                var fb = new Uint8ClampedArray(d.base); for (var q5 = 0; q5 < fb.length; q5 += 4) if (d.omd[q5] === 255 || (d.m.moon && d.m.moon[q5] > 10)) { fb[q5] = d.sky[0]; fb[q5 + 1] = d.sky[1]; fb[q5 + 2] = d.sky[2]; }   // the moon itself out first, or a dark rim forms
+                var bc = document.createElement('canvas'); bc.width = bc.height = N; bc.getContext('2d').putImageData(new ImageData(fb, N, N), 0, 0);
+                var lc = document.createElement('canvas'); lc.width = lc.height = N; var lx = lc.getContext('2d'); lx.filter = 'blur(' + Math.max(4, Math.round(R * 0.35)) + 'px)'; lx.drawImage(bc, 0, 0);
+                d.low = lx.getImageData(0, 0, N, N).data;
+                var gs = 0, gn2 = 0; for (var y7 = 0; y7 < N; y7 += 2) for (var x7 = 0; x7 < N; x7 += 2) { var dd7 = Math.hypot(x7 - cxp, y7 - cyp) / R; if (dd7 < 3 || dd7 > 3.6) continue; var t7 = (y7 * N + x7) * 4;
+                    if ((tr0 && tr0[t7] > 20) || (st0 && st0[t7] > 20) || (d.m.hill && d.m.hill[t7] > 20)) continue; var v7 = Math.max(-3, Math.min(5, d.base[t7] - d.low[t7])); gs += v7 * v7; gn2++; }
+                d.skyN = gn2 ? Math.sqrt(gs / gn2) : 0; }   // the sky's own grain, so the cleared place is not a flat disc that effects pick out
+            var mvd = st.mdx || st.mdy || st.ms !== 1;   // the moon left its place: its cut-paper rim must go too
+            var custom = !!st.starset && sk && d.comps.length, smask = null;
+            if (custom) {   // stars moved or hidden one by one
+                smask = new Uint8ClampedArray(N * N * 4);
+                starsParse(st, d.comps.length).forEach(function (a, i) {
+                    if (!a[2]) return; var ox = Math.round(a[0] * N), oy = Math.round(a[1] * N);
+                    d.comps[i].pix.forEach(function (c) { var x = c % N + ox, y = ((c / N) | 0) + oy; if (x < 0 || y < 0 || x >= N || y >= N) return;
+                        var t = (y * N + x) * 4; smask[t] = Math.max(smask[t], sk[c * 4]); });
+                });
+            }
+            var L = [];
+            ELS.forEach(function (e) {
+                if (!d.m[e]) return;
+                if (e === 'owl' && (!st.owl || !d.meta.owl)) return;
+                if (e === 'stars' && (!st.stars || !d.meta.stars)) return;
+                if (e === 'stars' && custom) { L.push({k: e, m: smask, c: hex(C[cv[e]] || C.cream), s: SHADE[e]}); return; }
+                if (e === 'line' && !d.meta.line) return;
+                var mk = e === 'moon' ? mm : e === 'owl' ? owm : (TE && TE[e]) ? TE[e] : d.m[e];
+                L.push({k: e, m: mk, c: hex(C[cv[e]] || C.cream), s: SHADE[e]});
+            });
+            if (st.nt && ntimg) {   // the new tree BEHIND the other trees, in their colour (in front it looked glued onto the big trunk, 11-06)
+                var ti = L.findIndex(function (x) { return x.k === 'trees'; });
+                L.splice(ti, 0, {k: 'newtree', m: newTreeMask(N, st, ntimg), c: hex(C[cv.trees] || C.cream), s: 1});
+            }
+            for (var p = 0; p < o.length; p += 4) {
+                var r = b[p], g = b[p + 1], bl = b[p + 2], s = sh[p] / 180;
+                // clear the moon's old place (and the stars when off) to the night sky
+                var e0 = mvd ? d.omd[p] / 255 : (d.omd[p] === 255 ? 1 : 0);   // unmoved: only under the moon, its glow stays
+                if ((!st.stars || custom) && sk) e0 = Math.max(e0, Math.min(1, sk[p] * 3 / 255));   // x3: the soft edge of a hidden star goes too
+                if (e0) { var sk0 = d.sky || SKY;
+                    if (mvd && d.low && d.omd[p] > 0 && d.omd[p] < 255 && !(sk && sk[p] > 20)) { var hc = function (v) { return Math.max(-3, Math.min(5, v)); }; sk0 = [hc(b[p] - d.low[p]) + sk0[0], hc(b[p + 1] - d.low[p + 1]) + sk0[1], hc(b[p + 2] - d.low[p + 2]) + sk0[2]]; }   // grain only: a dark rim is clipped   // the glow ring: grain kept, glow gone
+                    else if (mvd && d.skyN !== undefined) { var hh = ((p * 2654435761) >>> 0) / 4294967296, hh2 = ((p * 40503 + 977) % 65536) / 65536, gz = (hh + hh2 - 1) * 1.7 * d.skyN; sk0 = [sk0[0] + gz, sk0[1] + gz, sk0[2] + gz]; }   // sky plus its own grain
+                    else if (false) { var qq = p >> 2, X1 = qq % N + d.skyOff[0], Y1 = ((qq / N) | 0) + d.skyOff[1];
+                        if (X1 >= 0 && Y1 >= 0 && X1 < N && Y1 < N) { var t1 = (Y1 * N + X1) * 4; if (!((d.m.trees && d.m.trees[t1] > 20) || (sk && sk[t1] > 20) || (d.m.hill && d.m.hill[t1] > 20))) { var hc2 = function (v) { return Math.max(-3, Math.min(5, v)); }; sk0 = d.low ? [sk0[0] + hc2(d.base[t1] - d.low[t1]), sk0[1] + hc2(d.base[t1 + 1] - d.low[t1 + 1]), sk0[2] + hc2(d.base[t1 + 2] - d.low[t1 + 2])] : sk0; } } }
+                    r = r * (1 - e0) + sk0[0] * e0; g = g * (1 - e0) + sk0[1] * e0; bl = bl * (1 - e0) + sk0[2] * e0; }
+                for (var j = 0; j < L.length; j++) {
+                    var a = L[j].m[p] / 255; if (!a) continue;
+                    if (L[j].k === 'hill') a *= (1 - (mvd && d.omd[p] === 255 ? 255 : om[p]) / 255);   // the hill mask also caught the old moon (moved: its wider place, or a light rim shows)
+                    if (L[j].k === 'line' && mvd) { a *= (1 - d.omd[p] / 255); if (!a) continue; }
+                    var f = L[j].s ? s : 1, c = L[j].c;
+                    r = r * (1 - a) + c[0] * f * a; g = g * (1 - a) + c[1] * f * a; bl = bl * (1 - a) + c[2] * f * a;
+                }
+                o[p] = r; o[p + 1] = g; o[p + 2] = bl; o[p + 3] = 255;
+            }
+            var c = document.createElement('canvas'); c.width = c.height = N; c.getContext('2d').putImageData(out, 0, 0);
+            // element masks for "where" an effect goes (Amir 11-06: Xerox lines on the trees, the moon clean)
+            var mt = new Uint8ClampedArray(N * N), mmo = new Uint8ClampedArray(N * N), mh = new Uint8ClampedArray(N * N);
+            L.forEach(function (ly) { var tgt = (ly.k === 'trees' || ly.k === 'newtree') ? mt : (ly.k === 'moon' || ly.k === 'owl') ? mmo : ly.k === 'hill' ? mh : null; if (!tgt) return;
+                for (var q = 0, p4 = 0; q < N * N; q++, p4 += 4) { var v = ly.m[p4]; if (ly.k === 'hill') v = v * (1 - om[p4] / 255); if (v > tgt[q]) tgt[q] = v; } });
+            // what lies on top wins: trees and moon are cut out of the hill, the moon out of the trees' gaps is kept
+            for (var q2 = 0; q2 < N * N; q2++) { mh[q2] = Math.max(0, mh[q2] - mt[q2] - mmo[q2]); }
+            function maskCanvas(arr, inv) { var mc = document.createElement('canvas'); mc.width = mc.height = N; var id = new ImageData(N, N), od = id.data;
+                for (var q3 = 0, p5 = 0; q3 < N * N; q3++, p5 += 4) { od[p5] = od[p5 + 1] = od[p5 + 2] = 0; od[p5 + 3] = inv ? 255 - arr[q3] : arr[q3]; }
+                mc.getContext('2d').putImageData(id, 0, 0); return mc; }
+            c._masks = {trees: maskCanvas(mt), moon: maskCanvas(mmo), hill: maskCanvas(mh), notmoon: maskCanvas(mmo, true)};
+            c._key = key; ARTCACHE = {key: key, c: c}; ARTC[key] = c; ARTK.push(key);
+            if (ARTK.length > 12) delete ARTC[ARTK.shift()];
+            return c;
+        });
+    }
+    function linesOf(n) { return n === 1 ? ['HALF THE NIGHT'] : n === 2 ? ['HALF THE', 'NIGHT'] : ['HALF', 'THE', 'NIGHT']; }
+    // text: returns the box it used (fractions) so dragging and snapping can use it
+    function drawText(ctx, S, st) {
+        var px = st.size * S, fam = FONTOK[st.font] === false ? 'sans-serif' : '"lf-' + st.font + '"';
+        ctx.save(); ctx.fillStyle = TEXTCOL[st.color] || TEXTCOL.cream; ctx.textBaseline = 'alphabetic';
+        ctx.font = px + 'px ' + fam; ctx.letterSpacing = (st.track * px) + 'px';
+        var cap = ctx.measureText('H').actualBoundingBoxAscent || px * 0.72;
+        var y = st.y * S, x = st.x * S, box = [1e9, 1e9, -1e9, -1e9];
+        linesOf(st.lines).forEach(function (ln) {
+            var w = ctx.measureText(ln).width - st.track * px, lx = st.align === 'left' ? x : st.align === 'center' ? x - w / 2 : x - w;
+            ctx.fillText(ln, lx, y + cap);
+            box[0] = Math.min(box[0], lx); box[2] = Math.max(box[2], lx + w); box[1] = Math.min(box[1], y); box[3] = Math.max(box[3], y + cap);
+            y += cap * (1 + st.lead);
+        });
+        var tbox = box.slice();
+        if (st.name) {
+            var npx = st.nsize * S, nt = st.ntrack === undefined ? 0.12 : st.ntrack; ctx.font = npx + 'px "ln-' + (st.nfont || 'marcellus') + '", serif'; ctx.letterSpacing = (nt * npx) + 'px';
+            ctx.fillStyle = TEXTCOL[st.ncolor] || TEXTCOL[st.color] || TEXTCOL.cream;
+            var nm = 'Inch of Shadow', nw = ctx.measureText(nm).width - nt * npx, ny;
+            var nx = st.align === 'left' ? x : st.align === 'center' ? x - nw / 2 : x - nw;
+            if (st.npos === 'under') ny = box[3] + 0.03 * S; else if (st.npos === 'top') { ny = 0.045 * S; nx = (S - nw) / 2; } else { ny = 0.93 * S; nx = (S - nw) / 2; }
+            ctx.textBaseline = 'top'; ctx.fillText(nm, nx, ny);
+            if (st.npos === 'under') { box[3] = ny + npx; box[0] = Math.min(box[0], nx); box[2] = Math.max(box[2], nx + nw); }
+        }
+        ctx.restore();
+        return {all: box.map(function (v) { return v / S; }), title: tbox.map(function (v) { return v / S; })};
+    }
+    // effect: the picture (no text) goes through one of the kept print looks on the server, then sits on top at the Wet amount; text comes last
+    // Never wait for the effect: draw at once (with the last effect picture of the same look while the new one is made),
+    // ask the server only after 300 ms of calm, then redraw when it arrives (Amir 11-06: "heavy and buggy").
+    var FXC = {}, FXR = {}, FXLAST = {}, fxTimer = null;
+    function fxImage(c, fx) {
+        var k = c._key + '|' + fx; if (FXC[k]) return FXC[k];
+        FXC[k] = new Promise(function (res) { c.toBlob(res, 'image/jpeg', 0.9); }).then(function (blob) {
+            return fetch('/playground/' + encodeURIComponent(SLUG) + '/layout/fx?look=' + encodeURIComponent(fx), {method: 'POST', body: blob}); })
+            .then(function (r) { if (!r.ok) throw new Error('fx'); return r.blob(); })
+            .then(function (b) { return loadImg(URL.createObjectURL(b)); })
+            .then(function (im) { FXR[k] = im; FXLAST[fx] = im; return im; })
+            .catch(function () { delete FXC[k]; return null; });
+        return FXC[k];
+    }
+    // up to 3 effects at once, each with its own Wet (Amir 11-06); "look:wet;look:wet"
+    function mixOf(st) {
+        if (st.fxmix !== undefined && st.fxmix !== null) return st.fxmix.split(';').filter(Boolean).map(function (t) { var a = t.split(':'); return {k: a[0], w: Math.max(0, Math.min(100, +a[1] || 0)), t: WHERE[a[2]] ? a[2] : 'all'}; });
+        return st.fx ? [{k: st.fx, w: st.fxw || 0, t: 'all'}] : [];
+    }
+    var WHERE = {all: 'Whole picture', trees: 'Trees', moon: 'Moon + owl', hill: 'Hill', notmoon: 'All but the moon'};
+    function mixStr(m) { return m.slice(0, 5).map(function (e) { return e.k + ':' + Math.round(e.w) + (e.t && e.t !== 'all' ? ':' + e.t : ''); }).join(';'); }
+    function fxBusy(on) { var b = $('fxbusy'); if (b) b.hidden = !on; }
+    function render(ctx, S, st, wait) {
+        return artCanvas(st).then(function (c) {
+            var mix = mixOf(st).filter(function (e) { return e.k && e.w > 0; });
+            function paint(imgs) {   // each effect takes its share, the picture keeps the rest (shares over 100% are scaled down)
+                var tmp = document.createElement('canvas'); tmp.width = tmp.height = S; var t = tmp.getContext('2d');
+                var T = imgs ? mix.reduce(function (a, e) { return a + e.w / 100; }, 0) : 0, kk = T > 1 ? 1 / T : 1;
+                var masked = imgs && mix.some(function (e) { return e.t && e.t !== 'all'; });
+                if (!imgs || !mix.length) t.drawImage(c, 0, 0, S, S);
+                else if (masked) {   // layered: each effect goes over its own part at its Wet
+                    t.drawImage(c, 0, 0, S, S);
+                    mix.forEach(function (e, i) {
+                        var lay = document.createElement('canvas'); lay.width = lay.height = S; var lx = lay.getContext('2d');
+                        lx.drawImage(imgs[i], 0, 0, S, S);
+                        if (e.t && e.t !== 'all' && c._masks && c._masks[e.t]) { lx.globalCompositeOperation = 'destination-in'; lx.drawImage(c._masks[e.t], 0, 0, S, S); }
+                        t.globalAlpha = e.w / 100; t.drawImage(lay, 0, 0); t.globalAlpha = 1;
+                    });
+                }
+                else { t.globalCompositeOperation = 'lighter'; t.globalAlpha = Math.max(0, 1 - T * kk); t.drawImage(c, 0, 0, S, S);
+                    mix.forEach(function (e, i) { t.globalAlpha = e.w / 100 * kk; t.drawImage(imgs[i], 0, 0, S, S); }); }
+                ctx.save(); if (st.flip) { ctx.translate(S, 0); ctx.scale(-1, 1); } ctx.drawImage(tmp, 0, 0, S, S); ctx.restore();
+                return drawText(ctx, S, st);
+            }
+            if (!mix.length) { if (!wait) fxBusy(false); return paint(null); }
+            var ready = mix.map(function (e) { return FXR[c._key + '|' + e.k]; });
+            if (ready.every(Boolean)) { if (!wait) fxBusy(false); return paint(ready); }
+            var all = function () { return Promise.all(mix.map(function (e) { return fxImage(c, e.k); })); };
+            if (wait) return all().then(function (ims) { return paint(ims.every(Boolean) ? ims : null); });   // kept thumbnails wait
+            // never show an effect made from another state (it showed the new tree at its old place, 11-06)
+            var box = paint(null); fxBusy(true);
+            clearTimeout(fxTimer);
+            fxTimer = setTimeout(function () { all().then(function (ims) { fxBusy(false); if (ims.every(Boolean)) draw(); }); }, 300);
+            return box;
+        });
+    }
+    // guides
+    var PHI = 0.6180339887;
+    function spiralPts() {   // golden spiral in a 1 x 0.618 rectangle, stretched to the square (like photo crop guides)
+        var h0 = PHI, x = 0, y = 0, w = 1, h = h0, pts = [], sq = [];
+        for (var k = 0; k < 12; k++) {
+            var s, cx, cy, a0, side = k % 4;
+            if (side === 0) { s = h; cx = x + s; cy = y + s; a0 = Math.PI; sq.push([x, y, s, s]); x += s; w -= s; }
+            else if (side === 1) { s = w; cx = x; cy = y + s; a0 = -Math.PI / 2; sq.push([x, y, s, s]); y += s; h -= s; }
+            else if (side === 2) { s = h; cx = x + w - s; cy = y; a0 = 0; sq.push([x + w - s, y, s, s]); w -= s; }
+            else { s = w; cx = x + w; cy = y + h - s; a0 = Math.PI / 2; sq.push([x, y + h - s, s, s]); h -= s; }
+            for (var i = 0; i <= 16; i++) { var a = a0 + (Math.PI / 2) * i / 16; pts.push([cx + s * Math.cos(a), (cy + s * Math.sin(a))]); }
+        }
+        var eye = [x + w / 2, y + h / 2];
+        function map(p) { var u = p[0], v = p[1] / h0; if (V.spin & 1) u = 1 - u; if (V.spin & 2) v = 1 - v; return [u, v]; }
+        return {pts: pts.map(map), eye: map(eye), sq: sq.map(function (r) { return [map([r[0], r[1]]), map([r[0] + r[2], r[1] + r[3]])]; })};
+    }
+    function guidePoints() {
+        var g = V.guides, P = [];
+        if (g.thirds) [1 / 3, 2 / 3].forEach(function (a) { [1 / 3, 2 / 3].forEach(function (b) { P.push([a, b]); }); });
+        if (g.phi) [1 - PHI, PHI].forEach(function (a) { [1 - PHI, PHI].forEach(function (b) { P.push([a, b]); }); });
+        if (g.spiral) P.push(spiralPts().eye);
+        if (g.centre || !P.length) P.push([0.5, 0.5]);
+        return P;
+    }
+    function guideLines() {
+        var g = V.guides, L = [];
+        if (g.thirds) L.push(1 / 3, 2 / 3);
+        if (g.phi) L.push(1 - PHI, PHI);
+        if (g.centre) L.push(0.5);
+        return L;
+    }
+    var BOX = null;
+    function drawGuides() {
+        var c = $('guides'), x = c.getContext('2d'), S = c.width; x.clearRect(0, 0, S, S);
+        x.lineWidth = 2;
+        function ln(a, b, a2, b2, col) { x.strokeStyle = col; x.beginPath(); x.moveTo(a * S, b * S); x.lineTo(a2 * S, b2 * S); x.stroke(); }
+        if (V.guides.thirds) [1 / 3, 2 / 3].forEach(function (v) { ln(v, 0, v, 1, 'rgba(120,220,255,.75)'); ln(0, v, 1, v, 'rgba(120,220,255,.75)'); });
+        if (V.guides.phi) [1 - PHI, PHI].forEach(function (v) { ln(v, 0, v, 1, 'rgba(255,200,80,.8)'); ln(0, v, 1, v, 'rgba(255,200,80,.8)'); });
+        if (V.guides.centre) { ln(0.5, 0, 0.5, 1, 'rgba(255,255,255,.55)'); ln(0, 0.5, 1, 0.5, 'rgba(255,255,255,.55)'); }
+        if (V.guides.spiral) {
+            var sp = spiralPts(); x.strokeStyle = 'rgba(255,120,200,.9)'; x.beginPath();
+            sp.pts.forEach(function (p, i) { if (i) x.lineTo(p[0] * S, p[1] * S); else x.moveTo(p[0] * S, p[1] * S); }); x.stroke();
+            x.strokeStyle = 'rgba(255,120,200,.3)'; x.lineWidth = 1;
+            sp.sq.forEach(function (r) { x.strokeRect(Math.min(r[0][0], r[1][0]) * S, Math.min(r[0][1], r[1][1]) * S, Math.abs(r[1][0] - r[0][0]) * S, Math.abs(r[1][1] - r[0][1]) * S); });
+            x.lineWidth = 2;
+        }
+        guidePoints().forEach(function (p) { if (!V.guides.thirds && !V.guides.phi && !V.guides.spiral && !V.guides.centre) return;
+            x.fillStyle = 'rgba(255,255,255,.9)'; x.beginPath(); x.arc(p[0] * S, p[1] * S, 6, 0, Math.PI * 2); x.fill(); });
+        if (BOX && V.drag === 'text') { x.strokeStyle = 'rgba(216,195,154,.6)'; x.setLineDash([8, 6]); x.strokeRect(BOX.all[0] * S - 6, BOX.all[1] * S - 6, (BOX.all[2] - BOX.all[0]) * S + 12, (BOX.all[3] - BOX.all[1]) * S + 12); x.setLineDash([]); }
+    }
+    // main draw
+    var busy = false, again = false;
+    function draw() {
+        if (busy) { again = true; return; } busy = true;
+        var ctx = $('art').getContext('2d');
+        render(ctx, 1080, D).then(function (b) { BOX = b; drawGuides(); drawIg(); busy = false; if (again) { again = false; draw(); } })
+            .catch(function () { busy = false; });
+    }
+    // IG grid
+    var FEED = null;
+    function drawIg() {
+        if (!IGFEED.length || !$('igg')) return;
+        if (!FEED) FEED = Promise.all(IGFEED.slice(0, 11).map(function (n) { return loadImg('/playground/' + encodeURIComponent(SLUG) + '/ig-grid/img?n=' + n).catch(function () { return null; }); }));
+        FEED.then(function (feed) {
+            var cv = $('igg'), W = cv.width, gap = 2, tw = (W - 2 * gap) / 3, th = tw * 4 / 3, x = cv.getContext('2d');
+            x.fillStyle = '#fff'; x.fillRect(0, 0, W, cv.height);
+            [$('art')].concat(feed).forEach(function (im, i) {
+                if (!im) return; var sw = im.width, sh = im.height, cw = sw, ch = sh;
+                if (sw / sh > 3 / 4) cw = sh * 3 / 4; else ch = sw * 4 / 3;
+                x.drawImage(im, (sw - cw) / 2, (sh - ch) / 2, cw, ch, (i % 3) * (tw + gap), Math.floor(i / 3) * (th + gap), tw, th);
+            });
+        });
+    }
+    // controls
+    function seg(id, key, num) {
+        Array.prototype.forEach.call($(id).querySelectorAll('button'), function (b) {
+            b.onclick = function () { snapH(); D[key] = num ? +b.dataset.v : b.dataset.v; persist(); sync(); draw(); };
+        });
+    }
+    seg('lines', 'lines', true); seg('align', 'align', false); seg('npos', 'npos', false);
+    function slider(id, key, fmt) {
+        $(id).addEventListener('pointerdown', snapH);
+        $(id).addEventListener('input', function () { D[key] = +this.value; $(id + 'n').textContent = fmt(D[key]); persist(); draw(); });
+    }
+    var pct = function (v) { return Math.round(v * 100) + '%'; };
+    slider('size', 'size', pct); slider('lead', 'lead', pct); slider('track', 'track', pct); slider('nsize', 'nsize', pct); slider('ms', 'ms', pct); slider('ntrack', 'ntrack', pct);
+    slider('nts', 'nts', pct); slider('os', 'os', pct);
+    // group size: title and name scale together, the name keeps its size relative to the title
+    $('gsize').addEventListener('pointerdown', snapH);
+    $('gsize').addEventListener('input', function () {
+        var k = +this.value / D.size; D.size = +this.value; D.nsize = Math.max(0.005, Math.min(0.2, D.nsize * k));
+        $('gsizen').textContent = pct(D.size); $('size').value = D.size; $('sizen').textContent = pct(D.size);
+        $('nsize').value = D.nsize; $('nsizen').textContent = pct(D.nsize); persist(); draw(); });
+    Array.prototype.forEach.call($('ntr').querySelectorAll('button'), function (b) {
+        b.onclick = function () { snapH(); var v = b.dataset.v; D.ntr = v; D.nt = v !== 'none';
+            if (REPL[v]) { D.ntx = REPL[v].foot[0]; D.nty = REPL[v].foot[1] + 0.01; D.nts = Math.max(0.2, REPL[v].h * 1.05); }
+            persist(); sync(); draw(); };
+    });
+    ['name', 'owl', 'stars', 'ntf'].forEach(function (k) { $(k).onchange = function () { snapH(); D[k] = this.checked; persist(); draw(); }; });
+    // fonts Amir removes stay removed (saved on the server); "show removed" brings them back faded with a restore button
+    var FHID = [], SHOWF = false;
+    function addX(b, key) {
+        b.dataset.fk = key; b.style.position = 'relative';
+        var x = document.createElement('span'); x.className = 'fx-x'; x.title = 'Remove this font';
+        x.onclick = function (e) { e.stopPropagation();
+            fetch('/api/playground/' + encodeURIComponent(SLUG) + '/fonts-hidden', {method: 'POST', headers: {'Content-Type': 'application/json'}, body: JSON.stringify({font: key})})
+                .then(function (r) { return r.json(); }).then(function (d) { if (d.hidden) { FHID = d.hidden; applyFHid(); } }); };
+        b.appendChild(x);
+    }
+    function applyFHid() {
+        Array.prototype.forEach.call(document.querySelectorAll('.fontb[data-fk]'), function (b) {
+            var gone = FHID.indexOf(b.dataset.fk) >= 0; b.classList.toggle('gone', gone); b.hidden = gone && !SHOWF;
+            b.querySelector('.fx-x').textContent = gone ? '↺' : '✕'; b.querySelector('.fx-x').title = gone ? 'Bring this font back' : 'Remove this font'; });
+        Array.prototype.forEach.call(document.querySelectorAll('.fhn'), function (n) { n.textContent = FHID.length; });
+    }
+    fetch('/api/playground/' + encodeURIComponent(SLUG) + '/fonts-hidden').then(function (r) { return r.json(); }).then(function (d) { FHID = d.hidden || []; applyFHid(); }).catch(function () {});
+    FONTS.forEach(function (f) {
+        var b = document.createElement('button'); b.type = 'button'; b.className = 'fontb'; b.dataset.v = f.k; b.title = f.note || f.label;
+        var sm = document.createElement('span'); sm.className = 's'; sm.textContent = 'HALF THE NIGHT'; sm.style.fontFamily = '"lf-' + f.k + '", sans-serif';
+        var lb = document.createElement('span'); lb.className = 'l'; lb.textContent = f.label + (f.note ? ' · ' + f.note : ''); b.append(sm, lb);
+        b.onclick = function () { snapH(); D.font = f.k; persist(); sync(); draw(); };
+        addX(b, 't' + f.k);
+        $(f.g === 1 ? 'fonts' : 'fonts2').appendChild(b);
+    });
+    NFONTS.forEach(function (f) {
+        var b = document.createElement('button'); b.type = 'button'; b.className = 'fontb'; b.dataset.v = f.k; b.title = f.note || f.label;
+        var sm = document.createElement('span'); sm.className = 's small'; sm.textContent = 'Inch of Shadow'; sm.style.fontFamily = '"ln-' + f.k + '", serif';
+        var lb = document.createElement('span'); lb.className = 'l'; lb.textContent = f.label; b.append(sm, lb);
+        b.onclick = function () { snapH(); D.nfont = f.k; persist(); sync(); draw(); };
+        addX(b, 'n' + f.k);
+        $('nfonts').appendChild(b);
+    });
+    function swatches(box, key) {
+        Object.keys(TEXTCOL).forEach(function (k) {
+            var b = document.createElement('button'); b.type = 'button'; b.className = 'sw'; b.dataset.v = k; b.title = k; b.style.background = TEXTCOL[k];
+            b.onclick = function () { snapH(); D[key] = k; persist(); sync(); draw(); };
+            $(box).appendChild(b);
+        });
+    }
+    swatches('colors', 'color'); swatches('ncolors', 'ncolor');
+    // stars: one chip per star, click hides or shows it
+    var NSTARS = 0;
+    function buildStars() {
+        load(pickFor(D)).then(function (d) {
+            NSTARS = d.comps.length; var box = $('starchips'); box.innerHTML = '<span class="sub">Tap a star to hide or show it:</span>';
+            var arr = starsParse(D, NSTARS);
+            d.comps.forEach(function (c, i) {
+                var b = document.createElement('button'); b.type = 'button'; b.className = 'chip' + (arr[i][2] ? '' : ' off');
+                b.textContent = '⭐ ' + (i + 1) + (c.cx > 0.45 && c.cx < 0.75 && c.cy > 0.3 ? ' (by the title)' : '');
+                b.onclick = function () { snapH(); var a = starsParse(D, NSTARS); a[i][2] = a[i][2] ? 0 : 1; D.starset = starsStr(a); persist(); buildStars(); draw(); };
+                box.appendChild(b);
+            });
+        });
+    }
+    $('starreset').onclick = function () { snapH(); D.starset = ''; D.stars = true; persist(); sync(); draw(); };
+    SAVES.forEach(function (sv, i) {
+        var b = document.createElement('button'); b.type = 'button'; b.className = 'saveb'; b.dataset.v = i; b.title = 'Save ' + (i + 1);
+        var c = document.createElement('canvas'); c.width = c.height = 92; b.appendChild(c);
+        var t = document.createElement('b'); t.textContent = i + 1; b.appendChild(t); c.width = c.height = 160;
+        b.onclick = function () { snapH(); D.save = i; D.cols = ''; persist(); sync(); buildStars(); buildCols(); draw(); };
+        $('saves').appendChild(b);
+        artCanvas(Object.assign({}, DEF, {save: i})).then(function (a) { c.getContext('2d').drawImage(a, 0, 0, 160, 160); });
+    });
+    Array.prototype.forEach.call($('guidesel').querySelectorAll('button'), function (b) {
+        b.onclick = function () { V.guides[b.dataset.v] = !V.guides[b.dataset.v]; persist(); sync(); drawGuides(); };
+    });
+    Array.prototype.forEach.call($('dragwhat').querySelectorAll('button'), function (b) {
+        b.onclick = function () { V.drag = b.dataset.v; persist(); sync(); drawGuides(); };
+    });
+    $('spin').onclick = function () { V.spin = (V.spin + 1) % 4; V.guides.spiral = true; persist(); sync(); drawGuides(); };
+    $('magnet').onchange = function () { V.magnet = this.checked; persist(); };
+    $('moonreset').onclick = function () { snapH(); D.mdx = 0; D.mdy = 0; D.ms = 1; D.os = 1; persist(); sync(); draw(); };
+    $('reset').onclick = function () { snapH(); Object.assign(D, P1); persist(); sync(); draw(); };
+    document.addEventListener('keydown', function (e) {   // Ctrl+Z / Cmd+Z = Undo (Amir 11-06)
+        if ((e.ctrlKey || e.metaKey) && !e.shiftKey && (e.key === 'z' || e.key === 'Z')) {
+            var t = e.target; if (t && (t.tagName === 'TEXTAREA' || (t.tagName === 'INPUT' && t.type === 'text'))) return;
+            e.preventDefault(); if ($('tour') && !$('tour').hidden) $('tundo').click(); else $('undo').click(); }   // in the tournament, Ctrl+Z takes back the last pick
+    });
+    $('undo').onclick = function () { if (!HIST.length) return; D = JSON.parse(HIST.pop()); persist(); sync(); buildStars(); buildCols(); buildFx(); draw(); };
+    // snap: the text block's middle onto the nearest strong point of the guides that are on
+    $('snap').onclick = function () {
+        if (!BOX) return; snapH();
+        var b = BOX.all, cx = (b[0] + b[2]) / 2, cy = (b[1] + b[3]) / 2, best = null, bd = 9;
+        guidePoints().forEach(function (p) { var dd = Math.hypot(p[0] - cx, p[1] - cy); if (dd < bd) { bd = dd; best = p; } });
+        if (best) { D.x += best[0] - cx; D.y += best[1] - cy; persist(); draw(); }
+    };
+    // dragging on the picture
+    var G = $('guides'), drag = null;
+    function at(e) { var r = G.getBoundingClientRect(); return [(e.clientX - r.left) / r.width, (e.clientY - r.top) / r.height]; }
+    G.addEventListener('pointerdown', function (e) {
+        var p = at(e); snapH();
+        drag = {p: p, x: D.x, y: D.y, mdx: D.mdx, mdy: D.mdy, star: -1, ntx: D.ntx, nty: D.nty};
+        if (V.drag === 'star') {   // the star nearest to the click
+            var u = D.flip ? 1 - p[0] : p[0];
+            load(pickFor(D)).then(function (d) { var arr = starsParse(D, d.comps.length), bi = -1, bd = 0.06;
+                d.comps.forEach(function (c, i) { var dd = Math.hypot(c.cx + arr[i][0] - u, c.cy + arr[i][1] - p[1]); if (dd < bd) { bd = dd; bi = i; } });
+                if (drag) { drag.star = bi; drag.sarr = arr; drag.s0 = bi >= 0 ? arr[bi].slice() : null; } });
+        }
+        G.setPointerCapture(e.pointerId); G.classList.add('drag');
+    });
+    G.addEventListener('pointermove', function (e) {
+        if (!drag) return; var p = at(e), dx = p[0] - drag.p[0], dy = p[1] - drag.p[1], fdx = D.flip ? -dx : dx;
+        if (V.drag === 'star') { if (drag.star < 0 || !drag.sarr) return; drag.sarr[drag.star][0] = drag.s0[0] + fdx; drag.sarr[drag.star][1] = drag.s0[1] + dy; D.starset = starsStr(drag.sarr); draw(); return; }
+        if (V.drag === 'newtree') { if (!D.nt) return; D.ntx = drag.ntx + dx; D.nty = drag.nty + dy; draw(); return; }
+        if (V.drag === 'moon') { dx = fdx; D.mdx = Math.max(-0.7, Math.min(0.3, drag.mdx + dx)); D.mdy = Math.max(-0.15, Math.min(0.35, drag.mdy + dy)); draw(); return; }
+        D.x = drag.x + dx; D.y = drag.y + dy;
+        if (V.magnet && BOX) {   // pull an edge or the middle of the block onto a guide line
+            var L = guideLines(), b = BOX.all, w = b[2] - b[0], h = b[3] - b[1], ox = b[0] - D.x, oy = b[1] - D.y;
+            var nx = D.x + ox, ny = D.y + oy, tol = 0.012;
+            [[0, 'x'], [0.5, 'x'], [1, 'x']].forEach(function (q) { L.forEach(function (l) { var e2 = nx + q[0] * w; if (Math.abs(e2 - l) < tol) { D.x += l - e2; nx = D.x + ox; } }); });
+            [[0], [0.5], [1]].forEach(function (q) { L.forEach(function (l) { var e2 = ny + q[0] * h; if (Math.abs(e2 - l) < tol) { D.y += l - e2; ny = D.y + oy; } }); });
+        }
+        draw();
+    });
+    function endDrag() { if (drag) { drag = null; G.classList.remove('drag'); persist(); } }
+    G.addEventListener('pointerup', endDrag); G.addEventListener('pointercancel', endDrag);
+    function sync() {
+        function on(id, v) { Array.prototype.forEach.call($(id).querySelectorAll('[data-v]'), function (b) { b.classList.toggle('on', String(b.dataset.v) === String(v)); }); }
+        on('nfonts', D.nfont); on('ncolors', D.ncolor); 
+        on('lines', D.lines); on('align', D.align); on('npos', D.npos); on('fonts', D.font); on('fonts2', D.font); on('colors', D.color); on('saves', D.save); on('dragwhat', V.drag);
+        Array.prototype.forEach.call($('guidesel').querySelectorAll('button'), function (b) { b.classList.toggle('on', !!V.guides[b.dataset.v]); });
+        [['gsize', 'size'], ['size', 'size'], ['lead', 'lead'], ['track', 'track'], ['nsize', 'nsize'], ['ms', 'ms'], ['ntrack', 'ntrack'], ['nts', 'nts'], ['os', 'os']].forEach(function (q) { $(q[0]).value = D[q[1]]; $(q[0] + 'n').textContent = pct(D[q[1]]); });
+        $('name').checked = !!D.name; on('ntr', D.nt ? (D.ntr || 'none') : 'none'); $('cutline').checked = lineOf(D) > 0; $('ntf').checked = !!D.ntf; $('owl').checked = !!D.owl; $('stars').checked = !!D.stars; $('magnet').checked = !!V.magnet;
+        markKept();
+    }
+    // keep
+    var KEPT = [];
+    var KEYS = ['save', 'lines', 'x', 'y', 'size', 'lead', 'track', 'nsize', 'mdx', 'mdy', 'ms', 'font', 'align', 'color', 'npos', 'name', 'owl', 'stars',
+                'line', 'ntrack', 'nfont', 'ncolor', 'tree', 'starset', 'flip', 'nt', 'ntf', 'ntx', 'nty', 'nts', 'ntr', 'cols', 'fx', 'fxw', 'os', 'fxmix'];
+    function item(st) { var o = {}; KEYS.forEach(function (k) { o[k] = typeof st[k] === 'number' && k !== 'save' && k !== 'lines' && k !== 'line' ? Math.round(st[k] * 10000) / 10000 : st[k]; });
+        o.tree = treeOf(st); o.line = lineOf(st); o.flip = !!st.flip; o.starset = st.starset || ''; o.nt = !!st.nt; o.ntf = !!st.ntf; o.ntr = st.nt ? (st.ntr || 'none') : 'none'; o.cols = st.cols || ''; var mx = mixOf(st); o.fxmix = mixStr(mx); o.fx = mx.length ? mx[0].k : ''; o.fxw = mx.length ? Math.round(mx[0].w) : 0; return o; }
+    function same(a, b) { return KEYS.every(function (k) { return a[k] === b[k]; }); }
+    function markKept() { var k = KEPT.some(function (x) { return same(x, item(D)); }); $('keep').textContent = k ? '★ Kept' : '☆ Keep'; }
+    function renderKept() {
+        var box = $('kept'); box.innerHTML = '';
+        if (!KEPT.length) { box.innerHTML = '<span class="lay-note">Nothing kept yet. Press Keep on a layout you like.</span>'; return; }
+        KEPT.forEach(function (k, i) {
+            var d = document.createElement('div'); d.className = 'k'; d.title = 'Load this layout';
+            var c = document.createElement('canvas'); c.width = c.height = 300; d.appendChild(c);
+            var t = document.createElement('div'); t.textContent = (i + 1) + '. Save ' + (k.save + 1) + ' · ' + k.font + ' · ' + (k.saved || ''); d.appendChild(t);
+            d.onclick = function () { snapH(); D = fromKept(k); persist(); sync(); buildStars(); buildCols(); buildFx(); draw(); };
+            box.appendChild(d);
+            render(c.getContext('2d'), 300, fromKept(k), true).catch(function () {});
+        });
+    }
+    window.layoutSnap = {kept: function () { return KEPT; }, now: function () { return D; }, item: item, colsFx: function (cols) { snapH(); D.cols = cols; setMix([]); persist(); sync(); buildStars(); buildCols(); buildFx(); draw(); }, starsUnderText: function (st) { return load(pickFor(st)).then(function (d) { var arr = starsParse(st, d.comps.length);   // stars hidden behind the title or the name (Amir 11-06: the star behind the F)
+        d.comps.forEach(function (c, i) { var cx = c.cx + arr[i][0], cy = c.cy + arr[i][1]; if (cx > st.x - 0.04 && cx < st.x + 2.75 * st.size + 0.04 && cy > st.y - 0.06 && cy < st.y + 3.4 * st.size + 0.03) arr[i][2] = 0; }); return starsStr(arr); }); }, start: function (i) { snapH(); D = fromKept(KEPT[i]); setMix([]); persist(); sync(); buildStars(); buildCols(); buildFx(); draw(); }, render: render, fromKept: fromKept, label: keptLabel};   // used to save keeps as pictures for a side page
+    function loadKept() { return fetch('/api/playground/' + encodeURIComponent(SLUG) + '/layouts-kept').then(function (r) { return r.json(); }).then(function (d) { KEPT = d.kept || []; renderKept(); markKept(); abFromUrl(); }); }
+    $('keep').onclick = function () {
+        fetch('/api/playground/' + encodeURIComponent(SLUG) + '/layouts-kept', {method: 'POST', headers: {'Content-Type': 'application/json'}, body: JSON.stringify(item(D))})
+            .then(function (r) { return r.json(); }).then(function (d) { if (d.kept) { KEPT = d.kept; renderKept(); markKept(); } else alert(d.error || 'Could not keep'); });
+    };
+    // colour saves: a column beside the picture, as tall as the picture
+    function sizeSaves() { if (!$('stage') || !$('saves')) return; sizeSaves2(); }
+    function sizeSaves2() {   // the saves fill the free space beside the picture: the column count that gives the biggest thumbnails
+        var h = $('stage').clientHeight, W = 99999, n = Math.max(1, SAVES.length), best = [70, 1];
+        var CAP = 118;   // Amir 11-05: bigger than he imagined, keep them small
+        for (var c = 1; c <= n; c++) { var r = Math.ceil(n / c), v = Math.min(CAP, Math.floor(Math.min((W - 8 * (c - 1)) / c, (h - 8 * (r - 1)) / r))); if (v > best[0]) best = [v, c]; }
+        var sv = $('saves'); if (sv.style.getPropertyValue('--sv') !== best[0] + 'px') { sv.style.setProperty('--sv', best[0] + 'px'); sv.style.setProperty('--sc', best[1]); } }
+    if (window.ResizeObserver) { var ro = new ResizeObserver(sizeSaves); ro.observe($('stage')); ro.observe(document.querySelector('.stagewrap')); } window.addEventListener('resize', sizeSaves); sizeSaves();
+    function showTab(t) { V.tab = t; persist();
+        Array.prototype.forEach.call(document.querySelectorAll('#tabs button'), function (b) { b.classList.toggle('on', b.dataset.t === t); });
+        Array.prototype.forEach.call(document.querySelectorAll('.tabp'), function (p2) { p2.classList.toggle('on', p2.dataset.t === t); });
+        }
+    Array.prototype.forEach.call(document.querySelectorAll('#tabs button'), function (b) { b.onclick = function () { showTab(b.dataset.t); }; });
+    showTab(V.tab && V.tab !== 'grid' ? V.tab : 'title');
+    function buildCols() {
+        var box = $('colrows'); box.innerHTML = ''; var cur = colsOf(D);
+        Object.keys(COLOPTS).forEach(function (e) {
+            var row = document.createElement('div'); row.className = 'crow';
+            var nm = document.createElement('span'); nm.className = 'nm'; nm.textContent = COLNAME[e];
+            var sws = document.createElement('span'); sws.className = 'sws';
+            COLOPTS[e].forEach(function (c) {
+                var b = document.createElement('button'); b.type = 'button'; b.className = 'sw' + (cur[e] === c ? ' on' : ''); b.title = c; b.style.background = C[c];
+                b.onclick = function () { snapH(); var o = colsParse(D.cols); o[e] = c; D.cols = colsStr(o); persist(); buildCols(); draw(); };
+                sws.appendChild(b);
+            });
+            var lk = document.createElement('button'); lk.type = 'button'; lk.className = 'chip lockb' + (LOCK[e] ? ' on' : '');
+            lk.textContent = LOCK[e] ? '🔒' : '🔓'; lk.title = LOCK[e] ? 'Locked: the shuffles keep this colour' : 'Lock this colour for the shuffles';
+            lk.onclick = function () { LOCK[e] = !LOCK[e]; V.locks = LOCK; persist(); buildCols(); };
+            row.append(nm, sws, lk); box.appendChild(row);
+        });
+    }
+    var FXL = [];
+    function fxList() { FXL = V.fxall ? LOOKS.slice() : LOOKS.filter(function (l) { return FXHID.indexOf(l.key) < 0; }); }
+    fxList();
+    function setMix(m) { D.fxmix = mixStr(m); D.fx = m.length ? m[0].k : ''; D.fxw = m.length ? m[0].w : 0; persist(); }
+    function buildFx() {
+        var box = $('fxmix'); box.innerHTML = ''; var m = mixOf(D);
+        m.forEach(function (e, j) {
+            var row = document.createElement('div'); row.className = 'fxm';
+            var sel = document.createElement('select');
+            FXL.forEach(function (l) { var o = document.createElement('option'); o.value = l.key; o.textContent = l.code + ' ' + l.name + (FXHID.indexOf(l.key) >= 0 ? ' (removed)' : ''); sel.appendChild(o); });
+            if (FXL.every(function (l) { return l.key !== e.k; })) { var o2 = document.createElement('option'); o2.value = e.k; o2.textContent = e.k; sel.appendChild(o2); }
+            sel.value = e.k;
+            sel.onchange = function () { snapH(); var m2 = mixOf(D); m2[j].k = sel.value; setMix(m2); draw(); };
+            var r = document.createElement('input'); r.type = 'range'; r.min = 0; r.max = 100; r.value = e.w;
+            var n = document.createElement('span'); n.className = 'n'; n.textContent = Math.round(e.w) + '%';
+            r.addEventListener('pointerdown', snapH);
+            r.addEventListener('input', function () { var m2 = mixOf(D); m2[j].w = +r.value; n.textContent = r.value + '%'; setMix(m2); sumLine(); draw(); });
+            var x = document.createElement('button'); x.type = 'button'; x.className = 'chip'; x.textContent = '✕'; x.title = 'Take this effect out';
+            x.onclick = function () { snapH(); var m2 = mixOf(D); m2.splice(j, 1); setMix(m2); buildFx(); draw(); };
+            var wh = document.createElement('select'); wh.title = 'Where this effect goes';
+            Object.keys(WHERE).forEach(function (k2) { var o3 = document.createElement('option'); o3.value = k2; o3.textContent = WHERE[k2]; wh.appendChild(o3); });
+            wh.value = e.t || 'all';
+            wh.onchange = function () { snapH(); var m2 = mixOf(D); m2[j].t = wh.value; setMix(m2); sumLine(); draw(); };
+            row.append(sel, wh, r, n, x); box.appendChild(row);
+        });
+        var foot = document.createElement('div'); foot.className = 'row';
+        if (m.length) { var none = document.createElement('button'); none.type = 'button'; none.className = 'chip'; none.textContent = '✕ None';
+            none.onclick = function () { snapH(); setMix([]); buildFx(); draw(); }; foot.appendChild(none); }
+        if (m.length < 5) { var add = document.createElement('button'); add.type = 'button'; add.className = 'chip'; add.textContent = '➕ add an effect (' + m.length + ' of 5)';
+            add.onclick = function () { snapH(); var m2 = mixOf(D); var used = m2.map(function (e) { return e.k; }); var nx = FXL.filter(function (l) { return used.indexOf(l.key) < 0; })[0];
+                if (!nx) return; m2.push({k: nx.key, w: m2.length ? 25 : 50}); setMix(m2); buildFx(); draw(); };
+            foot.appendChild(add); }
+        var sm = document.createElement('span'); sm.className = 'fxsum'; sm.id = 'fxsum'; foot.appendChild(sm);
+        box.appendChild(foot); sumLine();
+    }
+    function sumLine() { var m = mixOf(D), T = m.reduce(function (a, e) { return a + e.w; }, 0), el = $('fxsum'); if (!el) return;
+        var lay = m.some(function (e) { return e.t && e.t !== 'all'; });
+        el.textContent = !m.length ? 'No effect. Add one, up to 5.' : lay ? 'Each effect sits on its own part at its Wet (top row first).' : T <= 100 ? 'Effects ' + T + '%, picture ' + (100 - T) + '%' : 'Effects add up to ' + T + '%, shared out as 100%'; }
+    function syncFxLock() { $('fxlock').textContent = V.fxlock ? '🔒' : '🔓'; $('fxlock').classList.toggle('on', !!V.fxlock);
+        $('fxlock').title = V.fxlock ? 'Locked: 🎲 Effect keeps this effect' : 'Lock the effect for 🎲 Effect'; }
+    $('fxlock').onclick = function () { V.fxlock = !V.fxlock; persist(); syncFxLock(); };
+    syncFxLock();
+    function lum(n) { var c = hex(C[n] || C.cream); return 0.299 * c[0] + 0.587 * c[1] + 0.114 * c[2]; }
+    var LOCK = V.locks || {};   // locked elements keep their colour in every shuffle (Amir 11-06)
+    function randCols() { var cur = colsOf(D), o = {}; Object.keys(COLOPTS).forEach(function (e) { var a = COLOPTS[e]; o[e] = LOCK[e] ? cur[e] : a[Math.floor(Math.random() * a.length)]; }); return o; }
+    // smart colours: the hill is picked first from ALL its colours (light ones too), then the rest must pass our readability rules;
+    // any passing mix can win (not only the top few) and the last 8 results are never repeated (Amir 11-06: "repeats itself, hills always dark")
+    var RECENT = [];
+    function smartCols() {
+        var cur = colsOf(D), sky = 10;
+        var hills = LOCK.hill ? [cur.hill] : COLOPTS.hill.filter(function (h) { return h !== cur.hill; });
+        for (var round = 0; round < 6; round++) {
+            var hill = hills[Math.floor(Math.random() * hills.length)], good = [];
+            for (var i = 0; i < 400; i++) {
+                var o = randCols(); o.hill = hill;
+                if (o.moon === o.hill || o.trees === o.hill) continue;
+                if (Math.abs(lum(o.moon) - sky) < 55 || Math.abs(lum(o.owl) - lum(o.moon)) < 60 || Math.abs(lum(o.trees) - lum(o.hill)) < 40) continue;
+                if (o.line === o.hill || o.stars === o.moon) continue;
+                var k = colsStr(o); if (RECENT.indexOf(k) >= 0) continue;
+                good.push(o);
+            }
+            if (good.length) { var pick = good[Math.floor(Math.random() * good.length)]; RECENT.push(colsStr(pick)); if (RECENT.length > 8) RECENT.shift(); return pick; }
+        }
+        return randCols();
+    }
+    Array.prototype.forEach.call($('magic').querySelectorAll('button'), function (b) {
+        b.onclick = function () { snapH(); var m = b.dataset.m;
+            if (m === 'cols') D.cols = colsStr(randCols());
+            else if (m === 'smart') D.cols = colsStr(smartCols());
+            else if (m === 'fx') { if (V.fxlock) { b.textContent = '🔒 Effect is locked'; setTimeout(function () { b.textContent = '🎲 Effect'; }, 1800); $('fxlock').scrollIntoView({block: 'center', behavior: 'smooth'}); return; }   // one main effect, sometimes a second one for texture
+                var pool = FXL.slice().sort(function () { return Math.random() - 0.5; }), mm = [{k: pool[0].key, w: 30 + Math.floor(Math.random() * 41)}];
+                if (pool.length > 1 && Math.random() < 0.5) mm.push({k: pool[1].key, w: 10 + Math.floor(Math.random() * 21)});
+                setMix(mm); }
+            else if (m === 'nofx') setMix([]);
+            else if (m === 'comp') {   // composition only: moon, text block, trees, owl. A shuffled deck of 270 combinations, no repeat until all are seen (Amir 11-06)
+                function r(a, b) { return a + Math.random() * (b - a); }
+                var MZ = [[0, 0.15, -0.1, 0.05, 0.8, 1.2, 1], [-0.55, -0.42, -0.08, 0.05, 0.9, 1.3, 1], [-0.35, -0.25, -0.12, 0, 1, 1.5, 1],
+                          [-0.5, -0.35, 0, 0.15, 1.9, 2.6, 0.85], [-0.1, 0.05, 0.05, 0.2, 1.9, 2.6, 0.85], [-0.35, -0.1, 0.25, 0.35, 1.2, 1.8, 1]];
+                var SP = [[0.08, 0.08], [0.08, 0.62], [0.36, 0.30], [0.30, 0.64], [0.55, 0.60], [0.10, 0.36], [0.55, 0.08], [0.58, 0.36], [0.30, 0.08]];
+                var TR = [['none', false], ['left', false], ['right', false], ['left', true], ['right', true]];
+                if (!V.cdeck || !V.cdeck.length) { V.cdeck = []; for (var q = 0; q < MZ.length * SP.length * TR.length; q++) V.cdeck.push(q);
+                    for (var q2 = V.cdeck.length - 1; q2 > 0; q2--) { var w = Math.floor(Math.random() * (q2 + 1)), t = V.cdeck[q2]; V.cdeck[q2] = V.cdeck[w]; V.cdeck[w] = t; } }
+                for (var tries = 0; tries < 40; tries++) {   // the text never sits on the moon: the moon stays the strongest element
+                    if (!V.cdeck.length) break;
+                    var c = V.cdeck.shift(), mz = MZ[c % MZ.length], sp = SP[Math.floor(c / MZ.length) % SP.length], tr = TR[Math.floor(c / (MZ.length * SP.length))];
+                    D.mdx = r(mz[0], mz[1]); D.mdy = r(mz[2], mz[3]); D.ms = r(mz[4], mz[5]); D.os = mz[6] * r(0.9, 1.2);
+                    D.x = sp[0] + r(-0.02, 0.02); D.y = sp[1] + r(-0.02, 0.02); D.size = Math.max(0.05, Math.min(0.12, 0.081 * r(0.8, 1.25)));
+                    var mcx = 0.72 + D.mdx, mcy = 0.19 + D.mdy, rad = 0.085 * D.ms + 0.03, k = D.size / 0.081;
+                    var bx = Math.max(D.x, Math.min(mcx, D.x + 0.30 * k)), by = Math.max(D.y, Math.min(mcy, D.y + 0.30 * k));
+                    if ((bx - mcx) * (bx - mcx) + (by - mcy) * (by - mcy) > rad * rad) break;
+                    V.cdeck.push(c);
+                }
+                D.nt = tr[0] !== 'none'; D.ntr = tr[0]; D.ntf = tr[1];
+            }
+            persist(); buildCols(); buildFx(); draw(); };
+    });
+    $('colback').onclick = function () { snapH(); D.cols = ''; persist(); buildCols(); draw(); };
+    $('colshuf').onclick = function () { snapH(); D.cols = colsStr(smartCols()); persist(); buildCols(); draw(); };
+    // compare A / B: two kept layouts big, side by side or flipping in one place (Amir 11-06)
+    var AB = Object.assign({a: 0, b: 1, mode: 'side', show: 0}, V.ab || {});
+    var ABP = Array.prototype.slice.call(document.querySelectorAll('#abpanes .ab-pane'));
+    function keptLabel(k, i) { var mx = mixOf(fromKept(k)).filter(function (e) { return e.w > 0; });
+        return '#' + (i + 1) + ' · ' + (k.saved || '') + ' · ' + (mx.length ? mx.map(function (e) { var l = LOOKS.find(function (x) { return x.key === e.k; }); return (l ? l.name : e.k) + ' ' + Math.round(e.w) + '%'; }).join(' + ') : 'no effect'); }
+    function abDraw(i) {
+        if (!KEPT.length) return; var n = KEPT.length, idx = Math.max(0, Math.min(n - 1, i ? AB.b : AB.a)), p = ABP[i];
+        p.querySelector('.lab').textContent = keptLabel(KEPT[idx], idx);
+        var r = p.querySelector('input'); r.max = n - 1; r.value = idx; p.querySelector('.n').textContent = (idx + 1) + ' / ' + n;
+        render(p.querySelector('canvas').getContext('2d'), 1080, fromKept(KEPT[idx]), true).catch(function () {});
+    }
+    function abSync() {
+        V.ab = AB; persist();
+        Array.prototype.forEach.call($('abmode').querySelectorAll('button'), function (b) { b.classList.toggle('on', b.dataset.v === AB.mode); });
+        Array.prototype.forEach.call($('abshow').querySelectorAll('button'), function (b) { b.classList.toggle('on', +b.dataset.v === AB.show); });
+        $('abshow').hidden = AB.mode !== 'one'; $('abpanes').classList.toggle('single', AB.mode === 'one');
+        ABP.forEach(function (p, i) { p.hidden = AB.mode === 'one' && i !== AB.show; });
+    }
+    function abGo(i, idx) { var n = KEPT.length; idx = (idx + n) % n; if (i) AB.b = idx; else AB.a = idx; abSync(); abDraw(i); }
+    ABP.forEach(function (p, i) {
+        p.querySelector('input').addEventListener('input', function () { abGo(i, +this.value); });
+        Array.prototype.forEach.call(p.querySelectorAll('.ab-nav button'), function (b) { b.onclick = function () { abGo(i, (i ? AB.b : AB.a) + +b.dataset.d); }; });
+        p.querySelector('canvas').onclick = function () { if (AB.mode === 'one') { AB.show = AB.show ? 0 : 1; abSync(); } };
+        p.querySelector('.ab-load').onclick = function () { var k = KEPT[i ? AB.b : AB.a]; if (!k) return; snapH(); D = fromKept(k); persist(); sync(); buildStars(); buildCols(); buildFx(); abClose(); };
+    });
+    Array.prototype.forEach.call($('abmode').querySelectorAll('button'), function (b) { b.onclick = function () { AB.mode = b.dataset.v; abSync(); }; });
+    Array.prototype.forEach.call($('abshow').querySelectorAll('button'), function (b) { b.onclick = function () { AB.show = +b.dataset.v; abSync(); }; });
+    $('abopen').onclick = function () {
+        if (KEPT.length < 2) { alert('Keep at least 2 layouts first (⭐ Keep).'); return; }
+        if (AB.a >= KEPT.length) AB.a = 0; if (AB.b >= KEPT.length) AB.b = Math.min(1, KEPT.length - 1);
+        $('ab').hidden = false; $('stagewrap').hidden = true; document.querySelector('.lay-main').classList.add('ab-on'); abSync(); abDraw(0); abDraw(1); };
+    function abClose() { $('ab').hidden = true; $('stagewrap').hidden = false; document.querySelector('.lay-main').classList.remove('ab-on'); draw(); }
+    $('abclose').onclick = abClose;
+    function abFromUrl() {   // ?ab=9,17 opens A / B straight on those two keeps (numbers as shown, from 1)
+        var m = /[?&]ab=(\d+),(\d+)/.exec(location.search); if (!m || KEPT.length < 2) return;
+        AB.a = Math.max(0, Math.min(KEPT.length - 1, +m[1] - 1)); AB.b = Math.max(0, Math.min(KEPT.length - 1, +m[2] - 1)); AB.mode = 'side';
+        $('abopen').click();
+    }
+    document.addEventListener('keydown', function (e) {
+        if ($('ab').hidden) return;
+        if (e.key === 'Escape') abClose();
+        else if (AB.mode === 'one' && (e.key === ' ' || e.key === 'ArrowLeft' || e.key === 'ArrowRight')) { e.preventDefault(); AB.show = AB.show ? 0 : 1; abSync(); }
+    });
+    // tournament: the last 10 kept layouts, play-in (the 4 oldest), quarter-finals, semi-finals, final (Amir 11-06)
+    var T = null, TH = [], TT = {};
+    function tThumb(idx) { if (TT[idx]) return TT[idx]; var c = document.createElement('canvas'); c.width = c.height = 160;
+        render(c.getContext('2d'), 160, fromKept(KEPT[idx]), true).catch(function () {}); return (TT[idx] = c); }
+    // twins: same layout and colours, effects that differ by a few % only (you can't see 3% vs 7%); the newest one plays
+    function twinSig(k) { var o = fromKept(k), m = {};
+        mixOf(o).forEach(function (e) { var b = Math.round(e.w / 15); if (b > 0) m[e.k + '@' + (e.t || 'all')] = b; });
+        return JSON.stringify([o.save, o.font, o.nfont, Math.round(o.x * 100), Math.round(o.y * 100), Math.round(o.size * 1000), o.color, o.ncolor, colsOf(o), o.ntr, o.nt, Math.round(o.ms * 100), Math.round((o.os || 1) * 100), o.starset || '', o.lines, o.align, m]); }
+    var TSKIP = 0;
+    function tStart() {
+        var seen = {}, all = KEPT.map(function (k, i) { return i; }), uniq = [];
+        for (var q = all.length - 1; q >= 0; q--) { var sg = twinSig(KEPT[all[q]]); if (seen[sg]) continue; seen[sg] = 1; uniq.unshift(all[q]); }
+        var ids = uniq.slice(-10); TSKIP = Math.min(all.length, 10 + (all.length - uniq.length)) - ids.length;
+        TSKIP = all.length - uniq.length;
+        if (ids.length < 2) { alert('Keep at least 2 layouts first.'); return null; }
+        var rounds = [];
+        if (ids.length > 8) {   // the oldest ones play in first, so 8 reach the quarter-finals
+            var extra = ids.length - 8, pin = ids.slice(0, extra * 2), rest = ids.slice(extra * 2), m = [];
+            for (var i = 0; i < pin.length; i += 2) m.push([pin[i], pin[i + 1]]);
+            rounds.push({name: 'Play-in', m: m, w: [], seed: rest});
+        } else rounds.push(null);
+        return {rounds: rounds, cur: rounds[0] ? 0 : 1, pool: rounds[0] ? null : ids};
+    }
+    function tPairs(list) { var m = []; for (var i = 0; i < list.length; i += 2) m.push(list[i + 1] === undefined ? [list[i]] : [list[i], list[i + 1]]); return m; }
+    function tName(n) { return n >= 5 ? 'Round of ' + (n * 2) : n === 4 ? 'Quarter-final' : n === 2 ? 'Semi-final' : n === 1 ? 'Final' : 'Round'; }
+    function tAdvance() {   // build the next round once every match of this one has a winner
+        var r = T.rounds[T.cur];
+        if (r && r.w.length < r.m.length) return;
+        var next = r ? (r.seed ? r.w.concat(r.seed) : r.w) : T.pool;
+        if (next.length === 1) { T.champ = next[0]; return; }
+        var m = tPairs(next), auto = [];
+        T.rounds.push({name: tName(m.length), m: m, w: []}); T.cur = T.rounds.length - 1;
+        T.rounds[T.cur].m.forEach(function (mm) { if (mm.length === 1) T.rounds[T.cur].w.push(mm[0]); });   // a bye
+        tAdvance();
+    }
+    function tMatch() { var r = T.rounds[T.cur]; return r ? r.m[r.w.length] : null; }
+    function tShow() {
+        var done = T.champ !== undefined; $('tpanes').hidden = done; $('tchamp').hidden = !done;
+        if (done) {
+            var k = KEPT[T.champ]; $('tround').textContent = '🏆 Champion'; $('tinfo').textContent = '';
+            $('tchampinfo').textContent = keptLabel(k, T.champ);
+            render($('tchamp').querySelector('canvas').getContext('2d'), 1080, fromKept(k), true).catch(function () {});
+        } else {
+            var r = T.rounds[T.cur], mm = tMatch();
+            $('tround').textContent = r.name; $('tinfo').textContent = 'Match ' + (r.w.length + 1) + ' of ' + r.m.length + '. Click the picture or the button under it, or use ← →.' + (TSKIP ? ' (' + TSKIP + ' near-twin keeps left out, the newest of each plays.)' : '');
+            var P = $('tpanes').querySelectorAll('.ab-pane');
+            [0, 1].forEach(function (i) { P[i].querySelector('.lab').textContent = keptLabel(KEPT[mm[i]], mm[i]);
+                render(P[i].querySelector('canvas').getContext('2d'), 1080, fromKept(KEPT[mm[i]]), true).catch(function () {}); });
+        }
+        // the bracket
+        var b = $('tbracket'); b.innerHTML = '';
+        T.rounds.forEach(function (r, ri) { if (!r) return;
+            var col = document.createElement('div'); col.className = 'tcol'; col.innerHTML = '<h5></h5>'; col.querySelector('h5').textContent = r.name;
+            r.m.forEach(function (mm, mi) {
+                var box = document.createElement('div'); box.className = 'tmatch' + (ri === T.cur && mi === r.w.length && !done ? ' now' : '');
+                mm.forEach(function (id) { var t = document.createElement('div'); t.className = 't' + (mi < r.w.length ? (r.w[mi] === id ? ' win' : ' lose') : '');
+                    t.appendChild(tThumb(id)); var l = document.createElement('div'); l.textContent = '#' + (id + 1); t.appendChild(l); box.appendChild(t); });
+                col.appendChild(box);
+            });
+            b.appendChild(col);
+        });
+    }
+    function tPick(i) {
+        if (!T || T.champ !== undefined) return; var mm = tMatch(); if (!mm) return;
+        TH.push(JSON.stringify(T)); T.rounds[T.cur].w.push(mm[i]); tAdvance(); tShow();
+    }
+    Array.prototype.forEach.call($('tpanes').querySelectorAll('.ab-pane'), function (p, i) {
+        p.querySelector('.tpick').onclick = function () { tPick(i); }; p.querySelector('canvas').onclick = function () { tPick(i); }; });
+    function tOpen() { T = tStart(); if (!T) return; TH = []; tAdvance();
+        $('tour').hidden = false; $('stagewrap').hidden = true; $('ab').hidden = true; document.querySelector('.lay-main').classList.add('ab-on'); tShow(); }
+    function tClose() { $('tour').hidden = true; $('stagewrap').hidden = false; document.querySelector('.lay-main').classList.remove('ab-on'); draw(); }
+    $('touropen').onclick = tOpen; $('tclose').onclick = tClose;
+    $('trestart').onclick = function () { tOpen(); };
+    $('tundo').onclick = function () { if (TH.length) { T = JSON.parse(TH.pop()); tShow(); } };
+    $('tchampopen').onclick = function () { if (T.champ === undefined) return; snapH(); D = fromKept(KEPT[T.champ]); persist(); sync(); buildStars(); buildCols(); buildFx(); tClose(); };
+    document.addEventListener('keydown', function (e) {
+        if ($('tour').hidden) return;
+        if (e.key === 'Escape') tClose(); else if (e.key === 'ArrowLeft') { e.preventDefault(); tPick(0); } else if (e.key === 'ArrowRight') { e.preventDefault(); tPick(1); }
+    });
+    // gallery: every keep at once, with its own effect or with the effect on screen now (Amir 11-06: "see all my likes after we set this")
+    var GALMODE = 'this';
+    function galDraw() {
+        var box = $('galgrid'); box.innerHTML = ''; var cur = mixStr(mixOf(D));
+        Array.prototype.forEach.call($('galmode').querySelectorAll('button'), function (b) { b.classList.toggle('on', b.dataset.v === GALMODE); });
+        $('galinfo').textContent = KEPT.length + ' keeps' + (GALMODE === 'this' ? ' · effect: ' + (cur ? mixOf(D).map(function (e) { var l = LOOKS.find(function (x) { return x.key === e.k; }); return (l ? l.name : e.k) + ' ' + Math.round(e.w) + '%' + (e.t && e.t !== 'all' ? ' on ' + WHERE[e.t].toLowerCase() : ''); }).join(' + ') : 'none') : '') + '. Click one to open it.';
+        KEPT.forEach(function (k, i) {
+            var g = document.createElement('div'); g.className = 'g';
+            var c = document.createElement('canvas'); c.width = c.height = 540; g.appendChild(c);
+            var st = fromKept(k); if (GALMODE === 'this') { st.fxmix = cur; st.fx = ''; }
+            var t = document.createElement('div'); t.textContent = '#' + (i + 1) + ' · ' + (k.saved || '').slice(11); g.appendChild(t);
+            g.onclick = function () { snapH(); D = st; persist(); sync(); buildStars(); buildCols(); buildFx(); galClose(); };
+            box.appendChild(g);
+            render(c.getContext('2d'), 540, st, true).catch(function () {});
+        });
+    }
+    function galOpen() { if (!KEPT.length) { alert('Nothing kept yet.'); return; }
+        $('gal').hidden = false; $('stagewrap').hidden = true; $('ab').hidden = true; $('tour').hidden = true; document.querySelector('.lay-main').classList.add('ab-on'); galDraw(); }
+    function galClose() { $('gal').hidden = true; $('stagewrap').hidden = false; document.querySelector('.lay-main').classList.remove('ab-on'); draw(); }
+    $('galopen').onclick = galOpen; $('galclose').onclick = galClose;
+    Array.prototype.forEach.call($('galmode').querySelectorAll('button'), function (b) { b.onclick = function () { GALMODE = b.dataset.v; galDraw(); }; });
+    document.addEventListener('keydown', function (e) { if (!$('gal').hidden && e.key === 'Escape') galClose(); });
+    $('fxall').checked = !!V.fxall;
+    $('fxall').onchange = function () { V.fxall = this.checked; persist(); fxList(); buildFx(); };
+    $('cutline').onchange = function () { snapH(); D.line = this.checked ? -1 : 0; persist(); buildStars(); draw(); };   // off = the save's picture without the cut-paper line
+    $('showf').onchange = function () { SHOWF = this.checked; applyFHid(); };
+    sync();
+    Promise.all(fontLoads).then(function () { draw(); loadKept(); buildStars(); buildCols(); buildFx(); });
+})();
+</script>
+{% endblock %}

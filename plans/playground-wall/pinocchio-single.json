@@ -1,0 +1,32 @@
+{
+ "kept": [
+  {
+   "cover": "1a-red-owl-moon-stars.jpg",
+   "look": "pixelsort",
+   "wet": 100,
+   "palette": "straight",
+   "saved": "2026-11-04 03:25"
+  },
+  {
+   "cover": "1a-save-2.jpg",
+   "look": "thermal",
+   "wet": 50,
+   "palette": "",
+   "saved": "2026-11-05 18:42"
+  },
+  {
+   "cover": "1a-save-2.jpg",
+   "look": "nightvision",
+   "wet": 50,
+   "palette": "",
+   "saved": "2026-11-05 18:42"
+  },
+  {
+   "cover": "1a-save-2.jpg",
+   "look": "nightflash",
+   "wet": 50,
+   "palette": "",
+   "saved": "2026-11-05 18:42"
+  }
+ ]
+}

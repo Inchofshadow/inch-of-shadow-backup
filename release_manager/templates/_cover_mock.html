@@ -1,0 +1,11 @@
+{# One cover mock: the square crop of her edit with the photo's cover idea set in its face. #}
+{% macro cover_mock(p, c, idea, font, thumb_url, width=300) -%}
+<div class="cover" style="width: {{ width }}px; --k: {{ width / 300 }}; --ic: {{ idea.ink or '#D6D1C8' }}; --nc: {{ idea.name_ink or idea.ink or '#D6D1C8' }}; --cf: '{{ font.family }}', '{{ font.local or 'Marcellus' }}', serif; --cs: {{ font.scale }}">
+    <div class="sim-crop" style="aspect-ratio: {{ c.ratio }}"><img class="js-photo" data-thumb="{{ url_for('shoot_thumb', photo_id=p.id) }}" src="{{ thumb_url }}" alt="" loading="lazy" style="width: {{ c.width }}%; left: {{ c.left }}%; top: {{ c.top }}%"></div>
+    {% if idea %}
+    {% set weak = (idea.contrast or 9) < 3 or (idea.name_contrast or 9) < 3 %}
+    {% if idea.title_at and idea.title_at != 'none' %}<span class="cv cv-title cv-{{ idea.title_at }} cv-{{ idea.scale }}{% if font.caps %} cv-caps{% endif %}{% if (idea.contrast or 9) < 3 %} cv-weak{% endif %}{% if idea.ink and idea.ink|lower in ('#0f0d0c', '#1f1d20', '#2a1f1a', '#1c0f12', '#1b1119', '#110d19', '#0c120f', '#0a0a0a') %} cv-dark{% endif %}">Song title</span>{% endif %}
+    {% if idea.name_at and idea.name_at != 'none' %}<span class="cv cv-name cv-{{ idea.name_at }}{% if idea.name_at == idea.title_at %} cv-stack-{{ idea.scale }}{% endif %}{% if (idea.name_contrast or 9) < 3 %} cv-weak{% endif %}{% if idea.name_ink and idea.name_ink|lower in ('#0f0d0c', '#1f1d20', '#2a1f1a', '#1c0f12', '#1b1119', '#110d19', '#0c120f', '#0a0a0a') %} cv-dark{% endif %}">Inch of Shadow</span>{% endif %}
+    {% endif %}
+</div>
+{%- endmacro %}

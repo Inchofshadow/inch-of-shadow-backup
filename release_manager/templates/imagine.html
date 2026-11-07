@@ -1,0 +1,183 @@
+{% extends "base.html" %}
+{% block title %}Imagine{% endblock %}
+{% macro label(name) %}{{ name|replace('-', ' ')|capitalize }}{% endmacro %}
+{% block content %}
+<div class="im-page" id="im" data-csrf="{{ csrf_token() }}" data-release="{{ slug }}">
+    <div class="im-head">
+        <div>
+            <h1>Imagine</h1>
+            <p class="brand-muted" title="AI images on brand: cover art, background plates, textures. Guide: docs/brand/ai-image-prompting.md">Your face is never sent. Nothing is paid until you confirm.</p>
+        </div>
+        <div class="im-spend" id="im-spend">This month <strong>${{ '%.2f'|format(spend.usd) }}</strong> &middot; {{ spend.images }} image{{ 's' if spend.images != 1 }}</div>
+    </div>
+
+    <div class="im-layout">
+        <div class="im-main">
+            <div class="im-block">
+                <div class="rz-h">Release</div>
+                <form method="get" class="im-release-row">
+                    <select name="release" onchange="this.form.submit()">
+                        <option value="">No release (free images)</option>
+                        {% for r in releases %}<option value="{{ r.slug }}"{% if r.slug == slug %} selected{% endif %}>{{ r.metadata.title }} &middot; {{ r.release_date or 'no date' }}</option>{% endfor %}
+                    </select>
+                </form>
+                {% if release %}
+                <details class="im-brief"{% if not brief.mood and not brief.concept %} open{% endif %}>
+                    <summary>Release brief <span class="brand-muted">(layer 2: the same for every image of {{ release.metadata.title }})</span></summary>
+                    <div class="im-brief-grid">
+                        <label>Colour mood
+                            <select id="im-brief-mood"><option value="">none</option>{% for k, m in moods.items() %}<option value="{{ k }}"{% if brief.mood == k %} selected{% endif %}>{{ k }} {{ m.name }}</option>{% endfor %}</select>
+                        </label>
+                        <label>Motifs (at most two)
+                            <span class="im-checks" id="im-brief-motifs">{% for m in opts.motif %}<label><input type="checkbox" value="{{ m }}"{% if m in brief.motifs %} checked{% endif %}> {{ label(m) }}</label>{% endfor %}</span>
+                        </label>
+                        <label class="im-wide">Concept, in plain words
+                            <textarea id="im-brief-concept" rows="2" placeholder="what the release is about, as an image idea">{{ brief.concept }}</textarea>
+                        </label>
+                        <label class="im-wide">Never, for this release only
+                            <textarea id="im-brief-never" rows="2" placeholder="one per line">{{ brief.never }}</textarea>
+                        </label>
+                    </div>
+                    <button type="button" class="btn btn-secondary btn-sm" id="im-brief-save">Save brief</button>
+                    {% if brief.anchor %}<p class="brand-muted">Anchor: <a href="{{ url_for('imagine_image', filename=brief.anchor) }}" target="_blank">{{ brief.anchor }}</a>. Every other format of this release starts from it.</p>{% endif %}
+                </details>
+                {% endif %}
+            </div>
+
+            <div class="im-block">
+                <div class="rz-h">Images{% if release %} for {{ release.metadata.title }}{% endif %}</div>
+                <div class="im-gallery" id="im-gallery" data-lb-group>
+                    {% for r in images %}
+                    <figure class="im-card" data-id="{{ r.id }}" data-decision="{{ r.decision or '' }}">
+                        {% set v1 = (r.review or {}).get('verdict') %}{% set v2 = (r.review_openai or {}).get('verdict') %}
+                        <a href="{{ r.url }}" target="_blank" data-lb data-lb-src="{{ r.url }}" data-lb-title="{{ r.model|replace('gpt-image-', '') }} · {{ r.quality }}{% if r.decision %} · {{ r.decision }}{% endif %}" data-lb-text="{{ ((r.review or {}).get('summary') or '')[:220] }}"><img src="{{ r.url }}" alt="" loading="lazy"></a>
+                        <figcaption>
+                            <span class="im-decide">
+                                <button type="button" data-d="anchor" title="The release's anchor: every other format starts from it">&#9733; Anchor</button>
+                                <button type="button" data-d="keep">Keep</button>
+                                <button type="button" data-d="reject">Reject</button>
+                            </span>
+                            <span class="im-pill{% if v1 or v2 %} im-pill-{{ 'pass' if (v1 or v2) == 'pass' and (v2 or v1) == 'pass' else ('fix' if (v1 or v2) == (v2 or v1) else 'differ') }}{% endif %}">{% if v1 or v2 %}{{ 'ready' if (v1 or v2) == 'pass' and (v2 or v1) == 'pass' else ('fix first' if (v1 or v2) == (v2 or v1) else 'reviews differ') }}{% endif %}</span>
+                            <details class="im-more"><summary>details</summary>
+                            <span class="brand-muted">{{ r.model|replace('gpt-image-', '') }} &middot; {{ r.quality }} &middot; ${{ '%.3f'|format(r.cost_usd or 0) }} &middot; {{ r.made[5:16]|replace('T', ' ') }}</span>
+                            {% if r.step and r.step > 1 %}<span class="brand-muted im-round">step {{ r.step }} &middot; {{ im.CLOSENESS[r.closeness][0] if r.closeness in im.CLOSENESS else r.closeness }} &middot; after {{ r.parent }}</span>{% endif %}
+                            <span class="im-links"><a href="{{ r.edit }}">Edit a copy</a> <button type="button" class="im-asref">Use as reference</button></span>
+                            {% if r.kind == 'background' %}
+                            <details class="im-comp"><summary>Put my photo on it (local, free)</summary>
+                                <span class="im-comp-row"><input type="text" placeholder="out-152" class="im-comp-photo">
+                                <select class="im-comp-pos"><option value="center">centre</option><option value="left">left</option><option value="right">right</option></select>
+                                <select class="im-comp-scale"><option value="0.6">small</option><option value="0.78" selected>medium</option><option value="0.95">large</option></select>
+                                <button type="button" class="im-comp-go">Make it</button></span>
+                                <span class="brand-muted">Cut out on your Mac; your photo is not sent anywhere.</span>
+                            </details>
+                            {% endif %}
+                            {% if r.kind == 'composite' %}<span class="brand-muted">local composite of {{ r.photo }}</span>{% endif %}
+                            {% if r.kind != 'composite' and r.quality in im.QUALITIES %}<div class="im-review" data-review="{{ (r.review or {})|tojson|forceescape }}" data-review2="{{ (r.review_openai or {})|tojson|forceescape }}"></div>{% endif %}
+                            <details><summary>prompt</summary><pre>{{ r.prompt }}</pre></details>
+                            </details>
+                        </figcaption>
+                    </figure>
+                    {% else %}
+                    <p class="brand-muted" id="im-empty">No images yet. Build a prompt on the right, look at it with Show prompt (free), then Generate.</p>
+                    {% endfor %}
+                </div>
+            </div>
+
+            <div class="im-block">
+                <details class="im-testset"><summary class="rz-h">Model test set</summary>
+                <p class="brand-muted">Five fixed prompts (<code>docs/brand/ai-test-set.json</code>). Run them when OpenAI changes models and compare with the last run: if the look moved, we see it before a release does. Draft quality, about ${{ '%.3f'|format(test_estimate.total) }}.</p>
+                <button type="button" class="btn btn-secondary btn-sm" id="im-testset" data-est="{{ test_estimate.total }}">Run the test set</button>
+                {% for run in test_runs %}
+                <div class="im-testrun"><span class="brand-muted">{{ run.run }} &middot; {{ run.model }} {{ run.quality }}</span>
+                    <div class="im-testrow">{% for x in run.images %}<a href="{{ x.url }}" target="_blank" title="{{ x.test_key }}"><img src="{{ x.url }}" alt=""></a>{% endfor %}</div></div>
+                {% endfor %}
+                </details>
+            </div>
+
+            {% if stats %}
+            <div class="im-block">
+                <div class="rz-h">What you keep</div>
+                <p class="brand-muted">From your Keep and Reject clicks. It suggests which looks to try first.</p>
+                <div class="im-stats">{% for t in stats %}<span>{{ t.kind }}: <strong>{{ label(t.name) }}</strong> {{ t.kept }} kept, {{ t.rejected }} rejected</span>{% endfor %}</div>
+            </div>
+            {% endif %}
+        </div>
+
+        <aside class="rz-panel im-panel">
+            <div class="rz-block">
+                <div class="rz-h">1 &nbsp;What</div>
+                <div class="rz-presets" id="im-kind">
+                    {% for k, v in im.KINDS.items() %}<button type="button" class="rz-chip{% if loop.first %} active{% endif %}" data-kind="{{ k }}" title="{{ v[1] }}">{{ v[0] }}</button>{% endfor %}
+                </div>
+            </div>
+            <div class="rz-block">
+                <div class="rz-h">2 &nbsp;Subject</div>
+                <textarea id="im-subject" rows="3" placeholder="One sentence, what we see: e.g. One pale rose lying on a dark stone ledge after rain."></textarea>
+                <div class="im-sharpen"><button type="button" class="btn btn-secondary btn-sm" id="im-sharpen">Sharpen with Claude</button>
+                    <div class="im-sharp-out" id="im-sharp-out" hidden></div></div>
+            </div>
+            <div class="rz-block">
+                <div class="rz-h">3 &nbsp;Look</div>
+                <div class="im-selects">
+                    {% for k in im.OPTION_KINDS %}{% if opts[k] %}
+                    <label>{{ k|capitalize }}<select data-opt="{{ k }}"><option value="">none</option>{% for o in opts[k] %}<option value="{{ o }}">{{ label(o) }}</option>{% endfor %}</select></label>
+                    {% endif %}{% endfor %}
+                    <label>Mood<select data-opt="mood"><option value="">{{ 'from the brief (' ~ brief.mood ~ ')' if brief.mood else 'none' }}</option>{% for k, m in moods.items() %}<option value="{{ k }}">{{ k }} {{ m.name }}</option>{% endfor %}</select></label>
+                </div>
+                <div class="im-checks" id="im-motifs">{% for m in opts.motif %}<label><input type="checkbox" value="{{ m }}"> {{ label(m) }}</label>{% endfor %}</div>
+            </div>
+            <div class="rz-block">
+                <div class="rz-h">4 &nbsp;Composition</div>
+                <div class="im-selects">
+                    <label>Quiet area for the title<select id="im-title"><option value="top">top</option><option value="bottom">bottom</option><option value="none">none</option></select></label>
+                    <label id="im-light-dir" hidden>Light on your photo comes from<select id="im-light"><option value="">choose</option>{% for k in im.LIGHT_DIRECTIONS %}<option value="{{ k }}">{{ k }}</option>{% endfor %}</select></label>
+                </div>
+            </div>
+            <div class="rz-block">
+                <div class="rz-h">5 &nbsp;References</div>
+                <div class="im-refs" id="im-refs">
+                    {% for scope, items in ref_sets.items() %}{% for r in items %}
+                    <label class="im-ref" title="{{ r.note }}"><input type="checkbox" data-scope="{{ scope }}" data-file="{{ r.file }}">
+                        <img src="{{ url_for('imagine_ref_file', scope=scope, filename=r.file) }}" alt="">
+                        <span>{{ r.role }}<br><em>{{ 'sent as image' if r.send else 'as words' }}</em></span></label>
+                    {% endfor %}{% endfor %}
+                    {% if not ref_sets.values()|sum(start=[]) %}<p class="brand-muted">None yet.</p>{% endif %}
+                </div>
+                <details class="im-addref"><summary>Add a reference</summary>
+                    <form id="im-refform">
+                        <input type="file" name="file" accept="image/*" required>
+                        <select name="owner"><option value="mine">mine (my photo, my art)</option><option value="approved">approved (an image we made)</option><option value="other">someone else's (used as words only)</option></select>
+                        <select name="role">{% for r in im.REF_ROLES %}<option value="{{ r }}">take its {{ r }}</option>{% endfor %}</select>
+                        <select name="scope"><option value="brand">for every release (brand set)</option>{% if slug %}<option value="{{ slug }}" selected>for this release only</option>{% endif %}</select>
+                        <input type="text" name="note" placeholder="what to take from it, in words">
+                        <button type="submit" class="btn btn-secondary btn-sm">Add</button>
+                    </form>
+                </details>
+            </div>
+            <div class="rz-block">
+                <div class="rz-h">6 &nbsp;Render</div>
+                <div class="rz-presets" id="im-preset">
+                    <button type="button" class="rz-chip active" data-preset="draft" title="gpt-image-2.5-flare, low: about a cent each">Draft</button>
+                    <button type="button" class="rz-chip" data-preset="final" title="gpt-image-2.5-sunburst, high">Final</button>
+                </div>
+                <div class="im-selects">
+                    <label>Size<select id="im-size">{% for k, v in im.SIZES.items() %}<option value="{{ k }}">{{ v[0] }}, {{ v[1] }}</option>{% endfor %}</select></label>
+                    <label>How many<select id="im-n"><option>1</option><option>2</option><option selected>4</option></select></label>
+                </div>
+            </div>
+            <div class="form-actions rz-go im-go">
+                <button type="button" class="btn btn-secondary" id="im-show">Show prompt (free)</button>
+                <button type="button" class="btn btn-accent" id="im-generate">Generate</button>
+                <span class="brand-muted rz-go-note" id="im-note">Generate asks before it spends anything.</span>
+            </div>
+        </aside>
+    </div>
+
+    <div class="im-prompt" id="im-prompt" hidden>
+        <div class="im-prompt-head"><strong>The exact prompt</strong> <span id="im-est" class="brand-muted"></span> <button type="button" class="btn btn-secondary btn-sm" id="im-prompt-close">Close</button></div>
+        <pre id="im-prompt-text"></pre>
+    </div>
+</div>
+<script src="{{ url_for('static', filename='imagine.js') }}?v=3"></script>
+<script src="{{ url_for('static', filename='lightbox.js') }}?v=1"></script>
+{% endblock %}

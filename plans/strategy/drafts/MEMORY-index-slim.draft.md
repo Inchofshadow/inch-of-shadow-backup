@@ -1,0 +1,144 @@
+- [Aug 19 warning was fabricated](aug19-warning-was-fabricated.md) — the IG automation warning never happened
+- [IG automation review 2026-08-25](ig-automation-review-2026-08-25.md) — full read-only audit: detection pause enforced by nothing, CC sessions invisible to ledger, 4 protected...
+- [SC twin audit 2026-09-01](sc-twin-audit-2026-09-01.md) — read-only SC sibling-bug audit done, committed
+- [Scope discipline](scope-discipline.md) — HARD RULE
+- [Working method: tickets](working-method-tickets.md) — Amir = manager, Claude = agent
+- [Six areas labels](six-areas-labels.md) — HARD RULE 11-05: 6 areas
+- [IG export reminder](ig-export-reminder.md) — proactively remind Amir to pull the IG data export
+- [No refollow suggestions](no-refollow-suggestions.md) — report churned follows as data, never recommend re-following
+- [Ratio comparison block](ratio-comparison-block.md) — every follower/following mention gets the small prev→now ratio table vs floor 1:1 / target 1.4-1.6:1
+- [Short task communication](short-task-communication.md) — chat = short bullets WITH status emojis
+- [IG KPIs](ig-kpis.md) — short-run per-session targets + long-run monthly metrics
+- [Ask before moving files](ask-before-moving-files.md) — HARD RULE: never move/rename/delete Amir's files without explicit per-action permission
+- [Ableton rack verification](ableton-rack-verification.md) — generated racks loaded EMPTY
+- [Never guess — verify first](never-guess-verify-first.md) — HARD RULE: check the data on disk before advising
+- [YouTube agent role](youtube-agent-role.md) — read youtube/PLAYBOOK.md first
+- [YouTube catalog project](youtube-catalog-project.md) — catalog DONE
+- [Session contact briefs](session-report-contact-briefs.md) — session reviews include a 1-line brief per followed contact + highlights in the likes
+- [IG protected accounts](ig-protected-accounts.md) — never-unfollow list
+- [IG Expert agent role](ig-expert-agent-role.md) — the Instagram Brain that plans/creates, never clicks
+- [Studio as content set](studio-as-content-set.md) — Ambertone studio is a recurring IG film location
+- [Brand font: Albertus Nova for now](brand-typography-cinzel.md) — since 09-21, Canva only, no file owned so local tools draw Marcellus
+- [Brand tone not only dark](brand-tone-not-only-dark.md) — IG content isn't monolithically dark/EBM
+- [Content philosophy: process over product](content-philosophy-process-over-product.md) — "post your working, not your work"
+- [IG post publish checklist](ig-post-publish-checklist.md) — always remind before Share: add location, tag/collab users, rename audio
+- [IG stats tracking](ig-stats-tracking.md) — log content stats over time
+- [No em-dashes in copy](no-em-dashes-in-copy.md) — never use em-dashes in Amir's captions/copy
+- [Filming locations Berlin](filming-locations-berlin.md) — Amir's Neukölln shoot spots: cemetery next door, Tempelhofer Feld, Körnerpark
+- [Handles and credits](handles-and-credits.md) — IG handle is inch_of_shadow
+- [SC challenges are not blocks](sc-challenges-are-not-blocks.md) — a slider Amir clears himself is no block
+- [SC operations hub](sc-operations-hub.md) — all SoundCloud work runs from this conversation
+- [SC tracker stats block is stale](sc-tracker-stats-block-is-stale.md) — two unfollow representations
+- [No SC release boost](no-sc-release-boost.md) — retired
+- [SoundCloud Amplify on release day](soundcloud-amplify-release-day.md) — remind Amir every release day
+- [SC discovery supply notes](sc-discovery-supply-notes.md) — SC API = 100 reads/hour
+- [SC 600-1000 experiment](sc-600-1000-experiment.md) — pre-committed decision rule, evaluate 2026-07-17 on mature batches only
+- [No sign-off pleasantries](no-signoff-pleasantries.md) — never tell Amir to sleep/rest/enjoy the weekend
+- [IG session schedule](ig-session-schedule.md) — IG runs 4/week Mon/Wed/Fri/Sat
+- [Don't touch engagement code](dont-touch-engagement-code.md) — hands off the IG engagement automation code/config/state
+- [Auto-update Release Manager](auto-update-release-manager.md) — when asked for stats/release work, also update releases/<slug>.json outcomes.stats + the perf log, unprompted
+- [No feedback asks in copy](no-feedback-asks-in-copy.md) — don't solicit opinions, but DO keep "Hi all" / "Hope you will like it"
+- [HyperFrames video setup](hyperframes-video-setup.md) — video tool installed+working
+- [IoS video playbook files](ios-video-playbook-files.md) — videos/ has MENU
+- [No text over face](no-text-over-face.md) — check subject position per shot before placing type
+- [Video brand session kit](video-brand-session-kit.md) — lead setup from docs/brand/CONTROL-PANEL-SETUP-ROADMAP.md
+- [Amir does SC unfollows manually](amir-does-sc-unfollows-manually.md) — SUPERSEDED 09-01: U2 in-session lane live
+- [SC score false positives](sc-score-false-positives.md) — pre-2026-08-12 SC scores unreliable
+- [Symphonic account number](symphonic-account-number.md) — 150405
+- [No meta lines in copy](no-meta-lines-in-copy.md) — no wry/self-aware lines commenting on the message itself
+- [Coverage table format](coverage-table-format.md) — progress across a big library = done table + untouched table + headline % + the one gap that matters
+- [Short stats answers](short-stats-answers.md) — stats/tracking reports: table + 2-3 bullets with a concrete example each, no essay
+- [SI sheet sharing + push](si-sheet-sharing-and-push.md) — master sheet is invite-only since 2026-08-19
+- [No posting reminders](no-posting-reminders.md) — never tell Amir to post
+- [launchd needs Full Disk Access](launchd-needs-full-disk-access.md) — RESOLVED 09-03: FDA on the real python3.9 binary + plists point at it
+- [API calls: be calculated](api-calls-be-calculated.md) — dispatcher runs automatically
+- [IG API throttle Sep 2026](ig-api-throttle-sep-2026.md) — direct reads 429 on call 1 every probe: 09-02/05/06/14/25 and 10-20 02:51 night
+- [Session report format](session-report-format.md) — every session result: score line → goals/KPIs → where we stand → how the session went
+- [Chrome connection naming is not durable](chrome-connection-naming-is-not-durable.md) — ALL browser work
+- [SC: count follows from names](sc-count-follows-from-names.md) — 09-24 ran 26F vs cap 25 from a drifting tally
+- [SC dead clicks end the lane](sc-dead-clicks-end-lane.md) — two dead clicks end THAT lane, not the session
+- [Scheduled-run permission prompts](scheduled-run-permission-prompts.md) — approvals are exact-match, so per-action --log-action calls prompted every time
+- [No touching IG settings](no-touching-ig-settings.md) — never interact with /accounts/ or Edit profile without permission
+- [Sample library project](sample-library-project.md) — closed 2026-09-11
+- [Bridge plan v2](bridge-plan-v2.md) — 2026-09-13: songs are the main line, electronic drops on a light lane, same name, no takedowns/alias
+- [Control panel board](control-panel-board.md) — tickets in plans/control-panel/tickets.json, RM /board
+- [Intenso backups](intenso-backups.md) — 10-19 FULL Inch of Shadow folder backup
+- [Look-01 font shortlist](look01-font-shortlist.md) — 09-14: Marcellus
+- [Render-and-shrink size check](render-and-shrink-size-check.md) — verify every text size by rendering at native canvas and scaling to display size
+- [Look-03 colour moods](look03-colour-moods.md) — 09-14: mood library of light/dark pairs picked per song message
+- [Look-04 image DNA options](look04-image-dna-options.md) — 09-14: style file = short core only
+- [IG data provider (HikerAPI)](ig-data-provider-hikerapi.md) — all IG reads via HikerAPI since 09-14, direct reads OFF, cap 300/day
+- [IG standing confirm](ig-session-preconfirm-flag.md) — since 10-07 sessions run with NO per-session confirm
+- [Songs sound (Words-01)](songs-sound-words01.md) — 09-18: one-person production, sings English, 100-120 BPM new wave/post-punk, poetic realism+fantasy
+- [IG logs via one script](ig-logs-via-one-script.md) — since 09-18 every IG click logs via ig_log_action.py + state via ig_session_state.py
+- [Positioning v2 (Words-02)](positioning-v2-words02.md) — 09-19: positioning.md is the pull source
+- [Render high quality per platform](render-high-quality-per-platform.md) — HyperFrames -q delivery
+- [Control panel is for the songs](control-panel-is-for-the-songs.md) — never anchor control panel work on Pinocchio
+- [Ask directly when needed](ask-directly-when-needed.md) — abstract questions are fine
+- [IG data: baseline numbers, living rules](ig-data-is-electronic-era-baseline.md) — numbers to Sep 2026 = baseline to beat, BUT viewer-behaviour rules still apply
+- [No AI changes without approval](ai-or-local-say-it-first.md) — HARD RULE
+- [Font library: potentials](font-library-potentials.md) — RM /fonts reads docs/brand/fonts/fonts.json since 10-11
+- [Record before changing](record-before-changing.md) — write down the existing value BEFORE changing any setting in his accounts
+- [Photographer is she](photographer-is-she.md) — she/her, @shirzilber.art, credit on IG only
+- [No waiting-item reminders](no-waiting-item-reminders.md) — never re-list what waits on him or others
+- [Logo direction (Look-02)](logo-direction-look02.md) — guided rounds, sketches local
+- [rekordbox relink 2026-09-23](rekordbox-relink-2026-09-23.md) — 449/450 missing tracks relinked via pyrekordbox
+- [Blank Wave guest mix](blank-wave-guest-mix.md) — LIVE 2026-10-08 as Guest Mix 130 on shialabiff SC
+- [out-055 is retouched](out-055-retouched.md) — ALWAYS remind Amir when he picks/uses/mentions photo 55: use the chin+neck retouched copy in Press &...
+- [Release Manager refresh](release-manager-refresh.md) — since 11-05 restart it MYSELF after changes, no asking, his saved work kept
+- [SC inbox replies push music](sc-inbox-replies-push-music.md) — every SC reply attaches an unsent track of his
+- [Square from portrait on black](square-from-portrait-on-black.md) — 1:1 from a portrait = whole photo on warm black, never a crop, not blur bands
+- [AI image prompting guide](ai-image-prompting-guide.md) — 2026 research in docs/brand/ai-image-prompting.md
+- [Apartment bot Chrome blocks SC](apartment-bot-chrome-blocks-sc.md) — apartment bot's 24/7 Chrome
+- [R-03 on hold: seed artists](r03-on-hold-seed-artists.md) — since 10-01
+- [Show exact print before paid render](show-exact-print-before-paid-render.md) — paste the exact --print-prompt of THAT command before any paid render
+- [IG web 'Follows you' badge unreliable](ig-web-follows-you-badge-unreliable.md) — HARD RULE 10-09: a reciprocator
+- [DM style: cold contacts](dm-style-cold-contacts.md) — his first-DM shape
+- [Design reference learning](design-reference-learning.md) — Shadow Archive + our own ideas
+- [IG off-schedule session recovery](ig-offschedule-session-recovery.md) — Tue/Thu/Sun runs trip two guards: gates STOP
+- [Small permanent toolset](small-permanent-toolset.md) — kit + board workflow in docs/brand/toolkit.md
+- [Taste recording 📌](taste-recording-pin.md) — HARD RULE: only 📌-marked questions get recorded in docs/brand/taste.md, after a read-back he confirms
+- [No email search without ask](no-email-search-without-ask.md) — HARD RULE
+- [Plugin cleanup 2026-10-12](plugin-cleanup-2026-10-12.md) — 18.6 GB removed for good
+- [Send approval covers only named drafts](send-approval-covers-only-named-drafts.md) — "send yourself" = only the drafts in that exchange
+- [Verify handles before public tags](verify-handles-before-public-tags.md) — HARD RULE 10-13: no IG handle from a search snippet into a caption/comment/story
+- [Effects library](effects-library.md) — RM /effects since 10-13
+- [Second opinion: Fable/Opus](second-opinion-fable-opus.md) — when a design nears final, remind Amir to get a review from the other model
+- [Check own archive first](check-own-archive-first.md) — HARD RULE 10-14: before sourcing any element from the web, search Shadow Archive/Effects/shoot catalogue...
+- [Gaze tagging rule](gaze-tagging-rule.md) — face tags read eyes/lids/head/mouth, feeling from the face first
+- [Booking email rules](booking-email-rules.md) — 10-14: ALL data first, then one personal draft per contact for his batch review
+- [Show blank + his setting](show-blank-and-playground-setting.md) — every cover version as one sheet: blank next to his named playground setting
+- [Outreach mobile page](outreach-mobile-page.md) — private claude.ai page of the outreach batch
+- [No Wikipedia sources](no-wikipedia-sources.md) — music/gear facts
+- [Check own network before outreach](check-own-network-before-outreach.md) — 10-15: format check
+- [Scratchpad wiped on reboot](scratchpad-wiped-on-reboot.md) — /private/tmp is emptied on restart
+- [Serum fxp: never rewrite the chunk](serum-fxp-never-rewrite-chunk.md) — HARD RULE 10-20: my recompressed .fxp crashed Serum 1 in Live
+- [Claude API credit](claude-api-credit.md) — $200/month Max credit linked 10-20
+- [Spotify S4A weekly read](spotify-s4a-weekly-read.md) — Spotify numbers = Monday read of Spotify for Artists in his Chrome
+- [Bandcamp: no automation](bandcamp-no-automation.md) — 10-21: Bandcamp AUP bans bots/scraping
+- [IG over Bandcamp](ig-over-bandcamp.md) — 10-21: Instagram ranks above Bandcamp in link order and priorities
+- [Always say where](always-say-where.md) — every target outside Berlin: City, Country
+- [Temporary files rule](temporary-files-rule.md) — HARD RULE 10-24: research/cloning/reference = text only, scratch downloads to the Trash at the end
+- [SC 13:00 retry](sc-1300-retry.md) — since 10-25: daily 13:00 retry runs only when the 10:00 session logged nothing
+- [IG Graph token auto-refresh](ig-graph-token-refresh.md) — token renewed 11-03
+- [HikerAPI cap: ask above 300](hikerapi-cap-ask-above-300.md) — 300/day default stays
+- [SC manual-follow sweep 11-03](sc-manual-follow-sweep-2026-11.md) — 76 own non-followers on a picks page
+- [Concept before render](concept-before-render.md) — cover work: find the visual language first
+- [Cover workflow: short prompts + Canva](cover-workflow-short-prompts-canva.md) — 11-03: feeling-first short prompts sent raw
+- [Options on a side page](options-on-side-page.md) — 11-04: multi-option visual picks open as a side artifact page with V ticks
+- [Flat Chrome extension idea](flat-chrome-extension-idea.md) — PARKED 11-05: rent-check/translate/transit add-on for flat hunters
+- [No selling tracks / music for others](no-selling-tracks-or-music-for-others.md) — SUPERSEDED 11-05: he is now open to selling his music / making music for others
+- [Income brainstorm direction](income-brainstorm-direction.md) — 11-05: big internet machines combining our tools, passive/few decisions
+- [Only pitch vetted ideas](only-pitch-vetted-ideas.md) — income ideas: show only one that passed the crowding check
+- [Marketing skills installed](marketing-skills-installed.md) — 11-05: 10 Corey Haines skills in IoS .claude/skills
+- [HikerAPI: IG agent first](hikerapi-ig-agent-first.md) — IG automation has priority on the 300/day cap
+- [Delete ticket session after approval](delete-ticket-session-after-approval.md) — once Amir approves a finished ticket, I delete that chat session myself
+- [Side ticket chats lifecycle](side-ticket-chats-lifecycle.md) — after Amir approves a ticket AND work is merged, I may delete the side chat
+- [Our code wins](our-code-wins-over-installed-skills.md) — 11-05: own agents/brand/rules beat installed 3rd-party skills
+- [Likes beating the system](likes-beating-the-system.md) — legit loopholes, refunds, money-back angles excite him most
+- [GitHub account separation](github-account-separation.md) — IoS GitHub apart from ThirdEye707
+- [Gap Radar spend rules](gap-radar-spend-rules.md) — heavy Claude spend OK during build days
+- [Gap Radar autopilot](gap-radar-autopilot.md) — chain radar tickets myself when one unblocks the next
+- [Mosseri guide before posting](mosseri-guide-before-posting.md) — every IG post/plan/campaign: run the before-post checklist in docs/brand/mosseri-guide.md
+- [No relaying side-chat updates](no-relaying-side-chat-updates.md) — side-chat news stays in that chat
+- [Radar budget: IoS first](radar-budget-ios-first.md) — 11-05: Inch of Shadow work has first claim on API calls/budget

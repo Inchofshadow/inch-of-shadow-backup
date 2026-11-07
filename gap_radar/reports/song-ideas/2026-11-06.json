@@ -1,0 +1,212 @@
+[
+ {
+  "name": "3am drives and neon nights",
+  "insight": "Listeners keep placing these songs in the small hours: night drives, lights off at 3am, late club nights, and the hollow aftermath at dawn. Night is where the music makes sense. The tension runs between being lost in thought alone and being wired and awake in a city that's emptying out.",
+  "examples": [
+   "icy synths that suit a late-night drive and drifting thoughts",
+   "wanting music that feels like 3am with the lights off",
+   "a record that brings back late London nights before getting sober",
+   "waiting for work transport at 5am on empty, frightening streets"
+  ],
+  "evidence_ids": [
+   31,
+   38,
+   40,
+   42,
+   33,
+   39,
+   152,
+   61,
+   139,
+   62
+  ],
+  "use": "Follow one person from the last club track to the first tram at dawn, with the city sliding past the window.",
+  "strength": 5
+ },
+ {
+  "name": "Cold as the genre's home season",
+  "insight": "Winter, storms and cold weather are treated as the natural climate of the music. People praise releases timed for gloomy months, make dark anti-Christmas winter mixes, and enjoy the music staying cold while summer heats up. The cold reads both as bleakness and as a kind of comfort.",
+  "examples": [
+   "a band spending a freezing winter night in a seaside town",
+   "a darker winter mix for people sick of festive songs",
+   "glad the music stays cold while temperatures rise",
+   "rain outside, cozy bed, a new dark track"
+  ],
+  "evidence_ids": [
+   34,
+   35,
+   57,
+   64,
+   148,
+   190,
+   196,
+   96,
+   98
+  ],
+  "use": "Write the cold as shelter: two people wrapped against a winter storm, where the frost outside makes the warmth inside matter.",
+  "strength": 5
+ },
+ {
+  "name": "Loneliness, insomnia, quietly disappearing",
+  "insight": "Listeners describe songs about isolation, sleeplessness and fading out while the world keeps moving. They seek sad, hopeless music on purpose, because matching the mood helps more than cheering up does. They find a song for every state they're in.",
+  "examples": [
+   "a single about insomnia and slowly vanishing while life goes on",
+   "asking for sad goth songs during a rough patch because matching music helps",
+   "building a playlist of subdued, hopeless deathrock",
+   "a track heard as a manifesto of modern loneliness"
+  ],
+  "evidence_ids": [
+   18,
+   48,
+   86,
+   201,
+   162,
+   17
+  ],
+  "use": "Write a sleepless narrator who watches the city's lights go off one by one and feels he's being erased with them.",
+  "strength": 5
+ },
+ {
+  "name": "Ruins of a vanished future",
+  "insight": "Brutalist and Soviet-era places paired with coldwave stir a mix of sadness, beauty and loss. Viewers feel they live among the remains of a grander civilization. The landscapes become a fading dream of the past, and they read as political wounds.",
+  "examples": [
+   "feeling we now live in the ruins",
+   "landscapes like a slipping dream of the past",
+   "sad and ugly yet atmospheric and even beautiful",
+   "memories of growing up in late Cold War days"
+  ],
+  "evidence_ids": [
+   126,
+   130,
+   132,
+   136,
+   137,
+   140,
+   141,
+   142,
+   13
+  ],
+  "use": "Set a love song in an abandoned modernist building, dancing among concrete built for a future that never arrived.",
+  "strength": 4
+ },
+ {
+  "name": "Crying and dancing at once",
+  "insight": "The dancefloor is described as release and resurrection. People feel electric and alive, cry and dance in the same song, and want to dance all night. Melancholy and movement aren't opposites here; the beat carries the sadness.",
+  "examples": [
+   "first goth club night felt electric and fully alive",
+   "crying and dancing through a favourite song live",
+   "wanting to dance the whole night through",
+   "something inside comes alive at the show"
+  ],
+  "evidence_ids": [
+   69,
+   223,
+   165,
+   171,
+   87,
+   153,
+   62
+  ],
+  "use": "A chorus where the narrator dances specifically so no one sees he's crying, with sweat and tears blurring together.",
+  "strength": 4
+ },
+ {
+  "name": "Echoes of youth, aging in black",
+  "insight": "Older listeners hear their teenage years in new bands. Others mourn a scene and a self they've lost as life went differently than hoped. The music becomes a time machine, and it also reminds them of how far they've drifted.",
+  "examples": [
+   "new wave flashbacks to being 15 or 20",
+   "a band that brings back heartbeats of youth",
+   "turning 40 and missing goth as it was 20 years ago",
+   "a fever dream of the band existing back in the 80s"
+  ],
+  "evidence_ids": [
+   183,
+   188,
+   65,
+   170,
+   92,
+   14,
+   58,
+   33
+  ],
+  "use": "A middle-aged narrator back in a club where he danced at 19, meeting his younger self in the strobe.",
+  "strength": 4
+ },
+ {
+  "name": "Anthem for a lost generation",
+  "insight": "Listeners treat a song as shared testimony for a wounded collective: a generation after a disaster, or oppressed youth. Meeting again in familiar shadows gives people solidarity, and for some a reason to keep living.",
+  "examples": [
+   "a release date read as a nod to an earthquake anniversary",
+   "calling a track the anthem of a lost generation",
+   "feeling it voices the mood of crushed young people",
+   "a 57-year-old saying the music makes him want to keep living"
+  ],
+  "evidence_ids": [
+   195,
+   200,
+   206,
+   197,
+   194,
+   202
+  ],
+  "use": "Write a 'we' song for people who survived something together and still meet in the dark to remember it.",
+  "strength": 4
+ },
+ {
+  "name": "Grief for those who are gone",
+  "insight": "People use dark music to hold loss: a dying relative's fading mind, a dead pet, a city's dead. Songs become companions while mourning, and listeners read their personal grief into imagery of wind, cold and endings.",
+  "examples": [
+   "hearing a dementia-stricken great-grandmother's mind in a song",
+   "wanting songs that recall a black cat who just died",
+   "weaving pieces of a lost companion into daily life"
+  ],
+  "evidence_ids": [
+   97,
+   59,
+   200
+  ],
+  "use": "A track that keeps an absent person's rhythm alive, a beat they used to tap, carried on after they're gone.",
+  "strength": 3
+ },
+ {
+  "name": "Cold menace and secret lust",
+  "insight": "Fans relish the illicit, predatory side: basslines that stalk, music you'd hide from onlookers, and Cronenberg-style car-crash eroticism. The pull comes from danger, hypnosis and desire mixed with coldness.",
+  "examples": [
+   "checking behind you so no one sees the screen",
+   "a bassline that stalks through the dark",
+   "living a Cronenberg summer",
+   "midnight hypnosis from raw analog tension"
+  ],
+  "evidence_ids": [
+   145,
+   152,
+   156,
+   163,
+   166,
+   146,
+   154
+  ],
+  "use": "Write desire as a night pursuit through car parks and headlights, where attraction and threat can't be told apart.",
+  "strength": 4
+ },
+ {
+  "name": "Outsiders finding their own",
+  "insight": "Introverts, rural listeners, late starters and people mocked for their look describe the music and scene as a place to belong. Some fear being judged even there. Even radio gives a sense that someone else is out there listening.",
+  "examples": [
+   "being middle-aged, trans and far from any city when discovering goth",
+   "worrying about being unwelcome after a joyful first club night",
+   "feeling mocked for trad makeup at a goth show",
+   "radio making you feel someone somewhere hears the same thing"
+  ],
+  "evidence_ids": [
+   70,
+   69,
+   83,
+   73,
+   123,
+   88
+  ],
+  "use": "A song about a lone listener in a far-off town picking up a midnight signal and realising others are out there awake too.",
+  "strength": 3
+ }
+]

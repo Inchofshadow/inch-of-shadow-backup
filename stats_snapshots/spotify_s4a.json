@@ -1,0 +1,2213 @@
+{
+  "weeks": {
+    "2026-10-12": {
+      "start": "2026-10-06",
+      "end": "2026-10-12",
+      "listeners": 62,
+      "monthly_active": 119,
+      "streams": 137,
+      "streams_per_listener": 2.2,
+      "saves": 14,
+      "playlist_adds": 28,
+      "followers": 65,
+      "changes_pct": {
+        "listeners": -7.5,
+        "monthly_active": 7.2,
+        "streams": 13.2,
+        "streams_per_listener": 22.4,
+        "saves": 75.0,
+        "playlist_adds": -6.7,
+        "followers": 1.6
+      },
+      "read_at": "2026-10-21T13:32:53",
+      "source": "Spotify for Artists, Audience, 7 days"
+    },
+    "2026-10-19": {
+      "start": "2026-10-13",
+      "end": "2026-10-19",
+      "listeners": 65,
+      "monthly_active": 115,
+      "streams": 100,
+      "streams_per_listener": 1.5,
+      "saves": 0,
+      "playlist_adds": 22,
+      "followers": 67,
+      "changes_pct": {
+        "listeners": 4.8,
+        "monthly_active": -2.5,
+        "streams": -27.0,
+        "streams_per_listener": -30.4,
+        "saves": -100.0,
+        "playlist_adds": -21.4,
+        "followers": 3.1
+      },
+      "read_at": "2026-10-21T13:32:53",
+      "source": "Spotify for Artists, Audience, 7 days",
+      "top_songs": [
+        {
+          "title": "Farewell",
+          "streams": 28
+        },
+        {
+          "title": "Taka Juno",
+          "streams": 18
+        },
+        {
+          "title": "The Deceiver",
+          "streams": 17
+        }
+      ]
+    },
+    "2026-09-28": {
+      "start": "2026-09-22",
+      "end": "2026-09-28",
+      "listeners": 63,
+      "monthly_active": 94,
+      "streams": 122,
+      "streams_per_listener": 1.9,
+      "saves": 5,
+      "playlist_adds": 30,
+      "followers": 64,
+      "changes_pct": {
+        "listeners": 5.0,
+        "monthly_active": 16.0,
+        "streams": 32.6,
+        "streams_per_listener": 26.3,
+        "saves": -28.6,
+        "playlist_adds": 36.4
+      },
+      "read_at": "2026-10-21T14:33:24",
+      "source": "Spotify for Artists, backfill 2026-10-21"
+    },
+    "2026-10-05": {
+      "start": "2026-09-29",
+      "end": "2026-10-05",
+      "listeners": 67,
+      "monthly_active": 105,
+      "streams": 121,
+      "streams_per_listener": 1.8,
+      "saves": 8,
+      "playlist_adds": 30,
+      "followers": 64,
+      "changes_pct": {
+        "listeners": 6.3,
+        "monthly_active": 9.4,
+        "streams": -0.8,
+        "streams_per_listener": -6.7,
+        "saves": 60.0
+      },
+      "read_at": "2026-10-21T14:33:24",
+      "source": "Spotify for Artists, backfill 2026-10-21"
+    },
+    "2026-09-21": {
+      "start": "2026-09-15",
+      "end": "2026-09-21",
+      "listeners": 60,
+      "monthly_active": 83,
+      "streams": 92,
+      "streams_per_listener": 1.5,
+      "saves": 7,
+      "playlist_adds": 22,
+      "followers": 64,
+      "changes_pct": {
+        "listeners": -10.4,
+        "monthly_active": 13.7,
+        "streams": -14.8,
+        "streams_per_listener": -4.9,
+        "saves": 16.7,
+        "playlist_adds": 22.2
+      },
+      "read_at": "2026-10-21T14:33:24",
+      "source": "Spotify for Artists, backfill 2026-10-21"
+    },
+    "2026-09-14": {
+      "start": "2026-09-08",
+      "end": "2026-09-14",
+      "listeners": 67,
+      "monthly_active": 71,
+      "streams": 108,
+      "streams_per_listener": 1.6,
+      "saves": 6,
+      "playlist_adds": 18,
+      "followers": 64,
+      "changes_pct": {
+        "listeners": 19.6,
+        "streams": 14.9,
+        "streams_per_listener": -4.0,
+        "saves": 50.0,
+        "playlist_adds": -33.3
+      },
+      "read_at": "2026-10-21T14:33:24",
+      "source": "Spotify for Artists, backfill 2026-10-21"
+    },
+    "2026-09-07": {
+      "start": "2026-09-01",
+      "end": "2026-09-07",
+      "listeners": 56,
+      "monthly_active": 73,
+      "streams": 94,
+      "streams_per_listener": 1.7,
+      "saves": 4,
+      "playlist_adds": 27,
+      "followers": 64,
+      "changes_pct": {
+        "listeners": -6.7,
+        "monthly_active": -5.2,
+        "streams": 14.6,
+        "streams_per_listener": 22.8,
+        "saves": -33.3,
+        "playlist_adds": -30.8
+      },
+      "read_at": "2026-10-21T14:33:24",
+      "source": "Spotify for Artists, backfill 2026-10-21"
+    },
+    "2026-08-31": {
+      "start": "2026-08-25",
+      "end": "2026-08-31",
+      "listeners": 60,
+      "monthly_active": 78,
+      "streams": 82,
+      "streams_per_listener": 1.4,
+      "saves": 6,
+      "playlist_adds": 39,
+      "followers": 64,
+      "changes_pct": {
+        "listeners": -1.6,
+        "monthly_active": -6.0,
+        "streams": -17.2,
+        "streams_per_listener": -15.8,
+        "saves": 20.0,
+        "playlist_adds": 116.7
+      },
+      "read_at": "2026-10-21T14:33:24",
+      "source": "Spotify for Artists, backfill 2026-10-21"
+    },
+    "2026-08-24": {
+      "start": "2026-08-18",
+      "end": "2026-08-24",
+      "listeners": 61,
+      "monthly_active": 82,
+      "streams": 99,
+      "streams_per_listener": 1.6,
+      "saves": 5,
+      "playlist_adds": 18,
+      "followers": 64,
+      "changes_pct": {
+        "listeners": -3.2,
+        "monthly_active": -8.9,
+        "streams": -6.6,
+        "streams_per_listener": -3.5,
+        "saves": 25.0,
+        "playlist_adds": 63.6,
+        "followers": 1.6
+      },
+      "read_at": "2026-10-21T14:33:24",
+      "source": "Spotify for Artists, backfill 2026-10-21"
+    },
+    "2026-08-17": {
+      "start": "2026-08-11",
+      "end": "2026-08-17",
+      "listeners": 63,
+      "monthly_active": 93,
+      "streams": 106,
+      "streams_per_listener": 1.7,
+      "saves": 4,
+      "playlist_adds": 11,
+      "followers": 63,
+      "changes_pct": {
+        "listeners": 1.6,
+        "streams": 20.5,
+        "streams_per_listener": 18.5,
+        "saves": 100.0,
+        "playlist_adds": -56.0
+      },
+      "read_at": "2026-10-21T14:33:24",
+      "source": "Spotify for Artists, backfill 2026-10-21"
+    },
+    "2026-08-10": {
+      "start": "2026-08-04",
+      "end": "2026-08-10",
+      "listeners": 62,
+      "monthly_active": 92,
+      "streams": 88,
+      "streams_per_listener": 1.4,
+      "saves": 2,
+      "playlist_adds": 25,
+      "followers": 63,
+      "changes_pct": {
+        "listeners": -6.1,
+        "monthly_active": -13.2,
+        "streams": -4.3,
+        "streams_per_listener": 1.8,
+        "saves": -50.0,
+        "playlist_adds": 13.6
+      },
+      "read_at": "2026-10-21T14:33:24",
+      "source": "Spotify for Artists, backfill 2026-10-21"
+    },
+    "2026-08-03": {
+      "start": "2026-07-28",
+      "end": "2026-08-03",
+      "listeners": 66,
+      "monthly_active": 106,
+      "streams": 92,
+      "streams_per_listener": 1.4,
+      "saves": 4,
+      "playlist_adds": 22,
+      "followers": 63,
+      "changes_pct": {
+        "listeners": -13.2,
+        "monthly_active": -1.9,
+        "streams": -28.7,
+        "streams_per_listener": -17.9,
+        "saves": -20.0,
+        "playlist_adds": -15.4,
+        "followers": 3.3
+      },
+      "read_at": "2026-10-21T14:33:24",
+      "source": "Spotify for Artists, backfill 2026-10-21"
+    },
+    "2026-07-27": {
+      "start": "2026-07-21",
+      "end": "2026-07-27",
+      "listeners": 76,
+      "monthly_active": 110,
+      "streams": 129,
+      "streams_per_listener": 1.7,
+      "saves": 5,
+      "playlist_adds": 26,
+      "followers": 61,
+      "changes_pct": {},
+      "read_at": "2026-10-21T14:33:24",
+      "source": "Spotify for Artists, backfill 2026-10-21"
+    },
+    "2026-07-20": {
+      "start": "2026-07-14",
+      "end": "2026-07-20",
+      "listeners": 69,
+      "monthly_active": 98,
+      "streams": 108,
+      "streams_per_listener": 1.6,
+      "saves": 5,
+      "playlist_adds": 35,
+      "followers": 61,
+      "changes_pct": {},
+      "read_at": "2026-10-21T14:33:24",
+      "source": "Spotify for Artists, backfill 2026-10-21"
+    },
+    "2026-07-13": {
+      "start": "2026-07-07",
+      "end": "2026-07-13",
+      "listeners": 62,
+      "monthly_active": 99,
+      "streams": 111,
+      "streams_per_listener": 1.8,
+      "saves": 12,
+      "playlist_adds": 41,
+      "followers": 59,
+      "changes_pct": {},
+      "read_at": "2026-10-21T14:33:24",
+      "source": "Spotify for Artists, backfill 2026-10-21"
+    },
+    "2026-07-06": {
+      "start": "2026-06-30",
+      "end": "2026-07-06",
+      "listeners": 60,
+      "monthly_active": 92,
+      "streams": 69,
+      "streams_per_listener": 1.2,
+      "saves": 7,
+      "playlist_adds": 27,
+      "followers": 56,
+      "changes_pct": {},
+      "read_at": "2026-10-21T14:33:24",
+      "source": "Spotify for Artists, backfill 2026-10-21"
+    },
+    "2026-06-29": {
+      "start": "2026-06-23",
+      "end": "2026-06-29",
+      "listeners": 55,
+      "monthly_active": 102,
+      "streams": 80,
+      "streams_per_listener": 1.5,
+      "saves": 4,
+      "playlist_adds": 16,
+      "followers": 55,
+      "changes_pct": {},
+      "read_at": "2026-10-21T14:33:24",
+      "source": "Spotify for Artists, backfill 2026-10-21"
+    },
+    "2026-06-22": {
+      "start": "2026-06-16",
+      "end": "2026-06-22",
+      "listeners": 66,
+      "monthly_active": 103,
+      "streams": 111,
+      "streams_per_listener": 1.7,
+      "saves": 5,
+      "playlist_adds": 28,
+      "followers": 53,
+      "changes_pct": {},
+      "read_at": "2026-10-21T14:33:24",
+      "source": "Spotify for Artists, backfill 2026-10-21"
+    },
+    "2026-06-15": {
+      "start": "2026-06-09",
+      "end": "2026-06-15",
+      "listeners": 39,
+      "monthly_active": 102,
+      "streams": 76,
+      "streams_per_listener": 1.9,
+      "saves": 2,
+      "playlist_adds": 14,
+      "followers": 53,
+      "changes_pct": {},
+      "read_at": "2026-10-21T14:33:24",
+      "source": "Spotify for Artists, backfill 2026-10-21"
+    },
+    "2026-06-08": {
+      "start": "2026-06-02",
+      "end": "2026-06-08",
+      "listeners": 43,
+      "monthly_active": 105,
+      "streams": 64,
+      "streams_per_listener": 1.5,
+      "saves": 8,
+      "playlist_adds": 10,
+      "followers": 52,
+      "changes_pct": {},
+      "read_at": "2026-10-21T14:33:24",
+      "source": "Spotify for Artists, backfill 2026-10-21"
+    },
+    "2026-06-01": {
+      "start": "2026-05-26",
+      "end": "2026-06-01",
+      "listeners": 38,
+      "monthly_active": 105,
+      "streams": 46,
+      "streams_per_listener": 1.2,
+      "saves": 4,
+      "playlist_adds": 40,
+      "followers": 52,
+      "changes_pct": {},
+      "read_at": "2026-10-21T14:33:24",
+      "source": "Spotify for Artists, backfill 2026-10-21"
+    },
+    "2026-05-25": {
+      "start": "2026-05-19",
+      "end": "2026-05-25",
+      "listeners": 46,
+      "monthly_active": 110,
+      "streams": 66,
+      "streams_per_listener": 1.4,
+      "saves": 6,
+      "playlist_adds": 19,
+      "followers": 52,
+      "changes_pct": {},
+      "read_at": "2026-10-21T14:33:24",
+      "source": "Spotify for Artists, backfill 2026-10-21"
+    },
+    "2026-05-18": {
+      "start": "2026-05-12",
+      "end": "2026-05-18",
+      "listeners": 59,
+      "monthly_active": 97,
+      "streams": 113,
+      "streams_per_listener": 1.9,
+      "saves": 14,
+      "playlist_adds": 25,
+      "followers": 52,
+      "changes_pct": {},
+      "read_at": "2026-10-21T14:33:24",
+      "source": "Spotify for Artists, backfill 2026-10-21"
+    },
+    "2026-05-11": {
+      "start": "2026-05-05",
+      "end": "2026-05-11",
+      "listeners": 38,
+      "monthly_active": 90,
+      "streams": 44,
+      "streams_per_listener": 1.2,
+      "saves": 4,
+      "playlist_adds": 19,
+      "followers": 50,
+      "changes_pct": {},
+      "read_at": "2026-10-21T14:33:24",
+      "source": "Spotify for Artists, backfill 2026-10-21"
+    },
+    "2026-05-04": {
+      "start": "2026-04-28",
+      "end": "2026-05-04",
+      "listeners": 51,
+      "monthly_active": 98,
+      "streams": 72,
+      "streams_per_listener": 1.4,
+      "saves": 12,
+      "playlist_adds": 18,
+      "followers": 50,
+      "changes_pct": {},
+      "read_at": "2026-10-21T14:33:24",
+      "source": "Spotify for Artists, backfill 2026-10-21"
+    },
+    "2026-04-27": {
+      "start": "2026-04-21",
+      "end": "2026-04-27",
+      "listeners": 30,
+      "monthly_active": 95,
+      "streams": 45,
+      "streams_per_listener": 1.5,
+      "saves": 1,
+      "playlist_adds": 22,
+      "followers": 49,
+      "changes_pct": {},
+      "read_at": "2026-10-21T14:33:24",
+      "source": "Spotify for Artists, backfill 2026-10-21"
+    },
+    "2026-04-20": {
+      "start": "2026-04-14",
+      "end": "2026-04-20",
+      "listeners": 42,
+      "monthly_active": 106,
+      "streams": 60,
+      "streams_per_listener": 1.4,
+      "saves": 3,
+      "playlist_adds": 10,
+      "followers": 49,
+      "changes_pct": {},
+      "read_at": "2026-10-21T14:33:24",
+      "source": "Spotify for Artists, backfill 2026-10-21"
+    },
+    "2026-04-13": {
+      "start": "2026-04-07",
+      "end": "2026-04-13",
+      "listeners": 44,
+      "monthly_active": 109,
+      "streams": 85,
+      "streams_per_listener": 1.9,
+      "saves": 5,
+      "playlist_adds": 11,
+      "followers": 49,
+      "changes_pct": {},
+      "read_at": "2026-10-21T14:33:24",
+      "source": "Spotify for Artists, backfill 2026-10-21"
+    },
+    "2026-04-06": {
+      "start": "2026-03-31",
+      "end": "2026-04-06",
+      "listeners": 46,
+      "monthly_active": 107,
+      "streams": 101,
+      "streams_per_listener": 2.2,
+      "saves": 2,
+      "playlist_adds": 15,
+      "followers": 49,
+      "changes_pct": {},
+      "read_at": "2026-10-21T14:33:24",
+      "source": "Spotify for Artists, backfill 2026-10-21"
+    },
+    "2026-03-30": {
+      "start": "2026-03-24",
+      "end": "2026-03-30",
+      "listeners": 65,
+      "monthly_active": 105,
+      "streams": 108,
+      "streams_per_listener": 1.7,
+      "saves": 6,
+      "playlist_adds": 22,
+      "followers": 49,
+      "changes_pct": {},
+      "read_at": "2026-10-21T14:33:24",
+      "source": "Spotify for Artists, backfill 2026-10-21"
+    },
+    "2026-03-23": {
+      "start": "2026-03-17",
+      "end": "2026-03-23",
+      "listeners": 52,
+      "monthly_active": 93,
+      "streams": 83,
+      "streams_per_listener": 1.6,
+      "saves": 3,
+      "playlist_adds": 5,
+      "followers": 49,
+      "changes_pct": {},
+      "read_at": "2026-10-21T14:33:24",
+      "source": "Spotify for Artists, backfill 2026-10-21"
+    },
+    "2026-03-16": {
+      "start": "2026-03-10",
+      "end": "2026-03-16",
+      "listeners": 46,
+      "monthly_active": 93,
+      "streams": 65,
+      "streams_per_listener": 1.4,
+      "saves": 8,
+      "playlist_adds": 8,
+      "followers": 49,
+      "changes_pct": {},
+      "read_at": "2026-10-21T14:33:24",
+      "source": "Spotify for Artists, backfill 2026-10-21"
+    },
+    "2026-03-09": {
+      "start": "2026-03-03",
+      "end": "2026-03-09",
+      "listeners": 44,
+      "monthly_active": 98,
+      "streams": 64,
+      "streams_per_listener": 1.5,
+      "saves": 4,
+      "playlist_adds": 16,
+      "followers": 49,
+      "changes_pct": {},
+      "read_at": "2026-10-21T14:33:24",
+      "source": "Spotify for Artists, backfill 2026-10-21"
+    },
+    "2026-03-02": {
+      "start": "2026-02-24",
+      "end": "2026-03-02",
+      "listeners": 48,
+      "monthly_active": 102,
+      "streams": 71,
+      "streams_per_listener": 1.5,
+      "saves": 4,
+      "playlist_adds": 9,
+      "followers": 49,
+      "changes_pct": {},
+      "read_at": "2026-10-21T14:33:24",
+      "source": "Spotify for Artists, backfill 2026-10-21"
+    },
+    "2026-02-23": {
+      "start": "2026-02-17",
+      "end": "2026-02-23",
+      "listeners": 42,
+      "monthly_active": 109,
+      "streams": 57,
+      "streams_per_listener": 1.4,
+      "saves": 5,
+      "playlist_adds": 5,
+      "followers": 49,
+      "changes_pct": {},
+      "read_at": "2026-10-21T14:33:24",
+      "source": "Spotify for Artists, backfill 2026-10-21"
+    },
+    "2026-02-16": {
+      "start": "2026-02-10",
+      "end": "2026-02-16",
+      "listeners": 48,
+      "monthly_active": 122,
+      "streams": 92,
+      "streams_per_listener": 1.9,
+      "saves": 8,
+      "playlist_adds": 7,
+      "followers": 49,
+      "changes_pct": {},
+      "read_at": "2026-10-21T14:33:24",
+      "source": "Spotify for Artists, backfill 2026-10-21"
+    },
+    "2026-02-09": {
+      "start": "2026-02-03",
+      "end": "2026-02-09",
+      "listeners": 51,
+      "monthly_active": 128,
+      "streams": 103,
+      "streams_per_listener": 2,
+      "saves": 2,
+      "playlist_adds": 7,
+      "followers": 49,
+      "changes_pct": {},
+      "read_at": "2026-10-21T14:33:24",
+      "source": "Spotify for Artists, backfill 2026-10-21"
+    },
+    "2026-02-02": {
+      "start": "2026-01-27",
+      "end": "2026-02-02",
+      "listeners": 54,
+      "monthly_active": 130,
+      "streams": 94,
+      "streams_per_listener": 1.7,
+      "saves": 2,
+      "playlist_adds": 18,
+      "followers": 48,
+      "changes_pct": {},
+      "read_at": "2026-10-21T14:33:24",
+      "source": "Spotify for Artists, backfill 2026-10-21"
+    },
+    "2026-01-26": {
+      "start": "2026-01-20",
+      "end": "2026-01-26",
+      "listeners": 61,
+      "monthly_active": 146,
+      "streams": 99,
+      "streams_per_listener": 1.6,
+      "saves": 4,
+      "playlist_adds": 11,
+      "followers": 48,
+      "changes_pct": {},
+      "read_at": "2026-10-21T14:33:24",
+      "source": "Spotify for Artists, backfill 2026-10-21"
+    },
+    "2026-01-19": {
+      "start": "2026-01-13",
+      "end": "2026-01-19",
+      "listeners": 68,
+      "monthly_active": 144,
+      "streams": 102,
+      "streams_per_listener": 1.5,
+      "saves": 6,
+      "playlist_adds": 17,
+      "followers": 47,
+      "changes_pct": {},
+      "read_at": "2026-10-21T14:33:24",
+      "source": "Spotify for Artists, backfill 2026-10-21"
+    },
+    "2026-01-12": {
+      "start": "2026-01-06",
+      "end": "2026-01-12",
+      "listeners": 78,
+      "monthly_active": 159,
+      "streams": 132,
+      "streams_per_listener": 1.7,
+      "saves": 9,
+      "playlist_adds": 15,
+      "followers": 47,
+      "changes_pct": {},
+      "read_at": "2026-10-21T14:33:24",
+      "source": "Spotify for Artists, backfill 2026-10-21"
+    },
+    "2026-01-05": {
+      "start": "2025-12-30",
+      "end": "2026-01-05",
+      "listeners": 134,
+      "monthly_active": 179,
+      "streams": 169,
+      "streams_per_listener": 1.3,
+      "saves": 12,
+      "playlist_adds": 14,
+      "followers": 47,
+      "changes_pct": {},
+      "read_at": "2026-10-21T14:33:24",
+      "source": "Spotify for Artists, backfill 2026-10-21"
+    },
+    "2025-12-29": {
+      "start": "2025-12-23",
+      "end": "2025-12-29",
+      "listeners": 91,
+      "monthly_active": 194,
+      "streams": 121,
+      "streams_per_listener": 1.3,
+      "saves": 7,
+      "playlist_adds": 13,
+      "followers": 47,
+      "changes_pct": {},
+      "read_at": "2026-10-21T14:33:24",
+      "source": "Spotify for Artists, backfill 2026-10-21"
+    },
+    "2025-12-22": {
+      "start": "2025-12-16",
+      "end": "2025-12-22",
+      "listeners": 121,
+      "monthly_active": 204,
+      "streams": 204,
+      "streams_per_listener": 1.7,
+      "saves": 17,
+      "playlist_adds": 22,
+      "followers": 47,
+      "changes_pct": {},
+      "read_at": "2026-10-21T14:33:24",
+      "source": "Spotify for Artists, backfill 2026-10-21"
+    },
+    "2025-12-15": {
+      "start": "2025-12-09",
+      "end": "2025-12-15",
+      "listeners": 123,
+      "monthly_active": 196,
+      "streams": 170,
+      "streams_per_listener": 1.4,
+      "saves": 17,
+      "playlist_adds": 24,
+      "followers": 45,
+      "changes_pct": {},
+      "read_at": "2026-10-21T14:33:24",
+      "source": "Spotify for Artists, backfill 2026-10-21"
+    },
+    "2025-12-08": {
+      "start": "2025-12-02",
+      "end": "2025-12-08",
+      "listeners": 142,
+      "monthly_active": 209,
+      "streams": 221,
+      "streams_per_listener": 1.6,
+      "saves": 6,
+      "playlist_adds": 20,
+      "followers": 45,
+      "changes_pct": {},
+      "read_at": "2026-10-21T14:33:24",
+      "source": "Spotify for Artists, backfill 2026-10-21"
+    },
+    "2025-12-01": {
+      "start": "2025-11-25",
+      "end": "2025-12-01",
+      "listeners": 269,
+      "monthly_active": 203,
+      "streams": 345,
+      "streams_per_listener": 1.3,
+      "saves": 24,
+      "playlist_adds": 33,
+      "followers": 45,
+      "changes_pct": {},
+      "read_at": "2026-10-21T14:33:24",
+      "source": "Spotify for Artists, backfill 2026-10-21"
+    },
+    "2025-11-24": {
+      "start": "2025-11-18",
+      "end": "2025-11-24",
+      "listeners": 265,
+      "monthly_active": 210,
+      "streams": 391,
+      "streams_per_listener": 1.5,
+      "saves": 13,
+      "playlist_adds": 37,
+      "followers": 45,
+      "changes_pct": {},
+      "read_at": "2026-10-21T14:33:24",
+      "source": "Spotify for Artists, backfill 2026-10-21"
+    },
+    "2025-11-17": {
+      "start": "2025-11-11",
+      "end": "2025-11-17",
+      "listeners": 266,
+      "monthly_active": 197,
+      "streams": 379,
+      "streams_per_listener": 1.4,
+      "saves": 31,
+      "playlist_adds": 39,
+      "followers": 44,
+      "changes_pct": {},
+      "read_at": "2026-10-21T14:33:24",
+      "source": "Spotify for Artists, backfill 2026-10-21"
+    },
+    "2025-11-10": {
+      "start": "2025-11-04",
+      "end": "2025-11-10",
+      "listeners": 226,
+      "monthly_active": 181,
+      "streams": 318,
+      "streams_per_listener": 1.4,
+      "saves": 13,
+      "playlist_adds": 16,
+      "followers": 41,
+      "changes_pct": {},
+      "read_at": "2026-10-21T14:33:24",
+      "source": "Spotify for Artists, backfill 2026-10-21"
+    },
+    "2025-11-03": {
+      "start": "2025-10-28",
+      "end": "2025-11-03",
+      "listeners": 203,
+      "monthly_active": 195,
+      "streams": 310,
+      "streams_per_listener": 1.5,
+      "saves": 17,
+      "playlist_adds": 27,
+      "followers": 41,
+      "changes_pct": {},
+      "read_at": "2026-10-21T14:33:24",
+      "source": "Spotify for Artists, backfill 2026-10-21"
+    },
+    "2025-10-27": {
+      "start": "2025-10-21",
+      "end": "2025-10-27",
+      "listeners": 163,
+      "monthly_active": 214,
+      "streams": 266,
+      "streams_per_listener": 1.6,
+      "saves": 8,
+      "playlist_adds": 21,
+      "followers": 41,
+      "changes_pct": {},
+      "read_at": "2026-10-21T14:33:24",
+      "source": "Spotify for Artists, backfill 2026-10-21"
+    },
+    "2025-10-20": {
+      "start": "2025-10-14",
+      "end": "2025-10-20",
+      "listeners": 265,
+      "monthly_active": 274,
+      "streams": 427,
+      "streams_per_listener": 1.6,
+      "saves": 12,
+      "playlist_adds": 30,
+      "followers": 41,
+      "changes_pct": {},
+      "read_at": "2026-10-21T14:33:24",
+      "source": "Spotify for Artists, backfill 2026-10-21"
+    },
+    "2025-10-13": {
+      "start": "2025-10-07",
+      "end": "2025-10-13",
+      "listeners": 475,
+      "monthly_active": 325,
+      "streams": 749,
+      "streams_per_listener": 1.6,
+      "saves": 34,
+      "playlist_adds": 47,
+      "followers": 36,
+      "changes_pct": {},
+      "read_at": "2026-10-21T14:33:24",
+      "source": "Spotify for Artists, backfill 2026-10-21"
+    },
+    "2025-10-06": {
+      "start": "2025-09-30",
+      "end": "2025-10-06",
+      "listeners": 672,
+      "monthly_active": 284,
+      "streams": 1100,
+      "streams_per_listener": 1.6,
+      "saves": 53,
+      "playlist_adds": 71,
+      "followers": 34,
+      "changes_pct": {},
+      "read_at": "2026-10-21T14:33:24",
+      "source": "Spotify for Artists, backfill 2026-10-21",
+      "rounded": [
+        "streams"
+      ]
+    },
+    "2025-09-29": {
+      "start": "2025-09-23",
+      "end": "2025-09-29",
+      "listeners": 686,
+      "monthly_active": 217,
+      "streams": 1100,
+      "streams_per_listener": 1.7,
+      "saves": 83,
+      "playlist_adds": 66,
+      "followers": 31,
+      "changes_pct": {},
+      "read_at": "2026-10-21T14:33:24",
+      "source": "Spotify for Artists, backfill 2026-10-21",
+      "rounded": [
+        "streams"
+      ]
+    },
+    "2025-09-22": {
+      "start": "2025-09-16",
+      "end": "2025-09-22",
+      "listeners": 362,
+      "monthly_active": 139,
+      "streams": 773,
+      "streams_per_listener": 2.1,
+      "saves": 101,
+      "playlist_adds": 96,
+      "followers": 27,
+      "changes_pct": {},
+      "read_at": "2026-10-21T14:33:24",
+      "source": "Spotify for Artists, backfill 2026-10-21"
+    },
+    "2025-09-15": {
+      "start": "2025-09-09",
+      "end": "2025-09-15",
+      "listeners": 5,
+      "monthly_active": 14,
+      "streams": 9,
+      "streams_per_listener": 1.8,
+      "saves": 0,
+      "playlist_adds": 2,
+      "followers": 26,
+      "changes_pct": {},
+      "read_at": "2026-10-21T14:33:24",
+      "source": "Spotify for Artists, backfill 2026-10-21"
+    },
+    "2025-09-08": {
+      "start": "2025-09-02",
+      "end": "2025-09-08",
+      "listeners": 6,
+      "monthly_active": 16,
+      "streams": 35,
+      "streams_per_listener": 5.8,
+      "saves": 6,
+      "playlist_adds": 6,
+      "followers": 26,
+      "changes_pct": {},
+      "read_at": "2026-10-21T14:33:24",
+      "source": "Spotify for Artists, backfill 2026-10-21"
+    },
+    "2025-09-01": {
+      "start": "2025-08-26",
+      "end": "2025-09-01",
+      "listeners": 8,
+      "monthly_active": 15,
+      "streams": 10,
+      "streams_per_listener": 1.3,
+      "saves": 1,
+      "playlist_adds": 0,
+      "followers": 25,
+      "changes_pct": {},
+      "read_at": "2026-10-21T14:33:24",
+      "source": "Spotify for Artists, backfill 2026-10-21"
+    },
+    "2025-08-25": {
+      "start": "2025-08-19",
+      "end": "2025-08-25",
+      "listeners": 6,
+      "monthly_active": 14,
+      "streams": 12,
+      "streams_per_listener": 2,
+      "saves": 0,
+      "playlist_adds": 0,
+      "followers": 25,
+      "changes_pct": {},
+      "read_at": "2026-10-21T14:33:24",
+      "source": "Spotify for Artists, backfill 2026-10-21"
+    },
+    "2025-08-18": {
+      "start": "2025-08-12",
+      "end": "2025-08-18",
+      "listeners": 6,
+      "monthly_active": 14,
+      "streams": 12,
+      "streams_per_listener": 2,
+      "saves": 1,
+      "playlist_adds": 1,
+      "followers": 25,
+      "changes_pct": {},
+      "read_at": "2026-10-21T14:33:24",
+      "source": "Spotify for Artists, backfill 2026-10-21"
+    },
+    "2025-08-11": {
+      "start": "2025-08-05",
+      "end": "2025-08-11",
+      "listeners": 4,
+      "monthly_active": 12,
+      "streams": 11,
+      "streams_per_listener": 2.8,
+      "saves": 0,
+      "playlist_adds": 1,
+      "followers": 25,
+      "changes_pct": {},
+      "read_at": "2026-10-21T14:33:24",
+      "source": "Spotify for Artists, backfill 2026-10-21"
+    },
+    "2025-08-04": {
+      "start": "2025-07-29",
+      "end": "2025-08-04",
+      "listeners": 5,
+      "monthly_active": 14,
+      "streams": 7,
+      "streams_per_listener": 1.4,
+      "saves": 0,
+      "playlist_adds": 6,
+      "followers": 25,
+      "changes_pct": {},
+      "read_at": "2026-10-21T14:33:24",
+      "source": "Spotify for Artists, backfill 2026-10-21"
+    },
+    "2025-07-28": {
+      "start": "2025-07-22",
+      "end": "2025-07-28",
+      "listeners": 8,
+      "monthly_active": 20,
+      "streams": 8,
+      "streams_per_listener": 1,
+      "saves": 0,
+      "playlist_adds": 1,
+      "followers": 25,
+      "changes_pct": {},
+      "read_at": "2026-10-21T14:33:24",
+      "source": "Spotify for Artists, backfill 2026-10-21"
+    },
+    "2025-07-21": {
+      "start": "2025-07-15",
+      "end": "2025-07-21",
+      "listeners": 5,
+      "monthly_active": 21,
+      "streams": 9,
+      "streams_per_listener": 1.8,
+      "saves": 0,
+      "playlist_adds": 1,
+      "followers": 25,
+      "changes_pct": {},
+      "read_at": "2026-10-21T14:33:24",
+      "source": "Spotify for Artists, backfill 2026-10-21"
+    },
+    "2025-07-14": {
+      "start": "2025-07-08",
+      "end": "2025-07-14",
+      "listeners": 9,
+      "monthly_active": 24,
+      "streams": 12,
+      "streams_per_listener": 1.3,
+      "saves": 0,
+      "playlist_adds": 1,
+      "followers": 25,
+      "changes_pct": {},
+      "read_at": "2026-10-21T14:33:24",
+      "source": "Spotify for Artists, backfill 2026-10-21"
+    },
+    "2025-07-07": {
+      "start": "2025-07-01",
+      "end": "2025-07-07",
+      "listeners": 13,
+      "monthly_active": 29,
+      "streams": 31,
+      "streams_per_listener": 2.4,
+      "saves": 0,
+      "playlist_adds": 0,
+      "followers": 25,
+      "changes_pct": {},
+      "read_at": "2026-10-21T14:33:24",
+      "source": "Spotify for Artists, backfill 2026-10-21"
+    },
+    "2025-06-30": {
+      "start": "2025-06-24",
+      "end": "2025-06-30",
+      "listeners": 7,
+      "monthly_active": 22,
+      "streams": 18,
+      "streams_per_listener": 2.6,
+      "saves": 1,
+      "playlist_adds": 1,
+      "followers": 25,
+      "changes_pct": {},
+      "read_at": "2026-10-21T14:33:24",
+      "source": "Spotify for Artists, backfill 2026-10-21"
+    },
+    "2025-06-23": {
+      "start": "2025-06-17",
+      "end": "2025-06-23",
+      "listeners": 9,
+      "monthly_active": 26,
+      "streams": 30,
+      "streams_per_listener": 3.3,
+      "saves": 1,
+      "playlist_adds": 1,
+      "followers": 25,
+      "changes_pct": {},
+      "read_at": "2026-10-21T14:33:24",
+      "source": "Spotify for Artists, backfill 2026-10-21"
+    },
+    "2025-06-16": {
+      "start": "2025-06-10",
+      "end": "2025-06-16",
+      "listeners": 13,
+      "monthly_active": 28,
+      "streams": 24,
+      "streams_per_listener": 1.8,
+      "saves": 6,
+      "playlist_adds": 2,
+      "followers": 25,
+      "changes_pct": {},
+      "read_at": "2026-10-21T14:33:24",
+      "source": "Spotify for Artists, backfill 2026-10-21"
+    },
+    "2025-06-09": {
+      "start": "2025-06-03",
+      "end": "2025-06-09",
+      "listeners": 7,
+      "monthly_active": 23,
+      "streams": 12,
+      "streams_per_listener": 1.7,
+      "saves": 2,
+      "playlist_adds": 0,
+      "followers": 24,
+      "changes_pct": {},
+      "read_at": "2026-10-21T14:33:24",
+      "source": "Spotify for Artists, backfill 2026-10-21"
+    },
+    "2025-06-02": {
+      "start": "2025-05-27",
+      "end": "2025-06-02",
+      "listeners": 14,
+      "monthly_active": 24,
+      "streams": 40,
+      "streams_per_listener": 2.9,
+      "saves": 1,
+      "playlist_adds": 1,
+      "followers": 24,
+      "changes_pct": {},
+      "read_at": "2026-10-21T14:33:24",
+      "source": "Spotify for Artists, backfill 2026-10-21"
+    },
+    "2025-05-26": {
+      "start": "2025-05-20",
+      "end": "2025-05-26",
+      "listeners": 13,
+      "monthly_active": 22,
+      "streams": 26,
+      "streams_per_listener": 2,
+      "saves": 0,
+      "playlist_adds": 2,
+      "followers": 24,
+      "changes_pct": {},
+      "read_at": "2026-10-21T14:33:24",
+      "source": "Spotify for Artists, backfill 2026-10-21"
+    },
+    "2025-05-19": {
+      "start": "2025-05-13",
+      "end": "2025-05-19",
+      "listeners": 14,
+      "monthly_active": 21,
+      "streams": 49,
+      "streams_per_listener": 3.5,
+      "saves": 0,
+      "playlist_adds": 4,
+      "followers": 23,
+      "changes_pct": {},
+      "read_at": "2026-10-21T14:33:24",
+      "source": "Spotify for Artists, backfill 2026-10-21"
+    },
+    "2025-05-12": {
+      "start": "2025-05-06",
+      "end": "2025-05-12",
+      "listeners": 9,
+      "monthly_active": 20,
+      "streams": 17,
+      "streams_per_listener": 1.9,
+      "saves": 1,
+      "playlist_adds": 2,
+      "followers": 23,
+      "changes_pct": {},
+      "read_at": "2026-10-21T14:33:24",
+      "source": "Spotify for Artists, backfill 2026-10-21"
+    },
+    "2025-05-05": {
+      "start": "2025-04-29",
+      "end": "2025-05-05",
+      "listeners": 8,
+      "monthly_active": 22,
+      "streams": 12,
+      "streams_per_listener": 1.5,
+      "saves": 1,
+      "playlist_adds": 0,
+      "followers": 23,
+      "changes_pct": {},
+      "read_at": "2026-10-21T14:33:24",
+      "source": "Spotify for Artists, backfill 2026-10-21"
+    },
+    "2025-04-28": {
+      "start": "2025-04-22",
+      "end": "2025-04-28",
+      "listeners": 8,
+      "monthly_active": 20,
+      "streams": 19,
+      "streams_per_listener": 2.4,
+      "saves": 0,
+      "playlist_adds": 0,
+      "followers": 23,
+      "changes_pct": {},
+      "read_at": "2026-10-21T14:33:24",
+      "source": "Spotify for Artists, backfill 2026-10-21"
+    },
+    "2025-04-21": {
+      "start": "2025-04-15",
+      "end": "2025-04-21",
+      "listeners": 8,
+      "monthly_active": 23,
+      "streams": 15,
+      "streams_per_listener": 1.9,
+      "saves": 2,
+      "playlist_adds": 1,
+      "followers": 23,
+      "changes_pct": {},
+      "read_at": "2026-10-21T14:33:24",
+      "source": "Spotify for Artists, backfill 2026-10-21"
+    },
+    "2025-04-14": {
+      "start": "2025-04-08",
+      "end": "2025-04-14",
+      "listeners": 11,
+      "monthly_active": 21,
+      "streams": 19,
+      "streams_per_listener": 1.7,
+      "saves": 2,
+      "playlist_adds": 7,
+      "followers": 23,
+      "changes_pct": {},
+      "read_at": "2026-10-21T14:33:24",
+      "source": "Spotify for Artists, backfill 2026-10-21"
+    },
+    "2025-04-07": {
+      "start": "2025-04-01",
+      "end": "2025-04-07",
+      "listeners": 8,
+      "monthly_active": 18,
+      "streams": 19,
+      "streams_per_listener": 2.4,
+      "saves": 0,
+      "playlist_adds": 0,
+      "followers": 23,
+      "changes_pct": {},
+      "read_at": "2026-10-21T14:33:24",
+      "source": "Spotify for Artists, backfill 2026-10-21"
+    },
+    "2025-03-31": {
+      "start": "2025-03-25",
+      "end": "2025-03-31",
+      "listeners": 12,
+      "monthly_active": 22,
+      "streams": 29,
+      "streams_per_listener": 2.4,
+      "saves": 1,
+      "playlist_adds": 5,
+      "followers": 23,
+      "changes_pct": {},
+      "read_at": "2026-10-21T14:33:24",
+      "source": "Spotify for Artists, backfill 2026-10-21"
+    },
+    "2025-03-24": {
+      "start": "2025-03-18",
+      "end": "2025-03-24",
+      "listeners": 8,
+      "monthly_active": 25,
+      "streams": 25,
+      "streams_per_listener": 3.1,
+      "saves": 0,
+      "playlist_adds": 9,
+      "followers": 22,
+      "changes_pct": {},
+      "read_at": "2026-10-21T14:33:24",
+      "source": "Spotify for Artists, backfill 2026-10-21"
+    },
+    "2025-03-17": {
+      "start": "2025-03-11",
+      "end": "2025-03-17",
+      "listeners": 5,
+      "monthly_active": 29,
+      "streams": 16,
+      "streams_per_listener": 3.2,
+      "saves": 1,
+      "playlist_adds": 0,
+      "followers": 22,
+      "changes_pct": {},
+      "read_at": "2026-10-21T14:33:24",
+      "source": "Spotify for Artists, backfill 2026-10-21"
+    },
+    "2025-03-10": {
+      "start": "2025-03-04",
+      "end": "2025-03-10",
+      "listeners": 10,
+      "monthly_active": 31,
+      "streams": 25,
+      "streams_per_listener": 2.5,
+      "saves": 1,
+      "playlist_adds": 1,
+      "followers": 21,
+      "changes_pct": {},
+      "read_at": "2026-10-21T14:33:24",
+      "source": "Spotify for Artists, backfill 2026-10-21"
+    },
+    "2025-03-03": {
+      "start": "2025-02-25",
+      "end": "2025-03-03",
+      "listeners": 14,
+      "monthly_active": 37,
+      "streams": 46,
+      "streams_per_listener": 3.3,
+      "saves": 10,
+      "playlist_adds": 0,
+      "followers": 21,
+      "changes_pct": {},
+      "read_at": "2026-10-21T14:33:24",
+      "source": "Spotify for Artists, backfill 2026-10-21"
+    },
+    "2025-02-24": {
+      "start": "2025-02-18",
+      "end": "2025-02-24",
+      "listeners": 14,
+      "monthly_active": 37,
+      "streams": 28,
+      "streams_per_listener": 2,
+      "saves": 6,
+      "playlist_adds": 1,
+      "followers": 21,
+      "changes_pct": {},
+      "read_at": "2026-10-21T14:33:24",
+      "source": "Spotify for Artists, backfill 2026-10-21"
+    },
+    "2025-02-17": {
+      "start": "2025-02-11",
+      "end": "2025-02-17",
+      "listeners": 10,
+      "monthly_active": 41,
+      "streams": 21,
+      "streams_per_listener": 2.1,
+      "saves": 0,
+      "playlist_adds": 2,
+      "followers": 21,
+      "changes_pct": {},
+      "read_at": "2026-10-21T14:33:24",
+      "source": "Spotify for Artists, backfill 2026-10-21"
+    },
+    "2025-02-10": {
+      "start": "2025-02-04",
+      "end": "2025-02-10",
+      "listeners": 18,
+      "monthly_active": 44,
+      "streams": 57,
+      "streams_per_listener": 3.2,
+      "saves": 18,
+      "playlist_adds": 6,
+      "followers": 21,
+      "changes_pct": {},
+      "read_at": "2026-10-21T14:33:24",
+      "source": "Spotify for Artists, backfill 2026-10-21"
+    },
+    "2025-02-03": {
+      "start": "2025-01-28",
+      "end": "2025-02-03",
+      "listeners": 16,
+      "monthly_active": 41,
+      "streams": 49,
+      "streams_per_listener": 3.1,
+      "saves": 7,
+      "playlist_adds": 15,
+      "followers": 21,
+      "changes_pct": {},
+      "read_at": "2026-10-21T14:33:24",
+      "source": "Spotify for Artists, backfill 2026-10-21"
+    },
+    "2025-01-27": {
+      "start": "2025-01-21",
+      "end": "2025-01-27",
+      "listeners": 21,
+      "monthly_active": 40,
+      "streams": 76,
+      "streams_per_listener": 3.6,
+      "saves": 8,
+      "playlist_adds": 8,
+      "followers": 21,
+      "changes_pct": {},
+      "read_at": "2026-10-21T14:33:24",
+      "source": "Spotify for Artists, backfill 2026-10-21"
+    },
+    "2025-01-20": {
+      "start": "2025-01-14",
+      "end": "2025-01-20",
+      "listeners": 14,
+      "monthly_active": 36,
+      "streams": 76,
+      "streams_per_listener": 5.4,
+      "saves": 8,
+      "playlist_adds": 7,
+      "followers": 20,
+      "changes_pct": {},
+      "read_at": "2026-10-21T14:33:24",
+      "source": "Spotify for Artists, backfill 2026-10-21"
+    },
+    "2025-01-13": {
+      "start": "2025-01-07",
+      "end": "2025-01-13",
+      "listeners": 17,
+      "monthly_active": 48,
+      "streams": 46,
+      "streams_per_listener": 2.7,
+      "saves": 9,
+      "playlist_adds": 4,
+      "followers": 18,
+      "changes_pct": {},
+      "read_at": "2026-10-21T14:33:24",
+      "source": "Spotify for Artists, backfill 2026-10-21"
+    },
+    "2025-01-06": {
+      "start": "2024-12-31",
+      "end": "2025-01-06",
+      "listeners": 11,
+      "monthly_active": 40,
+      "streams": 62,
+      "streams_per_listener": 5.6,
+      "saves": 6,
+      "playlist_adds": 5,
+      "followers": 18,
+      "changes_pct": {},
+      "read_at": "2026-10-21T14:33:24",
+      "source": "Spotify for Artists, backfill 2026-10-21"
+    },
+    "2024-12-30": {
+      "start": "2024-12-24",
+      "end": "2024-12-30",
+      "listeners": 20,
+      "monthly_active": 36,
+      "streams": 139,
+      "streams_per_listener": 7,
+      "saves": 12,
+      "playlist_adds": 19,
+      "followers": 17,
+      "changes_pct": {},
+      "read_at": "2026-10-21T14:33:24",
+      "source": "Spotify for Artists, backfill 2026-10-21"
+    },
+    "2024-12-23": {
+      "start": "2024-12-17",
+      "end": "2024-12-23",
+      "listeners": 31,
+      "monthly_active": 29,
+      "streams": 296,
+      "streams_per_listener": 9.5,
+      "saves": 122,
+      "playlist_adds": 35,
+      "followers": 17,
+      "changes_pct": {},
+      "read_at": "2026-10-21T14:33:24",
+      "source": "Spotify for Artists, backfill 2026-10-21"
+    },
+    "2026-10-30": {
+      "start": "2026-10-24",
+      "end": "2026-10-30",
+      "listeners": 67,
+      "monthly_active": 96,
+      "streams": 94,
+      "streams_per_listener": 1.4,
+      "saves": 1,
+      "playlist_adds": 21,
+      "followers": 68,
+      "changes_pct": {
+        "listeners": 11.7,
+        "monthly_active": -9.4,
+        "streams": -6.9,
+        "streams_per_listener": -16.7,
+        "saves": -66.7,
+        "playlist_adds": 5.0
+      },
+      "read_at": "2026-11-01T17:22:13",
+      "source": "Spotify for Artists, Audience, 7 days",
+      "top_songs": [
+        {
+          "title": "Farewell",
+          "streams": 28
+        },
+        {
+          "title": "The Deceiver",
+          "streams": 18
+        },
+        {
+          "title": "Taka Juno",
+          "streams": 14
+        }
+      ]
+    },
+    "2026-10-31": {
+      "start": "2026-10-25",
+      "end": "2026-10-31",
+      "listeners": 64,
+      "monthly_active": 94,
+      "streams": 91,
+      "streams_per_listener": 1.4,
+      "saves": 1,
+      "playlist_adds": 26,
+      "followers": 68,
+      "changes_pct": {
+        "listeners": 10.3,
+        "monthly_active": -9.6,
+        "streams_per_listener": -9.4,
+        "saves": -66.7,
+        "playlist_adds": 73.3
+      },
+      "read_at": "2026-11-02T08:12:50",
+      "source": "Spotify for Artists, Audience, 7 days",
+      "top_songs": [
+        {
+          "title": "Farewell",
+          "streams": 25
+        },
+        {
+          "title": "The Deceiver",
+          "streams": 21
+        },
+        {
+          "title": "Taka Juno",
+          "streams": 12
+        }
+      ]
+    }
+  },
+  "months": {
+    "2024-12": {
+      "start": "2024-12-01",
+      "end": "2024-12-31",
+      "listeners": 40,
+      "monthly_active": 37,
+      "streams": 439,
+      "streams_per_listener": 11,
+      "saves": 134,
+      "playlist_adds": 54,
+      "followers": 17,
+      "changes_pct": {},
+      "read_at": "2026-10-21T14:33:24",
+      "source": "Spotify for Artists, backfill 2026-10-21"
+    },
+    "2025-01": {
+      "start": "2025-01-01",
+      "end": "2025-01-31",
+      "listeners": 48,
+      "monthly_active": 43,
+      "streams": 284,
+      "streams_per_listener": 5.9,
+      "saves": 33,
+      "playlist_adds": 35,
+      "followers": 21,
+      "changes_pct": {},
+      "read_at": "2026-10-21T14:33:24",
+      "source": "Spotify for Artists, backfill 2026-10-21"
+    },
+    "2025-02": {
+      "start": "2025-02-01",
+      "end": "2025-02-28",
+      "listeners": 42,
+      "monthly_active": 39,
+      "streams": 160,
+      "streams_per_listener": 3.8,
+      "saves": 39,
+      "playlist_adds": 13,
+      "followers": 21,
+      "changes_pct": {},
+      "read_at": "2026-10-21T14:33:24",
+      "source": "Spotify for Artists, backfill 2026-10-21"
+    },
+    "2025-03": {
+      "start": "2025-03-01",
+      "end": "2025-03-31",
+      "listeners": 30,
+      "monthly_active": 22,
+      "streams": 108,
+      "streams_per_listener": 3.6,
+      "saves": 3,
+      "playlist_adds": 15,
+      "followers": 23,
+      "changes_pct": {},
+      "read_at": "2026-10-21T14:33:24",
+      "source": "Spotify for Artists, backfill 2026-10-21"
+    },
+    "2025-04": {
+      "start": "2025-04-01",
+      "end": "2025-04-30",
+      "listeners": 27,
+      "monthly_active": 20,
+      "streams": 73,
+      "streams_per_listener": 2.7,
+      "saves": 4,
+      "playlist_adds": 8,
+      "followers": 23,
+      "changes_pct": {},
+      "read_at": "2026-10-21T14:33:24",
+      "source": "Spotify for Artists, backfill 2026-10-21"
+    },
+    "2025-05": {
+      "start": "2025-05-01",
+      "end": "2025-05-31",
+      "listeners": 36,
+      "monthly_active": 23,
+      "streams": 130,
+      "streams_per_listener": 3.6,
+      "saves": 3,
+      "playlist_adds": 9,
+      "followers": 24,
+      "changes_pct": {},
+      "read_at": "2026-10-21T14:33:24",
+      "source": "Spotify for Artists, backfill 2026-10-21"
+    },
+    "2025-06": {
+      "start": "2025-06-01",
+      "end": "2025-06-30",
+      "listeners": 29,
+      "monthly_active": 22,
+      "streams": 97,
+      "streams_per_listener": 3.3,
+      "saves": 10,
+      "playlist_adds": 4,
+      "followers": 25,
+      "changes_pct": {},
+      "read_at": "2026-10-21T14:33:24",
+      "source": "Spotify for Artists, backfill 2026-10-21"
+    },
+    "2025-07": {
+      "start": "2025-07-01",
+      "end": "2025-07-31",
+      "listeners": 27,
+      "monthly_active": 19,
+      "streams": 62,
+      "streams_per_listener": 2.3,
+      "saves": 0,
+      "playlist_adds": 4,
+      "followers": 25,
+      "changes_pct": {},
+      "read_at": "2026-10-21T14:33:24",
+      "source": "Spotify for Artists, backfill 2026-10-21"
+    },
+    "2025-08": {
+      "start": "2025-08-01",
+      "end": "2025-08-31",
+      "listeners": 18,
+      "monthly_active": 14,
+      "streams": 46,
+      "streams_per_listener": 2.6,
+      "saves": 2,
+      "playlist_adds": 7,
+      "followers": 25,
+      "changes_pct": {},
+      "read_at": "2026-10-21T14:33:24",
+      "source": "Spotify for Artists, backfill 2026-10-21"
+    },
+    "2025-09": {
+      "start": "2025-09-01",
+      "end": "2025-09-30",
+      "listeners": 1006,
+      "monthly_active": 225,
+      "streams": 2100,
+      "streams_per_listener": 2.1,
+      "saves": 197,
+      "playlist_adds": 175,
+      "followers": 31,
+      "changes_pct": {},
+      "read_at": "2026-10-21T14:33:24",
+      "source": "Spotify for Artists, backfill 2026-10-21",
+      "rounded": [
+        "streams"
+      ]
+    },
+    "2025-10": {
+      "start": "2025-10-01",
+      "end": "2025-10-31",
+      "listeners": 1198,
+      "monthly_active": 203,
+      "streams": 2500,
+      "streams_per_listener": 2.1,
+      "saves": 105,
+      "playlist_adds": 176,
+      "followers": 41,
+      "changes_pct": {},
+      "read_at": "2026-10-21T14:33:24",
+      "source": "Spotify for Artists, backfill 2026-10-21",
+      "rounded": [
+        "streams"
+      ]
+    },
+    "2025-11": {
+      "start": "2025-11-01",
+      "end": "2025-11-30",
+      "listeners": 879,
+      "monthly_active": 205,
+      "streams": 1500,
+      "streams_per_listener": 1.8,
+      "saves": 90,
+      "playlist_adds": 131,
+      "followers": 45,
+      "changes_pct": {},
+      "read_at": "2026-10-21T14:33:24",
+      "source": "Spotify for Artists, backfill 2026-10-21",
+      "rounded": [
+        "streams"
+      ]
+    },
+    "2025-12": {
+      "start": "2025-12-01",
+      "end": "2025-12-31",
+      "listeners": 436,
+      "monthly_active": 190,
+      "streams": 800,
+      "streams_per_listener": 1.8,
+      "saves": 55,
+      "playlist_adds": 96,
+      "followers": 47,
+      "changes_pct": {},
+      "read_at": "2026-10-21T14:33:24",
+      "source": "Spotify for Artists, backfill 2026-10-21"
+    },
+    "2026-02": {
+      "start": "2026-02-01",
+      "end": "2026-02-28",
+      "listeners": 146,
+      "monthly_active": 101,
+      "streams": 319,
+      "streams_per_listener": 2.2,
+      "saves": 19,
+      "playlist_adds": 20,
+      "followers": 49,
+      "changes_pct": {},
+      "read_at": "2026-10-21T14:33:24",
+      "source": "Spotify for Artists, backfill 2026-10-21"
+    },
+    "2026-03": {
+      "start": "2026-03-01",
+      "end": "2026-03-31",
+      "listeners": 180,
+      "monthly_active": 106,
+      "streams": 349,
+      "streams_per_listener": 1.9,
+      "saves": 21,
+      "playlist_adds": 64,
+      "followers": 49,
+      "changes_pct": {},
+      "read_at": "2026-10-21T14:33:24",
+      "source": "Spotify for Artists, backfill 2026-10-21"
+    },
+    "2026-01": {
+      "start": "2026-01-01",
+      "end": "2026-01-31",
+      "listeners": 284,
+      "monthly_active": 141,
+      "streams": 541,
+      "streams_per_listener": 1.9,
+      "saves": 28,
+      "playlist_adds": 66,
+      "followers": 48,
+      "changes_pct": {},
+      "read_at": "2026-10-21T14:33:24",
+      "source": "Spotify for Artists, backfill 2026-10-21"
+    },
+    "2026-04": {
+      "start": "2026-04-01",
+      "end": "2026-04-30",
+      "listeners": 140,
+      "monthly_active": 94,
+      "streams": 315,
+      "streams_per_listener": 2.3,
+      "saves": 18,
+      "playlist_adds": 60,
+      "followers": 50,
+      "changes_pct": {},
+      "read_at": "2026-10-21T14:33:24",
+      "source": "Spotify for Artists, backfill 2026-10-21"
+    },
+    "2026-05": {
+      "start": "2026-05-01",
+      "end": "2026-05-31",
+      "listeners": 175,
+      "monthly_active": 106,
+      "streams": 305,
+      "streams_per_listener": 1.7,
+      "saves": 32,
+      "playlist_adds": 112,
+      "followers": 52,
+      "changes_pct": {},
+      "read_at": "2026-10-21T14:33:24",
+      "source": "Spotify for Artists, backfill 2026-10-21"
+    },
+    "2026-06": {
+      "start": "2026-06-01",
+      "end": "2026-06-30",
+      "listeners": 173,
+      "monthly_active": 101,
+      "streams": 348,
+      "streams_per_listener": 2,
+      "saves": 20,
+      "playlist_adds": 75,
+      "followers": 55,
+      "changes_pct": {},
+      "read_at": "2026-10-21T14:33:24",
+      "source": "Spotify for Artists, backfill 2026-10-21"
+    },
+    "2026-07": {
+      "start": "2026-07-01",
+      "end": "2026-07-31",
+      "listeners": 249,
+      "monthly_active": 110,
+      "streams": 461,
+      "streams_per_listener": 1.9,
+      "saves": 33,
+      "playlist_adds": 137,
+      "followers": 62,
+      "changes_pct": {},
+      "read_at": "2026-10-21T14:33:24",
+      "source": "Spotify for Artists, backfill 2026-10-21"
+    },
+    "2026-08": {
+      "start": "2026-08-01",
+      "end": "2026-08-31",
+      "listeners": 226,
+      "monthly_active": 78,
+      "streams": 407,
+      "streams_per_listener": 1.8,
+      "saves": 17,
+      "playlist_adds": 103,
+      "followers": 64,
+      "changes_pct": {},
+      "read_at": "2026-10-21T14:33:24",
+      "source": "Spotify for Artists, backfill 2026-10-21"
+    },
+    "2026-09": {
+      "start": "2026-09-01",
+      "end": "2026-09-30",
+      "listeners": 208,
+      "monthly_active": 93,
+      "streams": 442,
+      "streams_per_listener": 2.1,
+      "saves": 25,
+      "playlist_adds": 101,
+      "followers": 64,
+      "changes_pct": {},
+      "read_at": "2026-10-21T14:33:24",
+      "source": "Spotify for Artists, backfill 2026-10-21"
+    },
+    "2026-10": {
+      "start": "2026-10-01",
+      "end": "2026-10-19",
+      "listeners": 138,
+      "monthly_active": 115,
+      "streams": 332,
+      "streams_per_listener": 2.4,
+      "saves": 19,
+      "playlist_adds": 76,
+      "followers": 67,
+      "changes_pct": {},
+      "read_at": "2026-10-21T14:33:24",
+      "source": "Spotify for Artists, backfill 2026-10-21"
+    }
+  },
+  "songs": {
+    "read_on": "2026-10-21",
+    "source": "Spotify for Artists, Music > Songs",
+    "all_time": [
+      {
+        "title": "The Cure",
+        "streams": 4814,
+        "first_released": "2025-09-19"
+      },
+      {
+        "title": "Meltscape",
+        "streams": 2017,
+        "first_released": "2025-09-19"
+      },
+      {
+        "title": "Taka Juno",
+        "streams": 1103,
+        "first_released": "2025-11-12"
+      },
+      {
+        "title": "Mind Eaten",
+        "streams": 885,
+        "first_released": "2025-09-19"
+      },
+      {
+        "title": "The Alchemist Ritual",
+        "streams": 626,
+        "first_released": "2024-12-20"
+      },
+      {
+        "title": "Farewell",
+        "streams": 458,
+        "first_released": "2026-05-15"
+      },
+      {
+        "title": "ACID Gangsta",
+        "streams": 434,
+        "first_released": "2024-12-20"
+      },
+      {
+        "title": "Compass Rose",
+        "streams": 393,
+        "first_released": "2024-12-20"
+      },
+      {
+        "title": "Dark Scales",
+        "streams": 376,
+        "first_released": "2024-12-20"
+      },
+      {
+        "title": "The Deceiver",
+        "streams": 373,
+        "first_released": "2026-07-10"
+      },
+      {
+        "title": "In Between Spaces",
+        "streams": 356,
+        "first_released": "2024-12-20"
+      },
+      {
+        "title": "The Tour - Inch of Shadow Remix",
+        "streams": 356,
+        "first_released": "2025-12-19"
+      }
+    ],
+    "12_months": [
+      {
+        "title": "The Cure",
+        "streams": 2302,
+        "listeners": 1014,
+        "saves": 87
+      },
+      {
+        "title": "Taka Juno",
+        "streams": 1103,
+        "listeners": 523,
+        "saves": 87
+      },
+      {
+        "title": "Meltscape",
+        "streams": 956,
+        "listeners": 458,
+        "saves": 41
+      },
+      {
+        "title": "Farewell",
+        "streams": 458,
+        "listeners": 226,
+        "saves": 34
+      },
+      {
+        "title": "Mind Eaten",
+        "streams": 422,
+        "listeners": 135,
+        "saves": 29
+      },
+      {
+        "title": "The Deceiver",
+        "streams": 373,
+        "listeners": 203,
+        "saves": 24
+      },
+      {
+        "title": "The Tour - Inch of Shadow Remix",
+        "streams": 356,
+        "listeners": 147,
+        "saves": 66
+      },
+      {
+        "title": "Compass Rose",
+        "streams": 175,
+        "listeners": 85,
+        "saves": 8
+      },
+      {
+        "title": "The Alchemist Ritual",
+        "streams": 152,
+        "listeners": 62,
+        "saves": 3
+      },
+      {
+        "title": "ACID Gangsta",
+        "streams": 125,
+        "listeners": 45,
+        "saves": 4
+      },
+      {
+        "title": "Dark Scales",
+        "streams": 122,
+        "listeners": 54,
+        "saves": 7
+      },
+      {
+        "title": "In Between Spaces",
+        "streams": 77,
+        "listeners": 37,
+        "saves": 1
+      }
+    ],
+    "28_days": [
+      {
+        "title": "Farewell",
+        "streams": 140,
+        "listeners": 68,
+        "canvas_views": 37,
+        "saves": 9
+      },
+      {
+        "title": "Taka Juno",
+        "streams": 103,
+        "listeners": 38,
+        "canvas_views": 13,
+        "saves": 1
+      },
+      {
+        "title": "The Deceiver",
+        "streams": 63,
+        "listeners": 46,
+        "canvas_views": 6,
+        "saves": 3
+      },
+      {
+        "title": "The Cure",
+        "streams": 56,
+        "listeners": 33,
+        "canvas_views": 18,
+        "saves": 4
+      },
+      {
+        "title": "The Tour - Inch of Shadow Remix",
+        "streams": 38,
+        "listeners": 11,
+        "canvas_views": null,
+        "saves": 2
+      },
+      {
+        "title": "Meltscape",
+        "streams": 36,
+        "listeners": 23,
+        "canvas_views": 13,
+        "saves": 4
+      },
+      {
+        "title": "Mind Eaten",
+        "streams": 22,
+        "listeners": 14,
+        "canvas_views": 17,
+        "saves": 4
+      },
+      {
+        "title": "Compass Rose",
+        "streams": 7,
+        "listeners": 6,
+        "canvas_views": null,
+        "saves": null
+      },
+      {
+        "title": "The Alchemist Ritual",
+        "streams": 5,
+        "listeners": 3,
+        "canvas_views": 5,
+        "saves": null
+      },
+      {
+        "title": "ACID Gangsta",
+        "streams": 5,
+        "listeners": 5,
+        "canvas_views": 3,
+        "saves": null
+      },
+      {
+        "title": "Dark Scales",
+        "streams": 3,
+        "listeners": 2,
+        "canvas_views": 2,
+        "saves": null
+      },
+      {
+        "title": "In Between Spaces",
+        "streams": 2,
+        "listeners": 2,
+        "canvas_views": null,
+        "saves": null
+      }
+    ]
+  },
+  "location": {
+    "read_on": "2026-10-21",
+    "period": "last 28 days",
+    "source": "Spotify for Artists, Audience > Location",
+    "countries": [
+      {
+        "country": "Germany",
+        "listeners": 42,
+        "active_pct": 31.0,
+        "active_listeners": 13
+      },
+      {
+        "country": "Mexico",
+        "listeners": 31,
+        "active_pct": 83.9,
+        "active_listeners": 26
+      },
+      {
+        "country": "United States",
+        "listeners": 22,
+        "active_pct": 45.5,
+        "active_listeners": 10
+      },
+      {
+        "country": "Israel",
+        "listeners": 14,
+        "active_pct": 92.9,
+        "active_listeners": 13
+      },
+      {
+        "country": "France",
+        "listeners": 9,
+        "active_pct": 55.6,
+        "active_listeners": 5
+      },
+      {
+        "country": "Brazil",
+        "listeners": 8,
+        "active_pct": 75.0,
+        "active_listeners": 6
+      },
+      {
+        "country": "Australia",
+        "listeners": 8,
+        "active_pct": 100.0,
+        "active_listeners": 8
+      },
+      {
+        "country": "Japan",
+        "listeners": 7,
+        "active_pct": 28.6,
+        "active_listeners": 2
+      },
+      {
+        "country": "Sweden",
+        "listeners": 7,
+        "active_pct": 42.9,
+        "active_listeners": 3
+      },
+      {
+        "country": "Hungary",
+        "listeners": 4,
+        "active_pct": 50.0,
+        "active_listeners": 2
+      },
+      {
+        "country": "India",
+        "listeners": 4,
+        "active_pct": 100.0,
+        "active_listeners": 4
+      },
+      {
+        "country": "South Africa",
+        "listeners": 3,
+        "active_pct": 100.0,
+        "active_listeners": 3
+      },
+      {
+        "country": "Netherlands",
+        "listeners": 3,
+        "active_pct": 66.7,
+        "active_listeners": 2
+      }
+    ],
+    "cities": [
+      {
+        "city": "Mexico City",
+        "country": "Mexico",
+        "listeners": 24
+      },
+      {
+        "city": "Berlin",
+        "country": "Germany",
+        "listeners": 8
+      },
+      {
+        "city": "Tel Aviv",
+        "country": "Israel",
+        "listeners": 6
+      },
+      {
+        "city": "Melbourne",
+        "country": "Australia",
+        "listeners": 5
+      },
+      {
+        "city": "Frankfurt am Main",
+        "country": "Germany",
+        "listeners": 4
+      },
+      {
+        "city": "Leipzig",
+        "country": "Germany",
+        "listeners": 4
+      },
+      {
+        "city": "Mumbai",
+        "country": "India",
+        "listeners": 3
+      },
+      {
+        "city": "Stockholm",
+        "country": "Sweden",
+        "listeners": 3
+      },
+      {
+        "city": "Stuttgart",
+        "country": "Germany",
+        "listeners": 3
+      }
+    ]
+  }
+}

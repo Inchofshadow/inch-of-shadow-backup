@@ -1,0 +1,4138 @@
+[
+ {
+  "old": "ZERO G - DISC 1/Bass/Bass 1.wav",
+  "new": "ZERO G - DISC 1/Bass/Bass [G] 1.wav",
+  "hz": "48.8",
+  "note": "G0",
+  "cents": "-7",
+  "conf": "96.1"
+ },
+ {
+  "old": "ZERO G - DISC 1/Bass/Bass 10.wav",
+  "new": "ZERO G - DISC 1/Bass/Bass [G] 10.wav",
+  "hz": "98.0",
+  "note": "G1",
+  "cents": "0",
+  "conf": "96.4"
+ },
+ {
+  "old": "ZERO G - DISC 1/Bass/Bass 100.wav",
+  "new": "ZERO G - DISC 1/Bass/Bass [G] 100.wav",
+  "hz": "98.2",
+  "note": "G1",
+  "cents": "3",
+  "conf": "97.4"
+ },
+ {
+  "old": "ZERO G - DISC 1/Bass/Bass 103.wav",
+  "new": "ZERO G - DISC 1/Bass/Bass [G] 103.wav",
+  "hz": "48.2",
+  "note": "G0",
+  "cents": "-30",
+  "conf": "88.8"
+ },
+ {
+  "old": "ZERO G - DISC 1/Bass/Bass 104.wav",
+  "new": "ZERO G - DISC 1/Bass/Bass [G] 104.wav",
+  "hz": "96.3",
+  "note": "G1",
+  "cents": "-31",
+  "conf": "97.4"
+ },
+ {
+  "old": "ZERO G - DISC 1/Bass/Bass 106.wav",
+  "new": "ZERO G - DISC 1/Bass/Bass [G] 106.wav",
+  "hz": "48.5",
+  "note": "G0",
+  "cents": "-17",
+  "conf": "96.9"
+ },
+ {
+  "old": "ZERO G - DISC 1/Bass/Bass 107.wav",
+  "new": "ZERO G - DISC 1/Bass/Bass [G] 107.wav",
+  "hz": "49.3",
+  "note": "G0",
+  "cents": "11",
+  "conf": "94.5"
+ },
+ {
+  "old": "ZERO G - DISC 1/Bass/Bass 108.wav",
+  "new": "ZERO G - DISC 1/Bass/Bass [G] 108.wav",
+  "hz": "98.6",
+  "note": "G1",
+  "cents": "11",
+  "conf": "97.5"
+ },
+ {
+  "old": "ZERO G - DISC 1/Bass/Bass 109.wav",
+  "new": "ZERO G - DISC 1/Bass/Bass [G] 109.wav",
+  "hz": "48.7",
+  "note": "G0",
+  "cents": "-12",
+  "conf": "96.3"
+ },
+ {
+  "old": "ZERO G - DISC 1/Bass/Bass 11.wav",
+  "new": "ZERO G - DISC 1/Bass/Bass [G] 11.wav",
+  "hz": "48.9",
+  "note": "G0",
+  "cents": "-4",
+  "conf": "98.7"
+ },
+ {
+  "old": "ZERO G - DISC 1/Bass/Bass 110.wav",
+  "new": "ZERO G - DISC 1/Bass/Bass [G] 110.wav",
+  "hz": "97.1",
+  "note": "G1",
+  "cents": "-15",
+  "conf": "98.4"
+ },
+ {
+  "old": "ZERO G - DISC 1/Bass/Bass 111.wav",
+  "new": "ZERO G - DISC 1/Bass/Bass [G] 111.wav",
+  "hz": "48.8",
+  "note": "G0",
+  "cents": "-6",
+  "conf": "96.5"
+ },
+ {
+  "old": "ZERO G - DISC 1/Bass/Bass 112.wav",
+  "new": "ZERO G - DISC 1/Bass/Bass [G] 112.wav",
+  "hz": "97.3",
+  "note": "G1",
+  "cents": "-13",
+  "conf": "96.8"
+ },
+ {
+  "old": "ZERO G - DISC 1/Bass/Bass 113.wav",
+  "new": "ZERO G - DISC 1/Bass/Bass [G] 113.wav",
+  "hz": "49.3",
+  "note": "G0",
+  "cents": "10",
+  "conf": "93.5"
+ },
+ {
+  "old": "ZERO G - DISC 1/Bass/Bass 114.wav",
+  "new": "ZERO G - DISC 1/Bass/Bass [G] 114.wav",
+  "hz": "98.5",
+  "note": "G1",
+  "cents": "10",
+  "conf": "97.6"
+ },
+ {
+  "old": "ZERO G - DISC 1/Bass/Bass 12.wav",
+  "new": "ZERO G - DISC 1/Bass/Bass [G] 12.wav",
+  "hz": "97.6",
+  "note": "G1",
+  "cents": "-7",
+  "conf": "94.8"
+ },
+ {
+  "old": "ZERO G - DISC 1/Bass/Bass 13.wav",
+  "new": "ZERO G - DISC 1/Bass/Bass [G] 13.wav",
+  "hz": "49.1",
+  "note": "G0",
+  "cents": "5",
+  "conf": "97.6"
+ },
+ {
+  "old": "ZERO G - DISC 1/Bass/Bass 14.wav",
+  "new": "ZERO G - DISC 1/Bass/Bass [G] 14.wav",
+  "hz": "98.3",
+  "note": "G1",
+  "cents": "5",
+  "conf": "99.2"
+ },
+ {
+  "old": "ZERO G - DISC 1/Bass/Bass 15.wav",
+  "new": "ZERO G - DISC 1/Bass/Bass [G] 15.wav",
+  "hz": "48.9",
+  "note": "G0",
+  "cents": "-3",
+  "conf": "94.3"
+ },
+ {
+  "old": "ZERO G - DISC 1/Bass/Bass 16.wav",
+  "new": "ZERO G - DISC 1/Bass/Bass [G] 16.wav",
+  "hz": "97.9",
+  "note": "G1",
+  "cents": "-3",
+  "conf": "96.4"
+ },
+ {
+  "old": "ZERO G - DISC 1/Bass/Bass 17.wav",
+  "new": "ZERO G - DISC 1/Bass/Bass [G] 17.wav",
+  "hz": "49.5",
+  "note": "G0",
+  "cents": "16",
+  "conf": "97.9"
+ },
+ {
+  "old": "ZERO G - DISC 1/Bass/Bass 18.wav",
+  "new": "ZERO G - DISC 1/Bass/Bass [G] 18.wav",
+  "hz": "98.8",
+  "note": "G1",
+  "cents": "14",
+  "conf": "91.9"
+ },
+ {
+  "old": "ZERO G - DISC 1/Bass/Bass 19.wav",
+  "new": "ZERO G - DISC 1/Bass/Bass [G] 19.wav",
+  "hz": "49.0",
+  "note": "G0",
+  "cents": "0",
+  "conf": "97.4"
+ },
+ {
+  "old": "ZERO G - DISC 1/Bass/Bass 2.wav",
+  "new": "ZERO G - DISC 1/Bass/Bass [G] 2.wav",
+  "hz": "97.6",
+  "note": "G1",
+  "cents": "-7",
+  "conf": "96.6"
+ },
+ {
+  "old": "ZERO G - DISC 1/Bass/Bass 20.wav",
+  "new": "ZERO G - DISC 1/Bass/Bass [G] 20.wav",
+  "hz": "98.0",
+  "note": "G1",
+  "cents": "0",
+  "conf": "98.4"
+ },
+ {
+  "old": "ZERO G - DISC 1/Bass/Bass 21.wav",
+  "new": "ZERO G - DISC 1/Bass/Bass [G] 21.wav",
+  "hz": "49.0",
+  "note": "G0",
+  "cents": "1",
+  "conf": "97.0"
+ },
+ {
+  "old": "ZERO G - DISC 1/Bass/Bass 22.wav",
+  "new": "ZERO G - DISC 1/Bass/Bass [G] 22.wav",
+  "hz": "98.1",
+  "note": "G1",
+  "cents": "1",
+  "conf": "97.0"
+ },
+ {
+  "old": "ZERO G - DISC 1/Bass/Bass 23.wav",
+  "new": "ZERO G - DISC 1/Bass/Bass [G] 23.wav",
+  "hz": "49.1",
+  "note": "G0",
+  "cents": "5",
+  "conf": "94.0"
+ },
+ {
+  "old": "ZERO G - DISC 1/Bass/Bass 24.wav",
+  "new": "ZERO G - DISC 1/Bass/Bass [G] 24.wav",
+  "hz": "98.3",
+  "note": "G1",
+  "cents": "5",
+  "conf": "95.2"
+ },
+ {
+  "old": "ZERO G - DISC 1/Bass/Bass 25.wav",
+  "new": "ZERO G - DISC 1/Bass/Bass [G] 25.wav",
+  "hz": "49.1",
+  "note": "G0",
+  "cents": "5",
+  "conf": "96.4"
+ },
+ {
+  "old": "ZERO G - DISC 1/Bass/Bass 26.wav",
+  "new": "ZERO G - DISC 1/Bass/Bass [G] 26.wav",
+  "hz": "98.3",
+  "note": "G1",
+  "cents": "5",
+  "conf": "94.3"
+ },
+ {
+  "old": "ZERO G - DISC 1/Bass/Bass 27.wav",
+  "new": "ZERO G - DISC 1/Bass/Bass [G] 27.wav",
+  "hz": "48.9",
+  "note": "G0",
+  "cents": "-2",
+  "conf": "97.0"
+ },
+ {
+  "old": "ZERO G - DISC 1/Bass/Bass 28.wav",
+  "new": "ZERO G - DISC 1/Bass/Bass [G] 28.wav",
+  "hz": "97.9",
+  "note": "G1",
+  "cents": "-1",
+  "conf": "96.5"
+ },
+ {
+  "old": "ZERO G - DISC 1/Bass/Bass 3.wav",
+  "new": "ZERO G - DISC 1/Bass/Bass [G] 3.wav",
+  "hz": "49.1",
+  "note": "G0",
+  "cents": "3",
+  "conf": "96.1"
+ },
+ {
+  "old": "ZERO G - DISC 1/Bass/Bass 31.wav",
+  "new": "ZERO G - DISC 1/Bass/Bass [G] 31.wav",
+  "hz": "48.9",
+  "note": "G0",
+  "cents": "-3",
+  "conf": "98.9"
+ },
+ {
+  "old": "ZERO G - DISC 1/Bass/Bass 32.wav",
+  "new": "ZERO G - DISC 1/Bass/Bass [G] 32.wav",
+  "hz": "97.9",
+  "note": "G1",
+  "cents": "-2",
+  "conf": "97.5"
+ },
+ {
+  "old": "ZERO G - DISC 1/Bass/Bass 33.wav",
+  "new": "ZERO G - DISC 1/Bass/Bass [G] 33.wav",
+  "hz": "48.8",
+  "note": "G0",
+  "cents": "-7",
+  "conf": "95.0"
+ },
+ {
+  "old": "ZERO G - DISC 1/Bass/Bass 34.wav",
+  "new": "ZERO G - DISC 1/Bass/Bass [G] 34.wav",
+  "hz": "48.9",
+  "note": "G0",
+  "cents": "-2",
+  "conf": "93.1"
+ },
+ {
+  "old": "ZERO G - DISC 1/Bass/Bass 35.wav",
+  "new": "ZERO G - DISC 1/Bass/Bass [G] 35.wav",
+  "hz": "49.3",
+  "note": "G0",
+  "cents": "11",
+  "conf": "96.3"
+ },
+ {
+  "old": "ZERO G - DISC 1/Bass/Bass 36.wav",
+  "new": "ZERO G - DISC 1/Bass/Bass [G] 36.wav",
+  "hz": "98.6",
+  "note": "G1",
+  "cents": "11",
+  "conf": "97.7"
+ },
+ {
+  "old": "ZERO G - DISC 1/Bass/Bass 37.wav",
+  "new": "ZERO G - DISC 1/Bass/Bass [G] 37.wav",
+  "hz": "49.2",
+  "note": "G0",
+  "cents": "9",
+  "conf": "97.7"
+ },
+ {
+  "old": "ZERO G - DISC 1/Bass/Bass 38.wav",
+  "new": "ZERO G - DISC 1/Bass/Bass [G] 38.wav",
+  "hz": "98.5",
+  "note": "G1",
+  "cents": "9",
+  "conf": "96.7"
+ },
+ {
+  "old": "ZERO G - DISC 1/Bass/Bass 39.wav",
+  "new": "ZERO G - DISC 1/Bass/Bass [G] 39.wav",
+  "hz": "49.4",
+  "note": "G0",
+  "cents": "14",
+  "conf": "98.3"
+ },
+ {
+  "old": "ZERO G - DISC 1/Bass/Bass 4.wav",
+  "new": "ZERO G - DISC 1/Bass/Bass [G] 4.wav",
+  "hz": "98.2",
+  "note": "G1",
+  "cents": "3",
+  "conf": "96.2"
+ },
+ {
+  "old": "ZERO G - DISC 1/Bass/Bass 40.wav",
+  "new": "ZERO G - DISC 1/Bass/Bass [G] 40.wav",
+  "hz": "98.8",
+  "note": "G1",
+  "cents": "14",
+  "conf": "97.5"
+ },
+ {
+  "old": "ZERO G - DISC 1/Bass/Bass 41.wav",
+  "new": "ZERO G - DISC 1/Bass/Bass [G] 41.wav",
+  "hz": "49.4",
+  "note": "G0",
+  "cents": "14",
+  "conf": "96.7"
+ },
+ {
+  "old": "ZERO G - DISC 1/Bass/Bass 42.wav",
+  "new": "ZERO G - DISC 1/Bass/Bass [G] 42.wav",
+  "hz": "98.8",
+  "note": "G1",
+  "cents": "15",
+  "conf": "95.2"
+ },
+ {
+  "old": "ZERO G - DISC 1/Bass/Bass 43.wav",
+  "new": "ZERO G - DISC 1/Bass/Bass [G] 43.wav",
+  "hz": "48.9",
+  "note": "G0",
+  "cents": "-5",
+  "conf": "97.2"
+ },
+ {
+  "old": "ZERO G - DISC 1/Bass/Bass 44.wav",
+  "new": "ZERO G - DISC 1/Bass/Bass [G] 44.wav",
+  "hz": "97.7",
+  "note": "G1",
+  "cents": "-5",
+  "conf": "97.8"
+ },
+ {
+  "old": "ZERO G - DISC 1/Bass/Bass 46.wav",
+  "new": "ZERO G - DISC 1/Bass/Bass [G] 46.wav",
+  "hz": "98.0",
+  "note": "G1",
+  "cents": "0",
+  "conf": "91.1"
+ },
+ {
+  "old": "ZERO G - DISC 1/Bass/Bass 47.wav",
+  "new": "ZERO G - DISC 1/Bass/Bass [G] 47.wav",
+  "hz": "48.8",
+  "note": "G0",
+  "cents": "-7",
+  "conf": "95.8"
+ },
+ {
+  "old": "ZERO G - DISC 1/Bass/Bass 48.wav",
+  "new": "ZERO G - DISC 1/Bass/Bass [G] 48.wav",
+  "hz": "97.6",
+  "note": "G1",
+  "cents": "-7",
+  "conf": "93.0"
+ },
+ {
+  "old": "ZERO G - DISC 1/Bass/Bass 49.wav",
+  "new": "ZERO G - DISC 1/Bass/Bass [G] 49.wav",
+  "hz": "97.7",
+  "note": "G1",
+  "cents": "-5",
+  "conf": "95.6"
+ },
+ {
+  "old": "ZERO G - DISC 1/Bass/Bass 50.wav",
+  "new": "ZERO G - DISC 1/Bass/Bass [G] 50.wav",
+  "hz": "195.4",
+  "note": "G2",
+  "cents": "-5",
+  "conf": "97.9"
+ },
+ {
+  "old": "ZERO G - DISC 1/Bass/Bass 51.wav",
+  "new": "ZERO G - DISC 1/Bass/Bass [G] 51.wav",
+  "hz": "49.5",
+  "note": "G0",
+  "cents": "18",
+  "conf": "97.1"
+ },
+ {
+  "old": "ZERO G - DISC 1/Bass/Bass 52.wav",
+  "new": "ZERO G - DISC 1/Bass/Bass [G] 52.wav",
+  "hz": "98.9",
+  "note": "G1",
+  "cents": "16",
+  "conf": "97.4"
+ },
+ {
+  "old": "ZERO G - DISC 1/Bass/Bass 53.wav",
+  "new": "ZERO G - DISC 1/Bass/Bass [G] 53.wav",
+  "hz": "49.5",
+  "note": "G0",
+  "cents": "19",
+  "conf": "98.2"
+ },
+ {
+  "old": "ZERO G - DISC 1/Bass/Bass 54.wav",
+  "new": "ZERO G - DISC 1/Bass/Bass [G] 54.wav",
+  "hz": "99.0",
+  "note": "G1",
+  "cents": "18",
+  "conf": "98.6"
+ },
+ {
+  "old": "ZERO G - DISC 1/Bass/Bass 55.wav",
+  "new": "ZERO G - DISC 1/Bass/Bass [G] 55.wav",
+  "hz": "48.5",
+  "note": "G0",
+  "cents": "-17",
+  "conf": "98.0"
+ },
+ {
+  "old": "ZERO G - DISC 1/Bass/Bass 56.wav",
+  "new": "ZERO G - DISC 1/Bass/Bass [G] 56.wav",
+  "hz": "97.1",
+  "note": "G1",
+  "cents": "-17",
+  "conf": "96.9"
+ },
+ {
+  "old": "ZERO G - DISC 1/Bass/Bass 57.wav",
+  "new": "ZERO G - DISC 1/Bass/Bass [G] 57.wav",
+  "hz": "49.6",
+  "note": "G0",
+  "cents": "21",
+  "conf": "98.0"
+ },
+ {
+  "old": "ZERO G - DISC 1/Bass/Bass 58.wav",
+  "new": "ZERO G - DISC 1/Bass/Bass [G] 58.wav",
+  "hz": "99.2",
+  "note": "G1",
+  "cents": "20",
+  "conf": "98.5"
+ },
+ {
+  "old": "ZERO G - DISC 1/Bass/Bass 59.wav",
+  "new": "ZERO G - DISC 1/Bass/Bass [G] 59.wav",
+  "hz": "48.3",
+  "note": "G0",
+  "cents": "-23",
+  "conf": "96.1"
+ },
+ {
+  "old": "ZERO G - DISC 1/Bass/Bass 6.wav",
+  "new": "ZERO G - DISC 1/Bass/Bass [G] 6.wav",
+  "hz": "98.0",
+  "note": "G1",
+  "cents": "0",
+  "conf": "97.0"
+ },
+ {
+  "old": "ZERO G - DISC 1/Bass/Bass 60.wav",
+  "new": "ZERO G - DISC 1/Bass/Bass [G] 60.wav",
+  "hz": "96.7",
+  "note": "G1",
+  "cents": "-23",
+  "conf": "93.9"
+ },
+ {
+  "old": "ZERO G - DISC 1/Bass/Bass 7.wav",
+  "new": "ZERO G - DISC 1/Bass/Bass [G] 7.wav",
+  "hz": "98.0",
+  "note": "G1",
+  "cents": "0",
+  "conf": "96.8"
+ },
+ {
+  "old": "ZERO G - DISC 1/Bass/Bass 71.wav",
+  "new": "ZERO G - DISC 1/Bass/Bass [G] 71.wav",
+  "hz": "49.3",
+  "note": "G0",
+  "cents": "11",
+  "conf": "98.0"
+ },
+ {
+  "old": "ZERO G - DISC 1/Bass/Bass 72.wav",
+  "new": "ZERO G - DISC 1/Bass/Bass [G] 72.wav",
+  "hz": "98.6",
+  "note": "G1",
+  "cents": "11",
+  "conf": "99.1"
+ },
+ {
+  "old": "ZERO G - DISC 1/Bass/Bass 73.wav",
+  "new": "ZERO G - DISC 1/Bass/Bass [G] 73.wav",
+  "hz": "49.0",
+  "note": "G0",
+  "cents": "1",
+  "conf": "95.1"
+ },
+ {
+  "old": "ZERO G - DISC 1/Bass/Bass 74.wav",
+  "new": "ZERO G - DISC 1/Bass/Bass [G] 74.wav",
+  "hz": "98.1",
+  "note": "G1",
+  "cents": "1",
+  "conf": "96.6"
+ },
+ {
+  "old": "ZERO G - DISC 1/Bass/Bass 75.wav",
+  "new": "ZERO G - DISC 1/Bass/Bass [G] 75.wav",
+  "hz": "49.0",
+  "note": "G0",
+  "cents": "1",
+  "conf": "95.0"
+ },
+ {
+  "old": "ZERO G - DISC 1/Bass/Bass 76.wav",
+  "new": "ZERO G - DISC 1/Bass/Bass [G] 76.wav",
+  "hz": "98.1",
+  "note": "G1",
+  "cents": "1",
+  "conf": "94.6"
+ },
+ {
+  "old": "ZERO G - DISC 1/Bass/Bass 77.wav",
+  "new": "ZERO G - DISC 1/Bass/Bass [G] 77.wav",
+  "hz": "49.0",
+  "note": "G0",
+  "cents": "-2",
+  "conf": "97.4"
+ },
+ {
+  "old": "ZERO G - DISC 1/Bass/Bass 78.wav",
+  "new": "ZERO G - DISC 1/Bass/Bass [G] 78.wav",
+  "hz": "97.9",
+  "note": "G1",
+  "cents": "-1",
+  "conf": "97.9"
+ },
+ {
+  "old": "ZERO G - DISC 1/Bass/Bass 79.wav",
+  "new": "ZERO G - DISC 1/Bass/Bass [G] 79.wav",
+  "hz": "49.0",
+  "note": "G0",
+  "cents": "1",
+  "conf": "98.2"
+ },
+ {
+  "old": "ZERO G - DISC 1/Bass/Bass 8.wav",
+  "new": "ZERO G - DISC 1/Bass/Bass [G] 8.wav",
+  "hz": "49.0",
+  "note": "G0",
+  "cents": "-1",
+  "conf": "97.7"
+ },
+ {
+  "old": "ZERO G - DISC 1/Bass/Bass 80.wav",
+  "new": "ZERO G - DISC 1/Bass/Bass [G] 80.wav",
+  "hz": "98.1",
+  "note": "G1",
+  "cents": "1",
+  "conf": "97.3"
+ },
+ {
+  "old": "ZERO G - DISC 1/Bass/Bass 81.wav",
+  "new": "ZERO G - DISC 1/Bass/Bass [G] 81.wav",
+  "hz": "49.1",
+  "note": "G0",
+  "cents": "5",
+  "conf": "97.2"
+ },
+ {
+  "old": "ZERO G - DISC 1/Bass/Bass 82.wav",
+  "new": "ZERO G - DISC 1/Bass/Bass [G] 82.wav",
+  "hz": "98.3",
+  "note": "G1",
+  "cents": "5",
+  "conf": "95.1"
+ },
+ {
+  "old": "ZERO G - DISC 1/Bass/Bass 83.wav",
+  "new": "ZERO G - DISC 1/Bass/Bass [G] 83.wav",
+  "hz": "97.9",
+  "note": "G1",
+  "cents": "-2",
+  "conf": "96.7"
+ },
+ {
+  "old": "ZERO G - DISC 1/Bass/Bass 84.wav",
+  "new": "ZERO G - DISC 1/Bass/Bass [G] 84.wav",
+  "hz": "195.9",
+  "note": "G2",
+  "cents": "-1",
+  "conf": "97.9"
+ },
+ {
+  "old": "ZERO G - DISC 1/Bass/Bass 86.wav",
+  "new": "ZERO G - DISC 1/Bass/Bass [G] 86.wav",
+  "hz": "48.9",
+  "note": "G0",
+  "cents": "-3",
+  "conf": "96.6"
+ },
+ {
+  "old": "ZERO G - DISC 1/Bass/Bass 87.wav",
+  "new": "ZERO G - DISC 1/Bass/Bass [G] 87.wav",
+  "hz": "48.9",
+  "note": "G0",
+  "cents": "-2",
+  "conf": "93.3"
+ },
+ {
+  "old": "ZERO G - DISC 1/Bass/Bass 88.wav",
+  "new": "ZERO G - DISC 1/Bass/Bass [G] 88.wav",
+  "hz": "97.9",
+  "note": "G1",
+  "cents": "-2",
+  "conf": "97.0"
+ },
+ {
+  "old": "ZERO G - DISC 1/Bass/Bass 89.wav",
+  "new": "ZERO G - DISC 1/Bass/Bass [G] 89.wav",
+  "hz": "48.8",
+  "note": "G0",
+  "cents": "-7",
+  "conf": "91.2"
+ },
+ {
+  "old": "ZERO G - DISC 1/Bass/Bass 9.wav",
+  "new": "ZERO G - DISC 1/Bass/Bass [G] 9.wav",
+  "hz": "49.0",
+  "note": "G0",
+  "cents": "0",
+  "conf": "98.5"
+ },
+ {
+  "old": "ZERO G - DISC 1/Bass/Bass 90.wav",
+  "new": "ZERO G - DISC 1/Bass/Bass [G] 90.wav",
+  "hz": "49.0",
+  "note": "G0",
+  "cents": "-2",
+  "conf": "95.0"
+ },
+ {
+  "old": "ZERO G - DISC 1/Bass/Bass 91.wav",
+  "new": "ZERO G - DISC 1/Bass/Bass [G] 91.wav",
+  "hz": "49.0",
+  "note": "G0",
+  "cents": "1",
+  "conf": "96.3"
+ },
+ {
+  "old": "ZERO G - DISC 1/Bass/Bass 92.wav",
+  "new": "ZERO G - DISC 1/Bass/Bass [G] 92.wav",
+  "hz": "98.1",
+  "note": "G1",
+  "cents": "1",
+  "conf": "96.8"
+ },
+ {
+  "old": "ZERO G - DISC 1/Bass/Bass 93.wav",
+  "new": "ZERO G - DISC 1/Bass/Bass [G] 93.wav",
+  "hz": "49.0",
+  "note": "G0",
+  "cents": "-2",
+  "conf": "95.0"
+ },
+ {
+  "old": "ZERO G - DISC 1/Bass/Bass 94.wav",
+  "new": "ZERO G - DISC 1/Bass/Bass [G] 94.wav",
+  "hz": "97.9",
+  "note": "G1",
+  "cents": "-1",
+  "conf": "95.6"
+ },
+ {
+  "old": "ZERO G - DISC 1/Bass/Bass 95.wav",
+  "new": "ZERO G - DISC 1/Bass/Bass [G] 95.wav",
+  "hz": "49.1",
+  "note": "G0",
+  "cents": "5",
+  "conf": "94.4"
+ },
+ {
+  "old": "ZERO G - DISC 1/Bass/Bass 96.wav",
+  "new": "ZERO G - DISC 1/Bass/Bass [G] 96.wav",
+  "hz": "99.1",
+  "note": "G1",
+  "cents": "19",
+  "conf": "94.2"
+ },
+ {
+  "old": "ZERO G - DISC 1/Bass/Bass 97.wav",
+  "new": "ZERO G - DISC 1/Bass/Bass [G] 97.wav",
+  "hz": "49.3",
+  "note": "G0",
+  "cents": "11",
+  "conf": "94.1"
+ },
+ {
+  "old": "ZERO G - DISC 1/Bass/Bass 98.wav",
+  "new": "ZERO G - DISC 1/Bass/Bass [G] 98.wav",
+  "hz": "98.6",
+  "note": "G1",
+  "cents": "11",
+  "conf": "97.4"
+ },
+ {
+  "old": "ZERO G - DISC 1/Bass/Bass 99.wav",
+  "new": "ZERO G - DISC 1/Bass/Bass [G] 99.wav",
+  "hz": "49.2",
+  "note": "G0",
+  "cents": "8",
+  "conf": "94.9"
+ },
+ {
+  "old": "ZERO G - DISC 1/Brass/Brass 3.wav",
+  "new": "ZERO G - DISC 1/Brass/Brass [C] 3.wav",
+  "hz": "526.2",
+  "note": "C4",
+  "cents": "10",
+  "conf": "90.7"
+ },
+ {
+  "old": "ZERO G - DISC 1/Brass/Brass 5.wav",
+  "new": "ZERO G - DISC 1/Brass/Brass [C] 5.wav",
+  "hz": "522.6",
+  "note": "C4",
+  "cents": "-2",
+  "conf": "91.9"
+ },
+ {
+  "old": "ZERO G - DISC 1/Drums/Bongo 10.wav",
+  "new": "ZERO G - DISC 1/Drums/Bongo [G#] 10.wav",
+  "hz": "203.9",
+  "note": "G#2",
+  "cents": "-32",
+  "conf": "92.0"
+ },
+ {
+  "old": "ZERO G - DISC 1/Drums/Bongo 11.wav",
+  "new": "ZERO G - DISC 1/Drums/Bongo [F] 11.wav",
+  "hz": "355.6",
+  "note": "F3",
+  "cents": "31",
+  "conf": "91.7"
+ },
+ {
+  "old": "ZERO G - DISC 1/Drums/Bongo 2.wav",
+  "new": "ZERO G - DISC 1/Drums/Bongo [E] 2.wav",
+  "hz": "325.3",
+  "note": "E3",
+  "cents": "-23",
+  "conf": "96.0"
+ },
+ {
+  "old": "ZERO G - DISC 1/Drums/Bongo 3.wav",
+  "new": "ZERO G - DISC 1/Drums/Bongo [D -44] 3.wav",
+  "hz": "71.6",
+  "note": "D1",
+  "cents": "-44",
+  "conf": "95.3"
+ },
+ {
+  "old": "ZERO G - DISC 1/Drums/Bongo 4.wav",
+  "new": "ZERO G - DISC 1/Drums/Bongo [D -44] 4.wav",
+  "hz": "71.6",
+  "note": "D1",
+  "cents": "-44",
+  "conf": "93.3"
+ },
+ {
+  "old": "ZERO G - DISC 1/Drums/Bongo 5.wav",
+  "new": "ZERO G - DISC 1/Drums/Bongo [C#] 5.wav",
+  "hz": "140.4",
+  "note": "C#2",
+  "cents": "22",
+  "conf": "83.1"
+ },
+ {
+  "old": "ZERO G - DISC 1/Drums/Bongo 6.wav",
+  "new": "ZERO G - DISC 1/Drums/Bongo [D#] 6.wav",
+  "hz": "158.2",
+  "note": "D#2",
+  "cents": "30",
+  "conf": "90.6"
+ },
+ {
+  "old": "ZERO G - DISC 1/Drums/Bongo 7.wav",
+  "new": "ZERO G - DISC 1/Drums/Bongo [D -42] 7.wav",
+  "hz": "286.6",
+  "note": "D3",
+  "cents": "-42",
+  "conf": "96.5"
+ },
+ {
+  "old": "ZERO G - DISC 1/Drums/Bongo 9.wav",
+  "new": "ZERO G - DISC 1/Drums/Bongo [F#] 9.wav",
+  "hz": "91.9",
+  "note": "F#1",
+  "cents": "-12",
+  "conf": "84.5"
+ },
+ {
+  "old": "ZERO G - DISC 1/Drums/Kick 13.wav",
+  "new": "ZERO G - DISC 1/Drums/Kick [C -49] 13.wav",
+  "hz": "63.6",
+  "note": "C1",
+  "cents": "-49",
+  "conf": "86.6"
+ },
+ {
+  "old": "ZERO G - DISC 1/Drums/Kick 14.wav",
+  "new": "ZERO G - DISC 1/Drums/Kick [B +46] 14.wav",
+  "hz": "63.4",
+  "note": "B0",
+  "cents": "46",
+  "conf": "90.1"
+ },
+ {
+  "old": "ZERO G - DISC 1/Drums/Kick 2.wav",
+  "new": "ZERO G - DISC 1/Drums/Kick [A#] 2.wav",
+  "hz": "57.8",
+  "note": "A#0",
+  "cents": "-13",
+  "conf": "91.5"
+ },
+ {
+  "old": "ZERO G - DISC 1/Drums/Kick 20.wav",
+  "new": "ZERO G - DISC 1/Drums/Kick [G +46] 20.wav",
+  "hz": "50.3",
+  "note": "G0",
+  "cents": "46",
+  "conf": "94.9"
+ },
+ {
+  "old": "ZERO G - DISC 1/Drums/Kick 22.wav",
+  "new": "ZERO G - DISC 1/Drums/Kick [C +46] 22.wav",
+  "hz": "67.2",
+  "note": "C1",
+  "cents": "46",
+  "conf": "86.2"
+ },
+ {
+  "old": "ZERO G - DISC 1/Drums/Kick 23.wav",
+  "new": "ZERO G - DISC 1/Drums/Kick [B] 23.wav",
+  "hz": "62.9",
+  "note": "B0",
+  "cents": "33",
+  "conf": "87.4"
+ },
+ {
+  "old": "ZERO G - DISC 1/Drums/Kick 24.wav",
+  "new": "ZERO G - DISC 1/Drums/Kick [C] 24.wav",
+  "hz": "66.6",
+  "note": "C1",
+  "cents": "31",
+  "conf": "87.5"
+ },
+ {
+  "old": "ZERO G - DISC 1/Drums/Kick 29.wav",
+  "new": "ZERO G - DISC 1/Drums/Kick [C] 29.wav",
+  "hz": "65.4",
+  "note": "C1",
+  "cents": "-1",
+  "conf": "85.6"
+ },
+ {
+  "old": "ZERO G - DISC 1/Drums/Kick 3.wav",
+  "new": "ZERO G - DISC 1/Drums/Kick [B] 3.wav",
+  "hz": "61.9",
+  "note": "B0",
+  "cents": "5",
+  "conf": "92.8"
+ },
+ {
+  "old": "ZERO G - DISC 1/Drums/Kick 31.wav",
+  "new": "ZERO G - DISC 1/Drums/Kick [D] 31.wav",
+  "hz": "74.5",
+  "note": "D1",
+  "cents": "25",
+  "conf": "84.3"
+ },
+ {
+  "old": "ZERO G - DISC 1/Drums/Kick 4.wav",
+  "new": "ZERO G - DISC 1/Drums/Kick [G#] 4.wav",
+  "hz": "52.0",
+  "note": "G#0",
+  "cents": "3",
+  "conf": "94.7"
+ },
+ {
+  "old": "ZERO G - DISC 1/Drums/Kick 40.wav",
+  "new": "ZERO G - DISC 1/Drums/Kick [F#] 40.wav",
+  "hz": "94.5",
+  "note": "F#1",
+  "cents": "37",
+  "conf": "80.4"
+ },
+ {
+  "old": "ZERO G - DISC 1/Drums/Kick 5.wav",
+  "new": "ZERO G - DISC 1/Drums/Kick [A#] 5.wav",
+  "hz": "59.3",
+  "note": "A#0",
+  "cents": "31",
+  "conf": "89.7"
+ },
+ {
+  "old": "ZERO G - DISC 1/Drums/Kick 8.wav",
+  "new": "ZERO G - DISC 1/Drums/Kick [E -43] 8.wav",
+  "hz": "80.4",
+  "note": "E1",
+  "cents": "-43",
+  "conf": "90.1"
+ },
+ {
+  "old": "ZERO G - DISC 1/Drums/Perc 1.wav",
+  "new": "ZERO G - DISC 1/Drums/Perc [B] 1.wav",
+  "hz": "241.7",
+  "note": "B2",
+  "cents": "-37",
+  "conf": "96.5"
+ },
+ {
+  "old": "ZERO G - DISC 1/Drums/Perc 12.wav",
+  "new": "ZERO G - DISC 1/Drums/Perc [A] 12.wav",
+  "hz": "432.5",
+  "note": "A3",
+  "cents": "-30",
+  "conf": "90.0"
+ },
+ {
+  "old": "ZERO G - DISC 1/Drums/Perc 13.wav",
+  "new": "ZERO G - DISC 1/Drums/Perc [C#] 13.wav",
+  "hz": "272.7",
+  "note": "C#3",
+  "cents": "-28",
+  "conf": "94.2"
+ },
+ {
+  "old": "ZERO G - DISC 1/Drums/Perc 14.wav",
+  "new": "ZERO G - DISC 1/Drums/Perc [E] 14.wav",
+  "hz": "331.3",
+  "note": "E3",
+  "cents": "9",
+  "conf": "95.7"
+ },
+ {
+  "old": "ZERO G - DISC 1/Drums/Perc 15.wav",
+  "new": "ZERO G - DISC 1/Drums/Perc [G#] 15.wav",
+  "hz": "424.0",
+  "note": "G#3",
+  "cents": "36",
+  "conf": "95.8"
+ },
+ {
+  "old": "ZERO G - DISC 1/Drums/Perc 18.wav",
+  "new": "ZERO G - DISC 1/Drums/Perc [D#] 18.wav",
+  "hz": "317.1",
+  "note": "D#3",
+  "cents": "33",
+  "conf": "95.0"
+ },
+ {
+  "old": "ZERO G - DISC 1/Drums/Perc 19.wav",
+  "new": "ZERO G - DISC 1/Drums/Perc [E] 19.wav",
+  "hz": "81.9",
+  "note": "E1",
+  "cents": "-11",
+  "conf": "96.3"
+ },
+ {
+  "old": "ZERO G - DISC 1/Drums/Perc 2.wav",
+  "new": "ZERO G - DISC 1/Drums/Perc [G#] 2.wav",
+  "hz": "423.7",
+  "note": "G#3",
+  "cents": "35",
+  "conf": "94.7"
+ },
+ {
+  "old": "ZERO G - DISC 1/Drums/Perc 20.wav",
+  "new": "ZERO G - DISC 1/Drums/Perc [G#] 20.wav",
+  "hz": "207.4",
+  "note": "G#2",
+  "cents": "-2",
+  "conf": "97.7"
+ },
+ {
+  "old": "ZERO G - DISC 1/Drums/Perc 21.wav",
+  "new": "ZERO G - DISC 1/Drums/Perc [D] 21.wav",
+  "hz": "74.4",
+  "note": "D1",
+  "cents": "22",
+  "conf": "93.4"
+ },
+ {
+  "old": "ZERO G - DISC 1/Drums/Perc 22.wav",
+  "new": "ZERO G - DISC 1/Drums/Perc [C#] 22.wav",
+  "hz": "140.2",
+  "note": "C#2",
+  "cents": "20",
+  "conf": "96.0"
+ },
+ {
+  "old": "ZERO G - DISC 1/Drums/Perc 23.wav",
+  "new": "ZERO G - DISC 1/Drums/Perc [C#] 23.wav",
+  "hz": "278.8",
+  "note": "C#3",
+  "cents": "10",
+  "conf": "91.3"
+ },
+ {
+  "old": "ZERO G - DISC 1/Drums/Perc 25.wav",
+  "new": "ZERO G - DISC 1/Drums/Perc [A#] 25.wav",
+  "hz": "457.5",
+  "note": "A#3",
+  "cents": "-33",
+  "conf": "90.5"
+ },
+ {
+  "old": "ZERO G - DISC 1/Drums/Perc 26.wav",
+  "new": "ZERO G - DISC 1/Drums/Perc [F -40] 26.wav",
+  "hz": "170.6",
+  "note": "F2",
+  "cents": "-40",
+  "conf": "88.2"
+ },
+ {
+  "old": "ZERO G - DISC 1/Drums/Perc 28.wav",
+  "new": "ZERO G - DISC 1/Drums/Perc [F# +49] 28.wav",
+  "hz": "95.2",
+  "note": "F#1",
+  "cents": "49",
+  "conf": "96.1"
+ },
+ {
+  "old": "ZERO G - DISC 1/Drums/Perc 30.wav",
+  "new": "ZERO G - DISC 1/Drums/Perc [E] 30.wav",
+  "hz": "162.4",
+  "note": "E2",
+  "cents": "-26",
+  "conf": "88.6"
+ },
+ {
+  "old": "ZERO G - DISC 1/Drums/Perc 33.wav",
+  "new": "ZERO G - DISC 1/Drums/Perc [F#] 33.wav",
+  "hz": "371.8",
+  "note": "F#3",
+  "cents": "8",
+  "conf": "84.6"
+ },
+ {
+  "old": "ZERO G - DISC 1/Drums/Perc 34.wav",
+  "new": "ZERO G - DISC 1/Drums/Perc [G] 34.wav",
+  "hz": "97.3",
+  "note": "G1",
+  "cents": "-13",
+  "conf": "90.0"
+ },
+ {
+  "old": "ZERO G - DISC 1/Drums/Perc 35.wav",
+  "new": "ZERO G - DISC 1/Drums/Perc [F] 35.wav",
+  "hz": "355.3",
+  "note": "F3",
+  "cents": "30",
+  "conf": "90.3"
+ },
+ {
+  "old": "ZERO G - DISC 1/Drums/Perc 36.wav",
+  "new": "ZERO G - DISC 1/Drums/Perc [F] 36.wav",
+  "hz": "353.0",
+  "note": "F3",
+  "cents": "19",
+  "conf": "93.4"
+ },
+ {
+  "old": "ZERO G - DISC 1/Drums/Perc 38.wav",
+  "new": "ZERO G - DISC 1/Drums/Perc [D] 38.wav",
+  "hz": "291.3",
+  "note": "D3",
+  "cents": "-14",
+  "conf": "98.3"
+ },
+ {
+  "old": "ZERO G - DISC 1/Drums/Perc 39.wav",
+  "new": "ZERO G - DISC 1/Drums/Perc [C] 39.wav",
+  "hz": "263.3",
+  "note": "C3",
+  "cents": "11",
+  "conf": "97.6"
+ },
+ {
+  "old": "ZERO G - DISC 1/Drums/Perc 4.wav",
+  "new": "ZERO G - DISC 1/Drums/Perc [B +45] 4.wav",
+  "hz": "253.4",
+  "note": "B2",
+  "cents": "45",
+  "conf": "91.0"
+ },
+ {
+  "old": "ZERO G - DISC 1/Drums/Perc 5.wav",
+  "new": "ZERO G - DISC 1/Drums/Perc [A#] 5.wav",
+  "hz": "476.6",
+  "note": "A#3",
+  "cents": "38",
+  "conf": "93.3"
+ },
+ {
+  "old": "ZERO G - DISC 1/Drums/Perc 6.wav",
+  "new": "ZERO G - DISC 1/Drums/Perc [F] 6.wav",
+  "hz": "88.0",
+  "note": "F1",
+  "cents": "15",
+  "conf": "88.3"
+ },
+ {
+  "old": "ZERO G - DISC 1/Drums/Perc 7.wav",
+  "new": "ZERO G - DISC 1/Drums/Perc [B] 7.wav",
+  "hz": "124.0",
+  "note": "B1",
+  "cents": "7",
+  "conf": "97.2"
+ },
+ {
+  "old": "ZERO G - DISC 1/Drums/Snare 13.wav",
+  "new": "ZERO G - DISC 1/Drums/Snare [D#] 13.wav",
+  "hz": "152.8",
+  "note": "D#2",
+  "cents": "-31",
+  "conf": "83.2"
+ },
+ {
+  "old": "ZERO G - DISC 1/Drums/Snare 3.wav",
+  "new": "ZERO G - DISC 1/Drums/Snare [A#] 3.wav",
+  "hz": "115.5",
+  "note": "A#1",
+  "cents": "-15",
+  "conf": "83.7"
+ },
+ {
+  "old": "ZERO G - DISC 1/Drums/Snare 49.wav",
+  "new": "ZERO G - DISC 1/Drums/Snare [D# -44] 49.wav",
+  "hz": "151.6",
+  "note": "D#2",
+  "cents": "-44",
+  "conf": "90.4"
+ },
+ {
+  "old": "ZERO G - DISC 1/Drums/Snare 79.wav",
+  "new": "ZERO G - DISC 1/Drums/Snare [G#] 79.wav",
+  "hz": "204.8",
+  "note": "G#2",
+  "cents": "-24",
+  "conf": "91.9"
+ },
+ {
+  "old": "ZERO G - DISC 1/Drums/Snare 9.wav",
+  "new": "ZERO G - DISC 1/Drums/Snare [G#] 9.wav",
+  "hz": "52.3",
+  "note": "G#0",
+  "cents": "13",
+  "conf": "84.1"
+ },
+ {
+  "old": "ZERO G - DISC 1/Drums/Tom 1.wav",
+  "new": "ZERO G - DISC 1/Drums/Tom [E] 1.wav",
+  "hz": "83.8",
+  "note": "E1",
+  "cents": "29",
+  "conf": "85.1"
+ },
+ {
+  "old": "ZERO G - DISC 1/Drums/Tom 2.wav",
+  "new": "ZERO G - DISC 1/Drums/Tom [D# +44] 2.wav",
+  "hz": "39.9",
+  "note": "D#0",
+  "cents": "44",
+  "conf": "87.5"
+ },
+ {
+  "old": "ZERO G - DISC 1/Drums/Tom 3.wav",
+  "new": "ZERO G - DISC 1/Drums/Tom [G -46] 3.wav",
+  "hz": "47.7",
+  "note": "G0",
+  "cents": "-46",
+  "conf": "88.5"
+ },
+ {
+  "old": "ZERO G - DISC 1/Drums/Tom 4.wav",
+  "new": "ZERO G - DISC 1/Drums/Tom [G -49] 4.wav",
+  "hz": "190.5",
+  "note": "G2",
+  "cents": "-49",
+  "conf": "98.7"
+ },
+ {
+  "old": "ZERO G - DISC 1/Drums/Tom 5.wav",
+  "new": "ZERO G - DISC 1/Drums/Tom [C +44] 5.wav",
+  "hz": "268.4",
+  "note": "C3",
+  "cents": "44",
+  "conf": "97.3"
+ },
+ {
+  "old": "ZERO G - DISC 1/Drums/Tom 6.wav",
+  "new": "ZERO G - DISC 1/Drums/Tom [G] 6.wav",
+  "hz": "399.3",
+  "note": "G3",
+  "cents": "32",
+  "conf": "98.3"
+ },
+ {
+  "old": "ZERO G - DISC 1/Flute/Flute 1.wav",
+  "new": "ZERO G - DISC 1/Flute/Flute [C] 1.wav",
+  "hz": "524.2",
+  "note": "C4",
+  "cents": "3",
+  "conf": "89.3"
+ },
+ {
+  "old": "ZERO G - DISC 1/Flute/Flute 4.wav",
+  "new": "ZERO G - DISC 1/Flute/Flute [D#] 4.wav",
+  "hz": "310.7",
+  "note": "D#3",
+  "cents": "-2",
+  "conf": "90.8"
+ },
+ {
+  "old": "ZERO G - DISC 1/Flute/Flute 6.wav",
+  "new": "ZERO G - DISC 1/Flute/Flute [G] 6.wav",
+  "hz": "396.5",
+  "note": "G3",
+  "cents": "20",
+  "conf": "94.4"
+ },
+ {
+  "old": "ZERO G - DISC 1/Flute/Flute 9.wav",
+  "new": "ZERO G - DISC 1/Flute/Flute [C] 9.wav",
+  "hz": "527.7",
+  "note": "C4",
+  "cents": "15",
+  "conf": "91.2"
+ },
+ {
+  "old": "ZERO G - DISC 1/Guitar/Guitar 1.wav",
+  "new": "ZERO G - DISC 1/Guitar/Guitar [G#] 1.wav",
+  "hz": "51.4",
+  "note": "G#0",
+  "cents": "-16",
+  "conf": "94.0"
+ },
+ {
+  "old": "ZERO G - DISC 1/Hits/Hit 12.wav",
+  "new": "ZERO G - DISC 1/Hits/Hit [G] 12.wav",
+  "hz": "198.0",
+  "note": "G2",
+  "cents": "18",
+  "conf": "84.8"
+ },
+ {
+  "old": "ZERO G - DISC 1/Hits/Hit 20.wav",
+  "new": "ZERO G - DISC 1/Hits/Hit [D# -49] 20.wav",
+  "hz": "75.6",
+  "note": "D#1",
+  "cents": "-49",
+  "conf": "82.8"
+ },
+ {
+  "old": "ZERO G - DISC 1/Hits/Hit 28.wav",
+  "new": "ZERO G - DISC 1/Hits/Hit [C] 28.wav",
+  "hz": "129.1",
+  "note": "C2",
+  "cents": "-22",
+  "conf": "81.3"
+ },
+ {
+  "old": "ZERO G - DISC 1/Synth/Synth 1.wav",
+  "new": "ZERO G - DISC 1/Synth/Synth [A] 1.wav",
+  "hz": "223.0",
+  "note": "A2",
+  "cents": "24",
+  "conf": "95.5"
+ },
+ {
+  "old": "ZERO G - DISC 1/Synth/Synth 10.wav",
+  "new": "ZERO G - DISC 1/Synth/Synth [A] 10.wav",
+  "hz": "440.0",
+  "note": "A3",
+  "cents": "0",
+  "conf": "94.7"
+ },
+ {
+  "old": "ZERO G - DISC 1/Synth/Synth 11.wav",
+  "new": "ZERO G - DISC 1/Synth/Synth [A] 11.wav",
+  "hz": "219.7",
+  "note": "A2",
+  "cents": "-2",
+  "conf": "88.2"
+ },
+ {
+  "old": "ZERO G - DISC 1/Synth/Synth 12.wav",
+  "new": "ZERO G - DISC 1/Synth/Synth [A] 12.wav",
+  "hz": "439.5",
+  "note": "A3",
+  "cents": "-2",
+  "conf": "88.6"
+ },
+ {
+  "old": "ZERO G - DISC 1/Synth/Synth 14.wav",
+  "new": "ZERO G - DISC 1/Synth/Synth [A] 14.wav",
+  "hz": "217.0",
+  "note": "A2",
+  "cents": "-24",
+  "conf": "95.5"
+ },
+ {
+  "old": "ZERO G - DISC 1/Synth/Synth 15.wav",
+  "new": "ZERO G - DISC 1/Synth/Synth [A] 15.wav",
+  "hz": "218.0",
+  "note": "A2",
+  "cents": "-16",
+  "conf": "90.0"
+ },
+ {
+  "old": "ZERO G - DISC 1/Synth/Synth 16.wav",
+  "new": "ZERO G - DISC 1/Synth/Synth [A] 16.wav",
+  "hz": "437.3",
+  "note": "A3",
+  "cents": "-11",
+  "conf": "94.6"
+ },
+ {
+  "old": "ZERO G - DISC 1/Synth/Synth 17.wav",
+  "new": "ZERO G - DISC 1/Synth/Synth [A] 17.wav",
+  "hz": "109.1",
+  "note": "A1",
+  "cents": "-14",
+  "conf": "93.0"
+ },
+ {
+  "old": "ZERO G - DISC 1/Synth/Synth 18.wav",
+  "new": "ZERO G - DISC 1/Synth/Synth [A] 18.wav",
+  "hz": "218.3",
+  "note": "A2",
+  "cents": "-13",
+  "conf": "93.8"
+ },
+ {
+  "old": "ZERO G - DISC 1/Synth/Synth 19.wav",
+  "new": "ZERO G - DISC 1/Synth/Synth [F# +50] 19.wav",
+  "hz": "95.2",
+  "note": "F#1",
+  "cents": "50",
+  "conf": "91.6"
+ },
+ {
+  "old": "ZERO G - DISC 1/Synth/Synth 2.wav",
+  "new": "ZERO G - DISC 1/Synth/Synth [A] 2.wav",
+  "hz": "446.0",
+  "note": "A3",
+  "cents": "24",
+  "conf": "95.4"
+ },
+ {
+  "old": "ZERO G - DISC 1/Synth/Synth 3.wav",
+  "new": "ZERO G - DISC 1/Synth/Synth [A] 3.wav",
+  "hz": "111.4",
+  "note": "A1",
+  "cents": "22",
+  "conf": "96.3"
+ },
+ {
+  "old": "ZERO G - DISC 1/Synth/Synth 4.wav",
+  "new": "ZERO G - DISC 1/Synth/Synth [A] 4.wav",
+  "hz": "222.8",
+  "note": "A2",
+  "cents": "22",
+  "conf": "95.8"
+ },
+ {
+  "old": "ZERO G - DISC 1/Synth/Synth 5.wav",
+  "new": "ZERO G - DISC 1/Synth/Synth [A] 5.wav",
+  "hz": "222.8",
+  "note": "A2",
+  "cents": "22",
+  "conf": "97.2"
+ },
+ {
+  "old": "ZERO G - DISC 1/Synth/Synth 6.wav",
+  "new": "ZERO G - DISC 1/Synth/Synth [A] 6.wav",
+  "hz": "445.7",
+  "note": "A3",
+  "cents": "22",
+  "conf": "94.6"
+ },
+ {
+  "old": "ZERO G - DISC 1/Synth/Synth 7.wav",
+  "new": "ZERO G - DISC 1/Synth/Synth [A] 7.wav",
+  "hz": "112.2",
+  "note": "A1",
+  "cents": "34",
+  "conf": "97.6"
+ },
+ {
+  "old": "ZERO G - DISC 1/Synth/Synth 8.wav",
+  "new": "ZERO G - DISC 1/Synth/Synth [A] 8.wav",
+  "hz": "224.3",
+  "note": "A2",
+  "cents": "34",
+  "conf": "94.8"
+ },
+ {
+  "old": "ZERO G - DISC 1/Synth/Synth 9.wav",
+  "new": "ZERO G - DISC 1/Synth/Synth [A] 9.wav",
+  "hz": "220.0",
+  "note": "A2",
+  "cents": "0",
+  "conf": "93.3"
+ },
+ {
+  "old": "ZERO G - DISC 1/Vocals/Vocal 194.wav",
+  "new": "ZERO G - DISC 1/Vocals/Vocal [D] 194.wav",
+  "hz": "145.5",
+  "note": "D2",
+  "cents": "-15",
+  "conf": "92.8"
+ },
+ {
+  "old": "ZERO G - DISC 1/Vocals/Vocal 195.wav",
+  "new": "ZERO G - DISC 1/Vocals/Vocal [F] 195.wav",
+  "hz": "348.8",
+  "note": "F3",
+  "cents": "-2",
+  "conf": "90.6"
+ },
+ {
+  "old": "ZERO G - DISC 1/Vocals/Vocal 197.wav",
+  "new": "ZERO G - DISC 1/Vocals/Vocal [B] 197.wav",
+  "hz": "245.8",
+  "note": "B2",
+  "cents": "-8",
+  "conf": "94.7"
+ },
+ {
+  "old": "ZERO G - DISC 1/Vocals/Vocal 202.wav",
+  "new": "ZERO G - DISC 1/Vocals/Vocal [F +44] 202.wav",
+  "hz": "358.2",
+  "note": "F3",
+  "cents": "44",
+  "conf": "84.5"
+ },
+ {
+  "old": "ZERO G - DISC 1/Vocals/Vocal 310.wav",
+  "new": "ZERO G - DISC 1/Vocals/Vocal [D +44] 310.wav",
+  "hz": "150.6",
+  "note": "D2",
+  "cents": "44",
+  "conf": "94.6"
+ },
+ {
+  "old": "ZERO G - DISC 1/Vocals/Vocal 314.wav",
+  "new": "ZERO G - DISC 1/Vocals/Vocal [G#] 314.wav",
+  "hz": "205.5",
+  "note": "G#2",
+  "cents": "-18",
+  "conf": "80.1"
+ },
+ {
+  "old": "ZERO G - DISC 1/Vocals/Vocal 336.wav",
+  "new": "ZERO G - DISC 1/Vocals/Vocal [D] 336.wav",
+  "hz": "147.6",
+  "note": "D2",
+  "cents": "9",
+  "conf": "97.1"
+ },
+ {
+  "old": "ZERO G - DISC 1/Vocals/Vocal 337.wav",
+  "new": "ZERO G - DISC 1/Vocals/Vocal [A] 337.wav",
+  "hz": "218.9",
+  "note": "A2",
+  "cents": "-8",
+  "conf": "95.7"
+ },
+ {
+  "old": "ZERO G - DISC 1/Vocals/Vocal 338.wav",
+  "new": "ZERO G - DISC 1/Vocals/Vocal [A] 338.wav",
+  "hz": "440.0",
+  "note": "A3",
+  "cents": "0",
+  "conf": "96.7"
+ },
+ {
+  "old": "ZERO G - DISC 1/Vocals/Vocal 339.wav",
+  "new": "ZERO G - DISC 1/Vocals/Vocal [A] 339.wav",
+  "hz": "223.5",
+  "note": "A2",
+  "cents": "27",
+  "conf": "90.6"
+ },
+ {
+  "old": "ZERO G - DISC 1/Vocals/Vocal 340.wav",
+  "new": "ZERO G - DISC 1/Vocals/Vocal [A] 340.wav",
+  "hz": "220.6",
+  "note": "A2",
+  "cents": "5",
+  "conf": "95.3"
+ },
+ {
+  "old": "ZERO G - DISC 1/Vocals/Vocal 341.wav",
+  "new": "ZERO G - DISC 1/Vocals/Vocal [A] 341.wav",
+  "hz": "442.0",
+  "note": "A3",
+  "cents": "8",
+  "conf": "93.2"
+ },
+ {
+  "old": "ZERO G - DISC 1/Vocals/Vocal 53.wav",
+  "new": "ZERO G - DISC 1/Vocals/Vocal [C] 53.wav",
+  "hz": "263.5",
+  "note": "C3",
+  "cents": "12",
+  "conf": "95.3"
+ },
+ {
+  "old": "ZERO G - DISC 1/Vocals/Vocal 88.wav",
+  "new": "ZERO G - DISC 1/Vocals/Vocal [A] 88.wav",
+  "hz": "437.6",
+  "note": "A3",
+  "cents": "-9",
+  "conf": "83.7"
+ },
+ {
+  "old": "ZERO G - DISC 2/Bass/Bass 1.wav",
+  "new": "ZERO G - DISC 2/Bass/Bass [C] 1.wav",
+  "hz": "64.7",
+  "note": "C1",
+  "cents": "-18",
+  "conf": "98.7"
+ },
+ {
+  "old": "ZERO G - DISC 2/Bass/Bass 10.wav",
+  "new": "ZERO G - DISC 2/Bass/Bass [C] 10.wav",
+  "hz": "65.5",
+  "note": "C1",
+  "cents": "2",
+  "conf": "99.3"
+ },
+ {
+  "old": "ZERO G - DISC 2/Bass/Bass 11.wav",
+  "new": "ZERO G - DISC 2/Bass/Bass [C] 11.wav",
+  "hz": "65.4",
+  "note": "C1",
+  "cents": "1",
+  "conf": "94.8"
+ },
+ {
+  "old": "ZERO G - DISC 2/Bass/Bass 12.wav",
+  "new": "ZERO G - DISC 2/Bass/Bass [C] 12.wav",
+  "hz": "32.4",
+  "note": "C0",
+  "cents": "-14",
+  "conf": "99.4"
+ },
+ {
+  "old": "ZERO G - DISC 2/Bass/Bass 15.wav",
+  "new": "ZERO G - DISC 2/Bass/Bass [C] 15.wav",
+  "hz": "65.5",
+  "note": "C1",
+  "cents": "1",
+  "conf": "96.1"
+ },
+ {
+  "old": "ZERO G - DISC 2/Bass/Bass 16.wav",
+  "new": "ZERO G - DISC 2/Bass/Bass [C] 16.wav",
+  "hz": "65.3",
+  "note": "C1",
+  "cents": "-3",
+  "conf": "89.1"
+ },
+ {
+  "old": "ZERO G - DISC 2/Bass/Bass 17.wav",
+  "new": "ZERO G - DISC 2/Bass/Bass [C] 17.wav",
+  "hz": "65.5",
+  "note": "C1",
+  "cents": "2",
+  "conf": "89.0"
+ },
+ {
+  "old": "ZERO G - DISC 2/Bass/Bass 18.wav",
+  "new": "ZERO G - DISC 2/Bass/Bass [C] 18.wav",
+  "hz": "65.5",
+  "note": "C1",
+  "cents": "3",
+  "conf": "88.3"
+ },
+ {
+  "old": "ZERO G - DISC 2/Bass/Bass 19.wav",
+  "new": "ZERO G - DISC 2/Bass/Bass [C] 19.wav",
+  "hz": "32.6",
+  "note": "C0",
+  "cents": "-6",
+  "conf": "93.7"
+ },
+ {
+  "old": "ZERO G - DISC 2/Bass/Bass 2.wav",
+  "new": "ZERO G - DISC 2/Bass/Bass [C] 2.wav",
+  "hz": "32.4",
+  "note": "C0",
+  "cents": "-17",
+  "conf": "98.6"
+ },
+ {
+  "old": "ZERO G - DISC 2/Bass/Bass 20.wav",
+  "new": "ZERO G - DISC 2/Bass/Bass [C] 20.wav",
+  "hz": "32.7",
+  "note": "C0",
+  "cents": "-2",
+  "conf": "97.9"
+ },
+ {
+  "old": "ZERO G - DISC 2/Bass/Bass 21.wav",
+  "new": "ZERO G - DISC 2/Bass/Bass [C] 21.wav",
+  "hz": "65.5",
+  "note": "C1",
+  "cents": "1",
+  "conf": "99.1"
+ },
+ {
+  "old": "ZERO G - DISC 2/Bass/Bass 22.wav",
+  "new": "ZERO G - DISC 2/Bass/Bass [C] 22.wav",
+  "hz": "33.0",
+  "note": "C0",
+  "cents": "15",
+  "conf": "95.0"
+ },
+ {
+  "old": "ZERO G - DISC 2/Bass/Bass 23.wav",
+  "new": "ZERO G - DISC 2/Bass/Bass [C] 23.wav",
+  "hz": "32.8",
+  "note": "C0",
+  "cents": "4",
+  "conf": "98.6"
+ },
+ {
+  "old": "ZERO G - DISC 2/Bass/Bass 24.wav",
+  "new": "ZERO G - DISC 2/Bass/Bass [C] 24.wav",
+  "hz": "65.4",
+  "note": "C1",
+  "cents": "1",
+  "conf": "94.8"
+ },
+ {
+  "old": "ZERO G - DISC 2/Bass/Bass 25.wav",
+  "new": "ZERO G - DISC 2/Bass/Bass [C] 25.wav",
+  "hz": "65.4",
+  "note": "C1",
+  "cents": "1",
+  "conf": "98.6"
+ },
+ {
+  "old": "ZERO G - DISC 2/Bass/Bass 26.wav",
+  "new": "ZERO G - DISC 2/Bass/Bass [C] 26.wav",
+  "hz": "65.5",
+  "note": "C1",
+  "cents": "2",
+  "conf": "98.2"
+ },
+ {
+  "old": "ZERO G - DISC 2/Bass/Bass 27.wav",
+  "new": "ZERO G - DISC 2/Bass/Bass [C] 27.wav",
+  "hz": "65.2",
+  "note": "C1",
+  "cents": "-4",
+  "conf": "99.4"
+ },
+ {
+  "old": "ZERO G - DISC 2/Bass/Bass 28.wav",
+  "new": "ZERO G - DISC 2/Bass/Bass [C] 28.wav",
+  "hz": "65.6",
+  "note": "C1",
+  "cents": "6",
+  "conf": "98.9"
+ },
+ {
+  "old": "ZERO G - DISC 2/Bass/Bass 29.wav",
+  "new": "ZERO G - DISC 2/Bass/Bass [C] 29.wav",
+  "hz": "65.8",
+  "note": "C1",
+  "cents": "10",
+  "conf": "99.4"
+ },
+ {
+  "old": "ZERO G - DISC 2/Bass/Bass 3.wav",
+  "new": "ZERO G - DISC 2/Bass/Bass [C] 3.wav",
+  "hz": "32.4",
+  "note": "C0",
+  "cents": "-15",
+  "conf": "92.1"
+ },
+ {
+  "old": "ZERO G - DISC 2/Bass/Bass 30.wav",
+  "new": "ZERO G - DISC 2/Bass/Bass [C] 30.wav",
+  "hz": "32.2",
+  "note": "C0",
+  "cents": "-28",
+  "conf": "99.1"
+ },
+ {
+  "old": "ZERO G - DISC 2/Bass/Bass 32.wav",
+  "new": "ZERO G - DISC 2/Bass/Bass [C] 32.wav",
+  "hz": "64.1",
+  "note": "C1",
+  "cents": "-35",
+  "conf": "99.0"
+ },
+ {
+  "old": "ZERO G - DISC 2/Bass/Bass 33.wav",
+  "new": "ZERO G - DISC 2/Bass/Bass [C] 33.wav",
+  "hz": "64.3",
+  "note": "C1",
+  "cents": "-31",
+  "conf": "98.9"
+ },
+ {
+  "old": "ZERO G - DISC 2/Bass/Bass 34.wav",
+  "new": "ZERO G - DISC 2/Bass/Bass [C] 34.wav",
+  "hz": "64.3",
+  "note": "C1",
+  "cents": "-31",
+  "conf": "99.3"
+ },
+ {
+  "old": "ZERO G - DISC 2/Bass/Bass 35.wav",
+  "new": "ZERO G - DISC 2/Bass/Bass [B] 35.wav",
+  "hz": "63.2",
+  "note": "B0",
+  "cents": "39",
+  "conf": "99.4"
+ },
+ {
+  "old": "ZERO G - DISC 2/Bass/Bass 36.wav",
+  "new": "ZERO G - DISC 2/Bass/Bass [C -48] 36.wav",
+  "hz": "63.6",
+  "note": "C1",
+  "cents": "-48",
+  "conf": "99.0"
+ },
+ {
+  "old": "ZERO G - DISC 2/Bass/Bass 37.wav",
+  "new": "ZERO G - DISC 2/Bass/Bass [C -44] 37.wav",
+  "hz": "63.8",
+  "note": "C1",
+  "cents": "-44",
+  "conf": "98.9"
+ },
+ {
+  "old": "ZERO G - DISC 2/Bass/Bass 38.wav",
+  "new": "ZERO G - DISC 2/Bass/Bass [B +49] 38.wav",
+  "hz": "63.5",
+  "note": "B0",
+  "cents": "49",
+  "conf": "99.4"
+ },
+ {
+  "old": "ZERO G - DISC 2/Bass/Bass 39.wav",
+  "new": "ZERO G - DISC 2/Bass/Bass [E] 39.wav",
+  "hz": "41.4",
+  "note": "E0",
+  "cents": "7",
+  "conf": "96.3"
+ },
+ {
+  "old": "ZERO G - DISC 2/Bass/Bass 4.wav",
+  "new": "ZERO G - DISC 2/Bass/Bass [C] 4.wav",
+  "hz": "32.4",
+  "note": "C0",
+  "cents": "-14",
+  "conf": "97.0"
+ },
+ {
+  "old": "ZERO G - DISC 2/Bass/Bass 6.wav",
+  "new": "ZERO G - DISC 2/Bass/Bass [C] 6.wav",
+  "hz": "64.6",
+  "note": "C1",
+  "cents": "-22",
+  "conf": "93.4"
+ },
+ {
+  "old": "ZERO G - DISC 2/Bass/Bass 7.wav",
+  "new": "ZERO G - DISC 2/Bass/Bass [C] 7.wav",
+  "hz": "65.9",
+  "note": "C1",
+  "cents": "12",
+  "conf": "98.2"
+ },
+ {
+  "old": "ZERO G - DISC 2/Bass/Bass 8.wav",
+  "new": "ZERO G - DISC 2/Bass/Bass [C] 8.wav",
+  "hz": "65.3",
+  "note": "C1",
+  "cents": "-2",
+  "conf": "93.3"
+ },
+ {
+  "old": "ZERO G - DISC 2/Beatbox/Beatbox 12.wav",
+  "new": "ZERO G - DISC 2/Beatbox/Beatbox [A#] 12.wav",
+  "hz": "118.6",
+  "note": "A#1",
+  "cents": "31",
+  "conf": "90.2"
+ },
+ {
+  "old": "ZERO G - DISC 2/Brass/Brass 2.wav",
+  "new": "ZERO G - DISC 2/Brass/Brass [C] 2.wav",
+  "hz": "518.1",
+  "note": "C4",
+  "cents": "-17",
+  "conf": "95.7"
+ },
+ {
+  "old": "ZERO G - DISC 2/Drums/Bongo 1.wav",
+  "new": "ZERO G - DISC 2/Drums/Bongo [C#] 1.wav",
+  "hz": "68.5",
+  "note": "C#1",
+  "cents": "-19",
+  "conf": "87.2"
+ },
+ {
+  "old": "ZERO G - DISC 2/Drums/Conga 2.wav",
+  "new": "ZERO G - DISC 2/Drums/Conga [F#] 2.wav",
+  "hz": "94.5",
+  "note": "F#1",
+  "cents": "37",
+  "conf": "90.6"
+ },
+ {
+  "old": "ZERO G - DISC 2/Drums/Conga 3.wav",
+  "new": "ZERO G - DISC 2/Drums/Conga [C] 3.wav",
+  "hz": "64.2",
+  "note": "C1",
+  "cents": "-32",
+  "conf": "96.0"
+ },
+ {
+  "old": "ZERO G - DISC 2/Drums/Conga 4.wav",
+  "new": "ZERO G - DISC 2/Drums/Conga [C -41] 4.wav",
+  "hz": "255.4",
+  "note": "C3",
+  "cents": "-41",
+  "conf": "82.1"
+ },
+ {
+  "old": "ZERO G - DISC 2/Drums/Conga 5.wav",
+  "new": "ZERO G - DISC 2/Drums/Conga [G +44] 5.wav",
+  "hz": "402.1",
+  "note": "G3",
+  "cents": "44",
+  "conf": "91.4"
+ },
+ {
+  "old": "ZERO G - DISC 2/Drums/Kick 12.wav",
+  "new": "ZERO G - DISC 2/Drums/Kick [D#] 12.wav",
+  "hz": "78.4",
+  "note": "D#1",
+  "cents": "14",
+  "conf": "88.6"
+ },
+ {
+  "old": "ZERO G - DISC 2/Drums/Kick 2.wav",
+  "new": "ZERO G - DISC 2/Drums/Kick [E +46] 2.wav",
+  "hz": "42.3",
+  "note": "E0",
+  "cents": "46",
+  "conf": "85.6"
+ },
+ {
+  "old": "ZERO G - DISC 2/Drums/Kick 3.wav",
+  "new": "ZERO G - DISC 2/Drums/Kick [F] 3.wav",
+  "hz": "44.4",
+  "note": "F0",
+  "cents": "28",
+  "conf": "84.4"
+ },
+ {
+  "old": "ZERO G - DISC 2/Drums/Perc 1.wav",
+  "new": "ZERO G - DISC 2/Drums/Perc [C#] 1.wav",
+  "hz": "279.1",
+  "note": "C#3",
+  "cents": "12",
+  "conf": "91.5"
+ },
+ {
+  "old": "ZERO G - DISC 2/Drums/Perc 13.wav",
+  "new": "ZERO G - DISC 2/Drums/Perc [F] 13.wav",
+  "hz": "351.2",
+  "note": "F3",
+  "cents": "10",
+  "conf": "94.3"
+ },
+ {
+  "old": "ZERO G - DISC 2/Drums/Perc 19.wav",
+  "new": "ZERO G - DISC 2/Drums/Perc [G# +41] 19.wav",
+  "hz": "425.2",
+  "note": "G#3",
+  "cents": "41",
+  "conf": "97.0"
+ },
+ {
+  "old": "ZERO G - DISC 2/Drums/Perc 2.wav",
+  "new": "ZERO G - DISC 2/Drums/Perc [A# -40] 2.wav",
+  "hz": "455.6",
+  "note": "A#3",
+  "cents": "-40",
+  "conf": "93.8"
+ },
+ {
+  "old": "ZERO G - DISC 2/Drums/Perc 3.wav",
+  "new": "ZERO G - DISC 2/Drums/Perc [D#] 3.wav",
+  "hz": "155.8",
+  "note": "D#2",
+  "cents": "2",
+  "conf": "91.9"
+ },
+ {
+  "old": "ZERO G - DISC 2/Drums/Perc 31.wav",
+  "new": "ZERO G - DISC 2/Drums/Perc [C#] 31.wav",
+  "hz": "138.0",
+  "note": "C#2",
+  "cents": "-7",
+  "conf": "82.6"
+ },
+ {
+  "old": "ZERO G - DISC 2/Drums/Perc 33.wav",
+  "new": "ZERO G - DISC 2/Drums/Perc [A -40] 33.wav",
+  "hz": "53.7",
+  "note": "A0",
+  "cents": "-40",
+  "conf": "86.7"
+ },
+ {
+  "old": "ZERO G - DISC 2/Drums/Perc 36.wav",
+  "new": "ZERO G - DISC 2/Drums/Perc [F] 36.wav",
+  "hz": "345.0",
+  "note": "F3",
+  "cents": "-21",
+  "conf": "94.7"
+ },
+ {
+  "old": "ZERO G - DISC 2/Drums/Perc 37.wav",
+  "new": "ZERO G - DISC 2/Drums/Perc [F#] 37.wav",
+  "hz": "362.0",
+  "note": "F#3",
+  "cents": "-38",
+  "conf": "89.5"
+ },
+ {
+  "old": "ZERO G - DISC 2/Drums/Perc 4.wav",
+  "new": "ZERO G - DISC 2/Drums/Perc [A] 4.wav",
+  "hz": "109.5",
+  "note": "A1",
+  "cents": "-8",
+  "conf": "97.6"
+ },
+ {
+  "old": "ZERO G - DISC 2/Drums/Perc 45.wav",
+  "new": "ZERO G - DISC 2/Drums/Perc [G#] 45.wav",
+  "hz": "415.4",
+  "note": "G#3",
+  "cents": "0",
+  "conf": "93.6"
+ },
+ {
+  "old": "ZERO G - DISC 2/Drums/Perc 46.wav",
+  "new": "ZERO G - DISC 2/Drums/Perc [B] 46.wav",
+  "hz": "494.8",
+  "note": "B3",
+  "cents": "3",
+  "conf": "90.8"
+ },
+ {
+  "old": "ZERO G - DISC 2/Drums/Perc 5.wav",
+  "new": "ZERO G - DISC 2/Drums/Perc [D] 5.wav",
+  "hz": "37.0",
+  "note": "D0",
+  "cents": "13",
+  "conf": "97.9"
+ },
+ {
+  "old": "ZERO G - DISC 2/Drums/Perc 8.wav",
+  "new": "ZERO G - DISC 2/Drums/Perc [F +40] 8.wav",
+  "hz": "357.5",
+  "note": "F3",
+  "cents": "40",
+  "conf": "97.2"
+ },
+ {
+  "old": "ZERO G - DISC 2/Drums/Perc 9.wav",
+  "new": "ZERO G - DISC 2/Drums/Perc [G#] 9.wav",
+  "hz": "416.7",
+  "note": "G#3",
+  "cents": "6",
+  "conf": "96.9"
+ },
+ {
+  "old": "ZERO G - DISC 2/Drums/Snare 19.wav",
+  "new": "ZERO G - DISC 2/Drums/Snare [D] 19.wav",
+  "hz": "148.7",
+  "note": "D2",
+  "cents": "21",
+  "conf": "80.7"
+ },
+ {
+  "old": "ZERO G - DISC 2/Drums/Snare 30.wav",
+  "new": "ZERO G - DISC 2/Drums/Snare [D] 30.wav",
+  "hz": "147.2",
+  "note": "D2",
+  "cents": "5",
+  "conf": "85.0"
+ },
+ {
+  "old": "ZERO G - DISC 2/Drums/Tom 1.wav",
+  "new": "ZERO G - DISC 2/Drums/Tom [F#] 1.wav",
+  "hz": "94.5",
+  "note": "F#1",
+  "cents": "37",
+  "conf": "89.3"
+ },
+ {
+  "old": "ZERO G - DISC 2/Drums/Tom 15.wav",
+  "new": "ZERO G - DISC 2/Drums/Tom [A] 15.wav",
+  "hz": "108.0",
+  "note": "A1",
+  "cents": "-31",
+  "conf": "90.5"
+ },
+ {
+  "old": "ZERO G - DISC 2/Drums/Tom 2.wav",
+  "new": "ZERO G - DISC 2/Drums/Tom [B] 2.wav",
+  "hz": "125.9",
+  "note": "B1",
+  "cents": "34",
+  "conf": "96.3"
+ },
+ {
+  "old": "ZERO G - DISC 2/Drums/Tom 3.wav",
+  "new": "ZERO G - DISC 2/Drums/Tom [G] 3.wav",
+  "hz": "50.1",
+  "note": "G0",
+  "cents": "39",
+  "conf": "95.2"
+ },
+ {
+  "old": "ZERO G - DISC 2/Drums/Tom 9.wav",
+  "new": "ZERO G - DISC 2/Drums/Tom [D] 9.wav",
+  "hz": "149.5",
+  "note": "D2",
+  "cents": "31",
+  "conf": "80.1"
+ },
+ {
+  "old": "ZERO G - DISC 2/Drums/Whistle 1.wav",
+  "new": "ZERO G - DISC 2/Drums/Whistle [F#] 1.wav",
+  "hz": "92.0",
+  "note": "F#1",
+  "cents": "-10",
+  "conf": "95.7"
+ },
+ {
+  "old": "ZERO G - DISC 2/Guitar/Guitar 25.wav",
+  "new": "ZERO G - DISC 2/Guitar/Guitar [C] 25.wav",
+  "hz": "65.3",
+  "note": "C1",
+  "cents": "-3",
+  "conf": "92.0"
+ },
+ {
+  "old": "ZERO G - DISC 2/Guitar/Guitar 5.wav",
+  "new": "ZERO G - DISC 2/Guitar/Guitar [A] 5.wav",
+  "hz": "110.6",
+  "note": "A1",
+  "cents": "9",
+  "conf": "96.3"
+ },
+ {
+  "old": "ZERO G - DISC 2/Hits/HIt 18.wav",
+  "new": "ZERO G - DISC 2/Hits/HIt [A#] 18.wav",
+  "hz": "58.3",
+  "note": "A#0",
+  "cents": "1",
+  "conf": "83.6"
+ },
+ {
+  "old": "ZERO G - DISC 2/Hits/Hit 10.wav",
+  "new": "ZERO G - DISC 2/Hits/Hit [C] 10.wav",
+  "hz": "256.0",
+  "note": "C3",
+  "cents": "-38",
+  "conf": "88.7"
+ },
+ {
+  "old": "ZERO G - DISC 2/Hits/Hit 17.wav",
+  "new": "ZERO G - DISC 2/Hits/Hit [C] 17.wav",
+  "hz": "32.6",
+  "note": "C0",
+  "cents": "-4",
+  "conf": "89.6"
+ },
+ {
+  "old": "ZERO G - DISC 2/Hits/Hit 6.wav",
+  "new": "ZERO G - DISC 2/Hits/Hit [G] 6.wav",
+  "hz": "388.9",
+  "note": "G3",
+  "cents": "-14",
+  "conf": "87.3"
+ },
+ {
+  "old": "ZERO G - DISC 2/Hits/Hit 9.wav",
+  "new": "ZERO G - DISC 2/Hits/Hit [C] 9.wav",
+  "hz": "260.2",
+  "note": "C3",
+  "cents": "-9",
+  "conf": "83.9"
+ },
+ {
+  "old": "ZERO G - DISC 2/Melody oneshots/Melody oneshot 1.wav",
+  "new": "ZERO G - DISC 2/Melody oneshots/Melody oneshot [C] 1.wav",
+  "hz": "523.4",
+  "note": "C4",
+  "cents": "0",
+  "conf": "96.3"
+ },
+ {
+  "old": "ZERO G - DISC 2/Melody oneshots/Melody oneshot 10.wav",
+  "new": "ZERO G - DISC 2/Melody oneshots/Melody oneshot [C] 10.wav",
+  "hz": "130.2",
+  "note": "C2",
+  "cents": "-8",
+  "conf": "82.2"
+ },
+ {
+  "old": "ZERO G - DISC 2/Melody oneshots/Melody oneshot 12.wav",
+  "new": "ZERO G - DISC 2/Melody oneshots/Melody oneshot [C] 12.wav",
+  "hz": "522.6",
+  "note": "C4",
+  "cents": "-2",
+  "conf": "96.8"
+ },
+ {
+  "old": "ZERO G - DISC 2/Melody oneshots/Melody oneshot 13.wav",
+  "new": "ZERO G - DISC 2/Melody oneshots/Melody oneshot [C] 13.wav",
+  "hz": "261.2",
+  "note": "C3",
+  "cents": "-3",
+  "conf": "89.7"
+ },
+ {
+  "old": "ZERO G - DISC 2/Melody oneshots/Melody oneshot 14.wav",
+  "new": "ZERO G - DISC 2/Melody oneshots/Melody oneshot [C] 14.wav",
+  "hz": "263.5",
+  "note": "C3",
+  "cents": "13",
+  "conf": "96.6"
+ },
+ {
+  "old": "ZERO G - DISC 2/Melody oneshots/Melody oneshot 17.wav",
+  "new": "ZERO G - DISC 2/Melody oneshots/Melody oneshot [F] 17.wav",
+  "hz": "348.6",
+  "note": "F3",
+  "cents": "-3",
+  "conf": "89.2"
+ },
+ {
+  "old": "ZERO G - DISC 2/Melody oneshots/Melody oneshot 18.wav",
+  "new": "ZERO G - DISC 2/Melody oneshots/Melody oneshot [C] 18.wav",
+  "hz": "133.2",
+  "note": "C2",
+  "cents": "32",
+  "conf": "81.7"
+ },
+ {
+  "old": "ZERO G - DISC 2/Melody oneshots/Melody oneshot 2.wav",
+  "new": "ZERO G - DISC 2/Melody oneshots/Melody oneshot [A#] 2.wav",
+  "hz": "116.8",
+  "note": "A#1",
+  "cents": "4",
+  "conf": "83.3"
+ },
+ {
+  "old": "ZERO G - DISC 2/Melody oneshots/Melody oneshot 20.wav",
+  "new": "ZERO G - DISC 2/Melody oneshots/Melody oneshot [F] 20.wav",
+  "hz": "175.7",
+  "note": "F2",
+  "cents": "10",
+  "conf": "89.5"
+ },
+ {
+  "old": "ZERO G - DISC 2/Melody oneshots/Melody oneshot 21.wav",
+  "new": "ZERO G - DISC 2/Melody oneshots/Melody oneshot [C] 21.wav",
+  "hz": "528.4",
+  "note": "C4",
+  "cents": "17",
+  "conf": "93.3"
+ },
+ {
+  "old": "ZERO G - DISC 2/Melody oneshots/Melody oneshot 22.wav",
+  "new": "ZERO G - DISC 2/Melody oneshots/Melody oneshot [C] 22.wav",
+  "hz": "529.0",
+  "note": "C4",
+  "cents": "19",
+  "conf": "95.1"
+ },
+ {
+  "old": "ZERO G - DISC 2/Melody oneshots/Melody oneshot 24.wav",
+  "new": "ZERO G - DISC 2/Melody oneshots/Melody oneshot [C] 24.wav",
+  "hz": "265.4",
+  "note": "C3",
+  "cents": "25",
+  "conf": "92.1"
+ },
+ {
+  "old": "ZERO G - DISC 2/Melody oneshots/Melody oneshot 25.wav",
+  "new": "ZERO G - DISC 2/Melody oneshots/Melody oneshot [C +40] 25.wav",
+  "hz": "267.8",
+  "note": "C3",
+  "cents": "40",
+  "conf": "87.6"
+ },
+ {
+  "old": "ZERO G - DISC 2/Melody oneshots/Melody oneshot 3.wav",
+  "new": "ZERO G - DISC 2/Melody oneshots/Melody oneshot [C] 3.wav",
+  "hz": "523.5",
+  "note": "C4",
+  "cents": "1",
+  "conf": "95.1"
+ },
+ {
+  "old": "ZERO G - DISC 2/Melody oneshots/Melody oneshot 5.wav",
+  "new": "ZERO G - DISC 2/Melody oneshots/Melody oneshot [C] 5.wav",
+  "hz": "261.6",
+  "note": "C3",
+  "cents": "0",
+  "conf": "92.5"
+ },
+ {
+  "old": "ZERO G - DISC 2/Melody oneshots/Melody oneshot 8.wav",
+  "new": "ZERO G - DISC 2/Melody oneshots/Melody oneshot [C] 8.wav",
+  "hz": "261.9",
+  "note": "C3",
+  "cents": "2",
+  "conf": "98.4"
+ },
+ {
+  "old": "ZERO G - DISC 2/Melody oneshots/Melody oneshot 9.wav",
+  "new": "ZERO G - DISC 2/Melody oneshots/Melody oneshot [C] 9.wav",
+  "hz": "524.2",
+  "note": "C4",
+  "cents": "3",
+  "conf": "90.4"
+ },
+ {
+  "old": "ZERO G - DISC 2/Piano/Piano 1.wav",
+  "new": "ZERO G - DISC 2/Piano/Piano [D] 1.wav",
+  "hz": "73.9",
+  "note": "D1",
+  "cents": "11",
+  "conf": "96.4"
+ },
+ {
+  "old": "ZERO G - DISC 2/Piano/Piano 10.wav",
+  "new": "ZERO G - DISC 2/Piano/Piano [G] 10.wav",
+  "hz": "794.8",
+  "note": "G4",
+  "cents": "24",
+  "conf": "88.3"
+ },
+ {
+  "old": "ZERO G - DISC 2/Piano/Piano 2.wav",
+  "new": "ZERO G - DISC 2/Piano/Piano [G] 2.wav",
+  "hz": "99.0",
+  "note": "G1",
+  "cents": "18",
+  "conf": "95.8"
+ },
+ {
+  "old": "ZERO G - DISC 2/Piano/Piano 3.wav",
+  "new": "ZERO G - DISC 2/Piano/Piano [D +47] 3.wav",
+  "hz": "150.9",
+  "note": "D2",
+  "cents": "47",
+  "conf": "88.9"
+ },
+ {
+  "old": "ZERO G - DISC 2/Piano/Piano 4.wav",
+  "new": "ZERO G - DISC 2/Piano/Piano [G] 4.wav",
+  "hz": "197.6",
+  "note": "G2",
+  "cents": "14",
+  "conf": "95.4"
+ },
+ {
+  "old": "ZERO G - DISC 2/Piano/Piano 5.wav",
+  "new": "ZERO G - DISC 2/Piano/Piano [D] 5.wav",
+  "hz": "297.5",
+  "note": "D3",
+  "cents": "23",
+  "conf": "96.9"
+ },
+ {
+  "old": "ZERO G - DISC 2/Piano/Piano 6.wav",
+  "new": "ZERO G - DISC 2/Piano/Piano [G] 6.wav",
+  "hz": "395.0",
+  "note": "G3",
+  "cents": "13",
+  "conf": "92.9"
+ },
+ {
+  "old": "ZERO G - DISC 2/Piano/Piano 7.wav",
+  "new": "ZERO G - DISC 2/Piano/Piano [D] 7.wav",
+  "hz": "595.1",
+  "note": "D4",
+  "cents": "23",
+  "conf": "96.2"
+ },
+ {
+  "old": "ZERO G - DISC 2/Piano/Piano 8.wav",
+  "new": "ZERO G - DISC 2/Piano/Piano [G] 8.wav",
+  "hz": "789.0",
+  "note": "G4",
+  "cents": "11",
+  "conf": "91.6"
+ },
+ {
+  "old": "ZERO G - DISC 2/Piano/Piano 9.wav",
+  "new": "ZERO G - DISC 2/Piano/Piano [D] 9.wav",
+  "hz": "595.0",
+  "note": "D4",
+  "cents": "22",
+  "conf": "93.5"
+ },
+ {
+  "old": "ZERO G - DISC 2/Synth/Synth 1.wav",
+  "new": "ZERO G - DISC 2/Synth/Synth [B +47] 1.wav",
+  "hz": "63.4",
+  "note": "B0",
+  "cents": "47",
+  "conf": "81.2"
+ },
+ {
+  "old": "ZERO G - DISC 2/Synth/Synth 2.wav",
+  "new": "ZERO G - DISC 2/Synth/Synth [A] 2.wav",
+  "hz": "55.0",
+  "note": "A0",
+  "cents": "-1",
+  "conf": "89.1"
+ },
+ {
+  "old": "ZERO G - DISC 2/Vocals/Vocal 183.wav",
+  "new": "ZERO G - DISC 2/Vocals/Vocal [E] 183.wav",
+  "hz": "336.6",
+  "note": "E3",
+  "cents": "36",
+  "conf": "86.2"
+ },
+ {
+  "old": "ZERO G - DISC 2/Vocals/Vocal 195.wav",
+  "new": "ZERO G - DISC 2/Vocals/Vocal [G#] 195.wav",
+  "hz": "407.0",
+  "note": "G#3",
+  "cents": "-35",
+  "conf": "80.8"
+ },
+ {
+  "old": "ZERO G - DISC 2/Vocals/Vocal 348.wav",
+  "new": "ZERO G - DISC 2/Vocals/Vocal [A] 348.wav",
+  "hz": "448.4",
+  "note": "A3",
+  "cents": "33",
+  "conf": "87.9"
+ },
+ {
+  "old": "ZERO G - DISC 2/Vocals/Vocal 371.wav",
+  "new": "ZERO G - DISC 2/Vocals/Vocal [A] 371.wav",
+  "hz": "445.4",
+  "note": "A3",
+  "cents": "21",
+  "conf": "91.5"
+ },
+ {
+  "old": "ZERO G - DISC 2/Vocals/Vocal 373.wav",
+  "new": "ZERO G - DISC 2/Vocals/Vocal [F#] 373.wav",
+  "hz": "367.7",
+  "note": "F#3",
+  "cents": "-11",
+  "conf": "81.3"
+ },
+ {
+  "old": "ZERO G - DISC 2/Vocals/Vocal 380.wav",
+  "new": "ZERO G - DISC 2/Vocals/Vocal [E] 380.wav",
+  "hz": "82.1",
+  "note": "E1",
+  "cents": "-7",
+  "conf": "89.9"
+ },
+ {
+  "old": "ZERO G - DISC 3/Bass/Bass 1.wav",
+  "new": "ZERO G - DISC 3/Bass/Bass [C] 1.wav",
+  "hz": "65.8",
+  "note": "C1",
+  "cents": "11",
+  "conf": "95.4"
+ },
+ {
+  "old": "ZERO G - DISC 3/Bass/Bass 10.wav",
+  "new": "ZERO G - DISC 3/Bass/Bass [C] 10.wav",
+  "hz": "65.8",
+  "note": "C1",
+  "cents": "11",
+  "conf": "99.6"
+ },
+ {
+  "old": "ZERO G - DISC 3/Bass/Bass 11.wav",
+  "new": "ZERO G - DISC 3/Bass/Bass [C] 11.wav",
+  "hz": "65.6",
+  "note": "C1",
+  "cents": "4",
+  "conf": "99.6"
+ },
+ {
+  "old": "ZERO G - DISC 3/Bass/Bass 12.wav",
+  "new": "ZERO G - DISC 3/Bass/Bass [C] 12.wav",
+  "hz": "65.4",
+  "note": "C1",
+  "cents": "-1",
+  "conf": "99.6"
+ },
+ {
+  "old": "ZERO G - DISC 3/Bass/Bass 14.wav",
+  "new": "ZERO G - DISC 3/Bass/Bass [C] 14.wav",
+  "hz": "66.1",
+  "note": "C1",
+  "cents": "17",
+  "conf": "99.5"
+ },
+ {
+  "old": "ZERO G - DISC 3/Bass/Bass 15.wav",
+  "new": "ZERO G - DISC 3/Bass/Bass [C] 15.wav",
+  "hz": "65.4",
+  "note": "C1",
+  "cents": "1",
+  "conf": "99.6"
+ },
+ {
+  "old": "ZERO G - DISC 3/Bass/Bass 16.wav",
+  "new": "ZERO G - DISC 3/Bass/Bass [C] 16.wav",
+  "hz": "66.1",
+  "note": "C1",
+  "cents": "17",
+  "conf": "99.0"
+ },
+ {
+  "old": "ZERO G - DISC 3/Bass/Bass 17.wav",
+  "new": "ZERO G - DISC 3/Bass/Bass [C] 17.wav",
+  "hz": "65.3",
+  "note": "C1",
+  "cents": "-2",
+  "conf": "98.4"
+ },
+ {
+  "old": "ZERO G - DISC 3/Bass/Bass 18.wav",
+  "new": "ZERO G - DISC 3/Bass/Bass [C] 18.wav",
+  "hz": "65.5",
+  "note": "C1",
+  "cents": "1",
+  "conf": "96.9"
+ },
+ {
+  "old": "ZERO G - DISC 3/Bass/Bass 19.wav",
+  "new": "ZERO G - DISC 3/Bass/Bass [C] 19.wav",
+  "hz": "66.0",
+  "note": "C1",
+  "cents": "15",
+  "conf": "95.3"
+ },
+ {
+  "old": "ZERO G - DISC 3/Bass/Bass 2.wav",
+  "new": "ZERO G - DISC 3/Bass/Bass [C] 2.wav",
+  "hz": "65.9",
+  "note": "C1",
+  "cents": "13",
+  "conf": "99.1"
+ },
+ {
+  "old": "ZERO G - DISC 3/Bass/Bass 20.wav",
+  "new": "ZERO G - DISC 3/Bass/Bass [C] 20.wav",
+  "hz": "65.9",
+  "note": "C1",
+  "cents": "14",
+  "conf": "97.4"
+ },
+ {
+  "old": "ZERO G - DISC 3/Bass/Bass 21.wav",
+  "new": "ZERO G - DISC 3/Bass/Bass [C] 21.wav",
+  "hz": "65.6",
+  "note": "C1",
+  "cents": "4",
+  "conf": "93.5"
+ },
+ {
+  "old": "ZERO G - DISC 3/Bass/Bass 22.wav",
+  "new": "ZERO G - DISC 3/Bass/Bass [C] 22.wav",
+  "hz": "65.9",
+  "note": "C1",
+  "cents": "13",
+  "conf": "97.9"
+ },
+ {
+  "old": "ZERO G - DISC 3/Bass/Bass 23.wav",
+  "new": "ZERO G - DISC 3/Bass/Bass [C] 23.wav",
+  "hz": "66.2",
+  "note": "C1",
+  "cents": "20",
+  "conf": "93.9"
+ },
+ {
+  "old": "ZERO G - DISC 3/Bass/Bass 24.wav",
+  "new": "ZERO G - DISC 3/Bass/Bass [C] 24.wav",
+  "hz": "66.6",
+  "note": "C1",
+  "cents": "32",
+  "conf": "95.3"
+ },
+ {
+  "old": "ZERO G - DISC 3/Bass/Bass 25.wav",
+  "new": "ZERO G - DISC 3/Bass/Bass [C] 25.wav",
+  "hz": "32.5",
+  "note": "C0",
+  "cents": "-12",
+  "conf": "95.7"
+ },
+ {
+  "old": "ZERO G - DISC 3/Bass/Bass 26.wav",
+  "new": "ZERO G - DISC 3/Bass/Bass [C] 26.wav",
+  "hz": "32.8",
+  "note": "C0",
+  "cents": "7",
+  "conf": "96.0"
+ },
+ {
+  "old": "ZERO G - DISC 3/Bass/Bass 27.wav",
+  "new": "ZERO G - DISC 3/Bass/Bass [C] 27.wav",
+  "hz": "65.9",
+  "note": "C1",
+  "cents": "13",
+  "conf": "98.1"
+ },
+ {
+  "old": "ZERO G - DISC 3/Bass/Bass 28.wav",
+  "new": "ZERO G - DISC 3/Bass/Bass [C] 28.wav",
+  "hz": "66.0",
+  "note": "C1",
+  "cents": "15",
+  "conf": "99.1"
+ },
+ {
+  "old": "ZERO G - DISC 3/Bass/Bass 29.wav",
+  "new": "ZERO G - DISC 3/Bass/Bass [C] 29.wav",
+  "hz": "65.7",
+  "note": "C1",
+  "cents": "9",
+  "conf": "99.4"
+ },
+ {
+  "old": "ZERO G - DISC 3/Bass/Bass 3.wav",
+  "new": "ZERO G - DISC 3/Bass/Bass [C] 3.wav",
+  "hz": "66.9",
+  "note": "C1",
+  "cents": "39",
+  "conf": "98.3"
+ },
+ {
+  "old": "ZERO G - DISC 3/Bass/Bass 30.wav",
+  "new": "ZERO G - DISC 3/Bass/Bass [C] 30.wav",
+  "hz": "33.3",
+  "note": "C0",
+  "cents": "30",
+  "conf": "98.9"
+ },
+ {
+  "old": "ZERO G - DISC 3/Bass/Bass 31.wav",
+  "new": "ZERO G - DISC 3/Bass/Bass [C] 31.wav",
+  "hz": "66.8",
+  "note": "C1",
+  "cents": "36",
+  "conf": "96.6"
+ },
+ {
+  "old": "ZERO G - DISC 3/Bass/Bass 32.wav",
+  "new": "ZERO G - DISC 3/Bass/Bass [C] 32.wav",
+  "hz": "66.6",
+  "note": "C1",
+  "cents": "30",
+  "conf": "96.4"
+ },
+ {
+  "old": "ZERO G - DISC 3/Bass/Bass 33.wav",
+  "new": "ZERO G - DISC 3/Bass/Bass [C#] 33.wav",
+  "hz": "67.8",
+  "note": "C#1",
+  "cents": "-37",
+  "conf": "97.3"
+ },
+ {
+  "old": "ZERO G - DISC 3/Bass/Bass 34.wav",
+  "new": "ZERO G - DISC 3/Bass/Bass [C +40] 34.wav",
+  "hz": "66.9",
+  "note": "C1",
+  "cents": "40",
+  "conf": "99.1"
+ },
+ {
+  "old": "ZERO G - DISC 3/Bass/Bass 35.wav",
+  "new": "ZERO G - DISC 3/Bass/Bass [C] 35.wav",
+  "hz": "66.8",
+  "note": "C1",
+  "cents": "37",
+  "conf": "96.8"
+ },
+ {
+  "old": "ZERO G - DISC 3/Bass/Bass 37.wav",
+  "new": "ZERO G - DISC 3/Bass/Bass [C] 37.wav",
+  "hz": "66.7",
+  "note": "C1",
+  "cents": "35",
+  "conf": "96.6"
+ },
+ {
+  "old": "ZERO G - DISC 3/Bass/Bass 38.wav",
+  "new": "ZERO G - DISC 3/Bass/Bass [C] 38.wav",
+  "hz": "32.9",
+  "note": "C0",
+  "cents": "11",
+  "conf": "84.5"
+ },
+ {
+  "old": "ZERO G - DISC 3/Bass/Bass 39.wav",
+  "new": "ZERO G - DISC 3/Bass/Bass [C] 39.wav",
+  "hz": "66.6",
+  "note": "C1",
+  "cents": "32",
+  "conf": "99.5"
+ },
+ {
+  "old": "ZERO G - DISC 3/Bass/Bass 4.wav",
+  "new": "ZERO G - DISC 3/Bass/Bass [C] 4.wav",
+  "hz": "66.2",
+  "note": "C1",
+  "cents": "22",
+  "conf": "98.2"
+ },
+ {
+  "old": "ZERO G - DISC 3/Bass/Bass 40.wav",
+  "new": "ZERO G - DISC 3/Bass/Bass [C] 40.wav",
+  "hz": "65.9",
+  "note": "C1",
+  "cents": "14",
+  "conf": "98.9"
+ },
+ {
+  "old": "ZERO G - DISC 3/Bass/Bass 41.wav",
+  "new": "ZERO G - DISC 3/Bass/Bass [C] 41.wav",
+  "hz": "66.8",
+  "note": "C1",
+  "cents": "37",
+  "conf": "99.7"
+ },
+ {
+  "old": "ZERO G - DISC 3/Bass/Bass 42.wav",
+  "new": "ZERO G - DISC 3/Bass/Bass [C] 42.wav",
+  "hz": "65.9",
+  "note": "C1",
+  "cents": "12",
+  "conf": "96.6"
+ },
+ {
+  "old": "ZERO G - DISC 3/Bass/Bass 43.wav",
+  "new": "ZERO G - DISC 3/Bass/Bass [C] 43.wav",
+  "hz": "65.9",
+  "note": "C1",
+  "cents": "13",
+  "conf": "99.5"
+ },
+ {
+  "old": "ZERO G - DISC 3/Bass/Bass 44.wav",
+  "new": "ZERO G - DISC 3/Bass/Bass [C] 44.wav",
+  "hz": "66.4",
+  "note": "C1",
+  "cents": "27",
+  "conf": "99.6"
+ },
+ {
+  "old": "ZERO G - DISC 3/Bass/Bass 5.wav",
+  "new": "ZERO G - DISC 3/Bass/Bass [C] 5.wav",
+  "hz": "65.4",
+  "note": "C1",
+  "cents": "0",
+  "conf": "99.5"
+ },
+ {
+  "old": "ZERO G - DISC 3/Bass/Bass 6.wav",
+  "new": "ZERO G - DISC 3/Bass/Bass [C] 6.wav",
+  "hz": "32.8",
+  "note": "C0",
+  "cents": "5",
+  "conf": "97.3"
+ },
+ {
+  "old": "ZERO G - DISC 3/Bass/Bass 7.wav",
+  "new": "ZERO G - DISC 3/Bass/Bass [C] 7.wav",
+  "hz": "65.9",
+  "note": "C1",
+  "cents": "12",
+  "conf": "99.6"
+ },
+ {
+  "old": "ZERO G - DISC 3/Bass/Bass 9.wav",
+  "new": "ZERO G - DISC 3/Bass/Bass [C] 9.wav",
+  "hz": "32.7",
+  "note": "C0",
+  "cents": "-1",
+  "conf": "96.9"
+ },
+ {
+  "old": "ZERO G - DISC 3/Beatbox/Beatbox 1.wav",
+  "new": "ZERO G - DISC 3/Beatbox/Beatbox [D] 1.wav",
+  "hz": "144.3",
+  "note": "D2",
+  "cents": "-31",
+  "conf": "82.3"
+ },
+ {
+  "old": "ZERO G - DISC 3/Beatbox/Beatbox 11.wav",
+  "new": "ZERO G - DISC 3/Beatbox/Beatbox [F#] 11.wav",
+  "hz": "740.9",
+  "note": "F#4",
+  "cents": "2",
+  "conf": "87.9"
+ },
+ {
+  "old": "ZERO G - DISC 3/Beatbox/Beatbox 15.wav",
+  "new": "ZERO G - DISC 3/Beatbox/Beatbox [B] 15.wav",
+  "hz": "125.2",
+  "note": "B1",
+  "cents": "24",
+  "conf": "83.3"
+ },
+ {
+  "old": "ZERO G - DISC 3/Brass/Brass 1.wav",
+  "new": "ZERO G - DISC 3/Brass/Brass [C] 1.wav",
+  "hz": "262.0",
+  "note": "C3",
+  "cents": "3",
+  "conf": "97.9"
+ },
+ {
+  "old": "ZERO G - DISC 3/Brass/Brass 2.wav",
+  "new": "ZERO G - DISC 3/Brass/Brass [C] 2.wav",
+  "hz": "261.7",
+  "note": "C3",
+  "cents": "0",
+  "conf": "98.4"
+ },
+ {
+  "old": "ZERO G - DISC 3/Drums/808 1.wav",
+  "new": "ZERO G - DISC 3/Drums/808 [A] 1.wav",
+  "hz": "55.0",
+  "note": "A0",
+  "cents": "0",
+  "conf": "98.8"
+ },
+ {
+  "old": "ZERO G - DISC 3/Drums/808 2.wav",
+  "new": "ZERO G - DISC 3/Drums/808 [A] 2.wav",
+  "hz": "53.9",
+  "note": "A0",
+  "cents": "-34",
+  "conf": "96.4"
+ },
+ {
+  "old": "ZERO G - DISC 3/Drums/Bell 1.wav",
+  "new": "ZERO G - DISC 3/Drums/Bell [A#] 1.wav",
+  "hz": "116.4",
+  "note": "A#1",
+  "cents": "-2",
+  "conf": "93.9"
+ },
+ {
+  "old": "ZERO G - DISC 3/Drums/Bell 2.wav",
+  "new": "ZERO G - DISC 3/Drums/Bell [G#] 2.wav",
+  "hz": "420.6",
+  "note": "G#3",
+  "cents": "22",
+  "conf": "96.0"
+ },
+ {
+  "old": "ZERO G - DISC 3/Drums/Bongo 1.wav",
+  "new": "ZERO G - DISC 3/Drums/Bongo [G#] 1.wav",
+  "hz": "209.1",
+  "note": "G#2",
+  "cents": "12",
+  "conf": "98.3"
+ },
+ {
+  "old": "ZERO G - DISC 3/Drums/Bongo 2.wav",
+  "new": "ZERO G - DISC 3/Drums/Bongo [G# +41] 2.wav",
+  "hz": "425.4",
+  "note": "G#3",
+  "cents": "41",
+  "conf": "83.3"
+ },
+ {
+  "old": "ZERO G - DISC 3/Drums/Bongo 3.wav",
+  "new": "ZERO G - DISC 3/Drums/Bongo [D#] 3.wav",
+  "hz": "315.3",
+  "note": "D#3",
+  "cents": "23",
+  "conf": "93.5"
+ },
+ {
+  "old": "ZERO G - DISC 3/Drums/Bongo 4.wav",
+  "new": "ZERO G - DISC 3/Drums/Bongo [G#] 4.wav",
+  "hz": "204.8",
+  "note": "G#2",
+  "cents": "-24",
+  "conf": "97.2"
+ },
+ {
+  "old": "ZERO G - DISC 3/Drums/Click 2.wav",
+  "new": "ZERO G - DISC 3/Drums/Click [G] 2.wav",
+  "hz": "384.5",
+  "note": "G3",
+  "cents": "-33",
+  "conf": "80.6"
+ },
+ {
+  "old": "ZERO G - DISC 3/Drums/Conga 1.wav",
+  "new": "ZERO G - DISC 3/Drums/Conga [D#] 1.wav",
+  "hz": "78.8",
+  "note": "D#1",
+  "cents": "22",
+  "conf": "88.7"
+ },
+ {
+  "old": "ZERO G - DISC 3/Drums/Conga 10.wav",
+  "new": "ZERO G - DISC 3/Drums/Conga [D -46] 10.wav",
+  "hz": "71.5",
+  "note": "D1",
+  "cents": "-46",
+  "conf": "91.3"
+ },
+ {
+  "old": "ZERO G - DISC 3/Drums/Conga 11.wav",
+  "new": "ZERO G - DISC 3/Drums/Conga [E] 11.wav",
+  "hz": "83.7",
+  "note": "E1",
+  "cents": "27",
+  "conf": "83.3"
+ },
+ {
+  "old": "ZERO G - DISC 3/Drums/Conga 2.wav",
+  "new": "ZERO G - DISC 3/Drums/Conga [A] 2.wav",
+  "hz": "220.9",
+  "note": "A2",
+  "cents": "7",
+  "conf": "94.9"
+ },
+ {
+  "old": "ZERO G - DISC 3/Drums/Conga 3.wav",
+  "new": "ZERO G - DISC 3/Drums/Conga [D +43] 3.wav",
+  "hz": "301.1",
+  "note": "D3",
+  "cents": "43",
+  "conf": "86.1"
+ },
+ {
+  "old": "ZERO G - DISC 3/Drums/Conga 4.wav",
+  "new": "ZERO G - DISC 3/Drums/Conga [A#] 4.wav",
+  "hz": "232.9",
+  "note": "A#2",
+  "cents": "-2",
+  "conf": "96.9"
+ },
+ {
+  "old": "ZERO G - DISC 3/Drums/Conga 6.wav",
+  "new": "ZERO G - DISC 3/Drums/Conga [D#] 6.wav",
+  "hz": "78.8",
+  "note": "D#1",
+  "cents": "23",
+  "conf": "89.4"
+ },
+ {
+  "old": "ZERO G - DISC 3/Drums/Conga 7.wav",
+  "new": "ZERO G - DISC 3/Drums/Conga [C] 7.wav",
+  "hz": "260.3",
+  "note": "C3",
+  "cents": "-9",
+  "conf": "95.4"
+ },
+ {
+  "old": "ZERO G - DISC 3/Drums/Conga 9.wav",
+  "new": "ZERO G - DISC 3/Drums/Conga [F] 9.wav",
+  "hz": "344.0",
+  "note": "F3",
+  "cents": "-26",
+  "conf": "96.8"
+ },
+ {
+  "old": "ZERO G - DISC 3/Drums/Cowbell 1.wav",
+  "new": "ZERO G - DISC 3/Drums/Cowbell [C#] 1.wav",
+  "hz": "278.6",
+  "note": "C#3",
+  "cents": "9",
+  "conf": "97.7"
+ },
+ {
+  "old": "ZERO G - DISC 3/Drums/Kick 1.wav",
+  "new": "ZERO G - DISC 3/Drums/Kick [C] 1.wav",
+  "hz": "65.3",
+  "note": "C1",
+  "cents": "-2",
+  "conf": "89.6"
+ },
+ {
+  "old": "ZERO G - DISC 3/Drums/Kick 11.wav",
+  "new": "ZERO G - DISC 3/Drums/Kick [A# +48] 11.wav",
+  "hz": "59.9",
+  "note": "A#0",
+  "cents": "48",
+  "conf": "95.4"
+ },
+ {
+  "old": "ZERO G - DISC 3/Drums/Kick 13.wav",
+  "new": "ZERO G - DISC 3/Drums/Kick [G +47] 13.wav",
+  "hz": "50.3",
+  "note": "G0",
+  "cents": "47",
+  "conf": "92.3"
+ },
+ {
+  "old": "ZERO G - DISC 3/Drums/Kick 14.wav",
+  "new": "ZERO G - DISC 3/Drums/Kick [A] 14.wav",
+  "hz": "55.2",
+  "note": "A0",
+  "cents": "5",
+  "conf": "94.2"
+ },
+ {
+  "old": "ZERO G - DISC 3/Drums/Kick 17.wav",
+  "new": "ZERO G - DISC 3/Drums/Kick [A] 17.wav",
+  "hz": "55.4",
+  "note": "A0",
+  "cents": "13",
+  "conf": "93.8"
+ },
+ {
+  "old": "ZERO G - DISC 3/Drums/Kick 19.wav",
+  "new": "ZERO G - DISC 3/Drums/Kick [G#] 19.wav",
+  "hz": "52.3",
+  "note": "G#0",
+  "cents": "14",
+  "conf": "84.6"
+ },
+ {
+  "old": "ZERO G - DISC 3/Drums/Kick 2.wav",
+  "new": "ZERO G - DISC 3/Drums/Kick [B] 2.wav",
+  "hz": "60.9",
+  "note": "B0",
+  "cents": "-23",
+  "conf": "93.2"
+ },
+ {
+  "old": "ZERO G - DISC 3/Drums/Kick 20.wav",
+  "new": "ZERO G - DISC 3/Drums/Kick [B +42] 20.wav",
+  "hz": "63.2",
+  "note": "B0",
+  "cents": "42",
+  "conf": "90.2"
+ },
+ {
+  "old": "ZERO G - DISC 3/Drums/Kick 21.wav",
+  "new": "ZERO G - DISC 3/Drums/Kick [A# +44] 21.wav",
+  "hz": "59.8",
+  "note": "A#0",
+  "cents": "44",
+  "conf": "84.7"
+ },
+ {
+  "old": "ZERO G - DISC 3/Drums/Kick 22.wav",
+  "new": "ZERO G - DISC 3/Drums/Kick [A] 22.wav",
+  "hz": "107.6",
+  "note": "A1",
+  "cents": "-37",
+  "conf": "92.9"
+ },
+ {
+  "old": "ZERO G - DISC 3/Drums/Kick 4.wav",
+  "new": "ZERO G - DISC 3/Drums/Kick [B] 4.wav",
+  "hz": "62.0",
+  "note": "B0",
+  "cents": "8",
+  "conf": "98.7"
+ },
+ {
+  "old": "ZERO G - DISC 3/Drums/Kick 5.wav",
+  "new": "ZERO G - DISC 3/Drums/Kick [G +48] 5.wav",
+  "hz": "50.4",
+  "note": "G0",
+  "cents": "48",
+  "conf": "96.5"
+ },
+ {
+  "old": "ZERO G - DISC 3/Drums/Kick 7.wav",
+  "new": "ZERO G - DISC 3/Drums/Kick [A] 7.wav",
+  "hz": "55.6",
+  "note": "A0",
+  "cents": "17",
+  "conf": "90.0"
+ },
+ {
+  "old": "ZERO G - DISC 3/Drums/Perc 1.wav",
+  "new": "ZERO G - DISC 3/Drums/Perc [C#] 1.wav",
+  "hz": "277.0",
+  "note": "C#3",
+  "cents": "-1",
+  "conf": "96.1"
+ },
+ {
+  "old": "ZERO G - DISC 3/Drums/Perc 13.wav",
+  "new": "ZERO G - DISC 3/Drums/Perc [G# +44] 13.wav",
+  "hz": "425.9",
+  "note": "G#3",
+  "cents": "44",
+  "conf": "94.7"
+ },
+ {
+  "old": "ZERO G - DISC 3/Drums/Perc 17.wav",
+  "new": "ZERO G - DISC 3/Drums/Perc [B] 17.wav",
+  "hz": "482.9",
+  "note": "B3",
+  "cents": "-39",
+  "conf": "95.0"
+ },
+ {
+  "old": "ZERO G - DISC 3/Drums/Perc 2.wav",
+  "new": "ZERO G - DISC 3/Drums/Perc [A#] 2.wav",
+  "hz": "475.1",
+  "note": "A#3",
+  "cents": "33",
+  "conf": "92.9"
+ },
+ {
+  "old": "ZERO G - DISC 3/Drums/Perc 20.wav",
+  "new": "ZERO G - DISC 3/Drums/Perc [E] 20.wav",
+  "hz": "41.9",
+  "note": "E0",
+  "cents": "30",
+  "conf": "87.8"
+ },
+ {
+  "old": "ZERO G - DISC 3/Drums/Perc 22.wav",
+  "new": "ZERO G - DISC 3/Drums/Perc [A#] 22.wav",
+  "hz": "466.2",
+  "note": "A#3",
+  "cents": "0",
+  "conf": "83.1"
+ },
+ {
+  "old": "ZERO G - DISC 3/Drums/Perc 23.wav",
+  "new": "ZERO G - DISC 3/Drums/Perc [D#] 23.wav",
+  "hz": "309.5",
+  "note": "D#3",
+  "cents": "-9",
+  "conf": "92.9"
+ },
+ {
+  "old": "ZERO G - DISC 3/Drums/Perc 26.wav",
+  "new": "ZERO G - DISC 3/Drums/Perc [B] 26.wav",
+  "hz": "61.2",
+  "note": "B0",
+  "cents": "-16",
+  "conf": "85.6"
+ },
+ {
+  "old": "ZERO G - DISC 3/Drums/Perc 28.wav",
+  "new": "ZERO G - DISC 3/Drums/Perc [C#] 28.wav",
+  "hz": "68.6",
+  "note": "C#1",
+  "cents": "-17",
+  "conf": "86.7"
+ },
+ {
+  "old": "ZERO G - DISC 3/Drums/Perc 29.wav",
+  "new": "ZERO G - DISC 3/Drums/Perc [G# +44] 29.wav",
+  "hz": "426.0",
+  "note": "G#3",
+  "cents": "44",
+  "conf": "81.4"
+ },
+ {
+  "old": "ZERO G - DISC 3/Drums/Perc 3.wav",
+  "new": "ZERO G - DISC 3/Drums/Perc [A#] 3.wav",
+  "hz": "475.0",
+  "note": "A#3",
+  "cents": "33",
+  "conf": "80.8"
+ },
+ {
+  "old": "ZERO G - DISC 3/Drums/Perc 30.wav",
+  "new": "ZERO G - DISC 3/Drums/Perc [B] 30.wav",
+  "hz": "246.6",
+  "note": "B2",
+  "cents": "-2",
+  "conf": "89.6"
+ },
+ {
+  "old": "ZERO G - DISC 3/Drums/Perc 31.wav",
+  "new": "ZERO G - DISC 3/Drums/Perc [D#] 31.wav",
+  "hz": "153.5",
+  "note": "D#2",
+  "cents": "-23",
+  "conf": "98.0"
+ },
+ {
+  "old": "ZERO G - DISC 3/Drums/Perc 34.wav",
+  "new": "ZERO G - DISC 3/Drums/Perc [E] 34.wav",
+  "hz": "323.8",
+  "note": "E3",
+  "cents": "-31",
+  "conf": "84.8"
+ },
+ {
+  "old": "ZERO G - DISC 3/Drums/Perc 35.wav",
+  "new": "ZERO G - DISC 3/Drums/Perc [B] 35.wav",
+  "hz": "125.0",
+  "note": "B1",
+  "cents": "22",
+  "conf": "88.5"
+ },
+ {
+  "old": "ZERO G - DISC 3/Drums/Perc 36.wav",
+  "new": "ZERO G - DISC 3/Drums/Perc [A] 36.wav",
+  "hz": "219.6",
+  "note": "A2",
+  "cents": "-4",
+  "conf": "88.6"
+ },
+ {
+  "old": "ZERO G - DISC 3/Drums/Perc 37.wav",
+  "new": "ZERO G - DISC 3/Drums/Perc [B] 37.wav",
+  "hz": "125.5",
+  "note": "B1",
+  "cents": "28",
+  "conf": "89.8"
+ },
+ {
+  "old": "ZERO G - DISC 3/Drums/Perc 39.wav",
+  "new": "ZERO G - DISC 3/Drums/Perc [G# -40] 39.wav",
+  "hz": "50.7",
+  "note": "G#0",
+  "cents": "-40",
+  "conf": "91.0"
+ },
+ {
+  "old": "ZERO G - DISC 3/Drums/Perc 40.wav",
+  "new": "ZERO G - DISC 3/Drums/Perc [B] 40.wav",
+  "hz": "61.8",
+  "note": "B0",
+  "cents": "2",
+  "conf": "87.6"
+ },
+ {
+  "old": "ZERO G - DISC 3/Drums/Perc 41.wav",
+  "new": "ZERO G - DISC 3/Drums/Perc [C#] 41.wav",
+  "hz": "279.2",
+  "note": "C#3",
+  "cents": "12",
+  "conf": "96.3"
+ },
+ {
+  "old": "ZERO G - DISC 3/Drums/Perc 42.wav",
+  "new": "ZERO G - DISC 3/Drums/Perc [G] 42.wav",
+  "hz": "98.1",
+  "note": "G1",
+  "cents": "1",
+  "conf": "91.6"
+ },
+ {
+  "old": "ZERO G - DISC 3/Drums/Perc 43.wav",
+  "new": "ZERO G - DISC 3/Drums/Perc [G] 43.wav",
+  "hz": "98.2",
+  "note": "G1",
+  "cents": "4",
+  "conf": "91.7"
+ },
+ {
+  "old": "ZERO G - DISC 3/Drums/Perc 44.wav",
+  "new": "ZERO G - DISC 3/Drums/Perc [G +42] 44.wav",
+  "hz": "200.9",
+  "note": "G2",
+  "cents": "42",
+  "conf": "93.2"
+ },
+ {
+  "old": "ZERO G - DISC 3/Drums/Perc 46.wav",
+  "new": "ZERO G - DISC 3/Drums/Perc [B] 46.wav",
+  "hz": "494.3",
+  "note": "B3",
+  "cents": "1",
+  "conf": "95.7"
+ },
+ {
+  "old": "ZERO G - DISC 3/Drums/Perc 47.wav",
+  "new": "ZERO G - DISC 3/Drums/Perc [C +41] 47.wav",
+  "hz": "133.9",
+  "note": "C2",
+  "cents": "41",
+  "conf": "89.3"
+ },
+ {
+  "old": "ZERO G - DISC 3/Drums/Perc 48.wav",
+  "new": "ZERO G - DISC 3/Drums/Perc [D] 48.wav",
+  "hz": "73.8",
+  "note": "D1",
+  "cents": "9",
+  "conf": "96.3"
+ },
+ {
+  "old": "ZERO G - DISC 3/Drums/Perc 50.wav",
+  "new": "ZERO G - DISC 3/Drums/Perc [C] 50.wav",
+  "hz": "261.7",
+  "note": "C3",
+  "cents": "1",
+  "conf": "86.3"
+ },
+ {
+  "old": "ZERO G - DISC 3/Drums/Perc 51.wav",
+  "new": "ZERO G - DISC 3/Drums/Perc [G] 51.wav",
+  "hz": "393.2",
+  "note": "G3",
+  "cents": "5",
+  "conf": "98.0"
+ },
+ {
+  "old": "ZERO G - DISC 3/Drums/Perc 52.wav",
+  "new": "ZERO G - DISC 3/Drums/Perc [A] 52.wav",
+  "hz": "440.7",
+  "note": "A3",
+  "cents": "3",
+  "conf": "97.0"
+ },
+ {
+  "old": "ZERO G - DISC 3/Drums/Perc 55.wav",
+  "new": "ZERO G - DISC 3/Drums/Perc [A#] 55.wav",
+  "hz": "461.5",
+  "note": "A#3",
+  "cents": "-18",
+  "conf": "83.9"
+ },
+ {
+  "old": "ZERO G - DISC 3/Drums/Snare 32.wav",
+  "new": "ZERO G - DISC 3/Drums/Snare [B] 32.wav",
+  "hz": "241.5",
+  "note": "B2",
+  "cents": "-38",
+  "conf": "83.9"
+ },
+ {
+  "old": "ZERO G - DISC 3/Drums/Snare 7.wav",
+  "new": "ZERO G - DISC 3/Drums/Snare [G] 7.wav",
+  "hz": "49.3",
+  "note": "G0",
+  "cents": "12",
+  "conf": "84.2"
+ },
+ {
+  "old": "ZERO G - DISC 3/Drums/Tom 1.wav",
+  "new": "ZERO G - DISC 3/Drums/Tom [C#] 1.wav",
+  "hz": "138.2",
+  "note": "C#2",
+  "cents": "-5",
+  "conf": "96.9"
+ },
+ {
+  "old": "ZERO G - DISC 3/Drums/Tom 3.wav",
+  "new": "ZERO G - DISC 3/Drums/Tom [G -47] 3.wav",
+  "hz": "190.8",
+  "note": "G2",
+  "cents": "-47",
+  "conf": "86.1"
+ },
+ {
+  "old": "ZERO G - DISC 3/Drums/Tom 6.wav",
+  "new": "ZERO G - DISC 3/Drums/Tom [E] 6.wav",
+  "hz": "81.0",
+  "note": "E1",
+  "cents": "-30",
+  "conf": "86.4"
+ },
+ {
+  "old": "ZERO G - DISC 3/Drums/Tom 7.wav",
+  "new": "ZERO G - DISC 3/Drums/Tom [A +42] 7.wav",
+  "hz": "112.7",
+  "note": "A1",
+  "cents": "42",
+  "conf": "81.8"
+ },
+ {
+  "old": "ZERO G - DISC 3/Drums/Tom 8.wav",
+  "new": "ZERO G - DISC 3/Drums/Tom [D#] 8.wav",
+  "hz": "158.9",
+  "note": "D#2",
+  "cents": "37",
+  "conf": "92.7"
+ },
+ {
+  "old": "ZERO G - DISC 3/Flute/Flute 1.wav",
+  "new": "ZERO G - DISC 3/Flute/Flute [D] 1.wav",
+  "hz": "295.2",
+  "note": "D3",
+  "cents": "9",
+  "conf": "90.8"
+ },
+ {
+  "old": "ZERO G - DISC 3/Flute/Flute 10.wav",
+  "new": "ZERO G - DISC 3/Flute/Flute [D] 10.wav",
+  "hz": "589.8",
+  "note": "D4",
+  "cents": "7",
+  "conf": "93.0"
+ },
+ {
+  "old": "ZERO G - DISC 3/Flute/Flute 2.wav",
+  "new": "ZERO G - DISC 3/Flute/Flute [D] 2.wav",
+  "hz": "292.9",
+  "note": "D3",
+  "cents": "-4",
+  "conf": "83.4"
+ },
+ {
+  "old": "ZERO G - DISC 3/Flute/Flute 3.wav",
+  "new": "ZERO G - DISC 3/Flute/Flute [D] 3.wav",
+  "hz": "595.9",
+  "note": "D4",
+  "cents": "25",
+  "conf": "85.3"
+ },
+ {
+  "old": "ZERO G - DISC 3/Flute/Flute 4.wav",
+  "new": "ZERO G - DISC 3/Flute/Flute [D] 4.wav",
+  "hz": "589.1",
+  "note": "D4",
+  "cents": "5",
+  "conf": "94.3"
+ },
+ {
+  "old": "ZERO G - DISC 3/Flute/Flute 5.wav",
+  "new": "ZERO G - DISC 3/Flute/Flute [D] 5.wav",
+  "hz": "594.1",
+  "note": "D4",
+  "cents": "20",
+  "conf": "81.2"
+ },
+ {
+  "old": "ZERO G - DISC 3/Flute/Flute 6.wav",
+  "new": "ZERO G - DISC 3/Flute/Flute [D] 6.wav",
+  "hz": "589.0",
+  "note": "D4",
+  "cents": "5",
+  "conf": "96.9"
+ },
+ {
+  "old": "ZERO G - DISC 3/Flute/Flute 7.wav",
+  "new": "ZERO G - DISC 3/Flute/Flute [D] 7.wav",
+  "hz": "592.4",
+  "note": "D4",
+  "cents": "15",
+  "conf": "97.2"
+ },
+ {
+  "old": "ZERO G - DISC 3/Flute/Flute 8.wav",
+  "new": "ZERO G - DISC 3/Flute/Flute [D] 8.wav",
+  "hz": "591.0",
+  "note": "D4",
+  "cents": "11",
+  "conf": "88.2"
+ },
+ {
+  "old": "ZERO G - DISC 3/Flute/Flute 9.wav",
+  "new": "ZERO G - DISC 3/Flute/Flute [D] 9.wav",
+  "hz": "588.5",
+  "note": "D4",
+  "cents": "4",
+  "conf": "92.2"
+ },
+ {
+  "old": "ZERO G - DISC 3/Guitar/Guitar 16.wav",
+  "new": "ZERO G - DISC 3/Guitar/Guitar [B] 16.wav",
+  "hz": "247.6",
+  "note": "B2",
+  "cents": "4",
+  "conf": "89.2"
+ },
+ {
+  "old": "ZERO G - DISC 3/Hits/Hit 13.wav",
+  "new": "ZERO G - DISC 3/Hits/Hit [G] 13.wav",
+  "hz": "48.6",
+  "note": "G0",
+  "cents": "-12",
+  "conf": "80.7"
+ },
+ {
+  "old": "ZERO G - DISC 3/Hits/Hit 25.wav",
+  "new": "ZERO G - DISC 3/Hits/Hit [C#] 25.wav",
+  "hz": "276.1",
+  "note": "C#3",
+  "cents": "-7",
+  "conf": "86.1"
+ },
+ {
+  "old": "ZERO G - DISC 3/Hits/Hit 7.wav",
+  "new": "ZERO G - DISC 3/Hits/Hit [F] 7.wav",
+  "hz": "355.8",
+  "note": "F3",
+  "cents": "32",
+  "conf": "81.0"
+ },
+ {
+  "old": "ZERO G - DISC 3/Melody loops/Melody loop 1.wav",
+  "new": "ZERO G - DISC 3/Melody loops/Melody loop [G -49] 1.wav",
+  "hz": "95.3",
+  "note": "G1",
+  "cents": "-49",
+  "conf": "91.6"
+ },
+ {
+  "old": "ZERO G - DISC 3/Melody loops/Melody loop 2.wav",
+  "new": "ZERO G - DISC 3/Melody loops/Melody loop [G -49] 2.wav",
+  "hz": "95.3",
+  "note": "G1",
+  "cents": "-49",
+  "conf": "94.7"
+ },
+ {
+  "old": "ZERO G - DISC 3/Melody oneshots/Melody oneshot 1.wav",
+  "new": "ZERO G - DISC 3/Melody oneshots/Melody oneshot [G] 1.wav",
+  "hz": "394.7",
+  "note": "G3",
+  "cents": "12",
+  "conf": "96.9"
+ },
+ {
+  "old": "ZERO G - DISC 3/Melody oneshots/Melody oneshot 2.wav",
+  "new": "ZERO G - DISC 3/Melody oneshots/Melody oneshot [C] 2.wav",
+  "hz": "525.1",
+  "note": "C4",
+  "cents": "6",
+  "conf": "97.0"
+ },
+ {
+  "old": "ZERO G - DISC 3/Melody oneshots/Melody oneshot 3.wav",
+  "new": "ZERO G - DISC 3/Melody oneshots/Melody oneshot [C] 3.wav",
+  "hz": "66.7",
+  "note": "C1",
+  "cents": "33",
+  "conf": "97.3"
+ },
+ {
+  "old": "ZERO G - DISC 3/Melody oneshots/Melody oneshot 4.wav",
+  "new": "ZERO G - DISC 3/Melody oneshots/Melody oneshot [A -47] 4.wav",
+  "hz": "214.2",
+  "note": "A2",
+  "cents": "-47",
+  "conf": "93.0"
+ },
+ {
+  "old": "ZERO G - DISC 3/Strings/Strings 11.wav",
+  "new": "ZERO G - DISC 3/Strings/Strings [B] 11.wav",
+  "hz": "246.7",
+  "note": "B2",
+  "cents": "-2",
+  "conf": "96.3"
+ },
+ {
+  "old": "ZERO G - DISC 3/Strings/Strings 12.wav",
+  "new": "ZERO G - DISC 3/Strings/Strings [F#] 12.wav",
+  "hz": "369.5",
+  "note": "F#3",
+  "cents": "-2",
+  "conf": "94.6"
+ },
+ {
+  "old": "ZERO G - DISC 3/Strings/Strings 13.wav",
+  "new": "ZERO G - DISC 3/Strings/Strings [C#] 13.wav",
+  "hz": "554.7",
+  "note": "C#4",
+  "cents": "1",
+  "conf": "94.9"
+ },
+ {
+  "old": "ZERO G - DISC 3/Strings/Strings 14.wav",
+  "new": "ZERO G - DISC 3/Strings/Strings [G] 14.wav",
+  "hz": "781.6",
+  "note": "G4",
+  "cents": "-5",
+  "conf": "95.5"
+ },
+ {
+  "old": "ZERO G - DISC 3/Strings/Strings 15.wav",
+  "new": "ZERO G - DISC 3/Strings/Strings [C#] 15.wav",
+  "hz": "553.8",
+  "note": "C#4",
+  "cents": "-2",
+  "conf": "95.9"
+ },
+ {
+  "old": "ZERO G - DISC 3/Strings/Strings 19.wav",
+  "new": "ZERO G - DISC 3/Strings/Strings [F#] 19.wav",
+  "hz": "183.1",
+  "note": "F#2",
+  "cents": "-18",
+  "conf": "89.5"
+ },
+ {
+  "old": "ZERO G - DISC 3/Strings/Strings 2.wav",
+  "new": "ZERO G - DISC 3/Strings/Strings [C] 2.wav",
+  "hz": "65.5",
+  "note": "C1",
+  "cents": "2",
+  "conf": "91.2"
+ },
+ {
+  "old": "ZERO G - DISC 3/Strings/Strings 20.wav",
+  "new": "ZERO G - DISC 3/Strings/Strings [C] 20.wav",
+  "hz": "260.3",
+  "note": "C3",
+  "cents": "-9",
+  "conf": "92.3"
+ },
+ {
+  "old": "ZERO G - DISC 3/Strings/Strings 21.wav",
+  "new": "ZERO G - DISC 3/Strings/Strings [F#] 21.wav",
+  "hz": "367.6",
+  "note": "F#3",
+  "cents": "-11",
+  "conf": "95.0"
+ },
+ {
+  "old": "ZERO G - DISC 3/Strings/Strings 22.wav",
+  "new": "ZERO G - DISC 3/Strings/Strings [C] 22.wav",
+  "hz": "521.1",
+  "note": "C4",
+  "cents": "-7",
+  "conf": "92.9"
+ },
+ {
+  "old": "ZERO G - DISC 3/Strings/Strings 23.wav",
+  "new": "ZERO G - DISC 3/Strings/Strings [F#] 23.wav",
+  "hz": "739.1",
+  "note": "F#4",
+  "cents": "-2",
+  "conf": "94.9"
+ },
+ {
+  "old": "ZERO G - DISC 3/Strings/Strings 25.wav",
+  "new": "ZERO G - DISC 3/Strings/Strings [C] 25.wav",
+  "hz": "261.7",
+  "note": "C3",
+  "cents": "0",
+  "conf": "97.2"
+ },
+ {
+  "old": "ZERO G - DISC 3/Strings/Strings 26.wav",
+  "new": "ZERO G - DISC 3/Strings/Strings [C] 26.wav",
+  "hz": "524.1",
+  "note": "C4",
+  "cents": "3",
+  "conf": "95.9"
+ },
+ {
+  "old": "ZERO G - DISC 3/Strings/Strings 27.wav",
+  "new": "ZERO G - DISC 3/Strings/Strings [C] 27.wav",
+  "hz": "524.1",
+  "note": "C4",
+  "cents": "3",
+  "conf": "93.2"
+ },
+ {
+  "old": "ZERO G - DISC 3/Strings/Strings 29.wav",
+  "new": "ZERO G - DISC 3/Strings/Strings [G] 29.wav",
+  "hz": "196.3",
+  "note": "G2",
+  "cents": "2",
+  "conf": "98.2"
+ },
+ {
+  "old": "ZERO G - DISC 3/Strings/Strings 3.wav",
+  "new": "ZERO G - DISC 3/Strings/Strings [F] 3.wav",
+  "hz": "88.4",
+  "note": "F1",
+  "cents": "21",
+  "conf": "85.0"
+ },
+ {
+  "old": "ZERO G - DISC 3/Strings/Strings 30.wav",
+  "new": "ZERO G - DISC 3/Strings/Strings [D] 30.wav",
+  "hz": "295.3",
+  "note": "D3",
+  "cents": "10",
+  "conf": "97.0"
+ },
+ {
+  "old": "ZERO G - DISC 3/Strings/Strings 31.wav",
+  "new": "ZERO G - DISC 3/Strings/Strings [A] 31.wav",
+  "hz": "440.5",
+  "note": "A3",
+  "cents": "2",
+  "conf": "95.9"
+ },
+ {
+  "old": "ZERO G - DISC 3/Strings/Strings 32.wav",
+  "new": "ZERO G - DISC 3/Strings/Strings [F] 32.wav",
+  "hz": "698.7",
+  "note": "F4",
+  "cents": "1",
+  "conf": "96.9"
+ },
+ {
+  "old": "ZERO G - DISC 3/Strings/Strings 33.wav",
+  "new": "ZERO G - DISC 3/Strings/Strings [C] 33.wav",
+  "hz": "525.4",
+  "note": "C4",
+  "cents": "7",
+  "conf": "96.8"
+ },
+ {
+  "old": "ZERO G - DISC 3/Strings/Strings 34.wav",
+  "new": "ZERO G - DISC 3/Strings/Strings [G] 34.wav",
+  "hz": "785.4",
+  "note": "G4",
+  "cents": "3",
+  "conf": "96.0"
+ },
+ {
+  "old": "ZERO G - DISC 3/Strings/Strings 36.wav",
+  "new": "ZERO G - DISC 3/Strings/Strings [C] 36.wav",
+  "hz": "526.0",
+  "note": "C4",
+  "cents": "9",
+  "conf": "98.0"
+ },
+ {
+  "old": "ZERO G - DISC 3/Strings/Strings 4.wav",
+  "new": "ZERO G - DISC 3/Strings/Strings [A#] 4.wav",
+  "hz": "116.0",
+  "note": "A#1",
+  "cents": "-9",
+  "conf": "89.7"
+ },
+ {
+  "old": "ZERO G - DISC 3/Strings/Strings 5.wav",
+  "new": "ZERO G - DISC 3/Strings/Strings [D#] 5.wav",
+  "hz": "154.1",
+  "note": "D#2",
+  "cents": "-16",
+  "conf": "82.0"
+ },
+ {
+  "old": "ZERO G - DISC 3/Strings/Strings 6.wav",
+  "new": "ZERO G - DISC 3/Strings/Strings [G#] 6.wav",
+  "hz": "208.4",
+  "note": "G#2",
+  "cents": "7",
+  "conf": "91.3"
+ },
+ {
+  "old": "ZERO G - DISC 3/Strings/Strings 7.wav",
+  "new": "ZERO G - DISC 3/Strings/Strings [C#] 7.wav",
+  "hz": "276.4",
+  "note": "C#3",
+  "cents": "-5",
+  "conf": "93.4"
+ },
+ {
+  "old": "ZERO G - DISC 3/Strings/Strings 8.wav",
+  "new": "ZERO G - DISC 3/Strings/Strings [F#] 8.wav",
+  "hz": "370.2",
+  "note": "F#3",
+  "cents": "1",
+  "conf": "89.6"
+ },
+ {
+  "old": "ZERO G - DISC 3/Strings/Strings 9.wav",
+  "new": "ZERO G - DISC 3/Strings/Strings [B] 9.wav",
+  "hz": "493.0",
+  "note": "B3",
+  "cents": "-3",
+  "conf": "94.9"
+ },
+ {
+  "old": "ZERO G - DISC 3/Synth/Synth 10.wav",
+  "new": "ZERO G - DISC 3/Synth/Synth [B] 10.wav",
+  "hz": "494.6",
+  "note": "B3",
+  "cents": "2",
+  "conf": "93.5"
+ },
+ {
+  "old": "ZERO G - DISC 3/Synth/Synth 11.wav",
+  "new": "ZERO G - DISC 3/Synth/Synth [B] 11.wav",
+  "hz": "985.5",
+  "note": "B4",
+  "cents": "-4",
+  "conf": "97.8"
+ },
+ {
+  "old": "ZERO G - DISC 3/Synth/Synth 12.wav",
+  "new": "ZERO G - DISC 3/Synth/Synth [B] 12.wav",
+  "hz": "60.6",
+  "note": "B0",
+  "cents": "-32",
+  "conf": "97.0"
+ },
+ {
+  "old": "ZERO G - DISC 3/Synth/Synth 13.wav",
+  "new": "ZERO G - DISC 3/Synth/Synth [B] 13.wav",
+  "hz": "245.6",
+  "note": "B2",
+  "cents": "-9",
+  "conf": "95.7"
+ },
+ {
+  "old": "ZERO G - DISC 3/Synth/Synth 14.wav",
+  "new": "ZERO G - DISC 3/Synth/Synth [B] 14.wav",
+  "hz": "60.6",
+  "note": "B0",
+  "cents": "-31",
+  "conf": "95.2"
+ },
+ {
+  "old": "ZERO G - DISC 3/Synth/Synth 18.wav",
+  "new": "ZERO G - DISC 3/Synth/Synth [G#] 18.wav",
+  "hz": "103.7",
+  "note": "G#1",
+  "cents": "-3",
+  "conf": "97.4"
+ },
+ {
+  "old": "ZERO G - DISC 3/Synth/Synth 2.wav",
+  "new": "ZERO G - DISC 3/Synth/Synth [B] 2.wav",
+  "hz": "122.9",
+  "note": "B1",
+  "cents": "-8",
+  "conf": "90.5"
+ },
+ {
+  "old": "ZERO G - DISC 3/Synth/Synth 20.wav",
+  "new": "ZERO G - DISC 3/Synth/Synth [C +40] 20.wav",
+  "hz": "66.9",
+  "note": "C1",
+  "cents": "40",
+  "conf": "82.2"
+ },
+ {
+  "old": "ZERO G - DISC 3/Synth/Synth 21.wav",
+  "new": "ZERO G - DISC 3/Synth/Synth [C] 21.wav",
+  "hz": "65.7",
+  "note": "C1",
+  "cents": "7",
+  "conf": "97.5"
+ },
+ {
+  "old": "ZERO G - DISC 3/Synth/Synth 22.wav",
+  "new": "ZERO G - DISC 3/Synth/Synth [C] 22.wav",
+  "hz": "65.6",
+  "note": "C1",
+  "cents": "6",
+  "conf": "98.8"
+ },
+ {
+  "old": "ZERO G - DISC 3/Synth/Synth 23.wav",
+  "new": "ZERO G - DISC 3/Synth/Synth [C] 23.wav",
+  "hz": "65.6",
+  "note": "C1",
+  "cents": "5",
+  "conf": "97.6"
+ },
+ {
+  "old": "ZERO G - DISC 3/Synth/Synth 24.wav",
+  "new": "ZERO G - DISC 3/Synth/Synth [C] 24.wav",
+  "hz": "65.5",
+  "note": "C1",
+  "cents": "3",
+  "conf": "94.9"
+ },
+ {
+  "old": "ZERO G - DISC 3/Synth/Synth 25.wav",
+  "new": "ZERO G - DISC 3/Synth/Synth [C] 25.wav",
+  "hz": "65.6",
+  "note": "C1",
+  "cents": "4",
+  "conf": "97.7"
+ },
+ {
+  "old": "ZERO G - DISC 3/Synth/Synth 27.wav",
+  "new": "ZERO G - DISC 3/Synth/Synth [C] 27.wav",
+  "hz": "65.8",
+  "note": "C1",
+  "cents": "11",
+  "conf": "92.0"
+ },
+ {
+  "old": "ZERO G - DISC 3/Synth/Synth 3.wav",
+  "new": "ZERO G - DISC 3/Synth/Synth [B] 3.wav",
+  "hz": "492.0",
+  "note": "B3",
+  "cents": "-7",
+  "conf": "97.5"
+ },
+ {
+  "old": "ZERO G - DISC 3/Synth/Synth 30.wav",
+  "new": "ZERO G - DISC 3/Synth/Synth [C] 30.wav",
+  "hz": "65.7",
+  "note": "C1",
+  "cents": "7",
+  "conf": "98.9"
+ },
+ {
+  "old": "ZERO G - DISC 3/Synth/Synth 31.wav",
+  "new": "ZERO G - DISC 3/Synth/Synth [C] 31.wav",
+  "hz": "65.7",
+  "note": "C1",
+  "cents": "8",
+  "conf": "98.8"
+ },
+ {
+  "old": "ZERO G - DISC 3/Synth/Synth 32.wav",
+  "new": "ZERO G - DISC 3/Synth/Synth [C] 32.wav",
+  "hz": "65.6",
+  "note": "C1",
+  "cents": "5",
+  "conf": "95.9"
+ },
+ {
+  "old": "ZERO G - DISC 3/Synth/Synth 33.wav",
+  "new": "ZERO G - DISC 3/Synth/Synth [C] 33.wav",
+  "hz": "65.6",
+  "note": "C1",
+  "cents": "4",
+  "conf": "98.2"
+ },
+ {
+  "old": "ZERO G - DISC 3/Synth/Synth 34.wav",
+  "new": "ZERO G - DISC 3/Synth/Synth [C] 34.wav",
+  "hz": "65.2",
+  "note": "C1",
+  "cents": "-5",
+  "conf": "95.6"
+ },
+ {
+  "old": "ZERO G - DISC 3/Synth/Synth 35.wav",
+  "new": "ZERO G - DISC 3/Synth/Synth [C] 35.wav",
+  "hz": "65.9",
+  "note": "C1",
+  "cents": "14",
+  "conf": "98.8"
+ },
+ {
+  "old": "ZERO G - DISC 3/Synth/Synth 36.wav",
+  "new": "ZERO G - DISC 3/Synth/Synth [C] 36.wav",
+  "hz": "65.5",
+  "note": "C1",
+  "cents": "3",
+  "conf": "97.3"
+ },
+ {
+  "old": "ZERO G - DISC 3/Synth/Synth 37.wav",
+  "new": "ZERO G - DISC 3/Synth/Synth [C] 37.wav",
+  "hz": "65.3",
+  "note": "C1",
+  "cents": "-3",
+  "conf": "96.0"
+ },
+ {
+  "old": "ZERO G - DISC 3/Synth/Synth 38.wav",
+  "new": "ZERO G - DISC 3/Synth/Synth [C] 38.wav",
+  "hz": "65.7",
+  "note": "C1",
+  "cents": "8",
+  "conf": "93.4"
+ },
+ {
+  "old": "ZERO G - DISC 3/Synth/Synth 39.wav",
+  "new": "ZERO G - DISC 3/Synth/Synth [C] 39.wav",
+  "hz": "65.7",
+  "note": "C1",
+  "cents": "8",
+  "conf": "97.5"
+ },
+ {
+  "old": "ZERO G - DISC 3/Synth/Synth 40.wav",
+  "new": "ZERO G - DISC 3/Synth/Synth [C] 40.wav",
+  "hz": "65.8",
+  "note": "C1",
+  "cents": "9",
+  "conf": "98.6"
+ },
+ {
+  "old": "ZERO G - DISC 3/Synth/Synth 41.wav",
+  "new": "ZERO G - DISC 3/Synth/Synth [C] 41.wav",
+  "hz": "65.6",
+  "note": "C1",
+  "cents": "6",
+  "conf": "96.4"
+ },
+ {
+  "old": "ZERO G - DISC 3/Synth/Synth 42.wav",
+  "new": "ZERO G - DISC 3/Synth/Synth [C] 42.wav",
+  "hz": "65.8",
+  "note": "C1",
+  "cents": "10",
+  "conf": "99.1"
+ },
+ {
+  "old": "ZERO G - DISC 3/Synth/Synth 43.wav",
+  "new": "ZERO G - DISC 3/Synth/Synth [C] 43.wav",
+  "hz": "65.8",
+  "note": "C1",
+  "cents": "9",
+  "conf": "99.0"
+ },
+ {
+  "old": "ZERO G - DISC 3/Synth/Synth 44.wav",
+  "new": "ZERO G - DISC 3/Synth/Synth [C] 44.wav",
+  "hz": "65.7",
+  "note": "C1",
+  "cents": "8",
+  "conf": "97.8"
+ },
+ {
+  "old": "ZERO G - DISC 3/Synth/Synth 45.wav",
+  "new": "ZERO G - DISC 3/Synth/Synth [C] 45.wav",
+  "hz": "65.8",
+  "note": "C1",
+  "cents": "11",
+  "conf": "95.7"
+ },
+ {
+  "old": "ZERO G - DISC 3/Synth/Synth 46.wav",
+  "new": "ZERO G - DISC 3/Synth/Synth [C] 46.wav",
+  "hz": "65.7",
+  "note": "C1",
+  "cents": "7",
+  "conf": "97.9"
+ },
+ {
+  "old": "ZERO G - DISC 3/Synth/Synth 47.wav",
+  "new": "ZERO G - DISC 3/Synth/Synth [C] 47.wav",
+  "hz": "65.9",
+  "note": "C1",
+  "cents": "12",
+  "conf": "98.3"
+ },
+ {
+  "old": "ZERO G - DISC 3/Synth/Synth 6.wav",
+  "new": "ZERO G - DISC 3/Synth/Synth [B] 6.wav",
+  "hz": "246.8",
+  "note": "B2",
+  "cents": "-1",
+  "conf": "93.3"
+ },
+ {
+  "old": "ZERO G - DISC 3/Synth/Synth 9.wav",
+  "new": "ZERO G - DISC 3/Synth/Synth [B] 9.wav",
+  "hz": "121.8",
+  "note": "B1",
+  "cents": "-24",
+  "conf": "91.3"
+ },
+ {
+  "old": "ZERO G - DISC 3/Vocals/Vocal 11.wav",
+  "new": "ZERO G - DISC 3/Vocals/Vocal [C] 11.wav",
+  "hz": "521.3",
+  "note": "C4",
+  "cents": "-6",
+  "conf": "92.7"
+ },
+ {
+  "old": "ZERO G - DISC 3/Vocals/Vocal 155.wav",
+  "new": "ZERO G - DISC 3/Vocals/Vocal [F#] 155.wav",
+  "hz": "370.0",
+  "note": "F#3",
+  "cents": "0",
+  "conf": "83.4"
+ },
+ {
+  "old": "ZERO G - DISC 3/Vocals/Vocal 163.wav",
+  "new": "ZERO G - DISC 3/Vocals/Vocal [C] 163.wav",
+  "hz": "534.7",
+  "note": "C4",
+  "cents": "37",
+  "conf": "84.9"
+ },
+ {
+  "old": "ZERO G - DISC 3/Vocals/Vocal 20.wav",
+  "new": "ZERO G - DISC 3/Vocals/Vocal [C# -40] 20.wav",
+  "hz": "541.6",
+  "note": "C#4",
+  "cents": "-40",
+  "conf": "87.1"
+ },
+ {
+  "old": "ZERO G - DISC 3/Vocals/Vocal 29.wav",
+  "new": "ZERO G - DISC 3/Vocals/Vocal [E] 29.wav",
+  "hz": "329.8",
+  "note": "E3",
+  "cents": "1",
+  "conf": "95.8"
+ },
+ {
+  "old": "ZERO G - DISC 3/Vocals/Vocal 3.wav",
+  "new": "ZERO G - DISC 3/Vocals/Vocal [C] 3.wav",
+  "hz": "528.5",
+  "note": "C4",
+  "cents": "17",
+  "conf": "88.5"
+ },
+ {
+  "old": "ZERO G - DISC 3/Vocals/Vocal 34.wav",
+  "new": "ZERO G - DISC 3/Vocals/Vocal [B] 34.wav",
+  "hz": "248.4",
+  "note": "B2",
+  "cents": "10",
+  "conf": "93.2"
+ },
+ {
+  "old": "ZERO G - DISC 3/Vocals/Vocal 38.wav",
+  "new": "ZERO G - DISC 3/Vocals/Vocal [D#] 38.wav",
+  "hz": "305.4",
+  "note": "D#3",
+  "cents": "-32",
+  "conf": "82.6"
+ },
+ {
+  "old": "ZERO G - DISC 3/Vocals/Vocal 45.wav",
+  "new": "ZERO G - DISC 3/Vocals/Vocal [E] 45.wav",
+  "hz": "331.0",
+  "note": "E3",
+  "cents": "7",
+  "conf": "82.6"
+ },
+ {
+  "old": "ZERO G - DISC 3/Vocals/Vocal 54.wav",
+  "new": "ZERO G - DISC 3/Vocals/Vocal [F] 54.wav",
+  "hz": "353.1",
+  "note": "F3",
+  "cents": "19",
+  "conf": "84.6"
+ },
+ {
+  "old": "ZERO G - DISC 3/Vocals/Vocal 60.wav",
+  "new": "ZERO G - DISC 3/Vocals/Vocal [F] 60.wav",
+  "hz": "350.3",
+  "note": "F3",
+  "cents": "5",
+  "conf": "87.6"
+ },
+ {
+  "old": "ZERO G - DISC 3/Vocals/Vocal 86.wav",
+  "new": "ZERO G - DISC 3/Vocals/Vocal [C] 86.wav",
+  "hz": "263.2",
+  "note": "C3",
+  "cents": "10",
+  "conf": "90.2"
+ }
+]

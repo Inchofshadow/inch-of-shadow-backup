@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% block title %}Work{% endblock %}
+
+{% block content %}
+{# Work (RM 2.0 slice 1b): tickets on top (By area, or By number as a view switch), the Control
+   Panel board below. /tickets and /board both render this page; /board opens on the board. #}
+<div class="board-page tickets-page work-page">
+    <div class="board-top">
+        <div>
+            <h1>Work</h1>
+            <p class="form-subtitle">Two files, one page: plans/tickets.json on top, plans/control-panel/tickets.json below.</p>
+        </div>
+    </div>
+    <div class="board-filters" id="work-views">
+        <a class="chip{% if not by_number %} on{% endif %}" href="{{ url_for('tickets_page') }}">By area</a>
+        <a class="chip{% if by_number %} on{% endif %}" id="by-number-link" href="{{ url_for('tickets_page', group='metric') }}">By number</a>
+        <a class="chip" href="{{ url_for('board_page') }}">Control Panel board</a>
+    </div>
+
+    {% if by_number %}{% include "_work_by_number.html" %}{% else %}{% include "_work_tickets.html" %}{% endif %}
+
+    {% include "_work_board.html" %}
+
+    {% if focus == "board" %}
+    <script>document.getElementById('board-section').scrollIntoView();</script>
+    {% endif %}
+</div>
+{% endblock %}

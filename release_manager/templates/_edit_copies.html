@@ -1,0 +1,36 @@
+{# The copies saved from one picture in the photo editor (artwork/edits/), newest first. #}
+{% macro copies_strip(copies, title='Your edited copies') -%}
+<section class="ed-copies" id="ed-copies">
+    <h2 class="shoot-h2">{{ title }} <span class="brand-muted">{{ copies|length }} in <code>artwork/edits/</code></span></h2>
+    {% if copies %}
+    <div class="ed-copies-row">
+        {% for c in copies %}
+        <figure class="ed-copy">
+            <a href="{{ c.url }}" target="_blank" title="{{ c.file }}"><img src="{{ c.url }}" alt="" loading="lazy"></a>
+            <figcaption>
+                {% if c.tag %}<span class="ed-tag-mini" style="--tc: {{ c.colour }}">{{ c.tag }}</span>{% endif %}
+                <span class="brand-muted">{{ c.saved[5:16]|replace('T', ' ') }}{% if c.size %} &middot; {{ c.size[0] }}x{{ c.size[1] }}{% endif %}</span>
+                <span class="ed-copy-actions"><a href="{{ c.resizer }}">sizes</a> <button type="button" class="ed-reveal" data-file="{{ c.file }}">Finder</button> <button type="button" class="ed-delete" data-file="{{ c.file }}">Delete</button></span>
+            </figcaption>
+        </figure>
+        {% endfor %}
+    </div>
+    {% else %}
+    <p class="brand-muted">None yet. Saved copies land here and in <code>artwork/edits/</code>.</p>
+    {% endif %}
+</section>
+<script>
+document.querySelectorAll('.ed-reveal').forEach(function (b) {
+    b.addEventListener('click', function () {
+        fetch('{{ url_for('photo_editor_reveal') }}', {method: 'POST', headers: {'Content-Type': 'application/json', 'X-CSRFToken': '{{ csrf_token() }}'}, body: JSON.stringify({file: b.dataset.file})});
+    });
+});
+document.querySelectorAll('.ed-delete').forEach(function (b) {
+    b.addEventListener('click', function () {
+        if (!confirm('Move ' + b.dataset.file + ' to the Trash? The original photo is not touched.')) return;
+        fetch('{{ url_for('photo_editor_delete') }}', {method: 'POST', headers: {'Content-Type': 'application/json', 'X-CSRFToken': '{{ csrf_token() }}'}, body: JSON.stringify({file: b.dataset.file})})
+            .then(function (r) { return r.json(); }).then(function (j) { if (j.ok) b.closest('.ed-copy').remove(); });
+    });
+});
+</script>
+{%- endmacro %}

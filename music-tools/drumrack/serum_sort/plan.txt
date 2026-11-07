@@ -1,0 +1,288 @@
+FOLDER                 FILE                                         NAME INSIDE                        ARTIST / SONG (from page)      YOUR NOTE                    SEARCH ROUND
+Ambient & Cinematic    clean_keys.fxp                               KEYS CLEAN                                                                                     51 - top Ambient 
+Ambient & Cinematic    Distorted_detuned_lofi_synth.fxp             Dist detune lofi synth                                                                         20 - Aphex Twin / BoC 
+Ambient & Cinematic    Fifth_Dimension.fxp                          ATMO - Fifth Dimension                                                                         52 - top Cinematic 
+Ambient & Cinematic    Granular_Pad_REESE.serumpreset               Granular Pad                                                                                   51 - top Ambient 
+Ambient & Cinematic    KEYS_Head_Is_Empty.fxp                       KEYS - Head Is Empty                                                                           51 - top Ambient 
+Ambient & Cinematic    KEYS_Promise_1.serumpreset                   KEYS Promise 1                                                                                 24 - IDM 
+Ambient & Cinematic    PD_MushroomTea.fxp                           PD_Mushroom Tea                                                                                51 - top Ambient 
+Angel Core             Ambiet_Voice_Pad.serumpreset                 Voice Ambient pad                                                                              48 - choir / vox (CC / angelcore v 
+Angel Core             Anahera_Choir.serumpreset                    VOX - Anahera                                                                                  48 - choir / vox (CC / angelcore v 
+Angel Core             Angelcore_lead.fxp                           Angelcore lead                                                                                 2 - Depeche Mode/Kraftwerk/Ultravo 
+Angel Core             Angelcore_lead.serumpreset                   Angelcore lead                                                                                 2 - Depeche Mode/Kraftwerk/Ultravo 
+Angel Core             Angelcore_lead_2.fxp                         Angelcore LD2                                                                                  2 - Depeche Mode/Kraftwerk/Ultravo 
+Angel Core             Angelcore_lead_3.fxp                         SY Monolithic [SD]                                                                             2 - Depeche Mode/Kraftwerk/Ultravo 
+Angel Core             Angelcore_lead_burn.serumpreset              angelcore lead,burn                                                                            2 - Depeche Mode/Kraftwerk/Ultravo 
+Angel Core             Angelcore_lead_help.serumpreset              angelcore lead help                                                                            2 - Depeche Mode/Kraftwerk/Ultravo 
+Angel Core             Angelcore_pluck_game.serumpreset             angelcore pluck game                                                                           2 - Depeche Mode/Kraftwerk/Ultravo 
+Angel Core             Angelcore_reese_help_me.serumpreset          Angelcore reese help me                                                                        2 - Depeche Mode/Kraftwerk/Ultravo 
+Angel Core             Angelic_ATMO.serumpreset                     angelic atmosphere                                                                             2 - Depeche Mode/Kraftwerk/Ultravo 
+Angel Core             Angels_Veil.serumpreset                      Angel's Veil                                                                                   48 - choir / vox (CC / angelcore v 
+Angel Core             BA_Everything_Counts.serumpreset             BA - Everything Counts             Depeche Mode - Everything Cou                               2 - Depeche Mode/Kraftwerk/Ultravo 
+Angel Core             Breakcore_Nitro_Pad.serumpreset              NitroPad Vintage                                                                               3 - angelcore extra 
+Angel Core             Crispy_Angelcore_Bass.serumpreset            Crispy Bass                                                                                    2 - Depeche Mode/Kraftwerk/Ultravo 
+Angel Core             Disturbing_breathe_in_Space.serumpreset      [FX] Space Adventure2                                                                          48 - choir / vox (CC / angelcore v 
+Angel Core             Everything_Counts.serumpreset                BR - Everything Counts [WIP]       Depeche Mode - Everything Cou                               2 - Depeche Mode/Kraftwerk/Ultravo 
+Angel Core             Everything_Counts_Xylophone.serumpreset      MALLET - Everything Counts [WIP]   Depeche Mode - Everything Cou                               2 - Depeche Mode/Kraftwerk/Ultravo 
+Angel Core             Frozen_Sky.fxp                               PD - Frozen Sky                                                                                3 - angelcore extra 
+Angel Core             Key_Virtual_Heaven.serumpreset               Key - Random Major & Minor                                                                     3 - angelcore extra 
+Angel Core             LEAD_Sick_TD.fxp                             LEAD - Sick TD                     Sewerslvt                                                   3 - angelcore extra 
+Angel Core             PAD_Cloud_Choir_4.serumpreset                PAD Cloud Choir 4                                                                              48 - choir / vox (CC / angelcore v 
+Angel Core             PAD_Rising_Angels.serumpreset                PAD - Rising Angels                                                                            48 - choir / vox (CC / angelcore v 
+Angel Core             PL_Sleepwalker.fxp                           PL - Sleepwalker                   Lonown                                                      3 - angelcore extra 
+Angel Core             Shimmer_Choir_Pad.serumpreset                chorddddddddd                                                                                  48 - choir / vox (CC / angelcore v 
+Angel Core             SM_PD_Choir.fxp                              SM - PD Choir                                                                                  48 - choir / vox (CC / angelcore v 
+Angel Core             SY_Turbo_De_France.serumpreset               SY - Turbo De France               Kraftwerk - Tour De France                                  2 - Depeche Mode/Kraftwerk/Ultravo 
+Angel Core             Vienna_Piano.serumpreset                     KEY - Vienna                       Ultravox - Vienna                                           2 - Depeche Mode/Kraftwerk/Ultravo 
+Angel Core             Vocal_Morpher_v1.serumpreset                 Vocal Morpher v1                                                                               48 - choir / vox (CC / angelcore v 
+Angel Core             vox_404.fxp                                  vox - 404                                                                                      48 - choir / vox (CC / angelcore v 
+Chiptune               8BIT_Lead.fxp                                8 bit lead by me                   Robert Miles - Children                                     40 - 90s dance 
+Chiptune               Arp_8bit.fxp                                 Arp 8bit                                                                                       14 - chiptune / 8-bit 
+Chiptune               bell_chiness.fxp                             bell chiness                                                                                   34 - HH: dark trap bells / plucks 
+Chiptune               brass_NES_Trumpet.fxp                        brass - NES Trumpet                                                                            14 - chiptune / 8-bit 
+Chiptune               Donkey_Kong.fxp                              SY - EvilBoss                                                                                  14 - chiptune / 8-bit 
+Chiptune               Emptiness_become_too_loud_BS.fxp             BS LOST COVEN REESE                                                                            4 - witch house + Crystal Castles 
+Chiptune               guitar_Cozy_Chiptune.fxp                     guitar - Cozy Chiptune                                                                         14 - chiptune / 8-bit 
+Chiptune               Indiana_Jones_Tuba.serumpreset               BR - Indiana Jones Tuba            John Williams - Indiana Jones                               11 - 80s songs & themes 
+Chiptune               KEY_LITHIUM.fxp                              PLUCK - LITHIUM                                                                                14 - chiptune / 8-bit 
+Chiptune               keys_NES_Harpsichord.fxp                     keys - NES Harpischord                                                                         37 - medieval / folk / organ 
+Chiptune               KY_Pokemon_Chiptune.fxp                      KY - Pokemon                                                                                   14 - chiptune / 8-bit 
+Chiptune               lead_GBA_Vib_Lead.fxp                        lead - GBA Vib Lead                                                                            14 - chiptune / 8-bit 
+Chiptune               pluck_Japanese_Koto.fxp                      pluck - Japanese Koto                                                                          38 - rare instruments 
+Chiptune               pluck_Pico8.fxp                              pluck - Pico-8                                                                                 14 - chiptune / 8-bit 
+Chiptune               PR_Kawaii_Chords.serumpreset                 PR - Kawaii Chords                                                                             14 - chiptune / 8-bit 
+Chiptune               SEQ_Chiptune_I.serumpreset                   SEQ - Chiptune I                                                                               14 - chiptune / 8-bit 
+Chiptune               SY_Alternative_to_8Bit.fxp                   SY - Alternative to 8Bit                                                                       14 - chiptune / 8-bit 
+Crystal Castles        Crystal_Castles.serumpreset                  Crystal Castles Type Pluck         Crystal Castles                                             4 - witch house + Crystal Castles 
+Crystal Castles        CRYSTAL_CASTLES_KEROSENE_PD.fxp              CRYSTAL CASTLES - KEROSENE H       Crystal Castles                                             4 - witch house + Crystal Castles 
+Crystal Castles        Crystal_castles_lead.fxp                     lead crystal                       Crystal Castles                                             4 - witch house + Crystal Castles 
+Crystal Castles        crystal_castles_pluck.serumpreset            crystal castles pluck              Crystal Castles                                             4 - witch house + Crystal Castles 
+Crystal Castles        lead_Cemetery_Square.fxp                     lead - Cemetery Square             Crystal Castles                USER NOTE: Crystal Castles   25 - goth leads 
+Crystal Castles        lead_Graveyard.fxp                           lead - Graveyard                   Crystal Castles                USER NOTE: Crystal Castles   25 - goth leads 
+Crystal Castles        lead_Morgue.fxp                              lead - Morgue                      Crystal Castles                USER NOTE: Crystal Castles   25 - goth leads 
+Crystal Castles        pluck_lofi.serumpreset                       pluck_lofi                         Crystal Castles                                             4 - witch house + Crystal Castles 
+Cyberpunk & Darksynth  2077_PL_Bitpunk.fxp                          2077 - PL Bitpunk                                                                              28 - darksynth / cyberpunk 
+Cyberpunk & Darksynth  AR_Cyberpunk.fxp                             AR - Cyberpunk                                                                                 28 - darksynth / cyberpunk 
+Cyberpunk & Darksynth  Crunch.serumpreset                           Crunch                                                                                         28 - darksynth / cyberpunk 
+Cyberpunk & Darksynth  Cyber_Stab.fxp                               Varangian - Cyber Stab                                                                         28 - darksynth / cyberpunk 
+Cyberpunk & Darksynth  LD_SUNDAY.fxp                                LD - SUNDAY                                                                                    28 - darksynth / cyberpunk 
+Cyberpunk & Darksynth  lead_Okaruto.fxp                             lead - Okaruto                                                                                 22 - darksynth 
+Cyberpunk & Darksynth  Lead_Silverhands.fxp                         Lead - Silverhands                                                                             28 - darksynth / cyberpunk 
+Cyberpunk & Darksynth  PL_Neon_Stalker.serumpreset                  PL - Neon Stalker                                                                              22 - darksynth 
+Cyberpunk & Darksynth  SYN_Beamsplitter_1.serumpreset               SYN Beamsplitter 1                                                                             28 - darksynth / cyberpunk 
+Cyberpunk & Darksynth  synth_Grim_Troupe_Accordion.fxp              synth - Grim Troupe Accordio                                                                   22 - darksynth 
+EBM & Industrial       BS_Cyberpunk_2023.fxp                        BS Cyberpunk 2023                                                                              9 - Hans Zimmer + EBM/industrial 
+EBM & Industrial       BS_Mechanical_1.fxp                          BS Mechanical 1                                                                                9 - Hans Zimmer + EBM/industrial 
+EBM & Industrial       BS_Ruthless_SQ_1.serumpreset                 BS Ruthless SQ 1                                                                               9 - Hans Zimmer + EBM/industrial 
+EBM & Industrial       BS_Swarm_1.fxp                               BS Swarm 1                                                                                     9 - Hans Zimmer + EBM/industrial 
+EBM & Industrial       Goblin_Cyborg.serumpreset                    Space Goblin Scratch Dark 2025-07                                                              50 - top Industrial 
+EBM & Industrial       PERC_SQ_Industrial_1.fxp                     PERC SQ Industrial 1                                                                           9 - Hans Zimmer + EBM/industrial 
+EBM & Industrial       Sexy_Bass.serumpreset                        Bass - Sexy Bass (Destiny Bass ED                                                              5 - NIN / Atticus Ross 
+EBM & Industrial       SQ_Synthetic_2.serumpreset                   SQ Synthetic 2                                                                                 9 - Hans Zimmer + EBM/industrial 
+EBM & Industrial       SY_Eli.serumpreset                           SY - Eli                                                                                       5 - NIN / Atticus Ross 
+Film & TV & Games      Annihilation_Reese_Synth.serumpreset         Annihilation - Reese Synth         Annihilation                                                6 - movies 
+Film & TV & Games      Arboria_Flute.serumpreset                    WIND - Arboria                     Queen - Flash Gordon                                        15 - Queen 
+Film & TV & Games      ARP_Street_Hawk.serumpreset                  AR - Street Hawk                   Tangerine Dream - Street Hawk                               11 - 80s songs & themes 
+Film & TV & Games      BA_Axel_F.serumpreset                        BA - Axel F [WIP] 2                Harold Faltermeyer - Axel F                                 11 - 80s songs & themes 
+Film & TV & Games      BA_Football_Fight.serumpreset                BA - Football Fight [WIP]          Queen - Football Fight (Flash                               11 - 80s songs & themes 
+Film & TV & Games      BA_Knight_Rider.serumpreset                  BA - Knight Rider                                                                              11 - 80s songs & themes 
+Film & TV & Games      BA_Ming.serumpreset                          BA - Ming                                                                                      11 - 80s songs & themes 
+Film & TV & Games      BL_Fantasia.serumpreset                      BL - Fantasia 2                                                                                11 - 80s songs & themes 
+Film & TV & Games      BL_Resident_Evil.serumpreset                 BL - Resident Evil                 Resident Evil                                               6 - movies 
+Film & TV & Games      BR_War_Rocky_IV.serumpreset                  BRASS - War [WIP]                  Vince DiCola - War (Rocky IV)                               11 - 80s songs & themes 
+Film & TV & Games      BRASS_Superman.serumpreset                   WIND - Superman                    John Williams - Superman                                    11 - 80s songs & themes 
+Film & TV & Games      Church_Organ_SYN.serumpreset                 lush organ 2.0                     Hans Zimmer Interstellar tag                                9 - Hans Zimmer + EBM/industrial 
+Film & TV & Games      Cinematic_Drums.serumpreset                  dr_Cinematic_Drums                 Hans Zimmer                                                 9 - Hans Zimmer + EBM/industrial 
+Film & TV & Games      Cinematic_Soft_Orchestra.serumpreset         Cinematic Soft Orchestra           Hans Zimmer / Junkie XL                                     6 - movies 
+Film & TV & Games      Cinematic_Soft_Piano.serumpreset             pn_Cinematic Soft Piano            Hans Zimmer - Interstellar                                  6 - movies 
+Film & TV & Games      Halloween_Piano.serumpreset                  KEY - Halloween                    Halloween                                                   6 - movies 
+Film & TV & Games      LD_Axel_F.serumpreset                        LD - Axel F [WIP] 2                Harold Faltermeyer - Axel F                                 11 - 80s songs & themes 
+Film & TV & Games      LD_Football_Fight.serumpreset                LD - Football Fight                Queen - Football Fight (Flash                               11 - 80s songs & themes 
+Film & TV & Games      LD_Street_Hawk.serumpreset                   LD - SreetHawk                     Tangerine Dream - Street Hawk                               11 - 80s songs & themes 
+Film & TV & Games      Memories_of_Green_Piano.serumpreset          Key - Memories of Green            Vangelis - Blade Runner                                     6 - movies 
+Film & TV & Games      Music_BoxBell.serumpreset                    Music Box                          Pirates of the Caribbean                                    6 - movies 
+Film & TV & Games      Ozaka_Oz_Real_Nightmare.serumpreset          Ozaka Oz – Real Nightmare          The Mist                                                    6 - movies 
+Film & TV & Games      PL_Knight_Rider.serumpreset                  PL - Knight Rider 4                                                                            11 - 80s songs & themes 
+Film & TV & Games      PL_Robocop.serumpreset                       PL - Robocop                       Basil Poledouris - Robocop                                  11 - 80s songs & themes 
+Film & TV & Games      Pulse_Tenet.fxp                              PULSE - Tenet                      Tenet                                                       6 - movies 
+Film & TV & Games      Remains.serumpreset                          bs_Remains                         All Quiet on the Western Fron                               6 - movies 
+Film & TV & Games      Silent_Hill_Movie_theme_lead.fxp             PL PD Silent HIl Inspired -        Silent Hill                                                 6 - movies 
+Film & TV & Games      ST_Fallen.serumpreset                        ST - Fallen                        Platoon                                                     6 - movies 
+Film & TV & Games      ST_Sorrow_Strings.serumpreset                ST - Sorrow Strings                Lord of the Rings                                           6 - movies 
+Film & TV & Games      Star_Wars_Cantina.serumpreset                WIND - Cantina                     Star Wars                                                   6 - movies 
+Film & TV & Games      Star_Wars_Throne_Room.serumpreset            BR - Throne Room                   Star Wars                                                   6 - movies 
+Film & TV & Games      Stranger.fxp                                 Lead - Stranger                                                                                30 - HH: G-funk / West Coast lead 
+Film & TV & Games      Stranger_things_moog_bass.fxp                BS - Stranger moog                 Stranger Things                                             6 - movies 
+Film & TV & Games      Stranger_things_sequence_bass.fxp            BS - Stranger Things               Stranger Things                                             6 - movies 
+Film & TV & Games      SY_XFiles_Whistle.serumpreset                SY - X-Files Whistle               The X-Files                                                 6 - movies 
+Film & TV & Games      The_Musical_Pocket_Watch.serumpreset         Musical Pocketwatch                For a Few Dollars More                                      6 - movies 
+Film & TV & Games      The_Pump_Panel_Reconstruction.serumpreset    The Pump Panel Reconstruction      Blade                                                       6 - movies 
+Hip-Hop & Trap         808_Classic.fxp                              Durilom - 808 Classic                                                                          36 - HH: 808s 
+Hip-Hop & Trap         808_VAMP.serumpreset                         808 VAMP                                                                                       36 - HH: 808s 
+Hip-Hop & Trap         Analog_retro_90s_chords.fxp                  80's keys 2                                                                                    32 - HH: piano / keys 
+Hip-Hop & Trap         Basic_RnB_Sine_Lead_Updated.fxp              Basic RnB Sine Lead (PB)           West Coast                                                  41 - HH: West Coast / Timbaland 
+Hip-Hop & Trap         Bass_DetroitWest_Coast_Moog.fxp              Bass_Moog                                                                                      31 - HH: funk / West Coast bass 
+Hip-Hop & Trap         CHORDS_Alone.fxp                             CHORDS - Alone                                                                                 35 - HH: dark trap pads / choirs 
+Hip-Hop & Trap         Electrik.fxp                                 PD Electrik                                                                                    35 - HH: dark trap pads / choirs 
+Hip-Hop & Trap         ESDEEKID_PHANTOM_PAD.serumpreset             PHANTOM PAD                                                                                    27 - EsDeeKid 
+Hip-Hop & Trap         Evil_Bells.serumpreset                       Evil Bells                                                                                     34 - HH: dark trap bells / plucks 
+Hip-Hop & Trap         FUNKY_BASS.serumpreset                       FUNKY BASS                                                                                     31 - HH: funk / West Coast bass 
+Hip-Hop & Trap         GET_UP.fxp                                   lead GetUp                         Carti/Opium                                                 44 - trap artists 
+Hip-Hop & Trap         Gfunk_whistle.fxp                            G funk lead                                                                                    30 - HH: G-funk / West Coast lead 
+Hip-Hop & Trap         Glizy_Gang.fxp                               KY Glizy Gang                                                                                  34 - HH: dark trap bells / plucks 
+Hip-Hop & Trap         GOGETA_808.fxp                               hikemah - gogeta 808                                                                           36 - HH: 808s 
+Hip-Hop & Trap         Harsh_Trap_PLuck.fxp                                                                                                                        34 - HH: dark trap bells / plucks 
+Hip-Hop & Trap         IM_Travis_Scott_Rhyno_Bs.serumpreset         IM - Travis Scott Rhyno Bs Remake                                                              26 - Travis Scott 
+Hip-Hop & Trap         Kanye.fxp                                    KEY - Kanye                        keys                                                        44 - trap artists 
+Hip-Hop & Trap         KEYS_No_Lies_1.fxp                           KEYS No Lies 1                                                                                 32 - HH: piano / keys 
+Hip-Hop & Trap         Keys_Órgano.fxp                             Keys - Ãrgano                                                                                 32 - HH: piano / keys 
+Hip-Hop & Trap         KY_She_My_Butterfly_PB.serumpreset           KY - She My Butterfly 🦋 (PB)                                                                   32 - HH: piano / keys 
+Hip-Hop & Trap         KZ_KEY_Reflection_Key.fxp                    KZ_KEY_Reflection Key                                                                          32 - HH: piano / keys 
+Hip-Hop & Trap         LD_Crip_Walk.fxp                             LD Crip Walk                                                                                   30 - HH: G-funk / West Coast lead 
+Hip-Hop & Trap         LD_PLUTO.fxp                                 LD PLUTO                           Lil Uzi                                                     44 - trap artists 
+Hip-Hop & Trap         LEAD_Metro.serumpreset                       Metro                              Metro Boomin                                                44 - trap artists 
+Hip-Hop & Trap         LEAD_Take_Me.fxp                             LEAD - Take Me                     Future                                                      44 - trap artists 
+Hip-Hop & Trap         LONG_TIME_PlayBoi_Carti.fxp                  LONG TIME                                                                                      44 - trap artists 
+Hip-Hop & Trap         MENACE.serumpreset                           PLUCK - MENACE                                                                                 34 - HH: dark trap bells / plucks 
+Hip-Hop & Trap         My_Eyes_Travis_Scott (1).fxp                 My Eyes Pluck                                                                                  26 - Travis Scott 
+Hip-Hop & Trap         My_Eyes_Travis_Scott (2).fxp                 My Eyes Lead                                                                                   26 - Travis Scott 
+Hip-Hop & Trap         My_Eyes_Travis_Scott.fxp                     My Eyes Keys                                                                                   26 - Travis Scott 
+Hip-Hop & Trap         Pad_ATMOSPHERIC.fxp                          PAD - ATMOSPHERIC                                                                              35 - HH: dark trap pads / choirs 
+Hip-Hop & Trap         Pluck_Choirs.fxp                             Pluck - Choirs                                                                                 35 - HH: dark trap pads / choirs 
+Hip-Hop & Trap         Pluggnb_Eletric_Piano.fxp                    Pluggnb - Eletric Piano                                                                        44 - trap artists 
+Hip-Hop & Trap         Pluggnb_Pan_Flute.serumpreset                Pluggnb Pan Flute                                                                              44 - trap artists 
+Hip-Hop & Trap         SM_BA_Funky.fxp                              SM - BA Funky                                                                                  31 - HH: funk / West Coast bass 
+Hip-Hop & Trap         Snow_Strippers_x_Lil_Uzi_Lead.fxp            LEAD - Life's A Dream Rave L                                                                   44 - trap artists 
+Hip-Hop & Trap         Spells.fxp                                   PAD - Spells                                                                                   35 - HH: dark trap pads / choirs 
+Hip-Hop & Trap         Static_Pool_Bell.serumpreset                 Static Pool                                                                                    34 - HH: dark trap bells / plucks 
+Hip-Hop & Trap         STREET_SYN.fxp                               Street SYN                                                                                     30 - HH: G-funk / West Coast lead 
+Hip-Hop & Trap         SYN_Underline.fxp                            SYN - Under                                                                                    30 - HH: G-funk / West Coast lead 
+Hip-Hop & Trap         SYNTH_Alucard.serumpreset                    SYNTH - ALUCARD                                                                                30 - HH: G-funk / West Coast lead 
+Hip-Hop & Trap         TalkBox.serumpreset                          Talkbox                                                                                        30 - HH: G-funk / West Coast lead 
+Hip-Hop & Trap         TimeTravel.fxp                               Synth - TimeTravel                 Carti/Opium                                                 44 - trap artists 
+Hip-Hop & Trap         Travis_Scott_Sicko_Mode (1).fxp              Organ                                                                                          26 - Travis Scott 
+Hip-Hop & Trap         Travis_Scott_Sicko_Mode.fxp                  Sub Bass                                                                                       26 - Travis Scott 
+Hip-Hop & Trap         Tyler_x_Kendrick_Lamar.fxp                   KEY - Tyler Rg                                                                                 44 - trap artists 
+Hip-Hop & Trap         UTOPIA.serumpreset                           UTOPIA PAD                                                                                     35 - HH: dark trap pads / choirs 
+Hip-Hop & Trap         VOX_Awwwww.serumpreset                       VOX - Awwwwww                      Timbaland                                                   41 - HH: West Coast / Timbaland 
+Hip-Hop & Trap         YEAT_GET_BUSY_PLUCK.fxp                      YEAT - GET BUSY PLUCK                                                                          44 - trap artists 
+Hip-Hop & Trap         ZORG_KY_Lo_fi_piano.fxp                      lo fi piano zorg                                                                               32 - HH: piano / keys 
+Presetshare            CH_Retromello.fxp                            CH - Retromello                                                                                1 - homepage + your link REVIEW
+Presetshare            Journey_Keys.fxp                             KY - Journey                                                                                   49 - top Synthwave REVIEW
+Presetshare            KEY_80S_RETRO.fxp                            KEY 80S RETRO                                                                                  49 - top Synthwave REVIEW
+Presetshare            KEYS_Endless_Sine.serumpreset                KEYS - Endless Sine                                                                            1 - homepage + your link REVIEW
+Presetshare            PL_80_LD_KEY_2.fxp                           PL 80s retro citybox 4                                                                         49 - top Synthwave REVIEW
+Presetshare            PL_80s_retro_citybox_2.fxp                   PL 80s retro citybox 2                                                                         49 - top Synthwave REVIEW
+Real Instruments       analog_organ_evil_vibes.serumpreset          analog_organ                                                                                   37 - medieval / folk / organ 
+Real Instruments       Carneval_de_Paris_Accordion.serumpreset      KEY - Carneval de Paris                                                                        29 - accordion / ocarina / western 
+Real Instruments       Cheap_Church_Organ.fxp                       CHORD - Cheap Church Organ                                                                     37 - medieval / folk / organ 
+Real Instruments       Church_Organ.serumpreset                     Church Organ(VX)                                                                               37 - medieval / folk / organ 
+Real Instruments       Colonel_Bogey_Whistle.serumpreset            VOX - Colonel Bogey [WIP]                                                                      29 - accordion / ocarina / western 
+Real Instruments       Full_Contact_Koto.serumpreset                PL - Full Contact                                                                              38 - rare instruments 
+Real Instruments       Handpan.fxp                                  PL - SIne Handpan (CLRY22)                                                                     38 - rare instruments 
+Real Instruments       Harmonica.fxp                                Harmonica                                                                                      29 - accordion / ocarina / western 
+Real Instruments       Hurdy_Gurdy.serumpreset                      Hurdy gurdy                                                                                    37 - medieval / folk / organ 
+Real Instruments       Kalimba_at_home.fxp                          Kalimba at home                                                                                38 - rare instruments 
+Real Instruments       LD_Whistle.fxp                               LD - Whistle                                                                                   29 - accordion / ocarina / western 
+Real Instruments       Ocarina.serumpreset                          Ocarina                                                                                        29 - accordion / ocarina / western 
+Real Instruments       PL_Kalimbant.fxp                             PL - Kalimban't                                                                                38 - rare instruments 
+Real Instruments       PL_Music_box.fxp                             PL - Music box                                                                                 38 - rare instruments 
+Real Instruments       Realistic_Accordion.serumpreset              Realistic Accordion                                                                            29 - accordion / ocarina / western 
+Real Instruments       Velocity_Sensitive_Accordion.serumpreset     Realistic Accordion (Velocity Sen                                                              29 - accordion / ocarina / western 
+Real Instruments       Weird_Jaw_Harp_turned_Pluck.serumpreset      Weird - Jaw Harp turned pluck                                                                  29 - accordion / ocarina / western 
+Real Instruments       Whistle_Lead.serumpreset                     LevisWhistle                                                                                   29 - accordion / ocarina / western 
+Rock & Guitar          acloudyskye_shoots_warble.fxp                acs shoots warble                                                                              13 - rock / guitar 
+Rock & Guitar          Acoustic_Guitar.fxp                          Acoustic Guitar                                                                                13 - rock / guitar 
+Rock & Guitar          Electric_Guitar.serumpreset                  Electric Guitar                                                                                13 - rock / guitar 
+Rock & Guitar          KEYS_Not_Dead_Yet_5.serumpreset              KEYS Not Dead Yet 5                                                                            13 - rock / guitar 
+Rock & Guitar          Metal_Guitar.fxp                             I.F Metal Guitar                                                                               13 - rock / guitar 
+Rock & Guitar          RM_ChildrenRemix_Kit.serumpreset             Robert Miles - Children(Remix Kit                                                              13 - rock / guitar 
+Track Remakes          1983.serumpreset                             1983                                                                                           11 - 80s songs & themes 
+Track Remakes          9AM_ATB.serumpreset                          9AM ATB                                                                                        40 - 90s dance 
+Track Remakes          ANDKorgM1Strings01_SERUM2.serumpreset        AND-Korg-M1-Strings-03             Queen - The Show Must Go On    USER NOTE: Queen - The Show  13 - rock / guitar 
+Track Remakes          Avleton_DaFunk_Daft_Punk.fxp                 Da Funk                                                                                        16 - Daft Punk 
+Track Remakes          BA_Into_The_Groove.serumpreset               BA - Into The Groove               Madonna - Into The Groove                                   11 - 80s songs & themes 
+Track Remakes          BA_Sleeper.fxp                               BA - Sleeper                       PowerNerd - Ghost Me                                        10 - ethereal + ghost + vaporwave 
+Track Remakes          bell_Around_The_World.fxp                    bell - Around The World                                                                        16 - Daft Punk 
+Track Remakes          BELL_Lyras_Eye.fxp                           BELL - Lyra's Eye                  DV-i, Virix, WipeOut                                        8 - dreamcore pads + darkwave + co 
+Track Remakes          BRASS_Into_The_Groove.serumpreset            BRASS - Into The Groove            Madonna - Into The Groove                                   11 - 80s songs & themes 
+Track Remakes          Deadmau5_PH_Sine_Pluck.fxp                   Deadmau5 Progressive House S                                                                   42 - 2000s hits 
+Track Remakes          Everything_in_Its_Right_Place.fxp            Everything in Its Right Plac                                                                   17 - Radiohead 
+Track Remakes          Everything_in_its_right_place.serumpreset    Everything in its right place                                                                  17 - Radiohead 
+Track Remakes          Falling_Read_Description.serumpreset         gtr_Falling                        theme song "Falling"                                        13 - rock / guitar 
+Track Remakes          FX_City_Siren.serumpreset                    FX - City Siren                                                                                11 - 80s songs & themes 
+Track Remakes          Garden_Party_Bass.serumpreset                BA - Garden Party [WIP]            Mezzoforte - Garden Party                                   11 - 80s songs & themes 
+Track Remakes          Garden_Party_Trumpet.serumpreset             BR- Garden Party Trumpet           Mezzoforte - Garden Party                                   11 - 80s songs & themes 
+Track Remakes          Ghost_in_the_Delay.serumpreset               Ghost in the Delay                 The Weeknd                     USER NOTE: this is The Week  10 - ethereal + ghost + vaporwave 
+Track Remakes          Ghost_In_Your_Stereo_Bass.serumpreset        Ghost in Stereo bass               The Midnight - Ghost In Your                                10 - ethereal + ghost + vaporwave 
+Track Remakes          GTR_Intro.serumpreset                        GTR - Intro                        The xx                                                      46 - indie 
+Track Remakes          harp_pad_3_notes_16_bars.fxp                 harp pad 3 notes 16 bars           The News                       USER NOTE: The News          37 - medieval / folk / organ 
+Track Remakes          In_Its_Right_Place.fxp                       In_Its_Right_Place_fix                                                                         17 - Radiohead 
+Track Remakes          Insomnia.fxp                                 Insomnia (Lunitrixx)               Faithless                                                   39 - Faithless 
+Track Remakes          J9_Tiesto_Tom_Bass.fxp                       J9_Tiesto_Tom_Bass                                                                             45 - Tiesto 
+Track Remakes          KEYS_DigiKing_1.serumpreset                  KEYS DigiKing 1                    indie lo-fi                                                 46 - indie 
+Track Remakes          KEYS_Noir_2.serumpreset                      KEYS Noir 2                                                                                    43 - jazz / lounge / blues 
+Track Remakes          KEYS_On_the_Pulse_1.serumpreset              KEYS On The Pulse 1                                                                            11 - 80s songs & themes 
+Track Remakes          LD_Darkest_Light_1.serumpreset               LD Darkest Light 1                 sax                                                         43 - jazz / lounge / blues 
+Track Remakes          LD_Just_Dance_JH.fxp                         LD Just Dance (JH)                 Lady Gaga                                                   42 - 2000s hits 
+Track Remakes          LD_SATISFACTION.fxp                          LD_SATISFACTION                    Benny Benassi                                               42 - 2000s hits 
+Track Remakes          LD_Sub_Focus_Rock_It.fxp                     AXZU_LD_Rock_It                    Sub Focus - Rock It                                         13 - rock / guitar 
+Track Remakes          lead_älskar_euro_gate.fxp                   lead - Ã¤lskar gated saw                                                                       19 - Eurodisco 
+Track Remakes          lead_Diskotek.fxp                            lead - Diskotek                                                                                19 - Eurodisco 
+Track Remakes          lead_KernKraft_400.fxp                       lead - Kernkraft400                                                                            40 - 90s dance 
+Track Remakes          LEAD_Lethal_Industry.serumpreset             Lethal Industry                    Tiesto                                                      45 - Tiesto 
+Track Remakes          MGMT_KIDS.serumpreset                        MGMT - KIDS                                                                                    46 - indie 
+Track Remakes          PAD_Bird_3.fxp                               PAD - Bird 3                       DV-i, Virix, WipeOut                                        8 - dreamcore pads + darkwave + co 
+Track Remakes          PAD_Sustenance.fxp                           PAD - Sustenance                   DV-i, Virix, WipeOut                                        8 - dreamcore pads + darkwave + co 
+Track Remakes          PD_Disclosure_2_JH.fxp                       PD Disclosure 2 (JH)               lounge                                                      43 - jazz / lounge / blues 
+Track Remakes          PD_Rhubarb.serumpreset                       PD - Rhubarb                       Aphex Twin remake                                           20 - Aphex Twin 
+Track Remakes          PIANO_CHILDREN.serumpreset                   PIANO_CHILDREN                     Robert Miles                                                40 - 90s dance 
+Track Remakes          PL_A_Little_Respect.serumpreset              PL - A Little Respect [WIP]        Erasure - A Little Respect                                  11 - 80s songs & themes 
+Track Remakes          PL_Mysterious_Times.serumpreset              PL - Mysterious Times [WIP] 2      Tina Cousins                                                40 - 90s dance 
+Track Remakes          Polar_Synth.fxp                              Polar Synth                        Misanthrop & Synergy - Slap t                               10 - ethereal + ghost + vaporwave 
+Track Remakes          Right_Place_Keys.fxp                         Right_Place_Keys                                                                               17 - Radiohead 
+Track Remakes          Sandstorm.fxp                                LD - Sandstorm                     Darude                                                      40 - 90s dance 
+Track Remakes          Satisfactory_Lead.fxp                        Satisfactory Lead                  Benny Benassi                                               42 - 2000s hits 
+Track Remakes          So_Much_Better_Avicii_Remix.fxp              PL So Much Better (Avicii Re                                                                   42 - 2000s hits 
+Track Remakes          Something_about_us.serumpreset               Something about us                                                                             16 - Daft Punk 
+Track Remakes          ST_Radio_Strings.serumpreset                 ST - Talking Strings 2             Queen - Radio Ga Ga                                         11 - 80s songs & themes 
+Track Remakes          SY_Catch_22.serumpreset                      SY - Catch 22                      Erasure                                                     18 - Erasure 
+Track Remakes          SY_Man_In_The_Moon.serumpreset               SY - Man in the Moon               Erasure                                                     18 - Erasure 
+Track Remakes          SY_You_Spin_Me.serumpreset                   SY - You Spin Me                   Dead or Alive - You Spin Me R                               11 - 80s songs & themes 
+Track Remakes          The_Show.serumpreset                         BRASS - The Show                   Queen - The Show Must Go On                                 15 - Queen 
+Track Remakes          Vengaboys_Lead_Serum_2_ver.serumpreset       Up & Down                                                                                      40 - 90s dance 
+Track Remakes          weeknd_popular.fxp                           popular weeknd                     The Weeknd                                                  12 - The Weeknd 
+Track Remakes          Zombie_Nation_Lead_Accurate.serumpreset      Zombie Nation Lead                                                                             40 - 90s dance 
+Witch House            BASS_Burial_Reese.fxp                        ! ! Burial Reese                                                                               21 - Burial 
+Witch House            bass_Oaklander.fxp                           bass - Oaklander                                                                               8 - dreamcore pads + darkwave + co 
+Witch House            BS_Ruined_1.fxp                              BS Ruined 1                                                                                    8 - dreamcore pads + darkwave + co 
+Witch House            BS_Signal_1.fxp                              BS Singal 1                                                                                    8 - dreamcore pads + darkwave + co 
+Witch House            CHORD_Ghosts_n_Stuff_Organ.serumpreset       CHORD - Ghost's n Stuff Organ                                                                  10 - ethereal + ghost + vaporwave 
+Witch House            Dark_Synth.fxp                               @velodawnbitch Dark Synth (S                                                                   28 - darksynth / cyberpunk 
+Witch House            Destroy_keys.serumpreset                     Destroy keys                                                                                   4 - witch house + Crystal Castles 
+Witch House            Devastation_BS.serumpreset                   octave bass                        Crystal Castles; Akiaura; Sid  USER NOTE: link sent by use  1 - homepage + your link 
+Witch House            Fever_Dream_LoFi_Keys_44B.fxp                fever dream lofi keys v4432-                                                                   20 - Boards of Canada 
+Witch House            Ghost.fxp                                    PD GHOST                                                                                       10 - ethereal + ghost + vaporwave 
+Witch House            GHOST_PLANET.fxp                             GHOST PLANET                                                                                   10 - ethereal + ghost + vaporwave 
+Witch House            GOETHE_lead_cinematic_one.serumpreset        Goethe lead                                                                                    4 - witch house + Crystal Castles 
+Witch House            HT_LD_Ghost.fxp                              HT_LD_Ghost                                                                                    10 - ethereal + ghost + vaporwave 
+Witch House            KEYS_Dark_Jazz_1.fxp                         KEYS Dark Jazz 1                                                                               43 - jazz / lounge / blues 
+Witch House            Keys_Vaporwave_Piano.serumpreset             Keys - Vaporwave Piano                                                                         10 - ethereal + ghost + vaporwave 
+Witch House            LD_GHOST.fxp                                 LD GHOST                                                                                       10 - ethereal + ghost + vaporwave 
+Witch House            lead_Existential_Terror.fxp                  lead - Existential Terror                                                                      4 - witch house + Crystal Castles 
+Witch House            PD_PRISM.fxp                                 SPECTRUM                                                                                       10 - ethereal + ghost + vaporwave 
+Witch House            Phase_Shifter.serumpreset                    Phase Shifter                                                                                  8 - dreamcore pads + darkwave + co 
+Witch House            pluck_Xeno.fxp                               pluck - Xeno                                                                                   8 - dreamcore pads + darkwave + co 
+Witch House            Radeon.fxp                                   PAD - Radeon                                                                                   10 - ethereal + ghost + vaporwave 
+Witch House            Strings_Dreamy_Nights.fxp                    STRINGS - Dreamy Nights                                                                        52 - top Cinematic 
+Witch House            Stuck_Lead.serumpreset                       Stuck-lead                                                                                     4 - witch house + Crystal Castles 
+Witch House            SYN_Digital_Witch_Choir.fxp                  SYN Digital Witch 1                                                                            4 - witch house + Crystal Castles 
+Witch House            SYNTH_18_witchhouse.fxp                      d33f_synth_18 witchhouse                                                                       4 - witch house + Crystal Castles 
+Witch House            Underworld_Reese_BS.serumpreset              underworld reese                                                  from the witch house / CC p  4 - witch house + Crystal Castles 
+Witch House            VillaCityHunter_Blow.fxp                     VillaCityHunter - Blow                                                                         4 - witch house + Crystal Castles 
+Witch House            Witch_PD.fxp                                 Witch pad                                                                                      4 - witch house + Crystal Castles 
+Witch House            WitchHouse_Bass_Reality.fxp                  VillaCityHunter - Reality                                                                      4 - witch house + Crystal Castles 
+Witch House            WitchHouse_Fongus_2.fxp                      Keys - Fongus 2 - Villa                                                                        4 - witch house + Crystal Castles 
+Witch House            WitchHouse_Keys_Fongus.fxp                   VillaCityHunter - Fongus                                                                       4 - witch house + Crystal Castles 
+Witch House            WitchHouse_Lead_Spirits.fxp                  Lead-Spirits-VillaTheCityHun                                                                   4 - witch house + Crystal Castles 
+Witch House            Witchs_poison_LD.fxp                         LOST COVEN - Witch's poison                                                                    4 - witch house + Crystal Castles 

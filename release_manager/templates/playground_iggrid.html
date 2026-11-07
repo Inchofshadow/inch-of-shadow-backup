@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+{% block title %}IG grid{% endblock %}
+{% block content %}
+{% include "_cover_steps.html" %}
+<style>
+.ig-page { max-width: 1800px; }
+.ig-head { display: flex; justify-content: space-between; align-items: baseline; gap: 16px; flex-wrap: wrap; }
+.ig-note { color: #9a948c; font-size: 14px; margin: 4px 0 14px; }
+.ig-bar { display: flex; gap: 10px; align-items: center; margin-bottom: 14px; flex-wrap: wrap; }
+.ig-row { display: flex; gap: 22px; overflow-x: auto; padding-bottom: 12px; }
+.ig-phone { flex: 0 0 auto; background: #fff; border-radius: 26px; padding: 14px 0 0; box-shadow: 0 2px 14px rgba(0,0,0,.35); overflow: hidden; cursor: zoom-in; }
+.ig-phone .lab { color: #222; font: 600 14px system-ui; padding: 0 14px 10px; }
+.ig-phone img { display: block; }
+.ig-row.big .ig-phone { cursor: zoom-out; }
+</style>
+<div class="fonts-page ig-page">
+    <div class="ig-head">
+        <h1>On my IG grid: {{ rel.metadata.title }}</h1>
+        <a href="{{ url_for('playground_wall', slug=rel.slug) }}">← Back to the wall</a>
+    </div>
+    <p class="ig-note">Each colour save as your newest post, above your real last 11 posts (read 11-05). The profile grid shows 3:4 tiles, so a square cover loses 12.5% on each side there. Phones are shown at real phone width.</p>
+    <div class="ig-bar">
+        <label><input type="radio" name="sz" value="390" checked> phone size</label>
+        <label><input type="radio" name="sz" value="585"> bigger</label>
+    </div>
+    <div class="ig-row" id="row">
+        {% for n in names %}
+        <div class="ig-phone"><div class="lab">Save {{ n[6:-4] }}</div>
+            <img src="{{ url_for('playground_iggrid_img', slug=rel.slug, n=n) }}&v={{ vers[n] }}" width="390" alt="Save {{ n[6:-4] }} on the grid"></div>
+        {% endfor %}
+    </div>
+</div>
+<script>
+document.querySelectorAll('input[name=sz]').forEach(function (r) {
+    r.addEventListener('change', function () {
+        document.querySelectorAll('#row img').forEach(function (i) { i.width = +r.value; });
+    });
+});
+</script>
+{% endblock %}

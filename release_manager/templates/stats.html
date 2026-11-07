@@ -1,0 +1,277 @@
+{% extends "base.html" %}
+{% block title %}Stats{% endblock %}
+{% block content %}
+<div class="st-page">
+    <div class="st-head">
+        <div>
+            <h1>Stats</h1>
+        </div>
+        <div class="st-sync">
+            <span class="brand-muted{% if s.synced_days_ago is not none and s.synced_days_ago > 14 %} st-stale{% endif %}">{% if s.last_synced %}synced {{ s.last_synced }}{% if s.synced_days_ago %} · {{ s.synced_days_ago }} day{{ 's' if s.synced_days_ago != 1 }} ago{% endif %}{% else %}never synced{% endif %}</span>
+            <form method="post" action="{{ url_for('stats_sync_form') }}"><input type="hidden" name="csrf_token" value="{{ csrf_token() }}"><button type="submit" class="btn btn-secondary btn-sm">Sync now</button></form>
+        </div>
+    </div>
+    {% if message %}<div class="next-deadline-banner">{{ message }}</div>{% endif %}
+
+    {% if board is none %}
+    <div class="sb-error">Score board unavailable: {{ board_error }}</div>
+    {% else %}
+    {% set sc = board.score %}
+    {% set head, _, counts = sc.line.partition(', ') %}
+    {% set words = {'green': 'green', 'amber': 'drifting', 'red': 'red'} %}
+    <section class="sb" aria-label="Score board">
+      <div class="sb-top">
+        <div class="sb-verdict sb-v-{{ 'off' if sc.red else ('on' if sc.on_pace else 'none') }}">
+            <div class="sb-score"><span class="sb-score-head">{{ head }}</span>{% if counts %}<span class="sb-score-counts">{{ counts|replace(', ', ' · ') }}</span>{% endif %}</div>
+            {% if board.frozen %}<div class="sb-frozen">Frozen month {{ board.frozen.month }}, as of {{ board.frozen.as_of }}, written {{ board.frozen.frozen_at }}</div>{% endif %}
+            {% if sc.why %}<ul class="sb-why">{% for w in sc.why %}<li>{{ w }}</li>{% endfor %}</ul>{% endif %}
+        </div>
+
+        {% if board.freshness %}
+        <ul class="sb-strip" aria-label="Where every number comes from, and how old it is">
+            {% for f in board.freshness %}
+            <li class="sb-chip{% if f.stale %} is-stale{% elif not f.as_of %} is-empty{% endif %}" title="{{ f.who_text }}{% for m in f.members %} &#10;{{ m.label }}: {% if m.as_of %}as of {{ m.as_of[:16]|replace('T', ' ') }}, {{ m.age }} old, window {{ m.window }}{% if m.stale %}, stale{% endif %}{% else %}no reading yet{% endif %}{% endfor %}">
+                <span class="sb-chip-who" aria-label="{{ f.who_text }}">{{ f.who }}</span>
+                <span class="sb-chip-name">{{ f.name }}</span>
+                {% if f.as_of %}<span class="sb-chip-age">{{ f.as_of[5:10] }} · {{ f.age }} of {{ f.window }}</span>{% else %}<span class="sb-chip-age">collecting</span>{% endif %}
+                {% if f.stale %}<span class="sb-chip-word">stale</span>{% endif %}
+            </li>
+            {% endfor %}
+        </ul>
+        {% endif %}
+
+        <div class="sb-grid">
+            {% for c in board.cards %}
+            <article class="sb-card sb-{{ c.light }}{% if not c.value %} is-collecting{% endif %}{% if c.skipped %} is-skipped{% endif %}">
+                <div class="sb-card-top">
+                    <span class="sb-label">{{ c.label }}{% if c.proposed %} <span class="sb-badge" title="Rung proposed by Claude, waiting for Amir's confirm">proposed</span>{% endif %}</span>
+                    {% if c.who %}<span class="sb-who" title="{{ c.who_text }}" aria-label="{{ c.who_text }}">{{ c.who }}</span>{% endif %}
+                </div>
+                <div class="sb-card-mid">
+                    {% if c.value %}<span class="sb-value">{{ c.value }}{% if c.unit %}<span class="sb-unit"> {{ c.unit }}</span>{% endif %}</span>
+                    {% else %}<span class="sb-value sb-value-none">collecting</span>{% endif %}
+                    {% if c.points %}<svg class="sb-spark" viewBox="0 0 120 32" preserveAspectRatio="none" aria-hidden="true"><polyline points="{{ c.points }}" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round" vector-effect="non-scaling-stroke"/></svg>{% endif %}
+                </div>
+                {% if c.light != 'none' %}
+                <div class="sb-state"><span class="sb-light" aria-hidden="true"></span><span class="sb-word">{{ 'stale' if c.stale else words[c.light] }}</span>
+                    <span class="sb-rung">{% if c.rung_line %}{{ c.rung_line }}{% elif c.base_line %}{{ c.base_line }} · {{ c.light_text }}{% else %}{{ c.light_text }}{% endif %}</span></div>
+                {% elif c.value %}
+                <div class="sb-state"><span class="sb-rung">{{ c.light_text }}</span></div>
+                {% endif %}
+                {% if c.progress is not none %}<div class="sb-bar" aria-hidden="true"><span style="width: {{ c.progress }}%"></span></div>{% endif %}
+                {% if c.skipped %}<div class="sb-skip">skipped today, because {{ c.skipped }}</div>{% endif %}
+                <div class="sb-prov" title="{{ c.source }}{% if c.as_of_full %} · as of {{ c.as_of_full }}{% endif %}{% if c.run_id %} · {{ c.run_id }}{% endif %}">
+                    {% if c.as_of_full %}<span>{{ c.source }}</span><span>as of {{ c.as_of_full[:16]|replace('T', ' ') }}</span><span{% if c.old %} class="sb-old"{% endif %}>{{ c.age }}{% if c.old %} old, window {{ c.window }}{% endif %}</span>
+                    {% else %}<span>no reading yet</span><span>from {{ c.source|replace('|', ' or ') }}</span>{% endif %}
+                </div>
+            </article>
+            {% endfor %}
+        </div>
+      </div>
+
+        <div class="sb-health"{% if board.frozen %} hidden{% endif %}>
+            <div class="sb-sec-head"><h2 class="sb-h">HEALTH</h2><span class="sb-quiet">{{ board.health_summary.pass }}/{{ board.health_summary.total }}{% if board.health_summary.pass == board.health_summary.total %} all good{% endif %}</span></div>
+            {% if board.health_summary.pass != board.health_summary.total %}
+            <div class="sb-dots">
+                {% for h in board.health if h.ok is not sameas true %}
+                <span class="sb-dot-item" title="{{ h.label }}{% if h.href %} ({{ h.href }}){% endif %}"><span class="sb-dot {{ 'ok' if h.ok is sameas true else ('fail' if h.ok is sameas false else 'unknown') }}"></span><span class="sb-dot-label">{{ h.label }}</span><span class="sb-dot-detail">{{ h.detail }}</span></span>
+                {% endfor %}
+            </div>
+            {% endif %}
+        </div>
+
+        <div class="sb-sec-head"><h2 class="sb-h">LADDER</h2></div>
+        <div class="sb-ladders">
+            {% for l in board.ladders %}
+            <div class="sb-ladder-box sb-{{ l.light }}">
+                <div class="sb-ladder-side">
+                    <span class="sb-ladder-label"><span class="sb-light"></span>{{ l.label }}{% if l.proposed %} <span class="sb-badge" title="Rung proposed by Claude, waiting for Amir's confirm">proposed</span>{% endif %}</span>
+                    <span class="sb-ladder-now">{{ l.now }}</span>
+                    <span class="sb-ladder-unit">{{ l.unit }} now</span>
+                    <span class="sb-ladder-goal">Goal <strong>{{ l.goal }}</strong> by {{ l.goal_when }}</span>
+                    {% if l.line %}<span class="sb-ladder-line">{{ l.line }}</span>{% endif %}
+                </div>
+                {{ l.svg|safe }}
+            </div>
+            {% endfor %}
+        </div>
+    </section>
+    {% endif %}
+
+    {% if weekly %}
+    <section class="wk" aria-label="This week">
+        <div class="wk-head">
+            <h2 class="wk-title">This week</h2>
+            <span class="brand-muted">{{ weekly.week }} &middot; vs the Monday before</span>
+        </div>
+        {% if weekly.missing %}<p class="brand-muted">Missing: {{ weekly.missing|join('; ') }}.</p>{% endif %}
+
+        <div class="wk-tiles">
+            {% for t in weekly.tiles %}
+            <div class="wk-tile">
+                <span class="wk-label">{% if t.icon %}<svg class="wk-icon" viewBox="0 0 24 24" style="color: {{ t.colour }}" role="img" aria-label="{{ t.platform }}"><title>{{ t.platform }}</title><path d="{{ t.icon }}"/></svg>{% else %}{{ t.platform }} {% endif %}{{ t.label }}</span>
+                <span class="wk-value">{{ t.value }}</span>
+                <span class="wk-delta wk-{{ t.dir }}">{% if t.dir == 'up' %}<svg viewBox="0 0 10 10" aria-hidden="true"><path d="M5 1 9 8H1z"/></svg>{% elif t.dir == 'down' %}<svg viewBox="0 0 10 10" aria-hidden="true"><path d="M5 9 1 2h8z"/></svg>{% endif %}{{ t.delta_text }}</span>
+                {% if t.spark %}
+                <svg class="wk-spark" viewBox="0 0 120 34" preserveAspectRatio="none" role="img" aria-label="{{ t.platform }} {{ t.label|lower }}, last {{ t.days }} days: {{ t.spark.lo }} to {{ t.spark.hi }}">
+                    <title>{{ t.platform }} {{ t.label|lower }}, last {{ t.days }} days: {{ t.spark.lo|int }} to {{ t.spark.hi|int }}</title>
+                    <polyline points="{{ t.spark.points }}" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+                    <circle cx="{{ t.spark.last[0] }}" cy="{{ t.spark.last[1] }}" r="3" class="wk-spark-dot"/>
+                </svg>
+                <span class="wk-foot brand-muted">last {{ t.days }} {{ t.per or "days" }}</span>
+                {% endif %}
+            </div>
+            {% endfor %}
+        </div>
+
+        <div class="wk-cols">
+            {% if weekly.groups %}
+            <div class="wk-movers">
+                <h3 class="wk-h3">What moved</h3>
+                <div class="wk-groups">
+                {% for g in weekly.groups %}
+                <div class="wk-group">
+                    <div class="wk-group-head"><span>{{ g.label }}</span><span class="brand-muted">{{ g.note }}</span></div>
+                    {% for m in g.rows %}
+                    <div class="wk-row" tabindex="0" data-tip="{{ m.short }} &middot; {{ m.where }}{% if m.total %}&#10;{{ m.total }} {{ m.unit }} in total, +{{ m.gained }} this week{% else %}&#10;{{ m.gained }} {{ m.unit }} in the last 7 days{% endif %}{% if m.likes_delta is not none %}&#10;{{ '%+d'|format(m.likes_delta) }} likes{% endif %}">
+                        {% if m.art %}<img class="wk-art" src="{{ url_for('stats_thumb', filename=m.art) }}" alt="" loading="lazy">{% else %}<span class="wk-art wk-art-letter" aria-hidden="true">{{ m.letter }}</span>{% endif %}
+                        <span class="wk-name"><span class="wk-name-main">{{ m.short }}</span>
+                            <span class="wk-bar" aria-hidden="true"><span style="width: {{ m.pct }}%"></span></span></span>
+                        <span class="wk-gain">{% if g.key == 'spotify' %}{{ m.gained }}{% else %}+{{ m.gained }}{% endif %} <span class="brand-muted">{{ m.unit }}</span></span>
+                    </div>
+                    {% endfor %}
+                </div>
+                {% endfor %}
+                </div>
+            </div>
+            {% endif %}
+        </div>
+
+        <div class="wk-tooltip" role="tooltip" hidden></div>
+    </section>
+    <script>
+    (function () {                                  // hover / focus tooltip on the What moved rows
+        var tip = document.querySelector('.wk-tooltip'); if (!tip) return;
+        function show(row) {
+            tip.textContent = row.dataset.tip; tip.hidden = false;
+            var r = row.getBoundingClientRect(), p = row.closest('.wk').getBoundingClientRect();
+            tip.style.left = (r.left - p.left + 46) + 'px'; tip.style.top = (r.bottom - p.top + 4) + 'px';
+        }
+        document.querySelectorAll('.wk-row').forEach(function (row) {
+            row.addEventListener('mouseenter', function () { show(row); });
+            row.addEventListener('focus', function () { show(row); });
+            row.addEventListener('mouseleave', function () { tip.hidden = true; });
+            row.addEventListener('blur', function () { tip.hidden = true; });
+        });
+    }());
+    </script>
+    {% endif %}
+
+    <details class="st-more"{% if message %} open{% endif %}>
+        <summary>All numbers</summary>
+    {% if weekly %}
+    <section class="wk wk-extra" aria-label="Week details">
+        {% if weekly.tips %}
+        <div class="wk-tips">
+                <h3 class="wk-h3">Try this week</h3>
+                {% for t in weekly.tips %}
+                <div class="wk-tip">
+                    <span class="wk-tip-n">{{ loop.index }}</span>
+                    <div>{% if t.title %}<div class="wk-tip-title">{{ t.title }}</div>{% endif %}<div class="wk-tip-do">{{ t.action }}</div></div>
+                </div>
+                {% endfor %}
+            </div>
+            {% endif %}
+        {% if weekly.rows %}
+        <div class="wk-table">
+            <h3 class="wk-h3">This week, every number</h3>
+            <table>
+                <thead><tr><th>Platform</th><th>Metric</th><th>Last week</th><th>This week</th><th>Change</th></tr></thead>
+                <tbody>{% for r in weekly.rows %}<tr><td>{{ r.platform }}</td><td>{{ r.metric }}</td><td>{{ '–' if r.prev is none else r.prev }}</td><td>{{ '–' if r.now is none else r.now }}</td><td>{{ '–' if r.delta is none else '%+d'|format(r.delta) }}</td></tr>{% endfor %}</tbody>
+            </table>
+            {% if weekly.ratio %}
+            <table class="wk-ratio">
+                <thead><tr><th>SoundCloud ratio</th><th>Last week</th><th>This week</th><th>Floor</th><th>Target</th></tr></thead>
+                <tbody><tr><td>followers : following</td><td>{{ weekly.ratio.prev if weekly.ratio.prev is not none else '–' }}:1</td><td>{{ weekly.ratio.now }}:1</td><td>{{ weekly.ratio_floor|int }}:1</td><td>{{ weekly.ratio_target[0] }}-{{ weekly.ratio_target[1] }}:1</td></tr></tbody>
+            </table>
+            {% endif %}
+            <p class="brand-muted">Written on Mondays into plans/weekly-stats.md, from the daily snapshots.</p>
+        </div>
+        {% endif %}
+    </section>
+    {% endif %}
+
+    {% if board is not none %}
+    <section class="sb" aria-label="Trends">
+        <div class="sb-sec-head"><h2 class="sb-h">TREND ONLY</h2></div>
+        <div class="sb-trends">
+            {% for t in board.trends %}
+            <div class="sb-trend">
+                <div class="sb-card-top"><span class="sb-label">{{ t.label }}</span>{% if t.who %}<span class="sb-who" title="{{ t.who_text }}" aria-label="{{ t.who_text }}">{{ t.who }}</span>{% endif %}</div>
+                <div class="sb-card-mid">
+                    {% if t.value %}<span class="sb-trend-value">{{ t.value }}</span>{% else %}<span class="sb-trend-value sb-value-none">collecting</span>{% endif %}
+                    {% if t.points %}<svg class="sb-spark" viewBox="0 0 120 32" preserveAspectRatio="none" aria-hidden="true"><polyline points="{{ t.points }}" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round" vector-effect="non-scaling-stroke"/></svg>{% endif %}
+                </div>
+                {% if t.as_of %}<div class="sb-prov"><span>{{ t.source }}</span><span>as of {{ t.as_of }}</span><span{% if t.stale %} class="sb-old"{% endif %}>{{ t.age }}{% if t.stale %} old, window {{ t.window }}{% endif %}</span></div>{% endif %}
+            </div>
+            {% endfor %}
+        </div>
+    </section>
+    {% endif %}
+
+    {% for t in s.tracks %}
+    <section class="st-track" id="track-{{ t.key }}" style="--pc: {{ t.colour }}">
+        <h2 class="shoot-h2 st-track-h2">{% if t.path %}<svg viewBox="0 0 24 24" aria-hidden="true"><path d="{{ t.path }}"/></svg>{% else %}<span class="st-letter">{{ t.letter }}</span>{% endif %}{{ t.name }}</h2>
+        <div class="st-grid">
+            {% for m in t.metrics %}
+            <div class="st-card st-{{ m.light }}">
+                <div class="st-card-top"><span class="st-label">{{ m.label }}</span>{% if m.gate %}<span class="st-light" title="{{ m.light_text }}"></span>{% endif %}</div>
+                <div class="st-card-mid">
+                    <span class="st-value">{{ m.value }}</span>
+                    {% if m.points %}<svg class="st-spark" viewBox="0 0 120 32" preserveAspectRatio="none"><polyline points="{{ m.points }}" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round"/></svg>{% endif %}
+                </div>
+                <div class="st-card-foot"><span class="st-change">{{ m.light_text }}</span>{% if m.as_of %}<span class="brand-muted">as of {{ m.as_of }}</span>{% endif %}</div>
+            </div>
+            {% endfor %}
+        </div>
+    </section>
+    {% endfor %}
+
+    {% for m in s.manual %}
+    <section class="st-track" id="track-{{ m.key }}" style="--pc: {{ m.colour }}">
+        <h2 class="shoot-h2 st-track-h2">{% if m.path %}<svg viewBox="0 0 24 24" aria-hidden="true"><path d="{{ m.path }}"/></svg>{% else %}<span class="st-letter">{{ m.letter }}</span>{% endif %}{{ m.name }}<span class="brand-muted st-h2-note">no API, typed in by hand</span></h2>
+        <div class="st-grid">
+            <div class="st-card st-{{ 'quiet' if m.entry else 'none' }}">
+                {% if m.entry %}
+                <div class="st-manual-vals">{% for f, l, v in m.fields %}{% if v is not none %}<span><strong>{{ v }}</strong> {{ l|lower }}</span>{% endif %}{% endfor %}</div>
+                <div class="st-card-foot"><span class="brand-muted">entered {{ m.entry.date }}</span></div>
+                {% else %}
+                <div class="st-card-mid"><span class="st-value st-value-muted">no data</span></div>
+                {% endif %}
+                <details class="st-manual"><summary>enter numbers</summary>
+                    <form method="post" action="{{ url_for('stats_manual_form') }}" class="st-manual-form">
+                        <input type="hidden" name="csrf_token" value="{{ csrf_token() }}"><input type="hidden" name="platform" value="{{ m.key }}">
+                        {% for f, l, v in m.fields %}<label>{{ l }}<input type="number" name="{{ f }}" step="{{ '0.01' if f == 'revenue' else '1' }}" min="0" placeholder="{{ v if v is not none else '' }}"></label>{% endfor %}
+                        <button type="submit" class="btn btn-secondary btn-sm">Save</button>
+                    </form>
+                </details>
+            </div>
+            {% if m.sales %}
+            <div class="st-card st-quiet st-sales" title="{{ m.sales.file }}">
+                <div class="st-card-top"><span class="st-label">Sales, {{ m.sales.first[:7] }} to {{ m.sales.last[:7] }}</span></div>
+                <div class="st-sales-head"><span><strong>{{ m.sales.sales }}</strong> sales</span><span><strong>&euro;{{ '%.2f'|format(m.sales.net) }}</strong> net</span>{% if m.sales.paid_more %}<span><strong>{{ m.sales.paid_more }}</strong> paid more</span>{% endif %}</div>
+                <div class="st-sales-cols">
+                    <div><div class="st-sales-h">Best sellers</div>
+                        {% for name, n, net in m.sales.releases|sort(attribute='1', reverse=True) %}{% if loop.index <= 5 %}<div class="st-sales-row"><span>{{ name }}</span><span>{{ n }}</span></div>{% endif %}{% endfor %}</div>
+                    <div><div class="st-sales-h">Found you via</div>
+                        {% for ref, n in m.sales.referrers %}{% if loop.index <= 5 %}<div class="st-sales-row"><span>{{ 'unknown' if ref == '(none)' else ref }}</span><span>{{ n }}</span></div>{% endif %}{% endfor %}</div>
+                </div>
+                {% if m.sales.campaigns %}<div class="st-manual-vals">{% for c, n, net in m.sales.campaigns %}<span><strong>{{ c }}</strong> {{ n }} &middot; &euro;{{ '%.2f'|format(net) }}</span>{% endfor %}</div>{% endif %}
+            </div>
+            {% endif %}
+        </div>
+    </section>
+    {% endfor %}
+    </details>
+</div>
+{% endblock %}

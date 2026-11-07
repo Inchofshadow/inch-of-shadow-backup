@@ -1,0 +1,25 @@
+[     318ms] [INFO] You like to look under the hood? Why not help us build the engine? https://soundcloud.com/jobs @ https://a-v2.sndcdn.com/assets/55-e4adf979.js:40
+[     739ms] [LOG] prebid-load.js loaded successfully. @ https://a-v2.sndcdn.com/assets/55-e4adf979.js:107
+[     905ms] [LOG] %craven%c Raven v1.19.15-60bzog background-color:#000;margin-left:1px;padding:1px 3px;font-size:0.75em;color:#ffffff; font-size:0.9em; @ https://a-v2.sndcdn.com/assets/55-e4adf979.js:107
+[     978ms] [ERROR] Access to XMLHttpRequest at 'https://c.amazon-adsystem.com/cdn/prod/config?src=600&u=https%3A%2F%2Fsoundcloud.com&pubid=4e8fb3b2-1c6c-42d6-890c-e5a6718315a3' from origin 'https://soundcloud.com' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource. @ https://soundcloud.com/hate_music/tracks:0
+[     979ms] [ERROR] Failed to load resource: net::ERR_FAILED @ https://c.amazon-adsystem.com/cdn/prod/config?src=600&u=https%3A%2F%2Fsoundcloud.com&pubid=4e8fb3b2-1c6c-42d6-890c-e5a6718315a3:0
+[    1021ms] [WARNING] Error with Feature-Policy header: Unrecognized origin: 'none'. @ :0
+[    1021ms] [WARNING] Error with Feature-Policy header: Unrecognized feature: 'ambient-light-sensor'. @ :0
+[    1021ms] [WARNING] Error with Feature-Policy header: Unrecognized origin: 'none'. @ :0
+[    1021ms] [WARNING] Error with Feature-Policy header: Unrecognized feature: 'battery'. @ :0
+[    1021ms] [WARNING] Error with Feature-Policy header: Unrecognized origin: 'none'. @ :0
+[    1021ms] [WARNING] Error with Feature-Policy header: Unrecognized origin: 'none'. @ :0
+[    1021ms] [WARNING] Error with Feature-Policy header: Unrecognized feature: 'document-domain'. @ :0
+[    1021ms] [WARNING] Error with Feature-Policy header: Unrecognized origin: 'none'. @ :0
+[    1021ms] [WARNING] Error with Feature-Policy header: Unrecognized origin: 'none'. @ :0
+[    1021ms] [WARNING] Error with Feature-Policy header: Unrecognized origin: 'none'. @ :0
+[    1021ms] [WARNING] Error with Feature-Policy header: Unrecognized origin: 'none'. @ :0
+[    1021ms] [WARNING] Error with Feature-Policy header: Unrecognized origin: 'none'. @ :0
+[    1021ms] [WARNING] Error with Feature-Policy header: Unrecognized origin: 'none'. @ :0
+[    1021ms] [WARNING] Error with Feature-Policy header: Unrecognized origin: 'none'. @ :0
+[    1021ms] [WARNING] Error with Feature-Policy header: Unrecognized origin: 'none'. @ :0
+[    1021ms] [WARNING] Error with Feature-Policy header: Unrecognized origin: 'none'. @ :0
+[    1021ms] [WARNING] Error with Feature-Policy header: Unrecognized origin: 'none'. @ :0
+[    1021ms] [WARNING] Error with Feature-Policy header: Unrecognized feature: 'wake-lock'. @ :0
+[    1050ms] [LOG] 1. onMount started @ https://velvetcake.soundcloud.com/_app/immutable/nodes/2.DR9guGpY.js:0
+[    1130ms] [ERROR] Failed to load resource: the server responded with a status of 400 (Bad Request) @ https://api-auth.soundcloud.com/oauth/authorize?client_id=RF8yvumNwWwVg0aX4r7fHqzIVAtO6nSI:0

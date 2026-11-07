@@ -1,0 +1,57 @@
+{
+  "name": "music-seo",
+  "question": "Which words do people use to search for, ask for and describe this sound: dark disco, EBM, coldwave, darkwave, acid, electro and dark techno with a melancholic, cinematic edge?",
+  "system_extra": "Context: Inch of Shadow is a Berlin artist (Amir): dark dance wave, sitting on dark disco, EBM, coldwave, acid, electro and techno; from 2026 also songs with his own vocals. The reader is an SEO professional: skip basics. Return the actual terms people\nuse: genre labels, mood and texture words, scene words, comparison artists (\"sounds like X\"), and the\nrequests they type (\"music like ...\"). name = the term or term cluster. examples = the exact short\nterms and variants as written (spelling variants matter). In insight, say how common it is and in\nwhich sources. In use, say where it belongs: platform tags (SoundCloud, Bandcamp, Beatport), titles\nand descriptions, or bio copy, and flag a mismatch when a term pulls the wrong crowd. House rules:\n\"trance\" is never a tag for him; \"new wave\" is an influence word only, never a tag; the standard\ngenre word is \"Synthwave\", not \"Synth\".",
+  "output_dir": "gap_radar/reports/music-seo",
+  "crowding": false,
+  "sources": {
+    "reddit": {
+      "subs": [
+        "darkwave",
+        "postpunk",
+        "ebm",
+        "Techno",
+        "ifyoulikeblank",
+        "coldwave",
+        "industrialmusic",
+        "minimalwave",
+        "italodisco"
+      ],
+      "phrases": [
+        "\"sounds like\"",
+        "\"similar to\"",
+        "\"what genre\"",
+        "\"music like\"",
+        "\"dark disco\"",
+        "\"new beat\"",
+        "\"minimal wave\"",
+        "\"body music\""
+      ]
+    },
+    "hn_queries": [],
+    "stackexchange": {
+      "sites": [],
+      "queries": []
+    },
+    "youtube_queries": [
+      "dark disco mix",
+      "EBM techno mix",
+      "coldwave playlist",
+      "darkwave dance",
+      "acid electro mix",
+      "minimal wave mix",
+      "new beat mix",
+      "italo dark mix"
+    ],
+    "github_queries": [],
+    "appstore": {
+      "genres": [],
+      "app_ids": []
+    },
+    "hikerapi": {
+      "hashtags": [],
+      "accounts": [],
+      "max_calls": 0
+    }
+  }
+}

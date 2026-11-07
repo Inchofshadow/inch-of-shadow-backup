@@ -1,0 +1,44 @@
+{
+  "id": "pinocchio-single_20261014-034433_2",
+  "file": "pinocchio-single_20261014-034433_2.png",
+  "made": "2026-10-14T03:44:33",
+  "model": "gpt-image-2.5-sunburst",
+  "quality": "high",
+  "size": "1024x1024",
+  "n": 2,
+  "seconds": 39.2,
+  "prompt": "USE: One illustrated element on plain off-white paper, to be cut out and placed on a cover by hand. Artwork only, no lettering.\n\nSUBJECT: One black swan floating, side view, neck in a gentle S-curve, brush and India ink: near-solid black body with sparse white lines scratched in for the feathers. One loose acid-violet watercolour wash painted into the wing feathers and the tail, following each feather, about a quarter of the body. The beak stays black ink, no other colour anywhere.\n\nCOMPOSITION: Only what the subject names, on even plain paper with white space around it; no scene, no frame, no cast shadow.\n\nREFERENCES:\n- Image 1: our own earlier draft: the swan's shape and pose. Redraw it at full quality: keep its subject, shapes and layout.\n- Image 2: style reference: the violet painted into the feathers, not the red beak. Take only its style; do not copy its subject, objects or layout.\n\nBRAND:\nInch of Shadow, a Berlin artist: light and shadow held together in one frame.\nHand-made print look: brush and India ink, dry brush, or old copperplate engraving. Lines, hatching and solid black carry all the shading.\nStrong contrast: deep blacks next to clean paper white, a few fine white lines scratched into the black.\nBlack ink by default; colour only where the subject asks for it, as one loose wash.\nQuiet and a little mysterious, tender rather than grim.\n\nCONSTRAINTS:\n- No text, letters, numbers, logos or watermarks.\n- No churches, domes, crosses, or other religious symbols.\n- No photograph, no 3D render, no digital airbrush or soft gradients.\n- Not in the style of any named living artist, and not a copy of any existing cover.",
+  "references": [
+    {
+      "file": "pinocchio-single_20261014-033332_2_20261014-034149.png",
+      "scope": "pinocchio-single",
+      "role": "redraw",
+      "sent": true
+    },
+    {
+      "file": "pinocchio-single_20261014-033332_1_20261014-034157.png",
+      "scope": "pinocchio-single",
+      "role": "style",
+      "sent": true
+    }
+  ],
+  "usage": {
+    "input_tokens": 4910,
+    "input_tokens_details": {
+      "image_tokens": 4096,
+      "text_tokens": 814
+    },
+    "output_tokens": 3512,
+    "total_tokens": 8422,
+    "output_tokens_details": {
+      "image_tokens": 3512,
+      "text_tokens": 0
+    }
+  },
+  "cost_usd": 0.0711,
+  "decision": null,
+  "release": "pinocchio-single",
+  "kind": "element",
+  "element": "swan-violet",
+  "round": "htn-elements-final-1"
+}

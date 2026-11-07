@@ -1,0 +1,960 @@
+{
+  "timestamp": "2026-09-26T13:49:48",
+  "platforms": {
+    "spotify": {
+      "followers": null,
+      "popularity": null,
+      "genres": [],
+      "top_tracks": [],
+      "albums": [
+        {
+          "name": "The Deceiver",
+          "type": "single",
+          "group": "single",
+          "release_date": "2026-07-10",
+          "total_tracks": 1,
+          "markets": 0,
+          "id": "1urkRR4KD6pY3PgJD1FLKE",
+          "tracks": [
+            {
+              "number": 1,
+              "name": "The Deceiver",
+              "duration": "5:25",
+              "id": "2aaVRgCyZCj8GkYyvmBgzJ",
+              "artists": "Inch of Shadow"
+            }
+          ]
+        },
+        {
+          "name": "Farewell",
+          "type": "single",
+          "group": "single",
+          "release_date": "2026-05-15",
+          "total_tracks": 1,
+          "markets": 0,
+          "id": "1O7r6dcDdINzCYO8rKVxNT",
+          "tracks": [
+            {
+              "number": 1,
+              "name": "Farewell",
+              "duration": "5:22",
+              "id": "6lOM9849xsWTUGiBJBjpuE",
+              "artists": "Inch of Shadow"
+            }
+          ]
+        },
+        {
+          "name": "The Tour",
+          "type": "single",
+          "group": "single",
+          "release_date": "2025-12-19",
+          "total_tracks": 1,
+          "markets": 0,
+          "id": "5GVdzNskCVwlu8n7uSwbhh",
+          "tracks": [
+            {
+              "number": 1,
+              "name": "The Tour - Inch of Shadow Remix",
+              "duration": "5:41",
+              "id": "7lJpdoNYQC1Uh85yLOqE2W",
+              "artists": "La Groove Machine, Inch of Shadow"
+            }
+          ]
+        },
+        {
+          "name": "Meltscape",
+          "type": "single",
+          "group": "single",
+          "release_date": "2025-09-19",
+          "total_tracks": 3,
+          "markets": 0,
+          "id": "6fGzTiQSnZo8QAyiBmR7BM",
+          "tracks": [
+            {
+              "number": 1,
+              "name": "The Cure",
+              "duration": "5:55",
+              "id": "0XtYWhOsV49tSGFk5Zz66m",
+              "artists": "Status Zero, Inch of Shadow"
+            },
+            {
+              "number": 2,
+              "name": "Meltscape",
+              "duration": "6:26",
+              "id": "625L6c0Hh0Aq3EJX2K4t1f",
+              "artists": "Status Zero, Inch of Shadow"
+            },
+            {
+              "number": 3,
+              "name": "Mind Eaten",
+              "duration": "6:00",
+              "id": "0iKo5HKE4kSvnnsKIM49om",
+              "artists": "Status Zero, Inch of Shadow"
+            }
+          ]
+        },
+        {
+          "name": "Eastern Stars",
+          "type": "single",
+          "group": "single",
+          "release_date": "2024-12-20",
+          "total_tracks": 5,
+          "markets": 0,
+          "id": "3PYFHLJACcCRSvGPaymJzZ",
+          "tracks": [
+            {
+              "number": 1,
+              "name": "In Between Spaces",
+              "duration": "5:15",
+              "id": "6rVXlnjMac0edk7Lk3bywd",
+              "artists": "La Groove Machine, Inch of Shadow"
+            },
+            {
+              "number": 2,
+              "name": "ACID Gangsta",
+              "duration": "5:44",
+              "id": "6znfL1X9PUTskrLntlCfA9",
+              "artists": "La Groove Machine, Inch of Shadow"
+            },
+            {
+              "number": 3,
+              "name": "Dark Scales",
+              "duration": "5:04",
+              "id": "5U7L5A9cPrHUgHxNvjcWg3",
+              "artists": "La Groove Machine, Inch of Shadow"
+            },
+            {
+              "number": 4,
+              "name": "The Alchemist Ritual",
+              "duration": "4:45",
+              "id": "2sgH9mQw0OqGzrZdr9wXdN",
+              "artists": "La Groove Machine, Inch of Shadow"
+            },
+            {
+              "number": 5,
+              "name": "Compass Rose",
+              "duration": "5:40",
+              "id": "4ob40Kh1buvehWSUYuSLLz",
+              "artists": "La Groove Machine, Inch of Shadow"
+            }
+          ]
+        },
+        {
+          "name": "Electro Horizons: Classic, Detroit, Future Fusion, Vol. 18",
+          "type": "compilation",
+          "group": "compilation",
+          "release_date": "2026-04-27",
+          "total_tracks": 24,
+          "markets": 0,
+          "id": "4qZ42j9uRHgkyulXdwpEou",
+          "tracks": [
+            {
+              "number": 1,
+              "name": "Funky Shit",
+              "duration": "5:43",
+              "id": "2ie99rUIeq8Hd10EYbg2um",
+              "artists": "Ekanan"
+            },
+            {
+              "number": 2,
+              "name": "Getting Ready - Vocal Mix",
+              "duration": "7:59",
+              "id": "6W7ohYJrXgE4jZlIo1b0al",
+              "artists": "DJ Nipper"
+            },
+            {
+              "number": 3,
+              "name": "Sun",
+              "duration": "4:27",
+              "id": "54SZojcn38l69XrEAwuY7W",
+              "artists": "Bruno Costa"
+            },
+            {
+              "number": 4,
+              "name": "Hold U Forever - Radio Edit",
+              "duration": "3:05",
+              "id": "2XjHCJLTnSrYpYDY2BjDCa",
+              "artists": "Techcrasher, DJ Vartan"
+            },
+            {
+              "number": 5,
+              "name": "Desire - Extended Mix",
+              "duration": "6:37",
+              "id": "7yS9BCFS4z4GNqggHhe0Rn",
+              "artists": "D.Stakk"
+            },
+            {
+              "number": 6,
+              "name": "Keep Me Running - Radio Edit",
+              "duration": "2:34",
+              "id": "44xusGd1Z9z97JoOJMHZrh",
+              "artists": "Klaudie, Fredrik Ferrier"
+            },
+            {
+              "number": 7,
+              "name": "Mortus",
+              "duration": "4:10",
+              "id": "7of3KxQFCcvK6V2qsvfCWu",
+              "artists": "eBOT"
+            },
+            {
+              "number": 8,
+              "name": "Never Side Me",
+              "duration": "4:40",
+              "id": "6HCcbe57ilnXIybT4fzmYE",
+              "artists": "Tutank"
+            },
+            {
+              "number": 9,
+              "name": "Hold On - Extended Mix",
+              "duration": "4:45",
+              "id": "5cS4nK2wtso726BJxfX1Wg",
+              "artists": "Scott Doe"
+            },
+            {
+              "number": 10,
+              "name": "Sign of My Mind",
+              "duration": "5:14",
+              "id": "6XeilrhDayAK2mHKlKT2Gk",
+              "artists": "Jose Vilches"
+            },
+            {
+              "number": 11,
+              "name": "Low Pulse",
+              "duration": "4:07",
+              "id": "3Es3RNy39BLsKmrrGXjPFl",
+              "artists": "Ewo Ramirez"
+            },
+            {
+              "number": 12,
+              "name": "Tender",
+              "duration": "3:32",
+              "id": "216mvvmXfibs1JMhncZI3I",
+              "artists": "Starfox"
+            },
+            {
+              "number": 13,
+              "name": "The Tour - Inch of Shadow Remix",
+              "duration": "5:41",
+              "id": "3rvVAiC6LnHijkJaHkPlxb",
+              "artists": "La Groove Machine, Inch of Shadow"
+            },
+            {
+              "number": 14,
+              "name": "Enjoy",
+              "duration": "6:31",
+              "id": "7zP79MnHq9P2DXM2Db7B9Y",
+              "artists": "Etcetera"
+            },
+            {
+              "number": 15,
+              "name": "Push Me Higher",
+              "duration": "4:21",
+              "id": "3HOz4uFsbD0cTfTDwrmAhr",
+              "artists": "Nick Lawyer"
+            },
+            {
+              "number": 16,
+              "name": "Do You Want It - Radio Edit",
+              "duration": "2:49",
+              "id": "5OKGh0aWXEOvEiWYMUaods",
+              "artists": "Aggz, SharkyWard"
+            },
+            {
+              "number": 17,
+              "name": "Lost In The Music - Edit",
+              "duration": "3:28",
+              "id": "4soIiNXQRqSJymD95gdpee",
+              "artists": "Max Winfield"
+            },
+            {
+              "number": 18,
+              "name": "YWAH",
+              "duration": "7:00",
+              "id": "6AieoO5nY0Z0rM5MtVLC75",
+              "artists": "HIDDEN TAPES 9000"
+            },
+            {
+              "number": 19,
+              "name": "Yktys - House Mix",
+              "duration": "7:21",
+              "id": "739EuC5RWpKK1crxBD2kkO",
+              "artists": "58MII"
+            },
+            {
+              "number": 20,
+              "name": "Right Here",
+              "duration": "4:40",
+              "id": "2O77u77n4IhkSJF3Lxbvrx",
+              "artists": "Mizzo, Sporty-O"
+            },
+            {
+              "number": 21,
+              "name": "Start To Move",
+              "duration": "6:33",
+              "id": "6muNv3GF4rcoxOIS8ct1aR",
+              "artists": "Petra"
+            },
+            {
+              "number": 22,
+              "name": "TOGETHER",
+              "duration": "8:37",
+              "id": "01CXeVWiC02YcKRkmYprFN",
+              "artists": "Deejay Balius, Jhon Denas"
+            },
+            {
+              "number": 23,
+              "name": "Keep it Moving - Extended Mix",
+              "duration": "4:11",
+              "id": "6KsiExXcNsLznxk6P7pCMb",
+              "artists": "Fedde Le Grand, Joyse"
+            },
+            {
+              "number": 24,
+              "name": "Dencefloor",
+              "duration": "3:36",
+              "id": "1HVbvFJpX8WsB345B8WBgx",
+              "artists": "Brick Top"
+            }
+          ]
+        },
+        {
+          "name": "In Between Friends",
+          "type": "album",
+          "group": "album",
+          "release_date": "2025-11-12",
+          "total_tracks": 6,
+          "markets": 0,
+          "id": "675uhTjGqv4XZTdvmpTcWn",
+          "tracks": [
+            {
+              "number": 1,
+              "name": "Wunderbar",
+              "duration": "5:05",
+              "id": "46JVxuWHl7JLny98jhXAUx",
+              "artists": "In Between"
+            },
+            {
+              "number": 2,
+              "name": "Cat in Chapora",
+              "duration": "5:37",
+              "id": "42cGfSA83UjR7LUqWXFvWx",
+              "artists": "In Between, Panta Rhei"
+            },
+            {
+              "number": 3,
+              "name": "Discodelica",
+              "duration": "5:01",
+              "id": "0BXqOFOkL6g1beO9QWtIwZ",
+              "artists": "In Between"
+            },
+            {
+              "number": 4,
+              "name": "Acid Masala",
+              "duration": "5:46",
+              "id": "4LzC9DVSAZXZI5U2FICcGC",
+              "artists": "In Between, Status Zero"
+            },
+            {
+              "number": 5,
+              "name": "Back to the Source",
+              "duration": "6:02",
+              "id": "1e89sRP99H2PHpbQ3H5mL2",
+              "artists": "In Between"
+            },
+            {
+              "number": 6,
+              "name": "Taka Juno",
+              "duration": "5:21",
+              "id": "4hQjCVsbmuMDMNdBxcsbxz",
+              "artists": "In Between, Inch of Shadow, Area 101"
+            }
+          ]
+        }
+      ],
+      "catalog_size": 7
+    },
+    "youtube": {
+      "subscribers": 5,
+      "total_views": 431,
+      "video_count": 13,
+      "total_likes": 11,
+      "total_comments": 0,
+      "avg_engagement_rate": 3.4,
+      "videos": [
+        {
+          "id": "yXQuwudWER0",
+          "title": "Inch of Shadow - The Deceiver (Official Audio)",
+          "published": "2026-09-08",
+          "views": 54,
+          "likes": 1,
+          "comments": 0,
+          "engagement_rate": 1.9,
+          "duration": "PT5M26S"
+        },
+        {
+          "id": "7rwGIVja4oM",
+          "title": "Inch of Shadow - Farewell (Official Audio)",
+          "published": "2026-09-03",
+          "views": 29,
+          "likes": 2,
+          "comments": 0,
+          "engagement_rate": 6.9,
+          "duration": "PT5M23S"
+        },
+        {
+          "id": "JO6oQ--MgzI",
+          "title": "La Groove Machine - The Tour (Inch of Shadow Remix)",
+          "published": "2026-09-02",
+          "views": 14,
+          "likes": 0,
+          "comments": 0,
+          "engagement_rate": 0.0,
+          "duration": "PT5M42S"
+        },
+        {
+          "id": "xo0wMr35Glc",
+          "title": "Inch of Shadow & Status Zero - Mind Eaten (Official Audio)",
+          "published": "2026-09-01",
+          "views": 9,
+          "likes": 0,
+          "comments": 0,
+          "engagement_rate": 0.0,
+          "duration": "PT6M"
+        },
+        {
+          "id": "2rtdkfpS3Rc",
+          "title": "Inch of Shadow & Status Zero - Meltscape (Official Audio)",
+          "published": "2026-08-31",
+          "views": 10,
+          "likes": 0,
+          "comments": 0,
+          "engagement_rate": 0.0,
+          "duration": "PT6M27S"
+        },
+        {
+          "id": "bRlAbUWInAs",
+          "title": "Inch of Shadow & Status Zero - The Cure (Official Audio)",
+          "published": "2026-08-30",
+          "views": 115,
+          "likes": 2,
+          "comments": 0,
+          "engagement_rate": 1.7,
+          "duration": "PT5M56S"
+        },
+        {
+          "id": "w7svrHba-WI",
+          "title": "Inch of Shadow & La Groove Machine - Compass Rose (Official Audio)",
+          "published": "2026-08-29",
+          "views": 7,
+          "likes": 0,
+          "comments": 0,
+          "engagement_rate": 0.0,
+          "duration": "PT5M41S"
+        },
+        {
+          "id": "cBsZSSrhiqA",
+          "title": "Inch of Shadow & La Groove Machine - The Alchemist Ritual (Official Audio)",
+          "published": "2026-08-28",
+          "views": 24,
+          "likes": 1,
+          "comments": 0,
+          "engagement_rate": 4.2,
+          "duration": "PT4M46S"
+        },
+        {
+          "id": "meV29XERwqc",
+          "title": "Inch of Shadow & La Groove Machine - Dark Scales (Official Audio)",
+          "published": "2026-08-27",
+          "views": 115,
+          "likes": 2,
+          "comments": 0,
+          "engagement_rate": 1.7,
+          "duration": "PT5M5S"
+        },
+        {
+          "id": "kUxdHHchpY0",
+          "title": "Inch of Shadow & La Groove Machine - ACID Gangsta (Official Audio)",
+          "published": "2026-08-19",
+          "views": 26,
+          "likes": 1,
+          "comments": 0,
+          "engagement_rate": 3.8,
+          "duration": "PT5M45S"
+        },
+        {
+          "id": "yvVfok6w2Jo",
+          "title": "Inch of Shadow & La Groove Machine - In Between Spaces (Official Audio)",
+          "published": "2026-08-17",
+          "views": 25,
+          "likes": 1,
+          "comments": 0,
+          "engagement_rate": 4.0,
+          "duration": "PT5M16S"
+        },
+        {
+          "id": "bv6NpnRqfNg",
+          "title": "Inch of Shadow — DJing My Remix in Berlin | The Code 2025",
+          "published": "2026-03-01",
+          "views": 1,
+          "likes": 0,
+          "comments": 0,
+          "engagement_rate": 0.0,
+          "duration": "PT38S"
+        },
+        {
+          "id": "VGA79_RggFg",
+          "title": "Unreleased Track “The Deceiver” | Live at The Code Berlin.",
+          "published": "2026-01-11",
+          "views": 5,
+          "likes": 1,
+          "comments": 0,
+          "engagement_rate": 20.0,
+          "duration": "PT34S"
+        }
+      ]
+    },
+    "instagram": {
+      "followers": 948,
+      "following": 967,
+      "media_count": 85,
+      "recent_likes": 1048,
+      "recent_comments": 207,
+      "recent_reach": 8900,
+      "recent_saves": 12,
+      "recent_shares": 23,
+      "recent_posts": [
+        {
+          "id": "17925587370147310",
+          "type": "REELS",
+          "date": "2026-07-10",
+          "likes": 37,
+          "comments": 8,
+          "caption": "The Deceiver\nOut now!\n\nDark industrial EBM, 126 BPM. A relentless bassline, cold",
+          "reach": 363,
+          "total_interactions": 49,
+          "saved": 1,
+          "shares": 1
+        },
+        {
+          "id": "18603153784038328",
+          "type": "FEED",
+          "date": "2026-07-08",
+          "likes": 35,
+          "comments": 21,
+          "caption": "The Deceiver.\nBeauty was always the first disguise, carved in marble long before",
+          "reach": 175,
+          "total_interactions": 59,
+          "saved": 0,
+          "shares": 0
+        },
+        {
+          "id": "18151830541441098",
+          "type": "REELS",
+          "date": "2026-07-06",
+          "likes": 36,
+          "comments": 17,
+          "caption": "Chasing the right temperature.\n\n“The Deceiver” is finally where it needs to be.\n",
+          "reach": 465,
+          "total_interactions": 56,
+          "saved": 2,
+          "shares": 0
+        },
+        {
+          "id": "18098279941955600",
+          "type": "FEED",
+          "date": "2026-06-10",
+          "likes": 62,
+          "comments": 16,
+          "caption": "Sometimes you have to play a long time to be able to play like yourself. \n\n*****",
+          "reach": 356,
+          "total_interactions": 78,
+          "saved": 0,
+          "shares": 0
+        },
+        {
+          "id": "18336911710222449",
+          "type": "REELS",
+          "date": "2026-05-15",
+          "likes": 30,
+          "comments": 14,
+          "caption": "Farewell. Out now.\n\nAn EBM track. Acid melody, brooding atmosphere, rolling bass",
+          "reach": 543,
+          "total_interactions": 53,
+          "saved": 4,
+          "shares": 3
+        },
+        {
+          "id": "18149697817452635",
+          "type": "FEED",
+          "date": "2026-01-29",
+          "likes": 39,
+          "comments": 6,
+          "caption": "Tomorrow with all the gang of @collective.dada at @beateuwe_official. Playing b2",
+          "reach": 253,
+          "total_interactions": 45,
+          "saved": 0,
+          "shares": 0
+        },
+        {
+          "id": "18070362701615277",
+          "type": "FEED",
+          "date": "2026-01-04",
+          "likes": 43,
+          "comments": 15,
+          "caption": "Now that the NYE chaos fades and the white noise disappears,\nhere’s my closing s",
+          "reach": 449,
+          "total_interactions": 61,
+          "saved": 1,
+          "shares": 2
+        },
+        {
+          "id": "18089132138050265",
+          "type": "FEED",
+          "date": "2025-12-24",
+          "likes": 17,
+          "comments": 4,
+          "caption": "Tomorrow Morning 09:30\nB2B with @area_101_x at @about.blank.berlin \nBy @blank_wi",
+          "reach": 207,
+          "total_interactions": 22,
+          "saved": 0,
+          "shares": 1
+        },
+        {
+          "id": "18080848295273101",
+          "type": "FEED",
+          "date": "2025-12-19",
+          "likes": 34,
+          "comments": 9,
+          "caption": "Released today ✨\nMy remix for The Tour by @lagroovemachine_music.\nEtched into th",
+          "reach": 746,
+          "total_interactions": 49,
+          "saved": 0,
+          "shares": 5
+        },
+        {
+          "id": "18076233410047919",
+          "type": "FEED",
+          "date": "2025-09-13",
+          "likes": 16,
+          "comments": 2,
+          "caption": "Excited to play tonight at @torturegardenberlin , spinning some of my favorite b",
+          "reach": 254,
+          "total_interactions": 18,
+          "saved": 0,
+          "shares": 0
+        }
+      ],
+      "daily_insights": {
+        "reach": [
+          {
+            "date": "2026-08-28",
+            "value": 1
+          },
+          {
+            "date": "2026-08-29",
+            "value": 1
+          },
+          {
+            "date": "2026-08-30",
+            "value": 2
+          },
+          {
+            "date": "2026-08-31",
+            "value": 0
+          },
+          {
+            "date": "2026-09-01",
+            "value": 0
+          },
+          {
+            "date": "2026-09-02",
+            "value": 0
+          },
+          {
+            "date": "2026-09-03",
+            "value": 80
+          },
+          {
+            "date": "2026-09-04",
+            "value": 35
+          },
+          {
+            "date": "2026-09-05",
+            "value": 0
+          },
+          {
+            "date": "2026-09-06",
+            "value": 0
+          },
+          {
+            "date": "2026-09-07",
+            "value": 2
+          },
+          {
+            "date": "2026-09-08",
+            "value": 2
+          },
+          {
+            "date": "2026-09-09",
+            "value": 2
+          },
+          {
+            "date": "2026-09-10",
+            "value": 0
+          },
+          {
+            "date": "2026-09-11",
+            "value": 0
+          },
+          {
+            "date": "2026-09-12",
+            "value": 0
+          },
+          {
+            "date": "2026-09-13",
+            "value": 1
+          },
+          {
+            "date": "2026-09-14",
+            "value": 3
+          },
+          {
+            "date": "2026-09-15",
+            "value": 1
+          },
+          {
+            "date": "2026-09-16",
+            "value": 5
+          },
+          {
+            "date": "2026-09-17",
+            "value": 1
+          },
+          {
+            "date": "2026-09-18",
+            "value": 1
+          },
+          {
+            "date": "2026-09-19",
+            "value": 2
+          },
+          {
+            "date": "2026-09-20",
+            "value": 2
+          },
+          {
+            "date": "2026-09-21",
+            "value": 125
+          },
+          {
+            "date": "2026-09-22",
+            "value": 23
+          },
+          {
+            "date": "2026-09-23",
+            "value": 1
+          },
+          {
+            "date": "2026-09-24",
+            "value": 2
+          },
+          {
+            "date": "2026-09-25",
+            "value": 1
+          },
+          {
+            "date": "2026-09-26",
+            "value": 0
+          }
+        ],
+        "follower_count": [
+          {
+            "date": "2026-08-28",
+            "value": 0
+          },
+          {
+            "date": "2026-08-29",
+            "value": 0
+          },
+          {
+            "date": "2026-08-30",
+            "value": 2
+          },
+          {
+            "date": "2026-08-31",
+            "value": 0
+          },
+          {
+            "date": "2026-09-01",
+            "value": 0
+          },
+          {
+            "date": "2026-09-02",
+            "value": 0
+          },
+          {
+            "date": "2026-09-03",
+            "value": 1
+          },
+          {
+            "date": "2026-09-04",
+            "value": 0
+          },
+          {
+            "date": "2026-09-05",
+            "value": 2
+          },
+          {
+            "date": "2026-09-06",
+            "value": 1
+          },
+          {
+            "date": "2026-09-07",
+            "value": 4
+          },
+          {
+            "date": "2026-09-08",
+            "value": 2
+          },
+          {
+            "date": "2026-09-09",
+            "value": 2
+          },
+          {
+            "date": "2026-09-10",
+            "value": 0
+          },
+          {
+            "date": "2026-09-11",
+            "value": 1
+          },
+          {
+            "date": "2026-09-12",
+            "value": 0
+          },
+          {
+            "date": "2026-09-13",
+            "value": 0
+          },
+          {
+            "date": "2026-09-14",
+            "value": 0
+          },
+          {
+            "date": "2026-09-15",
+            "value": 0
+          },
+          {
+            "date": "2026-09-16",
+            "value": 5
+          },
+          {
+            "date": "2026-09-17",
+            "value": 0
+          },
+          {
+            "date": "2026-09-18",
+            "value": 2
+          },
+          {
+            "date": "2026-09-19",
+            "value": 2
+          },
+          {
+            "date": "2026-09-20",
+            "value": 0
+          },
+          {
+            "date": "2026-09-21",
+            "value": 3
+          },
+          {
+            "date": "2026-09-22",
+            "value": 0
+          },
+          {
+            "date": "2026-09-23",
+            "value": 1
+          },
+          {
+            "date": "2026-09-24",
+            "value": 0
+          },
+          {
+            "date": "2026-09-25",
+            "value": 0
+          },
+          {
+            "date": "2026-09-26",
+            "value": 0
+          }
+        ]
+      },
+      "demographics": {
+        "gender_age": {
+          "F.18-24": 7,
+          "F.25-34": 120,
+          "F.35-44": 94,
+          "F.45-54": 24,
+          "F.55-64": 3,
+          "F.65+": 3,
+          "M.18-24": 12,
+          "M.25-34": 177,
+          "M.35-44": 171,
+          "M.45-54": 72,
+          "M.55-64": 31,
+          "M.65+": 6,
+          "U.18-24": 12,
+          "U.25-34": 76,
+          "U.35-44": 72,
+          "U.45-54": 21,
+          "U.55-64": 11,
+          "U.65+": 6
+        },
+        "gender_summary": {
+          "male": 51.1,
+          "female": 27.3,
+          "unknown": 21.6
+        },
+        "countries": {
+          "DE": 338,
+          "IL": 261,
+          "US": 52,
+          "GB": 34,
+          "FR": 32,
+          "IT": 23,
+          "ES": 16,
+          "NL": 16,
+          "MX": 9,
+          "AU": 8,
+          "CH": 7,
+          "GR": 7,
+          "CA": 6,
+          "AR": 6,
+          "PL": 6
+        },
+        "cities": {
+          "Berlin, Berlin": 293,
+          "Tel Aviv, Tel Aviv": 126,
+          "Herzliya, Tel Aviv": 17,
+          "Paris, Île-de-France": 13,
+          "London, England": 10,
+          "Amsterdam, Noord-Holland": 9,
+          "Ramat Gan, Tel Aviv": 9,
+          "Jerusalem, Jerusalem": 8,
+          "Bat Yam, Tel Aviv": 7,
+          "Rishon Le Zion, Central District": 7,
+          "Haifa, Heifa": 6,
+          "Eilat, Southern District": 5,
+          "Los Angeles, California": 5,
+          "Rome, Lazio": 5,
+          "Zürich, Zürich": 5
+        }
+      }
+    }
+  },
+  "errors": [
+    "soundcloud"
+  ]
+}

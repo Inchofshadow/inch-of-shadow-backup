@@ -1,0 +1,223 @@
+[
+ {
+  "name": "Setlists are the main live-show content fans consume and debate",
+  "insight": "Cure listeners treat the setlist as the core story of a show. They ask about it before a gig and build playlists from it. They count how varied it was by album, praise surprise deep cuts, and get worried when a set runs shorter than usual. They also ask how and when the setlist gets decided. Boy Harsher fans likewise praise a set where every track lands, name songs they missed, and post timestamped tracklists.",
+  "examples": [
+   "Fan breaks down a Barcelona set by album to judge how varied it was",
+   "Fans worry a 21-song set means something went wrong, since 29+ is normal",
+   "Requests for setlist playlists ahead of a first show, some in shuffled order to avoid spoilers",
+   "Wish lists for deep cuts like Plainsong to return",
+   "Boy Harsher viewer was hoping for one song that wasn't played"
+  ],
+  "evidence_ids": [
+   0,
+   3,
+   4,
+   5,
+   7,
+   8,
+   10,
+   12,
+   15,
+   22,
+   173,
+   195,
+   200
+  ],
+  "use": "After each show or DJ/live set, post the setlist as a plain typed card, with no adjectives. Rotate one deep cut or unreleased track per show so the list itself becomes news. Occasionally add a one-line note on why a track opened or closed the set, which answers the 'how is it decided' curiosity.",
+  "strength": 5
+ },
+ {
+  "name": "Full-set recordings and livestreams are received with gratitude",
+  "insight": "Long, full-length live documentation gets thanked over and over. Fans who missed a show, who live far from the tour route, or who want to relive their night all value it. They also ask what camera was used. In Cure fan threads, people actively hunt for livestream links. A band post sharing livestream times was passed around happily.",
+  "examples": [
+   "Several thank-yous for a 4K full-set upload from people who couldn't attend",
+   "Attendee thanks the uploader for letting them revisit the night",
+   "Fan upset the tour skipped their city, so they rely on videos",
+   "Fans hunt for livestream links in Cure fan show threads"
+  ],
+  "evidence_ids": [
+   1,
+   26,
+   27,
+   169,
+   179,
+   181,
+   194,
+   197,
+   180,
+   170
+  ],
+  "use": "Publish complete, well-recorded live sets or long uninterrupted segments (YouTube, with IG cut-downs linking to them), titled plainly with city and date. For cities you don't reach, a full set is the content that converts the far-away fan.",
+  "strength": 5
+ },
+ {
+  "name": "Live-only versions and pre-release live debuts create lasting demand",
+  "insight": "Fans latch onto what exists only live: extended sections, alternate versions and unreleased tracks played on stage. Then they keep asking where to get them. When a song first heard in live clips finally gets released, people mark the moment.",
+  "examples": [
+   "Commenter notes a newly released track was first seen in old live clips",
+   "Excitement over an extended part of Hard Beat live",
+   "Fan searching for a better-quality version of a live track that differs from the album",
+   "Viewer asking if a remix heard in an interview is available"
+  ],
+  "evidence_ids": [
+   111,
+   196,
+   193,
+   157,
+   172
+  ],
+  "use": "Debut 2026 vocal songs live and post short live clips months before release. Then frame the release with a dry line connecting the two (e.g. 'played since spring, out now'). Consider releasing live/extended edits, since fans explicitly ask for them.",
+  "strength": 4
+ },
+ {
+  "name": "A steady release rhythm of song plus video is loved and noticed",
+  "insight": "R. Missing's commenters repeatedly point out the regular release pace, often single plus video about monthly, and treat it as part of the relationship. They joke that the drops are more regular than their own lives. Long gaps get noticed, with fans asking when new music is coming.",
+  "examples": [
+   "Joke that the drops are more regular than anything else in their life",
+   "Note that a groovy-but-sad song arrives about once a month",
+   "Comment calling them one of the most productive artists",
+   "Fan asking when the next song is coming"
+  ],
+  "evidence_ids": [
+   107,
+   120,
+   129,
+   133,
+   140,
+   142,
+   150,
+   109
+  ],
+  "use": "Plan the 2026 vocal singles as a predictable series, each with its own short video. Let the regularity itself be the statement, with no countdowns or hype. Announce in one sentence, release on a fixed weekday.",
+  "strength": 4
+ },
+ {
+  "name": "Fans decode music videos: props, film clips, references, behind-the-story",
+  "insight": "Listeners study videos frame by frame. They ask what a prop means, which film the clips come from, who a figure in the shot is, and what the story was behind a video. They spot film lineage (Lynch) and editing styles echoed by later artists. Archive-minded fans want clean high-quality versions and reject AI upscales that get details wrong.",
+  "examples": [
+   "Asking what the flowered bell prop in a Cure video represents",
+   "Asking which movie the end clips in the Plainsong video come from",
+   "Asking who the woman on the ceiling is in an R. Missing video",
+   "Boy Harsher video read as Lost Highway / Blue Velvet",
+   "Complaint that only compressed or AI-upscaled versions exist"
+  ],
+  "evidence_ids": [
+   9,
+   17,
+   18,
+   117,
+   159,
+   2,
+   21,
+   19,
+   20,
+   11,
+   14,
+   23
+  ],
+  "use": "Build videos with deliberate, findable references (a film, a painting, a Berlin location, a recurring object). Afterwards post a short 'notes on the video' carousel naming one or two of them. Keep native high-res masters of every video on your own channel so fans never need re-uploads.",
+  "strength": 4
+ },
+ {
+  "name": "Restrained, low-budget, analog visuals beat polish",
+  "insight": "Fans praise visuals that are minimal but have a strong identity: an artist's gaze through reverb, outfits, analog video-synth glitch and lights on stage, videos shot in a member's art studio. Some joke that a big studio would have spent a fortune on what was done simply.",
+  "examples": [
+   "Joke that a big studio would have spent hundreds of thousands on the video",
+   "Praise for the singer's outfits across the videos",
+   "Love for analog video synth glitch art and lighting at a Boy Harsher show",
+   "Commenter moved by the eyes peering through the hazy vocal",
+   "Band video filmed in their guitarist's art studio"
+  ],
+  "evidence_ids": [
+   154,
+   140,
+   122,
+   182,
+   97
+  ],
+  "use": "Commit to a recurring, cheap visual system (one camera, analog/CRT texture, one location, consistent styling for Amir) across IG and stage visuals. Consistency of look, not budget, is what fans credit.",
+  "strength": 3
+ },
+ {
+  "name": "Live credibility means intensity and danceability, not phoning it in",
+  "insight": "Boy Harsher fans travel across states and see multiple dates because the band 'doesn't phone it in.' They describe dancing through the set, even injured. They value watching a band level up from support slots to headliners. A flat crowd gets criticised.",
+  "examples": [
+   "Fan flew in from Montana and praised the band for not phoning it in",
+   "Parent and son danced the whole set, one with a boot on his leg",
+   "Fan who saw them open years ago calls the headline show a huge level-up",
+   "Complaint that the crowd looked dead",
+   "Fan caught both Chicago shows plus Minneapolis"
+  ],
+  "evidence_ids": [
+   176,
+   177,
+   203,
+   175,
+   198,
+   191,
+   178,
+   199
+  ],
+  "use": "For IG, favour crowd-and-floor clips that show bodies moving over posed stage portraits. Pair them with factual captions (city, date, hour on stage). For dark dance wave, proof that the room danced is the strongest live content.",
+  "strength": 4
+ },
+ {
+  "name": "Fans reward artists who come across as decent, accessible humans",
+  "insight": "Fans are moved when favourite musicians show warmth, humility or joy in playing. Examples: a member praised in an author's post, Lol Tolhurst playing small cheap shows clearly for love of the songs and meeting fans, visible emotion on stage. Fans also follow artists' wellbeing with care.",
+  "examples": [
+   "Fan emotional seeing a band member described kindly by an author",
+   "Lol's show described as full of heart, mouthing the words",
+   "Small venue, cheap tickets, signing vinyl seen as doing it for joy, not money",
+   "Viewers noting the singer looks healthier and happier"
+  ],
+  "evidence_ids": [
+   32,
+   37,
+   44,
+   184,
+   186
+  ],
+  "use": "Keep the voice restrained, but let small human moments through: signing records after a show, a short spoken intro to why a song matters, a thank-you to a city in one plain sentence. Accessibility, not hype, builds the bond.",
+  "strength": 3
+ },
+ {
+  "name": "Gear and process content lands with producer-fans",
+  "insight": "Part of this audience makes music. They respond to studio and gear talk: the specific synths, the live rig, how sounds were built. They ask to be taught, or marvel at making a song exactly as imagined. Small backstage glimpses also delight, like a photo of the drum kit with a cat image on the screens.",
+  "examples": [
+   "Discussion of AstroLab and Arturia sound design from a Boy Harsher interview",
+   "Fan recalls Muller's live MPC 1000 and Prophet setup",
+   "Request to be taught how to make music like this",
+   "Joy at a band post of the drum kit with a cat placeholder"
+  ],
+  "evidence_ids": [
+   155,
+   156,
+   146,
+   138,
+   27,
+   45
+  ],
+  "use": "Run an occasional studio series: one machine, one patch or one acid line per post. Shoot it plainly with exact gear names and no tutorial-voice hype. Add rig photos before shows. Fits the declarative tone and serves the producer segment of the dark disco/EBM audience.",
+  "strength": 3
+ },
+ {
+  "name": "Physical, numbered and collectible items carry real weight",
+  "insight": "Fans show off original posters and ask about the quality and run size of hand-numbered tour posters. They own collector physical editions of Boy Harsher's film. They hunt specific vinyl and get records signed at shows. Scarcity and object quality matter more than slogans.",
+  "examples": [
+   "Question on how many hand-numbered tour posters exist and their print quality",
+   "Fan showing an original subway-size Disintegration poster and tour poster",
+   "Proud owner of a collector's copy of The Runner film",
+   "Vinyl signed at a small show; fan still hunting an album on vinyl"
+  ],
+  "evidence_ids": [
+   13,
+   30,
+   167,
+   44,
+   39
+  ],
+  "use": "Make merch an extension of the visual series: small, hand-numbered prints or posters per single or per city, with run size stated openly. State edition counts plainly rather than with urgency language.",
+  "strength": 3
+ }
+]

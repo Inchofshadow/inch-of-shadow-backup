@@ -1,0 +1,22 @@
+{
+  "name": "gero-seo-topics",
+  "question": "Which Cardano, ADA, staking, wallet and crypto-card questions repeat often enough that one article could answer them?",
+  "system_extra": "Output feeds a keyword list for an article pipeline. Return a JSON array; each item: {\"keyword\": short search phrase as people type it, \"group\": one of tier1|tier2|midnight|tier3|longTail|comparison, \"volume\": null, \"difficulty\": null, \"repeats\": how many posts asked it, \"evidence\": [up to 3 urls], \"angle\": one line on what the article must answer}. Phrase the keyword so its form matches the article type: 'how to ...' for tutorials, 'what is ...' for explainers, 'X vs Y' for comparisons, 'best ...' for guides. Use longTail for question phrases, comparison for 'vs'. Merge duplicates, drop one-off questions, rank by repeats. Never invent volume or difficulty.",
+  "output_dir": "/Users/amir/Desktop/Gero/gap-radar-reports/gero-seo-topics/",
+  "crowding": false,
+  "sources": {
+    "reddit": {
+      "subs": ["cardano", "CardanoStakePools", "CryptoCurrency", "BitcoinBeginners"],
+      "phrases": ["\"how do I\"", "\"how to\"", "\"what is\"", "\"can someone explain\"", "\"newbie\"", "\"vs\"", "\"is it safe\""]
+    },
+    "hn_queries": ["cardano", "self-custody wallet", "crypto debit card"],
+    "stackexchange": {
+      "sites": ["cardano"],
+      "queries": ["how to", "what is", "staking", "delegation", "wallet", "drep", "midnight", "native token", "nft"]
+    },
+    "youtube_queries": ["how to stake ADA", "cardano wallet tutorial", "what is midnight cardano", "cardano governance drep explained", "crypto debit card explained"],
+    "github_queries": [],
+    "appstore": {"genres": [], "app_ids": []},
+    "hikerapi": {"hashtags": [], "accounts": [], "max_calls": 0}
+  }
+}

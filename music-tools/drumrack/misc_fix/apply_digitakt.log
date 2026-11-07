@@ -1,0 +1,32 @@
+  Misc 01 AlesisSR16.wav             -> Percs/Block 01 AlesisSR16.wav
+  Misc 01 LinnDrum.wav               -> Percs/Cabasa 01 LinnDrum.wav
+  Misc 01 LinnDrumLM2.wav            -> Percs/Cabasa 01 LinnDrumLM2.wav
+  Misc 01 OberheimDMX.wav            -> Percs/Bongo 01 OberheimDMX.wav
+  Misc 01 RX5-II.wav                 -> Percs/Castanet 01 RX5-II.wav
+  Misc 01 UnivoxMicroRhythmer12.wav  -> Kicks/Kick 01 UnivoxMicroRhythmer12.wav
+  Misc 01 YamahaRX11.wav             -> HiHats/HiHat 01 YamahaRX11.wav
+  Misc 02 AlesisSR16.wav             -> Percs/Snap 01 AlesisSR16.wav
+  Misc 02 LinnDrumLM2.wav            -> Percs/Cabasa 02 LinnDrumLM2.wav
+  Misc 02 OberheimDMX.wav            -> Percs/Cabasa 01 OberheimDMX.wav
+  Misc 02 RX5-II.wav                 -> Cymbals/China 01 RX5-II.wav
+  Misc 02 UnivoxMicroRhythmer12.wav  -> Kicks/Kick 02 UnivoxMicroRhythmer12.wav
+  Misc 02 YamahaRX11.wav             -> HiHats/HiHat 02 YamahaRX11.wav
+  Misc 03 AlesisSR16.wav             -> Snares/Snare 01 AlesisSR16.wav
+  Misc 03 LinnDrumLM2.wav            -> Percs/Sidestick 01 LinnDrumLM2.wav
+  Misc 03 OberheimDMX.wav            -> Percs/Timbale 01 OberheimDMX.wav
+  Misc 03 RX5-II.wav                 -> Percs/Timbale 01 RX5-II.wav
+  Misc 03 UnivoxMicroRhythmer12.wav  -> HiHats/HiHat 01 UnivoxMicroRhythmer12.wav
+  Misc 03 YamahaRX11.wav             -> OpenHats/OpenHat 01 YamahaRX11.wav
+  Misc 04 AlesisSR16.wav             -> Snares/Snare 02 AlesisSR16.wav
+  Misc 04 OberheimDMX.wav            -> Percs/Timbale 02 OberheimDMX.wav
+  Misc 04 UnivoxMicroRhythmer12.wav  -> OpenHats/OpenHat 01 UnivoxMicroRhythmer12.wav
+  Misc 04 YamahaRX11.wav             -> OpenHats/OpenHat 02 YamahaRX11.wav
+  Misc 05 AlesisSR16.wav             -> Snares/Snare 03 AlesisSR16.wav
+  Misc 05 OberheimDMX.wav            -> Percs/Timbale 03 OberheimDMX.wav
+  Misc 05 UnivoxMicroRhythmer12.wav  -> Snares/Snare 01 UnivoxMicroRhythmer12.wav
+  Misc 06 AlesisSR16.wav             -> Snares/Snare 04 AlesisSR16.wav
+  Misc 07 AlesisSR16.wav             -> Snares/Snare 05 AlesisSR16.wav
+  Misc 08 AlesisSR16.wav             -> Snares/Snare 06 AlesisSR16.wav
+
+moved 29  problems 0  left in Misc: 0
+empty Misc folder removed

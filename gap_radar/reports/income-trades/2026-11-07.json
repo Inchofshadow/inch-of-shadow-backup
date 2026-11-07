@@ -1,0 +1,1052 @@
+[
+ {
+  "name": "Party list extractor and conflict-check builder for litigation paralegals",
+  "pain": "Paralegals retype dozens of named parties from scanned complaints into case management software so conflict checks can run. New solo and appearance attorneys keep conflict databases in homemade spreadsheets.",
+  "who_pays": "Litigation paralegals at small firms using Clio or similar; solo and freelance appearance attorneys",
+  "evidence_ids": [
+   39,
+   48,
+   36
+  ],
+  "pay_signal": "Moderate. [39] already pays for Clio, faces an end-of-day deadline for 54 defendants and asks for a tool. [48] is hand-building a conflict spreadsheet to manage malpractice risk. [36] is a builder probing demand, not buyer evidence.",
+  "product_idea": "Web tool: upload a complaint or docket PDF (scanned is fine), Claude API pulls out parties, roles, counsel and entity types, cleans and dedupes the names, then exports a Clio-ready contact CSV. An optional conflict-check sheet in Google Sheets fuzzy-matches new parties against the firm's past list. Assets: Claude API (near-zero cost for OCR'd text reasoning) and Google Sheets API.",
+  "build_weeks": 3,
+  "fit_for_us": 4,
+  "known_competitors": "Clio's own AI features, CoCounsel/Thomson Reuters, Docketbird, generic PDF-to-Excel OCR tools; none appear focused on party-list import",
+  "check_next": "Search r/paralegal and Clio forums for 'import parties' or 'conflict check' threads. Confirm Clio's contact CSV import format. Offer a free 10-page trial to 20 paralegals.",
+  "crowding": {
+   "verdict": "unclear",
+   "reason": "Conflict checking is crowded (Clio built-in, Client Conflict Check $199/yr, ConflictCheck from $49/mo), and TackleAI already extracts parties from scanned pleadings to CSV; no proof yet that anyone pays for extraction by itself.",
+   "competitors": [
+    {
+     "name": "Clio Manage built-in Conflict Check",
+     "price": "Clio Manage Starter from $49/user/month",
+     "url": "https://www.clio.com/blog/conflict-check-how-to/",
+     "verified": true
+    },
+    {
+     "name": "Client Conflict Check",
+     "price": "$199/year solo, $249/year mid-size",
+     "url": "https://www.guideflow.com/blog/conflict-check-software",
+     "verified": true
+    },
+    {
+     "name": "ConflictCheck",
+     "price": "$49, $119 or $249 per month",
+     "url": "https://www.lumay.ai/blogs/best-conflict-check-software-attorneys",
+     "verified": true
+    },
+    {
+     "name": "TackleAI (Tackle Pleadings)",
+     "price": "unknown",
+     "url": "https://tacklepleadings.com/",
+     "verified": false
+    },
+    {
+     "name": "Parseur (legal document extraction)",
+     "price": "unknown",
+     "url": "https://parseur.com/use-case/extract-data-legal-data-extraction",
+     "verified": false
+    },
+    {
+     "name": "Smokeball",
+     "price": "custom pricing",
+     "url": "https://www.guideflow.com/blog/conflict-check-software",
+     "verified": true
+    },
+    {
+     "name": "CosmoLex",
+     "price": "$49/user/month",
+     "url": "https://www.softwaresuggest.com/conflict-check-software",
+     "verified": true
+    }
+   ],
+   "pay_proof": [
+    {
+     "claim": "Client Conflict Check charges solo firms $199/year (30-day free trial)",
+     "url": "https://softwarefinder.com/legal/client-conflict-check",
+     "verified": true
+    },
+    {
+     "claim": "ConflictCheck sells conflict screening to solo/small firms at $49, $119 or $249 per month",
+     "url": "https://www.lumay.ai/blogs/best-conflict-check-software-attorneys",
+     "verified": true
+    },
+    {
+     "claim": "Clio's AI deadline extraction from court documents is limited to the Core plan and above (paid tier)",
+     "url": "https://www.clio.com/features/case-management/",
+     "verified": true
+    },
+    {
+     "claim": "Small firms pay for party extraction from complaints specifically",
+     "url": "https://tacklepleadings.com/",
+     "verified": false
+    }
+   ],
+   "cost_usd": 0.7666,
+   "web_searches": 8
+  }
+ },
+ {
+  "name": "Givebutter-to-acknowledgment letter and household merge tool",
+  "pain": "Small nonprofits on Givebutter can't merge couples into households or format proper donor acknowledgment and tax letters. Staff also hand-code transactions across CRM, processors and accounting.",
+  "who_pays": "Development and operations staff at small nonprofits (roughly 100 to 2,000 donors) on Givebutter, Donorbox or Zeffy",
+  "evidence_ids": [
+   81,
+   83,
+   87
+  ],
+  "pay_signal": "Moderate. [81] is a two-person shop that already migrated through paid CRMs and is asking for workarounds inside a paid platform. [83] and [87] describe large manual coding and reconciliation time.",
+  "product_idea": "Web app: upload a Givebutter or Donorbox CSV export. Claude API suggests household merges (same address, spouse names) and GL/fund coding. The app then generates per-donor or per-household year-end acknowledgment letters with IRS-compliant language as Google Docs or PDF, with Canva-branded letterhead. Assets: Claude API, Google Sheets API, Canva connector.",
+  "build_weeks": 3,
+  "fit_for_us": 4,
+  "known_competitors": "Givebutter native receipts, Bloomerang, Little Green Light, DonorPerfect, Neon (full CRMs); Zapier/Mailmerge hacks",
+  "check_next": "Check the Givebutter feature-request board and r/nonprofit for 'household' and 'year-end letter' complaints. Map Givebutter's export columns. Pre-sell a one-time $49 year-end letter run before January.",
+  "crowding": {
+   "verdict": "crowded",
+   "reason": "Givebutter, Donorbox and Zeffy (free) all have year-end tax receipts built in and Givebutter already has households; what's left are feature gaps the platform is fixing, with no proof anyone pays for a standalone add-on.",
+   "competitors": [
+    {
+     "name": "Givebutter native households + year-end summaries",
+     "price": "unknown (built into the platform)",
+     "url": "https://help.givebutter.com/en/articles/5860605-how-to-send-end-of-year-giving-summaries",
+     "verified": true
+    },
+    {
+     "name": "Donorbox year-end tax receipts",
+     "price": "unknown (built into the platform)",
+     "url": "https://donorbox.org/donation-receipts",
+     "verified": true
+    },
+    {
+     "name": "Zeffy automated tax receipts and year-end summaries",
+     "price": "free",
+     "url": "https://www.zeffy.com/feature/donation-receipts",
+     "verified": true
+    },
+    {
+     "name": "Little Green Light",
+     "price": "$45/month up to 2,500 constituents",
+     "url": "https://help.littlegreenlight.com/article/591-pricing-for-little-green-light",
+     "verified": true
+    },
+    {
+     "name": "Bloomerang",
+     "price": "unknown",
+     "url": "",
+     "verified": false
+    },
+    {
+     "name": "DonorPerfect",
+     "price": "unknown",
+     "url": "",
+     "verified": false
+    },
+    {
+     "name": "Neon CRM",
+     "price": "unknown",
+     "url": "",
+     "verified": false
+    }
+   ],
+   "pay_proof": [
+    {
+     "claim": "Small nonprofits pay $45/month for Little Green Light donor CRM (up to 2,500 constituents)",
+     "url": "https://help.littlegreenlight.com/article/591-pricing-for-little-green-light",
+     "verified": true
+    },
+    {
+     "claim": "Little Green Light has 317 reviews at 4.8 on Software Advice and lists a $45/month starting price",
+     "url": "https://www.softwareadvice.com/nonprofit/little-green-light-profile/",
+     "verified": true
+    },
+    {
+     "claim": "Givebutter users report pain (manually parsing ~400 year-end PDFs) but this shows frustration, not willingness to pay for an add-on",
+     "url": "https://community.givebutter.com/track/p/customization-on-end-of-year-giving-report",
+     "verified": true
+    },
+    {
+     "claim": "Givebutter acknowledges letters can only address the household primary contact, not 'John and Jane Smith'",
+     "url": "https://community.givebutter.com/engage/p/ability-to-address-letters-to-the-full-household-name",
+     "verified": true
+    }
+   ],
+   "cost_usd": 0.5739,
+   "web_searches": 8
+  }
+ },
+ {
+  "name": "Fair housing language checker for listing copy",
+  "pain": "Agents and brokers write rental and sale listings with phrases that violate fair housing rules (neighborhood characterizations, family or ability language). Compliance review is done by manually reading listings.",
+  "who_pays": "Listing agents, rental brokers, broker compliance managers",
+  "evidence_ids": [
+   66
+  ],
+  "pay_signal": "Weak to moderate. Only one post, [66], but it comes from a 15-year professional manually auditing NYC listings who found high violation rates. Fair housing violations carry fines, giving clear liability motivation.",
+  "product_idea": "Browser extension that runs on MLS, StreetEasy and Zillow listing-entry forms. It flags risky phrases with an explanation and a compliant rewrite using Claude API plus a curated rule list (federal, NYC, CA protected classes). A broker plan adds batch audit of exported listings. Assets: Claude API; HyperFrames/YouTube for short 'phrase of the week' marketing videos; SEO content tooling.",
+  "build_weeks": 2,
+  "fit_for_us": 4,
+  "known_competitors": "Some AI listing writers include fair housing filters (ListingAI, Epique, some MLS-built checkers); free word lists from Realtor associations",
+  "check_next": "Test whether existing MLS input screens already block phrases in NYC, CA and TX. Interview 5 brokerage compliance managers. Check Chrome Web Store for existing fair housing extensions.",
+  "crowding": {
+   "verdict": "crowded",
+   "reason": "Several free fair housing listing checkers, MLS-built remarks checks, a paid Chrome extension and AI listing writers ($19-$36/mo) already flag and rewrite risky phrases; no evidence that a standalone checker can charge.",
+   "competitors": [
+    {
+     "name": "ListingAI (built-in Fair Housing check)",
+     "price": "from $19/month; Professional $36/month",
+     "url": "https://www.listingai.co/",
+     "verified": true
+    },
+    {
+     "name": "ListingKit",
+     "price": "$29/month Pro or $199 lifetime",
+     "url": "https://www.listingkit.app/about",
+     "verified": true
+    },
+    {
+     "name": "Fair Housing Guardian (Chrome extension)",
+     "price": "unknown (7-day free trial, then paid)",
+     "url": "https://socket.dev/chrome/package/pogdmneocpofnpaplhabcfedbaecjmoe",
+     "verified": false
+    },
+    {
+     "name": "Listing Guard",
+     "price": "unknown (3 free scans, beta)",
+     "url": "https://getlistingguard.com/",
+     "verified": false
+    },
+    {
+     "name": "FairSentry",
+     "price": "unknown (enterprise)",
+     "url": "https://fairsentry.com/",
+     "verified": false
+    },
+    {
+     "name": "Sofabrain Listing Description Checker",
+     "price": "free",
+     "url": "https://sofabrain.com/tools/listing-description-checker/",
+     "verified": true
+    },
+    {
+     "name": "Listing Launchpad Fair Housing Listing Checker",
+     "price": "free",
+     "url": "https://www.listinglaunchpad.com/tools/fair-housing-listing-checker",
+     "verified": true
+    },
+    {
+     "name": "MySinglePropertyWebsites Fair Housing Word Checker",
+     "price": "free",
+     "url": "https://mysinglepropertywebsites.com/fair-housing-checker",
+     "verified": true
+    },
+    {
+     "name": "Matrix MLS Fair Housing Public Remarks Check (HiCentral MLS)",
+     "price": "included with MLS",
+     "url": "https://hicentralmls.zendesk.com/hc/en-us/articles/4585413024020-Fair-Housing",
+     "verified": true
+    }
+   ],
+   "pay_proof": [
+    {
+     "claim": "ListingAI paid plans from $19/month include built-in Fair Housing checks",
+     "url": "https://www.listingai.co/",
+     "verified": true
+    },
+    {
+     "claim": "ListingAI is a $14-150/month subscription; Professional is $36/month",
+     "url": "https://www.metes.app/compare/metes-vs-listingai",
+     "verified": true
+    },
+    {
+     "claim": "ListingKit sells Fair Housing-scanned listing kits at $29/month or $199 lifetime",
+     "url": "https://www.listingkit.app/about",
+     "verified": true
+    },
+    {
+     "claim": "Fair Housing Guardian Chrome extension charges after a 7-day free trial (price unknown)",
+     "url": "https://socket.dev/chrome/package/pogdmneocpofnpaplhabcfedbaecjmoe",
+     "verified": false
+    },
+    {
+     "claim": "FairSentry says it is used by top property managers for automated Fair Housing listing compliance (price unknown)",
+     "url": "https://fairsentry.com/",
+     "verified": false
+    }
+   ],
+   "cost_usd": 0.8145,
+   "web_searches": 8
+  }
+ },
+ {
+  "name": "Policy and procedure manual builder for small nonprofits",
+  "pain": "Volunteer finance directors and EDs must write or update accounting procedure, WFH and HR manuals from inadequate templates. They are overwhelmed by documentation options.",
+  "who_pays": "Small nonprofit EDs, volunteer finance directors, boards preparing for audits or grants",
+  "evidence_ids": [
+   80,
+   82,
+   85
+  ],
+  "pay_signal": "Weak to moderate. Three separate posts show the same need. [85] used a template that the board judged inaccurate. [82] is weighing tools, and [80] is a growing national charity. These posts show no explicit pay statement.",
+  "product_idea": "Guided web wizard: an org-profile interview (size, funding types, staff count, remote or in-office). Claude API drafts a tailored accounting procedures, WFH and internal-controls manual with audit-friendly sections. Users can paste screen-recording transcripts to turn them into step-by-step procedures. Export to Google Docs. Sold as a one-time purchase plus an annual update. Assets: Claude API, Google Sheets/Docs export, Canva for formatted covers.",
+  "build_weeks": 3,
+  "fit_for_us": 4,
+  "known_competitors": "Scribe, Tango, Trainual (generic SOP tools), state nonprofit association template packs, BoardSource resources",
+  "check_next": "Price-check nonprofit association template packs. Validate with a $29 landing page targeting 'nonprofit accounting policies and procedures manual template' search terms.",
+  "crowding": {
+   "verdict": "unclear",
+   "reason": "Paid static nonprofit finance-manual templates are common ($14-$495) and an adjacent AI handbook generator sells at $97 one-time, but the search limit stopped me from checking for an existing AI nonprofit finance/internal-controls manual wizard.",
+   "competitors": [
+    {
+     "name": "Bizmanualz Nonprofit Policies Procedures Manual",
+     "price": "$99.99 (Accounting or Finance P&P manual $495 each)",
+     "url": "https://www.bizmanualz.com/non-profit/not-for-profit/nonprofit-policies-procedures-manual",
+     "verified": true
+    },
+    {
+     "name": "NonprofitOrgCPA Nonprofit Policies and Procedures Template",
+     "price": "$197 (Accounting P&P Manual $97)",
+     "url": "https://nonprofitorgcpa.com/product-details/product/nonprofit-policies-and-procedures",
+     "verified": true
+    },
+    {
+     "name": "Etsy: Nonprofit Financial Policies Toolkit (procedures and internal controls templates)",
+     "price": "$49",
+     "url": "https://www.etsy.com/market/nonprofit_policy_template",
+     "verified": true
+    },
+    {
+     "name": "Handbook Generator (AI employee handbook, HR only)",
+     "price": "$97 one-time",
+     "url": "https://www.handbookgenerator.com/",
+     "verified": true
+    },
+    {
+     "name": "LISC Sample Policies and Procedures Manual for Nonprofits",
+     "price": "free",
+     "url": "https://www.lisc.org/media/filer_public/bf/71/bf7195f1-7790-4e9e-a37e-8072e660686b/051419_sample_policies_procedures_manual_effective_board_training.pdf",
+     "verified": true
+    },
+    {
+     "name": "Scribe (generic SOP capture)",
+     "price": "Free tier; Pro Personal $25/seat, Pro Team $13/seat with 5-seat minimum (third-party pricing page)",
+     "url": "https://www.supered.io/blog/scribe-pricing/",
+     "verified": true
+    },
+    {
+     "name": "Tango (generic SOP capture)",
+     "price": "Free; Pro from $22/month",
+     "url": "https://www.softwareadvice.com/product/519306-Tango/",
+     "verified": true
+    },
+    {
+     "name": "Trainual (generic SOP/training)",
+     "price": "from $119/month (other sources say $249/month)",
+     "url": "https://www.trustradius.com/products/trainual/pricing",
+     "verified": true
+    }
+   ],
+   "pay_proof": [
+    {
+     "claim": "Bizmanualz sells nonprofit P&P manual at $99.99 and accounting/finance P&P manuals at $495 each",
+     "url": "https://www.bizmanualz.com/non-profit",
+     "verified": true
+    },
+    {
+     "claim": "NonprofitOrgCPA sells nonprofit P&P template at $197 and accounting P&P manual at $97",
+     "url": "https://nonprofitorgcpa.com/product-details/product/accounting_policies_procedures",
+     "verified": true
+    },
+    {
+     "claim": "Etsy lists paid nonprofit policy/procedure manual templates ($13.99) and a financial policies and internal controls toolkit ($49)",
+     "url": "https://www.etsy.com/market/nonprofit_policy_template",
+     "verified": true
+    },
+    {
+     "claim": "AI questionnaire-to-handbook product sells at $97 one-time and cites HR consultants charging $500-$2,000",
+     "url": "https://www.handbookgenerator.com/",
+     "verified": true
+    },
+    {
+     "claim": "Actual unit sales or revenue for nonprofit manual templates or tools",
+     "url": "unknown",
+     "verified": false
+    }
+   ],
+   "cost_usd": 0.6628,
+   "web_searches": 8
+  }
+ },
+ {
+  "name": "HVAC model-number manual and error-code finder",
+  "pain": "Techs arrive at units without manuals. Service manuals are hard to find or locked behind manufacturer portals, and thermostat and equipment manuals are hunted down in forums.",
+  "who_pays": "Residential HVAC service techs and small shop owners",
+  "evidence_ids": [
+   0,
+   3,
+   5,
+   7,
+   8,
+   30
+  ],
+  "pay_signal": "Weak. The complaint repeats across [0], [3], [5] and [8], and [5] notes the manuals are locked behind a portal. No explicit willingness to pay appears, and copyright limits hosting manuals.",
+  "product_idea": "Mobile-friendly web app: enter or photograph the data plate. The app links to the official manufacturer document locations (no rehosting) and gives a Claude-generated quick-reference for error codes and sequence of operation. It cites the source page and has a crowdsourced tips layer. Assets: Claude API, SEO content tooling for long-tail '[model] error code' pages, YouTube Data API to surface relevant repair videos.",
+  "build_weeks": 4,
+  "fit_for_us": 3,
+  "known_competitors": "ManualsLib, HVAC Buddy app, BlueOn/MeasureQuick, manufacturer apps (Carrier, Trane portals)",
+  "check_next": "Check HVAC Buddy pricing and reviews for gaps. Confirm the legal approach of linking only and summarizing. Measure search volume for model-specific error-code queries.",
+  "crowding": {
+   "verdict": "crowded",
+   "reason": "Bluon is a dominant free nameplate-scan/manual/AI option with 35M+ models, and ACLogics, FIELDMODE and HVAC Field Pro already sell AI error-code tools at $14.99-$19.99/mo, with ACLogics already running brand error-code SEO pages.",
+   "competitors": [
+    {
+     "name": "Bluon HVAC",
+     "price": "Free app; Bluon for Business custom pricing",
+     "url": "https://www.bluon.com/pricing",
+     "verified": true
+    },
+    {
+     "name": "ACLogics",
+     "price": "Free; Pro $14.99/month; Team pricing varies by page",
+     "url": "https://www.aclogics.com/",
+     "verified": true
+    },
+    {
+     "name": "FIELDMODE",
+     "price": "Pro $14.99/month; Team $9.99/tech/month (min 5)",
+     "url": "https://fieldmode.app/",
+     "verified": true
+    },
+    {
+     "name": "HVAC Field Pro",
+     "price": "From $19.99/month",
+     "url": "https://hvacfieldpro.com/",
+     "verified": true
+    },
+    {
+     "name": "HVAC/R AI Pro",
+     "price": "Free with in-app purchases (IAP price unknown)",
+     "url": "https://apps.apple.com/us/app/hvac-r-ai-pro/id6747730624",
+     "verified": true
+    },
+    {
+     "name": "HVAC Buddy (adjacent: charging calculator, not manuals)",
+     "price": "$9.99 one-time",
+     "url": "https://www.joblogic.com/blog/best-hvac-apps/",
+     "verified": true
+    }
+   ],
+   "pay_proof": [
+    {
+     "claim": "Bluon sells custom-priced Bluon for Business subscriptions; most contractors opt for annual with monthly payments",
+     "url": "https://www.bluon.com/pricing",
+     "verified": true
+    },
+    {
+     "claim": "ACLogics charges $14.99/month for a solo-tech Pro plan of its AI diagnostic and nameplate-scan app",
+     "url": "https://www.aclogics.com/",
+     "verified": true
+    },
+    {
+     "claim": "FIELDMODE charges $14.99/month for Pro, which includes error-code lookup for 15+ manufacturers",
+     "url": "https://fieldmode.app/",
+     "verified": true
+    },
+    {
+     "claim": "HVAC Field Pro sells AI troubleshooting starting at $19.99/month",
+     "url": "https://hvacfieldpro.com/",
+     "verified": true
+    },
+    {
+     "claim": "HVAC Buddy sells for $9.99 one-time, showing techs buy paid field apps",
+     "url": "https://hvactraining101.com/gear/hvac-apps/",
+     "verified": true
+    }
+   ],
+   "cost_usd": 0.693,
+   "web_searches": 8
+  }
+ },
+ {
+  "name": "2026 NEC load calculation templates by state",
+  "pain": "Supervisors and master electricians build their own spreadsheets for common load calculations with each code cycle. HVAC contractors meanwhile face customers waving free Manual J app results.",
+  "who_pays": "Licensed supervisors and masters, small electrical contractors, exam candidates",
+  "evidence_ids": [
+   10,
+   2,
+   4
+  ],
+  "pay_signal": "Weak. In [10] a newly licensed supervisor plans to build the sheets himself and asks others to share theirs. [2] and [4] show load-calc disputes, not purchase intent.",
+  "product_idea": "A Google Sheets template pack (dwelling optional method, service sizing, EV and heat pump additions) updated for the 2026 NEC, with Oregon and Washington amendments noted. A Claude-powered 'explain this calc' sidebar prints a customer-friendly summary. Assets: Google Sheets API, Claude API, HyperFrames for walkthrough videos and SEO content.",
+  "build_weeks": 2,
+  "fit_for_us": 3,
+  "known_competitors": "Mike Holt materials, Southwire and ElectroCalc apps, free online calculators, Etsy and Gumroad spreadsheets",
+  "check_next": "Search Gumroad and Etsy for NEC load calc sheets and their sales counts. Ask in r/electricians whether 2026 state amendments create a buying moment.",
+  "crowding": {
+   "verdict": "crowded",
+   "reason": "Multiple free NEC Article 220 calculators (one already claiming 2026 NEC), a free Excel worksheet, $9.99 apps, $13 Etsy sheets and $195 desktop software already cover dwelling standard/optional service sizing; pay proof is low-price listings only.",
+   "competitors": [
+    {
+     "name": "NEC Load Calculator (iOS, NEC LOAD PRO in-app purchase)",
+     "price": "Free; NEC LOAD PRO in-app purchase $9.99",
+     "url": "https://apps.apple.com/us/app/nec-load-calculator/id6785889421",
+     "verified": true
+    },
+    {
+     "name": "Load Calc NEC 220 Service (Android, claims NEC 2023 & 2026)",
+     "price": "Free",
+     "url": "https://www.appbrain.com/app/load-calculator-nec-220/com.electools.electrical_load_calculator",
+     "verified": true
+    },
+    {
+     "name": "Field PM Free Electrical Load Calculation Worksheet (Excel)",
+     "price": "Free",
+     "url": "https://www.field-pm.com/templates/electrical-load-calculation-worksheet",
+     "verified": true
+    },
+    {
+     "name": "Durand Associates Service 2023 (single-family service calculation software)",
+     "price": "$195",
+     "url": "https://www.durandassociates.com/service/service.html",
+     "verified": true
+    },
+    {
+     "name": "Etsy NEC Article 220 residential load calculation spreadsheets",
+     "price": "$13.00 (one listing; Bing shows $12.99 for another)",
+     "url": "https://www.etsy.com/market/electrical_load_calculation_spreadsheet",
+     "verified": true
+    },
+    {
+     "name": "3D-Labs NEC Article 220 Electrical Load Calculation Excel Template",
+     "price": "unknown",
+     "url": "https://3d-labs.com/product/electrical-load-calculation/",
+     "verified": false
+    },
+    {
+     "name": "ElectricianCalc Load Calculation",
+     "price": "Free",
+     "url": "https://electriciancalc.com/load-calculation",
+     "verified": true
+    },
+    {
+     "name": "Workiz Online Electrical Load Calculator",
+     "price": "Free (assumed; free-tool page, price not stated in snippet)",
+     "url": "https://www.workiz.com/tools/electrical-load/",
+     "verified": false
+    },
+    {
+     "name": "ElectroCalc (ArabVolt)",
+     "price": "unknown",
+     "url": "https://electrocalc.arabvolt.com/",
+     "verified": false
+    }
+   ],
+   "pay_proof": [
+    {
+     "claim": "iOS NEC Load Calculator sells a $9.99 'NEC LOAD PRO' in-app purchase (price listed, sales volume unknown)",
+     "url": "https://apps.apple.com/us/app/nec-load-calculator/id6785889421",
+     "verified": true
+    },
+    {
+     "claim": "Durand Associates sells single-family service calculation software for $195",
+     "url": "https://www.durandassociates.com/service/service.html",
+     "verified": true
+    },
+    {
+     "claim": "Etsy residential NEC Article 220 load calculation spreadsheet sells for $13.00 as a digital download (listing shows 1 review)",
+     "url": "https://www.etsy.com/market/electrical_load_calculation_spreadsheet",
+     "verified": true
+    },
+    {
+     "claim": "Bing Shopping shows 62 results for residential electrical load calculation spreadsheets, including an Etsy listing at $12.99",
+     "url": "https://www.bing.com/shop?q=Residential+Electrical+Load+Calculation+Spreadsheet&FORM=QSRE4",
+     "verified": true
+    }
+   ],
+   "cost_usd": 0.4473,
+   "web_searches": 8
+  }
+ },
+ {
+  "name": "Commercial insurance remarketing quote comparison builder",
+  "pain": "Agents rebuild side-by-side quote comparison spreadsheets by hand during commercial renewal and remarketing season.",
+  "who_pays": "Independent commercial P&C agents and account managers",
+  "evidence_ids": [
+   79,
+   76
+  ],
+  "pay_signal": "Weak. Two title-only posts ask about comparison and disbursement spreadsheets, which implies manual work despite paid agency management systems. No explicit pay statement.",
+  "product_idea": "Upload carrier quote PDFs; Claude API extracts limits, deductibles, exclusions and premiums into a normalized comparison table. The tool exports a branded client proposal to Google Sheets or PDF. Assets: Claude API, Google Sheets API, Canva connector for proposal design.",
+  "build_weeks": 4,
+  "fit_for_us": 3,
+  "known_competitors": "Zywave, Indio (Applied), Novidea, Applied Epic proposal features, Bold Penguin",
+  "check_next": "Read the full threads behind [79] and [76], since only the titles are available. Interview 5 independent agents on how they build proposals today.",
+  "crowding": {
+   "verdict": "crowded",
+   "reason": "At least five AI tools (AI National, CopyCat, Polly, InsurGrid, Patra) already turn carrier quote PDFs into side-by-side comparisons or branded proposals, two at $20-$39/mo self-serve, and Zywave and Applied cover the high end.",
+   "competitors": [
+    {
+     "name": "AI National",
+     "price": "$20/month (unlimited comparisons, PDF export)",
+     "url": "https://ainational.ai/",
+     "verified": true
+    },
+    {
+     "name": "CopyCat",
+     "price": "unknown",
+     "url": "https://www.runcopycat.com/",
+     "verified": false
+    },
+    {
+     "name": "Polly",
+     "price": "$39/mo",
+     "url": "https://meetpolly.io/commercial-insurance-proposal-software/",
+     "verified": true
+    },
+    {
+     "name": "Strong Proposals",
+     "price": "$39/mo (stated on Polly's comparison page, not seen on vendor site)",
+     "url": "https://strongproposals.com/",
+     "verified": false
+    },
+    {
+     "name": "InsurGrid",
+     "price": "unknown",
+     "url": "https://coverager.com/insurgrid-launches-ai-powered-policy-comparison-and-data-extraction-for-insurance-agents/",
+     "verified": false
+    },
+    {
+     "name": "Patra Quote Compare AI",
+     "price": "unknown",
+     "url": "https://www.patracorp.com/insurance-outsourcing-services/insurance-quote-comparison/",
+     "verified": false
+    },
+    {
+     "name": "Outmarket AI Proposal Builder",
+     "price": "unknown",
+     "url": "https://outmarket.ai/blog/how-to-create-insurance-proposals-with-ai",
+     "verified": false
+    },
+    {
+     "name": "Zywave CPQ Commercial",
+     "price": "unknown",
+     "url": "https://www.zywave.com/commercial-lines/sales-cloud/cpq-commercial/",
+     "verified": false
+    },
+    {
+     "name": "Applied Epic Quotes Commercial Lines",
+     "price": "unknown",
+     "url": "https://www1.appliedsystems.com/en-us/solutions/for-agents/comparative-rating/commercial-lines/",
+     "verified": false
+    }
+   ],
+   "pay_proof": [
+    {
+     "claim": "AI National charges $20/month for unlimited AI quote comparisons with PDF export",
+     "url": "https://ainational.ai/",
+     "verified": true
+    },
+    {
+     "claim": "Polly prices its AI commercial proposal software at $39/mo",
+     "url": "https://meetpolly.io/commercial-insurance-proposal-software/",
+     "verified": true
+    },
+    {
+     "claim": "Insurance proposal software ranges from $39/mo standalone (Polly, Strong Proposals) to enterprise contact-sales pricing",
+     "url": "https://meetpolly.io/best-insurance-proposal-software/",
+     "verified": true
+    },
+    {
+     "claim": "QuoteSweep commercial quoting publishes paid tiers: Solo $49/mo, Pro $99/mo, Business $299/mo",
+     "url": "https://www.quotesweep.com/blog/commercial-insurance-quoting-software-buyers-guide-2026",
+     "verified": true
+    },
+    {
+     "claim": "Capterra lists Indio at a $500 starting price with a 4.5 rating from 230 reviews",
+     "url": "https://www.capterra.com/compare/70671-178007/Applied-Epic-vs-Indio",
+     "verified": true
+    },
+    {
+     "claim": "AI tools for independent agencies range from $50/month policy comparison add-ons to $1,200+/month platforms",
+     "url": "https://insuranceaitools.com/guides/insurtech-ai-pricing-guide/",
+     "verified": true
+    }
+   ],
+   "cost_usd": 0.547,
+   "web_searches": 8
+  }
+ },
+ {
+  "name": "Labor rate and price book calculator for new electrical contractors",
+  "pain": "New contractors don't know how to set labor rate, overhead factor and margin. They want quoting help, and FSM software add-ons pile up costs.",
+  "who_pays": "Newly licensed electrical and plumbing contractors running small shops",
+  "evidence_ids": [
+   98,
+   94,
+   9,
+   89
+  ],
+  "pay_signal": "Weak to moderate. [98] explicitly asks for help calculating rate, overhead and margin. [89] complains that paid FSM add-ons keep stacking up. [9] reports that tradespeople save time drafting quotes with AI.",
+  "product_idea": "Web tool: enter overhead costs, wages, billable hours and target profit to get a burdened labor rate and a flat-rate price book for common residential tasks. Claude drafts the quote text and customer messages, and everything exports to Google Sheets or Jobber import. Assets: Claude API, Google Sheets API, HyperFrames for explainer content.",
+  "build_weeks": 3,
+  "fit_for_us": 3,
+  "known_competitors": "Profit Rhino, The New Flat Rate, Jobber/Housecall Pro price books, Gumroad overhead calculators",
+  "check_next": "Check Profit Rhino pricing (likely high) to see if a $15–30/month gap exists. Search YouTube estimating channels' comments for repeated 'how do I price' questions.",
+  "crowding": {
+   "verdict": "crowded",
+   "reason": "Labor-rate calculators are free (Housecall Pro, Arrivy and others), and electrical price books with built-in rate calculators sell at every level from $15.99 Etsy sheets to $99/tech/month software, so only the Claude quote-writing part is new.",
+   "competitors": [
+    {
+     "name": "Housecall Pro free Electrical Labor Rate Calculator",
+     "price": "free",
+     "url": "https://www.housecallpro.com/electrical/templates-calculators/electrical-labor-rate-calculator/",
+     "verified": true
+    },
+    {
+     "name": "Arrivy free electrical cost calculator",
+     "price": "free",
+     "url": "https://www.arrivy.com/free-tools/service-cost-calculator/electrical/",
+     "verified": true
+    },
+    {
+     "name": "MyPricingCalculator electrician pricing calculator",
+     "price": "free",
+     "url": "https://mypricingcalculator.com/electrician-pricing-calculator/",
+     "verified": true
+    },
+    {
+     "name": "The New Flat Rate",
+     "price": "from $99/month per tech",
+     "url": "https://thenewflatrate.com/",
+     "verified": true
+    },
+    {
+     "name": "Profit Rhino (standalone)",
+     "price": "contact for pricing",
+     "url": "https://mainstreetpicks.com/hvac/pricebook-and-flat-rate-software/profit-rhino",
+     "verified": true
+    },
+    {
+     "name": "Housecall Pro Price Book (powered by Profit Rhino)",
+     "price": "$199/month add-on (some third-party sites say $149)",
+     "url": "https://help.housecallpro.com/en/articles/8754493-profit-rhino-with-housecall-pro-a-complete-guide",
+     "verified": true
+    },
+    {
+     "name": "Tradesman Office Electrician Flat Rate Price Book",
+     "price": "$99 one-time download",
+     "url": "https://tradesmanoffice.co/products/electrician-flat-rate-price-book",
+     "verified": true
+    },
+    {
+     "name": "Etsy Electrician Flat Rate Price Book and Pricing Calculator (Excel/Google Sheets)",
+     "price": "$15.99 (sale, from $19.99)",
+     "url": "https://www.etsy.com/market/electrician_price_book_excel",
+     "verified": true
+    },
+    {
+     "name": "Aptora Electrical Flat Rate Pricing Book",
+     "price": "$1,800",
+     "url": "https://www.aptora.com/product/electrical-flat-rate-pricing",
+     "verified": true
+    },
+    {
+     "name": "QuoteIQ",
+     "price": "from $29.99/month",
+     "url": "https://myquoteiq.com/best-flat-rate-pricing-software-electrical-contractors-2026/",
+     "verified": true
+    }
+   ],
+   "pay_proof": [
+    {
+     "claim": "Housecall Pro charges $199/month for its Profit Rhino price-book add-on for electrical and plumbing pros",
+     "url": "https://help.housecallpro.com/en/articles/8754493-profit-rhino-with-housecall-pro-a-complete-guide",
+     "verified": true
+    },
+    {
+     "claim": "The New Flat Rate charges from $99/month per tech for menu pricing",
+     "url": "https://thenewflatrate.com/",
+     "verified": true
+    },
+    {
+     "claim": "Etsy plumbing flat-rate price book spreadsheet sells at $20.25 with 158 shown next to the listing (read as review count)",
+     "url": "https://www.etsy.com/market/flat_rate_plumbing",
+     "verified": true
+    },
+    {
+     "claim": "Etsy commercial electrical flat rate price book (373 services) sells for $149 as a digital download",
+     "url": "https://www.etsy.com/market/electrical_pricing",
+     "verified": true
+    },
+    {
+     "claim": "Tradesman Office sells a 309-service electrician price book calibrated to your hourly rate for $99",
+     "url": "https://tradesmanoffice.co/products/electrician-flat-rate-price-book",
+     "verified": true
+    },
+    {
+     "claim": "Add-on costs are a recurring complaint in Housecall Pro reviews, with the Profit Rhino price book at $199/month the biggest",
+     "url": "https://axisconsulting.io/housecall-pro-pricing/",
+     "verified": true
+    }
+   ],
+   "cost_usd": 0.7102,
+   "web_searches": 6
+  }
+ },
+ {
+  "name": "Payer-specific diagnosis and denial lookup for outpatient coders",
+  "pain": "Primary care coders without a paid encoder manually research codes for 30–50 diagnosis charts. Billers struggle to learn which diagnosis codes a payer accepts for a given CPT code and to work varied denials.",
+  "who_pays": "Outpatient coders at small practices, independent billers, dietitian and therapy practices",
+  "evidence_ids": [
+   54,
+   61,
+   56
+  ],
+  "pay_signal": "Weak to moderate. [54] says the employer has no encoder, so a cheap self-serve option fits. [61] and [56] describe repeated denial-research pain. Coders already pay AAPC fees.",
+  "product_idea": "Web tool: describe a CPT and payer denial with no PHI entered. Claude API explains likely causes, suggests compatible diagnosis code pairings with cited official guidance, and drafts an appeal letter. A community-sourced payer-quirk log is stored in Sheets. Assets: Claude API, Google Sheets API.",
+  "build_weeks": 4,
+  "fit_for_us": 2,
+  "known_competitors": "AAPC Codify, Find-A-Code, Optum EncoderPro, autonomous coding vendors",
+  "check_next": "Confirm a no-PHI design is workable. Price Codify and Find-A-Code entry tiers. Ask in r/MedicalCoding whether solo coders would pay $10–20/month.",
+  "crowding": {
+   "verdict": "crowded",
+   "reason": "Codify (with Codie AI and an LCD CPT-to-diagnosis lookup), Find-A-Code, EncoderPro and SuperCoder already sell self-serve CPT-diagnosis lookup at $29-$45/month or $300-$1,000/year, and many free or $20-per-appeal AI denial and appeal tools exist, including one for dietitians.",
+   "competitors": [
+    {
+     "name": "AAPC Codify Pro Fee Coder (LCD Lookup, CPT-ICD crosswalk)",
+     "price": "$44 or $516 subscription options listed (billing period unclear)",
+     "url": "https://www.aapc.com/codify/pro-fee-coder",
+     "verified": true
+    },
+    {
+     "name": "Codie AI Coding Assistant (AAPC, inside Pro Fee Coder)",
+     "price": "$60/year add-on",
+     "url": "https://www.aapc.com/codify/codie.aspx",
+     "verified": true
+    },
+    {
+     "name": "Find-A-Code",
+     "price": "from $45/month (per SelectHub)",
+     "url": "https://www.selecthub.com/p/medical-coding-software/find-a-code/",
+     "verified": true
+    },
+    {
+     "name": "Optum EncoderPro.com",
+     "price": "$299.95 / $549.95 / $999.95 per year",
+     "url": "https://www.optumcoding.com/product/19241/",
+     "verified": true
+    },
+    {
+     "name": "SuperCoder",
+     "price": "from $29/month (per Crozdesk; listing may not be the same product)",
+     "url": "https://crozdesk.com/software/supercode/pricing",
+     "verified": false
+    },
+    {
+     "name": "Muni Appeals",
+     "price": "3 free, then $20 per appeal",
+     "url": "https://muni.health/blog/best-ai-appeal-generator-2026",
+     "verified": true
+    },
+    {
+     "name": "River AI Appeal Letter Generator / EOB Denial Decoder",
+     "price": "free",
+     "url": "https://rivereditor.com/tools/denial-eob-decoder",
+     "verified": true
+    },
+    {
+     "name": "PayerReady Denial Code Lookup",
+     "price": "free",
+     "url": "https://payerready.com/denial-codes",
+     "verified": true
+    },
+    {
+     "name": "Duo Practice denial checker for dietitians",
+     "price": "free",
+     "url": "https://duopractice.com/tools/denial-checker/",
+     "verified": true
+    },
+    {
+     "name": "Careniva CPT-ICD medical necessity crosswalk",
+     "price": "free",
+     "url": "https://careniva.com/crosswalk/84630",
+     "verified": true
+    }
+   ],
+   "pay_proof": [
+    {
+     "claim": "AAPC sells Codie, an AI coding assistant, for $60 per year",
+     "url": "https://www.aapc.com/codify/codie.aspx",
+     "verified": true
+    },
+    {
+     "claim": "Codify is rated 4.6 from 13 reviews on GetApp with paid subscription tiers",
+     "url": "https://www.getapp.com/healthcare-pharmaceuticals-software/a/codify/",
+     "verified": true
+    },
+    {
+     "claim": "Optum EncoderPro.com Professional list price is $549.95 per user",
+     "url": "https://www.optumcoding.com/product/19241/",
+     "verified": true
+    },
+    {
+     "claim": "Find-A-Code pricing starts at $45 per month",
+     "url": "https://www.selecthub.com/p/medical-coding-software/find-a-code/",
+     "verified": true
+    },
+    {
+     "claim": "Muni charges $20 per AI-drafted appeal after 3 free credits",
+     "url": "https://muni.health/blog/best-ai-appeal-generator-2026",
+     "verified": true
+    },
+    {
+     "claim": "MediCodeAI charges $1,499/month for small-practice AI coding",
+     "url": "https://aimedicalcoding.net/",
+     "verified": true
+    }
+   ],
+   "cost_usd": 0.5582,
+   "web_searches": 8
+  }
+ },
+ {
+  "name": "Voice-to-daily-report bot for construction supers",
+  "pain": "Supers resist written daily paperwork, and the civils industry feels buried in documentation. Foremen are too busy with paperwork to supervise.",
+  "who_pays": "Small GCs and subcontractors whose supers must file daily logs",
+  "evidence_ids": [
+   28,
+   31,
+   13
+  ],
+  "pay_signal": "Weak. The complaints repeat across [28], [31] and [13], but there is no explicit pay statement. The incumbents in this space are paid tools.",
+  "product_idea": "Telegram bot: the super sends voice notes and photos during the day. Claude API turns them into a structured daily report (manpower, weather, delays, deliveries, safety) and appends it to a Google Sheet or PDF emailed to the PM. Assets: Telegram bot, Claude API, Google Sheets API.",
+  "build_weeks": 2,
+  "fit_for_us": 3,
+  "known_competitors": "Raken, Procore, Fieldwire, CompanyCam, SafetyCulture",
+  "check_next": "Check Raken's pricing floor and small-sub reviews. Test whether US crews will use Telegram or need SMS or WhatsApp instead.",
+  "crowding": {
+   "verdict": "crowded",
+   "reason": "8+ dedicated voice/photo-to-AI-daily-report tools (incl. a free app and WhatsApp-bot versions) plus Raken/Fieldwire/CompanyCam already serve small GCs and subs at $0–$63 per user/month.",
+   "competitors": [
+    {
+     "name": "Daily Report: Construction AI (Weigh Anchor LLC)",
+     "price": "Free",
+     "url": "https://apps.apple.com/us/app/daily-report-construction-ai/id6777528347",
+     "verified": true
+    },
+    {
+     "name": "VoiceLogPro",
+     "price": "$49/month flat for whole crew",
+     "url": "https://voicelogpro.com/?amp=&amp=&amp=",
+     "verified": true
+    },
+    {
+     "name": "ConstruLog",
+     "price": "Free plan; Solo $29/mo, Pro $59/mo, Teams $99/mo",
+     "url": "https://construlog.com/construction-daily-report-app",
+     "verified": true
+    },
+    {
+     "name": "SiteLog AI",
+     "price": "$24.99 per seat (page also says $29.99/month)",
+     "url": "https://sitelog-ai.com/",
+     "verified": true
+    },
+    {
+     "name": "BuildLog AI",
+     "price": "Free plan; Pro $24/month billed annually",
+     "url": "https://buildlogai.com/",
+     "verified": true
+    },
+    {
+     "name": "RAMLA (WhatsApp-based)",
+     "price": "unknown",
+     "url": "https://ramla.ai/",
+     "verified": false
+    },
+    {
+     "name": "Valoon (WhatsApp voice-to-report)",
+     "price": "unknown",
+     "url": "https://valoon.chat/en/funktionen/speech-to-report/",
+     "verified": false
+    },
+    {
+     "name": "Sitemate",
+     "price": "unknown",
+     "url": "https://sitemate.com/production/construction-daily-reporting-app-software/",
+     "verified": false
+    },
+    {
+     "name": "Benetics AI",
+     "price": "unknown (free trial)",
+     "url": "https://www.benetics.ai/en",
+     "verified": false
+    },
+    {
+     "name": "SiteVoice.ai",
+     "price": "unknown",
+     "url": "https://sitevoice.ai/",
+     "verified": false
+    },
+    {
+     "name": "Raken",
+     "price": "$23/user/mo Basic, $59/user/mo Performance, annual, 3-user minimum (third-party)",
+     "url": "https://www.workyard.com/compare/raken-review",
+     "verified": true
+    },
+    {
+     "name": "Procore",
+     "price": "Not published; est. ~$15K–$30K/yr for small GCs (third-party)",
+     "url": "https://www.getonecrew.com/post/procore-pricing",
+     "verified": true
+    },
+    {
+     "name": "Fieldwire",
+     "price": "Free Basic; Pro $39/user/mo annual (third-party)",
+     "url": "https://www.erpresearch.com/erp-add-ons/construction/fieldwire/pricing",
+     "verified": true
+    },
+    {
+     "name": "CompanyCam",
+     "price": "From $63/user/month (Capterra)",
+     "url": "https://www.capterra.com/p/171143/CompanyCam/pricing/",
+     "verified": true
+    }
+   ],
+   "pay_proof": [
+    {
+     "claim": "Raken has 250 Capterra reviews, 94% positive, for a paid daily-reporting tool",
+     "url": "https://www.capterra.com/p/153591/RAKEN/",
+     "verified": true
+    },
+    {
+     "claim": "A Raken reviewer weighed price vs value and chose Raken anyway",
+     "url": "https://www.capterra.com/p/153591/RAKEN/reviews/?page=2",
+     "verified": true
+    },
+    {
+     "claim": "Third-party reports say Raken users pay roughly $15–$60 per user per month, billed annually",
+     "url": "https://www.dailysitelog.com/blog/raken-pricing",
+     "verified": true
+    },
+    {
+     "claim": "Small GCs reportedly pay about $15K–$30K a year for Procore",
+     "url": "https://www.getonecrew.com/post/procore-pricing",
+     "verified": true
+    },
+    {
+     "claim": "VoiceLogPro charges $49/month for voice-note-to-PDF daily reports aimed at subcontractors",
+     "url": "https://voicelogpro.com/?amp=&amp=&amp=",
+     "verified": true
+    },
+    {
+     "claim": "ConstruLog sells AI voice/photo daily logs on paid tiers of $29–$99/month",
+     "url": "https://construlog.com/construction-daily-report-app",
+     "verified": true
+    }
+   ],
+   "cost_usd": 0.7578,
+   "web_searches": 8
+  }
+ }
+]

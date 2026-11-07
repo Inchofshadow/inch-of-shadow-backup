@@ -1,0 +1,187 @@
+# Review package: 23d68e3..HEAD
+
+## Commits
+d1dfa33 feat(stats): targets file and ladder maths for the score board
+
+## Files changed
+ plans/targets.json    | 19 ++++++++++++
+ stats/targets.py      | 86 +++++++++++++++++++++++++++++++++++++++++++++++++++
+ tests/test_targets.py | 52 +++++++++++++++++++++++++++++++
+ 3 files changed, 157 insertions(+)
+
+## Diff
+diff --git a/plans/targets.json b/plans/targets.json
+new file mode 100644
+index 0000000..1236c49
+--- /dev/null
++++ b/plans/targets.json
+@@ -0,0 +1,19 @@
++{
++  "period": {"start": "2026-11-01", "end": "2026-12-31", "approved_by": "Amir", "approved_on": "2026-11-01"},
++  "metrics": {
++    "ig_followers":          {"label": "IG followers", "unit": "followers", "kind": "ladder", "source": "snapshot:instagram.followers",
++                              "baseline": {"value": null, "date": null}, "rate_per_month": 30, "rungs": {}, "target": null,
++                              "rule": "six-month pre-pause average 29.4/month rounded to 30; baseline = first board reading on 2026-11-02, rungs = baseline + 30 and + 60"},
++    "ig_followback_pct":     {"label": "IG follow-back, new cohorts", "unit": "%", "kind": "floor", "source": "followback:since_may_pct",
++                              "baseline": {"value": 23, "date": "2026-10-10"}, "floor": 20,
++                              "rule": "mean of the May to Sep 2026 cohorts (23.2) minus 3, rounded down to 5"},
++    "ig_reach_30d":          {"label": "IG reach, 30 days", "unit": "accounts", "kind": "collecting", "source": "snapshot:instagram.reach_30d|manual:instagram_insights.reach_30d"},
++    "sc_followers":          {"label": "SoundCloud followers", "unit": "followers", "kind": "ladder", "source": "snapshot:soundcloud.followers",
++                              "baseline": {"value": 447, "date": "2026-10-31"}, "rungs": {"2026-11-30": 510, "2026-12-31": 600}, "target": 600,
++                              "rule": "SC-07 ladder, Amir confirmed 2026-09-01, unchanged"},
++    "spotify_monthly_active": {"label": "Spotify monthly active listeners", "unit": "listeners", "kind": "ladder", "source": "s4a:weeks.monthly_active",
++                              "baseline": {"value": 96, "date": "2026-10-30"}, "rungs": {"2026-11-30": 90, "2026-12-31": 110}, "target": 110,
++                              "rule": "Nov = 12-week mean 91.75 rounded to 90; Dec = best 4-week mean of the last six months, 109 (Oct 5 to 30), rounded to 110"},
++    "tiktok_followers":      {"label": "TikTok followers", "unit": "followers", "kind": "collecting", "source": "manual:tiktok.followers"}
++  }
++}
+diff --git a/stats/targets.py b/stats/targets.py
+new file mode 100644
+index 0000000..3a72d93
+--- /dev/null
++++ b/stats/targets.py
+@@ -0,0 +1,86 @@
++"""Score board targets: file loading and ladder maths (pure functions)."""
++from __future__ import annotations
++
++import json
++from datetime import date
++from pathlib import Path
++from typing import Optional, Tuple
++
++TARGETS_PATH = Path(__file__).parent.parent / "plans" / "targets.json"
++KINDS = {"ladder", "floor", "collecting"}
++
++
++def load_targets(path: Path = TARGETS_PATH) -> dict:
++    data = json.loads(Path(path).read_text(encoding="utf-8"))
++    if "period" not in data or "metrics" not in data:
++        raise ValueError("targets file needs 'period' and 'metrics'")
++    for key, m in data["metrics"].items():
++        if m.get("kind") not in KINDS:
++            raise ValueError("metric %s: kind must be one of %s" % (key, sorted(KINDS)))
++        if not m.get("label"):
++            raise ValueError("metric %s: missing label" % key)
++        need = {"ladder": ("baseline", "rungs", "target"), "floor": ("floor", "baseline")}.get(m["kind"], ())
++        for field in need:
++            if field not in m:
++                raise ValueError("metric %s: %s metric needs '%s'" % (key, m["kind"], field))
++    return data
++
++
++def _d(s: str) -> date:
++    return date.fromisoformat(s)
++
++
++def ladder_value(metric: dict, period: dict, on: date) -> Optional[float]:
++    if metric.get("kind") != "ladder":
++        return None
++    base = (metric.get("baseline") or {}).get("value")
++    if base is None:
++        return None
++    points = [(_d(period["start"]), float(base))]
++    points += sorted((_d(k), float(v)) for k, v in (metric.get("rungs") or {}).items())
++    if on <= points[0][0]:
++        return float(base)
++    if on >= points[-1][0]:
++        return points[-1][1]
++    for (d0, v0), (d1, v1) in zip(points, points[1:]):
++        if d0 <= on <= d1:
++            span = (d1 - d0).days
++            if span <= 0:
++                return v1
++            return v0 + (v1 - v0) * (on - d0).days / span
++    return points[-1][1]
++
++
++def light_for_ladder(value: Optional[float], ladder_today: Optional[float]) -> Tuple[str, str]:
++    if value is None or ladder_today is None:
++        return ("none", "collecting")
++    delta = int(round(value - ladder_today))
++    text = "%+d %s" % (delta, "past rung" if delta >= 0 else "to rung")
++    if ladder_today <= 0:
++        return ("green", text)
++    ratio = value / ladder_today
++    light = "green" if ratio >= 0.95 else "amber" if ratio >= 0.85 else "red"
++    return (light, text)
++
++
++def light_for_floor(value: Optional[float], floor: float) -> Tuple[str, str]:
++    if value is None:
++        return ("none", "collecting")
++    delta = int(round(value - floor))
++    text = "%+d vs floor" % delta
++    light = "green" if value >= floor else "amber" if value >= floor - 5 else "red"
++    return (light, text)
++
++
++def progress_pct(baseline: float, target: float, value: float) -> Optional[int]:
++    if target == baseline:
++        return None
++    pct = (value - baseline) / (target - baseline) * 100
++    return int(max(0, min(100, round(pct))))
++
++
++def current_rung(metric: dict, on: date) -> Optional[Tuple[str, float]]:
++    for k, v in sorted((metric.get("rungs") or {}).items()):
++        if _d(k) >= on:
++            return (k, v)
++    return None
+diff --git a/tests/test_targets.py b/tests/test_targets.py
+new file mode 100644
+index 0000000..81fda79
+--- /dev/null
++++ b/tests/test_targets.py
+@@ -0,0 +1,52 @@
++from datetime import date
++
++import pytest
++
++from stats.targets import load_targets, ladder_value, light_for_ladder, light_for_floor, progress_pct, current_rung
++
++SC = {"kind": "ladder", "baseline": {"value": 447, "date": "2026-10-31"}, "rungs": {"2026-11-30": 510, "2026-12-31": 600}, "target": 600}
++PERIOD = {"start": "2026-11-01", "end": "2026-12-31"}
++
++
++def test_ladder_is_linear_between_rungs_and_clamped():
++    assert ladder_value(SC, PERIOD, date(2026, 11, 1)) == 447
++    assert round(ladder_value(SC, PERIOD, date(2026, 11, 30))) == 510
++    assert round(ladder_value(SC, PERIOD, date(2026, 11, 15))) == 477        # 447 + 63 * 14/29 rounded
++    assert ladder_value(SC, PERIOD, date(2026, 10, 1)) == 447                 # before start: baseline
++    assert ladder_value(SC, PERIOD, date(2027, 2, 1)) == 600                  # after end: last rung
++    assert ladder_value({"kind": "ladder", "baseline": {"value": None, "date": None}, "rungs": {}, "target": None}, PERIOD, date(2026, 11, 2)) is None
++
++
++def test_lights_follow_the_95_85_bands():
++    assert light_for_ladder(510, 510)[0] == "green"
++    assert light_for_ladder(485, 510)[0] == "green"       # 95.1%
++    assert light_for_ladder(440, 510)[0] == "amber"       # 86%
++    assert light_for_ladder(400, 510)[0] == "red"
++    assert light_for_ladder(None, 510) == ("none", "collecting")
++    assert light_for_ladder(522, 510)[1] == "+12 past rung"
++    assert light_for_ladder(501, 510)[1] == "-9 to rung"
++
++
++def test_floor_lights():
++    assert light_for_floor(23, 20)[0] == "green"
++    assert light_for_floor(17, 20)[0] == "amber"
++    assert light_for_floor(12, 20)[0] == "red"
++    assert light_for_floor(None, 20)[0] == "none"
++
++
++def test_progress_and_current_rung():
++    assert progress_pct(447, 600, 510) == 41
++    assert progress_pct(447, 600, 700) == 100 and progress_pct(447, 600, 400) == 0
++    assert progress_pct(96, 96, 100) is None
++    assert current_rung(SC, date(2026, 11, 15)) == ("2026-11-30", 510)
++    assert current_rung(SC, date(2026, 12, 15)) == ("2026-12-31", 600)
++    assert current_rung(SC, date(2027, 1, 5)) is None
++
++
++def test_targets_file_loads_and_validates(tmp_path):
++    t = load_targets()
++    assert set(t["metrics"]) == {"ig_followers", "ig_followback_pct", "ig_reach_30d", "sc_followers", "spotify_monthly_active", "tiktok_followers"}
++    bad = tmp_path / "t.json"
++    bad.write_text('{"period": {"start": "2026-11-01", "end": "2026-12-31"}, "metrics": {"x": {"kind": "ladder"}}}')
++    with pytest.raises(ValueError, match="x"):
++        load_targets(bad)

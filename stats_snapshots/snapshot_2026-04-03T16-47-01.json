@@ -1,0 +1,185 @@
+{
+  "timestamp": "2026-04-03T16:47:01",
+  "platforms": {
+    "spotify": {
+      "followers": 0,
+      "popularity": 0,
+      "genres": [],
+      "top_tracks": []
+    },
+    "soundcloud": {
+      "followers": 103,
+      "following": 126,
+      "total_plays": 366,
+      "total_likes": 35,
+      "total_reposts": 13,
+      "total_comments": 10,
+      "tracks": [
+        {
+          "title": "Inch of Shadow b2b AREA 101 @ About Blank, Berlin",
+          "plays": 194,
+          "likes": 16,
+          "reposts": 4,
+          "comments": 3
+        },
+        {
+          "title": "The Tour - Inch of Shadow Remix",
+          "plays": 111,
+          "likes": 12,
+          "reposts": 7,
+          "comments": 5
+        },
+        {
+          "title": "Inch of Shadow - Farewell",
+          "plays": 17,
+          "likes": 0,
+          "reposts": 0,
+          "comments": 0
+        },
+        {
+          "title": "Inch of Shadow - The Deceiver",
+          "plays": 12,
+          "likes": 0,
+          "reposts": 0,
+          "comments": 0
+        },
+        {
+          "title": "Inch of Shadow @ THE CODE - Live Stream Marathon | Berlin",
+          "plays": 12,
+          "likes": 3,
+          "reposts": 1,
+          "comments": 1
+        },
+        {
+          "title": "Inch of Shadow & Status Zero \u2013 Meltscape (Meltscape EP)",
+          "plays": 7,
+          "likes": 1,
+          "reposts": 0,
+          "comments": 0
+        },
+        {
+          "title": "Inch of Shadow & Status Zero \u2013 The Cure (Meltscape EP)",
+          "plays": 7,
+          "likes": 2,
+          "reposts": 1,
+          "comments": 1
+        },
+        {
+          "title": "Inch of Shadow & Status Zero \u2013 Mind Eaten (Meltscape EP)",
+          "plays": 6,
+          "likes": 1,
+          "reposts": 0,
+          "comments": 0
+        }
+      ]
+    },
+    "youtube": {
+      "subscribers": 5,
+      "total_views": 44,
+      "video_count": 3,
+      "videos": [
+        {
+          "id": "bv6NpnRqfNg",
+          "title": "Inch of Shadow \u2014 DJing My Remix in Berlin | The Code 2025",
+          "published": "2026-03-01",
+          "views": 1,
+          "likes": 0
+        },
+        {
+          "id": "VGA79_RggFg",
+          "title": "Unreleased Track \u201cThe Deceiver\u201d | Live at The Code Berlin.",
+          "published": "2026-01-11",
+          "views": 5,
+          "likes": 1
+        },
+        {
+          "id": "Cyzc44IB4TA",
+          "title": "La Groove Machine - The Tour (Inch of Shadow Remix)",
+          "published": "2025-12-23",
+          "views": 38,
+          "likes": 7
+        }
+      ]
+    },
+    "instagram": {
+      "followers": 777,
+      "following": 882,
+      "media_count": 83,
+      "recent_likes": 1094,
+      "recent_comments": 152,
+      "recent_posts": [
+        {
+          "type": "CAROUSEL_ALBUM",
+          "date": "2026-01-29",
+          "likes": 36,
+          "comments": 6,
+          "caption": "Tomorrow with all the gang of @collective.dada at @beateuwe_official. Playing b2"
+        },
+        {
+          "type": "CAROUSEL_ALBUM",
+          "date": "2026-01-04",
+          "likes": 39,
+          "comments": 15,
+          "caption": "Now that the NYE chaos fades and the white noise disappears,\nhere\u2019s my closing s"
+        },
+        {
+          "type": "IMAGE",
+          "date": "2025-12-24",
+          "likes": 12,
+          "comments": 4,
+          "caption": "Tomorrow Morning 09:30\nB2B with @area_101_x at @about.blank.berlin \nBy @blank_wi"
+        },
+        {
+          "type": "IMAGE",
+          "date": "2025-12-19",
+          "likes": 32,
+          "comments": 9,
+          "caption": "Released today \u2728\nMy remix for The Tour by @lagroovemachine_music.\nEtched into th"
+        },
+        {
+          "type": "CAROUSEL_ALBUM",
+          "date": "2025-09-13",
+          "likes": 15,
+          "comments": 2,
+          "caption": "Excited to play tonight at @torturegardenberlin , spinning some of my favorite b"
+        },
+        {
+          "type": "CAROUSEL_ALBUM",
+          "date": "2025-07-05",
+          "likes": 152,
+          "comments": 23,
+          "caption": "I had the honor of curating the music for the second time in a row for Shapes Of"
+        },
+        {
+          "type": "CAROUSEL_ALBUM",
+          "date": "2025-06-02",
+          "likes": 82,
+          "comments": 10,
+          "caption": "Be sure I put flowers in my hair when I visited lucid SF,\nsince people still wal"
+        },
+        {
+          "type": "CAROUSEL_ALBUM",
+          "date": "2024-12-29",
+          "likes": 34,
+          "comments": 8,
+          "caption": "Our new EP, Eastern Stars, dropped just a week ago, and we\u2019re still buzzing! \ud83d\udcab\n\n"
+        },
+        {
+          "type": "VIDEO",
+          "date": "2024-12-24",
+          "likes": 41,
+          "comments": 7,
+          "caption": "Listen now to Dark Scales from the EP \u201cEastern Stars\u201d, a collaboration with @lag"
+        },
+        {
+          "type": "VIDEO",
+          "date": "2024-12-20",
+          "likes": 34,
+          "comments": 6,
+          "caption": "Eastern Stars EP is out Now! \ud83c\udf1f\n\nWe\u2019re thrilled to announce that our collaborativ"
+        }
+      ]
+    }
+  },
+  "errors": []
+}

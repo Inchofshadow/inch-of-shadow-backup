@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!--
+  Auto SC discovery/health refresh — runs sc_weekly_health.py twice weekly so the
+  candidate pool is never stale (the 06-24 Wednesday miss starved the 06-25 session).
+  Headless, read-only API only (no Chrome, no human) — that's why this CAN be automated
+  while the browser engagement cannot. Runs as the logged-in user, Sun + Wed 08:00 Berlin
+  (local time), before the 11:30 engagement sessions.
+
+  Install:
+    cp "deploy/com.inchofshadow.sc-health-refresh.plist" ~/Library/LaunchAgents/
+    launchctl unload ~/Library/LaunchAgents/com.inchofshadow.sc-health-refresh.plist 2>/dev/null
+    launchctl load   ~/Library/LaunchAgents/com.inchofshadow.sc-health-refresh.plist
+  Verify:   launchctl list | grep sc-health-refresh
+  Logs:     scene_intelligence/sc-health-refresh.log
+  Remove:   launchctl unload ~/Library/LaunchAgents/com.inchofshadow.sc-health-refresh.plist && rm ~/Library/LaunchAgents/com.inchofshadow.sc-health-refresh.plist
+-->
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.inchofshadow.sc-health-refresh</string>
+
+    <key>ProgramArguments</key>
+    <array>
+        <string>/usr/bin/python3</string>
+        <string>/Users/amir/Desktop/Inch of Shadow/Inchofshadowcode/scene_intelligence/sc_weekly_health.py</string>
+    </array>
+
+    <key>WorkingDirectory</key>
+    <string>/Users/amir/Desktop/Inch of Shadow/Inchofshadowcode</string>
+
+    <key>StartCalendarInterval</key>
+    <array>
+        <dict>
+            <key>Weekday</key><integer>0</integer>
+            <key>Hour</key><integer>8</integer>
+            <key>Minute</key><integer>0</integer>
+        </dict>
+        <dict>
+            <key>Weekday</key><integer>3</integer>
+            <key>Hour</key><integer>8</integer>
+            <key>Minute</key><integer>0</integer>
+        </dict>
+    </array>
+
+    <key>RunAtLoad</key>
+    <false/>
+
+    <key>StandardOutPath</key>
+    <string>/Users/amir/Desktop/Inch of Shadow/Inchofshadowcode/scene_intelligence/sc-health-refresh.log</string>
+    <key>StandardErrorPath</key>
+    <string>/Users/amir/Desktop/Inch of Shadow/Inchofshadowcode/scene_intelligence/sc-health-refresh.log</string>
+</dict>
+</plist>

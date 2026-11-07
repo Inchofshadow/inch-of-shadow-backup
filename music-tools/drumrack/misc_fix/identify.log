@@ -1,0 +1,108 @@
+sources 9388  targets 105
+  1/105 1.000 Misc 01 AkaiXR10.wav           <- cs_xr10_agogo_h.wav
+  2/105 1.000 Misc 02 AkaiXR10.wav           <- cs_xr10_cabasa.wav
+  3/105 1.000 Misc 03 AkaiXR10.wav           <- cs_xr10_chop.wav
+  4/105 1.000 Misc 04 AkaiXR10.wav           <- cs_xr10_hits.wav
+  5/105 1.000 Misc 05 AkaiXR10.wav           <- cs_xr10_squeak_l.wav
+  6/105 1.000 Misc 06 AkaiXR10.wav           <- cs_xr10_timbales_l.wav
+  7/105 1.000 Misc 07 AkaiXR10.wav           <- cs_xr10_triangle_l.wav
+  8/105 1.000 Misc 01 AlesisSR16.wav         <- Block.wav
+  9/105 1.000 Misc 02 AlesisSR16.wav         <- Finger.wav
+ 10/105 1.000 Misc 03 AlesisSR16.wav         <- Snaredrum-01.wav
+ 11/105 1.000 Misc 04 AlesisSR16.wav         <- Snaredrum-03.wav
+ 12/105 1.000 Misc 05 AlesisSR16.wav         <- Snaredrum-06.wav
+ 13/105 1.000 Misc 06 AlesisSR16.wav         <- Snaredrum-08.wav
+ 14/105 1.000 Misc 07 AlesisSR16.wav         <- Snaredrum-10.wav
+ 15/105 1.000 Misc 08 AlesisSR16.wav         <- Snaredrum-12.wav
+ 16/105 1.000 Misc 01 KawaiR100.wav          <- Kawai_R-100_BRUSHCH3.wav
+ 17/105 1.000 Misc 02 KawaiR100.wav          <- Kawai_R-100_CHIMECH3.wav
+ 18/105 1.000 Misc 03 KawaiR100.wav          <- Kawai_R-100_CONGHCH3.wav
+ 19/105 1.000 Misc 04 KawaiR100.wav          <- Kawai_R-100_CONGLCH3.wav
+ 20/105 1.000 Misc 05 KawaiR100.wav          <- Kawai_R-100_CRASHCH3.wav
+ 21/105 1.000 Misc 06 KawaiR100.wav          <- Kawai_R-100_QUIJACH3.wav
+ 22/105 1.000 Misc 07 KawaiR100.wav          <- Kawai_R-100_RIMSHCH3.wav
+ 23/105 1.000 Misc 08 KawaiR100.wav          <- Kawai_R-100_SHAKECH3.wav
+ 24/105 1.000 Misc 09 KawaiR100.wav          <- Kawai_R-100_TRIALCH3.wav
+ 25/105 1.000 Misc 10 KawaiR100.wav          <- Kawai_R-100_TRIAMCH3.wav
+ 26/105 1.000 Misc 11 KawaiR100.wav          <- Kawai_R-100_WOODBCH3.wav
+ 27/105 1.000 Misc 01 KawaiR50e.wav          <- Kawai R-50e Click.wav
+ 28/105 1.000 Misc 02 KawaiR50e.wav          <- Kawai R-50e Finger Snap.wav
+ 29/105 1.000 Misc 03 KawaiR50e.wav          <- Kawai R-50e Orc. Hit 1.wav
+ 30/105 1.000 Misc 04 KawaiR50e.wav          <- Kawai R-50e Orc. Hit 2.wav
+ 31/105 1.000 Misc 05 KawaiR50e.wav          <- Kawai R-50e Timpani.wav
+ 32/105 1.000 Misc 01 LM1.wav                <- LM1_BD1_aOrig.wav
+ 33/105 1.000 Misc 02 LM1.wav                <- LM1_BD1_T2A.wav
+ 34/105 1.000 Misc 03 LM1.wav                <- LM1_BD2_aOrig.wav
+ 35/105 1.000 Misc 04 LM1.wav                <- LM1_BD3_aOrig.wav
+ 36/105 1.000 Misc 05 LM1.wav                <- LM1_BDLoud.wav
+ 37/105 1.000 Misc 06 LM1.wav                <- LM1_BDSoft_aOrig.wav
+ 38/105 1.000 Misc 07 LM1.wav                <- LM1_Cabasa_aOrig.wav
+ 39/105 1.000 Misc 01 Linn9000.wav           <- Linn 9000 bell.wav
+ 40/105 1.000 Misc 02 Linn9000.wav           <- Linn 9000 cabasa.wav
+ 41/105 1.000 Misc 03 Linn9000.wav           <- Linn 9000 stick.wav
+ 42/105 1.000 Misc 04 Linn9000.wav           <- Ping.wav
+ 43/105 1.000 Misc 05 Linn9000.wav           <- Snaredrum.wav
+ 44/105 1.000 Misc 01 LinnDrum.wav           <- LinnDrm_Cabasa_aOrig.wav
+ 45/105 1.000 Misc 01 OberheimDMX.wav        <- bong_Oberheim_DMX.wav
+ 46/105 1.000 Misc 02 OberheimDMX.wav        <- Hicabasa_Oberheim_DMX.wav
+ 47/105 1.000 Misc 03 OberheimDMX.wav        <- Hitimb_Oberheim_DMX.wav
+ 48/105 1.000 Misc 04 OberheimDMX.wav        <- Lowtimb_Oberheim_DMX.wav
+ 49/105 1.000 Misc 05 OberheimDMX.wav        <- Midtimb_Oberheim_DMX.wav
+ 50/105 1.000 Misc 01 RolandR8.wav           <- v_Roland_R8.wav
+ 51/105 1.000 Misc 01 RolandTR727.wav        <- ChimesTR-727.wav
+ 52/105 1.000 Misc 02 RolandTR727.wav        <- High_TimbaTR-727.wav
+ 53/105 1.000 Misc 03 RolandTR727.wav        <- Low_TimbaTR-727.wav
+ 54/105 1.000 Misc 04 RolandTR727.wav        <- MaracasTR-727.wav
+ 55/105 1.000 Misc 05 RolandTR727.wav        <- QuijadaTR-727.wav
+ 56/105 1.000 Misc 06 RolandTR727.wav        <- Wistl2TR-727.wav
+ 57/105 1.000 Misc 07 RolandTR727.wav        <- WistlTR-727.wav
+ 58/105 1.000 Misc 01 TR626.wav              <- TR626_Agogo_Hi_aOrig.wav
+ 59/105 1.000 Misc 02 TR626.wav              <- TR626_Agogo_Low_aOrig.wav
+ 60/105 1.000 Misc 03 TR626.wav              <- TR626_TimbHi_aOrig.wav
+ 61/105 1.000 Misc 04 TR626.wav              <- TR626_TimbLo_aOrig.wav
+ 62/105 1.000 Misc 01 Tom.wav                <- Tom_Lazer_Cart_aOrig.wav
+ 63/105 1.000 Misc 02 Tom.wav                <- Tom_Scratch_Cart.wav
+ 64/105 1.000 Misc 03 Tom.wav                <- Tom_Spash_Cart.wav
+ 65/105 1.000 Misc 04 Tom.wav                <- Tom_Tom1_Int_aOrig.wav
+ 66/105 1.000 Misc 05 Tom.wav                <- Tom_Tom2_Int_aOrig.wav
+ 67/105 1.000 Misc 06 Tom.wav                <- Tom_Tom_Cart_aOrig.wav
+ 68/105 1.000 Misc 01 UnivoxMicroRhythmer12.wav <- UNIVOXb1.wav
+ 69/105 1.000 Misc 02 UnivoxMicroRhythmer12.wav <- UNIVOXbd.wav
+ 70/105 1.000 Misc 03 UnivoxMicroRhythmer12.wav <- UNIVOXch.wav
+ 71/105 1.000 Misc 04 UnivoxMicroRhythmer12.wav <- UNIVOXoh.wav
+ 72/105 1.000 Misc 05 UnivoxMicroRhythmer12.wav <- UNIVOXsd.wav
+ 73/105 1.000 Misc 01 YamahaRX11.wav         <- CLHAT1_YAMAHA_Rx11.wav
+ 74/105 1.000 Misc 02 YamahaRX11.wav         <- CLHAT2_YAMAHA_Rx11.wav
+ 75/105 1.000 Misc 03 YamahaRX11.wav         <- OPHAT1_YAMAHA_Rx11.wav
+ 76/105 1.000 Misc 04 YamahaRX11.wav         <- OPHAT2_YAMAHA_Rx11.wav
+ 77/105 1.000 Misc 01 YamahaRX120.wav        <- RX-120 Agogo High.wav
+ 78/105 1.000 Misc 02 YamahaRX120.wav        <- RX-120 Claps.wav
+ 79/105 1.000 Misc 03 YamahaRX120.wav        <- RX-120 Cuica Low.wav
+ 80/105 1.000 Misc 01 RX5-I.wav              <- Yamaha RX-5 Timbale Hi.wav
+ 81/105 1.000 Misc 02 RX5-I.wav              <- Yamaha RX-5 Timpani.wav
+ 82/105 1.000 Misc 03 RX5-I.wav              <- Yamaha RX5 Castenet.wav
+ 83/105 1.000 Misc 04 RX5-I.wav              <- Yamaha RX5 Cuica.wav
+ 84/105 1.000 Misc 01 RX5-II.wav             <- RX5_Castanet_aOrig.wav
+ 85/105 1.000 Misc 02 RX5-II.wav             <- RX5_China_02_aOrig.wav
+ 86/105 1.000 Misc 03 RX5-II.wav             <- RX5_TimbaleHLow_aOrig.wav
+ 87/105 1.000 Misc 01 YamahaRX7.wav          <- Yamaha RX7 agogo hi.wav
+ 88/105 1.000 Misc 02 YamahaRX7.wav          <- Yamaha RX7 bell tree.wav
+ 89/105 1.000 Misc 03 YamahaRX7.wav          <- Yamaha RX7 castnet.wav
+ 90/105 1.000 Misc 04 YamahaRX7.wav          <- Yamaha RX7 claves.wav
+ 91/105 1.000 Misc 05 YamahaRX7.wav          <- Yamaha RX7 doorslm.wav
+ 92/105 1.000 Misc 06 YamahaRX7.wav          <- Yamaha RX7 fbd.wav
+ 93/105 1.000 Misc 07 YamahaRX7.wav          <- Yamaha RX7 gun.wav
+ 94/105 1.000 Misc 08 YamahaRX7.wav          <- Yamaha RX7 hbd2.wav
+ 95/105 1.000 Misc 09 YamahaRX7.wav          <- Yamaha RX7 pbd2.wav
+ 96/105 1.000 Misc 10 YamahaRX7.wav          <- Yamaha RX7 rvs_edge.wav
+ 97/105 1.000 Misc 11 YamahaRX7.wav          <- Yamaha RX7 timbll.wav
+ 98/105 1.000 Misc 12 YamahaRX7.wav          <- Yamaha RX7 vibraslap.wav
+ 99/105 1.000 Misc 13 YamahaRX7.wav          <- Yamaha RX7 hard sd2.wav
+100/105 1.000 Misc 14 YamahaRX7.wav          <- Yamaha RX7 pitched sd1.wav
+101/105 1.000 Misc 01 YamahaRY30.wav         <- Cabasa1_YAMAHA_RY-30.wav
+102/105 1.000 Misc 02 YamahaRY30.wav         <- Ridecup_YAMAHA_RY-30.wav
+103/105 1.000 Misc 03 YamahaRY30.wav         <- Snap_YAMAHA_RY-30.wav
+104/105 1.000 Misc 04 YamahaRY30.wav         <- Stick_YAMAHA_RY-30.wav
+105/105 1.000 Misc 05 YamahaRY30.wav         <- Tomlow1_YAMAHA_RY-30.wav
+
+DONE  mapped 105  below-0.995-or-untyped 0

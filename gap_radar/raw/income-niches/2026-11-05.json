@@ -1,0 +1,1967 @@
+[
+ {
+  "src": "reddit r/audioengineering",
+  "title": "Is there a tool to remove overlaid music on a recording?",
+  "text": "It's a very common issue nowadays. Someone uploads a video of anything. Someone else downloads it, puts crappy music over it (sometimes including vocals), and now that new one gets posted everywhere. Is there any tool that can remove that overlaid music, including the vocals (and accurately leave any vocals from the original recording)? submitted by /u/kaptainkeel [link] [comments]",
+  "url": "https://www.reddit.com/r/audioengineering/comments/1umr2u3/is_there_a_tool_to_remove_overlaid_music_on_a/",
+  "date": "2026-07-03"
+ },
+ {
+  "src": "reddit r/audioengineering",
+  "title": "Is there a tool where you can upload a song, separate it into stems, and tweak parts (pitch, drums, etc.) to make your own remix?",
+  "text": "Hi everyone, I was wondering if there are any tools or platforms where you can upload a song you like and automatically split it into separate stems (vocals, drums, bass, melody, etc.). What I’m looking for is something where you can then slightly modify specific parts — for example: • change the pitch of certain elements • replace the drums • adjust tempo • tweak instruments • or generally customize parts of the song Basically, I’d love to take a song I already enjoy and make a personal remix version of it by adjusting certain variables. Does something like this exist? Ideally beginner-friendly. Thanks in advance! submitted by /u/Helpforfitness [link] [comments]",
+  "url": "https://www.reddit.com/r/audioengineering/comments/1rat7je/is_there_a_tool_where_you_can_upload_a_song/",
+  "date": "2026-02-21"
+ },
+ {
+  "src": "reddit r/audioengineering",
+  "title": "I built a spreadsheet to estimate how long it would take me, working alone, to equal one 10-hour Beatles studio day. I don’t know if this is encouraging or crushing.",
+  "text": "This isn’t about matching Beatles-level quality. This is just about finishing my own songs — same notes, same structure, same finished result — but done solo instead of with a full team. The key difference is structural: the Beatles worked as a parallel system. I work as a serial system. So I broke their studio setup into roles, estimated how much faster things move when those roles exist simultaneously, and calculated the equivalent solo time. TL;DR: It's about 6 months. Agent Role Duty Cycle (0–1) Prowess Factor (vs Me) Contribution = Duty × Prowess Paul McCartney Bass/Vocal 0.8 4.0 3.2 John Lennon Rhythm Guitar/Vocal 0.8 3.0 2.4 George Harrison Lead Guitar 0.8 3.0 2.4 Ringo Starr Drums 0.",
+  "url": "https://www.reddit.com/r/audioengineering/comments/1rhrzqw/i_built_a_spreadsheet_to_estimate_how_long_it/",
+  "date": "2026-03-01"
+ },
+ {
+  "src": "reddit r/audioengineering",
+  "title": "List of standardized processes and tools for vintage/analog emulation in a DAW",
+  "text": "EDIT: WARNING. This post is FUCKING LONG! If you don't want to read it, then don't. It's a lot of information that I have found valuable, and I thought would be helpful for others. Before the digital age, audio engineers were limited to the analog gear in their studio, and to the tools that existed at the time. There were no reverb plugins. There were actual plates, chambers, and spring reverbs. So, now if somebody asks \"How can I make my reverb sound more old or vintage, like from the late 1960s?”, there is actually a pretty straightforward answer that isn’t “Experiment and trust your ears until you find what sounds right”. The answer is something like: “Send the vocal to an EMT 140 emulati",
+  "url": "https://www.reddit.com/r/audioengineering/comments/1rpsaox/list_of_standardized_processes_and_tools_for/",
+  "date": "2026-03-10"
+ },
+ {
+  "src": "reddit r/audioengineering",
+  "title": "What do expensive preamps do differently than cheap preamps other than distortion?",
+  "text": "I've been researching preamps for the past few days trying to figure out what it is that makes high end preamps desirable, except for the obvious factor of having a more \"pleasing\" harmonic distortion compared to lower end preamps (most of which just hard clip past 0dbFS). I know some people describe certain preamps as \"fast\", and some as \"slow\". Most notable examples are the Neve 1073 being \"slow\" and \"mushy\" and the API being \"fast\" and \"clinical\". I've found that the slew rate seems to be what would effect an amplifiers response to quick changes in signal level, but from all I've seen is that almost all preamps have a quick enough slew rate to amplify the signal without any loss. I would ",
+  "url": "https://www.reddit.com/r/audioengineering/comments/1oyt3rm/what_do_expensive_preamps_do_differently_than/",
+  "date": "2025-11-16"
+ },
+ {
+  "src": "reddit r/audioengineering",
+  "title": "Recording Detonations of Welding-Gas Soap Bubbles",
+  "text": "Hi, I have a very challenging audio capture challenge. For fun, I invented a precision machine to mix welding gases (oxygen and acetylene) then blow grapefruit-sized soap bubbles that I then detonate by hand mid-air. The explosions are deep and just absolutely terrifying, but so far the audio is coming out like a \"poof\"! If you skip to around 7:30 in my amateur video about \"The Bubble Dragon,\" you can see/hear what I mean: https://www.youtube.com/watch?v=bg-uCaPdddI Academic literature describes the sound as starting with a sharp “N-wave” with rise time in the microsecond range, then tiny “cellular patterns” driven by “transverse acoustic waves,” with rapid pressure fluctuations steepening t",
+  "url": "https://www.reddit.com/r/audioengineering/comments/1uohdw9/recording_detonations_of_weldinggas_soap_bubbles/",
+  "date": "2026-07-05"
+ },
+ {
+  "src": "reddit r/audioengineering",
+  "title": "How good is Autoalign 2?",
+  "text": "I actually like aligning everything by hand (drum kit, guitar amps) at the sample level, it's very satisfying, and the studio I work in don't receive tracks that need extensive aligning too often, maybe just 2-3 LPs or EPs per year, we mainly focus on vocal production and instrumental arranging in general. So for editing and mixing stages aligning by hand is manageable. How much time does autoalign really save you? Do you think it sounds good? Do you think the phase aligning function via all pass filters sound good, mid or bad? And now that I've mentioned this, in which scenarios do you choose to not align anything or leave out certain mics (especially on drums), or do you ever align at samp",
+  "url": "https://www.reddit.com/r/audioengineering/comments/1uqla87/how_good_is_autoalign_2/",
+  "date": "2026-07-08"
+ },
+ {
+  "src": "reddit r/audioengineering",
+  "title": "My $12000 microphone collection review",
+  "text": "Whats good I’m an independent hiphop artist based in South Korea. I go by Lagin(@lagintotheworld) just in case yall wanna know who I am lol How would u guys evaluate my mic collection? Brauner Valvet Neumann U87ai Wa47 (tube switched to telefunken ecc81) AKG C414 XLS AT4040 I’ll have a short review of these mics below. Mic - current price 🎙️Brauner Valvet 💰$6000 (discontinued for now) Brauner a small manufacturer in Germany makes their mics by hand. Their microphones never goes wrong and overall have beautiful airy top ends with the low frequencies rolled off nicely. Though the Valvet is a tube mic, it does not have the normal warm sound, it has the low frequencies rolled off making it sound",
+  "url": "https://www.reddit.com/r/audioengineering/comments/1vft6l8/my_12000_microphone_collection_review/",
+  "date": "2026-08-05"
+ },
+ {
+  "src": "reddit r/audioengineering",
+  "title": "I'm working on a free and open source audio cataloging application that you might find interesting",
+  "text": "I've looked around for a long time for a definitive tool that does this, and there wasn't really a clear winner. I've tried a few. They either cost money, or suck (like spreadsheets as soon as it scales beyond a handful of items), or don't look/feel good to use. This past spring I set out to build my own \"dream app\" for organizing my collection and sharing what I have with others as quickly and as easily as possible. I wanted something that: Looked and felt sort of like a spreadsheet, but an order of magnitude more useful and robust Allowed for messy files to be embedded, organized, and cross associated inside so I didn't have to deal with folders Allowed audio embedding AND playback (so I d",
+  "url": "https://www.reddit.com/r/audioengineering/comments/1wup7wz/im_working_on_a_free_and_open_source_audio/",
+  "date": "2026-10-01"
+ },
+ {
+  "src": "reddit r/audioengineering",
+  "title": "Best tool to deal with plosives?",
+  "text": "From time to time I track through and 1176 to absolutely pummel a rock vocal (in the best way). However, you can probably imagine how the B, P, S etc. bits sound. The B’s and D’s sound like someone flicking paper and the S’s sound like sandpaper. Normally I go through the vocals and automate each of these details by hand - one by one automating the volume for each little millisecond a plosive takes over. Is there anything out there that will take care of the bulk of this work? Of course perfection isn’t expected, but something that will reliably handle a large percentage of the heavy lifting. Link to example of raw vocals: https://vocaroo.com/15smELGg2Bww Edit: I should add that this isn’t a",
+  "url": "https://www.reddit.com/r/audioengineering/comments/1rxdjsj/best_tool_to_deal_with_plosives/",
+  "date": "2026-03-18"
+ },
+ {
+  "src": "reddit r/audioengineering",
+  "title": "Most useful macros for multi-buttoned mouse",
+  "text": "Hi! I recently got a new mouse with 12 programmable side buttons and I was wondering what macros would be more useful to program for audio editing. For now I thought these: Cut Copy Paste Silence Fade In Fade Out Does anyone have any suggestion? I would like to try and use the most of the new functions. Thank you! submitted by /u/Asdravico [link] [comments]",
+  "url": "https://www.reddit.com/r/audioengineering/comments/1x0om1c/most_useful_macros_for_multibuttoned_mouse/",
+  "date": "2026-10-08"
+ },
+ {
+  "src": "reddit r/audioengineering",
+  "title": "Stereo imager tools without artifacts",
+  "text": "Hey everyone, I'm working on a film and the director is fairly new to the field, so managing the workflow has been pretty challenging for the whole team. He insists on using audio files he ripped from who-knows-where and dropped into the project during video editing. The problem is they're all mono, but we need to deliver a proper surround sound mix. However, being tired of arguing, I decided to create a fake stereo/surround image by splitting the mono files, overlaying them, and doing some copy-paste work. But that's just too slow and not always practical. Then I moved on to stereo imager plugins (Kilohearts, Waves, Voxengo) but they all seem to introduce phase issues that mess with the fin",
+  "url": "https://www.reddit.com/r/audioengineering/comments/1rrwlz5/stereo_imager_tools_without_artifacts/",
+  "date": "2026-03-12"
+ },
+ {
+  "src": "reddit r/audioengineering",
+  "title": "Recording treehopper sounds.",
+  "text": "Alrighty, I’ll start off by saying I have zero audio experience. Absolute newbie. So please bear with me! (Also for the record, I tried posting this in r/fieldrecording and I couldn’t. I’m not sure what rule I was breaking, though.) I am absolutely in love with Treehoppers and have an opportunity to go see some out in the wild next year at the Manu biological station in Peru. I would love, love, love to record some of my own treehopper sounds. (If you’ve never heard them, please take a listen !) I was lucky enough to get an equipment recommendation list from Dr. Rex Cocroft (the treehopper guy!!), so I’m aware of what equipment to use but I’m not sure how to set up any of it. I’m going to co",
+  "url": "https://www.reddit.com/r/audioengineering/comments/1wznivv/recording_treehopper_sounds/",
+  "date": "2026-10-07"
+ },
+ {
+  "src": "reddit r/audioengineering",
+  "title": "Can a file be named .WAV if there is no actual recording being stored?",
+  "text": "Long story short, I received an excel spreadsheet with various data and file names. Some are .txt and contain texts, for example. Others say something like \"phone call\" then a file name with \".wav\" The person who created the spreadsheet says there were no actual audios recorded, the software just puts \".wav\" automatically. I haven't seen this before. Is that possible? submitted by /u/Solid-Swing-2786 [link] [comments]",
+  "url": "https://www.reddit.com/r/audioengineering/comments/1t6pjmm/can_a_file_be_named_wav_if_there_is_no_actual/",
+  "date": "2026-05-07"
+ },
+ {
+  "src": "reddit r/audioengineering",
+  "title": "Does the API550A fit in the WesAudio Titan NG500 chassis?",
+  "text": "Does anyone own a _Titan NG500 recall chassis and an API550A EQ module that can confirm it fits in there? WesAudio has a document with a ton of modules confirming whether they fit in their rack or not, but they say they have not tested the 550A in their lab: Not tested in our lab. Most likely it will fit not entirely leaving around 1-2 mm gap between module and chassis. It should work properly though. Here is the document for anyone interested: https://docs.google.com/spreadsheets/d/1aoJSjsSfgaDFb7U9uUXYp1xSCwVNPm6z0dJGMDjtdH0/edit?gid=0#gid=0 I'd like to hear people's experience before dropping over $1000 only to discover it doesn't fit properly or at all. Photos get bonus points. Thank you",
+  "url": "https://www.reddit.com/r/audioengineering/comments/1un4mz0/does_the_api550a_fit_in_the_wesaudio_titan_ng500/",
+  "date": "2026-07-04"
+ },
+ {
+  "src": "reddit r/audioengineering",
+  "title": "Your DI isn't quieter than your line input. It just needs less gain.",
+  "text": "I keep reading that DI boxes are quieter because balanced. Common-mode rejection. Noise cancellation on the cable. The whole story. I wanted to see it in a number. So I measured it. And the number said something I didn't expect. Setup: Fender Telecaster (copper shielded, single coils) Z-Tone DI → RME UCX II DI path: XLR out → mic preamp Measured RMS noise floor (holding guitar, not playing) and RMS level (hard strumming) at five gain settings on both paths The result nobody told me about: At matched gain, the SNR is identical. Within half a dB. The balanced connection isn't rejecting anything, because there's nothing to reject. The noise is already in the signal. It's in the pickups. It's th",
+  "url": "https://www.reddit.com/r/audioengineering/comments/1qznkjj/your_di_isnt_quieter_than_your_line_input_it_just/",
+  "date": "2026-02-08"
+ },
+ {
+  "src": "reddit r/audioengineering",
+  "title": "Vocal tuning gig",
+  "text": "Hello, my name is Juan. I have a few questions revolving around vocal tuning and making harmonies. I currently work full-time in a studio, mainly as a recording/editing technician, but I also help with mixing from time to time. One thing people have told me is that I'm good at fine-tuning vocals, perhaps because I have studied music pretty much my whole life. So I wonder, is there a way to offer my services as a Vocal Tuner online? If so, how much would it be normal to charge? Is this something people would pay for? ​I use Melodyne to tune, but only the free ARA version that comes with Pro Tools. I would like to upgrade it, of course, if this turns out to be a viable option. ​Also, for harmo",
+  "url": "https://www.reddit.com/r/audioengineering/comments/1vp3j8a/vocal_tuning_gig/",
+  "date": "2026-08-15"
+ },
+ {
+  "src": "reddit r/audioengineering",
+  "title": "People who wire studios or audio racks: what do you wish existed in a rack design/documentation tool?",
+  "text": "I’m doing early research, not trying to sell anything. I’m trying to understand where the pain actually is for studio racks, patchbays, outboard gear, interfaces, converters, monitoring, and audio system documentation. What do you currently use for rack layouts, patchbay docs, wiring diagrams, cable schedules, labels, BOMs, and as-built notes? What part of the process is the most annoying, broken, or still living in someone’s spreadsheet, notebook, or memory? Some features I’m thinking about: rack layouts device libraries port-to-port cable tracking auto cable schedules patchbay/signal flow maps labeling info BOM/export docs as-built/change history field checklist mode optional quote/build r",
+  "url": "https://www.reddit.com/r/audioengineering/comments/1t364ts/people_who_wire_studios_or_audio_racks_what_do/",
+  "date": "2026-05-04"
+ },
+ {
+  "src": "reddit r/audioengineering",
+  "title": "Tool for matching audio tracks?",
+  "text": "Hello, I'm a freelance filmmaker but I'm not really an audio guy, so I don't know what to do with this problem. I have my short film almost ready, but now I need to change there two short audio tracks (it's basically just a one word). The original actor recorded me the audio twice, but he just can't match the original we did, so it sounds off in the film. Is there a tool, where I could put these two tracks that would make them sound more simillar to the audio tracks of him, that are already in the film? submitted by /u/nande_22 [link] [comments]",
+  "url": "https://www.reddit.com/r/audioengineering/comments/1vanue9/tool_for_matching_audio_tracks/",
+  "date": "2026-07-30"
+ },
+ {
+  "src": "reddit r/audioengineering",
+  "title": "How do you organize your session notes in your DAW?",
+  "text": "I’m curious about your methodology for keeping session notes in your DAW. I’m talking tracksheets, mics and preamp settings used, input routing, mic types and positions, guitar pedal chain, etc. I use Logic and while it has a “Notes” section per track and for the overall session, it’s just a blank pad; there’s no structure to it by default, unlike say, a paper tracksheet that you may find in a tape-only session. So, I’m curious as to how you organize all the critical information about your session in your DAW. submitted by /u/laser__beans [link] [comments]",
+  "url": "https://www.reddit.com/r/audioengineering/comments/1uelsg6/how_do_you_organize_your_session_notes_in_your_daw/",
+  "date": "2026-06-24"
+ },
+ {
+  "src": "reddit r/audioengineering",
+  "title": "click track synchronisation",
+  "text": "Recently, I wanted to make a click track for a song which was not recorded to metronome, therefore the tempo slightly changes throughout the song. I wanted to ask, if there's a function / tool / software, which would detect beats automatically, and make the backing track, so that I wouldn't have to synchronise every beat by hand. what would you recommend? submitted by /u/Bandi_113 [link] [comments]",
+  "url": "https://www.reddit.com/r/audioengineering/comments/1vgxr0u/click_track_synchronisation/",
+  "date": "2026-08-06"
+ },
+ {
+  "src": "reddit r/audioengineering",
+  "title": "Double-Album Compilation Legal and Administrative Quagmire",
+  "text": "A year ago I began a project to record songs by different artists I met at a local watering hole. I began with a goal of ten songs, but interest caught on and I've recorded 20 songs for the album. Each song has a different lineup, with some guest musicians sessioning on multiple songs. There are only 6 original songs. There are 28 performers altogether. If I want to release I still have a long way to go, one song needs to be re-tracked, and there are possibly two more new songs that need to be tracked. Some songs still need overdubs. I have to try to master the songs myself because the cost of outsourcing the mastering is prohibitive for me. Physical release is out of the question, so they w",
+  "url": "https://www.reddit.com/r/audioengineering/comments/1tvflhd/doublealbum_compilation_legal_and_administrative/",
+  "date": "2026-06-03"
+ },
+ {
+  "src": "reddit r/audioengineering",
+  "title": "How do you check your stems and multitracks before and after mixing? Curious what everyone’s workflow is.",
+  "text": "I'm an assistant engineer and I feel like I spend way too much time checking Multitracks and Stems before sending off or even when setting up a mix. Things like sync issues, missing audio, weird stereo exports, mismatched lengths, lazy naming etc. Right now my default is just dragging everything into my DAW, but it feels like overkill for such a basic QC step. I am interested to hear how you all handle this? Wish there was a more standardised way of delivering these files. submitted by /u/Current-Perception96 [link] [comments]",
+  "url": "https://www.reddit.com/r/audioengineering/comments/1pe3js1/how_do_you_check_your_stems_and_multitracks/",
+  "date": "2025-12-04"
+ },
+ {
+  "src": "reddit r/audioengineering",
+  "title": "Cutting um’s out of voice recordings without the clicks using a small Python tool that snaps cuts to the waveform, crossfades the edits, and loops a bit of room tone underneath",
+  "text": "A couple of friends record podcasts and complain constantly about editing out fillers by hand. So I wrote erm. It runs locally (Whisper + ffmpeg). Whisper alone misses a lot of the fillers, so erm also looks at the audio directly to catch the ones the transcript leaves out, then smooths the splices. It's open source, MIT-licensed, free, etc. https://doug.sh/posts/erm-strips-erms/ https://github.com/dougcalobrisi/erm https://pypi.org/project/erm/ submitted by /u/bolts98 [link] [comments]",
+  "url": "https://www.reddit.com/r/audioengineering/comments/1t2w03o/cutting_ums_out_of_voice_recordings_without_the/",
+  "date": "2026-05-03"
+ },
+ {
+  "src": "reddit r/audioengineering",
+  "title": "Quantizing Death metal drums in pro tools",
+  "text": "I’ve been trying to switch over to pro tools full time from reaper. Unfortunately reaper makes life easier and faster to quantize million mile an hour double kicks or blast beats that I want on the grid to a set BPM. But with pro tools I’ve tried beat detective and elastic audio, and I feel like I’m just not doing it right. Anyone out there work with similar jobs, that can share any insight with me? I really love reaper, but I’ve always seen pro tools as something that I need to figure out, but I mostly work with death and black metal. Any input or tips would help tremendously! submitted by /u/Alexile639 [link] [comments]",
+  "url": "https://www.reddit.com/r/audioengineering/comments/1qbjeha/quantizing_death_metal_drums_in_pro_tools/",
+  "date": "2026-01-13"
+ },
+ {
+  "src": "reddit r/audioengineering",
+  "title": "free browser tool that auto-maps sample folders into Ableton Drum Racks (runs locally, no upload)",
+  "text": "Got tired of manually dragging samples in and building the mapping by hand every time, so I built a small web tool that does it automatically. Point it at a sample folder → it gives you back a properly mapped Drum Rack (.adg). Everything runs locally in the browser, nothing gets uploaded, no account, no limits. Folder size is only capped by your RAM. It's free and staying free. Still early, so I'd genuinely like to know where it breaks — mapping logic, naming, edge cases with big folders, whatever you throw at it. (link in the comments — mods, happy to remove if this isn't allowed here) submitted by /u/CevahirCombo [link] [comments]",
+  "url": "https://www.reddit.com/r/audioengineering/comments/1uod34e/free_browser_tool_that_automaps_sample_folders/",
+  "date": "2026-07-05"
+ },
+ {
+  "src": "reddit r/audioengineering",
+  "title": "DIY Plate Reverb - Tips on optimizing the sound",
+  "text": "Hello good humans, I'm building my very own plate reverb! I'm doing it with pretty cheap components, but still want to place those components in a spot that sounds as good as possible. Here's my current parts list and cost if you are interested. Things I want to do well: - Place the driver and pickups on the plate where I get a rich verb without too much low whoom. - Figure out the right amount of tension and make sure it's distributed evenly. - Understand when and how I'd want to apply any dampening. Should I bother adding an adjustable damper? - Should I put 2 pickups on it and go mono--> stereo? Would that be a phase nightmare? I think all of these things can be tuned, but I first need to",
+  "url": "https://www.reddit.com/r/audioengineering/comments/1ouygkw/diy_plate_reverb_tips_on_optimizing_the_sound/",
+  "date": "2025-11-12"
+ },
+ {
+  "src": "reddit r/audioengineering",
+  "title": "Cue Mix 5 software drops keyboard shortcuts.",
+  "text": "Just talked with Motu support and it looks like the Cue Mix 5 software does not include keyboard shortcuts. The old version (Cuemix FX) had shortcuts like holding Shift to affect all channels, Command/Ctrl to affect paired tracks, Option/Alt to apply changes to all mixes, and copy paste from one mix to another. I'm posting here because there is no information about this issue anywhere else I could find. I just upgraded from an old Motu 828x interface to the newer 828. The change will definitely slow down my process. Hopefully and update can include these features in the future. submitted by /u/raindownraindownrain [link] [comments]",
+  "url": "https://www.reddit.com/r/audioengineering/comments/1stp8v3/cue_mix_5_software_drops_keyboard_shortcuts/",
+  "date": "2026-04-23"
+ },
+ {
+  "src": "reddit r/audioengineering",
+  "title": "Acoustic Treatment Placement Help",
+  "text": "Hi everyone! I've recently moved into a new house and I'm trying to figure out how to best apply acoustic treatments to the room I intend to use as my music studio. The room is nice and big, with 9.5 feet ceiling in most of the room, but it's also a bit odd shaped due to the closet in the corner. I put together a document in Google Sheets to show what the room looks like with dimensions (sorry, I know it's rather crude, drawing is not my strong suit). I'm also open to relocating the studio desk to a different position if there's a better spot to put it. I have several bass traps and wall mounted acoustic panels from my old house that I'm hoping to use here; I can buy new ones if necessary, b",
+  "url": "https://www.reddit.com/r/audioengineering/comments/1rs2qya/acoustic_treatment_placement_help/",
+  "date": "2026-03-12"
+ },
+ {
+  "src": "reddit r/videography",
+  "title": "Rate my event video please! Open to any feedback. Do you think people would pay for this in a package? What would you price it at?",
+  "text": "submitted by /u/NemesisTib [link] [comments]",
+  "url": "https://www.reddit.com/r/videography/comments/1v4h7i7/rate_my_event_video_please_open_to_any_feedback/",
+  "date": "2026-07-23"
+ },
+ {
+  "src": "reddit r/videography",
+  "title": "Canon R6 Mk II + 24mm f/1.8: Severe lens breathing/jitter triggered by hand gestures. Any fixes?",
+  "text": "Hey everyone, I'm running into a frustrating autofocus issue with my talking head setup and could use some advice. Gear: Canon R6 Mark II + RF 24mm f/1.8 (shot at f/2.8, Autofocus ON). Setup Distances: Camera to me: 80–100 cm | Me to background: 150–170 cm. The Problem: Whenever I make hand gestures, it is as if the camera tries to focus on my hands (my guess unless it is something else). This triggers noticeable lens breathing and frame shifting (the frame jitters and looks like the camera is shaking, while the background blur shifts). Troubleshooting done: Image Stabilization (IS) is completely turned off both on the lens and in-camera. It is strictly an AF/breathing issue. Has anyone deal",
+  "url": "https://www.reddit.com/r/videography/comments/1u4voli/canon_r6_mk_ii_24mm_f18_severe_lens/",
+  "date": "2026-06-13"
+ },
+ {
+  "src": "reddit r/videography",
+  "title": "Artlist makes me want to punch my computer.",
+  "text": "I’m genuinely losing my mind with Artlist. It feels like the only affordable option that also gives you stock footage, so I really WANT to make it work, but the music is so unbelievably bad to search through. It can take me hours, sometimes basically a full day, just to find a couple songs that don’t feel cheesy, generic, or like fake corporate crap. I’ve used Musicbed before and the difference is insane. Musicbed songs actually make you FEEL something. They feel cinematic, emotional, intentional, and high quality. With Artlist, even when I filter by the exact mood I want, half the songs somehow still have this same cheap, soulless feeling. And I KNOW there’s good music on Artlist. I’ve foun",
+  "url": "https://www.reddit.com/r/videography/comments/1wjv55x/artlist_makes_me_want_to_punch_my_computer/",
+  "date": "2026-09-18"
+ },
+ {
+  "src": "reddit r/videography",
+  "title": "How can I politely tell a past client to lose my number haha",
+  "text": "It’s been three years since I worked for this client and he is still asking for stuff. Let me give you some back story. I worked for a comedian who also did sketches and other videos, I would also record his sets chop them down to reels and save the raw to a separate folder. All formats raw and for posting were delivered in the time that I worked with him ‘21 - ‘24. When I had left that job I gave him the opportunity to try and get everything that he could, (about 3-4 weeks time) by Google Drive folder or by transferring from hard drive to hard drive. Once I realized how daunting this task was… like 100s of hours of 4K stuff I had to transfer over I had given him the option to buy me a drive",
+  "url": "https://www.reddit.com/r/videography/comments/1va739t/how_can_i_politely_tell_a_past_client_to_lose_my/",
+  "date": "2026-07-29"
+ },
+ {
+  "src": "reddit r/videography",
+  "title": "Affordable feet for the Sachtler Ace and FSB 75mm tripods!",
+  "text": "UPDATE: here’s the links… 75mm: https://www.ebay.com/itm/960072117141 100mm: https://www.ebay.com/itm/960068168708 150mm: he’s working on finishing the design so just message the eBay seller and ask Hey everyone, I’m a one man filmmaker who owns a few different Sachtler Ace tripod/head kits. I recently found myself needing a set of feet for one of them, and when I looked up the cost of new replacements they were around $150 for a set of 3. That seemed like too much to pay to me, and I ended up rolling the dice on a set of feet from Sirui that cost $27 for the set. Around the same time, I met a guy who was selling 3D-Printed replacements for the larger Sachtler 100/150mm bowl tripods. I worke",
+  "url": "https://www.reddit.com/r/videography/comments/1x14u5f/affordable_feet_for_the_sachtler_ace_and_fsb_75mm/",
+  "date": "2026-10-08"
+ },
+ {
+  "src": "reddit r/videography",
+  "title": "Videographers who create video for clients on social media: I need your help.",
+  "text": "Hey everyone, I’m a videographer primarily handling brand videos/music videos/weddings, events, etc... I have a client who wants me to post and manage weekly content for their business’ social media (FB and Insta). They are a mobile garbage bin cleaning business (bring a trailer decked with equipment right to you). Financially, it seems like it could be a great recurring gig. But logistically, it feels like a potential nightmare to scale. If you are currently managing social media postings for your video clients, how does that work for you? Specifically: Logistics & Logins: How are you managing multiple client accounts at the same time? Do you use a specific management tool, or do you have t",
+  "url": "https://www.reddit.com/r/videography/comments/1uk0vm2/videographers_who_create_video_for_clients_on/",
+  "date": "2026-06-30"
+ },
+ {
+  "src": "reddit r/videography",
+  "title": "If you have 20+ external drives, what’s your workflow for knowing what’s on each drive without plugging them in?",
+  "text": "Recently I’ve started as a videographer, mostly helping a professional wedding videographer friend. We’re both mixing our collection of ssd drives and I’ve started accumulating more archive drives over the years and while labels help, I still find myself trying to remember where specific projects, footage, or backups ended up. Curious how everyone manages this at scale. Do you use spreadsheets, screenshots, asset management software, naming conventions, NAS systems, or something else? Also what’s the longest you have spent looking for footage/project that you knew you had somewhere but couldn’t remember which drive it was on? submitted by /u/FewLemon9692 [link] [comments]",
+  "url": "https://www.reddit.com/r/videography/comments/1u4ned1/if_you_have_20_external_drives_whats_your/",
+  "date": "2026-06-13"
+ },
+ {
+  "src": "reddit r/videography",
+  "title": "Why do some video cameras have arbitrary recording time limitations per video?",
+  "text": "This post is NOT AI-generated. I wrote it by hand. How come some smartphones have arbitrary video recording time limitations like 5 minutes? It can't only be because of overheating. Temperature sensing can already prevent overheating. Arbitrary time limits seem unnecessary. If you are in a cold place, the device would not overheat. Samsung seems to have ditched the recording time limit for 4K (2160p) in recent years (in both the S and A series smartphones), but how come there was there an arbitrary limit in the first place? For example, Samsung's first 4K60 phone, the Galaxy S9, limits 4K60 to 5 minutes and 4K30 to 10 minutes (source in paste ). Samsung's support page (link in paste ) claims",
+  "url": "https://www.reddit.com/r/videography/comments/1x7s9zq/why_do_some_video_cameras_have_arbitrary/",
+  "date": "2026-10-16"
+ },
+ {
+  "src": "reddit r/videography",
+  "title": "What’s your current workflow for transferring files after a shoot?",
+  "text": "The last thing I want to do after a day of filming is manually organize files. Do you just dump them and organize them later? Do you have an automated system do things for you? submitted by /u/SavingProgressRyan [link] [comments]",
+  "url": "https://www.reddit.com/r/videography/comments/1s2fw8g/whats_your_current_workflow_for_transferring/",
+  "date": "2026-03-24"
+ },
+ {
+  "src": "reddit r/videography",
+  "title": "Drone FPS Understanding & Help Salvaging Clips",
+  "text": "Hello! I am looking for some guidance on the best practice to shoot video for use in a short film, as I am currently traveling at a dream location and I want to make sure I shoot my footage properly with post-editing in mind. The final timeline will be 23.976 fps 4K. First question: What frame rate should I record my drone shots? Should I shoot at 23.976 with a 32ND filter, or do you recommend shooting at 30fps or 60fps, and then slowing down in post? The subject of my shots is simply just mountains and landscapes. Second part of my question: Today, I mistakenly shot several clips at 23.976 fps but didn't realize my shutter was well above 1/48, I think it was like 1/1250 or something. I revi",
+  "url": "https://www.reddit.com/r/videography/comments/1wi6sx3/drone_fps_understanding_help_salvaging_clips/",
+  "date": "2026-09-16"
+ },
+ {
+  "src": "reddit r/videography",
+  "title": "DIY Inverted Flycam 5000 Sled: A $9 Stainless-Steel Core for Ground-Level PYXIS Shots",
+  "text": "Taking the camera down to ground level For my third DIY camera-rig project, I'm experimenting with an inverted Flycam 5000 sled arrangement to get my Blackmagic PYXIS 6K close to the ground. The creative goal is to shoot grass, tulips and other subjects from a very low perspective, including near-to-far focus pulls. I want to explore camera movements that are difficult to achieve when operating a heavy cinema camera by hand at ground level. The $9 stainless-steel threaded core My starting point is a fully threaded 1/4-20 rod made from 304 stainless steel, which cost about $9. I'm using it as part of a modified mechanical connection because I don't want to rely solely on the original pole and",
+  "url": "https://www.reddit.com/r/videography/comments/1xbf82b/diy_inverted_flycam_5000_sled_a_9_stainlesssteel/",
+  "date": "2026-10-21"
+ },
+ {
+  "src": "reddit r/videography",
+  "title": "Free open-source (MIT) editor for Sony FS7 / FS7 II SCENE, ALL and USER menu files – converts Mk1 FS7 II, v0.9.0, looking for files from FS7 (Mk1) owners",
+  "text": "Moving a scene file from an FS7 to an FS7 II does not work, and Sony doesn’t document the file formats. I wrote a desktop tool that reads, edits and converts the camera’s SCENE, ALL and USER (user menu) files for the FS7 and the FS7 II, imports single settings from other files, and shows a side-by-side comparison of two files with readable menu paths (for example Paint/White Clip/White Clip Level ). Options the camera greys out are greyed out in the tool, too (a RAW format that needs Cine EI, a frame rate that does not exist for the codec, and so on). Scene files converted from the FS7 load on a real FS7 II. New in 0.9.0: the user menu: all 77 menu items of the FS7 II are known by name, with",
+  "url": "https://www.reddit.com/r/videography/comments/1xf3w26/free_opensource_mit_editor_for_sony_fs7_fs7_ii/",
+  "date": "2026-10-25"
+ },
+ {
+  "src": "reddit r/videography",
+  "title": "How rigorously do you track your gear?",
+  "text": "I'm trying to build a comprehensive spreadsheet inventory for all my gear, mostly with the intention of building a solid system for when I start making bigger purchases over the next year. Especially since it'll be needed for insurance, but also just to have a good sense of things. Even though a lot of my stuff is old (GH5, old Canon EF 24-105, etc) once you start adding it all together it already adds up to a significant chunk of change. Probably 10k at least, especially with computers and storage. So I'm curious, what do you track? Just high value stuff like camera bodies, lenses, computers? Everything down to consumable batteries? What about that random $330 kickstarter dolly you bought, ",
+  "url": "https://www.reddit.com/r/videography/comments/1ugkusx/how_rigorously_do_you_track_your_gear/",
+  "date": "2026-06-26"
+ },
+ {
+  "src": "reddit r/videography",
+  "title": "I built a video production cost calculator and released it for free on my portfolio",
+  "text": "You can find it at https://www.nickferracuti.com/production-budget-calculator I built this tool to help with budgeting both commercial photo and video projects. It's purpose is meant to be specific and simple, to estimates costs across pre-production, production, post-production, equipment, yada yada. Why: I’ve worked as a commercial producer for about 8 years, on projects ranging in budgets from $2K to $400K, both freelance and at an agency. I've always used a spreadsheet template for this sort of thing, and will continue to use that, but I included a CSV export so this can serve as a faster starting point. I wanted something that would save time in a few common situations: Pitching clients",
+  "url": "https://www.reddit.com/r/videography/comments/1p4phin/i_built_a_video_production_cost_calculator_and/",
+  "date": "2025-11-23"
+ },
+ {
+  "src": "reddit r/videography",
+  "title": "Made my first hybrid Anime Animation/Live-Action Shortfilm",
+  "text": "I always wanted to make my own anime.. so I started drawing about half a year ago and drew every day for almost 150 days, learning the various fundamentals, which is tough enough on its own. A short film felt way early, but a small sequence within a brand film? That seemed more doable with a little bit of help. After researching various art styles, character styles, color palettes, line art styles, proportion styles, and applying everything I learned over the past six months of drawing, I used Nano Banana Pro to transform my actual camera footage into a reference to define the final overall style. I know I know, AI.. but give me a break, I just learned to draw and really wanted to animate so",
+  "url": "https://www.reddit.com/r/videography/comments/1r0wkjz/made_my_first_hybrid_anime_animationliveaction/",
+  "date": "2026-02-10"
+ },
+ {
+  "src": "reddit r/videography",
+  "title": "LA Videographer needed for Venue",
+  "text": "Budget: Starting at $1,500 USD (if you can edit we would pay for that as well) Location: Los Angeles USA or Dallas USA Hi all! I’m looking for a videographer to do venue coverage. Think crowd reaction shots, food shots, game coverage, ie general venue things. No super fancy camera needed just not an iPhone. This is for a sports game but this venue does all kinds of fun things. If the client likes your style this can become a routine gig! If interested, please drop your rates/portfolios. Thanks all!! 💖 submitted by /u/Leminemski [link] [comments]",
+  "url": "https://www.reddit.com/r/videography/comments/1sxcbts/la_videographer_needed_for_venue/",
+  "date": "2026-04-27"
+ },
+ {
+  "src": "reddit r/videography",
+  "title": "Recommendations for Production Cart",
+  "text": "Hello, I am working in a small video production company based in Zurich. I have been thinking about getting a video production cart for a while now, since hauling the gear around by hand is becoming more and more annoying. Here a couple of informations about my use cases: We go to shoots by car, so we cant have one of those monsters that maybe even doesnt fold down. We often shoot in the old cities in offices which have small elevators, so again cant do too large. we are usually at least two people, so assembly and disassembly shouldn't be too much of a concern So we would mainly use it as a gear hauler and then on site we would use it as a mobile \"safe space\" for our gear, but since we don'",
+  "url": "https://www.reddit.com/r/videography/comments/1sug51o/recommendations_for_production_cart/",
+  "date": "2026-04-24"
+ },
+ {
+  "src": "reddit r/videography",
+  "title": "How much would you pay for this Sports Video?",
+  "text": "Hi there, I am a Sport Videographer currently volunteering at a football club shooting pitch-side Videography and have been doing this since January this year. From the content i've shot, I create highlight reels for the players and have received great feedback in doing so. I've never been paid for work before, in fact I lose about £13 a shoot to travel there but I now feel like I'm ready to. My problem is I'm not too sure how valuable my work is! I wanted to make this post to hear what all of your opinions are on my work and how much you would pay for this content. I feel like my work has demand to footballers trying to market themselves and build up a social following and I'm excited to se",
+  "url": "https://www.reddit.com/r/videography/comments/1p2ga22/how_much_would_you_pay_for_this_sports_video/",
+  "date": "2025-11-20"
+ },
+ {
+  "src": "reddit r/videography",
+  "title": "Constant Bluetooth issues with Amaran P60x panels",
+  "text": "All 3 of my Amaran P60x panels constantly lose Bluetooth connection. There's no way to control the lights (even turn on/off) via the Amaran Desktop app or the Mobile app. Resetting Bluetooth in the settings menu's has no effect. All lights are already running the latest firmware: v1.4. All apps are running on the latest versions as well. Even tried using an external Bluetooth 5.4 USB dongle. There's no WiFi interference. All lights are well within range (about 1 to 2 meters from the Bluetooth receiver). My lights are permanently fixed in a studio and hard to reach. Controlling by hand is not an option, I entirely rely on remote connectivity. This has been going on ever since I bought them an",
+  "url": "https://www.reddit.com/r/videography/comments/1vmahje/constant_bluetooth_issues_with_amaran_p60x_panels/",
+  "date": "2026-08-12"
+ },
+ {
+  "src": "reddit r/videography",
+  "title": "Matte box ring stuck",
+  "text": "Hi everyone, I’m having an issue with my SmallRig matte box setup. The adapter ring that attaches to my lens is completely stuck and I can’t get it to unscrew. I’ve tried: Turning it normally by hand Using rubber grip for extra friction Making sure I’m turning it in the correct direction (counter-clockwise) But it just won’t budge at all. It feels completely locked. Has anyone experienced this with SmallRig adapter rings or matte boxes? Any tips on how to safely remove it without damaging my lens or the ring would be really appreciated. submitted by /u/Nourryyy [link] [comments]",
+  "url": "https://www.reddit.com/r/videography/comments/1twrlm8/matte_box_ring_stuck/",
+  "date": "2026-06-04"
+ },
+ {
+  "src": "reddit r/videography",
+  "title": "Looking for Cinematic Travel Transition Footage",
+  "text": "I'm looking for high-quality cinematic RAW travel footage from destinations such as Africa, Southeast Asia, winter destinations, mountains, safaris, islands, and tropical locations . The clips should be 2 –5 seconds long and filmed in 4K (preferably 60fps) . I'm mainly looking for footage of: Stunning landscapes and viewpoints Wildlife and animals Local food and drinks Streets, markets and culture Hotels and unique accommodations Beaches, jungles and waterfalls Mountains, snow and winter activities Boats, trains and scenic transportation Small travel moments and everyday details The most important part is that the footage is transition-friendly and filmed with editing in mind. Examples inclu",
+  "url": "https://www.reddit.com/r/videography/comments/1vaoxij/looking_for_cinematic_travel_transition_footage/",
+  "date": "2026-07-30"
+ },
+ {
+  "src": "reddit r/videography",
+  "title": "Which Client Management System should I use?",
+  "text": "Hi Everyone, I am a new in videography profession. I just want to get information about which platform should i use to withhold the info about the clients Like every information from client details to shoot details to invoice everything at one place Should that be a spreadsheet or something running totally offline or some other thing and what would be its cost. what are you guys using and what would you recommend me to use. submitted by /u/WilliamAlfred003 [link] [comments]",
+  "url": "https://www.reddit.com/r/videography/comments/1u9v6tc/which_client_management_system_should_i_use/",
+  "date": "2026-06-19"
+ },
+ {
+  "src": "reddit r/videography",
+  "title": "Izotope RX 12 Advanced?",
+  "text": "Hey there. I royally screwed up some audio last week. I’ve been trying to make it sound better but I’m having trouble. Basically, I recorded a musical performance with multiple cameras and took 2 feeds from the audio mixer. One was all of the instruments that were mic’d and the other feed was hanging microphones. Here’s where I screwed up: I failed to hit record on the audio recorder for the second set. I did have a shotgun mic on my main camera which was about 10 rows back. There were 4 sets total, so 3 out of 4 sound great. I am hoping that someone can make my second set sound at least 80% like the others. Maybe better. I can send samples to anyone that is interested in taking on this job.",
+  "url": "https://www.reddit.com/r/videography/comments/1u320k9/izotope_rx_12_advanced/",
+  "date": "2026-06-11"
+ },
+ {
+  "src": "reddit r/videography",
+  "title": "[v1.0.0] I built a free, open-source tool that aligns your original lyrics into timed subtitles",
+  "text": "I make music videos and live session videos, and the most tedious part of every edit was the same: timing lyric subtitles by hand, line by line. Auto-captions kept rewriting the words that were actually sung, so I built a tool that works the other way around. You paste the real lyrics, point it at the audio or video, and it aligns your text to the timing and outputs an SRT. Speech recognition is only used to find when each line is sung, never to rewrite what is sung, so your text stays exact. It separates vocals from the backing track first, so it holds up on live recordings. https://preview.redd.it/fkvzlwl2cddh1.png?width=1244&format=png&auto=webp&s=0c18aa2d6ab94d9416e25640421f03a5604c9c4b ",
+  "url": "https://www.reddit.com/r/videography/comments/1ux1od3/v100_i_built_a_free_opensource_tool_that_aligns/",
+  "date": "2026-07-15"
+ },
+ {
+  "src": "reddit r/videography",
+  "title": "Update: I rebuilt the video production cost calculator I shared here a couple months ago w several (hopefully) improvements",
+  "text": "Hey all, a couple months ago I shared a free video production cost calculator I’d been working on. I got a ton of helpful feedback from this sub and have spent the last while making updates based directly on that. I figured it was worth sharing a follow-up rather than letting it quietly drift. Here’s the tool: https://www.nickferracuti.com/production-budget-calculator And here’s the original post for context: https://www.reddit.com/r/videography/comments/1p4phin/i_built_a_video_production_cost_calculator_and/ For anyone who missed the first post: I’ve worked as a commercial producer for about 8 years (mostly agency + freelance), and I built this as a faster, more structured alternative to st",
+  "url": "https://www.reddit.com/r/videography/comments/1qtz1rg/update_i_rebuilt_the_video_production_cost/",
+  "date": "2026-02-02"
+ },
+ {
+  "src": "reddit r/videography",
+  "title": "Light Me Up (Advice for Dark Skinned Content Creator)",
+  "text": "I’ve been following this forum in stealth mode for a while now and have learnt so much. Thank you all. I work at the intersection of AI, music, media and tech. I’m adjunct faculty at one of the local colleges here in Nashville as well. I co-own and run a content authentication and verification platform that is built to mitigate and defeat AI deepfakes and digital deception. I’m also a \"baby\" content creator. I’ve spent the last year or so building a kit and equipment on a very limited budget. I shoot mostly on a Sony ZV-E10 and my iPhone 13 Pro. The lenses are a Viltrox 25mm 1.7 and my biggest purchase to date a Tamron 17-70mm/2.8 Most of the content is educational and typically short form, ",
+  "url": "https://www.reddit.com/r/videography/comments/1q8i3wc/light_me_up_advice_for_dark_skinned_content/",
+  "date": "2026-01-09"
+ },
+ {
+  "src": "reddit r/videography",
+  "title": "Looking for a good portable backdrop for interviews",
+  "text": "I have to shoot at a lot of different places on the go, I need a black backdrop that can cover a person sitting and standing (need posing broll) that's easy to setup and wrinkle free. Budget isn't much of an issue my company would pay for it but nothing outrageous, maybe like a $300 max at the most. submitted by /u/bustibuckets [link] [comments]",
+  "url": "https://www.reddit.com/r/videography/comments/1s9xroe/looking_for_a_good_portable_backdrop_for/",
+  "date": "2026-04-01"
+ },
+ {
+  "src": "reddit r/videography",
+  "title": "Preparing Equipment Takes to much time! help me!",
+  "text": "TLDR: how do you manage your gear prep / storage to be fast and efficient ? What’s your workflow to prep from Job 1 to Job 2 to Job 3 - without starting from zero (= back in the shelf) and all the time again. It takes me HOURS each time! My tears hide behind the title. Help me! I got ADHD and my brain goes into the nerd-rabbithole each time I need to prep my stuff. Because my attention span is a little bit weak, I’m notorious careful and over protective that I forget something important while prepping gear - like we all did as newbies - but this part is always my weak point. So I need hours and too much energy- even for very small jobs. Three jobs in a row: We start at 0 - everything is in t",
+  "url": "https://www.reddit.com/r/videography/comments/1pos3tt/preparing_equipment_takes_to_much_time_help_me/",
+  "date": "2025-12-17"
+ },
+ {
+  "src": "reddit r/videography",
+  "title": "Video Production Business Guidance",
+  "text": "Hi My Name is Ty, I’ve been slowly but surely building a video production business over the past couple years in southern Ontario, Canada. but I feel my growth isn’t where it should be. My business offers video, photo and audio service from a small team of professionals (video camera operator, photo camera operator, sound recordist, and editors respectively). I’m basically handling all the behind the scenes work as well as on-site work. I’m preparing for the new year with new ads, email spreadsheets etc. I’m wondering if there’s any other way I could be reaching out and gaining leads. I don’t know how to go about finding leads through Instagram or LinkedIn. I’m mainly just looking for ideas,",
+  "url": "https://www.reddit.com/r/videography/comments/1q8utop/video_production_business_guidance/",
+  "date": "2026-01-10"
+ },
+ {
+  "src": "reddit r/videography",
+  "title": "Workflow Help: Eliminating logging errors when batching 8+ YouTube episodes for remote editors",
+  "text": "Hi everyone, I’m looking for some advice on how to fix a recurring bottleneck in our video agency's workflow. We primarily produce content for business YouTube channels, and our typical setup involves recording a batch of about 8 episodes in a single studio session. Our current (and flawed) process: Recording: 2-camera setup (Cam A & B) + occasional product B-roll shots recorded separately. Logging: Someone on set manually types the clip numbers into an Excel sheet (e.g., Episode 3: clips A0012-A0015 and B0045-B0048). Transfer: Everything is uploaded \"as is\" into one big folder on Google Drive. Post-production: The editor receives the Drive link and the spreadsheet. They then have to manuall",
+  "url": "https://www.reddit.com/r/videography/comments/1t3am9v/workflow_help_eliminating_logging_errors_when/",
+  "date": "2026-05-04"
+ },
+ {
+  "src": "reddit r/Teachers",
+  "title": "Principal is evaluating us, posting our scores outside our doors, and emailing a ranking spreadsheet to the whole staff. Is this legal in Georgia?",
+  "text": "I’m a teacher in Georgia, and our principal has started evaluating teachers on things like attendance, small group instruction, explicit instruction, aggressive monitoring, and lesson plans. What’s really bothering many of us is that after the evaluations, we’re required to post our evaluation score outside our classroom door along with our picture for everyone to see. On top of that, administration sends a spreadsheet with all teacher scores to the entire school staff so everyone can see how everyone else performed. This feels humiliating and creates a very competitive and uncomfortable environment. Some teachers feel pressured, embarrassed, or singled out depending on their scores. I’m won",
+  "url": "https://www.reddit.com/r/Teachers/comments/1xd9h9j/principal_is_evaluating_us_posting_our_scores/",
+  "date": "2026-10-23"
+ },
+ {
+  "src": "reddit r/Teachers",
+  "title": "Student caught m*sturbating in class. Jfc…",
+  "text": "So, my students killed it this week. Not one class had less than 90% of students complete their homework, vast majority passed a difficult quiz, followed along attentively on a lesson I usually do for my honors class, and have just been generally great. Because of this, I decided to reward them with a little mental health day today. They got laptops, because phones are banned, and I was monitoring their activity while grading, and I noticed a kid was on YouTube but scrolling through shorts of girls in very little clothing and twerking. When I looked in his direction, he had his hand in his pocket and was clearly rubbing on himself. Usually, I’d call a student out for being on something they ",
+  "url": "https://www.reddit.com/r/Teachers/comments/1qetb2h/student_caught_msturbating_in_class_jfc/",
+  "date": "2026-01-16"
+ },
+ {
+  "src": "reddit r/Teachers",
+  "title": "I’m making a spreadsheet of emails for a club.",
+  "text": "I teach high school and run a club in Arizona. Of the 31 students whose parents I need to contact, 30 mothers included their emails for parents to contact. Only 13 fathers did. 4 of those are stepfathers. I’ve seen so many rants on reddit from men complaining that teachers don’t include the father in things. They just do not see what we see. Fathers don’t include themselves **!** Of course I have some students with wonderful dads who go above and beyond. But I’ve also had dads yell at me for calling them and telling me that’s the kid’s mom’s job more than once. We default to mothers because mothers are the only parent who cares in, based on this data, a little more than half the cases. It’s ",
+  "url": "https://www.reddit.com/r/Teachers/comments/1wwuyac/im_making_a_spreadsheet_of_emails_for_a_club/",
+  "date": "2026-10-03"
+ },
+ {
+  "src": "reddit r/Teachers",
+  "title": "Friendly reminder that people at your school probably read what you post here",
+  "text": "A couple years ago, a teacher at my school came to this sub and copy-pasted an email from his department chair into a post complaining about the department chair. A friend of mine in the department saw it, used a few other clues in the poster's history to figure out exactly which colleague it was, and reported it to admin. The teacher who posted the email no longer works in my building, and while I have no insight into what led to his non-renewal, people still talk about his Reddit post. All of which is to say that you should be mindful of how specific you get with details here, how public you keep your profile, and what, if anything, you decide to share with strangers on a highly public sit",
+  "url": "https://www.reddit.com/r/Teachers/comments/1vgphc4/friendly_reminder_that_people_at_your_school/",
+  "date": "2026-08-06"
+ },
+ {
+  "src": "reddit r/Teachers",
+  "title": "Why my students hate me.",
+  "text": "I get that when things are complicated or new, students need some time to process. These ain't those times. I guess my students want me to be all warm and fuzzy when they can't do the most basic things. For example if they are looking up home prices I'll say, \"Type in realtor.com\" and they immediately try to pull up Google. I'll say, \"That's not what I said. Type in realtor.com.\". They hate that I repeat my direction rather than helping them. Or like in a spreadsheet I'll say, \"Click on B3.\" And they click anywhere but B3. then I will say, \"Click on B3.\" And trace out column B and row 3 and point directly to cell B3. They click on a different cell than the first time but still nowhere close ",
+  "url": "https://www.reddit.com/r/Teachers/comments/1t6m2fk/why_my_students_hate_me/",
+  "date": "2026-05-07"
+ },
+ {
+  "src": "reddit r/Teachers",
+  "title": "Shaking with rage over AI cheating",
+  "text": "I'm a retired teacher, high school and college. I'm adjuncting for a college math class this semester. In the middle of a final exam a robotic voice sings out, \"Sure, let's take a look at problem thirty-six...\" Every head turns to see a guy sheepishly stuffing his phone into his pocket. I call him out to the hallway, stick out my hand and say, \"Phone.\" He hands me his phone and sure enough, there's ChatGPT. I scroll back and see that he had been taking photos of the exam pages under the table and having ChatGPT take the exam for him. He accidentally hit the voice command function and that's what did him in. I was literally shaking with rage. In written assignments I've tried the trick of usi",
+  "url": "https://www.reddit.com/r/Teachers/comments/1poa963/shaking_with_rage_over_ai_cheating/",
+  "date": "2025-12-16"
+ },
+ {
+  "src": "reddit r/Teachers",
+  "title": "Trump appointed Department of Education Assistant Secretary tells schools they can't use race when administering discipline",
+  "text": "Education Department Tells Schools Race Can’t Factor Into Student Discipline The DOE just issued a \"Dear Colleague\" letter officially ending disparate-impact liability for school discipline, instructing schools to evaluate behavior based on individual actions rather than statistical demographic outcomes. For context, the policy rolls back guidance from previous administrations where districts felt pressured to alter disciplinary actions if suspension or referral rates showed racial disparities. Many educators have privately complained that trying to balance these statistical metrics made everyday classroom management nearly impossible. Critics are calling it a rollback of civil rights oversi",
+  "url": "https://www.reddit.com/r/Teachers/comments/1vsoe0d/trump_appointed_department_of_education_assistant/",
+  "date": "2026-08-19"
+ },
+ {
+  "src": "reddit r/Teachers",
+  "title": "Hide-a-Prompt",
+  "text": "I hid a prompt in my final essay instructions that had AI generate the answers it gave in the style of Chris Tucker and Jackie Chan arguing in the movie Rush Hour. Most of them didn't even read what AI generated and just copied/pasted the results. A few of them caught it, re-wrote the prompt, and tried to submit more AI work. It was so great. I returned all of the essays and made them write by hand. Remember the whyyyyyyyyyyyyyyyyy! submitted by /u/AvecMesWaterSlides [link] [comments]",
+  "url": "https://www.reddit.com/r/Teachers/comments/1twomju/hideaprompt/",
+  "date": "2026-06-04"
+ },
+ {
+  "src": "reddit r/Teachers",
+  "title": "Student cannot write by hand or keyboard. Which speech to text app to use?",
+  "text": "A student will no longer be able to write themselves longer texts (because of an illness). They will need to write / create longer essays in various subjects during the next three years, also in examinations. So we are looking for an app (iPad, Android, or Windows). It should work offline and not have AI support for automatically suggesting/improving content, word choice, or grammar. In this way, it would be clear that any text they hand in during an exam is actually their own work. We have tried the iPad native dictation function. It does not work as smoothly as hoped. There are quite a number of mistakes also in a quiet environment (because of misunderstanding). Correcting the text by hand",
+  "url": "https://www.reddit.com/r/Teachers/comments/1wi4x7l/student_cannot_write_by_hand_or_keyboard_which/",
+  "date": "2026-09-16"
+ },
+ {
+  "src": "reddit r/Teachers",
+  "title": "At my wit's end with AI cheating. How are you all handling it?",
+  "text": "I teach in a High School and this year has been brutal. I can't prove anything with most of student submissions and the tools I've tried (Turnitin, GPTZero) feel like I'm always second-guessing the results. What's frustrating me most is that the problem isn't really *detecting* AI after the fact; it's that students are constantly gaslighting me. I obviously use Google Doc version history (when I can) but this is also SO time consuming. I also have students that claim they are writing it in another doc and then pasting it in so then there ends up being no record of their writing process. Is there a tool that's basically just a simple writing environment where students write their assignment t",
+  "url": "https://www.reddit.com/r/Teachers/comments/1sjlhbx/at_my_wits_end_with_ai_cheating_how_are_you_all/",
+  "date": "2026-04-12"
+ },
+ {
+  "src": "reddit r/Teachers",
+  "title": "Parent smiled through our conference… then emailed my principal a 7-paragraph complaint. I’m losing my mind.",
+  "text": "I need to know if I’m overreacting or if other teachers have gone through this. I had a parent-teacher conference this morning with a mom whose child has struggled with focus, incomplete work, and rushing through assignments. I met with her for over an hour. She asked to go through the rubrics, assessments, grading categories — EVERYTHING — and we did. I explained exactly how the grades were calculated, showed her how the skills tie into our standards, and walked her through every concern she brought up. She was calm, nodding, asking good questions, and the meeting felt productive. She left thanking me for my time. Two hours later, my principal emails me saying the parent sent a long message",
+  "url": "https://www.reddit.com/r/Teachers/comments/1p1plyu/parent_smiled_through_our_conference_then_emailed/",
+  "date": "2025-11-20"
+ },
+ {
+  "src": "reddit r/Teachers",
+  "title": "Well, this is a new one.",
+  "text": "I got an email from a parent on Saturday asking for a meeting. It’s fine, it happens from time to time. We’re allowed to take meetings at our convenience. The parent was vague about what she wanted to talk about. She just said it was about something that happened in my class. I was pretty worried… did I say something offensive? Inappropriate? I’m pretty careful about what I say, but it’s not impossible that a student might interpret something I said in a way I didn’t mean. Maybe she wanted to talk about her grade, or the content I’m teaching? But no, she said it was something that happened. It was an incident. But for the life of me I couldn’t think of something I might have said that bother",
+  "url": "https://www.reddit.com/r/Teachers/comments/1ou7wfe/well_this_is_a_new_one/",
+  "date": "2025-11-11"
+ },
+ {
+  "src": "reddit r/Teachers",
+  "title": "If ADHD students are easily distracted, what is the sense of giving them devices?",
+  "text": "Why does my ADHD student have an IEP saying they need to take notes on a device? Every time I look at them, they're scrolling their ipad and not paying attention to the lesson. Surely the less time students with ADHD spend in front of a screen, the better? IMHO it would be better for them to take notes by hand. submitted by /u/TomdeHaan [link] [comments]",
+  "url": "https://www.reddit.com/r/Teachers/comments/1xdcru1/if_adhd_students_are_easily_distracted_what_is/",
+  "date": "2026-10-23"
+ },
+ {
+  "src": "reddit r/Teachers",
+  "title": "Advice on ESL Explanation Document and Spreadsheet for My Coworkers",
+  "text": "I am a secondary (6th-12th) ESL Teacher in my 2nd year and I’m creating a master document and spreadsheet for my colleagues. I want to know what you would find helpful as a non-ESL teacher or as an ESL teacher. Please include any questions I should include for explanations, edit, or remove in the document before I share it to my coworkers. I’m worried if some questions sound very condescending or if it’s just doing too much and I should scrap it all together. I shared it with my mentor (ESL) and she gave me some good suggestions. I’m drawing a blank on some sections. I’m between two buildings so sometimes people want to ask me something but I’m at the other building or they’re kinda shy/busy",
+  "url": "https://www.reddit.com/r/Teachers/comments/1w3izuv/advice_on_esl_explanation_document_and/",
+  "date": "2026-08-31"
+ },
+ {
+  "src": "reddit r/Teachers",
+  "title": "Officially 10 years of title 1 public school. Here are my education takes so far.",
+  "text": "Hey friends. This year marks my 10th year of teaching public school! I teach at a title 1 district in California. Very very high needs students. We have students going to Ivy League colleges right next to students who are being jumped into gangs. Shocking. But I love my students more than anything. 6 years of middle school. 4 years of high school. Here are my takes. Admin are always temporary. Relationships with your fellow teachers and classified staff are more important. I have had 6 sets of admin in my 10 years. SIX! They come and go. Value your relationship with coworkers over everything. Learn to say no. If you have too much on your plate, say no. Anything extra outside of your contract",
+  "url": "https://www.reddit.com/r/Teachers/comments/1weqjta/officially_10_years_of_title_1_public_school_here/",
+  "date": "2026-09-12"
+ },
+ {
+  "src": "reddit r/Teachers",
+  "title": "Found a new way students are cheating",
+  "text": "The new one is: they are copy and pasting questions into browsers during computer testing. Sometimes it works something’s it locks them out Here is a list of ways- comment any one you know! -pretending they are texting while writing down answers or copy pasting ai answers -hiding their phone and going to the bathroom to look up answers -classic ai -opening copilot in the task bar and looking up answers during computer based testing -highlighting and right clicking google search questions during computer testing -then the basic old school(cheat sheets, pictures hidden, hiding papers) submitted by /u/cappuccinofathe [link] [comments]",
+  "url": "https://www.reddit.com/r/Teachers/comments/1sykam0/found_a_new_way_students_are_cheating/",
+  "date": "2026-04-29"
+ },
+ {
+  "src": "reddit r/Teachers",
+  "title": "What Should We Do As A Society About The Constant Disruptors",
+  "text": "It seems like a lot of schools are being more and more disrupted by a small amount of students. This seems to be more a problem with a small minority of students, but then other students realize they can get away with not listening to the teacher. The general wisdom is that we need to put more resources into these students to help them succeed. We need to just try harder. Form a connection. While these solutions aren't bad, there are some students who simply will not respond to virtually anything we try. I have a student who will not respond to anything. Positive reinforcement, negative reinforcement, punishment, forming a connection, making deals, talking to the counselor, talking to parent",
+  "url": "https://www.reddit.com/r/Teachers/comments/1x4xbow/what_should_we_do_as_a_society_about_the_constant/",
+  "date": "2026-10-13"
+ },
+ {
+  "src": "reddit r/Teachers",
+  "title": "What are some terms and phrases in education that you absolutely hate?",
+  "text": "I’m in Australia, secondary science teacher. I am qualified in gifted education and am very involved in that space. Two terms I cannot stand are “kiddos” and “gifties“. I also hate the term “tribe” as in “you’ve found your tribe”. NB: I also don’t like the term “gifted” or a lot of the alternative terms like “high achiever”. There’s a lot of reasons for this and I really wish there was a universal term that would reflect the unique mind and brain of students with high IQ that isn’t based in performance or outcomes, or makes it sound elitist. Until that comes around, we’re kind of stuck with gifted and talented. What are some phrases that make you cringe? submitted by /u/TrogdorUnofficial [li",
+  "url": "https://www.reddit.com/r/Teachers/comments/1slw6nx/what_are_some_terms_and_phrases_in_education_that/",
+  "date": "2026-04-15"
+ },
+ {
+  "src": "reddit r/Teachers",
+  "title": "HS Science: shocking level of illiteracy",
+  "text": "I recently got hired as a high school science teacher (oceanography and biology). My oceanography class is mostly 12th graders but some 11th graders (16-18yo). I spent one week with the class before break, and they were presenting for a midterm grade. They've been without a teacher the entire semester so I didn't have high expectations, many were reading directly from slides that they had obviously copy-pasted from the learning materials. I was unsurprised by that, but shocked at their inability to read. I was told at this school \"they're seniors, they just want to finish and get out of here, we're not trying to fail them.\" Is this something I should learn to accept going into the spring sem",
+  "url": "https://www.reddit.com/r/Teachers/comments/1pxspok/hs_science_shocking_level_of_illiteracy/",
+  "date": "2025-12-28"
+ },
+ {
+  "src": "reddit r/Teachers",
+  "title": "AI is going to make me Quit",
+  "text": "I am sorry - this is a bit of a rant. I will try to come back and edit. For context, I am a 9th grade English teacher, and this is my 5th year of teaching. I am grading final essays for the quarter, and so many students have used AI. I told students not to copy paste anything because it would be flagged, so I am pretty sure 30% of my students just typed out what the AI said so DraftBack wouldn't flag it. That is the only thing I can think of which would have caused this. We are too close to the end of the grading period for me to to follow up with parents, which is a required step by our English department. I tried to with one parent, but she accused me of not knowing if AI was used for sure",
+  "url": "https://www.reddit.com/r/Teachers/comments/1spx9j1/ai_is_going_to_make_me_quit/",
+  "date": "2026-04-19"
+ },
+ {
+  "src": "reddit r/Teachers",
+  "title": "Insane email from student",
+  "text": "Just had to share this bit of insanity. 8th grader was absent today (he’s absent ALL the time and never asks for work). I didn’t even respond, just sent it to the dean. If the kid asks, I’ll say something like, “I reported it as spam because it used my first name and was complete gibberish”. Not to mention our work was posted on Google Classroom anyway. *** Subject: Any workz Body (copy/pasted exactly other than redactions): hey [myFIRSTname] this is [—-] i sent you email to see if there was any work assigned today i so can u send me a url link or something thank you sincerely [—-] in the flow UPDATE: I chatted with admin (we both think this funny but inappropriate, it's not like it is some ",
+  "url": "https://www.reddit.com/r/Teachers/comments/1sxpacx/insane_email_from_student/",
+  "date": "2026-04-28"
+ },
+ {
+  "src": "reddit r/Teachers",
+  "title": "How do you become a teacher when you can't afford to quit your day job to do student teaching?",
+  "text": "I've been in the corporate world for almost 15 years and I can't do it anymore. I'm a project manager and I spent 60 hours a week staring at spreadsheets so I can please executives that I've never met. I desperately want to do something that feels meaningful, and for as long as I can remember I've wanted to be a teacher. I loved volunteer tutoring when I was in college, but I went the corporate route because I thought I'd make more money. Technically, I suppose that's true, but I've made enough money. Now I want to be a middle school science teacher. The thing is, I don't think I can realistically quit my day job in order to go back to school for a teaching certificate. My wife is a SAHM for",
+  "url": "https://www.reddit.com/r/Teachers/comments/1xfvc5g/how_do_you_become_a_teacher_when_you_cant_afford/",
+  "date": "2026-10-26"
+ },
+ {
+  "src": "reddit r/Teachers",
+  "title": "Bullying Is A Very Complex Issue And The Best Way To Prevent It Is For Parents To Teach Their Kids Good Social Skills",
+  "text": "I have noticed over my five years of teaching that schools can do very little to stop the almost endemic bullying. Teachers do what they can when they see it, but I know there's a lot of bullying going on when I'm not around. Kids aren't stupid, they won't do it when teachers are around. They will do it on the bus, or in the bathroom, or in the hall, or just when they are outside of school. Every year, Kids also don't understand the difference between bullying and conflict. There's a lot of conflict between, and that could just mean they don't really know how to interact with each other. It could also just be a fight between friends. Schools aren't good at differentiating between true bullyi",
+  "url": "https://www.reddit.com/r/Teachers/comments/1v1jqqs/bullying_is_a_very_complex_issue_and_the_best_way/",
+  "date": "2026-07-20"
+ },
+ {
+  "src": "reddit r/Teachers",
+  "title": "Convinced 70 teenagers to make our weekly quiz 250% longer and they loved it (7th/8th grade)",
+  "text": "Science teacher here. Usually I do a 10 item weekly quiz that covers a handful of lessons and topics and matches state test style questions. I love being Mr. Inquiry-and-Labs but business is business and testing season is upon us. These are still formative so they have the chance to ask me for help, ie not the highest of stakes. I had to pick questions just right so that my slower than average students can finish reasonably without my fastest working ones waiting idle or needing early-finisher work/rewards—never really wanted to do “fun” work for the early finishers because the same students on the other side of the bell curve would always end up never getting to participate/end up with home",
+  "url": "https://www.reddit.com/r/Teachers/comments/1rgss8g/convinced_70_teenagers_to_make_our_weekly_quiz/",
+  "date": "2026-02-28"
+ },
+ {
+  "src": "reddit r/Teachers",
+  "title": "Frustrated with IEP/504 accommodations and modifications",
+  "text": "Middle School history teacher. This year nearly a third of my students are on IEPs or 504s in the accommodations and modifications are endless. There are so many that say \"positive praise\" \" frame criticism in a gentle way\" \"check in with them to make sure their day is going well\" \"brainstorm solutions to any problems together\" not to mention just about everyone says access to fidgets which just turn into toys. Then I have parents demanding their student get a digital copy of the work because they're concerned about how long it takes them to write by hand. I don't know, if your student is writing too slowly, maybe Middle School is a good opportunity for them to practice that skill so it impr",
+  "url": "https://www.reddit.com/r/Teachers/comments/1wtngtq/frustrated_with_iep504_accommodations_and/",
+  "date": "2026-09-29"
+ },
+ {
+  "src": "reddit r/Teachers",
+  "title": "Do they just not understand how to put in effort anymore?",
+  "text": "Handed out a velocity worksheet in high school physics today, which included a problem where they had to do 350/65. “What, am I supposed to do this in my head!?” “No, you’re supposed to do it on the paper. You know, the paper the question is written on.” “What do you mean?” 🤦‍♂️ Edit: for those on high horses saying I was wasting students time by asking them to do division BY HAND, well, that was kinda the point. This was a first day assessment, not an assignment where I’m looking for a correct answer. I’m looking for their abilities and their limits. You know, kinda helps me help them better when I understand more about them. I also HATE wasting students’ time. submitted by /u/DrRibb [link]",
+  "url": "https://www.reddit.com/r/Teachers/comments/1w0eayk/do_they_just_not_understand_how_to_put_in_effort/",
+  "date": "2026-08-28"
+ },
+ {
+  "src": "reddit r/Teachers",
+  "title": "New admin is completely tone deaf",
+  "text": "I teach 7th grade math at a title one school. During preplanning our new principal and assistant principal made this big speech about \"giving just 1% more.\" The gist was that we should all think of ways we can give just a little bit more to our students than we currently are. So maybe I took this the wrong way, but most of us are already coming in an hour early, leaving 2 hours after contract time, outfitting our classrooms with very little help from the school, constantly pulling data from the same places admin has access to and putting it endless spreadsheets so no one can look at them, giving up planning periods to sub for other classes, or meetings, or attend the same trainings every yea",
+  "url": "https://www.reddit.com/r/Teachers/comments/1w19w4v/new_admin_is_completely_tone_deaf/",
+  "date": "2026-08-29"
+ },
+ {
+  "src": "reddit r/Teachers",
+  "title": "Some things about \"I want to go back to all paper and pencil and get rid of tech in the class\"",
+  "text": "I mean, in a good world, I think pencil and paper would be better in some ways but there are too many stipulations in my opinion for 2026 and forward. I have some concerns about this, especially in high school. I could see elementary having more paper and pencil. We need better blocking systems for students who use Chromebooks in the classroom so really anything other than assignment can't be looked up. That is where the real problem is in my opinion. It's not that it's online, it's that some can have access to things that distract from their classwork. The real business world is nearly all online. Designing things, portfolios, invoices, entry data, receipts, banking, transaction reports, qu",
+  "url": "https://www.reddit.com/r/Teachers/comments/1svp4s1/some_things_about_i_want_to_go_back_to_all_paper/",
+  "date": "2026-04-25"
+ },
+ {
+  "src": "reddit r/Teachers",
+  "title": "Tell me why (the truth and kindly, please).",
+  "text": "I have been in teaching since 1985. Yepway back then. 40 years. Im 61. I taught 3 yrs, moved, 2 years, had 2nd child and moved, 5 years, homeschooled someone elses’s 2 children 1 year, was off one year, taught 1.5 years and moved. I didn't try to go back for 21 years. I have to have a job. I've subbed a year and a half. I need a job 25-26 and on. I lasted 6 weeks at a Title 1 school this fall. We decided I needed to be closerthan 40+ miles,each way, to home, so I resigned. Just to clarify... i’m certified in Texas to teach K-6, J-6 English and 7-12 Math. I’ve had so many interviews! They don’t even tell me no they just don’t tell me anything. I’ve got 12 years teaching. I raised two children",
+  "url": "https://www.reddit.com/r/Teachers/comments/1py4fjj/tell_me_why_the_truth_and_kindly_please/",
+  "date": "2025-12-28"
+ },
+ {
+  "src": "reddit r/Teachers",
+  "title": "Finishing my student teaching and I am completely dumbfounded by the absolute lack of accountability.",
+  "text": "Sorry, long post, but I am absolutely dumbfounded. (Let me preface that I am finishing up my student teaching, but graduated high school pre-covid. I’m currently placed in a school district that is 10 minutes from the one I attended growing up. Families have very similar socioeconomic situations, culture, values, etc. etc.) What is with students (parents) these days? I am noticing four major problems—let me know if these are issues at your school too. Truancy Blatantly disrespectful behavior (PHONES!) Entitlement despite lack of effort AI for EVERYTHING. 1. Truancy I student-teach Junior and Senior ELA. A quarter of my students are absent 2-3 days a week on average. 15% of my students are ab",
+  "url": "https://www.reddit.com/r/Teachers/comments/1tojjxb/finishing_my_student_teaching_and_i_am_completely/",
+  "date": "2026-05-26"
+ },
+ {
+  "src": "reddit r/propertymanagement",
+  "title": "What do you guys use to track rent payments for a small portfolio? I only have a few units so the big software feels like overkill but spreadsheets are getting annoying. Built something simple myself ",
+  "text": "submitted by /u/No_Finance_9474 [link] [comments]",
+  "url": "https://www.reddit.com/r/PropertyManagement/comments/1s17mmh/what_do_you_guys_use_to_track_rent_payments_for_a/",
+  "date": "2026-03-23"
+ },
+ {
+  "src": "reddit r/propertymanagement",
+  "title": "Property managers: do you use software for lease abstraction, or still do it by hand?",
+  "text": "there’s a lot of lease abstraction software out there now do you use it, or do you still have a person do it, in-house or outsourced? If you tried software, what made you keep it or drop it? submitted by /u/Own_Traffic3689 [link] [comments]",
+  "url": "https://www.reddit.com/r/PropertyManagement/comments/1xit3ec/property_managers_do_you_use_software_for_lease/",
+  "date": "2026-10-29"
+ },
+ {
+  "src": "reddit r/propertymanagement",
+  "title": "Just realized I've spent over 600 hours updating property spreadsheets",
+  "text": "Did the math this morning. I own 9 units across 3 buildings, not even that big of a portfolio. But I've been religiously updating my tracking spreadsheet every week for the past 3 years, usually takes 2 to 4 hours depending on how messy things are. That's roughly 600 hours, twenty five full days. Almost a full month just copying numbers from property management portals into excel, checking if rent came in, updating expense categories, calculating cash on cash return for the millionth time. And the worst part? I'm not even sure half that work mattered. Like I caught maybe 2 or 3 bigger issues over three years that the manual tracking found. Everything else I would've noticed anyway from bank ",
+  "url": "https://www.reddit.com/r/PropertyManagement/comments/1q641d2/just_realized_ive_spent_over_600_hours_updating/",
+  "date": "2026-01-07"
+ },
+ {
+  "src": "reddit r/propertymanagement",
+  "title": "Not asking for software, but spreadsheet",
+  "text": "Trying to create one for myself, if you can share your proudly made spreadsheet, that would be awesome. submitted by /u/theyoike [link] [comments]",
+  "url": "https://www.reddit.com/r/PropertyManagement/comments/1say1bb/not_asking_for_software_but_spreadsheet/",
+  "date": "2026-04-03"
+ },
+ {
+  "src": "reddit r/propertymanagement",
+  "title": "3 units are taking me hours in paperwork. How do you guys manage 20-50+ doors without going crazy?",
+  "text": "i have a curiosity question for hosts or landlords who manage 20+ doors. I have 3 units, and the most time-consuming part is the time between the walkthrough and the finished report. And I was curious if 3 units are taking so long, how do the big managers handle such a complex portfolio? for me i get help from my borther but still it takes us 20 minutes at each property and 45 min on the desks to upload, organize, and type descriptions. but recently we started doing a video to report workflow, instead of multiple photos, we do 1 minute video and then use a tool to extract a structured Al report from the video, it has cut our total documentation time from an hour to 12 minutes per unit. its b",
+  "url": "https://www.reddit.com/r/PropertyManagement/comments/1ppo2an/3_units_are_taking_me_hours_in_paperwork_how_do/",
+  "date": "2025-12-18"
+ },
+ {
+  "src": "reddit r/propertymanagement",
+  "title": "I just started as a leasing agent and I’m afraid that I’m messing up too much…",
+  "text": "Hi I’m a 19f who just got her first adult job as a leasing agent and I’m scared that I mess up too much. I started about a month ago and I’ve already gotten 3 leases but I keep messing up on semi major things. My coworker, who is also my trainer, is amazing and I’m so thankful for her and all her patience/ guidance. On the other hand my asm is a very tough love person and she usually goes on long tangents about how I don’t know how to do things or I don’t ask enough questions ect. Which I feel that at the start of the month.. that was true…. But as of now I feel like I keep tabs on most things. My manager stays in her office and that’s about all Ik about her. Now for my story. I’ve messed up",
+  "url": "https://www.reddit.com/r/PropertyManagement/comments/1wsqv7z/i_just_started_as_a_leasing_agent_and_im_afraid/",
+  "date": "2026-09-28"
+ },
+ {
+  "src": "reddit r/propertymanagement",
+  "title": "How do you all track vendor COIs? Sharing the sheet I ended up with",
+  "text": "(Flaired Commercial PM because there is no vendor option — to be clear, I am not a manager. See the first line.) I spent a while looking for a decent way to keep vendor certificates of insurance current, got nowhere, and ended up building my own sheet. Posting the columns in case it saves someone the same afternoon — and because I suspect some of you have a better system than mine. What surprised me is that the limits are almost never the problem. An agent who has issued a thousand certificates gets the million-dollar figures right. What they miss is the tick boxes: additional insured, waiver of subrogation, and the certificate holder spelled the way your entity is actually named. So those g",
+  "url": "https://www.reddit.com/r/PropertyManagement/comments/1xmps47/how_do_you_all_track_vendor_cois_sharing_the/",
+  "date": "2026-11-03"
+ },
+ {
+  "src": "reddit r/propertymanagement",
+  "title": "Stepping into a maintenance supervisor role with zero tracking. Which metrics matter first, and how far back should I go?",
+  "text": "Hello - I'm a maintenance tech moving into an assistant facility maintenance manager role at a property management company in California. I stumbled across this Reddit page and thought I’d post-Looking for advice from people who've built a maintenance department's numbers from scratch. The setup: - About 175 multi-unit properties, a mix of Section 8, low income and market rate. Many are older buildings (1940s) with a lot of deferred maintenance. - In-house crew of 6 techs (2 are the only plumbers and also do remodels) plus 2 gardeners. Our labor and materials get billed to the property owners. - We pay for Yardi Voyager, but it's only used for tenant intake. Tenants submit a request, the off",
+  "url": "https://www.reddit.com/r/PropertyManagement/comments/1xcb49b/stepping_into_a_maintenance_supervisor_role_with/",
+  "date": "2026-10-22"
+ },
+ {
+  "src": "reddit r/propertymanagement",
+  "title": "Landlords managing 1-3 units, how do you keep records without overkill software?",
+  "text": "Most of the tools I've looked at seem built for portfolios way bigger than mine. Curious what people with a small number of units actually rely on for rent tracking, maintenance logs, and basic income/expense records. If you use a spreadsheet, what does it cover and what's missing? If you use software, was it ever more hassle than it was worth once you factored in cost or setup? Also wondering if anyone has lost data switching between tools before. submitted by /u/Agitated_Vanilla3638 [link] [comments]",
+  "url": "https://www.reddit.com/r/PropertyManagement/comments/1w9lkuw/landlords_managing_13_units_how_do_you_keep/",
+  "date": "2026-09-07"
+ },
+ {
+  "src": "reddit r/propertymanagement",
+  "title": "Cold calling the same static owner list every quarter is the biggest time sink in our brokerage and I cannot win the argument",
+  "text": "We are a four person brokerage doing mostly small commercial deals, and our prospecting argument never ends. My partner still wants the whole team dialing the same owner list we have had for two years, top to bottom, every quarter. Half of those owners told us no in 2024 and nothing about their situation has changed since. What has actually started conversations for me is working off a trigger instead of a list. An owner who just pulled a new loan. One whose hold is crossing the point where people start thinking about a sale. A tax bill that went unpaid. Something happened, so there is a reason to call this month, not because the spreadsheet says it is their turn again. The static list is no",
+  "url": "https://www.reddit.com/r/PropertyManagement/comments/1xnj5ur/cold_calling_the_same_static_owner_list_every/",
+  "date": "2026-11-04"
+ },
+ {
+  "src": "reddit r/propertymanagement",
+  "title": "[Landlord US-CA] How to automatically know if the rent is late?",
+  "text": "How do you actually know if rent is late? I've got 3 properties and I'm realizing my \"system\" is just checking my bank app every morning like a psycho For those with more than 1-2 units, how do you track who's paid and who hasn't without manually checking accounts? |'ve tried spreadsheets but I forget to update them. Curious what's actuallv workina for small landlords (under 10 units) vs the big PM software that's overkill submitted by /u/CompetitionLeading87 [link] [comments]",
+  "url": "https://www.reddit.com/r/PropertyManagement/comments/1umsbsy/landlord_usca_how_to_automatically_know_if_the/",
+  "date": "2026-07-03"
+ },
+ {
+  "src": "reddit r/propertymanagement",
+  "title": "NetVendor alternatives",
+  "text": "I’m launching property management company and reached out to NetVendor about opening an account. Their response was essentially, “Don’t call us—we’ll call you.” What are some alternatives to NetVendor? DIY solutions or spreadsheets would be a last resort. submitted by /u/Awardlesss [link] [comments]",
+  "url": "https://www.reddit.com/r/PropertyManagement/comments/1x7mspb/netvendor_alternatives/",
+  "date": "2026-10-16"
+ },
+ {
+  "src": "reddit r/propertymanagement",
+  "title": "How do you keep track of fire/life-safety inspection due dates across your properties?",
+  "text": "Curious how other managers handle this. Between annual extinguisher inspections, hood cleanings, backflow tests, alarm checks — each on its own cycle, each with its own vendor — how are you tracking what's due when? Spreadsheet? Calendar reminders? Property management software? Or is it mostly \"the vendor calls us\"? Asking because I keep hearing about missed inspections turning into fines or failed AHJ visits, and I'm trying to understand whether that's a real widespread problem or just horror stories. What's your system, and where does it break down? submitted by /u/vestlinehq [link] [comments]",
+  "url": "https://www.reddit.com/r/PropertyManagement/comments/1wvtpim/how_do_you_keep_track_of_firelifesafety/",
+  "date": "2026-10-02"
+ },
+ {
+  "src": "reddit r/propertymanagement",
+  "title": "New PM Walking Into A Little Mess -",
+  "text": "Hi! I just started as a new PM and I’m hoping to gain a little insight on how to help with my overwhelm. I’ve been in the industry for a little over 2 years, I’ve worked in corporate, leasing, as an APM, in student housing, residential…. I was only an APM for ~3 months before I started at my current company (better pay!) but here’s the thing - my current company is a little weird with the structure whereas they call the PMs “APMs.” so I thought I was going into the same position, not moving up this quickly 😅 It did come with a $10,000 annual increase so it is worth it for me money-wise, and my new regional knows I’m newer to the actual leadership side of things, but I AM OVERWHELMED!! I am v",
+  "url": "https://www.reddit.com/r/PropertyManagement/comments/1w5ssz4/new_pm_walking_into_a_little_mess/",
+  "date": "2026-09-03"
+ },
+ {
+  "src": "reddit r/propertymanagement",
+  "title": "What tools do you use to document property inspections?",
+  "text": "When doing inspections, it can be hard to keep everything organized, photos, notes, maintenance issues, and follow ups. Right now I see a mix of people using spreadsheets, shared folders, or just saving everything on their phone, which can get messy over time.Curious to know, how are other property managers documenting inspections and reporting maintenance problems? Are you using dedicated inspection software or just sticking with manual processes? submitted by /u/Least-Kick3578 [link] [comments]",
+  "url": "https://www.reddit.com/r/PropertyManagement/comments/1rsgkvh/what_tools_do_you_use_to_document_property/",
+  "date": "2026-03-13"
+ },
+ {
+  "src": "reddit r/propertymanagement",
+  "title": "Being Performance Reviewed Out - AuDHD Leasing Consultant.",
+  "text": "So, this is my first ever reddit post, but I can't get this out of my head. I work pure leasing, started out in Aug '24 - was head-hunted and did my LoR in 6 weeks whilst working full time), took about 6 months to find my feet after starting. In the last 12 months, largely by myself, I have leased out just shy of 290 residential properties (Both new biz and relets) My territory spans 80kms, and I can do over 100kms in an afternoon of open homes running between 20 and 38 open homes a week + private inspections for off market leasing and promising applications, depending on volume of vacates we have in the portfolio. I'm coming up on 4 different BDMs at the end of this month, and now I'm being",
+  "url": "https://www.reddit.com/r/PropertyManagement/comments/1x88pwg/being_performance_reviewed_out_audhd_leasing/",
+  "date": "2026-10-17"
+ },
+ {
+  "src": "reddit r/propertymanagement",
+  "title": "Is this just what it’s like? Am I crazy or getting walked all over? What next?",
+  "text": "Been with a small company a little over a year. Started as an assistant/showing agent but have been a PM for 3 months. Don’t have any prior experience in the industry. 178 units of mixed single family, multi family, and commercial, (which sounds like not that big of a lift from what I see on here- but hear me out before deciding if my complaints are justified). Did well with showings/leasing ($21/hr + $100 per lease + $10 per renewal) considering our properties generally suck. I also helped with marketing (my background before layoffs) as our marketing plan was basically nothing. I put together plans and collateral for new business, revamped customer marketing, started booking meetings only ",
+  "url": "https://www.reddit.com/r/PropertyManagement/comments/1w3ws0m/is_this_just_what_its_like_am_i_crazy_or_getting/",
+  "date": "2026-09-01"
+ },
+ {
+  "src": "reddit r/propertymanagement",
+  "title": "Best friend trying to apply to being a leasing agent in mainly in student housing or but open regular property complex",
+  "text": "Is there anything that she can do to her resume to increase her chances of getting interviews since she doesn't have experience in leasing submitted by /u/ImpossibleCollar2887 [link] [comments]",
+  "url": "https://www.reddit.com/r/PropertyManagement/comments/1wh6srv/best_friend_trying_to_apply_to_being_a_leasing/",
+  "date": "2026-09-15"
+ },
+ {
+  "src": "reddit r/propertymanagement",
+  "title": "COI tracking for tenants, whats the best way to do it?",
+  "text": "For those managing commercial or residential portfolios: certificate of insurance tracking is one of those things that's fine until it isn't, I manage 200 units and it is driving me crazy Please share what's your set up? Spreadsheets, software, or a person? (I don't have the money lol) and how do u manage/handle the gap? submitted by /u/Gullible-Safety-7969 [link] [comments]",
+  "url": "https://www.reddit.com/r/PropertyManagement/comments/1u63uhp/coi_tracking_for_tenants_whats_the_best_way_to_do/",
+  "date": "2026-06-15"
+ },
+ {
+  "src": "reddit r/propertymanagement",
+  "title": "How do you all track vendor certificates of insurance?",
+  "text": "Curious how other property managers handle this — spreadsheets? Email reminders? Nothing until something lapses and you find out the hard way? Been dealing with vendors whose COIs expire and nobody catches it until there's a claim. Started building something to fix it for myself and wondering if this is a universal pain point or just mine. submitted by /u/randylahey_6 [link] [comments]",
+  "url": "https://www.reddit.com/r/PropertyManagement/comments/1vxfgmq/how_do_you_all_track_vendor_certificates_of/",
+  "date": "2026-08-24"
+ },
+ {
+  "src": "reddit r/propertymanagement",
+  "title": "Every showing wants move in several months out",
+  "text": "I have one rental that I have had amazing luck with for several years, with incredible tenants, and it rents very quickly with relatively no vacancy. This time around, I’m getting the negative side of being a landlord. It’s been vacant two months, I have lowered the price, it is in line with market rate, and I have an average of three showings every week. I’ve had a couple applications from people with very bad credit or who simply cannot afford the home. I had to decline both applications. Every showing says they want to move in three or four months from now. My question is, is this normal? Or is my price perhaps not motivating enough to grab the tenants that need to move in ASAP? Or has th",
+  "url": "https://www.reddit.com/r/PropertyManagement/comments/1rjp37b/every_showing_wants_move_in_several_months_out/",
+  "date": "2026-03-03"
+ },
+ {
+  "src": "reddit r/propertymanagement",
+  "title": "New to all of this and almost had an uninsured vendor on site last week, how are you guys managing your COIs?",
+  "text": "Almost messed up. Contractor showed up for a job and I almost forgot check his COI, but when i did i saw it had expired 3 weeks prior. I'm relatively new to managing properties professionally and I realize I don't have a real system for this, just an excel spreadsheet with expiry dates that i manually update but clearly that's not enough. What are you using? Is there software for this or is it all manual?i imagine there HAS to be some kind of method or template that makes this at least a little easier. submitted by /u/Few-Chemical1566 [link] [comments]",
+  "url": "https://www.reddit.com/r/PropertyManagement/comments/1t00808/new_to_all_of_this_and_almost_had_an_uninsured/",
+  "date": "2026-04-30"
+ },
+ {
+  "src": "reddit r/propertymanagement",
+  "title": "I build internal software. I've spent a week reading letting agency and property management sites, and I think I'm misreading something.",
+  "text": "Upfront so nobody has to guess: I build custom internal software for small businesses. I'm not pitching, there's no link in this post, and I won't DM anyone. I'm trying to work out whether I actually understand this industry, and I'd rather be told I'm wrong here than find out the expensive way. I read the public material of about a dozen UK letting agencies and property firms properly — fee schedules, service pages, terms of engagement. Two things surprised me. First, almost all of them already run software. PropertyFile, Fixflo, Buildium, COHO. The \"small agencies have no systems\" idea I came in with was just wrong. Second, compliance — gas safety, EICRs, EPCs, council licensing, deposit r",
+  "url": "https://www.reddit.com/r/PropertyManagement/comments/1vqich7/i_build_internal_software_ive_spent_a_week/",
+  "date": "2026-08-17"
+ },
+ {
+  "src": "reddit r/propertymanagement",
+  "title": "What do you guys use to track certifications?",
+  "text": "I’ve been using a spreadsheet for 5 ish years now, are you guys using other software/methods? submitted by /u/Competitive_Study522 [link] [comments]",
+  "url": "https://www.reddit.com/r/PropertyManagement/comments/1uvnx4f/what_do_you_guys_use_to_track_certifications/",
+  "date": "2026-07-13"
+ },
+ {
+  "src": "reddit r/propertymanagement",
+  "title": "Statutory deadlines — deposit returns, notice periods, renewal windows. How do they actually make it into your workflow?",
+  "text": "Every state has its own set of clocks: deposit return deadlines, entry notice, notice-to-terminate periods, renewal windows. Looking any of them up takes about two minutes. What I can't work out is how the lookup becomes an action. The rule lives on a state website or buried in a lease. The thing I actually look at every day is a spreadsheet or a piece of software that knows nothing about either. So the deadline only exists if a person remembers to go create it. For those of you running multiple properties, or across multiple states: When a tenant gives notice, does the deposit return deadline get created anywhere automatically, or does someone key it in by hand? Has your software ever told ",
+  "url": "https://www.reddit.com/r/PropertyManagement/comments/1vocofb/statutory_deadlines_deposit_returns_notice/",
+  "date": "2026-08-14"
+ },
+ {
+  "src": "reddit r/propertymanagement",
+  "title": "How are you sending owner reports without it becoming a huge time sink?",
+  "text": "I’m managing a handful of properties and my current workflow is kind of painful: Track rent + expenses in a spreadsheet Manually clean it up Export / reformat into a PDF Send to owners It works but every month it feels like way more effort than it should be and the end result still looks kind of janky. Curious how others are handling this: Are you just sticking with spreadsheets? Using software? Or not really sending formal reports at all? Also roughly how long does it take you each month? submitted by /u/Blzn [link] [comments]",
+  "url": "https://www.reddit.com/r/PropertyManagement/comments/1s5b4ej/how_are_you_sending_owner_reports_without_it/",
+  "date": "2026-03-27"
+ },
+ {
+  "src": "reddit r/propertymanagement",
+  "title": "Is this just me?",
+  "text": "I’m a property manager in WV and lately I’ve been laughing at myself because of how ridiculous my workflow looks most days. A typical moment for me: I open Buildium to check one thing… Then jump to Gmail… Then hop to Google Drive… Then back to Buildium… Then I’m staring at the screen like: “Wait… what was I even doing?” I even use two monitors, and all it’s done is give me twice as many tabs to lose track of. It feels like I’m running two separate lives at the same time. Sometimes I’ll copy/paste an email into a blank doc just to rewrite it because my brain is fried after flipping through 12 tabs in 12 seconds. My whole setup looks like a digital pile of laundry I keep meaning to fold. submi",
+  "url": "https://www.reddit.com/r/PropertyManagement/comments/1p408w4/is_this_just_me/",
+  "date": "2025-11-22"
+ },
+ {
+  "src": "reddit r/propertymanagement",
+  "title": "Landlord -OK Best maintenance app?",
+  "text": "I’m looking for an easy to use maintenance app for tenants. We don’t need payments or tracking. I just need a simple and preferably free or affordable app where they can request maintenance. What are your recommendations? I currently have TurboTenant, but it’s a pain in the butt. If the only reason you want to use it is for maintenance. submitted by /u/Maiden_Far [link] [comments]",
+  "url": "https://www.reddit.com/r/PropertyManagement/comments/1skbwn4/landlord_ok_best_maintenance_app/",
+  "date": "2026-04-13"
+ },
+ {
+  "src": "reddit r/propertymanagement",
+  "title": "Starting off - How are you tracking vendors and contractors",
+  "text": "Hey everyone. So, in a nutshell, I'm on week 2 of a new PM job of a medium sized portfolio. And I’m also fairly new to property management in general. But like ever new person, I'm trying to get my ops systemized early on. Right now I’m trying to figure out the best way to keep track of vendors and contractors. I got a list of HVAC techs to cleaners and general maintenance folks. How do all of you do it, especially to keep track of contacts, contracted rates, and service history and so on? A Google Sheet or local spreadsheet? A property management system (like Yardi, Entrada, AppFolio, etc.)? Some other CRM or workflow tool? …or honestly, is it still pen and paper in that grey folder somewhe",
+  "url": "https://www.reddit.com/r/PropertyManagement/comments/1qczzyl/starting_off_how_are_you_tracking_vendors_and/",
+  "date": "2026-01-14"
+ },
+ {
+  "src": "reddit r/musicmarketing",
+  "title": "What’s the most you would pay for album cover artwork? At what price would you guys tap out?",
+  "text": "Just curious to hear your thoughts on this! I have heard some people say that $200 is way too much and others say that $50 is too much At what price would you guys tap out? submitted by /u/Mousse_Rich [link] [comments]",
+  "url": "https://www.reddit.com/r/musicmarketing/comments/1tn4u40/whats_the_most_you_would_pay_for_album_cover/",
+  "date": "2026-05-25"
+ },
+ {
+  "src": "reddit r/musicmarketing",
+  "title": "Tracked every dollar I spent promoting my music over 8 months. Most of it did literally nothing.",
+  "text": "So I got kind of obsessive about this last year. I started logging every single thing I spent money on to promote my tracks on SoundCloud and where my actual growth came from. Not just plays, like actual followers who came back and engaged on the next release. I’ll spare the full spreadsheet but the short version is I burned probably $400 on repost networks, a couple Instagram ad runs, and one of those “submit to curators” services. The repost networks got me plays. Like technically yes the number went up. But I’d check back a week later and none of those people followed, none of them commented, none of them showed up on my next track. Just ghost plays that made my stats look weird. The Inst",
+  "url": "https://www.reddit.com/r/musicmarketing/comments/1to43gw/tracked_every_dollar_i_spent_promoting_my_music/",
+  "date": "2026-05-26"
+ },
+ {
+  "src": "reddit r/musicmarketing",
+  "title": "Groover and Submit Hub",
+  "text": "I just want to share what I'm learning about Groover and Submit Hub. I'm pretty new to the music scene. With Groover, it's been a mixed bag of generic ( did they even listen to my song?) to flat-out curators not listening and addressing me by a different artist name, reviewing their song, and denying me based on another artist's song. This literally just happened to me three times today. I did get an immediate refund. My problem is not with Groover so much as the quality of curators. I wonder if they screen or penalize when a curator makes this kind of mistake, or are we dealing with AI yet again! More annoying are the zillion promotion dudes/gals who say they will share, but it's with a str",
+  "url": "https://www.reddit.com/r/musicmarketing/comments/1u3y9nz/groover_and_submit_hub/",
+  "date": "2026-06-12"
+ },
+ {
+  "src": "reddit r/musicmarketing",
+  "title": "How I use Claude's Chrome Extension (MCP) to pull Spotify for Artists data and verify my Meta ads are actually working",
+  "text": "Been running Meta ads for independent artists for a few years now and I wanted to share a workflow that's genuinely changed how I diagnose campaigns. If you're spending money on ads and relying solely on Meta's attribution to tell you it's \"working\"... you're flying blind. Meta will tell you your ads are delivering. Reach looks good. Clicks look good. But is Spotify actually seeing the impact? That's the gap most people never close. Claude Pro has a beta browser extension called Claude in Chrome that uses MCP (Model Context Protocol)... basically it gives Claude the ability to read and interact with whatever's open in your browser in real time. No API exports, no copy-pasting spreadsheets. Y",
+  "url": "https://www.reddit.com/r/musicmarketing/comments/1ui1o7m/how_i_use_claudes_chrome_extension_mcp_to_pull/",
+  "date": "2026-06-28"
+ },
+ {
+  "src": "reddit r/musicmarketing",
+  "title": "Experiment: can artists and listeners co-run a constantly refreshing playlist, like a small radio station?",
+  "text": "I've been running an experiment for a while and I'd like to hear what this community thinks of it. The idea is a Spotify playlist that works a bit like a radio station, where both music lovers and artists can contribute tracks and the playlist is always being refreshed. Nobody edits it by hand. A bot does the adding based on posts people make on Bluesky, and anyone can take part, whether they make music or just want to share something they love. To keep it worth listening to, there are some rules built in. The playlist holds 50 tracks, and the same artist can only be on it once at a time so no single act takes over. Tracks rotate out as new ones come in, usually within a couple of days, so s",
+  "url": "https://www.reddit.com/r/musicmarketing/comments/1wqp3vn/experiment_can_artists_and_listeners_corun_a/",
+  "date": "2026-09-26"
+ },
+ {
+  "src": "reddit r/musicmarketing",
+  "title": "What i learned pitching ~200 playlist curators as a nobody (numbers inside)",
+  "text": "Tracked my time across my last release cycle because it felt like I was working constantly and getting nowhere. Rough split over 6 weeks: about 80% went to admin (building the smart link, formatting pitches, updating the spreadsheet, scheduling posts, chasing curator follow-ups) and maybe 20% to things that actually moved numbers. What was worth it: the Spotify for Artists editorial pitch (free, most people skip it, submit 3-4 weeks out), follow-ups (over half my curator replies came from the follow-up email, not the first one), and posting 3 short clips a week for the month after release instead of one big release-day push. What wasn't: mass-emailing curators with a template (2% reply rate ",
+  "url": "https://www.reddit.com/r/musicmarketing/comments/1ungr85/what_i_learned_pitching_200_playlist_curators_as/",
+  "date": "2026-07-04"
+ },
+ {
+  "src": "reddit r/musicmarketing",
+  "title": "How do you actually keep track of your music business stuff? (artists + managers, genuinely curious)",
+  "text": "Been going back and forth between Notion, spreadsheets, and just texting myself reminders, and it's a mess. Curious how other people handle this — whether you're a solo artist doing everything yourself or managing other people's careers. A few things I'm trying to figure out: What do you actually use right now? Spreadsheets, Notion, a real tool, group chats, nothing? What's the most annoying part — money/royalties, bookings, splits, just knowing who owes what to who? If you manage other artists — what breaks first when you add a second or third artist to your roster? Anyone gotten burned by a splits/royalty mix-up or someone seeing financial stuff they shouldn't have? Not trying to sell anyt",
+  "url": "https://www.reddit.com/r/musicmarketing/comments/1ugvdz6/how_do_you_actually_keep_track_of_your_music/",
+  "date": "2026-06-27"
+ },
+ {
+  "src": "reddit r/musicmarketing",
+  "title": "How I built an AI assistant that runs my music marketing ops (using Claude Code) and you can too",
+  "text": "Over the past few weeks I built out an AI assistant inside Claude Code (Anthropic's coding tool... yes, I'm using a dev tool for marketing ops, stick with me) that now handles a chunk of the repetitive work I used to do by hand. AND you can do this too. What it actually does: I set it up with a social media poster that can reshare existing Instagram/TikTok content from a rotation pool of past posts. Important detail: it's not blasting the same video out every 3 hours. platforms flag repetitive content from the same account and suppress your reach for it. Instead it picks whichever older post hasn't been reshared in the longest time, on-demand, so evergreen content keeps working without spamm",
+  "url": "https://www.reddit.com/r/musicmarketing/comments/1uxwdqc/how_i_built_an_ai_assistant_that_runs_my_music/",
+  "date": "2026-07-16"
+ },
+ {
+  "src": "reddit r/musicmarketing",
+  "title": "How do you guys find content references?",
+  "text": "Hey! Hope everyone is going well So, im planning new releases for me and my band and at some point i need reference, may it be like other artists that have good social media practices, the ones that have good hooks on their videos/fan accounts and stuff From the guys that really work with it, do you have an tool that makes life easier when searching for some references? Ai prompt or stuff, not to make everything for me, just to help me find good things to model and adapt faster than going it by hand. I already have a plan that i wrote down, but i need those top-of-funnel videos to start engaging with people not only by spending a ton in ads, but also going organic too submitted by /u/-nom4d_",
+  "url": "https://www.reddit.com/r/musicmarketing/comments/1vr432v/how_do_you_guys_find_content_references/",
+  "date": "2026-08-17"
+ },
+ {
+  "src": "reddit r/musicmarketing",
+  "title": "Building a central hub for musicians to run their releases — what would you want in it?",
+  "text": "I'm building a tool to be the one place musicians run everything around a release — tasks, deadlines, the team, the money, all in one spot instead of scattered across spreadsheets. There's also a built-in checklist of what a release actually needs (splits, metadata, pre-saves, royalties). It's for indie artists and small management/label teams without a big budget, so I want it cheap. Before I build the wrong things, I'd love your take: What part of a release do you hate doing or always forget? What other tools would this need to work with? (Spotify for Artists, your distributor, DISCO, Google Drive, Mailchimp, calendar, royalty/accounting stuff…) If you manage more than one artist — what fa",
+  "url": "https://www.reddit.com/r/musicmarketing/comments/1typdk7/building_a_central_hub_for_musicians_to_run_their/",
+  "date": "2026-06-06"
+ },
+ {
+  "src": "reddit r/musicmarketing",
+  "title": "Playlist curators: how do you track growth and make daily decisions?",
+  "text": "I've been curating playlists for a while and kept running into the same problem: I couldn't tell what was actually working. Followers drop — no clear reason. I add tracks — no idea which ones helped. Mostly guessing. I started tracking things manually (spreadsheets, notes) and it helped, but I'm curious how others do it. How do you track what's happening with your playlists? (followers, adds/removes, growth, etc.) What's the one decision you make most often as a curator — and how long does it usually take? What would save you the most time in your curator workflow? Not selling anything — just comparing approaches. Happy to hear however you work. submitted by /u/Conscious_Purpose_61 [link] [c",
+  "url": "https://www.reddit.com/r/musicmarketing/comments/1udiz8i/playlist_curators_how_do_you_track_growth_and/",
+  "date": "2026-06-23"
+ },
+ {
+  "src": "reddit r/musicmarketing",
+  "title": "Want better shows? Start keeping a Show History Sheet.",
+  "text": "It's a simple spreadsheet, but it's one of the most underrated tools an independent artist can have. Here's what goes in it: Every venue you've played Tickets sold at each show Other artists on the bill Promoter contacts (so you can reach back out) Merch revenue per show When you're pitching a show or reaching out to a promoter, you're not just asking for a shot, you're presenting a track record. That sheet lets them see your history at a glance. It makes you look like a professional, and professionals get treated like professionals. More importantly, it gives you leverage. If you can consistently show that you put 50 heads through the door, you can justify a real guarantee. You can justify ",
+  "url": "https://www.reddit.com/r/musicmarketing/comments/1tdwgaf/want_better_shows_start_keeping_a_show_history/",
+  "date": "2026-05-15"
+ },
+ {
+  "src": "reddit r/musicmarketing",
+  "title": "I got tired of manually spamming my gig flyers to 20 groups every week, so I automated it",
+  "text": "If you play local gigs, you know the grind. Promoters expect you to blast the flyer everywhere, and you end up spending your Thursday afternoon copy-pasting into every \"Events in [City]\" and \"Nightlife\" group. I built a tool called SuperFB Extension to handle the promo grunt work. For Artists/DJs: Upload your flyer and caption once. Select all your local rave/music/event groups. Schedule it to drop Friday afternoon. It uses 'human' delays so FB doesn't flag you as a bot. Spend more time in Ableton/practice, less time on Facebook. submitted by /u/dark_anarchy20 [link] [comments]",
+  "url": "https://www.reddit.com/r/musicmarketing/comments/1pgin8q/i_got_tired_of_manually_spamming_my_gig_flyers_to/",
+  "date": "2025-12-07"
+ },
+ {
+  "src": "youtube 'wedding photographer workflow tips'",
+  "title": "The Editing Shortcut Every Wedding Photographer Needs",
+  "text": "super helpful comment about masking the windows!",
+  "url": "https://www.youtube.com/watch?v=OMfa4Ji_lHA&lc=UgzpuIhr64YYEBBx_Vx4AaABAg",
+  "date": "2026-06-10",
+  "likes": 0
+ },
+ {
+  "src": "youtube 'wedding photographer workflow tips'",
+  "title": "The Editing Shortcut Every Wedding Photographer Needs",
+  "text": "Would you provide details of your harness and rear bag?",
+  "url": "https://www.youtube.com/watch?v=OMfa4Ji_lHA&lc=UgzNPj3xQjAz9u4bZlV4AaABAg",
+  "date": "2026-03-31",
+  "likes": 0
+ },
+ {
+  "src": "youtube 'wedding photographer workflow tips'",
+  "title": "The Editing Shortcut Every Wedding Photographer Needs",
+  "text": "Masking is a game changer, i use it on just about every photo.",
+  "url": "https://www.youtube.com/watch?v=OMfa4Ji_lHA&lc=UgwaJpUWAAq3OcmRwyV4AaABAg",
+  "date": "2026-03-30",
+  "likes": 0
+ },
+ {
+  "src": "youtube 'wedding photographer workflow tips'",
+  "title": "The Editing Shortcut Every Wedding Photographer Needs",
+  "text": "Hey! Are you planning a live where you edit raw files? I'd be happy to send something !",
+  "url": "https://www.youtube.com/watch?v=OMfa4Ji_lHA&lc=Ugykjh_djRwkDECZWrV4AaABAg",
+  "date": "2026-04-24",
+  "likes": 0
+ },
+ {
+  "src": "youtube 'wedding photographer workflow tips'",
+  "title": "The Editing Shortcut Every Wedding Photographer Needs",
+  "text": "Hi John! Thank you for these tips. My issue is I take a lot of photos for my church that has three different lighting. How can I edit faster when I go to edit?",
+  "url": "https://www.youtube.com/watch?v=OMfa4Ji_lHA&lc=UgxUBAgP8y8xVfaCHBB4AaABAg",
+  "date": "2026-03-30",
+  "likes": 0
+ },
+ {
+  "src": "youtube 'wedding photographer workflow tips'",
+  "title": "The Editing Shortcut Every Wedding Photographer Needs",
+  "text": "Just wanted to say thumbnail for this vid was fire 👏 Whatcha using?",
+  "url": "https://www.youtube.com/watch?v=OMfa4Ji_lHA&lc=UgytosCk6p05MRDThQ14AaABAg",
+  "date": "2026-03-31",
+  "likes": 0
+ },
+ {
+  "src": "youtube 'wedding photographer workflow tips'",
+  "title": "The Editing Shortcut Every Wedding Photographer Needs",
+  "text": "Please allow switching the audio track to dubbed versions in other languages. YouTube does an excellent job at this.",
+  "url": "https://www.youtube.com/watch?v=OMfa4Ji_lHA&lc=UgxZp0bYCWEgr-eitXt4AaABAg",
+  "date": "2026-03-30",
+  "likes": 0
+ },
+ {
+  "src": "youtube 'wedding photographer workflow tips'",
+  "title": "The Editing Shortcut Every Wedding Photographer Needs",
+  "text": "Why you don't using canon cam And i hope to hear your word about canon",
+  "url": "https://www.youtube.com/watch?v=OMfa4Ji_lHA&lc=UgzX7p7OBStaxGwzDC14AaABAg",
+  "date": "2026-04-03",
+  "likes": 0
+ },
+ {
+  "src": "youtube 'wedding photographer workflow tips'",
+  "title": "The Editing Shortcut Every Wedding Photographer Needs",
+  "text": "I literally was saying where's John's next video...lol",
+  "url": "https://www.youtube.com/watch?v=OMfa4Ji_lHA&lc=UgymHYfjoWVkBkfliJ14AaABAg",
+  "date": "2026-03-30",
+  "likes": 0
+ },
+ {
+  "src": "youtube 'wedding photographer workflow tips'",
+  "title": "The Editing Shortcut Every Wedding Photographer Needs",
+  "text": "Hey John! Does Imagen sponsor you because I saw you in an advert with them while I was perusing on FB",
+  "url": "https://www.youtube.com/watch?v=OMfa4Ji_lHA&lc=UgyRfCpiRAG_v2YuMe94AaABAg",
+  "date": "2026-04-06",
+  "likes": 0
+ },
+ {
+  "src": "youtube 'wedding photographer workflow tips'",
+  "title": "The Editing Shortcut Every Wedding Photographer Needs",
+  "text": "John, please don’t do that AI looking thumbnail",
+  "url": "https://www.youtube.com/watch?v=OMfa4Ji_lHA&lc=UgzcbxlVILL6TD8b3cR4AaABAg",
+  "date": "2026-03-30",
+  "likes": 3
+ },
+ {
+  "src": "youtube 'wedding photographer workflow tips'",
+  "title": "This is how Your Wedding Photographer Uses AI",
+  "text": "This is almost exactly what I've been doing lately. Still working out the kinks, but it's speeding up my process by helping with the mundane and time-consuming parts. The only thing that gives me pause is the potential for my images to be fed into generative systems - I admit I haven't done enough research on that. Thanks for a great video!",
+  "url": "https://www.youtube.com/watch?v=o3ljBgb_O3A&lc=UgxKrSmB6ajABKW0tix4AaABAg",
+  "date": "2026-09-08",
+  "likes": 2
+ },
+ {
+  "src": "youtube 'wedding photographer workflow tips'",
+  "title": "This is how Your Wedding Photographer Uses AI",
+  "text": "One AI function I would like to see is automated exhaustive tagging. Such that the library can work for arbitrary searches, e.g., if want to find all of my wildlife photos where the animal appears to be looking directly at the camera, or any other random search. For example, you may have a set of a few primary tags, but then I would like a set of hidden tags similar to what platforms like X does, where an artist can draw an image and post it, and the AI will tag it in great depth, to a point where the feed can be curated based on likes and interactions for image posts, even though the artist never manually included any tags.",
+  "url": "https://www.youtube.com/watch?v=o3ljBgb_O3A&lc=UgyhRy7jYOdVGHTOqKl4AaABAg",
+  "date": "2026-10-18",
+  "likes": 0
+ },
+ {
+  "src": "youtube 'wedding photographer workflow tips'",
+  "title": "This is how Your Wedding Photographer Uses AI",
+  "text": "What drew you to Imagen AI over Aftershoot?",
+  "url": "https://www.youtube.com/watch?v=o3ljBgb_O3A&lc=UgxDQwA8qEiln1N7vZR4AaABAg",
+  "date": "2026-09-09",
+  "likes": 0
+ },
+ {
+  "src": "youtube 'wedding photographer workflow tips'",
+  "title": "This is how Your Wedding Photographer Uses AI",
+  "text": "Photos are not overly AI edited, even with the removal tools, i don't understand why people would say it's disservice to clients",
+  "url": "https://www.youtube.com/watch?v=o3ljBgb_O3A&lc=UgyzmmmNqX5OThNkkUh4AaABAg",
+  "date": "2026-09-07",
+  "likes": 0
+ },
+ {
+  "src": "youtube 'wedding photographer workflow tips'",
+  "title": "This is how Your Wedding Photographer Uses AI",
+  "text": "Thanks , so in evoto you just bring some photos the most important ( portraits)not all your lighroom catalog the whole wedding , correct? Thanks",
+  "url": "https://www.youtube.com/watch?v=o3ljBgb_O3A&lc=UgwE-KlAxDukJWcBtvx4AaABAg",
+  "date": "2026-10-02",
+  "likes": 0
+ },
+ {
+  "src": "youtube 'wedding photographer workflow tips'",
+  "title": "Here’s your wedding photographer SEO strategy for 2026",
+  "text": "Such a good strategy! I’m always finding your blogging and SEO tips and tricks completely invaluable! ❤🙏",
+  "url": "https://www.youtube.com/watch?v=IEBr4ld_gjA&lc=Ugz-jkmFQPj8gALkAIt4AaABAg",
+  "date": "2026-02-21",
+  "likes": 2
+ },
+ {
+  "src": "youtube 'wedding photographer workflow tips'",
+  "title": "Here’s your wedding photographer SEO strategy for 2026",
+  "text": "✨ This is Part 1 of my Venue Blog Series for wedding photographers! If you're ready to stop relying only on social media and start getting found earlier in the planning process, this series will walk you through it step-by-step. And don’t forget — you can grab my FREE Venue Blog Photo Guide here: https://photographyworkflows.com/venue-blog-photo-guide-yt",
+  "url": "https://www.youtube.com/watch?v=IEBr4ld_gjA&lc=Ugzikvf4FFNdXdnhCsZ4AaABAg",
+  "date": "2026-02-20",
+  "likes": 0
+ },
+ {
+  "src": "youtube 'podcast editing workflow'",
+  "title": "This Podcast Editing Workflow Saves Hours Every Week",
+  "text": "What are some of the methods you use to save time editing video podcasts?",
+  "url": "https://www.youtube.com/watch?v=yoDqhHoxEOY&lc=UgyARZ2XANlt8iKm6814AaABAg",
+  "date": "2026-02-16",
+  "likes": 0
+ },
+ {
+  "src": "youtube 'podcast editing workflow'",
+  "title": "This Podcast Editing Workflow Saves Hours Every Week",
+  "text": "Kri, very helpful walk thru. I have the Ultra and agree it is an editing savior. I’ll have to try the AFV feature which the Ultra has also. Appreciate the overview!",
+  "url": "https://www.youtube.com/watch?v=yoDqhHoxEOY&lc=Ugy5aTyp7c0EZ2B_PLd4AaABAg",
+  "date": "2026-02-18",
+  "likes": 0
+ },
+ {
+  "src": "youtube 'podcast editing workflow'",
+  "title": "This Podcast Editing Workflow Saves Hours Every Week",
+  "text": "Hello, would you recommend the yolobox extreme and the roadster pro 2, for podcasting beginners 2-4 person. we are trying to purchase new equipment. your Videos are awesome. we are green with some of these items but are willing to spend and learn. your advise please😊",
+  "url": "https://www.youtube.com/watch?v=yoDqhHoxEOY&lc=UgyQ_8qDA6S_Tzl4REB4AaABAg",
+  "date": "2026-03-03",
+  "likes": 0
+ },
+ {
+  "src": "youtube 'podcast editing workflow'",
+  "title": "This Podcast Editing Workflow Saves Hours Every Week",
+  "text": "great vid...however, you mention the Yolobox Extreme specifically...are you saying you can do this using the Yolobox Ultra or Pro?",
+  "url": "https://www.youtube.com/watch?v=yoDqhHoxEOY&lc=UgxeUZE1-_C6DaHF86F4AaABAg",
+  "date": "2026-02-17",
+  "likes": 0
+ },
+ {
+  "src": "youtube 'podcast editing workflow'",
+  "title": "How I Edit Podcasts in DaVinci Resolve (Fast + Easy Workflow)",
+  "text": "UPDATE: AutoCut actually found me through THIS video and ended up sponsoring a follow-up where I tried out some of the other tools I've been overlooking in my DaVinci Resolve workflow! You can check out the new video here: https://www.youtube.com/watch?v=g3rq-aqZDOs",
+  "url": "https://www.youtube.com/watch?v=QC6KHm09ErY&lc=UgxQkwoSKYpPiuoEWBZ4AaABAg",
+  "date": "2026-10-01",
+  "likes": 0
+ },
+ {
+  "src": "youtube 'podcast editing workflow'",
+  "title": "How I Edit Podcasts in DaVinci Resolve (Fast + Easy Workflow)",
+  "text": "Such a gift of a video to beginner editors looking to land good jobs and deliver on time. Subscribed.",
+  "url": "https://www.youtube.com/watch?v=QC6KHm09ErY&lc=UgxceOFUEcMW_AsP-4R4AaABAg",
+  "date": "2026-03-05",
+  "likes": 6
+ },
+ {
+  "src": "youtube 'podcast editing workflow'",
+  "title": "How I Edit Podcasts in DaVinci Resolve (Fast + Easy Workflow)",
+  "text": "Thanks for creating this tutorial. Even for me as an advanced editor it was very useful watching it. I follow a lot of creators/youtubers and I don't hesitate to say that your content is one of the best out there. Cheers. Antonín",
+  "url": "https://www.youtube.com/watch?v=QC6KHm09ErY&lc=UgxYPsU6lerl5N5-3tV4AaABAg",
+  "date": "2026-02-22",
+  "likes": 1
+ },
+ {
+  "src": "youtube 'podcast editing workflow'",
+  "title": "How I Edit Podcasts in DaVinci Resolve (Fast + Easy Workflow)",
+  "text": "Good stuff man. Thanks for sharing an insight on how you edit podcasts. This is Gold content here.",
+  "url": "https://www.youtube.com/watch?v=QC6KHm09ErY&lc=UgyYD6gbPgvDyUYhIQd4AaABAg",
+  "date": "2026-09-25",
+  "likes": 0
+ },
+ {
+  "src": "youtube 'podcast editing workflow'",
+  "title": "How I Edit Podcasts in DaVinci Resolve (Fast + Easy Workflow)",
+  "text": "Thank you for your time and help. 2.0 because a stereo track has 2 tracks by definition, Left channel and Right Channel while a Mono track has just one =1.0 🙂",
+  "url": "https://www.youtube.com/watch?v=QC6KHm09ErY&lc=UgzWFtVX1lXPrzcmJYh4AaABAg",
+  "date": "2026-06-19",
+  "likes": 1
+ },
+ {
+  "src": "youtube 'podcast editing workflow'",
+  "title": "How I Edit Podcasts in DaVinci Resolve (Fast + Easy Workflow)",
+  "text": "19:15 the studio version of davinci has this inbuilt now",
+  "url": "https://www.youtube.com/watch?v=QC6KHm09ErY&lc=UgxdWhcoMIZ6TboK0Vl4AaABAg",
+  "date": "2026-08-29",
+  "likes": 0
+ },
+ {
+  "src": "youtube 'podcast editing workflow'",
+  "title": "How I Edit Podcasts in DaVinci Resolve (Fast + Easy Workflow)",
+  "text": "46:55 - my only issue here is that if i want to make changes I have to manually disable/enable clips. If it did the edit as a multicam clip making changes would be so easy",
+  "url": "https://www.youtube.com/watch?v=QC6KHm09ErY&lc=UgwS3bQdpdiYRFMzYk54AaABAg",
+  "date": "2026-08-29",
+  "likes": 0
+ },
+ {
+  "src": "youtube 'podcast editing workflow'",
+  "title": "How I Edit Podcasts in DaVinci Resolve (Fast + Easy Workflow)",
+  "text": "I’ve watched this video more than 5 times. I keep taking it step by step. This is my first time ever trying podcast editing and you made me choose Davinci and getting autocut too. I love the way you’re taking everything step by step. You’re indeed a pro when it comes to teaching people and being detailed with information. Though I’m not there yet but with time I will. I will check out your other videos now. Hopefully you have more on Davinci. I really don’t know how to zoom a speaker to make a particular part zoomed and also how do you make the two videos on the timeline one after auto cut is done with the podcast autocut? Thank you so much ❤",
+  "url": "https://www.youtube.com/watch?v=QC6KHm09ErY&lc=Ugz4i_ibi1C_JC59-Lh4AaABAg",
+  "date": "2026-02-02",
+  "likes": 1
+ },
+ {
+  "src": "youtube 'podcast editing workflow'",
+  "title": "How I Edit Podcasts in DaVinci Resolve (Fast + Easy Workflow)",
+  "text": "Brother, I don't know how you don't have more views and subscribers. Very good tips, and very good explaining. New subscriber from Spain. Maybe with contact you for some tips, because I will setting all the staff, with Audio Tecnica mics, some lights, Tascam Mic Recorder...and more things!",
+  "url": "https://www.youtube.com/watch?v=QC6KHm09ErY&lc=Ugyal7n9k6HGHl2NSNR4AaABAg",
+  "date": "2026-01-22",
+  "likes": 0
+ },
+ {
+  "src": "youtube 'podcast editing workflow'",
+  "title": "How I Edit Podcasts in DaVinci Resolve (Fast + Easy Workflow)",
+  "text": "the auto-cut workflow is a nice time saver. Vizard Agent could fit into the next step too — finding usable moments from the full podcast, then handling captions and vertical reframing before the final polish.",
+  "url": "https://www.youtube.com/watch?v=QC6KHm09ErY&lc=Ugw2ymfTObBqCuIBQ094AaABAg",
+  "date": "2026-09-01",
+  "likes": 0
+ },
+ {
+  "src": "youtube 'podcast editing workflow'",
+  "title": "How I Edit Podcasts in DaVinci Resolve (Fast + Easy Workflow)",
+  "text": "The option for me to auto-sync my clips is greyed out, and I can't figure out why. I even tried the multicam sync in Davinci, and it's not giving me the option still. idk what I'm doing wrong. Help please!",
+  "url": "https://www.youtube.com/watch?v=QC6KHm09ErY&lc=UgxJvRqvavohyf48AfR4AaABAg",
+  "date": "2026-03-17",
+  "likes": 0
+ },
+ {
+  "src": "youtube 'podcast editing workflow'",
+  "title": "How I Edit Podcasts in DaVinci Resolve (Fast + Easy Workflow)",
+  "text": "Thank you sir for this Vedio but what about cutting filler words and unnecessary gaps to cut can u give any tips to fast that process",
+  "url": "https://www.youtube.com/watch?v=QC6KHm09ErY&lc=Ugw6g7gkmWN-_CJdTcV4AaABAg",
+  "date": "2026-06-16",
+  "likes": 0
+ },
+ {
+  "src": "youtube 'podcast editing workflow'",
+  "title": "How I Edit Podcasts in DaVinci Resolve (Fast + Easy Workflow)",
+  "text": "Hi! Thank you for making this video. I found it really useful and learned a lot from it! I have one question: do you know any websites where I can download free raw podcast footage to practice video editing? Thanks again!",
+  "url": "https://www.youtube.com/watch?v=QC6KHm09ErY&lc=Ugza2cOzeexm5Ir4nb14AaABAg",
+  "date": "2026-09-22",
+  "likes": 0
+ },
+ {
+  "src": "youtube 'podcast editing workflow'",
+  "title": "How I Edit Podcasts in DaVinci Resolve (Fast + Easy Workflow)",
+  "text": "why you didn't use caption because i have seen many podcast they use caption is there any reason ?",
+  "url": "https://www.youtube.com/watch?v=QC6KHm09ErY&lc=Ugz9G_AniW4r8FDNTF94AaABAg",
+  "date": "2026-02-28",
+  "likes": 0
+ },
+ {
+  "src": "youtube 'podcast editing workflow'",
+  "title": "How I Edit Podcasts in DaVinci Resolve (Fast + Easy Workflow)",
+  "text": "Hey Sweno, you said you make sure you can see yourself in every camera when you clap, how do you do this when camera's are positioned at each speaker on different sides of the table?",
+  "url": "https://www.youtube.com/watch?v=QC6KHm09ErY&lc=UgzcwgGtoWKxAq8K5354AaABAg",
+  "date": "2026-07-13",
+  "likes": 0
+ },
+ {
+  "src": "youtube 'podcast editing workflow'",
+  "title": "How I Edit Podcasts in DaVinci Resolve (Fast + Easy Workflow)",
+  "text": "Dear creator, I really respect your content. Would you consider adding an Arabic voice-over for your videos? It would help many Arabic viewers",
+  "url": "https://www.youtube.com/watch?v=QC6KHm09ErY&lc=UgwfB8RBPnos6JMO3mh4AaABAg",
+  "date": "2026-02-22",
+  "likes": 0
+ },
+ {
+  "src": "youtube 'podcast editing workflow'",
+  "title": "How I Edit Podcasts in DaVinci Resolve (Fast + Easy Workflow)",
+  "text": "you gotta get a room tone in the background of your audio man those blanks in between your speech are jarring. super helpful video though!",
+  "url": "https://www.youtube.com/watch?v=QC6KHm09ErY&lc=Ugxq1QhBKupNH2YPVVd4AaABAg",
+  "date": "2026-09-28",
+  "likes": 0
+ },
+ {
+  "src": "youtube 'podcast editing workflow'",
+  "title": "How I Edit Podcasts in DaVinci Resolve (Fast + Easy Workflow)",
+  "text": "Thank you so much for this tutorial I have a question . Do you use a multicam timeline or normal timeline? . Do you need studio for any thing mentioned in this tutorial? +++ You said that you gonna make a video about Fairlight page, PLEASE MAKE IT SOON!",
+  "url": "https://www.youtube.com/watch?v=QC6KHm09ErY&lc=Ugwh0zE28EjvnpzXq6d4AaABAg",
+  "date": "2026-05-08",
+  "likes": 0
+ },
+ {
+  "src": "youtube 'podcast editing workflow'",
+  "title": "How I Edit Podcasts in DaVinci Resolve (Fast + Easy Workflow)",
+  "text": "5:10 -bro i literally came for this and you didnt cover that. Great video though!",
+  "url": "https://www.youtube.com/watch?v=QC6KHm09ErY&lc=Ugy4ozNGo_6CiO6IA0p4AaABAg",
+  "date": "2026-08-29",
+  "likes": 0
+ },
+ {
+  "src": "youtube 'podcast editing workflow'",
+  "title": "How I Edit Podcasts in DaVinci Resolve (Fast + Easy Workflow)",
+  "text": "Hey man! I'm curious what the difference is for you between AutoCut and the built in Multi-Cam Switcher. Downloaded the free trial and trying to figure out if it's worth the subscription. Thanks!",
+  "url": "https://www.youtube.com/watch?v=QC6KHm09ErY&lc=Ugw7_NWoBnolTCflCBN4AaABAg",
+  "date": "2026-02-05",
+  "likes": 0
+ },
+ {
+  "src": "youtube 'podcast editing workflow'",
+  "title": "How I Edit Podcasts in DaVinci Resolve (Fast + Easy Workflow)",
+  "text": "Too much unnecessary talks...otherwise the video is good",
+  "url": "https://www.youtube.com/watch?v=QC6KHm09ErY&lc=UgxzruQCSzQ0jxrS5oB4AaABAg",
+  "date": "2026-03-12",
+  "likes": 1
+ },
+ {
+  "src": "youtube 'podcast editing workflow'",
+  "title": "Fastest AI Editing Workflow for Podcasts",
+  "text": "🤯 FREE AI video editing for podcasts: https://creators.riverside.com/trevorjones 👉🏼 Use code TREVOR for 1 FREE month of Riverside Pro",
+  "url": "https://www.youtube.com/watch?v=Fo84zaub1Xs&lc=UgwYuhSvEJXzc2UzzqV4AaABAg",
+  "date": "2026-07-02",
+  "likes": 2
+ },
+ {
+  "src": "youtube 'podcast editing workflow'",
+  "title": "Fastest AI Editing Workflow for Podcasts",
+  "text": "Your editing tutorials completely changed how I approach videos. I've been watching since 2023, and I honestly wouldn't be where I am without them. I sent you an email about a faceless \"What If?\" editing tutorial for Android. I think it could become one of your most valuable videos.",
+  "url": "https://www.youtube.com/watch?v=Fo84zaub1Xs&lc=UgxKHjax22Y67qIskZR4AaABAg",
+  "date": "2026-07-22",
+  "likes": 1
+ },
+ {
+  "src": "youtube 'podcast editing workflow'",
+  "title": "Fastest AI Editing Workflow for Podcasts",
+  "text": "The most funny thing with this starting with a Adobe commercial 🤣",
+  "url": "https://www.youtube.com/watch?v=Fo84zaub1Xs&lc=UgyYSAzCgKoi_lq8qDB4AaABAg",
+  "date": "2026-07-16",
+  "likes": 1
+ },
+ {
+  "src": "youtube 'podcast editing workflow'",
+  "title": "Fastest AI Editing Workflow for Podcasts",
+  "text": "Have you discontinued dubbing the videos into Arabic, or what? Because from today onwards, the videos no longer support Arabic dubbing. Thank you for these wonderful videos❤❤",
+  "url": "https://www.youtube.com/watch?v=Fo84zaub1Xs&lc=UgwJ9TMV_dASni-DoG54AaABAg",
+  "date": "2026-07-03",
+  "likes": 2
+ },
+ {
+  "src": "youtube 'podcast editing workflow'",
+  "title": "Complete Beginner's Guide to Editing a Podcast Episode",
+  "text": "Another great video my friend keep up the great work !",
+  "url": "https://www.youtube.com/watch?v=st67XGXLNSQ&lc=UgxJmMo8YYzwR_-AYWB4AaABAg",
+  "date": "2026-08-15",
+  "likes": 3
+ },
+ {
+  "src": "youtube 'podcast editing workflow'",
+  "title": "Complete Beginner's Guide to Editing a Podcast Episode",
+  "text": "Hey! I’m a YouTube thumbnail designer. I’d love to help with your thumbnails. If you’re interested, please DM me!",
+  "url": "https://www.youtube.com/watch?v=st67XGXLNSQ&lc=UgwxZQK6VhM07gdJENV4AaABAg",
+  "date": "2026-08-16",
+  "likes": 0
+ },
+ {
+  "src": "youtube 'property manager software review'",
+  "title": "Doorloop Vs Appfolio (2026) Which is the Best Property Management Software? My Unsponsored Review!",
+  "text": "► Try Doorloop Today ➡ https://doorloop.pxf.io/6kd5gm 💥EXCLUSIVE DISCOUNT AUTOMATICALLY APPLIED💥 ► Doorloop Full Review ➡ https://youtu.be/cBydRFkJoAE",
+  "url": "https://www.youtube.com/watch?v=rsx7HcbXdok&lc=UgxRi-rXKRzPMHpNNCd4AaABAg",
+  "date": "2026-06-13",
+  "likes": 0
+ },
+ {
+  "src": "youtube 'property manager software review'",
+  "title": "Baselane Review in 5 Minutes | Property Management Software Reviews",
+  "text": "This is a fair review stressing that this is a banking platform.",
+  "url": "https://www.youtube.com/watch?v=Q0DEzgMEY3Y&lc=UgwQZk0v4vlZ5YpPCmh4AaABAg",
+  "date": "2026-05-03",
+  "likes": 0
+ },
+ {
+  "src": "youtube 'property manager software review'",
+  "title": "Baselane Review in 5 Minutes | Property Management Software Reviews",
+  "text": "I agree that Baselane is a great software for managing and tracking rental property finances. It has helped me stay organized as a new investor thanks to the auto-tagging features.",
+  "url": "https://www.youtube.com/watch?v=Q0DEzgMEY3Y&lc=UgwEfjz_wQz6dTh-LWJ4AaABAg",
+  "date": "2025-12-05",
+  "likes": 0
+ },
+ {
+  "src": "youtube 'property manager software review'",
+  "title": "AppFolio 2026 Review for Property Managers",
+  "text": "Compare AppFolio to other property management software: https://softwareconnect.com/go/property-management-software-91671",
+  "url": "https://www.youtube.com/watch?v=j71w_lCiam4&lc=Ugy2twIbIeQIFt2CF8R4AaABAg",
+  "date": "2026-02-03",
+  "likes": 0
+ },
+ {
+  "src": "youtube 'property manager software review'",
+  "title": "AppFolio 2026 Review for Property Managers",
+  "text": "dan capacitacion de APPFOLIO en español?",
+  "url": "https://www.youtube.com/watch?v=j71w_lCiam4&lc=UgwKqcMqSfonbOm2Kdt4AaABAg",
+  "date": "2026-06-24",
+  "likes": 0
+ },
+ {
+  "src": "youtube 'property manager software review'",
+  "title": "AppFolio 2026 Review for Property Managers",
+  "text": "Good review. How do you feel about Rent Manager vs. Intuit Suites?",
+  "url": "https://www.youtube.com/watch?v=j71w_lCiam4&lc=Ugy0fT4OnzmDkqUDysl4AaABAg",
+  "date": "2026-09-13",
+  "likes": 0
+ },
+ {
+  "src": "youtube 'bookkeeping small business workflow'",
+  "title": "My Monthly Bookkeeping Workflow (Step-by-Step)",
+  "text": "I manage an investment fund called ZIP Capital, where accredited investors can earn 8% to 12% fixed returns, secured by real estate. If you're looking for a stable, passive way to grow your wealth, register here to learn more: https://www.zipcapitalfund.com/",
+  "url": "https://www.youtube.com/watch?v=cepXTui3ufA&lc=Ugyq4uf5Na1rX2egO9B4AaABAg",
+  "date": "2026-07-21",
+  "likes": 1
+ },
+ {
+  "src": "youtube 'bookkeeping small business workflow'",
+  "title": "My Monthly Bookkeeping Workflow (Step-by-Step)",
+  "text": "you're paving the way to help people win, thank you for your wisdom!",
+  "url": "https://www.youtube.com/watch?v=cepXTui3ufA&lc=Ugy3CL55IeJxXDnLuaJ4AaABAg",
+  "date": "2026-07-23",
+  "likes": 0
+ },
+ {
+  "src": "youtube 'bookkeeping small business workflow'",
+  "title": "My Monthly Bookkeeping Workflow (Step-by-Step)",
+  "text": "I really appreciate all the information you share, especially as you've grown so big and bring in as much as you do. I'm just launching my business and hustling looking for my first client. Just wanted to say thank you.",
+  "url": "https://www.youtube.com/watch?v=cepXTui3ufA&lc=UgwZxXuDWyzsOi0Zipd4AaABAg",
+  "date": "2026-07-22",
+  "likes": 0
+ },
+ {
+  "src": "youtube 'bookkeeping small business workflow'",
+  "title": "My Monthly Bookkeeping Workflow (Step-by-Step)",
+  "text": "Awesome material Zach. This is gold, thank you! God bless you with Zip Capital and it sounds like He is blessing it!",
+  "url": "https://www.youtube.com/watch?v=cepXTui3ufA&lc=UgxVfIDr0oLqwCAs0ml4AaABAg",
+  "date": "2026-07-28",
+  "likes": 0
+ },
+ {
+  "src": "youtube 'bookkeeping small business workflow'",
+  "title": "My Monthly Bookkeeping Workflow (Step-by-Step)",
+  "text": "Thanks for sharing your good idea about monthly bookkeeping processing",
+  "url": "https://www.youtube.com/watch?v=cepXTui3ufA&lc=Ugz5kZD6Jv5QV5ONqoR4AaABAg",
+  "date": "2026-08-04",
+  "likes": 0
+ },
+ {
+  "src": "youtube 'bookkeeping small business workflow'",
+  "title": "My Monthly Bookkeeping Workflow (Step-by-Step)",
+  "text": "😂😂😂 ….Looking over my shoulder, breathing down my neck….. 🤣😅😂very Funny . I like that",
+  "url": "https://www.youtube.com/watch?v=cepXTui3ufA&lc=UgySOZ5rqEU1oGIfmqJ4AaABAg",
+  "date": "2026-08-07",
+  "likes": 0
+ },
+ {
+  "src": "youtube 'bookkeeping small business workflow'",
+  "title": "My Monthly Bookkeeping Workflow (Step-by-Step)",
+  "text": "If the client suspects/knows you're only Post-ing items automatically arriving from the bank feed.... and never wanting to Match bank feed items to *_manual entries_* they made.... or if the client feels that adding manual entries in their QBO will 'cause problems for the bookkeeper'... it sounds like a 'bank-feed-only' bookkeeping process which is (sort of!) rare for most client businesses of any complexity. Not sure if that's what was meant at time 24:40. Clients add transactions all the time to their QBO and those get Match-ed to transactions in the bank feed.",
+  "url": "https://www.youtube.com/watch?v=cepXTui3ufA&lc=UgxPJI22b3DLr4x3SWB4AaABAg",
+  "date": "2026-10-06",
+  "likes": 0
+ },
+ {
+  "src": "youtube 'bookkeeping small business workflow'",
+  "title": "My Monthly Bookkeeping Workflow (Step-by-Step)",
+  "text": "how do you categorize transactions without receipts? just google and best guess and client input? Don't you need to know if somethings is taxable or not? In Canada it's different we definitely have to deal with sales tax and therefore it brings in receipt management automatically too. This model wouldn't be as smooth in Canada.",
+  "url": "https://www.youtube.com/watch?v=cepXTui3ufA&lc=UgxF17DLZwF5ygemLYx4AaABAg",
+  "date": "2026-09-27",
+  "likes": 0
+ },
+ {
+  "src": "youtube 'bookkeeping small business workflow'",
+  "title": "My Monthly Bookkeeping Workflow (Step-by-Step)",
+  "text": "Hey Zach! Great to connect again (we chatted over email a couple of months back). Love this workflow breakdown. Standardizing how monthly reports are delivered is where so many bookkeepers easily save 10+ hours and instantly shift from being viewed as just 'file senders' to trusted financial advisors. Solid blueprint as always!",
+  "url": "https://www.youtube.com/watch?v=cepXTui3ufA&lc=Ugw9Ilt3U2pRQ-2_E4x4AaABAg",
+  "date": "2026-07-24",
+  "likes": 0
+ },
+ {
+  "src": "youtube 'bookkeeping small business workflow'",
+  "title": "My Monthly Bookkeeping Workflow (Step-by-Step)",
+  "text": "I’m so sad. I have been trying to get my own clients for four months. I just found out that, a person reached out about a month ago, but never get the notification from Google sheet.😢",
+  "url": "https://www.youtube.com/watch?v=cepXTui3ufA&lc=UgxFq-OeGBv5apM4dDl4AaABAg",
+  "date": "2026-07-21",
+  "likes": 2
+ },
+ {
+  "src": "youtube 'bookkeeping small business workflow'",
+  "title": "My Monthly Bookkeeping Workflow (Step-by-Step)",
+  "text": "Hi. I would like to pay and subscribe for the Monday meetings but I am not sure whether it’s 3:00pm Pacific time or what time zone this is . I still have a full time job so i need to see if this will work for me. I just started a book keeping company this year so I need to join you and learn from you. Thanks",
+  "url": "https://www.youtube.com/watch?v=cepXTui3ufA&lc=Ugzmuipd7-30BQufkFJ4AaABAg",
+  "date": "2026-08-07",
+  "likes": 0
+ },
+ {
+  "src": "youtube 'bookkeeping small business workflow'",
+  "title": "My Monthly Bookkeeping Workflow (Step-by-Step)",
+  "text": "Very informative video—thank you for sharing. I currently own a tax preparation business and am looking to expand my services by offering bookkeeping to my existing small business clients. From your experience, what would you recommend as a competitive pricing structure for monthly bookkeeping services?",
+  "url": "https://www.youtube.com/watch?v=cepXTui3ufA&lc=UgzjuHzdKTObkBuWKDR4AaABAg",
+  "date": "2026-07-23",
+  "likes": 1
+ },
+ {
+  "src": "youtube 'bookkeeping small business workflow'",
+  "title": "My Monthly Bookkeeping Workflow (Step-by-Step)",
+  "text": "A video about class or projects tracking would be great!",
+  "url": "https://www.youtube.com/watch?v=cepXTui3ufA&lc=Ugy49Jda-GlsJ0S9bxl4AaABAg",
+  "date": "2026-07-21",
+  "likes": 4
+ },
+ {
+  "src": "youtube 'bookkeeping small business workflow'",
+  "title": "My Monthly Bookkeeping Workflow (Step-by-Step)",
+  "text": "the thing is where can I find those clients.. it is hard and I wish I can learn whatever you did.",
+  "url": "https://www.youtube.com/watch?v=cepXTui3ufA&lc=UgyxF8vQDnFCA2IRDNJ4AaABAg",
+  "date": "2026-07-28",
+  "likes": 0
+ },
+ {
+  "src": "youtube 'bookkeeping small business workflow'",
+  "title": "How I Automate My Bookkeeping with Claude Cowork",
+  "text": "bro did here about Claude for small businesses they literally made this where you can automate your business",
+  "url": "https://www.youtube.com/watch?v=si1FU49S2q4&lc=UgyfOTKFbW4spCgHaWF4AaABAg",
+  "date": "2026-05-15",
+  "likes": 0
+ },
+ {
+  "src": "youtube 'bookkeeping small business workflow'",
+  "title": "How I Automate My Bookkeeping with Claude Cowork",
+  "text": "lol, total BS. Don't waste 4 minutes of your life on this crap",
+  "url": "https://www.youtube.com/watch?v=si1FU49S2q4&lc=UgyfX3Tv4h6CdJ2VADp4AaABAg",
+  "date": "2026-07-09",
+  "likes": 0
+ },
+ {
+  "src": "youtube 'bookkeeping small business workflow'",
+  "title": "How I Automate My Bookkeeping with Claude Cowork",
+  "text": "I'm sorry to message you here, It's urgent that's why I'm explaining my situation here. The thing is, I emailed and messaged scrimba support for my payment issue But it's not yet answered.",
+  "url": "https://www.youtube.com/watch?v=si1FU49S2q4&lc=UgwsY0FhWVCc6eH7kFZ4AaABAg",
+  "date": "2026-05-12",
+  "likes": 0
+ },
+ {
+  "src": "youtube 'bookkeeping small business workflow'",
+  "title": "How I Use Claude to Automate Tax and Bookkeeping (Beginner Tutorial)",
+  "text": "Congrats on an informative and professionally constructed presentation. Much, much better than 90% of the Claude content out there.",
+  "url": "https://www.youtube.com/watch?v=ztXUJa58r9o&lc=Ugwa0vEYtL9dh-CchX94AaABAg",
+  "date": "2026-03-23",
+  "likes": 22
+ },
+ {
+  "src": "youtube 'bookkeeping small business workflow'",
+  "title": "How I Use Claude to Automate Tax and Bookkeeping (Beginner Tutorial)",
+  "text": "Thank you for the straightforward Claude Code intro. No excess, just straight to the point. Love it!",
+  "url": "https://www.youtube.com/watch?v=ztXUJa58r9o&lc=UgwiLj6PF3ogp0n6JDl4AaABAg",
+  "date": "2026-03-27",
+  "likes": 7
+ },
+ {
+  "src": "youtube 'bookkeeping small business workflow'",
+  "title": "How I Use Claude to Automate Tax and Bookkeeping (Beginner Tutorial)",
+  "text": "This is one the best Claude Code intros I've seen. Super clear, great pace, and real world use-case examples! 👏👏👏",
+  "url": "https://www.youtube.com/watch?v=ztXUJa58r9o&lc=UgytpqHmsne5Vv90OA94AaABAg",
+  "date": "2026-03-27",
+  "likes": 8
+ },
+ {
+  "src": "youtube 'bookkeeping small business workflow'",
+  "title": "How I Use Claude to Automate Tax and Bookkeeping (Beginner Tutorial)",
+  "text": "Best content for Claude use in real life so far!",
+  "url": "https://www.youtube.com/watch?v=ztXUJa58r9o&lc=Ugw3Izzth4GpjoOfY-t4AaABAg",
+  "date": "2026-09-22",
+  "likes": 2
+ },
+ {
+  "src": "youtube 'bookkeeping small business workflow'",
+  "title": "How I Use Claude to Automate Tax and Bookkeeping (Beginner Tutorial)",
+  "text": "I am not that interested in the accounting aspect of this, but you presentation really helped me understand the real potential of Claude Code. Nicely done. Thanks.",
+  "url": "https://www.youtube.com/watch?v=ztXUJa58r9o&lc=UgxrF66iYOrjCZC5nKZ4AaABAg",
+  "date": "2026-03-26",
+  "likes": 5
+ },
+ {
+  "src": "youtube 'bookkeeping small business workflow'",
+  "title": "How I Use Claude to Automate Tax and Bookkeeping (Beginner Tutorial)",
+  "text": "This is a practical, hands-on video, to do something useful that many small business owners need to do. Much better than most of the other AI videos out there. Thank you for this.",
+  "url": "https://www.youtube.com/watch?v=ztXUJa58r9o&lc=Ugwuaj8ZnBh7-7iipkl4AaABAg",
+  "date": "2026-03-29",
+  "likes": 0
+ },
+ {
+  "src": "youtube 'bookkeeping small business workflow'",
+  "title": "How I Use Claude to Automate Tax and Bookkeeping (Beginner Tutorial)",
+  "text": "Love Love the way your explain things and how organized your are and how you provide the resources mentioned in your video 👏🏻 Immediate follow",
+  "url": "https://www.youtube.com/watch?v=ztXUJa58r9o&lc=UgzSQ4QZhhaLAbHCOyt4AaABAg",
+  "date": "2026-05-26",
+  "likes": 0
+ },
+ {
+  "src": "youtube 'bookkeeping small business workflow'",
+  "title": "How I Use Claude to Automate Tax and Bookkeeping (Beginner Tutorial)",
+  "text": "So many thanks for introducing me claude in my vscode! Keep up the good work!",
+  "url": "https://www.youtube.com/watch?v=ztXUJa58r9o&lc=Ugy-0ArtHLbaUc_BT7x4AaABAg",
+  "date": "2026-04-24",
+  "likes": 1
+ },
+ {
+  "src": "youtube 'bookkeeping small business workflow'",
+  "title": "How I Use Claude to Automate Tax and Bookkeeping (Beginner Tutorial)",
+  "text": "using claude directly in the vs code terminal is a total game changer compared to copying and pasting from the browser window. setting up that claude md file to give it the folder structure and rules beforehand is such a pro tip to keep it from hallucinating. i have been using it to build a lot of small python scripts and static html invoice generators, and when i need to share the output with my accountant i just drop the files onto tiiny host to give them a quick secure link. that automated tax categorization workflow with the google sheets integration is seriously impressive",
+  "url": "https://www.youtube.com/watch?v=ztXUJa58r9o&lc=UgwrVm_a-uKQHeN5Sn94AaABAg",
+  "date": "2026-03-31",
+  "likes": 3
+ },
+ {
+  "src": "youtube 'bookkeeping small business workflow'",
+  "title": "How I Use Claude to Automate Tax and Bookkeeping (Beginner Tutorial)",
+  "text": "I subscribed! Loved the video and explanation of your use case and can definitely see the value of setting it up as opposed to subscribing to QB, Xero etc. All of which I've used in the past. In some ways they are overkill for the the soloprenuer or can't be tailored to your specific business very well. Thanks for the tidbit of using VScode, I was suffering through terminal without all the bells and whistles. I had totally overlooked it until now. Keep up the great work, looking forward to learning more from you!",
+  "url": "https://www.youtube.com/watch?v=ztXUJa58r9o&lc=UgzllKRLNb8_TZCvLnZ4AaABAg",
+  "date": "2026-03-26",
+  "likes": 1
+ },
+ {
+  "src": "youtube 'bookkeeping small business workflow'",
+  "title": "How I Use Claude to Automate Tax and Bookkeeping (Beginner Tutorial)",
+  "text": "Brilliant! “Understanding the structure” is definitely a key. Let’s talk more about it. 👍",
+  "url": "https://www.youtube.com/watch?v=ztXUJa58r9o&lc=Ugwb7rczAbX2mWgcntB4AaABAg",
+  "date": "2026-03-26",
+  "likes": 0
+ },
+ {
+  "src": "youtube 'bookkeeping small business workflow'",
+  "title": "How I Use Claude to Automate Tax and Bookkeeping (Beginner Tutorial)",
+  "text": "How do we create safety features so that confidential information is not compromised?",
+  "url": "https://www.youtube.com/watch?v=ztXUJa58r9o&lc=UgwclFdr_al3oOyc7Ll4AaABAg",
+  "date": "2026-08-13",
+  "likes": 0
+ },
+ {
+  "src": "youtube 'bookkeeping small business workflow'",
+  "title": "How I Use Claude to Automate Tax and Bookkeeping (Beginner Tutorial)",
+  "text": "Hola! I truly appreciate your video. Very informative and well presented. Gracias!",
+  "url": "https://www.youtube.com/watch?v=ztXUJa58r9o&lc=UgzW7q6QRjheNqPfGDZ4AaABAg",
+  "date": "2026-03-25",
+  "likes": 2
+ },
+ {
+  "src": "youtube 'bookkeeping small business workflow'",
+  "title": "How I Use Claude to Automate Tax and Bookkeeping (Beginner Tutorial)",
+  "text": "What is the trend for token limits? As more adopters so the need for loading credits/tokens is reduced, or will they soon do away with having to pay as you go type plans?",
+  "url": "https://www.youtube.com/watch?v=ztXUJa58r9o&lc=UgzsvTgadVFJI7zkFMh4AaABAg",
+  "date": "2026-07-12",
+  "likes": 0
+ },
+ {
+  "src": "youtube 'bookkeeping small business workflow'",
+  "title": "How I Use Claude to Automate Tax and Bookkeeping (Beginner Tutorial)",
+  "text": "great video, great presentation skills, very inspiring",
+  "url": "https://www.youtube.com/watch?v=ztXUJa58r9o&lc=Ugzl5B-lnrOvQRMdzrl4AaABAg",
+  "date": "2026-03-24",
+  "likes": 1
+ },
+ {
+  "src": "youtube 'bookkeeping small business workflow'",
+  "title": "How I Use Claude to Automate Tax and Bookkeeping (Beginner Tutorial)",
+  "text": "do you provide tax service? If yes, please let me know hwo to connect. Thank you.",
+  "url": "https://www.youtube.com/watch?v=ztXUJa58r9o&lc=UgxF0D7kVpmnv7b8UAV4AaABAg",
+  "date": "2026-04-16",
+  "likes": 0
+ },
+ {
+  "src": "youtube 'bookkeeping small business workflow'",
+  "title": "How I Use Claude to Automate Tax and Bookkeeping (Beginner Tutorial)",
+  "text": "Im a bookkeeper, going to try this with my ow n stuff",
+  "url": "https://www.youtube.com/watch?v=ztXUJa58r9o&lc=UgwTrfrN85yGVeOlW8h4AaABAg",
+  "date": "2026-03-25",
+  "likes": 3
+ },
+ {
+  "src": "youtube 'bookkeeping small business workflow'",
+  "title": "How I Use Claude to Automate Tax and Bookkeeping (Beginner Tutorial)",
+  "text": "this is a great example of where ai actually replaces real manual workflows, not just assists. invoice capture, categorization, and pushing everything into sheets is basically a full ops system. pairing something like this with n8n or activepieces makes it easier to connect banks, email, and accounting tools into one flow. curious how you handle edge cases like messy receipts or mismatched categories though",
+  "url": "https://www.youtube.com/watch?v=ztXUJa58r9o&lc=UgwZr8ItI4kjMgCuF254AaABAg",
+  "date": "2026-04-09",
+  "likes": 1
+ },
+ {
+  "src": "youtube 'bookkeeping small business workflow'",
+  "title": "How I Use Claude to Automate Tax and Bookkeeping (Beginner Tutorial)",
+  "text": "do you have this demo in MSoft Windows environment?",
+  "url": "https://www.youtube.com/watch?v=ztXUJa58r9o&lc=Ugx7wojG1ZmWN3NlBfR4AaABAg",
+  "date": "2026-07-18",
+  "likes": 0
+ },
+ {
+  "src": "youtube 'bookkeeping small business workflow'",
+  "title": "How I Use Claude to Automate Tax and Bookkeeping (Beginner Tutorial)",
+  "text": "Are you subscribed to Claude and then pay for whatever your usage on Claude code ends up being? Is it sustainable?",
+  "url": "https://www.youtube.com/watch?v=ztXUJa58r9o&lc=Ugw69Uvs_FS3eYniAGV4AaABAg",
+  "date": "2026-03-23",
+  "likes": 1
+ },
+ {
+  "src": "youtube 'bookkeeping small business workflow'",
+  "title": "How I Use Claude to Automate Tax and Bookkeeping (Beginner Tutorial)",
+  "text": "Why go through all this work using claude code vs just using cowork which can accomplish the exact same thing within a project and using connectors?",
+  "url": "https://www.youtube.com/watch?v=ztXUJa58r9o&lc=Ugz8jKylqxp5NIgWANt4AaABAg",
+  "date": "2026-03-28",
+  "likes": 3
+ },
+ {
+  "src": "youtube 'bookkeeping small business workflow'",
+  "title": "How I Use Claude to Automate Tax and Bookkeeping (Beginner Tutorial)",
+  "text": "This means no more contractors entering the premises?",
+  "url": "https://www.youtube.com/watch?v=ztXUJa58r9o&lc=Ugyxpqf1WOA27JM6OSV4AaABAg",
+  "date": "2026-07-12",
+  "likes": 0
+ },
+ {
+  "src": "youtube 'bookkeeping small business workflow'",
+  "title": "How I Use Claude to Automate Tax and Bookkeeping (Beginner Tutorial)",
+  "text": "If I was Claude, I would ask you what basis of accounting you are trying to achieve. Accrual or cash. In the US, most small business owners are cash basis. As a result, they track cash payments in their bank. I have created a simple excel template for them. Just copy paste and done. Don’t need Claude.",
+  "url": "https://www.youtube.com/watch?v=ztXUJa58r9o&lc=UgzMugklUTzU08nYxKt4AaABAg",
+  "date": "2026-07-23",
+  "likes": 0
+ },
+ {
+  "src": "youtube 'bookkeeping small business workflow'",
+  "title": "Why Claude Cowork Is Already Changing Accounting Firms",
+  "text": "📩 Stay sharp on what’s changing in accounting firm tech and AI. Get my weekly newsletter: https://www.jasononfirms.com/newsletter 🚀 Join +700 firm owners sharing real numbers, real results, and real lessons: https://www.rlz.io/",
+  "url": "https://www.youtube.com/watch?v=5DevfwAfVpA&lc=Ugz6rKKVh_P3_dVw9KV4AaABAg",
+  "date": "2026-03-08",
+  "likes": 6
+ },
+ {
+  "src": "youtube 'bookkeeping small business workflow'",
+  "title": "Why Claude Cowork Is Already Changing Accounting Firms",
+  "text": "This is a big shift for the profession. AI can absolutely support efficiency, but the firms that will win are the ones that combine technology with good judgement, review, and trust.",
+  "url": "https://www.youtube.com/watch?v=5DevfwAfVpA&lc=UgzW_NJRlW8qiGUpNoZ4AaABAg",
+  "date": "2026-04-22",
+  "likes": 23
+ },
+ {
+  "src": "youtube 'bookkeeping small business workflow'",
+  "title": "Why Claude Cowork Is Already Changing Accounting Firms",
+  "text": "The point about combining technology with good judgment really hits home. Small firms that embrace AI workflows early will definitely have the competitive edge.",
+  "url": "https://www.youtube.com/watch?v=5DevfwAfVpA&lc=UgwxhuRjn3PXM7qa7cx4AaABAg",
+  "date": "2026-05-05",
+  "likes": 4
+ },
+ {
+  "src": "youtube 'bookkeeping small business workflow'",
+  "title": "Why Claude Cowork Is Already Changing Accounting Firms",
+  "text": "This is amazing! Thanks man. Keep on doing what you’re doing bro.",
+  "url": "https://www.youtube.com/watch?v=5DevfwAfVpA&lc=UgxVs_Tv_Vw9Z7SAXy14AaABAg",
+  "date": "2026-06-04",
+  "likes": 3
+ },
+ {
+  "src": "youtube 'bookkeeping small business workflow'",
+  "title": "Why Claude Cowork Is Already Changing Accounting Firms",
+  "text": "Thought you were slick forcing the 6-7 meme in there didn't you!! Love the editing on this so much man.",
+  "url": "https://www.youtube.com/watch?v=5DevfwAfVpA&lc=UgwtQLmfo6UUkDhllGR4AaABAg",
+  "date": "2026-03-15",
+  "likes": 8
+ },
+ {
+  "src": "youtube 'bookkeeping small business workflow'",
+  "title": "Why Claude Cowork Is Already Changing Accounting Firms",
+  "text": "That receipt work demo at 8:17 is incredible, Jason. Seeing Claude handle receipts in seconds that normally take minutes shows why accounting firms need to pay attention now.",
+  "url": "https://www.youtube.com/watch?v=5DevfwAfVpA&lc=Ugxz6cufd1w3rExQfRF4AaABAg",
+  "date": "2026-05-05",
+  "likes": 3
+ },
+ {
+  "src": "youtube 'bookkeeping small business workflow'",
+  "title": "Why Claude Cowork Is Already Changing Accounting Firms",
+  "text": "Virtuoso performance on this video, Jason and Team! Super well done and thought provoking.",
+  "url": "https://www.youtube.com/watch?v=5DevfwAfVpA&lc=UgyBw7IEAYA_Eze3RVZ4AaABAg",
+  "date": "2026-07-04",
+  "likes": 1
+ },
+ {
+  "src": "youtube 'bookkeeping small business workflow'",
+  "title": "Why Claude Cowork Is Already Changing Accounting Firms",
+  "text": "Very good video, I partially disagree with the statement of local models as many have gotten significantly better especially with specialized training data and context guidance and maintenance. Not to mention cost difference if used on a heavy basis autonomously. But all of that is too technical for most firms to make it as practical as pioneer models from the big three vendors being OpenAI Anthropic and Google, also it’s a major pita for continuous maintenance. So I can’t blame you for stating that at the same time. Definitely sharing with colleagues.",
+  "url": "https://www.youtube.com/watch?v=5DevfwAfVpA&lc=Ugxasmn7jmvcAy31HHF4AaABAg",
+  "date": "2026-03-08",
+  "likes": 10
+ },
+ {
+  "src": "youtube 'bookkeeping small business workflow'",
+  "title": "Why Claude Cowork Is Already Changing Accounting Firms",
+  "text": "Jason that freaking amazing convo at the end where you are saying “honey everything is going to be fine” HIT way too close to home. lol",
+  "url": "https://www.youtube.com/watch?v=5DevfwAfVpA&lc=UgyF0QURS-X1O6ehi1V4AaABAg",
+  "date": "2026-03-08",
+  "likes": 10
+ },
+ {
+  "src": "youtube 'bookkeeping small business workflow'",
+  "title": "Why Claude Cowork Is Already Changing Accounting Firms",
+  "text": "19:06 it’s not just the models intelligence either. The harness itself holds exponential value",
+  "url": "https://www.youtube.com/watch?v=5DevfwAfVpA&lc=Ugx_ySxv30bBUmtfSAV4AaABAg",
+  "date": "2026-03-10",
+  "likes": 6
+ },
+ {
+  "src": "youtube 'bookkeeping small business workflow'",
+  "title": "Why Claude Cowork Is Already Changing Accounting Firms",
+  "text": "So helpful! Thanks Jason for laying it all out like this. I'm sure this video cost a ton in credits to complete. Echo those points on the browser agents not fully being there but what we found is if you are able to annotate the human doing the work via a loom and then feed that transcript into claude to update its own system prompt it allows the browser agents to get much better. As you mentioned this will only get better in the coming months to fully do work on top of the browser. The browser agents are basically where API based agents were early last year and with how fast things are progressing, its going to be an exciting world once browser agents get there too. Cant wait to see your tho",
+  "url": "https://www.youtube.com/watch?v=5DevfwAfVpA&lc=UgyamEuyCNoS60MQFTJ4AaABAg",
+  "date": "2026-03-08",
+  "likes": 2
+ },
+ {
+  "src": "youtube 'bookkeeping small business workflow'",
+  "title": "Why Claude Cowork Is Already Changing Accounting Firms",
+  "text": "Love the 6-7 and 4-1 references! And as always, very helpful content!",
+  "url": "https://www.youtube.com/watch?v=5DevfwAfVpA&lc=UgwuBeWnOT8Uv9iFoCF4AaABAg",
+  "date": "2026-03-22",
+  "likes": 1
+ },
+ {
+  "src": "youtube 'bookkeeping small business workflow'",
+  "title": "Why Claude Cowork Is Already Changing Accounting Firms",
+  "text": "Sr. ! Thank YOU for your service! This video is so educational but so entertaining as well !!!",
+  "url": "https://www.youtube.com/watch?v=5DevfwAfVpA&lc=UgwDqQDpTJhbT69spp54AaABAg",
+  "date": "2026-04-30",
+  "likes": 1
+ },
+ {
+  "src": "youtube 'bookkeeping small business workflow'",
+  "title": "Why Claude Cowork Is Already Changing Accounting Firms",
+  "text": "California French Toast Board absolutely fried me 🤣",
+  "url": "https://www.youtube.com/watch?v=5DevfwAfVpA&lc=UgytfbvlQS-VpocusRh4AaABAg",
+  "date": "2026-05-07",
+  "likes": 4
+ },
+ {
+  "src": "youtube 'bookkeeping small business workflow'",
+  "title": "Why Claude Cowork Is Already Changing Accounting Firms",
+  "text": "@jasoncpa, this is truly amazing! Can't wait to play around with Claude Cowork in the accounting space. Been using Perplexity computer, so curious to see how it compares. Have you done a video similar to this with the latter? Btw - love your Claude guy! Is he part of the AI matrix team? - 😀?",
+  "url": "https://www.youtube.com/watch?v=5DevfwAfVpA&lc=Ugx74iKdqTeAZDapbmt4AaABAg",
+  "date": "2026-03-31",
+  "likes": 2
+ },
+ {
+  "src": "youtube 'bookkeeping small business workflow'",
+  "title": "Why Claude Cowork Is Already Changing Accounting Firms",
+  "text": "It’s the best! So excited to showing Cowork to our clients and friends.",
+  "url": "https://www.youtube.com/watch?v=5DevfwAfVpA&lc=Ugy8vtm2MACAlwWlMON4AaABAg",
+  "date": "2026-03-16",
+  "likes": 0
+ },
+ {
+  "src": "youtube 'bookkeeping small business workflow'",
+  "title": "Why Claude Cowork Is Already Changing Accounting Firms",
+  "text": "Awesome video, looking forward to the next one!",
+  "url": "https://www.youtube.com/watch?v=5DevfwAfVpA&lc=Ugy3vUW8IDTvRprGgxd4AaABAg",
+  "date": "2026-03-21",
+  "likes": 1
+ },
+ {
+  "src": "youtube 'bookkeeping small business workflow'",
+  "title": "Why Claude Cowork Is Already Changing Accounting Firms",
+  "text": "24:00 Id had done one of 2 ways. Create a CSV file to import and work the Bank Transaction screen for me OR use the Batch transaction screen",
+  "url": "https://www.youtube.com/watch?v=5DevfwAfVpA&lc=Ugx5CqRClhjDLwdLzop4AaABAg",
+  "date": "2026-08-13",
+  "likes": 0
+ },
+ {
+  "src": "youtube 'bookkeeping small business workflow'",
+  "title": "Why Claude Cowork Is Already Changing Accounting Firms",
+  "text": "One of your best videos. Can you do one for auditing (and how government work plays into this - I'm in governmental accounting).",
+  "url": "https://www.youtube.com/watch?v=5DevfwAfVpA&lc=UgwGnTUnMBdB8Qfceal4AaABAg",
+  "date": "2026-04-24",
+  "likes": 0
+ },
+ {
+  "src": "youtube 'bookkeeping small business workflow'",
+  "title": "Why Claude Cowork Is Already Changing Accounting Firms",
+  "text": "amazing this is the mother of all automation and AI",
+  "url": "https://www.youtube.com/watch?v=5DevfwAfVpA&lc=Ugws7K5B1LvXY5J63LV4AaABAg",
+  "date": "2026-05-01",
+  "likes": 1
+ },
+ {
+  "src": "youtube 'bookkeeping small business workflow'",
+  "title": "Why Claude Cowork Is Already Changing Accounting Firms",
+  "text": "We need more of Trent and the other guy. The way I laugh every time!",
+  "url": "https://www.youtube.com/watch?v=5DevfwAfVpA&lc=UgxZ1bfl55djNufuXpJ4AaABAg",
+  "date": "2026-03-27",
+  "likes": 1
+ },
+ {
+  "src": "youtube 'bookkeeping small business workflow'",
+  "title": "Why Claude Cowork Is Already Changing Accounting Firms",
+  "text": "Just stumbled upon your channel since I got Claude. Great info, liked and subbed. 👍",
+  "url": "https://www.youtube.com/watch?v=5DevfwAfVpA&lc=Ugx9iimnXZbZAgcGZ8R4AaABAg",
+  "date": "2026-04-24",
+  "likes": 0
+ },
+ {
+  "src": "youtube 'bookkeeping small business workflow'",
+  "title": "Why Claude Cowork Is Already Changing Accounting Firms",
+  "text": "Thanks Jason! Pretty cool. On the Google Drive which is the specific tool for getting the tax data into the Excel Spreadsheet?",
+  "url": "https://www.youtube.com/watch?v=5DevfwAfVpA&lc=UgwFrNn1TWZbrIikbtt4AaABAg",
+  "date": "2026-03-09",
+  "likes": 1
+ },
+ {
+  "src": "youtube 'bookkeeping small business workflow'",
+  "title": "Why Claude Cowork Is Already Changing Accounting Firms",
+  "text": "i learned and got entertained at the same time, i like your delivery",
+  "url": "https://www.youtube.com/watch?v=5DevfwAfVpA&lc=Ugx2DdZTbWGpp6svo9B4AaABAg",
+  "date": "2026-03-09",
+  "likes": 11
+ },
+ {
+  "src": "youtube 'bookkeeping small business workflow'",
+  "title": "Why Claude Cowork Is Already Changing Accounting Firms",
+  "text": "hey, not seeing the ledger template completer skill as part of your skills uploaded",
+  "url": "https://www.youtube.com/watch?v=5DevfwAfVpA&lc=UgySwak-yImyt4vxA314AaABAg",
+  "date": "2026-04-10",
+  "likes": 0
+ },
+ {
+  "src": "youtube 'bookkeeping small business workflow'",
+  "title": "Why Claude Cowork Is Already Changing Accounting Firms",
+  "text": "Thank you for this video, very enlightening!",
+  "url": "https://www.youtube.com/watch?v=5DevfwAfVpA&lc=UgwW9uS5j2vBa4PzMeJ4AaABAg",
+  "date": "2026-03-08",
+  "likes": 0
+ },
+ {
+  "src": "youtube 'bookkeeping small business workflow'",
+  "title": "Why Claude Cowork Is Already Changing Accounting Firms",
+  "text": "Great video it's about driving people to think of what's possible now, an in a very short time. Giving 100 1040s to this with CCH Axcess in a cowork method will shake the industry... Can't imagine anyone doing 1040s next year, let along corporate returns... Moving fast.",
+  "url": "https://www.youtube.com/watch?v=5DevfwAfVpA&lc=UgwXaG6f-VH-mBD7PN14AaABAg",
+  "date": "2026-03-09",
+  "likes": 0
+ },
+ {
+  "src": "youtube 'bookkeeping small business workflow'",
+  "title": "Why Claude Cowork Is Already Changing Accounting Firms",
+  "text": "Great video. Do you have a video on the \"Skills creator\" skill or offer that as a download?? 🙂",
+  "url": "https://www.youtube.com/watch?v=5DevfwAfVpA&lc=UgxcgFP2iRgclfBbZPx4AaABAg",
+  "date": "2026-05-01",
+  "likes": 0
+ },
+ {
+  "src": "youtube 'bookkeeping small business workflow'",
+  "title": "Why Claude Cowork Is Already Changing Accounting Firms",
+  "text": "We're doing a lot of work in space with local models. So our proprietary system is safe to client data. We are only having a hard time getting realistic client pdf statements. The AI generated stuff is not close enough to the real thing",
+  "url": "https://www.youtube.com/watch?v=5DevfwAfVpA&lc=UgykyhHWftiZe98HpuJ4AaABAg",
+  "date": "2026-03-10",
+  "likes": 2
+ },
+ {
+  "src": "youtube 'bookkeeping small business workflow'",
+  "title": "Why Claude Cowork Is Already Changing Accounting Firms",
+  "text": "So when would you ever be comfortable to let this loose on your sensitive client data?",
+  "url": "https://www.youtube.com/watch?v=5DevfwAfVpA&lc=UgyZiUkOySfg7LXsbzV4AaABAg",
+  "date": "2026-03-08",
+  "likes": 2
+ },
+ {
+  "src": "youtube 'bookkeeping small business workflow'",
+  "title": "Why Claude Cowork Is Already Changing Accounting Firms",
+  "text": "Arrive Accounting has a proprietary agent in their integrated bookkeeping and practice management system that was pretty amazing at tax prep.",
+  "url": "https://www.youtube.com/watch?v=5DevfwAfVpA&lc=Ugw3KW0b1iC3Mh9Lznp4AaABAg",
+  "date": "2026-03-11",
+  "likes": 0
+ },
+ {
+  "src": "youtube 'bookkeeping small business workflow'",
+  "title": "Why Claude Cowork Is Already Changing Accounting Firms",
+  "text": "I used Claude to help me with partner buyouts and how to account for them and what are the tax implications",
+  "url": "https://www.youtube.com/watch?v=5DevfwAfVpA&lc=Ugy_JWSkCp4FHfG-HPZ4AaABAg",
+  "date": "2026-05-23",
+  "likes": 0
+ },
+ {
+  "src": "youtube 'bookkeeping small business workflow'",
+  "title": "Why Claude Cowork Is Already Changing Accounting Firms",
+  "text": "thanks for sharing, especially the skills 🙂",
+  "url": "https://www.youtube.com/watch?v=5DevfwAfVpA&lc=UgyLiLK6ZDO8whXjGwZ4AaABAg",
+  "date": "2026-03-09",
+  "likes": 2
+ },
+ {
+  "src": "youtube 'bookkeeping small business workflow'",
+  "title": "Why Claude Cowork Is Already Changing Accounting Firms",
+  "text": "Jason never mentions the name in any of his videos (Perplexity) but Perplexity Computer (and Perplexity Personal Computer especially) are going to be the first usable versions of an AI accounting staff. Give Personal Computer its own CPU, its own controlled user IDs and logins....ready, set......go.",
+  "url": "https://www.youtube.com/watch?v=5DevfwAfVpA&lc=UgzH73iRNCbCNNbf9s94AaABAg",
+  "date": "2026-03-18",
+  "likes": 0
+ },
+ {
+  "src": "youtube 'bookkeeping small business workflow'",
+  "title": "Why Claude Cowork Is Already Changing Accounting Firms",
+  "text": "AI models arent the only thing getting better in the last 3 years - i see that flow! great video as always jason, thank you",
+  "url": "https://www.youtube.com/watch?v=5DevfwAfVpA&lc=Ugz7pC4826-UwDFYznJ4AaABAg",
+  "date": "2026-03-09",
+  "likes": 7
+ },
+ {
+  "src": "youtube 'bookkeeping small business workflow'",
+  "title": "Why Claude Cowork Is Already Changing Accounting Firms",
+  "text": "OpenClaw wasn’t aquired by OpenAI. They hired Steinberg and sponsor OpenClaw, but they do not own or control it",
+  "url": "https://www.youtube.com/watch?v=5DevfwAfVpA&lc=UgwTNDXdafDvSgGm6dJ4AaABAg",
+  "date": "2026-03-10",
+  "likes": 2
+ }
+]

@@ -1,0 +1,14 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "release-manager",
+      "runtimeExecutable": "python3",
+      "runtimeArgs": [
+        "-m",
+        "release_manager.webapp"
+      ],
+      "port": 5001
+    }
+  ]
+}

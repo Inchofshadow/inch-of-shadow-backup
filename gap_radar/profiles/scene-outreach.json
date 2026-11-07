@@ -1,0 +1,54 @@
+{
+  "name": "scene-outreach",
+  "question": "Which blogs, radio shows, playlists, podcasts, YouTube channels, labels, promoters and parties do fans of dark disco, EBM, darkwave and coldwave recommend to each other?",
+  "system_extra": "Context: Inch of Shadow is a Berlin artist (Amir): dark dance wave, sitting on dark disco, EBM, coldwave, acid, electro and techno; from 2026 also songs with his own vocals. This feeds Scene Intelligence (contacts) and the Promotion agent. name = the\noutlet exactly as written in the posts. insight = what kind of outlet it is, what it plays or covers,\nand where (city/country) when the posts say so. examples = the short context of the recommendations.\nuse = how he could approach it (submit, pitch, play, attend) ONLY if the posts say how; else \"check\nthe outlet's own page\". Never invent outlets, URLs or contact details. An outlet named by only one\npost may be listed only if nothing stronger is left, with strength 1.",
+  "output_dir": "gap_radar/reports/scene-outreach",
+  "crowding": false,
+  "sources": {
+    "reddit": {
+      "subs": [
+        "darkwave",
+        "postpunk",
+        "ebm",
+        "Berlin",
+        "ifyoulikeblank",
+        "coldwave",
+        "industrialmusic",
+        "italodisco",
+        "minimalwave"
+      ],
+      "phrases": [
+        "\"radio show\"",
+        "\"where do you find\"",
+        "\"label recommendations\"",
+        "\"any good mixes\"",
+        "\"club night\"",
+        "\"Dark Entries\"",
+        "\"NTS\""
+      ]
+    },
+    "hn_queries": [],
+    "stackexchange": {
+      "sites": [],
+      "queries": []
+    },
+    "youtube_queries": [
+      "dark disco mix",
+      "darkwave radio",
+      "EBM DJ set",
+      "NTS radio darkwave",
+      "new beat EBM mix",
+      "coldwave minimal wave mix"
+    ],
+    "github_queries": [],
+    "appstore": {
+      "genres": [],
+      "app_ids": []
+    },
+    "hikerapi": {
+      "hashtags": [],
+      "accounts": [],
+      "max_calls": 0
+    }
+  }
+}

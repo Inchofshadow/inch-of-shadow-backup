@@ -1,0 +1,136 @@
+{# Work page, top section, By area view: plans/tickets.json by section and bucket (was tickets.html). #}
+<section class="work-section" id="tickets-section">
+{% if tickets_error %}
+    <h2>Tickets</h2>
+    <div class="board-error">
+        <strong>plans/tickets.json is not valid.</strong>
+        <pre>{{ tickets_error }}</pre>
+    </div>
+{% else %}
+    <div class="board-top">
+        <div>
+            <h2>Tickets</h2>
+            <p class="form-subtitle">Everything open except the Control Panel, by section and bucket (now / next / parked / routine). Source: plans/tickets.json, updated {{ view.updated }}. History: TICKETS.md.</p>
+        </div>
+        <div class="board-kpis">
+            <div class="board-kpi"><div class="k">Open</div><div class="v">{{ view.open_count }}</div></div>
+            <div class="board-kpi"><div class="k">Now</div><div class="v gold">{{ view.now_count }}</div></div>
+            <div class="board-kpi"><div class="k">Next due</div><div class="v">{% if view.next_due %}{{ view.next_due.date }} <span class="kpi-sub">{{ view.next_due.id }}</span>{% else %}none{% endif %}</div></div>
+        </div>
+    </div>
+
+    <div class="board-filters" id="ticket-filters">
+        <button class="chip on" data-filter="hide-done">Hide done</button>
+        <button class="chip" data-filter="p1">Now only</button>
+        <button class="chip" data-filter="lane:Release">Release</button>
+        <button class="chip" data-filter="lane:IG">IG</button>
+        <button class="chip" data-filter="lane:SC">SC</button>
+        <button class="chip" data-filter="lane:YT">YT</button>
+    </div>
+    <div class="board-legend">
+        <span><i class="sw pr-P1"></i>now</span>
+        <span><i class="sw pr-P2"></i>next</span>
+        <span><i class="sw pr-P3"></i>parked, routine</span>
+    </div>
+
+    <div class="tower">
+    {% for s in view.sections %}
+        <div class="floor tsection" data-section="{{ s.name }}">
+            <div class="floor-label">
+                <div class="name">{{ s.name }}</div>
+                <div class="needs">{{ s.open_count }} open</div>
+            </div>
+            <div class="cards">
+            {% for c in s.tickets %}
+                <button class="tcard pr-{{ c.priority }}"
+                        data-id="{{ c.id }}" data-status="{{ c.status }}" data-lane="{{ c.lane }}" data-priority="{{ c.priority }}">
+                    <span class="row"><span class="tid">{{ c.id }}{% if c.bucket %} · {{ c.bucket }}{% endif %}{% if c.who %} · {{ c.who }}{% endif %}{% if c.lane %} · {{ c.lane }}{% endif %}</span><span class="pill st-{{ c.status }}">{{ c.status }}</span></span>
+                    <span class="ttitle">{{ c.title }}</span>
+                    {% if c.due or c.blocked_on %}<span class="dep">{% if c.due %}due {{ c.due }}{% endif %}{% if c.due and c.blocked_on %} · {% endif %}{% if c.blocked_on %}waits on {{ c.blocked_on }}{% endif %}</span>{% endif %}
+                </button>
+            {% else %}
+                <div class="tghost">nothing open</div>
+            {% endfor %}
+            </div>
+        </div>
+    {% endfor %}
+    </div>
+
+    <section class="tdetail" id="ticket-detail" hidden>
+        <div class="head">
+            <div><span class="lanechip" id="d-lane"></span><h2 id="d-title"></h2></div>
+            <span class="pill" id="d-status"></span>
+        </div>
+        <div class="field"><div class="k">Why</div><div class="v" id="d-why"></div></div>
+        <div class="field"><div class="k">How it helps</div><div class="v" id="d-helps"></div></div>
+        <div class="field"><div class="k">Done means</div><div class="v" id="d-done"></div></div>
+        <div class="field"><div class="k">Next step</div><div class="v" id="d-next"></div></div>
+        <div class="field"><div class="k">Waits on</div><div class="v" id="d-blocked"></div></div>
+        <div class="field"><div class="k">Due</div><div class="v" id="d-due"></div></div>
+        <div class="field"><div class="k">Notes</div><div class="v" id="d-notes"></div></div>
+    </section>
+
+    <script id="ticket-data" type="application/json">{{ cards_json|tojson }}</script>
+    <script>
+    (function () {
+        var root = document.getElementById('tickets-section');
+        var cards = JSON.parse(document.getElementById('ticket-data').textContent);
+        var byId = {};
+        cards.forEach(function (c) { byId[c.id] = c; });
+
+        var state = { hideDone: true, p1: false, lane: null };
+        function applyFilters() {
+            root.querySelectorAll('.tcard').forEach(function (el) {
+                var show = true;
+                if (state.hideDone && el.dataset.status === 'done') show = false;
+                if (state.p1 && el.dataset.priority !== 'P1') show = false;
+                if (state.lane && el.dataset.lane !== state.lane) show = false;
+                el.hidden = !show;
+            });
+        }
+        document.getElementById('ticket-filters').addEventListener('click', function (e) {
+            var b = e.target.closest('button'); if (!b) return;
+            var f = b.dataset.filter;
+            if (f === 'hide-done') { state.hideDone = !state.hideDone; b.classList.toggle('on', state.hideDone); }
+            else if (f === 'p1') { state.p1 = !state.p1; b.classList.toggle('on', state.p1); }
+            else if (f.indexOf('lane:') === 0) {
+                var lane = f.slice(5);
+                state.lane = (state.lane === lane) ? null : lane;
+                root.querySelectorAll('[data-filter^="lane:"]').forEach(function (x) {
+                    x.classList.toggle('on', x.dataset.filter === 'lane:' + state.lane);
+                });
+            }
+            applyFilters();
+        });
+
+        function text(id, value) { document.getElementById(id).textContent = value || 'none'; }
+        function list(id, items) {
+            var el = document.getElementById(id); el.textContent = '';
+            if (!items || !items.length) { el.textContent = 'none'; return; }
+            var ul = document.createElement('ul');
+            items.forEach(function (it) { var li = document.createElement('li'); li.textContent = it; ul.appendChild(li); });
+            el.appendChild(ul);
+        }
+        function open(id) {
+            var c = byId[id]; if (!c) return;
+            root.querySelectorAll('.tcard.open').forEach(function (x) { x.classList.remove('open'); });
+            root.querySelector('.tcard[data-id="' + id + '"]').classList.add('open');
+            text('d-lane', c.section + (c.bucket ? ' · ' + c.bucket : '') + (c.who ? ' · ' + c.who : '') + (c.lane ? ' · ' + c.lane : '') + (c.size ? ' · size ' + c.size : ''));
+            text('d-title', c.id + ' ' + c.title);
+            var st = document.getElementById('d-status'); st.textContent = c.status; st.className = 'pill st-' + c.status;
+            text('d-why', c.why); text('d-helps', c.helps);
+            text('d-done', c.done_means + (c.done_means_by === 'claude' ? ' (wording by Claude)' : ''));
+            text('d-next', c.next_step);
+            text('d-blocked', c.blocked_on); text('d-due', c.due);
+            list('d-notes', c.notes);
+            var d = document.getElementById('ticket-detail'); d.hidden = false;
+            d.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        }
+        root.querySelectorAll('.tcard').forEach(function (el) {
+            el.addEventListener('click', function () { open(el.dataset.id); });
+        });
+        applyFilters();
+    })();
+    </script>
+{% endif %}
+</section>

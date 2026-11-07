@@ -1,0 +1,581 @@
+{% extends "base.html" %}
+{% block title %}Effects wall{% endblock %}
+{% block content %}
+{% include "_cover_steps.html" %}
+<style>
+.wall-page { max-width: 1500px; }
+.wall-head { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 8px 24px; }
+.wall-head a { color: var(--text-secondary); }
+.wall-wetbar { position: sticky; top: 0; z-index: 5; background: var(--bg-primary, #111); padding: 6px 0; border-bottom: 1px solid var(--border-light); display: flex; }
+.wall-wetbar .wall-knob label { font-size: 14px; }
+.wall-wetbar { gap: 24px; align-items: center; }
+.wall-tsize { white-space: nowrap; font-size: 13px; }
+.wall-wetbar .wall-knob .num { font-size: 20px; }
+.wall-bar { background: var(--bg-primary, #111); padding: 12px 0 14px; border-bottom: 1px solid var(--border-light); display: flex; flex-wrap: wrap; gap: 14px 28px; align-items: center; }
+.wall-covers { display: flex; gap: 6px; flex-wrap: wrap; }
+.wall-covers button { width: 64px; height: 64px; padding: 0; border: 2px solid transparent; background: #000; cursor: pointer; }
+.wall-covers button img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.wall-covers button.on { border-color: #d8c39a; }
+.wall-knob { display: flex; align-items: center; gap: 12px; flex: 1 1 360px; min-width: 0; }
+.wall-knob label { font-size: 18px; letter-spacing: .08em; text-transform: uppercase; }
+.wall-knob input { flex: 1; height: 28px; accent-color: #d8c39a; min-width: 0; }
+.wall-knob .num { font-size: 32px; font-variant-numeric: tabular-nums; width: 3.2em; text-align: right; }
+.wall-seg { display: flex; border: 1px solid var(--border-light); }
+.wall-seg button { background: none; border: 0; color: var(--text-secondary); padding: 8px 12px; cursor: pointer; font: inherit; }
+.wall-seg button.on { background: #d8c39a; color: #111; }
+.wall-opts { display: flex; gap: 16px; align-items: center; flex-wrap: wrap; }
+.wall-kept { display: flex; gap: 10px; overflow-x: auto; padding: 12px 0; min-height: 0; }
+.wall-kept:empty::before { content: "Keep a tile with its star and it lines up here."; color: var(--text-secondary); }
+.wall-kept .k { flex: 0 0 150px; cursor: pointer; font-size: 13px; color: var(--text-secondary); }
+.wall-kept canvas { width: 150px; height: 150px; display: block; background: #000; }
+.wall-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, var(--tile, 160px)), 1fr)); gap: 6px; margin-top: 12px; }
+.tile { position: relative; background: #000; border: 1px solid var(--border-light); }
+.tile canvas { width: 100%; aspect-ratio: 1; display: block; cursor: zoom-in; }
+.tile .lab { display: flex; justify-content: space-between; align-items: center; padding: 3px 5px; gap: 4px; font-size: 11px; line-height: 1.2; }
+.tile .lab span { display: none; }
+.tile .lab b { font-weight: 600; }
+.tile .lab span { color: var(--text-secondary); font-size: 13px; }
+.star { background: none; border: 0; font-size: 22px; line-height: 1; cursor: pointer; color: var(--text-secondary); padding: 2px 4px; }
+.star.on { color: #d8c39a; }
+.nofit { background: #5a140c; border: 0; color: #f1e6d0; font: 600 11px system-ui; padding: 3px 6px; cursor: pointer; border-radius: 6px; white-space: nowrap; }
+.nofit:hover { background: #c12613; }
+.removed .nofit { background: #2f4a2a; }
+.tile.removed { opacity: .45; }
+.tile.kept { border-color: #d8c39a; }
+.wall-modal { position: fixed; inset: 0; z-index: 50; background: rgba(0,0,0,.92); overflow: auto; padding: 24px; }
+.wall-modal .in { max-width: 1400px; margin: 0 auto; display: grid; grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr); gap: 24px; }
+@media (max-width: 900px) { .wall-modal .in { grid-template-columns: 1fr; } }
+.wall-modal canvas.big { width: 100%; aspect-ratio: 1; display: block; background: #000; }
+.wall-modal h2 { margin: 0 0 8px; }
+.wall-modal .side { display: flex; flex-direction: column; gap: 16px; }
+.prev-ig { background: #fff; color: #111; padding: 8px; width: 320px; max-width: 100%; }
+.prev-ig .h { font: 600 13px system-ui; padding: 4px 2px 8px; }
+.prev-ig canvas, .prev-rec canvas { width: 100%; aspect-ratio: 1; display: block; }
+.prev-rec { width: 320px; max-width: 100%; }
+.iggrid-box { background: #fff; color: #111; padding: 8px 0 0; border-radius: 14px; overflow: hidden; }
+.iggrid-box .h { font: 600 13px system-ui; padding: 0 10px 6px; }
+.iggrid-box canvas { display: block; width: 100%; }
+.iggrid-float { position: fixed; right: 12px; bottom: 12px; width: 180px; z-index: 6; box-shadow: 0 4px 18px rgba(0,0,0,.5); }
+.iggrid-float.min canvas { display: none; }
+.iggrid-float .h { cursor: pointer; display: flex; justify-content: space-between; }
+.prev-ig.grid { width: 320px; max-width: 100%; }
+.wall-modal .row { display: flex; gap: 10px; flex-wrap: wrap; align-items: center; }
+.wall-note { color: var(--text-secondary); font-size: 13px; }
+/* compare two covers (Amir 11-05: friendly 1a vs 1c view) */
+.cmp-open { font-size: 16px; padding: 8px 16px; }
+.cmp-modal { position: fixed; inset: 0; z-index: 2000; background: #0b0a09; overflow: auto; padding: 16px 20px 28px; }
+.cmp-top { display: flex; flex-wrap: wrap; gap: 12px 24px; align-items: center; margin-bottom: 14px; }
+.cmp-top .wall-knob { flex: 1 1 260px; }
+.cmp-top select { font: inherit; padding: 6px 8px; background: #1a1816; color: inherit; border: 1px solid var(--border-light); }
+.cmp-panes { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; max-width: 1700px; margin: 0 auto; }
+@media (max-width: 800px) { .cmp-panes { grid-template-columns: 1fr; } }
+.cmp-panes.single { grid-template-columns: 1fr; max-width: min(100%, calc(100vh - 150px)); }
+.cmp-pane[hidden], .cmp-top [hidden] { display: none !important; }
+.cmp-pane canvas { width: 100%; aspect-ratio: 1; display: block; background: #000; cursor: pointer; }
+.cmp-pane .cap { display: flex; gap: 10px; align-items: center; padding: 8px 0; }
+.cmp-pane .cap b { font-size: 22px; color: #d8c39a; width: 1.2em; }
+.cmp-nav { display: flex; gap: 10px; align-items: center; padding: 10px 0 4px; }
+.cmp-nav button { background: #1a1816; color: inherit; border: 1px solid var(--border-light); font-size: 22px; line-height: 1; width: 44px; height: 40px; cursor: pointer; }
+.cmp-nav input { flex: 1; min-width: 0; height: 28px; accent-color: #d8c39a; }
+.cmp-nav .n { font-variant-numeric: tabular-nums; color: var(--text-secondary); min-width: 4.5em; text-align: right; }
+.cmp-fx { display: flex; gap: 10px; align-items: center; padding: 0 0 8px; }
+.cmp-fx select { font: inherit; padding: 6px 8px; background: #1a1816; color: inherit; border: 1px solid var(--border-light); max-width: 45%; }
+.cmp-fx input { flex: 1; min-width: 0; height: 26px; accent-color: #d8c39a; }
+.cmp-fx .x { background: none; border: 1px solid var(--border-light); color: var(--text-secondary); cursor: pointer; padding: 2px 8px; }
+.cmp-add { background: none; border: 1px dashed var(--border-light); color: var(--text-secondary); cursor: pointer; padding: 4px 10px; margin-bottom: 8px; font: inherit; font-size: 13px; }
+.fxbtn { background: #1a1816; color: inherit; border: 1px solid var(--border-light); padding: 6px 10px; cursor: pointer; font: inherit; font-size: 14px; white-space: nowrap; }
+.fxpick { border: 1px solid #d8c39a; background: #12100e; padding: 8px 10px; margin: 0 0 10px; max-height: 60vh; overflow: auto; }
+.fxh { font-size: 13px; color: #d8c39a; margin: 8px 0 4px; }
+.fxg { display: flex; flex-wrap: wrap; gap: 6px; }
+.fxt { width: 96px; background: none; border: 2px solid transparent; padding: 0; cursor: pointer; color: var(--text-secondary); font: inherit; font-size: 11px; text-align: left; }
+.fxt img { width: 92px; height: 92px; object-fit: cover; display: block; background: #000; }
+.fxt span { display: block; padding: 2px 1px; line-height: 1.2; }
+.fxt.on { border-color: #d8c39a; color: #d8c39a; }
+.cmp-sum { font-size: 12px; color: var(--text-secondary); margin: -4px 0 8px; }
+.cmp-fx .fxn { font-size: 20px; font-variant-numeric: tabular-nums; width: 3.2em; text-align: right; }
+.cmp-pane .cap select { flex: 1; min-width: 0; font: inherit; padding: 6px 8px; background: #1a1816; color: inherit; border: 1px solid var(--border-light); }
+</style>
+<div class="fonts-page wall-page">
+    <div class="wall-head">
+        <h1>Effects wall: {{ rel.metadata.title }}</h1>
+        <span><a class="btn btn-primary cmp-open" href="{{ url_for('playground_colours', slug=rel.slug) }}">Colours (stage 2)</a>
+        <button type="button" class="btn btn-secondary cmp-open" id="cmpopen">⇄ Compare + mix effects</button>
+        <a class="btn btn-secondary cmp-open" href="{{ url_for('playground_iggrid', slug=rel.slug) }}">On my IG grid ▦</a> <a class="btn btn-primary cmp-open" href="{{ url_for('playground_layout', slug=rel.slug) }}">Layout: text + rules ✎</a>
+        &nbsp; <a href="{{ url_for('playground_elements', slug=rel.slug) }}">Elements (stage 1) →</a>
+        &nbsp; <a href="{{ url_for('playground_page', slug=rel.slug) }}">Detailed playground →</a></span>
+    </div>
+    <div class="wall-bar">
+        <div class="wall-covers" id="covers"></div>
+        <div class="wall-opts">
+            <div class="wall-seg" id="pal"></div>
+            <label><input type="checkbox" id="title" checked> title</label>
+            <label>title size <input type="range" id="tscale" min="50" max="170" value="100"> <span id="tscalen">100%</span></label>
+            <label><input type="checkbox" id="onlyk"> only kept</label>
+            <div class="wall-seg" id="which"><button data-v="picks" class="on">your picks ({{ picks|length }})</button><button data-v="all">all {{ looks|length }}</button></div>
+            <label><input type="checkbox" id="showhid"> show removed (<span id="hidn">0</span>)</label>
+        </div>
+    </div>
+    <div class="wall-wetbar"><div class="wall-knob"><label for="wet">Wet</label><input type="range" id="wet" min="0" max="100" value="50"><span class="num" id="wetn">50%</span></div><label class="wall-tsize">tile size <input type="range" id="tsize" min="90" max="460" value="160"></label></div>
+    <h3>Kept</h3>
+    <div class="wall-kept" id="kept"></div>
+    <div class="wall-grid" id="grid"></div>
+    <p class="wall-note">Every effect is one of our local looks (print_looks.py), rendered on the chosen cover. Click a tile to see it big with its own knob, Instagram and the record.</p>
+</div>
+<div class="iggrid-box iggrid-float" id="gfloat"><div class="h" id="gfh"><span>▦ On your grid</span><span id="gfx">–</span></div><canvas id="wgrid" width="460" height="818"></canvas></div>
+<div class="wall-modal" id="modal" hidden>
+    <div class="in">
+        <canvas class="big" id="big" width="1080" height="1080"></canvas>
+        <div class="side">
+            <h2 id="mt"></h2>
+            <div class="wall-knob"><label for="mwet">Wet</label><input type="range" id="mwet" min="0" max="100" value="50"><span class="num" id="mwetn">50%</span></div>
+            <div class="row">
+                <button type="button" class="btn btn-secondary btn-sm" id="mkeep">☆ Keep</button>
+                <button type="button" class="btn btn-secondary btn-sm" id="mopen">Open in the detailed playground</button>
+                <button type="button" class="btn btn-secondary btn-sm" id="mclose">Close (Esc)</button>
+            </div>
+            <div class="prev-ig"><div class="h">inch_of_shadow</div><canvas id="pig" width="540" height="540"></canvas></div>
+            <div class="iggrid-box prev-ig grid"><div class="h">On your grid (with this effect)</div><canvas id="pgrid" width="600" height="1066"></canvas></div>
+            <div class="prev-rec"><div class="wall-note">Record</div><canvas id="prec" width="540" height="540"></canvas></div>
+        </div>
+    </div>
+</div>
+<div class="cmp-modal" id="cmp" hidden>
+    <div class="cmp-top">
+        <div class="wall-seg" id="cmpmode"><button data-v="side">Side by side</button><button data-v="one">One at a time</button></div>
+        <div class="wall-seg" id="cmpab" hidden><button data-v="0">A</button><button data-v="1">B</button></div>
+        <label><input type="checkbox" id="cmpmain"> main artwork only (1a)</label>
+        <label><input type="checkbox" id="cmptext"> text</label>
+        <button type="button" class="btn btn-secondary btn-sm" id="cmpclose">Close (Esc)</button>
+    </div>
+    <div class="cmp-panes" id="cmppanes">
+        <div class="cmp-pane"><div class="cap"><b>A</b><select data-i="0"></select></div><div class="cmp-mix"></div><canvas width="1080" height="1080"></canvas><div class="cmp-nav"><button type="button" data-d="-1">‹</button><input type="range" min="0" value="0"><button type="button" data-d="1">›</button><span class="n"></span></div></div>
+        <div class="cmp-pane"><div class="cap"><b>B</b><select data-i="1"></select></div><div class="cmp-mix"></div><canvas width="1080" height="1080"></canvas><div class="cmp-nav"><button type="button" data-d="-1">‹</button><input type="range" min="0" value="0"><button type="button" data-d="1">›</button><span class="n"></span></div></div>
+    </div>
+    <p class="wall-note">Slide under a picture (or ‹ ›) to go through the covers like a gallery. Same colour and title size as the wall. One at a time: click the picture, or use the arrow keys / space, to flip between A and B.</p>
+</div>
+<script>
+(function () {
+    var SLUG = {{ rel.slug|tojson }}, BVER = {{ bver|tojson }};
+    var COVERS = [{name: '', label: 'release base', has_title: false}].concat({{ covers|tojson }});
+    var LOOKS = [{key: '', code: '0', name: 'Original', note: 'no effect'}].concat({{ looks|tojson }});
+    var RAMP = {{ (ramp or {})|tojson }}, PICKS = {{ picks|tojson }};
+    var IGFEED = {{ (igfeed or [])|tojson }};
+    var $ = function (id) { return document.getElementById(id); };
+    // colour versions: covers named '<cover>--<recipe>' are the same art coloured by role (R. Missing study, Shadow Archive R-020)
+    var RECIPE_LABEL = {moonlit: 'Moonlit wall', nightwall: 'Night wall', flatink: 'Flat ink'};
+    var RECIPE_INK = {moonlit: '#141530', nightwall: '#B4C2F8', flatink: '#010107', straight: '#B4C2F8', shares: '#B4C2F8'};
+    var BRIGHTNESS = {straight: 'R. Missing (old, by brightness)', shares: 'R. Missing mid tones (old)'};
+    var VARIANTS = {};
+    COVERS.forEach(function (c) { var m = c.name.match(/^(.*)--([a-z]+)\.[a-z]+$/); if (m) VARIANTS[m[2]] = 1; });
+    var BASECOVERS = COVERS.filter(function (c) { return c.name.indexOf('--') < 0; });
+    var S = {cover: BASECOVERS.length > 1 ? BASECOVERS[1].name : '', wet: 50, palette: '', title: true, onlyKept: false, which: PICKS.length ? 'picks' : 'all', tsize: 160, tscale: 100};
+    try { Object.assign(S, JSON.parse(localStorage.getItem('wall-' + SLUG) || '{}')); } catch (e) {}
+    function variant(cover, colour) {
+        if (!colour || !cover) return cover;
+        var v = cover.replace(/(\.[a-z]+)$/, '--' + colour + '$1');
+        return COVERS.some(function (c) { return c.name === v; }) ? v : cover;
+    }
+    function eff() { return variant(S.cover, S.palette); }
+    function inkFor(colour) { return RECIPE_INK[colour] || '#e9dfc9'; }
+    function persist() { try { localStorage.setItem('wall-' + SLUG, JSON.stringify(S)); } catch (e) {} }
+    function url(cover, look, w) {
+        return '/playground/' + encodeURIComponent(SLUG) + '/image?' + (cover ? 'cover=' + encodeURIComponent(cover) + '&' : '') +
+            (look ? 'look=' + encodeURIComponent(look) + '&' : '') + 'w=' + w + '&v=' + BVER + '-' + coverV(cover);
+    }
+    function coverV(name) { var c = COVERS.find(function (x) { return x.name === name; }); return (c && c.v) || ''; }
+    var IMG = {};
+    function img(src) {
+        if (!IMG[src]) IMG[src] = new Promise(function (res, rej) { var i = new Image(); i.onload = function () { res(i); }; i.onerror = rej; i.src = src; });
+        return IMG[src];
+    }
+    function overlay(cover) {
+        var c = COVERS.find(function (x) { return x.name === cover; });
+        if (!c || !c.has_title) return Promise.resolve(null);
+        return img('/playground/' + encodeURIComponent(SLUG) + '/overlay?cover=' + encodeURIComponent(cover) + '&v=' + coverV(cover)).catch(function () { return null; });
+    }
+    function hex(h) { h = h.replace('#', ''); return [0, 2, 4].map(function (i) { return parseInt(h.substr(i, 2), 16); }); }
+    // the release palette on a finished picture (same maths as the detailed playground)
+    function palette(ctx, size, mode) {
+        if (!mode || !RAMP.stops) return;
+        var cols = RAMP.stops.map(hex), stops = [0, 0.10, 0.30, 0.50, 0.70, 0.90, 1.0];
+        var id = ctx.getImageData(0, 0, size, size), d = id.data, n = size * size, sm = null, q, mid, P, T = [0, 0.10, 0.30, 0.70, 1.0];
+        if (mode === 'shares') {
+            var t = document.createElement('canvas'); t.width = t.height = size;
+            var tc = t.getContext('2d', {willReadFrequently: true}); tc.filter = 'blur(' + Math.max(1, 2.4 * size / 1080) + 'px)'; tc.drawImage(ctx.canvas, 0, 0);
+            sm = tc.getImageData(0, 0, size, size).data;
+            var hist = new Array(32).fill(0); q = new Uint8Array(n);
+            for (var i = 0, k = 0; k < n; i += 4, k++) { q[k] = Math.round((0.299 * sm[i] + 0.587 * sm[i + 1] + 0.114 * sm[i + 2]) / 255 * 31); hist[q[k]]++; }
+            P = [0]; var acc = 0; (RAMP.shares || [17, 35, 36, 12]).forEach(function (v) { acc += v / 100; P.push(acc); });
+            mid = []; var cum = 0; for (var b = 0; b < 32; b++) { cum += hist[b]; mid.push((cum - hist[b] / 2) / n); }
+        }
+        function interp(x) { for (var j = 1; j < P.length; j++) if (x <= P[j]) return T[j - 1] + (T[j] - T[j - 1]) * (x - P[j - 1]) / ((P[j] - P[j - 1]) || 1); return 1; }
+        for (var p = 0, m = 0; m < n; p += 4, m++) {
+            var L = (0.299 * d[p] + 0.587 * d[p + 1] + 0.114 * d[p + 2]) / 255, tt = L;
+            if (sm) tt = interp(mid[q[m]]) + (L - (0.299 * sm[p] + 0.587 * sm[p + 1] + 0.114 * sm[p + 2]) / 255) * 0.35;
+            tt = tt < 0 ? 0 : tt > 1 ? 1 : tt;
+            var s = 1; while (s < 6 && tt > stops[s]) s++;
+            var f = (tt - stops[s - 1]) / (stops[s] - stops[s - 1]), c0 = cols[s - 1], c1 = cols[s];
+            d[p] = c0[0] + (c1[0] - c0[0]) * f; d[p + 1] = c0[1] + (c1[1] - c0[1]) * f; d[p + 2] = c0[2] + (c1[2] - c0[2]) * f;
+        }
+        ctx.putImageData(id, 0, 0);
+    }
+    // the title overlay is a full-frame picture; scale it around the top-left of the text itself
+    var BOX = new WeakMap();
+    function textBox(ov) {
+        if (BOX.has(ov)) return BOX.get(ov);
+        var W = 256, c = document.createElement('canvas'); c.width = c.height = W; var x = c.getContext('2d', {willReadFrequently: true});
+        x.drawImage(ov, 0, 0, W, W); var d = x.getImageData(0, 0, W, W).data, x0 = W, y0 = W, x1 = 0, y1 = 0;
+        for (var i = 3, p = 0; i < d.length; i += 4, p++) if (d[i] > 40) { var px = p % W, py = (p / W) | 0; if (px < x0) x0 = px; if (py < y0) y0 = py; if (px > x1) x1 = px; if (py > y1) y1 = py; }
+        var b = x1 >= x0 ? [x0 / W, y0 / W, (x1 + 1) / W, (y1 + 1) / W] : [0, 0, 1, 1];
+        BOX.set(ov, b); return b;
+    }
+    function compose(ctx, size, orig, look, wet, colour, ov) {
+        // old brightness mapping (straight / shares) or a role colouring (then the ramp pulls the look's colours back in)
+        var pal = BRIGHTNESS[colour] ? colour : (colour ? 'straight' : '');
+        ctx.globalAlpha = 1; ctx.globalCompositeOperation = 'source-over';
+        ctx.drawImage(orig, 0, 0, size, size);
+        if (Array.isArray(look)) {   // effect mix: each effect takes its share, the original keeps the rest (shares over 100% are scaled down)
+            var L2 = look.filter(function (m) { return m.img && m.wet > 0; }), T = L2.reduce(function (a, m) { return a + m.wet / 100; }, 0);
+            if (L2.length) {
+                var kk = T > 1 ? 1 / T : 1;
+                ctx.clearRect(0, 0, size, size); ctx.globalCompositeOperation = 'lighter';
+                ctx.globalAlpha = Math.max(0, 1 - T * kk); ctx.drawImage(orig, 0, 0, size, size);
+                L2.forEach(function (m) { ctx.globalAlpha = m.wet / 100 * kk; ctx.drawImage(m.img, 0, 0, size, size); });
+                ctx.globalAlpha = 1; ctx.globalCompositeOperation = 'source-over';
+            }
+        } else if (look) { ctx.globalAlpha = wet / 100; ctx.drawImage(look, 0, 0, size, size); ctx.globalAlpha = 1; }
+        palette(ctx, size, pal);
+        if (ov) {
+            var t = document.createElement('canvas'); t.width = t.height = size; var tc = t.getContext('2d');
+            var k = (S.tscale || 100) / 100, b = textBox(ov), ow = ov.naturalWidth, oh = ov.naturalHeight;
+            tc.drawImage(ov, b[0] * ow, b[1] * oh, (b[2] - b[0]) * ow, (b[3] - b[1]) * oh,
+                         b[0] * size, b[1] * size, (b[2] - b[0]) * size * k, (b[3] - b[1]) * size * k);
+            tc.globalCompositeOperation = 'source-in';
+            tc.fillStyle = inkFor(colour); tc.fillRect(0, 0, size, size);
+            ctx.drawImage(t, 0, 0);
+        }
+    }
+    // kept picks (saved in plans/playground-wall/<slug>.json by the server)
+    var KEPT = [];
+    function isKept(cover, look) { return KEPT.some(function (k) { return k.cover === cover && k.look === look; }); }
+    function toggleKeep(cover, look, wet, pal) {
+        return fetch('/api/playground/' + encodeURIComponent(SLUG) + '/wall-kept', {method: 'POST', headers: {'Content-Type': 'application/json'},
+            body: JSON.stringify({cover: cover, look: look, wet: wet, palette: pal})}).then(function (r) { return r.json(); })
+            .then(function (d) { if (d.kept) { KEPT = d.kept; renderKept(); markKept(); } });
+    }
+    function renderKept() {
+        var box = $('kept'); box.innerHTML = '';
+        KEPT.forEach(function (k) {
+            var d = document.createElement('div'); d.className = 'k';
+            var c = document.createElement('canvas'); c.width = c.height = 300; d.appendChild(c);
+            var l = LOOKS.find(function (x) { return x.key === k.look; }) || LOOKS[0];
+            var baseName = k.cover.replace(/--[a-z]+(\.[a-z]+)$/, '$1');
+            var cv = COVERS.find(function (x) { return x.name === baseName; });
+            var t = document.createElement('div'); t.textContent = (l.code + ' ' + l.name) + ' · ' + k.wet + '% · ' + (cv ? cv.label : 'cover') + (k.palette ? ' · ' + (RECIPE_LABEL[k.palette] || BRIGHTNESS[k.palette] || k.palette) : ''); d.appendChild(t);
+            d.onclick = function () { S.cover = baseName; S.palette = k.palette || ''; persist(); syncBar(); buildGrid(); openBig(k.look, k.wet); };
+            box.appendChild(d);
+            Promise.all([img(url(k.cover, '', 480)), k.look ? img(url(k.cover, k.look, 480)) : null, S.title ? overlay(k.cover) : null]).then(function (a) {
+                compose(c.getContext('2d', {willReadFrequently: true}), 300, a[0], a[1], k.wet, k.palette, a[2]);
+            }).catch(function () {});
+        });
+    }
+    // top bar
+    function syncBar() {
+        Array.prototype.forEach.call($('covers').children, function (b) { b.classList.toggle('on', b.dataset.n === S.cover); });
+        $('wet').value = S.wet; $('wetn').textContent = S.wet + '%';
+        Array.prototype.forEach.call($('pal').children, function (b) { b.classList.toggle('on', b.dataset.v === S.palette); });
+        $('title').checked = S.title; $('onlyk').checked = S.onlyKept;
+        Array.prototype.forEach.call($('which').children, function (b) { b.classList.toggle('on', b.dataset.v === S.which); });
+        $('tscale').value = S.tscale; $('tscalen').textContent = S.tscale + '%';
+        $('tsize').value = S.tsize; document.documentElement.style.setProperty('--tile', S.tsize + 'px');
+    }
+    (function () {
+        // Amir 11-04: Night wall and Flat ink not needed (files kept on disk)
+        var HIDDEN = ['nightwall', 'flatink'];
+        HIDDEN.forEach(function (k) { delete VARIANTS[k]; });
+        var box = $('pal'), opts = [['', 'original colour']].concat(Object.keys(VARIANTS).sort(function (a, b) { return ['moonlit', 'nightwall', 'flatink'].indexOf(a) - ['moonlit', 'nightwall', 'flatink'].indexOf(b); }).map(function (k) { return [k, RECIPE_LABEL[k] || k]; }));
+        if (RAMP.stops) opts = opts.concat([['straight', BRIGHTNESS.straight], ['shares', BRIGHTNESS.shares]]);
+        if (!RAMP.stops) opts = [opts[0]];
+        if (S.palette && !VARIANTS[S.palette] && !BRIGHTNESS[S.palette]) S.palette = '';
+        opts.forEach(function (o) { var b = document.createElement('button'); b.type = 'button'; b.dataset.v = o[0]; b.textContent = o[1];
+            b.onclick = function () { S.palette = o[0]; persist(); syncBar(); buildGrid(); renderKept(); }; box.appendChild(b); });
+    })();
+    // Amir's colour saves (stage 2, 11-05) lead the strip; the first visit after they arrive opens on save 1
+    var SAVES = BASECOVERS.filter(function (c) { return /-save-\d+\./.test(c.name); });
+    var STRIP = SAVES.concat(BASECOVERS.filter(function (c) { return SAVES.indexOf(c) < 0; }));
+    if (SAVES.length && !S.savesSeen) { S.cover = SAVES[0].name; S.palette = ''; S.savesSeen = true; persist(); }
+    STRIP.forEach(function (c, n) {
+        if (SAVES.length && n === SAVES.length) { var sep = document.createElement('span'); sep.style.cssText = 'width:2px;background:#d8c39a;margin:0 6px;align-self:stretch'; $('covers').appendChild(sep); }
+        var b = document.createElement('button'); b.type = 'button'; b.dataset.n = c.name; b.title = c.label;
+        var i = document.createElement('img'); i.alt = c.label; i.src = url(c.name, '', 160); b.appendChild(i);
+        b.onclick = function () { S.cover = c.name; persist(); syncBar(); buildGrid(); };
+        $('covers').appendChild(b);
+    });
+    // effects removed as "doesn't fit" (saved on the server, plans/playground-wall/<slug>-hidden.json)
+    var HIDDEN = [];
+    function hideToggle(look) {
+        fetch('/api/playground/' + encodeURIComponent(SLUG) + '/wall-hidden', {method: 'POST', headers: {'Content-Type': 'application/json'}, body: JSON.stringify({look: look})})
+            .then(function (r) { return r.json(); }).then(function (d) { if (d.hidden) { HIDDEN = d.hidden; $('hidn').textContent = HIDDEN.length; buildGrid(); } });
+    }
+    // the grid: every look at once; the knob redraws them all
+    var TILES = [];
+    function buildGrid() {
+        drawWallGrid();
+        var g = $('grid'); g.innerHTML = ''; TILES = [];
+        var cover = eff();
+        LOOKS.filter(function (l) { return (S.which === 'all' || !l.key || PICKS.indexOf(l.key) >= 0) && (S.showHidden || HIDDEN.indexOf(l.key) < 0); }).forEach(function (l) {
+            var t = document.createElement('div'); t.className = 'tile';
+            var c = document.createElement('canvas'); c.width = c.height = 420;
+            var lab = document.createElement('div'); lab.className = 'lab';
+            var nm = document.createElement('div'); nm.innerHTML = '<b></b> <span></span>'; nm.querySelector('b').textContent = l.code + ' ' + l.name; nm.querySelector('span').textContent = l.note || '';
+            var st = document.createElement('button'); st.type = 'button'; st.className = 'star'; st.textContent = '★'; st.title = 'Keep this one';
+            st.onclick = function (e) { e.stopPropagation(); toggleKeep(cover, l.key, S.wet, S.palette); };
+            var nf = null;
+            if (l.key) {
+                var gone = HIDDEN.indexOf(l.key) >= 0;
+                nf = document.createElement('button'); nf.type = 'button'; nf.className = 'nofit';
+                nf.textContent = gone ? '↺ bring back' : '✕ remove'; nf.title = gone ? 'Put this effect back on the wall' : 'Remove this effect from the wall (you can bring it back)';
+                nf.onclick = function (e) { e.stopPropagation(); hideToggle(l.key); };
+                if (gone) t.classList.add('removed');
+            }
+            var right = document.createElement('span'); right.style.cssText = 'display:flex;gap:6px;align-items:center';
+            if (nf) right.appendChild(nf); right.appendChild(st);
+            lab.append(nm, right); t.append(c, lab); g.appendChild(t);
+            c.onclick = function () { openBig(l.key, S.wet); };
+            var tile = {look: l.key, el: t, star: st, ctx: c.getContext('2d', {willReadFrequently: true}), orig: null, img: null, ov: null};
+            TILES.push(tile);
+            Promise.all([img(url(cover, '', 480)), l.key ? img(url(cover, l.key, 480)) : null, overlay(cover)]).then(function (a) {
+                tile.orig = a[0]; tile.img = a[1]; tile.ov = a[2]; drawTile(tile);
+            }).catch(function () { tile.ctx.fillStyle = '#300'; tile.ctx.fillRect(0, 0, 420, 420); });
+        });
+        markKept();
+    }
+    function drawTile(t) { if (t.orig) compose(t.ctx, 420, t.orig, t.img, S.wet, S.palette, S.title ? t.ov : null); }
+    function markKept() {
+        TILES.forEach(function (t) { var k = isKept(eff(), t.look); t.star.classList.toggle('on', k); t.el.classList.toggle('kept', k); t.el.hidden = S.onlyKept && !k; });
+    }
+    var queued = false;
+    function redrawAll() { if (queued) return; queued = true; requestAnimationFrame(function () { queued = false; TILES.forEach(drawTile); }); }
+    $('wet').addEventListener('input', function () { S.wet = +this.value; $('wetn').textContent = S.wet + '%'; persist(); redrawAll(); });
+
+    $('title').onchange = function () { S.title = this.checked; persist(); redrawAll(); renderKept(); drawWallGrid(); };
+    $('onlyk').onchange = function () { S.onlyKept = this.checked; persist(); markKept(); };
+    Array.prototype.forEach.call($('which').children, function (b) { b.onclick = function () { S.which = b.dataset.v; persist(); syncBar(); buildGrid(); }; });
+    $('tscale').addEventListener('input', function () { S.tscale = +this.value; $('tscalen').textContent = S.tscale + '%'; persist(); redrawAll(); if (BIG) drawBig(); });
+    $('tsize').addEventListener('input', function () { S.tsize = +this.value; document.documentElement.style.setProperty('--tile', S.tsize + 'px'); persist(); });
+    // big view: own knob, Instagram and the record
+    var BIG = null;
+    function openBig(look, wet) {
+        var l = LOOKS.find(function (x) { return x.key === look; }) || LOOKS[0];
+        var cv = COVERS.find(function (x) { return x.name === S.cover; });
+        $('mt').textContent = l.code + ' ' + l.name + ' · ' + (cv ? cv.label : '');
+        $('mwet').value = wet; $('mwetn').textContent = wet + '%';
+        $('modal').hidden = false;
+        var ec = eff();
+        BIG = {look: look, cover: ec};
+        Promise.all([img(url(ec, '', 1080)), look ? img(url(ec, look, 1080)) : null, S.title ? overlay(ec) : null]).then(function (a) {
+            if (!BIG || BIG.look !== look) return; BIG.orig = a[0]; BIG.img = a[1]; BIG.ov = a[2]; drawBig();
+        });
+        $('mkeep').textContent = isKept(ec, look) ? '★ Kept' : '☆ Keep';
+    }
+    // IG profile grid: the cover as the newest post (3:4 centre crop) above his real last 11 posts
+    var FEEDIMG = null;
+    function feedImgs() {
+        if (!FEEDIMG) FEEDIMG = Promise.all(IGFEED.slice(0, 11).map(function (n) {
+            return img('/playground/' + encodeURIComponent(SLUG) + '/ig-grid/img?n=' + n).catch(function () { return null; });
+        }));
+        return FEEDIMG;
+    }
+    function drawIgGrid(cv, src) {
+        if (!IGFEED.length) { cv.parentNode.hidden = true; return; }
+        feedImgs().then(function (feed) {
+            var W = cv.width, gap = Math.max(1, Math.round(W / 300)), tw = (W - 2 * gap) / 3, th = tw * 4 / 3;
+            var x = cv.getContext('2d'); x.fillStyle = '#fff'; x.fillRect(0, 0, W, cv.height);
+            [src].concat(feed).forEach(function (im, i) {
+                if (!im) return;
+                var sw = im.width, sh = im.height, cw = sw, ch = sh;
+                if (sw / sh > 3 / 4) cw = sh * 3 / 4; else ch = sw * 4 / 3;
+                x.drawImage(im, (sw - cw) / 2, (sh - ch) / 2, cw, ch, (i % 3) * (tw + gap), Math.floor(i / 3) * (th + gap), tw, th);
+            });
+        });
+    }
+    var WG = null;
+    function drawWallGrid() {
+        if (!WG) { WG = document.createElement('canvas'); WG.width = WG.height = 720; }
+        var ec = eff();
+        Promise.all([img(url(ec, '', 720)), S.title ? overlay(ec) : null]).then(function (a) {
+            compose(WG.getContext('2d', {willReadFrequently: true}), 720, a[0], null, 0, S.palette, a[1]);
+            drawIgGrid($('wgrid'), WG);
+        }).catch(function () {});
+    }
+    $('gfh').onclick = function () { var m = $('gfloat').classList.toggle('min'); $('gfx').textContent = m ? '+' : '–'; };
+    function drawBig() {
+        if (!BIG || !BIG.orig) return;
+        var w = +$('mwet').value, big = $('big').getContext('2d', {willReadFrequently: true});
+        compose(big, 1080, BIG.orig, BIG.img, w, S.palette, BIG.ov);
+        $('pig').getContext('2d').drawImage($('big'), 0, 0, 540, 540);
+        drawIgGrid($('pgrid'), $('big'));
+        var r = $('prec').getContext('2d'), S2 = 540;
+        r.fillStyle = S.palette && RAMP.stops ? RAMP.stops[S.palette === 'nightwall' ? 2 : 5] : '#d6d1c8'; r.fillRect(0, 0, S2, S2);
+        r.fillStyle = '#0f0d0c'; r.beginPath(); r.arc(S2 / 2, S2 / 2, S2 * 0.44, 0, Math.PI * 2); r.fill();
+        r.save(); r.beginPath(); r.arc(S2 / 2, S2 / 2, S2 * 0.40, 0, Math.PI * 2); r.clip(); r.drawImage($('big'), S2 / 2 - S2 * 0.40, S2 / 2 - S2 * 0.40, S2 * 0.8, S2 * 0.8); r.restore();
+        r.fillStyle = '#0f0d0c'; r.beginPath(); r.arc(S2 / 2, S2 / 2, 4, 0, Math.PI * 2); r.fill();
+    }
+    var bq = false;
+    $('mwet').addEventListener('input', function () { $('mwetn').textContent = this.value + '%'; if (bq) return; bq = true; requestAnimationFrame(function () { bq = false; drawBig(); }); });
+    $('mkeep').onclick = function () { if (BIG) toggleKeep(BIG.cover, BIG.look, +$('mwet').value, S.palette).then(function () { $('mkeep').textContent = isKept(BIG.cover, BIG.look) ? '★ Kept' : '☆ Keep'; }); };
+    $('mopen').onclick = function () {
+        if (!BIG) return;
+        var key = 'pg-state-' + SLUG, st = {};
+        try { st = JSON.parse(localStorage.getItem(key) || '{}') || {}; } catch (e) {}
+        Object.assign(st, {'pg-cover': BIG.cover, 'pg-look': BIG.look, 'pg-look-amt': String($('mwet').value), 'pg-look-blend': 'source-over',
+                           'pg-look2': '', 'pg-ramp-mode': BRIGHTNESS[S.palette] ? S.palette : (S.palette ? 'straight' : ''), 'pg-ramp-amt': '100'});
+        try { localStorage.setItem(key, JSON.stringify(st)); } catch (e) {}
+        location.href = '/playground/' + encodeURIComponent(SLUG);
+    };
+    // compare: two covers big, side by side or flipping in one place
+    var CMPCOVERS = BASECOVERS.filter(function (c) { return c.name; });
+    function firstOf(p) { var c = CMPCOVERS.find(function (x) { return x.name.indexOf(p) === 0; }); return c ? c.name : (CMPCOVERS[0] || {}).name; }
+    var C = Object.assign({a: firstOf('1a'), b: firstOf('1c'), mode: 'side', show: 0, look: '', wet: 0, main: true}, S.cmp || {});
+    if (!C.looks) C.looks = [C.look || '', C.look || '']; if (!C.wets) C.wets = [C.wet || 0, C.wet || 0];
+    // each pane mixes up to 3 effects, each with its own amount (11-05)
+    if (!C.mix) C.mix = [0, 1].map(function (i) { return [{look: C.looks[i], wet: C.wets[i]}]; });
+    var MAXFX = 3;
+    function list() { return C.main ? CMPCOVERS.filter(function (c) { return c.name.indexOf('1a') === 0; }) : CMPCOVERS; }
+    function fillSelects() {
+        PANES.forEach(function (p) { var sel = p.querySelector('select'); sel.innerHTML = '';
+            list().forEach(function (c) { var o = document.createElement('option'); o.value = c.name; o.textContent = c.label; sel.appendChild(o); });
+            p.querySelector('.cmp-nav input').max = list().length - 1; });
+        var L = list().map(function (c) { return c.name; });
+        if (L.indexOf(C.a) < 0) C.a = L[0];
+        if (L.indexOf(C.b) < 0) C.b = L[Math.min(1, L.length - 1)];
+    }
+    function go(i, name) { C[i ? 'b' : 'a'] = name; saveCmp(); syncCmp(); drawCmp(i); }
+    var PANES = Array.prototype.slice.call(document.querySelectorAll('#cmppanes .cmp-pane'));
+    PANES.forEach(function (p, i) {
+        var sel = p.querySelector('select'), rng = p.querySelector('.cmp-nav input');
+        sel.onchange = function () { go(i, sel.value); };
+        rng.addEventListener('input', function () { go(i, list()[+rng.value].name); });
+        Array.prototype.forEach.call(p.querySelectorAll('.cmp-nav button'), function (b) { b.onclick = function () {
+            var L = list(), k = L.findIndex(function (c) { return c.name === (i ? C.b : C.a); });
+            go(i, L[(k + +b.dataset.d + L.length) % L.length].name); }; });
+        p.querySelector('canvas').onclick = function () { if (C.mode === 'one') flip(); };
+    });
+    function fxOptions(sel, cur) {   // effects left on the wall (removed ones stay out)
+        sel.innerHTML = '';
+        LOOKS.forEach(function (l) { if (l.key && HIDDEN.indexOf(l.key) >= 0 && l.key !== cur) return;
+            var o = document.createElement('option'); o.value = l.key; o.textContent = l.key ? l.code + ' ' + l.name : 'No effect'; sel.appendChild(o); });
+        sel.value = cur;
+    }
+    function buildMix(i) {
+        var box = PANES[i].querySelector('.cmp-mix'); box.innerHTML = '';
+        var M = C.mix[i];
+        M.forEach(function (m, j) {
+            var row = document.createElement('div'); row.className = 'cmp-fx';
+            var sel = document.createElement('select'); sel.className = 'fx'; fxOptions(sel, m.look); sel.hidden = true;
+            sel.onchange = function () { m.look = sel.value; saveCmp(); drawCmp(i); };
+            var lk = LOOKS.find(function (l) { return l.key === m.look; });
+            var fb = document.createElement('button'); fb.type = 'button'; fb.className = 'fxbtn'; fb.textContent = '🎨 ' + (m.look && lk ? lk.code + ' ' + lk.name : 'No effect') + ' ▾';
+            fb.onclick = function () { togglePicker(i, j, m, row); };
+            var lab = document.createElement('label'); lab.textContent = M.length > 1 ? 'Amount' : 'Wet';
+            var rng = document.createElement('input'); rng.type = 'range'; rng.min = 0; rng.max = 100; rng.value = m.wet; rng.className = 'fxwet';
+            var n = document.createElement('span'); n.className = 'fxn'; n.textContent = m.wet + '%';
+            var q = false;
+            rng.addEventListener('input', function () { m.wet = +rng.value; n.textContent = m.wet + '%'; saveCmp(); sumLine(i);
+                if (q) return; q = true; requestAnimationFrame(function () { q = false; paintCmp(i); }); });
+            row.append(sel, fb, lab, rng, n);
+            if (M.length > 1) { var x = document.createElement('button'); x.type = 'button'; x.className = 'x'; x.textContent = '✕'; x.title = 'Take this effect out of the mix';
+                x.onclick = function () { M.splice(j, 1); saveCmp(); buildMix(i); drawCmp(i); }; row.appendChild(x); }
+            box.appendChild(row);
+        });
+        var sum = document.createElement('div'); sum.className = 'cmp-sum'; box.appendChild(sum);
+        if (M.length < MAXFX) { var add = document.createElement('button'); add.type = 'button'; add.className = 'cmp-add'; add.textContent = '➕ mix in another effect (' + M.length + ' of ' + MAXFX + ')';
+            add.onclick = function () { M.push({look: '', wet: 30}); saveCmp(); buildMix(i); }; box.appendChild(add); }
+        sumLine(i);
+    }
+    // effect picker: thumbnails on this pane's cover, grouped by family (removed effects stay out)
+    var FAMILIES = [
+        ['🖨️ Print', ['xerox', 'halftone', 'riso', 'engraving', 'dither']],
+        ['🧪 Photo chemistry', ['cyanotype', 'solarisation', 'pictorialism', 'halation', 'monotint', 'monotintnight']],
+        ['📺 Screen and video', ['scanlines', 'crt', 'vhs', 'pixel', 'pixelsort', 'ascii', 'anaglyph', 'camcorder']],
+        ['🌙 Light and night', ['thermal', 'nightvision', 'nightflash', 'blowout', 'window', 'softclub', 'emboss']]
+    ];
+    function togglePicker(i, j, m, row) {
+        var old = PANES[i].querySelector('.fxpick'), was = old && old.dataset.j === String(j);
+        if (old) old.remove(); if (was) return;
+        var pk = document.createElement('div'); pk.className = 'fxpick'; pk.dataset.j = j;
+        var cover = variant(i ? C.b : C.a, S.palette), known = {};
+        function tile(key, label) {
+            var t = document.createElement('button'); t.type = 'button'; t.className = 'fxt' + (m.look === key ? ' on' : '');
+            var im = document.createElement('img'); im.loading = 'lazy'; im.src = url(cover, key, 160); im.alt = label;
+            var c = document.createElement('span'); c.textContent = label; t.append(im, c);
+            t.onclick = function () { m.look = key; saveCmp(); pk.remove(); buildMix(i); drawCmp(i); };
+            return t;
+        }
+        var g0 = document.createElement('div'); g0.className = 'fxg'; g0.appendChild(tile('', 'No effect')); pk.appendChild(g0);
+        FAMILIES.forEach(function (f) {
+            var keys = f[1].filter(function (k) { known[k] = 1; return HIDDEN.indexOf(k) < 0 && LOOKS.some(function (l) { return l.key === k; }); });
+            if (!keys.length) return;
+            var h = document.createElement('div'); h.className = 'fxh'; h.textContent = f[0]; pk.appendChild(h);
+            var g = document.createElement('div'); g.className = 'fxg';
+            keys.forEach(function (k) { var l = LOOKS.find(function (x) { return x.key === k; }); g.appendChild(tile(k, l.code + ' ' + l.name)); });
+            pk.appendChild(g);
+        });
+        var rest = LOOKS.filter(function (l) { return l.key && !known[l.key] && HIDDEN.indexOf(l.key) < 0; });
+        if (rest.length) { var h2 = document.createElement('div'); h2.className = 'fxh'; h2.textContent = 'Other'; pk.appendChild(h2);
+            var g2 = document.createElement('div'); g2.className = 'fxg'; rest.forEach(function (l) { g2.appendChild(tile(l.key, l.code + ' ' + l.name)); }); pk.appendChild(g2); }
+        row.after(pk);
+    }
+    function sumLine(i) {
+        var M = C.mix[i], T = M.reduce(function (a, m) { return a + (m.look ? m.wet : 0); }, 0), el = PANES[i].querySelector('.cmp-sum');
+        if (!el) return;
+        el.textContent = M.length < 2 ? '' : (T <= 100 ? 'Mix: effects ' + T + '%, original ' + (100 - T) + '%' : 'Mix: effects add up to ' + T + '%, so they are shared out as 100% (no original left)');
+    }
+    function fillFx() { PANES.forEach(function (p, i) { C.mix[i].forEach(function (m) { if (m.look && HIDDEN.indexOf(m.look) >= 0) m.look = ''; }); buildMix(i); }); }
+    function saveCmp() { S.cmp = C; persist(); }
+    function syncCmp() {
+        PANES[0].querySelector('select').value = C.a; PANES[1].querySelector('select').value = C.b;
+        var L = list().map(function (c) { return c.name; });
+        PANES.forEach(function (p, i) { var k = L.indexOf(i ? C.b : C.a); p.querySelector('.cmp-nav input').value = k; p.querySelector('.cmp-nav .n').textContent = (k + 1) + ' / ' + L.length; });
+        $('cmpmain').checked = !!C.main; $('cmptext').checked = !!S.title;
+        Array.prototype.forEach.call($('cmpmode').children, function (b) { b.classList.toggle('on', b.dataset.v === C.mode); });
+        Array.prototype.forEach.call($('cmpab').children, function (b) { b.classList.toggle('on', +b.dataset.v === C.show); });
+        $('cmpab').hidden = C.mode !== 'one';
+        $('cmppanes').classList.toggle('single', C.mode === 'one');
+        PANES.forEach(function (p, i) { p.hidden = C.mode === 'one' && i !== C.show; });
+    }
+    var CS = [{}, {}];
+    function drawCmp(i) {
+        var cover = variant(i ? C.b : C.a, S.palette), M = C.mix[i], slot = CS[i] = {cover: cover};
+        Promise.all([img(url(cover, '', 1080)), S.title ? overlay(cover) : null].concat(M.map(function (m) { return m.look ? img(url(cover, m.look, 1080)) : null; }))).then(function (a) {
+            if (CS[i] !== slot) return; slot.orig = a[0]; slot.ov = a[1]; slot.imgs = a.slice(2); paintCmp(i);
+        }).catch(function () {});
+    }
+    function paintCmp(i) { var s = CS[i]; if (s && s.orig) compose(PANES[i].querySelector('canvas').getContext('2d', {willReadFrequently: true}), 1080, s.orig, C.mix[i].map(function (m, j) { return {img: m.look ? s.imgs[j] : null, wet: m.wet}; }), 0, S.palette, s.ov); }
+    function flip() { C.show = C.show ? 0 : 1; saveCmp(); syncCmp(); }
+    function openCmp() { $('cmp').hidden = false; fillSelects(); fillFx(); syncCmp(); drawCmp(0); drawCmp(1); }
+    $('cmpmain').onchange = function () { C.main = this.checked; fillSelects(); saveCmp(); syncCmp(); drawCmp(0); drawCmp(1); };
+    $('cmptext').onchange = function () { S.title = this.checked; persist(); syncBar(); redrawAll(); renderKept(); drawCmp(0); drawCmp(1); };
+    function closeCmp() { $('cmp').hidden = true; }
+    $('cmpopen').onclick = openCmp;
+    if (/[?&]cmp=1/.test(location.search)) setTimeout(openCmp, 0);
+    $('cmpclose').onclick = closeCmp;
+    Array.prototype.forEach.call($('cmpmode').children, function (b) { b.onclick = function () { C.mode = b.dataset.v; saveCmp(); syncCmp(); }; });
+    Array.prototype.forEach.call($('cmpab').children, function (b) { b.onclick = function () { C.show = +b.dataset.v; saveCmp(); syncCmp(); }; });
+    document.addEventListener('keydown', function (e) {
+        if ($('cmp').hidden) return;
+        if (e.key === 'Escape') closeCmp();
+        else if (C.mode === 'one' && (e.key === 'ArrowLeft' || e.key === 'ArrowRight' || e.key === ' ')) { e.preventDefault(); flip(); }
+    });
+    function closeBig() { $('modal').hidden = true; BIG = null; }
+    $('mclose').onclick = closeBig;
+    $('modal').addEventListener('click', function (e) { if (e.target === $('modal')) closeBig(); });
+    document.addEventListener('keydown', function (e) { if (e.key === 'Escape') closeBig(); });
+    S.showHidden = false; $('showhid').checked = false;
+    $('showhid').onchange = function () { S.showHidden = this.checked; buildGrid(); };
+    syncBar(); buildGrid();
+    fetch('/api/playground/' + encodeURIComponent(SLUG) + '/wall-hidden').then(function (r) { return r.json(); }).then(function (d) { HIDDEN = d.hidden || []; $('hidn').textContent = HIDDEN.length; buildGrid(); if (!$('cmp').hidden) { fillFx(); syncCmp(); drawCmp(0); drawCmp(1); } }).catch(function () {});
+    fetch('/api/playground/' + encodeURIComponent(SLUG) + '/wall-kept').then(function (r) { return r.json(); }).then(function (d) { KEPT = d.kept || []; renderKept(); markKept(); }).catch(function () {});
+})();
+</script>
+{% endblock %}

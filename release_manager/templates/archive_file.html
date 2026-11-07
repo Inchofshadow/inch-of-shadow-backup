@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block title %}{{ title }}{% endblock %}
+{% block content %}
+<div class="archive-page archive-detail">
+    <nav class="breadcrumb">
+        <a href="{{ url_for('archive_page') }}">Shadow Archive</a>
+        {% if owner %}<span class="breadcrumb-sep">/</span><a href="{{ url_for('archive_detail', rid=owner.id) }}">{{ owner.id }}</a>{% endif %}
+        <span class="breadcrumb-sep">/</span>
+        <span class="breadcrumb-current">{{ rel_path }}</span>
+    </nav>
+    {% if listing is not none %}
+    <h1>{{ title }}</h1>
+    <p class="form-subtitle">{{ listing|length }} files</p>
+    <ul class="archive-children">
+        {% for f in listing %}<li><a href="{{ url_for('archive_file', path=rel_path.rstrip('/') ~ '/' ~ f.name) }}">{{ f.title }}</a> <span class="brand-muted">{{ f.name }}</span></li>{% endfor %}
+    </ul>
+    {% else %}
+    <div class="archive-md">{{ body_html|safe }}</div>
+    {% endif %}
+</div>
+{% endblock %}

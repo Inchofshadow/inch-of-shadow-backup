@@ -1,0 +1,246 @@
+SOUNDCLOUD SEO AUDIT & OPTIMIZATION GUIDE
+Inch of Shadow -- March 28, 2026
+===========================================
+
+CURRENT STATE
+- ~98 followers / ~146 following
+- ~10 tracks/sets uploaded
+- SoundCloud Artist Pro ($99/yr) -- active
+- RepostExchange free tier -- active
+- Tags broken or missing on 5 of 6 tracks
+- Profile metadata incomplete (country, website, Discogs all null)
+
+===========================================
+SECTION 1: SEO ACTIONS RANKED BY IMPACT
+===========================================
+
+TIER 1 -- IMMEDIATE DISCOVERY UNLOCK (do first)
+-------------------------------------------------
+
+#1 FIX ALL TAGS (reformat properly)
+Impact: CRITICAL
+Why: 5 of 6 tracks have broken or empty tags. SC's tag-based discovery cannot surface your music at all. This is equivalent to a webpage with no title tag and no indexable content.
+Failure modes found:
+  - Mind Eaten, The Cure: entire tag list wrapped in one quoted string (SC sees it as one giant unusable tag)
+  - Meltscape: comma-separated free text (SC parses unpredictably)
+  - The Tour remix, About Blank set: completely empty tags
+Correct format: each tag is a separate string, multi-word tags use individual quotes, max 5 tags, max 20 chars each.
+Example: "acid techno" trance "berlin techno" analog rave
+
+#2 ADD TAGS TO THE TOUR REMIX + ABOUT BLANK SET
+Impact: CRITICAL
+Why: 283 combined plays with zero tags. These tracks already have engagement signals (likes, plays) that the algorithm values. Adding tags lets SC actually distribute them. Highest ROI because engagement data is already there waiting.
+
+TIER 2 -- HIGH IMPACT METADATA
+-------------------------------------------------
+
+#3 FILL BPM, KEY, ISRC, RELEASE DATE, LABEL NAME (all tracks)
+Impact: HIGH
+Why: SC uses these for structured discovery (DJ tools, related tracks, label pages). ISRC links SC uploads to distributed catalog (Symphonic). Label name creates cross-linking with label pages. These are direct ranking signals.
+Fields to fill per track:
+  - BPM (numeric)
+  - Key signature
+  - ISRC (from Symphonic)
+  - Release year/month/day
+  - Label name (e.g., "Software Zero Records", "MM Discos")
+
+#4 ADD PURCHASE_URL TO EVERY TRACK
+Impact: HIGH
+Why: SC algorithm weighs tracks with complete metadata higher. The "Buy" button increases dwell time and interaction rate, which feeds back into ranking. One-click conversion path from player embeds.
+Set to: Bandcamp or Spotify link for each track.
+
+#5 SET COUNTRY TO GERMANY
+Impact: MEDIUM-HIGH
+Why: Geo-discovery is a real SC feature. Users browse by location. Profile currently excluded from "Berlin" and "Germany" location filters. One-click fix in profile settings.
+
+TIER 3 -- PROFILE-LEVEL SEO
+-------------------------------------------------
+
+#6 EXPAND BIO TO ~1500 CHARS
+Impact: MEDIUM
+Why: SC internal search indexes profile descriptions. Currently using 246 of 4000 characters (6%). Adding genre keywords, release names, label names, and platform links expands keyword surface area 6x.
+Current bio:
+  "Slow-burning electronics shaped by dark disco, acid, and post-punk. Berlin. Producer, DJ, one half of Double Figure. Releases on MM Discos, Stereo Society & NaNa Disc. Booking: inchofshadow@gmail.com"
+Recommended structure:
+  - Lines 1-2: Artist identity + genre keywords (dark disco, acid, electro, EBM, techno, analog, underground, Berlin techno)
+  - Lines 3-4: Label associations with full names
+  - Lines 5-6: Recent/notable releases with label + catalog numbers
+  - Lines 7+: Links to all platforms (Spotify, Bandcamp, Beatport, Instagram, YouTube, RA)
+  - Last line: Booking email
+
+#7 REPLACE "POST-PUNK" WITH EBM OR ELECTRO
+Impact: MEDIUM
+Why: "Post-punk" does not appear in any other platform bios, release metadata, or genre tags. Genre inconsistency across profile, tags, and track metadata weakens topical authority. "Post-punk" pulls in wrong listener cluster, which tanks completion rate, which tanks algorithmic distribution.
+
+#8 FIX PERMALINK SLUGS (future uploads only)
+Impact: MEDIUM
+Why: 4 of 6 tracks have auto-truncated slugs missing critical keywords (track names, venue names, "berlin"). Cannot fix existing ones. For every future upload: manually set slug to include artist name + track name + key genre term. URLs are indexed by SC search.
+Current broken slugs:
+  - inch-of-shadow-status-zero (missing "mind-eaten")
+  - inch-of-shadow-status-zero-the (missing "cure")
+  - inch-of-shadow-the-code-end-of (truncated, meaningless)
+  - the-tour-remix (missing artist names entirely)
+
+TIER 4 -- INDIRECT SEO (engagement signals that feed ranking)
+-------------------------------------------------
+
+#9 UPLOAD BACK CATALOG ON FIXED SCHEDULE (Tue/Wed, not Fri/Sat)
+Impact: MEDIUM
+Why: More content = more indexable surface. Each upload gets a First Fans test window. Tuesday/Wednesday timing catches Friday playlist refresh cycle. Friday evening uploads compete against weekend flood with only hours before the cycle.
+
+#10 RECORD AND UPLOAD A DJ MIX
+Impact: MEDIUM (for SEO) / HIGH (for growth)
+Why: In dark disco/acid/EBM, SC is primarily a mix platform. Artists like Curses, Inhalt, Privacy -- most-played content is mixes. Mixes drive engagement metrics that boost overall profile authority, which lifts all tracks. A tagged 60-min dark disco/acid mix will likely outperform all originals in plays and follower acquisition.
+
+#11 SET WEBSITE + CROSS-PLATFORM LINKS
+Impact: LOW-MEDIUM
+Why: SC Pro gives a clickable website link on profile header -- currently empty. Completes profile signals. Add Bandcamp or link-in-bio page. Also fill the dedicated links section (Spotify, Instagram, etc.).
+
+#12 STRATEGIC REPOSTING + COMMENTS
+Impact: LOW (for SEO) / MEDIUM (for growth)
+Why: Zero direct SEO impact. Pure social/engagement play. But engagement velocity on others' tracks can trigger reciprocal discovery. 1-2 reposts per week from scene peers. Comments on tracks by artists in your niche from verified account are visible to their audience.
+
+===========================================
+SECTION 2: TRACK-BY-TRACK TAG CORRECTIONS
+===========================================
+
+TRACK 1: Inch of Shadow & Status Zero -- Mind Eaten (Meltscape EP)
+Current tags: "techno, trance, acid techno, hypnotic techno, peak time techno, analog synth, underground techno, berlin techno, rave, club music" (ONE broken quoted string)
+Corrected tags: "acid techno" trance "berlin techno" analog rave
+Genre: Techno (keep)
+Missing: BPM, ISRC, key, release date, label (Software Zero Records), purchase_url
+Slug issue: inch-of-shadow-status-zero (missing track name)
+
+TRACK 2: Inch of Shadow & Status Zero -- Meltscape (Meltscape EP)
+Current tags: Techno Acid techno, trance, acid hypnotic peak time analog synth, underground berlin rave, club music (broken comma-separated)
+Corrected tags: "acid techno" trance hypnotic analog underground
+Genre: Techno (keep)
+Missing: BPM, ISRC, key, release date, label (Software Zero Records), purchase_url
+
+TRACK 3: Inch of Shadow & Status Zero -- The Cure (Meltscape EP)
+Current tags: "Techno, Acid Techno. Trance. Techno Trance. Acid" (ONE broken quoted string with periods)
+Corrected tags: "acid techno" trance "techno trance" acid rave
+Genre: Techno (keep)
+Missing: BPM, ISRC, key, release date, label (Software Zero Records), purchase_url
+Slug issue: inch-of-shadow-status-zero-the (truncated, missing "cure")
+
+TRACK 4: Inch of Shadow @ THE CODE - Live Stream Marathon | Berlin
+Current tags: "Dark Disco" EBM Acid Techno (4 tags, room for 1 more)
+Corrected tags: "dark disco" EBM acid techno "live set"
+Genre: Dark Disco, EBM (keep -- good custom genre)
+Missing: BPM, release date, purchase_url
+Slug issue: inch-of-shadow-the-code-end-of (truncated)
+
+TRACK 5: The Tour - Inch of Shadow Remix
+Current tags: EMPTY (single space)
+Corrected tags: "dark disco" remix electro "la groove machine" Berlin
+Genre: Dark Disco (keep)
+Title improvement: "La Groove Machine - The Tour (Inch of Shadow Remix)" -- standard remix title format, adds original artist for search
+Missing: BPM, ISRC, key, release date, label, purchase_url (Spotify link already in description -- use it)
+Slug issue: the-tour-remix (missing artist names)
+
+TRACK 6: Inch of Shadow b2b AREA 101 @ About Blank, Berlin
+Current tags: EMPTY
+Corrected tags: "dark disco" EBM techno "about blank" Berlin
+Genre change: "Electronic" -> "Dark Disco" or custom "Dark Disco / EBM / Techno"
+Description: Currently 1 sentence. Needs tracklist, genre keywords, venue context, links.
+Missing: release date, purchase_url
+Slug issue: inch-of-shadow-b2b-area101 (missing "about-blank" and "berlin")
+
+===========================================
+SECTION 3: PROFILE METADATA FIXES
+===========================================
+
+FIELD: country
+Current: null
+Set to: Germany
+
+FIELD: website
+Current: null
+Set to: https://inchofshadow.bandcamp.com (or link-in-bio with all platforms)
+
+FIELD: website_title
+Current: null
+Set to: "All Links & Releases" or "Bandcamp / Spotify / Beatport"
+
+FIELD: discogs_name
+Current: null
+Set to: Inch of Shadow (match your Discogs artist page)
+
+FIELD: bio (expanded draft)
+---
+Slow-burning electronics shaped by dark disco, acid, electro, and EBM. Berlin-based producer, DJ, and mastering engineer.
+
+Releases on MM Discos, Stereo Society, NaNa Disc, and Software Zero Records. One half of Double Figure.
+
+Recent: Meltscape EP (Software Zero Records, 2025), The Tour Remix (La Groove Machine), Farewell (upcoming).
+
+Sound: dark disco, acid, electro, EBM, techno, analog synthesizers, drum machines, cinematic, melancholic, underground electronic music, Berlin techno.
+
+Listen & buy:
+Bandcamp: https://inchofshadow.bandcamp.com
+Spotify: https://open.spotify.com/artist/5k4SyH7JRPMJe1RHYMI2CT
+Beatport: https://www.beatport.com/artist/inch-of-shadow/1276949
+Apple Music: https://music.apple.com/us/artist/inch-of-shadow/1784503341
+YouTube: https://www.youtube.com/@InchofShadow
+Instagram: https://www.instagram.com/inch_of_shadow/
+Resident Advisor: https://ra.co/dj/inchofshadow
+SoundCloud: https://soundcloud.com/inch-of-shadow
+
+Booking: inchofshadow@gmail.com
+---
+
+===========================================
+SECTION 4: PRO FEATURES CHECKLIST
+===========================================
+
+[ ] First Fans -- verify enabled on EVERY upload (primary growth lever at 98 followers)
+[ ] Spotlight -- pin strongest original track to top of profile
+[ ] Scheduled releases -- use for Farewell and The Deceiver releases
+[ ] Replace audio -- use for teaser-to-full-track swap on release day
+[ ] Stats Pro -- review weekly to see which tags drive discovery traffic
+[ ] Custom links on player -- add Bandcamp purchase link to every embedded player
+
+===========================================
+SECTION 5: CONTENT STRATEGY NOTES
+===========================================
+
+UPLOAD SCHEDULE:
+- Tuesday or Wednesday uploads (catches Friday playlist refresh)
+- One track every 2-3 days until back catalog is fully uploaded
+- Target: 20+ tracks on profile within 3 weeks
+
+DJ MIXES:
+- Highest-leverage single action for SC growth in dark disco/acid/EBM niche
+- Artists like Curses, Powder, Privacy: mixes are most-played content
+- Record monthly 60-90 min mix, properly tagged and described
+- Tags for mixes: "dark disco" "dj mix" acid EBM Berlin
+
+ENGAGEMENT:
+- Trim following to under 50 (low following signals curation in underground scene)
+- Repost 1-2 tracks/week from scene peers (genuine curation, not reciprocal schemes)
+- Comment on tracks by niche artists from verified account
+- 48-hour window after upload is critical for algorithmic trajectory
+
+BANNER IMAGE:
+- Current options in resized/ folder do not match Berlin underground aesthetic
+- Need: dark, minimal, on-brand (studio shot, club atmosphere, or typographic)
+- Reference: Silent Servant, Phase Fatale, Schwefelgelb banner styles
+- Dimensions: 2480x520px
+
+===========================================
+SECTION 6: TRACK DESCRIPTIONS (differentiate)
+===========================================
+
+Current problem: The three Meltscape tracks have near-identical descriptions ("Built around analog machines, the track blends techno, acid and trance elements through hypnotic sequences and evolving textures"). This is duplicate content providing no unique keyword signal per track.
+
+Each description should:
+- Mention specific elements of that particular track
+- Include the track's position in the EP
+- Reference BPM, key, or mood if different from other tracks
+- Include streaming/buy links specific to that release
+- Be at least 200-300 characters
+
+===========================================
+END OF AUDIT
+===========================================

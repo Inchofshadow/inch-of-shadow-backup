@@ -1,0 +1,47 @@
+{
+ "verdict": "Genre names are right but bare tags like ebm/darkwave pull broad goth/80s noise; add scene-specific tags, labels, artists, and the max_calls=0 means Instagram won't be queried at all.",
+ "generic": [
+  "coldwave",
+  "darkwave",
+  "darkwave dance",
+  "ebm",
+  "acidtechno",
+  "dark disco mix"
+ ],
+ "better_keywords": [
+  "new beat",
+  "minimal wave",
+  "post-punk club",
+  "body music",
+  "industrial techno",
+  "italo dark",
+  "synthwave not",
+  "Boiler Room dark disco",
+  "Kompakt",
+  "Dark Entries",
+  "Mannequin Records",
+  "Avtomat",
+  "Pinkman",
+  "Vladimir Dubyshkin",
+  "Kris Baha",
+  "Curses",
+  "Schwefelgelb",
+  "Boy Harsher",
+  "Kontravoid",
+  "Molchat Doma",
+  "Lebanon Hanover",
+  "ID?",
+  "track ID",
+  "tracklist please",
+  "what's this song at"
+ ],
+ "better_sources": [
+  "r/darkwave",
+  "r/postpunk",
+  "r/industrialmusic",
+  "r/Techno",
+  "r/Synthwave",
+  "hashtags: #newbeat #minimalwave #darkentries #industrialtechno #postpunk #trackid",
+  "youtube: \"dark disco boiler room\", \"EBM DJ set HÖR\", \"new beat mix\", \"Dark Entries records\""
+ ]
+}

@@ -1,0 +1,116 @@
+{% extends "base.html" %}
+{% from "_edit_copies.html" import copies_strip %}
+{% from "_cover_mock.html" import cover_mock %}
+{% block title %}{{ p.id }}{% endblock %}
+{% block content %}
+<div class="shoot-page">
+    <div class="breadcrumb"><a href="{{ url_for('shoot_page') }}">Shoot</a> <span>{{ p.id }}</span></div>
+    <h1>{{ p.id }}</h1>
+    {% if message %}<div class="next-deadline-banner">{{ message }}</div>{% endif %}
+    <div class="shoot-detail">
+        <div class="shoot-detail-img">
+            <div class="shoot-toggle" role="group">
+                <button type="button" class="btn btn-secondary btn-sm active" data-kind="edit"{% if not edit_preview %} disabled title="her edit is not cached yet"{% endif %}>her edit</button>
+                <button type="button" class="btn btn-secondary btn-sm" data-kind="raw">raw</button>
+                <a class="btn btn-secondary btn-sm shoot-edit-btn" href="{{ url_for('photo_editor', src='shoot:' ~ p.id) }}" title="Crop, straighten and adjust her edit live; saving makes a new copy, the original is never changed. Local, no AI.">Edit a copy</a>
+                <span class="shoot-toggle-break" aria-hidden="true"></span><span class="shoot-toggle-sep">templates:</span>
+                {% for fam, label in grades.items() %}<button type="button" class="btn btn-secondary btn-sm{% if fam == her_family %} shoot-toggle-hers{% else %} shoot-toggle-other{% endif %}" data-kind="grade" data-family="{{ fam }}" title="{% if fam == her_family %}Fits this photo: the template learned from her edits of {{ label|lower }} photos{% else %}Learned from {{ label|lower }} photos, not this photo's light: expect it to be far from her look{% endif %}. Local colour and tone, no AI.">{{ label }}{% if fam == her_family %} &#10003;{% endif %}</button>{% endfor %}
+                <span class="shoot-toggle-sep shoot-toggle-hint">&#10003; fits this photo's light; the others were learned from other light and look further from her edit</span>
+            </div>
+            <a id="shoot-full-link" href="{{ url_for('shoot_full', photo_id=p.id) }}" data-edit="{{ url_for('shoot_full', photo_id=p.id) }}" data-raw="{{ url_for('shoot_full', photo_id=p.id, kind='raw') }}" target="_blank" title="open at full size"><img id="shoot-main-img" class="js-photo" data-thumb="{{ url_for('shoot_thumb', photo_id=p.id) }}" src="{{ url_for('shoot_thumb', photo_id=p.id, v='e' if edit_preview else 'r') }}" data-edit="{{ url_for('shoot_thumb', photo_id=p.id, v='e') }}" data-raw="{{ url_for('shoot_thumb', photo_id=p.id, kind='raw') }}" alt="{{ p.id }}"></a>
+            <p class="brand-muted shoot-imgnote" id="shoot-imgnote" data-edit="Click for full size: {% if drive %}her edit from the Intenso{% else %}the 1024 px raw preview (connect the Intenso for her edit){% endif %}." data-raw="The raw as the camera saw it, ungraded. Click for the 1024 px raw preview.">{% if not edit_preview %}Raw preview, not her edit. {% endif %}Click for full size: {% if drive %}her edit from the Intenso{% else %}the 1024 px raw preview (connect the Intenso for her edit){% endif %}.</p>
+        </div>
+        <div>
+            <dl class="brand-dl">
+                {% if outfit %}<dt>outfit</dt><dd><a href="{{ url_for('shoot_page', outfit=outfit.key) }}"><span class="shoot-swatch" style="background: {{ outfit.swatch }}"></span>{{ outfit.label }}</a> ({{ outfit.count }} in this batch)</dd>{% endif %}
+                {% for k, v in p.tags.items() %}<dt>{{ k }}</dt><dd>{{ v }}</dd>{% endfor %}
+                <dt>her rating</dt><dd>{{ p.her_rating }} star{{ 's' if p.her_rating != 1 }}{% if p.her_rating == 2 %} (a top pick){% endif %}</dd>
+                <dt>captured</dt><dd>{{ p.captured }}</dd>
+                <dt>size</dt><dd>{{ p.size[0] }} x {{ p.size[1] }}, {{ p.orientation }}</dd>
+                {% if p.ai_generated %}<dt>AI in her edit</dt><dd>{{ p.ai_generated.areas }} area(s), {{ p.ai_generated.what }}{% if p.ai_generated.on_him %}, <strong>on him</strong>{% endif %}</dd>{% endif %}
+                {% if p.used_in %}<dt>used in</dt><dd>{{ p.used_in|join(', ') }}</dd>{% endif %}
+                <dt>edit</dt><dd class="brand-muted">{{ p.edit }}</dd>
+                <dt>raw</dt><dd class="brand-muted">{{ p.raw }}</dd>
+                <dt>head at</dt><dd class="brand-muted">{{ p.subject.x }}, {{ p.subject.y }} of the frame ({{ p.subject.source }})</dd>
+            </dl>
+            {% if outs %}
+            <h2 class="shoot-h2">Crops made</h2>
+            <div class="shoot-outs">
+                {% for o in outs %}<a href="{{ url_for('shoot_out', filename=o) }}" target="_blank"><img src="{{ url_for('shoot_out', filename=o) }}" alt="{{ o }}"><span>{{ o }}</span></a>{% endfor %}
+            </div>
+            {% endif %}
+        </div>
+    </div>
+
+    {% if copies %}{{ copies_strip(copies) }}{% endif %}
+
+    {% if sims %}
+    <h2 class="shoot-h2">How it would look</h2>
+    <div class="sim-row">
+        {% set s = sims.post %}
+        <figure class="sim">
+            <div class="phone">
+                <div class="ig-top">{% if pfp %}<img class="ig-pfp" src="{{ url_for('shoot_pfp') }}" alt="">{% else %}<span class="ig-pfp"></span>{% endif %}<span>inch_of_shadow</span><span class="ig-dots">···</span></div>
+                <div class="sim-crop" style="aspect-ratio: {{ s.ratio }}"><img class="js-photo" data-thumb="{{ url_for('shoot_thumb', photo_id=p.id) }}" src="{{ url_for('shoot_thumb', photo_id=p.id, v='e' if edit_preview else 'r') }}" alt="" style="width: {{ s.width }}%; left: {{ s.left }}%; top: {{ s.top }}%"></div>
+                <div class="ig-actions"><span>&#9825;</span><span>&#9675;</span><span>&#8599;</span><span class="ig-right">&#9633;</span></div>
+                <div class="ig-caption"><strong>inch_of_shadow</strong> Song title. Out now.<br>{{ credit }}</div>
+                <div class="ig-time">1 hour ago</div>
+            </div>
+            <figcaption>on the phone, in the feed (post 4:5)</figcaption>
+        </figure>
+
+        <figure class="sim">
+            <div class="phone">
+                <div class="ig-profile">
+                    {% if pfp %}<img class="ig-pfp ig-pfp-lg" src="{{ url_for('shoot_pfp') }}" alt="">{% else %}<span class="ig-pfp ig-pfp-lg"></span>{% endif %}
+                    <div><strong>Inch of Shadow</strong><br><span class="ig-muted">inch_of_shadow</span></div>
+                </div>
+                <div class="ig-grid">
+                    {% set g = sims.carousel %}
+                    <div class="ig-tile ig-tile-new" title="the new photo"><div class="sim-crop" style="aspect-ratio: {{ g.ratio }}"><img class="js-photo" data-thumb="{{ url_for('shoot_thumb', photo_id=p.id) }}" src="{{ url_for('shoot_thumb', photo_id=p.id, v='e' if edit_preview else 'r') }}" alt="" style="width: {{ g.width }}%; left: {{ g.left }}%; top: {{ g.top }}%"></div><span class="ig-badge">new</span></div>
+                    {% for t in grid %}
+                    <div class="ig-tile" title="{{ t.date }}, {{ t.kind }}"><img src="{{ url_for('shoot_grid_tile', name=t.name) }}" alt="" loading="lazy">{% if t.kind == 'reel' %}<span class="ig-badge">&#9654;</span>{% elif t.kind == 'carousel' %}<span class="ig-badge">&#10697;</span>{% endif %}</div>
+                    {% endfor %}
+                </div>
+            </div>
+            <figcaption>your grid with it on top (3:4 tiles, as Instagram shows them since 2025)</figcaption>
+        </figure>
+
+        {% set c = sims.square %}
+        <figure class="sim">
+            {% if font.url %}<style>@font-face { font-family: "{{ font.family }}"; src: url("{{ font.url }}"); }</style>{% endif %}
+            {{ cover_mock(p, c, idea or {}, font, url_for('shoot_thumb', photo_id=p.id, v='e' if edit_preview else 'r')) }}
+            <div class="cover-row">
+                <div class="cover cover-small"><div class="sim-crop" style="aspect-ratio: {{ c.ratio }}"><img class="js-photo" data-thumb="{{ url_for('shoot_thumb', photo_id=p.id) }}" src="{{ url_for('shoot_thumb', photo_id=p.id, v='e' if edit_preview else 'r') }}" alt="" style="width: {{ c.width }}%; left: {{ c.left }}%; top: {{ c.top }}%"></div></div>
+                <div><strong>Song title</strong><br><span class="brand-muted">Inch of Shadow</span></div>
+            </div>
+            <figcaption>{% if idea %}<strong>Cover idea for this photo:</strong> {{ idea.note }} <span class="brand-muted">(set in <strong>{{ font.label }}</strong>, group {{ font.group }} of the font library; title {{ idea.title_at }}{% if idea.title_moved_from %}, moved from {{ idea.title_moved_from }} so it reads{% endif %}, name {{ idea.name_at }}{% if idea.name_moved_from %}, moved from {{ idea.name_moved_from }}{% endif %}, {{ idea.scale }}, colour {{ idea.colour }}{% if idea.ink %} in {{ idea.ink }}{% endif %}; a starting point, not a rule) <a href="{{ url_for('shoot_covers') }}#{{ p.id }}">all covers</a>{% else %}as a cover, no type placed{% endif %}</figcaption>
+        </figure>
+    </div>
+    {% endif %}
+</div>
+<script>
+(function () {
+    var link = document.getElementById('shoot-full-link'), note = document.getElementById('shoot-imgnote');
+    var buttons = document.querySelectorAll('.shoot-toggle button');
+    var full = link.dataset.edit.split('?')[0];
+    function query(kind, fam) {
+        if (kind === 'raw') return '?kind=raw';
+        if (kind === 'grade') return '?kind=grade&family=' + fam;
+        return '?v=e';
+    }
+    buttons.forEach(function (b) {
+        b.addEventListener('click', function () {
+            var kind = b.dataset.kind, fam = b.dataset.family, q = query(kind, fam);
+            var main = document.getElementById('shoot-main-img');
+            b.classList.add('is-loading');
+            main.addEventListener('load', function done() { b.classList.remove('is-loading'); main.removeEventListener('load', done); });
+            document.querySelectorAll('.js-photo').forEach(function (im) { im.src = im.dataset.thumb + q; });
+            link.href = kind === 'edit' ? link.dataset.edit : full + q;
+            note.textContent = kind === 'grade' ? 'The ' + b.textContent + ' template on the raw: local colour and tone, learned from her edits, no AI. Click for the 1024 px version.' : note.dataset[kind];
+            buttons.forEach(function (x) { x.classList.toggle('active', x === b); });
+        });
+    });
+})();
+</script>
+{% endblock %}

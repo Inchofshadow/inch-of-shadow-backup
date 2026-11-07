@@ -1,0 +1,25 @@
+{
+  "name": "gero-wallet-pains",
+  "question": "What do Cardano and crypto wallet users complain about or ask for (missing features, bugs, lost funds, confusing steps, staking, hardware wallet, mobile, dApp connection)?",
+  "system_extra": "Context: research for a non-custodial Cardano wallet (browser extension + mobile) with staking, NFTs, swaps and a debit card. Group findings by pain theme. For each theme name which wallets it hits (Eternl, Lace, VESPR, Begin, SecondFi formerly Yoroi, Atomic, others), how often it repeats, and quote 1-2 short user lines with links. Separate product pains (a feature fixes it) from support pains (a help article fixes it). Ignore price talk, token shilling and scam reports with no wallet detail.",
+  "output_dir": "/Users/amir/Desktop/Gero/gap-radar-reports/gero-wallet-pains/",
+  "crowding": false,
+  "sources": {
+    "reddit": {
+      "subs": ["cardano", "CardanoDevelopers", "CardanoStakePools", "CryptoCurrency", "ledgerwallet", "BitcoinBeginners"],
+      "phrases": ["\"wallet\" \"wish\"", "\"wallet\" \"doesn't support\"", "\"wallet\" \"stuck\"", "\"wallet\" \"lost\"", "\"which wallet\"", "\"best wallet\"", "\"eternl\"", "\"lace wallet\"", "\"vespr\"", "\"yoroi\""]
+    },
+    "hn_queries": ["cardano wallet", "self-custody wallet", "crypto wallet UX", "seed phrase lost"],
+    "stackexchange": {
+      "sites": ["cardano"],
+      "queries": ["wallet", "eternl", "lace", "yoroi", "staking", "hardware wallet", "dapp connector"]
+    },
+    "youtube_queries": ["best cardano wallet", "eternl wallet review", "lace wallet review", "vespr wallet tutorial", "cardano wallet problem"],
+    "github_queries": ["cardano wallet bug", "lace wallet", "cardano dapp connector CIP-30"],
+    "appstore": {
+      "genres": [],
+      "app_ids": ["1603854385", "1565749376", "6743856101", "1642488837", "1447326389", "1478257827"]
+    },
+    "hikerapi": {"hashtags": [], "accounts": [], "max_calls": 0}
+  }
+}

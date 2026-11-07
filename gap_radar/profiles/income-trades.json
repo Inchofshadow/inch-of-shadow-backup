@@ -1,0 +1,66 @@
+{
+  "name": "income-trades",
+  "question": "In trades and regulated professions that already pay for software (HVAC, electricians, plumbers, construction, paralegals and lawyers, medical coding, dental and vet offices, realtors, insurance agents, nonprofits, event planners), which repeated manual chores or missing tools could a two-person team sell as a self-serve product?",
+  "system_extra": "The team is two people (a musician-producer who builds software by directing Claude Code,\nwith tools for code, automated video, SEO content and scheduling). They want a self-serve product they own:\nan app, web tool, browser extension, template or data product. No client services.\n\nAssets they already pay for (score fit_for_us higher when a product rides on them):\n- Claude API: $200/month credit, ~98% unused, refreshes monthly -> near-zero AI cost.\n- HikerAPI: Instagram public data, ~83k requests prepaid (research/own use; reselling\n  Instagram data breaks Meta terms, so never as the product itself).\n- OpenAI image API (pay per image), YouTube Data API key, Spotify and Discogs API keys,\n  SoundCloud API app, Meta Graph API (own IG account), Google Sheets API, Telegram bot,\n  Canva connector, HyperFrames automated video rendering, Symphonic music distribution.\nName which assets each product uses in product_idea.\n\nPrefer narrow professional groups; broad consumer gaps were always crowded. Already checked and crowded, do NOT return these or close variants: property-manager/landlord tools (rent, COI, inspections, deadlines, owner reports, leases), bookkeeping PDF/statement extraction, Etsy profit tracking, podcast analytics, playlist-curator analytics, footage/drive catalogs, post-production paperwork, stem QC, wedding venue blog generators, invoicing apps, fax/scan, duplicate photo cleaners, shuffle, guitar tuners, mileage trackers, faceless video builders, Shorts clippers, Reddit intent monitors.",
+  "output_dir": "gap_radar/reports/income-trades",
+  "crowding": true,
+  "sources": {
+    "reddit": {
+      "subs": [
+        "HVAC",
+        "electricians",
+        "Plumbing",
+        "Construction",
+        "paralegal",
+        "Lawyertalk",
+        "MedicalCoding",
+        "Dentistry",
+        "VetTech",
+        "realtors",
+        "Insurance",
+        "nonprofit",
+        "eventplanning"
+      ],
+      "phrases": [
+        "\"spreadsheet\"",
+        "\"by hand\"",
+        "\"manually\"",
+        "\"workaround\"",
+        "\"copy and paste\"",
+        "\"double entry\"",
+        "\"paperwork\"",
+        "\"is there software\""
+      ]
+    },
+    "hn_queries": [],
+    "stackexchange": {
+      "sites": [
+        "softwarerecs"
+      ],
+      "queries": [
+        "contractor",
+        "law office",
+        "medical billing"
+      ]
+    },
+    "youtube_queries": [
+      "HVAC business software review",
+      "electrician estimating software",
+      "paralegal workflow tips",
+      "medical billing workflow",
+      "realtor transaction coordinator workflow",
+      "nonprofit grant tracking spreadsheet",
+      "dental office admin workflow"
+    ],
+    "github_queries": [],
+    "appstore": {
+      "genres": [],
+      "app_ids": []
+    },
+    "hikerapi": {
+      "hashtags": [],
+      "accounts": [],
+      "max_calls": 0
+    }
+  }
+}

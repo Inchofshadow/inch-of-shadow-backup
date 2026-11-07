@@ -1,0 +1,7 @@
+No buildings, skylines or city lights that the prompt did not ask for.
+No churches, domes, crosses, or other religious architecture or symbols.
+No crowds.
+No neon signs, synthwave grid suns, glitch scan lines or neon city streets.
+No lens flares, no HDR look, no oversaturated colour.
+No fantasy creatures, wings or halos unless the prompt asks for them.
+No text, letters, numbers, logos or watermarks.

@@ -1,0 +1,241 @@
+- generic [active] [ref=e1]:
+  - link "Skip to content" [ref=e2] [cursor=pointer]:
+    - /url: "#main-content"
+  - generic [ref=e3]:
+    - navigation "Main navigation" [ref=e4]:
+      - link "I Inch of Shadow" [ref=e5] [cursor=pointer]:
+        - /url: /
+        - generic [ref=e6]: I
+        - generic [ref=e7]: Inch of Shadow
+      - link "New Release" [ref=e8] [cursor=pointer]:
+        - /url: /release/new
+        - img [ref=e9]
+        - generic [ref=e10]: New Release
+      - generic [ref=e11]:
+        - generic [ref=e12]:
+          - generic [ref=e13]: Releases
+          - link "Dashboard" [ref=e14] [cursor=pointer]:
+            - /url: /
+            - img [ref=e15]
+            - generic [ref=e20]: Dashboard
+        - generic [ref=e21]:
+          - generic [ref=e22]: Tools
+          - link "Autopilot" [ref=e23] [cursor=pointer]:
+            - /url: /autopilot
+            - img [ref=e24]
+            - generic [ref=e27]: Autopilot
+          - link "Artwork Resizer" [ref=e28] [cursor=pointer]:
+            - /url: /artwork-resizer
+            - img [ref=e29]
+            - generic [ref=e33]: Artwork Resizer
+          - link "Video Resizer" [ref=e34] [cursor=pointer]:
+            - /url: /video-resizer
+            - img [ref=e35]
+            - generic [ref=e38]: Video Resizer
+          - link "SEO Copy" [ref=e39] [cursor=pointer]:
+            - /url: /seo-copy
+            - img [ref=e40]
+            - generic [ref=e43]: SEO Copy
+        - generic [ref=e44]:
+          - generic [ref=e45]: Outreach
+          - link "Engagement" [ref=e46] [cursor=pointer]:
+            - /url: /engagement
+            - img [ref=e47]
+            - generic [ref=e52]: Engagement
+          - link "Promotion" [ref=e53] [cursor=pointer]:
+            - /url: /promotion
+            - img [ref=e54]
+            - generic [ref=e57]: Promotion
+        - generic [ref=e58]:
+          - generic [ref=e59]: Analytics
+          - link "Stats Dashboard" [ref=e60] [cursor=pointer]:
+            - /url: /stats
+            - img [ref=e61]
+            - generic [ref=e62]: Stats Dashboard
+      - generic [ref=e63]:
+        - link "Settings" [ref=e64] [cursor=pointer]:
+          - /url: /palette
+          - img [ref=e65]
+          - generic [ref=e68]: Settings
+        - button "Toggle sidebar" [ref=e69] [cursor=pointer]:
+          - img [ref=e70]
+    - generic [ref=e73]:
+      - banner [ref=e74]:
+        - navigation "Breadcrumb" [ref=e76]:
+          - link "Tools" [ref=e77] [cursor=pointer]:
+            - /url: /
+          - generic [ref=e78]: /
+          - generic [ref=e79]: Artwork Resizer
+      - main [ref=e80]:
+        - generic [ref=e81]:
+          - heading "Artwork Resizer" [level=1] [ref=e82]
+          - paragraph [ref=e83]: Resize master artwork for all platform exports.
+          - generic [ref=e84]:
+            - heading "Source Image" [level=2] [ref=e85]
+            - generic [ref=e86]:
+              - text: Pick from artwork/ folder
+              - combobox "Pick from artwork/ folder" [ref=e87]:
+                - option "— Select an image —" [selected]
+                - option "600x600 profile pic.png"
+                - option "ChatGPT Image Feb 11, 2026, 01_58_56 AM.png"
+                - option "DB635590-6558-4D4F-ADD4-1B46A52456A1_1_105_c.jpeg"
+                - option "DSC06450-22.jpg"
+                - option "Ferawell 3000x3000.png"
+                - option "IMG-20200309-WA0087 copy.jpg"
+                - option "IMG_4122.jpeg"
+                - option "IMG_5787.jpeg"
+                - option "IMG_6386.jpeg"
+                - option "IMG_6455.jpeg"
+                - option "MMAD002 Cover_Back.png"
+                - option "MMAD002 Cover_Front.png"
+                - option "The Deceiver 3000x3000.png"
+                - option "The Tour Remix Artwork 3000x3000.png"
+                - option "farewell-single.png"
+                - option "ferawell-single.png"
+                - option "fsd-single.jpg"
+                - option "profile_bandcamp_avatar_IMG_6386_cool.jpg"
+                - option "rock-single.png"
+                - option "single.png"
+                - option "the-deciver-single.png"
+            - generic [ref=e89]: or upload a new image
+            - generic [ref=e90] [cursor=pointer]:
+              - button "Choose File"
+              - generic:
+                - generic:
+                  - img
+                - generic:
+                  - strong: Click to browse
+                  - text: or drag from Finder
+                - generic: JPG, PNG, TIFF, BMP, WebP, HEIC
+                - generic: "Tip: Click browse to pick directly from Photos library"
+            - heading "Focal Point" [level=2] [ref=e91]
+            - paragraph [ref=e92]: Controls where to keep the subject when cropping to non-square formats (banners, stories, thumbnails). Has no effect on square-to-square exports. If faces are cut off in banners, try "top".
+            - generic [ref=e93]:
+              - button "↖" [ref=e94] [cursor=pointer]
+              - button "↑" [ref=e95] [cursor=pointer]
+              - button "↗" [ref=e96] [cursor=pointer]
+              - button "←" [ref=e97] [cursor=pointer]
+              - button "+" [ref=e98] [cursor=pointer]
+              - button "→" [ref=e99] [cursor=pointer]
+              - button "↙" [ref=e100] [cursor=pointer]
+              - button "↓" [ref=e101] [cursor=pointer]
+              - button "↘" [ref=e102] [cursor=pointer]
+            - heading "Platforms" [level=2] [ref=e103]
+            - generic [ref=e104]:
+              - generic [ref=e105]:
+                - generic [ref=e107] [cursor=pointer]:
+                  - checkbox "Release Artwork" [ref=e108]
+                  - strong [ref=e109]: Release Artwork
+                - generic [ref=e110]:
+                  - generic [ref=e111] [cursor=pointer]:
+                    - checkbox "Spotify, Apple Music, Bandcamp 3000x3000" [ref=e112]
+                    - generic [ref=e113]: Spotify, Apple Music, Bandcamp
+                    - generic [ref=e114]: 3000x3000
+                  - generic [ref=e115] [cursor=pointer]:
+                    - checkbox "Beatport 1400x1400" [ref=e116]
+                    - generic [ref=e117]: Beatport
+                    - generic [ref=e118]: 1400x1400
+                  - generic [ref=e119] [cursor=pointer]:
+                    - checkbox "SoundCloud 800x800" [ref=e120]
+                    - generic [ref=e121]: SoundCloud
+                    - generic [ref=e122]: 800x800
+                  - generic [ref=e123] [cursor=pointer]:
+                    - checkbox "Web Thumbnail 500x500" [ref=e124]
+                    - generic [ref=e125]: Web Thumbnail
+                    - generic [ref=e126]: 500x500
+              - generic [ref=e127]:
+                - generic [ref=e129] [cursor=pointer]:
+                  - checkbox "Beatport Profile" [ref=e130]
+                  - strong [ref=e131]: Beatport Profile
+                - generic [ref=e133] [cursor=pointer]:
+                  - checkbox "Profile 590x404" [ref=e134]
+                  - generic [ref=e135]: Profile
+                  - generic [ref=e136]: 590x404
+              - generic [ref=e137]:
+                - generic [ref=e139] [cursor=pointer]:
+                  - checkbox "Spotify Profile" [ref=e140]
+                  - strong [ref=e141]: Spotify Profile
+                - generic [ref=e142]:
+                  - generic [ref=e143] [cursor=pointer]:
+                    - checkbox "Avatar 750x750" [ref=e144]
+                    - generic [ref=e145]: Avatar
+                    - generic [ref=e146]: 750x750
+                  - generic [ref=e147] [cursor=pointer]:
+                    - checkbox "Banner 2660x1140" [ref=e148]
+                    - generic [ref=e149]: Banner
+                    - generic [ref=e150]: 2660x1140
+              - generic [ref=e151]:
+                - generic [ref=e153] [cursor=pointer]:
+                  - checkbox "Apple Music Profile" [ref=e154]
+                  - strong [ref=e155]: Apple Music Profile
+                - generic [ref=e157] [cursor=pointer]:
+                  - checkbox "Profile 3000x3000" [ref=e158]
+                  - generic [ref=e159]: Profile
+                  - generic [ref=e160]: 3000x3000
+              - generic [ref=e161]:
+                - generic [ref=e163] [cursor=pointer]:
+                  - checkbox "YouTube" [ref=e164]
+                  - strong [ref=e165]: YouTube
+                - generic [ref=e166]:
+                  - generic [ref=e167] [cursor=pointer]:
+                    - checkbox "Banner 2560x1440" [ref=e168]
+                    - generic [ref=e169]: Banner
+                    - generic [ref=e170]: 2560x1440
+                  - generic [ref=e171] [cursor=pointer]:
+                    - checkbox "Avatar 800x800" [ref=e172]
+                    - generic [ref=e173]: Avatar
+                    - generic [ref=e174]: 800x800
+                  - generic [ref=e175] [cursor=pointer]:
+                    - checkbox "Thumbnail 1280x720" [ref=e176]
+                    - generic [ref=e177]: Thumbnail
+                    - generic [ref=e178]: 1280x720
+              - generic [ref=e179]:
+                - generic [ref=e181] [cursor=pointer]:
+                  - checkbox "Bandcamp Profile" [ref=e182]
+                  - strong [ref=e183]: Bandcamp Profile
+                - generic [ref=e185] [cursor=pointer]:
+                  - checkbox "Avatar 1440x1440" [ref=e186]
+                  - generic [ref=e187]: Avatar
+                  - generic [ref=e188]: 1440x1440
+              - generic [ref=e189]:
+                - generic [ref=e191] [cursor=pointer]:
+                  - checkbox "SoundCloud Profile" [ref=e192]
+                  - strong [ref=e193]: SoundCloud Profile
+                - generic [ref=e195] [cursor=pointer]:
+                  - checkbox "Banner 2480x520" [ref=e196]
+                  - generic [ref=e197]: Banner
+                  - generic [ref=e198]: 2480x520
+              - generic [ref=e199]:
+                - generic [ref=e201] [cursor=pointer]:
+                  - checkbox "Instagram" [ref=e202]
+                  - strong [ref=e203]: Instagram
+                - generic [ref=e204]:
+                  - generic [ref=e205] [cursor=pointer]:
+                    - checkbox "Post 1080x1080" [ref=e206]
+                    - generic [ref=e207]: Post
+                    - generic [ref=e208]: 1080x1080
+                  - generic [ref=e209] [cursor=pointer]:
+                    - checkbox "Story 1080x1920" [ref=e210]
+                    - generic [ref=e211]: Story
+                    - generic [ref=e212]: 1080x1920
+            - heading "Format" [level=2] [ref=e213]
+            - generic [ref=e214]:
+              - generic [ref=e215] [cursor=pointer]:
+                - radio "JPEG (quality 97)" [checked] [ref=e216]
+                - text: JPEG (quality 97)
+              - generic [ref=e217] [cursor=pointer]:
+                - radio "PNG (lossless)" [ref=e218]
+                - text: PNG (lossless)
+            - heading "Metadata (optional)" [level=2] [ref=e219]
+            - paragraph [ref=e220]: Embed title, artist, and copyright into exported files. Useful for archival and local playback. Platforms strip metadata on upload — this does not affect discovery. No GPS or camera data is ever added.
+            - generic [ref=e221]:
+              - generic [ref=e222] [cursor=pointer]:
+                - radio "None" [checked] [ref=e223]
+                - text: None
+              - generic [ref=e224] [cursor=pointer]:
+                - radio "From release" [ref=e225]
+                - text: From release
+              - generic [ref=e226] [cursor=pointer]:
+                - radio "Manual" [ref=e227]
+                - text: Manual
+            - button "Resize" [ref=e229] [cursor=pointer]

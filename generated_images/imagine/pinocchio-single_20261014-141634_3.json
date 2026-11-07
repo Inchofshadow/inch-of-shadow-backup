@@ -1,0 +1,43 @@
+{
+  "id": "pinocchio-single_20261014-141634_3",
+  "file": "pinocchio-single_20261014-141634_3.png",
+  "made": "2026-10-14T14:16:34",
+  "model": "gpt-image-2.5-flare",
+  "quality": "low",
+  "size": "1024x1024",
+  "n": 4,
+  "seconds": 21.6,
+  "prompt": "USE: Square album cover artwork, drawn by hand on paper. Artwork only, no lettering.\n\nSUBJECT: Drawn in brush and India ink with fine engraved hatching on warm grey paper. In the centre, a large circle embossed into the paper like a vinyl record, its grooves pressed in as fine concentric lines. A thin horizontal line crosses the circle a little above its centre, like a horizon on still water. On that line stands a small solid black silhouette of a man in a long coat, seen from the front at a distance, with no facial detail. Below the line his reflection hangs upside down, made of coarse square dither dots that fade downward. A flock of about eleven ravens in near-solid black ink with a few white lines scratched into the feathers rises in a gentle curve from the lower left, through his legs, to the upper right; the ravens nearest him are the largest and darkest, the far ones smaller and paler. One raven with open wings crosses in front of his legs. Inside the circle, left of him, a black swan floats on the line facing him, with its faint reflection below. Plenty of quiet empty paper around everything.\n\nCOMPOSITION: One focal point with calm space around it; it must read at thumbnail size. Keep the bottom 30% quiet: no strong edges, props or bright highlights, reserved for type added later.\n\nBRAND:\nInch of Shadow, a Berlin artist: light and shadow held together in one frame.\nHand-made print look: brush and India ink, dry brush, or old copperplate engraving. Lines, hatching and solid black carry all the shading.\nStrong contrast: deep blacks next to clean paper white, a few fine white lines scratched into the black.\nBlack ink by default; colour only where the subject asks for it, as one loose wash.\nQuiet and a little mysterious, tender rather than grim.\n\nCONSTRAINTS:\n- No text, letters, numbers, logos or watermarks.\n- No churches, domes, crosses, or other religious symbols.\n- No photograph, no 3D render, no digital airbrush or soft gradients.\n- Not in the style of any named living artist, and not a copy of any existing cover.",
+  "references": [],
+  "usage": {
+    "input_tokens": 1836,
+    "input_tokens_details": {
+      "image_tokens": 0,
+      "text_tokens": 1836
+    },
+    "output_tokens": 781,
+    "total_tokens": 2617,
+    "output_tokens_details": {
+      "image_tokens": 781,
+      "text_tokens": 0
+    }
+  },
+  "cost_usd": 0.00815,
+  "decision": null,
+  "release": "pinocchio-single",
+  "kind": "illustration",
+  "round": "htn-full-ai-draft-1",
+  "review": {
+    "verdict": "pass",
+    "summary": "The draft matches the brief and today's rules. It shows the embossed record circle, the horizon line, a small coated figure with a dithered reflection, a curving raven flock with one raven crossing his legs, and a black swan facing him. There is no text and nothing from the never list. The drawing has a hand-inked engraved look on warm grey paper, and the bottom area stays quiet. It is ready to render as it is.",
+    "issues": [],
+    "prompt_fix": "",
+    "model": "claude-opus-5-5",
+    "made": "2026-10-20T04:07:39",
+    "usage": {
+      "input_tokens": 3324,
+      "output_tokens": 682
+    },
+    "cost_usd": 0.02694
+  }
+}

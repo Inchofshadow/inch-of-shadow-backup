@@ -1,0 +1,651 @@
+{
+ "made": "2026-10-14",
+ "method": "32x32 grey thumbnail correlation, each Best frame to its All Photos frame",
+ "best": {
+  "INDOOR/Best/New Folder/Amir Home Shoot Best-10.JPG": {
+   "all_photos": "INDOOR/All Photos 2/Amir Home Shoot -28.JPG",
+   "corr": 1.0,
+   "second": 0.702
+  },
+  "INDOOR/Best/New Folder/Amir Home Shoot Best-100.JPG": {
+   "all_photos": "INDOOR/All Photos/Amir Home Shoot -238.JPG",
+   "corr": 1.0,
+   "second": 0.765
+  },
+  "INDOOR/Best/New Folder/Amir Home Shoot Best-101.JPG": {
+   "all_photos": "INDOOR/All Photos/Amir Home Shoot -239.JPG",
+   "corr": 1.0,
+   "second": 0.815
+  },
+  "INDOOR/Best/New Folder/Amir Home Shoot Best-102.JPG": {
+   "all_photos": "INDOOR/All Photos 2/Amir Home Shoot -241.JPG",
+   "corr": 1.0,
+   "second": 0.788
+  },
+  "INDOOR/Best/New Folder/Amir Home Shoot Best-103.JPG": {
+   "all_photos": "INDOOR/All Photos/Amir Home Shoot -242.JPG",
+   "corr": 1.0,
+   "second": 0.589
+  },
+  "INDOOR/Best/New Folder/Amir Home Shoot Best-108.JPG": {
+   "all_photos": "INDOOR/All Photos/Amir Home Shoot -249.JPG",
+   "corr": 1.0,
+   "second": 0.697
+  },
+  "INDOOR/Best/New Folder/Amir Home Shoot Best-109.JPG": {
+   "all_photos": "INDOOR/All Photos 2/Amir Home Shoot -250.JPG",
+   "corr": 1.0,
+   "second": 0.697
+  },
+  "INDOOR/Best/New Folder/Amir Home Shoot Best-111.JPG": {
+   "all_photos": "INDOOR/All Photos/Amir Home Shoot -254.JPG",
+   "corr": 1.0,
+   "second": 0.732
+  },
+  "INDOOR/Best/New Folder/Amir Home Shoot Best-116.JPG": {
+   "all_photos": "INDOOR/All Photos 3/Amir Home Shoot -261.JPG",
+   "corr": 1.0,
+   "second": 0.724
+  },
+  "INDOOR/Best/New Folder/Amir Home Shoot Best-118.JPG": {
+   "all_photos": "INDOOR/All Photos 3/Amir Home Shoot -265.JPG",
+   "corr": 1.0,
+   "second": 0.836
+  },
+  "INDOOR/Best/New Folder/Amir Home Shoot Best-12.JPG": {
+   "all_photos": "INDOOR/All Photos 3/Amir Home Shoot -32.JPG",
+   "corr": 1.0,
+   "second": 0.813
+  },
+  "INDOOR/Best/New Folder/Amir Home Shoot Best-121.JPG": {
+   "all_photos": "INDOOR/All Photos 2/Amir Home Shoot -272.JPG",
+   "corr": 1.0,
+   "second": 0.93
+  },
+  "INDOOR/Best/New Folder/Amir Home Shoot Best-123.JPG": {
+   "all_photos": "INDOOR/All Photos/Amir Home Shoot -277.JPG",
+   "corr": 1.0,
+   "second": 0.748
+  },
+  "INDOOR/Best/New Folder/Amir Home Shoot Best-125.JPG": {
+   "all_photos": "INDOOR/All Photos 3/Amir Home Shoot -281.JPG",
+   "corr": 1.0,
+   "second": 0.759
+  },
+  "INDOOR/Best/New Folder/Amir Home Shoot Best-128.JPG": {
+   "all_photos": "INDOOR/All Photos/Amir Home Shoot -284.JPG",
+   "corr": 1.0,
+   "second": 0.67
+  },
+  "INDOOR/Best/New Folder/Amir Home Shoot Best-129.JPG": {
+   "all_photos": "INDOOR/All Photos/Amir Home Shoot -285.JPG",
+   "corr": 1.0,
+   "second": 0.67
+  },
+  "INDOOR/Best/New Folder/Amir Home Shoot Best-13.JPG": {
+   "all_photos": "INDOOR/All Photos 2/Amir Home Shoot -35.JPG",
+   "corr": 1.0,
+   "second": 0.791
+  },
+  "INDOOR/Best/New Folder/Amir Home Shoot Best-14.JPG": {
+   "all_photos": "INDOOR/All Photos 2/Amir Home Shoot -37.JPG",
+   "corr": 1.0,
+   "second": 0.741
+  },
+  "INDOOR/Best/New Folder/Amir Home Shoot Best-15.JPG": {
+   "all_photos": "INDOOR/All Photos/Amir Home Shoot -38.JPG",
+   "corr": 1.0,
+   "second": 0.733
+  },
+  "INDOOR/Best/New Folder/Amir Home Shoot Best-16.JPG": {
+   "all_photos": "INDOOR/All Photos/Amir Home Shoot -40.JPG",
+   "corr": 1.0,
+   "second": 0.934
+  },
+  "INDOOR/Best/New Folder/Amir Home Shoot Best-2.JPG": {
+   "all_photos": "INDOOR/All Photos/Amir Home Shoot -4.JPG",
+   "corr": 1.0,
+   "second": 0.765
+  },
+  "INDOOR/Best/New Folder/Amir Home Shoot Best-20.JPG": {
+   "all_photos": "INDOOR/All Photos 3/Amir Home Shoot -50.JPG",
+   "corr": 1.0,
+   "second": 0.768
+  },
+  "INDOOR/Best/New Folder/Amir Home Shoot Best-23.JPG": {
+   "all_photos": "INDOOR/All Photos 3/Amir Home Shoot -54.JPG",
+   "corr": 1.0,
+   "second": 0.871
+  },
+  "INDOOR/Best/New Folder/Amir Home Shoot Best-24.JPG": {
+   "all_photos": "INDOOR/All Photos/Amir Home Shoot -55.JPG",
+   "corr": 1.0,
+   "second": 0.935
+  },
+  "INDOOR/Best/New Folder/Amir Home Shoot Best-27.JPG": {
+   "all_photos": "INDOOR/All Photos 3/Amir Home Shoot -58.JPG",
+   "corr": 1.0,
+   "second": 0.871
+  },
+  "INDOOR/Best/New Folder/Amir Home Shoot Best-28.JPG": {
+   "all_photos": "INDOOR/All Photos 3/Amir Home Shoot -81.JPG",
+   "corr": 1.0,
+   "second": 0.824
+  },
+  "INDOOR/Best/New Folder/Amir Home Shoot Best-29.JPG": {
+   "all_photos": "INDOOR/All Photos/Amir Home Shoot -82.JPG",
+   "corr": 1.0,
+   "second": 0.824
+  },
+  "INDOOR/Best/New Folder/Amir Home Shoot Best-3.JPG": {
+   "all_photos": "INDOOR/All Photos/Amir Home Shoot -8.JPG",
+   "corr": 1.0,
+   "second": 0.818
+  },
+  "INDOOR/Best/New Folder/Amir Home Shoot Best-31.JPG": {
+   "all_photos": "INDOOR/All Photos 2/Amir Home Shoot -84.JPG",
+   "corr": 1.0,
+   "second": 0.827
+  },
+  "INDOOR/Best/New Folder/Amir Home Shoot Best-35.JPG": {
+   "all_photos": "INDOOR/All Photos 3/Amir Home Shoot -88.JPG",
+   "corr": 1.0,
+   "second": 0.764
+  },
+  "INDOOR/Best/New Folder/Amir Home Shoot Best-36.JPG": {
+   "all_photos": "INDOOR/All Photos 3/Amir Home Shoot -89.JPG",
+   "corr": 1.0,
+   "second": 0.764
+  },
+  "INDOOR/Best/New Folder/Amir Home Shoot Best-40.JPG": {
+   "all_photos": "INDOOR/All Photos 2/Amir Home Shoot -93.JPG",
+   "corr": 1.0,
+   "second": 0.674
+  },
+  "INDOOR/Best/New Folder/Amir Home Shoot Best-41.JPG": {
+   "all_photos": "INDOOR/All Photos/Amir Home Shoot -94.JPG",
+   "corr": 1.0,
+   "second": 0.674
+  },
+  "INDOOR/Best/New Folder/Amir Home Shoot Best-43.JPG": {
+   "all_photos": "INDOOR/All Photos 3/Amir Home Shoot -107.JPG",
+   "corr": 1.0,
+   "second": 0.431
+  },
+  "INDOOR/Best/New Folder/Amir Home Shoot Best-45.JPG": {
+   "all_photos": "INDOOR/All Photos 2/Amir Home Shoot -110.JPG",
+   "corr": 1.0,
+   "second": 0.544
+  },
+  "INDOOR/Best/New Folder/Amir Home Shoot Best-46.JPG": {
+   "all_photos": "INDOOR/All Photos/Amir Home Shoot -116.JPG",
+   "corr": 1.0,
+   "second": 0.481
+  },
+  "INDOOR/Best/New Folder/Amir Home Shoot Best-47.JPG": {
+   "all_photos": "INDOOR/All Photos 2/Amir Home Shoot -119.JPG",
+   "corr": 1.0,
+   "second": 0.848
+  },
+  "INDOOR/Best/New Folder/Amir Home Shoot Best-53.JPG": {
+   "all_photos": "INDOOR/All Photos/Amir Home Shoot -149.JPG",
+   "corr": 1.0,
+   "second": 0.794
+  },
+  "INDOOR/Best/New Folder/Amir Home Shoot Best-54.JPG": {
+   "all_photos": "INDOOR/All Photos 2/Amir Home Shoot -150.JPG",
+   "corr": 1.0,
+   "second": 0.889
+  },
+  "INDOOR/Best/New Folder/Amir Home Shoot Best-56.JPG": {
+   "all_photos": "INDOOR/All Photos 2/Amir Home Shoot -154.JPG",
+   "corr": 1.0,
+   "second": 0.85
+  },
+  "INDOOR/Best/New Folder/Amir Home Shoot Best-57.JPG": {
+   "all_photos": "INDOOR/All Photos 3/Amir Home Shoot -155.JPG",
+   "corr": 1.0,
+   "second": 0.896
+  },
+  "INDOOR/Best/New Folder/Amir Home Shoot Best-58.JPG": {
+   "all_photos": "INDOOR/All Photos 3/Amir Home Shoot -159.JPG",
+   "corr": 1.0,
+   "second": 0.936
+  },
+  "INDOOR/Best/New Folder/Amir Home Shoot Best-6.JPG": {
+   "all_photos": "INDOOR/All Photos/Amir Home Shoot -17.JPG",
+   "corr": 1.0,
+   "second": 0.922
+  },
+  "INDOOR/Best/New Folder/Amir Home Shoot Best-60.JPG": {
+   "all_photos": "INDOOR/All Photos 3/Amir Home Shoot -161.JPG",
+   "corr": 1.0,
+   "second": 0.962
+  },
+  "INDOOR/Best/New Folder/Amir Home Shoot Best-66.JPG": {
+   "all_photos": "INDOOR/All Photos/Amir Home Shoot -178.JPG",
+   "corr": 1.0,
+   "second": 0.835
+  },
+  "INDOOR/Best/New Folder/Amir Home Shoot Best-69.JPG": {
+   "all_photos": "INDOOR/All Photos 2/Amir Home Shoot -181.JPG",
+   "corr": 1.0,
+   "second": 0.839
+  },
+  "INDOOR/Best/New Folder/Amir Home Shoot Best-7.JPG": {
+   "all_photos": "INDOOR/All Photos/Amir Home Shoot -22.JPG",
+   "corr": 1.0,
+   "second": 0.842
+  },
+  "INDOOR/Best/New Folder/Amir Home Shoot Best-70.JPG": {
+   "all_photos": "INDOOR/All Photos 3/Amir Home Shoot -182.JPG",
+   "corr": 1.0,
+   "second": 0.848
+  },
+  "INDOOR/Best/New Folder/Amir Home Shoot Best-71.JPG": {
+   "all_photos": "INDOOR/All Photos 3/Amir Home Shoot -183.JPG",
+   "corr": 1.0,
+   "second": 0.89
+  },
+  "INDOOR/Best/New Folder/Amir Home Shoot Best-74.JPG": {
+   "all_photos": "INDOOR/All Photos 2/Amir Home Shoot -191.JPG",
+   "corr": 1.0,
+   "second": 0.788
+  },
+  "INDOOR/Best/New Folder/Amir Home Shoot Best-75.JPG": {
+   "all_photos": "INDOOR/All Photos/Amir Home Shoot -192.JPG",
+   "corr": 1.0,
+   "second": 0.895
+  },
+  "INDOOR/Best/New Folder/Amir Home Shoot Best-77.JPG": {
+   "all_photos": "INDOOR/All Photos 3/Amir Home Shoot -194.JPG",
+   "corr": 1.0,
+   "second": 0.895
+  },
+  "INDOOR/Best/New Folder/Amir Home Shoot Best-78.JPG": {
+   "all_photos": "INDOOR/All Photos/Amir Home Shoot -195.JPG",
+   "corr": 1.0,
+   "second": 0.75
+  },
+  "INDOOR/Best/New Folder/Amir Home Shoot Best-81.JPG": {
+   "all_photos": "INDOOR/All Photos/Amir Home Shoot -200.JPG",
+   "corr": 1.0,
+   "second": 0.848
+  },
+  "INDOOR/Best/New Folder/Amir Home Shoot Best-82.JPG": {
+   "all_photos": "INDOOR/All Photos 2/Amir Home Shoot -201.JPG",
+   "corr": 1.0,
+   "second": 0.766
+  },
+  "INDOOR/Best/New Folder/Amir Home Shoot Best-83.JPG": {
+   "all_photos": "INDOOR/All Photos/Amir Home Shoot -207.JPG",
+   "corr": 1.0,
+   "second": 0.535
+  },
+  "INDOOR/Best/New Folder/Amir Home Shoot Best-86.JPG": {
+   "all_photos": "INDOOR/All Photos 3/Amir Home Shoot -210.JPG",
+   "corr": 1.0,
+   "second": 0.958
+  },
+  "INDOOR/Best/New Folder/Amir Home Shoot Best-87.JPG": {
+   "all_photos": "INDOOR/All Photos/Amir Home Shoot -211.JPG",
+   "corr": 1.0,
+   "second": 0.879
+  },
+  "INDOOR/Best/New Folder/Amir Home Shoot Best-9.JPG": {
+   "all_photos": "INDOOR/All Photos/Amir Home Shoot -25.JPG",
+   "corr": 1.0,
+   "second": 0.74
+  },
+  "INDOOR/Best/New Folder/Amir Home Shoot Best-90.JPG": {
+   "all_photos": "INDOOR/All Photos/Amir Home Shoot -214.JPG",
+   "corr": 1.0,
+   "second": 0.888
+  },
+  "INDOOR/Best/New Folder/Amir Home Shoot Best-92.JPG": {
+   "all_photos": "INDOOR/All Photos 2/Amir Home Shoot -218.JPG",
+   "corr": 1.0,
+   "second": 0.926
+  },
+  "INDOOR/Best/New Folder/Amir Home Shoot Best-94.JPG": {
+   "all_photos": "INDOOR/All Photos/Amir Home Shoot -223.JPG",
+   "corr": 1.0,
+   "second": 0.678
+  },
+  "INDOOR/Best/New Folder/Amir Home Shoot Best-95.JPG": {
+   "all_photos": "INDOOR/All Photos/Amir Home Shoot -225.JPG",
+   "corr": 1.0,
+   "second": 0.727
+  },
+  "INDOOR/Best/New Folder/Amir Home Shoot Best-96.JPG": {
+   "all_photos": "INDOOR/All Photos 2/Amir Home Shoot -231.JPG",
+   "corr": 1.0,
+   "second": 0.839
+  },
+  "INDOOR/Best/New Folder/Amir Home Shoot Best-99.JPG": {
+   "all_photos": "INDOOR/All Photos 3/Amir Home Shoot -235.JPG",
+   "corr": 1.0,
+   "second": 0.856
+  },
+  "INDOOR/Best/Best 2/New Folder/Amir Home Shoot Best-104.JPG": {
+   "all_photos": "INDOOR/All Photos/Amir Home Shoot -244.JPG",
+   "corr": 1.0,
+   "second": 0.621
+  },
+  "INDOOR/Best/Best 2/New Folder/Amir Home Shoot Best-105.JPG": {
+   "all_photos": "INDOOR/All Photos 2/Amir Home Shoot -245.JPG",
+   "corr": 1.0,
+   "second": 0.423
+  },
+  "INDOOR/Best/Best 2/New Folder/Amir Home Shoot Best-106.JPG": {
+   "all_photos": "INDOOR/All Photos 2/Amir Home Shoot -246.JPG",
+   "corr": 1.0,
+   "second": 0.718
+  },
+  "INDOOR/Best/Best 2/New Folder/Amir Home Shoot Best-107.JPG": {
+   "all_photos": "INDOOR/All Photos/Amir Home Shoot -247.JPG",
+   "corr": 1.0,
+   "second": 0.56
+  },
+  "INDOOR/Best/Best 2/New Folder/Amir Home Shoot Best-11.JPG": {
+   "all_photos": "INDOOR/All Photos 2/Amir Home Shoot -31.JPG",
+   "corr": 1.0,
+   "second": 0.809
+  },
+  "INDOOR/Best/Best 2/New Folder/Amir Home Shoot Best-110.JPG": {
+   "all_photos": "INDOOR/All Photos 3/Amir Home Shoot -252.JPG",
+   "corr": 1.0,
+   "second": 0.787
+  },
+  "INDOOR/Best/Best 2/New Folder/Amir Home Shoot Best-112.JPG": {
+   "all_photos": "INDOOR/All Photos 2/Amir Home Shoot -255.JPG",
+   "corr": 1.0,
+   "second": 0.656
+  },
+  "INDOOR/Best/Best 2/New Folder/Amir Home Shoot Best-113.JPG": {
+   "all_photos": "INDOOR/All Photos 2/Amir Home Shoot -258.JPG",
+   "corr": 1.0,
+   "second": 0.738
+  },
+  "INDOOR/Best/Best 2/New Folder/Amir Home Shoot Best-114.JPG": {
+   "all_photos": "INDOOR/All Photos 3/Amir Home Shoot -259.JPG",
+   "corr": 1.0,
+   "second": 0.874
+  },
+  "INDOOR/Best/Best 2/New Folder/Amir Home Shoot Best-115.JPG": {
+   "all_photos": "INDOOR/All Photos 3/Amir Home Shoot -260.JPG",
+   "corr": 1.0,
+   "second": 0.874
+  },
+  "INDOOR/Best/Best 2/New Folder/Amir Home Shoot Best-117.JPG": {
+   "all_photos": "INDOOR/All Photos 3/Amir Home Shoot -263.JPG",
+   "corr": 1.0,
+   "second": 0.731
+  },
+  "INDOOR/Best/Best 2/New Folder/Amir Home Shoot Best-119.JPG": {
+   "all_photos": "INDOOR/All Photos/Amir Home Shoot -267.JPG",
+   "corr": 1.0,
+   "second": 0.911
+  },
+  "INDOOR/Best/Best 2/New Folder/Amir Home Shoot Best-120.JPG": {
+   "all_photos": "INDOOR/All Photos 2/Amir Home Shoot -269.JPG",
+   "corr": 1.0,
+   "second": 0.936
+  },
+  "INDOOR/Best/Best 2/New Folder/Amir Home Shoot Best-122.JPG": {
+   "all_photos": "INDOOR/All Photos 2/Amir Home Shoot -276.JPG",
+   "corr": 1.0,
+   "second": 0.992
+  },
+  "INDOOR/Best/Best 2/New Folder/Amir Home Shoot Best-124.JPG": {
+   "all_photos": "INDOOR/All Photos/Amir Home Shoot -280.JPG",
+   "corr": 1.0,
+   "second": 0.497
+  },
+  "INDOOR/Best/Best 2/New Folder/Amir Home Shoot Best-126.JPG": {
+   "all_photos": "INDOOR/All Photos/Amir Home Shoot -282.JPG",
+   "corr": 1.0,
+   "second": 0.758
+  },
+  "INDOOR/Best/Best 2/New Folder/Amir Home Shoot Best-127.JPG": {
+   "all_photos": "INDOOR/All Photos/Amir Home Shoot -283.JPG",
+   "corr": 1.0,
+   "second": 0.629
+  },
+  "INDOOR/Best/Best 2/New Folder/Amir Home Shoot Best-17.JPG": {
+   "all_photos": "INDOOR/All Photos 2/Amir Home Shoot -44.JPG",
+   "corr": 1.0,
+   "second": 0.763
+  },
+  "INDOOR/Best/Best 2/New Folder/Amir Home Shoot Best-18.JPG": {
+   "all_photos": "INDOOR/All Photos 2/Amir Home Shoot -46.JPG",
+   "corr": 1.0,
+   "second": 0.64
+  },
+  "INDOOR/Best/Best 2/New Folder/Amir Home Shoot Best-19.JPG": {
+   "all_photos": "INDOOR/All Photos 2/Amir Home Shoot -49.JPG",
+   "corr": 1.0,
+   "second": 0.768
+  },
+  "INDOOR/Best/Best 2/New Folder/Amir Home Shoot Best-21.JPG": {
+   "all_photos": "INDOOR/All Photos 2/Amir Home Shoot -52.JPG",
+   "corr": 1.0,
+   "second": 0.794
+  },
+  "INDOOR/Best/Best 2/New Folder/Amir Home Shoot Best-22.JPG": {
+   "all_photos": "INDOOR/All Photos 3/Amir Home Shoot -53.JPG",
+   "corr": 1.0,
+   "second": 0.935
+  },
+  "INDOOR/Best/Best 2/New Folder/Amir Home Shoot Best-25.JPG": {
+   "all_photos": "INDOOR/All Photos/Amir Home Shoot -56.JPG",
+   "corr": 1.0,
+   "second": 0.57
+  },
+  "INDOOR/Best/Best 2/New Folder/Amir Home Shoot Best-26.JPG": {
+   "all_photos": "INDOOR/All Photos 2/Amir Home Shoot -57.JPG",
+   "corr": 1.0,
+   "second": 0.936
+  },
+  "INDOOR/Best/Best 2/New Folder/Amir Home Shoot Best-30.JPG": {
+   "all_photos": "INDOOR/All Photos 2/Amir Home Shoot -83.JPG",
+   "corr": 1.0,
+   "second": 0.69
+  },
+  "INDOOR/Best/Best 2/New Folder/Amir Home Shoot Best-32.JPG": {
+   "all_photos": "INDOOR/All Photos/Amir Home Shoot -85.JPG",
+   "corr": 1.0,
+   "second": 0.791
+  },
+  "INDOOR/Best/Best 2/New Folder/Amir Home Shoot Best-33.JPG": {
+   "all_photos": "INDOOR/All Photos 3/Amir Home Shoot -86.JPG",
+   "corr": 1.0,
+   "second": 0.682
+  },
+  "INDOOR/Best/Best 2/New Folder/Amir Home Shoot Best-34.JPG": {
+   "all_photos": "INDOOR/All Photos 2/Amir Home Shoot -87.JPG",
+   "corr": 1.0,
+   "second": 0.682
+  },
+  "INDOOR/Best/Best 2/New Folder/Amir Home Shoot Best-37.JPG": {
+   "all_photos": "INDOOR/All Photos 2/Amir Home Shoot -90.JPG",
+   "corr": 1.0,
+   "second": 0.742
+  },
+  "INDOOR/Best/Best 2/New Folder/Amir Home Shoot Best-38.JPG": {
+   "all_photos": "INDOOR/All Photos 3/Amir Home Shoot -91.JPG",
+   "corr": 1.0,
+   "second": 0.817
+  },
+  "INDOOR/Best/Best 2/New Folder/Amir Home Shoot Best-39.JPG": {
+   "all_photos": "INDOOR/All Photos/Amir Home Shoot -92.JPG",
+   "corr": 1.0,
+   "second": 0.827
+  },
+  "INDOOR/Best/Best 2/New Folder/Amir Home Shoot Best-4.JPG": {
+   "all_photos": "INDOOR/All Photos 2/Amir Home Shoot -9.JPG",
+   "corr": 1.0,
+   "second": 0.813
+  },
+  "INDOOR/Best/Best 2/New Folder/Amir Home Shoot Best-42.JPG": {
+   "all_photos": "INDOOR/All Photos 3/Amir Home Shoot -104.JPG",
+   "corr": 1.0,
+   "second": 0.66
+  },
+  "INDOOR/Best/Best 2/New Folder/Amir Home Shoot Best-44.JPG": {
+   "all_photos": "INDOOR/All Photos/Amir Home Shoot -109.JPG",
+   "corr": 1.0,
+   "second": 0.488
+  },
+  "INDOOR/Best/Best 2/New Folder/Amir Home Shoot Best-48.JPG": {
+   "all_photos": "INDOOR/All Photos 3/Amir Home Shoot -121.JPG",
+   "corr": 1.0,
+   "second": 0.806
+  },
+  "INDOOR/Best/Best 2/New Folder/Amir Home Shoot Best-49.JPG": {
+   "all_photos": "INDOOR/All Photos 2/Amir Home Shoot -122.JPG",
+   "corr": 1.0,
+   "second": 0.769
+  },
+  "INDOOR/Best/Best 2/New Folder/Amir Home Shoot Best-5.JPG": {
+   "all_photos": "INDOOR/All Photos 3/Amir Home Shoot -13.JPG",
+   "corr": 1.0,
+   "second": 0.93
+  },
+  "INDOOR/Best/Best 2/New Folder/Amir Home Shoot Best-50.JPG": {
+   "all_photos": "INDOOR/All Photos 2/Amir Home Shoot -124.JPG",
+   "corr": 1.0,
+   "second": 0.854
+  },
+  "INDOOR/Best/Best 2/New Folder/Amir Home Shoot Best-51.JPG": {
+   "all_photos": "INDOOR/All Photos 3/Amir Home Shoot -146.JPG",
+   "corr": 1.0,
+   "second": 0.896
+  },
+  "INDOOR/Best/Best 2/New Folder/Amir Home Shoot Best-52.JPG": {
+   "all_photos": "INDOOR/All Photos 2/Amir Home Shoot -148.JPG",
+   "corr": 1.0,
+   "second": 0.96
+  },
+  "INDOOR/Best/Best 2/New Folder/Amir Home Shoot Best-55.JPG": {
+   "all_photos": "INDOOR/All Photos/Amir Home Shoot -152.JPG",
+   "corr": 1.0,
+   "second": 0.837
+  },
+  "INDOOR/Best/Best 2/New Folder/Amir Home Shoot Best-59.JPG": {
+   "all_photos": "INDOOR/All Photos/Amir Home Shoot -160.JPG",
+   "corr": 1.0,
+   "second": 0.936
+  },
+  "INDOOR/Best/Best 2/New Folder/Amir Home Shoot Best-61.JPG": {
+   "all_photos": "INDOOR/All Photos 3/Amir Home Shoot -166.JPG",
+   "corr": 1.0,
+   "second": 0.813
+  },
+  "INDOOR/Best/Best 2/New Folder/Amir Home Shoot Best-62.JPG": {
+   "all_photos": "INDOOR/All Photos 2/Amir Home Shoot -167.JPG",
+   "corr": 1.0,
+   "second": 0.689
+  },
+  "INDOOR/Best/Best 2/New Folder/Amir Home Shoot Best-63.JPG": {
+   "all_photos": "INDOOR/All Photos 2/Amir Home Shoot -172.JPG",
+   "corr": 1.0,
+   "second": 0.835
+  },
+  "INDOOR/Best/Best 2/New Folder/Amir Home Shoot Best-64.JPG": {
+   "all_photos": "INDOOR/All Photos 2/Amir Home Shoot -175.JPG",
+   "corr": 1.0,
+   "second": 0.921
+  },
+  "INDOOR/Best/Best 2/New Folder/Amir Home Shoot Best-65.JPG": {
+   "all_photos": "INDOOR/All Photos 3/Amir Home Shoot -177.JPG",
+   "corr": 1.0,
+   "second": 0.874
+  },
+  "INDOOR/Best/Best 2/New Folder/Amir Home Shoot Best-67.JPG": {
+   "all_photos": "INDOOR/All Photos 3/Amir Home Shoot -179.JPG",
+   "corr": 1.0,
+   "second": 0.825
+  },
+  "INDOOR/Best/Best 2/New Folder/Amir Home Shoot Best-68.JPG": {
+   "all_photos": "INDOOR/All Photos 3/Amir Home Shoot -180.JPG",
+   "corr": 1.0,
+   "second": 0.825
+  },
+  "INDOOR/Best/Best 2/New Folder/Amir Home Shoot Best-72.JPG": {
+   "all_photos": "INDOOR/All Photos 3/Amir Home Shoot -185.JPG",
+   "corr": 1.0,
+   "second": 0.847
+  },
+  "INDOOR/Best/Best 2/New Folder/Amir Home Shoot Best-73.JPG": {
+   "all_photos": "INDOOR/All Photos 2/Amir Home Shoot -189.JPG",
+   "corr": 1.0,
+   "second": 0.839
+  },
+  "INDOOR/Best/Best 2/New Folder/Amir Home Shoot Best-76.JPG": {
+   "all_photos": "INDOOR/All Photos/Amir Home Shoot -193.JPG",
+   "corr": 1.0,
+   "second": 0.887
+  },
+  "INDOOR/Best/Best 2/New Folder/Amir Home Shoot Best-79.JPG": {
+   "all_photos": "INDOOR/All Photos 2/Amir Home Shoot -197.JPG",
+   "corr": 1.0,
+   "second": 0.802
+  },
+  "INDOOR/Best/Best 2/New Folder/Amir Home Shoot Best-8.JPG": {
+   "all_photos": "INDOOR/All Photos/Amir Home Shoot -23.JPG",
+   "corr": 1.0,
+   "second": 0.769
+  },
+  "INDOOR/Best/Best 2/New Folder/Amir Home Shoot Best-80.JPG": {
+   "all_photos": "INDOOR/All Photos 3/Amir Home Shoot -199.JPG",
+   "corr": 1.0,
+   "second": 0.839
+  },
+  "INDOOR/Best/Best 2/New Folder/Amir Home Shoot Best-84.JPG": {
+   "all_photos": "INDOOR/All Photos 2/Amir Home Shoot -208.JPG",
+   "corr": 1.0,
+   "second": 0.782
+  },
+  "INDOOR/Best/Best 2/New Folder/Amir Home Shoot Best-85.JPG": {
+   "all_photos": "INDOOR/All Photos/Amir Home Shoot -209.JPG",
+   "corr": 1.0,
+   "second": 0.958
+  },
+  "INDOOR/Best/Best 2/New Folder/Amir Home Shoot Best-88.JPG": {
+   "all_photos": "INDOOR/All Photos 2/Amir Home Shoot -212.JPG",
+   "corr": 1.0,
+   "second": 0.881
+  },
+  "INDOOR/Best/Best 2/New Folder/Amir Home Shoot Best-89.JPG": {
+   "all_photos": "INDOOR/All Photos 3/Amir Home Shoot -213.JPG",
+   "corr": 1.0,
+   "second": 0.93
+  },
+  "INDOOR/Best/Best 2/New Folder/Amir Home Shoot Best-91.JPG": {
+   "all_photos": "INDOOR/All Photos 3/Amir Home Shoot -216.JPG",
+   "corr": 1.0,
+   "second": 0.951
+  },
+  "INDOOR/Best/Best 2/New Folder/Amir Home Shoot Best-93.JPG": {
+   "all_photos": "INDOOR/All Photos 3/Amir Home Shoot -221.JPG",
+   "corr": 1.0,
+   "second": 0.935
+  },
+  "INDOOR/Best/Best 2/New Folder/Amir Home Shoot Best-97.JPG": {
+   "all_photos": "INDOOR/All Photos/Amir Home Shoot -233.JPG",
+   "corr": 1.0,
+   "second": 0.838
+  },
+  "INDOOR/Best/Best 2/New Folder/Amir Home Shoot Best-98.JPG": {
+   "all_photos": "INDOOR/All Photos 2/Amir Home Shoot -234.JPG",
+   "corr": 1.0,
+   "second": 0.87
+  },
+  "INDOOR/Best/Best 2/New Folder/Amir Home Shoot Best.JPG": {
+   "all_photos": "INDOOR/All Photos 3/Amir Home Shoot .JPG",
+   "corr": 1.0,
+   "second": 0.584
+  }
+ }
+}

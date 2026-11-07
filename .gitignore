@@ -1,0 +1,70 @@
+# Never commit these
+.env
+credentials.json
+youtube_oauth.json
+youtube_token.json
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.DS_Store
+.sc_user_token.json
+sc_auth_callback.py
+
+# Binary / media assets (too large for git)
+artwork/
+resized/
+videos/
+resized_video/
+EPK/
+data/
+*.png
+*.jpg
+*.jpeg
+*.pdf
+*.mp4
+
+# AI image records (exact prompts, release concepts, review text) and reference copies: local only
+generated_images/
+references/imagine/
+*.mov
+*.wav
+*.mp3
+*.woff2
+
+# Except code-referenced font files (tracked via CSS)
+!release_manager/static/fonts/*.woff2
+
+# Tool caches
+.firecrawl/
+.playwright-mcp/
+.claude/
+
+# Misc
+=1.1.3
+.flask_secret
+
+# Browser auth state (SoundCloud Playwright session cookies -- NEVER commit)
+.sc_browser_state.json
+*_browser_state.json
+
+# Rotating data backups (keep on disk, don't bloat the repo)
+scene_intelligence/backups/
+scene_intelligence/*.bak
+scene_intelligence/*.bak.*
+scene_intelligence/*.bak*
+# Worktree-removal backups (contain a full .env copy with secrets)
+scene_intelligence/_worktree_removal_backup_*/
+
+# Per-session generated engine plan files (regenerated each run)
+scene_intelligence/session_plan_*.json
+
+# launchd stdout/stderr logs (runtime noise)
+docs/reports/*-launchd.log
+
+# Foundry trial fonts: test use only, licences forbid passing them on
+docs/brand/fonts/trials/
+
+# Private message corpora (phone numbers, addresses, personal threads): local only
+plans/voice-study/*dm-lines*.json

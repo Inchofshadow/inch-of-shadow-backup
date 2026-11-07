@@ -1,0 +1,31 @@
+{
+  "id": "pinocchio-single_20261014-033354_2",
+  "file": "pinocchio-single_20261014-033354_2.png",
+  "made": "2026-10-14T03:33:54",
+  "model": "gpt-image-2.5-flare",
+  "quality": "low",
+  "size": "1024x1024",
+  "n": 2,
+  "seconds": 11.0,
+  "prompt": "USE: One illustrated element on plain off-white paper, to be cut out and placed on a cover by hand. Artwork only, no lettering.\n\nSUBJECT: A crescent moon as an old copperplate engraving, with a sleeping face in profile on its inner curve (closed eye, nose, lips), the crescent shaded with fine engraved hatching, a few long tapered rays on its outer side.\n\nCOMPOSITION: Only what the subject names, on even plain paper with white space around it; no scene, no frame, no cast shadow.\n\nBRAND:\nInch of Shadow, a Berlin artist: light and shadow held together in one frame.\nHand-made print look: brush and India ink, dry brush, or old copperplate engraving. Lines, hatching and solid black carry all the shading.\nStrong contrast: deep blacks next to clean paper white, a few fine white lines scratched into the black.\nBlack ink by default; colour only where the subject asks for it, as one loose wash.\nQuiet and a little mysterious, tender rather than grim.\n\nCONSTRAINTS:\n- No text, letters, numbers, logos or watermarks.\n- No churches, domes, crosses, or other religious symbols.\n- No photograph, no 3D render, no digital airbrush or soft gradients.\n- Not in the style of any named living artist, and not a copy of any existing cover.",
+  "references": [],
+  "usage": {
+    "input_tokens": 576,
+    "input_tokens_details": {
+      "image_tokens": 0,
+      "text_tokens": 576
+    },
+    "output_tokens": 391,
+    "total_tokens": 967,
+    "output_tokens_details": {
+      "image_tokens": 391,
+      "text_tokens": 0
+    }
+  },
+  "cost_usd": 0.00731,
+  "decision": null,
+  "release": "pinocchio-single",
+  "kind": "element",
+  "element": "moon",
+  "round": "htn-elements-draft-1"
+}

@@ -1,0 +1,45 @@
+- generic [ref=e2]:
+  - banner [ref=e3]:
+    - link "SoundCloud" [ref=e7] [cursor=pointer]:
+      - /url: /
+      - img [ref=e9]
+      - text: SoundCloud
+  - generic [ref=e12]:
+    - main
+  - contentinfo "miniplayer" [ref=e13]:
+    - generic [ref=e14]:
+      - generic:
+        - generic:
+          - generic:
+            - generic: Next up
+            - button "Clear"
+            - button "Hide queue":
+              - generic:
+                - img
+      - generic [ref=e15]:
+        - button "Skip to previous" [ref=e16] [cursor=pointer]:
+          - generic:
+            - img
+          - text: Skip to previous
+        - button "Play current" [ref=e17]:
+          - generic [ref=e18]:
+            - img [ref=e20]
+            - text: Play current
+        - button "Skip to next" [ref=e22]:
+          - generic:
+            - img
+          - text: Skip to next
+        - button "Shuffle" [ref=e24] [cursor=pointer]:
+          - generic:
+            - img
+          - text: Shuffle
+        - button "Repeat track" [ref=e26] [cursor=pointer]:
+          - generic:
+            - generic:
+              - img
+            - text: Repeat track
+        - generic [ref=e29]:
+          - generic [ref=e30]: Volume
+          - button "Toggle mute" [ref=e32] [cursor=pointer]:
+            - generic: Toggle mute
+          - slider "Volume"

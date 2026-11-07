@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
+    <title>{% block title %}Release Manager{% endblock %} — Inch of Shadow</title>
+    <link rel="icon" type="image/png" href="{{ url_for('favicon') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}?v=88">
+    {% if theme_overrides %}
+    <style>
+        :root {
+            {% for var, val in theme_overrides.items() %}
+            {{ var }}: {{ val }};
+            {% endfor %}
+        }
+    </style>
+    {% endif %}
+</head>
+<body>
+    <div class="ambient-glow" aria-hidden="true">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+    </div>
+    <a href="#main-content" class="skip-link">Skip to content</a>
+
+    <div class="app-layout">
+        <!-- Sidebar -->
+        <nav class="sidebar" id="sidebar" aria-label="Main navigation">
+            <a href="{{ url_for('dashboard') }}" class="sidebar-brand">
+                <img src="{{ url_for('static', filename='avatar.jpg') }}" alt="Inch of Shadow" class="sidebar-avatar">
+                <span class="sidebar-brand-text">Inch of Shadow</span>
+            </a>
+
+            <div class="sidebar-nav">
+                <div class="sidebar-group">
+                    <div class="sidebar-group-label">Releases</div>
+                    <a href="{{ url_for('dashboard') }}" class="sidebar-link{% if request.endpoint == 'dashboard' %} active{% endif %}">Dashboard</a>
+                    <a href="{{ url_for('release_new') }}" class="sidebar-link{% if request.endpoint == 'release_new' %} active{% endif %}">New release</a>
+                </div>
+
+                <div class="sidebar-group">
+                    <div class="sidebar-group-label">Work</div>
+                    <a href="{{ url_for('tickets_page') }}" class="sidebar-link{% if request.endpoint in ('tickets_page', 'board_page') %} active{% endif %}">Work</a>
+                    <a href="{{ url_for('review_page') }}" class="sidebar-link{% if request.endpoint == 'review_page' %} active{% endif %}">Review</a>
+                    <a href="{{ url_for('outreach_page') }}" class="sidebar-link{% if request.endpoint == 'outreach_page' %} active{% endif %}">Outreach</a>
+                    <a href="{{ url_for('sc_automation_page') }}" class="sidebar-link{% if request.endpoint == 'sc_automation_page' %} active{% endif %}">SC status</a>
+                </div>
+
+                <div class="sidebar-group">
+                    <div class="sidebar-group-label">Studio</div>
+                    <a href="{{ url_for('shoot_page') }}" class="sidebar-link{% if request.endpoint in ('shoot_page', 'shoot_photo') %} active{% endif %}">Shoot</a>
+                    <a href="{{ url_for('archive_page') }}" class="sidebar-link{% if request.endpoint in ('archive_page', 'archive_detail', 'archive_file') %} active{% endif %}">Archive</a>
+                    <a href="{{ url_for('fonts_page_view') }}" class="sidebar-link{% if request.endpoint in ('fonts_page_view', 'font_detail') %} active{% endif %}">Fonts</a>
+                    <a href="{{ url_for('effects_page_view') }}" class="sidebar-link{% if request.endpoint in ('effects_page_view', 'effect_detail') %} active{% endif %}">Effects</a>
+                    <a href="{{ url_for('playground_layout', slug='pinocchio-single') }}" class="sidebar-link{% if request.endpoint in ('playground_elements', 'playground_colours', 'playground_wall', 'playground_layout', 'playground_iggrid') %} active{% endif %}">Cover: Half the Night</a>
+                    <a href="{{ url_for('playground_index') }}" class="sidebar-link{% if request.endpoint in ('playground_index', 'playground_page') %} active{% endif %}">Playground</a>
+                    <a href="{{ url_for('imagine_page') }}" class="sidebar-link{% if request.endpoint == 'imagine_page' %} active{% endif %}">Imagine</a>
+                    <a href="{{ url_for('video_page') }}" class="sidebar-link{% if request.endpoint in ('video_page', 'video_resizer_page') %} active{% endif %}">Video</a>
+                </div>
+
+                <div class="sidebar-group">
+                    <div class="sidebar-group-label">Words</div>
+                    <a href="{{ url_for('words_page') }}" class="sidebar-link{% if request.endpoint in ('words_page', 'seo_copy_page', 'bios_page') %} active{% endif %}">Words</a>
+                </div>
+
+                <div class="sidebar-group">
+                    <div class="sidebar-group-label">Analytics</div>
+                    <a href="{{ url_for('stats_page') }}" class="sidebar-link{% if request.endpoint == 'stats_page' %} active{% endif %}">Stats</a>
+                </div>
+
+            </div>
+        </nav>
+
+        <!-- Main content -->
+        <div class="main-content">
+            <main id="main-content">
+                {% with messages = get_flashed_messages(with_categories=true) %}
+                {% if messages %}
+                <div class="flash-messages">
+                    {% for category, message in messages %}
+                    <div class="flash flash-{{ category }}">{{ message }}</div>
+                    {% endfor %}
+                </div>
+                {% endif %}
+                {% endwith %}
+
+                {% if error_title %}
+                <div class="error-page">
+                    <h1>{{ error_title }}</h1>
+                    <p>{{ error_msg }}</p>
+                    <a href="{{ url_for('dashboard') }}" class="btn btn-accent">Back to Dashboard</a>
+                </div>
+                {% else %}
+                {% block content %}{% endblock %}
+                {% endif %}
+            </main>
+        </div>
+    </div>
+
+    <div class="toast-container" id="toast-container" aria-live="polite"></div>
+    <script src="{{ url_for('static', filename='app.js') }}?v=14"></script>
+</body>
+</html>

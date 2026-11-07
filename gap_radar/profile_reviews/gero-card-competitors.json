@@ -1,0 +1,49 @@
+{
+ "verdict": "Partly on target: Wirex and card subs are good, but phrases like \"debit card\", \"cashback\", and \"card fees\" are generic and will pull in bank and fintech noise, while key competitors and insider terms are missing.",
+ "generic": [
+  "\"debit card\"",
+  "\"cashback\"",
+  "\"card fees\"",
+  "\"crypto card\"",
+  "\"card frozen\"",
+  "CryptoCurrency",
+  "cardano"
+ ],
+ "better_keywords": [
+  "\"Cryptoback\"",
+  "\"WXT\"",
+  "\"Wirex X\"",
+  "\"Wirex Pay\"",
+  "\"Gnosis Pay\"",
+  "\"Bitpanda card\"",
+  "\"Bybit card\"",
+  "\"Binance card\"",
+  "\"Crypto.com card\"",
+  "\"Nexo card\"",
+  "\"Metamask card\"",
+  "\"Ruby Steel\"",
+  "\"Jade Green\"",
+  "\"CRO staking\"",
+  "\"self-custodial card\"",
+  "\"Visa debit crypto\"",
+  "\"Monavate\"",
+  "\"top up fee\"",
+  "\"FX markup\"",
+  "\"KYC rejected\"",
+  "\"card declined\"",
+  "\"account suspended\"",
+  "\"EEA only\"",
+  "\"cardano card wirex\""
+ ],
+ "better_sources": [
+  "reddit: r/Wirex",
+  "reddit: r/Crypto_com",
+  "reddit: r/nexo",
+  "reddit: r/binance",
+  "reddit: r/Bybit",
+  "reddit: r/GnosisPay",
+  "reddit: r/Bitpanda",
+  "reddit: r/CryptoCurrency (only with brand-specific phrases)",
+  "trustpilot: wirexapp.com, gnosispay.com"
+ ]
+}

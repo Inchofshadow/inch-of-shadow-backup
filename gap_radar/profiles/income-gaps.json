@@ -1,0 +1,96 @@
+{
+  "name": "income-gaps",
+  "question": "Hunt for money gaps: products people already ask to pay for.",
+  "system_extra": "The team is two people (a musician-producer who builds software by directing Claude Code,\nwith tools for code, automated video, SEO content and scheduling). They want a self-serve product they own:\nan app, web tool, browser extension, template or data product. No client services.\n\nAssets they already pay for (score fit_for_us higher when a product rides on them):\n- Claude API: $200/month credit, ~98% unused, refreshes monthly -> near-zero AI cost.\n- HikerAPI: Instagram public data, ~83k requests prepaid (research/own use; reselling\n  Instagram data breaks Meta terms, so never as the product itself).\n- OpenAI image API (pay per image), YouTube Data API key, Spotify and Discogs API keys,\n  SoundCloud API app, Meta Graph API (own IG account), Google Sheets API, Telegram bot,\n  Canva connector, HyperFrames automated video rendering, Symphonic music distribution.\nName which assets each product uses in product_idea.",
+  "output_dir": "gap_radar/reports",
+  "crowding": true,
+  "sources": {
+    "reddit": {
+      "subs": [
+        "SaaS",
+        "Entrepreneur",
+        "smallbusiness",
+        "freelance",
+        "SideProject",
+        "startups",
+        "selfhosted",
+        "ecommerce",
+        "youtubers",
+        "NewTubers",
+        "podcasting",
+        "WeAreTheMusicMakers",
+        "ableton",
+        "edmproduction",
+        "DJs",
+        "musicmarketing",
+        "Etsy",
+        "realtors",
+        "SomebodyMakeThis",
+        "msp",
+        "shopify"
+      ],
+      "phrases": [
+        "\"would pay for\"",
+        "\"is there a tool\"",
+        "\"is there an app\"",
+        "\"wish there was\"",
+        "\"shut up and take my money\"",
+        "\"any alternative to\"",
+        "\"willing to pay\"",
+        "\"price hike\"",
+        "\"looking for a replacement\"",
+        "\"currently using a spreadsheet\""
+      ]
+    },
+    "hn_queries": [
+      "I would pay for",
+      "wish there was a",
+      "any alternative to",
+      "Ask HN: is there"
+    ],
+    "stackexchange": {
+      "sites": [
+        "superuser",
+        "webapps",
+        "softwarerecs",
+        "music",
+        "avp"
+      ],
+      "queries": [
+        "is there a tool",
+        "is there an app",
+        "alternative to",
+        "software that can"
+      ]
+    },
+    "youtube_queries": [
+      "notion alternative",
+      "best DJ software",
+      "best invoicing app freelancers",
+      "switching from QuickBooks",
+      "Rekordbox alternative",
+      "cancelled my subscription software"
+    ],
+    "github_queries": [
+      "label:\"enhancement\"",
+      "label:\"feature request\"",
+      "label:\"feature-request\"",
+      "label:\"type: feature\""
+    ],
+    "appstore": {
+      "genres": [
+        "Productivity",
+        "Business",
+        "Music",
+        "Photo & Video",
+        "Utilities"
+      ],
+      "app_ids": []
+    },
+    "hikerapi": {
+      "hashtags": [],
+      "accounts": [],
+      "max_calls": 0
+    }
+  }
+}

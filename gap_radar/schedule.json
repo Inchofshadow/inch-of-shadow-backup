@@ -1,0 +1,39 @@
+{
+  "status": "default, Amir confirms",
+  "note": "Income 5 (GR-05). Inch of Shadow work comes first: the radar never takes Claude credit or HikerAPI calls the Inch of Shadow work needs. The two caps are null until Amir sets them; while either is null, schedule.py refuses to run. Life-lane paths (apartmentcode) only exist after Income 8 is merged; missing files are skipped.",
+  "radar_cap_usd_month": 70,
+  "ios_reserve_usd_month": 80,
+  "weekly": [
+    "producer-tools",
+    "song-ideas",
+    "brand-marketing",
+    "ig-hooks",
+    "music-seo",
+    "scene-outreach",
+    "/Users/amir/apartmentcode/radar/profiles/money-back.json"
+  ],
+  "monthly": [
+    "/Users/amir/apartmentcode/radar/profiles/deal-alerts.json",
+    "/Users/amir/apartmentcode/radar/profiles/free-stuff-berlin.json",
+    "/Users/amir/apartmentcode/radar/profiles/before-you-sign.json",
+    "/Users/amir/apartmentcode/radar/profiles/regret-check.json"
+  ],
+  "paused": [
+    "income-gaps"
+  ],
+  "on_demand": [
+    "income-niches",
+    "income-trades",
+    "gero-wallet-pains",
+    "gero-seo-topics",
+    "gero-card-competitors",
+    "/Users/amir/apartmentcode/radar/profiles/trip-prep.json",
+    "/Users/amir/apartmentcode/radar/profiles/english-doctors-berlin.json"
+  ],
+  "crowding": "monthly",
+  "estimate_usd": {
+    "analysis": 1.1,
+    "crowding": 8.0
+  },
+  "min_days_between_runs": 5
+}

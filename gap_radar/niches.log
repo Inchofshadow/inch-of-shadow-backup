@@ -1,0 +1,66 @@
+Collecting for income-niches (Reddit, Hacker News, Stack Exchange, YouTube)...
+  429, waiting 60s
+  reddit r/audioengineering: 29 total
+  429, waiting 60s
+  reddit r/videography: 64 total
+  429, waiting 60s
+  reddit r/weddingphotography: 429 Client Error: Too Many Requests for url: https://www.reddit.com/r/weddingphotography/search.rss?q=%22every+week+I%22+OR+%22spreadsheet%22+OR+%22by+hand%22+OR+%22copy+paste%22+OR+%22is+there+a+tool%22+OR+%22would+pay%22+OR+%22wish+there+was%22+OR+%22takes+me+hours%22&restrict_sr=1&sort=relevance&t=year&limit=50
+  429, waiting 60s
+  reddit r/podcasting: 429 Client Error: Too Many Requests for url: https://www.reddit.com/r/podcasting/search.rss?q=%22every+week+I%22+OR+%22spreadsheet%22+OR+%22by+hand%22+OR+%22copy+paste%22+OR+%22is+there+a+tool%22+OR+%22would+pay%22+OR+%22wish+there+was%22+OR+%22takes+me+hours%22&restrict_sr=1&sort=relevance&t=year&limit=50
+  reddit r/Teachers: 114 total
+  429, waiting 60s
+  reddit r/propertymanagement: 155 total
+  429, waiting 60s
+  reddit r/Bookkeeping: 429 Client Error: Too Many Requests for url: https://www.reddit.com/r/Bookkeeping/search.rss?q=%22every+week+I%22+OR+%22spreadsheet%22+OR+%22by+hand%22+OR+%22copy+paste%22+OR+%22is+there+a+tool%22+OR+%22would+pay%22+OR+%22wish+there+was%22+OR+%22takes+me+hours%22&restrict_sr=1&sort=relevance&t=year&limit=50
+  429, waiting 60s
+  reddit r/EtsySellers: 429 Client Error: Too Many Requests for url: https://www.reddit.com/r/EtsySellers/search.rss?q=%22every+week+I%22+OR+%22spreadsheet%22+OR+%22by+hand%22+OR+%22copy+paste%22+OR+%22is+there+a+tool%22+OR+%22would+pay%22+OR+%22wish+there+was%22+OR+%22takes+me+hours%22&restrict_sr=1&sort=relevance&t=year&limit=50
+  429, waiting 60s
+  reddit r/Landlord: 429 Client Error: Too Many Requests for url: https://www.reddit.com/r/Landlord/search.rss?q=%22every+week+I%22+OR+%22spreadsheet%22+OR+%22by+hand%22+OR+%22copy+paste%22+OR+%22is+there+a+tool%22+OR+%22would+pay%22+OR+%22wish+there+was%22+OR+%22takes+me+hours%22&restrict_sr=1&sort=relevance&t=year&limit=50
+  429, waiting 60s
+  reddit r/TranslationStudies: 429 Client Error: Too Many Requests for url: https://www.reddit.com/r/TranslationStudies/search.rss?q=%22every+week+I%22+OR+%22spreadsheet%22+OR+%22by+hand%22+OR+%22copy+paste%22+OR+%22is+there+a+tool%22+OR+%22would+pay%22+OR+%22wish+there+was%22+OR+%22takes+me+hours%22&restrict_sr=1&sort=relevance&t=year&limit=50
+  429, waiting 60s
+  reddit r/Beatmatch: 429 Client Error: Too Many Requests for url: https://www.reddit.com/r/Beatmatch/search.rss?q=%22every+week+I%22+OR+%22spreadsheet%22+OR+%22by+hand%22+OR+%22copy+paste%22+OR+%22is+there+a+tool%22+OR+%22would+pay%22+OR+%22wish+there+was%22+OR+%22takes+me+hours%22&restrict_sr=1&sort=relevance&t=year&limit=50
+  429, waiting 60s
+  reddit r/musicmarketing: 168 total
+  hn 'takes me hours every week': 0 total
+  hn 'I built a spreadsheet to': 0 total
+  hn 'is there a tool for': 0 total
+  stackexchange webapps 'automate': 429 Client Error: Too Many Requests for url: https://api.stackexchange.com/2.3/search/advanced?site=webapps&q=automate&fromdate=1762316780&sort=votes&order=desc&pagesize=30&filter=withbody
+  stackexchange webapps 'batch': 429 Client Error: Too Many Requests for url: https://api.stackexchange.com/2.3/search/advanced?site=webapps&q=batch&fromdate=1762316780&sort=votes&order=desc&pagesize=30&filter=withbody
+  stackexchange webapps 'tool for': 429 Client Error: Too Many Requests for url: https://api.stackexchange.com/2.3/search/advanced?site=webapps&q=tool+for&fromdate=1762316780&sort=votes&order=desc&pagesize=30&filter=withbody
+  stackexchange webapps: 0 total
+  stackexchange softwarerecs 'automate': 429 Client Error: Too Many Requests for url: https://api.stackexchange.com/2.3/search/advanced?site=softwarerecs&q=automate&fromdate=1762316780&sort=votes&order=desc&pagesize=30&filter=withbody
+  stackexchange softwarerecs 'batch': 429 Client Error: Too Many Requests for url: https://api.stackexchange.com/2.3/search/advanced?site=softwarerecs&q=batch&fromdate=1762316780&sort=votes&order=desc&pagesize=30&filter=withbody
+  stackexchange softwarerecs 'tool for': 429 Client Error: Too Many Requests for url: https://api.stackexchange.com/2.3/search/advanced?site=softwarerecs&q=tool+for&fromdate=1762316780&sort=votes&order=desc&pagesize=30&filter=withbody
+  stackexchange softwarerecs: 0 total
+  stackexchange video 'automate': 429 Client Error: Too Many Requests for url: https://api.stackexchange.com/2.3/search/advanced?site=video&q=automate&fromdate=1762316780&sort=votes&order=desc&pagesize=30&filter=withbody
+  stackexchange video 'batch': 429 Client Error: Too Many Requests for url: https://api.stackexchange.com/2.3/search/advanced?site=video&q=batch&fromdate=1762316780&sort=votes&order=desc&pagesize=30&filter=withbody
+  stackexchange video 'tool for': 429 Client Error: Too Many Requests for url: https://api.stackexchange.com/2.3/search/advanced?site=video&q=tool+for&fromdate=1762316780&sort=votes&order=desc&pagesize=30&filter=withbody
+  stackexchange video: 0 total
+  stackexchange sound 'automate': 429 Client Error: Too Many Requests for url: https://api.stackexchange.com/2.3/search/advanced?site=sound&q=automate&fromdate=1762316780&sort=votes&order=desc&pagesize=30&filter=withbody
+  stackexchange sound 'batch': 429 Client Error: Too Many Requests for url: https://api.stackexchange.com/2.3/search/advanced?site=sound&q=batch&fromdate=1762316780&sort=votes&order=desc&pagesize=30&filter=withbody
+  stackexchange sound 'tool for': 429 Client Error: Too Many Requests for url: https://api.stackexchange.com/2.3/search/advanced?site=sound&q=tool+for&fromdate=1762316780&sort=votes&order=desc&pagesize=30&filter=withbody
+  stackexchange sound: 0 total
+  stackexchange photo 'automate': 429 Client Error: Too Many Requests for url: https://api.stackexchange.com/2.3/search/advanced?site=photo&q=automate&fromdate=1762316780&sort=votes&order=desc&pagesize=30&filter=withbody
+  stackexchange photo 'batch': 429 Client Error: Too Many Requests for url: https://api.stackexchange.com/2.3/search/advanced?site=photo&q=batch&fromdate=1762316780&sort=votes&order=desc&pagesize=30&filter=withbody
+  stackexchange photo 'tool for': 429 Client Error: Too Many Requests for url: https://api.stackexchange.com/2.3/search/advanced?site=photo&q=tool+for&fromdate=1762316780&sort=votes&order=desc&pagesize=30&filter=withbody
+  stackexchange photo: 0 total
+  youtube 'wedding photographer workflow tips': 18 total
+  youtube 'podcast editing workflow': 49 total
+  youtube 'property manager software review': 55 total
+  youtube 'bookkeeping small business workflow': 131 total
+  balance: reddit 168 -> 131
+Per source: reddit 131, youtube 131
+Saved 262 items -> /Users/amir/Desktop/Inch of Shadow/Inchofshadowcode/gap_radar/raw/income-niches/2026-11-05.json
+Report -> /Users/amir/Desktop/Inch of Shadow/Inchofshadowcode/gap_radar/reports/income-niches/2026-11-05.md
+  1. Vendor and tenant COI expiry tracker for small property mana: crowded ($0.36)
+  2. Recurring compliance and statutory deadline calendar for lan: unclear ($0.41)
+  3. Statement aggregator for small landlords with multiple manag: unclear ($0.50)
+  4. Branded monthly owner report generator for small PMs: crowded ($0.58)
+  5. Fast move-in and move-out walkthrough report builder: crowded ($0.63)
+  6. Lease abstraction and key-date extraction for small PMs: crowded ($0.55)
+  7. Stem and multitrack QC checker for engineers: crowded ($0.61)
+  8. Offline drive and footage archive catalog for videographers: crowded ($0.65)
+  9. Playlist curator growth tracker and indie release admin: crowded ($0.60)
+  10. Gear inventory and job-prep kit lists for videographers: crowded ($0.71)
+Report -> /Users/amir/Desktop/Inch of Shadow/Inchofshadowcode/gap_radar/reports/income-niches/2026-11-05.md

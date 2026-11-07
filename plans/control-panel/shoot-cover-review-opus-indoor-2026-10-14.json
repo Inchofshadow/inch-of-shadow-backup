@@ -1,0 +1,1358 @@
+{
+ "in-001": {
+  "verdict": "change",
+  "why": "BR is on the white shirt; the calm black is bottom left, where he bows.",
+  "idea": {
+   "title_at": "BL",
+   "name_at": "BL",
+   "scale": "small",
+   "colour": "M2",
+   "font": "matthews",
+   "note": "He bows down-left into the black sequins; title small at bottom left where his gaze falls, name stacked under it."
+  }
+ },
+ "in-004": {
+  "verdict": "change",
+  "why": "Title and name sit side by side on the same top row (rule 3).",
+  "idea": {
+   "title_at": "TL",
+   "name_at": "TL",
+   "scale": "small",
+   "colour": "M3",
+   "font": "optima",
+   "note": "Title small top left on the blue sequins beside the head, name stacked under it; the shirt and hands fill the rest."
+  }
+ },
+ "in-008": {
+  "verdict": "change",
+  "why": "BR is on his white shirt sleeve, not backdrop.",
+  "idea": {
+   "title_at": "TR",
+   "name_at": "TR",
+   "scale": "small",
+   "colour": "M3",
+   "font": "jost",
+   "note": "Title top right on the dark blue sequins, name stacked under it; the bottom is all shirt."
+  }
+ },
+ "in-009": {
+  "verdict": "change",
+  "why": "BL is on his crossed arm; the black is only top and middle left.",
+  "idea": {
+   "title_at": "TL",
+   "name_at": "TL",
+   "scale": "small",
+   "colour": "M2",
+   "font": "editorial_i",
+   "note": "Italic title top left in the grainy black, name stacked under it."
+  }
+ },
+ "in-013": {
+  "verdict": "change",
+  "why": "BR is on the shirt; the dark backdrop is only above the shoulder.",
+  "idea": {
+   "title_at": "TR",
+   "name_at": "TR",
+   "scale": "small",
+   "colour": "M6",
+   "font": "typewriter",
+   "note": "Typewriter title top right on the dark sequins, pewter, name stacked under it."
+  }
+ },
+ "in-017": {
+  "verdict": "change",
+  "why": "Title and name sit side by side on the same top row (rule 3).",
+  "idea": {
+   "title_at": "TR",
+   "name_at": "TR",
+   "scale": "small",
+   "colour": "M3",
+   "font": "noe",
+   "note": "Title top right on the dark sequins away from the lit face, name stacked under it."
+  }
+ },
+ "in-022": {
+  "verdict": "change",
+  "why": "Title and name sit side by side on the same top row (rule 3).",
+  "idea": {
+   "title_at": "TL",
+   "name_at": "TL",
+   "scale": "small",
+   "colour": "M3",
+   "font": "copperplate",
+   "note": "Engraved capitals top left on the blue sequins, name stacked under it; arms crossed below."
+  }
+ },
+ "in-023": {
+  "verdict": "change",
+  "why": "He looks left, the note puts type on the side he turns from, and BR is on the shirt.",
+  "idea": {
+   "title_at": "TL",
+   "name_at": "TL",
+   "scale": "large",
+   "colour": "M6",
+   "font": "migra_xl",
+   "note": "He looks off left: large hairline italic top left in the grain where his gaze goes, name stacked under it."
+  }
+ },
+ "in-025": {
+  "verdict": "change",
+  "why": "BR is on the white shirt and arm.",
+  "idea": {
+   "title_at": "TR",
+   "name_at": "TR",
+   "scale": "small",
+   "colour": "F",
+   "font": "ogg",
+   "note": "Blush italic title top right in the sequins, name stacked under it."
+  }
+ },
+ "in-028": {
+  "verdict": "change",
+  "why": "Title and name sit side by side on the same top row (rule 3).",
+  "idea": {
+   "title_at": "TL",
+   "name_at": "TL",
+   "scale": "small",
+   "colour": "M4",
+   "font": "din_cond",
+   "note": "Sage condensed capitals top left on the black beside the head, name stacked under it."
+  }
+ },
+ "in-031": {
+  "verdict": "change",
+  "why": "Title and name sit side by side on the same top row (rule 3).",
+  "idea": {
+   "title_at": "TL",
+   "name_at": "TL",
+   "scale": "small",
+   "colour": "M4",
+   "font": "avenir_c",
+   "note": "Small sage title top left on the black, name stacked under it."
+  }
+ },
+ "in-032": {
+  "verdict": "change",
+  "why": "Title and name sit side by side on the same top row (rule 3).",
+  "idea": {
+   "title_at": "TR",
+   "name_at": "TR",
+   "scale": "small",
+   "colour": "C",
+   "font": "baskerville",
+   "note": "Cream italic title top right on the black, name stacked under it."
+  }
+ },
+ "in-035": {
+  "verdict": "change",
+  "why": "BL is on his forearm; the black is the top-left corner.",
+  "idea": {
+   "title_at": "TL",
+   "name_at": "TL",
+   "scale": "large",
+   "colour": "M4",
+   "font": "impact",
+   "note": "Big sage title top left in the black, name stacked under it."
+  }
+ },
+ "in-037": {
+  "verdict": "change",
+  "why": "Title and name sit side by side on the same top row (rule 3).",
+  "idea": {
+   "title_at": "TL",
+   "name_at": "TL",
+   "scale": "small",
+   "colour": "M4",
+   "font": "optima",
+   "note": "Quiet capitals top left on the black, name stacked under it."
+  }
+ },
+ "in-038": {
+  "verdict": "change",
+  "why": "Title and name sit side by side on the same top row (rule 3).",
+  "idea": {
+   "title_at": "TR",
+   "name_at": "TR",
+   "scale": "small",
+   "colour": "M2",
+   "font": "marcellus",
+   "note": "Marcellus small top right on the black, name stacked under it."
+  }
+ },
+ "in-040": {
+  "verdict": "change",
+  "why": "Title and name sit side by side on the same top row (rule 3).",
+  "idea": {
+   "title_at": "TL",
+   "name_at": "TL",
+   "scale": "small",
+   "colour": "M4",
+   "font": "futura_xb",
+   "note": "Small bold capitals top left on the black, name stacked under it."
+  }
+ },
+ "in-044": {
+  "verdict": "keep",
+  "why": "Head clear of both zones; TR is black above the hand and BR is black past the elbow; rows differ."
+ },
+ "in-046": {
+  "verdict": "change",
+  "why": "BL is on the green shirt; the only black is above the shoulders.",
+  "idea": {
+   "title_at": "TL",
+   "name_at": "TL",
+   "scale": "small",
+   "colour": "M2",
+   "font": "ocrb",
+   "note": "OCR capitals top left on the black above the shoulder, name stacked under it."
+  }
+ },
+ "in-049": {
+  "verdict": "change",
+  "why": "BR is mostly shirt and arm.",
+  "idea": {
+   "title_at": "TR",
+   "name_at": "TR",
+   "scale": "small",
+   "colour": "M4",
+   "font": "henderson",
+   "note": "Title top right on the black above the hand, name stacked under it."
+  }
+ },
+ "in-050": {
+  "verdict": "change",
+  "why": "BL is on the green shirt; only the top corners are black.",
+  "idea": {
+   "title_at": "TL",
+   "name_at": "TL",
+   "scale": "small",
+   "colour": "M2",
+   "font": "reckless",
+   "note": "Small italic top left in the black corner beside the hair, name stacked under it."
+  }
+ },
+ "in-052": {
+  "verdict": "change",
+  "why": "Title and name sit side by side on the same top row (rule 3).",
+  "idea": {
+   "title_at": "TL",
+   "name_at": "TL",
+   "scale": "small",
+   "colour": "M4",
+   "font": "din_cond",
+   "note": "Condensed capitals top left on the black, name stacked under it."
+  }
+ },
+ "in-053": {
+  "verdict": "change",
+  "why": "Title and name sit side by side on the same bottom row (rule 3). Bottom corners are arms and shirt; the black is above the hands.",
+  "idea": {
+   "title_at": "TR",
+   "name_at": "TR",
+   "scale": "small",
+   "colour": "M2",
+   "font": "copperplate",
+   "note": "Title top right on the black above his raised hand, name stacked under it."
+  }
+ },
+ "in-054": {
+  "verdict": "change",
+  "why": "Title and name sit side by side on the same bottom row (rule 3). Bottom is all shirt; the black is in the top corners.",
+  "idea": {
+   "title_at": "TL",
+   "name_at": "TL",
+   "scale": "small",
+   "colour": "M4",
+   "font": "jost",
+   "note": "Light capitals top left on the black above the hand, name stacked under it."
+  }
+ },
+ "in-055": {
+  "verdict": "change",
+  "why": "Title and name sit side by side on the same bottom row (rule 3). The bottom is arms and shirt.",
+  "idea": {
+   "title_at": "TR",
+   "name_at": "TR",
+   "scale": "small",
+   "colour": "M2",
+   "font": "optima",
+   "note": "Title top right on the black above the hand, name stacked under it."
+  }
+ },
+ "in-056": {
+  "verdict": "change",
+  "why": "Title and name sit side by side on the same bottom row (rule 3). Bottom corners are shirt and hands.",
+  "idea": {
+   "title_at": "TR",
+   "name_at": "TR",
+   "scale": "small",
+   "colour": "M2",
+   "font": "ocrb",
+   "note": "Small OCR capitals top right on the black above the hand, name stacked under it."
+  }
+ },
+ "in-057": {
+  "verdict": "change",
+  "why": "Title and name sit side by side on the same bottom row (rule 3). Bottom corners hold his arms.",
+  "idea": {
+   "title_at": "TL",
+   "name_at": "TL",
+   "scale": "small",
+   "colour": "M4",
+   "font": "futura_xb",
+   "note": "Title top left on the black above the raised hand, name stacked under it."
+  }
+ },
+ "in-058": {
+  "verdict": "change",
+  "why": "Title and name sit side by side on the same bottom row (rule 3). Bottom is shirt.",
+  "idea": {
+   "title_at": "TR",
+   "name_at": "TR",
+   "scale": "small",
+   "colour": "M2",
+   "font": "henderson",
+   "note": "Small title top right on the black above the hand, name stacked under it."
+  }
+ },
+ "in-081": {
+  "verdict": "change",
+  "why": "Title and name sit side by side on the same top row (rule 3).",
+  "idea": {
+   "title_at": "TL",
+   "name_at": "TL",
+   "scale": "small",
+   "colour": "E",
+   "font": "gloria",
+   "note": "Champagne script small top left on the burgundy velvet, name stacked under it."
+  }
+ },
+ "in-082": {
+  "verdict": "change",
+  "why": "BR is on the dark shirt and arm.",
+  "idea": {
+   "title_at": "TR",
+   "name_at": "TR",
+   "scale": "large",
+   "colour": "E",
+   "font": "migra_xl",
+   "note": "Large hairline italic top right on the velvet, name stacked under it; the blur carries the title."
+  }
+ },
+ "in-083": {
+  "verdict": "change",
+  "why": "He turns and looks right, type is put on the side he turns from, and BL is on his arm.",
+  "idea": {
+   "title_at": "TR",
+   "name_at": "TR",
+   "scale": "large",
+   "colour": "M6",
+   "font": "apoc",
+   "note": "Large pewter title top right on the grey backdrop where he looks, name stacked under it."
+  }
+ },
+ "in-084": {
+  "verdict": "change",
+  "why": "TC sits on his head (rule 1) and BC is on his body.",
+  "idea": {
+   "title_at": "TR",
+   "name_at": "TR",
+   "scale": "large",
+   "colour": "E",
+   "font": "conclave",
+   "note": "Large champagne title top right in the dark haze beside the dissolving head, name stacked under it."
+  }
+ },
+ "in-085": {
+  "verdict": "change",
+  "why": "BL is on the blurred arm and shirt.",
+  "idea": {
+   "title_at": "TL",
+   "name_at": "TL",
+   "scale": "large",
+   "colour": "E",
+   "font": "editorial_i",
+   "note": "Large italic title top left in the velvet, name stacked under it."
+  }
+ },
+ "in-086": {
+  "verdict": "change",
+  "why": "BR is on the arm and shirt; the note puts the smear on the left but it rises from the centre.",
+  "idea": {
+   "title_at": "TR",
+   "name_at": "TR",
+   "scale": "large",
+   "colour": "E",
+   "font": "migra_xl",
+   "note": "The smear rises in the centre; large hairline italic top right on the velvet below the pale ceiling, name stacked under it."
+  }
+ },
+ "in-087": {
+  "verdict": "change",
+  "why": "Title and name sit side by side on the same bottom row (rule 3). The bottom row is all shirt.",
+  "idea": {
+   "title_at": "TR",
+   "name_at": "TR",
+   "scale": "small",
+   "colour": "M6",
+   "font": "ocrb",
+   "note": "Small pewter OCR title top right on the velvet beside the face, name stacked under it."
+  }
+ },
+ "in-088": {
+  "verdict": "change",
+  "why": "The light streak runs into TR, so it is not empty velvet, and BR is shirt.",
+  "idea": {
+   "title_at": "TL",
+   "name_at": "TL",
+   "scale": "large",
+   "colour": "E",
+   "font": "gloria",
+   "note": "Large champagne script top left on the clean velvet, name stacked under it; the streak stays alone on the right."
+  }
+ },
+ "in-089": {
+  "verdict": "change",
+  "why": "BL is on his arm.",
+  "idea": {
+   "title_at": "TL",
+   "name_at": "TL",
+   "scale": "large",
+   "colour": "E",
+   "font": "editorial_i",
+   "note": "Large italic top left in the velvet, name stacked under it."
+  }
+ },
+ "in-090": {
+  "verdict": "change",
+  "why": "The sharp face looks left; TL velvet is where he looks, and BR catches his arm.",
+  "idea": {
+   "title_at": "TL",
+   "name_at": "TL",
+   "scale": "large",
+   "colour": "E",
+   "font": "conclave",
+   "note": "Large title top left in the velvet where he looks, name stacked under it."
+  }
+ },
+ "in-091": {
+  "verdict": "keep",
+  "why": "Right side is clean black, both zones clear of head and body; the empty side suits the drift."
+ },
+ "in-092": {
+  "verdict": "keep",
+  "why": "Zones are clear velvet and dark; note says the ghost drifts right but it drifts left, which does not change the placement."
+ },
+ "in-093": {
+  "verdict": "keep",
+  "why": "TL and BL are black, clear of both faces; rows differ."
+ },
+ "in-094": {
+  "verdict": "keep",
+  "why": "TR and BR are black velvet, clear of both faces; rows differ."
+ },
+ "in-104": {
+  "verdict": "change",
+  "why": "Title and name sit side by side on the same bottom row (rule 3). The bottom row holds both arms and hands.",
+  "idea": {
+   "title_at": "TL",
+   "name_at": "TL",
+   "scale": "large",
+   "colour": "M2",
+   "font": "impact",
+   "note": "Big platinum title top left in the deep black above the shoulder, name stacked under it."
+  }
+ },
+ "in-107": {
+  "verdict": "keep",
+  "why": "He faces right into clean black; title and name on the right on different rows."
+ },
+ "in-109": {
+  "verdict": "change",
+  "why": "Title and name sit side by side on the same top row (rule 3).",
+  "idea": {
+   "title_at": "TL",
+   "name_at": "TL",
+   "scale": "small",
+   "colour": "M2",
+   "font": "baskerville",
+   "note": "Small italic top left on the black, name stacked under it."
+  }
+ },
+ "in-110": {
+  "verdict": "keep",
+  "why": "TR is black and BR is mostly black past the dark shirt edge; rows differ."
+ },
+ "in-116": {
+  "verdict": "keep",
+  "why": "He looks right into black; TR and BR clear of head and arm."
+ },
+ "in-119": {
+  "verdict": "change",
+  "why": "He looks left, the type goes to the right, and BR is on the shirt sleeve.",
+  "idea": {
+   "title_at": "TL",
+   "name_at": "TL",
+   "scale": "large",
+   "colour": "M2",
+   "font": "mohave",
+   "note": "He looks left into the dark wall: large condensed capitals top left, name stacked under it."
+  }
+ },
+ "in-121": {
+  "verdict": "change",
+  "why": "Title and name sit side by side on the same top row (rule 3).",
+  "idea": {
+   "title_at": "TL",
+   "name_at": "TL",
+   "scale": "small",
+   "colour": "M2",
+   "font": "optima",
+   "note": "Small capitals top left on the dark wall, name stacked under it."
+  }
+ },
+ "in-122": {
+  "verdict": "change",
+  "why": "Title and name sit side by side on the same bottom row (rule 3). The bottom row is arms and shirt.",
+  "idea": {
+   "title_at": "TR",
+   "name_at": "TR",
+   "scale": "small",
+   "colour": "M2",
+   "font": "ocrb",
+   "note": "Small OCR title top right on the dark wall, name stacked under it."
+  }
+ },
+ "in-124": {
+  "verdict": "change",
+  "why": "Title and name sit side by side on the same bottom row (rule 3). The bottom row is arms and shirt.",
+  "idea": {
+   "title_at": "TL",
+   "name_at": "TL",
+   "scale": "small",
+   "colour": "M6",
+   "font": "din_cond",
+   "note": "Condensed capitals top left in the black, pewter, name stacked under it."
+  }
+ },
+ "in-146": {
+  "verdict": "change",
+  "why": "Title and name sit side by side on the same top row (rule 3).",
+  "idea": {
+   "title_at": "TR",
+   "name_at": "TR",
+   "scale": "small",
+   "colour": "M2",
+   "font": "futura_xb",
+   "note": "Small platinum capitals top right on the bright wall, name stacked under it."
+  }
+ },
+ "in-148": {
+  "verdict": "change",
+  "why": "Title and name sit side by side on the same top row (rule 3).",
+  "idea": {
+   "title_at": "TR",
+   "name_at": "TR",
+   "scale": "small",
+   "colour": "M2",
+   "font": "jost",
+   "note": "Light capitals top right on the red wall, name stacked under it."
+  }
+ },
+ "in-149": {
+  "verdict": "keep",
+  "why": "TR is clean pink wall and BR is mostly wall and diagonal shadow; rows differ."
+ },
+ "in-150": {
+  "verdict": "change",
+  "why": "Title and name sit side by side on the same top row (rule 3).",
+  "idea": {
+   "title_at": "TL",
+   "name_at": "TL",
+   "scale": "small",
+   "colour": "M2",
+   "font": "optima",
+   "note": "Small capitals top left on the red wall, name stacked under it."
+  }
+ },
+ "in-152": {
+  "verdict": "keep",
+  "why": "TR and BR are red wall past the jacket edge; rows differ."
+ },
+ "in-154": {
+  "verdict": "change",
+  "why": "Title and name sit side by side on the same top row (rule 3).",
+  "idea": {
+   "title_at": "TR",
+   "name_at": "TR",
+   "scale": "large",
+   "colour": "M2",
+   "font": "impact",
+   "note": "Big title top right on the clean orange wall, name stacked under it."
+  }
+ },
+ "in-155": {
+  "verdict": "change",
+  "why": "BR is on the denim jacket.",
+  "idea": {
+   "title_at": "TR",
+   "name_at": "TR",
+   "scale": "small",
+   "colour": "F",
+   "font": "ogg",
+   "note": "Blush italic small top right on the pink wall, name stacked under it."
+  }
+ },
+ "in-159": {
+  "verdict": "change",
+  "why": "Title and name sit side by side on the same top row (rule 3).",
+  "idea": {
+   "title_at": "TR",
+   "name_at": "TR",
+   "scale": "large",
+   "colour": "M2",
+   "font": "apoc",
+   "note": "Large title top right on the strong red wall, name stacked under it."
+  }
+ },
+ "in-160": {
+  "verdict": "change",
+  "why": "Title and name sit side by side on the same top row (rule 3).",
+  "idea": {
+   "title_at": "TR",
+   "name_at": "TR",
+   "scale": "small",
+   "colour": "A",
+   "font": "din_cond",
+   "note": "Condensed capitals top right on the pale wall, clear of the shadow, name stacked under it."
+  }
+ },
+ "in-161": {
+  "verdict": "change",
+  "why": "Title and name sit side by side on the same top row (rule 3).",
+  "idea": {
+   "title_at": "TL",
+   "name_at": "TL",
+   "scale": "small",
+   "colour": "M4",
+   "font": "din_cond",
+   "note": "Sage capitals top left on the green wall, name stacked under it."
+  }
+ },
+ "in-166": {
+  "verdict": "change",
+  "why": "BR is on the jacket.",
+  "idea": {
+   "title_at": "TR",
+   "name_at": "TR",
+   "scale": "large",
+   "colour": "M4",
+   "font": "editorial_ub",
+   "note": "Large heavy serif top right on the green wall, name stacked under it."
+  }
+ },
+ "in-167": {
+  "verdict": "change",
+  "why": "Title and name sit side by side on the same top row (rule 3).",
+  "idea": {
+   "title_at": "TL",
+   "name_at": "TL",
+   "scale": "small",
+   "colour": "M4",
+   "font": "futura_xb",
+   "note": "Small bold capitals top left above the hands, name stacked under it."
+  }
+ },
+ "in-172": {
+  "verdict": "change",
+  "why": "Title and name sit side by side on the same top row (rule 3).",
+  "idea": {
+   "title_at": "TR",
+   "name_at": "TR",
+   "scale": "small",
+   "colour": "M4",
+   "font": "jost",
+   "note": "Light capitals top right on the teal wall, name stacked under it."
+  }
+ },
+ "in-175": {
+  "verdict": "change",
+  "why": "Title and name sit side by side on the same top row (rule 3).",
+  "idea": {
+   "title_at": "TR",
+   "name_at": "TR",
+   "scale": "small",
+   "colour": "M4",
+   "font": "mohave",
+   "note": "Condensed capitals top right on the green wall, name stacked under it."
+  }
+ },
+ "in-177": {
+  "verdict": "change",
+  "why": "Title and name sit side by side on the same top row (rule 3).",
+  "idea": {
+   "title_at": "TR",
+   "name_at": "TR",
+   "scale": "small",
+   "colour": "M4",
+   "font": "din_cond",
+   "note": "Small sage capitals top right on the green wall, name stacked under it."
+  }
+ },
+ "in-178": {
+  "verdict": "change",
+  "why": "BR is on the black jacket.",
+  "idea": {
+   "title_at": "TR",
+   "name_at": "TR",
+   "scale": "small",
+   "colour": "M4",
+   "font": "ogg",
+   "note": "Italic title top right on the pale wall, name stacked under it."
+  }
+ },
+ "in-179": {
+  "verdict": "change",
+  "why": "BR is on the jacket.",
+  "idea": {
+   "title_at": "TR",
+   "name_at": "TR",
+   "scale": "small",
+   "colour": "M4",
+   "font": "avenir_c",
+   "note": "Title top right on the green wall, name stacked under it."
+  }
+ },
+ "in-180": {
+  "verdict": "change",
+  "why": "Title and name sit side by side on the same top row (rule 3).",
+  "idea": {
+   "title_at": "TR",
+   "name_at": "TR",
+   "scale": "small",
+   "colour": "M4",
+   "font": "optima",
+   "note": "Capitals top right on the teal wall, name stacked under it."
+  }
+ },
+ "in-181": {
+  "verdict": "change",
+  "why": "BR is mostly jacket.",
+  "idea": {
+   "title_at": "TR",
+   "name_at": "TR",
+   "scale": "small",
+   "colour": "M4",
+   "font": "jost",
+   "note": "Light capitals top right on the bright green wall, name stacked under it."
+  }
+ },
+ "in-182": {
+  "verdict": "change",
+  "why": "Title and name sit side by side on the same top row (rule 3).",
+  "idea": {
+   "title_at": "TR",
+   "name_at": "TR",
+   "scale": "small",
+   "colour": "M4",
+   "font": "mohave",
+   "note": "Condensed capitals top right on the green wall, name stacked under it."
+  }
+ },
+ "in-183": {
+  "verdict": "change",
+  "why": "BR is on the jacket.",
+  "idea": {
+   "title_at": "TR",
+   "name_at": "TR",
+   "scale": "large",
+   "colour": "M4",
+   "font": "editorial_ub",
+   "note": "Large heavy serif top right on the dark green wall, name stacked under it."
+  }
+ },
+ "in-185": {
+  "verdict": "change",
+  "why": "BL catches his hand and jacket.",
+  "idea": {
+   "title_at": "TL",
+   "name_at": "TL",
+   "scale": "large",
+   "colour": "M4",
+   "font": "migra_xl",
+   "note": "Large hairline italic top left on the green wall, name stacked under it."
+  }
+ },
+ "in-189": {
+  "verdict": "change",
+  "why": "Title and name sit side by side on the same bottom row (rule 3). The bottom row is chest and fists.",
+  "idea": {
+   "title_at": "TR",
+   "name_at": "TR",
+   "scale": "small",
+   "colour": "M4",
+   "font": "ocrb",
+   "note": "Small OCR title top right on the green wall beside the hair, name stacked under it."
+  }
+ },
+ "in-191": {
+  "verdict": "change",
+  "why": "He looks left, type goes right, and BR is on the jacket.",
+  "idea": {
+   "title_at": "TL",
+   "name_at": "TL",
+   "scale": "large",
+   "colour": "M4",
+   "font": "editorial_i",
+   "note": "He looks left: large italic top left on the green wall, name stacked under it."
+  }
+ },
+ "in-192": {
+  "verdict": "change",
+  "why": "BR is hand and jacket; he looks down-left.",
+  "idea": {
+   "title_at": "TL",
+   "name_at": "TL",
+   "scale": "small",
+   "colour": "A",
+   "font": "typewriter",
+   "note": "Typewriter title top left on the pale wall where he looks, name stacked under it."
+  }
+ },
+ "in-193": {
+  "verdict": "change",
+  "why": "He looks left while the type sits right, and BR is on the jacket.",
+  "idea": {
+   "title_at": "TL",
+   "name_at": "TL",
+   "scale": "large",
+   "colour": "M4",
+   "font": "noe",
+   "note": "He looks left: large serif top left on the teal wall, name stacked under it."
+  }
+ },
+ "in-194": {
+  "verdict": "change",
+  "why": "BR is on the hand and jacket.",
+  "idea": {
+   "title_at": "TR",
+   "name_at": "TR",
+   "scale": "large",
+   "colour": "M4",
+   "font": "apoc",
+   "note": "Large title top right on the green wall, name stacked under it."
+  }
+ },
+ "in-195": {
+  "verdict": "change",
+  "why": "BL is on the jacket and hand.",
+  "idea": {
+   "title_at": "TL",
+   "name_at": "TL",
+   "scale": "large",
+   "colour": "M4",
+   "font": "editorial_i",
+   "note": "He looks left: large italic top left on the green wall, name stacked under it."
+  }
+ },
+ "in-197": {
+  "verdict": "change",
+  "why": "BR is on the jacket.",
+  "idea": {
+   "title_at": "TR",
+   "name_at": "TR",
+   "scale": "large",
+   "colour": "M4",
+   "font": "migra_xl",
+   "note": "He looks right: large hairline italic top right on the green wall, name stacked under it."
+  }
+ },
+ "in-199": {
+  "verdict": "change",
+  "why": "BR is on the hand and jacket.",
+  "idea": {
+   "title_at": "TR",
+   "name_at": "TR",
+   "scale": "small",
+   "colour": "A",
+   "font": "copperplate",
+   "note": "Dark engraved capitals top right on the pale wall, name stacked under it."
+  }
+ },
+ "in-200": {
+  "verdict": "change",
+  "why": "BR is mostly jacket.",
+  "idea": {
+   "title_at": "TR",
+   "name_at": "TR",
+   "scale": "large",
+   "colour": "M4",
+   "font": "impact",
+   "note": "Big sage title top right on the green wall, name stacked under it."
+  }
+ },
+ "in-201": {
+  "verdict": "keep",
+  "why": "Left side is pink wall and his shadow, clear of head and rose; rows differ."
+ },
+ "in-207": {
+  "verdict": "change",
+  "why": "BR is on the dark jacket.",
+  "idea": {
+   "title_at": "TR",
+   "name_at": "TR",
+   "scale": "small",
+   "colour": "M2",
+   "font": "baskerville",
+   "note": "Small italic top right on the dark red wall, name stacked under it."
+  }
+ },
+ "in-208": {
+  "verdict": "change",
+  "why": "BR is on the jacket.",
+  "idea": {
+   "title_at": "TR",
+   "name_at": "TR",
+   "scale": "small",
+   "colour": "M2",
+   "font": "didot",
+   "note": "Small Didot top right on the red wall, name stacked under it."
+  }
+ },
+ "in-209": {
+  "verdict": "keep",
+  "why": "TL and BL are wall and shadow on the side he looks toward; rows differ."
+ },
+ "in-210": {
+  "verdict": "keep",
+  "why": "He looks left into amber wall; TL and BL are clear."
+ },
+ "in-211": {
+  "verdict": "keep",
+  "why": "Profile looks left into clean amber wall; TL and BL clear."
+ },
+ "in-212": {
+  "verdict": "keep",
+  "why": "Left two thirds are wall and shadow; both zones clear of him."
+ },
+ "in-213": {
+  "verdict": "keep",
+  "why": "TL red wall and BL shadow, both clear of head and rose."
+ },
+ "in-214": {
+  "verdict": "keep",
+  "why": "TL and BL clear wall where he looks; note says over the shadow but TL is clean wall, same placement."
+ },
+ "in-216": {
+  "verdict": "keep",
+  "why": "He looks left into bright red wall; TL and BL clear."
+ },
+ "in-218": {
+  "verdict": "keep",
+  "why": "Left half is wall where he looks down; both zones clear."
+ },
+ "in-221": {
+  "verdict": "change",
+  "why": "BR is on the jacket.",
+  "idea": {
+   "title_at": "TR",
+   "name_at": "TR",
+   "scale": "small",
+   "colour": "M2",
+   "font": "optima",
+   "note": "Small capitals top right on the red wall, name stacked under it."
+  }
+ },
+ "in-223": {
+  "verdict": "change",
+  "why": "Title and name sit side by side on the same top row (rule 3).",
+  "idea": {
+   "title_at": "TL",
+   "name_at": "TL",
+   "scale": "small",
+   "colour": "M2",
+   "font": "didot",
+   "note": "Small Didot top left on the red wall, name stacked under it."
+  }
+ },
+ "in-225": {
+  "verdict": "change",
+  "why": "His hair spikes into TR and BR is roses; TL is the clean wall.",
+  "idea": {
+   "title_at": "TL",
+   "name_at": "TL",
+   "scale": "small",
+   "colour": "M2",
+   "font": "ogg",
+   "note": "Small italic title top left on the red wall, name stacked under it."
+  }
+ },
+ "in-231": {
+  "verdict": "change",
+  "why": "Title and name sit side by side on the same top row (rule 3).",
+  "idea": {
+   "title_at": "TR",
+   "name_at": "TR",
+   "scale": "small",
+   "colour": "M2",
+   "font": "baskerville",
+   "note": "Small italic top right on the red wall, name stacked under it."
+  }
+ },
+ "in-233": {
+  "verdict": "change",
+  "why": "BR is on the roses and jacket.",
+  "idea": {
+   "title_at": "TR",
+   "name_at": "TR",
+   "scale": "small",
+   "colour": "M2",
+   "font": "ogg",
+   "note": "Small italic title top right on the red wall, name stacked under it."
+  }
+ },
+ "in-234": {
+  "verdict": "change",
+  "why": "Title and name sit side by side on the same top row (rule 3).",
+  "idea": {
+   "title_at": "TR",
+   "name_at": "TR",
+   "scale": "small",
+   "colour": "M2",
+   "font": "didot",
+   "note": "Small Didot top right on the red wall, name stacked under it."
+  }
+ },
+ "in-235": {
+  "verdict": "change",
+  "why": "Title and name sit side by side on the same top row (rule 3).",
+  "idea": {
+   "title_at": "TR",
+   "name_at": "TR",
+   "scale": "small",
+   "colour": "F",
+   "font": "baskerville",
+   "note": "Blush italic small top right on the pink wall, name stacked under it."
+  }
+ },
+ "in-238": {
+  "verdict": "change",
+  "why": "BL is on the jacket; the bouquet is centre, not right.",
+  "idea": {
+   "title_at": "TL",
+   "name_at": "TL",
+   "scale": "large",
+   "colour": "M2",
+   "font": "editorial_i",
+   "note": "Large italic top left on the shadow wall, name stacked under it."
+  }
+ },
+ "in-239": {
+  "verdict": "change",
+  "why": "BR is on the roses and jacket.",
+  "idea": {
+   "title_at": "TR",
+   "name_at": "TR",
+   "scale": "small",
+   "colour": "M2",
+   "font": "ogg",
+   "note": "Small italic top right on the red wall, name stacked under it."
+  }
+ },
+ "in-241": {
+  "verdict": "change",
+  "why": "Title and name sit side by side on the same top row (rule 3).",
+  "idea": {
+   "title_at": "TL",
+   "name_at": "TL",
+   "scale": "small",
+   "colour": "C",
+   "font": "typewriter",
+   "note": "Small typewriter title top left on the pale wall, name stacked under it."
+  }
+ },
+ "in-242": {
+  "verdict": "change",
+  "why": "Title and name sit side by side on the same bottom row (rule 3).",
+  "idea": {
+   "title_at": "BL",
+   "name_at": "BL",
+   "scale": "large",
+   "colour": "M2",
+   "font": "apoc",
+   "note": "The roses fill the top; large title bottom left on the near-black jacket, name stacked under it."
+  }
+ },
+ "in-244": {
+  "verdict": "change",
+  "why": "BL is on the roses, not shadow.",
+  "idea": {
+   "title_at": "TL",
+   "name_at": "TL",
+   "scale": "large",
+   "colour": "M2",
+   "font": "mohave",
+   "note": "Large condensed capitals top left on the red wall, name stacked under it."
+  }
+ },
+ "in-245": {
+  "verdict": "change",
+  "why": "Title and name sit side by side on the same bottom row (rule 3). Both bottom corners hold hands.",
+  "idea": {
+   "title_at": "TL",
+   "name_at": "TL",
+   "scale": "large",
+   "colour": "M2",
+   "font": "conclave",
+   "note": "Large title in the black top-left corner beside the roses, name stacked under it."
+  }
+ },
+ "in-246": {
+  "verdict": "change",
+  "why": "Title and name sit side by side on the same top row (rule 3).",
+  "idea": {
+   "title_at": "TR",
+   "name_at": "TR",
+   "scale": "small",
+   "colour": "M2",
+   "font": "optima",
+   "note": "Small capitals top right on the red wall above the open hand, name stacked under it."
+  }
+ },
+ "in-247": {
+  "verdict": "change",
+  "why": "Title and name sit side by side on the same top row (rule 3).",
+  "idea": {
+   "title_at": "TR",
+   "name_at": "TR",
+   "scale": "small",
+   "colour": "M2",
+   "font": "didot",
+   "note": "Small Didot top right on the red wall, the rose stays the centre, name stacked under it."
+  }
+ },
+ "in-249": {
+  "verdict": "change",
+  "why": "Title and name sit side by side on the same top row (rule 3).",
+  "idea": {
+   "title_at": "TR",
+   "name_at": "TR",
+   "scale": "small",
+   "colour": "M2",
+   "font": "jost",
+   "note": "Light capitals top right on the dark red wall, name stacked under it."
+  }
+ },
+ "in-250": {
+  "verdict": "change",
+  "why": "Title and name sit side by side on the same top row (rule 3).",
+  "idea": {
+   "title_at": "TR",
+   "name_at": "TR",
+   "scale": "small",
+   "colour": "M2",
+   "font": "baskerville",
+   "note": "Small italic top right on the red wall, name stacked under it."
+  }
+ },
+ "in-252": {
+  "verdict": "change",
+  "why": "Title and name sit side by side on the same top row (rule 3).",
+  "idea": {
+   "title_at": "TR",
+   "name_at": "TR",
+   "scale": "small",
+   "colour": "M2",
+   "font": "optima",
+   "note": "Small capitals top right on the red wall, name stacked under it."
+  }
+ },
+ "in-254": {
+  "verdict": "change",
+  "why": "Title and name sit side by side on the same top row (rule 3).",
+  "idea": {
+   "title_at": "TR",
+   "name_at": "TR",
+   "scale": "small",
+   "colour": "M2",
+   "font": "copperplate",
+   "note": "Engraved capitals top right on the dark red wall, name stacked under it."
+  }
+ },
+ "in-255": {
+  "verdict": "change",
+  "why": "BR is mostly jacket.",
+  "idea": {
+   "title_at": "TR",
+   "name_at": "TR",
+   "scale": "small",
+   "colour": "M3",
+   "font": "ogg",
+   "note": "Moon violet italic small top right on the purple wall, name stacked under it."
+  }
+ },
+ "in-258": {
+  "verdict": "change",
+  "why": "BR is jacket; the right third is not empty wall.",
+  "idea": {
+   "title_at": "TR",
+   "name_at": "TR",
+   "scale": "large",
+   "colour": "M2",
+   "font": "editorial_i",
+   "note": "Large italic top right on the red wall beside the head, name stacked under it."
+  }
+ },
+ "in-259": {
+  "verdict": "change",
+  "why": "BR is on the jacket.",
+  "idea": {
+   "title_at": "TR",
+   "name_at": "TR",
+   "scale": "large",
+   "colour": "M2",
+   "font": "noe",
+   "note": "Large serif top right on the pink wall, name stacked under it."
+  }
+ },
+ "in-260": {
+  "verdict": "change",
+  "why": "BR is on the jacket.",
+  "idea": {
+   "title_at": "TR",
+   "name_at": "TR",
+   "scale": "large",
+   "colour": "M2",
+   "font": "migra_xl",
+   "note": "Large hairline italic top right on the red wall, name stacked under it."
+  }
+ },
+ "in-261": {
+  "verdict": "keep",
+  "why": "TL beside the rose and BL shadow wall are clear of him; rows differ."
+ },
+ "in-263": {
+  "verdict": "change",
+  "why": "BR is on the jacket.",
+  "idea": {
+   "title_at": "TR",
+   "name_at": "TR",
+   "scale": "large",
+   "colour": "M2",
+   "font": "didot",
+   "note": "Large Didot top right on the red wall, name stacked under it."
+  }
+ },
+ "in-265": {
+  "verdict": "change",
+  "why": "Title and name sit side by side on the same top row (rule 3).",
+  "idea": {
+   "title_at": "TL",
+   "name_at": "TL",
+   "scale": "large",
+   "colour": "M2",
+   "font": "jost",
+   "note": "Large light capitals top left in the black above the railing, name stacked under it."
+  }
+ },
+ "in-267": {
+  "verdict": "keep",
+  "why": "TR black and BR railing and ground, clear of him; rows differ."
+ },
+ "in-269": {
+  "verdict": "change",
+  "why": "Title and name sit side by side on the same top row (rule 3).",
+  "idea": {
+   "title_at": "TL",
+   "name_at": "TL",
+   "scale": "large",
+   "colour": "M2",
+   "font": "futura_xb",
+   "note": "Big capitals top left in the black, name stacked under it."
+  }
+ },
+ "in-272": {
+  "verdict": "change",
+  "why": "Title and name sit side by side on the same top row (rule 3).",
+  "idea": {
+   "title_at": "TL",
+   "name_at": "TL",
+   "scale": "large",
+   "colour": "M2",
+   "font": "impact",
+   "note": "Big platinum title top left in the black sky, name stacked under it."
+  }
+ },
+ "in-276": {
+  "verdict": "change",
+  "why": "Title and name sit side by side on the same top row (rule 3).",
+  "idea": {
+   "title_at": "TL",
+   "name_at": "TL",
+   "scale": "large",
+   "colour": "M2",
+   "font": "apoc",
+   "note": "Large title top left in the black, name stacked under it."
+  }
+ },
+ "in-277": {
+  "verdict": "change",
+  "why": "Title and name sit side by side on the same bottom row (rule 3). The bottom row is scooter, bikes and cobbles; the emptiness is the dark top.",
+  "idea": {
+   "title_at": "TL",
+   "name_at": "TL",
+   "scale": "small",
+   "colour": "M3",
+   "font": "matthews",
+   "note": "Small thin capitals top left in the dark, name stacked under it; the tiny figure and lamp stay alone."
+  }
+ },
+ "in-280": {
+  "verdict": "change",
+  "why": "TL is busy foliage and BR is the bikes; the calm area is the sky top right.",
+  "idea": {
+   "title_at": "TR",
+   "name_at": "TR",
+   "scale": "small",
+   "colour": "M3",
+   "font": "jost",
+   "note": "Light capitals top right in the dark blue sky, name stacked under it."
+  }
+ },
+ "in-281": {
+  "verdict": "change",
+  "why": "BR lands on the bikes.",
+  "idea": {
+   "title_at": "TR",
+   "name_at": "TR",
+   "scale": "small",
+   "colour": "M3",
+   "font": "optima",
+   "note": "Small capitals top right in the sky, name stacked under it."
+  }
+ },
+ "in-282": {
+  "verdict": "keep",
+  "why": "TR sky and BR cobbles below the bikes are clear of him; rows differ."
+ },
+ "in-283": {
+  "verdict": "keep",
+  "why": "TR house wall and BR dark street are clear of him; rows differ."
+ },
+ "in-284": {
+  "verdict": "change",
+  "why": "The note says head top left but it is centre; the right half is windows and hedge, busy.",
+  "idea": {
+   "title_at": "TL",
+   "name_at": "BL",
+   "scale": "large",
+   "colour": "M3",
+   "font": "migra_xl",
+   "note": "Head bowed centre: large hairline italic top left on the dark building, name bottom left on the dark cobbles."
+  }
+ },
+ "in-285": {
+  "verdict": "keep",
+  "why": "TR house wall and BR cobbles and hedge are clear of him; rows differ."
+ }
+}

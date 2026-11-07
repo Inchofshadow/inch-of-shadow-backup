@@ -1,0 +1,1 @@
+Light: fog and soft diffuse light, no hard shadows, haze and depth.

@@ -1,0 +1,46 @@
+Title: Spotify for Artists
+URL: https://artists.spotify.com/c/artist/5k4SyH7JRPMJe1RHYMI2CT/audience/stats?fromDate=2026-10-13&toDate=2026-10-19&metric=listeners
+Source element: <main>
+---
+You have 115 monthly active listeners
+
+This is 59% of your 196 monthly listeners.
+
+Learn more
+76% of your streams came from your monthly active listeners in the last 28 days.
+You got 3.2 streams / listener from your monthly active listeners in the last 28 days.
+3.2
+India, South Africa, and Australia have the highest share of monthly active listeners in the past 28 days.
+
+Stats this period
+
+Oct 13, 2026 - Oct 19, 2026 · Worldwide
+
+7 days
+28 days
+12 months
+Filters
+Listeners
+65
+4.8%
+Monthly active listeners
+115
+-2.5%
+Streams
+100
+-27.0%
+Streams / Listener
+1.5
+-30.4%
+Saves
+0
+-100.0%
+Playlist adds
+22
+-21.4%
+Followers
+67
+3.1%
+Filter by source of streams
+Oct 13
+Oct 14

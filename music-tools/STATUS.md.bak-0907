@@ -1,0 +1,83 @@
+# Sample Library — What We Have, What We Want
+
+Updated 7 Sep 2026
+
+---
+
+## WHAT WE HAVE
+
+### Racks built — 34, all confirmed loading in Live
+
+Location: `~/Music/Ableton/User Library/- Drum Racks/`
+Samples stay in `~/Desktop/SAMPLES MAC/<set>/renamed/` — racks point there by relative + absolute path.
+
+| Set | Racks | Notes |
+|---|---|---|
+| Drum Machines | 26 | one per machine, max 32 pads; YamahaRX5 I (studio) + II (tape) |
+| Eitan Kicks | 6 | by note: E 18 · F 34 · F# 31 · G 28 · G# 22 · Other 27 — nothing cut |
+| Splice | 2 | Tambourines 17 · Rides 22 |
+
+Pad naming: `Type [Note] NN Machine` — e.g. `Conga [C#] 02 LM1`, `Kick [F] 14 SoftSat`. No bracket = no pitch found.
+All pads start at C1. All at -6 dBFS. Originals never touched.
+
+Two template bugs found 4 Sep when Amir loaded a rack: RelativePathType must be 1 with real size + CRC-16/0x8005,
+and ReceivingNote is stored as 128-MIDI. Both fixed in the tool. "Valid XML" is not verification; loading in Live is.
+
+### Presets installed
+
+| Plugin | Count | Banks |
+|---|---|---|
+| Serum 2 | 118 | Witch House, Crystal Castles, AoKor Witchouse, AoKor Hyperpop, Track Remakes, Synths |
+| Serum 1 | 82 | same, minus the Serum-2-only formats |
+| Trigger 2 | Terminator snare | 42 instruments, pitch-labelled D#/F/G#, presets intentionally broken by rename |
+| ShaperBox / RC-20 / Portal | 10 | filed |
+
+### Ableton User Library (7 Sep)
+Root: `- Drum Racks`, `- MIX` (dash = Amir's, no dash = Ableton's), then 11 racks: `DRUM -` x6, `FX -` x3, `GTR -` x1.
+VST3 presets filed under `Presets/Plugin Presets/<plugin>/`. 4 duplicate M1/Pro-G removed. 228 .asd in Samples left alone (may hold warp markers on recorded loops).
+
+### Library cleaned
+
+| Pack | Before | After |
+|---|---|---|
+| Cluster New Wave | 2.1 GB | 61 MB |
+| Witch House Samples | 1.0 GB | 484 MB, sorted by type, 91 samples pitch-tagged |
+| Industrial EBM | 810 MB | 610 MB, 104 unused drum loops removed |
+| Trigger 2 library | 3.7 GB | 2.8 GB |
+| .asd cache | 4,158 files | 0 |
+
+SAMPLES MAC: 14 GB -> 6.3 GB  (Snaers pack deleted 4 Sep, 3.3 GB; Perx deleted; files/files 2 deleted)
+
+### Audited, nothing built yet
+
+- **Eitan Rieter** — 1,070 files, 4.7 GB. Your most-used pack. "Kick Eat you B" is in 48 project files.
+- **Snaers pack** — 6,336 files = one snare, 6 sounds. Rack built. 3.3 GB waiting for your delete.
+- **Industrial EBM** — 165 one-shots (vocal clips, synth shots, alarms, FX). No drum one-shots exist.
+- **Splice** — 1,416 files fully categorised. 2 racks built, 7 queued.
+- **All 2,972 project files** — usage CSV on Desktop.
+
+### Not opened at all
+
+Travis Scott MIDI Kit (88) · TRNSNT2 Primal Kicks (160) · Elektron Sound Pack (zips only) · 37 of the 49 drum machines
+
+---
+
+## WHAT WE WANT TO CREATE
+
+Core plan is DONE. Everything below is optional, on request only.
+
+1. **23 drum machines never racked** — same command.
+2. **7 Splice racks** queued in RACKS.md: Shakers 22 · Bells 21 · Hand Perc 21 · Risers 18 · Wood & Clicks 18 · Impacts 28 · Foley & Lasers 32.
+3. **Kick-by-note across all machines** — all 12 notes now present (141 pitched pads in machine racks + 153 Eitan).
+4. **5 untyped samples** — 1 in R8 (file named `v`), 4 in XR10.
+5. **Elektron Sound Pack** — 5 zips, 0 audio, never opened.
+
+## RULES IN FORCE
+
+- Originals are never renamed or moved. The tool copies.
+- Max 32 pads per rack (two pages of 16).
+- One-shots only. No loops in racks.
+- Pitch marker is `[C#]` in brackets, real sharp sign, no octave. Type first, machine last.
+- Pitch only shown at 80%+ confidence.
+- **Every delete is verified against all projects, counted in songs not files, before it happens.**
+- Nothing moves without your word.

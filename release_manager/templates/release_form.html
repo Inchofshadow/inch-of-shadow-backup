@@ -1,0 +1,169 @@
+{% extends "base.html" %}
+{% block title %}{{ "Edit " + release.metadata.title if release else "New Release" }}{% endblock %}
+
+{% block content %}
+<div class="form-page">
+    <nav class="breadcrumb">
+        <a href="{{ url_for('dashboard') }}">Releases</a>
+        {% if release %}
+        <span class="breadcrumb-sep">/</span>
+        <a href="{{ url_for('release_detail', slug=release.slug) }}">{{ release.metadata.title }}</a>
+        <span class="breadcrumb-sep">/</span>
+        <span class="breadcrumb-current">Edit</span>
+        {% else %}
+        <span class="breadcrumb-sep">/</span>
+        <span class="breadcrumb-current">New Release</span>
+        {% endif %}
+    </nav>
+    <h1>{{ "Edit Release" if release else "New Release" }}</h1>
+
+    <form method="POST" action="{{ url_for('release_edit', slug=release.slug) if release else url_for('release_new') }}">
+        <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+
+        <div class="form-group">
+            <label for="title">Title *</label>
+            <input type="text" id="title" name="title" required
+                   value="{{ release.metadata.title if release else '' }}"
+                   placeholder="e.g. Dark Disco Acid">
+        </div>
+
+        <div class="form-row">
+            <div class="form-group">
+                <label for="release_type">Type *</label>
+                <select id="release_type" name="release_type" required>
+                    {% for rt in RELEASE_TYPES %}
+                    <option value="{{ rt }}" {{ 'selected' if release and release.metadata.release_type == rt }}>{{ rt }}</option>
+                    {% endfor %}
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="release_date">Release Date *</label>
+                <input type="date" id="release_date" name="release_date" required
+                       value="{{ release.release_date if release else '' }}">
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="form-group">
+                <label for="genre_primary">Primary Genre</label>
+                <input type="text" id="genre_primary" name="genre_primary" list="genre-list"
+                       value="{{ release.metadata.genre_primary if release else '' }}"
+                       placeholder="e.g. Dark Disco">
+            </div>
+
+            <div class="form-group">
+                <label for="genre_secondary">Secondary Genre</label>
+                <input type="text" id="genre_secondary" name="genre_secondary" list="genre-list"
+                       value="{{ release.metadata.genre_secondary if release else '' }}"
+                       placeholder="e.g. Acid">
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="description">Description (used for Spotify pitch & platform bios)</label>
+            <textarea id="description" name="description" rows="3"
+                      placeholder="Describe your release — mood, story, influences. Max 500 chars for Spotify pitch.">{{ release.metadata.description if release else '' }}</textarea>
+        </div>
+
+        {% if release %}
+        <hr class="form-divider">
+        <h2>Distribution & Metadata</h2>
+
+        <div class="form-row">
+            <div class="form-group">
+                <label for="copyright">Copyright</label>
+                <input type="text" id="copyright" name="copyright"
+                       value="{{ release.metadata.copyright }}"
+                       placeholder="2026 Inch of Shadow">
+            </div>
+
+            <div class="form-group">
+                <label for="catalog_number">Catalog Number</label>
+                <input type="text" id="catalog_number" name="catalog_number"
+                       value="{{ release.metadata.catalog_number }}">
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="form-group">
+                <label for="distributor">Distributor</label>
+                <input type="text" id="distributor" name="distributor"
+                       value="{{ release.distribution.distributor }}"
+                       placeholder="e.g. Symphonic">
+            </div>
+
+            <div class="form-group">
+                <label for="upc">UPC</label>
+                <input type="text" id="upc" name="upc"
+                       value="{{ release.distribution.upc }}"
+                       placeholder="Assigned by distributor">
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="form-group">
+                <label for="distributor_id">Distributor Release ID</label>
+                <input type="text" id="distributor_id" name="distributor_id"
+                       value="{{ release.distribution.distributor_id or '' }}"
+                       placeholder="Symphonic release ID">
+            </div>
+
+            <div class="form-group">
+                <label for="dist_status">Distribution Status</label>
+                <select id="dist_status" name="dist_status">
+                    {% for s in DISTRIBUTION_STATUSES %}
+                    <option value="{{ s }}" {{ 'selected' if release.distribution.get('status', 'draft') == s }}>{{ s|title }}</option>
+                    {% endfor %}
+                </select>
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="form-group">
+                <label for="submitted_date">Submitted Date</label>
+                <input type="date" id="submitted_date" name="submitted_date"
+                       value="{{ release.distribution.submitted_date or '' }}">
+            </div>
+
+            <div class="form-group">
+                <label for="approved_date">Approved Date</label>
+                <input type="date" id="approved_date" name="approved_date"
+                       value="{{ release.distribution.get('approved_date', '') }}">
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="form-group">
+                <label for="live_date">Live Date</label>
+                <input type="date" id="live_date" name="live_date"
+                       value="{{ release.distribution.live_date or '' }}">
+            </div>
+
+            <div class="form-group">
+                <label for="dist_notes">Distribution Notes</label>
+                <input type="text" id="dist_notes" name="dist_notes"
+                       value="{{ release.distribution.notes or '' }}"
+                       placeholder="Any notes about this submission">
+            </div>
+        </div>
+
+        {% endif %}
+
+        <div class="form-actions">
+            <button type="submit" class="btn btn-accent">{{ "Save Changes" if release else "Create Release" }}</button>
+            {% if release %}
+            <a href="{{ url_for('release_detail', slug=release.slug) }}" class="btn btn-secondary">Cancel</a>
+            {% else %}
+            <a href="{{ url_for('dashboard') }}" class="btn btn-secondary">Cancel</a>
+            {% endif %}
+        </div>
+    </form>
+
+    <datalist id="genre-list">
+        {% for g in saved_genres %}
+        <option value="{{ g }}">
+        {% endfor %}
+    </datalist>
+</div>
+{% endblock %}

@@ -1,0 +1,216 @@
+[
+ {
+  "name": "Living in the ruins of a lost future",
+  "insight": "Decaying modernist and brutalist spaces trigger a double feeling: these places look sad and ugly but also beautiful. Listeners say they miss a past they never lived, or a future that was taken from them. The ache is about time and loss more than politics.",
+  "examples": [
+   "feels like we now live in leftover ruins",
+   "grief for a stolen future, not for the past itself",
+   "recognizing a place as home despite never living there",
+   "ugly and sad yet somehow beautiful and atmospheric"
+  ],
+  "evidence_ids": [
+   3,
+   6,
+   9,
+   15,
+   18,
+   21,
+   24,
+   27,
+   31,
+   12
+  ],
+  "use": "A night walk through a concrete housing block where the narrator mourns the future the building once promised, then dances in its stairwell.",
+  "strength": 5
+ },
+ {
+  "name": "Dancing alone through the sadness",
+  "insight": "Listeners describe crying and dancing at once. They dance alone in their rooms, and despair turns into euphoria on the floor. Sadness is something you move through, not something you sit in.",
+  "examples": [
+   "goth nerds dancing alone in their bedrooms",
+   "wanting to dance in sadness and dark memories",
+   "cried and danced at the same show",
+   "euphoric despair"
+  ],
+  "evidence_ids": [
+   110,
+   111,
+   254,
+   276,
+   70,
+   122,
+   109
+  ],
+  "use": "A chorus built around permission to dance while grieving, with the body moving forward while the heart stays behind.",
+  "strength": 5
+ },
+ {
+  "name": "Solitude as identity and wound",
+  "insight": "Loneliness comes up often: being the only one who listens to this music, feeling like an introvert, being trapped in a self-built cage. The music both mirrors the isolation and keeps the listener company.",
+  "examples": [
+   "dark morning commute, thinking about being alone",
+   "these songs got me through lonely broken times",
+   "left the city for freedom but loneliness followed",
+   "a manifesto of modern loneliness"
+  ],
+  "evidence_ids": [
+   106,
+   107,
+   101,
+   201,
+   0,
+   77
+  ],
+  "use": "Someone who locked their own cage and threw away the key, singing to the key rather than to a lover.",
+  "strength": 5
+ },
+ {
+  "name": "Stuck in routine, dreaming of escape",
+  "insight": "Many listeners tie songs to work, commutes and grey weekdays. The tension is between wanting to run and accepting the daily loop. The music also works as an ironic soundtrack to retail jobs and buses.",
+  "examples": [
+   "the bus to work, again",
+   "the ultimate stuck-at-a-retail-job song",
+   "wanting to escape vs accepting routine",
+   "Monday morning after a hard weekend"
+  ],
+  "evidence_ids": [
+   90,
+   91,
+   41,
+   25,
+   106,
+   318,
+   298
+  ],
+  "use": "A song set on the first U-Bahn on Monday, still wearing Saturday's glitter, with the pull back toward the club fighting the pull toward the office.",
+  "strength": 4
+ },
+ {
+  "name": "Music as refuge and dissociation",
+  "insight": "Songs are described as a safe inner room: calming, steadying, a reason to keep living. One listener compares it to retreating into a mental space to survive a brutal system. Another feels it like a wise older brother.",
+  "examples": [
+   "a mental escape from the system's brutality",
+   "calming, magically reassuring",
+   "at 57, makes me want to keep living",
+   "whatever happens I always return here"
+  ],
+  "evidence_ids": [
+   311,
+   164,
+   231,
+   202,
+   34,
+   33,
+   129,
+   318
+  ],
+  "use": "Describe a private room inside the beat where the narrator hides from the city, the one place nothing can follow.",
+  "strength": 4
+ },
+ {
+  "name": "Midnight club heat and menace",
+  "insight": "The dark club between midnight and 2am is a recurring scene: sleaze, sensuality and a bassline that stalks. Pain is shut out of the room, and there is a reckless, slightly forbidden thrill.",
+  "examples": [
+   "what dark clubs feel like from 12 to 2am",
+   "bassline stalking in the dark, midnight hypnosis",
+   "checking nobody sees my screen",
+   "makes me want to run every red light"
+  ],
+  "evidence_ids": [
+   121,
+   109,
+   57,
+   86,
+   117,
+   151,
+   50,
+   138
+  ],
+  "use": "A track that tightens like a predatory bassline in a basement at 1am, where desire and danger can't be told apart.",
+  "strength": 4
+ },
+ {
+  "name": "Echoes of youth and the 80s",
+  "insight": "Older listeners feel their teenage new wave years return. Younger ones romanticize or 'fever dream' an 80s they never had. Memories of studying at night and better times also come back.",
+  "examples": [
+   "heartbeats of my youth",
+   "reminds me of being 15-20 in the 80s",
+   "fever dream of the band at my old college",
+   "studying at night in university"
+  ],
+  "evidence_ids": [
+   174,
+   179,
+   161,
+   38,
+   12,
+   77,
+   302,
+   221
+  ],
+  "use": "Two people of different ages on the same dance floor, one remembering, one inventing the same decade.",
+  "strength": 4
+ },
+ {
+  "name": "Anthem for a lost generation",
+  "insight": "Listeners give songs collective, political weight. They speak of a lost generation meeting in the shadows, grief after the earthquake, and youth feeling oppressed. Displaced emigrants hear home in the music.",
+  "examples": [
+   "a lost generation meeting in familiar shadows",
+   "release date echoing the earthquake anniversary",
+   "displaced citizen who fled as a small child",
+   "our goth days, now everything is wrecked"
+  ],
+  "evidence_ids": [
+   195,
+   200,
+   206,
+   197,
+   214,
+   219,
+   271
+  ],
+  "use": "A song for a scattered generation who only recognize each other in the dark of a club, far from where they grew up.",
+  "strength": 3
+ },
+ {
+  "name": "Songs as imagined film scenes",
+  "insight": "Listeners turn tracks into cinema. They picture elite kids raving inside a fortress, Cronenberg and Lynch scenes, surreal horror sets, and body-horror machines.",
+  "examples": [
+   "rich kids raving in a fortified citadel, unaware of outside",
+   "Lynchian Americana with gothic dread",
+   "perfect backdrop for surreal horror",
+   "a Cronenberg summer"
+  ],
+  "evidence_ids": [
+   1,
+   21,
+   68,
+   71,
+   76,
+   111,
+   232,
+   61
+  ],
+  "use": "Write lyrics as a single shot: a dystopian rave behind walls while real ruins flicker on the screens.",
+  "strength": 3
+ },
+ {
+  "name": "Cold sound against the weather",
+  "insight": "Weather and season frame the listening. Cold music is a relief in a heatwave, a winter release suits the gloom, and rain plus a warm bed plus a dark song equals contentment. Some also enjoy 'summertime goth'.",
+  "examples": [
+   "temperatures rise but the music stays cold",
+   "releasing in gloomy winter feels right",
+   "rain, cozy bed, new dark song",
+   "summertime goth vibes"
+  ],
+  "evidence_ids": [
+   53,
+   190,
+   196,
+   94,
+   71
+  ],
+  "use": "A summer song that keeps the narrator's heart deliberately frozen, playing heat outside against ice inside.",
+  "strength": 3
+ }
+]

@@ -1,0 +1,778 @@
+{
+  "timestamp": "2026-04-09T03:13:17",
+  "platforms": {
+    "spotify": {
+      "followers": null,
+      "popularity": null,
+      "genres": [],
+      "top_tracks": [],
+      "albums": [
+        {
+          "name": "The Tour",
+          "type": "single",
+          "group": "single",
+          "release_date": "2025-12-19",
+          "total_tracks": 1,
+          "markets": 0,
+          "id": "5GVdzNskCVwlu8n7uSwbhh",
+          "tracks": [
+            {
+              "number": 1,
+              "name": "The Tour - Inch of Shadow Remix",
+              "duration": "5:41",
+              "id": "7lJpdoNYQC1Uh85yLOqE2W",
+              "artists": "La Groove Machine, Inch of Shadow"
+            }
+          ]
+        },
+        {
+          "name": "Meltscape",
+          "type": "single",
+          "group": "single",
+          "release_date": "2025-09-19",
+          "total_tracks": 3,
+          "markets": 0,
+          "id": "6fGzTiQSnZo8QAyiBmR7BM",
+          "tracks": [
+            {
+              "number": 1,
+              "name": "The Cure",
+              "duration": "5:55",
+              "id": "0XtYWhOsV49tSGFk5Zz66m",
+              "artists": "Status Zero, Inch of Shadow"
+            },
+            {
+              "number": 2,
+              "name": "Meltscape",
+              "duration": "6:26",
+              "id": "625L6c0Hh0Aq3EJX2K4t1f",
+              "artists": "Status Zero, Inch of Shadow"
+            },
+            {
+              "number": 3,
+              "name": "Mind Eaten",
+              "duration": "6:00",
+              "id": "0iKo5HKE4kSvnnsKIM49om",
+              "artists": "Status Zero, Inch of Shadow"
+            }
+          ]
+        },
+        {
+          "name": "Eastern Stars",
+          "type": "single",
+          "group": "single",
+          "release_date": "2024-12-20",
+          "total_tracks": 5,
+          "markets": 0,
+          "id": "3PYFHLJACcCRSvGPaymJzZ",
+          "tracks": [
+            {
+              "number": 1,
+              "name": "In Between Spaces",
+              "duration": "5:15",
+              "id": "6rVXlnjMac0edk7Lk3bywd",
+              "artists": "La Groove Machine, Inch of Shadow"
+            },
+            {
+              "number": 2,
+              "name": "ACID Gangsta",
+              "duration": "5:44",
+              "id": "6znfL1X9PUTskrLntlCfA9",
+              "artists": "La Groove Machine, Inch of Shadow"
+            },
+            {
+              "number": 3,
+              "name": "Dark Scales",
+              "duration": "5:04",
+              "id": "5U7L5A9cPrHUgHxNvjcWg3",
+              "artists": "La Groove Machine, Inch of Shadow"
+            },
+            {
+              "number": 4,
+              "name": "The Alchemist Ritual",
+              "duration": "4:45",
+              "id": "2sgH9mQw0OqGzrZdr9wXdN",
+              "artists": "La Groove Machine, Inch of Shadow"
+            },
+            {
+              "number": 5,
+              "name": "Compass Rose",
+              "duration": "5:40",
+              "id": "4ob40Kh1buvehWSUYuSLLz",
+              "artists": "La Groove Machine, Inch of Shadow"
+            }
+          ]
+        },
+        {
+          "name": "In Between Friends",
+          "type": "album",
+          "group": "album",
+          "release_date": "2025-11-12",
+          "total_tracks": 6,
+          "markets": 0,
+          "id": "675uhTjGqv4XZTdvmpTcWn",
+          "tracks": [
+            {
+              "number": 1,
+              "name": "Wunderbar",
+              "duration": "5:05",
+              "id": "46JVxuWHl7JLny98jhXAUx",
+              "artists": "In Between"
+            },
+            {
+              "number": 2,
+              "name": "Cat in Chapora",
+              "duration": "5:37",
+              "id": "42cGfSA83UjR7LUqWXFvWx",
+              "artists": "In Between, Panta Rhei"
+            },
+            {
+              "number": 3,
+              "name": "Discodelica",
+              "duration": "5:01",
+              "id": "0BXqOFOkL6g1beO9QWtIwZ",
+              "artists": "In Between"
+            },
+            {
+              "number": 4,
+              "name": "Acid Masala",
+              "duration": "5:46",
+              "id": "4LzC9DVSAZXZI5U2FICcGC",
+              "artists": "In Between, Status Zero"
+            },
+            {
+              "number": 5,
+              "name": "Back to the Source",
+              "duration": "6:02",
+              "id": "1e89sRP99H2PHpbQ3H5mL2",
+              "artists": "In Between"
+            },
+            {
+              "number": 6,
+              "name": "Taka Juno",
+              "duration": "5:21",
+              "id": "4hQjCVsbmuMDMNdBxcsbxz",
+              "artists": "In Between, Inch of Shadow, Area 101"
+            }
+          ]
+        }
+      ],
+      "catalog_size": 4
+    },
+    "soundcloud": {
+      "followers": 108,
+      "following": 126,
+      "track_count": 6,
+      "playlist_count": 1,
+      "total_plays": 548,
+      "total_likes": 43,
+      "total_reposts": 22,
+      "total_comments": 11,
+      "total_downloads": 0,
+      "tracks": [
+        {
+          "title": "Inch of Shadow b2b AREA 101 @ About Blank, Berlin",
+          "plays": 196,
+          "likes": 16,
+          "reposts": 4,
+          "comments": 3,
+          "downloads": 0,
+          "genre": "Dark Disco",
+          "created": "2025/06/05",
+          "duration_ms": 5389767
+        },
+        {
+          "title": "Inch of Shadow & Status Zero \u2013 Mind Eaten (Meltscape EP)",
+          "plays": 150,
+          "likes": 2,
+          "reposts": 0,
+          "comments": 0,
+          "downloads": 0,
+          "genre": "Acid Techno",
+          "created": "2026/03/28",
+          "duration_ms": 360045
+        },
+        {
+          "title": "The Tour - Inch of Shadow Remix",
+          "plays": 145,
+          "likes": 19,
+          "reposts": 16,
+          "comments": 6,
+          "downloads": 0,
+          "genre": "Dark Disco",
+          "created": "2025/12/18",
+          "duration_ms": 341342
+        },
+        {
+          "title": "Inch of Shadow - Farewell",
+          "plays": 17,
+          "likes": 0,
+          "reposts": 0,
+          "comments": 0,
+          "downloads": 0,
+          "genre": "EBM",
+          "created": "2026/03/24",
+          "duration_ms": 322664
+        },
+        {
+          "title": "Inch of Shadow @ THE CODE - Live Stream Marathon | Berlin",
+          "plays": 14,
+          "likes": 3,
+          "reposts": 1,
+          "comments": 1,
+          "downloads": 0,
+          "genre": "Dark Disco",
+          "created": "2026/03/16",
+          "duration_ms": 3731408
+        },
+        {
+          "title": "Inch of Shadow - The Deceiver",
+          "plays": 12,
+          "likes": 0,
+          "reposts": 0,
+          "comments": 0,
+          "downloads": 0,
+          "genre": "EBM",
+          "created": "2026/03/24",
+          "duration_ms": 341002
+        },
+        {
+          "title": "Inch of Shadow & Status Zero \u2013 Meltscape (Meltscape EP)",
+          "plays": 7,
+          "likes": 1,
+          "reposts": 0,
+          "comments": 0,
+          "downloads": 0,
+          "genre": "Acid Techno",
+          "created": "2026/03/25",
+          "duration_ms": 386716
+        },
+        {
+          "title": "Inch of Shadow & Status Zero \u2013 The Cure (Meltscape EP)",
+          "plays": 7,
+          "likes": 2,
+          "reposts": 1,
+          "comments": 1,
+          "downloads": 0,
+          "genre": "Acid Techno",
+          "created": "2026/03/21",
+          "duration_ms": 355840
+        }
+      ],
+      "follower_countries": {
+        "Israel": 17,
+        "Germany": 11,
+        "Britain (UK)": 5,
+        "France": 2,
+        "Russia": 1,
+        "Switzerland": 1,
+        "Colombia": 1,
+        "Portugal": 1,
+        "Hungary": 1,
+        "Uruguay": 1,
+        "Finland": 1,
+        "United States": 1,
+        "Spain": 1,
+        "Romania": 1,
+        "Mexico": 1
+      },
+      "follower_cities": {
+        "Berlin": 12,
+        "Tel Aviv": 4,
+        "tel aviv": 3,
+        "Tel-Aviv": 2,
+        "NSK": 1,
+        "Saint Ouen l'Aum\u00f4ne": 1,
+        "Ch\u00e2tel-St-Denis": 1,
+        "Neuss": 1,
+        "Bogot\u00e1": 1,
+        "Ganne Tikva": 1,
+        "London": 1,
+        "Dj & Producer , Resident Dj": 1,
+        "Cosmic Citizen": 1,
+        "Budapest": 1,
+        "Berlin//Wolkenstein": 1
+      }
+    },
+    "youtube": {
+      "subscribers": 5,
+      "total_views": 45,
+      "video_count": 3,
+      "total_likes": 8,
+      "total_comments": 0,
+      "avg_engagement_rate": 12.6,
+      "videos": [
+        {
+          "id": "bv6NpnRqfNg",
+          "title": "Inch of Shadow \u2014 DJing My Remix in Berlin | The Code 2025",
+          "published": "2026-03-01",
+          "views": 1,
+          "likes": 0,
+          "comments": 0,
+          "engagement_rate": 0.0,
+          "duration": "PT38S"
+        },
+        {
+          "id": "VGA79_RggFg",
+          "title": "Unreleased Track \u201cThe Deceiver\u201d | Live at The Code Berlin.",
+          "published": "2026-01-11",
+          "views": 5,
+          "likes": 1,
+          "comments": 0,
+          "engagement_rate": 20.0,
+          "duration": "PT34S"
+        },
+        {
+          "id": "Cyzc44IB4TA",
+          "title": "La Groove Machine - The Tour (Inch of Shadow Remix)",
+          "published": "2025-12-23",
+          "views": 39,
+          "likes": 7,
+          "comments": 0,
+          "engagement_rate": 17.9,
+          "duration": "PT5M43S"
+        }
+      ]
+    },
+    "instagram": {
+      "followers": 779,
+      "following": 885,
+      "media_count": 83,
+      "recent_likes": 1095,
+      "recent_comments": 152,
+      "recent_reach": 8371,
+      "recent_saves": 6,
+      "recent_shares": 20,
+      "recent_posts": [
+        {
+          "id": "18149697817452635",
+          "type": "FEED",
+          "date": "2026-01-29",
+          "likes": 36,
+          "comments": 6,
+          "caption": "Tomorrow with all the gang of @collective.dada at @beateuwe_official. Playing b2",
+          "reach": 175,
+          "total_interactions": 42,
+          "saved": 0,
+          "shares": 0
+        },
+        {
+          "id": "18070362701615277",
+          "type": "FEED",
+          "date": "2026-01-04",
+          "likes": 39,
+          "comments": 15,
+          "caption": "Now that the NYE chaos fades and the white noise disappears,\nhere\u2019s my closing s",
+          "reach": 384,
+          "total_interactions": 57,
+          "saved": 1,
+          "shares": 2
+        },
+        {
+          "id": "18089132138050265",
+          "type": "FEED",
+          "date": "2025-12-24",
+          "likes": 12,
+          "comments": 4,
+          "caption": "Tomorrow Morning 09:30\nB2B with @area_101_x at @about.blank.berlin \nBy @blank_wi",
+          "reach": 167,
+          "total_interactions": 17,
+          "saved": 0,
+          "shares": 1
+        },
+        {
+          "id": "18080848295273101",
+          "type": "FEED",
+          "date": "2025-12-19",
+          "likes": 32,
+          "comments": 9,
+          "caption": "Released today \u2728\nMy remix for The Tour by @lagroovemachine_music.\nEtched into th",
+          "reach": 697,
+          "total_interactions": 47,
+          "saved": 0,
+          "shares": 5
+        },
+        {
+          "id": "18076233410047919",
+          "type": "FEED",
+          "date": "2025-09-13",
+          "likes": 15,
+          "comments": 2,
+          "caption": "Excited to play tonight at @torturegardenberlin , spinning some of my favorite b",
+          "reach": 198,
+          "total_interactions": 17,
+          "saved": 0,
+          "shares": 0
+        },
+        {
+          "id": "18393412885142189",
+          "type": "FEED",
+          "date": "2025-07-05",
+          "likes": 152,
+          "comments": 23,
+          "caption": "I had the honor of curating the music for the second time in a row for Shapes Of",
+          "reach": 931,
+          "total_interactions": 179,
+          "saved": 1,
+          "shares": 1
+        },
+        {
+          "id": "18040454996291626",
+          "type": "FEED",
+          "date": "2025-06-02",
+          "likes": 82,
+          "comments": 10,
+          "caption": "Be sure I put flowers in my hair when I visited lucid SF,\nsince people still wal",
+          "reach": 456,
+          "total_interactions": 93,
+          "saved": 0,
+          "shares": 1
+        },
+        {
+          "id": "17990154098762266",
+          "type": "FEED",
+          "date": "2024-12-29",
+          "likes": 34,
+          "comments": 8,
+          "caption": "Our new EP, Eastern Stars, dropped just a week ago, and we\u2019re still buzzing! \ud83d\udcab\n\n",
+          "reach": 451,
+          "total_interactions": 44,
+          "saved": 0,
+          "shares": 2
+        },
+        {
+          "id": "18080881171583014",
+          "type": "REELS",
+          "date": "2024-12-24",
+          "likes": 41,
+          "comments": 7,
+          "caption": "Listen now to Dark Scales from the EP \u201cEastern Stars\u201d, a collaboration with @lag",
+          "reach": 465,
+          "total_interactions": 50,
+          "saved": 0,
+          "shares": 2
+        },
+        {
+          "id": "18040254113249605",
+          "type": "REELS",
+          "date": "2024-12-20",
+          "likes": 34,
+          "comments": 6,
+          "caption": "Eastern Stars EP is out Now! \ud83c\udf1f\n\nWe\u2019re thrilled to announce that our collaborativ",
+          "reach": 552,
+          "total_interactions": 42,
+          "saved": 0,
+          "shares": 2
+        }
+      ],
+      "daily_insights": {
+        "reach": [
+          {
+            "date": "2026-03-10",
+            "value": 2
+          },
+          {
+            "date": "2026-03-11",
+            "value": 149
+          },
+          {
+            "date": "2026-03-12",
+            "value": 14
+          },
+          {
+            "date": "2026-03-13",
+            "value": 1
+          },
+          {
+            "date": "2026-03-14",
+            "value": 0
+          },
+          {
+            "date": "2026-03-15",
+            "value": 2
+          },
+          {
+            "date": "2026-03-16",
+            "value": 1
+          },
+          {
+            "date": "2026-03-17",
+            "value": 77
+          },
+          {
+            "date": "2026-03-18",
+            "value": 19
+          },
+          {
+            "date": "2026-03-19",
+            "value": 84
+          },
+          {
+            "date": "2026-03-20",
+            "value": 21
+          },
+          {
+            "date": "2026-03-21",
+            "value": 4
+          },
+          {
+            "date": "2026-03-22",
+            "value": 2
+          },
+          {
+            "date": "2026-03-23",
+            "value": 180
+          },
+          {
+            "date": "2026-03-24",
+            "value": 43
+          },
+          {
+            "date": "2026-03-25",
+            "value": 1
+          },
+          {
+            "date": "2026-03-26",
+            "value": 2
+          },
+          {
+            "date": "2026-03-27",
+            "value": 1
+          },
+          {
+            "date": "2026-03-28",
+            "value": 2
+          },
+          {
+            "date": "2026-03-29",
+            "value": 4
+          },
+          {
+            "date": "2026-03-30",
+            "value": 0
+          },
+          {
+            "date": "2026-03-31",
+            "value": 2
+          },
+          {
+            "date": "2026-04-01",
+            "value": 1
+          },
+          {
+            "date": "2026-04-02",
+            "value": 0
+          },
+          {
+            "date": "2026-04-03",
+            "value": 6
+          },
+          {
+            "date": "2026-04-04",
+            "value": 2
+          },
+          {
+            "date": "2026-04-05",
+            "value": 4
+          },
+          {
+            "date": "2026-04-06",
+            "value": 4
+          },
+          {
+            "date": "2026-04-07",
+            "value": 3
+          },
+          {
+            "date": "2026-04-08",
+            "value": 1
+          }
+        ],
+        "follower_count": [
+          {
+            "date": "2026-03-10",
+            "value": 0
+          },
+          {
+            "date": "2026-03-11",
+            "value": 0
+          },
+          {
+            "date": "2026-03-12",
+            "value": 0
+          },
+          {
+            "date": "2026-03-13",
+            "value": 1
+          },
+          {
+            "date": "2026-03-14",
+            "value": 1
+          },
+          {
+            "date": "2026-03-15",
+            "value": 0
+          },
+          {
+            "date": "2026-03-16",
+            "value": 0
+          },
+          {
+            "date": "2026-03-17",
+            "value": 0
+          },
+          {
+            "date": "2026-03-18",
+            "value": 0
+          },
+          {
+            "date": "2026-03-19",
+            "value": 3
+          },
+          {
+            "date": "2026-03-20",
+            "value": 3
+          },
+          {
+            "date": "2026-03-21",
+            "value": 0
+          },
+          {
+            "date": "2026-03-22",
+            "value": 0
+          },
+          {
+            "date": "2026-03-23",
+            "value": 0
+          },
+          {
+            "date": "2026-03-24",
+            "value": 1
+          },
+          {
+            "date": "2026-03-25",
+            "value": 1
+          },
+          {
+            "date": "2026-03-26",
+            "value": 2
+          },
+          {
+            "date": "2026-03-27",
+            "value": 0
+          },
+          {
+            "date": "2026-03-28",
+            "value": 0
+          },
+          {
+            "date": "2026-03-29",
+            "value": 0
+          },
+          {
+            "date": "2026-03-30",
+            "value": 1
+          },
+          {
+            "date": "2026-03-31",
+            "value": 3
+          },
+          {
+            "date": "2026-04-01",
+            "value": 1
+          },
+          {
+            "date": "2026-04-02",
+            "value": 1
+          },
+          {
+            "date": "2026-04-03",
+            "value": 0
+          },
+          {
+            "date": "2026-04-04",
+            "value": 0
+          },
+          {
+            "date": "2026-04-05",
+            "value": 0
+          },
+          {
+            "date": "2026-04-06",
+            "value": 0
+          },
+          {
+            "date": "2026-04-07",
+            "value": 0
+          },
+          {
+            "date": "2026-04-08",
+            "value": 0
+          }
+        ]
+      },
+      "demographics": {
+        "gender_age": {
+          "F.18-24": 8,
+          "F.25-34": 111,
+          "F.35-44": 78,
+          "F.45-54": 15,
+          "F.55-64": 3,
+          "F.65+": 3,
+          "M.18-24": 13,
+          "M.25-34": 176,
+          "M.35-44": 136,
+          "M.45-54": 40,
+          "M.55-64": 16,
+          "M.65+": 6,
+          "U.18-24": 10,
+          "U.25-34": 65,
+          "U.35-44": 48,
+          "U.45-54": 10,
+          "U.55-64": 8,
+          "U.65+": 5
+        },
+        "gender_summary": {
+          "male": 51.5,
+          "female": 29.0,
+          "unknown": 19.4
+        },
+        "countries": {
+          "DE": 294,
+          "IL": 256,
+          "US": 31,
+          "GB": 17,
+          "FR": 13,
+          "ES": 13,
+          "AU": 10,
+          "IT": 9,
+          "NL": 8,
+          "MX": 7,
+          "TH": 6,
+          "PT": 5,
+          "CA": 5,
+          "BR": 4,
+          "IN": 4
+        },
+        "cities": {
+          "Berlin, Berlin": 261,
+          "Tel Aviv, Tel Aviv": 121,
+          "Herzliya, Tel Aviv": 15,
+          "Jerusalem, Jerusalem": 8,
+          "Bat Yam, Tel Aviv": 7,
+          "Ramat Gan, Tel Aviv": 7,
+          "Paris, \u00cele-de-France": 7,
+          "London, England": 6,
+          "Rishon Le Zion, Central District": 6,
+          "Haifa, Heifa": 5,
+          "Eilat, Southern District": 4,
+          "Ra`anana, Central District": 4,
+          "Los Angeles, California": 4,
+          "Pardes Hanah, Heifa": 4,
+          "San Francisco, California": 4
+        }
+      }
+    }
+  },
+  "errors": []
+}

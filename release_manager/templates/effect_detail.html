@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% block title %}{{ r.name }} · Effects{% endblock %}
+{% block content %}
+<div class="fonts-page">
+    <p><a href="{{ url_for('effects_page_view') }}">← Effects</a></p>
+    <h1>{{ r.name }} {% if r.signature %}<span title="signature">◆</span>{% endif %}{% if r.mine %}<span title="liked">★</span>{% endif %}</h1>
+    <div class="archive-chips" style="margin-bottom:14px">
+        <span class="fx-tag {{ 'fx-safe' if r.face_safe else 'fx-ai' }}">{{ 'safe on your face' if r.face_safe else 'AI: never on your face, your go per image' }}</span>
+        <span class="archive-chip">{{ family_label }}</span>
+        <span class="archive-chip">{{ r.kind }}</span>
+        <span class="archive-chip">{{ make_label }}</span>
+    </div>
+    {% if r.example %}<img class="fx-big" src="{{ url_for('effect_example', eid=r.id) }}" alt="{{ r.name }}">{% if r.example.startswith('examples/look-') %}<p class="brand-muted">Example: Amir's photo out-037, made locally.</p>{% else %}<p class="brand-muted">Example frames from the source, private reference only{% if r.kind == 'motion' %}; a strip of consecutive frames, read left to right{% else %}; before on the left, after on the right where there are two{% endif %}.</p>{% endif %}{% endif %}
+    <h2>What it is</h2>
+    <p>{{ r.what }}</p>
+    <h2>How we make it</h2>
+    <p>{{ r.how }}</p>
+    {% if r.recipe %}
+    <table class="brand-table fx-recipe"><tbody>{% for lab, val in r.recipe %}<tr><th>{{ lab }}</th><td>{{ val }}</td></tr>{% endfor %}</tbody></table>
+    {% endif %}
+    {% if r.notes %}<p class="brand-muted">{{ r.notes }}</p>{% endif %}
+    <h2>Where it comes from</h2>
+    <p>{% if archive_ref %}<a href="{{ url_for('archive_detail', rid=archive_ref) }}">{{ archive_ref }} in the Shadow Archive</a>{% else %}{{ r.source }}{% endif %}{% if r.source_url %} · <a href="{{ r.source_url }}" target="_blank" rel="noopener">the original post</a>{% endif %}</p>
+</div>
+{% endblock %}

@@ -1,0 +1,5136 @@
+{
+ "INDOOR/All Photos/Amir Home Shoot -101.JPG": {
+  "status": "verified",
+  "by": "recheck at 2x: image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot 5/Raw/DSC_4143.NEF",
+  "inliers": 5323,
+  "edge_corr": 0.904,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot 5/Raw/DSC_4143.NEF",
+    "inliers": 5323,
+    "edge_corr": 0.904
+   }
+  ],
+  "first_pass": {
+   "status": "likely",
+   "raw": "INDOOR/Indoor Shoot 5/Raw/DSC_4143.NEF",
+   "inliers": 13,
+   "edge_corr": 0.166
+  }
+ },
+ "INDOOR/All Photos/Amir Home Shoot -103.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot 6/Raw/DSC_4148.NEF",
+  "inliers": 456,
+  "edge_corr": 0.817,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot 6/Raw/DSC_4148.NEF",
+    "inliers": 456,
+    "edge_corr": 0.817
+   }
+  ]
+ },
+ "INDOOR/All Photos/Amir Home Shoot -109.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot 6/Raw/DSC_4161.NEF",
+  "inliers": 1187,
+  "edge_corr": 0.932,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot 6/Raw/DSC_4161.NEF",
+    "inliers": 1187,
+    "edge_corr": 0.932
+   }
+  ]
+ },
+ "INDOOR/All Photos/Amir Home Shoot -111.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot 4/Raw/DSC_4164.NEF",
+  "inliers": 1501,
+  "edge_corr": 0.94,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot 4/Raw/DSC_4164.NEF",
+    "inliers": 1501,
+    "edge_corr": 0.94
+   }
+  ]
+ },
+ "INDOOR/All Photos/Amir Home Shoot -113.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot 6/Raw/DSC_4169.NEF",
+  "inliers": 520,
+  "edge_corr": 0.797,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot 6/Raw/DSC_4169.NEF",
+    "inliers": 520,
+    "edge_corr": 0.797
+   }
+  ]
+ },
+ "INDOOR/All Photos/Amir Home Shoot -115.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot 7/Raw/DSC_4171.NEF",
+  "inliers": 214,
+  "edge_corr": 0.6,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot 7/Raw/DSC_4171.NEF",
+    "inliers": 214,
+    "edge_corr": 0.6
+   }
+  ]
+ },
+ "INDOOR/All Photos/Amir Home Shoot -116.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot 5/Raw/DSC_4172.NEF",
+  "inliers": 820,
+  "edge_corr": 0.896,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot 5/Raw/DSC_4172.NEF",
+    "inliers": 820,
+    "edge_corr": 0.896
+   }
+  ]
+ },
+ "INDOOR/All Photos/Amir Home Shoot -117.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot 7/Raw/DSC_4174.NEF",
+  "inliers": 472,
+  "edge_corr": 0.754,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot 7/Raw/DSC_4174.NEF",
+    "inliers": 472,
+    "edge_corr": 0.754
+   }
+  ]
+ },
+ "INDOOR/All Photos/Amir Home Shoot -118.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot 6/Raw/DSC_4175.NEF",
+  "inliers": 823,
+  "edge_corr": 0.939,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot 6/Raw/DSC_4175.NEF",
+    "inliers": 823,
+    "edge_corr": 0.939
+   },
+   {
+    "raw": "INDOOR/Indoor Shoot 5/Raw/DSC_4177.NEF",
+    "inliers": 588,
+    "edge_corr": 0.644
+   },
+   {
+    "raw": "INDOOR/Indoor Shoot 6/Raw/DSC_4176.NEF",
+    "inliers": 515,
+    "edge_corr": 0.608
+   }
+  ]
+ },
+ "INDOOR/All Photos/Amir Home Shoot -125.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot 6/Raw/DSC_4190.NEF",
+  "inliers": 254,
+  "edge_corr": 0.729,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot 6/Raw/DSC_4190.NEF",
+    "inliers": 254,
+    "edge_corr": 0.729
+   },
+   {
+    "raw": "INDOOR/Indoor Shoot 4/Raw/DSC_4191.NEF",
+    "inliers": 109,
+    "edge_corr": 0.552
+   }
+  ]
+ },
+ "INDOOR/All Photos/Amir Home Shoot -139.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot 7/Raw/DSC_4210.NEF",
+  "inliers": 1276,
+  "edge_corr": 0.944,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot 7/Raw/DSC_4210.NEF",
+    "inliers": 1276,
+    "edge_corr": 0.944
+   }
+  ]
+ },
+ "INDOOR/All Photos/Amir Home Shoot -142.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot 6/Raw/DSC_4213.NEF",
+  "inliers": 1902,
+  "edge_corr": 0.983,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot 6/Raw/DSC_4213.NEF",
+    "inliers": 1902,
+    "edge_corr": 0.983
+   }
+  ]
+ },
+ "INDOOR/All Photos/Amir Home Shoot -147.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot 8/Raw/DSC_4220.NEF",
+  "inliers": 2032,
+  "edge_corr": 0.938,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot 8/Raw/DSC_4220.NEF",
+    "inliers": 2032,
+    "edge_corr": 0.938
+   },
+   {
+    "raw": "INDOOR/Indoor Shoot 5/Raw/DSC_4221.NEF",
+    "inliers": 858,
+    "edge_corr": 0.507
+   }
+  ]
+ },
+ "INDOOR/All Photos/Amir Home Shoot -149.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot 6/Raw/DSC_4222.NEF",
+  "inliers": 878,
+  "edge_corr": 0.881,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot 6/Raw/DSC_4222.NEF",
+    "inliers": 878,
+    "edge_corr": 0.881
+   },
+   {
+    "raw": "INDOOR/Indoor Shoot 5/Raw/DSC_4223.NEF",
+    "inliers": 759,
+    "edge_corr": 0.718
+   }
+  ]
+ },
+ "INDOOR/All Photos/Amir Home Shoot -15.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot 9/Raw/DSC_3972.NEF",
+  "inliers": 432,
+  "edge_corr": 0.875,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot 9/Raw/DSC_3972.NEF",
+    "inliers": 432,
+    "edge_corr": 0.875
+   }
+  ]
+ },
+ "INDOOR/All Photos/Amir Home Shoot -151.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot 6/Raw/DSC_4224.NEF",
+  "inliers": 1782,
+  "edge_corr": 0.944,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot 6/Raw/DSC_4224.NEF",
+    "inliers": 1782,
+    "edge_corr": 0.944
+   }
+  ]
+ },
+ "INDOOR/All Photos/Amir Home Shoot -152.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot 7/Raw/DSC_4225.NEF",
+  "inliers": 1584,
+  "edge_corr": 0.975,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot 7/Raw/DSC_4225.NEF",
+    "inliers": 1584,
+    "edge_corr": 0.975
+   },
+   {
+    "raw": "INDOOR/Indoor Shoot 6/Raw/DSC_4224.NEF",
+    "inliers": 703,
+    "edge_corr": 0.789
+   }
+  ]
+ },
+ "INDOOR/All Photos/Amir Home Shoot -153.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot 6/Raw/DSC_4226.NEF",
+  "inliers": 2096,
+  "edge_corr": 0.986,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot 6/Raw/DSC_4226.NEF",
+    "inliers": 2096,
+    "edge_corr": 0.986
+   }
+  ]
+ },
+ "INDOOR/All Photos/Amir Home Shoot -156.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot 4/Raw/DSC_4232.NEF",
+  "inliers": 2002,
+  "edge_corr": 0.988,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot 4/Raw/DSC_4232.NEF",
+    "inliers": 2002,
+    "edge_corr": 0.988
+   }
+  ]
+ },
+ "INDOOR/All Photos/Amir Home Shoot -157.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot 4/Raw/DSC_4234.NEF",
+  "inliers": 1299,
+  "edge_corr": 0.974,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot 4/Raw/DSC_4234.NEF",
+    "inliers": 1299,
+    "edge_corr": 0.974
+   }
+  ]
+ },
+ "INDOOR/All Photos/Amir Home Shoot -16.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot 10/Raw/DSC_3974.NEF",
+  "inliers": 476,
+  "edge_corr": 0.882,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot 10/Raw/DSC_3974.NEF",
+    "inliers": 476,
+    "edge_corr": 0.882
+   }
+  ]
+ },
+ "INDOOR/All Photos/Amir Home Shoot -160.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot 4/Raw/DSC_4239.NEF",
+  "inliers": 1145,
+  "edge_corr": 0.944,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot 4/Raw/DSC_4239.NEF",
+    "inliers": 1145,
+    "edge_corr": 0.944
+   }
+  ]
+ },
+ "INDOOR/All Photos/Amir Home Shoot -168.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot 4/Raw/DSC_4249.NEF",
+  "inliers": 1268,
+  "edge_corr": 0.974,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot 4/Raw/DSC_4249.NEF",
+    "inliers": 1268,
+    "edge_corr": 0.974
+   }
+  ]
+ },
+ "INDOOR/All Photos/Amir Home Shoot -169.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot 4/Raw/DSC_4250.NEF",
+  "inliers": 476,
+  "edge_corr": 0.863,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot 4/Raw/DSC_4250.NEF",
+    "inliers": 476,
+    "edge_corr": 0.863
+   }
+  ]
+ },
+ "INDOOR/All Photos/Amir Home Shoot -17.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot 10/Raw/DSC_3975.NEF",
+  "inliers": 424,
+  "edge_corr": 0.829,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot 10/Raw/DSC_3975.NEF",
+    "inliers": 424,
+    "edge_corr": 0.829
+   }
+  ]
+ },
+ "INDOOR/All Photos/Amir Home Shoot -173.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot/Raw/DSC_4256.NEF",
+  "inliers": 255,
+  "edge_corr": 0.706,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot/Raw/DSC_4256.NEF",
+    "inliers": 255,
+    "edge_corr": 0.706
+   },
+   {
+    "raw": "INDOOR/Indoor Shoot 4/Raw/DSC_4272.NEF",
+    "inliers": 102,
+    "edge_corr": 0.211
+   }
+  ]
+ },
+ "INDOOR/All Photos/Amir Home Shoot -174.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot 2/Raw/DSC_4257.NEF",
+  "inliers": 652,
+  "edge_corr": 0.909,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot 2/Raw/DSC_4257.NEF",
+    "inliers": 652,
+    "edge_corr": 0.909
+   }
+  ]
+ },
+ "INDOOR/All Photos/Amir Home Shoot -176.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot 3/Raw/DSC_4259.NEF",
+  "inliers": 807,
+  "edge_corr": 0.919,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot 3/Raw/DSC_4259.NEF",
+    "inliers": 807,
+    "edge_corr": 0.919
+   }
+  ]
+ },
+ "INDOOR/All Photos/Amir Home Shoot -178.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot 2/Raw/DSC_4263.NEF",
+  "inliers": 775,
+  "edge_corr": 0.914,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot 2/Raw/DSC_4263.NEF",
+    "inliers": 775,
+    "edge_corr": 0.914
+   }
+  ]
+ },
+ "INDOOR/All Photos/Amir Home Shoot -184.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot 2/Raw/DSC_4274.NEF",
+  "inliers": 540,
+  "edge_corr": 0.878,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot 2/Raw/DSC_4274.NEF",
+    "inliers": 540,
+    "edge_corr": 0.878
+   }
+  ]
+ },
+ "INDOOR/All Photos/Amir Home Shoot -19.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot 10/Raw/DSC_3991.NEF",
+  "inliers": 1442,
+  "edge_corr": 0.979,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot 10/Raw/DSC_3991.NEF",
+    "inliers": 1442,
+    "edge_corr": 0.979
+   }
+  ]
+ },
+ "INDOOR/All Photos/Amir Home Shoot -190.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot 2/Raw/DSC_4281.NEF",
+  "inliers": 756,
+  "edge_corr": 0.944,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot 2/Raw/DSC_4281.NEF",
+    "inliers": 756,
+    "edge_corr": 0.944
+   },
+   {
+    "raw": "INDOOR/Indoor Shoot 3/Raw/DSC_4285.NEF",
+    "inliers": 599,
+    "edge_corr": 0.626
+   },
+   {
+    "raw": "INDOOR/Indoor Shoot 3/Raw/DSC_4282.NEF",
+    "inliers": 561,
+    "edge_corr": 0.829
+   },
+   {
+    "raw": "INDOOR/Indoor Shoot 2/Raw/DSC_4286.NEF",
+    "inliers": 418,
+    "edge_corr": 0.578
+   },
+   {
+    "raw": "INDOOR/Indoor Shoot 3/Raw/DSC_4284.NEF",
+    "inliers": 405,
+    "edge_corr": 0.535
+   }
+  ]
+ },
+ "INDOOR/All Photos/Amir Home Shoot -192.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot 3/Raw/DSC_4284.NEF",
+  "inliers": 661,
+  "edge_corr": 0.873,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot 3/Raw/DSC_4284.NEF",
+    "inliers": 661,
+    "edge_corr": 0.873
+   },
+   {
+    "raw": "INDOOR/Indoor Shoot 2/Raw/DSC_4286.NEF",
+    "inliers": 504,
+    "edge_corr": 0.684
+   },
+   {
+    "raw": "INDOOR/Indoor Shoot 3/Raw/DSC_4285.NEF",
+    "inliers": 299,
+    "edge_corr": 0.664
+   }
+  ]
+ },
+ "INDOOR/All Photos/Amir Home Shoot -193.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot 3/Raw/DSC_4285.NEF",
+  "inliers": 516,
+  "edge_corr": 0.816,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot 3/Raw/DSC_4285.NEF",
+    "inliers": 516,
+    "edge_corr": 0.816
+   },
+   {
+    "raw": "INDOOR/Indoor Shoot 2/Raw/DSC_4286.NEF",
+    "inliers": 358,
+    "edge_corr": 0.553
+   },
+   {
+    "raw": "INDOOR/Indoor Shoot 2/Raw/DSC_4281.NEF",
+    "inliers": 349,
+    "edge_corr": 0.613
+   },
+   {
+    "raw": "INDOOR/Indoor Shoot 3/Raw/DSC_4284.NEF",
+    "inliers": 320,
+    "edge_corr": 0.52
+   },
+   {
+    "raw": "INDOOR/Indoor Shoot 3/Raw/DSC_4282.NEF",
+    "inliers": 257,
+    "edge_corr": 0.431
+   }
+  ]
+ },
+ "INDOOR/All Photos/Amir Home Shoot -195.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot 2/Raw/DSC_4287.NEF",
+  "inliers": 737,
+  "edge_corr": 0.922,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot 2/Raw/DSC_4287.NEF",
+    "inliers": 737,
+    "edge_corr": 0.922
+   }
+  ]
+ },
+ "INDOOR/All Photos/Amir Home Shoot -196.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot 2/Raw/DSC_4288.NEF",
+  "inliers": 565,
+  "edge_corr": 0.924,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot 2/Raw/DSC_4288.NEF",
+    "inliers": 565,
+    "edge_corr": 0.924
+   }
+  ]
+ },
+ "INDOOR/All Photos/Amir Home Shoot -198.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot 3/Raw/DSC_4292.NEF",
+  "inliers": 411,
+  "edge_corr": 0.874,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot 3/Raw/DSC_4292.NEF",
+    "inliers": 411,
+    "edge_corr": 0.874
+   }
+  ]
+ },
+ "INDOOR/All Photos/Amir Home Shoot -200.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot 6/Raw/DSC_4297.NEF",
+  "inliers": 741,
+  "edge_corr": 0.94,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot 6/Raw/DSC_4297.NEF",
+    "inliers": 741,
+    "edge_corr": 0.94
+   }
+  ]
+ },
+ "INDOOR/All Photos/Amir Home Shoot -204.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot 3/Raw/DSC_4301.NEF",
+  "inliers": 402,
+  "edge_corr": 0.906,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot 3/Raw/DSC_4301.NEF",
+    "inliers": 402,
+    "edge_corr": 0.906
+   },
+   {
+    "raw": "INDOOR/Indoor Shoot 2/Raw/DSC_4302.NEF",
+    "inliers": 296,
+    "edge_corr": 0.71
+   }
+  ]
+ },
+ "INDOOR/All Photos/Amir Home Shoot -205.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot 2/Raw/DSC_4302.NEF",
+  "inliers": 545,
+  "edge_corr": 0.904,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot 2/Raw/DSC_4302.NEF",
+    "inliers": 545,
+    "edge_corr": 0.904
+   },
+   {
+    "raw": "INDOOR/Indoor Shoot 3/Raw/DSC_4301.NEF",
+    "inliers": 338,
+    "edge_corr": 0.756
+   }
+  ]
+ },
+ "INDOOR/All Photos/Amir Home Shoot -206.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot 2/Raw/DSC_4303.NEF",
+  "inliers": 342,
+  "edge_corr": 0.897,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot 2/Raw/DSC_4303.NEF",
+    "inliers": 342,
+    "edge_corr": 0.897
+   }
+  ]
+ },
+ "INDOOR/All Photos/Amir Home Shoot -207.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot 2/Raw/DSC_4304.NEF",
+  "inliers": 371,
+  "edge_corr": 0.612,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot 2/Raw/DSC_4304.NEF",
+    "inliers": 371,
+    "edge_corr": 0.612
+   }
+  ]
+ },
+ "INDOOR/All Photos/Amir Home Shoot -209.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot 3/Raw/DSC_4306.NEF",
+  "inliers": 796,
+  "edge_corr": 0.874,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot 3/Raw/DSC_4306.NEF",
+    "inliers": 796,
+    "edge_corr": 0.874
+   }
+  ]
+ },
+ "INDOOR/All Photos/Amir Home Shoot -21.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot 8/Raw/DSC_3994.NEF",
+  "inliers": 1090,
+  "edge_corr": 0.918,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot 8/Raw/DSC_3994.NEF",
+    "inliers": 1090,
+    "edge_corr": 0.918
+   }
+  ]
+ },
+ "INDOOR/All Photos/Amir Home Shoot -211.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot 3/Raw/DSC_4308.NEF",
+  "inliers": 1025,
+  "edge_corr": 0.883,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot 3/Raw/DSC_4308.NEF",
+    "inliers": 1025,
+    "edge_corr": 0.883
+   }
+  ]
+ },
+ "INDOOR/All Photos/Amir Home Shoot -214.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot 3/Raw/DSC_4311.NEF",
+  "inliers": 661,
+  "edge_corr": 0.842,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot 3/Raw/DSC_4311.NEF",
+    "inliers": 661,
+    "edge_corr": 0.842
+   },
+   {
+    "raw": "INDOOR/Indoor Shoot 3/Raw/DSC_4313.NEF",
+    "inliers": 445,
+    "edge_corr": 0.7
+   },
+   {
+    "raw": "INDOOR/Indoor Shoot/Raw/DSC_4312.NEF",
+    "inliers": 388,
+    "edge_corr": 0.633
+   },
+   {
+    "raw": "INDOOR/Indoor Shoot 3/Raw/DSC_4309.NEF",
+    "inliers": 388,
+    "edge_corr": 0.643
+   },
+   {
+    "raw": "INDOOR/Indoor Shoot 3/Raw/DSC_4316.NEF",
+    "inliers": 312,
+    "edge_corr": 0.507
+   },
+   {
+    "raw": "INDOOR/Indoor Shoot 4/Raw/DSC_4319.NEF",
+    "inliers": 287,
+    "edge_corr": 0.493
+   }
+  ]
+ },
+ "INDOOR/All Photos/Amir Home Shoot -22.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot 8/Raw/DSC_3995.NEF",
+  "inliers": 355,
+  "edge_corr": 0.877,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot 8/Raw/DSC_3995.NEF",
+    "inliers": 355,
+    "edge_corr": 0.877
+   },
+   {
+    "raw": "INDOOR/Indoor Shoot 8/Raw/DSC_3994.NEF",
+    "inliers": 299,
+    "edge_corr": 0.457
+   },
+   {
+    "raw": "INDOOR/Indoor Shoot 9/Raw/DSC_3996.NEF",
+    "inliers": 215,
+    "edge_corr": 0.247
+   },
+   {
+    "raw": "INDOOR/Indoor Shoot 10/Raw/DSC_3991.NEF",
+    "inliers": 177,
+    "edge_corr": 0.203
+   },
+   {
+    "raw": "INDOOR/Indoor Shoot 11/Raw/DSC_4001.NEF",
+    "inliers": 172,
+    "edge_corr": 0.146
+   },
+   {
+    "raw": "INDOOR/Indoor Shoot 12/Raw/DSC_3999.NEF",
+    "inliers": 154,
+    "edge_corr": 0.202
+   }
+  ]
+ },
+ "INDOOR/All Photos/Amir Home Shoot -223.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot 2/Raw/DSC_4320.NEF",
+  "inliers": 997,
+  "edge_corr": 0.902,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot 2/Raw/DSC_4320.NEF",
+    "inliers": 997,
+    "edge_corr": 0.902
+   }
+  ]
+ },
+ "INDOOR/All Photos/Amir Home Shoot -225.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot 2/Raw/DSC_4322.NEF",
+  "inliers": 1103,
+  "edge_corr": 0.886,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot 2/Raw/DSC_4322.NEF",
+    "inliers": 1103,
+    "edge_corr": 0.886
+   }
+  ]
+ },
+ "INDOOR/All Photos/Amir Home Shoot -228.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot 5/Raw/DSC_4325.NEF",
+  "inliers": 944,
+  "edge_corr": 0.952,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot 5/Raw/DSC_4325.NEF",
+    "inliers": 944,
+    "edge_corr": 0.952
+   }
+  ]
+ },
+ "INDOOR/All Photos/Amir Home Shoot -23.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot 10/Raw/DSC_3998.NEF",
+  "inliers": 120,
+  "edge_corr": 0.55,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot 10/Raw/DSC_3998.NEF",
+    "inliers": 120,
+    "edge_corr": 0.55
+   },
+   {
+    "raw": "INDOOR/Indoor Shoot 12/Raw/DSC_3999.NEF",
+    "inliers": 89,
+    "edge_corr": 0.19
+   }
+  ]
+ },
+ "INDOOR/All Photos/Amir Home Shoot -233.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot 3/Raw/DSC_4333.NEF",
+  "inliers": 1417,
+  "edge_corr": 0.922,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot 3/Raw/DSC_4333.NEF",
+    "inliers": 1417,
+    "edge_corr": 0.922
+   },
+   {
+    "raw": "INDOOR/Indoor Shoot 3/Raw/DSC_4332.NEF",
+    "inliers": 1076,
+    "edge_corr": 0.748
+   },
+   {
+    "raw": "INDOOR/Indoor Shoot 3/Raw/DSC_4331.NEF",
+    "inliers": 1015,
+    "edge_corr": 0.684
+   },
+   {
+    "raw": "INDOOR/Indoor Shoot/Raw/DSC_4334.NEF",
+    "inliers": 805,
+    "edge_corr": 0.684
+   },
+   {
+    "raw": "INDOOR/Indoor Shoot 2/Raw/DSC_4336.NEF",
+    "inliers": 609,
+    "edge_corr": 0.657
+   },
+   {
+    "raw": "INDOOR/Indoor Shoot 2/Raw/DSC_4335.NEF",
+    "inliers": 606,
+    "edge_corr": 0.64
+   }
+  ]
+ },
+ "INDOOR/All Photos/Amir Home Shoot -236.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot/Raw/DSC_4339.NEF",
+  "inliers": 1542,
+  "edge_corr": 0.961,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot/Raw/DSC_4339.NEF",
+    "inliers": 1542,
+    "edge_corr": 0.961
+   },
+   {
+    "raw": "INDOOR/Indoor Shoot/Raw/DSC_4338.NEF",
+    "inliers": 756,
+    "edge_corr": 0.649
+   }
+  ]
+ },
+ "INDOOR/All Photos/Amir Home Shoot -238.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot/Raw/DSC_4341.NEF",
+  "inliers": 970,
+  "edge_corr": 0.915,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot/Raw/DSC_4342.NEF",
+    "inliers": 1014,
+    "edge_corr": 0.83
+   },
+   {
+    "raw": "INDOOR/Indoor Shoot/Raw/DSC_4341.NEF",
+    "inliers": 970,
+    "edge_corr": 0.915
+   },
+   {
+    "raw": "INDOOR/Indoor Shoot/Raw/DSC_4340.NEF",
+    "inliers": 803,
+    "edge_corr": 0.668
+   },
+   {
+    "raw": "INDOOR/Indoor Shoot/Raw/DSC_4338.NEF",
+    "inliers": 436,
+    "edge_corr": 0.542
+   },
+   {
+    "raw": "INDOOR/Indoor Shoot/Raw/DSC_4339.NEF",
+    "inliers": 423,
+    "edge_corr": 0.623
+   }
+  ]
+ },
+ "INDOOR/All Photos/Amir Home Shoot -239.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot/Raw/DSC_4342.NEF",
+  "inliers": 1683,
+  "edge_corr": 0.953,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot/Raw/DSC_4342.NEF",
+    "inliers": 1683,
+    "edge_corr": 0.953
+   }
+  ]
+ },
+ "INDOOR/All Photos/Amir Home Shoot -242.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot/Raw/DSC_4345.NEF",
+  "inliers": 1847,
+  "edge_corr": 0.961,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot/Raw/DSC_4345.NEF",
+    "inliers": 1847,
+    "edge_corr": 0.961
+   }
+  ]
+ },
+ "INDOOR/All Photos/Amir Home Shoot -244.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot 2/Raw/DSC_4350.NEF",
+  "inliers": 1042,
+  "edge_corr": 0.908,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot 2/Raw/DSC_4350.NEF",
+    "inliers": 1042,
+    "edge_corr": 0.908
+   }
+  ]
+ },
+ "INDOOR/All Photos/Amir Home Shoot -247.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot 2/Raw/DSC_4354.NEF",
+  "inliers": 1062,
+  "edge_corr": 0.954,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot 2/Raw/DSC_4354.NEF",
+    "inliers": 1062,
+    "edge_corr": 0.954
+   }
+  ]
+ },
+ "INDOOR/All Photos/Amir Home Shoot -249.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot/Raw/DSC_4356.NEF",
+  "inliers": 351,
+  "edge_corr": 0.864,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot/Raw/DSC_4356.NEF",
+    "inliers": 351,
+    "edge_corr": 0.864
+   },
+   {
+    "raw": "INDOOR/Indoor Shoot 2/Raw/DSC_4357.NEF",
+    "inliers": 179,
+    "edge_corr": 0.317
+   }
+  ]
+ },
+ "INDOOR/All Photos/Amir Home Shoot -25.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot 9/Raw/DSC_4002.NEF",
+  "inliers": 454,
+  "edge_corr": 0.871,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot 9/Raw/DSC_4002.NEF",
+    "inliers": 454,
+    "edge_corr": 0.871
+   }
+  ]
+ },
+ "INDOOR/All Photos/Amir Home Shoot -253.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot 3/Raw/DSC_4360.NEF",
+  "inliers": 658,
+  "edge_corr": 0.894,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot 3/Raw/DSC_4360.NEF",
+    "inliers": 658,
+    "edge_corr": 0.894
+   }
+  ]
+ },
+ "INDOOR/All Photos/Amir Home Shoot -254.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot/Raw/DSC_4361.NEF",
+  "inliers": 1019,
+  "edge_corr": 0.916,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot/Raw/DSC_4361.NEF",
+    "inliers": 1019,
+    "edge_corr": 0.916
+   }
+  ]
+ },
+ "INDOOR/All Photos/Amir Home Shoot -257.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot/Raw/DSC_4367.NEF",
+  "inliers": 997,
+  "edge_corr": 0.951,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot/Raw/DSC_4367.NEF",
+    "inliers": 997,
+    "edge_corr": 0.951
+   }
+  ]
+ },
+ "INDOOR/All Photos/Amir Home Shoot -26.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot 11/Raw/DSC_4004.NEF",
+  "inliers": 1294,
+  "edge_corr": 0.978,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot 11/Raw/DSC_4004.NEF",
+    "inliers": 1294,
+    "edge_corr": 0.978
+   }
+  ]
+ },
+ "INDOOR/All Photos/Amir Home Shoot -267.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot/Raw/DSC_4379.NEF",
+  "inliers": 782,
+  "edge_corr": 0.885,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot/Raw/DSC_4379.NEF",
+    "inliers": 782,
+    "edge_corr": 0.885
+   }
+  ]
+ },
+ "INDOOR/All Photos/Amir Home Shoot -273.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot 3/Raw/DSC_4387.NEF",
+  "inliers": 263,
+  "edge_corr": 0.649,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot 3/Raw/DSC_4387.NEF",
+    "inliers": 263,
+    "edge_corr": 0.649
+   },
+   {
+    "raw": "INDOOR/Indoor Shoot 2/Raw/DSC_4386.NEF",
+    "inliers": 122,
+    "edge_corr": 0.586
+   },
+   {
+    "raw": "INDOOR/Indoor Shoot 4/Raw/DSC_4388.NEF",
+    "inliers": 122,
+    "edge_corr": 0.442
+   },
+   {
+    "raw": "INDOOR/Indoor Shoot 4/Raw/DSC_4384.NEF",
+    "inliers": 111,
+    "edge_corr": 0.238
+   },
+   {
+    "raw": "INDOOR/Indoor Shoot/Raw/DSC_4385.NEF",
+    "inliers": 106,
+    "edge_corr": 0.471
+   }
+  ]
+ },
+ "INDOOR/All Photos/Amir Home Shoot -277.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot 3/Raw/DSC_4391.NEF",
+  "inliers": 78,
+  "edge_corr": 0.456,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot 3/Raw/DSC_4391.NEF",
+    "inliers": 78,
+    "edge_corr": 0.456
+   },
+   {
+    "raw": "INDOOR/Indoor Shoot 3/Raw/DSC_4392.NEF",
+    "inliers": 40,
+    "edge_corr": 0.199
+   }
+  ]
+ },
+ "INDOOR/All Photos/Amir Home Shoot -278.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot 3/Raw/DSC_4392.NEF",
+  "inliers": 409,
+  "edge_corr": 0.731,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot 3/Raw/DSC_4392.NEF",
+    "inliers": 409,
+    "edge_corr": 0.731
+   }
+  ]
+ },
+ "INDOOR/All Photos/Amir Home Shoot -280.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot 2/Raw/DSC_4394.NEF",
+  "inliers": 304,
+  "edge_corr": 0.658,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot 2/Raw/DSC_4394.NEF",
+    "inliers": 304,
+    "edge_corr": 0.658
+   }
+  ]
+ },
+ "INDOOR/All Photos/Amir Home Shoot -282.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot 4/Raw/DSC_4396.NEF",
+  "inliers": 749,
+  "edge_corr": 0.82,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot 4/Raw/DSC_4396.NEF",
+    "inliers": 749,
+    "edge_corr": 0.82
+   }
+  ]
+ },
+ "INDOOR/All Photos/Amir Home Shoot -283.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot 2/Raw/DSC_4397.NEF",
+  "inliers": 1118,
+  "edge_corr": 0.87,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot 2/Raw/DSC_4397.NEF",
+    "inliers": 1118,
+    "edge_corr": 0.87
+   },
+   {
+    "raw": "INDOOR/Indoor Shoot 4/Raw/DSC_4398.NEF",
+    "inliers": 561,
+    "edge_corr": 0.649
+   }
+  ]
+ },
+ "INDOOR/All Photos/Amir Home Shoot -284.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot 2/Raw/DSC_4401.NEF",
+  "inliers": 1087,
+  "edge_corr": 0.898,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot 2/Raw/DSC_4401.NEF",
+    "inliers": 1087,
+    "edge_corr": 0.898
+   }
+  ]
+ },
+ "INDOOR/All Photos/Amir Home Shoot -285.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot 4/Raw/DSC_4403.NEF",
+  "inliers": 1040,
+  "edge_corr": 0.895,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot 4/Raw/DSC_4403.NEF",
+    "inliers": 1040,
+    "edge_corr": 0.895
+   }
+  ]
+ },
+ "INDOOR/All Photos/Amir Home Shoot -38.JPG": {
+  "status": "verified",
+  "by": "recheck at 2x: image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot 10/Raw/DSC_4025.NEF",
+  "inliers": 3863,
+  "edge_corr": 0.975,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot 10/Raw/DSC_4025.NEF",
+    "inliers": 3863,
+    "edge_corr": 0.975
+   },
+   {
+    "raw": "INDOOR/Indoor Shoot 9/Raw/DSC_4026.NEF",
+    "inliers": 1788,
+    "edge_corr": 0.74
+   }
+  ],
+  "first_pass": {
+   "status": "ambiguous",
+   "raw": "INDOOR/Indoor Shoot 10/Raw/DSC_4025.NEF",
+   "inliers": 615,
+   "edge_corr": 0.719
+  }
+ },
+ "INDOOR/All Photos/Amir Home Shoot -4.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot 11/Raw/DSC_3937.NEF",
+  "inliers": 777,
+  "edge_corr": 0.966,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot 11/Raw/DSC_3937.NEF",
+    "inliers": 777,
+    "edge_corr": 0.966
+   }
+  ]
+ },
+ "INDOOR/All Photos/Amir Home Shoot -40.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot 11/Raw/DSC_4027.NEF",
+  "inliers": 624,
+  "edge_corr": 0.864,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot 11/Raw/DSC_4027.NEF",
+    "inliers": 624,
+    "edge_corr": 0.864
+   }
+  ]
+ },
+ "INDOOR/All Photos/Amir Home Shoot -41.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot 11/Raw/DSC_4028.NEF",
+  "inliers": 478,
+  "edge_corr": 0.794,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot 11/Raw/DSC_4028.NEF",
+    "inliers": 478,
+    "edge_corr": 0.794
+   }
+  ]
+ },
+ "INDOOR/All Photos/Amir Home Shoot -45.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot 8/Raw/DSC_4036.NEF",
+  "inliers": 633,
+  "edge_corr": 0.73,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot 8/Raw/DSC_4036.NEF",
+    "inliers": 633,
+    "edge_corr": 0.73
+   }
+  ]
+ },
+ "INDOOR/All Photos/Amir Home Shoot -5.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot 11/Raw/DSC_3938.NEF",
+  "inliers": 901,
+  "edge_corr": 0.96,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot 11/Raw/DSC_3938.NEF",
+    "inliers": 901,
+    "edge_corr": 0.96
+   }
+  ]
+ },
+ "INDOOR/All Photos/Amir Home Shoot -55.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot 10/Raw/DSC_4051.NEF",
+  "inliers": 726,
+  "edge_corr": 0.827,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot 10/Raw/DSC_4051.NEF",
+    "inliers": 726,
+    "edge_corr": 0.827
+   },
+   {
+    "raw": "INDOOR/Indoor Shoot 10/Raw/DSC_4055.NEF",
+    "inliers": 423,
+    "edge_corr": 0.561
+   },
+   {
+    "raw": "INDOOR/Indoor Shoot 9/Raw/DSC_4052.NEF",
+    "inliers": 304,
+    "edge_corr": 0.589
+   },
+   {
+    "raw": "INDOOR/Indoor Shoot 9/Raw/DSC_4050.NEF",
+    "inliers": 295,
+    "edge_corr": 0.602
+   }
+  ]
+ },
+ "INDOOR/All Photos/Amir Home Shoot -56.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot 9/Raw/DSC_4052.NEF",
+  "inliers": 221,
+  "edge_corr": 0.726,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot 9/Raw/DSC_4052.NEF",
+    "inliers": 221,
+    "edge_corr": 0.726
+   },
+   {
+    "raw": "INDOOR/Indoor Shoot 8/Raw/DSC_4053.NEF",
+    "inliers": 149,
+    "edge_corr": 0.347
+   }
+  ]
+ },
+ "INDOOR/All Photos/Amir Home Shoot -64.JPG": {
+  "status": "verified",
+  "by": "recheck at 2x: image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot 10/Raw/DSC_4070.NEF",
+  "inliers": 5896,
+  "edge_corr": 0.967,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot 10/Raw/DSC_4070.NEF",
+    "inliers": 5896,
+    "edge_corr": 0.967
+   }
+  ],
+  "first_pass": {
+   "status": "likely",
+   "raw": "INDOOR/Indoor Shoot 10/Raw/DSC_4070.NEF",
+   "inliers": 33,
+   "edge_corr": 0.437
+  }
+ },
+ "INDOOR/All Photos/Amir Home Shoot -66.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot 8/Raw/DSC_4072.NEF",
+  "inliers": 85,
+  "edge_corr": 0.52,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot 8/Raw/DSC_4072.NEF",
+    "inliers": 85,
+    "edge_corr": 0.52
+   },
+   {
+    "raw": "INDOOR/Indoor Shoot 8/Raw/DSC_4093.NEF",
+    "inliers": 71,
+    "edge_corr": 0.162
+   },
+   {
+    "raw": "INDOOR/Indoor Shoot 8/Raw/DSC_4087.NEF",
+    "inliers": 58,
+    "edge_corr": 0.183
+   },
+   {
+    "raw": "INDOOR/Indoor Shoot 7/Raw/DSC_4095.NEF",
+    "inliers": 57,
+    "edge_corr": 0.139
+   },
+   {
+    "raw": "INDOOR/Indoor Shoot 7/Raw/DSC_4092.NEF",
+    "inliers": 55,
+    "edge_corr": 0.151
+   },
+   {
+    "raw": "INDOOR/Indoor Shoot 8/Raw/DSC_4086.NEF",
+    "inliers": 54,
+    "edge_corr": 0.16
+   }
+  ]
+ },
+ "INDOOR/All Photos/Amir Home Shoot -67.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot 8/Raw/DSC_4075.NEF",
+  "inliers": 128,
+  "edge_corr": 0.565,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot 8/Raw/DSC_4075.NEF",
+    "inliers": 128,
+    "edge_corr": 0.565
+   },
+   {
+    "raw": "INDOOR/Indoor Shoot 8/Raw/DSC_4087.NEF",
+    "inliers": 66,
+    "edge_corr": 0.181
+   },
+   {
+    "raw": "INDOOR/Indoor Shoot 8/Raw/DSC_4093.NEF",
+    "inliers": 62,
+    "edge_corr": 0.143
+   },
+   {
+    "raw": "INDOOR/Indoor Shoot 8/Raw/DSC_4086.NEF",
+    "inliers": 58,
+    "edge_corr": 0.156
+   }
+  ]
+ },
+ "INDOOR/All Photos/Amir Home Shoot -68.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot 8/Raw/DSC_4076.NEF",
+  "inliers": 98,
+  "edge_corr": 0.514,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot 8/Raw/DSC_4076.NEF",
+    "inliers": 98,
+    "edge_corr": 0.514
+   }
+  ]
+ },
+ "INDOOR/All Photos/Amir Home Shoot -72.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot 8/Raw/DSC_4087.NEF",
+  "inliers": 230,
+  "edge_corr": 0.701,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot 8/Raw/DSC_4087.NEF",
+    "inliers": 230,
+    "edge_corr": 0.701
+   }
+  ]
+ },
+ "INDOOR/All Photos/Amir Home Shoot -73.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot 8/Raw/DSC_4088.NEF",
+  "inliers": 154,
+  "edge_corr": 0.521,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot 8/Raw/DSC_4088.NEF",
+    "inliers": 154,
+    "edge_corr": 0.521
+   },
+   {
+    "raw": "INDOOR/Indoor Shoot 8/Raw/DSC_4086.NEF",
+    "inliers": 111,
+    "edge_corr": 0.147
+   },
+   {
+    "raw": "INDOOR/Indoor Shoot 8/Raw/DSC_4087.NEF",
+    "inliers": 99,
+    "edge_corr": 0.203
+   },
+   {
+    "raw": "INDOOR/Indoor Shoot 8/Raw/DSC_4093.NEF",
+    "inliers": 92,
+    "edge_corr": 0.142
+   },
+   {
+    "raw": "INDOOR/Indoor Shoot 8/Raw/DSC_4089.NEF",
+    "inliers": 85,
+    "edge_corr": 0.312
+   },
+   {
+    "raw": "INDOOR/Indoor Shoot 7/Raw/DSC_4084.NEF",
+    "inliers": 76,
+    "edge_corr": 0.189
+   }
+  ]
+ },
+ "INDOOR/All Photos/Amir Home Shoot -74.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot 8/Raw/DSC_4089.NEF",
+  "inliers": 126,
+  "edge_corr": 0.596,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot 8/Raw/DSC_4089.NEF",
+    "inliers": 126,
+    "edge_corr": 0.596
+   },
+   {
+    "raw": "INDOOR/Indoor Shoot 8/Raw/DSC_4088.NEF",
+    "inliers": 104,
+    "edge_corr": 0.34
+   },
+   {
+    "raw": "INDOOR/Indoor Shoot 8/Raw/DSC_4093.NEF",
+    "inliers": 100,
+    "edge_corr": 0.142
+   },
+   {
+    "raw": "INDOOR/Indoor Shoot 8/Raw/DSC_4086.NEF",
+    "inliers": 98,
+    "edge_corr": 0.181
+   },
+   {
+    "raw": "INDOOR/Indoor Shoot 8/Raw/DSC_4087.NEF",
+    "inliers": 84,
+    "edge_corr": 0.181
+   },
+   {
+    "raw": "INDOOR/Indoor Shoot 7/Raw/DSC_4084.NEF",
+    "inliers": 73,
+    "edge_corr": 0.186
+   }
+  ]
+ },
+ "INDOOR/All Photos/Amir Home Shoot -79.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot 8/Raw/DSC_4094.NEF",
+  "inliers": 612,
+  "edge_corr": 0.785,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot 8/Raw/DSC_4094.NEF",
+    "inliers": 612,
+    "edge_corr": 0.785
+   }
+  ]
+ },
+ "INDOOR/All Photos/Amir Home Shoot -8.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot 11/Raw/DSC_3942.NEF",
+  "inliers": 736,
+  "edge_corr": 0.958,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot 11/Raw/DSC_3942.NEF",
+    "inliers": 736,
+    "edge_corr": 0.958
+   }
+  ]
+ },
+ "INDOOR/All Photos/Amir Home Shoot -82.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot 7/Raw/DSC_4109.NEF",
+  "inliers": 405,
+  "edge_corr": 0.695,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot 7/Raw/DSC_4109.NEF",
+    "inliers": 405,
+    "edge_corr": 0.695
+   },
+   {
+    "raw": "INDOOR/Indoor Shoot 7/Raw/DSC_4107.NEF",
+    "inliers": 214,
+    "edge_corr": 0.286
+   }
+  ]
+ },
+ "INDOOR/All Photos/Amir Home Shoot -85.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot 7/Raw/DSC_4114.NEF",
+  "inliers": 468,
+  "edge_corr": 0.873,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot 7/Raw/DSC_4114.NEF",
+    "inliers": 468,
+    "edge_corr": 0.873
+   }
+  ]
+ },
+ "INDOOR/All Photos/Amir Home Shoot -92.JPG": {
+  "status": "verified",
+  "by": "recheck at 2x: image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot 7/Raw/DSC_4122.NEF",
+  "inliers": 2562,
+  "edge_corr": 0.887,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot 7/Raw/DSC_4122.NEF",
+    "inliers": 2562,
+    "edge_corr": 0.887
+   }
+  ],
+  "first_pass": {
+   "status": "likely",
+   "raw": "INDOOR/Indoor Shoot 7/Raw/DSC_4122.NEF",
+   "inliers": 154,
+   "edge_corr": 0.43
+  }
+ },
+ "INDOOR/All Photos/Amir Home Shoot -94.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot 6/Raw/DSC_4125.NEF",
+  "inliers": 107,
+  "edge_corr": 0.483,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot 6/Raw/DSC_4125.NEF",
+    "inliers": 107,
+    "edge_corr": 0.483
+   }
+  ]
+ },
+ "INDOOR/All Photos/Amir Home Shoot -95.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot 8/Raw/DSC_4133.NEF",
+  "inliers": 1066,
+  "edge_corr": 0.887,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot 8/Raw/DSC_4133.NEF",
+    "inliers": 1066,
+    "edge_corr": 0.887
+   }
+  ]
+ },
+ "INDOOR/All Photos 2/Amir Home Shoot -100.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot 5/Raw/DSC_4139.NEF",
+  "inliers": 403,
+  "edge_corr": 0.735,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot 5/Raw/DSC_4139.NEF",
+    "inliers": 403,
+    "edge_corr": 0.735
+   }
+  ]
+ },
+ "INDOOR/All Photos 2/Amir Home Shoot -102.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot 7/Raw/DSC_4145.NEF",
+  "inliers": 320,
+  "edge_corr": 0.729,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot 7/Raw/DSC_4145.NEF",
+    "inliers": 320,
+    "edge_corr": 0.729
+   }
+  ]
+ },
+ "INDOOR/All Photos 2/Amir Home Shoot -110.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot 5/Raw/DSC_4162.NEF",
+  "inliers": 673,
+  "edge_corr": 0.873,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot 5/Raw/DSC_4162.NEF",
+    "inliers": 673,
+    "edge_corr": 0.873
+   }
+  ]
+ },
+ "INDOOR/All Photos 2/Amir Home Shoot -119.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot 5/Raw/DSC_4177.NEF",
+  "inliers": 1325,
+  "edge_corr": 0.956,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot 5/Raw/DSC_4177.NEF",
+    "inliers": 1325,
+    "edge_corr": 0.956
+   },
+   {
+    "raw": "INDOOR/Indoor Shoot 6/Raw/DSC_4176.NEF",
+    "inliers": 747,
+    "edge_corr": 0.712
+   },
+   {
+    "raw": "INDOOR/Indoor Shoot 6/Raw/DSC_4175.NEF",
+    "inliers": 581,
+    "edge_corr": 0.653
+   }
+  ]
+ },
+ "INDOOR/All Photos 2/Amir Home Shoot -12.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot 11/Raw/DSC_3960.NEF",
+  "inliers": 734,
+  "edge_corr": 0.964,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot 11/Raw/DSC_3960.NEF",
+    "inliers": 734,
+    "edge_corr": 0.964
+   },
+   {
+    "raw": "INDOOR/Indoor Shoot 10/Raw/DSC_3955.NEF",
+    "inliers": 401,
+    "edge_corr": 0.22
+   },
+   {
+    "raw": "INDOOR/Indoor Shoot 12/Raw/DSC_3999.NEF",
+    "inliers": 315,
+    "edge_corr": 0.126
+   },
+   {
+    "raw": "INDOOR/Indoor Shoot 11/Raw/DSC_3927.NEF",
+    "inliers": 311,
+    "edge_corr": 0.168
+   },
+   {
+    "raw": "INDOOR/Indoor Shoot 11/Raw/DSC_3942.NEF",
+    "inliers": 304,
+    "edge_corr": 0.201
+   },
+   {
+    "raw": "INDOOR/Indoor Shoot 9/Raw/DSC_3957.NEF",
+    "inliers": 304,
+    "edge_corr": 0.24
+   }
+  ]
+ },
+ "INDOOR/All Photos 2/Amir Home Shoot -122.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot 5/Raw/DSC_4187.NEF",
+  "inliers": 554,
+  "edge_corr": 0.898,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot 5/Raw/DSC_4187.NEF",
+    "inliers": 554,
+    "edge_corr": 0.898
+   },
+   {
+    "raw": "INDOOR/Indoor Shoot 5/Raw/DSC_4188.NEF",
+    "inliers": 258,
+    "edge_corr": 0.741
+   }
+  ]
+ },
+ "INDOOR/All Photos 2/Amir Home Shoot -123.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot 5/Raw/DSC_4188.NEF",
+  "inliers": 381,
+  "edge_corr": 0.867,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot 5/Raw/DSC_4188.NEF",
+    "inliers": 381,
+    "edge_corr": 0.867
+   },
+   {
+    "raw": "INDOOR/Indoor Shoot 5/Raw/DSC_4187.NEF",
+    "inliers": 331,
+    "edge_corr": 0.668
+   },
+   {
+    "raw": "INDOOR/Indoor Shoot 6/Raw/DSC_4189.NEF",
+    "inliers": 233,
+    "edge_corr": 0.615
+   }
+  ]
+ },
+ "INDOOR/All Photos 2/Amir Home Shoot -124.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot 6/Raw/DSC_4189.NEF",
+  "inliers": 571,
+  "edge_corr": 0.856,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot 6/Raw/DSC_4189.NEF",
+    "inliers": 571,
+    "edge_corr": 0.856
+   },
+   {
+    "raw": "INDOOR/Indoor Shoot 5/Raw/DSC_4188.NEF",
+    "inliers": 286,
+    "edge_corr": 0.627
+   },
+   {
+    "raw": "INDOOR/Indoor Shoot 5/Raw/DSC_4187.NEF",
+    "inliers": 257,
+    "edge_corr": 0.645
+   }
+  ]
+ },
+ "INDOOR/All Photos 2/Amir Home Shoot -128.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot 6/Raw/DSC_4194.NEF",
+  "inliers": 628,
+  "edge_corr": 0.879,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot 6/Raw/DSC_4194.NEF",
+    "inliers": 628,
+    "edge_corr": 0.879
+   }
+  ]
+ },
+ "INDOOR/All Photos 2/Amir Home Shoot -131.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot 9/Raw/DSC_4199.NEF",
+  "inliers": 625,
+  "edge_corr": 0.67,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot 9/Raw/DSC_4199.NEF",
+    "inliers": 625,
+    "edge_corr": 0.67
+   },
+   {
+    "raw": "INDOOR/Indoor Shoot 6/Raw/DSC_4200.NEF",
+    "inliers": 320,
+    "edge_corr": 0.53
+   }
+  ]
+ },
+ "INDOOR/All Photos 2/Amir Home Shoot -132.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot 6/Raw/DSC_4200.NEF",
+  "inliers": 774,
+  "edge_corr": 0.905,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot 6/Raw/DSC_4200.NEF",
+    "inliers": 774,
+    "edge_corr": 0.905
+   }
+  ]
+ },
+ "INDOOR/All Photos 2/Amir Home Shoot -134.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot 6/Raw/DSC_4202.NEF",
+  "inliers": 664,
+  "edge_corr": 0.904,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot 6/Raw/DSC_4202.NEF",
+    "inliers": 664,
+    "edge_corr": 0.904
+   }
+  ]
+ },
+ "INDOOR/All Photos 2/Amir Home Shoot -135.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot 4/Raw/DSC_4204.NEF",
+  "inliers": 1020,
+  "edge_corr": 0.851,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot 4/Raw/DSC_4204.NEF",
+    "inliers": 1020,
+    "edge_corr": 0.851
+   }
+  ]
+ },
+ "INDOOR/All Photos 2/Amir Home Shoot -136.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot 5/Raw/DSC_4206.NEF",
+  "inliers": 344,
+  "edge_corr": 0.781,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot 5/Raw/DSC_4206.NEF",
+    "inliers": 344,
+    "edge_corr": 0.781
+   }
+  ]
+ },
+ "INDOOR/All Photos 2/Amir Home Shoot -137.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot 4/Raw/DSC_4207.NEF",
+  "inliers": 207,
+  "edge_corr": 0.579,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot 4/Raw/DSC_4207.NEF",
+    "inliers": 207,
+    "edge_corr": 0.579
+   }
+  ]
+ },
+ "INDOOR/All Photos 2/Amir Home Shoot -138.JPG": {
+  "status": "verified",
+  "by": "recheck at 2x: image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot 4/Raw/DSC_4209.NEF",
+  "inliers": 2710,
+  "edge_corr": 0.891,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot 4/Raw/DSC_4209.NEF",
+    "inliers": 2710,
+    "edge_corr": 0.891
+   }
+  ],
+  "first_pass": {
+   "status": "likely",
+   "raw": "INDOOR/Indoor Shoot 4/Raw/DSC_4209.NEF",
+   "inliers": 19,
+   "edge_corr": 0.19
+  }
+ },
+ "INDOOR/All Photos 2/Amir Home Shoot -140.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot 6/Raw/DSC_4211.NEF",
+  "inliers": 926,
+  "edge_corr": 0.945,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot 6/Raw/DSC_4211.NEF",
+    "inliers": 926,
+    "edge_corr": 0.945
+   }
+  ]
+ },
+ "INDOOR/All Photos 2/Amir Home Shoot -143.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot 6/Raw/DSC_4216.NEF",
+  "inliers": 1359,
+  "edge_corr": 0.947,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot 6/Raw/DSC_4216.NEF",
+    "inliers": 1359,
+    "edge_corr": 0.947
+   }
+  ]
+ },
+ "INDOOR/All Photos 2/Amir Home Shoot -144.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot 5/Raw/DSC_4217.NEF",
+  "inliers": 1162,
+  "edge_corr": 0.973,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot 5/Raw/DSC_4217.NEF",
+    "inliers": 1162,
+    "edge_corr": 0.973
+   }
+  ]
+ },
+ "INDOOR/All Photos 2/Amir Home Shoot -145.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot 5/Raw/DSC_4218.NEF",
+  "inliers": 1366,
+  "edge_corr": 0.931,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot 5/Raw/DSC_4218.NEF",
+    "inliers": 1366,
+    "edge_corr": 0.931
+   },
+   {
+    "raw": "INDOOR/Indoor Shoot 4/Raw/DSC_4219.NEF",
+    "inliers": 1132,
+    "edge_corr": 0.843
+   }
+  ]
+ },
+ "INDOOR/All Photos 2/Amir Home Shoot -148.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot 5/Raw/DSC_4221.NEF",
+  "inliers": 2028,
+  "edge_corr": 0.933,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot 5/Raw/DSC_4221.NEF",
+    "inliers": 2028,
+    "edge_corr": 0.933
+   },
+   {
+    "raw": "INDOOR/Indoor Shoot 8/Raw/DSC_4220.NEF",
+    "inliers": 847,
+    "edge_corr": 0.476
+   }
+  ]
+ },
+ "INDOOR/All Photos 2/Amir Home Shoot -150.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot 5/Raw/DSC_4223.NEF",
+  "inliers": 1035,
+  "edge_corr": 0.87,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot 5/Raw/DSC_4223.NEF",
+    "inliers": 1035,
+    "edge_corr": 0.87
+   }
+  ]
+ },
+ "INDOOR/All Photos 2/Amir Home Shoot -154.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot 6/Raw/DSC_4230.NEF",
+  "inliers": 786,
+  "edge_corr": 0.952,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot 6/Raw/DSC_4230.NEF",
+    "inliers": 786,
+    "edge_corr": 0.952
+   },
+   {
+    "raw": "INDOOR/Indoor Shoot 4/Raw/DSC_4231.NEF",
+    "inliers": 738,
+    "edge_corr": 0.758
+   },
+   {
+    "raw": "INDOOR/Indoor Shoot 5/Raw/DSC_4233.NEF",
+    "inliers": 470,
+    "edge_corr": 0.575
+   }
+  ]
+ },
+ "INDOOR/All Photos 2/Amir Home Shoot -162.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot 4/Raw/DSC_4241.NEF",
+  "inliers": 1182,
+  "edge_corr": 0.983,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot 4/Raw/DSC_4241.NEF",
+    "inliers": 1182,
+    "edge_corr": 0.983
+   }
+  ]
+ },
+ "INDOOR/All Photos 2/Amir Home Shoot -163.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot 6/Raw/DSC_4242.NEF",
+  "inliers": 1117,
+  "edge_corr": 0.964,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot 6/Raw/DSC_4242.NEF",
+    "inliers": 1117,
+    "edge_corr": 0.964
+   }
+  ]
+ },
+ "INDOOR/All Photos 2/Amir Home Shoot -165.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot 4/Raw/DSC_4245.NEF",
+  "inliers": 1310,
+  "edge_corr": 0.908,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot 4/Raw/DSC_4245.NEF",
+    "inliers": 1310,
+    "edge_corr": 0.908
+   }
+  ]
+ },
+ "INDOOR/All Photos 2/Amir Home Shoot -167.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot 5/Raw/DSC_4248.NEF",
+  "inliers": 1223,
+  "edge_corr": 0.973,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot 5/Raw/DSC_4248.NEF",
+    "inliers": 1223,
+    "edge_corr": 0.973
+   }
+  ]
+ },
+ "INDOOR/All Photos 2/Amir Home Shoot -171.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot 4/Raw/DSC_4252.NEF",
+  "inliers": 962,
+  "edge_corr": 0.954,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot 4/Raw/DSC_4252.NEF",
+    "inliers": 962,
+    "edge_corr": 0.954
+   }
+  ]
+ },
+ "INDOOR/All Photos 2/Amir Home Shoot -172.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot 3/Raw/DSC_4255.NEF",
+  "inliers": 1185,
+  "edge_corr": 0.969,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot 3/Raw/DSC_4255.NEF",
+    "inliers": 1185,
+    "edge_corr": 0.969
+   }
+  ]
+ },
+ "INDOOR/All Photos 2/Amir Home Shoot -175.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot 2/Raw/DSC_4258.NEF",
+  "inliers": 858,
+  "edge_corr": 0.917,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot 2/Raw/DSC_4258.NEF",
+    "inliers": 858,
+    "edge_corr": 0.917
+   }
+  ]
+ },
+ "INDOOR/All Photos 2/Amir Home Shoot -18.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot 9/Raw/DSC_3979.NEF",
+  "inliers": 724,
+  "edge_corr": 0.901,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot 9/Raw/DSC_3979.NEF",
+    "inliers": 724,
+    "edge_corr": 0.901
+   }
+  ]
+ },
+ "INDOOR/All Photos 2/Amir Home Shoot -181.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot 3/Raw/DSC_4270.NEF",
+  "inliers": 431,
+  "edge_corr": 0.831,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot 3/Raw/DSC_4270.NEF",
+    "inliers": 431,
+    "edge_corr": 0.831
+   },
+   {
+    "raw": "INDOOR/Indoor Shoot 2/Raw/DSC_4269.NEF",
+    "inliers": 177,
+    "edge_corr": 0.371
+   },
+   {
+    "raw": "INDOOR/Indoor Shoot/Raw/DSC_4268.NEF",
+    "inliers": 174,
+    "edge_corr": 0.317
+   }
+  ]
+ },
+ "INDOOR/All Photos 2/Amir Home Shoot -189.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot/Raw/DSC_4280.NEF",
+  "inliers": 706,
+  "edge_corr": 0.893,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot/Raw/DSC_4280.NEF",
+    "inliers": 706,
+    "edge_corr": 0.893
+   }
+  ]
+ },
+ "INDOOR/All Photos 2/Amir Home Shoot -191.JPG": {
+  "status": "verified",
+  "by": "recheck at 2x: image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot 3/Raw/DSC_4282.NEF",
+  "inliers": 4483,
+  "edge_corr": 0.952,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot 2/Raw/DSC_4281.NEF",
+    "inliers": 4810,
+    "edge_corr": 0.865
+   },
+   {
+    "raw": "INDOOR/Indoor Shoot 3/Raw/DSC_4282.NEF",
+    "inliers": 4483,
+    "edge_corr": 0.952
+   },
+   {
+    "raw": "INDOOR/Indoor Shoot 3/Raw/DSC_4285.NEF",
+    "inliers": 3206,
+    "edge_corr": 0.566
+   },
+   {
+    "raw": "INDOOR/Indoor Shoot 3/Raw/DSC_4284.NEF",
+    "inliers": 2199,
+    "edge_corr": 0.589
+   }
+  ],
+  "first_pass": {
+   "status": "ambiguous",
+   "raw": "INDOOR/Indoor Shoot 3/Raw/DSC_4282.NEF",
+   "inliers": 833,
+   "edge_corr": 0.906
+  }
+ },
+ "INDOOR/All Photos 2/Amir Home Shoot -197.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot 3/Raw/DSC_4289.NEF",
+  "inliers": 975,
+  "edge_corr": 0.927,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot 3/Raw/DSC_4289.NEF",
+    "inliers": 975,
+    "edge_corr": 0.927
+   }
+  ]
+ },
+ "INDOOR/All Photos 2/Amir Home Shoot -201.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot 2/Raw/DSC_4298.NEF",
+  "inliers": 675,
+  "edge_corr": 0.857,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot 2/Raw/DSC_4298.NEF",
+    "inliers": 675,
+    "edge_corr": 0.857
+   }
+  ]
+ },
+ "INDOOR/All Photos 2/Amir Home Shoot -203.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot 4/Raw/DSC_4300.NEF",
+  "inliers": 556,
+  "edge_corr": 0.864,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot 4/Raw/DSC_4300.NEF",
+    "inliers": 556,
+    "edge_corr": 0.864
+   }
+  ]
+ },
+ "INDOOR/All Photos 2/Amir Home Shoot -208.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot 3/Raw/DSC_4305.NEF",
+  "inliers": 779,
+  "edge_corr": 0.86,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot 3/Raw/DSC_4305.NEF",
+    "inliers": 779,
+    "edge_corr": 0.86
+   }
+  ]
+ },
+ "INDOOR/All Photos 2/Amir Home Shoot -212.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot 3/Raw/DSC_4309.NEF",
+  "inliers": 918,
+  "edge_corr": 0.889,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot 3/Raw/DSC_4309.NEF",
+    "inliers": 918,
+    "edge_corr": 0.889
+   },
+   {
+    "raw": "INDOOR/Indoor Shoot 3/Raw/DSC_4311.NEF",
+    "inliers": 514,
+    "edge_corr": 0.672
+   }
+  ]
+ },
+ "INDOOR/All Photos 2/Amir Home Shoot -215.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot/Raw/DSC_4312.NEF",
+  "inliers": 625,
+  "edge_corr": 0.83,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot/Raw/DSC_4312.NEF",
+    "inliers": 625,
+    "edge_corr": 0.83
+   },
+   {
+    "raw": "INDOOR/Indoor Shoot 3/Raw/DSC_4318.NEF",
+    "inliers": 363,
+    "edge_corr": 0.541
+   },
+   {
+    "raw": "INDOOR/Indoor Shoot 3/Raw/DSC_4313.NEF",
+    "inliers": 359,
+    "edge_corr": 0.643
+   },
+   {
+    "raw": "INDOOR/Indoor Shoot 3/Raw/DSC_4311.NEF",
+    "inliers": 353,
+    "edge_corr": 0.593
+   },
+   {
+    "raw": "INDOOR/Indoor Shoot 3/Raw/DSC_4316.NEF",
+    "inliers": 307,
+    "edge_corr": 0.555
+   },
+   {
+    "raw": "INDOOR/Indoor Shoot 4/Raw/DSC_4315.NEF",
+    "inliers": 304,
+    "edge_corr": 0.538
+   }
+  ]
+ },
+ "INDOOR/All Photos 2/Amir Home Shoot -217.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot/Raw/DSC_4314.NEF",
+  "inliers": 407,
+  "edge_corr": 0.749,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot/Raw/DSC_4314.NEF",
+    "inliers": 407,
+    "edge_corr": 0.749
+   },
+   {
+    "raw": "INDOOR/Indoor Shoot 3/Raw/DSC_4313.NEF",
+    "inliers": 201,
+    "edge_corr": 0.401
+   },
+   {
+    "raw": "INDOOR/Indoor Shoot 3/Raw/DSC_4311.NEF",
+    "inliers": 166,
+    "edge_corr": 0.428
+   },
+   {
+    "raw": "INDOOR/Indoor Shoot 3/Raw/DSC_4316.NEF",
+    "inliers": 166,
+    "edge_corr": 0.424
+   },
+   {
+    "raw": "INDOOR/Indoor Shoot/Raw/DSC_4312.NEF",
+    "inliers": 163,
+    "edge_corr": 0.406
+   }
+  ]
+ },
+ "INDOOR/All Photos 2/Amir Home Shoot -218.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot 4/Raw/DSC_4315.NEF",
+  "inliers": 690,
+  "edge_corr": 0.834,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot 4/Raw/DSC_4315.NEF",
+    "inliers": 690,
+    "edge_corr": 0.834
+   },
+   {
+    "raw": "INDOOR/Indoor Shoot/Raw/DSC_4312.NEF",
+    "inliers": 417,
+    "edge_corr": 0.573
+   },
+   {
+    "raw": "INDOOR/Indoor Shoot 3/Raw/DSC_4316.NEF",
+    "inliers": 412,
+    "edge_corr": 0.634
+   },
+   {
+    "raw": "INDOOR/Indoor Shoot 3/Raw/DSC_4318.NEF",
+    "inliers": 390,
+    "edge_corr": 0.548
+   },
+   {
+    "raw": "INDOOR/Indoor Shoot/Raw/DSC_4317.NEF",
+    "inliers": 334,
+    "edge_corr": 0.583
+   },
+   {
+    "raw": "INDOOR/Indoor Shoot 3/Raw/DSC_4311.NEF",
+    "inliers": 294,
+    "edge_corr": 0.525
+   }
+  ]
+ },
+ "INDOOR/All Photos 2/Amir Home Shoot -224.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot 4/Raw/DSC_4321.NEF",
+  "inliers": 870,
+  "edge_corr": 0.89,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot 4/Raw/DSC_4321.NEF",
+    "inliers": 870,
+    "edge_corr": 0.89
+   }
+  ]
+ },
+ "INDOOR/All Photos 2/Amir Home Shoot -226.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot/Raw/DSC_4323.NEF",
+  "inliers": 817,
+  "edge_corr": 0.871,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot/Raw/DSC_4323.NEF",
+    "inliers": 817,
+    "edge_corr": 0.871
+   }
+  ]
+ },
+ "INDOOR/All Photos 2/Amir Home Shoot -227.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot/Raw/DSC_4324.NEF",
+  "inliers": 998,
+  "edge_corr": 0.877,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot/Raw/DSC_4324.NEF",
+    "inliers": 998,
+    "edge_corr": 0.877
+   }
+  ]
+ },
+ "INDOOR/All Photos 2/Amir Home Shoot -229.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot 2/Raw/DSC_4326.NEF",
+  "inliers": 1135,
+  "edge_corr": 0.892,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot 2/Raw/DSC_4326.NEF",
+    "inliers": 1135,
+    "edge_corr": 0.892
+   }
+  ]
+ },
+ "INDOOR/All Photos 2/Amir Home Shoot -230.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot 3/Raw/DSC_4329.NEF",
+  "inliers": 1454,
+  "edge_corr": 0.948,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot 3/Raw/DSC_4329.NEF",
+    "inliers": 1454,
+    "edge_corr": 0.948
+   },
+   {
+    "raw": "INDOOR/Indoor Shoot 2/Raw/DSC_4336.NEF",
+    "inliers": 985,
+    "edge_corr": 0.645
+   },
+   {
+    "raw": "INDOOR/Indoor Shoot 2/Raw/DSC_4337.NEF",
+    "inliers": 924,
+    "edge_corr": 0.662
+   },
+   {
+    "raw": "INDOOR/Indoor Shoot 3/Raw/DSC_4331.NEF",
+    "inliers": 847,
+    "edge_corr": 0.801
+   },
+   {
+    "raw": "INDOOR/Indoor Shoot 2/Raw/DSC_4330.NEF",
+    "inliers": 817,
+    "edge_corr": 0.878
+   },
+   {
+    "raw": "INDOOR/Indoor Shoot/Raw/DSC_4334.NEF",
+    "inliers": 733,
+    "edge_corr": 0.729
+   }
+  ]
+ },
+ "INDOOR/All Photos 2/Amir Home Shoot -231.JPG": {
+  "status": "verified",
+  "by": "recheck at 2x: image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot 2/Raw/DSC_4330.NEF",
+  "inliers": 5931,
+  "edge_corr": 0.971,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot 2/Raw/DSC_4330.NEF",
+    "inliers": 5931,
+    "edge_corr": 0.971
+   },
+   {
+    "raw": "INDOOR/Indoor Shoot 3/Raw/DSC_4329.NEF",
+    "inliers": 3323,
+    "edge_corr": 0.895
+   },
+   {
+    "raw": "INDOOR/Indoor Shoot 3/Raw/DSC_4331.NEF",
+    "inliers": 2586,
+    "edge_corr": 0.812
+   }
+  ],
+  "first_pass": {
+   "status": "ambiguous",
+   "raw": "INDOOR/Indoor Shoot 2/Raw/DSC_4330.NEF",
+   "inliers": 1530,
+   "edge_corr": 0.938
+  }
+ },
+ "INDOOR/All Photos 2/Amir Home Shoot -234.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot 2/Raw/DSC_4336.NEF",
+  "inliers": 922,
+  "edge_corr": 0.912,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot 3/Raw/DSC_4331.NEF",
+    "inliers": 964,
+    "edge_corr": 0.701
+   },
+   {
+    "raw": "INDOOR/Indoor Shoot 2/Raw/DSC_4336.NEF",
+    "inliers": 922,
+    "edge_corr": 0.912
+   },
+   {
+    "raw": "INDOOR/Indoor Shoot 3/Raw/DSC_4332.NEF",
+    "inliers": 895,
+    "edge_corr": 0.69
+   },
+   {
+    "raw": "INDOOR/Indoor Shoot/Raw/DSC_4334.NEF",
+    "inliers": 885,
+    "edge_corr": 0.732
+   },
+   {
+    "raw": "INDOOR/Indoor Shoot 2/Raw/DSC_4335.NEF",
+    "inliers": 857,
+    "edge_corr": 0.738
+   },
+   {
+    "raw": "INDOOR/Indoor Shoot 3/Raw/DSC_4333.NEF",
+    "inliers": 778,
+    "edge_corr": 0.662
+   }
+  ]
+ },
+ "INDOOR/All Photos 2/Amir Home Shoot -241.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot 3/Raw/DSC_4344.NEF",
+  "inliers": 1312,
+  "edge_corr": 0.927,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot 3/Raw/DSC_4344.NEF",
+    "inliers": 1312,
+    "edge_corr": 0.927
+   },
+   {
+    "raw": "INDOOR/Indoor Shoot/Raw/DSC_4343.NEF",
+    "inliers": 1031,
+    "edge_corr": 0.783
+   }
+  ]
+ },
+ "INDOOR/All Photos 2/Amir Home Shoot -245.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot 2/Raw/DSC_4351.NEF",
+  "inliers": 1990,
+  "edge_corr": 0.985,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot 2/Raw/DSC_4351.NEF",
+    "inliers": 1990,
+    "edge_corr": 0.985
+   }
+  ]
+ },
+ "INDOOR/All Photos 2/Amir Home Shoot -246.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot/Raw/DSC_4353.NEF",
+  "inliers": 979,
+  "edge_corr": 0.957,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot/Raw/DSC_4353.NEF",
+    "inliers": 979,
+    "edge_corr": 0.957
+   }
+  ]
+ },
+ "INDOOR/All Photos 2/Amir Home Shoot -250.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot 2/Raw/DSC_4357.NEF",
+  "inliers": 1127,
+  "edge_corr": 0.94,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot 2/Raw/DSC_4357.NEF",
+    "inliers": 1127,
+    "edge_corr": 0.94
+   }
+  ]
+ },
+ "INDOOR/All Photos 2/Amir Home Shoot -251.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot 3/Raw/DSC_4358.NEF",
+  "inliers": 967,
+  "edge_corr": 0.935,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot 3/Raw/DSC_4358.NEF",
+    "inliers": 967,
+    "edge_corr": 0.935
+   }
+  ]
+ },
+ "INDOOR/All Photos 2/Amir Home Shoot -255.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot/Raw/DSC_4364.NEF",
+  "inliers": 243,
+  "edge_corr": 0.531,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot/Raw/DSC_4364.NEF",
+    "inliers": 243,
+    "edge_corr": 0.531
+   }
+  ]
+ },
+ "INDOOR/All Photos 2/Amir Home Shoot -256.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot/Raw/DSC_4366.NEF",
+  "inliers": 685,
+  "edge_corr": 0.907,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot/Raw/DSC_4366.NEF",
+    "inliers": 685,
+    "edge_corr": 0.907
+   }
+  ]
+ },
+ "INDOOR/All Photos 2/Amir Home Shoot -258.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot 5/Raw/DSC_4368.NEF",
+  "inliers": 961,
+  "edge_corr": 0.916,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot 5/Raw/DSC_4368.NEF",
+    "inliers": 961,
+    "edge_corr": 0.916
+   }
+  ]
+ },
+ "INDOOR/All Photos 2/Amir Home Shoot -264.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot/Raw/DSC_4376.NEF",
+  "inliers": 626,
+  "edge_corr": 0.818,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot/Raw/DSC_4376.NEF",
+    "inliers": 626,
+    "edge_corr": 0.818
+   }
+  ]
+ },
+ "INDOOR/All Photos 2/Amir Home Shoot -269.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot/Raw/DSC_4382.NEF",
+  "inliers": 805,
+  "edge_corr": 0.871,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot/Raw/DSC_4382.NEF",
+    "inliers": 805,
+    "edge_corr": 0.871
+   },
+   {
+    "raw": "INDOOR/Indoor Shoot/Raw/DSC_4383.NEF",
+    "inliers": 345,
+    "edge_corr": 0.575
+   },
+   {
+    "raw": "INDOOR/Indoor Shoot/Raw/DSC_4381.NEF",
+    "inliers": 327,
+    "edge_corr": 0.552
+   }
+  ]
+ },
+ "INDOOR/All Photos 2/Amir Home Shoot -271.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot/Raw/DSC_4385.NEF",
+  "inliers": 1157,
+  "edge_corr": 0.923,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot/Raw/DSC_4385.NEF",
+    "inliers": 1157,
+    "edge_corr": 0.923
+   }
+  ]
+ },
+ "INDOOR/All Photos 2/Amir Home Shoot -272.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot 2/Raw/DSC_4386.NEF",
+  "inliers": 1126,
+  "edge_corr": 0.908,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot 2/Raw/DSC_4386.NEF",
+    "inliers": 1126,
+    "edge_corr": 0.908
+   }
+  ]
+ },
+ "INDOOR/All Photos 2/Amir Home Shoot -274.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot 4/Raw/DSC_4388.NEF",
+  "inliers": 1157,
+  "edge_corr": 0.861,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot 4/Raw/DSC_4388.NEF",
+    "inliers": 1157,
+    "edge_corr": 0.861
+   }
+  ]
+ },
+ "INDOOR/All Photos 2/Amir Home Shoot -275.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot/Raw/DSC_4389.NEF",
+  "inliers": 1440,
+  "edge_corr": 0.907,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot/Raw/DSC_4389.NEF",
+    "inliers": 1440,
+    "edge_corr": 0.907
+   },
+   {
+    "raw": "INDOOR/Indoor Shoot 3/Raw/DSC_4390.NEF",
+    "inliers": 886,
+    "edge_corr": 0.844
+   }
+  ]
+ },
+ "INDOOR/All Photos 2/Amir Home Shoot -276.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot 3/Raw/DSC_4390.NEF",
+  "inliers": 1554,
+  "edge_corr": 0.932,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot 3/Raw/DSC_4390.NEF",
+    "inliers": 1554,
+    "edge_corr": 0.932
+   },
+   {
+    "raw": "INDOOR/Indoor Shoot/Raw/DSC_4389.NEF",
+    "inliers": 832,
+    "edge_corr": 0.824
+   }
+  ]
+ },
+ "INDOOR/All Photos 2/Amir Home Shoot -28.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot 8/Raw/DSC_4009.NEF",
+  "inliers": 972,
+  "edge_corr": 0.902,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot 8/Raw/DSC_4009.NEF",
+    "inliers": 972,
+    "edge_corr": 0.902
+   }
+  ]
+ },
+ "INDOOR/All Photos 2/Amir Home Shoot -30.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot 8/Raw/DSC_4012.NEF",
+  "inliers": 657,
+  "edge_corr": 0.832,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot 8/Raw/DSC_4012.NEF",
+    "inliers": 657,
+    "edge_corr": 0.832
+   },
+   {
+    "raw": "INDOOR/Indoor Shoot 10/Raw/DSC_4013.NEF",
+    "inliers": 459,
+    "edge_corr": 0.701
+   }
+  ]
+ },
+ "INDOOR/All Photos 2/Amir Home Shoot -31.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot 8/Raw/DSC_4015.NEF",
+  "inliers": 723,
+  "edge_corr": 0.799,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot 8/Raw/DSC_4015.NEF",
+    "inliers": 723,
+    "edge_corr": 0.799
+   },
+   {
+    "raw": "INDOOR/Indoor Shoot 11/Raw/DSC_4014.NEF",
+    "inliers": 341,
+    "edge_corr": 0.645
+   }
+  ]
+ },
+ "INDOOR/All Photos 2/Amir Home Shoot -34.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot 9/Raw/DSC_4019.NEF",
+  "inliers": 438,
+  "edge_corr": 0.671,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot 9/Raw/DSC_4019.NEF",
+    "inliers": 438,
+    "edge_corr": 0.671
+   }
+  ]
+ },
+ "INDOOR/All Photos 2/Amir Home Shoot -35.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot 9/Raw/DSC_4020.NEF",
+  "inliers": 418,
+  "edge_corr": 0.731,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot 9/Raw/DSC_4020.NEF",
+    "inliers": 418,
+    "edge_corr": 0.731
+   }
+  ]
+ },
+ "INDOOR/All Photos 2/Amir Home Shoot -36.JPG": {
+  "status": "verified",
+  "by": "recheck at 2x: image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot 9/Raw/DSC_4022.NEF",
+  "inliers": 4542,
+  "edge_corr": 0.967,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot 9/Raw/DSC_4022.NEF",
+    "inliers": 4542,
+    "edge_corr": 0.967
+   }
+  ],
+  "first_pass": {
+   "status": "ambiguous",
+   "raw": "INDOOR/Indoor Shoot 9/Raw/DSC_4022.NEF",
+   "inliers": 316,
+   "edge_corr": 0.596
+  }
+ },
+ "INDOOR/All Photos 2/Amir Home Shoot -37.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot 4/Raw/DSC_4024.NEF",
+  "inliers": 402,
+  "edge_corr": 0.756,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot 4/Raw/DSC_4024.NEF",
+    "inliers": 402,
+    "edge_corr": 0.756
+   }
+  ]
+ },
+ "INDOOR/All Photos 2/Amir Home Shoot -39.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot 9/Raw/DSC_4026.NEF",
+  "inliers": 1573,
+  "edge_corr": 0.963,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot 9/Raw/DSC_4026.NEF",
+    "inliers": 1573,
+    "edge_corr": 0.963
+   }
+  ]
+ },
+ "INDOOR/All Photos 2/Amir Home Shoot -42.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot 9/Raw/DSC_4029.NEF",
+  "inliers": 759,
+  "edge_corr": 0.877,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot 9/Raw/DSC_4029.NEF",
+    "inliers": 759,
+    "edge_corr": 0.877
+   }
+  ]
+ },
+ "INDOOR/All Photos 2/Amir Home Shoot -44.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot 9/Raw/DSC_4035.NEF",
+  "inliers": 455,
+  "edge_corr": 0.654,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot 9/Raw/DSC_4035.NEF",
+    "inliers": 455,
+    "edge_corr": 0.654
+   }
+  ]
+ },
+ "INDOOR/All Photos 2/Amir Home Shoot -46.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot 10/Raw/DSC_4039.NEF",
+  "inliers": 1632,
+  "edge_corr": 0.96,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot 10/Raw/DSC_4039.NEF",
+    "inliers": 1632,
+    "edge_corr": 0.96
+   }
+  ]
+ },
+ "INDOOR/All Photos 2/Amir Home Shoot -47.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot 11/Raw/DSC_4040.NEF",
+  "inliers": 906,
+  "edge_corr": 0.847,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot 11/Raw/DSC_4040.NEF",
+    "inliers": 906,
+    "edge_corr": 0.847
+   }
+  ]
+ },
+ "INDOOR/All Photos 2/Amir Home Shoot -49.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot 9/Raw/DSC_4044.NEF",
+  "inliers": 1228,
+  "edge_corr": 0.937,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot 9/Raw/DSC_4044.NEF",
+    "inliers": 1228,
+    "edge_corr": 0.937
+   }
+  ]
+ },
+ "INDOOR/All Photos 2/Amir Home Shoot -51.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot 8/Raw/DSC_4047.NEF",
+  "inliers": 924,
+  "edge_corr": 0.887,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot 8/Raw/DSC_4047.NEF",
+    "inliers": 924,
+    "edge_corr": 0.887
+   },
+   {
+    "raw": "INDOOR/Indoor Shoot 10/Raw/DSC_4046.NEF",
+    "inliers": 639,
+    "edge_corr": 0.754
+   }
+  ]
+ },
+ "INDOOR/All Photos 2/Amir Home Shoot -52.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot 10/Raw/DSC_4048.NEF",
+  "inliers": 642,
+  "edge_corr": 0.841,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot 10/Raw/DSC_4048.NEF",
+    "inliers": 642,
+    "edge_corr": 0.841
+   }
+  ]
+ },
+ "INDOOR/All Photos 2/Amir Home Shoot -57.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot 8/Raw/DSC_4053.NEF",
+  "inliers": 940,
+  "edge_corr": 0.845,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot 8/Raw/DSC_4053.NEF",
+    "inliers": 940,
+    "edge_corr": 0.845
+   },
+   {
+    "raw": "INDOOR/Indoor Shoot 10/Raw/DSC_4054.NEF",
+    "inliers": 729,
+    "edge_corr": 0.79
+   },
+   {
+    "raw": "INDOOR/Indoor Shoot 9/Raw/DSC_4052.NEF",
+    "inliers": 636,
+    "edge_corr": 0.675
+   },
+   {
+    "raw": "INDOOR/Indoor Shoot 10/Raw/DSC_4055.NEF",
+    "inliers": 386,
+    "edge_corr": 0.457
+   }
+  ]
+ },
+ "INDOOR/All Photos 2/Amir Home Shoot -6.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot 11/Raw/DSC_3939.NEF",
+  "inliers": 583,
+  "edge_corr": 0.947,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot 11/Raw/DSC_3939.NEF",
+    "inliers": 583,
+    "edge_corr": 0.947
+   }
+  ]
+ },
+ "INDOOR/All Photos 2/Amir Home Shoot -69.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot 8/Raw/DSC_4079.NEF",
+  "inliers": 41,
+  "edge_corr": 0.451,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot 8/Raw/DSC_4079.NEF",
+    "inliers": 41,
+    "edge_corr": 0.451
+   },
+   {
+    "raw": "INDOOR/Indoor Shoot 8/Raw/DSC_4093.NEF",
+    "inliers": 27,
+    "edge_corr": 0.116
+   },
+   {
+    "raw": "INDOOR/Indoor Shoot 8/Raw/DSC_4078.NEF",
+    "inliers": 22,
+    "edge_corr": 0.133
+   },
+   {
+    "raw": "INDOOR/Indoor Shoot 8/Raw/DSC_4075.NEF",
+    "inliers": 20,
+    "edge_corr": 0.056
+   },
+   {
+    "raw": "INDOOR/Indoor Shoot 7/Raw/DSC_4095.NEF",
+    "inliers": 19,
+    "edge_corr": 0.07
+   },
+   {
+    "raw": "INDOOR/Indoor Shoot 7/Raw/DSC_4084.NEF",
+    "inliers": 18,
+    "edge_corr": 0.101
+   }
+  ]
+ },
+ "INDOOR/All Photos 2/Amir Home Shoot -7.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot 11/Raw/DSC_3941.NEF",
+  "inliers": 746,
+  "edge_corr": 0.963,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot 11/Raw/DSC_3941.NEF",
+    "inliers": 746,
+    "edge_corr": 0.963
+   }
+  ]
+ },
+ "INDOOR/All Photos 2/Amir Home Shoot -70.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot 8/Raw/DSC_4080.NEF",
+  "inliers": 103,
+  "edge_corr": 0.567,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot 8/Raw/DSC_4080.NEF",
+    "inliers": 103,
+    "edge_corr": 0.567
+   },
+   {
+    "raw": "INDOOR/Indoor Shoot 8/Raw/DSC_4086.NEF",
+    "inliers": 43,
+    "edge_corr": 0.087
+   }
+  ]
+ },
+ "INDOOR/All Photos 2/Amir Home Shoot -71.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot 7/Raw/DSC_4084.NEF",
+  "inliers": 320,
+  "edge_corr": 0.74,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot 7/Raw/DSC_4084.NEF",
+    "inliers": 320,
+    "edge_corr": 0.74
+   }
+  ]
+ },
+ "INDOOR/All Photos 2/Amir Home Shoot -75.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot 7/Raw/DSC_4090.NEF",
+  "inliers": 144,
+  "edge_corr": 0.56,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot 7/Raw/DSC_4090.NEF",
+    "inliers": 144,
+    "edge_corr": 0.56
+   },
+   {
+    "raw": "INDOOR/Indoor Shoot 8/Raw/DSC_4093.NEF",
+    "inliers": 119,
+    "edge_corr": 0.116
+   },
+   {
+    "raw": "INDOOR/Indoor Shoot 7/Raw/DSC_4092.NEF",
+    "inliers": 92,
+    "edge_corr": 0.149
+   },
+   {
+    "raw": "INDOOR/Indoor Shoot 8/Raw/DSC_4088.NEF",
+    "inliers": 75,
+    "edge_corr": 0.137
+   },
+   {
+    "raw": "INDOOR/Indoor Shoot 8/Raw/DSC_4086.NEF",
+    "inliers": 74,
+    "edge_corr": 0.143
+   },
+   {
+    "raw": "INDOOR/Indoor Shoot 8/Raw/DSC_4087.NEF",
+    "inliers": 74,
+    "edge_corr": 0.144
+   }
+  ]
+ },
+ "INDOOR/All Photos 2/Amir Home Shoot -77.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot 7/Raw/DSC_4092.NEF",
+  "inliers": 590,
+  "edge_corr": 0.798,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot 7/Raw/DSC_4092.NEF",
+    "inliers": 590,
+    "edge_corr": 0.798
+   }
+  ]
+ },
+ "INDOOR/All Photos 2/Amir Home Shoot -78.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot 8/Raw/DSC_4093.NEF",
+  "inliers": 678,
+  "edge_corr": 0.801,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot 8/Raw/DSC_4093.NEF",
+    "inliers": 678,
+    "edge_corr": 0.801
+   }
+  ]
+ },
+ "INDOOR/All Photos 2/Amir Home Shoot -83.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot 7/Raw/DSC_4110.NEF",
+  "inliers": 276,
+  "edge_corr": 0.71,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot 7/Raw/DSC_4110.NEF",
+    "inliers": 276,
+    "edge_corr": 0.71
+   }
+  ]
+ },
+ "INDOOR/All Photos 2/Amir Home Shoot -84.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot 7/Raw/DSC_4112.NEF",
+  "inliers": 406,
+  "edge_corr": 0.909,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot 7/Raw/DSC_4112.NEF",
+    "inliers": 406,
+    "edge_corr": 0.909
+   }
+  ]
+ },
+ "INDOOR/All Photos 2/Amir Home Shoot -87.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot 7/Raw/DSC_4116.NEF",
+  "inliers": 320,
+  "edge_corr": 0.899,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot 7/Raw/DSC_4116.NEF",
+    "inliers": 320,
+    "edge_corr": 0.899
+   }
+  ]
+ },
+ "INDOOR/All Photos 2/Amir Home Shoot -9.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot 11/Raw/DSC_3944.NEF",
+  "inliers": 444,
+  "edge_corr": 0.903,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot 11/Raw/DSC_3944.NEF",
+    "inliers": 444,
+    "edge_corr": 0.903
+   }
+  ]
+ },
+ "INDOOR/All Photos 2/Amir Home Shoot -90.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot 8/Raw/DSC_4120.NEF",
+  "inliers": 108,
+  "edge_corr": 0.576,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot 8/Raw/DSC_4120.NEF",
+    "inliers": 108,
+    "edge_corr": 0.576
+   }
+  ]
+ },
+ "INDOOR/All Photos 2/Amir Home Shoot -93.JPG": {
+  "status": "composite",
+  "by": "Claude's eye 2026-10-14: her blend of two frames; raw = the standing base, the tilted-face layer is another frame, not searched",
+  "raw": "INDOOR/Indoor Shoot 7/Raw/DSC_4105.NEF",
+  "inliers": 217,
+  "edge_corr": 0.418,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot 7/Raw/DSC_4105.NEF",
+    "inliers": 217,
+    "edge_corr": 0.418
+   }
+  ],
+  "first_pass": {
+   "status": "likely",
+   "raw": "INDOOR/Indoor Shoot 7/Raw/DSC_4105.NEF",
+   "inliers": 217,
+   "edge_corr": 0.418
+  }
+ },
+ "INDOOR/All Photos 2/Amir Home Shoot -96.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot 7/Raw/DSC_4134.NEF",
+  "inliers": 1324,
+  "edge_corr": 0.887,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot 7/Raw/DSC_4134.NEF",
+    "inliers": 1324,
+    "edge_corr": 0.887
+   }
+  ]
+ },
+ "INDOOR/All Photos 3/Amir Home Shoot -10.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot 10/Raw/DSC_3954.NEF",
+  "inliers": 512,
+  "edge_corr": 0.917,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot 10/Raw/DSC_3954.NEF",
+    "inliers": 512,
+    "edge_corr": 0.917
+   }
+  ]
+ },
+ "INDOOR/All Photos 3/Amir Home Shoot -104.JPG": {
+  "status": "verified",
+  "by": "recheck at 2x: image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot 7/Raw/DSC_4151.NEF",
+  "inliers": 5714,
+  "edge_corr": 0.953,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot 7/Raw/DSC_4151.NEF",
+    "inliers": 5714,
+    "edge_corr": 0.953
+   }
+  ],
+  "first_pass": {
+   "status": "likely",
+   "raw": "INDOOR/Indoor Shoot 7/Raw/DSC_4151.NEF",
+   "inliers": 46,
+   "edge_corr": 0.381
+  }
+ },
+ "INDOOR/All Photos 3/Amir Home Shoot -105.JPG": {
+  "status": "verified",
+  "by": "recheck at 2x: image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot 5/Raw/DSC_4152.NEF",
+  "inliers": 4420,
+  "edge_corr": 0.794,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot 5/Raw/DSC_4152.NEF",
+    "inliers": 4420,
+    "edge_corr": 0.794
+   }
+  ],
+  "first_pass": {
+   "status": "unmatched",
+   "raw": null,
+   "inliers": 9,
+   "edge_corr": null
+  }
+ },
+ "INDOOR/All Photos 3/Amir Home Shoot -106.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot 6/Raw/DSC_4153.NEF",
+  "inliers": 1027,
+  "edge_corr": 0.877,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot 6/Raw/DSC_4153.NEF",
+    "inliers": 1027,
+    "edge_corr": 0.877
+   },
+   {
+    "raw": "INDOOR/Indoor Shoot 5/Raw/DSC_4154.NEF",
+    "inliers": 436,
+    "edge_corr": 0.429
+   }
+  ]
+ },
+ "INDOOR/All Photos 3/Amir Home Shoot -107.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot 6/Raw/DSC_4159.NEF",
+  "inliers": 232,
+  "edge_corr": 0.804,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot 6/Raw/DSC_4159.NEF",
+    "inliers": 232,
+    "edge_corr": 0.804
+   }
+  ]
+ },
+ "INDOOR/All Photos 3/Amir Home Shoot -108.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot 5/Raw/DSC_4160.NEF",
+  "inliers": 359,
+  "edge_corr": 0.787,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot 5/Raw/DSC_4160.NEF",
+    "inliers": 359,
+    "edge_corr": 0.787
+   }
+  ]
+ },
+ "INDOOR/All Photos 3/Amir Home Shoot -11.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot 10/Raw/DSC_3956.NEF",
+  "inliers": 491,
+  "edge_corr": 0.884,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot 10/Raw/DSC_3956.NEF",
+    "inliers": 491,
+    "edge_corr": 0.884
+   }
+  ]
+ },
+ "INDOOR/All Photos 3/Amir Home Shoot -112.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot 6/Raw/DSC_4166.NEF",
+  "inliers": 1539,
+  "edge_corr": 0.939,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot 6/Raw/DSC_4166.NEF",
+    "inliers": 1539,
+    "edge_corr": 0.939
+   }
+  ]
+ },
+ "INDOOR/All Photos 3/Amir Home Shoot -114.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot 5/Raw/DSC_4170.NEF",
+  "inliers": 793,
+  "edge_corr": 0.857,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot 5/Raw/DSC_4170.NEF",
+    "inliers": 793,
+    "edge_corr": 0.857
+   }
+  ]
+ },
+ "INDOOR/All Photos 3/Amir Home Shoot -120.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot 7/Raw/DSC_4178.NEF",
+  "inliers": 1353,
+  "edge_corr": 0.948,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot 7/Raw/DSC_4178.NEF",
+    "inliers": 1353,
+    "edge_corr": 0.948
+   }
+  ]
+ },
+ "INDOOR/All Photos 3/Amir Home Shoot -121.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot 8/Raw/DSC_4180.NEF",
+  "inliers": 1049,
+  "edge_corr": 0.932,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot 8/Raw/DSC_4180.NEF",
+    "inliers": 1049,
+    "edge_corr": 0.932
+   }
+  ]
+ },
+ "INDOOR/All Photos 3/Amir Home Shoot -126.JPG": {
+  "status": "verified",
+  "by": "recheck at 2x: image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot 4/Raw/DSC_4191.NEF",
+  "inliers": 2427,
+  "edge_corr": 0.909,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot 4/Raw/DSC_4191.NEF",
+    "inliers": 2427,
+    "edge_corr": 0.909
+   },
+   {
+    "raw": "INDOOR/Indoor Shoot 6/Raw/DSC_4190.NEF",
+    "inliers": 1734,
+    "edge_corr": 0.723
+   }
+  ],
+  "first_pass": {
+   "status": "ambiguous",
+   "raw": "INDOOR/Indoor Shoot 4/Raw/DSC_4191.NEF",
+   "inliers": 99,
+   "edge_corr": 0.465
+  }
+ },
+ "INDOOR/All Photos 3/Amir Home Shoot -127.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot 7/Raw/DSC_4192.NEF",
+  "inliers": 705,
+  "edge_corr": 0.902,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot 7/Raw/DSC_4192.NEF",
+    "inliers": 705,
+    "edge_corr": 0.902
+   }
+  ]
+ },
+ "INDOOR/All Photos 3/Amir Home Shoot -129.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot 8/Raw/DSC_4195.NEF",
+  "inliers": 805,
+  "edge_corr": 0.877,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot 8/Raw/DSC_4195.NEF",
+    "inliers": 805,
+    "edge_corr": 0.877
+   }
+  ]
+ },
+ "INDOOR/All Photos 3/Amir Home Shoot -13.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot 11/Raw/DSC_3961.NEF",
+  "inliers": 246,
+  "edge_corr": 0.878,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot 11/Raw/DSC_3961.NEF",
+    "inliers": 246,
+    "edge_corr": 0.878
+   },
+   {
+    "raw": "INDOOR/Indoor Shoot 11/Raw/DSC_3942.NEF",
+    "inliers": 213,
+    "edge_corr": 0.184
+   },
+   {
+    "raw": "INDOOR/Indoor Shoot 12/Raw/DSC_3999.NEF",
+    "inliers": 176,
+    "edge_corr": 0.125
+   },
+   {
+    "raw": "INDOOR/Indoor Shoot 10/Raw/DSC_3955.NEF",
+    "inliers": 162,
+    "edge_corr": 0.209
+   },
+   {
+    "raw": "INDOOR/Indoor Shoot 10/Raw/DSC_3997.NEF",
+    "inliers": 149,
+    "edge_corr": 0.088
+   },
+   {
+    "raw": "INDOOR/Indoor Shoot 9/Raw/DSC_3957.NEF",
+    "inliers": 136,
+    "edge_corr": 0.201
+   }
+  ]
+ },
+ "INDOOR/All Photos 3/Amir Home Shoot -130.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot 4/Raw/DSC_4198.NEF",
+  "inliers": 517,
+  "edge_corr": 0.811,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot 4/Raw/DSC_4198.NEF",
+    "inliers": 517,
+    "edge_corr": 0.811
+   }
+  ]
+ },
+ "INDOOR/All Photos 3/Amir Home Shoot -133.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot 5/Raw/DSC_4201.NEF",
+  "inliers": 1099,
+  "edge_corr": 0.923,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot 5/Raw/DSC_4201.NEF",
+    "inliers": 1099,
+    "edge_corr": 0.923
+   }
+  ]
+ },
+ "INDOOR/All Photos 3/Amir Home Shoot -14.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot 10/Raw/DSC_3964.NEF",
+  "inliers": 560,
+  "edge_corr": 0.885,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot 10/Raw/DSC_3964.NEF",
+    "inliers": 560,
+    "edge_corr": 0.885
+   }
+  ]
+ },
+ "INDOOR/All Photos 3/Amir Home Shoot -141.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot 6/Raw/DSC_4212.NEF",
+  "inliers": 835,
+  "edge_corr": 0.908,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot 6/Raw/DSC_4212.NEF",
+    "inliers": 835,
+    "edge_corr": 0.908
+   }
+  ]
+ },
+ "INDOOR/All Photos 3/Amir Home Shoot -146.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot 4/Raw/DSC_4219.NEF",
+  "inliers": 969,
+  "edge_corr": 0.911,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot 4/Raw/DSC_4219.NEF",
+    "inliers": 969,
+    "edge_corr": 0.911
+   },
+   {
+    "raw": "INDOOR/Indoor Shoot 5/Raw/DSC_4218.NEF",
+    "inliers": 861,
+    "edge_corr": 0.698
+   }
+  ]
+ },
+ "INDOOR/All Photos 3/Amir Home Shoot -155.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot 4/Raw/DSC_4231.NEF",
+  "inliers": 1208,
+  "edge_corr": 0.949,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot 4/Raw/DSC_4231.NEF",
+    "inliers": 1208,
+    "edge_corr": 0.949
+   },
+   {
+    "raw": "INDOOR/Indoor Shoot 5/Raw/DSC_4233.NEF",
+    "inliers": 590,
+    "edge_corr": 0.531
+   }
+  ]
+ },
+ "INDOOR/All Photos 3/Amir Home Shoot -158.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot 5/Raw/DSC_4236.NEF",
+  "inliers": 1161,
+  "edge_corr": 0.964,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot 5/Raw/DSC_4236.NEF",
+    "inliers": 1161,
+    "edge_corr": 0.964
+   }
+  ]
+ },
+ "INDOOR/All Photos 3/Amir Home Shoot -159.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot 5/Raw/DSC_4238.NEF",
+  "inliers": 1314,
+  "edge_corr": 0.972,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot 5/Raw/DSC_4238.NEF",
+    "inliers": 1314,
+    "edge_corr": 0.972
+   },
+   {
+    "raw": "INDOOR/Indoor Shoot 4/Raw/DSC_4239.NEF",
+    "inliers": 683,
+    "edge_corr": 0.66
+   }
+  ]
+ },
+ "INDOOR/All Photos 3/Amir Home Shoot -161.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot 6/Raw/DSC_4240.NEF",
+  "inliers": 1331,
+  "edge_corr": 0.956,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot 6/Raw/DSC_4240.NEF",
+    "inliers": 1331,
+    "edge_corr": 0.956
+   }
+  ]
+ },
+ "INDOOR/All Photos 3/Amir Home Shoot -164.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot 4/Raw/DSC_4243.NEF",
+  "inliers": 1000,
+  "edge_corr": 0.946,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot 4/Raw/DSC_4243.NEF",
+    "inliers": 1000,
+    "edge_corr": 0.946
+   }
+  ]
+ },
+ "INDOOR/All Photos 3/Amir Home Shoot -166.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot 4/Raw/DSC_4246.NEF",
+  "inliers": 1000,
+  "edge_corr": 0.912,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot 4/Raw/DSC_4246.NEF",
+    "inliers": 1000,
+    "edge_corr": 0.912
+   }
+  ]
+ },
+ "INDOOR/All Photos 3/Amir Home Shoot -170.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot 4/Raw/DSC_4251.NEF",
+  "inliers": 1509,
+  "edge_corr": 0.9,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot 4/Raw/DSC_4251.NEF",
+    "inliers": 1509,
+    "edge_corr": 0.9
+   }
+  ]
+ },
+ "INDOOR/All Photos 3/Amir Home Shoot -177.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot 3/Raw/DSC_4261.NEF",
+  "inliers": 644,
+  "edge_corr": 0.9,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot 3/Raw/DSC_4261.NEF",
+    "inliers": 644,
+    "edge_corr": 0.9
+   },
+   {
+    "raw": "INDOOR/Indoor Shoot 3/Raw/DSC_4260.NEF",
+    "inliers": 302,
+    "edge_corr": 0.69
+   }
+  ]
+ },
+ "INDOOR/All Photos 3/Amir Home Shoot -179.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot/Raw/DSC_4268.NEF",
+  "inliers": 649,
+  "edge_corr": 0.934,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot/Raw/DSC_4268.NEF",
+    "inliers": 649,
+    "edge_corr": 0.934
+   }
+  ]
+ },
+ "INDOOR/All Photos 3/Amir Home Shoot -180.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot 2/Raw/DSC_4269.NEF",
+  "inliers": 503,
+  "edge_corr": 0.696,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot 2/Raw/DSC_4269.NEF",
+    "inliers": 503,
+    "edge_corr": 0.696
+   },
+   {
+    "raw": "INDOOR/Indoor Shoot 3/Raw/DSC_4270.NEF",
+    "inliers": 317,
+    "edge_corr": 0.418
+   },
+   {
+    "raw": "INDOOR/Indoor Shoot/Raw/DSC_4268.NEF",
+    "inliers": 284,
+    "edge_corr": 0.246
+   }
+  ]
+ },
+ "INDOOR/All Photos 3/Amir Home Shoot -182.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot 2/Raw/DSC_4271.NEF",
+  "inliers": 157,
+  "edge_corr": 0.745,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot 2/Raw/DSC_4271.NEF",
+    "inliers": 157,
+    "edge_corr": 0.745
+   }
+  ]
+ },
+ "INDOOR/All Photos 3/Amir Home Shoot -183.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot 4/Raw/DSC_4272.NEF",
+  "inliers": 590,
+  "edge_corr": 0.737,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot 4/Raw/DSC_4272.NEF",
+    "inliers": 590,
+    "edge_corr": 0.737
+   }
+  ]
+ },
+ "INDOOR/All Photos 3/Amir Home Shoot -185.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot 2/Raw/DSC_4275.NEF",
+  "inliers": 79,
+  "edge_corr": 0.662,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot 4/Raw/DSC_4245.NEF",
+    "inliers": 86,
+    "edge_corr": 0.224
+   },
+   {
+    "raw": "INDOOR/Indoor Shoot 4/Raw/DSC_4252.NEF",
+    "inliers": 86,
+    "edge_corr": 0.17
+   },
+   {
+    "raw": "INDOOR/Indoor Shoot 2/Raw/DSC_4275.NEF",
+    "inliers": 79,
+    "edge_corr": 0.662
+   },
+   {
+    "raw": "INDOOR/Indoor Shoot 7/Raw/DSC_4244.NEF",
+    "inliers": 79,
+    "edge_corr": 0.135
+   },
+   {
+    "raw": "INDOOR/Indoor Shoot 4/Raw/DSC_4251.NEF",
+    "inliers": 74,
+    "edge_corr": 0.123
+   },
+   {
+    "raw": "INDOOR/Indoor Shoot/Raw/DSC_4256.NEF",
+    "inliers": 63,
+    "edge_corr": 0.191
+   }
+  ]
+ },
+ "INDOOR/All Photos 3/Amir Home Shoot -186.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot 3/Raw/DSC_4276.NEF",
+  "inliers": 807,
+  "edge_corr": 0.912,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot 3/Raw/DSC_4276.NEF",
+    "inliers": 807,
+    "edge_corr": 0.912
+   }
+  ]
+ },
+ "INDOOR/All Photos 3/Amir Home Shoot -187.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot/Raw/DSC_4277.NEF",
+  "inliers": 527,
+  "edge_corr": 0.888,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot/Raw/DSC_4277.NEF",
+    "inliers": 527,
+    "edge_corr": 0.888
+   },
+   {
+    "raw": "INDOOR/Indoor Shoot 2/Raw/DSC_4274.NEF",
+    "inliers": 212,
+    "edge_corr": 0.261
+   }
+  ]
+ },
+ "INDOOR/All Photos 3/Amir Home Shoot -188.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot 2/Raw/DSC_4279.NEF",
+  "inliers": 1446,
+  "edge_corr": 0.957,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot 2/Raw/DSC_4279.NEF",
+    "inliers": 1446,
+    "edge_corr": 0.957
+   }
+  ]
+ },
+ "INDOOR/All Photos 3/Amir Home Shoot -194.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot 2/Raw/DSC_4286.NEF",
+  "inliers": 1489,
+  "edge_corr": 0.96,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot 2/Raw/DSC_4286.NEF",
+    "inliers": 1489,
+    "edge_corr": 0.96
+   }
+  ]
+ },
+ "INDOOR/All Photos 3/Amir Home Shoot -199.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot/Raw/DSC_4293.NEF",
+  "inliers": 375,
+  "edge_corr": 0.797,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot/Raw/DSC_4293.NEF",
+    "inliers": 375,
+    "edge_corr": 0.797
+   }
+  ]
+ },
+ "INDOOR/All Photos 3/Amir Home Shoot -2.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot 11/Raw/DSC_3935.NEF",
+  "inliers": 816,
+  "edge_corr": 0.904,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot 11/Raw/DSC_3935.NEF",
+    "inliers": 816,
+    "edge_corr": 0.904
+   }
+  ]
+ },
+ "INDOOR/All Photos 3/Amir Home Shoot -20.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot 10/Raw/DSC_3992.NEF",
+  "inliers": 901,
+  "edge_corr": 0.932,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot 10/Raw/DSC_3992.NEF",
+    "inliers": 901,
+    "edge_corr": 0.932
+   }
+  ]
+ },
+ "INDOOR/All Photos 3/Amir Home Shoot -202.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot 6/Raw/DSC_4299.NEF",
+  "inliers": 481,
+  "edge_corr": 0.832,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot 6/Raw/DSC_4299.NEF",
+    "inliers": 481,
+    "edge_corr": 0.832
+   }
+  ]
+ },
+ "INDOOR/All Photos 3/Amir Home Shoot -210.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot 4/Raw/DSC_4307.NEF",
+  "inliers": 524,
+  "edge_corr": 0.81,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot 4/Raw/DSC_4307.NEF",
+    "inliers": 524,
+    "edge_corr": 0.81
+   }
+  ]
+ },
+ "INDOOR/All Photos 3/Amir Home Shoot -213.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot 4/Raw/DSC_4310.NEF",
+  "inliers": 688,
+  "edge_corr": 0.815,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot 4/Raw/DSC_4310.NEF",
+    "inliers": 688,
+    "edge_corr": 0.815
+   }
+  ]
+ },
+ "INDOOR/All Photos 3/Amir Home Shoot -216.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot 3/Raw/DSC_4313.NEF",
+  "inliers": 1077,
+  "edge_corr": 0.884,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot 3/Raw/DSC_4313.NEF",
+    "inliers": 1077,
+    "edge_corr": 0.884
+   },
+   {
+    "raw": "INDOOR/Indoor Shoot 3/Raw/DSC_4311.NEF",
+    "inliers": 803,
+    "edge_corr": 0.778
+   },
+   {
+    "raw": "INDOOR/Indoor Shoot/Raw/DSC_4312.NEF",
+    "inliers": 569,
+    "edge_corr": 0.642
+   },
+   {
+    "raw": "INDOOR/Indoor Shoot 3/Raw/DSC_4309.NEF",
+    "inliers": 530,
+    "edge_corr": 0.609
+   },
+   {
+    "raw": "INDOOR/Indoor Shoot 3/Raw/DSC_4316.NEF",
+    "inliers": 458,
+    "edge_corr": 0.647
+   },
+   {
+    "raw": "INDOOR/Indoor Shoot 3/Raw/DSC_4318.NEF",
+    "inliers": 436,
+    "edge_corr": 0.543
+   }
+  ]
+ },
+ "INDOOR/All Photos 3/Amir Home Shoot -219.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot 3/Raw/DSC_4316.NEF",
+  "inliers": 1201,
+  "edge_corr": 0.911,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot 3/Raw/DSC_4316.NEF",
+    "inliers": 1201,
+    "edge_corr": 0.911
+   },
+   {
+    "raw": "INDOOR/Indoor Shoot 3/Raw/DSC_4318.NEF",
+    "inliers": 534,
+    "edge_corr": 0.663
+   },
+   {
+    "raw": "INDOOR/Indoor Shoot 3/Raw/DSC_4313.NEF",
+    "inliers": 492,
+    "edge_corr": 0.634
+   },
+   {
+    "raw": "INDOOR/Indoor Shoot 4/Raw/DSC_4315.NEF",
+    "inliers": 482,
+    "edge_corr": 0.636
+   }
+  ]
+ },
+ "INDOOR/All Photos 3/Amir Home Shoot -220.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot/Raw/DSC_4317.NEF",
+  "inliers": 913,
+  "edge_corr": 0.918,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot/Raw/DSC_4317.NEF",
+    "inliers": 913,
+    "edge_corr": 0.918
+   },
+   {
+    "raw": "INDOOR/Indoor Shoot 3/Raw/DSC_4316.NEF",
+    "inliers": 581,
+    "edge_corr": 0.748
+   },
+   {
+    "raw": "INDOOR/Indoor Shoot 3/Raw/DSC_4313.NEF",
+    "inliers": 547,
+    "edge_corr": 0.572
+   },
+   {
+    "raw": "INDOOR/Indoor Shoot 3/Raw/DSC_4318.NEF",
+    "inliers": 512,
+    "edge_corr": 0.589
+   },
+   {
+    "raw": "INDOOR/Indoor Shoot 4/Raw/DSC_4315.NEF",
+    "inliers": 425,
+    "edge_corr": 0.654
+   },
+   {
+    "raw": "INDOOR/Indoor Shoot/Raw/DSC_4312.NEF",
+    "inliers": 415,
+    "edge_corr": 0.575
+   }
+  ]
+ },
+ "INDOOR/All Photos 3/Amir Home Shoot -221.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot 3/Raw/DSC_4318.NEF",
+  "inliers": 1114,
+  "edge_corr": 0.915,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot 3/Raw/DSC_4318.NEF",
+    "inliers": 1114,
+    "edge_corr": 0.915
+   },
+   {
+    "raw": "INDOOR/Indoor Shoot 4/Raw/DSC_4319.NEF",
+    "inliers": 557,
+    "edge_corr": 0.507
+   },
+   {
+    "raw": "INDOOR/Indoor Shoot 3/Raw/DSC_4316.NEF",
+    "inliers": 478,
+    "edge_corr": 0.638
+   },
+   {
+    "raw": "INDOOR/Indoor Shoot/Raw/DSC_4312.NEF",
+    "inliers": 461,
+    "edge_corr": 0.551
+   }
+  ]
+ },
+ "INDOOR/All Photos 3/Amir Home Shoot -222.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot 4/Raw/DSC_4319.NEF",
+  "inliers": 529,
+  "edge_corr": 0.828,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot 4/Raw/DSC_4319.NEF",
+    "inliers": 529,
+    "edge_corr": 0.828
+   },
+   {
+    "raw": "INDOOR/Indoor Shoot 3/Raw/DSC_4318.NEF",
+    "inliers": 245,
+    "edge_corr": 0.441
+   },
+   {
+    "raw": "INDOOR/Indoor Shoot 4/Raw/DSC_4310.NEF",
+    "inliers": 221,
+    "edge_corr": 0.405
+   },
+   {
+    "raw": "INDOOR/Indoor Shoot 3/Raw/DSC_4311.NEF",
+    "inliers": 216,
+    "edge_corr": 0.465
+   },
+   {
+    "raw": "INDOOR/Indoor Shoot 3/Raw/DSC_4316.NEF",
+    "inliers": 213,
+    "edge_corr": 0.531
+   }
+  ]
+ },
+ "INDOOR/All Photos 3/Amir Home Shoot -232.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot 3/Raw/DSC_4331.NEF",
+  "inliers": 1178,
+  "edge_corr": 0.864,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot 3/Raw/DSC_4331.NEF",
+    "inliers": 1178,
+    "edge_corr": 0.864
+   },
+   {
+    "raw": "INDOOR/Indoor Shoot 3/Raw/DSC_4332.NEF",
+    "inliers": 888,
+    "edge_corr": 0.677
+   },
+   {
+    "raw": "INDOOR/Indoor Shoot/Raw/DSC_4334.NEF",
+    "inliers": 839,
+    "edge_corr": 0.724
+   },
+   {
+    "raw": "INDOOR/Indoor Shoot 3/Raw/DSC_4333.NEF",
+    "inliers": 797,
+    "edge_corr": 0.664
+   },
+   {
+    "raw": "INDOOR/Indoor Shoot 2/Raw/DSC_4335.NEF",
+    "inliers": 694,
+    "edge_corr": 0.712
+   },
+   {
+    "raw": "INDOOR/Indoor Shoot 3/Raw/DSC_4329.NEF",
+    "inliers": 578,
+    "edge_corr": 0.758
+   }
+  ]
+ },
+ "INDOOR/All Photos 3/Amir Home Shoot -235.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot/Raw/DSC_4338.NEF",
+  "inliers": 879,
+  "edge_corr": 0.897,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot/Raw/DSC_4338.NEF",
+    "inliers": 879,
+    "edge_corr": 0.897
+   },
+   {
+    "raw": "INDOOR/Indoor Shoot/Raw/DSC_4339.NEF",
+    "inliers": 682,
+    "edge_corr": 0.638
+   },
+   {
+    "raw": "INDOOR/Indoor Shoot/Raw/DSC_4340.NEF",
+    "inliers": 357,
+    "edge_corr": 0.485
+   }
+  ]
+ },
+ "INDOOR/All Photos 3/Amir Home Shoot -237.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot/Raw/DSC_4340.NEF",
+  "inliers": 590,
+  "edge_corr": 0.824,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot/Raw/DSC_4339.NEF",
+    "inliers": 889,
+    "edge_corr": 0.718
+   },
+   {
+    "raw": "INDOOR/Indoor Shoot/Raw/DSC_4338.NEF",
+    "inliers": 643,
+    "edge_corr": 0.608
+   },
+   {
+    "raw": "INDOOR/Indoor Shoot/Raw/DSC_4340.NEF",
+    "inliers": 590,
+    "edge_corr": 0.824
+   },
+   {
+    "raw": "INDOOR/Indoor Shoot/Raw/DSC_4342.NEF",
+    "inliers": 579,
+    "edge_corr": 0.632
+   }
+  ]
+ },
+ "INDOOR/All Photos 3/Amir Home Shoot -24.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot 12/Raw/DSC_3999.NEF",
+  "inliers": 1172,
+  "edge_corr": 0.931,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot 12/Raw/DSC_3999.NEF",
+    "inliers": 1172,
+    "edge_corr": 0.931
+   },
+   {
+    "raw": "INDOOR/Indoor Shoot 10/Raw/DSC_3997.NEF",
+    "inliers": 486,
+    "edge_corr": 0.367
+   }
+  ]
+ },
+ "INDOOR/All Photos 3/Amir Home Shoot -240.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot/Raw/DSC_4343.NEF",
+  "inliers": 1536,
+  "edge_corr": 0.947,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot/Raw/DSC_4343.NEF",
+    "inliers": 1536,
+    "edge_corr": 0.947
+   },
+   {
+    "raw": "INDOOR/Indoor Shoot 3/Raw/DSC_4344.NEF",
+    "inliers": 974,
+    "edge_corr": 0.742
+   }
+  ]
+ },
+ "INDOOR/All Photos 3/Amir Home Shoot -243.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot/Raw/DSC_4347.NEF",
+  "inliers": 1735,
+  "edge_corr": 0.947,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot/Raw/DSC_4347.NEF",
+    "inliers": 1735,
+    "edge_corr": 0.947
+   }
+  ]
+ },
+ "INDOOR/All Photos 3/Amir Home Shoot -248.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot 3/Raw/DSC_4355.NEF",
+  "inliers": 192,
+  "edge_corr": 0.711,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot 3/Raw/DSC_4355.NEF",
+    "inliers": 192,
+    "edge_corr": 0.711
+   }
+  ]
+ },
+ "INDOOR/All Photos 3/Amir Home Shoot -252.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot 3/Raw/DSC_4359.NEF",
+  "inliers": 501,
+  "edge_corr": 0.842,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot 3/Raw/DSC_4359.NEF",
+    "inliers": 501,
+    "edge_corr": 0.842
+   }
+  ]
+ },
+ "INDOOR/All Photos 3/Amir Home Shoot -259.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot 2/Raw/DSC_4370.NEF",
+  "inliers": 360,
+  "edge_corr": 0.867,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot 2/Raw/DSC_4370.NEF",
+    "inliers": 360,
+    "edge_corr": 0.867
+   }
+  ]
+ },
+ "INDOOR/All Photos 3/Amir Home Shoot -260.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot 2/Raw/DSC_4371.NEF",
+  "inliers": 668,
+  "edge_corr": 0.924,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot 2/Raw/DSC_4371.NEF",
+    "inliers": 668,
+    "edge_corr": 0.924
+   }
+  ]
+ },
+ "INDOOR/All Photos 3/Amir Home Shoot -261.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot 4/Raw/DSC_4373.NEF",
+  "inliers": 725,
+  "edge_corr": 0.905,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot 4/Raw/DSC_4373.NEF",
+    "inliers": 725,
+    "edge_corr": 0.905
+   }
+  ]
+ },
+ "INDOOR/All Photos 3/Amir Home Shoot -262.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot/Raw/DSC_4374.NEF",
+  "inliers": 642,
+  "edge_corr": 0.839,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot/Raw/DSC_4374.NEF",
+    "inliers": 642,
+    "edge_corr": 0.839
+   }
+  ]
+ },
+ "INDOOR/All Photos 3/Amir Home Shoot -263.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot/Raw/DSC_4375.NEF",
+  "inliers": 822,
+  "edge_corr": 0.908,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot/Raw/DSC_4375.NEF",
+    "inliers": 822,
+    "edge_corr": 0.908
+   }
+  ]
+ },
+ "INDOOR/All Photos 3/Amir Home Shoot -265.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot 3/Raw/DSC_4377.NEF",
+  "inliers": 726,
+  "edge_corr": 0.855,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot 3/Raw/DSC_4377.NEF",
+    "inliers": 726,
+    "edge_corr": 0.855
+   }
+  ]
+ },
+ "INDOOR/All Photos 3/Amir Home Shoot -266.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot/Raw/DSC_4378.NEF",
+  "inliers": 989,
+  "edge_corr": 0.804,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot/Raw/DSC_4378.NEF",
+    "inliers": 989,
+    "edge_corr": 0.804
+   }
+  ]
+ },
+ "INDOOR/All Photos 3/Amir Home Shoot -268.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot/Raw/DSC_4381.NEF",
+  "inliers": 939,
+  "edge_corr": 0.874,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot/Raw/DSC_4381.NEF",
+    "inliers": 939,
+    "edge_corr": 0.874
+   }
+  ]
+ },
+ "INDOOR/All Photos 3/Amir Home Shoot -27.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot 10/Raw/DSC_4006.NEF",
+  "inliers": 553,
+  "edge_corr": 0.919,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot 10/Raw/DSC_4006.NEF",
+    "inliers": 553,
+    "edge_corr": 0.919
+   }
+  ]
+ },
+ "INDOOR/All Photos 3/Amir Home Shoot -270.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot/Raw/DSC_4383.NEF",
+  "inliers": 1238,
+  "edge_corr": 0.93,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot/Raw/DSC_4383.NEF",
+    "inliers": 1238,
+    "edge_corr": 0.93
+   }
+  ]
+ },
+ "INDOOR/All Photos 3/Amir Home Shoot -279.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot 4/Raw/DSC_4393.NEF",
+  "inliers": 1315,
+  "edge_corr": 0.86,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot 4/Raw/DSC_4393.NEF",
+    "inliers": 1315,
+    "edge_corr": 0.86
+   }
+  ]
+ },
+ "INDOOR/All Photos 3/Amir Home Shoot -281.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot 2/Raw/DSC_4395.NEF",
+  "inliers": 553,
+  "edge_corr": 0.754,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot 2/Raw/DSC_4395.NEF",
+    "inliers": 553,
+    "edge_corr": 0.754
+   }
+  ]
+ },
+ "INDOOR/All Photos 3/Amir Home Shoot -29.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot 9/Raw/DSC_4010.NEF",
+  "inliers": 629,
+  "edge_corr": 0.777,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot 9/Raw/DSC_4010.NEF",
+    "inliers": 629,
+    "edge_corr": 0.777
+   },
+   {
+    "raw": "INDOOR/Indoor Shoot 8/Raw/DSC_4009.NEF",
+    "inliers": 359,
+    "edge_corr": 0.607
+   }
+  ]
+ },
+ "INDOOR/All Photos 3/Amir Home Shoot -3.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot 11/Raw/DSC_3936.NEF",
+  "inliers": 948,
+  "edge_corr": 0.971,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot 11/Raw/DSC_3936.NEF",
+    "inliers": 948,
+    "edge_corr": 0.971
+   }
+  ]
+ },
+ "INDOOR/All Photos 3/Amir Home Shoot -32.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot 9/Raw/DSC_4017.NEF",
+  "inliers": 412,
+  "edge_corr": 0.676,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot 9/Raw/DSC_4017.NEF",
+    "inliers": 412,
+    "edge_corr": 0.676
+   }
+  ]
+ },
+ "INDOOR/All Photos 3/Amir Home Shoot -33.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot 11/Raw/DSC_4018.NEF",
+  "inliers": 457,
+  "edge_corr": 0.686,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot 11/Raw/DSC_4018.NEF",
+    "inliers": 457,
+    "edge_corr": 0.686
+   }
+  ]
+ },
+ "INDOOR/All Photos 3/Amir Home Shoot -43.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot 10/Raw/DSC_4030.NEF",
+  "inliers": 337,
+  "edge_corr": 0.701,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot 10/Raw/DSC_4030.NEF",
+    "inliers": 337,
+    "edge_corr": 0.701
+   }
+  ]
+ },
+ "INDOOR/All Photos 3/Amir Home Shoot -48.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot 10/Raw/DSC_4041.NEF",
+  "inliers": 1494,
+  "edge_corr": 0.947,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot 10/Raw/DSC_4041.NEF",
+    "inliers": 1494,
+    "edge_corr": 0.947
+   }
+  ]
+ },
+ "INDOOR/All Photos 3/Amir Home Shoot -50.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot 10/Raw/DSC_4045.NEF",
+  "inliers": 826,
+  "edge_corr": 0.906,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot 10/Raw/DSC_4045.NEF",
+    "inliers": 826,
+    "edge_corr": 0.906
+   }
+  ]
+ },
+ "INDOOR/All Photos 3/Amir Home Shoot -53.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot 8/Raw/DSC_4049.NEF",
+  "inliers": 682,
+  "edge_corr": 0.818,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot 8/Raw/DSC_4049.NEF",
+    "inliers": 682,
+    "edge_corr": 0.818
+   },
+   {
+    "raw": "INDOOR/Indoor Shoot 9/Raw/DSC_4050.NEF",
+    "inliers": 305,
+    "edge_corr": 0.435
+   }
+  ]
+ },
+ "INDOOR/All Photos 3/Amir Home Shoot -54.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot 9/Raw/DSC_4050.NEF",
+  "inliers": 317,
+  "edge_corr": 0.795,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot 9/Raw/DSC_4050.NEF",
+    "inliers": 317,
+    "edge_corr": 0.795
+   }
+  ]
+ },
+ "INDOOR/All Photos 3/Amir Home Shoot -58.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot 10/Raw/DSC_4054.NEF",
+  "inliers": 345,
+  "edge_corr": 0.787,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot 10/Raw/DSC_4054.NEF",
+    "inliers": 345,
+    "edge_corr": 0.787
+   },
+   {
+    "raw": "INDOOR/Indoor Shoot 8/Raw/DSC_4053.NEF",
+    "inliers": 237,
+    "edge_corr": 0.571
+   }
+  ]
+ },
+ "INDOOR/All Photos 3/Amir Home Shoot -59.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot 10/Raw/DSC_4055.NEF",
+  "inliers": 897,
+  "edge_corr": 0.854,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot 10/Raw/DSC_4055.NEF",
+    "inliers": 897,
+    "edge_corr": 0.854
+   },
+   {
+    "raw": "INDOOR/Indoor Shoot 9/Raw/DSC_4052.NEF",
+    "inliers": 423,
+    "edge_corr": 0.557
+   },
+   {
+    "raw": "INDOOR/Indoor Shoot 10/Raw/DSC_4051.NEF",
+    "inliers": 392,
+    "edge_corr": 0.488
+   }
+  ]
+ },
+ "INDOOR/All Photos 3/Amir Home Shoot -60.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot 8/Raw/DSC_4066.NEF",
+  "inliers": 502,
+  "edge_corr": 0.775,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot 8/Raw/DSC_4066.NEF",
+    "inliers": 502,
+    "edge_corr": 0.775
+   }
+  ]
+ },
+ "INDOOR/All Photos 3/Amir Home Shoot -61.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot 9/Raw/DSC_4067.NEF",
+  "inliers": 228,
+  "edge_corr": 0.538,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot 9/Raw/DSC_4067.NEF",
+    "inliers": 228,
+    "edge_corr": 0.538
+   }
+  ]
+ },
+ "INDOOR/All Photos 3/Amir Home Shoot -62.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot 9/Raw/DSC_4068.NEF",
+  "inliers": 207,
+  "edge_corr": 0.605,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot 9/Raw/DSC_4068.NEF",
+    "inliers": 207,
+    "edge_corr": 0.605
+   },
+   {
+    "raw": "INDOOR/Indoor Shoot 9/Raw/DSC_4067.NEF",
+    "inliers": 93,
+    "edge_corr": 0.119
+   }
+  ]
+ },
+ "INDOOR/All Photos 3/Amir Home Shoot -63.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot 9/Raw/DSC_4069.NEF",
+  "inliers": 249,
+  "edge_corr": 0.609,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot 9/Raw/DSC_4069.NEF",
+    "inliers": 249,
+    "edge_corr": 0.609
+   }
+  ]
+ },
+ "INDOOR/All Photos 3/Amir Home Shoot -65.JPG": {
+  "status": "verified",
+  "by": "recheck at 2x: image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot 8/Raw/DSC_4071.NEF",
+  "inliers": 6140,
+  "edge_corr": 0.971,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot 8/Raw/DSC_4071.NEF",
+    "inliers": 6140,
+    "edge_corr": 0.971
+   }
+  ],
+  "first_pass": {
+   "status": "likely",
+   "raw": "INDOOR/Indoor Shoot 8/Raw/DSC_4071.NEF",
+   "inliers": 33,
+   "edge_corr": 0.374
+  }
+ },
+ "INDOOR/All Photos 3/Amir Home Shoot -76.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot 8/Raw/DSC_4091.NEF",
+  "inliers": 60,
+  "edge_corr": 0.583,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot 7/Raw/DSC_4095.NEF",
+    "inliers": 62,
+    "edge_corr": 0.073
+   },
+   {
+    "raw": "INDOOR/Indoor Shoot 8/Raw/DSC_4091.NEF",
+    "inliers": 60,
+    "edge_corr": 0.583
+   },
+   {
+    "raw": "INDOOR/Indoor Shoot 8/Raw/DSC_4093.NEF",
+    "inliers": 50,
+    "edge_corr": 0.126
+   },
+   {
+    "raw": "INDOOR/Indoor Shoot 7/Raw/DSC_4092.NEF",
+    "inliers": 48,
+    "edge_corr": 0.188
+   },
+   {
+    "raw": "INDOOR/Indoor Shoot 8/Raw/DSC_4087.NEF",
+    "inliers": 39,
+    "edge_corr": 0.145
+   },
+   {
+    "raw": "INDOOR/Indoor Shoot 8/Raw/DSC_4086.NEF",
+    "inliers": 35,
+    "edge_corr": 0.131
+   }
+  ]
+ },
+ "INDOOR/All Photos 3/Amir Home Shoot -80.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot 7/Raw/DSC_4097.NEF",
+  "inliers": 765,
+  "edge_corr": 0.657,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot 7/Raw/DSC_4097.NEF",
+    "inliers": 765,
+    "edge_corr": 0.657
+   }
+  ]
+ },
+ "INDOOR/All Photos 3/Amir Home Shoot -81.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot 7/Raw/DSC_4106.NEF",
+  "inliers": 301,
+  "edge_corr": 0.683,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot 7/Raw/DSC_4106.NEF",
+    "inliers": 301,
+    "edge_corr": 0.683
+   },
+   {
+    "raw": "INDOOR/Indoor Shoot 7/Raw/DSC_4109.NEF",
+    "inliers": 125,
+    "edge_corr": 0.256
+   }
+  ]
+ },
+ "INDOOR/All Photos 3/Amir Home Shoot -86.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot 7/Raw/DSC_4115.NEF",
+  "inliers": 341,
+  "edge_corr": 0.91,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot 7/Raw/DSC_4115.NEF",
+    "inliers": 341,
+    "edge_corr": 0.91
+   }
+  ]
+ },
+ "INDOOR/All Photos 3/Amir Home Shoot -88.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot 7/Raw/DSC_4117.NEF",
+  "inliers": 539,
+  "edge_corr": 0.766,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot 7/Raw/DSC_4117.NEF",
+    "inliers": 539,
+    "edge_corr": 0.766
+   }
+  ]
+ },
+ "INDOOR/All Photos 3/Amir Home Shoot -89.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot 6/Raw/DSC_4118.NEF",
+  "inliers": 369,
+  "edge_corr": 0.785,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot 6/Raw/DSC_4118.NEF",
+    "inliers": 369,
+    "edge_corr": 0.785
+   }
+  ]
+ },
+ "INDOOR/All Photos 3/Amir Home Shoot -91.JPG": {
+  "status": "verified",
+  "by": "Claude's eye 2026-10-14: same frame, she darkened it and cut the background, so edges score low",
+  "raw": "INDOOR/Indoor Shoot 6/Raw/DSC_4121.NEF",
+  "inliers": 630,
+  "edge_corr": 0.338,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot 6/Raw/DSC_4121.NEF",
+    "inliers": 630,
+    "edge_corr": 0.338
+   }
+  ],
+  "first_pass": {
+   "status": "likely",
+   "raw": "INDOOR/Indoor Shoot 6/Raw/DSC_4121.NEF",
+   "inliers": 630,
+   "edge_corr": 0.338
+  }
+ },
+ "INDOOR/All Photos 3/Amir Home Shoot -97.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot 7/Raw/DSC_4136.NEF",
+  "inliers": 1099,
+  "edge_corr": 0.833,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot 7/Raw/DSC_4136.NEF",
+    "inliers": 1099,
+    "edge_corr": 0.833
+   },
+   {
+    "raw": "INDOOR/Indoor Shoot 6/Raw/DSC_4148.NEF",
+    "inliers": 443,
+    "edge_corr": 0.417
+   }
+  ]
+ },
+ "INDOOR/All Photos 3/Amir Home Shoot -98.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot 5/Raw/DSC_4137.NEF",
+  "inliers": 958,
+  "edge_corr": 0.883,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot 5/Raw/DSC_4137.NEF",
+    "inliers": 958,
+    "edge_corr": 0.883
+   },
+   {
+    "raw": "INDOOR/Indoor Shoot 7/Raw/DSC_4136.NEF",
+    "inliers": 386,
+    "edge_corr": 0.363
+   }
+  ]
+ },
+ "INDOOR/All Photos 3/Amir Home Shoot -99.JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot 5/Raw/DSC_4138.NEF",
+  "inliers": 371,
+  "edge_corr": 0.746,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot 5/Raw/DSC_4138.NEF",
+    "inliers": 371,
+    "edge_corr": 0.746
+   },
+   {
+    "raw": "INDOOR/Indoor Shoot 6/Raw/DSC_4153.NEF",
+    "inliers": 295,
+    "edge_corr": 0.28
+   },
+   {
+    "raw": "INDOOR/Indoor Shoot 5/Raw/DSC_4139.NEF",
+    "inliers": 287,
+    "edge_corr": 0.361
+   },
+   {
+    "raw": "INDOOR/Indoor Shoot 7/Raw/DSC_4136.NEF",
+    "inliers": 256,
+    "edge_corr": 0.32
+   },
+   {
+    "raw": "INDOOR/Indoor Shoot 5/Raw/DSC_4154.NEF",
+    "inliers": 253,
+    "edge_corr": 0.285
+   },
+   {
+    "raw": "INDOOR/Indoor Shoot 7/Raw/DSC_4145.NEF",
+    "inliers": 242,
+    "edge_corr": 0.369
+   }
+  ]
+ },
+ "INDOOR/All Photos 3/Amir Home Shoot .JPG": {
+  "status": "verified",
+  "by": "image only: features + edge correlation",
+  "raw": "INDOOR/Indoor Shoot 11/Raw/DSC_3930.NEF",
+  "inliers": 238,
+  "edge_corr": 0.726,
+  "contenders": [
+   {
+    "raw": "INDOOR/Indoor Shoot 11/Raw/DSC_3930.NEF",
+    "inliers": 238,
+    "edge_corr": 0.726
+   }
+  ]
+ }
+}

@@ -1,0 +1,67 @@
+{
+ "verdict": "open",
+ "reason": "No established well-reviewed tool combines asset-based inspection cycles with event-triggered state legal deadlines for small multi-state landlords; Insparisk Command (free tier, commercial and NYC-leaning) covers inspections and Rentable covers deposits only inside big PM suites, and UK pricing pages show landlords pay about £5-12/mo for reminders.",
+ "competitors": [
+  {
+   "name": "Insparisk Command",
+   "price": "Free tier (unlimited buildings); paid $20, $199, $799/mo",
+   "url": "https://insparisk.com/command/compare/",
+   "verified": true
+  },
+  {
+   "name": "Rentable (built into Rent Manager)",
+   "price": "No cost to Rent Manager users",
+   "url": "https://www.rentmanager.com/security-deposits/",
+   "verified": true
+  },
+  {
+   "name": "SiteCompli (Inhabit)",
+   "price": "Quote-based",
+   "url": "https://insparisk.com/command/compare/sitecompli/",
+   "verified": true
+  },
+  {
+   "name": "Buildium (generic compliance reminders)",
+   "price": "unknown",
+   "url": "https://www.buildium.com/blog/guide-to-compliance-maintenance/",
+   "verified": false
+  },
+  {
+   "name": "Re-Leased Compliance Hub",
+   "price": "unknown",
+   "url": "https://www.re-leased.com/product/property-compliance-software",
+   "verified": false
+  },
+  {
+   "name": "Brickwise AI (NYC)",
+   "price": "unknown",
+   "url": "https://www.brickwiseai.com/features/landlord-compliance-software-nyc",
+   "verified": false
+  },
+  {
+   "name": "Etsy Security Deposit Tracker spreadsheet (5 states)",
+   "price": "unknown",
+   "url": "https://www.etsy.com/listing/4544523493/security-deposit-tracker-for-landlords",
+   "verified": false
+  }
+ ],
+ "pay_proof": [
+  {
+   "claim": "RentClock UK landlord compliance reminders sell for £5.99/month or £59.90/year, unlimited properties",
+   "url": "https://rentclock.com/gas-safety-certificate-reminders",
+   "verified": true
+  },
+  {
+   "claim": "UK Compliance Reminders charges £4.99/mo (up to 3 properties), £7.99 (4-6), £11.99 (7-10)",
+   "url": "https://ukcompliancereminders.co.uk/",
+   "verified": true
+  },
+  {
+   "claim": "Insparisk Command publishes paid US compliance-tracking plans at $20, $199 and $799/mo",
+   "url": "https://insparisk.com/command/compare/",
+   "verified": true
+  }
+ ],
+ "cost_usd": 1.1345,
+ "web_searches": 18
+}

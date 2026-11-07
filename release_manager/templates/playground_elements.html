@@ -1,0 +1,175 @@
+{% extends "base.html" %}
+{% block title %}Elements{% endblock %}
+{% block content %}
+{% include "_cover_steps.html" %}
+<style>
+.el-page { max-width: 1700px; }
+.el-head { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 8px 24px; }
+.el-head a { color: var(--text-secondary); }
+.el-bar { display: flex; flex-wrap: wrap; gap: 12px 28px; align-items: center; padding: 8px 0 14px; border-bottom: 1px solid var(--border-light); }
+.el-seg { display: flex; border: 1px solid var(--border-light); flex-wrap: wrap; }
+.el-seg button { background: none; border: 0; color: var(--text-secondary); padding: 8px 14px; cursor: pointer; font: inherit; }
+.el-seg button.on { background: #d8c39a; color: #111; }
+.el-panes { display: grid; grid-template-columns: 1fr 1fr; gap: 22px; margin-top: 16px; }
+@media (max-width: 860px) { .el-panes { grid-template-columns: 1fr; } }
+.el-panes.single { grid-template-columns: 1fr; max-width: min(100%, calc(100vh - 120px)); margin-left: auto; margin-right: auto; }
+.el-pane[hidden], .el-bar [hidden] { display: none !important; }
+.el-pane h2 { margin: 0 0 8px; color: #d8c39a; font-size: 22px; }
+.el-pane canvas { width: 100%; aspect-ratio: 1; display: block; background: #000; }
+.el-rows { display: grid; grid-template-columns: max-content 1fr; gap: 8px 14px; align-items: center; margin-top: 12px; }
+.el-rows .lab { color: var(--text-secondary); font-size: 14px; letter-spacing: .06em; text-transform: uppercase; }
+.el-nav { display: flex; gap: 10px; align-items: center; margin-top: 12px; }
+.el-nav button.arr { background: #1a1816; color: inherit; border: 1px solid var(--border-light); font-size: 22px; width: 44px; height: 40px; cursor: pointer; }
+.el-nav input { flex: 1; min-width: 0; height: 28px; accent-color: #d8c39a; }
+.el-nav .lab { color: var(--text-secondary); font-size: 14px; letter-spacing: .06em; text-transform: uppercase; }
+.el-nav .n { color: var(--text-secondary); font-variant-numeric: tabular-nums; min-width: 4.5em; text-align: right; }
+.el-keep { margin-top: 10px; }
+.el-kept { display: flex; gap: 12px; overflow-x: auto; padding: 10px 0; }
+.el-kept:empty::before { content: "Press Keep under a picture and it lines up here."; color: var(--text-secondary); }
+.el-kept .k { flex: 0 0 170px; font-size: 13px; color: var(--text-secondary); cursor: pointer; }
+.el-kept canvas { width: 170px; height: 170px; display: block; background: #000; border: 1px solid #d8c39a; }
+.el-note { color: var(--text-secondary); font-size: 13px; }
+</style>
+<div class="fonts-page el-page">
+    <div class="el-head">
+        <h1>Elements: {{ rel.metadata.title }} (main artwork)</h1>
+        <span><a href="{{ url_for('playground_colours', slug=rel.slug) }}">Colours (stage 2) →</a> &nbsp; <a href="{{ url_for('playground_wall', slug=rel.slug) }}">Effects wall →</a> &nbsp; <a class="btn btn-primary" href="{{ url_for('playground_iggrid', slug=rel.slug) }}">On my IG grid ▦</a></span>
+    </div>
+    <p class="el-note">Stage 1: what is in the picture. All in the original colours (black sky, cream trees, red hill), so only the elements change. Colours come in stage 2.</p>
+    <div class="el-bar">
+        <div class="el-seg" id="mode"><button data-v="side">Side by side</button><button data-v="one">One at a time</button></div>
+        <div class="el-seg" id="ab" hidden><button data-v="0">A</button><button data-v="1">B</button></div>
+        <label><input type="checkbox" id="text"> text</label>
+        <label>title size <input type="range" id="tscale" min="50" max="170" value="100"> <span id="tscalen">100%</span></label>
+    </div>
+    <h3>Kept</h3>
+    <div class="el-kept" id="kept"></div>
+    <p><a class="btn btn-primary" href="{{ url_for('playground_colours', slug=rel.slug) }}">Next: colour your kept picks (stage 2) →</a></p>
+    <div class="el-panes" id="panes"></div>
+    <p class="el-note">One at a time: click the picture, or use the arrow keys / space, to flip A and B. The Cut-paper slider under a picture changes only the ivory cut-paper line on the hill: none, then 1 (thin, short) to 4 (strongest). Nothing else moves.</p>
+</div>
+<script>
+(function () {
+    var SLUG = {{ rel.slug|tojson }}, VER = {{ ver|tojson }};
+    var $ = function (id) { return document.getElementById(id); };
+    var DIMS = [
+        {k: 'moon', label: 'Moon', opts: [['cream', 'Cream'], ['red', 'Red']]},
+        {k: 'owl', label: 'Owl', opts: [['none', 'None'], ['on', 'On the moon']]},
+        {k: 'stars', label: 'Stars', opts: [['none', 'None'], ['few', 'A few']]},
+        {k: 'tree', label: 'Middle tree', opts: [['keep', 'Keep'], ['remove', 'Remove']]}
+    ];
+    // the cut-paper line is not a switch: one slider only for that vibe, 0 = none ... 4 = strongest (Amir 11-05)
+    var LINE_WORDS = ['no cut-paper line', 'cut-paper 1', 'cut-paper 2', 'cut-paper 3', 'cut-paper 4'];
+    var ALL = [];
+    (function walk(i, c) {
+        if (i === DIMS.length) { ALL.push(Object.assign({line: '0'}, c)); return; }
+        DIMS[i].opts.forEach(function (o) { c[DIMS[i].k] = o[0]; walk(i + 1, c); });
+    })(0, {});
+    function fname(c) { return 'el-' + DIMS.map(function (d) { return c[d.k]; }).join('-') + '-' + c.line + '.jpg'; }
+    function parse(n) { var m = /^el-([a-z]+)-([a-z]+)-([a-z]+)-([a-z]+)-([0-4])\.jpg$/.exec(n); if (!m) return null; var c = {line: m[5]}; DIMS.forEach(function (d, i) { c[d.k] = m[i + 1]; }); return c; }
+    function valid(c) { return c && /^[0-4]$/.test(c.line || '') && DIMS.every(function (d) { return d.opts.some(function (o) { return o[0] === c[d.k]; }); }); }
+    function words(c) { return DIMS.map(function (d) { var o = d.opts.find(function (x) { return x[0] === c[d.k]; }); return d.label.toLowerCase() + ' ' + o[1].toLowerCase(); }).join(' · ') + ' · ' + LINE_WORDS[+c.line]; }
+    function src(n, w) { return '/playground/' + encodeURIComponent(SLUG) + '/elements/img?n=' + encodeURIComponent(n) + (w ? '&w=' + w : '') + '&v=' + VER; }
+    // start from what Amir already decided: middle tree removed, no owl unless he turns it on (11-05)
+    var DEF = {a: {moon: 'cream', owl: 'none', stars: 'none', tree: 'remove', line: '0'}, b: {moon: 'red', owl: 'none', stars: 'none', tree: 'remove', line: '0'}};
+    var S = {a: DEF.a, b: DEF.b, mode: 'side', show: 0, text: true, tscale: 100};
+    try { Object.assign(S, JSON.parse(localStorage.getItem('elements3-' + SLUG) || '{}')); } catch (e) {}
+    if (!valid(S.a)) S.a = DEF.a; if (!valid(S.b)) S.b = DEF.b;
+    function persist() { try { localStorage.setItem('elements3-' + SLUG, JSON.stringify(S)); } catch (e) {} }
+    var IMG = {};
+    function img(u) { if (!IMG[u]) IMG[u] = new Promise(function (res, rej) { var i = new Image(); i.onload = function () { res(i); }; i.onerror = rej; i.src = u; }); return IMG[u]; }
+    var BOX = null;
+    function textBox(ov) {
+        if (BOX) return BOX;
+        var W = 256, c = document.createElement('canvas'); c.width = c.height = W; var x = c.getContext('2d', {willReadFrequently: true});
+        x.drawImage(ov, 0, 0, W, W); var d = x.getImageData(0, 0, W, W).data, x0 = W, y0 = W, x1 = 0, y1 = 0;
+        for (var i = 3, p = 0; i < d.length; i += 4, p++) if (d[i] > 40) { var px = p % W, py = (p / W) | 0; if (px < x0) x0 = px; if (py < y0) y0 = py; if (px > x1) x1 = px; if (py > y1) y1 = py; }
+        BOX = x1 >= x0 ? [x0 / W, y0 / W, (x1 + 1) / W, (y1 + 1) / W] : [0, 0, 1, 1]; return BOX;
+    }
+    function draw(ctx, size, c) {
+        return Promise.all([img(src(fname(c), size > 600 ? 1080 : 480)), S.text ? img(src('el.title.png')).catch(function () { return null; }) : null]).then(function (a) {
+            ctx.drawImage(a[0], 0, 0, size, size);
+            var ov = a[1]; if (!ov) return;
+            var t = document.createElement('canvas'); t.width = t.height = size; var tc = t.getContext('2d');
+            var k = S.tscale / 100, b = textBox(ov), ow = ov.naturalWidth, oh = ov.naturalHeight;
+            tc.drawImage(ov, b[0] * ow, b[1] * oh, (b[2] - b[0]) * ow, (b[3] - b[1]) * oh, b[0] * size, b[1] * size, (b[2] - b[0]) * size * k, (b[3] - b[1]) * size * k);
+            tc.globalCompositeOperation = 'source-in'; tc.fillStyle = '#e9dfc9'; tc.fillRect(0, 0, size, size);
+            ctx.drawImage(t, 0, 0);
+        }).catch(function () {});
+    }
+    // kept
+    var KEPT = [];
+    function isKept(n) { return KEPT.some(function (k) { return k.name === n; }); }
+    function toggle(n) {
+        return fetch('/api/playground/' + encodeURIComponent(SLUG) + '/elements-kept', {method: 'POST', headers: {'Content-Type': 'application/json'}, body: JSON.stringify({name: n})})
+            .then(function (r) { return r.json(); }).then(function (d) { if (d.kept) { KEPT = d.kept; renderKept(); syncPanes(); } });
+    }
+    function renderKept() {
+        var box = $('kept'); box.innerHTML = '';
+        KEPT.forEach(function (k) {
+            var c = parse(k.name); if (!c) return;
+            var d = document.createElement('div'); d.className = 'k';
+            var cv = document.createElement('canvas'); cv.width = cv.height = 340; d.appendChild(cv);
+            var t = document.createElement('div'); t.textContent = words(c); d.appendChild(t);
+            d.title = 'Show in A';
+            d.onclick = function () { S.a = c; persist(); syncPanes(); drawPane(0); };
+            box.appendChild(d); draw(cv.getContext('2d'), 340, c);
+        });
+    }
+    // panes
+    var PANES = [];
+    ['a', 'b'].forEach(function (key, i) {
+        var p = document.createElement('div'); p.className = 'el-pane';
+        var h = document.createElement('h2'); h.textContent = key.toUpperCase(); p.appendChild(h);
+        var cv = document.createElement('canvas'); cv.width = cv.height = 1080; p.appendChild(cv);
+        cv.onclick = function () { if (S.mode === 'one') flip(); };
+        var rows = document.createElement('div'); rows.className = 'el-rows'; var segs = {};
+        DIMS.forEach(function (d) {
+            var l = document.createElement('div'); l.className = 'lab'; l.textContent = d.label;
+            var sg = document.createElement('div'); sg.className = 'el-seg';
+            d.opts.forEach(function (o) { var b = document.createElement('button'); b.type = 'button'; b.dataset.v = o[0]; b.textContent = o[1];
+                b.onclick = function () { S[key][d.k] = o[0]; persist(); syncPanes(); drawPane(i); }; sg.appendChild(b); });
+            segs[d.k] = sg; rows.append(l, sg);
+        });
+        p.appendChild(rows);
+        var nav = document.createElement('div'); nav.className = 'el-nav';
+        nav.innerHTML = '<span class="lab">Cut-paper</span><input type="range" min="0" max="4" step="1"><span class="n"></span>';
+        var rng = nav.querySelector('input');
+        rng.addEventListener('input', function () { S[key].line = String(rng.value); persist(); syncPanes(); drawPane(i); });
+        p.appendChild(nav);
+        var kb = document.createElement('button'); kb.type = 'button'; kb.className = 'btn btn-secondary btn-sm el-keep';
+        kb.onclick = function () { toggle(fname(S[key])); }; p.appendChild(kb);
+        $('panes').appendChild(p);
+        PANES.push({key: key, el: p, cv: cv, segs: segs, rng: rng, n: nav.querySelector('.n'), kb: kb});
+    });
+    function syncPanes() {
+        PANES.forEach(function (P, i) {
+            var c = S[P.key];
+            DIMS.forEach(function (d) { Array.prototype.forEach.call(P.segs[d.k].children, function (b) { b.classList.toggle('on', b.dataset.v === c[d.k]); }); });
+            P.rng.value = +c.line; P.n.textContent = c.line === '0' ? 'none' : c.line + ' / 4';
+            P.kb.textContent = isKept(fname(c)) ? '★ Kept' : '☆ Keep';
+            P.el.hidden = S.mode === 'one' && i !== S.show;
+        });
+        Array.prototype.forEach.call($('mode').children, function (b) { b.classList.toggle('on', b.dataset.v === S.mode); });
+        Array.prototype.forEach.call($('ab').children, function (b) { b.classList.toggle('on', +b.dataset.v === S.show); });
+        $('ab').hidden = S.mode !== 'one';
+        $('panes').classList.toggle('single', S.mode === 'one');
+        $('text').checked = S.text; $('tscale').value = S.tscale; $('tscalen').textContent = S.tscale + '%';
+    }
+    function drawPane(i) { var P = PANES[i], c = Object.assign({}, S[P.key]); draw(P.cv.getContext('2d'), 1080, c); }
+    function drawAll() { drawPane(0); drawPane(1); renderKept(); }
+    function flip() { S.show = S.show ? 0 : 1; persist(); syncPanes(); }
+    Array.prototype.forEach.call($('mode').children, function (b) { b.onclick = function () { S.mode = b.dataset.v; persist(); syncPanes(); }; });
+    Array.prototype.forEach.call($('ab').children, function (b) { b.onclick = function () { S.show = +b.dataset.v; persist(); syncPanes(); }; });
+    $('text').onchange = function () { S.text = this.checked; persist(); drawAll(); };
+    var tq = false;
+    $('tscale').addEventListener('input', function () { S.tscale = +this.value; $('tscalen').textContent = S.tscale + '%'; persist(); if (tq) return; tq = true; requestAnimationFrame(function () { tq = false; drawAll(); }); });
+    document.addEventListener('keydown', function (e) {
+        if (e.target && /INPUT|SELECT|TEXTAREA/.test(e.target.tagName)) return;
+        if (S.mode === 'one' && (e.key === 'ArrowLeft' || e.key === 'ArrowRight' || e.key === ' ')) { e.preventDefault(); flip(); }
+    });
+    syncPanes(); drawPane(0); drawPane(1);
+    fetch('/api/playground/' + encodeURIComponent(SLUG) + '/elements-kept').then(function (r) { return r.json(); }).then(function (d) { KEPT = d.kept || []; renderKept(); syncPanes(); }).catch(function () {});
+})();
+</script>
+{% endblock %}

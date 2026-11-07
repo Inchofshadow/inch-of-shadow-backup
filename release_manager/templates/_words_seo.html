@@ -1,0 +1,393 @@
+{# Words page, SEO copy tab (RM 2.0 slice 3): was its own page; words.html includes it. #}
+    <p class="form-subtitle">Generate platform-specific copy for your release using AI. Copy is generated from your release metadata and never stored.</p>
+
+    <div class="section">
+        <h2>Release</h2>
+        {% if release_options %}
+        <div class="form-group">
+            <label for="seo-release-select">Select release</label>
+            <select id="seo-release-select">
+                <option value="">-- Select a release --</option>
+                {% for r in release_options %}
+                <option value="{{ r.slug }}"{% if r.slug == preselected_release %} selected{% endif %}>{{ r.title }} ({{ r.type }})</option>
+                {% endfor %}
+            </select>
+        </div>
+        {% else %}
+        <p class="trim-hint">No releases found. <a href="{{ url_for('release_new') }}">Create a release</a> first.</p>
+        {% endif %}
+
+        <h2>Platforms</h2>
+        <div class="seo-platform-grid">
+            {% for p in platforms %}
+            <label class="seo-platform-item">
+                <input type="checkbox" class="seo-platform-checkbox" value="{{ p.id }}" checked>
+                <span class="seo-platform-name">{{ p.label }}</span>
+                <span class="seo-platform-fields">{{ p.fields | join(', ') }}</span>
+            </label>
+            {% endfor %}
+        </div>
+
+        <h2>Tone</h2>
+        <div class="seo-tone-group">
+            {% for t in tones %}
+            <label class="seo-tone-option">
+                <input type="radio" name="seo-tone" value="{{ t.id }}">
+                <span class="seo-tone-label">{{ t.label }}</span>
+                <span class="seo-tone-desc">{{ t.description }}</span>
+            </label>
+            {% endfor %}
+        </div>
+
+        <div class="form-actions">
+            <button type="button" class="btn btn-accent" id="seo-generate-btn" disabled>Generate Copy</button>
+            <button type="button" class="btn btn-secondary" id="seo-both-btn" title="Claude and GPT each write the copy; nothing is saved until you press Use this on a field">Write with both</button>
+            <span class="seo-status" id="seo-status"></span>
+        </div>
+    </div>
+
+    <div id="seo-results" style="display:none;">
+        <div class="section">
+            <div class="results-header">
+                <h2>Generated Copy</h2>
+                <button type="button" class="btn btn-secondary btn-sm" id="seo-regenerate-btn">Regenerate</button>
+            </div>
+            <p class="trim-hint" id="seo-usage-note"></p>
+            <div id="seo-copy-cards"></div>
+        </div>
+    </div>
+
+    <div id="seo-error-box" class="alert alert-overdue" style="display:none;">
+        <strong>Error</strong>
+        <p id="seo-error-msg"></p>
+    </div>
+
+<script>
+(function () {
+    var releaseSelect  = document.getElementById('seo-release-select');
+    var generateBtn    = document.getElementById('seo-generate-btn');
+    var regenerateBtn  = document.getElementById('seo-regenerate-btn');
+    var statusEl       = document.getElementById('seo-status');
+    var resultsEl      = document.getElementById('seo-results');
+    var cardsEl        = document.getElementById('seo-copy-cards');
+    var errorBox       = document.getElementById('seo-error-box');
+    var errorMsg       = document.getElementById('seo-error-msg');
+    var usageNote      = document.getElementById('seo-usage-note');
+
+    // Enable generate button when a release is selected
+    if (releaseSelect) {
+        releaseSelect.addEventListener('change', function () {
+            generateBtn.disabled = !this.value;
+        });
+        if (releaseSelect.value) {
+            generateBtn.disabled = false;
+        }
+    }
+
+    // Tone radio visual highlight
+    document.querySelectorAll('.seo-tone-option input').forEach(function (radio) {
+        radio.addEventListener('change', function () {
+            document.querySelectorAll('.seo-tone-option').forEach(function (el) {
+                el.classList.remove('selected');
+            });
+            this.closest('.seo-tone-option').classList.add('selected');
+        });
+    });
+
+    function getSelectedPlatforms() {
+        return Array.from(document.querySelectorAll('.seo-platform-checkbox:checked'))
+            .map(function (cb) { return cb.value; });
+    }
+
+    function getSelectedTone() {
+        var checked = document.querySelector('input[name="seo-tone"]:checked');
+        return checked ? checked.value : 'authentic';
+    }
+
+    function charClass(len, limit) {
+        if (!limit) return '';
+        var pct = len / limit;
+        if (pct > 1)   return 'char-over';
+        if (pct > 0.9) return 'char-warn';
+        return 'char-ok';
+    }
+
+    function escapeHtml(text) {
+        return String(text || '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+    }
+
+    // Build a copy field card
+    function buildField(label, text, limit) {
+        var len = text ? text.length : 0;
+        var limitHtml = limit
+            ? '<span class="char-counter ' + charClass(len, limit) + '">' + len + ' / ' + limit + '</span>'
+            : '<span class="char-counter">' + len + ' chars</span>';
+
+        var safeText = text ? text.replace(/</g, '&lt;').replace(/>/g, '&gt;') : '';
+
+        return '<div class="seo-field">'
+            + '<div class="seo-field-header">'
+            + '<span class="seo-field-label">' + label + '</span>'
+            + limitHtml
+            + '<button type="button" class="btn btn-secondary btn-sm seo-copy-btn" data-text="' + safeText.replace(/"/g, '&quot;') + '">Copy</button>'
+            + '</div>'
+            + '<div class="seo-field-body">' + safeText.replace(/\n/g, '<br>') + '</div>'
+            + '</div>';
+    }
+
+    // Build array field (e.g. titles, tags)
+    function buildArrayField(label, items) {
+        if (!items || !items.length) return '';
+        var html = '<div class="seo-field">'
+            + '<div class="seo-field-header">'
+            + '<span class="seo-field-label">' + label + '</span>'
+            + '<span class="char-counter">' + items.length + ' items</span>'
+            + '<button type="button" class="btn btn-secondary btn-sm seo-copy-btn" data-text="' + items.join(', ').replace(/"/g, '&quot;') + '">Copy all</button>'
+            + '</div><div class="seo-field-body seo-tag-list">';
+        items.forEach(function (item) {
+            html += '<span class="seo-tag">' + item.replace(/</g, '&lt;') + '</span>';
+        });
+        html += '</div></div>';
+        return html;
+    }
+
+    // The platform sections and their fields (shared by Generate and Write with both)
+    var SEO_SECTIONS = [
+            {
+                id: 'spotify',
+                title: 'Spotify',
+                fields: [
+                    {key: 'spotify_pitch',        label: 'Pitch',         limit: 500},
+                    {key: 'spotify_artist_pick',  label: 'Artist Pick',   limit: 140},
+                ]
+            },
+            {
+                id: 'youtube',
+                title: 'YouTube',
+                fields: [
+                    {key: 'youtube_titles',       label: 'Title options', array: true},
+                    {key: 'youtube_description',  label: 'Description',   limit: 500},
+                ]
+            },
+            {
+                id: 'instagram',
+                title: 'Instagram',
+                fields: [
+                    {key: 'instagram_caption',    label: 'Caption',       limit: 150},
+                    {key: 'instagram_hashtags',   label: 'Hashtags',      array: true},
+                ]
+            },
+            {
+                id: 'beatport',
+                title: 'Beatport',
+                fields: [
+                    {key: 'beatport_description', label: 'Description',   limit: 500},
+                ]
+            },
+            {
+                id: 'bandcamp',
+                title: 'Bandcamp',
+                fields: [
+                    {key: 'bandcamp_about',  label: 'About',  limit: 500},
+                    {key: 'bandcamp_tags',   label: 'Tags',   array: true},
+                ]
+            },
+            {
+                id: 'soundcloud',
+                title: 'SoundCloud',
+                fields: [
+                    {key: 'soundcloud_description', label: 'Description', limit: 500},
+                ]
+            },
+            {
+                id: 'apple_music',
+                title: 'Apple Music',
+                fields: [
+                    {key: 'apple_music_bio', label: 'Bio paragraph', limit: 250},
+                ]
+            },
+        ];
+
+    // Render copy results into cards
+    function renderResults(copy) {
+        var html = '';
+
+        var sections = SEO_SECTIONS;
+
+        sections.forEach(function (section) {
+            var hasContent = section.fields.some(function (f) {
+                return copy[f.key] !== undefined && copy[f.key] !== null && copy[f.key] !== '';
+            });
+            if (!hasContent) return;
+
+            html += '<div class="seo-platform-card"><h3>' + section.title + '</h3>';
+            section.fields.forEach(function (f) {
+                var val = copy[f.key];
+                if (val === undefined || val === null || val === '') return;
+                if (f.array) {
+                    html += buildArrayField(f.label, Array.isArray(val) ? val : [val]);
+                } else {
+                    html += buildField(f.label, val, f.limit || null);
+                }
+            });
+            if (section.id === 'instagram' && copy._check && copy._check.instagram) {
+                var chk = copy._check.instagram;
+                html += '<div class="seo-check seo-check-' + chk.verdict.toLowerCase() + '">'
+                      + '<div class="seo-check-head">Caption check: ' + chk.verdict + '</div>'
+                      + '<pre class="seo-check-body">' + escapeHtml(chk.text) + '</pre></div>';
+            }
+            html += '</div>';
+        });
+
+        cardsEl.innerHTML = html || '<p class="trim-hint">No copy was generated. Try selecting more platforms.</p>';
+
+        // Wire up copy buttons
+        cardsEl.querySelectorAll('.seo-copy-btn').forEach(function (btn) {
+            btn.addEventListener('click', function () {
+                var text = this.getAttribute('data-text')
+                    .replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&quot;/g, '"').replace(/&amp;/g, '&');
+                navigator.clipboard.writeText(text).then(function () {
+                    btn.textContent = 'Copied!';
+                    setTimeout(function () { btn.textContent = 'Copy'; }, 1500);
+                }).catch(function () {
+                    btn.textContent = 'Copy';
+                });
+            });
+        });
+    }
+
+    function doGenerate() {
+        var slug = releaseSelect ? releaseSelect.value : '';
+        if (!slug) return;
+
+        var platforms = getSelectedPlatforms();
+        if (!platforms.length) {
+            statusEl.textContent = 'Select at least one platform.';
+            return;
+        }
+
+        var tone = getSelectedTone();
+
+        // UI: loading state
+        generateBtn.disabled = true;
+        if (regenerateBtn) regenerateBtn.disabled = true;
+        statusEl.textContent = 'Generating...';
+        resultsEl.style.display = 'none';
+        errorBox.style.display = 'none';
+        cardsEl.innerHTML = '';
+
+        fetch('/api/seo-copy/generate', {
+            method: 'POST',
+            headers: {'Content-Type': 'application/json'},
+            body: JSON.stringify({slug: slug, platforms: platforms, tone: tone}),
+        })
+        .then(function (res) { return res.json(); })
+        .then(function (data) {
+            generateBtn.disabled = false;
+            if (regenerateBtn) regenerateBtn.disabled = false;
+            statusEl.textContent = '';
+
+            if (data.limit_note) alert(data.limit_note);   // monthly Claude API limit
+            if (data.error) {
+                errorBox.style.display = 'block';
+                errorMsg.textContent = data.error;
+                return;
+            }
+
+            var copy = data.copy || {};
+            renderResults(copy);
+            resultsEl.style.display = 'block';
+
+            if (copy._usage) {
+                usageNote.textContent = 'Tokens used: ' + copy._usage.input_tokens + ' in / ' + copy._usage.output_tokens + ' out.';
+            }
+            if (copy._clean && copy._clean.changes) {
+                usageNote.textContent += ' Cleaned ' + copy._clean.changes + ' character fix' + (copy._clean.changes === 1 ? '' : 'es') + ' (dashes, quotes, invisible characters).';
+            }
+        })
+        .catch(function (err) {
+            generateBtn.disabled = false;
+            if (regenerateBtn) regenerateBtn.disabled = false;
+            statusEl.textContent = '';
+            errorBox.style.display = 'block';
+            errorMsg.textContent = 'Request failed. Check that the server is running.';
+        });
+    }
+
+
+    // -- Machine-27: Write with both. Claude and GPT write the same copy; nothing is saved until you press
+    // "Use this" on a field, which saves that one field into the release with who wrote it.
+    var bothBtn = document.getElementById('seo-both-btn'), bothCopies = null, bothSlug = '';
+    var WRITER = {claude: 'Claude', openai: 'GPT'};
+    function renderBoth(copies, errs) {
+        var a = copies.claude || {}, b = copies.openai || {}, html = '';
+        SEO_SECTIONS.forEach(function (section) {
+            var has = section.fields.some(function (f) { return (a[f.key] || b[f.key]); });
+            if (!has) return;
+            html += '<div class="seo-platform-card"><h3>' + section.title + '</h3>';
+            section.fields.forEach(function (f) {
+                if (!a[f.key] && !b[f.key]) return;
+                html += '<div class="seo-both-row">';
+                ['claude', 'openai'].forEach(function (who) {
+                    var val = (copies[who] || {})[f.key];
+                    html += '<div class="seo-both-col"><div class="seo-both-who">' + WRITER[who] + '</div>';
+                    if (val === undefined || val === null || val === '') {
+                        html += '<p class="trim-hint">' + (copies[who] ? 'Nothing for this field.' : escapeHtml((errs || {})[who] || 'No answer.')) + '</p></div>';
+                        return;
+                    }
+                    html += f.array ? buildArrayField(f.label, Array.isArray(val) ? val : [val]) : buildField(f.label, val, f.limit || null);
+                    html += '<button type="button" class="btn btn-accent btn-sm seo-pick-btn" data-who="' + who + '" data-key="' + f.key + '">Use this</button></div>';
+                });
+                html += '</div>';
+            });
+            html += '</div>';
+        });
+        cardsEl.innerHTML = html || '<p class="trim-hint">No copy came back. Try selecting more platforms.</p>';
+        cardsEl.querySelectorAll('.seo-copy-btn').forEach(function (btn) {
+            btn.addEventListener('click', function () {
+                var text = this.getAttribute('data-text').replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&quot;/g, '"').replace(/&amp;/g, '&');
+                navigator.clipboard.writeText(text).then(function () { btn.textContent = 'Copied!'; setTimeout(function () { btn.textContent = 'Copy'; }, 1500); });
+            });
+        });
+        cardsEl.querySelectorAll('.seo-pick-btn').forEach(function (btn) {
+            btn.addEventListener('click', function () {
+                var who = btn.dataset.who, key = btn.dataset.key;
+                fetch('/api/seo-copy/pick', {method: 'POST', headers: {'Content-Type': 'application/json'},
+                    body: JSON.stringify({slug: bothSlug, key: key, value: bothCopies[who][key], written_by: who})})
+                .then(function (r) { return r.json(); }).then(function (d) {
+                    if (!d.ok) { alert(d.error || 'Could not save.'); return; }
+                    cardsEl.querySelectorAll('.seo-pick-btn[data-key="' + key + '"]').forEach(function (x) {
+                        x.textContent = x === btn ? 'Saved' : 'Use this'; x.classList.toggle('seo-picked', x === btn);
+                    });
+                });
+            });
+        });
+    }
+    if (bothBtn) bothBtn.addEventListener('click', function () {
+        var slug = releaseSelect ? releaseSelect.value : '';
+        if (!slug) return;
+        var platforms = getSelectedPlatforms();
+        if (!platforms.length) { statusEl.textContent = 'Select at least one platform.'; return; }
+        bothBtn.disabled = true; generateBtn.disabled = true;
+        statusEl.textContent = 'Claude and GPT are writing...';
+        resultsEl.style.display = 'none'; errorBox.style.display = 'none'; cardsEl.innerHTML = '';
+        fetch('/api/seo-copy/generate-both', {method: 'POST', headers: {'Content-Type': 'application/json'},
+            body: JSON.stringify({slug: slug, platforms: platforms, tone: getSelectedTone()})})
+        .then(function (r) { return r.json(); }).then(function (d) {
+            bothBtn.disabled = false; generateBtn.disabled = false; statusEl.textContent = '';
+            if (d.limit_note) alert(d.limit_note);   // monthly Claude API limit
+            if (d.error) { errorBox.style.display = 'block'; errorMsg.textContent = d.error; return; }
+            bothCopies = d.copies; bothSlug = slug;
+            renderBoth(d.copies, d.errors);
+            resultsEl.style.display = 'block';
+            usageNote.textContent = 'Nothing is saved yet: press Use this on the version you want, field by field.';
+        }).catch(function () {
+            bothBtn.disabled = false; generateBtn.disabled = false; statusEl.textContent = '';
+            errorBox.style.display = 'block'; errorMsg.textContent = 'Request failed. Check that the server is running.';
+        });
+    });
+
+    generateBtn.addEventListener('click', doGenerate);
+    if (regenerateBtn) regenerateBtn.addEventListener('click', doGenerate);
+}());
+</script>

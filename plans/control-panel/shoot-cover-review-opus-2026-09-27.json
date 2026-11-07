@@ -1,0 +1,2246 @@
+{
+ "out-155": {
+  "verdict": "keep",
+  "idea": {
+   "title_at": "BL",
+   "name_at": "none",
+   "scale": "small",
+   "colour": "M2",
+   "note": "He is tiny in the meadow, so the title is tiny too: a whisper in the grass at bottom left, no name. The emptiness is the cover."
+  },
+  "why": "The square is mostly empty meadow and trees, a tiny title low left matches how small he is in it."
+ },
+ "out-085": {
+  "verdict": "keep",
+  "idea": {
+   "title_at": "TC",
+   "name_at": "BC",
+   "scale": "large",
+   "colour": "M2",
+   "note": "The burnt-out sky is a blank page: title large across the top, name small under his feet."
+  },
+  "why": "The top third of the square is dark foliage, so a large platinum title reads there and clears his head."
+ },
+ "out-156": {
+  "verdict": "change",
+  "idea": {
+   "title_at": "TR",
+   "name_at": "BL",
+   "scale": "large",
+   "colour": "M2",
+   "note": "Put the large title in the dark tree mass top right and the name small in the black grass bottom left."
+  },
+  "why": "Top left is blown-out white sky, platinum type would disappear there."
+ },
+ "out-157": {
+  "verdict": "change",
+  "idea": {
+   "title_at": "TL",
+   "name_at": "TR",
+   "scale": "small",
+   "colour": "M2",
+   "note": "Title small in the dark leaves top left, name small in the dark leaves top right, the white sky between them frames his head."
+  },
+  "why": "The top centre is pure white sky right above his head, a large light title there is unreadable and crowds him."
+ },
+ "out-158": {
+  "verdict": "change",
+  "idea": {
+   "title_at": "TR",
+   "name_at": "BR",
+   "scale": "small",
+   "colour": "M6",
+   "note": "Title small in the black trees top right, name small in the shaded grass bottom right, pewter kept."
+  },
+  "why": "Bottom left is bright grey field where pewter vanishes, the only strong dark zone is top right."
+ },
+ "out-086": {
+  "verdict": "keep",
+  "idea": {
+   "title_at": "VR",
+   "name_at": "TL",
+   "scale": "small",
+   "colour": "E",
+   "note": "He looks down at his hands; the title runs vertically up the dark right edge, champagne, like a spine."
+  },
+  "why": "The vertical spine on the narrow dark right edge is a good original touch and the name sits clean in the dark leaves."
+ },
+ "out-087": {
+  "verdict": "keep",
+  "idea": {
+   "title_at": "TL",
+   "name_at": "none",
+   "scale": "small",
+   "colour": "C",
+   "note": "The face fills the square: only a small cream title in the dark leaves top left. No name, the face is the name."
+  },
+  "why": "The face fills the frame, one small cream title in the dark leaves is all it can take."
+ },
+ "out-088": {
+  "verdict": "change",
+  "idea": {
+   "title_at": "BL",
+   "name_at": "TC",
+   "scale": "small",
+   "colour": "M3",
+   "note": "Title small in the dark ground bottom left beside the shirt, name small at the top in the black."
+  },
+  "why": "Bottom centre is his lit polka shirt, the title would sit on the fabric."
+ },
+ "out-159": {
+  "verdict": "keep",
+  "idea": {
+   "title_at": "VL",
+   "name_at": "BR",
+   "scale": "small",
+   "colour": "C",
+   "note": "Mottled light: title vertical along the dark left edge, name small bottom right."
+  },
+  "why": "Works, the vertical title crosses a bright path band but small cream caps survive it."
+ },
+ "out-089": {
+  "verdict": "keep",
+  "idea": {
+   "title_at": "TR",
+   "name_at": "none",
+   "scale": "small",
+   "colour": "M6",
+   "note": "Split face, light and dark: one small title in the dark top right corner, nothing else."
+  },
+  "why": "The dark area top right beside his hair is the only calm spot, one small word there fits the split face."
+ },
+ "out-160": {
+  "verdict": "keep",
+  "idea": {
+   "title_at": "BL",
+   "name_at": "BR",
+   "scale": "small",
+   "colour": "M4",
+   "note": "Both words in one band across the bottom, left and right, sage on the dark green."
+  },
+  "why": "The bottom band is dark green grass either side of his shirt, sage reads softly there."
+ },
+ "out-090": {
+  "verdict": "keep",
+  "idea": {
+   "title_at": "TR",
+   "name_at": "BL",
+   "scale": "small",
+   "colour": "M2",
+   "note": "Sunglasses in hand, blue sky top right: the title sits in the sky, the name low left in the leaves."
+  },
+  "why": "The title sits in open blue sky beside his head and the name in the leaves, both clear of face and hands."
+ },
+ "out-001": {
+  "verdict": "change",
+  "idea": {
+   "title_at": "TL",
+   "name_at": "BL",
+   "scale": "small",
+   "colour": "M2",
+   "note": "Title small in the patch of blue sky top left, name small in the leaves bottom left beside his arm."
+  },
+  "why": "Bottom centre is his bright dappled shirt, the name would sit on the fabric, and the sky is on the left not the right."
+ },
+ "out-161": {
+  "verdict": "change",
+  "idea": {
+   "title_at": "TC",
+   "name_at": "BR",
+   "scale": "large",
+   "colour": "M4",
+   "note": "Large sage title across the dark trunk and leaves at the top, name small bottom right."
+  },
+  "why": "Bottom left is the pale blue path, a large sage title there loses contrast, the top quarter is all dark trunk."
+ },
+ "out-162": {
+  "verdict": "change",
+  "idea": {
+   "title_at": "TC",
+   "name_at": "BL",
+   "scale": "small",
+   "colour": "M3",
+   "note": "He looks up, so the small violet title sits at the top of the trunk where his gaze goes, name small bottom left."
+  },
+  "why": "The pale path bottom right is weak for violet, and using his upward gaze gives the cover a direction."
+ },
+ "out-163": {
+  "verdict": "keep",
+  "idea": {
+   "title_at": "BC",
+   "name_at": "TL",
+   "scale": "large",
+   "colour": "M3",
+   "note": "Distant figure: big title across the dark bottom, name small top left, cinema poster."
+  },
+  "why": "The dark lower band under the small figure takes a big poster title without touching his head."
+ },
+ "out-164": {
+  "verdict": "keep",
+  "idea": {
+   "title_at": "VR",
+   "name_at": "BL",
+   "scale": "small",
+   "colour": "M6",
+   "note": "Surrender pose: title vertical down the right edge, name bottom left, pewter on the dapple."
+  },
+  "why": "Dark forest runs down the right edge and the trunk base is dark, pewter keeps the noir quiet."
+ },
+ "out-165": {
+  "verdict": "change",
+  "idea": {
+   "title_at": "BR",
+   "name_at": "TC",
+   "scale": "small",
+   "colour": "M6",
+   "note": "Title small in the dark field bottom right, name small on the trunk above his head."
+  },
+  "why": "Bottom centre is his torso and the pale shirt stripe, the title would sit on his body."
+ },
+ "out-166": {
+  "verdict": "change",
+  "idea": {
+   "title_at": "BC",
+   "name_at": "TR",
+   "scale": "large",
+   "colour": "E",
+   "note": "Large champagne title across the black jacket at the bottom, name small in the dark space top right that he faces."
+  },
+  "why": "The black strip right of his face is too narrow for a large title, it would press on his nose."
+ },
+ "out-091": {
+  "verdict": "change",
+  "idea": {
+   "title_at": "TL",
+   "name_at": "TR",
+   "scale": "small",
+   "colour": "M4",
+   "note": "Title and name small in the two dark top corners of the trunk."
+  },
+  "why": "The bottom band is taken by his jacket and hands, the top quarter is the empty dark trunk."
+ },
+ "out-167": {
+  "verdict": "keep",
+  "idea": {
+   "title_at": "TL",
+   "name_at": "TR",
+   "scale": "small",
+   "colour": "C",
+   "note": "Direct look: cream words in the two top corners, the face untouched in the middle."
+  },
+  "why": "The top corners are dark bark and leaves, cream reads there and the direct face stays clean."
+ },
+ "out-092": {
+  "verdict": "keep",
+  "idea": {
+   "title_at": "VL",
+   "name_at": "none",
+   "scale": "small",
+   "colour": "M6",
+   "note": "Hard noir: title vertical along the left edge only, like a film strip edge."
+  },
+  "why": "The dark left edge is a real vertical strip, a film-edge title works."
+ },
+ "out-168": {
+  "verdict": "change",
+  "idea": {
+   "title_at": "TL",
+   "name_at": "TR",
+   "scale": "small",
+   "colour": "M4",
+   "note": "Title small top left, name small top right, both on the dark trunk above his head."
+  },
+  "why": "Bottom centre is his lit polka shirt between the jacket lapels."
+ },
+ "out-093": {
+  "verdict": "change",
+  "idea": {
+   "title_at": "VL",
+   "name_at": "TR",
+   "scale": "small",
+   "colour": "M4",
+   "note": "Title running up the green moss strip on the left edge, name small top right on the dark bark."
+  },
+  "why": "Bottom left is mostly his jacket, the moss edge is the free lane and echoes the green."
+ },
+ "out-094": {
+  "verdict": "change",
+  "idea": {
+   "title_at": "BR",
+   "name_at": "none",
+   "scale": "small",
+   "colour": "M6",
+   "note": "One small pewter title on the black jacket bottom right, nothing else on the busy bark."
+  },
+  "why": "Top left is bright dappled bark, pewter disappears there, the black jacket is the only calm dark area."
+ },
+ "out-095": {
+  "verdict": "change",
+  "idea": {
+   "title_at": "TC",
+   "name_at": "BC",
+   "scale": "large",
+   "colour": "M2",
+   "note": "Large title in the black woods above his head, name small at the very bottom on the dark ground."
+  },
+  "why": "The bottom band is mostly his lap and shirt hem, the top third of dark trees is the bigger clean field."
+ },
+ "out-169": {
+  "verdict": "keep",
+  "idea": {
+   "title_at": "BR",
+   "name_at": "TL",
+   "scale": "small",
+   "colour": "M4",
+   "note": "Sly on the log: title along the log bottom right, name top left, sage like the shirt."
+  },
+  "why": "The log rail runs into the bottom right corner and gives the title a line to follow, the top left is dark leaves."
+ },
+ "out-170": {
+  "verdict": "change",
+  "idea": {
+   "title_at": "VL",
+   "name_at": "TR",
+   "scale": "small",
+   "colour": "M4",
+   "note": "Keep the title running up the dark left edge, move the name small to the dark leaves top right."
+  },
+  "why": "Bottom right is his green shirt, the name would sit on his body."
+ },
+ "out-096": {
+  "verdict": "change",
+  "idea": {
+   "title_at": "TL",
+   "name_at": "TR",
+   "scale": "small",
+   "colour": "M4",
+   "note": "Title small top left, name small top right, both in the dark leaves above his shoulders."
+  },
+  "why": "Bottom left is his shirt and arm, the dark space is only at the top."
+ },
+ "out-097": {
+  "verdict": "change",
+  "idea": {
+   "title_at": "TR",
+   "name_at": "BL",
+   "scale": "small",
+   "colour": "F",
+   "note": "Title small in the dark leaves top right, the direction he looks, name small in the dark woods bottom left."
+  },
+  "why": "The path bottom right is pale and partly covered by his arm, blush would not read there."
+ },
+ "out-171": {
+  "verdict": "keep",
+  "idea": {
+   "title_at": "TR",
+   "name_at": "BL",
+   "scale": "small",
+   "colour": "M3",
+   "note": "Calm on the tree: title top right in the leaves, name bottom left."
+  },
+  "why": "Leaves top right and dark ground bottom left are both clear of him."
+ },
+ "out-098": {
+  "verdict": "change",
+  "idea": {
+   "title_at": "TL",
+   "name_at": "BL",
+   "scale": "small",
+   "colour": "M6",
+   "note": "Keep the carved title on the bark top left, move the name small into the trunk shadow bottom left."
+  },
+  "why": "Bottom right is his bright satin shirt, the name would sit on it."
+ },
+ "out-099": {
+  "verdict": "change",
+  "idea": {
+   "title_at": "BL",
+   "name_at": "none",
+   "scale": "small",
+   "colour": "M2",
+   "note": "One small title in the dark grass bottom left beside him, no name."
+  },
+  "why": "Bottom centre is his bright shirt."
+ },
+ "out-100": {
+  "verdict": "keep",
+  "idea": {
+   "title_at": "TC",
+   "name_at": "BC",
+   "scale": "large",
+   "colour": "M4",
+   "note": "Ecstatic, looking up: large title along the top canopy, name at the bottom."
+  },
+  "why": "The dark canopy above his upturned face gives a large title real space and he looks up into it."
+ },
+ "out-172": {
+  "verdict": "keep",
+  "idea": {
+   "title_at": "TL",
+   "name_at": "none",
+   "scale": "small",
+   "colour": "M4",
+   "note": "Hand in the lens, playful: one small title top left, nothing else competes."
+  },
+  "why": "The dark trunks top left are the only quiet corner, the reaching hand is already the loud element."
+ },
+ "out-173": {
+  "verdict": "keep",
+  "idea": {
+   "title_at": "VR",
+   "name_at": "BL",
+   "scale": "small",
+   "colour": "M4",
+   "note": "Looking up: title vertical up the right edge follows his gaze, name bottom left."
+  },
+  "why": "The vertical title rides the leaf edge on the right and follows his upward look."
+ },
+ "out-174": {
+  "verdict": "keep",
+  "idea": {
+   "title_at": "TL",
+   "name_at": "TR",
+   "scale": "small",
+   "colour": "M4",
+   "note": "Calm under the canopy: words in the two top corners."
+  },
+  "why": "The two top corners are the only free leaves above his head, small caps there keep the low angle clean."
+ },
+ "out-175": {
+  "verdict": "change",
+  "idea": {
+   "title_at": "TL",
+   "name_at": "none",
+   "scale": "small",
+   "colour": "M4",
+   "note": "One small title in the dark leaves top left, above the peace sign, no name."
+  },
+  "why": "Bottom centre is his green shirt between the two hands."
+ },
+ "out-176": {
+  "verdict": "change",
+  "idea": {
+   "title_at": "TR",
+   "name_at": "BL",
+   "scale": "small",
+   "colour": "M4",
+   "note": "Title small in the dark leaves right of the trunk top right, name small in the leaves bottom left."
+  },
+  "why": "The bottom right band is his shirt and knee, only the bottom left corner is free."
+ },
+ "out-101": {
+  "verdict": "keep",
+  "idea": {
+   "title_at": "BC",
+   "name_at": "TC",
+   "scale": "large",
+   "colour": "M2",
+   "note": "The avenue converges on him: large title on the cobbles, name small in the slit of sky."
+  },
+  "why": "His feet end well above the bottom edge, so the cobbles take a large title and the sky slit a small name."
+ },
+ "out-102": {
+  "verdict": "change",
+  "idea": {
+   "title_at": "VL",
+   "name_at": "VR",
+   "scale": "large",
+   "colour": "M6",
+   "note": "Large title running up the dark tree wall on the left, name small running down the tree wall on the right, the avenue becomes two columns of type."
+  },
+  "why": "The square cuts at his shins so a large bottom title crosses his legs, the dark tree walls are the real free space."
+ },
+ "out-103": {
+  "verdict": "change",
+  "idea": {
+   "title_at": "TL",
+   "name_at": "TR",
+   "scale": "small",
+   "colour": "C",
+   "note": "Title small in the dark trees top left, name small in the dark trees top right, the pale sky slit between them points at him."
+  },
+  "why": "The crop cuts at his shins so the bottom band is his legs, and the slit of sky is too narrow and pale for cream."
+ },
+ "out-104": {
+  "verdict": "change",
+  "idea": {
+   "title_at": "BL",
+   "name_at": "BR",
+   "scale": "small",
+   "colour": "M2",
+   "note": "Title and name small on the cobbles either side of his legs, along the dark ivy edges."
+  },
+  "why": "The crop cuts at his knees, a large centred bottom title would cross his legs."
+ },
+ "out-002": {
+  "verdict": "keep",
+  "idea": {
+   "title_at": "BC",
+   "name_at": "none",
+   "scale": "small",
+   "colour": "M6",
+   "note": "Distant, mystery: a very small title alone at the bottom, the cobbles are the cover."
+  },
+  "why": "He is small and high in the frame, a whisper of a title on the cobbles below is the right weight."
+ },
+ "out-003": {
+  "verdict": "change",
+  "idea": {
+   "title_at": "BC",
+   "name_at": "TL",
+   "scale": "small",
+   "colour": "M2",
+   "note": "Title small centred on the cobbles under his feet, name small in the dark trees top left, platinum."
+  },
+  "why": "The sky slit is white so a pewter title there is invisible."
+ },
+ "out-105": {
+  "verdict": "change",
+  "idea": {
+   "title_at": "BC",
+   "name_at": "TL",
+   "scale": "large",
+   "colour": "M2",
+   "note": "Keep the large title on the cobbles under his boots, move the name small into the dark trees top left."
+  },
+  "why": "The sky slit is white and only a few letters wide, the name would fall apart there."
+ },
+ "out-177": {
+  "verdict": "keep",
+  "idea": {
+   "title_at": "BL",
+   "name_at": "BR",
+   "scale": "small",
+   "colour": "M2",
+   "note": "Brooding: bottom band, both words."
+  },
+  "why": "Cobbles either side of his crouched legs are free and even."
+ },
+ "out-004": {
+  "verdict": "change",
+  "idea": {
+   "title_at": "VL",
+   "name_at": "BR",
+   "scale": "small",
+   "colour": "M6",
+   "note": "Keep the title running up the dark tree wall on the left, move the name small to the cobbles bottom right."
+  },
+  "why": "Bottom centre is his boots, the name would sit on them."
+ },
+ "out-106": {
+  "verdict": "change",
+  "idea": {
+   "title_at": "TL",
+   "name_at": "BR",
+   "scale": "small",
+   "colour": "M4",
+   "note": "Title small in the dark trees top left, name small on the dark ivy bottom right."
+  },
+  "why": "The crop cuts at his legs so bottom centre is his trousers, and the sky slit above his head is white."
+ },
+ "out-178": {
+  "verdict": "change",
+  "idea": {
+   "title_at": "TR",
+   "name_at": "BL",
+   "scale": "small",
+   "colour": "M6",
+   "note": "Title small in the black trees top right, name small on the path bottom left beside his legs."
+  },
+  "why": "The crop cuts at his legs so bottom centre is his trousers, and pewter in the white sky slit is invisible."
+ },
+ "out-107": {
+  "verdict": "keep",
+  "idea": {
+   "title_at": "TC",
+   "name_at": "BR",
+   "scale": "large",
+   "colour": "red",
+   "note": "Tiny figure on a stone plaza seen from above: the title is huge across the empty stone at the top, in the red of his shirt; name small bottom right."
+  },
+  "why": "Red is the one colour that reads on the pale stone, and the top band takes a big title above his small figure."
+ },
+ "out-005": {
+  "verdict": "change",
+  "idea": {
+   "title_at": "BL",
+   "name_at": "TR",
+   "scale": "large",
+   "colour": "red",
+   "note": "Large red title in the big empty stone lower left, name small in the stone top right beside him."
+  },
+  "why": "His head sits in the top band of the square, a large title top left would press against it while the lower left is empty."
+ },
+ "out-108": {
+  "verdict": "change",
+  "idea": {
+   "title_at": "BC",
+   "name_at": "TC",
+   "scale": "small",
+   "colour": "red",
+   "note": "Same quiet top and bottom placement, but in red from his shirt."
+  },
+  "why": "Platinum on pale grey stone is almost invisible, red is the only mood key that reads on it."
+ },
+ "out-109": {
+  "verdict": "keep",
+  "idea": {
+   "title_at": "VR",
+   "name_at": "TL",
+   "scale": "large",
+   "colour": "red",
+   "note": "Small and lost: the title stands vertical on the right like a wall beside him, red; name top left."
+  },
+  "why": "The empty stone right of him is a clean vertical lane and the red wall of type echoes his shirt."
+ },
+ "out-006": {
+  "verdict": "change",
+  "idea": {
+   "title_at": "TL",
+   "name_at": "TR",
+   "scale": "small",
+   "colour": "red",
+   "note": "Small red words in the two top stone corners either side of his hair."
+  },
+  "why": "Platinum does not read on the pale stone, red does."
+ },
+ "out-007": {
+  "verdict": "change",
+  "idea": {
+   "title_at": "BL",
+   "name_at": "BR",
+   "scale": "small",
+   "colour": "red",
+   "note": "Bottom band on the stone either side of his body, in red."
+  },
+  "why": "Platinum does not read on the pale stone, red does."
+ },
+ "out-008": {
+  "verdict": "change",
+  "idea": {
+   "title_at": "TC",
+   "name_at": "BL",
+   "scale": "small",
+   "colour": "red",
+   "note": "Title small in red on the stone above his head, name small on the stone bottom left beside his legs."
+  },
+  "why": "Bottom centre is his trousers, and platinum does not read on the pale stone."
+ },
+ "out-179": {
+  "verdict": "change",
+  "idea": {
+   "title_at": "VR",
+   "name_at": "BL",
+   "scale": "small",
+   "colour": "red",
+   "note": "Keep the vertical title along the tilted stone on the right and the name bottom left, in red."
+  },
+  "why": "Platinum does not read on the pale stone."
+ },
+ "out-110": {
+  "verdict": "change",
+  "idea": {
+   "title_at": "BL",
+   "name_at": "TR",
+   "scale": "small",
+   "colour": "red",
+   "note": "Same diagonal around his crossed arms, in red."
+  },
+  "why": "Platinum does not read on the pale stone."
+ },
+ "out-180": {
+  "verdict": "change",
+  "idea": {
+   "title_at": "BR",
+   "name_at": "VL",
+   "scale": "large",
+   "colour": "red",
+   "note": "Large red title in the empty stone bottom right below his legs, name small running along the concrete wall on the left."
+  },
+  "why": "His head leans into the top left corner, a large title there would sit on his hair."
+ },
+ "out-111": {
+  "verdict": "keep",
+  "idea": {
+   "title_at": "BR",
+   "name_at": "TL",
+   "scale": "small",
+   "colour": "red",
+   "note": "Hand reaching out of the frame: title bottom right in the stone, name top left, the hand stays free."
+  },
+  "why": "The stone bottom right and the wall top left are both clear of the reaching hands and his face."
+ },
+ "out-181": {
+  "verdict": "change",
+  "idea": {
+   "title_at": "TR",
+   "name_at": "BR",
+   "scale": "small",
+   "colour": "red",
+   "note": "Title small in the stone top right beside the reaching hand, name small on the empty stone bottom right."
+  },
+  "why": "Bottom left is taken by the blurred second hand and the wall edge."
+ },
+ "out-112": {
+  "verdict": "change",
+  "idea": {
+   "title_at": "TR",
+   "name_at": "BR",
+   "scale": "large",
+   "colour": "red",
+   "note": "Large red title in the empty stone above his legs, name small in the empty stone bottom right."
+  },
+  "why": "Bottom left is his outstretched hand on the wall."
+ },
+ "out-182": {
+  "verdict": "change",
+  "idea": {
+   "title_at": "TL",
+   "name_at": "TR",
+   "scale": "large",
+   "colour": "red",
+   "note": "Keep the large red title in the stone top left, move the name small to the stone top right beside his boots."
+  },
+  "why": "His right hand lies in the bottom right corner, the name would land on it."
+ },
+ "out-113": {
+  "verdict": "change",
+  "idea": {
+   "title_at": "TR",
+   "name_at": "BR",
+   "scale": "small",
+   "colour": "red",
+   "note": "Same right-hand column above and below his legs, in red."
+  },
+  "why": "The stone is mid blue grey, platinum barely separates from it, red does."
+ },
+ "out-114": {
+  "verdict": "change",
+  "idea": {
+   "title_at": "TR",
+   "name_at": "BR",
+   "scale": "large",
+   "colour": "red",
+   "note": "Keep the upside-down large title but in the empty stone top right, name small on the pale kerb bottom right."
+  },
+  "why": "Top centre is his legs and bottom centre is his reaching hand, both would be covered."
+ },
+ "out-115": {
+  "verdict": "change",
+  "idea": {
+   "title_at": "TR",
+   "name_at": "BR",
+   "scale": "small",
+   "colour": "red",
+   "note": "Title small in the stone top right, name small in the empty stone bottom right, red."
+  },
+  "why": "His legs run into the right edge so a vertical title crosses them, and platinum is weak on the grey stone and pale wall."
+ },
+ "out-183": {
+  "verdict": "change",
+  "idea": {
+   "title_at": "TR",
+   "name_at": "BR",
+   "scale": "small",
+   "colour": "red",
+   "note": "Same right-edge placement, in red."
+  },
+  "why": "Platinum is weak on the blue grey stone, red reads."
+ },
+ "out-184": {
+  "verdict": "change",
+  "idea": {
+   "title_at": "TR",
+   "name_at": "BL",
+   "scale": "small",
+   "colour": "red",
+   "note": "Same diagonal, in red."
+  },
+  "why": "Platinum is weak on the blue grey stone, red reads."
+ },
+ "out-116": {
+  "verdict": "change",
+  "idea": {
+   "title_at": "TL",
+   "name_at": "BR",
+   "scale": "small",
+   "colour": "red",
+   "note": "Title small in the empty stone top left, name small in the stone bottom right beside his legs, red."
+  },
+  "why": "Bottom centre is his body, and platinum is weak on the stone."
+ },
+ "out-009": {
+  "verdict": "change",
+  "idea": {
+   "title_at": "BL",
+   "name_at": "TR",
+   "scale": "large",
+   "colour": "red",
+   "note": "Large red title in the empty stone lower left, name small in the stone top right."
+  },
+  "why": "His head sits high in the square, a large title top left would crowd it while the lower left is empty."
+ },
+ "out-117": {
+  "verdict": "change",
+  "idea": {
+   "title_at": "VL",
+   "name_at": "TR",
+   "scale": "small",
+   "colour": "M3",
+   "note": "Keep the title as one more bar on the left, move the name small into the dark leaves top right between the bars."
+  },
+  "why": "Bottom right is the round iron gate medallion, the name would fight its pattern."
+ },
+ "out-010": {
+  "verdict": "change",
+  "idea": {
+   "title_at": "TR",
+   "name_at": "TL",
+   "scale": "small",
+   "colour": "F",
+   "note": "Keep the blush title on the path top right, move the name small into the dark trees between the bars top left."
+  },
+  "why": "The whole bottom band is his red shirt and hand, blush on red disappears."
+ },
+ "out-011": {
+  "verdict": "change",
+  "idea": {
+   "title_at": "TR",
+   "name_at": "TL",
+   "scale": "small",
+   "colour": "F",
+   "note": "Keep the title where he looks top right, move the name small into the dark trees top left beside the bar."
+  },
+  "why": "Bottom left is his hand gripping the bar."
+ },
+ "out-012": {
+  "verdict": "keep",
+  "idea": {
+   "title_at": "BL",
+   "name_at": "BR",
+   "scale": "small",
+   "colour": "M3",
+   "note": "Trapped: bottom band, both words, violet."
+  },
+  "why": "He squats high in the square so the dark road band at the bottom is free either side of his legs."
+ },
+ "out-013": {
+  "verdict": "change",
+  "idea": {
+   "title_at": "TL",
+   "name_at": "TR",
+   "scale": "small",
+   "colour": "M2",
+   "note": "Title small in the dark trees top left, name small top right, both above the bars at head height."
+  },
+  "why": "The bottom band is all red shirt and hands, the name at bottom centre would sit on his chest."
+ },
+ "out-014": {
+  "verdict": "keep",
+  "idea": {
+   "title_at": "TL",
+   "name_at": "TR",
+   "scale": "small",
+   "colour": "M4",
+   "note": "Pleading, greener: words in the top corners, sage."
+  },
+  "why": "The gate medallion rim and the dark trees give two quiet top corners above his head."
+ },
+ "out-118": {
+  "verdict": "keep",
+  "idea": {
+   "title_at": "BL",
+   "name_at": "none",
+   "scale": "small",
+   "colour": "M2",
+   "note": "Hands on the bar, tight: one small title bottom left, nothing else."
+  },
+  "why": "The frame is packed with bars, hands and leaves, a single small title low left is the least intrusive choice."
+ },
+ "out-015": {
+  "verdict": "keep",
+  "idea": {
+   "title_at": "BL",
+   "name_at": "none",
+   "scale": "small",
+   "colour": "M2",
+   "note": "Raw and close: one small title bottom left."
+  },
+  "why": "Same as the tight bar frames, one small title low left is all this crop can carry."
+ },
+ "out-185": {
+  "verdict": "keep",
+  "idea": {
+   "title_at": "TL",
+   "name_at": "BR",
+   "scale": "small",
+   "colour": "M6",
+   "note": "Black and white at the medallion: pewter words in opposite corners."
+  },
+  "why": "Opposite corners are the only places not taken by bars, medallion or face, pewter keeps it quiet."
+ },
+ "out-119": {
+  "verdict": "keep",
+  "idea": {
+   "title_at": "TC",
+   "name_at": "BC",
+   "scale": "small",
+   "colour": "M6",
+   "note": "Noir at the gate: centred words top and bottom."
+  },
+  "why": "Top and bottom centre fall between the bars and hands, pewter suits the grey frame."
+ },
+ "out-186": {
+  "verdict": "change",
+  "idea": {
+   "title_at": "TR",
+   "name_at": "BL",
+   "scale": "small",
+   "colour": "red",
+   "note": "Title small in red in the patch of blue sky top right, name small in red on the leaves bottom left."
+  },
+  "why": "The blue sky is top right, not top left, and platinum is weak on pale sky and bright leaves, the shirt red reads on both."
+ },
+ "out-120": {
+  "verdict": "keep",
+  "idea": {
+   "title_at": "TL",
+   "name_at": "BR",
+   "scale": "small",
+   "colour": "M6",
+   "note": "Reaching hand, black and white: small words in opposite corners, the hand untouched."
+  },
+  "why": "The reaching hand owns the lower left and the raised hand the top, opposite corners are the only free spots."
+ },
+ "out-016": {
+  "verdict": "keep",
+  "idea": {
+   "title_at": "BR",
+   "name_at": "TL",
+   "scale": "small",
+   "colour": "M6",
+   "note": "Desperate reach: title bottom right, name top left."
+  },
+  "why": "The blurred hand fills the lower centre, bottom right and top left are what is left."
+ },
+ "out-017": {
+  "verdict": "change",
+  "idea": {
+   "title_at": "BR",
+   "name_at": "none",
+   "scale": "small",
+   "colour": "M6",
+   "note": "One small pewter title low in the dark gate and shirt area bottom right."
+  },
+  "why": "Top right is taken by his raised hand on the bars."
+ },
+ "out-187": {
+  "verdict": "change",
+  "idea": {
+   "title_at": "ML",
+   "name_at": "BL",
+   "scale": "large",
+   "colour": "red",
+   "note": "Large red title set in the blank granite wall on the left at chest height, name small on the empty landing bottom left."
+  },
+  "why": "Top left is right next to his head, and bottom right holds his boots on the step."
+ },
+ "out-188": {
+  "verdict": "change",
+  "idea": {
+   "title_at": "TR",
+   "name_at": "BL",
+   "scale": "small",
+   "colour": "red",
+   "note": "Same diagonal, title on the rising steps, name on the landing, in red."
+  },
+  "why": "Platinum disappears on the light grey steps and wall, red from the shirt reads."
+ },
+ "out-022": {
+  "verdict": "change",
+  "idea": {
+   "title_at": "TR",
+   "name_at": "BL",
+   "scale": "large",
+   "colour": "red",
+   "note": "Large red title across the rising steps top right, name small on the landing bottom left."
+  },
+  "why": "His head is in the top left corner, a large title there would sit on it."
+ },
+ "out-125": {
+  "verdict": "change",
+  "idea": {
+   "title_at": "TL",
+   "name_at": "BL",
+   "scale": "small",
+   "colour": "red",
+   "note": "Title small in red on the wall top left, name small in red on the empty landing bottom left."
+  },
+  "why": "Bottom centre is next to his boots, and platinum is lost on the grey granite."
+ },
+ "out-126": {
+  "verdict": "change",
+  "idea": {
+   "title_at": "TR",
+   "name_at": "BL",
+   "scale": "small",
+   "colour": "red",
+   "note": "Same diagonal, in red on the flash-lit granite."
+  },
+  "why": "Platinum on the bright granite has no contrast, red does."
+ },
+ "out-189": {
+  "verdict": "change",
+  "idea": {
+   "title_at": "TL",
+   "name_at": "BL",
+   "scale": "small",
+   "colour": "red",
+   "note": "Title small top left on the wall, name small on the landing bottom left, red."
+  },
+  "why": "Bottom right holds his boot on the step, and platinum is lost on the granite."
+ },
+ "out-127": {
+  "verdict": "change",
+  "idea": {
+   "title_at": "TL",
+   "name_at": "BL",
+   "scale": "small",
+   "colour": "red",
+   "note": "Title small top left on the wall, name small bottom left on the landing, red."
+  },
+  "why": "Bottom right is his boot on the step, and platinum is lost on the granite."
+ },
+ "out-190": {
+  "verdict": "change",
+  "idea": {
+   "title_at": "TR",
+   "name_at": "TL",
+   "scale": "small",
+   "colour": "red",
+   "note": "Title small in red on the wall top right, name small in red on the wall top left above his hair."
+  },
+  "why": "Bottom left is his red sleeve and arm, the name would sit on him."
+ },
+ "out-128": {
+  "verdict": "change",
+  "idea": {
+   "title_at": "TC",
+   "name_at": "BL",
+   "scale": "large",
+   "colour": "red",
+   "note": "Large red title across the blank top band of the wall above his head, name small bottom left."
+  },
+  "why": "The big empty wall is on the left and across the top, not on the right where his shoulder is."
+ },
+ "out-121": {
+  "verdict": "change",
+  "idea": {
+   "title_at": "BC",
+   "name_at": "TC",
+   "scale": "large",
+   "colour": "red",
+   "note": "Keep the large title on the steps and the name in the trees, but set the title in red."
+  },
+  "why": "Platinum on the pale steps has no contrast, red from his shirt reads and ties the tiny figure to the type."
+ },
+ "out-018": {
+  "verdict": "change",
+  "idea": {
+   "title_at": "TC",
+   "name_at": "BC",
+   "scale": "large",
+   "colour": "M2",
+   "note": "Large platinum title across the dark trees above his head, name small in red on the thin strip of steps under his feet."
+  },
+  "why": "His feet sit almost on the bottom edge, the step band is too thin for a large title."
+ },
+ "out-019": {
+  "verdict": "change",
+  "idea": {
+   "title_at": "BC",
+   "name_at": "TL",
+   "scale": "small",
+   "colour": "red",
+   "note": "Title small in red on the pale step band under his feet, name small in the dark leaves top left."
+  },
+  "why": "The step band is thin and pale, a large platinum title there crosses his shoes and has no contrast."
+ },
+ "out-020": {
+  "verdict": "change",
+  "idea": {
+   "title_at": "BL",
+   "name_at": "TL",
+   "scale": "small",
+   "colour": "M2",
+   "note": "Title small in the dark trees low left, name small top left, both in the left tree column."
+  },
+  "why": "His feet stand on the bottom edge, a title at bottom centre would sit on his shoes."
+ },
+ "out-122": {
+  "verdict": "change",
+  "idea": {
+   "title_at": "BL",
+   "name_at": "BR",
+   "scale": "small",
+   "colour": "red",
+   "note": "Same bottom band either side of his feet, in red on the pale steps."
+  },
+  "why": "Platinum has no contrast on the pale stone steps."
+ },
+ "out-123": {
+  "verdict": "change",
+  "idea": {
+   "title_at": "ML",
+   "name_at": "none",
+   "scale": "large",
+   "colour": "M2",
+   "note": "Large platinum title in the dark tree mass on the left, level with his crouched body, no name."
+  },
+  "why": "Top left is white backlit sky where a light title vanishes, and the pale steps below will not carry platinum either."
+ },
+ "out-021": {
+  "verdict": "change",
+  "idea": {
+   "title_at": "BC",
+   "name_at": "TR",
+   "scale": "large",
+   "colour": "red",
+   "note": "Large red title across the wide band of steps below him, name small in red top right."
+  },
+  "why": "The steps fill the lower third here, a much bigger stage than a small corner title, and red is what reads on them."
+ },
+ "out-124": {
+  "verdict": "change",
+  "idea": {
+   "title_at": "ML",
+   "name_at": "MR",
+   "scale": "small",
+   "colour": "M2",
+   "note": "Title small on the black iron door left of him, name small on the door right of him, flanking him like the gate itself."
+  },
+  "why": "Pewter on the grey granite and pavement has no contrast, the black door is the one dark field."
+ },
+ "out-023": {
+  "verdict": "keep",
+  "idea": {
+   "title_at": "VR",
+   "name_at": "BL",
+   "scale": "small",
+   "colour": "M6",
+   "note": "Tattoo and grate: the title runs vertically down the grate on the right, name bottom left."
+  },
+  "why": "The black grate on the right edge is a clean vertical lane and the dark lower left is free."
+ },
+ "out-024": {
+  "verdict": "keep",
+  "idea": {
+   "title_at": "TL",
+   "name_at": "BR",
+   "scale": "small",
+   "colour": "M2",
+   "note": "Night flash at the grate: words in opposite corners."
+  },
+  "why": "The grate corners are dark and clear of his hair, shoulder and hand."
+ },
+ "out-025": {
+  "verdict": "keep",
+  "idea": {
+   "title_at": "TL",
+   "name_at": "BR",
+   "scale": "small",
+   "colour": "M6",
+   "note": "Posed, black and white: opposite corners."
+  },
+  "why": "Opposite corners of the black grate are clear of head and hand on the hip."
+ },
+ "out-026": {
+  "verdict": "change",
+  "idea": {
+   "title_at": "TL",
+   "name_at": "TR",
+   "scale": "small",
+   "colour": "M6",
+   "note": "Title and name small in the two top corners of the black grate above his head."
+  },
+  "why": "The bottom centre is his knees and hands on the pavement."
+ },
+ "out-027": {
+  "verdict": "change",
+  "idea": {
+   "title_at": "TL",
+   "name_at": "none",
+   "scale": "small",
+   "colour": "M6",
+   "note": "One small pewter title in the black top left corner above his raised hand."
+  },
+  "why": "Bottom centre is his tank top and chain, the title would sit on his chest."
+ },
+ "out-129": {
+  "verdict": "keep",
+  "idea": {
+   "title_at": "TR",
+   "name_at": "BL",
+   "scale": "small",
+   "colour": "M2",
+   "note": "Tough street flash: title top right, name bottom left."
+  },
+  "why": "The black grate top right is clear of the phone hand and the lower left is dark."
+ },
+ "out-035": {
+  "verdict": "change",
+  "idea": {
+   "title_at": "TR",
+   "name_at": "TL",
+   "scale": "small",
+   "colour": "M6",
+   "note": "Title small in the dark cobbles top right, name small in the black top left."
+  },
+  "why": "Bottom left is the flash-lit pale bench, pewter vanishes on it."
+ },
+ "out-036": {
+  "verdict": "keep",
+  "idea": {
+   "title_at": "TL",
+   "name_at": "BR",
+   "scale": "small",
+   "colour": "M6",
+   "note": "Cool, edgy: opposite corners."
+  },
+  "why": "Both corners are dark cobbles and black night, clear of him."
+ },
+ "out-037": {
+  "verdict": "change",
+  "idea": {
+   "title_at": "TR",
+   "name_at": "none",
+   "scale": "small",
+   "colour": "M6",
+   "note": "One small pewter title in the dark cobbles top right, beside his raised hand."
+  },
+  "why": "Bottom centre is his black trousers and knee, the title would sit on his body."
+ },
+ "out-038": {
+  "verdict": "change",
+  "idea": {
+   "title_at": "BR",
+   "name_at": "TL",
+   "scale": "small",
+   "colour": "C",
+   "note": "Title small in cream on the dark cobbles bottom right, name small in the black at top left."
+  },
+  "why": "Bottom left is his bright flash-lit forearm reaching out."
+ },
+ "out-039": {
+  "verdict": "change",
+  "idea": {
+   "title_at": "TC",
+   "name_at": "BL",
+   "scale": "small",
+   "colour": "M3",
+   "note": "Keep the title in the black above him but small, name small in the black lower left."
+  },
+  "why": "His hair nearly touches the top edge, there is no room for a large title above him."
+ },
+ "out-133": {
+  "verdict": "change",
+  "idea": {
+   "title_at": "TR",
+   "name_at": "BR",
+   "scale": "small",
+   "colour": "M4",
+   "note": "Title small in the dark trees top right, name small at the end of the bench bottom right."
+  },
+  "why": "Bottom left is pale bench stone where sage has no contrast, the dark trees are the readable field."
+ },
+ "out-191": {
+  "verdict": "keep",
+  "idea": {
+   "title_at": "TC",
+   "name_at": "BC",
+   "scale": "small",
+   "colour": "M4",
+   "note": "Symmetric on the bench: title in the trees, name on the ground, both centred."
+  },
+  "why": "Symmetric pose on a symmetric bench, the dark trees above and the cobbles below take centred small words."
+ },
+ "out-028": {
+  "verdict": "keep",
+  "idea": {
+   "title_at": "TC",
+   "name_at": "BC",
+   "scale": "small",
+   "colour": "M4",
+   "note": "Composed, symmetric: same."
+  },
+  "why": "Same symmetric solution works, his feet end just above the bottom strip."
+ },
+ "out-029": {
+  "verdict": "change",
+  "idea": {
+   "title_at": "TL",
+   "name_at": "TR",
+   "scale": "small",
+   "colour": "M4",
+   "note": "Title small in the dark trees top left, name small in the trees top right."
+  },
+  "why": "His boots touch the bottom edge so bottom centre is taken, and the top centre is a patch of white sky."
+ },
+ "out-030": {
+  "verdict": "keep",
+  "idea": {
+   "title_at": "BL",
+   "name_at": "BR",
+   "scale": "small",
+   "colour": "M4",
+   "note": "Confident: bottom band."
+  },
+  "why": "The ground either side of his boots is free for a small bottom band."
+ },
+ "out-130": {
+  "verdict": "keep",
+  "idea": {
+   "title_at": "TL",
+   "name_at": "TR",
+   "scale": "small",
+   "colour": "M4",
+   "note": "Playful rock: top corners."
+  },
+  "why": "The two top corners are dark trees, clear of his raised hands."
+ },
+ "out-131": {
+  "verdict": "change",
+  "idea": {
+   "title_at": "MR",
+   "name_at": "TL",
+   "scale": "large",
+   "colour": "M2",
+   "note": "Large platinum title on the green lawn right of him above the empty bench, name small in the dark trees top left."
+  },
+  "why": "The bench stone is pale, a large sage title on it has almost no contrast, the lawn behind is the darker field."
+ },
+ "out-192": {
+  "verdict": "change",
+  "idea": {
+   "title_at": "TC",
+   "name_at": "BR",
+   "scale": "large",
+   "colour": "M2",
+   "note": "Large platinum title across the dark tree trunks above his head, name small on the dark cobbles bottom right."
+  },
+  "why": "The bench to the right is pale stone, a large sage title on it has no contrast."
+ },
+ "out-193": {
+  "verdict": "change",
+  "idea": {
+   "title_at": "TL",
+   "name_at": "TR",
+   "scale": "small",
+   "colour": "M3",
+   "note": "Title small in the dark trees top left, name small in the dark trees top right, the flash-lit bench and pavement stay bare."
+  },
+  "why": "Bottom right is flash-lit pale pavement where violet disappears."
+ },
+ "out-031": {
+  "verdict": "change",
+  "idea": {
+   "title_at": "TR",
+   "name_at": "TL",
+   "scale": "small",
+   "colour": "M3",
+   "note": "Title small top right, name small top left, both in the dark trees above him."
+  },
+  "why": "Bottom left is the flash-lit bench and pavement, too pale for violet."
+ },
+ "out-032": {
+  "verdict": "change",
+  "idea": {
+   "title_at": "TL",
+   "name_at": "none",
+   "scale": "small",
+   "colour": "M6",
+   "note": "One small pewter title in the black night top left."
+  },
+  "why": "Bottom right holds his bright hand on the knee and the pale bench edge."
+ },
+ "out-033": {
+  "verdict": "change",
+  "idea": {
+   "title_at": "VR",
+   "name_at": "TL",
+   "scale": "small",
+   "colour": "M6",
+   "note": "Title running down the dark cobbles on the right edge, name small in the black top left."
+  },
+  "why": "Bottom centre is his bent knee and hand on the flash-lit ledge."
+ },
+ "out-132": {
+  "verdict": "change",
+  "idea": {
+   "title_at": "TR",
+   "name_at": "BR",
+   "scale": "small",
+   "colour": "M6",
+   "note": "Title small top right, name small bottom right, both on the dark cobbles."
+  },
+  "why": "Bottom left is the pale flash-lit ledge where pewter vanishes."
+ },
+ "out-034": {
+  "verdict": "change",
+  "idea": {
+   "title_at": "VR",
+   "name_at": "TL",
+   "scale": "small",
+   "colour": "M6",
+   "note": "Title running down the dark cobble strip on the right, name small in the black top left."
+  },
+  "why": "Bottom left is the pale ledge and his striped arm, pewter disappears there."
+ },
+ "out-134": {
+  "verdict": "change",
+  "idea": {
+   "title_at": "BL",
+   "name_at": "TR",
+   "scale": "small",
+   "colour": "M3",
+   "note": "Title small in the ivy bottom left, name small in the ivy top right, the free diagonal opposite his body."
+  },
+  "why": "His leather jacket fills the top left, the title would sit on his body."
+ },
+ "out-194": {
+  "verdict": "keep",
+  "idea": {
+   "title_at": "VL",
+   "name_at": "TR",
+   "scale": "small",
+   "colour": "M3",
+   "note": "Lying across the frame: title vertical on the left, name top right."
+  },
+  "why": "The ground left of him and top right beside his legs are both free, violet reads on the orange leaves."
+ },
+ "out-195": {
+  "verdict": "keep",
+  "idea": {
+   "title_at": "VR",
+   "name_at": "TL",
+   "scale": "small",
+   "colour": "M3",
+   "note": "Same, mirrored: title vertical right, name top left."
+  },
+  "why": "The mirrored version works for the same reason, free ground on the right and top left."
+ },
+ "out-040": {
+  "verdict": "keep",
+  "idea": {
+   "title_at": "TR",
+   "name_at": "BL",
+   "scale": "small",
+   "colour": "M6",
+   "note": "Dead-still on the gravel: pewter words, opposite corners."
+  },
+  "why": "He lies on the other diagonal, so top right and bottom left are the free gravel corners."
+ },
+ "out-041": {
+  "verdict": "change",
+  "idea": {
+   "title_at": "BL",
+   "name_at": "TR",
+   "scale": "small",
+   "colour": "M6",
+   "note": "Title small in the gravel bottom left, name small in the gravel top right."
+  },
+  "why": "His legs run into the top left corner, the free diagonal is the other one."
+ },
+ "out-042": {
+  "verdict": "change",
+  "idea": {
+   "title_at": "BC",
+   "name_at": "TR",
+   "scale": "large",
+   "colour": "F",
+   "note": "Large blush title across the flash-lit leaves at the bottom, name small in the ground top right above his hair."
+  },
+  "why": "The black band is above the crop, inside the square the top is his leather sleeve and hands."
+ },
+ "out-043": {
+  "verdict": "change",
+  "idea": {
+   "title_at": "TL",
+   "name_at": "BC",
+   "scale": "large",
+   "colour": "M3",
+   "note": "Large violet title in the black top left beside the raised hand, name small on the ivy at the bottom."
+  },
+  "why": "The raised hand reaches into the top centre, a centred title would cut it."
+ },
+ "out-044": {
+  "verdict": "keep",
+  "idea": {
+   "title_at": "TL",
+   "name_at": "none",
+   "scale": "small",
+   "colour": "M3",
+   "note": "Almost all black: one small violet title top left, nothing else."
+  },
+  "why": "Almost everything is black, one small violet title in the empty top left is right."
+ },
+ "out-045": {
+  "verdict": "keep",
+  "idea": {
+   "title_at": "TR",
+   "name_at": "BL",
+   "scale": "small",
+   "colour": "M6",
+   "note": "Restless on the gravel: opposite corners."
+  },
+  "why": "He fills the top half, the gravel corners are all that is left."
+ },
+ "out-046": {
+  "verdict": "change",
+  "idea": {
+   "title_at": "VL",
+   "name_at": "VR",
+   "scale": "small",
+   "colour": "M2",
+   "note": "Title running up the thin dark strip of sky left of the pillar, name running down the strip on the right."
+  },
+  "why": "The dark strips beside the pillar are too narrow for horizontal words, vertical type fits them and echoes the column."
+ },
+ "out-047": {
+  "verdict": "change",
+  "idea": {
+   "title_at": "TL",
+   "name_at": "TR",
+   "scale": "small",
+   "colour": "M3",
+   "note": "Title small in the dark trees top left, name small in the dark trees top right, the pillar stays bare between them."
+  },
+  "why": "The pillar top is pale cream stone where violet has little contrast, the symmetry holds with the two dark sides."
+ },
+ "out-048": {
+  "verdict": "change",
+  "idea": {
+   "title_at": "TL",
+   "name_at": "BL",
+   "scale": "small",
+   "colour": "M3",
+   "note": "Title small in the dark sky top left, name small low left beside the steps."
+  },
+  "why": "The dark sky is top left, the top right is the pale pillar."
+ },
+ "out-135": {
+  "verdict": "change",
+  "idea": {
+   "title_at": "TL",
+   "name_at": "VR",
+   "scale": "small",
+   "colour": "M3",
+   "note": "Keep the title in the dark sky top left, run the name vertically down the thin dark strip right of the pillar."
+  },
+  "why": "Bottom right is pale steps where violet disappears."
+ },
+ "out-049": {
+  "verdict": "change",
+  "idea": {
+   "title_at": "TR",
+   "name_at": "TL",
+   "scale": "small",
+   "colour": "E",
+   "note": "Title small on the wall top right, name small on the wall top left, both above his shoulders."
+  },
+  "why": "Bottom left is his hand resting on the thigh."
+ },
+ "out-050": {
+  "verdict": "keep",
+  "idea": {
+   "title_at": "TR",
+   "name_at": "BL",
+   "scale": "small",
+   "colour": "M6",
+   "note": "Pensive, looking right: the title where he looks, top right; name bottom left."
+  },
+  "why": "He looks right into the empty wall top right, the title belongs where his gaze lands."
+ },
+ "out-051": {
+  "verdict": "keep",
+  "idea": {
+   "title_at": "TL",
+   "name_at": "BR",
+   "scale": "small",
+   "colour": "M2",
+   "note": "Reaching hand: words in the corners the hand does not touch."
+  },
+  "why": "The top left wall and the lower right are the two places the reaching hands leave free."
+ },
+ "out-136": {
+  "verdict": "keep",
+  "idea": {
+   "title_at": "TL",
+   "name_at": "BL",
+   "scale": "small",
+   "colour": "M2",
+   "note": "Reaching to the right: both words down the left edge."
+  },
+  "why": "The left wall above and below the reaching hand is free."
+ },
+ "out-052": {
+  "verdict": "change",
+  "idea": {
+   "title_at": "VR",
+   "name_at": "none",
+   "scale": "small",
+   "colour": "M6",
+   "note": "Keep the title running down the black strip on the right, drop the name."
+  },
+  "why": "Top left is the flash-lit white pillar where pewter disappears, the black strip is the only dark field and it holds one line."
+ },
+ "out-137": {
+  "verdict": "keep",
+  "idea": {
+   "title_at": "BC",
+   "name_at": "TC",
+   "scale": "large",
+   "colour": "M6",
+   "note": "Tiny between the hedges: large pewter title on the path, name in the trees."
+  },
+  "why": "He is tiny and centred high, the converging path below is a natural stage for a large title and the tree line takes the name."
+ },
+ "out-053": {
+  "verdict": "change",
+  "idea": {
+   "title_at": "TC",
+   "name_at": "BR",
+   "scale": "large",
+   "colour": "M3",
+   "note": "Large violet title in the dark blue sky above the tree line, name small on the path bottom right."
+  },
+  "why": "His feet touch the bottom edge, a centred name there sits on his shoes."
+ },
+ "out-054": {
+  "verdict": "keep",
+  "idea": {
+   "title_at": "TL",
+   "name_at": "BR",
+   "scale": "small",
+   "colour": "M3",
+   "note": "Edgy night: title in the sky top left, name bottom right."
+  },
+  "why": "Dark blue sky top left and the hedge and path bottom right are both clear of him."
+ },
+ "out-055": {
+  "verdict": "change",
+  "idea": {
+   "title_at": "TC",
+   "name_at": "BR",
+   "scale": "small",
+   "colour": "M3",
+   "note": "Title small in the dark sky above his head, name small on the dark hedge bottom right."
+  },
+  "why": "The crop cuts at his hips, bottom centre is his body."
+ },
+ "out-056": {
+  "verdict": "keep",
+  "idea": {
+   "title_at": "TR",
+   "name_at": "BL",
+   "scale": "small",
+   "colour": "M3",
+   "note": "One star in the sky top right: the title sits beside the star, name bottom left."
+  },
+  "why": "Dark sky top right and dark hedge bottom left both work, though the star sits above the crop, so the title is not beside it."
+ },
+ "out-057": {
+  "verdict": "change",
+  "idea": {
+   "title_at": "TL",
+   "name_at": "TR",
+   "scale": "small",
+   "colour": "M4",
+   "note": "Title small top left, name small top right, both in the dark tree band under the pale sky."
+  },
+  "why": "His feet nearly touch the bottom so the path strip is thin, and the top centre is pale sky where sage vanishes."
+ },
+ "out-058": {
+  "verdict": "change",
+  "idea": {
+   "title_at": "BR",
+   "name_at": "BL",
+   "scale": "small",
+   "colour": "M4",
+   "note": "Title small on the dark hedge bottom right, name small on the hedge bottom left."
+  },
+  "why": "The crop cuts at his legs so bottom centre is his trousers, and the top is pale sky."
+ },
+ "out-059": {
+  "verdict": "keep",
+  "idea": {
+   "title_at": "TR",
+   "name_at": "BR",
+   "scale": "small",
+   "colour": "M6",
+   "note": "He stands left, hedges run right: both words down the right side."
+  },
+  "why": "The dark trees top right and the hedge below it give a clean right-hand column."
+ },
+ "out-060": {
+  "verdict": "change",
+  "idea": {
+   "title_at": "TL",
+   "name_at": "TR",
+   "scale": "small",
+   "colour": "M6",
+   "note": "Title and name small in the dark tree band either side of his head."
+  },
+  "why": "The top centre is white sky where pewter vanishes, and the crop cuts at his legs so bottom centre is his body."
+ },
+ "out-061": {
+  "verdict": "change",
+  "idea": {
+   "title_at": "BC",
+   "name_at": "TR",
+   "scale": "small",
+   "colour": "M6",
+   "note": "Keep the title between the path lines at the bottom, move the name small onto the dark hedge top right."
+  },
+  "why": "There is no sky in this crop, his hair is near the top edge so a top centre name would touch it."
+ },
+ "out-062": {
+  "verdict": "keep",
+  "idea": {
+   "title_at": "TL",
+   "name_at": "BR",
+   "scale": "small",
+   "colour": "M6",
+   "note": "Gesturing: opposite corners, away from the hand."
+  },
+  "why": "Top left hedge and bottom right path are the corners his hands and feet do not reach."
+ },
+ "out-063": {
+  "verdict": "keep",
+  "idea": {
+   "title_at": "TC",
+   "name_at": "none",
+   "scale": "large",
+   "colour": "M6",
+   "note": "Middle fingers: one large word across the top, no name; his hands say the rest."
+  },
+  "why": "One big word above the gesture is the right punk move, the band above his hair is thin but enough for a single line."
+ },
+ "out-064": {
+  "verdict": "change",
+  "idea": {
+   "title_at": "BC",
+   "name_at": "TL",
+   "scale": "large",
+   "colour": "M3",
+   "note": "Large violet title across the empty flash-lit stones below him, name small in the stones top left."
+  },
+  "why": "The black is above the crop, inside the square the top is his body, the empty stone is at the bottom."
+ },
+ "out-065": {
+  "verdict": "change",
+  "idea": {
+   "title_at": "BC",
+   "name_at": "TR",
+   "scale": "large",
+   "colour": "M3",
+   "note": "Large violet title across the empty stones below him, name small in the stones top right above his head."
+  },
+  "why": "His torso and hands fill the top of the square, the free field is the lower half."
+ },
+ "out-066": {
+  "verdict": "change",
+  "idea": {
+   "title_at": "BR",
+   "name_at": "none",
+   "scale": "small",
+   "colour": "M6",
+   "note": "One small title on the empty stones bottom right, clear of the reaching arm."
+  },
+  "why": "The lower arm and hand run through bottom centre."
+ },
+ "out-138": {
+  "verdict": "keep",
+  "idea": {
+   "title_at": "BL",
+   "name_at": "TR",
+   "scale": "small",
+   "colour": "M6",
+   "note": "Fallen, wide: title low left, name high right."
+  },
+  "why": "The dark vignette top right and the stone low left are clear of him."
+ },
+ "out-139": {
+  "verdict": "change",
+  "idea": {
+   "title_at": "TR",
+   "name_at": "BR",
+   "scale": "small",
+   "colour": "M6",
+   "note": "Title small in the dark vignette top right, name small on the stones bottom right."
+  },
+  "why": "His hair is close to the top edge and a hand sits near bottom centre, the right-hand stones are free."
+ },
+ "out-067": {
+  "verdict": "change",
+  "idea": {
+   "title_at": "TR",
+   "name_at": "TL",
+   "scale": "small",
+   "colour": "M2",
+   "note": "Title small top right, name small top left, both in the dark stones above his shoulders."
+  },
+  "why": "Both hands rest on the stones in the bottom corners, the name bottom left would sit on one."
+ },
+ "out-068": {
+  "verdict": "keep",
+  "idea": {
+   "title_at": "TL",
+   "name_at": "TR",
+   "scale": "small",
+   "colour": "M6",
+   "note": "Star pose, legs to the corners: the words take the two top corners."
+  },
+  "why": "His legs take the bottom corners, the dark top corners are the right place."
+ },
+ "out-069": {
+  "verdict": "keep",
+  "idea": {
+   "title_at": "TL",
+   "name_at": "TR",
+   "scale": "small",
+   "colour": "M2",
+   "note": "Loose star pose: top corners."
+  },
+  "why": "Same star pose, the dark top corners are free."
+ },
+ "out-070": {
+  "verdict": "keep",
+  "idea": {
+   "title_at": "TL",
+   "name_at": "TR",
+   "scale": "small",
+   "colour": "M4",
+   "note": "Green night: top corners, sage."
+  },
+  "why": "Same star pose, the dark top corners are free."
+ },
+ "out-071": {
+  "verdict": "keep",
+  "idea": {
+   "title_at": "TL",
+   "name_at": "TR",
+   "scale": "small",
+   "colour": "M2",
+   "note": "Alert: top corners."
+  },
+  "why": "Same star pose, the black top corners are free."
+ },
+ "out-196": {
+  "verdict": "change",
+  "idea": {
+   "title_at": "TR",
+   "name_at": "BR",
+   "scale": "large",
+   "colour": "M2",
+   "note": "Large platinum title in the open sky right of him, name small on the dark grass bottom right."
+  },
+  "why": "Blush on the pink blue-hour sky has almost no contrast, the sky above his head is thin, and bottom centre is his legs."
+ },
+ "out-072": {
+  "verdict": "keep",
+  "idea": {
+   "title_at": "TR",
+   "name_at": "BL",
+   "scale": "small",
+   "colour": "F",
+   "note": "On the grass hill, pink sky top right: title in the sky, name in the grass."
+  },
+  "why": "The deep blue sky top right carries blush well and the grass corner bottom left is free."
+ },
+ "out-140": {
+  "verdict": "keep",
+  "idea": {
+   "title_at": "TL",
+   "name_at": "BR",
+   "scale": "small",
+   "colour": "F",
+   "note": "Dreamy on the hill: title top left, name bottom right."
+  },
+  "why": "Sky top left and grass bottom right sit clear of him, the soft blush suits the pale sky."
+ },
+ "out-197": {
+  "verdict": "keep",
+  "idea": {
+   "title_at": "TR",
+   "name_at": "BL",
+   "scale": "small",
+   "colour": "F",
+   "note": "Same hill: title in the sky, name in the grass."
+  },
+  "why": "Same hill solution, sky and grass corners clear of him."
+ },
+ "out-073": {
+  "verdict": "keep",
+  "idea": {
+   "title_at": "TL",
+   "name_at": "BL",
+   "scale": "small",
+   "colour": "M3",
+   "note": "Tall against the monument, sky on the left: both words down the left, in the sky and by the chain."
+  },
+  "why": "Sky top left and the dark trees low left make a clean left column away from the monument."
+ },
+ "out-074": {
+  "verdict": "keep",
+  "idea": {
+   "title_at": "TL",
+   "name_at": "BL",
+   "scale": "small",
+   "colour": "M3",
+   "note": "Cool, elegant: left column."
+  },
+  "why": "The sky above and the dark trees below on the left form a free column beside his shoulder."
+ },
+ "out-141": {
+  "verdict": "keep",
+  "idea": {
+   "title_at": "TL",
+   "name_at": "BR",
+   "scale": "small",
+   "colour": "M3",
+   "note": "Tall, stone on the right: title in the sky top left, name on the stone bottom right."
+  },
+  "why": "Sky top left is open and the granite bottom right is clear of his hand."
+ },
+ "out-142": {
+  "verdict": "keep",
+  "idea": {
+   "title_at": "VR",
+   "name_at": "BL",
+   "scale": "small",
+   "colour": "M3",
+   "note": "Leaning on the stone: the title runs vertical along the stone edge on the right, name bottom left."
+  },
+  "why": "The stone edge on the right gives the vertical title a line, dark trees bottom left hold the name."
+ },
+ "out-143": {
+  "verdict": "keep",
+  "idea": {
+   "title_at": "VR",
+   "name_at": "TL",
+   "scale": "small",
+   "colour": "M3",
+   "note": "Cool: title vertical on the stone, name top left in the sky."
+  },
+  "why": "The stone gives the vertical title a line and the sky top left is open."
+ },
+ "out-075": {
+  "verdict": "keep",
+  "idea": {
+   "title_at": "TL",
+   "name_at": "BR",
+   "scale": "small",
+   "colour": "M3",
+   "note": "Relaxed: title in the sky, name on the stone."
+  },
+  "why": "Sky top left and granite bottom right are both clear of him."
+ },
+ "out-144": {
+  "verdict": "change",
+  "idea": {
+   "title_at": "TL",
+   "name_at": "BL",
+   "scale": "small",
+   "colour": "M3",
+   "note": "Title small in the sky top left, name small on the dark trees bottom left."
+  },
+  "why": "His white satin sleeve reaches into the bottom right, the dark trees low left are the cleaner spot."
+ },
+ "out-076": {
+  "verdict": "keep",
+  "idea": {
+   "title_at": "TL",
+   "name_at": "BL",
+   "scale": "small",
+   "colour": "M3",
+   "note": "Soft, elegant: left column."
+  },
+  "why": "The sky and park on the left are open, the wall and his body take the right."
+ },
+ "out-077": {
+  "verdict": "change",
+  "idea": {
+   "title_at": "ML",
+   "name_at": "TL",
+   "scale": "small",
+   "colour": "E",
+   "note": "Title small in champagne on the dark trees left of his face, name small in the sky top left."
+  },
+  "why": "Bottom left is his crossed arm, and champagne is weak on the pale sky top right."
+ },
+ "out-145": {
+  "verdict": "keep",
+  "idea": {
+   "title_at": "TL",
+   "name_at": "BR",
+   "scale": "small",
+   "colour": "M3",
+   "note": "Editorial: title in the sky top left, name on the stone."
+  },
+  "why": "Sky with pink clouds top left and the granite bottom right are both clear of him."
+ },
+ "out-078": {
+  "verdict": "keep",
+  "idea": {
+   "title_at": "TL",
+   "name_at": "BL",
+   "scale": "small",
+   "colour": "M3",
+   "note": "Calm: left column."
+  },
+  "why": "The sky and trees on the left form an open column beside his shoulder."
+ },
+ "out-146": {
+  "verdict": "keep",
+  "idea": {
+   "title_at": "TL",
+   "name_at": "BR",
+   "scale": "small",
+   "colour": "M3",
+   "note": "Quiet: opposite corners."
+  },
+  "why": "He is small in the frame, open sky top left and the stone ledge bottom right frame him."
+ },
+ "out-147": {
+  "verdict": "keep",
+  "idea": {
+   "title_at": "VR",
+   "name_at": "TL",
+   "scale": "small",
+   "colour": "E",
+   "note": "Confident, stone on the right: champagne title vertical along the stone, name top left."
+  },
+  "why": "The column edge on the right gives the vertical title a line and the sky top left is open."
+ },
+ "out-148": {
+  "verdict": "keep",
+  "idea": {
+   "title_at": "TL",
+   "name_at": "BL",
+   "scale": "small",
+   "colour": "E",
+   "note": "Confident, elegant: left column, champagne."
+  },
+  "why": "The sky above and the dark trees below on the left are clear of his raised knee."
+ },
+ "out-079": {
+  "verdict": "change",
+  "idea": {
+   "title_at": "TL",
+   "name_at": "ML",
+   "scale": "small",
+   "colour": "E",
+   "note": "Title small in the violet sky top left, name small on the dark trees below it on the left."
+  },
+  "why": "Top right is the stone wall, not sky, champagne is weak on it, and the bottom left is pale plaza and chain."
+ },
+ "out-080": {
+  "verdict": "keep",
+  "idea": {
+   "title_at": "TL",
+   "name_at": "BR",
+   "scale": "small",
+   "colour": "E",
+   "note": "Luxury: opposite corners."
+  },
+  "why": "The patch of sky top left and the stone ledge bottom right are both free."
+ },
+ "out-149": {
+  "verdict": "change",
+  "idea": {
+   "title_at": "TL",
+   "name_at": "none",
+   "scale": "small",
+   "colour": "E",
+   "note": "One small champagne title on the dark trees top left beside his hair."
+  },
+  "why": "Bottom left is his white satin sleeve."
+ },
+ "out-081": {
+  "verdict": "keep",
+  "idea": {
+   "title_at": "TR",
+   "name_at": "BL",
+   "scale": "small",
+   "colour": "M3",
+   "note": "Glasses down, cheeky: title top right, name bottom left."
+  },
+  "why": "The stone top right and the plaza bottom left are clear of his hands on the glasses."
+ },
+ "out-150": {
+  "verdict": "change",
+  "idea": {
+   "title_at": "TL",
+   "name_at": "BL",
+   "scale": "small",
+   "colour": "M3",
+   "note": "Title small in the open blue sky top left, name small on the dark trees bottom left."
+  },
+  "why": "The sky is on the left, top right is the stone wall and his framing hand."
+ },
+ "out-082": {
+  "verdict": "keep",
+  "idea": {
+   "title_at": "TL",
+   "name_at": "BR",
+   "scale": "small",
+   "colour": "M3",
+   "note": "Gesture: opposite corners."
+  },
+  "why": "Sky top left and stone bottom right are the corners his hands leave free."
+ },
+ "out-151": {
+  "verdict": "keep",
+  "idea": {
+   "title_at": "TL",
+   "name_at": "BR",
+   "scale": "small",
+   "colour": "C",
+   "note": "Sepia, looking left: cream title where he looks, top left; name bottom right."
+  },
+  "why": "He looks left into the empty sky, placing the title in his line of sight is the right instinct."
+ },
+ "out-152": {
+  "verdict": "keep",
+  "idea": {
+   "title_at": "TR",
+   "name_at": "none",
+   "scale": "small",
+   "colour": "F",
+   "note": "Open, soft, close: one small blush title on the stone top right, nothing else."
+  },
+  "why": "The stone column top right is the one quiet field beside his face, a single small title is enough."
+ },
+ "out-153": {
+  "verdict": "change",
+  "idea": {
+   "title_at": "TR",
+   "name_at": "TL",
+   "scale": "small",
+   "colour": "F",
+   "note": "Keep the title on the stone top right, move the name small into the blue sky top left."
+  },
+  "why": "Bottom left is his crossed arm and hand."
+ },
+ "out-083": {
+  "verdict": "change",
+  "idea": {
+   "title_at": "TR",
+   "name_at": "TL",
+   "scale": "small",
+   "colour": "F",
+   "note": "Keep the title on the stone top right, move the name small into the blue sky top left."
+  },
+  "why": "Bottom left is his arm and hand at the edge, the sky left of his head is open."
+ },
+ "out-084": {
+  "verdict": "change",
+  "idea": {
+   "title_at": "BL",
+   "name_at": "TR",
+   "scale": "large",
+   "colour": "M3",
+   "note": "Large violet title along the dark bronze sculpture running in from the bottom left, name small on the dark lawn corner top right."
+  },
+  "why": "Top left is pale stone right against his hair, violet has no contrast there while the bronze is a dark diagonal made for type."
+ },
+ "out-198": {
+  "verdict": "change",
+  "idea": {
+   "title_at": "TL",
+   "name_at": "BR",
+   "scale": "small",
+   "colour": "M3",
+   "note": "Title small on the empty stone top left, name small on the stone bottom right."
+  },
+  "why": "His legs and boot run into the top right, the name there would sit on them."
+ },
+ "out-199": {
+  "verdict": "change",
+  "idea": {
+   "title_at": "BR",
+   "name_at": "TC",
+   "scale": "small",
+   "colour": "M4",
+   "note": "Title small in the grass bottom right, name small in the dark trees above him."
+  },
+  "why": "His feet touch the bottom edge, a centred title there would sit on his shoes."
+ },
+ "out-204": {
+  "verdict": "keep",
+  "idea": {
+   "title_at": "BL",
+   "name_at": "TR",
+   "scale": "small",
+   "colour": "M4",
+   "note": "Meadow: title low left, name high right."
+  },
+  "why": "Grass low left and dark bushes high right are both clear and sage sits softly on the green."
+ },
+ "out-200": {
+  "verdict": "change",
+  "idea": {
+   "title_at": "BL",
+   "name_at": "TL",
+   "scale": "small",
+   "colour": "M4",
+   "note": "Title small in the dark grass bottom left, name small in the dark trees top left."
+  },
+  "why": "His feet nearly touch the bottom edge and the top centre has a pale sky gap."
+ },
+ "out-201": {
+  "verdict": "keep",
+  "idea": {
+   "title_at": "TL",
+   "name_at": "BR",
+   "scale": "small",
+   "colour": "M4",
+   "note": "Eerie: opposite corners."
+  },
+  "why": "Dark trees top left and grass bottom right are both clear of him."
+ },
+ "out-154": {
+  "verdict": "change",
+  "idea": {
+   "title_at": "TC",
+   "name_at": "BR",
+   "scale": "small",
+   "colour": "M4",
+   "note": "Title small in the dark trees above his head, name small in the grass bottom right."
+  },
+  "why": "The crop cuts at his legs, bottom centre is his trousers."
+ },
+ "out-202": {
+  "verdict": "change",
+  "idea": {
+   "title_at": "BR",
+   "name_at": "TL",
+   "scale": "small",
+   "colour": "M4",
+   "note": "Title small on the grass path bottom right, name small in the dark trees top left."
+  },
+  "why": "The crop cuts at his thighs so bottom centre is his legs, and the top centre is a pale sky gap where sage vanishes."
+ },
+ "out-203": {
+  "verdict": "keep",
+  "idea": {
+   "title_at": "TL",
+   "name_at": "BR",
+   "scale": "small",
+   "colour": "M3",
+   "note": "Caught in the flash, black around: title in the black top left, name bottom right."
+  },
+  "why": "The flash falls off into black in both corners, clear of him."
+ }
+}

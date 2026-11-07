@@ -1,0 +1,80 @@
+{
+  "made": "2026-11-05T20:15:08",
+  "month": "2026-11",
+  "caps": {
+    "claude_credit_usd": 200.0,
+    "claude_warn_pct": 70,
+    "openai_images_month_usd": 15.0,
+    "hikerapi_min_balance_usd": 10.0
+  },
+  "rows": [
+    {
+      "service": "Claude API",
+      "mtd_usd": 36.13737,
+      "last30_usd": null,
+      "last30_note": "months only",
+      "calls": 68,
+      "biggest": "gap_radar_crowding $32.68 (51 calls)",
+      "status": "ok",
+      "source": "/Users/amir/Desktop/Inch of Shadow/Inchofshadowcode/stats_snapshots/claude_spend.json"
+    },
+    {
+      "service": "Gero key",
+      "mtd_usd": null,
+      "last30_usd": null,
+      "last30_note": "",
+      "calls": null,
+      "biggest": "same Claude credit, no ledger yet",
+      "status": "not logged",
+      "source": "/Users/amir/Desktop/Gero/CPcode/gero-control-panel/data/claude_spend.json"
+    },
+    {
+      "service": "OpenAI text",
+      "mtd_usd": 0.0,
+      "last30_usd": null,
+      "last30_note": "months only",
+      "calls": 0,
+      "biggest": "",
+      "status": "ok",
+      "source": "/Users/amir/Desktop/Inch of Shadow/Inchofshadowcode/stats_snapshots/openai_spend.json"
+    },
+    {
+      "service": "Image renders",
+      "mtd_usd": 0,
+      "last30_usd": 0.47647,
+      "last30_note": "",
+      "calls": 0,
+      "biggest": "",
+      "status": "ok",
+      "source": "/Users/amir/Desktop/Inch of Shadow/Inchofshadowcode/generated_images/imagine"
+    },
+    {
+      "service": "Raw renders",
+      "mtd_usd": null,
+      "last30_usd": null,
+      "last30_note": "",
+      "calls": 81,
+      "biggest": "81 files, no cost record",
+      "status": "not logged",
+      "source": "/Users/amir/Desktop/Inch of Shadow/Inchofshadowcode/generated_images/pinocchio-single"
+    },
+    {
+      "service": "HikerAPI",
+      "mtd_usd": 0.578,
+      "last30_usd": 0.578,
+      "last30_note": "",
+      "calls": 578,
+      "biggest": "11-04: 259 requests",
+      "status": "ok",
+      "source": "/Users/amir/Desktop/Inch of Shadow/Inchofshadowcode/stats_snapshots/snapshot_*.json",
+      "balance_usd": 83.421,
+      "balance_requests": 83421,
+      "balance_read": "2026-11-05T08:45:10"
+    }
+  ],
+  "warnings": [],
+  "gaps": [
+    "Gero key: not logged (/Users/amir/Desktop/Gero/CPcode/gero-control-panel/data/claude_spend.json)",
+    "Raw renders: not logged (/Users/amir/Desktop/Inch of Shadow/Inchofshadowcode/generated_images/pinocchio-single)"
+  ]
+}

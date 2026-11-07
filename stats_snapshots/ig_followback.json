@@ -1,0 +1,98 @@
+{
+  "export_date": "2026-10-10",
+  "computed_at": "2026-11-02T00:38:10",
+  "cohorts": {
+    "2018-09": {
+      "followed": 2,
+      "back": 0,
+      "pct": 0.0
+    },
+    "2018-10": {
+      "followed": 1,
+      "back": 0,
+      "pct": 0.0
+    },
+    "2018-11": {
+      "followed": 1,
+      "back": 0,
+      "pct": 0.0
+    },
+    "2019-05": {
+      "followed": 1,
+      "back": 0,
+      "pct": 0.0
+    },
+    "2019-08": {
+      "followed": 1,
+      "back": 0,
+      "pct": 0.0
+    },
+    "2019-09": {
+      "followed": 1,
+      "back": 0,
+      "pct": 0.0
+    },
+    "2020-05": {
+      "followed": 1,
+      "back": 0,
+      "pct": 0.0
+    },
+    "2021-06": {
+      "followed": 1,
+      "back": 0,
+      "pct": 0.0
+    },
+    "2024-04": {
+      "followed": 1,
+      "back": 0,
+      "pct": 0.0
+    },
+    "2024-07": {
+      "followed": 1,
+      "back": 0,
+      "pct": 0.0
+    },
+    "2025-05": {
+      "followed": 1,
+      "back": 0,
+      "pct": 0.0
+    },
+    "2026-04": {
+      "followed": 17,
+      "back": 2,
+      "pct": 11.8
+    },
+    "2026-05": {
+      "followed": 54,
+      "back": 14,
+      "pct": 25.9
+    },
+    "2026-06": {
+      "followed": 91,
+      "back": 16,
+      "pct": 17.6
+    },
+    "2026-07": {
+      "followed": 81,
+      "back": 18,
+      "pct": 22.2
+    },
+    "2026-08": {
+      "followed": 35,
+      "back": 7,
+      "pct": 20.0
+    },
+    "2026-09": {
+      "followed": 58,
+      "back": 17,
+      "pct": 29.3
+    },
+    "2026-10": {
+      "followed": 20,
+      "back": 0,
+      "pct": null,
+      "partial": true
+    }
+  },
+  "since_may_pct": 22.6
+}

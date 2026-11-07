@@ -1,0 +1,22 @@
+sample,distance,closest CC snare,note,length ms,same audio as CC rack pad
+@skeletone.store Witch House - Snare 2.wav,1.19,ULTIMATE_CC - snare - 14,F2 -23,120,
+@skeletone.store Witch House - Snare 6.wav,0.23,Snare (Vanished),C2 -40,115,
+91V_AC_snare_slow.wav,0.77,ULTIMATE_CC - snare - 14,F#2 -18,170,rack 2: 91V_AC_snare_slow.wav
+91V_AC_snare_steal.wav,2.71,ULTIMATE_CC - snare - 14,C3 -21,145,
+91V_AC_snare_wood.wav,2.36,ULTIMATE_CC - snare - 14,D3 -34,200,
+91V_AC_snare_slap.wav,3.00,ULTIMATE_CC - snare - 14,C3 +49,165,
+91V_AC_snare_hoard.wav,0.49,Snare (Birds),D2 -34,224,rack 1: 91V_AC_snare_hoard.wav
+91V_AC_snare_wreck.wav,3.66,ULTIMATE_CC - snare - 14,G3 -2,185,
+shs_witch_snare_shot_Memo.wav,3.06,ULTIMATE_CC - snare - 14,A2 +47,783,
+shs_witch_snare_shot_Strap.wav,4.48,ULTIMATE_CC - snare - 14,F#3 -18,803,
+shs_witch_snare_shot_Parsnip.wav,3.16,ULTIMATE_CC - snare - 14,E3 -21,284,
+@skeletone.store Witch House - Snare 12.wav,0.45,ULTIMATE_CC - snare - 14,C#2 -17,95,
+@skeletone.store Witch House - Snare 4.wav,0.56,ULTIMATE_CC - snare - 14,E2 +22,125,
+@skeletone.store Witch House - Snare 1.wav,1.39,ULTIMATE_CC - snare - 14,F2 -23,399,
+@skeletone.store Witch House - Clap 1.wav,4.50,ULTIMATE_CC - snare - 14,F3 -10,539,
+@skeletone.store Witch House - Clap 2.wav,4.16,ULTIMATE_CC - snare - 14,F#3 -44,170,
+@skeletone.store Witch House - Clap 5.wav,3.73,Snare (Vanished),C3 +5,185,
+@skeletone.store Witch House - Clap 4.wav,4.15,ULTIMATE_CC - snare - 14,F3 +3,185,
+shs_witch_snare_shot_Torpid.wav,7.83,Snare (Birds),E2 +35,2320,
+shs_witch_snare_shot_Sermon.wav,5.15,ULTIMATE_CC - snare - 14,B2 +33,1432,
+shs_witch_snare_shot_Victor.wav,5.67,Snare (Birds),E2 +35,1726,

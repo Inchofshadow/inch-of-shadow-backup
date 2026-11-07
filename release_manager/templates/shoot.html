@@ -1,0 +1,59 @@
+{% extends "base.html" %}
+{% block title %}Shoot{% endblock %}
+{% block content %}
+<div class="shoot-page">
+    <h1>Shoot</h1>
+    <p class="form-subtitle">Her edits from both shoots, {{ total }} in all, each linked to its raw: indoor at home 7 to 8 July 2026 ({{ cat.photos|selectattr('shoot', 'equalto', 'indoor')|list|length }}), outdoor at the memorial 26 August 2026 ({{ total - (cat.photos|selectattr('shoot', 'equalto', 'indoor')|list|length) }}). {% if edits_cached == total %}Thumbnails are her edits, small.{% else %}Thumbnails: {{ edits_cached }} of {{ total }} are her edits, the rest raw previews (in colour even where her edit is black and white).{% endif %}{% if not drive %} <strong>The drive is not connected.</strong>{% endif %}</p>
+
+    <form method="get" class="shoot-filters">
+        <select name="sort">
+            <option value="outfit" {% if sort == 'outfit' %}selected{% endif %}>by outfit, in the order of the evening</option>
+            <option value="time" {% if sort == 'time' %}selected{% endif %}>by capture time</option>
+            <option value="id" {% if sort == 'id' %}selected{% endif %}>by number (her export order)</option>
+        </select>
+        <select name="outfit"><option value="">every outfit</option>{% for o in outfits %}<option value="{{ o.key }}" {% if args.get('outfit') == o.key %}selected{% endif %}>{{ o.label }} ({{ o.count }})</option>{% endfor %}</select>
+        <label><input type="checkbox" name="stars" value="2" {% if args.get('stars') == '2' %}checked{% endif %}> her top picks (2 stars)</label>
+        <label><input type="checkbox" name="unused" value="1" {% if args.get('unused') %}checked{% endif %}> never posted</label>
+        <label><input type="checkbox" name="no_ai_on_him" value="1" {% if args.get('no_ai_on_him') %}checked{% endif %}> no AI on him</label>
+        <label><input type="checkbox" name="no_ai" value="1" {% if args.get('no_ai') %}checked{% endif %}> no AI at all</label>
+        <select name="flash"><option value="">flash or not</option><option value="yes" {% if args.get('flash') == 'yes' %}selected{% endif %}>flash</option><option value="no" {% if args.get('flash') == 'no' %}selected{% endif %}>no flash</option></select>
+        <select name="orientation"><option value="">any shape</option>{% for o in ('portrait', 'landscape', 'square') %}<option value="{{ o }}" {% if args.get('orientation') == o %}selected{% endif %}>{{ o }}</option>{% endfor %}</select>
+        <input type="search" name="q" value="{{ args.get('q', '') }}" placeholder="a word in the tags: dusk, bench, cheeky...">
+        <button type="submit" class="btn btn-secondary btn-sm">Filter</button>
+        <a href="{{ url_for('shoot_page') }}" class="btn btn-secondary btn-sm">Clear</a>
+        <span class="brand-muted">{{ photos|length }} of {{ total }}</span>
+        <a href="{{ url_for('shoot_covers') }}" class="btn btn-secondary btn-sm">All covers</a>
+    </form>
+
+    {% if sort == 'outfit' and outfits %}
+    <p class="brand-muted shoot-note">The numbers (in-001..., out-001...) follow her export folders, not the shoot. Below, the batches are his outfits in the order they were shot, from the capture time in each raw: the home shoot first, then the outdoor one.</p>
+    {% endif %}
+
+    {% for outfit, group in groups %}
+    {% if outfit and outfit.shoot and outfit.shoot != (groups[loop.index0 - 1][0].shoot if loop.index0 > 0 and groups[loop.index0 - 1][0] else none) %}
+    <h2 class="shoot-h2 shoot-shoot-head">{% if outfit.shoot == 'indoor' %}Indoor, at home, the night of 7 to 8 July 2026{% else %}Outdoor, Soviet War Memorial, 26 August 2026{% endif %}</h2>
+    {% endif %}
+    {% if outfit %}
+    <h2 class="shoot-h2 shoot-outfit-head" id="outfit-{{ outfit.key }}">
+        <span class="shoot-swatch" style="background: {{ outfit.swatch or 'transparent' }}"></span>
+        <span class="shoot-outfit-name">{{ outfit.label }}</span>
+        <span class="brand-muted">{{ group|length }}{% if outfit.from %} · {{ outfit.from }} to {{ outfit.to }}{% endif %}{% if outfit.settings %} · {{ outfit.settings|join(', ') }}{% endif %}</span>
+    </h2>
+    {% endif %}
+    <div class="shoot-grid">
+        {% for p in group %}
+        <a class="shoot-tile" href="{{ url_for('shoot_photo', photo_id=p.id) }}" title="{{ p.tags.feeling }}">
+            <img src="{{ url_for('shoot_thumb', photo_id=p.id, v='e' if p.id in edited else 'r') }}" alt="{{ p.id }}" loading="lazy">
+            <div class="shoot-tile-cap">
+                <span>{{ p.id }}</span>
+                {% if sort != 'outfit' and p.captured %}<span class="brand-muted">{{ p.captured[11:16] }}</span>{% endif %}
+                {% if p.her_rating == 2 %}<span class="shoot-star">**</span>{% endif %}
+                {% if p.ai_generated %}<span class="shoot-ai" title="{{ p.ai_generated.what }}">AI{% if p.ai_generated.on_him %} on him{% endif %}</span>{% endif %}
+                {% if p.used_in %}<span class="shoot-used">used</span>{% endif %}
+            </div>
+        </a>
+        {% endfor %}
+    </div>
+    {% endfor %}
+</div>
+{% endblock %}

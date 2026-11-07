@@ -1,0 +1,235 @@
+[
+ {
+  "name": "Fan-shot full live sets become the archive",
+  "insight": "Full-set uploads draw sustained gratitude from people who attended and want to relive the night, and from people who missed it. Viewers treat these videos as reference documents. They post timestamped tracklists, correct song IDs, flag standout moments by timestamp and ask about camera gear. The live set lives on as a navigable artifact, not a fleeting story.",
+  "examples": [
+   "Attendees thank the uploader for letting them revisit the show",
+   "A commenter posts a full timestamped tracklist for the Seattle set",
+   "Others correct a mislabeled song or point to a timestamp where the crowd erupted",
+   "People who could not attend thank the uploader for the full recording"
+  ],
+  "evidence_ids": [
+   169,
+   179,
+   181,
+   197,
+   200,
+   190,
+   193,
+   168,
+   194,
+   196
+  ],
+  "use": "Release a full or near-full set recording with good audio after key shows. Add pinned chapters and a plain tracklist in the caption: city, date, songs. No hype copy. On IG, cut 30–60s excerpts tagged with the timestamp so viewers can go to the full set.",
+  "strength": 5
+ },
+ {
+  "name": "A steady, predictable release rhythm is itself praised",
+  "insight": "R. Missing commenters repeatedly name the frequency and regularity of drops as something they love. Some call it more reliable than anything else in their lives. Others call the artist one of the most productive they know. The cadence becomes part of the bond, and gaps get noticed.",
+  "examples": [
+   "Drops come more often than the commenter goes to work",
+   "Nothing in a fan's life is as regular as the releases",
+   "A roughly monthly sad-but-groovy release is praised",
+   "A fan says the stream of tracks treats listeners well",
+   "Another was waiting and wondering when new music would come"
+  ],
+  "evidence_ids": [
+   107,
+   120,
+   129,
+   133,
+   140,
+   142,
+   150,
+   109
+  ],
+  "use": "Set a visible rhythm, such as one track or visual chapter per month on a fixed day, and keep to it quietly. A restrained recurring caption format (title, number in series, date) makes the regularity itself the brand signal without announcing it.",
+  "strength": 5
+ },
+ {
+  "name": "Cinematic references in videos invite decoding",
+  "insight": "Fans actively hunt for the film sources, props and stories behind videos. They ask which movie end clips came from and what a prop means. They seek out the story behind a video and link videos to directors such as Lynch. A long-form music film like Boy Harsher's The Runner is owned as a collector object. Visuals rooted in silent film and gothic horror are a recurring mode.",
+  "examples": [
+   "Fans ask which film the clips at the end of Plainsong come from",
+   "Someone wants to know what a flowered bell prop in Pictures of You represents",
+   "A thread covers the story behind the Lullaby video",
+   "Hard Beat is compared to Lost Highway and Blue Velvet",
+   "A fan owns The Runner on a collector's edition"
+  ],
+  "evidence_ids": [
+   17,
+   18,
+   9,
+   21,
+   19,
+   159,
+   165,
+   167,
+   117,
+   2
+  ],
+  "use": "Build each video around a clear cinematic source or motif, then post a sparse follow-up frame or two naming the reference or prop in one declarative line. Let fans do the decoding in comments. Over time, consider a short film tying several 2026 vocal songs together.",
+  "strength": 4
+ },
+ {
+  "name": "Setlists are a social object fans speculate on",
+  "insight": "Cure fans spend real energy predicting, comparing and wishing for setlists. They ask when setlists are decided and want playlists in advance, sometimes shuffled to avoid spoilers. They track set length show to show and want deep cuts beyond the hits. Surprising, varied setlists earn explicit praise. A shorter-than-usual set triggers worry. Missing a hoped-for song is noted even at a great show.",
+  "examples": [
+   "Fans debate what the 2026 tour set will be",
+   "One wants deep cuts like Plainsong to return",
+   "A thread tallies Barcelona songs by album",
+   "A drop from 29 to 21 songs raises questions",
+   "Fans want a setlist playlist in wrong order to avoid spoilers",
+   "Fans are delighted by an unexpected set"
+  ],
+  "evidence_ids": [
+   0,
+   3,
+   4,
+   5,
+   7,
+   8,
+   10,
+   12,
+   22,
+   6,
+   15,
+   195
+  ],
+  "use": "Before shows, post a restrained setlist tease (a cropped handwritten list, or one track title per frame). Afterwards, post the actual setlist as an image. Rotate one or two deep cuts or unreleased pieces per city and say so plainly.",
+  "strength": 4
+ },
+ {
+  "name": "Live-only versions and longer edits create demand",
+  "insight": "Fans notice when a live version differs from the record and go hunting for it. They ask where to find a remix heard in an interview and request extended edits. One fan points out that a song performed live long ago has now been released. Extended live parts get singled out as highlights.",
+  "examples": [
+   "A song shown in old live clips finally gets an official video",
+   "A commenter asks whether the Pain remix is available",
+   "Another searches for a better-quality version of a live Modulations that differs from the album",
+   "Someone wants a 15-minute edit",
+   "An extended section of Hard Beat live is flagged as the peak"
+  ],
+  "evidence_ids": [
+   111,
+   157,
+   193,
+   196,
+   147
+  ],
+  "use": "Treat live arrangements as a separate layer. Debut unreleased songs live, document them, and release them later with a note linking back to the first performance. Offer occasional extended or club edits of singles, which suits a dark disco/EBM audience that wants longer floor versions.",
+  "strength": 4
+ },
+ {
+  "name": "Music videos treated as collectible artifacts worth preserving",
+  "insight": "Listeners compile every video an artist has made and lament compressed old uploads. They want high-quality originals and look for modern goth videos as a category, noting that videos are harder to find than music. Curators are building 24/7 MTV-style channels for the scene. Fans also search for half-remembered videos based on visual details alone, which shows how strongly a distinctive visual sticks.",
+  "examples": [
+   "A fan reuploads a compilation of every Cure video",
+   "Someone laments YouTube uploads compressed 10–15 years ago",
+   "A user asks for favorite modern goth videos, naming Boy Harsher among them",
+   "NITEBOX.TV seeks bands' videos for an old-school 120 Minutes style channel",
+   "People hunt for a video remembered only by a vampire look or black-and-white glamour"
+  ],
+  "evidence_ids": [
+   11,
+   14,
+   20,
+   68,
+   48,
+   75,
+   81,
+   51,
+   72,
+   65
+  ],
+  "use": "Make every video a deliberate, archivable piece, with one striking signature image per video. Host clean high-res masters and submit them to scene video channels. On IG, keep a pinned visual series so the catalogue reads as a body of work.",
+  "strength": 3
+ },
+ {
+  "name": "Imperfect, analog authenticity beats AI gloss",
+  "insight": "Fans react against AI in this scene. A legacy band's AI-made video drew disappointment and anger, and AI upscales are faulted for getting details wrong compared with the original film. Fans are drawn instead to visible handmade craft: analog video-synth glitch art in the live show, a low-budget video that looks expensive, a video shot in a band member's art studio, tour footage reused as a video.",
+  "examples": [
+   "Disappointment that Echo & the Bunnymen used AI in a video",
+   "AI-upscaled versions are criticized as not how the film looked",
+   "Live visuals made with analog video synths and glitch camera work are praised",
+   "A fan jokes a big studio would have spent $480,000 on a modest video",
+   "A video uses footage from the band's own touring"
+  ],
+  "evidence_ids": [
+   67,
+   20,
+   182,
+   154,
+   97,
+   74
+  ],
+  "use": "State the means of making as part of the restrained voice: shot on film, analog feedback, filmed in the studio. Avoid AI-generated imagery entirely. Short IG clips of an analog video rig or projection setup can serve as both behind-the-scenes content and brand proof.",
+  "strength": 3
+ },
+ {
+  "name": "The performer's presence and look is part of the draw",
+  "insight": "Commenters single out the singer's eyes, outfits, whispered delivery and on-screen figures as much as the track. In live footage, fans praise the frontperson's presence and notice the artist's health and wellbeing. Seeing the person, not just abstract visuals, builds attachment.",
+  "examples": [
+   "A fan enjoys the videos and the singer's outfits",
+   "Another describes a whispery reverbed voice with timeless eyes peering through",
+   "Someone asks who the woman on the ceiling is",
+   "Jae is called a rock star",
+   "Fans comment that the singer looks healthier and happier"
+  ],
+  "evidence_ids": [
+   140,
+   122,
+   117,
+   106,
+   175,
+   186,
+   184,
+   151
+  ],
+  "use": "As Amir adds his own vocals in 2026, put him in frame. Use a consistent wardrobe and a single fixed gaze-to-camera motif across performance videos rather than faceless loops. Keep it composed and still, which fits the declarative voice.",
+  "strength": 3
+ },
+ {
+  "name": "Fans reward shows that make them dance and dislike static crowds",
+  "insight": "Live comments center on physically moving: dancing through the whole set (even injured), planning to move from balcony to floor, praising sets where the band does not phone it in. A dead crowd is criticized, and overcrowded venues are a complaint. Fans travel far and attend multiple dates, and get frustrated when tours skip their city.",
+  "examples": [
+   "A parent and son danced the whole set, one with a boot on a leg",
+   "A balcony viewer plans to be on the floor next time",
+   "A fan asks why the crowd is so dead",
+   "A fan flew in from Montana because the band does not phone it in",
+   "A fan saw three shows, while another laments their city was skipped"
+  ],
+  "evidence_ids": [
+   203,
+   177,
+   198,
+   176,
+   191,
+   180,
+   189,
+   199,
+   178,
+   202,
+   201
+  ],
+  "use": "Frame live content around the floor: crowd-level clips of people dancing rather than stage-only shots. Announce dates city by city with one plain line each, and acknowledge the cities requesting a visit.",
+  "strength": 3
+ },
+ {
+  "name": "Gear and process talk pulls in producer-fans",
+  "insight": "A meaningful slice of the audience makes music themselves. They engage with gear-focused interviews, compare setups, recall live rigs and ask to be taught. Questions about how to perform darkwave live with samplers show appetite for process detail.",
+  "examples": [
+   "Commenters discuss the AstroLab and the Arturia ecosystem in an Augustus Muller interview",
+   "One recalls him playing live with an MPC 1000 and Prophet 08",
+   "A fan begs the artists to teach how to make music like theirs",
+   "A new producer asks how a sampler player works in a live darkwave set"
+  ],
+  "evidence_ids": [
+   155,
+   156,
+   146,
+   23
+  ],
+  "use": "Post occasional dry, factual studio clips: one synth patch, one drum machine pattern, the live rig laid out with names. No tutorial voice, just captions stating what is on screen. This suits the EBM/acid crowd, which cares about the machines.",
+  "strength": 2
+ }
+]

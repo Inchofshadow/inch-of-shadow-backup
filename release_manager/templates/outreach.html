@@ -1,0 +1,156 @@
+{% extends "base.html" %}
+{% block title %}Outreach{% endblock %}
+
+{% block content %}
+<div class="board-page outreach-page" id="outreach-root" data-csrf="{{ csrf_token() if csrf_token is defined else '' }}">
+{% if error %}
+    <h1>Outreach</h1>
+    <div class="board-error">
+        <strong>plans/outreach-batches.json or booking_targets.json is not valid.</strong>
+        <pre>{{ error }}</pre>
+    </div>
+{% else %}
+    <div class="board-top">
+        <div>
+            <h1>Outreach</h1>
+            <p class="form-subtitle">Updated {{ view.updated }}. Claude drafts, you review and send.</p>
+        </div>
+        <div class="board-kpis">
+            <div class="board-kpi"><div class="k">Contacts</div><div class="v">{{ view.batches|map(attribute='contacts')|map('length')|sum }}</div></div>
+            <div class="board-kpi"><div class="k">Drafted</div><div class="v gold">{{ view.batches|map(attribute='drafted')|sum }}</div></div>
+        </div>
+    </div>
+
+    <div class="board-filters" id="o-filters">
+        <button class="chip on" data-filter="all">All</button>
+        <button class="chip" data-filter="score:5"><i class="score s5"></i>exact lane</button>
+        <button class="chip" data-filter="score:4"><i class="score s4"></i>adjacent</button>
+        <button class="chip" data-filter="score:3"><i class="score s3"></i>broad</button>
+        <button class="chip" data-filter="score:2"><i class="score s2"></i>out of genre</button>
+        <button class="chip" data-filter="try:1">Ticked</button>
+        <button class="chip" data-filter="try:0">Dropped</button>
+        <button class="chip" data-filter="try:-">Undecided</button>
+        <button class="chip" data-filter="drafted">Has draft</button>
+        <button class="chip" data-filter="status:approved">Approved</button>
+        <button class="chip" data-filter="status:sent">Sent</button>
+    </div>
+
+    {% for b in view.batches %}
+    <section class="o-batch" id="{{ b.id }}">
+        <div class="o-batch-head">
+            <h2>{{ b.title }} <span class="k">{{ b.created }}</span></h2>
+            <div class="o-counts">
+                <span class="pill st-approved">{{ b.ticked }} ticked</span>
+                <span class="pill st-passed">{{ b.dropped }} dropped</span>
+                {% for s, n in b.counts.items() if n %}<span class="pill st-{{ s }}">{{ n }} {{ s }}</span>{% endfor %}
+            </div>
+        </div>
+        {% for g in b.groups %}
+        <h3 class="o-cat">{{ g.label }} <span class="k">{{ g.contacts|length }}</span></h3>
+        <div class="o-grid">
+        {% for c in g.contacts %}
+            <article class="o-card{% if c.try is true %} is-try{% elif c.try is false %} is-drop{% endif %}" data-name="{{ c.name }}" data-batch="{{ b.id }}" data-score="{{ c.score }}" data-status="{{ c.status }}" data-drafted="{{ 1 if c.draft_body else 0 }}" data-try="{{ '1' if c.try is true else ('0' if c.try is false else '-') }}">
+                <div class="o-img">
+                    {% if c.image %}<img src="{{ c.image }}" alt="" loading="lazy">{% else %}<div class="o-noimg">{{ c.name[:1] }}</div>{% endif %}
+                    <span class="score s{{ c.score }}" title="{{ c.score_label }}">{{ c.score }}</span>
+                    <span class="pill st-{{ c.status }} o-status">{{ c.status }}</span>
+                    <div class="o-tick">
+                        <button type="button" class="o-tick-btn yes" data-val="true" title="try this one">V</button>
+                        <button type="button" class="o-tick-btn no" data-val="false" title="drop">X</button>
+                    </div>
+                </div>
+                <div class="o-body">
+                    <h3>{{ c.name }}</h3>
+                    <div class="o-meta">{{ c.type }}{% if c.channel %} · via {{ c.channel }}{% endif %}</div>
+                    <div class="o-nums">
+                        {% if c.ig_followers is not none %}<span><b>{{ "{:,}".format(c.ig_followers) }}</b> followers</span>{% endif %}
+                        {% if c.ig_following is not none %}<span><b>{{ "{:,}".format(c.ig_following) }}</b> following</span>{% endif %}
+                        {% if c.ig_posts is not none %}<span><b>{{ "{:,}".format(c.ig_posts) }}</b> posts</span>{% endif %}
+                        {% if c.sc_followers is not none %}<span><b>{{ "{:,}".format(c.sc_followers) }}</b> SC</span>{% endif %}
+                        {% if c.ig_followers is none and c.sc_followers is none %}<span class="o-dim">no numbers yet</span>{% endif %}
+                    </div>
+                    <p class="o-reason">{{ c.reason }}</p>
+                    <div class="o-links">
+                        {% if c.to %}<a href="mailto:{{ c.to }}">mail</a>{% endif %}
+                        {% for l in c.links if not l.label.startswith('proof') %}<a href="{{ l.url }}" target="_blank" rel="noopener">{{ l.label }}{% if l.unverified %} (check){% endif %}</a>{% endfor %}
+                    </div>
+                    <details class="o-more">
+                        <summary>details</summary>
+                        {% if c.hook %}<div class="field"><div class="k">Hook</div><div class="v">{{ c.hook }}</div></div>{% endif %}
+                        {% if c.gap %}<div class="field"><div class="k">Open</div><div class="v o-gap">{{ c.gap }}</div></div>{% endif %}
+                        <dl class="o-facts">{% for label, val in c.facts %}<dt>{{ label }}</dt><dd>{{ val }}</dd>{% endfor %}</dl>
+                        <div class="o-links">{% for l in c.links if l.label.startswith('proof') %}<a href="{{ l.url }}" target="_blank" rel="noopener">proof {{ loop.index }}</a>{% endfor %}</div>
+                        {% if c.notes %}<ul class="o-notes">{% for n in c.notes %}<li>{{ n }}</li>{% endfor %}</ul>{% endif %}
+                    </details>
+                    {% if c.draft_body %}
+                    <details class="o-more o-draftwrap" open>
+                        <summary>draft{% if c.draft_subject %} · {{ c.draft_subject }}{% endif %} <button class="btn btn-secondary btn-small o-copy" type="button">Copy</button></summary>
+                        <pre class="o-draft-body">{{ c.draft_body }}</pre>
+                    </details>
+                    {% else %}
+                    <div class="o-dim o-nodraft">no draft yet</div>
+                    {% endif %}
+                </div>
+            </article>
+        {% endfor %}
+        </div>
+        {% endfor %}
+    </section>
+    {% endfor %}
+
+    <script>
+    (function () {
+        var state = 'all';
+        function apply() {
+            document.querySelectorAll('.o-card').forEach(function (el) {
+                var show = true;
+                if (state.indexOf('score:') === 0) show = el.dataset.score === state.slice(6);
+                else if (state.indexOf('status:') === 0) show = el.dataset.status === state.slice(7);
+                else if (state === 'drafted') show = el.dataset.drafted === '1';
+                else if (state.indexOf('try:') === 0) show = el.dataset.try === state.slice(4);
+                el.hidden = !show;
+            });
+        }
+        document.querySelectorAll('#o-filters .chip').forEach(function (btn) {
+            btn.addEventListener('click', function () {
+                document.querySelectorAll('#o-filters .chip').forEach(function (b) { b.classList.remove('on'); });
+                btn.classList.add('on'); state = btn.dataset.filter; apply();
+            });
+        });
+        document.querySelectorAll('.o-tick-btn').forEach(function (btn) {
+            btn.addEventListener('click', function () {
+                var card = btn.closest('.o-card');
+                var want = btn.dataset.val === 'true';
+                var current = card.dataset.try;
+                var next = (want && current === '1') || (!want && current === '0') ? null : want;
+                var csrf = document.getElementById('outreach-root').dataset.csrf;
+                fetch('/outreach/tick', {method: 'POST', headers: {'Content-Type': 'application/json', 'X-CSRFToken': csrf},
+                    body: JSON.stringify({batch: card.dataset.batch, name: card.dataset.name, try: next})})
+                .then(function (r) { return r.json(); })
+                .then(function (j) {
+                    if (!j.ok) { alert(j.error || 'could not save'); return; }
+                    card.classList.remove('is-try', 'is-drop');
+                    if (j.try === true) card.classList.add('is-try');
+                    if (j.try === false) card.classList.add('is-drop');
+                    card.dataset.try = j.try === true ? '1' : (j.try === false ? '0' : '-');
+                    var sec = card.closest('.o-batch');
+                    var t = sec.querySelectorAll('.o-card.is-try').length, d = sec.querySelectorAll('.o-card.is-drop').length;
+                    sec.querySelector('.o-counts .st-approved').textContent = t + ' ticked';
+                    sec.querySelector('.o-counts .st-passed').textContent = d + ' dropped';
+                });
+            });
+        });
+        document.querySelectorAll('.o-copy').forEach(function (btn) {
+            btn.addEventListener('click', function (ev) {
+                ev.preventDefault(); ev.stopPropagation();
+                var body = btn.closest('.o-draftwrap').querySelector('.o-draft-body').textContent;
+                navigator.clipboard.writeText(body).then(function () {
+                    btn.textContent = 'Copied'; setTimeout(function () { btn.textContent = 'Copy'; }, 1500);
+                });
+            });
+        });
+    })();
+    </script>
+{% endif %}
+</div>
+{% endblock %}

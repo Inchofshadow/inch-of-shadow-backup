@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!-- DRAFT, not installed, needs the SC chat's ok + Amir's yes.
+     SC 13:00 retry gate: runs sc_engagement.py --retry-gate without a chat; notifies only on RUN
+     or on an error. Replaces the daily cron of the Claude task sc-engagement-retry, which stays
+     registered for a manual "Run now" when the notification says so.
+     Same interpreter as com.inchofshadow.stats-sync.plist (Full Disk Access granted).
+     Install (only after both yeses): cp this file (without .draft) to ~/Library/LaunchAgents/,
+     cp sc_retry_gate.sh to deploy/launchd/ and chmod +x, then
+       launchctl load ~/Library/LaunchAgents/com.inchofshadow.sc-retry-gate.plist
+     and remove the cron from (or disable) sc-engagement-retry. Undo: launchctl unload, delete the
+     file, put the task's daily cron back. -->
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.inchofshadow.sc-retry-gate</string>
+    <key>ProgramArguments</key>
+    <array>
+        <string>/bin/bash</string>
+        <string>/Users/amir/Desktop/Inch of Shadow/Inchofshadowcode/deploy/launchd/sc_retry_gate.sh</string>
+    </array>
+    <key>WorkingDirectory</key>
+    <string>/Users/amir/Desktop/Inch of Shadow/Inchofshadowcode</string>
+    <key>EnvironmentVariables</key>
+    <dict>
+        <key>PATH</key>
+        <string>/usr/bin:/bin:/usr/sbin:/sbin</string>
+        <key>HOME</key>
+        <string>/Users/amir</string>
+    </dict>
+    <key>StartCalendarInterval</key>
+    <dict><key>Hour</key><integer>13</integer><key>Minute</key><integer>0</integer></dict>
+    <key>StandardOutPath</key>
+    <string>/Users/amir/Desktop/Inch of Shadow/Inchofshadowcode/docs/reports/sc-retry-gate-launchd.log</string>
+    <key>StandardErrorPath</key>
+    <string>/Users/amir/Desktop/Inch of Shadow/Inchofshadowcode/docs/reports/sc-retry-gate-launchd.log</string>
+</dict>
+</plist>

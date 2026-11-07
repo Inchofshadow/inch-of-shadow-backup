@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!-- DRAFT, not installed, needs the SC chat's ok + Amir's yes.
+     SoundCloud release stats (The Deceiver, Farewell), replacing the Claude task
+     sc-weekly-release-stats. Friday 18:00 as today; for the audit's monthly option replace the
+     StartCalendarInterval dict with Day 1, Hour 12, Minute 10.
+     Same interpreter as com.inchofshadow.stats-sync.plist (Full Disk Access granted).
+     Install (only after both yeses): cp this file (without .draft) to ~/Library/LaunchAgents/,
+     cp sc_release_stats.sh to deploy/launchd/ and chmod +x, then
+       launchctl load ~/Library/LaunchAgents/com.inchofshadow.sc-release-stats.plist
+     and disable the Claude task. Undo: launchctl unload, delete the file, re-enable the task. -->
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.inchofshadow.sc-release-stats</string>
+    <key>ProgramArguments</key>
+    <array>
+        <string>/bin/bash</string>
+        <string>/Users/amir/Desktop/Inch of Shadow/Inchofshadowcode/deploy/launchd/sc_release_stats.sh</string>
+    </array>
+    <key>WorkingDirectory</key>
+    <string>/Users/amir/Desktop/Inch of Shadow/Inchofshadowcode</string>
+    <key>EnvironmentVariables</key>
+    <dict>
+        <key>PATH</key>
+        <string>/usr/bin:/bin:/usr/sbin:/sbin</string>
+        <key>HOME</key>
+        <string>/Users/amir</string>
+    </dict>
+    <key>StartCalendarInterval</key>
+    <dict><key>Weekday</key><integer>5</integer><key>Hour</key><integer>18</integer><key>Minute</key><integer>0</integer></dict>
+    <key>StandardOutPath</key>
+    <string>/Users/amir/Desktop/Inch of Shadow/Inchofshadowcode/docs/reports/sc-release-stats-launchd.log</string>
+    <key>StandardErrorPath</key>
+    <string>/Users/amir/Desktop/Inch of Shadow/Inchofshadowcode/docs/reports/sc-release-stats-launchd.log</string>
+</dict>
+</plist>

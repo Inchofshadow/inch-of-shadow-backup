@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% from "_cover_mock.html" import cover_mock %}
+{% block title %}Covers{% endblock %}
+{% block content %}
+<div class="shoot-page">
+    <div class="breadcrumb"><a href="{{ url_for('shoot_page') }}">Shoot</a> <span>Covers</span></div>
+    <h1>Covers</h1>
+    <p class="form-subtitle">One cover idea per photo, in the order of the evening. Placeholder words at the frame's cover sizes; the face, place and ink are chosen per photo. Starting points, not rules.</p>
+    {% for f in fonts %}<style>@font-face { font-family: "{{ f.family }}"; src: url("{{ f.url }}"); }</style>{% endfor %}
+    {% for outfit, rows in groups %}
+    <h2 class="shoot-h2 shoot-outfit-head"><span class="shoot-swatch" style="background: {{ outfit.swatch }}"></span><span class="shoot-outfit-name">{{ outfit.label }}</span></h2>
+    <div class="cover-grid">
+        {% for r in rows %}
+        <figure id="{{ r.p.id }}">
+            <a href="{{ url_for('shoot_photo', photo_id=r.p.id) }}">{{ cover_mock(r.p, r.c, r.idea, r.font, url_for('shoot_thumb', photo_id=r.p.id, v='e'), 240) }}</a>
+            <figcaption><span>{{ r.p.id }}</span><span>{{ r.font.label }}</span></figcaption>
+        </figure>
+        {% endfor %}
+    </div>
+    {% endfor %}
+</div>
+{% endblock %}

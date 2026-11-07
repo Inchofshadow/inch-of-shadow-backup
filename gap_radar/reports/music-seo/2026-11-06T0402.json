@@ -1,0 +1,259 @@
+[
+ {
+  "name": "'similar to X' / 'music like X' / 'sounds like' request syntax with artist anchors",
+  "insight": "This is the dominant way people search in the sample. Dozens of Reddit titles in r/Techno and r/industrialmusic follow the same patterns: 'similar to [artist/track]', 'artists like', 'music like', 'sounds like', 'any recs'. Some posters can't name the subgenre and only describe the vibe or ask 'what genre is this'. Recurring anchors near his sound are Underworld, Daniel Avery 'Drone Logic', Nitzer Ebb, Front 242, Skinny Puppy, Molchat Doma, Depeche Mode, She Wants Revenge and Nine Inch Nails.",
+  "examples": [
+   "similar to Underworld",
+   "songs similar to drone logic",
+   "Producers with a sound similar to",
+   "Need more music like",
+   "Do they still make music like this",
+   "sounds like Nine Inch Nails",
+   "Nitzer Ebb, Front 242",
+   "similar to the rhythms in Molchat Doma"
+  ],
+  "evidence_ids": [
+   0,
+   1,
+   2,
+   3,
+   8,
+   9,
+   14,
+   23,
+   42,
+   56,
+   57,
+   67,
+   69,
+   72,
+   87,
+   99,
+   141,
+   150
+  ],
+  "use": "Put 2–3 honest 'for fans of' anchors in Bandcamp/SoundCloud descriptions and bio copy (e.g. Front 242/Nitzer Ebb for EBM, Molchat Doma/Depeche Mode for coldwave and the vocal tracks from 2026), because listeners search by artist name, not by genre. Avoid NIN as an anchor; it pulls an industrial-rock/metal crowd.",
+  "strength": 5
+ },
+ {
+  "name": "Dark Disco (often paired with Indie Dance)",
+  "insight": "Used as an explicit label in recurring podcast titles (DARK DISCO #180, #186), a studio-session title 'Dark Disco / Indie Dance' and the heavily commented Tinzo 'Dark Disco in a Brooklyn Warehouse' video. Commenters repeat the term and some discover it as a new genre name. One commenter separates 'dark wave disco' from the set's literally dark, costume vibe. 'Disco goth' appears as a fan self-description. 'Brooklyn Warehouse' recurs in the YouTube sources as a scene frame.",
+  "examples": [
+   "DARK DISCO",
+   "Dark Disco / Indie Dance",
+   "Dark disco? Yes, please",
+   "never knew \"Dark Disco\" existed",
+   "disco goth",
+   "dark wave disco",
+   "in a Brooklyn Warehouse"
+  ],
+  "evidence_ids": [
+   11,
+   21,
+   24,
+   107,
+   108,
+   109,
+   112,
+   115,
+   117,
+   121
+  ],
+  "use": "Lead tag on SoundCloud and Bandcamp, and a title/description keyword for mixes. On Beatport, pair it with Indie Dance. Use 'dark disco' together with 'darkwave' or 'EBM' so the Halloween/costume-party reading (108, 121) doesn't dominate.",
+  "strength": 5
+ },
+ {
+  "name": "hypnotic / driving / dark (mood triad), plus 'trance-inducing'",
+  "insight": "'Hypnotic' is the most repeated mood word across r/Techno requests and acid techno YouTube comments. It is often stacked with dark, driving, raw, gritty and emotional. 'Hypnotize' appears as a verb. One request describes a 'trance inducing' style when asking for Jeff Mills-like DJs, and another post uses 'pop-trance' as an insult.",
+  "examples": [
+   "dark, hypnotic, driving, industrial",
+   "raw, hypnotic, kinda gritty",
+   "nostalgic, hypnotic atmosphere",
+   "lean more hypnotic",
+   "hypnotize me",
+   "trance inducing",
+   "powerful, hypnotic, emotional"
+  ],
+  "evidence_ids": [
+   0,
+   2,
+   3,
+   5,
+   20,
+   22,
+   35,
+   166
+  ],
+  "use": "Use as description and bio copy ('hypnotic, driving dark dance wave'). Hypnotic, driving and dark are mood words, not genre tags, so they fit description and bio copy rather than genre fields. Never tag 'trance' even though listeners say 'trance-inducing'; it pulls the festival/pop-trance crowd that 20 complains about.",
+  "strength": 5
+ },
+ {
+  "name": "Industrial / EBM / Dark Techno (stacked label) and 'body music'",
+  "insight": "Repeated YouTube mix titles stack exactly these three labels, and commenters echo them back verbatim. r/industrialmusic requests pair 'EBM/industrial' with strong drum-machine beats and techno-rock. 'Body music' is used by a band for their own track. One r/Techno post warns that 'industrial' is misused for hard, crunchy hard techno.",
+  "examples": [
+   "Industrial / EBM / Dark Techno Mix",
+   "Dark Techno / EBM / Industrial Bass Mix",
+   "EBM/industrial",
+   "Industrial/EBM",
+   "dark or industrial techno vibe",
+   "body music"
+  ],
+  "evidence_ids": [
+   0,
+   27,
+   40,
+   69,
+   70,
+   81,
+   122,
+   127,
+   133,
+   135
+  ],
+  "use": "'EBM' and 'Dark Techno' are safe tags on SoundCloud and Bandcamp; on Beatport, file under Techno (Raw/Deep/Hypnotic). Use 'industrial' only as a description modifier ('industrial-tinged'), because as a tag it pulls hard-techno/TikTok or industrial-metal audiences.",
+  "strength": 4
+ },
+ {
+  "name": "coldwave / cold wave / minimal wave / cold synth (+ post punk)",
+  "insight": "Both spellings appear repeatedly in r/coldwave and in YouTube titles. The term is usually paired with 'minimal wave', 'cold synths' or 'Post Punk'. Producers self-describe as 'coldwave / minimal electronic' with melancholic, late-night city moods, and Molchat Doma comes up as a rhythm reference.",
+  "examples": [
+   "coldwave",
+   "cold wave",
+   "Cold Wave",
+   "Minimal Wave & Cold Synths",
+   "coldwave / minimal electronic",
+   "Post Punk & Cold Wave"
+  ],
+  "evidence_ids": [
+   50,
+   51,
+   54,
+   55,
+   56,
+   137,
+   152,
+   180
+  ],
+  "use": "Tag 'coldwave' (one word) on Bandcamp and SoundCloud and mention 'cold wave' in descriptions to catch the spelling variant. 'Minimal wave' and 'post-punk' are description words. Post-punk fits the 2026 vocal tracks better than the instrumental ones.",
+  "strength": 4
+ },
+ {
+  "name": "darkwave / dark wave + Dark Synthwave, Goth, 'vampire music'",
+  "insight": "Appears in several YouTube mix titles that stack darkwave with 'Dark Synthwave', 'Goth', 'Coldwave' and 'Minimal Wave'. A Brooklyn artist and channel describe synth pop and darkwave as 'vampire music', and the gothic/ritual framing recurs. One mix title also lists 'New wave' among its genres.",
+  "examples": [
+   "DARK WAVE MIX",
+   "Darkwave",
+   "Dark Synthwave, Goth, Coldwave",
+   "Synth Pop & Darkwave",
+   "vampire music",
+   "Gothic Mix - Midnight Ritual",
+   "dark wave disco"
+  ],
+  "evidence_ids": [
+   121,
+   152,
+   163,
+   164,
+   180,
+   183,
+   185
+  ],
+  "use": "Use 'Darkwave' as a Bandcamp/SoundCloud tag. 'Synthwave' (never 'Synth') is acceptable only paired with 'dark'. Goth and vampire wording belongs in mood copy, not tags. 'New wave' stays an influence word in the bio and is never used as a tag, even though mixes tag it.",
+  "strength": 4
+ },
+ {
+  "name": "raw / gritty / less polished / not festival-EDM (anti-commercial positioning)",
+  "insight": "Many r/Techno posters define what they want by negation. They want raw, gritty, real and older-sounding music, and reject the festival/EDM sound, 'corporate' DJs, commercial or TikTok techno and the repetitive hardgroove trend.",
+  "examples": [
+   "raw atmosphere",
+   "not too much of the modern festival/EDM-style",
+   "less polished, more real",
+   "not feeling the whole hard groove thing",
+   "TikTok techno",
+   "commercial techno"
+  ],
+  "evidence_ids": [
+   0,
+   2,
+   5,
+   20,
+   26,
+   30,
+   41,
+   46
+  ],
+  "use": "Use as bio and description copy ('raw', 'analog-feeling', 'underground Berlin'). Avoid hard techno, hardgroove and festival tags; they pull exactly the crowd these listeners are fleeing.",
+  "strength": 4
+ },
+ {
+  "name": "melancholic / nostalgic / emotional / mellow",
+  "insight": "These are the emotional descriptors that recur across r/Techno, r/coldwave and darkwave/New Beat YouTube comments. Listeners want emotion that is not aggressive ('not too hard'). New Beat and synthwave-era comments lean heavily on nostalgia.",
+  "examples": [
+   "melancholic",
+   "nostalgic",
+   "simple, emotional sound",
+   "not too hard or aggressive",
+   "dark and mellow",
+   "nostalgia pura",
+   "emotional"
+  ],
+  "evidence_ids": [
+   3,
+   55,
+   96,
+   158,
+   166,
+   188,
+   193
+  ],
+  "use": "Use as title and description copy and in Bandcamp mood tags ('melancholic' is a usable free tag). Pairing 'melancholic' with 'dark disco' or 'EBM' differentiates him from the aggressive dark techno crowd.",
+  "strength": 3
+ },
+ {
+  "name": "cinematic / soundtrack / atmospheric / spacey",
+  "insight": "Listeners describe the darker end of the sound in film and game terms: 'Cinematic Darkwave', game 'vibes', soundtrack/OST requests and an end-of-the-world spaceship image. Texture words such as 'atmospheric', 'spacey', 'reverby' and 'sound design' recur in techno requests.",
+  "examples": [
+   "Cinematic Darkwave",
+   "call of duty vibes",
+   "OST",
+   "soundtrack",
+   "spacey",
+   "reverby",
+   "atmospheric",
+   "end of the world"
+  ],
+  "evidence_ids": [
+   6,
+   9,
+   17,
+   82,
+   93,
+   100,
+   125,
+   183
+  ],
+  "use": "Use 'cinematic' in titles, descriptions and bio, and as a Bandcamp free tag. It also suits sync pitching. 'Soundtrack' alone pulls ambient/OST listeners rather than dancers, so pair it with 'dark dance' or 'EBM'.",
+  "strength": 3
+ },
+ {
+  "name": "acid techno / acid-lines / 303",
+  "insight": "'ACID TECHNO' is a recurring YouTube mix label, and its commenters praise the genre ('best acid techno ever'). r/industrialmusic describes the sound as '303-bassline' and 'acid-lines'. Comments under acid videos repeatedly confuse the word with the drug and question whether the tracks are AI-made.",
+  "examples": [
+   "ACID TECHNO",
+   "acid techno",
+   "303-bassline",
+   "acid-lines",
+   "Did ai make these tracks"
+  ],
+  "evidence_ids": [
+   106,
+   166,
+   168,
+   171,
+   174,
+   179
+  ],
+  "use": "Tag 'acid techno' or 'acid' on SoundCloud and Bandcamp, or use 'Acid' on Beatport where that sub-genre exists. Write '303' and 'acid lines' in descriptions to signal real hardware. Avoid bare 'acid' in titles, where it reads as a drug reference. Visibly human artwork and credits help, given the AI suspicion around this label.",
+  "strength": 3
+ }
+]

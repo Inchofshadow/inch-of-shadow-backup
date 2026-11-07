@@ -1,0 +1,30 @@
+{
+  "months": {
+    "2026-10": {
+      "usd": 0.04489,
+      "calls": 3,
+      "by": {
+        "review": {
+          "usd": 0.00619,
+          "calls": 1
+        },
+        "copy": {
+          "usd": 0.01612,
+          "calls": 1
+        },
+        "bios": {
+          "usd": 0.02258,
+          "calls": 1
+        }
+      }
+    }
+  },
+  "last": {
+    "what": "bios",
+    "model": "gpt-6.1-sol",
+    "made": "2026-10-21T02:33:18",
+    "input_tokens": 2435,
+    "output_tokens": 1771,
+    "cost_usd": 0.02258
+  }
+}

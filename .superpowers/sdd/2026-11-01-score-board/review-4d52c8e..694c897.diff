@@ -1,0 +1,194 @@
+# Review package: 4d52c8e..HEAD
+
+## Commits
+694c897 feat(stats): target proposal script and one-shot Instagram baseline
+
+## Files changed
+ stats/propose_targets.py      | 130 ++++++++++++++++++++++++++++++++++++++++++
+ tests/test_propose_targets.py |  41 +++++++++++++
+ 2 files changed, 171 insertions(+)
+
+## Diff
+diff --git a/stats/propose_targets.py b/stats/propose_targets.py
+new file mode 100644
+index 0000000..de2eb70
+--- /dev/null
++++ b/stats/propose_targets.py
+@@ -0,0 +1,130 @@
++"""Propose score board targets from the data (prints only) and set the Instagram baseline once.
++
++    python3 stats/propose_targets.py                   print the proposal, never writes
++    python3 stats/propose_targets.py --set-ig-baseline one-shot write of the ig_followers baseline
++"""
++from __future__ import annotations
++
++import calendar
++import sys
++from datetime import date, timedelta
++from pathlib import Path
++from typing import Optional, Tuple
++
++if __package__ in (None, ""):
++    sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
++
++from scene_intelligence.json_io import atomic_write_json
++from stats.targets import TARGETS_PATH, load_targets
++
++
++def six_month_rate(series: list, end: date, exclude: Optional[Tuple[str, str]] = None) -> Optional[float]:
++    """Per-30.4-day rate from the first to the last reading in the 183 days ending at `end`."""
++    start = end - timedelta(days=183)
++    rows = []
++    for r in series:
++        d = date.fromisoformat(r["date"])
++        if not (start <= d <= end):
++            continue
++        if exclude and exclude[0] <= r["date"] <= exclude[1]:
++            continue
++        rows.append((d, r["value"]))
++    rows.sort()
++    if len(rows) < 2:
++        return None
++    days = (rows[-1][0] - rows[0][0]).days
++    if days <= 0:
++        return None
++    return (rows[-1][1] - rows[0][1]) / (days / 30.4)
++
++
++def round5(x: float) -> int:
++    return int(5 * round(x / 5))
++
++
++def _month_end(d: date) -> date:
++    return date(d.year, d.month, calendar.monthrange(d.year, d.month)[1])
++
++
++def _spotify_numbers(today: date) -> Optional[Tuple[float, float]]:
++    from stats import spotify_s4a
++    weeks = spotify_s4a.load().get("weeks", {})
++    cut = (today - timedelta(days=183)).isoformat()
++    vals = [weeks[k]["monthly_active"] for k in sorted(weeks) if k >= cut and weeks[k].get("monthly_active") is not None]
++    if len(vals) < 4:
++        return None
++    last12 = vals[-12:]
++    mean12 = sum(last12) / len(last12)
++    best4 = max(sum(vals[i:i + 4]) / 4 for i in range(len(vals) - 3))
++    return mean12, best4
++
++
++def propose(today: date) -> dict:
++    from stats import storage
++    metrics = load_targets()["metrics"]
++    out = {}
++    for key, m in metrics.items():
++        rule = m.get("rule", "")
++        head = "%s [%s] rule: %s" % (key, m["kind"], rule)
++        if key == "ig_followers":
++            series = storage.get_time_series("instagram", "followers", 400)
++            rate = six_month_rate(series, today)
++            latest = series[-1]["value"] if series else None
++            if rate is None or latest is None:
++                text = "no Instagram readings yet"
++            else:
++                r = round5(rate)
++                text = "latest %s, rate %.1f/month -> %d; rungs %s, %s" % (latest, rate, r, latest + r, latest + 2 * r)
++                out[key] = {"latest": latest, "rate": r}
++        elif key == "spotify_monthly_active":
++            nums = _spotify_numbers(today)
++            if nums is None:
++                text = "not enough S4A weeks"
++            else:
++                text = "12-week mean %.2f -> %d; best 4-week mean %.2f -> %d" % (nums[0], round5(nums[0]), nums[1], round5(nums[1]))
++                out[key] = {"nov": round5(nums[0]), "dec": round5(nums[1])}
++        elif key == "sc_followers":
++            text = "SC-07 ladder, unchanged"
++        elif m["kind"] == "floor":
++            text = "floor %s" % m.get("floor")
++        else:
++            text = "collecting"
++        print("%s\n    proposed: %s" % (head, text))
++    return out
++
++
++def set_ig_baseline(value: int, on: date, path: Path = TARGETS_PATH) -> dict:
++    data = load_targets(path)
++    m = data["metrics"]["ig_followers"]
++    if (m.get("baseline") or {}).get("value") is not None:
++        raise RuntimeError("baseline already set")
++    rate = m["rate_per_month"]
++    end = date.fromisoformat(data["period"]["end"])
++    first = _month_end(on)
++    rungs = {first.isoformat(): value + rate}
++    if first != end:
++        rungs[end.isoformat()] = value + 2 * rate
++    m["baseline"] = {"value": value, "date": on.isoformat()}
++    m["rungs"] = rungs
++    m["target"] = list(rungs.values())[-1]
++    atomic_write_json(path, data)
++    return data
++
++
++def main(argv: list) -> int:
++    if "--set-ig-baseline" in argv:
++        from stats import storage
++        snaps = storage.list_snapshots()
++        value = ((snaps[0].get("platforms") or {}).get("instagram") or {}).get("followers") if snaps else None
++        if value is None:
++            print("No Instagram follower reading in the newest snapshot; run the daily sync first.")
++            return 1
++        data = set_ig_baseline(int(value), date.today())
++        print(data["metrics"]["ig_followers"])
++        return 0
++    propose(date.today())
++    return 0
++
++
++if __name__ == "__main__":
++    sys.exit(main(sys.argv[1:]))
+diff --git a/tests/test_propose_targets.py b/tests/test_propose_targets.py
+new file mode 100644
+index 0000000..e74aadd
+--- /dev/null
++++ b/tests/test_propose_targets.py
+@@ -0,0 +1,41 @@
++import json
++from datetime import date
++
++import pytest
++
++from stats.propose_targets import six_month_rate, round5, set_ig_baseline
++
++
++def test_six_month_rate_matches_the_spec_number():
++    s = [{"date": "2026-04-03", "value": 777}, {"date": "2026-07-19", "value": 890}, {"date": "2026-09-26", "value": 948}, {"date": "2026-10-10", "value": 955}]
++    assert round(six_month_rate(s, date(2026, 9, 26)), 1) == 29.5
++    assert round5(29.5) == 30 and round5(91.75) == 90 and round5(109) == 110
++
++
++def test_six_month_rate_exclude_and_too_few():
++    s = [{"date": "2026-04-03", "value": 777}, {"date": "2026-09-26", "value": 948}]
++    assert six_month_rate(s[:1], date(2026, 9, 26)) is None
++    assert six_month_rate(s, date(2026, 9, 26), exclude=("2026-09-01", "2026-09-30")) is None
++
++
++def _targets(tmp_path, end="2026-12-31"):
++    p = tmp_path / "targets.json"
++    p.write_text(json.dumps({"period": {"start": "2026-11-01", "end": end},
++                             "metrics": {"ig_followers": {"label": "x", "kind": "ladder", "baseline": {"value": None, "date": None},
++                                                          "rate_per_month": 30, "rungs": {}, "target": None}}}))
++    return p
++
++
++def test_set_ig_baseline_writes_once(tmp_path):
++    p = _targets(tmp_path)
++    m = set_ig_baseline(950, date(2026, 11, 2), path=p)["metrics"]["ig_followers"]
++    assert m["baseline"] == {"value": 950, "date": "2026-11-02"} and m["rungs"] == {"2026-11-30": 980, "2026-12-31": 1010} and m["target"] == 1010
++    assert json.loads(p.read_text())["metrics"]["ig_followers"]["target"] == 1010
++    with pytest.raises(RuntimeError):
++        set_ig_baseline(951, date(2026, 11, 3), path=p)
++
++
++def test_set_ig_baseline_single_rung_when_month_end_is_period_end(tmp_path):
++    p = _targets(tmp_path, end="2026-11-30")
++    m = set_ig_baseline(950, date(2026, 11, 2), path=p)["metrics"]["ig_followers"]
++    assert m["rungs"] == {"2026-11-30": 980} and m["target"] == 980

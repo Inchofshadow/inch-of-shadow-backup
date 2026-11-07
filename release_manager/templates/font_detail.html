@@ -1,0 +1,102 @@
+{% extends "base.html" %}
+{% block title %}{{ r.name }}{% endblock %}
+{% block content %}
+<style>
+{% for f in faces %}@font-face { font-family: "{{ f.family }}"; src: {{ f.src|safe }}; font-display: swap; }
+{% endfor %}
+</style>
+<div class="fonts-page font-detail">
+    <nav class="breadcrumb">
+        <a href="{{ url_for('fonts_page_view') }}{% if text %}?t={{ text|urlencode }}{% endif %}">Fonts</a>
+        <span class="breadcrumb-sep">/</span>
+        <span class="breadcrumb-current">{{ r.name }}</span>
+    </nav>
+
+    <h1>{{ r.name }}</h1>
+    <div class="archive-chips">
+        <span class="font-badge font-badge-{{ r.licence|replace(' ', '-') }}">{{ r.badge }}</span>
+        <span class="archive-chip font-status-{{ r.status|replace(' ', '-') }}">{{ r.status }}</span>
+        <span class="archive-chip">{{ r.group }}. {{ group_label }}</span>
+        {% if r.canva == 'yes' %}<span class="archive-chip">in Canva</span>{% elif r.canva == 'no' %}<span class="archive-chip">not in Canva</span>{% endif %}
+    </div>
+    {% if not r.public_ok %}<p class="font-warning">Not for public work as it is: {{ r.badge }}. {% if r.licence == 'canva only' %}Canva designs only; the tools need a bought file.{% elif r.licence == 'trial' %}Trial files are for looking at on screen.{% elif r.licence == 'system' %}A macOS font; a licence for a release is not checked.{% else %}Buy a licence first, and read the logo clause.{% endif %}</p>{% endif %}
+
+    <div class="fonts-tester">
+        <input type="text" id="fonts-text" value="{{ text }}" placeholder="Type a title: Misty Night" aria-label="Specimen text">
+        <label><input type="checkbox" id="fonts-caps"> capitals</label>
+        <label>size <input type="range" id="fonts-size" min="24" max="160" value="72"></label>
+        <label>on <select id="fonts-bg"><option value="dark">warm black</option><option value="light">platinum</option></select></label>
+    </div>
+
+    <div class="font-styles" id="fonts-grid">
+        {% for f in faces %}
+        <div class="font-style-row">
+            <div class="font-specimen" style="font-family: '{{ f.family }}', serif"><span class="font-sample">{{ text or r.name }}</span></div>
+            <div class="brand-muted font-style-label">{{ f.label }}</div>
+        </div>
+        {% else %}
+        <div class="font-specimen font-specimen-none"><span class="font-nofile">No file on this Mac. {% if r.sources %}Where to get it is below.{% endif %}</span></div>
+        {% endfor %}
+        {% if more_files %}<p class="brand-muted">{{ more_files }} more styles on disk, not shown.</p>{% endif %}
+    </div>
+
+    <section class="section">
+        <div class="section-header"><h2>Where Amir saw it</h2></div>
+        <div class="section-body">
+            <p>{{ r.seen_on or 'Not from his references: a face the tools use.' }}</p>
+            {% if r.status_note %}<p class="brand-muted">Status: {{ r.status_note }}</p>{% endif %}
+            {% if r.canva_note %}<p class="brand-muted">Canva: {{ r.canva_note }}</p>{% endif %}
+            {% if r.notes %}<p>{{ r.notes }}</p>{% endif %}
+            {% if r.tags %}<p class="brand-muted">Mood tags the cover ideas use: {{ r.tags }}</p>{% endif %}
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="section-header"><h2>Where to get it</h2><span class="brand-muted">from font-sources.md, checked 2026-09-21; confirm before paying</span></div>
+        <div class="section-body">
+            {% if r.sources %}
+            <table class="brand-table font-sources">
+                <thead><tr><th>Face</th><th>Where</th><th>Price</th><th>Trial / licence</th></tr></thead>
+                <tbody>{% for s in r.sources %}<tr><td>{{ s.label }}</td><td class="font-where">{{ s.where|urlize(60, target='_blank') }}</td><td>{{ s.price }}</td><td>{{ s.trial or s.licence_text }}{% if s.on_disk %} · on disk: {{ s.on_disk }}{% endif %}</td></tr>{% endfor %}</tbody>
+            </table>
+            {% elif r.get_hint %}<p>{{ r.get_hint }}</p>
+            {% else %}<p class="brand-muted">Not researched yet.</p>{% endif %}
+        </div>
+    </section>
+
+    {% if releases %}
+    <section class="section">
+        <div class="section-header"><h2>Used by</h2></div>
+        <div class="section-body"><ul class="archive-children">{% for rel in releases %}<li><a href="{{ url_for('release_detail', slug=rel.slug) }}">{{ rel.title }}</a></li>{% endfor %}</ul></div>
+    </section>
+    {% endif %}
+
+    {% if r.files %}
+    <section class="section">
+        <div class="section-header"><h2>Files</h2><span class="brand-muted">under docs/brand/fonts, never moved</span></div>
+        <div class="section-body"><ul class="archive-children font-files">{% for f in r.files[:40] %}<li>{{ f }}</li>{% endfor %}{% if r.files|length > 40 %}<li class="brand-muted">and {{ r.files|length - 40 }} more</li>{% endif %}</ul></div>
+    </section>
+    {% endif %}
+</div>
+<script>
+(function () {
+    var t = document.getElementById('fonts-text'), caps = document.getElementById('fonts-caps'),
+        size = document.getElementById('fonts-size'), bg = document.getElementById('fonts-bg'), grid = document.getElementById('fonts-grid');
+    var load = function (k) { try { return localStorage.getItem('fonts-' + k); } catch (e) { return null; } };
+    var store = function (k, v) { try { localStorage.setItem('fonts-' + k, v); } catch (e) {} };
+    if (load('caps') === '1') caps.checked = true;
+    if (load('bg')) bg.value = load('bg');
+    function apply() {
+        document.querySelectorAll('.font-sample').forEach(function (el) { el.textContent = t.value || {{ r.name|tojson }}; });
+        grid.style.setProperty('--sample-size', size.value + 'px');
+        grid.classList.toggle('fonts-caps', caps.checked);
+        grid.classList.toggle('fonts-light', bg.value === 'light');
+    }
+    t.addEventListener('input', apply);
+    caps.addEventListener('change', function () { store('caps', caps.checked ? '1' : '0'); apply(); });
+    size.addEventListener('input', apply);
+    bg.addEventListener('change', function () { store('bg', bg.value); apply(); });
+    apply();
+})();
+</script>
+{% endblock %}

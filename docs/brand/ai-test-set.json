@@ -1,0 +1,10 @@
+{
+  "why": "Five fixed prompts re-rendered whenever the image model changes, to see if the brand look shifted (docs/brand/ai-image-prompting.md, section 5). Run only on Amir's go: each run costs money.",
+  "prompts": [
+    {"key": "rose-stone", "kind": "cover", "subject": "One pale rose lying on a dark stone ledge after rain.", "options": {"light": "l4-fog-diffuse", "medium": "bw-flash-film"}},
+    {"key": "streetlight", "kind": "background", "subject": "An empty Berlin side street at night under a single streetlight, wet cobbles.", "options": {"light": "l5-blue-hour-streetlight", "medium": "colour-photo"}},
+    {"key": "window-light", "kind": "cover", "subject": "A wooden chair in an empty room, a sheet of window light across the floor.", "options": {"light": "l2-window-light", "medium": "pictorialism"}},
+    {"key": "moon-engraving", "kind": "cover", "subject": "A full moon over a still lake.", "options": {"light": "l1-hard-single-light", "medium": "engraving"}},
+    {"key": "texture", "kind": "texture", "subject": "Worn paper with faint water stains and dust.", "options": {"texture": "dust-scratches"}}
+  ]
+}

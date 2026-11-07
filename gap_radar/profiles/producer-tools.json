@@ -1,0 +1,78 @@
+{
+  "name": "producer-tools",
+  "question": "Which tools, plugins, devices, apps and workflow helpers do electronic music producers (dark disco, EBM, acid, electro, techno, synth and hardware users) ask for, complain about, or say they would pay for?",
+  "system_extra": "Context: Inch of Shadow is a Berlin artist (Amir): dark dance wave, sitting on dark disco, EBM, coldwave, acid, electro and techno; from 2026 also songs with his own vocals. He produces, mixes and masters his own records and builds software by directing Claude\nCode. A gap counts twice: as a tool he would use in his own studio work, and as a small self-serve\nproduct he could build and sell (Max for Live device, web tool, small app, preset/sample/data pack,\nbrowser extension). Score fit_for_us higher when he meets the pain himself as an electronic producer\nand when a one-person build is realistic. Skip needs only a big plugin company can solve (a new DAW,\ndeep DSP research). In product_idea say whether it is \"use it\" (buy/adopt something that exists),\n\"build it\" or both.",
+  "output_dir": "gap_radar/reports/producer-tools",
+  "crowding": true,
+  "sources": {
+    "reddit": {
+      "subs": [
+        "WeAreTheMusicMakers",
+        "ableton",
+        "edmproduction",
+        "synthesizers",
+        "TechnoProduction",
+        "Elektron",
+        "modular",
+        "audioengineering",
+        "DrumMachines",
+        "Eurorack",
+        "MaxMSP",
+        "Bitwig"
+      ],
+      "phrases": [
+        "\"would pay for\"",
+        "\"is there a plugin\"",
+        "\"is there a tool\"",
+        "\"wish there was\"",
+        "\"any alternative to\"",
+        "\"wish Ableton had\"",
+        "\"dealbreaker\"",
+        "\"workaround\""
+      ]
+    },
+    "hn_queries": [],
+    "stackexchange": {
+      "sites": [
+        "music",
+        "avp",
+        "sound"
+      ],
+      "queries": [
+        "is there a plugin",
+        "is there a tool",
+        "alternative to",
+        "Max for Live",
+        "MIDI clock sync"
+      ]
+    },
+    "youtube_queries": [
+      "dark disco production",
+      "elektron workflow",
+      "Digitakt II workflow",
+      "acid techno 303 tutorial",
+      "EBM bassline tutorial",
+      "Max for Live device review"
+    ],
+    "github_queries": [
+      "repo:surge-synthesizer/surge label:enhancement reactions:>=5",
+      "repo:VCVRack/Rack reactions:>=5"
+    ],
+    "appstore": {
+      "genres": [],
+      "app_ids": [
+        "1449584007",
+        "1633243177",
+        "1492670451",
+        "1055636344",
+        "1469365718",
+        "1339418001"
+      ]
+    },
+    "hikerapi": {
+      "hashtags": [],
+      "accounts": [],
+      "max_calls": 0
+    }
+  }
+}

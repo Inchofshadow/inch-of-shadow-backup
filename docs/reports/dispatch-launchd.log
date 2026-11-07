@@ -1,0 +1,260 @@
+/Library/Developer/CommandLineTools/usr/bin/python3: can't open file '/Users/amir/Desktop/Inch of Shadow/Inchofshadowcode/scene_intelligence/ig_dispatcher.py': [Errno 1] Operation not permitted
+/Library/Developer/CommandLineTools/usr/bin/python3: can't open file '/Users/amir/Desktop/Inch of Shadow/Inchofshadowcode/scene_intelligence/ig_dispatcher.py': [Errno 1] Operation not permitted
+/Library/Developer/CommandLineTools/usr/bin/python3: can't open file '/Users/amir/Desktop/Inch of Shadow/Inchofshadowcode/scene_intelligence/ig_dispatcher.py': [Errno 1] Operation not permitted
+/Library/Developer/CommandLineTools/usr/bin/python3: can't open file '/Users/amir/Desktop/Inch of Shadow/Inchofshadowcode/scene_intelligence/ig_dispatcher.py': [Errno 1] Operation not permitted
+/Library/Developer/CommandLineTools/usr/bin/python3: can't open file '/Users/amir/Desktop/Inch of Shadow/Inchofshadowcode/scene_intelligence/ig_dispatcher.py': [Errno 1] Operation not permitted
+/Library/Developer/CommandLineTools/usr/bin/python3: can't open file '/Users/amir/Desktop/Inch of Shadow/Inchofshadowcode/scene_intelligence/ig_dispatcher.py': [Errno 1] Operation not permitted
+- 2026-09-03T12:53:49 — **note** — sessions-scoped pause active (amir); API maintenance continues, session days treated as quiet
+- 2026-09-03T12:53:49 — **skip** — detection cooldown (2026-09-02 rate_limited_429_profile_reads) until 2026-09-05 00:00
+- 2026-09-04T09:30:05 — **note** — sessions-scoped pause active (amir); API maintenance continues, session days treated as quiet
+- 2026-09-04T09:30:05 — **skip** — detection cooldown (2026-09-02 rate_limited_429_profile_reads) until 2026-09-05 00:00
+- 2026-09-05T09:30:05 — **note** — sessions-scoped pause active (amir); API maintenance continues, session days treated as quiet
+- 2026-09-05T09:30:06 — **run: freshness audit** — vetted pool 19 < 30 — freshness audit --count 30 — exit 1; Dry run: False /  /   [ 1/30] checking @_saturian_...
+- 2026-09-05T09:30:06 — **hygiene: backups** — archived 3 files > 60d into archive_pre_2026-09-05.tar.gz
+- 2026-09-06T09:30:05 — **note** — sessions-scoped pause active (amir); API maintenance continues, session days treated as quiet
+- 2026-09-06T09:30:05 — **skip** — detection cooldown (2026-09-06 rate_limited_429_profile_reads) until 2026-09-09 00:00
+- 2026-09-07T09:30:05 — **note** — sessions-scoped pause active (amir); API maintenance continues, session days treated as quiet
+- 2026-09-07T09:30:05 — **skip** — detection cooldown (2026-09-06 rate_limited_429_profile_reads) until 2026-09-14 00:00
+- 2026-09-08T09:30:05 — **skip** — detection cooldown (2026-09-06 rate_limited_429_profile_reads) until 2026-09-14 00:00
+- 2026-09-09T09:30:05 — **skip** — detection cooldown (2026-09-06 rate_limited_429_profile_reads) until 2026-09-14 00:00
+- 2026-09-10T09:30:05 — **skip** — detection cooldown (2026-09-06 rate_limited_429_profile_reads) until 2026-09-14 00:00
+- 2026-09-11T09:30:05 — **skip** — detection cooldown (2026-09-06 rate_limited_429_profile_reads) until 2026-09-14 00:00
+- 2026-09-12T09:30:04 — **skip** — detection cooldown (2026-09-06 rate_limited_429_profile_reads) until 2026-09-14 00:00
+- 2026-09-13T09:30:05 — **skip** — detection cooldown (2026-09-06 rate_limited_429_profile_reads) until 2026-09-14 00:00
+- 2026-09-14T09:30:01 — **skip** — session day — day reserved for the 15:00 browser session; no API job
+/Users/amir/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+- 2026-09-15T09:30:01 — **skip** — provider mode — pool 30 >= 30 and unchecked 699 above floor; nothing to do
+- 2026-09-15T09:30:01 — **hygiene: backups** — archived 8 files > 60d into archive_pre_2026-09-15.tar.gz
+/Users/amir/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+- 2026-09-16T09:30:06 — **skip** — provider mode — pool 30 >= 30 and unchecked 699 above floor; nothing to do
+/Users/amir/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+- 2026-09-17T09:30:05 — **notify-amir** — provider balance low: 21 requests left, needed ~200 — today shrunk to audit 10 / builder 0 seeds. Top up at hikerapi.com ($5 ≈ 4 months).
+- 2026-09-17T09:30:54 — **run: freshness audit (provider)** — vetted pool 19 < 30, unchecked 699 — audit --count 10 (provider) — exit 0;     - @jamsbarry (followers=2661>2500d since last post) /  / [OK] Queue updated. 2 stale, 0 retired, 8 fresh enriched.
+/Users/amir/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+- 2026-09-18T09:30:06 — **notify-amir** — provider balance low: 4 requests left, needed ~200 — today shrunk to audit 2 / builder 0 seeds. Top up at hikerapi.com ($5 ≈ 4 months).
+- 2026-09-18T09:30:19 — **run: freshness audit (provider)** — vetted pool 22 < 30, unchecked 694 — audit --count 2 (provider) — exit 0;   Retired (perma-error):    0 /  / [OK] Queue updated. 0 stale, 0 retired, 2 fresh enriched.
+/Users/amir/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+- 2026-09-19T09:30:05 — **notify-amir** — provider balance low: 0 requests left, needed ~200 — today shrunk to audit 0 / builder 0 seeds. Top up at hikerapi.com ($5 ≈ 4 months).
+- 2026-09-19T09:30:05 — **skip** — provider mode — pool 21 >= 30 and unchecked 694 above floor; nothing to do
+- 2026-09-19T09:30:05 — **hygiene: backups** — archived 1 files > 60d into archive_pre_2026-09-19.tar.gz
+/Users/amir/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+- 2026-09-20T09:30:04 — **notify-amir** — provider balance low: 0 requests left, needed ~200 — today shrunk to audit 0 / builder 0 seeds. Top up at hikerapi.com ($5 ≈ 4 months).
+- 2026-09-20T09:30:04 — **skip** — provider mode — pool 16 >= 30 and unchecked 694 above floor; nothing to do
+/Users/amir/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+- 2026-09-21T09:30:01 — **notify-amir** — provider balance low: 0 requests left, needed ~200 — today shrunk to audit 0 / builder 0 seeds. Top up at hikerapi.com ($5 ≈ 4 months).
+- 2026-09-21T09:30:01 — **skip** — provider mode — pool 16 >= 30 and unchecked 694 above floor; nothing to do
+- 2026-09-21T09:30:01 — **hygiene: backups** — archived 1 files > 60d into archive_pre_2026-09-21.tar.gz
+/Users/amir/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+- 2026-09-22T09:30:06 — **notify-amir** — provider balance low: 0 requests left, needed ~200 — today shrunk to audit 0 / builder 0 seeds. Top up at hikerapi.com ($5 ≈ 4 months).
+- 2026-09-22T09:30:06 — **skip** — provider mode — pool 0 >= 30 and unchecked 694 above floor; nothing to do
+/Users/amir/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+- 2026-09-23T09:30:05 — **notify-amir** — provider balance low: 0 requests left, needed ~200 — today shrunk to audit 0 / builder 0 seeds. Top up at hikerapi.com ($5 ≈ 4 months).
+- 2026-09-23T09:30:05 — **skip** — provider mode — pool 0 >= 30 and unchecked 694 above floor; nothing to do
+- 2026-09-23T09:30:05 — **hygiene: backups** — archived 1 files > 60d into archive_pre_2026-09-23.tar.gz
+/Users/amir/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+- 2026-09-24T09:30:05 — **notify-amir** — provider balance low: 0 requests left, needed ~200 — today shrunk to audit 0 / builder 0 seeds. Top up at hikerapi.com ($5 ≈ 4 months).
+- 2026-09-24T09:30:05 — **skip** — provider mode — pool 1 >= 30 and unchecked 694 above floor; nothing to do
+- 2026-09-24T09:30:05 — **hygiene: backups** — archived 1 files > 60d into archive_pre_2026-09-24.tar.gz
+/Users/amir/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+- 2026-09-25T09:30:04 — **notify-amir** — provider balance low: 0 requests left, needed ~200 — today shrunk to audit 0 / builder 0 seeds. Top up at hikerapi.com ($5 ≈ 4 months).
+- 2026-09-25T09:30:04 — **skip** — provider mode — pool 1 >= 30 and unchecked 694 above floor; nothing to do
+/Users/amir/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+- 2026-09-26T09:30:05 — **notify-amir** — provider balance low: 0 requests left, needed ~200 — today shrunk to audit 0 / builder 0 seeds. Top up at hikerapi.com ($5 ≈ 4 months).
+- 2026-09-26T09:30:05 — **skip** — provider mode — pool 0 >= 30 and unchecked 694 above floor; nothing to do
+- 2026-09-26T09:30:05 — **hygiene: backups** — archived 1 files > 60d into archive_pre_2026-09-26.tar.gz
+/Users/amir/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+- 2026-09-27T09:30:05 — **notify-amir** — provider balance low: 0 requests left, needed ~200 — today shrunk to audit 0 / builder 0 seeds. Top up at hikerapi.com ($5 ≈ 4 months).
+- 2026-09-27T09:30:05 — **skip** — provider mode — pool 0 >= 30 and unchecked 694 above floor; nothing to do
+/Users/amir/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+- 2026-09-28T09:30:02 — **notify-amir** — provider balance low: 0 requests left, needed ~200 — today shrunk to audit 0 / builder 0 seeds. Top up at hikerapi.com ($5 ≈ 4 months).
+- 2026-09-28T09:30:02 — **skip** — provider mode — pool 0 >= 30 and unchecked 694 above floor; nothing to do
+- 2026-09-28T09:30:02 — **hygiene: backups** — archived 1 files > 60d into archive_pre_2026-09-28.tar.gz
+/Users/amir/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+- 2026-09-29T09:30:06 — **notify-amir** — provider balance low: 0 requests left, needed ~200 — today shrunk to audit 0 / builder 0 seeds. Top up at hikerapi.com ($5 ≈ 4 months).
+- 2026-09-29T09:30:06 — **skip** — provider mode — pool 0 >= 30 and unchecked 694 above floor; nothing to do
+/Users/amir/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+- 2026-09-30T09:30:05 — **notify-amir** — provider balance low: 0 requests left, needed ~200 — today shrunk to audit 0 / builder 0 seeds. Top up at hikerapi.com ($5 ≈ 4 months).
+- 2026-09-30T09:30:05 — **skip** — provider mode — pool 0 >= 30 and unchecked 694 above floor; nothing to do
+/Users/amir/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+- 2026-10-01T09:30:05 — **notify-amir** — provider balance low: 0 requests left, needed ~200 — today shrunk to audit 0 / builder 0 seeds. Top up at hikerapi.com ($5 ≈ 4 months).
+- 2026-10-01T09:30:05 — **skip** — provider mode — pool 0 >= 30 and unchecked 694 above floor; nothing to do
+/Users/amir/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+- 2026-10-02T09:30:06 — **notify-amir** — provider balance low: 0 requests left, needed ~200 — today shrunk to audit 0 / builder 0 seeds. Top up at hikerapi.com ($5 ≈ 4 months).
+- 2026-10-02T09:30:06 — **skip** — provider mode — pool 0 >= 30 and unchecked 694 above floor; nothing to do
+/Users/amir/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+- 2026-10-03T09:30:06 — **notify-amir** — provider balance low: 0 requests left, needed ~200 — today shrunk to audit 0 / builder 0 seeds. Top up at hikerapi.com ($5 ≈ 4 months).
+- 2026-10-03T09:30:06 — **skip** — provider mode — pool 0 >= 30 and unchecked 694 above floor; nothing to do
+/Users/amir/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+- 2026-10-04T09:30:05 — **notify-amir** — provider balance low: 0 requests left, needed ~200 — today shrunk to audit 0 / builder 0 seeds. Top up at hikerapi.com ($5 ≈ 4 months).
+- 2026-10-04T09:30:05 — **skip** — provider mode — pool 0 >= 30 and unchecked 694 above floor; nothing to do
+/Users/amir/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+- 2026-10-05T09:30:02 — **notify-amir** — provider balance low: 0 requests left, needed ~200 — today shrunk to audit 0 / builder 0 seeds. Top up at hikerapi.com ($5 ≈ 4 months).
+- 2026-10-05T09:30:02 — **skip** — provider mode — pool 0 >= 30 and unchecked 694 above floor; nothing to do
+- 2026-10-05T09:30:02 — **hygiene: backups** — archived 1 files > 60d into archive_pre_2026-10-05.tar.gz
+/Users/amir/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+- 2026-10-06T09:30:06 — **notify-amir** — provider balance low: 0 requests left, needed ~200 — today shrunk to audit 0 / builder 0 seeds. Top up at hikerapi.com ($5 ≈ 4 months).
+- 2026-10-06T09:30:06 — **skip** — provider mode — pool 0 >= 30 and unchecked 694 above floor; nothing to do
+/Users/amir/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+- 2026-10-07T09:30:06 — **notify-amir** — provider balance low: 0 requests left, needed ~200 — today shrunk to audit 0 / builder 0 seeds. Top up at hikerapi.com ($5 ≈ 4 months).
+- 2026-10-07T09:30:06 — **skip** — provider mode — pool 0 >= 30 and unchecked 694 above floor; nothing to do
+- 2026-10-07T09:30:06 — **hygiene: backups** — archived 1 files > 60d into archive_pre_2026-10-07.tar.gz
+/Users/amir/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+- 2026-10-08T09:30:03 — **notify-amir** — provider balance low: 0 requests left, needed ~200 — today shrunk to audit 0 / builder 0 seeds. Top up at hikerapi.com ($5 ≈ 4 months).
+- 2026-10-08T09:30:03 — **skip** — provider mode — pool 0 >= 30 and unchecked 694 above floor; nothing to do
+- 2026-10-08T09:30:03 — **hygiene: backups** — archived 1 files > 60d into archive_pre_2026-10-08.tar.gz
+/Users/amir/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+- 2026-10-09T09:30:06 — **notify-amir** — provider balance low: 0 requests left, needed ~200 — today shrunk to audit 0 / builder 0 seeds. Top up at hikerapi.com ($5 ≈ 4 months).
+- 2026-10-09T09:30:06 — **skip** — provider mode — pool 0 >= 30 and unchecked 694 above floor; nothing to do
+/Users/amir/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+- 2026-10-10T09:30:06 — **notify-amir** — provider balance low: 0 requests left, needed ~200 — today shrunk to audit 0 / builder 0 seeds. Top up at hikerapi.com ($5 ≈ 4 months).
+- 2026-10-10T09:30:06 — **skip** — provider mode — pool 0 >= 30 and unchecked 694 above floor; nothing to do
+- 2026-10-10T09:30:06 — **hygiene: backups** — archived 1 files > 60d into archive_pre_2026-10-10.tar.gz
+/Users/amir/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+- 2026-10-11T09:30:06 — **notify-amir** — provider balance low: 0 requests left, needed ~200 — today shrunk to audit 0 / builder 0 seeds. Top up at hikerapi.com ($5 ≈ 4 months).
+- 2026-10-11T09:30:06 — **skip** — provider mode — pool 0 >= 30 and unchecked 694 above floor; nothing to do
+/Users/amir/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+- 2026-10-12T09:30:02 — **notify-amir** — provider balance low: 0 requests left, needed ~200 — today shrunk to audit 0 / builder 0 seeds. Top up at hikerapi.com ($5 ≈ 4 months).
+- 2026-10-12T09:30:02 — **skip** — provider mode — pool 0 >= 30 and unchecked 694 above floor; nothing to do
+- 2026-10-12T09:30:02 — **hygiene: backups** — archived 1 files > 60d into archive_pre_2026-10-12.tar.gz
+/Users/amir/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+- 2026-10-13T09:30:05 — **notify-amir** — provider balance low: 0 requests left, needed ~200 — today shrunk to audit 0 / builder 0 seeds. Top up at hikerapi.com ($5 ≈ 4 months).
+- 2026-10-13T09:30:05 — **skip** — provider mode — pool 0 >= 30 and unchecked 694 above floor; nothing to do
+/Users/amir/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+- 2026-10-14T09:30:06 — **notify-amir** — provider balance low: 0 requests left, needed ~200 — today shrunk to audit 0 / builder 0 seeds. Top up at hikerapi.com ($5 ≈ 4 months).
+- 2026-10-14T09:30:06 — **skip** — provider mode — pool 0 >= 30 and unchecked 694 above floor; nothing to do
+- 2026-10-14T09:30:06 — **hygiene: backups** — archived 1 files > 60d into archive_pre_2026-10-14.tar.gz
+/Users/amir/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+- 2026-10-15T09:30:06 — **notify-amir** — provider balance low: 0 requests left, needed ~200 — today shrunk to audit 0 / builder 0 seeds. Top up at hikerapi.com ($5 ≈ 4 months).
+- 2026-10-15T09:30:06 — **skip** — provider mode — pool 0 >= 30 and unchecked 694 above floor; nothing to do
+- 2026-10-15T09:30:06 — **hygiene: backups** — archived 1 files > 60d into archive_pre_2026-10-15.tar.gz
+/Users/amir/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+- 2026-10-16T09:30:06 — **notify-amir** — provider balance low: 0 requests left, needed ~200 — today shrunk to audit 0 / builder 0 seeds. Top up at hikerapi.com ($5 ≈ 4 months).
+- 2026-10-16T09:30:06 — **skip** — provider mode — pool 0 >= 30 and unchecked 694 above floor; nothing to do
+/Users/amir/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+- 2026-10-17T09:30:04 — **notify-amir** — provider balance low: 0 requests left, needed ~200 — today shrunk to audit 0 / builder 0 seeds. Top up at hikerapi.com ($5 ≈ 4 months).
+- 2026-10-17T09:30:04 — **skip** — provider mode — pool 1 >= 30 and unchecked 694 above floor; nothing to do
+- 2026-10-17T09:30:04 — **hygiene: backups** — archived 1 files > 60d into archive_pre_2026-10-17.tar.gz
+/Users/amir/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+- 2026-10-18T09:30:06 — **notify-amir** — provider balance low: 0 requests left, needed ~200 — today shrunk to audit 0 / builder 0 seeds. Top up at hikerapi.com ($5 ≈ 4 months).
+- 2026-10-18T09:30:06 — **skip** — provider mode — pool 0 >= 30 and unchecked 694 above floor; nothing to do
+/Users/amir/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+- 2026-10-19T09:30:06 — **notify-amir** — provider balance low: 0 requests left, needed ~200 — today shrunk to audit 0 / builder 0 seeds. Top up at hikerapi.com ($5 ≈ 4 months).
+- 2026-10-19T09:30:06 — **skip** — provider mode — pool 0 >= 30 and unchecked 694 above floor; nothing to do
+/Users/amir/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+- 2026-10-20T09:30:06 — **notify-amir** — provider balance low: 0 requests left, needed ~200 — today shrunk to audit 0 / builder 0 seeds. Top up at hikerapi.com ($5 ≈ 4 months).
+- 2026-10-20T09:30:06 — **skip** — provider mode — pool 0 >= 30 and unchecked 694 above floor; nothing to do
+/Users/amir/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+- 2026-10-21T09:30:05 — **notify-amir** — provider balance low: 0 requests left, needed ~200 — today shrunk to audit 0 / builder 0 seeds. Top up at hikerapi.com ($5 ≈ 4 months).
+- 2026-10-21T09:30:05 — **skip** — provider mode — pool 0 >= 30 and unchecked 694 above floor; nothing to do
+/Users/amir/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+- 2026-10-22T09:30:06 — **notify-amir** — provider balance low: 0 requests left, needed ~200 — today shrunk to audit 0 / builder 0 seeds. Top up at hikerapi.com ($5 ≈ 4 months).
+- 2026-10-22T09:30:06 — **skip** — provider mode — pool 1 >= 30 and unchecked 694 above floor; nothing to do
+/Users/amir/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+- 2026-10-23T09:30:06 — **notify-amir** — provider balance low: 0 requests left, needed ~200 — today shrunk to audit 0 / builder 0 seeds. Top up at hikerapi.com ($5 ≈ 4 months).
+- 2026-10-23T09:30:06 — **skip** — provider mode — pool 1 >= 30 and unchecked 694 above floor; nothing to do
+/Users/amir/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+- 2026-10-24T09:30:05 — **notify-amir** — provider balance low: 0 requests left, needed ~200 — today shrunk to audit 0 / builder 0 seeds. Top up at hikerapi.com ($5 ≈ 4 months).
+- 2026-10-24T09:30:05 — **skip** — provider mode — pool 1 >= 30 and unchecked 694 above floor; nothing to do
+/Users/amir/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+- 2026-10-25T09:30:06 — **notify-amir** — provider balance low: 0 requests left, needed ~200 — today shrunk to audit 0 / builder 0 seeds. Top up at hikerapi.com ($5 ≈ 4 months).
+- 2026-10-25T09:30:06 — **skip** — provider mode — pool 1 >= 30 and unchecked 694 above floor; nothing to do
+- 2026-10-25T09:30:06 — **hygiene: backups** — archived 1 files > 60d into archive_pre_2026-10-25.tar.gz
+/Users/amir/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+- 2026-10-26T09:30:02 — **run: freshness audit (provider)** — vetted pool 1 < 30, unchecked 694 — audit --count 100 (provider) — exit 1;  /   [ 1/100] checking @phloff... / stderr:     raise ConnectionError(e, request=request) / stderr: requests.exceptions.ConnectionError: HTTPSConnectionPool(host='api.hikerapi.com', port=443): Max retries exceeded with url: /v1/user/by/username?username=phloff (Caused by NameResolutionError("HTTPSConnection(host='api.hikerapi.com', port=443): Failed to resolve 'api.hikerapi.com' ([Errno 8] nodename nor servname provided, or not known)"))
+- 2026-10-26T09:30:02 — **hygiene: backups** — archived 1 files > 60d into archive_pre_2026-10-26.tar.gz
+/Users/amir/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+- 2026-10-27T09:30:06 — **notify-amir** — provider balance low: 0 requests left, needed ~200 — today shrunk to audit 0 / builder 0 seeds. Top up at hikerapi.com ($5 ≈ 4 months).
+- 2026-10-27T09:30:06 — **skip** — provider mode — pool 0 >= 30 and unchecked 694 above floor; nothing to do
+- 2026-10-27T09:30:06 — **hygiene: backups** — archived 1 files > 60d into archive_pre_2026-10-27.tar.gz
+/Users/amir/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+- 2026-10-28T09:30:04 — **notify-amir** — provider balance low: 0 requests left, needed ~200 — today shrunk to audit 0 / builder 0 seeds. Top up at hikerapi.com ($5 ≈ 4 months).
+- 2026-10-28T09:30:04 — **skip** — provider mode — pool 0 >= 30 and unchecked 694 above floor; nothing to do
+- 2026-10-28T09:30:04 — **hygiene: backups** — archived 4 files > 60d into archive_pre_2026-10-28.tar.gz
+/Users/amir/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+- 2026-10-29T09:30:05 — **notify-amir** — provider balance low: 0 requests left, needed ~200 — today shrunk to audit 0 / builder 0 seeds. Top up at hikerapi.com ($5 ≈ 4 months).
+- 2026-10-29T09:30:05 — **skip** — provider mode — pool 0 >= 30 and unchecked 694 above floor; nothing to do
+- 2026-10-29T09:30:06 — **notify-amir** — engagement_log.json at 1506KB > 1500KB — schedule the archival job
+/Users/amir/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+- 2026-10-30T09:30:04 — **notify-amir** — provider balance low: 0 requests left, needed ~200 — today shrunk to audit 0 / builder 0 seeds. Top up at hikerapi.com ($5 ≈ 4 months).
+- 2026-10-30T09:30:04 — **skip** — provider mode — pool 0 >= 30 and unchecked 694 above floor; nothing to do
+- 2026-10-30T09:30:04 — **notify-amir** — engagement_log.json at 1520KB > 1500KB — schedule the archival job
+/Users/amir/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+- 2026-10-31T09:30:02 — **notify-amir** — provider balance low: 0 requests left, needed ~200 — today shrunk to audit 0 / builder 0 seeds. Top up at hikerapi.com ($5 ≈ 4 months).
+- 2026-10-31T09:30:02 — **skip** — provider mode — pool 0 >= 30 and unchecked 690 above floor; nothing to do
+- 2026-10-31T09:30:02 — **hygiene: backups** — archived 3 files > 60d into archive_pre_2026-10-31.tar.gz
+- 2026-10-31T09:30:03 — **notify-amir** — engagement_log.json at 1539KB > 1500KB — schedule the archival job
+/Users/amir/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+- 2026-11-02T08:35:53 — **run: freshness audit (provider)** — vetted pool 1 < 30, unchecked 682 — audit --count 100 (provider) — exit 0;     - @personnealienee (posts=9<12d since last post) /  / [OK] Queue updated. 53 stale, 0 retired, 35 fresh enriched.
+- 2026-11-02T08:35:53 — **hygiene: backups** — archived 3 files > 60d into archive_pre_2026-11-02.tar.gz
+- 2026-11-02T08:35:53 — **notify-amir** — engagement_log.json at 1568KB > 1500KB — schedule the archival job
+/Users/amir/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+- 2026-11-03T08:36:42 — **run: freshness audit (provider)** — vetted pool 14 < 30, unchecked 597 — audit --count 100 (provider) — exit 0;     - @_riverview_gardens_ (followers=178<200d since last post) /  / [OK] Queue updated. 43 stale, 0 retired, 47 fresh enriched.
+- 2026-11-03T08:36:42 — **notify-amir** — engagement_log.json at 1590KB > 1500KB — schedule the archival job
+/Users/amir/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+- 2026-11-04T09:30:05 — **skip** — provider mode — pool 31 >= 30 and unchecked 529 above floor; nothing to do
+- 2026-11-04T09:30:05 — **hygiene: backups** — archived 1 files > 60d into archive_pre_2026-11-04.tar.gz
+- 2026-11-04T09:30:05 — **notify-amir** — engagement_log.json at 1609KB > 1500KB — schedule the archival job
+/Users/amir/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+- 2026-11-05T09:31:13 — **run: contact re-enrichment (provider)** — 533 contacts with enrichment > 90d — re-check 40 (provider, 300 calls left) — exit 0;   [40/40] @bureaub_hamburg: not found (will retry once) /  / [OK] saved. refreshed 39, failed 1 (newly dead 0). ~494 stale remain.
+- 2026-11-05T09:31:13 — **notify-amir** — engagement_log.json at 1637KB > 1500KB — schedule the archival job
+/Users/amir/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+- 2026-11-06T09:31:18 — **run: contact re-enrichment (provider)** — 494 contacts with enrichment > 90d — re-check 40 (provider, 173 calls left) — exit 0;   [40/40] @transgression_music: 1195 followers — refreshed /  / [OK] saved. refreshed 39, failed 1 (newly dead 1). ~455 stale remain.
+- 2026-11-06T09:31:18 — **notify-amir** — engagement_log.json at 1657KB > 1500KB — schedule the archival job
+/Users/amir/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+- 2026-11-07T09:36:59 — **run: freshness audit (provider)** — vetted pool 22 < 30, unchecked 461 — audit --count 100 (provider) — exit 0;     - @sara_eraaa (followers=87<200d since last post) /  / [OK] Queue updated. 33 stale, 1 retired, 62 fresh enriched.
+- 2026-11-07T09:38:05 — **run: contact re-enrichment (provider)** — 453 contacts with enrichment > 90d — re-check 40 (provider, 99 calls left) — exit 0;   [40/40] @dark_disco_winterthur: 1716 followers — refreshed /  / [OK] saved. refreshed 39, failed 1 (newly dead 0). ~414 stale remain.
+- 2026-11-07T09:38:05 — **hygiene: backups** — archived 1 files > 60d into archive_pre_2026-11-07.tar.gz
+- 2026-11-07T09:38:05 — **notify-amir** — engagement_log.json at 1682KB > 1500KB — schedule the archival job

@@ -1,0 +1,94 @@
+# Review package: 3c6f9f8..HEAD
+
+## Commits
+3ff2de3 fix(stats): exercise ledger refusal in test; balance returns None when provider fails
+
+## Files changed
+ stats/collectors.py                   |  4 +++-
+ tests/test_collect_instagram_daily.py | 13 +++++++++++++
+ 2 files changed, 16 insertions(+), 1 deletion(-)
+
+## Diff
+diff --git a/stats/collectors.py b/stats/collectors.py
+index bb5512d..bf460f9 100644
+--- a/stats/collectors.py
++++ b/stats/collectors.py
+@@ -737,21 +737,23 @@ def collect_instagram_daily() -> dict | None:
+         return _ig_daily_graph()
+     except KeyboardInterrupt:
+         raise
+     except (Exception, SystemExit):  # LedgerRefused is a SystemExit
+         return None
+ 
+ 
+ def collect_hikerapi_balance() -> dict | None:
+     """HikerAPI request balance (not an Instagram read, so no ledger claim)."""
+     try:
+-        bal = _provider().balance() or {}
++        bal = _provider().balance()
++        if not bal:
++            return None
+         return {"requests": bal.get("requests"), "balance": bal}
+     except Exception:
+         return None
+ 
+ 
+ # ---------------------------------------------------------------------------
+ # Collect all platforms
+ # ---------------------------------------------------------------------------
+ 
+ def collect_all(skip: tuple = ()) -> dict:
+diff --git a/tests/test_collect_instagram_daily.py b/tests/test_collect_instagram_daily.py
+index 71d0b2c..b0f8f91 100644
+--- a/tests/test_collect_instagram_daily.py
++++ b/tests/test_collect_instagram_daily.py
+@@ -23,25 +23,31 @@ def test_graph_variant_reads_profile_and_reach(monkeypatch):
+ 
+     monkeypatch.setattr(c.requests, "get", fake_get)
+     assert c.collect_instagram_daily() == {
+         "followers": 951, "following": 970, "media_count": 85, "reach_30d": 2310, "source": "graph"}
+     assert len(calls) == 2
+ 
+ 
+ def test_ledger_refusal_returns_none_and_sync_keeps_other_platforms(monkeypatch):
+     from scene_intelligence.ig_daily_ledger import LedgerRefused
+ 
++    monkeypatch.setattr(c, "IG_DAILY_SOURCE", "graph")
++    monkeypatch.setattr(c, "META_IG_ACCESS_TOKEN", "t")
++    claimed = []
++
+     def refuse(**kw):
++        claimed.append(kw)
+         raise LedgerRefused(4)
+ 
+     monkeypatch.setattr(c, "_claim", refuse)
+     assert c.collect_instagram_daily() is None
++    assert len(claimed) == 1 and claimed[0]["kind"] == "api"
+     monkeypatch.setattr(c, "collect_spotify", lambda: {"ok": 1})
+     monkeypatch.setattr(c, "collect_soundcloud", lambda: None)
+     monkeypatch.setattr(c, "collect_youtube", lambda: None)
+     monkeypatch.setattr(c, "collect_hikerapi_balance", lambda: {"requests": 83000})
+     out = c.collect_all()
+     assert out["platforms"]["spotify"] == {"ok": 1}
+     assert "instagram" in out["errors"]
+     assert out["platforms"]["hikerapi"]["requests"] == 83000
+ 
+ 
+@@ -97,10 +103,17 @@ def test_hikerapi_balance(monkeypatch):
+             return {"requests": 83000, "amount": 1.2}
+ 
+     monkeypatch.setattr(c, "_provider", lambda: P())
+     assert c.collect_hikerapi_balance() == {"requests": 83000, "balance": {"requests": 83000, "amount": 1.2}}
+ 
+     def boom():
+         raise RuntimeError("x")
+ 
+     monkeypatch.setattr(c, "_provider", boom)
+     assert c.collect_hikerapi_balance() is None
++
++    class Q:
++        def balance(self):
++            return None  # Provider.balance() returns None on ProviderError
++
++    monkeypatch.setattr(c, "_provider", lambda: Q())
++    assert c.collect_hikerapi_balance() is None

@@ -1,0 +1,468 @@
+<title>Inch of Shadow Refresh</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Marcellus&family=Jost:wght@300;400;500&display=swap">
+<style>
+/* Big picture only: decisions first, then strategy, LLM system, maintenance.
+   Each change is a card: was -> change to; open it for based on, why, steps. */
+:root{
+  --bg:#ECE8E1; --panel:#F6F3EE; --ink:#1A1614; --soft:#5E5650; --line:#D3CCC2;
+  --accent:#4A2E52; --accent-soft:#E4DAE6;
+  --songs:#4A2E52; --songs-bg:#E6DCE8;
+  --elec:#1F4A55; --elec-bg:#D9E6E8;
+  --both:#5E5650; --both-bg:#E3DED6;
+  --yes:#8A4B12; --yes-bg:#F3E3D0;
+  --save:#2F5D3A; --save-bg:#DCEADF;
+  --hot:#8E2A1E; --hot-bg:#F2DCD6;
+  --display:"Marcellus", "Cormorant Garamond", Georgia, serif;
+  --body:"Jost", "Avenir Next", "Helvetica Neue", Arial, sans-serif;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#0F0D0C; --panel:#191614; --ink:#E9E4DC; --soft:#A79E95; --line:#2E2925;
+  --accent:#C7A9D0; --accent-soft:#2C2130;
+  --songs:#D6B8DE; --songs-bg:#2C2130; --elec:#9FCBD4; --elec-bg:#16292D; --both:#C9C0B6; --both-bg:#26221F;
+  --yes:#F0B47A; --yes-bg:#33241A; --save:#9ED1A8; --save-bg:#18291C; --hot:#F2A493; --hot-bg:#3A1C17; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0F0D0C; --panel:#191614; --ink:#E9E4DC; --soft:#A79E95; --line:#2E2925;
+  --accent:#C7A9D0; --accent-soft:#2C2130;
+  --songs:#D6B8DE; --songs-bg:#2C2130; --elec:#9FCBD4; --elec-bg:#16292D; --both:#C9C0B6; --both-bg:#26221F;
+  --yes:#F0B47A; --yes-bg:#33241A; --save:#9ED1A8; --save-bg:#18291C; --hot:#F2A493; --hot-bg:#3A1C17; color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font-family:var(--body);font-weight:300;font-size:16px;line-height:1.55;margin:0;
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:40px 64px}
+.wrap{max-width:880px;margin:0 auto;display:flex;flex-direction:column;gap:52px}
+h1,h2,h3{font-family:var(--display);font-weight:400;text-wrap:balance;margin:0;letter-spacing:.01em}
+h1{font-size:clamp(2.2rem,6vw,3.4rem);line-height:1.05}
+h2{font-size:1.7rem}
+h3{font-size:1.1rem}
+p{margin:0;max-width:66ch}
+.eyebrow{font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;color:var(--soft);font-weight:500}
+header{display:flex;flex-direction:column;gap:14px}
+.lede{font-size:1.1rem;color:var(--soft)}
+.status{display:inline-flex;gap:8px;align-items:center;padding:6px 12px;border:1px solid var(--line);border-radius:999px;font-size:.85rem;width:fit-content;max-width:100%;flex-wrap:wrap}
+.status b{color:var(--accent);font-weight:500}
+section.block{display:flex;flex-direction:column;gap:16px}
+.sub{color:var(--soft);font-size:.92rem}
+.toc{display:grid;grid-template-columns:repeat(5,1fr);gap:0;border-top:2px solid var(--ink)}
+.toc a{color:inherit;text-decoration:none;padding:12px 12px 0;border-right:1px solid var(--line);display:flex;flex-direction:column;gap:4px;min-width:0}
+.toc a:first-child{padding-left:0}
+.toc a:last-child{border-right:none}
+.toc a b{font-family:var(--display);font-weight:400;font-size:1.1rem}
+.toc a span{font-size:.85rem;color:var(--soft)}
+.toc a:hover b{color:var(--accent)}
+@media (max-width:640px){.toc{grid-template-columns:1fr 1fr;row-gap:16px}.toc a:nth-child(2){border-right:none}.toc a:nth-child(3){padding-left:0}}
+
+.chip{display:inline-block;font-size:.7rem;font-weight:500;letter-spacing:.08em;text-transform:uppercase;padding:2px 8px;border-radius:4px;white-space:nowrap}
+.songs{color:var(--songs);background:var(--songs-bg)}
+.elec{color:var(--elec);background:var(--elec-bg)}
+.both{color:var(--both);background:var(--both-bg)}
+.yes{color:var(--yes);background:var(--yes-bg)}
+.save{color:var(--save);background:var(--save-bg)}
+.hot{color:var(--hot);background:var(--hot-bg)}
+
+/* decisions table */
+.dec{display:flex;flex-direction:column;border-top:2px solid var(--ink)}
+.drow{display:grid;grid-template-columns:44px 1fr 110px;gap:4px 14px;padding:12px 0;border-bottom:1px solid var(--line);align-items:baseline}
+.drow .n{font-family:var(--display);color:var(--accent);font-size:1.1rem}
+.drow .q{font-weight:500;min-width:0}
+.drow .o{grid-column:2 / 3;color:var(--soft);font-size:.9rem}
+.drow .by{text-align:right;font-size:.82rem;font-variant-numeric:tabular-nums;color:var(--soft)}
+.drow .by.hot{color:var(--hot);background:none;font-weight:500;letter-spacing:0;text-transform:none;font-size:.85rem;padding:0}
+.dgroup{font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--soft);font-weight:500;padding:16px 0 4px}
+@media (max-width:560px){.drow{grid-template-columns:36px 1fr}.drow .by{grid-column:2 / 3;text-align:left}}
+
+/* filters */
+.filters{display:flex;flex-wrap:wrap;gap:8px;align-items:center;position:sticky;top:env(safe-area-inset-top,0px);background:var(--bg);padding-block:10px;z-index:5;border-bottom:1px solid var(--line)}
+.filters span{font-size:.8rem;color:var(--soft);margin-right:4px}
+.filters button{font:inherit;font-size:.85rem;font-weight:400;border:1px solid var(--line);background:var(--panel);color:var(--ink);padding:5px 12px;border-radius:999px;cursor:pointer}
+.filters button[aria-pressed="true"]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.filters button:focus-visible,summary:focus-visible,.toc a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+
+/* families + cards */
+.family{display:flex;flex-direction:column;gap:12px;scroll-margin-top:64px}
+.family-head{display:flex;justify-content:space-between;align-items:baseline;gap:12px;flex-wrap:wrap}
+.family-head .count{font-size:.85rem;color:var(--soft);font-variant-numeric:tabular-nums}
+.family > p{color:var(--soft)}
+.cards{display:flex;flex-direction:column;gap:10px}
+details.card{background:var(--panel);border:1px solid var(--line);border-radius:8px;min-width:0}
+details.card > summary{list-style:none;cursor:pointer;padding:14px 16px;display:flex;flex-direction:column;gap:8px}
+details.card > summary::-webkit-details-marker{display:none}
+.top{display:flex;justify-content:space-between;gap:12px;align-items:flex-start;flex-wrap:wrap}
+.title{font-weight:500;font-size:1.02rem;min-width:0;flex:1 1 300px}
+.title .id{color:var(--soft);font-variant-numeric:tabular-nums;font-weight:400;margin-right:6px}
+.chips{display:flex;flex-wrap:wrap;gap:6px}
+.ft{display:grid;grid-template-columns:96px 1fr;gap:4px 12px;font-size:.92rem}
+.ft dt{color:var(--soft);font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;font-weight:500;padding-top:3px}
+.ft dd{margin:0;min-width:0}
+.ft dd.was{color:var(--soft)}
+.more{color:var(--accent);font-size:.8rem}
+details[open] .more{display:none}
+.body{padding:12px 16px 16px;border-top:1px dashed var(--line)}
+.body ol{margin:0;padding-left:20px;display:flex;flex-direction:column;gap:2px}
+@media (max-width:520px){.ft{grid-template-columns:1fr}.ft dt{padding-top:6px}}
+.empty{color:var(--soft);font-size:.9rem;padding:12px 0}
+
+/* plan: two tracks */
+.tracks{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.track{background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:16px;display:flex;flex-direction:column;gap:12px;min-width:0}
+.track h3{font-size:1.2rem}
+.track .tag{font-size:.82rem;color:var(--soft)}
+.track ol{margin:0;padding:0;list-style:none;display:flex;flex-direction:column;gap:10px}
+.track li{display:grid;grid-template-columns:84px 1fr;gap:2px 10px;font-size:.9rem}
+.track li .w{font-variant-numeric:tabular-nums;font-size:.78rem;color:var(--accent);letter-spacing:.04em;padding-top:2px;font-weight:500}
+.track li span{min-width:0}
+.track li small{display:block;color:var(--soft);font-size:.82rem}
+.gate{border-left:3px solid var(--hot);padding:4px 0 4px 14px;font-size:.92rem}
+.gate b{color:var(--hot);font-weight:500}
+@media (max-width:700px){.tracks{grid-template-columns:1fr}}
+.flow{display:grid;grid-template-columns:repeat(6,1fr);gap:10px}
+.step{background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:12px;display:flex;flex-direction:column;gap:4px;min-width:0}
+.step .n{font-family:var(--display);font-size:1.4rem;color:var(--accent);line-height:1}
+.step p{font-size:.85rem;color:var(--soft)}
+@media (max-width:760px){.flow{grid-template-columns:1fr 1fr}}
+@media (max-width:420px){.flow{grid-template-columns:1fr}}
+.song-flow{display:flex;flex-wrap:wrap;gap:6px;align-items:center;font-size:.88rem}
+.song-flow span{background:var(--panel);border:1px solid var(--line);border-radius:999px;padding:4px 10px}
+.song-flow span.hot{border-color:var(--hot);color:var(--hot);background:var(--hot-bg)}
+.song-flow i{color:var(--soft);font-style:normal}
+.batches{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+.batch{background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:16px;display:flex;flex-direction:column;gap:6px;min-width:0}
+.batch.now{border:2px solid var(--accent)}
+.batch .when{font-size:.75rem;letter-spacing:.1em;text-transform:uppercase;color:var(--soft);font-weight:500}
+.batch.now .when{color:var(--accent)}
+.batch h3{font-size:1.4rem}
+.batch .lab{font-size:.8rem;color:var(--soft);margin-top:6px}
+.batch ul{margin:0;padding:0;list-style:none;display:flex;flex-direction:column;gap:3px;font-size:.9rem}
+.batch li b{font-weight:500;color:var(--accent);display:inline-block;min-width:34px;font-variant-numeric:tabular-nums}
+.batch li small{display:block;color:var(--soft);font-size:.82rem;margin:2px 0 4px}
+@media (max-width:760px){.batches{grid-template-columns:1fr}}
+@media (max-width:760px){.toc{grid-template-columns:1fr 1fr !important}}
+footer{font-size:.82rem;color:var(--soft);display:flex;flex-direction:column;gap:8px;border-top:1px solid var(--line);padding-top:16px}
+code{font-size:.85em;background:var(--accent-soft);padding:1px 5px;border-radius:3px;word-break:break-word}
+</style>
+
+<div class="wrap">
+
+<header>
+  <span class="eyebrow">⚙️ System · strategy review · 7 Nov 2026 · v19 · Batches 4 and 5 gated (Fable) · six-month plan end of Nov</span>
+  <h1>Inch of Shadow Refresh</h1>
+  <p class="lede">The big picture only: the decisions we need, the strategy, the LLM system and the maintenance under it. Release work (Half the Night ships as early as possible) and small tasks live on the board, not here.</p>
+  <span class="status">Built from <b>13 research files</b> · Batch 1 done (code) · Batch 2 = your decisions</span>
+</header>
+
+<nav class="toc" aria-label="Sections">
+  <a href="#plan"><b>The plan</b><span>4 batches, what is in each</span></a>
+  <a href="#decisions"><b>1 · Decisions</b><span>What only you decide</span></a>
+  <a href="#fam-strategy"><b>2 · Strategy</b><span>Goals, fans, platforms, content</span></a>
+  <a href="#fam-llm"><b>3 · LLM system</b><span>How Claude and you work</span></a>
+  <a href="#fam-maint"><b>4 · Maintenance</b><span>Code, cost, data, backups</span></a>
+</nav>
+
+<section class="block" id="plan" aria-labelledby="plan-h">
+  <h2 id="plan-h">The plan in 4 batches</h2>
+  <p class="sub">Code first, decisions second: the code work needs no decision and gives the decisions real data. Your pace, no calendar. Outside deadlines run now, separately: <b>D10 CTM (6 Nov 23:59)</b> and <b>D14 / M3 Beatport (8 Nov)</b>. Half the Night ships as early as possible in the 🎵 Release chat, alongside.</p>
+  <div class="batches">
+    <div class="batch">
+      <span class="when">✅ Done 5 Nov evening</span><h3>Batch 1</h3><p class="lab">Four side chats, 7 commits, 1,164 tests green. Gate: gates/2026-11-05-batch-1.md.</p>
+      <p class="lab">🎃 Built</p><ul><li><b>M2</b> ✅ Instagram read daily (971 followers tonight, 1 HikerAPI call); empty Spotify fields and the unread SC read switched off. Own-post reach via the Graph token: not yet (Batch 3)</li><li><b>M1</b> ✅ Spend page: python3 stats/spend.py; Claude $36.14 (Gap Radar $32.68), HikerAPI $0.62, balance $83; raw renders and Gero say "not logged"</li><li><b>M9</b> ⏸️ Held: the HTN cover chat is editing that release file tonight; done right after</li><li><b>L5</b> ✅ Facts: 28 lines fixed, 7 history banners, 17 proposals to the Socials chats (files next to the automation untouched), 11 history rows left</li><li><b>M7</b> ✅ RM page map: 23 pages, 145 routes, keep/merge/drop question per page, RM 2.0 blueprint</li><li><b>M5</b> ✅ Dead-code list: 45 candidates, 12,521 lines, 16 marked REVIEW, undo command written; nothing moved</li></ul>
+    </div>
+    <div class="batch">
+      <span class="when">Now · decide with the data</span><h3>Batch 2</h3><p class="lab">Your turn. The facts from Batch 1 sit under each decision.</p>
+      <p class="lab">🙋 You decide</p><ul><li><b>D2</b> Priority order of the six areas</li><li><b>D3</b> Your hours per week</li><li><b>D4</b> Scoreboard: which numbers we chase, both lanes<br><small>Tonight: IG 971 / 973 (ratio 1.00), SC 470, Spotify 94 listeners / 68 followers, Bandcamp 51 followers / 16 emails. Proposed: add Spotify followers, day-28 release engagement, email list.</small></li><li><b>D5</b> What each platform is for, per lane</li><li><b>D8</b> TikTok: open now or later<br><small>Farewell and The Deceiver are delivered tracks, so the artist certification (up to 30 days) can start before any new release.</small></li><li><b>D12</b> Which of the 5 rule drafts go live: one shared memory for all chats · a shorter memory index so new rules load · a rules file where chats start · rules the app enforces (no push, no Serum file edits, ask before moving files or reading Gmail) · one daily brief<br><small>Checked: the memory index is 29 KB against a 24 KB limit, so today's newest rules do not load in new chats. No scheduled script shells out to mv, rm, rsync or trash, so the ask rule cannot stall a run.</small></li><li><b>D13</b> Daily brief: which chat, what time</li><li><b>D15</b> Backup: which drive and cloud option<br><small>Intenso: 3 GB free. DONE, Doom and Men Machine have no current copy.</small></li><li><b>D17</b> RM 2.0: which pages you use, what the home page shows<br><small>Map: 23 pages, 145 routes. 7 pages have no data change since 1 Oct (palette, bios, seo-copy and 4 more), but RM has no page-view log, so only you know which you open. The map asks keep / merge / drop per page.</small></li></ul>
+    </div>
+    <div class="batch">
+      <span class="when">✅ Done 6 Nov</span><h3>Batch 3</h3><p class="lab">13 commits, 1,343 tests green. Gate: gates/2026-11-06-batch-3.md.</p>
+      <p class="lab">🎃 Built</p><ul><li><b>L1</b> The rule drafts you picked go live</li><li><b>L2</b> One daily brief replaces about 6 reports</li><li><b>L3</b> One loop: goals in one file, every ticket tied to a number, a weekly decision page</li><li><b>L4</b> Plain jobs move off Claude, about 24 empty chats a week less</li><li><b>S1</b> The scoreboard goes up in RM</li><li><b>S2</b> Platform jobs written into the docs agents read</li><li><b>M7</b> RM 2.0 refactor: split by area, new home, unused pages out</li><li><b>S6</b> TikTok opened and certified</li><li><b>S8</b> Booking list turned toward the darkwave nights</li><li><b>M8</b> Backups set up</li></ul>
+    </div>
+    <div class="batch">
+      <span class="when">Then · clean up and the songs model</span><h3>Batch 4</h3>
+      <p class="lab">🙋 You decide</p><ul><li><b>D9</b> Paid promotion: any, and how much per release</li><li><b>D16</b> Code clean-up: merge the side branch, archive the dead code, move to a current Python</li></ul>
+      <p class="lab">🎃 Built</p><ul><li><b>M5</b> Dead code archived</li><li><b>M6</b> One branch, all code in git, current Python</li><li><b>M4</b> Big log files rotate monthly</li><li><b>S3</b> Release guide rewritten for singles</li><li><b>S5</b> Promotion rule written down</li><li><b>S9</b> Check the tools we already pay for</li><li><b>L6</b> Monthly 15-minute check, new six-month plan</li></ul>
+    </div>
+  </div>
+  <div class="batches" style="margin-top:14px">
+    <div class="batch now">
+      <span class="when">✅ Done 7 Nov · gated by Fable: gates/2026-11-07-batch-5.md</span><h3>Batch 5</h3>
+      <p class="lab">🙋 You decide (each in its own side chat)</p><ul><li><b>Slice 1</b> ✅ yes, all 5 pages</li><li><b>D9</b> ✅ premieres = the one paid route for now, EUR 50</li></ul>
+      <p class="lab">🎃 Built</p><ul><li><b>M7</b> RM 2.0 ✅ all 10 slices done 6 Nov: webapp.py 5,914 to 218 lines, new Home and Review, 1,376 tests</li><li><b>M11</b> Part 2: /stats rebuilt on the brand brief (verdict first, freshness strip, six cards)</li><li><b>M10</b> The phone review page (ticks only propose)</li><li><b>G-25</b> Chrome queue for all chats (lock + hook)</li><li><b>Fix</b> IG ratio dot shows 971 / 973 = 0.998 ✅</li></ul>
+      <p class="lab">🗓️ End of November (reminder 16 Nov)</p><ul><li><b>L6</b> The new six-month plan, Dec 2026 to May 2027, with dated checkpoints</li></ul>
+    </div>
+  </div>
+  <p class="sub">Then every month: a 15-minute check (L6). The codes (D, S, L, M) link to the decisions and cards below.</p>
+  <div class="track">
+    <h3>Your focus, the next 2-3 months</h3>
+    <span class="tag">Songs are yours and not tracked here. 2 full songs ready, and mainly content. The content language now has evidence behind it (S7, two research passes, Fable-gated); round one waits for your yes (D18); a check after each round; what works is written into the brand kit. Singles go out one by one when you say a song is ready (S3).</span>
+  </div>
+  <h3 style="margin-top:8px">Each change moves like this</h3>
+  <div class="flow">
+    <div class="step"><span class="n">1</span><h3>Frame</h3><p>🎃 one paragraph: what you will see, before building. Big trade-off = council.</p></div>
+    <div class="step"><span class="n">2</span><h3>Fable gate</h3><p>🟣 Fable checks sources and rules. "🟣 Fable gate" in the chat = switch model.</p></div>
+    <div class="step"><span class="n">3</span><h3>Your yes</h3><p>🙋 on the decision or the card.</p></div>
+    <div class="step"><span class="n">4</span><h3>Side chat</h3><p>🎃 one change, ticket + backup first.</p></div>
+    <div class="step"><span class="n">5</span><h3>Check</h3><p>⚙️ tests, board; Fable after each batch, ultra before main.</p></div>
+    <div class="step"><span class="n">6</span><h3>Measure</h3><p>🤖 the brief shows the number.</p></div>
+  </div>
+</section>
+
+<section class="block" id="decisions" aria-labelledby="dec-h">
+  <h2 id="dec-h">1 · Decisions we need</h2>
+  <p class="sub">The base three come first: every goal and date hangs on them. Each decision links to the card that explains it.</p>
+  <div class="dec">
+    <div class="dgroup">The base</div>
+    <div class="drow"><span class="n">D1</span><span class="q">✅ Songs: not tracked here. Your next 2-3 months: 2 full songs ready, and mainly content.</span><span class="by">Answered 5 Nov</span><span class="o">Songs stay in your head and your studio. Released as singles (checked against Spotify's rules, S3). The big shared work is finding our content language and styles (S7).</span></div>
+    <div class="drow"><span class="n">D2</span><span class="q">✅ Priority order: Socials, Release, Income, System, Booking, Studio</span><span class="by">Answered 6 Nov</span><span class="o">Release, Socials, Booking, Income, Studio, System: which wins when time is short.</span></div>
+    <div class="drow"><span class="n">D3</span><span class="q">✅ Hours: 20+ a week</span><span class="by">Answered 6 Nov</span><span class="o">Sets how much the plan can hold: posts, outreach, sessions.</span></div>
+    <div class="dgroup">Strategy</div>
+    <div class="drow"><span class="n">D4</span><span class="q">✅ Scoreboard adds Spotify followers, day-28 release engagement, email list. Rungs confirmed 6 Nov: Spotify 80 / 90, email 30 / 50; day-28 collects until the first Half the Night read</span><span class="by">Answered 6 Nov</span><span class="o">Proposed: Spotify followers, release engagement on day 28, email list, Bandcamp followers. IG and SC followers become side numbers. (S1)</span></div>
+    <div class="drow"><span class="n">D5</span><span class="q">✅ One job per platform: yes to the plan (Opus-gated). TikTok = exposure (others use the sound + our own raw work); Spotify followers + email = where it lands</span><span class="by">Answered 6 Nov</span><span class="o">Confirm or change the split in S2.</span></div>
+    <div class="drow"><span class="n">D8</span><span class="q">✅ TikTok: later, with the first song</span><span class="by">Answered 6 Nov</span><span class="o">Certification takes up to 30 days and works with tracks already out. (S6)</span></div>
+    <div class="drow"><span class="n">D9</span><span class="q">Paid promotion rule: any, and how much per release</span><span class="by">Batch 4</span><span class="o">Paid curator listens and paid premieres. Spotify warns about paid consideration. (S5)</span></div>
+    <div class="drow"><span class="n">D6</span><span class="q">✅ SC and IG automation continue as planned</span><span class="by">Answered 5 Nov</span><span class="o">Not up for review.</span></div>
+    <div class="drow"><span class="n">D10</span><span class="q">CTM Vorspiel: in or out (DJ only, no live shows for now)</span><span class="by hot">6 Nov 23:59</span><span class="o">Needs a Berlin venue you run it in; CTM pays nothing. (S8)</span></div>
+    <div class="drow"><span class="n">D18</span><span class="q">Content round one: which of the 7 experiments run, and in which order</span><span class="by">Now</span><span class="o">On released tracks, no song needed. The teaser experiment waits for the switch. (S7)</span></div>
+    <div class="dgroup">LLM system</div>
+    <div class="drow"><span class="n">D12</span><span class="q">✅ All four rule drafts go live (when you say go)</span><span class="by">Answered 6 Nov</span><span class="o">One memory, slim index, parent rules file, enforced rules, daily brief. (L1)</span></div>
+    <div class="drow"><span class="n">D13</span><span class="q">✅ Daily brief: ⚙️ System chat, 20:00 (when you say go)</span><span class="by">Answered 6 Nov</span><span class="o">⚙️ System or a new "daily" chat; 20:00 or morning. (L2)</span></div>
+    <div class="dgroup">Maintenance</div>
+    <div class="drow"><span class="n">D14</span><span class="q">Beatport add-on: keep or cancel</span><span class="by hot">8 Nov</span><span class="o">$10 a month; ask Symphonic first if old releases stay up. (M3)</span></div>
+    <div class="drow"><span class="n">D15</span><span class="q">✅ Backup: later; you buy the 4 TB drive first. Offsite copy decided after that</span><span class="by">Answered 6 Nov</span><span class="o">4 TB drive (€101) plus about €1, €4 or €8 a month. (M8)</span></div>
+    <div class="drow"><span class="n">D17</span><span class="q">✅ RM pages: keep 13, drop Artwork Resizer / Engagement names tab / Promotion / Palette / Autopilot, merge Tickets+Board and Video Resizer into Video, SC page asked of the SC chat. Nothing removed before the dry run</span><span class="by">Answered 6 Nov</span><span class="o">Faster than logging page use for 4 weeks. Sets the refactor. (M7)</span></div>
+    <div class="drow"><span class="n">D16</span><span class="q">Code clean-up: merge to main, park dead code, move Python</span><span class="by">Batch 4</span><span class="o">Each one as a dry-run list first. (M5, M6)</span></div>
+  </div>
+</section>
+
+
+<nav class="filters" aria-label="Filter changes">
+  <span>Show</span>
+  <button type="button" data-f="all" aria-pressed="true">All</button>
+  <button type="button" data-f="songs" aria-pressed="false">Songs</button>
+  <button type="button" data-f="elec" aria-pressed="false">Electronic</button>
+  <button type="button" data-f="both" aria-pressed="false">Both</button>
+  <button type="button" data-f="Batch 1" aria-pressed="false">Batch 1</button>
+  <button type="button" data-f="Batch 2" aria-pressed="false">Batch 2</button>
+  <button type="button" data-f="Batch 3" aria-pressed="false">Batch 3</button>
+  <button type="button" data-f="Batch 4" aria-pressed="false">Batch 4</button>
+  <button type="button" data-f="save" aria-pressed="false">Saves money</button>
+  <button type="button" id="openall" aria-pressed="false">Open all</button>
+</nav>
+
+<div id="families" style="display:flex;flex-direction:column;gap:48px"></div>
+
+<footer>
+  <span><b>Research behind this page</b> (in <code>plans/strategy/</code>, sources tagged OFFICIAL / REPORTED / CLAIMED / MYTH):
+  <code>research-pitch-2026-11-05</code>, <code>research-social-algo-2026-11-05</code>, <code>research-listening-platforms-2026-11-05</code>, <code>research-tiktok-2026-11-05</code>, <code>review-2026-11-05-code-map</code>, <code>review-2026-11-05-system-loop</code>, <code>review-2026-11-05-facts</code>, <code>review-2026-11-05-proposals</code>, <code>research-release-fans</code>, <code>research-berlin-calls</code>, <code>research-backups</code>.</span>
+  <span>Platform algorithms: <code>plans/platform-algorithm-research-2026-06.md</code>, 5 Nov update at the top. Release-level findings (pitch timing, Amazon pitch, curators, press ladder) sit in the pitch research for the release chat.</span>
+  <span>Money in and out is left out on purpose. Spend on tools is in.</span>
+</footer>
+</div>
+
+<script>
+const F = [
+ {id:"fam-strategy", k:"🧭", name:"2 · Strategy", note:"What we aim at, how we measure it, what each platform is for, and the content work ahead.", cards:[
+  {id:"S1", t:"From followers to fans: one scoreboard, both lanes",
+   was:"Targets are IG followers, SC followers and Spotify listeners. Spotify followers (68) have no target. The email list (16) and Bandcamp (51) are not counted.",
+   to:"One scoreboard for both lanes. The electronic stats we already collect (SoundCloud, Spotify catalogue, Bandcamp, YouTube) keep running in the Release Manager. New on top: Spotify followers, release engagement on day 28 and the email list, the fan numbers the songs will need.",
+   src:"listening research: Release Radar reaches followers, but since 10 July 2026 listeners can filter it [OFFICIAL]. Fans research: Buttondown free to 100, EU double opt-in [OFFICIAL]. Code map: Spotify followers already read every Monday.",
+   why:"Followers on Spotify and an email list are the only audience that gets each new song without a feed deciding. A follow-back on IG or SC is not a listener.",
+   steps:["Your answer D4 sets the numbers and rungs.","Targets file and score board updated.","One free list tool and a sign-up on every release."], when:"✅ Done 6 Nov", l:"both", who:"🙋"},
+  {id:"S2", t:"Each platform gets one job per lane",
+   was:"SoundCloud called \"the primary scene platform\" (set before the songs plan). Every platform chased followers.",
+   to:"Songs: Spotify and Bandcamp hold the fans, Instagram brings traffic, TikTok spreads the sound, YouTube carries video, SoundCloud is a side door. Electronic: SoundCloud stays home.",
+   src:"listening research: SoundCloud 2026 report shows rap, hard techno and Gen Z indie growing, nothing on post-punk [OFFICIAL]; MIDiA on fan platforms [REPORTED]. TikTok research: scene breakouts came from others using the sound [REPORTED].",
+   why:"Our SC followers came from electronic seeds. Growing them does not grow a songs audience. One job per platform also tells us what to measure there.",
+   steps:["Your answer D5.","Strategy docs and agent docs name each platform's job."], when:"✅ Done 6 Nov", l:"both", who:"🙋"},
+  {id:"S3", t:"A pitch-driven release model for the songs era",
+   was:"The release guide is built around Beatport: submit 8 weeks out, pitch 28 days out, \"3 EPs a year\". Countdown Pages and Marquee in the plans.",
+   to:"A single every 4-8 weeks, each one pitched (Spotify and Amazon), never two pitches at once. Each song gets a video, a press and radio ladder, and a TikTok clip choice. Tools we can't reach yet (Countdown, Marquee, Discovery Mode) leave the plan.",
+   src:"pitch research: one pitch at a time, unreleased only, 7 days minimum; Release Radar one song per artist per week; 1,000 streams per track per year to earn royalties; Amazon pitch open to any artist; Apple closed on Starter [all OFFICIAL]. Countdown needs 3,000 listeners [OFFICIAL].",
+   why:"Each release opens one pitch and one Release Radar week. Spacing songs uses every slot, and streams pile up on fewer tracks. Verified 5 Nov against Spotify's own pages: singles win on every official rule. The 4-8 week gap is advice only; no study measures it.",
+   steps:["8 songs = 8 singles, then an album that collects them (same recordings, streams stay on each song).","Release guide rewritten for the songs era (Beatport variant kept for electronic).","The new six-month plan (end of November) uses this model."], when:"Batch 4", l:"songs", who:"🎃"},
+  {id:"S5", t:"Promotion: our own network first, paid only by rule",
+   was:"Groover as the default paid route, 112 curators with an unchecked route. Premiere ladder built for EBM and techno.",
+   to:"Order per release: people we know, free routes, then a capped paid test judged on Spotify adds and saves at day 28. Paid premieres only under the rule you set (D9).",
+   src:"pitch research: Spotify says to \"be highly skeptical\" of paid consideration services [OFFICIAL]; real add rates about 4-7% [CLAIMED]; Side-Line, Bandcamp Daily, FluxFM Radar take small self-released acts [OFFICIAL].",
+   why:"Money is small and paid listens sit in the zone Spotify warns about.",
+   steps:["Your answer D9.","Rule written into the release guide."], when:"Batch 4", l:"both", who:"🙋", save:1},
+  {id:"S6", t:"TikTok: open early, measure others using the sound",
+   was:"Open TikTok 6-8 weeks before the bridge single. KPI: views.",
+   to:"Open a Personal account now and certify with a track already out. Main number: videos by others using the sound plus \"Add to Music App\" saves. Go or no-go after 8 weeks. AI images labelled or kept off.",
+   src:"TikTok research: certification needs a delivered track, up to 30 days [OFFICIAL]; Molchat Doma and Lebanon Hanover grew through others' videos [REPORTED]; MIDiA 26% follower-to-listener [REPORTED]; AI label rule since 24 Sep 2026 [OFFICIAL].",
+   why:"In our scene, songs broke through when other people used them, not through the artist's own posts. Opening early costs nothing.",
+   steps:["Your answer D8.","Checkpoint date on the board."], when:"Batch 3", l:"songs", who:"🙋"},
+  {id:"S7", t:"The next 2-3 months: our content language, now with evidence",
+   was:"No feed post since 10 July. Our own best: 0.77x views per follower. The kit had rules but no scene evidence behind them.",
+   to:"Four rules two independent passes agree on: a face or hands into the lens beats everything at every size; announcements and date cards are the floor; the biggest numbers come from other people (collabs started by the bigger account, others using the sound); daylight is allowed. Round one = 7 experiments on released tracks (face held shot in 3 places, hands process, venue-started collab, caption test, trial reel with 3 hooks, a 4-week rhythm container, face-first carousel). The song teaser waits for the public switch. You check the rates after each round; what works goes into the brand kit.",
+   src:"content-language research: 17 IG profiles read on the real pages (The Cure to Phantom Head), handles verified [SEEN]. Scene research: interviews 2025-26, 13 YouTube channels, TikTok, scene codes [SEEN/REPORTED]. Fable gate: approved with 2 fixes (gates/2026-11-05-content-language.md).",
+   why:"This is where most of the songs effort goes from now on. The evidence says the same thing twice from two methods, which is as solid as it gets without our own numbers.",
+   steps:["Your yes on round one (D18).","The 🎬 Socials chat runs it with the brand kit; rates logged against 0.77x.","After round one: keep, drop, or change; what works is written into the kit."], when:"Now, your focus", l:"songs", who:"🙋"},
+  {id:"S10", t:"Clip pack per song (approved 6 Nov)",
+   was:"Every reel, TikTok and Short cut by feel, each time; no record of which clip ran where.",
+   to:"Per single, decided once and stored in the release file: the 60 s TikTok window, the hook bar that opens every reel, the 3-8 s Canvas loop, the Shorts Preview window. Masters exported silent, the song added inside each app. The audio bar is fixed, the first frame changes per post, cuts mostly 8-20 s, never the same cut twice on one platform.",
+   src:"research-clip-pack-2026-11-06: Instagram originality page, TikTok integrity guidelines, YouTube Shorts help, Spotify Canvas pages [OFFICIAL]; gate 2026-11-06-gero-studies §4.",
+   why:"Your own clean clip is not penalised across platforms; the same clip twice on one platform is. Fixing the audio, not the shot, lets the sound page collect every use.",
+   steps:["Release-file fields + a small form on the release page.","Three questions to Symphonic: Shorts Previews on Starter, more than one TikTok clip per track, Content ID whitelist."], when:"✅ Done 6 Nov", l:"songs", who:"🎃"},
+  {id:"S11", t:"Activation: a new fan gets one message, once, per door (approved 6 Nov)",
+   was:"Someone follows on Spotify, subscribes on YouTube or joins the list, and nothing follows. Our own release lessons show 1.7% listener to follower.",
+   to:"One message per door, once: a welcome mail on sign-up, a pinned Artist Pick that names what comes next, the SC follower-only drop. Not a newsletter.",
+   src:"product-lens-2026-11-06 §5 (judgement, marked as such) + Gero's email-sequence and CTA rules; gate 2026-11-06-gero-studies §2.",
+   why:"Reach exists and the catch does not. This is the cheapest product rule we lack.",
+   steps:["Write the three messages in your voice (copy rules apply).","Wire them when each door opens (list tool, S4A, SC Pro)."], when:"✅ Done 6 Nov", l:"songs", who:"🎃"},
+  {id:"S8", t:"Booking: DJ the crowd the songs need",
+   was:"DJ outreach aimed at techno, EBM and dark disco nights. 148 contacts, nothing sent.",
+   to:"DJ the Berlin darkwave and post-punk nights now (Dark Mønday, Slaughterhouse nights). No live shows for now, DJ only. CTM by decision.",
+   src:"Berlin research: venue and call pages [OFFICIAL/REPORTED].",
+   why:"The room the songs launch into is built before they are public.",
+   steps:["D10.","The 🎧 Booking chat adjusts its list."], when:"Batch 3", l:"songs", who:"🙋"},
+  {id:"S9", t:"Use what we already pay for",
+   was:"SoundCloud Artist Pro used for Amplify only. The Verified by Spotify badge is not on our radar.",
+   to:"SoundCloud follower-only releases (follow to unlock), SC monetisation and the Support button checked, SC's included distribution compared with Symphonic for the songs. Aim the Spotify profile at the Verified badge.",
+   src:"listening research: Follower Exclusive since 30 Mar 2026 [OFFICIAL]; SC All-in-One since 30 Oct 2025 [REPORTED]; Verified by Spotify since 30 Apr 2026 [OFFICIAL].",
+   why:"Free tools we are paying for, and we may pay twice for distribution.",
+   steps:["One check by hand in SC and S4A.","No switch without your go."], when:"Batch 4", l:"both", who:"🎃", save:1}
+ ]},
+ {id:"fam-llm", k:"🤖", name:"3 · LLM system", note:"How Claude, the chats and the scheduled runs work for you: rules that load, fewer messages, one loop.", cards:[
+  {id:"L1", t:"Rules that load and rules that hold",
+   was:"Two memories (one from July), the memory index cut off at 25 KB so the newest rules don't load, no rules file where chats start, zero hooks. All 12 hard rules are prose.",
+   to:"One memory. A slim index. A short parent rules file. The app enforces the hard rules: no push, no Serum file edits, ask before moving files or reading Gmail. Three hooks.",
+   src:"facts §10; Claude Code docs (index limit 200 lines or 25 KB, hooks and permissions are enforced, prose can be skipped); 5 drafts ready in plans/strategy/drafts/.",
+   why:"The cheapest fix for a wrong action is a rule that cannot be skipped. Side chats reading July rules caused wrong answers.",
+   steps:["Your answer D12.","One draft at a time, backup and undo.","One-time /doctor check."], when:"✅ Done 6 Nov", l:"both", who:"🎃"},
+  {id:"L2", t:"One daily brief instead of six reports",
+   was:"About 6 chat reports and 2 popups a day. Red warnings repeat for days (8 days, 9 nights).",
+   to:"One brief: problems first, then Now, targets, what ran. Session reports go to files. Popups only for real red. A red line that repeats twice becomes a ticket.",
+   src:"system-loop research rec 1; facts §9; the Socials digest already reads most inputs.",
+   why:"You are the bottleneck (32 tickets, 38 open questions). Repeated lines hide real problems.",
+   steps:["Your answer D13.","Run new and old side by side 3 days, then turn the old off."], when:"✅ Done 6 Nov", l:"both", who:"🤖"},
+  {id:"L3", t:"One loop: goal, ticket, work, number, decision",
+   was:"Goals in 4+ places. Tickets without a number. Decisions asked in many chats and merged by hand. Google Sheet probably not pushed since about 1 Sep.",
+   to:"All goals in one file with review dates. Every ticket names the number it moves. A weekly decision page writes your answers back into goals, tickets and handovers.",
+   src:"system-loop research §3 (10 breaks with evidence) and §5 (one-loop design).",
+   why:"A decision should change a file once and never be asked twice. You see which work moves which number.",
+   steps:["D1-D4 fill the goals file.","Number field on both boards.","Decision page with write-back.","Sheet: retire or push weekly."], when:"✅ Done 6 Nov", l:"both", who:"🎃"},
+  {id:"L4", t:"Claude only where judgement is needed",
+   was:"52 scheduled Claude runs a week, about 24 with no decision in them. 25 dead task folders. The 13:00 SC retry skipped on every run that left a note.",
+   to:"Plain jobs (refreshes, gates, stats) move to launchd scripts. Claude runs stay for sessions and judgement. The IG task fires only on its 4 days. Dead folders removed after a dry-run list.",
+   src:"system-loop research §2 + rec 2; task run history.",
+   why:"Fewer chats in your sidebar, fewer permission stalls, same data, fewer tokens.",
+   steps:["Dry-run list for your yes.","The IG and SC chats confirm their part.","Watch 3 days."], when:"✅ Done 6 Nov", l:"both", who:"🎃", save:1},
+  {id:"L5", t:"Agents read true facts",
+   was:"63 out-of-date lines (\"three EPs\", \"songs from 2027\", old dates). The IG strategy doc says saves are a top signal and that our \"Your Algorithm\" setting routes our posts. Unsourced SC numbers (\"Discorank\", \"3x Liked By\").",
+   to:"The 26 lines agents read are fixed first. Old strategy docs get a \"history\" banner. Algorithm beliefs follow the 5 Nov update. Docs next to the automation are edited only with your yes.",
+   src:"fixlist (63 rows); social and listening research top tables (belief vs source). The algorithm file already has the 5 Nov update.",
+   why:"Agents plan from these files. Stale facts make confident wrong answers.",
+   steps:["Your yes on the list.","One side chat, one commit."], when:"Batch 1", l:"both", who:"🎃"},
+  {id:"L6", t:"A review rhythm, so this happens on schedule",
+   was:"The September plan slipped and its checkpoints were never written. This review came after two months of drift.",
+   to:"A 15-minute check on the 1st of each month (stale lines, rules, spend). This deep review every 3 months. The new six-month plan at the end of November with written checkpoints.",
+   src:"facts §1; system-loop rec 8.",
+   why:"Drift is caught in weeks instead of months, and this big review stays a few-times-a-year job.",
+   steps:["Monthly upkeep gets the check.","Next deep review: early Feb 2027."], when:"Batch 4", l:"both", who:"🤖"}
+ ]},
+ {id:"fam-maint", k:"🔧", name:"4 · Maintenance", note:"Code, cost, data and backups. Built on the full code map (61,000 lines, 1,136 tests green) and the cost and API audit.", cards:[
+  {id:"M1", t:"One spend page with early warnings",
+   was:"Three ledgers. Gap Radar checks: $32.68 for 51 calls this month (90% of Claude spend). HikerAPI ran dry 27 Oct to 1 Nov. 82 image renders with no cost record, no OpenAI cap. The dispatcher says \"$5 ≈ 4 months\"; real burn is about 26 days.",
+   to:"One spend script, one spend line in the brief, warnings before zero: Claude credit at 70%, OpenAI $15 a month, HikerAPI under $10. A cost cap per Gap Radar run.",
+   src:"system-loop cost table; claude_spend.json (checked).",
+   why:"Money and supply problems show up a month early instead of when something stops.",
+   steps:["Read-only spend script.","Raw renders logged.","Dispatcher text fixed by the IG chat."], when:"Batch 1", l:"both", who:"🎃", save:1},
+  {id:"M2", t:"Stop calls nobody reads, measure what matters",
+   was:"Spotify API followers and popularity empty on all 36 snapshots since 1 Oct. SC follower geography fetched daily with no reader. The daily stats still skip Instagram (checked), so the number one target has one reading.",
+   to:"Drop the empty Spotify fields and the unread SC fetch. Add a 1-call IG follower read (about $0.03 a month) and IG own-post insights from the Graph token we already refresh.",
+   src:"system-loop §1; code map rec 4.",
+   why:"Fewer wasted calls, and the main goal and the reel tests get real data.",
+   steps:["One ticket per call.","SC part via the SC chat."], when:"Batch 1", l:"both", who:"🎃", save:1},
+  {id:"M3", t:"Beatport add-on",
+   was:"$10 a month for Beatport, which new releases no longer use. Renews on the 8th (checked).",
+   to:"Ask Symphonic if old releases stay live without it. Cancel if yes.",
+   src:"system-loop rec 5; Symphonic account memory.",
+   why:"The one clear money saving: $120 a year.",
+   steps:["One Symphonic ticket.","D14."], when:"Now (8 Nov)", l:"elec", who:"🙋", save:1},
+  {id:"M4", t:"Big state files rotate",
+   was:"The engagement log has been over its size cap for 8 days with a daily warning. 120 backup files and 1,336 contacts tracked in git.",
+   to:"✅ Done 7 Nov: backup files kept 14 days, then the Trash (20 files, 5.7 MB, undo script); monthly in the upkeep. The engagement log stays whole for now: SoundCloud reads its full history.",
+   src:"code map rec 7; dispatch log.",
+   why:"Faster sessions, smaller git, less personal data in history. Engagement state, so the IG and SC owners agree first.",
+   steps:["Proposal to the owners.","Dry run, rotate, test the readers."], when:"Batch 4", l:"both", who:"🎃"},
+  {id:"M5", t:"Park the code nobody runs (electronic stats stay)",
+   was:"About 13,000 lines dormant or electronic-only: old enrichers, curators, promo shortlists, email outreach, duplicate logo scripts.",
+   to:"Only code that has not run since spring moves to an archive folder, with its tests. Everything that feeds the stats, the Release Manager or the electronic catalogue stays. Batch 1 makes the list only; nothing moves until your yes.",
+   src:"code map big table + rec 5.",
+   why:"Less for every agent and every audit to read.",
+   steps:["Dry-run list (old, new, reason) for your yes.","Move, test, undo script."], when:"Batch 1", l:"elec", who:"🎃"},
+  {id:"M6", t:"One branch, all code in git, a current Python",
+   was:"Daily work on a side branch 91 commits ahead of main, 17 stale branches. music-tools and youtube/tools outside git. Every scheduled job on Python 3.9 (end of life Oct 2025).",
+   to:"Merge to main and work there. Code folders into git. Python 3.12 in a pinned environment. Offsite copy only after the history scrub.",
+   src:"code map rec 6; CLAUDE.md publication rule.",
+   why:"One disk or one bad merge can lose months of work today.",
+   steps:["D16.","Python move as its own ticket, each job tested."], when:"Batch 4", l:"both", who:"🎃"},
+  {id:"M7", t:"Release Manager 2.0: refactor it into the home of the loop",
+   was:"One 5,685-line file with 142 routes and 24 pages, 7 with no data change since 1 Oct. Built around the electronic-era release flow. The scoreboard, decisions, spend and songs live elsewhere or nowhere.",
+   to:"RM 2.0, built while we work: split by area, unused pages removed, and a home that shows the scoreboard, Now, and the decisions waiting on you. New pages for Spend (M1) and Decisions (L3) are built straight into the new structure. RM stays usable at every step.",
+   src:"code map RM table + rec 8; system-loop §5 (one-loop design); facts §11D and §12 question 7.",
+   why:"The loop needs one place to live, and that place already exists. Parallel chats stop clashing in one giant file.",
+   steps:["Batch 1: a map of every RM page, its data and both lanes, so D17 is decided with the facts.","You name the pages you use and what the home should show (D17).","A one-page map of RM 2.0 for your yes.","Refactor one area at a time, tests green after each.","New pages land inside the new structure, not on top of the old one."], when:"✅ Dry run done 6 Nov; slice 1 waits for your yes", l:"both", who:"🎃"},
+  {id:"M10", t:"Review without folders (approved 6 Nov, you test it when built)",
+   was:"Renders would sit in folders; the final file is a guess. Gero shipped silent 'approved' files that way.",
+   to:"Every render, cover and caption draft is an item with its file hash and a state: draft, needs you, approved, change, dropped, superseded, used. Your approval is bound to the exact file. A Review page in RM plus a phone page like the outreach one; checks shown as chips. The agent never posts, moves, deletes or approves.",
+   src:"gero-cp-deep-dive-2026-11-06 §C; Gero Video Desk spec; the IoS outreach-page pattern; gate §1.",
+   why:"What you post is provably the file you approved, from the desk or the phone.",
+   steps:["Data model in the release file.","RM /review page + phone page.","You test it on the first round-one cuts."], when:"✅ Done 6 Nov", l:"both", who:"🎃"},
+  {id:"M11", t:"Data accuracy, six habits + the new dashboard (approved 6 Nov)",
+   was:"Metrics defined in three places; a failed read looks like a zero; two freshness rules; the verdict can print ON PACE with a red card.",
+   to:"One registry for every metric; a source stamp on every reading; 'skipped, because' instead of zero; one freshness red line; monthly numbers frozen at the cutoff; any red = off pace. The stats page rebuilt: verdict first, freshness strip, six numbers with 🤖🎃🙋 per source, Marcellus numerals, Jost labels, warm black and platinum; never a zero that means 'not collected'.",
+   src:"gero-cp-deep-dive-2026-11-06 §A-B (Gero registry parity test, our score_board.py:192-199 checked); gate §1.",
+   why:"A number you can trust at a glance, and one that looks like ours.",
+   steps:["Registry + readers + tests (S1 grows into this).","The page redesign on the brand brief."], when:"✅ Part 1 done 6 Nov (page rebuild = RM 2.0)", l:"both", who:"🎃"},
+  {id:"M12", t:"Ticket shape from Gero, not the platform (approved 6 Nov)",
+   was:"Tickets without a metric; priority and bucket say the same thing twice; 10 open tickets have no bucket; tests do not know the fields; nothing enforces the 3-now cap.",
+   to:"Every ticket: metric (a targets.json key or 'none' with a reason), 'done means', updated date; one priority axis; tests that enforce the fields and the cap. No move to GitHub issues; a one-way mirror for the phone later; PR flow with CI only after the history scrub.",
+   src:"gero-github-tickets-2026-11-06 (gh read-only: 39 issues, 30 cite a metric; collector dead since Oct); our boards checked; gate §3.",
+   why:"The tie between work and number only works if the fields exist and something checks them.",
+   steps:["Fields + tests on both boards (L3).","Studio buckets from the Studio chat."], when:"✅ Done 6 Nov", l:"both", who:"🎃"},
+  {id:"M8", t:"Backups with room",
+   was:"The Intenso drive is full (3 GB free). DONE, Doom and Men Machine have no current copy.",
+   to:"A new 4 TB drive plus one cloud option, then a monthly check.",
+   src:"backups research [OFFICIAL price pages].",
+   why:"The studio projects are the work itself.",
+   steps:["D15.","First full copy."], when:"Batch 3", l:"both", who:"🙋"},
+  {id:"M9", t:"One file per release, one date",
+   was:"The next release lives in another release's file with an old date written in 7+ places.",
+   to:"One file per release that every doc and page reads its date from. Songs are not tracked (your call).",
+   src:"code map rec 3; facts §7.",
+   why:"Stops the date drift agents keep repeating.",
+   steps:["New file with a backup of the old one.","Docs point to it."], when:"Batch 1", l:"both", who:"🎃"}
+ ]}
+];
+const LN={songs:["songs","Songs"],elec:["elec","Electronic"],both:["both","Both"]};
+const host=document.getElementById("families");
+let current="all", openAll=false;
+function esc(s){return String(s).replace(/&(?!amp;)/g,"&amp;").replace(/</g,"&lt;");}
+function match(c,f){if(f==="all")return true;if(f.indexOf("Batch")===0)return c.when===f;if(f==="save")return !!c.save;return c.l===f;}
+function render(){
+  host.innerHTML="";
+  F.forEach(fam=>{
+    const cards=fam.cards.filter(c=>match(c,current));
+    const sec=document.createElement("section");sec.className="family";sec.id=fam.id;
+    sec.innerHTML='<div class="family-head"><h2>'+fam.k+' '+fam.name+'</h2><span class="count">'+fam.cards.length+' changes</span></div><p>'+fam.note+'</p>';
+    const list=document.createElement("div");list.className="cards";
+    if(!cards.length){list.innerHTML='<div class="empty">Nothing here for this filter. Batch 2 is decisions only.</div>';}
+    cards.forEach(c=>{
+      const d=document.createElement("details");d.className="card";if(openAll)d.open=true;
+      const chips='<span class="chip '+LN[c.l][0]+'">'+LN[c.l][1]+'</span>'+(c.save?'<span class="chip save">saves</span>':'');
+      d.innerHTML='<summary><div class="top"><div class="title"><span class="id">'+c.id+'</span>'+c.who+' '+esc(c.t)+'</div><div class="chips">'+chips+'</div></div>'+
+        '<dl class="ft"><dt>Was</dt><dd class="was">'+esc(c.was)+'</dd><dt>Change to</dt><dd>'+esc(c.to)+'</dd><dt>Order</dt><dd>'+esc(c.when)+'</dd></dl><span class="more">Based on, why, steps ▾</span></summary>'+
+        '<div class="body"><dl class="ft"><dt>Based on</dt><dd>'+esc(c.src)+'</dd><dt>Why</dt><dd>'+esc(c.why)+'</dd><dt>Steps</dt><dd><ol>'+c.steps.map(s=>'<li>'+esc(s)+'</li>').join("")+'</ol></dd></dl></div>';
+      list.appendChild(d);
+    });
+    sec.appendChild(list);host.appendChild(sec);
+  });
+}
+document.querySelectorAll(".filters button[data-f]").forEach(b=>b.addEventListener("click",()=>{
+  document.querySelectorAll(".filters button[data-f]").forEach(x=>x.setAttribute("aria-pressed",x===b?"true":"false"));
+  current=b.dataset.f;render();
+}));
+const oa=document.getElementById("openall");
+oa.addEventListener("click",()=>{openAll=!openAll;oa.setAttribute("aria-pressed",openAll?"true":"false");oa.textContent=openAll?"Close all":"Open all";render();});
+render();
+</script>

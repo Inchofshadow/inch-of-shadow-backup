@@ -1,0 +1,594 @@
+- generic [ref=e2]:
+  - banner [ref=e4]:
+    - generic [ref=e6]:
+      - generic [ref=e7]:
+        - button "Guide" [ref=e9] [cursor=pointer]:
+          - generic [ref=e12]:
+            - img
+        - generic [ref=e13]:
+          - link "YouTube Home" [ref=e14] [cursor=pointer]:
+            - /url: /
+            - generic [ref=e19]:
+              - img
+          - generic [ref=e20]: DE
+        - button "Skip navigation" [ref=e24] [cursor=pointer]:
+          - generic [ref=e25]: Skip navigation
+      - search [ref=e30]:
+        - generic [ref=e31]:
+          - combobox "Search" [expanded] [ref=e34]
+          - button "Search" [ref=e35] [cursor=pointer]:
+            - generic [ref=e38]:
+              - img
+      - generic [ref=e40]:
+        - button "Settings" [ref=e45] [cursor=pointer]:
+          - generic [ref=e48]:
+            - img
+        - link "Sign in" [ref=e51] [cursor=pointer]:
+          - /url: https://accounts.google.com/ServiceLogin?service=youtube&uilel=3&passive=true&continue=https%3A%2F%2Fwww.youtube.com%2Fsignin%3Faction_handle_signin%3Dtrue%26app%3Ddesktop%26hl%3Den%26next%3Dhttps%253A%252F%252Fwww.youtube.com%252F%2540invertedaudio%252Fvideos&hl=en&ec=65620
+          - generic [ref=e55]:
+            - img
+          - generic [ref=e56]: Sign in
+  - navigation [ref=e60]:
+    - generic [ref=e61]:
+      - link "Home" [ref=e63] [cursor=pointer]:
+        - /url: /
+        - generic [ref=e66]:
+          - img
+        - generic [ref=e67]: Home
+      - link "Shorts" [ref=e69] [cursor=pointer]:
+        - /url: /shorts/
+        - generic [ref=e72]:
+          - img
+        - generic [ref=e73]: Shorts
+      - link "Subscriptions" [ref=e75] [cursor=pointer]:
+        - /url: /feed/subscriptions
+        - generic [ref=e78]:
+          - img
+        - generic [ref=e79]: Subscriptions
+      - link "You" [ref=e81] [cursor=pointer]:
+        - /url: /feed/you
+        - generic [ref=e84]:
+          - img
+        - generic [ref=e85]: You
+  - generic [ref=e86]:
+    - main [ref=e87]:
+      - generic [ref=e94]:
+        - generic [ref=e110]:
+          - heading "Inverted Audio" [level=1] [ref=e112]
+          - generic [ref=e113]:
+            - group [ref=e114]:
+              - generic [ref=e115]: "@invertedaudio"
+            - generic [ref=e116]: •
+            - group [ref=e117]:
+              - generic "24.7 thousand subscribers" [ref=e118]: 24.7K subscribers
+              - generic [ref=e119]: •
+              - generic [ref=e120]: 2.7K videos
+          - generic [ref=e122] [cursor=pointer]:
+            - generic [ref=e123]: Electronic Music Specialist Magazine & Record Store
+            - button "Description. Electronic Music Specialist Magazine & Record Store...tap for more." [ref=e124]:
+              - generic [ref=e125]: ...more
+          - generic [ref=e126]:
+            - link "inverted-audio.com" [ref=e129] [cursor=pointer]:
+              - /url: https://www.youtube.com/redirect?event=channel_header&redir_token=QUFFLUhqa1pyZ2U4MDdVZ01fd2F4ZW1WWHNMdlQ2U2hqd3xBQ3Jtc0ttWE1TQTVjMTh5VFo0YUlNMEFOVVBIN3N6NzYwSnhTZ1VxcThfdjM1eW9oTUowcjlKUmZ1WkNCX0l2a3pURmNMaUVBOGRFaTJQSU15TkRIa2JWazVNTFd5VkV4TnhLUmRvYlYtR3I1TFVPVWROQTh1bw&q=https%3A%2F%2Fwww.inverted-audio.com
+            - button "and 7 more links" [ref=e132] [cursor=pointer]
+          - generic [ref=e133]:
+            - button "Subscribe" [ref=e136] [cursor=pointer]:
+              - generic [ref=e137]: Subscribe
+            - link "Community" [ref=e143] [cursor=pointer]:
+              - /url: /@invertedaudio/community
+              - generic [ref=e147]:
+                - img
+              - generic [ref=e148]: Community
+        - tablist [ref=e155]:
+          - tablist [ref=e159]:
+            - tab "Home" [ref=e160] [cursor=pointer]:
+              - generic [ref=e161]: Home
+            - tab "Videos" [selected] [ref=e162] [cursor=pointer]:
+              - generic [ref=e163]: Videos
+            - tab "Shorts" [ref=e164] [cursor=pointer]:
+              - generic [ref=e165]: Shorts
+            - tab "Playlists" [ref=e166] [cursor=pointer]:
+              - generic [ref=e167]: Playlists
+            - tab "Posts" [ref=e168] [cursor=pointer]:
+              - generic [ref=e169]: Posts
+            - tab "Store" [ref=e170] [cursor=pointer]:
+              - generic [ref=e171]: Store
+            - button "Search" [ref=e175] [cursor=pointer]:
+              - generic [ref=e178]:
+                - img
+      - generic [ref=e184]:
+        - tablist [ref=e187]:
+          - tab "Latest" [selected] [ref=e191] [cursor=pointer]:
+            - generic [ref=e193]: Latest
+          - tab "Popular" [ref=e200] [cursor=pointer]:
+            - generic [ref=e202]: Popular
+          - tab "Oldest" [ref=e209] [cursor=pointer]:
+            - generic [ref=e211]: Oldest
+        - generic [ref=e215]:
+          - generic [ref=e219]:
+            - link [ref=e222] [cursor=pointer]:
+              - /url: /watch?v=ad6dcT4ErMw
+              - img [ref=e224]
+              - img [ref=e227]:
+                - generic [ref=e228]: 6:12
+              - generic:
+                - generic: Now playing
+                - generic:
+                  - img
+            - generic [ref=e229] [cursor=pointer]:
+              - generic [ref=e230]:
+                - heading "Store Selects 005 // Giegling, Variant, Hoavi, Florian TM Zeisig, Paperclip Minimiser, PST, Maurizio 6 minutes, 12 seconds" [level=3] [ref=e231]:
+                  - link "Store Selects 005 // Giegling, Variant, Hoavi, Florian TM Zeisig, Paperclip Minimiser, PST, Maurizio 6 minutes, 12 seconds" [ref=e232]:
+                    - /url: /watch?v=ad6dcT4ErMw
+                    - generic [ref=e233]: Store Selects 005 // Giegling, Variant, Hoavi, Florian TM Zeisig, Paperclip Minimiser, PST, Maurizio
+                - generic [ref=e236]:
+                  - generic [ref=e237]: 59 views
+                  - generic [ref=e238]: •10 hours ago
+              - button "Action menu" [ref=e241]:
+                - generic [ref=e244]:
+                  - img
+          - generic [ref=e248]:
+            - link [ref=e251] [cursor=pointer]:
+              - /url: /watch?v=UXqHqqGmNf4
+              - img [ref=e253]
+              - img [ref=e256]:
+                - generic [ref=e259]:
+                  - img
+                - generic [ref=e260]: 9:12
+              - generic:
+                - generic: Now playing
+                - generic:
+                  - img
+            - generic [ref=e261] [cursor=pointer]:
+              - generic [ref=e262]:
+                - heading "Monolake - Tangent II [Field Records] 9 minutes, 12 seconds" [level=3] [ref=e263]:
+                  - link "Monolake - Tangent II [Field Records] 9 minutes, 12 seconds" [ref=e264]:
+                    - /url: /watch?v=UXqHqqGmNf4
+                    - generic [ref=e265]: Monolake - Tangent II [Field Records]
+                - generic [ref=e268]:
+                  - generic [ref=e269]: 419 views
+                  - generic [ref=e270]: •2 days ago
+              - button "Action menu" [ref=e273]:
+                - generic [ref=e276]:
+                  - img
+          - generic [ref=e280]:
+            - link [ref=e283] [cursor=pointer]:
+              - /url: /watch?v=33ZfX8tK07E
+              - img [ref=e285]
+              - img [ref=e288]:
+                - generic [ref=e289]: 5:14
+              - generic:
+                - generic: Now playing
+                - generic:
+                  - img
+            - generic [ref=e290] [cursor=pointer]:
+              - generic [ref=e291]:
+                - heading "Store Selects 004 // Lb Honne, Soundtrek, Farben, Mad Rider, Jonnnah 5 minutes, 14 seconds" [level=3] [ref=e292]:
+                  - link "Store Selects 004 // Lb Honne, Soundtrek, Farben, Mad Rider, Jonnnah 5 minutes, 14 seconds" [ref=e293]:
+                    - /url: /watch?v=33ZfX8tK07E
+                    - generic [ref=e294]: Store Selects 004 // Lb Honne, Soundtrek, Farben, Mad Rider, Jonnnah
+                - generic [ref=e297]:
+                  - generic [ref=e298]: 156 views
+                  - generic [ref=e299]: •13 days ago
+              - button "Action menu" [ref=e302]:
+                - generic [ref=e305]:
+                  - img
+          - generic [ref=e309]:
+            - link [ref=e312] [cursor=pointer]:
+              - /url: /watch?v=qhuczBr9t3k
+              - img [ref=e314]
+              - img [ref=e317]:
+                - generic [ref=e320]:
+                  - img
+                - generic [ref=e321]: 6:17
+              - generic:
+                - generic: Now playing
+                - generic:
+                  - img
+            - generic [ref=e322] [cursor=pointer]:
+              - generic [ref=e323]:
+                - heading "Abul Mogard and Rafael Anton Irisarri - In The Eastern Wild [Black Knoll] 6 minutes, 17 seconds" [level=3] [ref=e324]:
+                  - link "Abul Mogard and Rafael Anton Irisarri - In The Eastern Wild [Black Knoll] 6 minutes, 17 seconds" [ref=e325]:
+                    - /url: /watch?v=qhuczBr9t3k
+                    - generic [ref=e326]: Abul Mogard and Rafael Anton Irisarri - In The Eastern Wild [Black Knoll]
+                - generic [ref=e329]:
+                  - generic [ref=e330]: 200 views
+                  - generic [ref=e331]: •2 weeks ago
+              - button "Action menu" [ref=e334]:
+                - generic [ref=e337]:
+                  - img
+          - generic [ref=e341]:
+            - link [ref=e344] [cursor=pointer]:
+              - /url: /watch?v=24_KnJlF53U
+              - img [ref=e346]
+              - img [ref=e349]:
+                - generic [ref=e352]:
+                  - img
+                - generic [ref=e353]: 5:45
+              - generic:
+                - generic: Now playing
+                - generic:
+                  - img
+            - generic [ref=e354] [cursor=pointer]:
+              - generic [ref=e355]:
+                - heading "PST - Kognitiv Discodans [Kontra-Musik] 5 minutes, 45 seconds" [level=3] [ref=e356]:
+                  - link "PST - Kognitiv Discodans [Kontra-Musik] 5 minutes, 45 seconds" [ref=e357]:
+                    - /url: /watch?v=24_KnJlF53U
+                    - generic [ref=e358]: PST - Kognitiv Discodans [Kontra-Musik]
+                - generic [ref=e361]:
+                  - generic [ref=e362]: 372 views
+                  - generic [ref=e363]: •2 weeks ago
+              - button "Action menu" [ref=e366]:
+                - generic [ref=e369]:
+                  - img
+          - generic [ref=e373]:
+            - link [ref=e376] [cursor=pointer]:
+              - /url: /watch?v=7C234Vhr9TA
+              - img [ref=e378]
+              - img [ref=e381]:
+                - generic [ref=e382]: 10:52
+              - generic:
+                - generic: Now playing
+                - generic:
+                  - img
+            - generic [ref=e383] [cursor=pointer]:
+              - generic [ref=e384]:
+                - heading "Store Talk 002 // Juergen Vonbank on Night Defined Recordings 10 minutes, 52 seconds" [level=3] [ref=e385]:
+                  - link "Store Talk 002 // Juergen Vonbank on Night Defined Recordings 10 minutes, 52 seconds" [ref=e386]:
+                    - /url: /watch?v=7C234Vhr9TA
+                    - generic [ref=e387]: Store Talk 002 // Juergen Vonbank on Night Defined Recordings
+                - generic [ref=e390]:
+                  - generic [ref=e391]: 93 views
+                  - generic [ref=e392]: •2 weeks ago
+              - button "Action menu" [ref=e395]:
+                - generic [ref=e398]:
+                  - img
+          - generic [ref=e402]:
+            - link [ref=e405] [cursor=pointer]:
+              - /url: /watch?v=rWIwAuBPa7M
+              - img [ref=e407]
+              - img [ref=e410]:
+                - generic [ref=e413]:
+                  - img
+                - generic [ref=e414]: 6:41
+              - generic:
+                - generic: Now playing
+                - generic:
+                  - img
+            - generic [ref=e415] [cursor=pointer]:
+              - generic [ref=e416]:
+                - heading "Tobias. - Solid State [Logistic Records] 6 minutes, 41 seconds" [level=3] [ref=e417]:
+                  - link "Tobias. - Solid State [Logistic Records] 6 minutes, 41 seconds" [ref=e418]:
+                    - /url: /watch?v=rWIwAuBPa7M
+                    - generic [ref=e419]: Tobias. - Solid State [Logistic Records]
+                - generic [ref=e422]:
+                  - generic [ref=e423]: 239 views
+                  - generic [ref=e424]: •3 weeks ago
+              - button "Action menu" [ref=e427]:
+                - generic [ref=e430]:
+                  - img
+          - generic [ref=e434]:
+            - link [ref=e437] [cursor=pointer]:
+              - /url: /watch?v=GTSy0-zLuC8
+              - img [ref=e439]
+              - img [ref=e442]:
+                - generic [ref=e445]:
+                  - img
+                - generic [ref=e446]: 3:42
+              - generic:
+                - generic: Now playing
+                - generic:
+                  - img
+            - generic [ref=e447] [cursor=pointer]:
+              - generic [ref=e448]:
+                - heading "IADI - Synapse [Neo Life] 3 minutes, 42 seconds" [level=3] [ref=e449]:
+                  - link "IADI - Synapse [Neo Life] 3 minutes, 42 seconds" [ref=e450]:
+                    - /url: /watch?v=GTSy0-zLuC8
+                    - generic [ref=e451]: IADI - Synapse [Neo Life]
+                - generic [ref=e454]:
+                  - generic [ref=e455]: 230 views
+                  - generic [ref=e456]: •1 month ago
+              - button "Action menu" [ref=e459]:
+                - generic [ref=e462]:
+                  - img
+          - generic [ref=e466]:
+            - link [ref=e469] [cursor=pointer]:
+              - /url: /watch?v=lMOPNZE6qM8
+            - generic [ref=e471] [cursor=pointer]:
+              - generic [ref=e472]:
+                - heading "Store Selects 003 // Paperclip Minimiser, P Relief, C3D-E, Flørist, Priori, Tammo Hesselink, Gafael 6 minutes, 5 seconds" [level=3] [ref=e473]:
+                  - link "Store Selects 003 // Paperclip Minimiser, P Relief, C3D-E, Flørist, Priori, Tammo Hesselink, Gafael 6 minutes, 5 seconds" [ref=e474]:
+                    - /url: /watch?v=lMOPNZE6qM8
+                    - generic [ref=e475]: Store Selects 003 // Paperclip Minimiser, P Relief, C3D-E, Flørist, Priori, Tammo Hesselink, Gafael
+                - generic [ref=e478]:
+                  - generic [ref=e479]: 483 views
+                  - generic [ref=e480]: •1 month ago
+              - button "Action menu" [ref=e483]:
+                - generic [ref=e486]:
+                  - img
+          - generic [ref=e490]:
+            - link [ref=e493] [cursor=pointer]:
+              - /url: /watch?v=hu4p-P4oEAs
+            - generic [ref=e495] [cursor=pointer]:
+              - generic [ref=e496]:
+                - heading "11:68PM - Solid State [Craft Services] 5 minutes, 42 seconds" [level=3] [ref=e497]:
+                  - link "11:68PM - Solid State [Craft Services] 5 minutes, 42 seconds" [ref=e498]:
+                    - /url: /watch?v=hu4p-P4oEAs
+                    - generic [ref=e499]: 11:68PM - Solid State [Craft Services]
+                - generic [ref=e502]:
+                  - generic [ref=e503]: 292 views
+                  - generic [ref=e504]: •1 month ago
+              - button "Action menu" [ref=e507]:
+                - generic [ref=e510]:
+                  - img
+          - generic [ref=e514]:
+            - link [ref=e517] [cursor=pointer]:
+              - /url: /watch?v=ujHm0aKSleI&pp=0gcJCdQKAYcqIYzv
+            - generic [ref=e519] [cursor=pointer]:
+              - generic [ref=e520]:
+                - heading "Store Selects 002 // Nathan Fake, Markmechanik, Quelza, Atom™, Jürgen Paape, Baaz, Iron Curtis 6 minutes" [level=3] [ref=e521]:
+                  - link "Store Selects 002 // Nathan Fake, Markmechanik, Quelza, Atom™, Jürgen Paape, Baaz, Iron Curtis 6 minutes" [ref=e522]:
+                    - /url: /watch?v=ujHm0aKSleI&pp=0gcJCdQKAYcqIYzv
+                    - generic [ref=e523]: Store Selects 002 // Nathan Fake, Markmechanik, Quelza, Atom™, Jürgen Paape, Baaz, Iron Curtis
+                - generic [ref=e526]:
+                  - generic [ref=e527]: 217 views
+                  - generic [ref=e528]: •1 month ago
+              - button "Action menu" [ref=e531]:
+                - generic [ref=e534]:
+                  - img
+          - generic [ref=e538]:
+            - link [ref=e541] [cursor=pointer]:
+              - /url: /watch?v=abHKYocg5g4
+            - generic [ref=e543] [cursor=pointer]:
+              - generic [ref=e544]:
+                - heading "Brizman and Neumann - Morning Mayhem [Adam's Bite] 6 minutes, 42 seconds" [level=3] [ref=e545]:
+                  - link "Brizman and Neumann - Morning Mayhem [Adam's Bite] 6 minutes, 42 seconds" [ref=e546]:
+                    - /url: /watch?v=abHKYocg5g4
+                    - generic [ref=e547]: Brizman and Neumann - Morning Mayhem [Adam's Bite]
+                - generic [ref=e550]:
+                  - generic [ref=e551]: 216 views
+                  - generic [ref=e552]: •1 month ago
+              - button "Action menu" [ref=e555]:
+                - generic [ref=e558]:
+                  - img
+          - generic [ref=e562]:
+            - link [ref=e565] [cursor=pointer]:
+              - /url: /watch?v=coxnNYZrS6I
+            - generic [ref=e567] [cursor=pointer]:
+              - generic [ref=e568]:
+                - heading "Thomas + James - Real-Time [Alt Dub] 7 minutes, 35 seconds" [level=3] [ref=e569]:
+                  - link "Thomas + James - Real-Time [Alt Dub] 7 minutes, 35 seconds" [ref=e570]:
+                    - /url: /watch?v=coxnNYZrS6I
+                    - generic [ref=e571]: Thomas + James - Real-Time [Alt Dub]
+                - generic [ref=e574]:
+                  - generic [ref=e575]: 387 views
+                  - generic [ref=e576]: •1 month ago
+              - button "Action menu" [ref=e579]:
+                - generic [ref=e582]:
+                  - img
+          - generic [ref=e586]:
+            - link [ref=e589] [cursor=pointer]:
+              - /url: /watch?v=Kb8bwI4a2EA&pp=0gcJCdQKAYcqIYzv
+            - generic [ref=e591] [cursor=pointer]:
+              - generic [ref=e592]:
+                - heading "Store Talk 001 // Moiré on RISK 7 minutes, 6 seconds" [level=3] [ref=e593]:
+                  - link "Store Talk 001 // Moiré on RISK 7 minutes, 6 seconds" [ref=e594]:
+                    - /url: /watch?v=Kb8bwI4a2EA&pp=0gcJCdQKAYcqIYzv
+                    - generic [ref=e595]: Store Talk 001 // Moiré on RISK
+                - generic [ref=e598]:
+                  - generic [ref=e599]: 270 views
+                  - generic [ref=e600]: •1 month ago
+              - button "Action menu" [ref=e603]:
+                - generic [ref=e606]:
+                  - img
+          - generic [ref=e610]:
+            - link [ref=e613] [cursor=pointer]:
+              - /url: /watch?v=bR329uh6kY4
+            - generic [ref=e615] [cursor=pointer]:
+              - generic [ref=e616]:
+                - heading "Store Selects 001 // Intertoto, Rhythm & Sound, Short Span, Kino Disk, Robert Henke, Aphex Twin 7 minutes, 45 seconds" [level=3] [ref=e617]:
+                  - link "Store Selects 001 // Intertoto, Rhythm & Sound, Short Span, Kino Disk, Robert Henke, Aphex Twin 7 minutes, 45 seconds" [ref=e618]:
+                    - /url: /watch?v=bR329uh6kY4
+                    - generic [ref=e619]: Store Selects 001 // Intertoto, Rhythm & Sound, Short Span, Kino Disk, Robert Henke, Aphex Twin
+                - generic [ref=e622]:
+                  - generic [ref=e623]: 297 views
+                  - generic [ref=e624]: •1 month ago
+              - button "Action menu" [ref=e627]:
+                - generic [ref=e630]:
+                  - img
+          - generic [ref=e634]:
+            - link [ref=e637] [cursor=pointer]:
+              - /url: /watch?v=hh-M8lNxbIc
+            - generic [ref=e639] [cursor=pointer]:
+              - generic [ref=e640]:
+                - heading "Andre Zimmer - Broken News [Craigie Knowes] 7 minutes, 2 seconds" [level=3] [ref=e641]:
+                  - link "Andre Zimmer - Broken News [Craigie Knowes] 7 minutes, 2 seconds" [ref=e642]:
+                    - /url: /watch?v=hh-M8lNxbIc
+                    - generic [ref=e643]: Andre Zimmer - Broken News [Craigie Knowes]
+                - generic [ref=e646]:
+                  - generic [ref=e647]: 391 views
+                  - generic [ref=e648]: •2 months ago
+              - button "Action menu" [ref=e651]:
+                - generic [ref=e654]:
+                  - img
+          - generic [ref=e658]:
+            - link [ref=e661] [cursor=pointer]:
+              - /url: /watch?v=jiFtQ07u1JQ&pp=0gcJCdQKAYcqIYzv
+            - generic [ref=e663] [cursor=pointer]:
+              - generic [ref=e664]:
+                - heading "Hame - Lately [Yoyaku] 5 minutes, 8 seconds" [level=3] [ref=e665]:
+                  - link "Hame - Lately [Yoyaku] 5 minutes, 8 seconds" [ref=e666]:
+                    - /url: /watch?v=jiFtQ07u1JQ&pp=0gcJCdQKAYcqIYzv
+                    - generic [ref=e667]: Hame - Lately [Yoyaku]
+                - generic [ref=e670]:
+                  - generic [ref=e671]: 413 views
+                  - generic [ref=e672]: •2 months ago
+              - button "Action menu" [ref=e675]:
+                - generic [ref=e678]:
+                  - img
+          - generic [ref=e682]:
+            - link [ref=e685] [cursor=pointer]:
+              - /url: /watch?v=kGHi5WG7T7c&pp=0gcJCdQKAYcqIYzv
+            - generic [ref=e687] [cursor=pointer]:
+              - generic [ref=e688]:
+                - heading "Conor CC - Air [Origin CC Records] 4 minutes, 37 seconds" [level=3] [ref=e689]:
+                  - link "Conor CC - Air [Origin CC Records] 4 minutes, 37 seconds" [ref=e690]:
+                    - /url: /watch?v=kGHi5WG7T7c&pp=0gcJCdQKAYcqIYzv
+                    - generic [ref=e691]: Conor CC - Air [Origin CC Records]
+                - generic [ref=e694]:
+                  - generic [ref=e695]: 417 views
+                  - generic [ref=e696]: •2 months ago
+              - button "Action menu" [ref=e699]:
+                - generic [ref=e702]:
+                  - img
+          - generic [ref=e706]:
+            - link [ref=e709] [cursor=pointer]:
+              - /url: /watch?v=X4Yr4dtNa08&pp=0gcJCdQKAYcqIYzv
+            - generic [ref=e711] [cursor=pointer]:
+              - generic [ref=e712]:
+                - heading "Lutsu & STL-P // Inverted Audio x Wizz In-Store 1 hour, 53 minutes" [level=3] [ref=e713]:
+                  - link "Lutsu & STL-P // Inverted Audio x Wizz In-Store 1 hour, 53 minutes" [ref=e714]:
+                    - /url: /watch?v=X4Yr4dtNa08&pp=0gcJCdQKAYcqIYzv
+                    - generic [ref=e715]: Lutsu & STL-P // Inverted Audio x Wizz In-Store
+                - generic [ref=e718]:
+                  - generic [ref=e719]: 135 views
+                  - generic [ref=e720]: •2 months ago
+              - button "Action menu" [ref=e723]:
+                - generic [ref=e726]:
+                  - img
+          - generic [ref=e730]:
+            - link [ref=e733] [cursor=pointer]:
+              - /url: /watch?v=7BTU_6UMF30
+            - generic [ref=e735] [cursor=pointer]:
+              - generic [ref=e736]:
+                - heading "POD & Edward Richards - Temporal Loop Transcendance (Pugi_s Mariana Mix) [Kinetic Vision] 6 minutes, 17 seconds" [level=3] [ref=e737]:
+                  - link "POD & Edward Richards - Temporal Loop Transcendance (Pugi_s Mariana Mix) [Kinetic Vision] 6 minutes, 17 seconds" [ref=e738]:
+                    - /url: /watch?v=7BTU_6UMF30
+                    - generic [ref=e739]: POD & Edward Richards - Temporal Loop Transcendance (Pugi_s Mariana Mix) [Kinetic Vision]
+                - generic [ref=e742]:
+                  - generic [ref=e743]: 398 views
+                  - generic [ref=e744]: •2 months ago
+              - button "Action menu" [ref=e747]:
+                - generic [ref=e750]:
+                  - img
+          - generic [ref=e754]:
+            - link [ref=e757] [cursor=pointer]:
+              - /url: /watch?v=C8J-U4LiXQk
+            - generic [ref=e759] [cursor=pointer]:
+              - generic [ref=e760]:
+                - heading "UFO95 - Pulsation 3 [Mord] 6 minutes, 45 seconds" [level=3] [ref=e761]:
+                  - link "UFO95 - Pulsation 3 [Mord] 6 minutes, 45 seconds" [ref=e762]:
+                    - /url: /watch?v=C8J-U4LiXQk
+                    - generic [ref=e763]: UFO95 - Pulsation 3 [Mord]
+                - generic [ref=e766]:
+                  - generic [ref=e767]: 295 views
+                  - generic [ref=e768]: •2 months ago
+              - button "Action menu" [ref=e771]:
+                - generic [ref=e774]:
+                  - img
+          - generic [ref=e778]:
+            - link [ref=e781] [cursor=pointer]:
+              - /url: /watch?v=DEvM0Q_3zq8&pp=0gcJCdQKAYcqIYzv
+            - generic [ref=e783] [cursor=pointer]:
+              - generic [ref=e784]:
+                - heading "Michael Claus - Surveillance Species [Club Moniker] 6 minutes, 3 seconds" [level=3] [ref=e785]:
+                  - link "Michael Claus - Surveillance Species [Club Moniker] 6 minutes, 3 seconds" [ref=e786]:
+                    - /url: /watch?v=DEvM0Q_3zq8&pp=0gcJCdQKAYcqIYzv
+                    - generic [ref=e787]: Michael Claus - Surveillance Species [Club Moniker]
+                - generic [ref=e790]:
+                  - generic [ref=e791]: 262 views
+                  - generic [ref=e792]: •2 months ago
+              - button "Action menu" [ref=e795]:
+                - generic [ref=e798]:
+                  - img
+          - generic [ref=e802]:
+            - link [ref=e805] [cursor=pointer]:
+              - /url: /watch?v=ihaUjhcwq2c&pp=0gcJCdQKAYcqIYzv
+            - generic [ref=e807] [cursor=pointer]:
+              - generic [ref=e808]:
+                - heading "Variant - Someplace Else [Field Records] 6 minutes, 52 seconds" [level=3] [ref=e809]:
+                  - link "Variant - Someplace Else [Field Records] 6 minutes, 52 seconds" [ref=e810]:
+                    - /url: /watch?v=ihaUjhcwq2c&pp=0gcJCdQKAYcqIYzv
+                    - generic [ref=e811]: Variant - Someplace Else [Field Records]
+                - generic [ref=e814]:
+                  - generic [ref=e815]: 313 views
+                  - generic [ref=e816]: •2 months ago
+              - button "Action menu" [ref=e819]:
+                - generic [ref=e822]:
+                  - img
+          - generic [ref=e826]:
+            - link [ref=e829] [cursor=pointer]:
+              - /url: /watch?v=ESbsb8Jke2g&pp=0gcJCdQKAYcqIYzv
+            - generic [ref=e831] [cursor=pointer]:
+              - generic [ref=e832]:
+                - heading "Ben Kaczor - Feeling Of Wind & Home [Stólar] 5 minutes, 55 seconds" [level=3] [ref=e833]:
+                  - link "Ben Kaczor - Feeling Of Wind & Home [Stólar] 5 minutes, 55 seconds" [ref=e834]:
+                    - /url: /watch?v=ESbsb8Jke2g&pp=0gcJCdQKAYcqIYzv
+                    - generic [ref=e835]: Ben Kaczor - Feeling Of Wind & Home [Stólar]
+                - generic [ref=e838]:
+                  - generic [ref=e839]: 461 views
+                  - generic [ref=e840]: •3 months ago
+              - button "Action menu" [ref=e843]:
+                - generic [ref=e846]:
+                  - img
+          - generic [ref=e850]:
+            - link [ref=e853] [cursor=pointer]:
+              - /url: /watch?v=mbDxI77DbLw
+            - generic [ref=e855] [cursor=pointer]:
+              - generic [ref=e856]:
+                - heading "Rafael Anton Irisarri - Signals from a Distant Afterglow [Black Knoll Editions] 8 minutes, 17 seconds" [level=3] [ref=e857]:
+                  - link "Rafael Anton Irisarri - Signals from a Distant Afterglow [Black Knoll Editions] 8 minutes, 17 seconds" [ref=e858]:
+                    - /url: /watch?v=mbDxI77DbLw
+                    - generic [ref=e859]: Rafael Anton Irisarri - Signals from a Distant Afterglow [Black Knoll Editions]
+                - generic [ref=e862]:
+                  - generic [ref=e863]: 644 views
+                  - generic [ref=e864]: •3 months ago
+              - button "Action menu" [ref=e867]:
+                - generic [ref=e870]:
+                  - img
+          - generic [ref=e874]:
+            - link [ref=e877] [cursor=pointer]:
+              - /url: /watch?v=s7PnPE4JSQk
+            - generic [ref=e879] [cursor=pointer]:
+              - generic [ref=e880]:
+                - heading "Peryl - Nullity [Augmented Research] 5 minutes, 52 seconds" [level=3] [ref=e881]:
+                  - link "Peryl - Nullity [Augmented Research] 5 minutes, 52 seconds" [ref=e882]:
+                    - /url: /watch?v=s7PnPE4JSQk
+                    - generic [ref=e883]: Peryl - Nullity [Augmented Research]
+                - generic [ref=e886]:
+                  - generic [ref=e887]: 474 views
+                  - generic [ref=e888]: •3 months ago
+              - button "Action menu" [ref=e891]:
+                - generic [ref=e894]:
+                  - img
+          - generic [ref=e898]:
+            - link [ref=e901] [cursor=pointer]:
+              - /url: /watch?v=CXlyqQnFpAw
+            - generic [ref=e903] [cursor=pointer]:
+              - generic [ref=e904]:
+                - heading "Forster - MOND (Directed by Stefano Canavese) 4 minutes, 46 seconds" [level=3] [ref=e905]:
+                  - link "Forster - MOND (Directed by Stefano Canavese) 4 minutes, 46 seconds" [ref=e906]:
+                    - /url: /watch?v=CXlyqQnFpAw
+                    - generic [ref=e907]: Forster - MOND (Directed by Stefano Canavese)
+                - generic [ref=e910]:
+                  - generic [ref=e911]: 428 views
+                  - generic [ref=e912]: •4 months ago
+              - button "Action menu" [ref=e915]:
+                - generic [ref=e918]:
+                  - img
+          - generic [ref=e922]:
+            - link [ref=e925] [cursor=pointer]:
+              - /url: /watch?v=Re5rFvnlM2M
+            - generic [ref=e927] [cursor=pointer]:
+              - generic [ref=e928]:
+                - heading "Kareem Ali - Procession [Noire & Blanche] 5 minutes, 18 seconds" [level=3] [ref=e929]:
+                  - link "Kareem Ali - Procession [Noire & Blanche] 5 minutes, 18 seconds" [ref=e930]:
+                    - /url: /watch?v=Re5rFvnlM2M
+                    - generic [ref=e931]: Kareem Ali - Procession [Noire & Blanche]
+                - generic [ref=e934]:
+                  - generic [ref=e935]: 591 views
+                  - generic [ref=e936]: •4 months ago
+              - button "Action menu" [ref=e939]:
+                - generic [ref=e942]:
+                  - img
+    - text: •

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IG watchdog heartbeat (registry, 2026-08-31). Nightly 22:30 local:
+     dispatcher liveness + session cadence + test suite. Independent of the
+     dispatcher agent it watches. -->
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Label</key><string>com.inchofshadow.ig-heartbeat</string>
+    <key>ProgramArguments</key>
+    <array>
+        <string>/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/bin/python3.9</string>
+        <string>/Users/amir/Desktop/Inch of Shadow/Inchofshadowcode/scene_intelligence/ig_heartbeat.py</string>
+    </array>
+    <key>WorkingDirectory</key>
+    <string>/Users/amir/Desktop/Inch of Shadow/Inchofshadowcode</string>
+    <key>StartCalendarInterval</key>
+    <dict><key>Hour</key><integer>22</integer><key>Minute</key><integer>30</integer></dict>
+    <key>StandardOutPath</key>
+    <string>/Users/amir/Desktop/Inch of Shadow/Inchofshadowcode/docs/reports/heartbeat-launchd.log</string>
+    <key>StandardErrorPath</key>
+    <string>/Users/amir/Desktop/Inch of Shadow/Inchofshadowcode/docs/reports/heartbeat-launchd.log</string>
+</dict>
+</plist>

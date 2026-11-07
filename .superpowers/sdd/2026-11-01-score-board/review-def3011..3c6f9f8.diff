@@ -1,0 +1,337 @@
+# Review package: def3011..HEAD
+
+## Commits
+3c6f9f8 feat(stats): daily Instagram sample (Graph or HikerAPI, ledger-claimed) and HikerAPI balance in the sync
+
+## Files changed
+ plans/control-panel/launchd-stats-sync.plist.draft |   6 +-
+ stats/collectors.py                                |  95 +++++++++++++++++-
+ stats/daily_sync.py                                |   2 +-
+ tests/test_collect_instagram_daily.py              | 106 +++++++++++++++++++++
+ 4 files changed, 202 insertions(+), 7 deletions(-)
+
+## Diff
+diff --git a/plans/control-panel/launchd-stats-sync.plist.draft b/plans/control-panel/launchd-stats-sync.plist.draft
+index ea9eb94..0c5951c 100644
+--- a/plans/control-panel/launchd-stats-sync.plist.draft
++++ b/plans/control-panel/launchd-stats-sync.plist.draft
+@@ -1,26 +1,24 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+ <!-- DRAFT, NOT INSTALLED (2026-09-27). A daily stats snapshot at 08:45, before the IG dispatcher's
+-     09:30 run. Spotify, SoundCloud and YouTube only: Instagram is skipped, because direct Instagram
+-     reads are off since 2026-09-14. To install, copy to ~/Library/LaunchAgents/com.inchofshadow.stats-sync.plist
++     09:30 run. Spotify, SoundCloud, YouTube, a light ledger-claimed Instagram sample and the HikerAPI balance
++     (score board, 2026-11). To install, copy to ~/Library/LaunchAgents/com.inchofshadow.stats-sync.plist
+      and load it with launchctl. Same python binary as the dispatcher, which has Full Disk Access. -->
+ <plist version="1.0">
+ <dict>
+     <key>Label</key>
+     <string>com.inchofshadow.stats-sync</string>
+     <key>ProgramArguments</key>
+     <array>
+         <string>/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/bin/python3.9</string>
+         <string>/Users/amir/Desktop/Inch of Shadow/Inchofshadowcode/stats/daily_sync.py</string>
+-        <string>--skip</string>
+-        <string>instagram</string>
+     </array>
+     <key>WorkingDirectory</key>
+     <string>/Users/amir/Desktop/Inch of Shadow/Inchofshadowcode</string>
+     <key>StartCalendarInterval</key>
+     <dict><key>Hour</key><integer>8</integer><key>Minute</key><integer>45</integer></dict>
+     <key>StandardOutPath</key>
+     <string>/Users/amir/Desktop/Inch of Shadow/Inchofshadowcode/docs/reports/stats-sync-launchd.log</string>
+     <key>StandardErrorPath</key>
+     <string>/Users/amir/Desktop/Inch of Shadow/Inchofshadowcode/docs/reports/stats-sync-launchd.log</string>
+ </dict>
+diff --git a/stats/collectors.py b/stats/collectors.py
+index 278f503..bb5512d 100644
+--- a/stats/collectors.py
++++ b/stats/collectors.py
+@@ -451,20 +451,22 @@ def collect_youtube() -> dict | None:
+         }
+     except Exception:
+         return None
+ 
+ 
+ # ---------------------------------------------------------------------------
+ # Instagram (Meta Graph API v21.0)
+ # ---------------------------------------------------------------------------
+ 
+ META_IG_ACCESS_TOKEN = os.getenv("META_IG_ACCESS_TOKEN", "")
++IG_DAILY_SOURCE = os.getenv("IG_DAILY_SOURCE", "graph")  # "graph" or "hikerapi"
++IG_USERNAME = "inch_of_shadow"
+ 
+ 
+ def collect_instagram() -> dict | None:
+     """Collect Instagram stats with insights, demographics, and per-post metrics."""
+     if not META_IG_ACCESS_TOKEN:
+         return None
+     try:
+         # 1. Account profile
+         r = requests.get(
+             "https://graph.instagram.com/v21.0/me",
+@@ -653,35 +655,124 @@ def collect_instagram() -> dict | None:
+                 "gender_age": gender_age,
+                 "gender_summary": gender_summary,
+                 "countries": countries,
+                 "cities": cities,
+             },
+         }
+     except Exception:
+         return None
+ 
+ 
++# ---------------------------------------------------------------------------
++# Instagram daily sample (light: 2 Graph calls or 1 HikerAPI call) + HikerAPI balance
++# ---------------------------------------------------------------------------
++
++def _claim(**kw):
++    """Ledger claim before any Instagram read (raises LedgerRefused, a SystemExit, if refused)."""
++    from scene_intelligence.ig_daily_ledger import check_and_claim
++    return check_and_claim(**kw)
++
++
++def _provider():
++    from scene_intelligence.ig_data_provider import Provider
++    return Provider()
++
++
++def _ig_daily_hikerapi() -> dict | None:
++    _claim(script="stats_daily_sync", kind="provider", est_calls=1, endpoint="user_by_username")
++    p = _provider().profile(IG_USERNAME)
++    if not p:
++        return None
++    return {
++        "followers": p.get("follower_count"),
++        "following": p.get("following_count"),
++        "media_count": p.get("media_count"),
++        "reach_30d": None,
++        "source": "hikerapi",
++    }
++
++
++def _ig_daily_graph() -> dict | None:
++    if not META_IG_ACCESS_TOKEN:
++        return None
++    _claim(script="stats_daily_sync", kind="api", est_calls=2, endpoint="graph_insights")
++    try:
++        r = requests.get(
++            "https://graph.instagram.com/v21.0/me",
++            params={"fields": "id,username,media_count,followers_count,follows_count",
++                    "access_token": META_IG_ACCESS_TOKEN},
++            timeout=TIMEOUT,
++        )
++        ok = r.status_code == 200
++    except requests.RequestException:
++        ok = False
++    if not ok:
++        return _ig_daily_hikerapi()
++    prof = r.json()
++    reach = None
++    try:
++        ri = requests.get(
++            "https://graph.instagram.com/v21.0/me/insights",
++            params={"metric": "reach", "period": "days_28", "metric_type": "total_value",
++                    "access_token": META_IG_ACCESS_TOKEN},
++            timeout=TIMEOUT,
++        )
++        if ri.status_code == 200:
++            reach = ri.json()["data"][0]["total_value"]["value"]
++    except (requests.RequestException, KeyError, IndexError, TypeError, ValueError):
++        reach = None
++    return {
++        "followers": prof.get("followers_count"),
++        "following": prof.get("follows_count"),
++        "media_count": prof.get("media_count"),
++        "reach_30d": reach,
++        "source": "graph",
++    }
++
++
++def collect_instagram_daily() -> dict | None:
++    """Light daily Instagram sample, every read ledger-claimed. Returns None on refusal or failure."""
++    try:
++        if IG_DAILY_SOURCE == "hikerapi":
++            return _ig_daily_hikerapi()
++        return _ig_daily_graph()
++    except KeyboardInterrupt:
++        raise
++    except (Exception, SystemExit):  # LedgerRefused is a SystemExit
++        return None
++
++
++def collect_hikerapi_balance() -> dict | None:
++    """HikerAPI request balance (not an Instagram read, so no ledger claim)."""
++    try:
++        bal = _provider().balance() or {}
++        return {"requests": bal.get("requests"), "balance": bal}
++    except Exception:
++        return None
++
++
+ # ---------------------------------------------------------------------------
+ # Collect all platforms
+ # ---------------------------------------------------------------------------
+ 
+ def collect_all(skip: tuple = ()) -> dict:
+     """Run all collectors and return combined results with errors noted. `skip` leaves platforms
+-    out (the scheduled sync skips Instagram: direct Instagram reads are off since 2026-09-14)."""
++    out (Instagram is now a light, ledger-claimed daily sample)."""
+     results = {}
+     errors = []
+ 
+     for name, fn in [
+         ("spotify", collect_spotify),
+         ("soundcloud", collect_soundcloud),
+         ("youtube", collect_youtube),
+-        ("instagram", collect_instagram),
++        ("instagram", collect_instagram_daily),
++        ("hikerapi", collect_hikerapi_balance),
+     ]:
+         if name in skip:
+             continue
+         try:
+             data = fn()
+             if data is not None:
+                 results[name] = data
+             else:
+                 errors.append(name)
+         except Exception:
+diff --git a/stats/daily_sync.py b/stats/daily_sync.py
+index 7de57a6..1adc456 100644
+--- a/stats/daily_sync.py
++++ b/stats/daily_sync.py
+@@ -1,19 +1,19 @@
+ """
+ stats/daily_sync.py
+ --------------------
+ Daily stats sync script. Collects data from all platform APIs
+ and saves a snapshot. Designed to run via cron/launchd.
+ 
+ Usage:
+     python3 stats/daily_sync.py                      # every platform
+-    python3 stats/daily_sync.py --skip instagram     # what the scheduled run uses
++    python3 stats/daily_sync.py --skip instagram     # no longer the scheduled default (score board, 2026-11)
+     (on Mondays it also writes the weekly summary, stats/weekly_summary.py; --weekly forces it)
+ """
+ 
+ from __future__ import annotations
+ 
+ import sys
+ from datetime import datetime
+ from pathlib import Path
+ 
+ # Ensure project root is on path
+diff --git a/tests/test_collect_instagram_daily.py b/tests/test_collect_instagram_daily.py
+new file mode 100644
+index 0000000..71d0b2c
+--- /dev/null
++++ b/tests/test_collect_instagram_daily.py
+@@ -0,0 +1,106 @@
++import stats.collectors as c
++
++
++class R:  # minimal requests.Response stand-in
++    def __init__(self, code, data):
++        self.status_code, self._d = code, data
++
++    def json(self):
++        return self._d
++
++
++def test_graph_variant_reads_profile_and_reach(monkeypatch):
++    monkeypatch.setattr(c, "IG_DAILY_SOURCE", "graph")
++    monkeypatch.setattr(c, "META_IG_ACCESS_TOKEN", "t")
++    monkeypatch.setattr(c, "_claim", lambda **kw: None)
++    calls = []
++
++    def fake_get(url, params=None, timeout=None):
++        calls.append(url)
++        if url.endswith("/me"):
++            return R(200, {"followers_count": 951, "follows_count": 970, "media_count": 85})
++        return R(200, {"data": [{"name": "reach", "total_value": {"value": 2310}}]})
++
++    monkeypatch.setattr(c.requests, "get", fake_get)
++    assert c.collect_instagram_daily() == {
++        "followers": 951, "following": 970, "media_count": 85, "reach_30d": 2310, "source": "graph"}
++    assert len(calls) == 2
++
++
++def test_ledger_refusal_returns_none_and_sync_keeps_other_platforms(monkeypatch):
++    from scene_intelligence.ig_daily_ledger import LedgerRefused
++
++    def refuse(**kw):
++        raise LedgerRefused(4)
++
++    monkeypatch.setattr(c, "_claim", refuse)
++    assert c.collect_instagram_daily() is None
++    monkeypatch.setattr(c, "collect_spotify", lambda: {"ok": 1})
++    monkeypatch.setattr(c, "collect_soundcloud", lambda: None)
++    monkeypatch.setattr(c, "collect_youtube", lambda: None)
++    monkeypatch.setattr(c, "collect_hikerapi_balance", lambda: {"requests": 83000})
++    out = c.collect_all()
++    assert out["platforms"]["spotify"] == {"ok": 1}
++    assert "instagram" in out["errors"]
++    assert out["platforms"]["hikerapi"]["requests"] == 83000
++
++
++def test_hikerapi_variant(monkeypatch):
++    monkeypatch.setattr(c, "IG_DAILY_SOURCE", "hikerapi")
++    claims = []
++    monkeypatch.setattr(c, "_claim", lambda **kw: claims.append(kw))
++
++    class P:
++        def profile(self, u):
++            return {"username": u, "follower_count": 952, "following_count": 971, "media_count": 85}
++
++    monkeypatch.setattr(c, "_provider", lambda: P())
++    out = c.collect_instagram_daily()
++    assert out == {"followers": 952, "following": 971, "media_count": 85, "reach_30d": None, "source": "hikerapi"}
++    assert claims == [dict(script="stats_daily_sync", kind="provider", est_calls=1, endpoint="user_by_username")]
++
++
++def test_graph_profile_failure_falls_back_to_hikerapi(monkeypatch):
++    monkeypatch.setattr(c, "IG_DAILY_SOURCE", "graph")
++    monkeypatch.setattr(c, "META_IG_ACCESS_TOKEN", "t")
++    claims = []
++    monkeypatch.setattr(c, "_claim", lambda **kw: claims.append(kw))
++    monkeypatch.setattr(c.requests, "get", lambda url, params=None, timeout=None: R(400, {}))
++
++    class P:
++        def profile(self, u):
++            return {"follower_count": 9, "following_count": 8, "media_count": 7}
++
++    monkeypatch.setattr(c, "_provider", lambda: P())
++    out = c.collect_instagram_daily()
++    assert out["source"] == "hikerapi" and out["followers"] == 9
++    assert [k["kind"] for k in claims] == ["api", "provider"]
++
++
++def test_graph_reach_failure_keeps_profile(monkeypatch):
++    monkeypatch.setattr(c, "IG_DAILY_SOURCE", "graph")
++    monkeypatch.setattr(c, "META_IG_ACCESS_TOKEN", "t")
++    monkeypatch.setattr(c, "_claim", lambda **kw: None)
++
++    def fake_get(url, params=None, timeout=None):
++        if url.endswith("/me"):
++            return R(200, {"followers_count": 1, "follows_count": 2, "media_count": 3})
++        return R(500, {})
++
++    monkeypatch.setattr(c.requests, "get", fake_get)
++    assert c.collect_instagram_daily()["reach_30d"] is None
++
++
++def test_hikerapi_balance(monkeypatch):
++    class P:
++        def balance(self):
++            return {"requests": 83000, "amount": 1.2}
++
++    monkeypatch.setattr(c, "_provider", lambda: P())
++    assert c.collect_hikerapi_balance() == {"requests": 83000, "balance": {"requests": 83000, "amount": 1.2}}
++
++    def boom():
++        raise RuntimeError("x")
++
++    monkeypatch.setattr(c, "_provider", boom)
++    assert c.collect_hikerapi_balance() is None

@@ -1,0 +1,288 @@
+FOLDER                 FILE                                       NAME NOW (inside)                 PROPOSED NAME                    how
+Ambient & Cinematic    Fifth_Dimension.fxp                        ATMO - Fifth Dimension            AT Cinema - Fifth Dimension      hand
+Ambient & Cinematic    clean_keys.fxp                             KEYS CLEAN                        KY Ambient - Clean               hand
+Ambient & Cinematic    KEYS_Head_Is_Empty.fxp                     KEYS - Head Is Empty              KY Ambient - Head Is Empty       vibe
+Ambient & Cinematic    KEYS_Promise_1.serumpreset                 KEYS Promise 1                    KY Ambient - Promise 1           hand
+Ambient & Cinematic    KEYS_Dark_Jazz_1.fxp                       KEYS Dark Jazz 1                  KY Jazz - Dark Jazz 1            hand
+Ambient & Cinematic    KEYS_Noir_2.serumpreset                    KEYS Noir 2                       KY Jazz Noir - Keys 2            hand
+Ambient & Cinematic    KEYS_DigiKing_1.serumpreset                KEYS DigiKing 1                   KY Lofi Indie - DigiKing         hand
+Ambient & Cinematic    LD_Darkest_Light_1.serumpreset             LD Darkest Light 1                LD Jazz - Sax Darkest Light      hand
+Ambient & Cinematic    Granular_Pad_REESE.serumpreset             Granular Pad                      PD Ambient - Granular Pad        vibe
+Ambient & Cinematic    PD_MushroomTea.fxp                         PD_Mushroom Tea                   PD Ambient - Mushroom Tea        vibe
+Ambient & Cinematic    Distorted_detuned_lofi_synth.fxp           Dist detune lofi synth            PD Aphex BoC - Detuned Lofi      hand
+Angel Core             Angelic_ATMO.serumpreset                   angelic atmosphere                AT Angelcore - Angelic Atmo      hand
+Angel Core             Disturbing_breathe_in_Space.serumpreset    [FX] Space Adventure2             AT Angelcore - Space Adventure   hand
+Angel Core             Crispy_Angelcore_Bass.serumpreset          Crispy Bass                       BA Angelcore - Crispy Bass       vibe
+Angel Core             Angelcore_reese_help_me.serumpreset        Angelcore reese help me           BA Angelcore - reese help me     vibe
+Angel Core             Vocal_Morpher_v1.serumpreset               Vocal Morpher v1                  FX Angelcore - Vocal Morpher v1  vibe
+Angel Core             Key_Virtual_Heaven.serumpreset             Key - Random Major & Minor        KY Angelcore - Virtual Heaven    hand
+Angel Core             Angelcore_lead_2.fxp                       Angelcore LD2                     LD Angelcore - LD2               vibe
+Angel Core             Angelcore_lead_help.serumpreset            angelcore lead help               LD Angelcore - lead help         vibe
+Angel Core             Angelcore_lead.fxp                         Angelcore lead                    LD Angelcore - Lead S1           vibe
+Angel Core             Angelcore_lead.serumpreset                 Angelcore lead                    LD Angelcore - Lead S2           vibe
+Angel Core             Angelcore_lead_burn.serumpreset            angelcore lead,burn               LD Angelcore - lead,burn         vibe
+Angel Core             LEAD_Sick_TD.fxp                           LEAD - Sick TD                    LD Angelcore - Sick TD           vibe
+Angel Core             Angels_Veil.serumpreset                    Angel's Veil                      PD Angelcore - Angel's Veil      vibe
+Angel Core             PAD_Cloud_Choir_4.serumpreset              PAD Cloud Choir 4                 PD Angelcore - Cloud Choir 4     vibe
+Angel Core             Frozen_Sky.fxp                             PD - Frozen Sky                   PD Angelcore - Frozen Sky        vibe
+Angel Core             SM_PD_Choir.fxp                            SM - PD Choir                     PD Angelcore - PD Choir          vibe
+Angel Core             PAD_Rising_Angels.serumpreset              PAD - Rising Angels               PD Angelcore - Rising Angels     vibe
+Angel Core             Shimmer_Choir_Pad.serumpreset              chorddddddddd                     PD Angelcore - Shimmer Choir     hand
+Angel Core             Ambiet_Voice_Pad.serumpreset               Voice Ambient pad                 PD Angelcore - Voice Ambient     hand
+Angel Core             Breakcore_Nitro_Pad.serumpreset            NitroPad Vintage                  PD Breakcore - Nitro Pad         hand
+Angel Core             Angelcore_pluck_game.serumpreset           angelcore pluck game              PL Angelcore - pluck game        vibe
+Angel Core             PL_Sleepwalker.fxp                         PL - Sleepwalker                  PL Angelcore - Sleepwalker       vibe
+Angel Core             Angelcore_lead_3.fxp                       SY Monolithic [SD]                SY Angelcore - Monolithic        vibe
+Angel Core             vox_404.fxp                                vox - 404                         VX Angelcore - 404               vibe
+Angel Core             Anahera_Choir.serumpreset                  VOX - Anahera                     VX Angelcore - Anahera           vibe
+Chiptune               Arp_8bit.fxp                               Arp 8bit                          AR 8bit - Arp 8bit               vibe
+Chiptune               brass_NES_Trumpet.fxp                      brass - NES Trumpet               BR 8bit - NES Trumpet            vibe
+Chiptune               PR_Kawaii_Chords.serumpreset               PR - Kawaii Chords                CH 8bit - Kawaii Chords          hand
+Chiptune               guitar_Cozy_Chiptune.fxp                   guitar - Cozy Chiptune            GT 8bit - Cozy Chiptune          hand
+Chiptune               keys_NES_Harpsichord.fxp                   keys - NES Harpischord            KY 8bit - NES Harpsichord        hand
+Chiptune               KY_Pokemon_Chiptune.fxp                    KY - Pokemon                      KY Pokemon - Chiptune            hand
+Chiptune               lead_GBA_Vib_Lead.fxp                      lead - GBA Vib Lead               LD 8bit - GBA Vib Lead           vibe
+Chiptune               8BIT_Lead.fxp                              8 bit lead by me                  LD R. Miles - Children 8bit      hand
+Chiptune               KEY_LITHIUM.fxp                            PLUCK - LITHIUM                   PL 8bit - Lithium                hand
+Chiptune               pluck_Pico8.fxp                            pluck - Pico-8                    PL Pico-8 - Pluck                hand
+Chiptune               SEQ_Chiptune_I.serumpreset                 SEQ - Chiptune I                  SQ 8bit - Chiptune I             vibe
+Chiptune               SY_Alternative_to_8Bit.fxp                 SY - Alternative to 8Bit          SY 8bit - Alternative            hand
+Chiptune               Donkey_Kong.fxp                            SY - EvilBoss                     SY Donkey Kong - Evil Boss       hand
+Crystal Castles        lead_Cemetery_Square.fxp                   lead - Cemetery Square            LD CC - Cemetery Square          page/name
+Crystal Castles        Crystal_castles_lead.fxp                   lead crystal                      LD CC - Crystal Lead             hand
+Crystal Castles        lead_Graveyard.fxp                         lead - Graveyard                  LD CC - Graveyard                page/name
+Crystal Castles        lead_Morgue.fxp                            lead - Morgue                     LD CC - Morgue                   page/name
+Crystal Castles        CRYSTAL_CASTLES_KEROSENE_PD.fxp            CRYSTAL CASTLES - KEROSENE H      PD CC - Kerosene                 hand
+Crystal Castles        pluck_lofi.serumpreset                     pluck_lofi                        PL CC - Lofi Pluck               hand
+Crystal Castles        crystal_castles_pluck.serumpreset          crystal castles pluck             PL CC - Pluck                    hand
+Crystal Castles        Crystal_Castles.serumpreset                Crystal Castles Type Pluck        PL CC - Type Pluck               hand
+Cyberpunk & Darksynth  AR_Cyberpunk.fxp                           AR - Cyberpunk                    AR Cyber - Cyberpunk Arp         hand
+Cyberpunk & Darksynth  Crunch.serumpreset                         Crunch                            BA Cyber - Crunch                vibe
+Cyberpunk & Darksynth  BS_Cyberpunk_2023.fxp                      BS Cyberpunk 2023                 BA Cyber - Cyberpunk 2023        hand
+Cyberpunk & Darksynth  BA_Sleeper.fxp                             BA - Sleeper                      BA PowerNerd - Ghost Me          hand
+Cyberpunk & Darksynth  lead_Okaruto.fxp                           lead - Okaruto                    LD Cyber - Okaruto               vibe
+Cyberpunk & Darksynth  Lead_Silverhands.fxp                       Lead - Silverhands                LD Cyber - Silverhands           vibe
+Cyberpunk & Darksynth  LD_SUNDAY.fxp                              LD - SUNDAY                       LD Cyber - SUNDAY                vibe
+Cyberpunk & Darksynth  PL_Neon_Stalker.serumpreset                PL - Neon Stalker                 PL Cyber - Neon Stalker          vibe
+Cyberpunk & Darksynth  2077_PL_Bitpunk.fxp                        2077 - PL Bitpunk                 PL Cyber 2077 - Bitpunk          hand
+Cyberpunk & Darksynth  SYN_Beamsplitter_1.serumpreset             SYN Beamsplitter 1                SY Cyber - Beamsplitter 1        vibe
+Cyberpunk & Darksynth  Dark_Synth.fxp                             @velodawnbitch Dark Synth (S      SY Cyber - Dark Synth            hand
+Cyberpunk & Darksynth  Cyber_Stab.fxp                             Varangian - Cyber Stab            SY Cyber - Varangian Stab        hand
+EBM & Industrial       BS_Mechanical_1.fxp                        BS Mechanical 1                   BA EBM - Mechanical 1            vibe
+EBM & Industrial       BS_Ruthless_SQ_1.serumpreset               BS Ruthless SQ 1                  BA EBM - Ruthless SQ 1           vibe
+EBM & Industrial       Sexy_Bass.serumpreset                      Bass - Sexy Bass (Destiny Bass E  BA EBM - Sexy Bass               hand
+EBM & Industrial       BS_Swarm_1.fxp                             BS Swarm 1                        BA EBM - Swarm 1                 vibe
+EBM & Industrial       Goblin_Cyborg.serumpreset                  Space Goblin Scratch Dark 2025-0  LD EBM - Space Goblin            hand
+EBM & Industrial       PERC_SQ_Industrial_1.fxp                   PERC SQ Industrial 1              PC EBM - SQ Industrial 1         vibe
+EBM & Industrial       SQ_Synthetic_2.serumpreset                 SQ Synthetic 2                    SQ EBM - Synthetic 2             vibe
+EBM & Industrial       Polar_Synth.fxp                            Polar Synth                       SY Misanthrop - Slap Ghost       hand
+Film & TV & Games      ARP_Street_Hawk.serumpreset                AR - Street Hawk                  AR Street Hawk - Theme           hand
+Film & TV & Games      Remains.serumpreset                        bs_Remains                        BA All Quiet Western Front - Braam hand
+Film & TV & Games      Annihilation_Reese_Synth.serumpreset       Annihilation - Reese Synth        BA Annihilation - Reese          hand
+Film & TV & Games      BA_Axel_F.serumpreset                      BA - Axel F [WIP] 2               BA Axel F - Bass                 hand
+Film & TV & Games      The_Pump_Panel_Reconstruction.serumpreset  The Pump Panel Reconstruction     BA Blade - Pump Panel            hand
+Film & TV & Games      BA_Knight_Rider.serumpreset                BA - Knight Rider                 BA Knight Rider - Bass           hand
+Film & TV & Games      BA_Football_Fight.serumpreset              BA - Football Fight [WIP]         BA Queen - Football Fight        page/name
+Film & TV & Games      BA_Ming.serumpreset                        BA - Ming                         BA Queen - Ming                  page/name
+Film & TV & Games      Stranger_things_moog_bass.fxp              BS - Stranger moog                BA Stranger Things - Moog        hand
+Film & TV & Games      Stranger_things_sequence_bass.fxp          BS - Stranger Things              BA Stranger Things - Seq         hand
+Film & TV & Games      BL_Fantasia.serumpreset                    BL - Fantasia 2                   BL NeverEnding Story - Fantasia  hand
+Film & TV & Games      Music_BoxBell.serumpreset                  Music Box                         BL Pirates Caribbean - Music Box hand
+Film & TV & Games      BL_Resident_Evil.serumpreset               BL - Resident Evil                BL Resident Evil - Bells         hand
+Film & TV & Games      Indiana_Jones_Tuba.serumpreset             BR - Indiana Jones Tuba           BR Indiana Jones - Tuba          hand
+Film & TV & Games      BR_War_Rocky_IV.serumpreset                BRASS - War [WIP]                 BR Rocky IV - War                hand
+Film & TV & Games      Star_Wars_Throne_Room.serumpreset          BR - Throne Room                  BR Star Wars - Throne Room       hand
+Film & TV & Games      Cinematic_Drums.serumpreset                dr_Cinematic_Drums                DR Zimmer - Cinematic Drums      hand
+Film & TV & Games      Falling_Read_Description.serumpreset       gtr_Falling                       GT Twin Peaks - Falling          hand
+Film & TV & Games      Memories_of_Green_Piano.serumpreset        Key - Memories of Green           KY Blade Runner - Memories of Green hand
+Film & TV & Games      Halloween_Piano.serumpreset                KEY - Halloween                   KY Halloween - Piano             hand
+Film & TV & Games      Cinematic_Soft_Piano.serumpreset           pn_Cinematic Soft Piano           KY Interstellar - Soft Piano     hand
+Film & TV & Games      LD_Axel_F.serumpreset                      LD - Axel F [WIP] 2               LD Axel F - Lead                 hand
+Film & TV & Games      LD_Football_Fight.serumpreset              LD - Football Fight               LD Queen - Football Fight        page/name
+Film & TV & Games      Stranger.fxp                               Lead - Stranger                   LD Stranger Things - Lead        hand
+Film & TV & Games      LD_Street_Hawk.serumpreset                 LD - SreetHawk                    LD Street Hawk - Lead            hand
+Film & TV & Games      Church_Organ_SYN.serumpreset               lush organ 2.0                    OR Interstellar - Church Organ   hand
+Film & TV & Games      PL_Knight_Rider.serumpreset                PL - Knight Rider 4               PL Knight Rider - Pluck          hand
+Film & TV & Games      PL_Robocop.serumpreset                     PL - Robocop                      PL Robocop - Pluck               hand
+Film & TV & Games      Silent_Hill_Movie_theme_lead.fxp           PL PD Silent HIl Inspired -       PL Silent Hill - Theme           hand
+Film & TV & Games      Pulse_Tenet.fxp                            PULSE - Tenet                     SQ Tenet - Pulse                 hand
+Film & TV & Games      ST_Sorrow_Strings.serumpreset              ST - Sorrow Strings               ST LOTR - Sorrow Strings         hand
+Film & TV & Games      ST_Fallen.serumpreset                      ST - Fallen                       ST Platoon - Adagio for Strings  hand
+Film & TV & Games      Cinematic_Soft_Orchestra.serumpreset       Cinematic Soft Orchestra          ST Zimmer - Soft Orchestra       hand
+Film & TV & Games      SY_Eli.serumpreset                         SY - Eli                          SY Book of Eli - Panoramic       hand
+Film & TV & Games      The_Musical_Pocket_Watch.serumpreset       Musical Pocketwatch               SY Morricone - Pocket Watch      hand
+Film & TV & Games      Ozaka_Oz_Real_Nightmare.serumpreset        Ozaka Oz – Real Nightmare         SY Ozaka Oz - Real Nightmare     hand
+Film & TV & Games      SY_XFiles_Whistle.serumpreset              SY - X-Files Whistle              SY X-Files - Whistle             hand
+Film & TV & Games      Arboria_Flute.serumpreset                  WIND - Arboria                    WD Queen - Arboria Flute         hand
+Film & TV & Games      Star_Wars_Cantina.serumpreset              WIND - Cantina                    WD Star Wars - Cantina           hand
+Film & TV & Games      BRASS_Superman.serumpreset                 WIND - Superman                   WD Superman - Theme              hand
+Hip-Hop & Trap         Bass_DetroitWest_Coast_Moog.fxp            Bass_Moog                         BA G-Funk - Moog Bass            hand
+Hip-Hop & Trap         808_Classic.fxp                            Durilom - 808 Classic             BA HipHop - 808 Classic          hand
+Hip-Hop & Trap         808_VAMP.serumpreset                       808 VAMP                          BA HipHop - 808 VAMP             vibe
+Hip-Hop & Trap         SM_BA_Funky.fxp                            SM - BA Funky                     BA HipHop - Funky                hand
+Hip-Hop & Trap         FUNKY_BASS.serumpreset                     FUNKY BASS                        BA HipHop - FUNKY BASS           vibe
+Hip-Hop & Trap         GOGETA_808.fxp                             hikemah - gogeta 808              BA HipHop - Gogeta 808           hand
+Hip-Hop & Trap         IM_Travis_Scott_Rhyno_Bs.serumpreset       IM - Travis Scott Rhyno Bs Remak  BA Travis - Rhyno                hand
+Hip-Hop & Trap         Travis_Scott_Sicko_Mode.fxp                Sub Bass                          BA Travis - Sicko Sub            hand
+Hip-Hop & Trap         CHORDS_Alone.fxp                           CHORDS - Alone                    CH Trap - Alone                  vibe
+Hip-Hop & Trap         Glizy_Gang.fxp                             KY Glizy Gang                     KY Glizzy - Glizy Gang           hand
+Hip-Hop & Trap         Analog_retro_90s_chords.fxp                80's keys 2                       KY HipHop - 80s Keys 2           hand
+Hip-Hop & Trap         ZORG_KY_Lo_fi_piano.fxp                    lo fi piano zorg                  KY HipHop - Lofi Piano           hand
+Hip-Hop & Trap         KEYS_No_Lies_1.fxp                         KEYS No Lies 1                    KY HipHop - No Lies 1            vibe
+Hip-Hop & Trap         KZ_KEY_Reflection_Key.fxp                  KZ_KEY_Reflection Key             KY HipHop - Reflection           hand
+Hip-Hop & Trap         KY_She_My_Butterfly_PB.serumpreset         KY - She My Butterfly 🦋 (PB)      KY HipHop - She My Butterfly     hand
+Hip-Hop & Trap         Keys_Órgano.fxp                           Keys - Ãrgano                    KY HipHop - Ãrgano              vibe
+Hip-Hop & Trap         Kanye.fxp                                  KEY - Kanye                       KY Kanye - Keys                  hand
+Hip-Hop & Trap         Pluggnb_Eletric_Piano.fxp                  Pluggnb - Eletric Piano           KY Pluggnb - Electric Piano      hand
+Hip-Hop & Trap         Evil_Bells.serumpreset                     Evil Bells                        KY Trap - Evil Bells             vibe
+Hip-Hop & Trap         Static_Pool_Bell.serumpreset               Static Pool                       KY Trap - Static Pool            vibe
+Hip-Hop & Trap         My_Eyes_Travis_Scott.fxp                   My Eyes Keys                      KY Travis - My Eyes Keys         hand
+Hip-Hop & Trap         Tyler_x_Kendrick_Lamar.fxp                 KEY - Tyler Rg                    KY Tyler - Rg Keys               hand
+Hip-Hop & Trap         GET_UP.fxp                                 lead GetUp                        LD Carti - Get Up                hand
+Hip-Hop & Trap         LONG_TIME_PlayBoi_Carti.fxp                LONG TIME                         LD Carti - Long Time             hand
+Hip-Hop & Trap         LD_Crip_Walk.fxp                           LD Crip Walk                      LD G-Funk - Crip Walk            page/name
+Hip-Hop & Trap         Gfunk_whistle.fxp                          G funk lead                       LD G-Funk - Whistle              hand
+Hip-Hop & Trap         LEAD_Metro.serumpreset                     Metro                             LD Metro Boomin - Lead           hand
+Hip-Hop & Trap         Basic_RnB_Sine_Lead_Updated.fxp            Basic RnB Sine Lead (PB)          LD RnB - Sine Lead               hand
+Hip-Hop & Trap         Snow_Strippers_x_Lil_Uzi_Lead.fxp          LEAD - Life's A Dream Rave L      LD Snow Strippers - Dream        hand
+Hip-Hop & Trap         LEAD_Take_Me.fxp                           LEAD - Take Me                    LD Trap - Take Me                vibe
+Hip-Hop & Trap         My_Eyes_Travis_Scott (2).fxp               My Eyes Lead                      LD Travis - My Eyes Lead         hand
+Hip-Hop & Trap         LD_PLUTO.fxp                               LD PLUTO                          LD Uzi - PLUTO                   page/name
+Hip-Hop & Trap         Travis_Scott_Sicko_Mode (1).fxp            Organ                             OR Travis - Sicko Organ          hand
+Hip-Hop & Trap         ESDEEKID_PHANTOM_PAD.serumpreset           PHANTOM PAD                       PD EsDeeKid - PHANTOM PAD        page/name
+Hip-Hop & Trap         Pad_ATMOSPHERIC.fxp                        PAD - ATMOSPHERIC                 PD Trap - ATMOSPHERIC            vibe
+Hip-Hop & Trap         Electrik.fxp                               PD Electrik                       PD Trap - Electrik               vibe
+Hip-Hop & Trap         Spells.fxp                                 PAD - Spells                      PD Trap - Spells                 vibe
+Hip-Hop & Trap         UTOPIA.serumpreset                         UTOPIA PAD                        PD Trap - UTOPIA PAD             vibe
+Hip-Hop & Trap         Pluck_Choirs.fxp                           Pluck - Choirs                    PL Trap - Choirs                 vibe
+Hip-Hop & Trap         Harsh_Trap_PLuck.fxp                                                         PL Trap - Harsh Pluck            hand
+Hip-Hop & Trap         MENACE.serumpreset                         PLUCK - MENACE                    PL Trap - MENACE                 vibe
+Hip-Hop & Trap         My_Eyes_Travis_Scott (1).fxp               My Eyes Pluck                     PL Travis - My Eyes Pluck        hand
+Hip-Hop & Trap         YEAT_GET_BUSY_PLUCK.fxp                    YEAT - GET BUSY PLUCK             PL Yeat - Get Busy               hand
+Hip-Hop & Trap         TimeTravel.fxp                             Synth - TimeTravel                SY Carti - Time Travel           hand
+Hip-Hop & Trap         SYNTH_Alucard.serumpreset                  SYNTH - ALUCARD                   SY Castlevania - Alucard         hand
+Hip-Hop & Trap         STREET_SYN.fxp                             Street SYN                        SY HipHop - Street               hand
+Hip-Hop & Trap         SYN_Underline.fxp                          SYN - Under                       SY HipHop - Under                hand
+Hip-Hop & Trap         VOX_Awwwww.serumpreset                     VOX - Awwwwww                     VX HipHop - Awwwwww              vibe
+Hip-Hop & Trap         TalkBox.serumpreset                        Talkbox                           VX HipHop - Talkbox              hand
+Hip-Hop & Trap         Pluggnb_Pan_Flute.serumpreset              Pluggnb Pan Flute                 WD Pluggnb - Pan Flute           hand
+Presetshare            CH_Retromello.fxp                          CH - Retromello                   CH Retromello                    hand
+Presetshare            KEY_80S_RETRO.fxp                          KEY 80S RETRO                     KY 80s - Retro                   hand
+Presetshare            KEYS_Endless_Sine.serumpreset              KEYS - Endless Sine               KY Endless Sine                  hand
+Presetshare            Journey_Keys.fxp                           KY - Journey                      KY Journey                       hand
+Presetshare            PL_80s_retro_citybox_2.fxp                 PL 80s retro citybox 2            PL 80s - Retro Citybox 2         hand
+Presetshare            PL_80_LD_KEY_2.fxp                         PL 80s retro citybox 4            PL 80s - Retro Citybox 4         hand
+Real Instruments       bell_chiness.fxp                           bell chiness                      BL World - Chinese Bell          hand
+Real Instruments       Carneval_de_Paris_Accordion.serumpreset    KEY - Carneval de Paris           KY Accordion - Carneval de Paris hand
+Real Instruments       synth_Grim_Troupe_Accordion.fxp            synth - Grim Troupe Accordio      KY Accordion - Grim Troupe       hand
+Real Instruments       Realistic_Accordion.serumpreset            Realistic Accordion               KY Accordion - Realistic         hand
+Real Instruments       Velocity_Sensitive_Accordion.serumpreset   Realistic Accordion (Velocity Se  KY Accordion - Realistic Vel     hand
+Real Instruments       Cheap_Church_Organ.fxp                     CHORD - Cheap Church Organ        OR Organ - Cheap Church          hand
+Real Instruments       Church_Organ.serumpreset                   Church Organ(VX)                  OR Organ - Church                hand
+Real Instruments       analog_organ_evil_vibes.serumpreset        analog_organ                      OR Organ - Evil Vibes            hand
+Real Instruments       Handpan.fxp                                PL - SIne Handpan (CLRY22)        PL Handpan - Sine                hand
+Real Instruments       Weird_Jaw_Harp_turned_Pluck.serumpreset    Weird - Jaw Harp turned pluck     PL Jaw Harp - Weird Pluck        hand
+Real Instruments       Kalimba_at_home.fxp                        Kalimba at home                   PL Kalimba - At Home             hand
+Real Instruments       PL_Kalimbant.fxp                           PL - Kalimban't                   PL Kalimba - Kalimbant           hand
+Real Instruments       Full_Contact_Koto.serumpreset              PL - Full Contact                 PL Koto - Full Contact           hand
+Real Instruments       PL_Music_box.fxp                           PL - Music box                    PL Music Box                     hand
+Real Instruments       pluck_Japanese_Koto.fxp                    pluck - Japanese Koto             PL World - Japanese Koto         hand
+Real Instruments       Hurdy_Gurdy.serumpreset                    Hurdy gurdy                       SY Hurdy Gurdy                   hand
+Real Instruments       Colonel_Bogey_Whistle.serumpreset          VOX - Colonel Bogey [WIP]         VX Bridge Kwai - Colonel Bogey   page/name
+Real Instruments       Harmonica.fxp                              Harmonica                         WD Harmonica                     hand
+Real Instruments       Ocarina.serumpreset                        Ocarina                           WD Ocarina                       hand
+Real Instruments       LD_Whistle.fxp                             LD - Whistle                      WD Whistle - Lead                hand
+Real Instruments       Whistle_Lead.serumpreset                   LevisWhistle                      WD Whistle - Levis               hand
+Rock & Guitar          acloudyskye_shoots_warble.fxp              acs shoots warble                 AT acloudyskye - Warble          hand
+Rock & Guitar          Acoustic_Guitar.fxp                        Acoustic Guitar                   GT Rock - Acoustic Guitar        vibe
+Rock & Guitar          Electric_Guitar.serumpreset                Electric Guitar                   GT Rock - Electric Guitar        vibe
+Rock & Guitar          Metal_Guitar.fxp                           I.F Metal Guitar                  GT Rock - Metal Guitar           hand
+Rock & Guitar          KEYS_Not_Dead_Yet_5.serumpreset            KEYS Not Dead Yet 5               KY Rock - Not Dead Yet 5         hand
+Track Remakes          1983.serumpreset                           1983                              AR 80s - 1983                    hand
+Track Remakes          harp_pad_3_notes_16_bars.fxp               harp pad 3 notes 16 bars          AR The News - Harp Pad           hand
+Track Remakes          Avleton_DaFunk_Daft_Punk.fxp               Da Funk                           BA Daft Punk - Da Funk           hand
+Track Remakes          BA_Everything_Counts.serumpreset           BA - Everything Counts            BA Depeche - Everything Counts   hand
+Track Remakes          BA_Into_The_Groove.serumpreset             BA - Into The Groove              BA Madonna - Into The Groove     hand
+Track Remakes          Garden_Party_Bass.serumpreset              BA - Garden Party [WIP]           BA Mezzoforte - Garden Party     page/name
+Track Remakes          Ghost_In_Your_Stereo_Bass.serumpreset      Ghost in Stereo bass              BA The Midnight - Ghost In Stereo hand
+Track Remakes          J9_Tiesto_Tom_Bass.fxp                     J9_Tiesto_Tom_Bass                BA Tiesto - Tom Bass             hand
+Track Remakes          bell_Around_The_World.fxp                  bell - Around The World           BL Daft Punk - Around World      hand
+Track Remakes          Everything_Counts_Xylophone.serumpreset    MALLET - Everything Counts [WIP]  BL Depeche - Everything Counts   hand
+Track Remakes          Everything_Counts.serumpreset              BR - Everything Counts [WIP]      BR Depeche - Everything Counts   hand
+Track Remakes          BRASS_Into_The_Groove.serumpreset          BRASS - Into The Groove           BR Madonna - Into The Groove     hand
+Track Remakes          Garden_Party_Trumpet.serumpreset           BR- Garden Party Trumpet          BR Mezzoforte - Garden Party Trumpet page/name
+Track Remakes          The_Show.serumpreset                       BRASS - The Show                  BR Queen - Show Must Go On       hand
+Track Remakes          FX_City_Siren.serumpreset                  FX - City Siren                   FX 80s TV - City Siren           hand
+Track Remakes          GTR_Intro.serumpreset                      GTR - Intro                       GT The xx - Intro                hand
+Track Remakes          KEYS_On_the_Pulse_1.serumpreset            KEYS On The Pulse 1               KY 80s - On The Pulse 1          vibe
+Track Remakes          Something_about_us.serumpreset             Something about us                KY Daft Punk - Something About Us hand
+Track Remakes          PIANO_CHILDREN.serumpreset                 PIANO_CHILDREN                    KY R. Miles - Children           hand
+Track Remakes          RM_ChildrenRemix_Kit.serumpreset           Robert Miles - Children(Remix Ki  KY R. Miles - Children Remix     hand
+Track Remakes          Right_Place_Keys.fxp                       Right_Place_Keys                  KY Radiohead - R Place Keys      hand
+Track Remakes          Everything_in_Its_Right_Place.fxp          Everything in Its Right Plac      KY Radiohead - Right Place       hand
+Track Remakes          In_Its_Right_Place.fxp                     In_Its_Right_Place_fix            KY Radiohead - Right Place 2     hand
+Track Remakes          Everything_in_its_right_place.serumpreset  Everything in its right place     KY Radiohead - Right Place S2    hand
+Track Remakes          Vienna_Piano.serumpreset                   KEY - Vienna                      KY Ultravox - Vienna             hand
+Track Remakes          9AM_ATB.serumpreset                        9AM ATB                           LD ATB - 9AM                     hand
+Track Remakes          LD_SATISFACTION.fxp                        LD_SATISFACTION                   LD Benassi - Satisfaction        hand
+Track Remakes          Satisfactory_Lead.fxp                      Satisfactory Lead                 LD Benassi - Satisfaction 2      hand
+Track Remakes          Sandstorm.fxp                              LD - Sandstorm                    LD Darude - Sandstorm            hand
+Track Remakes          LD_Just_Dance_JH.fxp                       LD Just Dance (JH)                LD Gaga - Just Dance             hand
+Track Remakes          lead_Diskotek.fxp                          lead - Diskotek                   LD Italo - Diskotek              vibe
+Track Remakes          lead_älskar_euro_gate.fxp                 lead - Ã¤lskar gated saw          LD Italo - Ã¤lskar gated saw     vibe
+Track Remakes          MGMT_KIDS.serumpreset                      MGMT - KIDS                       LD MGMT - Kids                   hand
+Track Remakes          LD_Sub_Focus_Rock_It.fxp                   AXZU_LD_Rock_It                   LD Sub Focus - Rock It           hand
+Track Remakes          LEAD_Lethal_Industry.serumpreset           Lethal Industry                   LD Tiesto - Lethal Industry      page/name
+Track Remakes          Vengaboys_Lead_Serum_2_ver.serumpreset     Up & Down                         LD Vengaboys - Up & Down         page/name
+Track Remakes          weeknd_popular.fxp                         popular weeknd                    LD Weeknd - Popular              hand
+Track Remakes          lead_KernKraft_400.fxp                     lead - Kernkraft400               LD Zombie Nation - Kernkraft     hand
+Track Remakes          Zombie_Nation_Lead_Accurate.serumpreset    Zombie Nation Lead                LD Zombie Nation - Kernkraft 400 hand
+Track Remakes          CHORD_Ghosts_n_Stuff_Organ.serumpreset     CHORD - Ghost's n Stuff Organ     OR Deadmau5 - Ghosts n Stuff     hand
+Track Remakes          PD_Rhubarb.serumpreset                     PD - Rhubarb                      PD Aphex - Rhubarb               hand
+Track Remakes          PD_Disclosure_2_JH.fxp                     PD Disclosure 2 (JH)              PD Disclosure - Pad 2            hand
+Track Remakes          So_Much_Better_Avicii_Remix.fxp            PL So Much Better (Avicii Re      PL Avicii - So Much Better       hand
+Track Remakes          Deadmau5_PH_Sine_Pluck.fxp                 Deadmau5 Progressive House S      PL Deadmau5 - Sine Pluck         hand
+Track Remakes          PL_A_Little_Respect.serumpreset            PL - A Little Respect [WIP]       PL Erasure - A Little Respect    page/name
+Track Remakes          Insomnia.fxp                               Insomnia (Lunitrixx)              PL Faithless - Insomnia          hand
+Track Remakes          PL_Mysterious_Times.serumpreset            PL - Mysterious Times [WIP] 2     PL Sash! - Mysterious Times      page/name
+Track Remakes          Ghost_in_the_Delay.serumpreset             Ghost in the Delay                PL Weeknd - Ghost in the Delay   hand
+Track Remakes          ST_Radio_Strings.serumpreset               ST - Talking Strings 2            ST Queen - Radio Ga Ga           hand
+Track Remakes          ANDKorgM1Strings01_SERUM2.serumpreset      AND-Korg-M1-Strings-03            ST Queen - Show Must Go On M1    hand
+Track Remakes          SY_You_Spin_Me.serumpreset                 SY - You Spin Me                  SY Dead or Alive - You Spin Me   hand
+Track Remakes          SY_Catch_22.serumpreset                    SY - Catch 22                     SY Erasure - Catch 22            page/name
+Track Remakes          SY_Man_In_The_Moon.serumpreset             SY - Man in the Moon              SY Erasure - Man in the Moon     page/name
+Track Remakes          SY_Turbo_De_France.serumpreset             SY - Turbo De France              SY Kraftwerk - Tour De France    hand
+Witch House            BASS_Burial_Reese.fxp                      ! ! Burial Reese                  BA Burial - Reese                hand
+Witch House            Devastation_BS.serumpreset                 octave bass                       BA CC - Devastation              hand
+Witch House            bass_Oaklander.fxp                         bass - Oaklander                  BA Dream - Oaklander             vibe
+Witch House            BS_Ruined_1.fxp                            BS Ruined 1                       BA Dream - Ruined 1              vibe
+Witch House            BS_Signal_1.fxp                            BS Singal 1                       BA Dream - Singal 1              vibe
+Witch House            Emptiness_become_too_loud_BS.fxp           BS LOST COVEN REESE               BA Lost Coven - Reese            hand
+Witch House            WitchHouse_Bass_Reality.fxp                VillaCityHunter - Reality         BA VillaCity - Reality           page/name
+Witch House            Underworld_Reese_BS.serumpreset            underworld reese                  BA Witch - Underworld Reese      hand
+Witch House            BELL_Lyras_Eye.fxp                         BELL - Lyra's Eye                 BL Dreamcore - Lyras Eye         hand
+Witch House            Fever_Dream_LoFi_Keys_44B.fxp              fever dream lofi keys v4432-      KY BoC - Fever Dream Lofi        hand
+Witch House            Keys_Vaporwave_Piano.serumpreset           Keys - Vaporwave Piano            KY Vaporwave - Piano             hand
+Witch House            WitchHouse_Keys_Fongus.fxp                 VillaCityHunter - Fongus          KY VillaCity - Fongus            page/name
+Witch House            WitchHouse_Fongus_2.fxp                    Keys - Fongus 2 - Villa           KY VillaCity - Fongus 2          page/name
+Witch House            LD_GHOST.fxp                               LD GHOST                          LD Ethereal - GHOST              vibe
+Witch House            HT_LD_Ghost.fxp                            HT_LD_Ghost                       LD Ethereal - HT Ghost           hand
+Witch House            GOETHE_lead_cinematic_one.serumpreset      Goethe lead                       LD Goethe - lead                 page/name
+Witch House            Witchs_poison_LD.fxp                       LOST COVEN - Witch's poison       LD Lost Coven - Witch Poison     hand
+Witch House            WitchHouse_Lead_Spirits.fxp                Lead-Spirits-VillaTheCityHun      LD VillaCity - Spirits           page/name
+Witch House            lead_Existential_Terror.fxp                lead - Existential Terror         LD Witch - Existential Terr      hand
+Witch House            Stuck_Lead.serumpreset                     Stuck-lead                        LD Witch - Stuck-lead            vibe
+Witch House            Phase_Shifter.serumpreset                  Phase Shifter                     PD Dream - Phase Shifter         vibe
+Witch House            PAD_Bird_3.fxp                             PAD - Bird 3                      PD Dreamcore - Bird 3            hand
+Witch House            PAD_Sustenance.fxp                         PAD - Sustenance                  PD Dreamcore - Sustenance        hand
+Witch House            Ghost.fxp                                  PD GHOST                          PD Ethereal - GHOST              vibe
+Witch House            GHOST_PLANET.fxp                           GHOST PLANET                      PD Ethereal - GHOST PLANET       vibe
+Witch House            Radeon.fxp                                 PAD - Radeon                      PD Ethereal - Radeon             vibe
+Witch House            PD_PRISM.fxp                               SPECTRUM                          PD Ethereal - SPECTRUM           vibe
+Witch House            Witch_PD.fxp                               Witch pad                         PD Witch - Pad                   hand
+Witch House            pluck_Xeno.fxp                             pluck - Xeno                      PL Dream - Xeno                  vibe
+Witch House            Destroy_keys.serumpreset                   Destroy keys                      PL Witch - Destroy keys          vibe
+Witch House            Strings_Dreamy_Nights.fxp                  STRINGS - Dreamy Nights           ST Dream - Dreamy Nights         hand
+Witch House            VillaCityHunter_Blow.fxp                   VillaCityHunter - Blow            SY VillaCity - Blow              page/name
+Witch House            SYNTH_18_witchhouse.fxp                    d33f_synth_18 witchhouse          SY Witch - d33f Synth 18         hand
+Witch House            SYN_Digital_Witch_Choir.fxp                SYN Digital Witch 1               SY Witch - Digital Choir 1       hand

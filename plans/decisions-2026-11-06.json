@@ -1,0 +1,22 @@
+[
+  {
+    "id": "D4",
+    "question": "Spotify followers rungs (baseline 68): 80 by 2026-11-30 and 90 by 2026-12-31?",
+    "answer": "Confirm 80 / 90",
+    "answered_at": "2026-11-06",
+    "writes": [
+      {"file": "plans/targets.json", "key_or_section": "metrics.spotify_followers.confirmed", "value": true},
+      {"file": "plans/handovers/system/system.md", "key_or_section": "rungs", "value": "Spotify followers 80 (30 Nov) / 90 (31 Dec) confirmed by Amir at the desk."}
+    ]
+  },
+  {
+    "id": "D4",
+    "question": "Email list rungs (baseline 16): 30 by 2026-11-30 and 50 by 2026-12-31?",
+    "answer": "Confirm 30 / 50",
+    "answered_at": "2026-11-06",
+    "writes": [
+      {"file": "plans/targets.json", "key_or_section": "metrics.email_list.confirmed", "value": true},
+      {"file": "plans/handovers/system/system.md", "key_or_section": "rungs", "value": "Email list 30 (30 Nov) / 50 (31 Dec) confirmed by Amir at the desk."}
+    ]
+  }
+]

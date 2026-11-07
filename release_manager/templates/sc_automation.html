@@ -1,0 +1,289 @@
+{% extends "base.html" %}
+{% block title %}SC status{% endblock %}
+
+{% block content %}
+<div class="sc-auto-page">
+
+    <!-- Read-only status (RM 2.0 slice 4, SC chat answer 2026-11-06): no run, no API calls -->
+    <div class="sc-banner-warning">
+        <strong>Read-only status.</strong>
+        This page reads the local tracker files and calls nothing. Follows happen in your real Chrome browser
+        and are logged with <code>sc_engagement.py --log-action</code>, so the numbers here stay in sync.
+    </div>
+
+    <!-- Header -->
+    <div class="engagement-header">
+        <div class="engagement-header-left">
+            <h1>SC status</h1>
+            <p class="engagement-subtitle">Budgets, follow tracker and recent activity, from local files.</p>
+        </div>
+        <div class="engagement-header-right" style="gap:0.75rem;display:flex;align-items:center;flex-wrap:wrap;">
+            <span class="engagement-stat" id="auth-status">
+                {% if status.token_present %}
+                <span style="color:var(--color-done)">● Token OK</span>
+                {% else %}
+                <span style="color:var(--color-overdue)">● No Token</span>
+                {% endif %}
+            </span>
+        </div>
+    </div>
+
+    <!-- Budget bars -->
+    <div class="sc-budget-row">
+        {% set b = status.budget %}
+
+        <div class="sc-budget-card">
+            <div class="sc-budget-label">Likes today</div>
+            <div class="sc-budget-numbers">
+                <span id="likes-used">{{ b.likes.used }}</span> / <span>{{ b.likes.budget }}</span>
+            </div>
+            <div class="sc-budget-bar">
+                <div class="sc-budget-fill" id="likes-bar"
+                     style="width:{{ [(b.likes.used / b.likes.budget * 100), 100] | min }}%"></div>
+            </div>
+            <div class="sc-budget-remaining"><span id="likes-remaining">{{ b.likes.remaining }}</span> remaining</div>
+        </div>
+
+        <div class="sc-budget-card">
+            <div class="sc-budget-label">Follows today</div>
+            <div class="sc-budget-numbers">
+                <span id="follows-used">{{ b.follows.used }}</span> / <span>{{ b.follows.budget }}</span>
+            </div>
+            <div class="sc-budget-bar">
+                <div class="sc-budget-fill" id="follows-bar"
+                     style="width:{{ [(b.follows.used / b.follows.budget * 100), 100] | min }}%"></div>
+            </div>
+            <div class="sc-budget-remaining"><span id="follows-remaining">{{ b.follows.remaining }}</span> remaining</div>
+        </div>
+
+        <div class="sc-budget-card">
+            <div class="sc-budget-label">Reposts this week</div>
+            <div class="sc-budget-numbers">
+                <span id="reposts-used">{{ b.reposts.used }}</span> / <span>{{ b.reposts.budget }}</span>
+            </div>
+            <div class="sc-budget-bar">
+                <div class="sc-budget-fill" id="reposts-bar"
+                     style="width:{{ [(b.reposts.used / b.reposts.budget * 100), 100] | min }}%"></div>
+            </div>
+            <div class="sc-budget-remaining"><span id="reposts-remaining">{{ b.reposts.remaining }}</span> remaining</div>
+        </div>
+
+        <div class="sc-budget-card">
+            <div class="sc-budget-label">Active follows</div>
+            <div class="sc-budget-numbers" id="active-follows-count">{{ status.follow_tracker.total_active }}</div>
+            <div class="sc-budget-remaining">
+                <span id="follow-backs-count">{{ status.follow_tracker.followed_back }}</span> followed back ·
+                <span id="pending-unfollow-count" style="color:var(--color-warning)">{{ status.follow_tracker.pending_unfollow }}</span> to unfollow
+            </div>
+        </div>
+    </div>
+
+    <!-- Two-column layout: follow tracker + recent activity -->
+    <div class="sc-two-col">
+
+        <!-- Follow Tracker -->
+        <div class="sc-panel">
+            <div class="sc-panel-header">
+                <h3>Follow Tracker</h3>
+                <span class="sc-panel-sub">Auto-unfollows after {{ status.config.unfollow_after_days }} days if no follow-back</span>
+            </div>
+            <div class="sc-panel-body" id="follow-tracker-body">
+                {% if status.follow_tracker.entries %}
+                <table class="sc-table">
+                    <thead>
+                        <tr>
+                            <th>Artist</th>
+                            <th>Followed</th>
+                            <th>Unfollow after</th>
+                            <th>Status</th>
+                            <th>Source</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    {% for entry in status.follow_tracker.entries %}
+                    {% if loop.index <= 50 or request.args.get("all") %}<tr>
+                        <td>
+                            {% if entry.url %}
+                            <a href="{{ entry.url }}" target="_blank" rel="noopener" class="sc-link">{{ entry.name }}</a>
+                            {% else %}
+                            {{ entry.name }}
+                            {% endif %}
+                            <span class="sc-follower-count">({{ "{:,}".format(entry.followers | int) }} followers)</span>
+                        </td>
+                        <td>{{ entry.followed_at }}</td>
+                        <td>{{ entry.unfollow_after }}</td>
+                        <td>
+                            {% if entry.followed_back %}
+                            <span class="sc-badge sc-badge-green">Followed back</span>
+                            {% else %}
+                            <span class="sc-badge sc-badge-gray">Pending</span>
+                            {% endif %}
+                        </td>
+                        <td><span class="sc-badge sc-badge-dim">{{ entry.source }}</span></td>
+                    </tr>{% endif %}
+                    {% endfor %}
+                    </tbody>
+                </table>
+                {% if status.follow_tracker.entries|length > 50 and not request.args.get("all") %}
+                <a class="btn btn-secondary sc-show-all" href="?all=1">Show all {{ status.follow_tracker.entries|length }} rows</a>
+                {% endif %}
+                {% else %}
+                <p class="sc-empty">No active follows yet. Run the engine to start tracking.</p>
+                {% endif %}
+            </div>
+        </div>
+
+        <!-- Recent Activity -->
+        <div class="sc-panel">
+            <div class="sc-panel-header">
+                <h3>Recent Activity</h3>
+                <span class="sc-panel-sub">Last 30 SC actions</span>
+            </div>
+            <div class="sc-panel-body" id="activity-log-body">
+                {% if status.recent_activity %}
+                <table class="sc-table">
+                    <thead>
+                        <tr>
+                            <th>Date</th>
+                            <th>Action</th>
+                            <th>Target</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    {% for entry in status.recent_activity %}
+                    <tr>
+                        <td>{{ entry.date }}</td>
+                        <td>
+                            {% if entry.action == 'sc_like' %}
+                            <span class="sc-badge sc-badge-orange">Like</span>
+                            {% elif entry.action == 'sc_follow' %}
+                            <span class="sc-badge sc-badge-blue">Follow</span>
+                            {% elif entry.action == 'sc_unfollow' %}
+                            <span class="sc-badge sc-badge-gray">Unfollow</span>
+                            {% elif entry.action == 'sc_repost' %}
+                            <span class="sc-badge sc-badge-purple">Repost</span>
+                            {% else %}
+                            <span class="sc-badge sc-badge-dim">{{ entry.action }}</span>
+                            {% endif %}
+                        </td>
+                        <td>
+                            {% if entry.action == 'sc_like' %}
+                            <span class="sc-activity-artist">{{ entry.artist }}</span>
+                            {% if entry.title %} — <span class="sc-activity-track">{{ entry.title }}</span>{% endif %}
+                            {% elif entry.action in ('sc_follow', 'sc_unfollow') %}
+                            {{ entry.name or entry.get('_key', '') }}
+                            {% elif entry.action == 'sc_repost' %}
+                            <span class="sc-activity-artist">{{ entry.artist }}</span>
+                            {% if entry.title %} — <span class="sc-activity-track">{{ entry.title }}</span>{% endif %}
+                            {% else %}
+                            {{ entry.get('_key', '') }}
+                            {% endif %}
+                        </td>
+                    </tr>
+                    {% endfor %}
+                    </tbody>
+                </table>
+                {% else %}
+                <p class="sc-empty">No SC activity logged yet.</p>
+                {% endif %}
+            </div>
+        </div>
+
+    </div><!-- /.sc-two-col -->
+
+</div><!-- /.sc-auto-page -->
+
+<style>
+.sc-auto-page { max-width: 1200px; }
+
+.sc-banner-warning {
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-color);
+    border-left: 3px solid var(--color-warning);
+    color: var(--text-secondary);
+    padding: 0.85rem 1.1rem;
+    border-radius: var(--radius);
+    font-size: var(--text-sm);
+    line-height: 1.5;
+    margin-bottom: 1.25rem;
+}
+.sc-banner-warning strong { color: var(--color-warning-text); }
+.sc-banner-warning code {
+    background: rgba(255,255,255,0.05);
+    padding: 0.1em 0.35em;
+    border-radius: 3px;
+    font-size: 0.78rem;
+}
+
+/* Budget cards */
+.sc-budget-row {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+@media (max-width: 900px) { .sc-budget-row { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 520px) { .sc-budget-row { grid-template-columns: 1fr; } }
+
+.sc-budget-card {
+    background: var(--bg-secondary);
+    border: 1px solid rgba(255,255,255,0.06);
+    border-radius: 8px;
+    padding: 1rem 1.2rem;
+}
+.sc-budget-label { font-size: 0.75rem; color: var(--text-secondary); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.5rem; }
+.sc-budget-numbers { font-size: 1.6rem; font-weight: 700; color: var(--text-accent); margin-bottom: 0.5rem; }
+.sc-budget-bar { height: 4px; background: rgba(255,255,255,0.08); border-radius: 2px; margin-bottom: 0.4rem; overflow: hidden; }
+.sc-budget-fill { height: 100%; background: var(--text-accent); border-radius: 2px; transition: width 0.3s ease; }
+.sc-budget-remaining { font-size: 0.78rem; color: var(--text-secondary); }
+
+/* Two-column layout */
+.sc-two-col {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+}
+@media (max-width: 800px) { .sc-two-col { grid-template-columns: 1fr; } }
+
+/* Panel */
+.sc-panel {
+    background: var(--bg-secondary);
+    border: 1px solid rgba(255,255,255,0.06);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+.sc-panel-header {
+    padding: 0.85rem 1.2rem;
+    border-bottom: 1px solid rgba(255,255,255,0.06);
+}
+.sc-panel-header h3 { margin: 0 0 0.15rem; font-size: 0.95rem; color: var(--text-primary); }
+.sc-panel-sub { font-size: 0.75rem; color: var(--text-secondary); }
+.sc-panel-body { padding: 0.75rem 0; overflow-x: auto; max-height: 480px; overflow-y: auto; }
+.sc-empty { color: var(--text-secondary); font-size: 0.85rem; padding: 0.75rem 1.2rem; }
+
+/* Table */
+.sc-table { width: 100%; border-collapse: collapse; font-size: 0.82rem; }
+.sc-table th { padding: 0.4rem 1rem; color: var(--text-secondary); font-weight: 500; text-align: left; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.04em; }
+.sc-table td { padding: 0.5rem 1rem; border-top: 1px solid rgba(255,255,255,0.04); vertical-align: middle; }
+.sc-table tr:hover td { background: var(--bg-hover); }
+
+/* Badges */
+.sc-badge { display: inline-block; padding: 0.15em 0.5em; border-radius: 3px; font-size: var(--text-xs); font-weight: 600; letter-spacing: 0.03em; }
+.sc-badge-green  { background: rgba(74,124,89,0.25);  color: #7ecb96; }
+.sc-badge-orange { background: rgba(200,130,50,0.25); color: #e09b5a; }
+.sc-badge-blue   { background: rgba(70,110,170,0.25); color: #7aabea; }
+.sc-badge-purple { background: rgba(106,76,147,0.25); color: #b48fe0; }
+.sc-badge-gray   { background: rgba(255,255,255,0.08); color: var(--text-secondary); }
+.sc-badge-dim    { background: rgba(255,255,255,0.05); color: var(--text-secondary); font-weight: 400; }
+
+.sc-link { color: var(--text-accent); text-decoration: none; }
+.sc-link:hover { text-decoration: underline; }
+.sc-follower-count { color: var(--text-secondary); font-size: 0.75rem; }
+.sc-activity-artist { color: var(--text-primary); }
+.sc-activity-track { color: var(--text-secondary); font-style: italic; }
+
+</style>
+
+{% endblock %}

@@ -1,0 +1,155 @@
+{
+  "period": {
+    "start": "2026-11-01",
+    "end": "2026-12-31",
+    "approved_by": "Amir",
+    "approved_on": "2026-11-01"
+  },
+  "metrics": {
+    "ig_followers": {
+      "label": "IG followers",
+      "unit": "followers",
+      "kind": "ladder",
+      "source": "snapshot:instagram.followers",
+      "baseline": {
+        "value": 966,
+        "date": "2026-11-02"
+      },
+      "rate_per_month": 30,
+      "rungs": {
+        "2026-11-30": 996,
+        "2026-12-31": 1026
+      },
+      "target": 1026,
+      "rule": "six-month pre-pause average 29.4/month rounded to 30; baseline = first board reading on 2026-11-02, rungs = baseline + 30 and + 60"
+    },
+    "ig_followback_pct": {
+      "label": "IG follow-back",
+      "unit": "%",
+      "kind": "floor",
+      "source": "followback:since_may_pct",
+      "baseline": {
+        "value": 23,
+        "date": "2026-10-10"
+      },
+      "floor": 20,
+      "rule": "mean of the May to Sep 2026 cohorts (23.2) minus 3, rounded down to 5"
+    },
+    "ig_reach_30d": {
+      "label": "IG reach, 30d",
+      "unit": "accounts",
+      "kind": "collecting",
+      "source": "snapshot:instagram.reach_30d|manual:instagram_insights.reach_30d"
+    },
+    "sc_followers": {
+      "label": "SoundCloud followers",
+      "unit": "followers",
+      "kind": "ladder",
+      "source": "snapshot:soundcloud.followers",
+      "baseline": {
+        "value": 447,
+        "date": "2026-10-31"
+      },
+      "rungs": {
+        "2026-11-30": 510,
+        "2026-12-31": 600
+      },
+      "target": 600,
+      "rule": "SC-07 ladder, Amir confirmed 2026-09-01, unchanged"
+    },
+    "spotify_monthly_active": {
+      "label": "Spotify monthly listeners",
+      "unit": "listeners",
+      "kind": "ladder",
+      "source": "s4a:weeks.monthly_active",
+      "baseline": {
+        "value": 96,
+        "date": "2026-10-30"
+      },
+      "rungs": {
+        "2026-11-30": 90,
+        "2026-12-31": 110
+      },
+      "target": 110,
+      "rule": "Nov = 12-week mean 91.75 rounded to 90; Dec = best 4-week mean of the last six months, 109 (Oct 5 to 30), rounded to 110"
+    },
+    "tiktok_followers": {
+      "label": "TikTok followers",
+      "unit": "followers",
+      "kind": "collecting",
+      "source": "manual:tiktok.followers"
+    },
+    "spotify_followers": {
+      "label": "Spotify followers",
+      "unit": "followers",
+      "kind": "ladder",
+      "source": "s4a:weeks.followers",
+      "baseline": {
+        "value": 68,
+        "date": "2026-10-31"
+      },
+      "rungs": {
+        "2026-11-30": 80,
+        "2026-12-31": 90
+      },
+      "target": 90,
+      "rule": "D4 (2026-11-05): fan number for the songs. Baseline = Monday S4A read of 2026-10-31; rungs +12 and +22 on the six-month pace (49 to 68, Apr to Oct 2026, about 3.5/month) lifted for the first song. Proposed by Claude, Amir has not confirmed.",
+      "proposed_by": "claude",
+      "confirmed": false
+    },
+    "email_list": {
+      "label": "Email list",
+      "unit": "addresses",
+      "kind": "ladder",
+      "source": "manual:email_list.subscribers",
+      "baseline": {
+        "value": 16,
+        "date": "2026-11-05"
+      },
+      "rungs": {
+        "2026-11-30": 30,
+        "2026-12-31": 50
+      },
+      "target": 50,
+      "rule": "D4 (2026-11-05): Bandcamp mailing list, 16 addresses on 2026-11-05, typed in by hand (python3 stats/manual_entry.py email_list subscribers N). Rungs 30 and 50 assume a sign-up ask goes live with the first song. Proposed by Claude, Amir has not confirmed.",
+      "proposed_by": "claude",
+      "confirmed": false
+    },
+    "release_engagement_d28": {
+      "label": "Release engagement, day 28",
+      "unit": "actions",
+      "kind": "collecting",
+      "source": "release:outcomes.stats.engagement_d28",
+      "rule": "D4 (2026-11-05): no rung. Baseline = the first day-28 read of Half the Night; rungs are set after that read. Until then the card collects.",
+      "schema": {
+        "where": "releases/<slug>.json -> outcomes.stats.engagement_d28 (one object per release, written on day 28 after the release date)",
+        "fields": {
+          "value": "integer, fan actions in the first 28 days: the sum of parts",
+          "as_of": "YYYY-MM-DD, the day-28 read date",
+          "release_date": "YYYY-MM-DD",
+          "parts": "object of the counted actions, e.g. spotify_saves, spotify_playlist_adds, sc_likes, sc_reposts, ig_comments, ig_shares, bandcamp_follows",
+          "source": "where each number was read, e.g. S4A song page, SC stats, IG insights",
+          "note": "free text"
+        },
+        "example": {
+          "value": 0,
+          "as_of": "YYYY-MM-DD",
+          "release_date": "YYYY-MM-DD",
+          "parts": {
+            "spotify_saves": 0,
+            "spotify_playlist_adds": 0,
+            "sc_likes": 0,
+            "sc_reposts": 0,
+            "ig_comments": 0,
+            "ig_shares": 0
+          },
+          "source": "",
+          "note": ""
+        },
+        "reader": "release_manager.score_board reads every releases/*.json (backups skipped) and plots one point per release at as_of; the newest release is the card value"
+      },
+      "proposed_by": "claude",
+      "confirmed": false
+    }
+  }
+}

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!-- DRAFT, NOT INSTALLED (2026-09-27). A daily stats snapshot at 08:45, before the IG dispatcher's
+     09:30 run. Spotify, SoundCloud, YouTube, a light ledger-claimed Instagram sample and the HikerAPI balance
+     (score board, 2026-11). To install, copy to ~/Library/LaunchAgents/com.inchofshadow.stats-sync.plist
+     and load it with launchctl. Same python binary as the dispatcher, which has Full Disk Access. -->
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.inchofshadow.stats-sync</string>
+    <key>ProgramArguments</key>
+    <array>
+        <string>/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/bin/python3.9</string>
+        <string>/Users/amir/Desktop/Inch of Shadow/Inchofshadowcode/stats/daily_sync.py</string>
+    </array>
+    <key>WorkingDirectory</key>
+    <string>/Users/amir/Desktop/Inch of Shadow/Inchofshadowcode</string>
+    <key>StartCalendarInterval</key>
+    <dict><key>Hour</key><integer>8</integer><key>Minute</key><integer>45</integer></dict>
+    <key>StandardOutPath</key>
+    <string>/Users/amir/Desktop/Inch of Shadow/Inchofshadowcode/docs/reports/stats-sync-launchd.log</string>
+    <key>StandardErrorPath</key>
+    <string>/Users/amir/Desktop/Inch of Shadow/Inchofshadowcode/docs/reports/stats-sync-launchd.log</string>
+</dict>
+</plist>

@@ -1,0 +1,75 @@
+{
+  "name": "income-niches",
+  "question": "In small professional niches that already pay for software, which repeated manual chores or missing tools could a two-person team sell as a self-serve product (web tool, app, extension, template, data product)?",
+  "system_extra": "Prefer narrow professional groups over mass consumers: broad consumer gaps (invoices, fax, scanners, photo cleaners, shuffle, tuners) were all crowded in two earlier runs. Strong signals: people doing a task by hand every week, using spreadsheets or copy-paste as a workaround, paying a freelancer for something repetitive, or naming a price. Favour products that can run on assets the team already pays for: Claude API credit (near-zero AI cost), automated video rendering, SEO content pipeline, Telegram alert engine, Discogs/Spotify/YouTube APIs. Skip anything needing client services or a sales team. Already checked and crowded, do NOT return these or close variants: property-manager/landlord tools (rent, COI, inspections, deadlines, owner reports, leases), bookkeeping PDF/statement extraction, Etsy profit tracking, podcast analytics, playlist-curator analytics, footage/drive catalogs, post-production paperwork, stem QC, wedding venue blog generators, invoicing apps, fax/scan, duplicate photo cleaners, shuffle, guitar tuners, mileage trackers, faceless video builders, Shorts clippers, Reddit intent monitors.",
+  "output_dir": "gap_radar/reports/income-niches",
+  "crowding": true,
+  "sources": {
+    "reddit": {
+      "subs": [
+        "QuickBooks",
+        "TaxPros",
+        "VideoEditing",
+        "photography",
+        "realestateinvesting",
+        "teaching",
+        "sysadmin",
+        "Bookkeeping",
+        "Accounting",
+        "editors",
+        "msp",
+        "EtsySellers",
+        "weddingphotography",
+        "podcasting",
+        "audioengineering"
+      ],
+      "phrases": [
+        "\"spreadsheet\"",
+        "\"by hand\"",
+        "\"workaround\"",
+        "\"manually\"",
+        "\"copy and paste\"",
+        "\"export to CSV\"",
+        "\"bank reconciliation\"",
+        "\"month-end close\"",
+        "\"report card comments\"",
+        "\"gallery delivery\""
+      ]
+    },
+    "hn_queries": [],
+    "stackexchange": {
+      "sites": [
+        "webapps",
+        "softwarerecs",
+        "video",
+        "sound",
+        "photo",
+        "money"
+      ],
+      "queries": [
+        "automate export",
+        "bulk rename metadata",
+        "convert batch"
+      ]
+    },
+    "youtube_queries": [
+      "QuickBooks month-end close tutorial",
+      "bank reconciliation workflow small business",
+      "Lightroom export workflow wedding",
+      "report card comments teacher",
+      "sysadmin automation script tips",
+      "DaVinci Resolve proxy workflow",
+      "tax preparer workflow software"
+    ],
+    "github_queries": [],
+    "appstore": {
+      "genres": [],
+      "app_ids": []
+    },
+    "hikerapi": {
+      "hashtags": [],
+      "accounts": [],
+      "max_calls": 0
+    }
+  }
+}

@@ -1,0 +1,21 @@
+[     812ms] [WARNING] error TypeError: Cannot read properties of undefined (reading 'push')
+    at r (https://www.ninaprotocol.com/_next/static/chunks/7713-e672a3d4d970582c.js:228:150578)
+    at o (https://www.ninaprotocol.com/_next/static/chunks/7172-4da36f2d00118ed9.js:1:25443)
+    at https://www.ninaprotocol.com/_next/static/chunks/app/layout-b9c8c20ecaa94d6a.js:1:1517
+    at aI (https://www.ninaprotocol.com/_next/static/chunks/fd9d1056-185ff4ac7ce9bf41.js:1:72858)
+    at a3 (https://www.ninaprotocol.com/_next/static/chunks/fd9d1056-185ff4ac7ce9bf41.js:1:84299)
+    at a5 (https://www.ninaprotocol.com/_next/static/chunks/fd9d1056-185ff4ac7ce9bf41.js:1:84937)
+    at a8 (https://www.ninaprotocol.com/_next/static/chunks/fd9d1056-185ff4ac7ce9bf41.js:1:84821)
+    at a5 (https://www.ninaprotocol.com/_next/static/chunks/fd9d1056-185ff4ac7ce9bf41.js:1:85882)
+    at a8 (https://www.ninaprotocol.com/_next/static/chunks/fd9d1056-185ff4ac7ce9bf41.js:1:84821)
+    at a5 (https://www.ninaprotocol.com/_next/static/chunks/fd9d1056-185ff4ac7ce9bf41.js:1:84917) @ https://www.ninaprotocol.com/_next/static/chunks/7172-4da36f2d00118ed9.js:0
+[    1685ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ https://services.ninaprotocol.com/v1/tags/darkdisco?limit=10&column=favorites&daterange=weekly:0
+[    1685ms] [WARNING] tb @ https://www.ninaprotocol.com/_next/static/chunks/4749-dcdb68584a91a3b0.js:0
+[    1686ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ https://services.ninaprotocol.com/v1/tags/darkdisco?limit=20&offset=0&sort=desc&column=favorites&query=&daterange=weekly:0
+[    1686ms] [WARNING] tb @ https://www.ninaprotocol.com/_next/static/chunks/4749-dcdb68584a91a3b0.js:0
+[    1686ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ https://services.ninaprotocol.com/v1/tags/darkdisco?limit=25&offset=0&sort=desc&daterange=weekly&column=favorites:0
+[    1686ms] [WARNING] tb @ https://www.ninaprotocol.com/_next/static/chunks/4749-dcdb68584a91a3b0.js:0
+[    3131ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ https://services.ninaprotocol.com/v1/tags/darkdisco?limit=20&offset=0&sort=desc&column=favorites&query=&daterange=weekly:0
+[    3131ms] [WARNING] tb @ https://www.ninaprotocol.com/_next/static/chunks/4749-dcdb68584a91a3b0.js:0
+[    3132ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ https://services.ninaprotocol.com/v1/tags/darkdisco?limit=20&offset=0&sort=desc&column=favorites&query=&daterange=weekly:0
+[    3132ms] [WARNING] tb @ https://www.ninaprotocol.com/_next/static/chunks/4749-dcdb68584a91a3b0.js:0

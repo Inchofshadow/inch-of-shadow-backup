@@ -1,0 +1,1199 @@
+[
+ {
+  "name": "Invoice app with honest flat pricing for tradespeople",
+  "pain": "Long-time Invoice Simple users report repeated price hikes, monthly invoice caps added mid-subscription, and plan changes that are not honored. Invoice Fly users hit paywalls after setup. One QuickBooks user pays too much for what is mostly invoicing.",
+  "who_pays": "Solo tradespeople and very small service businesses (plumbers, handymen, mechanics, small shops) sending about 5-50 invoices a month",
+  "evidence_ids": [
+   1115,
+   1117,
+   1118,
+   1119,
+   1121,
+   1138,
+   1141,
+   1145,
+   1157,
+   1158,
+   1164,
+   1167,
+   1170,
+   1171,
+   1173,
+   1176,
+   1179,
+   1180,
+   1099,
+   1101,
+   978,
+   7,
+   109
+  ],
+  "pay_signal": "Users already pay $55-$200/yr and are leaving because of hikes. Several name the price they would accept, about $50/yr or less (1141), and complain about $20/mo (1145). One wants usage-based tiers. Post 109 says threads mentioning 'invoice' score highest as opportunities.",
+  "product_idea": "Mobile and web invoice/estimate maker with a one-time or locked lifetime price. Unlimited invoices, photo attachments, PDF/email/text sending, optional Stripe link with no extra cut. Includes an import tool for Invoice Simple CSV exports, plus an Airtable/Sheets/Zapier trigger for auto-invoices (7).",
+  "build_weeks": 5,
+  "fit_for_us": 4,
+  "known_competitors": "Invoice Simple, Invoice Fly, Joist, Zoho Invoice (free), Wave, Square Invoices, QuickBooks",
+  "check_next": "Search 'Invoice Simple alternative' volume. Check whether Invoice Simple offers data export so migration is easy. Test SEO pages like 'invoice app no subscription' and 'one-time purchase invoice app'.",
+  "crowding": {
+   "verdict": "crowded",
+   "reason": "Square and Wave offer free unlimited invoicing and Zoho Invoice is free up to 500/yr, covering 5-50 invoices/mo; lifetime-license invoice apps (InvoiceOffline, Daily Invoice Maker, Contractor Estimate & Invoice) already exist.",
+   "competitors": [
+    {
+     "name": "Square Invoices",
+     "price": "Free (unlimited invoices, processing fees apply); Plus $20/mo",
+     "url": "https://sonary.com/b/square/square+online-invoicing/",
+     "verified": true
+    },
+    {
+     "name": "Wave",
+     "price": "Starter free, unlimited invoicing; Pro $19/mo or $190/yr",
+     "url": "https://checkthat.ai/brands/wave/pricing",
+     "verified": true
+    },
+    {
+     "name": "Zoho Invoice",
+     "price": "Free, capped at 500 invoices/yr and 2 users",
+     "url": "https://www.invoicesimple.com/blog/compare-invoice-simple-vs-zoho-invoice/",
+     "verified": true
+    },
+    {
+     "name": "Invoice Simple",
+     "price": "$6.99/mo or $69.99/yr (3 invoices/mo) up to $21.99/mo unlimited",
+     "url": "https://www.invoicesimple.com/pricing-packages/",
+     "verified": true
+    },
+    {
+     "name": "Invoice Fly",
+     "price": "$8.99/week or $98.99/yr",
+     "url": "https://invoicefly.com/academy/invoicefly-vs-invoice-generator/",
+     "verified": true
+    },
+    {
+     "name": "Joist",
+     "price": "$10/mo Basics, $17/mo Pro, $32/mo Elite",
+     "url": "https://www.joist.com/workshop/compare/best-estimating-apps-for-small-contractors-2026/",
+     "verified": true
+    },
+    {
+     "name": "InvoiceOffline",
+     "price": "$59 one-time founder price ($79 regular), macOS",
+     "url": "https://www.invoiceoffline.com/best/invoicing-software-one-time-purchase",
+     "verified": true
+    },
+    {
+     "name": "Daily Invoice Maker",
+     "price": "$149.95 lifetime",
+     "url": "https://www.donlinestore.com/index.php",
+     "verified": true
+    },
+    {
+     "name": "Contractor Estimate & Invoice (iOS)",
+     "price": "unknown (one-time price, no monthly fees)",
+     "url": "https://apps.apple.com/us/app/contractor-estimate-invoice/id955265977",
+     "verified": false
+    },
+    {
+     "name": "QuickBooks",
+     "price": "unknown",
+     "url": "",
+     "verified": false
+    },
+    {
+     "name": "Invoice2go",
+     "price": "unknown",
+     "url": "",
+     "verified": false
+    }
+   ],
+   "pay_proof": [
+    {
+     "claim": "Invoice Simple sells paid tiers from $6.99/mo ($69.99/yr) to $21.99/mo for unlimited invoices",
+     "url": "https://www.invoicesimple.com/pricing-packages/",
+     "verified": true
+    },
+    {
+     "claim": "Invoice Fly charges $8.99/week or $98.99/yr",
+     "url": "https://invoicefly.com/academy/invoicefly-vs-invoice-generator/",
+     "verified": true
+    },
+    {
+     "claim": "Joist sells $10-$32/mo plans to contractors",
+     "url": "https://www.joist.com/workshop/compare/best-estimating-apps-for-small-contractors-2026/",
+     "verified": true
+    },
+    {
+     "claim": "Invoice Simple reviewers rate value for money 4.52 on Software Advice",
+     "url": "https://www.softwareadvice.com/accounting/invoice-simple-profile/",
+     "verified": true
+    },
+    {
+     "claim": "Daily Invoice Maker sells a $149.95 lifetime license and says most owners choose it",
+     "url": "https://www.donlinestore.com/index.php",
+     "verified": true
+    }
+   ],
+   "cost_usd": 0.5377,
+   "web_searches": 7
+  }
+ },
+ {
+  "name": "Pay-per-use fax and scan-to-PDF without weekly subscription traps",
+  "pain": "People who need to send one fax or share one scanned PDF are pushed into $9-15/week subscriptions. Several say they were charged after cancelling. CamScanner is flooded with ads, and Adobe Scan crashes after a recent update.",
+  "who_pays": "Occasional users such as patients, renters, students and job applicants who need a fax or PDF a few times a year",
+  "evidence_ids": [
+   1072,
+   1085,
+   1090,
+   1093,
+   1094,
+   1070,
+   1069,
+   1068,
+   982,
+   983,
+   993,
+   997,
+   1000,
+   1004,
+   1011,
+   986,
+   718,
+   720,
+   721,
+   745,
+   758,
+   881,
+   884,
+   916,
+   1252,
+   1256,
+   1264
+  ],
+  "pay_signal": "Users explicitly say they don't mind paying, just not this way (1069). One asks for '5 sends per year for $5' (1085). Another paid $1 for a one-time scan and was angry at extra charges (991). Many already paid $10+ for a single fax.",
+  "product_idea": "Web and iOS tool with transparent per-use credits, e.g. $1.99 per fax and free scan/merge/sign. No account needed for the first use. Fax runs through a telephony API (e.g. Phaxio or Sinch). SEO landing pages target 'send one fax online'.",
+  "build_weeks": 3,
+  "fit_for_us": 4,
+  "known_competitors": "FaxZero (free with ads, limited), iFax, Fax.Plus, Genius Scan, Apple Notes scanner, iLovePDF",
+  "check_next": "Price per-page costs from fax API vendors to confirm margin at $1.99. Check search volume for 'send one fax' and 'fax without subscription'. Check App Store rules on consumable credits.",
+  "crowding": {
+   "verdict": "crowded",
+   "reason": "FaxZero is a dominant free option and 10+ no-account, no-subscription pay-per-fax sites and iOS apps already sell $0.99-$7 single faxes; free scanners (Genius Scan, built-in iOS) cover scan-to-PDF.",
+   "competitors": [
+    {
+     "name": "FaxZero",
+     "price": "Free (5/day, 3 pages + branded cover); $3.29 per fax premium",
+     "url": "https://www.documo.com/blog/faxzero-vs-myfax-vs-documo/",
+     "verified": true
+    },
+    {
+     "name": "PayPerFax",
+     "price": "from $2.50 for 3 pages",
+     "url": "https://payperfax.com/",
+     "verified": true
+    },
+    {
+     "name": "SingleFax",
+     "price": "$0.99 per fax",
+     "url": "https://singlefax.com/blog/singlefax-vs-faxzero",
+     "verified": true
+    },
+    {
+     "name": "FaxItOnce",
+     "price": "$2.75 per fax",
+     "url": "https://faxitonce.com/onetimefax/",
+     "verified": true
+    },
+    {
+     "name": "Faxio",
+     "price": "$2.99 per fax",
+     "url": "https://faxio.app/",
+     "verified": true
+    },
+    {
+     "name": "OneFaxNow",
+     "price": "from $3.50 for up to 10 pages",
+     "url": "https://onefaxnow.com/pay-per-fax",
+     "verified": true
+    },
+    {
+     "name": "OneTimeFax",
+     "price": "$5 per fax",
+     "url": "https://www.onetimefax.com/one-time-fax/",
+     "verified": true
+    },
+    {
+     "name": "FaxOnline.app",
+     "price": "$7.00 per fax",
+     "url": "https://faxonline.app/one-time-fax-service",
+     "verified": true
+    },
+    {
+     "name": "Faxaroo",
+     "price": "unknown first page; $1.00 per additional page",
+     "url": "https://faxaroo.com/us/send-a-one-time-fax-using-faxaroo",
+     "verified": true
+    },
+    {
+     "name": "JustFax Online",
+     "price": "unknown",
+     "url": "https://justfaxonline.com/en",
+     "verified": true
+    },
+    {
+     "name": "EaseFax (iOS)",
+     "price": "$1.98 for a 2-page fax per user review",
+     "url": "https://apps.apple.com/us/app/easefax-pay-per-use-send-fax/id1497418552",
+     "verified": true
+    },
+    {
+     "name": "Snapfax (iOS)",
+     "price": "unknown (pay-as-you-go page purchases)",
+     "url": "https://apps.apple.com/us/app/snapfax-pay-as-you-go-fax/id1133055951",
+     "verified": true
+    },
+    {
+     "name": "Faxend",
+     "price": "$4.99 per fax",
+     "url": "https://faxend.com/blog/fax-app-for-iphone-without-subscription/",
+     "verified": true
+    },
+    {
+     "name": "Genius Scan (scan-to-PDF)",
+     "price": "Free with in-app purchases",
+     "url": "https://search.bridgingapps.org/apps/genius-scan-pdf-scanner-app",
+     "verified": true
+    }
+   ],
+   "pay_proof": [
+    {
+     "claim": "EaseFax App Store reviewer paid per use: $1.98 for a 2-page document or a 5-credit bundle",
+     "url": "https://apps.apple.com/us/app/easefax-pay-per-use-send-fax/id1497418552",
+     "verified": true
+    },
+    {
+     "claim": "Pay-as-you-go fax services typically charge $2.75-$5.00 for a single page",
+     "url": "https://faxaroo.com/us/send-a-one-time-fax-using-faxaroo",
+     "verified": true
+    },
+    {
+     "claim": "FaxZero sells a $3.29 per-fax premium tier on top of its free tier",
+     "url": "https://www.documo.com/blog/faxzero-vs-myfax-vs-documo/",
+     "verified": true
+    },
+    {
+     "claim": "Many single-fax sites sell at $2.50-$7 per fax (PayPerFax, OneTimeFax, FaxOnline), showing an active paid market",
+     "url": "https://www.onetimefax.com/",
+     "verified": true
+    }
+   ],
+   "cost_usd": 0.4178,
+   "web_searches": 4
+  }
+ },
+ {
+  "name": "Guitar chord/tab companion without paywalls and pop-up ads",
+  "pain": "Ultimate Guitar paywalls transpose and autoscroll and shows mid-song video ads and unskippable onboarding surveys, even to paying Pro users. It also pressures lifetime buyers to accept refunds and switch to subscriptions. GuitarTuna paywalls alternate tunings.",
+  "who_pays": "Hobby guitarists and gigging musicians who use chords and tabs daily",
+  "evidence_ids": [
+   1494,
+   1496,
+   1499,
+   1502,
+   1507,
+   1509,
+   1520,
+   1521,
+   1522,
+   1531,
+   1533,
+   1536,
+   1539,
+   1540,
+   1542,
+   1552,
+   1553,
+   1556,
+   1559,
+   1647,
+   1650,
+   1651,
+   1655
+  ],
+  "pay_signal": "Paying Pro subscribers are threatening to leave (1529, 1539, 1540). Lifetime buyers feel betrayed. One user asks why nobody has built a competitor (1536). Users already paid $20-80/yr.",
+  "product_idea": "App for musicians' own chord sheets. Users paste or import ChordPro/text chords, then get transpose, capo, autoscroll, setlists and offline mode. A free tuner with all alternate tunings works as the acquisition hook. Priced as a one-time or lifetime purchase. Avoids tab licensing issues by not hosting a copyrighted tab catalog.",
+  "build_weeks": 5,
+  "fit_for_us": 5,
+  "known_competitors": "Ultimate Guitar, Songsterr, OnSong, SongbookPro, Chordify, Fender Tune (free tuner)",
+  "check_next": "Confirm the legal line for user-pasted chord sheets vs. hosted catalogs. Survey r/guitar for willingness to pay for a setlist/autoscroll app. Check keyword volume for 'ultimate guitar alternative'.",
+  "crowding": {
+   "verdict": "crowded",
+   "reason": "SongbookPro already sells this exact feature set (own chord sheets, transpose, capo, sets, offline) for a ~$7 one-time price with 4.7 stars from 2.8K ratings, and Songstead offers a free buy-once alternative; OnSong, BandHelper and MobileSheets are likely competitors but unverified because search hit its cap.",
+   "competitors": [
+    {
+     "name": "SongbookPro",
+     "price": "~$7 USD one-time (Solo); Groups is a subscription, price unknown",
+     "url": "https://songbook-pro.com/pricing/",
+     "verified": true
+    },
+    {
+     "name": "Songstead",
+     "price": "Free; one-price upgrade, amount unknown",
+     "url": "https://songstead.app/alternative/songbookpro",
+     "verified": true
+    },
+    {
+     "name": "OnSong",
+     "price": "unknown",
+     "url": "",
+     "verified": false
+    },
+    {
+     "name": "BandHelper",
+     "price": "unknown",
+     "url": "",
+     "verified": false
+    },
+    {
+     "name": "MobileSheets",
+     "price": "unknown",
+     "url": "",
+     "verified": false
+    },
+    {
+     "name": "Fender Tune (free tuner)",
+     "price": "unknown",
+     "url": "",
+     "verified": false
+    }
+   ],
+   "pay_proof": [
+    {
+     "claim": "SongbookPro Solo is a ~$7 USD one-time in-app purchase to go past the 12-song free trial; Groups is a paid subscription",
+     "url": "https://songbook-pro.com/pricing/",
+     "verified": true
+    },
+    {
+     "claim": "SongbookPro on iOS: free with in-app purchases, 4.7 stars from 2.8K ratings",
+     "url": "https://apps.apple.com/us/app/songbookpro-digital-songbook/id1475370014",
+     "verified": true
+    },
+    {
+     "claim": "SongbookPro listed at $5.99 (in-app purchase) on the Microsoft Store",
+     "url": "https://www.microsoft.com/en-us/p/songbookpro/9p867hk7lflp",
+     "verified": true
+    },
+    {
+     "claim": "AirTurn app directory lists SongbookPro at Price: 5.99 on iOS, Android and Windows",
+     "url": "https://www.airturn.com/blogs/apps/songbookpro",
+     "verified": true
+    }
+   ],
+   "cost_usd": 0.3771,
+   "web_searches": 8
+  }
+ },
+ {
+  "name": "App blocker with flexible rules (timeslots, hourly reset, earn-your-time)",
+  "pain": "Existing blockers only offer daily totals. Users ask for schedule-based windows, budgets that reset hourly, cooldowns that refill, earning screen time by reading or walking, and blocking Reels while still allowing DMs. One user tried paid blockers that didn't work.",
+  "who_pays": "Students, ADHD users and knowledge workers trying to cut phone use",
+  "evidence_ids": [
+   110,
+   173,
+   183,
+   185,
+   187,
+   189,
+   166,
+   169
+  ],
+  "pay_signal": "One user already tried paid blockers (NoScroll, Scroll Guard, Wallhabit) that failed (166). Opal-style subscriptions are an established paid category. These are repeated, specific feature requests from several users.",
+  "product_idea": "iOS app built on the Screen Time/FamilyControls API. It offers a rule builder with timeslot schedules, rolling hourly budgets, cooldown refills, and an earn-time mode tied to HealthKit steps or a manual reading timer. Subscription or lifetime pricing.",
+  "build_weeks": 6,
+  "fit_for_us": 3,
+  "known_competitors": "Opal, one sec, ScreenZen, Brick, Jomo, Freedom",
+  "check_next": "Check each competitor for hourly-reset and earn-time features, since ScreenZen may cover some. Confirm the FamilyControls entitlement approval timeline. Check whether blocking Reels while allowing DMs is technically possible.",
+  "crowding": {
+   "verdict": "crowded",
+   "reason": "Free ScreenZen (schedules, cooldowns, session limits) dominates, Opal/Jomo/one sec sell rules, and 5+ step-to-earn and Reels-only blockers already exist; only hourly rolling budgets look uncovered.",
+   "competitors": [
+    {
+     "name": "ScreenZen",
+     "price": "Free (optional tips)",
+     "url": "https://apps.apple.com/us/app/screenzen-screen-time-control/id1541027222?platform=mac",
+     "verified": true
+    },
+    {
+     "name": "Opal",
+     "price": "$99.99/yr Pro (weekly/monthly plans from $4.99)",
+     "url": "https://adapty.io/paywall-library/opal-screen-time-for-focus/",
+     "verified": true
+    },
+    {
+     "name": "one sec",
+     "price": "$19.99/yr, $99.99 lifetime",
+     "url": "https://adapty.io/paywall-library/one-sec-screen-time-focus/",
+     "verified": true
+    },
+    {
+     "name": "Jomo",
+     "price": "$29.99/yr",
+     "url": "https://www.bgr.com/2235201/phone-blocking-app-brick-alternatives/",
+     "verified": true
+    },
+    {
+     "name": "Freedom",
+     "price": "$8.99/mo",
+     "url": "https://habitdoom.com/blog/opal-alternatives",
+     "verified": false
+    },
+    {
+     "name": "Time Out (steps, schedules, focus)",
+     "price": "unknown",
+     "url": "https://trytimeout.com/",
+     "verified": false
+    },
+    {
+     "name": "Mozy: Walk to Earn Screen Time",
+     "price": "Free with in-app purchases",
+     "url": "https://apps.apple.com/us/app/mozy-walk-to-earn-screen-time/id6792097497",
+     "verified": true
+    },
+    {
+     "name": "Walk To Scroll",
+     "price": "unknown",
+     "url": "https://apps.apple.com/us/app/walk-to-scroll-app-blocker/id6757981144",
+     "verified": false
+    },
+    {
+     "name": "Stepsy - Walk to Unlock",
+     "price": "unknown",
+     "url": "https://apps.apple.com/us/app/stepsy-walk-to-unlock/id6760950247",
+     "verified": false
+    },
+    {
+     "name": "WallHabit (Reels block, DMs kept)",
+     "price": "unknown",
+     "url": "https://wallhabit.com/blog/disable-instagram-reels-on-ios/",
+     "verified": false
+    },
+    {
+     "name": "minulo (hides Reels, keeps DMs)",
+     "price": "Free",
+     "url": "https://dev.to/ayumu_kitabayashi_8e0de96/i-built-a-free-iphone-app-that-hides-instagram-reels-and-youtube-shorts-but-keeps-your-dms-how-it-18pe",
+     "verified": true
+    }
+   ],
+   "pay_proof": [
+    {
+     "claim": "Opal estimated $400K monthly revenue, 200K monthly downloads, 30K ratings at 4.7 (Adapty estimate)",
+     "url": "https://adapty.io/paywall-library/opal-screen-time-for-focus/",
+     "verified": true
+    },
+    {
+     "claim": "one sec estimated $80K monthly revenue, 40,000+ monthly downloads, $19.99/yr plan (Adapty estimate)",
+     "url": "https://adapty.io/paywall-library/one-sec-screen-time-focus/",
+     "verified": true
+    },
+    {
+     "claim": "Jomo sells a $29.99/yr subscription and has 2.5K App Store ratings at 4.8",
+     "url": "https://apps.apple.com/us/app/jomo-screen-time-blocker/id1609960918",
+     "verified": true
+    },
+    {
+     "claim": "AppBlock confirms it supports only daily limits, not hourly or weekly (feature gap, not pay proof)",
+     "url": "https://appblock.app/can-i-set-hourly-or-weekly-limits-on-iphone/",
+     "verified": true
+    }
+   ],
+   "cost_usd": 0.5098,
+   "web_searches": 7
+  }
+ },
+ {
+  "name": "Reliable mileage and write-off tracker for 1099 workers",
+  "pain": "QuickBooks users pay but report that auto mileage tracking silently stops, reports disappear from the app, and the app is slow and logs them out. Freelancers still track write-offs in Excel and want bank and receipt scanning.",
+  "who_pays": "Rideshare drivers, mobile service workers and 1099 contractors",
+  "evidence_ids": [
+   929,
+   931,
+   932,
+   955,
+   965,
+   974,
+   980,
+   940,
+   936,
+   99,
+   65
+  ],
+  "pay_signal": "These are paying QuickBooks subscribers complaining (929, 931, 975). One says they would switch if an equivalent existed (968). Another asks for an app that scans bank accounts for deductible charges (99).",
+  "product_idea": "Lightweight iOS/Android app with dependable background trip detection and a daily confirmation prompt. It adds receipt photo capture with OCR categorization and one-tap IRS mileage/expense reports. Priced cheaper than QuickBooks Solopreneur.",
+  "build_weeks": 7,
+  "fit_for_us": 3,
+  "known_competitors": "MileIQ, Everlance, Stride (free), TripLog, QuickBooks Solopreneur, Keeper",
+  "check_next": "Check reviews of MileIQ and Everlance for the same reliability complaints. Prototype iOS background location reliability before committing.",
+  "crowding": {
+   "verdict": "crowded",
+   "reason": "MileIQ, Everlance, Hurdlr, Keeper and TripLog already sell auto-mileage + expense/receipt + IRS reports at $5-14/mo (below QB Solopreneur's $20), and Stride offers it free; incumbent reliability failures were not confirmed.",
+   "competitors": [
+    {
+     "name": "QuickBooks Solopreneur",
+     "price": "$20/month or $120/year",
+     "url": "https://www.winscloudmatrix.com/blog/quickbooks-solopreneur-review-features-pricing-pros-cons/",
+     "verified": true
+    },
+    {
+     "name": "MileIQ",
+     "price": "Free for 40 drives; Unlimited $7.50/month",
+     "url": "https://fitsmallbusiness.com/mileiq-review/",
+     "verified": true
+    },
+    {
+     "name": "Everlance",
+     "price": "Premium $8/month or $69.99/year; Premium Plus $12/month (Everlance blog lists $5/month or $60/year, so sources conflict)",
+     "url": "https://gridwise.io/blog/gridwise-vs-everlance-vs-stride",
+     "verified": true
+    },
+    {
+     "name": "Stride",
+     "price": "Free",
+     "url": "https://www.mileagewise.com/dictionary/stride/",
+     "verified": true
+    },
+    {
+     "name": "Keeper",
+     "price": "Starting at $14",
+     "url": "https://www.capterra.com/p/206851/Keeper-Tax/",
+     "verified": true
+    },
+    {
+     "name": "TripLog",
+     "price": "$4-$19/month",
+     "url": "https://www.softwareadvice.com/fleet-management/triplog-profile/",
+     "verified": true
+    },
+    {
+     "name": "Hurdlr",
+     "price": "$8.34/month Premium, $16.67/month Pro (billed annually, 2024 source)",
+     "url": "https://www.bench.co/blog/operations/mileage-trackers",
+     "verified": true
+    },
+    {
+     "name": "Gridwise",
+     "price": "unknown",
+     "url": "https://gridwise.io/blog/best-mileage-tracker-app",
+     "verified": false
+    }
+   ],
+   "pay_proof": [
+    {
+     "claim": "QuickBooks Solopreneur charges $20/month for freelancers and self-employed users",
+     "url": "https://technologyadvice.com/blog/accounting/is-quickbooks-free-cost/",
+     "verified": true
+    },
+    {
+     "claim": "MileIQ sells an Unlimited plan at $7.50/month to individuals",
+     "url": "https://fitsmallbusiness.com/mileiq-review/",
+     "verified": true
+    },
+    {
+     "claim": "Everlance has 65 Capterra user reviews with a paid starting price of $8/month",
+     "url": "https://www.capterra.com/p/174335/Everlance/",
+     "verified": true
+    },
+    {
+     "claim": "Keeper charges from $14 for bank-scanning write-off detection",
+     "url": "https://www.capterra.com/p/206851/Keeper-Tax/",
+     "verified": true
+    },
+    {
+     "claim": "Hurdlr sells in-app purchases for 1099 mileage and expense tracking",
+     "url": "https://apps.apple.com/us/app/hurdlr-mileage-expenses-tax/id951737201",
+     "verified": true
+    },
+    {
+     "claim": "Paying QuickBooks subscribers complain and one would switch (forum posts 929, 931, 968, 975, 99)",
+     "url": "unknown",
+     "verified": false
+    }
+   ],
+   "cost_usd": 0.648,
+   "web_searches": 8
+  }
+ },
+ {
+  "name": "Faceless/review video assembly with b-roll sourcing",
+  "pain": "Creators spend hours finding b-roll and clips for reviews, anime essays and fact videos, then assembling standard formats (blurred background, zooming foreground). They also want long-form-to-Shorts that is smarter than CapCut, plus filler-word removal.",
+  "who_pays": "Faceless YouTube/TikTok creators and freelance editors producing videos for clients",
+  "evidence_ids": [
+   6,
+   244,
+   247,
+   246,
+   253,
+   257,
+   250,
+   281,
+   283,
+   1821,
+   1841
+  ],
+  "pay_signal": "An editor bills a client for 2.5-3 hours per video in this format (6). CapCut users complain features moved to Pro, which shows they would pay for a better focused tool. One poster manages a brand that needs multilingual versions (283).",
+  "product_idea": "Web tool: paste a script or topic and it pulls stock/Creative Commons visuals per sentence. It renders formats like a blurred-background Ken Burns template, adds captions, and exports long and short cuts. Credit-based pricing. Built on the team's existing automated-video stack.",
+  "build_weeks": 6,
+  "fit_for_us": 5,
+  "known_competitors": "Opus Clip, Descript, Pictory, InVideo, Submagic, CapCut",
+  "check_next": "Test whether the template-format niche (e.g. 'untold facts' style) is underserved by Pictory/InVideo. Pre-sell to 10 freelance editors on Fiverr/Reddit.",
+  "crowding": {
+   "verdict": "crowded",
+   "reason": "Script-to-video with stock per sentence (Pictory, InVideo, HeyGen, ShortsFaceless), long-to-Shorts (OpusClip, Submagic) and filler removal (Descript) are all established paid products at $15-35/mo; only an unchecked review/anime clip-sourcing niche remains.",
+   "competitors": [
+    {
+     "name": "Pictory",
+     "price": "$25/mo billed annually ($29 monthly); Professional $35/mo annual",
+     "url": "https://pictory.ai/pricing/",
+     "verified": true
+    },
+    {
+     "name": "InVideo AI",
+     "price": "Max plan $100/month (own FAQ); third-party sites list cheaper plans from about $17-20/mo",
+     "url": "https://invideo.io/faq/which-invideo-pricing-plan-is-best-for-ai-video-creators/",
+     "verified": true
+    },
+    {
+     "name": "HeyGen (faceless video generator)",
+     "price": "unknown (free to start)",
+     "url": "https://www.heygen.com/tool/faceless-video",
+     "verified": false
+    },
+    {
+     "name": "ShortsFaceless",
+     "price": "$19/month for up to 30 videos",
+     "url": "https://www.shortsfaceless.com/",
+     "verified": true
+    },
+    {
+     "name": "OpusClip",
+     "price": "Free; Starter $15/mo; Pro $29/mo; Business custom",
+     "url": "https://www.castmagic.io/blog/opus-clip-pricing",
+     "verified": true
+    },
+    {
+     "name": "Submagic",
+     "price": "$19 / $39 / $69 per member per month",
+     "url": "https://care.submagic.co/en/article/how-much-does-it-cost-to-use-submagic-1xm83pa/",
+     "verified": true
+    },
+    {
+     "name": "Descript",
+     "price": "Hobbyist $16/mo annual ($24 monthly), includes Remove Filler Words",
+     "url": "https://www.descript.com/pricing",
+     "verified": true
+    },
+    {
+     "name": "CapCut Pro",
+     "price": "$19.99/month",
+     "url": "https://whysogeek.com/capcut-price-hike-paywall-alternatives-2026/",
+     "verified": true
+    }
+   ],
+   "pay_proof": [
+    {
+     "claim": "Pictory sells paid plans for script-to-video starting at $25/mo annual",
+     "url": "https://pictory.ai/pricing/",
+     "verified": true
+    },
+    {
+     "claim": "OpusClip sells credit-based paid plans at $15 and $29 per month",
+     "url": "https://quso.ai/blog/opus-clip-pricing",
+     "verified": true
+    },
+    {
+     "claim": "Submagic charges $19-$69 per member per month for captioned short videos with b-roll",
+     "url": "https://www.viraldrop.ai/compare/submagic-pricing",
+     "verified": true
+    },
+    {
+     "claim": "Descript charges from $16/mo with AI filler-word removal included",
+     "url": "https://www.descript.com/pricing",
+     "verified": true
+    },
+    {
+     "claim": "900 of 2,881 negative CapCut reviews name Pro, premium or a paywall",
+     "url": "https://unstar.app/blog/capcut-everything-is-pro-now-cant-export-reviews-2026",
+     "verified": true
+    },
+    {
+     "claim": "CapCut Pro roughly doubled from about $9.99 to $19.99 a month",
+     "url": "https://whysogeek.com/capcut-price-hike-paywall-alternatives-2026/",
+     "verified": true
+    },
+    {
+     "claim": "Capterra reviewers on InVideo say its premium plans can be expensive",
+     "url": "https://www.capterra.com/p/180680/InVideo/pricing/",
+     "verified": true
+    }
+   ],
+   "cost_usd": 0.5795,
+   "web_searches": 8
+  }
+ },
+ {
+  "name": "True shuffle and AI-music filter for streaming libraries",
+  "pain": "Paying YouTube Music, Amazon Music and Tidal users say shuffle repeats the same 20-100 songs or plays in fixed order. They can't surface forgotten tracks, and AI-generated songs flood recommendations with no filter.",
+  "who_pays": "Heavy listeners on paid streaming plans with large libraries",
+  "evidence_ids": [
+   1294,
+   1305,
+   1341,
+   1347,
+   1372,
+   1389,
+   1392,
+   1388,
+   1448,
+   1460,
+   1308,
+   1311,
+   1317,
+   147,
+   356
+  ],
+  "pay_signal": "Users already pay premium subscriptions and threaten to cancel over shuffle (1310, 1384). One person built Resurface for exactly this (147). Another went from happily paying for Premium to uninstalling over AI music (1311).",
+  "product_idea": "Web app connecting to Spotify/YouTube Music/Tidal libraries. It generates true-random and 'least recently played' rotation playlists and refreshes them daily. It also flags or excludes suspected AI-generated artists using a crowdsourced list. Freemium with a small subscription.",
+  "build_weeks": 4,
+  "fit_for_us": 4,
+  "known_competitors": "Resurface, Smarter Playlists, Spotify Truffle Shuffle, Deezer AI tagging",
+  "check_next": "Verify current Spotify Web API restrictions on new apps (extended quota) and YouTube Music API availability. Check demand for 'AI music filter' searches.",
+  "crowding": {
+   "verdict": "unclear",
+   "reason": "Spotify shuffle/rediscovery and AI-blocking are saturated with free tools (plus Deezer's free AI detector), but no sourced evidence anyone pays for such a tool; non-Spotify coverage is thin but unverified as viable.",
+   "competitors": [
+    {
+     "name": "Resurface (forgotten-songs playlist for Spotify)",
+     "price": "unknown",
+     "url": "https://resurface-cmf.pages.dev/",
+     "verified": false
+    },
+    {
+     "name": "True Shuffle for Spotify (Android)",
+     "price": "unknown",
+     "url": "https://play.google.com/store/apps/details?id=com.appsbydan.trueshuffle&hl=en_US",
+     "verified": false
+    },
+    {
+     "name": "True Shuffle (trueshuffle.app)",
+     "price": "unknown",
+     "url": "https://trueshuffle.app/",
+     "verified": false
+    },
+    {
+     "name": "True Shuffle by Mart de Roos (scheduled reshuffles, in development)",
+     "price": "unknown",
+     "url": "https://martderoos.nl/true-shuffle",
+     "verified": false
+    },
+    {
+     "name": "spotify-true-shuffle (open source)",
+     "price": "free (open source)",
+     "url": "https://github.com/kartikk221/spotify-true-shuffle",
+     "verified": true
+    },
+    {
+     "name": "vantezzen TrueShuffle (open source)",
+     "price": "free (open source)",
+     "url": "https://github.com/vantezzen/trueshuffle",
+     "verified": true
+    },
+    {
+     "name": "Spotify True Shuffle Chrome extension",
+     "price": "unknown",
+     "url": "https://chromewebstore.google.com/detail/spotify-true-shuffle/mdaidnghkkolohminicafkfgegfjamce",
+     "verified": false
+    },
+    {
+     "name": "Smarter Playlists (Playlist Machinery)",
+     "price": "unknown",
+     "url": "http://www.playlistmachinery.com/",
+     "verified": false
+    },
+    {
+     "name": "TubeDice YouTube playlist randomizer",
+     "price": "free (open source)",
+     "url": "https://addons.mozilla.org/en-US/firefox/addon/youtube-playlist-randomizer/",
+     "verified": true
+    },
+    {
+     "name": "My Shuffler (Apple Music)",
+     "price": "unknown",
+     "url": "https://apps.apple.com/us/app/my-shuffler/id1409310910",
+     "verified": false
+    },
+    {
+     "name": "Spotify AI Music Blocker (community list, daily updates)",
+     "price": "free (MIT)",
+     "url": "https://github.com/CennoxX/spotify-ai-blocker",
+     "verified": true
+    },
+    {
+     "name": "Spotify AI Band Blocker (Spicetify)",
+     "price": "unknown",
+     "url": "https://github.com/Reginald-Gillespie/Spotify-AI-Band-Blocker",
+     "verified": false
+    },
+    {
+     "name": "Deezer AI Music Detector (scans other services' playlists)",
+     "price": "free",
+     "url": "https://www.deezer.com/explore/en-us/ai-music-detector/",
+     "verified": true
+    }
+   ],
+   "pay_proof": [],
+   "cost_usd": 0.7993,
+   "web_searches": 8
+  }
+ },
+ {
+  "name": "Reddit/social buyer-intent alerts for founders",
+  "pain": "Founders and small businesses manually scan Reddit and social comments for people asking for a product like theirs. They want keyword alerts plus drafted replies or DMs.",
+  "who_pays": "Indie SaaS founders and small B2C businesses like travel agencies",
+  "evidence_ids": [
+   30,
+   4,
+   134,
+   118,
+   62,
+   13,
+   58,
+   153
+  ],
+  "pay_signal": "Several people built and charge for this (134, 118). One asks directly 'would you pay' (62). A travel company already does this manually because it brings clients (4).",
+  "product_idea": "Niche-focused alert tool that scores intent and sends Slack/email alerts with suggested replies. Could start vertical-specific (e.g. for music or creator tools) to stand apart from generic tools.",
+  "build_weeks": 3,
+  "fit_for_us": 3,
+  "known_competitors": "F5Bot (free), Syften, ThreadPilot, ReplyWisely, Brand24, GummySearch (shut down)",
+  "check_next": "Check Reddit API pricing and terms for commercial monitoring. Find an underserved vertical where generic tools miss intent.",
+  "crowding": {
+   "verdict": "crowded",
+   "reason": "5+ priced tools (Syften, Redreach, RedditGrow, ReplyGuy, Appie) already do Reddit keyword alerts, many with intent scoring and AI reply drafts at $9-$40/mo, and F5Bot covers basic alerts for free.",
+   "competitors": [
+    {
+     "name": "F5Bot",
+     "price": "Free; paid from $9.99 (per dev.to comparison)",
+     "url": "https://f5bot.com/guides/reddit-keyword-alerts",
+     "verified": true
+    },
+    {
+     "name": "Syften",
+     "price": "$19.95-$99.95/mo per G2; $29.95-$119.95/mo per Mentionkit (sources conflict)",
+     "url": "https://www.g2.com/products/syften/reviews",
+     "verified": false
+    },
+    {
+     "name": "Redreach",
+     "price": "From $19/mo (per Reddinbox)",
+     "url": "https://reddinbox.com/blog/best-gummysearch-alternative",
+     "verified": true
+    },
+    {
+     "name": "RedditGrow",
+     "price": "$19/mo or $79 one-time",
+     "url": "https://redditgrow.ai/alternatives/gummysearch",
+     "verified": true
+    },
+    {
+     "name": "ReplyGuy",
+     "price": "From $9-$10/mo, ~$30/mo for unlimited replies (per third-party reviews)",
+     "url": "https://redreach.ai/directory/reddit-tools/replyguy",
+     "verified": true
+    },
+    {
+     "name": "Appie.run Reddit Marketing",
+     "price": "Free plan; $19/mo Starter; $49/mo Standard",
+     "url": "https://dev.to/appierun/gummysearch-alternatives-in-2026-tools-for-finding-reddit-leads-after-the-shutdown-582c",
+     "verified": true
+    },
+    {
+     "name": "Octolens",
+     "price": "From $159/mo per Mentionkit (other sources list $119 or $19; conflicting)",
+     "url": "https://mentionkit.com/articles/octolens-pricing",
+     "verified": false
+    },
+    {
+     "name": "Brand24",
+     "price": "From $199/mo billed annually",
+     "url": "https://influencermarketinghub.com/brand24/",
+     "verified": true
+    },
+    {
+     "name": "GummySearch (shut down)",
+     "price": "Was $29-$199/mo",
+     "url": "https://prems.ai/blog/gummysearch-is-dead-best-alternative",
+     "verified": true
+    }
+   ],
+   "pay_proof": [
+    {
+     "claim": "GummySearch had 10,000 paying customers and $96K revenue (2023) and was profitable at shutdown",
+     "url": "https://startupobituary.com/p/gummysearch",
+     "verified": true
+    },
+    {
+     "claim": "GummySearch generated $60K revenue in its first year",
+     "url": "https://www.starterstory.com/stories/gummysearch",
+     "verified": true
+    },
+    {
+     "claim": "GummySearch reached $96K revenue bootstrapped",
+     "url": "https://getlatka.com/companies/gummysearch",
+     "verified": true
+    },
+    {
+     "claim": "Syften lists paid plans Entry $19.95, Standard $39.95, Pro $99.95",
+     "url": "https://www.g2.com/products/syften/reviews",
+     "verified": true
+    },
+    {
+     "claim": "RedditGrow charges $19/mo or $79 one-time for intent-scored Reddit leads with AI reply drafts",
+     "url": "https://redditgrow.ai/compare/redditgrow-vs-replyguy",
+     "verified": true
+    },
+    {
+     "claim": "ReplyGuy plans start at $9/mo with unlimited replies around $30/mo",
+     "url": "https://redreach.ai/directory/reddit-tools/replyguy",
+     "verified": true
+    }
+   ],
+   "cost_usd": 0.5724,
+   "web_searches": 8
+  }
+ },
+ {
+  "name": "Auto-fetch receipts from vendor portals for the accountant",
+  "pain": "Small business owners spend an hour monthly logging into vendor accounts through 2FA to download receipts that aren't emailed.",
+  "who_pays": "Startup founders, small business owners and bookkeepers",
+  "evidence_ids": [
+   92,
+   161,
+   65,
+   99,
+   109
+  ],
+  "pay_signal": "A recurring monthly time cost was posted in two communities (92, 161). Post 109 found 'invoice', 'manually' and 'spreadsheet' threads score highest for willingness to pay.",
+  "product_idea": "Browser extension that records the receipt-download path per vendor once, then replays it monthly in the user's logged-in browser (avoiding stored credentials). It bundles PDFs into a folder or email for the accountant.",
+  "build_weeks": 5,
+  "fit_for_us": 3,
+  "known_competitors": "GetMyInvoices, Dext, Hubdoc, Expensify, Paperless",
+  "check_next": "Interview the posters about which vendors cause the pain. Check whether GetMyInvoices covers them and at what price.",
+  "crowding": {
+   "verdict": "crowded",
+   "reason": "GetMyInvoices, invoicefetcher, Dext and Hubdoc fetch from portals at €4.59–$31.50/mo with reviews and paying customers, and Tailride (Chrome extension) and Reduck (signed-in-browser agent) already ship the 'no stored credentials' approach.",
+   "competitors": [
+    {
+     "name": "GetMyInvoices",
+     "price": "from €19/month",
+     "url": "https://www.capterra.ca/software/157150/getmyinvoices",
+     "verified": true
+    },
+    {
+     "name": "invoicefetcher",
+     "price": "Free (2 portals) then €4.59–€29.99/month excl. VAT",
+     "url": "https://www.invoicefetcher.com/en/",
+     "verified": true
+    },
+    {
+     "name": "Dext (Fetch)",
+     "price": "$31.50/month for 250 documents, 5 users (per Tailride comparison)",
+     "url": "https://tailride.so/compare/invoice-collection-tools",
+     "verified": true
+    },
+    {
+     "name": "Tailride (Chrome extension)",
+     "price": "Free for 10 invoices/month; $19/month for 75",
+     "url": "https://chromewebstore.google.com/detail/tailride/pfkgmhfcmehahfoemipfmdbnddegaiec",
+     "verified": true
+    },
+    {
+     "name": "Reduck",
+     "price": "Free for 100 runs/month, then $20/month for 1,000 runs",
+     "url": "https://reduck.ai/use-cases/download-invoices-from-vendor-portals",
+     "verified": true
+    },
+    {
+     "name": "Hubdoc",
+     "price": "US$12/month; free with paid Xero plans (portal fetch status disputed)",
+     "url": "https://www.capterra.co.uk/software/165724/hubdoc",
+     "verified": true
+    },
+    {
+     "name": "Invoice Radar",
+     "price": "unknown",
+     "url": "https://reduck.ai/use-cases/invoice-radar-alternative",
+     "verified": false
+    },
+    {
+     "name": "Invoice & Receipt Batch Grabber",
+     "price": "Free tier; PRO $24/month",
+     "url": "https://socket.dev/chrome/package/ealmimakcjlenoeehkmanjbdpckmkbkn",
+     "verified": true
+    },
+    {
+     "name": "InvoiceFetch Pro",
+     "price": "unknown",
+     "url": "https://chromewebstore.google.com/detail/invoicefetch-pro/pchcenfncelikgpfngokblgdmobpokbk",
+     "verified": false
+    }
+   ],
+   "pay_proof": [
+    {
+     "claim": "GetMyInvoices claims over 20,000 customers",
+     "url": "https://www.getmyinvoices.com/en/portals/53925-invoiz/",
+     "verified": true
+    },
+    {
+     "claim": "invoicefetcher sells six paid tiers from €4.59 to €29.99/month",
+     "url": "https://reduck.ai/use-cases/invoicefetcher-alternative",
+     "verified": true
+    },
+    {
+     "claim": "Payhawk CEO says Agent Fetch (portal receipt retrieval) is the most-requested feature in Payhawk's history",
+     "url": "https://payhawk.com/blog/automated-invoice-retrieval",
+     "verified": true
+    },
+    {
+     "claim": "Reduck raised $3M pre-seed for an agent that downloads invoices from vendor portals in the signed-in browser",
+     "url": "https://reduck.ai/use-cases/download-invoices-from-vendor-portals",
+     "verified": true
+    },
+    {
+     "claim": "Tailride charges $19/month for 75 invoices with portal fetching",
+     "url": "https://tailride.so/compare/invoice-collection-tools",
+     "verified": true
+    }
+   ],
+   "cost_usd": 0.979,
+   "web_searches": 8
+  }
+ },
+ {
+  "name": "Low-cost accountability and body-doubling app",
+  "pain": "People ignore habit-app notifications and want real humans to check in or co-work with them. Focusmate's free tier is limited to 3 sessions a week, and couples want shared daily goals.",
+  "who_pays": "ADHD adults, writers, freelancers and students",
+  "evidence_ids": [
+   165,
+   176,
+   51,
+   177,
+   172,
+   120,
+   170
+  ],
+  "pay_signal": "People already pay accountability coaches (51). Focusmate is a paid category, and users are hitting its free limits (176). Several separate requests ask for human check-in apps.",
+  "product_idea": "App for small accountability pods (2-5 people, or partner mode) with daily 3-goal check-ins, optional photo proof and scheduled video co-working rooms. Priced cheaper than Focusmate, with a generous free tier.",
+  "build_weeks": 5,
+  "fit_for_us": 2,
+  "known_competitors": "Focusmate, Flow Club, Caveday, Habitica parties, Supporti",
+  "check_next": "Gauge willingness to pay among r/ADHD and r/productivity users. Price video infrastructure cost per session.",
+  "crowding": {
+   "verdict": "crowded",
+   "reason": "Focusmate ($8-12/mo with a free tier), Flow Club, Caveday, FLOWN and dubbii cover video body doubling, and Supporti, Nudge, SendProof, Pledgd, 3D Habits and HabitShare cover partner or group check-ins with photo proof, so there is little room to undercut on price.",
+   "competitors": [
+    {
+     "name": "Focusmate",
+     "price": "Free for 3 sessions/week; Plus $8/mo billed yearly or $12/mo monthly",
+     "url": "https://www.focusmate.com/faq/",
+     "verified": true
+    },
+    {
+     "name": "Flow Club",
+     "price": "$40/mo or $33.33/mo billed annually, 7-day free trial",
+     "url": "https://help.flow.club/en/articles/782785",
+     "verified": true
+    },
+    {
+     "name": "Caveday",
+     "price": "Basic $19.99/mo or $54/quarter (third-party article, may be outdated)",
+     "url": "https://www.yahoo.com/lifestyle/articles/caveday-175342277.html",
+     "verified": true
+    },
+    {
+     "name": "FLOWN",
+     "price": "unknown (free member option plus paid plans)",
+     "url": "https://flown.com/blog/deep-work/virtual-coworking-focusmate-review",
+     "verified": false
+    },
+    {
+     "name": "dubbii: the body doubling app",
+     "price": "unknown (free with in-app subscription)",
+     "url": "https://apps.apple.com/us/app/dubbii-the-body-doubling-app/id6450302677",
+     "verified": false
+    },
+    {
+     "name": "Supporti",
+     "price": "unknown",
+     "url": "https://www.getsupporti.com/features",
+     "verified": false
+    },
+    {
+     "name": "Nudge - Accountability App",
+     "price": "unknown",
+     "url": "https://apps.apple.com/us/app/nudge-accountability-app/id6757319981",
+     "verified": false
+    },
+    {
+     "name": "SendProof: Accountability",
+     "price": "unknown",
+     "url": "https://apps.apple.com/qa/app/sendproof-accountability/id6760977881",
+     "verified": false
+    },
+    {
+     "name": "Pledgd",
+     "price": "unknown",
+     "url": "https://www.pledgd.com/",
+     "verified": false
+    },
+    {
+     "name": "3D Habits",
+     "price": "unknown",
+     "url": "https://www.3dhabits.com/",
+     "verified": false
+    },
+    {
+     "name": "HabitShare",
+     "price": "Free (per third-party roundup)",
+     "url": "https://finestreak.com/blog/accountability-apps-for-couples",
+     "verified": true
+    }
+   ],
+   "pay_proof": [
+    {
+     "claim": "Focusmate sells unlimited sessions at $8/mo (yearly) or $12/mo (monthly) above a 3-sessions-per-week free tier",
+     "url": "https://www.focusmate.com/faq/",
+     "verified": true
+    },
+    {
+     "claim": "Flow Club charges $40/mo or $33.33/mo billed annually for live co-working sessions",
+     "url": "https://help.flow.club/en/articles/782785",
+     "verified": true
+    },
+    {
+     "claim": "Caveday requires a paid membership; Basic is $19.99/mo or $54/quarter",
+     "url": "https://www.yahoo.com/lifestyle/articles/caveday-175342277.html",
+     "verified": true
+    },
+    {
+     "claim": "dubbii, a subscription body-doubling app, has 100,000+ Android downloads and a 4.53 rating from 1,421 reviews",
+     "url": "https://www.appbrain.com/app/dubbii-the-body-doubling-app/com.gravitywell.adhdlove",
+     "verified": true
+    },
+    {
+     "claim": "GoalsWon sells access to a real professional accountability coach (price not seen)",
+     "url": "https://giodella.com/accountability-partner-apps/",
+     "verified": false
+    }
+   ],
+   "cost_usd": 0.4815,
+   "web_searches": 8
+  }
+ }
+]

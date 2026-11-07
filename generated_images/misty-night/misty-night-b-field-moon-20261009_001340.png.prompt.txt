@@ -1,0 +1,11 @@
+model=gpt-image-2.5-flare size=1024x1024 quality=high est_cost=$0.21 date=2026-10-09
+
+Square artwork for a music release. It is also shown cut into a circle, so the moon, the tree and the horizon sit in the centre and the edges stay calm and dark.
+Subject: a wide open field at night under a low pale moon, fog lying flat over the grass, a lone distant tree.
+Light: the moon is the only light. Its glow spreads through the fog and casts soft, long shadows. No other light sources.
+Shadows: deep, keeping their detail, with at least one area close to black.
+Few elements, each with a reason to be there: one focal point with calm space around it. Nothing decorative, nothing random.
+Medium: dreamlike painting, soft brushwork, a matte surface touched by time, analog film grain, soft halation. Nothing glossy or airbrushed.
+Feeling: quiet, a little mysterious, tender rather than grim.
+Palette: pale sage #C8CFC2 on forest black #0C120F.
+No text, letters, logos or watermarks anywhere.

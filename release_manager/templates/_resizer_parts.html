@@ -1,0 +1,77 @@
+{# Shared pieces of the two resizer pages (Artwork, Video): the source picker with its big
+   preview, the sets, the size list. The page supplies the kind ('image' or 'video'). #}
+
+{% macro source_block(kind, existing, picked_name, source_url_base) -%}
+<div class="rz-block">
+    <div class="rz-h">1 &nbsp;Source</div>
+    <div class="rz-source-row">
+        {% if existing %}
+        <select id="existing_{{ kind }}" name="existing_{{ kind }}" class="rz-select" data-src-base="{{ source_url_base }}">
+            <option value="">Pick from the {{ 'artwork' if kind == 'image' else 'videos' }} folder</option>
+            {% for f in existing %}<option value="{{ f }}"{% if f == picked_name %} selected{% endif %}>{{ f }}</option>{% endfor %}
+        </select>
+        <span class="brand-muted rz-or">or</span>
+        {% endif %}
+        <div class="drop-zone rz-drop" id="drop-zone-{{ 'artwork' if kind == 'image' else 'video' }}">
+            <input type="file" id="upload" name="upload" accept="{{ 'image/*,.heic,.heif' if kind == 'image' else 'video/*,.mp4,.mov,.avi,.mkv,.webm,.m4v' }}" class="drop-zone-input">
+            <div class="drop-zone-prompt"><span class="drop-zone-text"><strong>Drop a file</strong> or click to browse</span></div>
+            <div class="drop-zone-file"><span class="drop-zone-filename"></span><button type="button" class="drop-zone-clear" title="Remove" aria-label="Remove file">&times;</button></div>
+        </div>
+    </div>
+    <div class="rz-stage" id="rz-stage" data-kind="{{ kind }}">
+        <div class="rz-empty" id="rz-empty">Pick or drop a {{ 'picture' if kind == 'image' else 'video' }}. It shows here, and you can click on it to set what stays in frame.</div>
+        <div class="rz-frame" id="rz-frame" hidden>
+            {% if kind == 'image' %}<img id="rz-media" alt="">{% else %}<video id="rz-media" muted playsinline controls preload="metadata"></video>{% endif %}
+            <div class="rz-thirds" aria-hidden="true"></div>
+            <div class="rz-crop" id="rz-crop" hidden><span id="rz-crop-label"></span></div>
+            <div class="rz-focal-dot" id="rz-focal-dot" aria-hidden="true"></div>
+        </div>
+    </div>
+    <p class="brand-muted rz-note" id="rz-note">Focal point: the part of the picture that stays in frame when a size cuts it. Click the picture, or use the small grid. Hover a size on the right to see its crop.</p>
+</div>
+{%- endmacro %}
+
+{% macro focal_grid(grid_id, input_id, focal_points, selected_focal) -%}
+<div class="rz-focal-row">
+    <div class="focal-grid rz-focal-grid" id="{{ grid_id }}">
+        {% for fp in focal_points %}<button type="button" class="focal-btn{% if fp == selected_focal %} active{% endif %}" data-focal="{{ fp }}" title="{{ fp }}"></button>{% endfor %}
+    </div>
+    <span class="brand-muted">focal point: <strong id="rz-focal-name">{{ selected_focal }}</strong></span>
+    <input type="hidden" name="focal" id="{{ input_id }}" value="{{ selected_focal }}">
+</div>
+{%- endmacro %}
+
+{% macro presets_block(presets) -%}
+<div class="rz-block">
+    <div class="rz-h">2 &nbsp;What to make</div>
+    <div class="rz-presets">
+        {% for p in presets %}<button type="button" class="rz-chip" data-preset="{{ p.templates|join(',') }}"{% if p.cover %} data-cover="1"{% endif %} title="{{ p.hint }}">{{ p.label }}</button>{% endfor %}
+        <button type="button" class="rz-chip rz-chip-ghost" data-preset="">Clear</button>
+    </div>
+</div>
+{%- endmacro %}
+
+{% macro sizes_block(export_groups, picked, kind) -%}
+<div class="rz-block rz-sizes">
+    {% for group in export_groups %}
+    {% set ids = [] %}{% for ex in group.exports %}{% for t in (ex.templates if ex.templates is defined else [ex.template]) %}{% if ids.append(t) %}{% endif %}{% endfor %}{% endfor %}
+    <details class="rz-group platform-group"{% if picked|overlaps(ids) %} open{% endif %}>
+        <summary class="platform-group-header">
+            <label onclick="event.stopPropagation()"><input type="checkbox" class="group-toggle" data-group="{{ group.name }}"></label>
+            <span class="rz-group-name">{{ group.name }}</span>
+            <span class="rz-count" data-count-for="{{ group.name }}"></span>
+        </summary>
+        <div class="platform-group-items">
+            {% for ex in group.exports %}
+            {% set tids = ex.templates if ex.templates is defined else [ex.template] %}
+            <label class="export-item" data-w="{{ ex.width }}" data-h="{{ ex.height }}" title="{{ ex.notes or '' }}">
+                <input type="checkbox" name="templates" value="{{ tids|join(',') }}" data-group="{{ group.name }}"{% if picked|overlaps(tids) %} checked{% endif %}>
+                <span class="export-label">{{ ex.label }}</span>
+                <span class="export-spec">{{ ex.width }}x{{ ex.height }}{% if ex.duration %}, {{ ex.duration }}{% endif %}</span>
+            </label>
+            {% endfor %}
+        </div>
+    </details>
+    {% endfor %}
+</div>
+{%- endmacro %}

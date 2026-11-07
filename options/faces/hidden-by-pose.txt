@@ -1,0 +1,1 @@
+Faces: the face is hidden by the pose, looking away or a hand over it.

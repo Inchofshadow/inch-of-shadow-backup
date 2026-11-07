@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+{% block title %}Shadow Archive{% endblock %}
+{% block content %}
+<div class="archive-page">
+    <h1>Shadow Archive</h1>
+    
+
+    {% set origin = args.get('origin', '') %}
+    {% set oc = {} %}{% for f in facets.get('origin', []) %}{% set _ = oc.update({f.value: f.count}) %}{% endfor %}
+    <nav class="archive-origin" aria-label="Show">
+        <a href="{{ url_for('archive_page') }}" class="{% if not origin %}is-on{% endif %}">All <span>{{ total }}</span></a>
+        <a href="{{ url_for('archive_page', origin='ours') }}" class="{% if origin == 'ours' %}is-on{% endif %}">Our ideas <span>{{ oc.get('ours', 0) }}</span></a>
+        <a href="{{ url_for('archive_page', origin='reference') }}" class="{% if origin == 'reference' %}is-on{% endif %}">References <span>{{ oc.get('reference', 0) }}</span></a>
+    </nav>
+
+    {% if error %}<div class="alert alert-error">{{ error }}</div>{% endif %}
+
+    <form method="get" class="shoot-filters archive-filters">
+        {% if origin %}<input type="hidden" name="origin" value="{{ origin }}">{% endif %}
+        <select name="kind"><option value="">every kind</option>{% for f in facets.kind %}<option value="{{ f.value }}" {% if args.get('kind') == f.value %}selected{% endif %}>{{ f.value }} ({{ f.count }})</option>{% endfor %}</select>
+        <select name="topic"><option value="">every topic</option>{% for f in facets.topics %}<option value="{{ f.value }}" {% if args.get('topic') == f.value %}selected{% endif %}>{{ f.value }} ({{ f.count }})</option>{% endfor %}</select>
+        <select name="lane"><option value="">both lanes</option>{% for f in facets.lane %}{% if f.value != 'both' %}<option value="{{ f.value }}" {% if args.get('lane') == f.value %}selected{% endif %}>{{ f.value }}</option>{% endif %}{% endfor %}</select>
+        <select name="weight"><option value="">any weight</option>{% for f in facets.weight %}<option value="{{ f.value }}" {% if args.get('weight') == f.value %}selected{% endif %}>{{ f.value }} ({{ f.count }})</option>{% endfor %}</select>
+        <select name="release"><option value="">any release</option>{% for s in facets.releases %}<option value="{{ s }}" {% if args.get('release') == s %}selected{% endif %}>{{ s }}</option>{% endfor %}</select>
+        <select name="sort"><option value="added" {% if sort == 'added' %}selected{% endif %}>newest first</option><option value="id" {% if sort == 'id' %}selected{% endif %}>by number</option></select>
+        <input type="search" name="q" value="{{ args.get('q', '') }}" placeholder="a word: gothic, silhouette, hook...">
+        <button type="submit" class="btn btn-secondary btn-sm">Filter</button>
+        <a href="{{ url_for('archive_page') }}" class="btn btn-secondary btn-sm">Clear</a>
+        <span class="brand-muted">{{ refs|length }} of {{ total }}</span>
+    </form>
+
+    <div class="archive-grid">
+        {% for r in refs %}
+        <a class="archive-card" href="{{ url_for('archive_detail', rid=r.id) }}">
+            <div class="archive-thumb">
+                {% if r.thumb %}<img src="{{ url_for('archive_thumb', rid=r.id) }}" alt="{{ r.title }}" loading="lazy">{% else %}<span class="archive-nothumb">{{ r.kind }}</span>{% endif %}
+                <span class="archive-kind">{{ r.kind }}</span>
+            </div>
+            <div class="archive-card-body">
+                <div class="archive-card-title">{{ r.title }}</div>
+                {% set st = strips.get(r.id) or {} %}
+                <div class="brand-muted archive-card-meta">{{ r.id }}{% if r.origin == 'ours' %} · ours{% endif %}{% if st.n %} · {{ st.n }} picture{{ '' if st.n == 1 else 's' }}{% endif %}</div>
+                {% if st.srcs %}<div class="archive-strip">{% for src in st.srcs %}<img src="{{ src }}" alt="" loading="lazy">{% endfor %}</div>{% endif %}
+            </div>
+        </a>
+        {% else %}
+        <p class="empty-hint">Nothing matches. Clear the filters.</p>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,1040 @@
+{
+  "_meta": {
+    "description": "Platform SEO specifications for the Inch of Shadow SEO Copy Generator",
+    "last_updated": "2026-09-13",
+    "version": "1.2",
+    "notes": "Character limits and field specs sourced from official platform docs and verified third-party guides. Some limits (marked 'approximate' or 'unconfirmed') could not be verified from official sources and should be confirmed directly on-platform. v1.1 (2026-06-14): added Resident Advisor and Symphonic sections, Beatport artist bio, per-platform artist-image specs, per-platform genre vocabularies, front-load flags, and a directional-numbers caveat, from the deep platform research at plans/platform-algorithm-research-2026-06.md.",
+    "research_source": "plans/platform-algorithm-research-2026-06.md (deep, Reddit-cross-checked, adversarially verified, 2026-06-14)",
+    "directional_numbers_caveat": "Percentages and thresholds in this file that are not from official platform docs (e.g. engagement-lift %, save-rate triggers, acceptance rates) are DIRECTIONAL marketing estimates, not confirmed mechanics. The verification pass busted several widely-cited numbers as fabricated: Spotify '20% save-trigger / 3x weighting / 14-day doubles odds', Instagram 'sends are 3-5x a like' and 'originality = 40-60% more reach', Apple's exact %-weight signal model, Beatport 'a couple dozen sales charts you', and the 'edit a Reel caption and reach dies' myth (refuted by Mosseri). Keep directional language; never present these as fact in generated copy.",
+    "unverified_limits": [
+      "Apple Music Q&A bio field character limits — not publicly documented, check in Apple Music for Artists dashboard",
+      "Beatport track title and description character limits — enforced at distributor level (Symphonic/Greenroom)",
+      "Bandcamp max tags per release — community consensus ~10-15, no official docs"
+    ]
+  },
+  "platforms": {
+    "spotify": {
+      "display_name": "Spotify",
+      "artist_profile": {
+        "bio": {
+          "max_chars": 1500,
+          "notes": "Supports @tags to link to songs, albums, playlists, and other artists. Write in authentic voice. Include origin story, influences, themes.",
+          "formatting": "Plain text with @tags. No HTML, no bold/italic/markdown. Line breaks may be stripped -- write and format in external editor, then paste.",
+          "algorithmic_impact": "Yes -- Spotify's NLP system reads the bio to categorize your sound. Use clear genre-specific keywords (dark disco, acid, EBM, techno). The algorithm analyzes how your music is described across the web, and the bio is a primary source.",
+          "tag_syntax": "Type @ in the bio editor to search and link to artists, albums, playlists, or tracks. Can also paste Spotify URIs directly. Note: @tagging may work more reliably in the mobile app than the web version.",
+          "structure": "2-3 paragraphs, max 4 sentences each. Keep some content static (identity, genre, origin) and reserve space for time-sensitive updates (current release, upcoming shows).",
+          "tips_electronic_music": [
+            "Lead with sound and scene -- 'Berlin-based dark disco and acid producer' immediately tells NLP and listeners what to expect",
+            "Use genre-specific keywords that match how listeners search",
+            "Mention venues, labels, or scenes that establish credibility",
+            "Reference collaborators and influences via @tags to create algorithm-readable connections",
+            "Include factual details: release counts, label affiliations, city, notable performances"
+          ]
+        },
+        "artist_pick": {
+          "custom_message_max_chars": 140,
+          "pinnable_content": ["Individual tracks", "Albums", "Playlists", "Custom images"],
+          "expiry": "2 weeks by default, 6 months if never updated",
+          "rotation": "Rotate with each new release, campaign, or significant event",
+          "algorithmic_impact": "No direct algorithmic boost. Indirect value: directs profile visitors to priority content, increasing streams/saves on that content, which do feed the algorithm."
+        },
+        "image_gallery": {
+          "max_images": 6,
+          "notes": "Displayed in About section on desktop."
+        },
+        "avatar": {
+          "min_resolution": "750x750",
+          "format": "JPEG or PNG"
+        },
+        "header_image": {
+          "min_resolution": "2660x1140",
+          "format": "JPEG or PNG"
+        },
+        "social_links": {
+          "supported": ["Facebook", "X/Twitter", "Instagram", "Wikipedia"],
+          "notes": "Displayed in About section."
+        },
+        "artist_playlists": {
+          "notes": "Curate playlists that appear on your profile. Builds personality and encourages repeat visits."
+        }
+      },
+      "pitch_form": {
+        "written_pitch": {
+          "max_chars": 500,
+          "notes": "A staff member reads every pitch. Focus on the song's inspiration, mood, story -- not personal achievements. Every word counts.",
+          "what_editors_look_for": [
+            "Music quality is the primary factor -- editors listen first",
+            "Follower counts and monthly listener numbers are explicitly irrelevant",
+            "Blog writeups and radio play are 'not at all essential'",
+            "Which distributor you use is never reviewed",
+            "They want the who, what, why, when, where, and how of your song",
+            "Collaborators, inspiration, creation timeline, location",
+            "Press, music video plans, release schedules, and promotions",
+            "Past release performance -- editors have access to advanced data on your previous releases",
+            "Complete artist profile -- a half-empty profile hurts your chances"
+          ],
+          "pitch_structure": {
+            "opening": "Emotional hook, NOT a technical description. Make them feel something.",
+            "context": "Personal story, inspiration, cultural context, who is involved (1-2 sentences)",
+            "sound_description": "Mood-focused language, where this track lives in a listener's day",
+            "credits": "Producer/mixer names only if recognized",
+            "playlist_suggestion": "Name 1-2 specific Spotify editorial playlists where the track fits",
+            "promotion_plan": "Video, ads, social strategy, touring -- shows commitment"
+          },
+          "common_mistakes": [
+            "Generic claims: 'This is a hit', 'everyone loves it'",
+            "Writing a biography instead of describing the track",
+            "Wrong genre/subgenre tagging -- top rejection reason",
+            "Pitching too late",
+            "Unmastered or demo quality audio",
+            "Leaving the pitch note blank",
+            "Incomplete form fields",
+            "Passive, safe writing that could apply to any track",
+            "Incomplete artist profile"
+          ],
+          "editorial_vs_algorithmic": "The written pitch text is for human editorial curators. The metadata fields (genre, mood, style, instruments, culture) feed directly into the algorithm's classification. Even if editorial rejects you, pitching at least 7 days before release triggers Release Radar for all followers."
+        },
+        "genre": {
+          "max_selections": 3,
+          "notes": "Select 1 main genre and up to 3 subgenres. Be precise -- mislabeling is a top rejection reason."
+        },
+        "mood": {
+          "max_selections": 2,
+          "examples": ["Chill", "Fierce", "Sexy"],
+          "notes": "Select up to 2 moods. 2025-2026 trend: mood-based and activity-based curation (studying, driving, late-night) is now prioritized over broad genre playlists."
+        },
+        "song_styles": {
+          "max_selections": 2,
+          "examples": ["Ballad", "Beats"],
+          "notes": "Select up to 2 song styles."
+        },
+        "instruments": {
+          "notes": "Select featured instruments (e.g., synthesizer, organ). For electronic music: synthesizer, drum machine are key selections."
+        },
+        "music_cultures": {
+          "max_selections": 3,
+          "notes": "Covers language, cultural influence, and location of the artist."
+        },
+        "yes_no_questions": ["Is this a cover?", "Is this a remix?", "Is it an instrumental?", "How was it recorded (Studio/Live)?"],
+        "location": {
+          "fields": ["Hometown", "Currently based"],
+          "notes": "Confirms artist location details."
+        },
+        "timing": {
+          "minimum_lead_time_days": 7,
+          "recommended_lead_time_days": 28,
+          "optimal_lead_time_days": "31-40",
+          "optimal_acceptance_rate": "18% acceptance rate at 31-40 days (Wiseband data from 800+ pitches)",
+          "notes": "Submit 4 weeks before release. 31-40 days is the data-backed sweet spot. 7 days minimum guarantees Release Radar. You can edit your pitch up to release day but no guarantee editors see edits. You can only pitch one song at a time.",
+          "overall_success_rates": {
+            "industry_baseline": "1-5% of all pitched tracks land on editorial playlists",
+            "spotify_reported": "~20% of pitched tracks get placed on at least one playlist",
+            "with_optimal_timing": "18% at 31-40 days lead time"
+          }
+        },
+        "tips_electronic_dark_disco": [
+          "Key editorial playlists to target: Techno Bunker (deep driving techno), Warehouse Party (underground dance), Altar (deep house/tech house)",
+          "Mood-based playlists matter more than genre playlists in 2025-2026 -- describe what your track is for (late-night driving, deep focus, dark club)",
+          "Be precise with subgenres -- dark disco, acid, EBM, and techno are distinct. Mislabeling kills your pitch.",
+          "Consistency builds recognition -- if editors remember you from past pitches, the next one is easier"
+        ]
+      },
+      "canvas": {
+        "format": "MP4 (H.264)",
+        "aspect_ratio": "9:16 (vertical)",
+        "resolution": "1080x1920 recommended, 720x1280 minimum",
+        "duration_seconds": "3-8 (loops)",
+        "max_file_size_mb": 8,
+        "framerate": "30 or 60 fps",
+        "audio": "No audio track allowed (music comes from the track itself)",
+        "engagement_impact": {
+          "shares_increase": "up to 145%",
+          "streams_increase": "up to 120%",
+          "saves_increase": "up to 114%",
+          "notes": "No direct algorithmic boost, but significantly increases engagement metrics (shares, saves, repeat listens, reduced skips) which are all strong algorithmic signals."
+        },
+        "tips_electronic_music": "Subtle, atmospheric visuals matching the track's mood perform better than flashy edits. Think moody loops, abstract visuals, dark textures.",
+        "note_2025": "Spotify expanded to full music videos in 100+ markets in 2025. Videos and Canvas now coexist."
+      },
+      "discovery_mode": {
+        "commission_rate_percent": 30,
+        "applies_to": "Recording royalties for streams served in Discovery Mode contexts only. All other streams remain commission-free.",
+        "status": "Still in beta with ongoing expansion (2026)",
+        "how_it_works": "Artists select eligible songs between the 11th and last day of each month. Campaigns launch on the 1st of the following month.",
+        "eligibility": {
+          "artist_level": {
+            "min_eligible_songs": 3,
+            "min_monthly_listeners": 25000,
+            "notes": "Must have active Spotify for Artists team in eligible country. Distributed through approved licensor."
+          },
+          "song_level": {
+            "min_days_on_platform": 30,
+            "min_streams_28_days": 20,
+            "notes": "Streams counted in Discovery Mode contexts only. Must meet monetization eligibility."
+          }
+        },
+        "placements": ["Radio", "Autoplay"],
+        "avg_stream_increase_percent": "100-200",
+        "international_first_listens_percent": 58,
+        "relevance_for_inch_of_shadow": "Not accessible until you cross 25,000 monthly listeners. This is a medium-to-long-term tool."
+      },
+      "algorithm_2026": {
+        "key_signals_ranked": [
+          "Saves (strongest signal -- 1,000 streams with 200 saves outperforms 10,000 streams with 10 saves)",
+          "Listener retention / play-through rate",
+          "Repeat listens",
+          "Playlist additions",
+          "Skip rate (strong negative signal)"
+        ],
+        "first_72_hours": "Critical window. Spotify tests tracks with initial audiences and strong early engagement determines expansion to broader pools.",
+        "nlp_system": "Spotify reads artist bio, track descriptions, lyrics, cover art, Canvas, short-form video, press, and social mentions to create vector embeddings that determine where your music 'culturally belongs'.",
+        "prompted_playlists": "New 2025-2026 feature: listeners describe what they want in their own words and Spotify generates a playlist. Makes accurate metadata and NLP-readable bios even more important.",
+        "super_listeners": "Top 2% of monthly listeners drive 18% of streams. Spotify now provides data on these superfans."
+      },
+      "seo_best_practices": [
+        "Saves are the #1 algorithmic signal -- encourage saves over passive listening",
+        "First 72 hours after release are critical for algorithmic expansion",
+        "Complete all metadata fields (genre, mood, instruments, culture) -- they feed the algorithm directly",
+        "Bio text is read by Spotify's NLP -- use clear genre keywords",
+        "Pitch 31-40 days before release for best editorial acceptance rate",
+        "Even rejected pitches trigger Release Radar if submitted 7+ days early",
+        "Canvas increases engagement metrics (saves +114%, shares +145%)",
+        "Artist Pick rotated every 2 weeks for fresh profile engagement",
+        "Mood-based playlists are prioritized over genre playlists in 2025-2026",
+        "Accurate genre tagging is critical -- mislabeling is a top pitch rejection reason"
+      ],
+      "image_metadata_handling": {
+        "strips_exif": "Likely (follows industry standard, not officially documented)",
+        "recommendation": "Strip EXIF/GPS data before upload as a privacy best practice. Keep only color profile (sRGB)."
+      }
+    },
+    "apple_music": {
+      "display_name": "Apple Music",
+      "artist_profile": {
+        "bio_format": "Q&A",
+        "bio_notes": "Artists answer a series of short predetermined questions to create a customized biography. Must be written in first person, conversational tone. No press releases, all caps, emoji, ampersands, or exclamation points. Complete sentences required.",
+        "bio_char_limit": null,
+        "bio_char_limit_notes": "Specific character limits not publicly documented. Keep answers succinct.",
+        "additional_fields": {
+          "hometown_or_origin": "Text field",
+          "date_of_birth_or_year_formed": "Text field",
+          "band_members": "List",
+          "collaborators": "List",
+          "influences": "List",
+          "pronouns": "Selection"
+        },
+        "artist_image": {
+          "resolution": "2400x2400 (800x800 minimum)",
+          "dpi": 72,
+          "format": "JPEG or PNG",
+          "rules": "No borders, no text, no logos. Square. Editors weight profile completeness; a missing/low-quality image can delay approval.",
+          "notes": "Uploaded through Apple Music for Artists dashboard. Reuse one consistent press image across Apple/Beatport/RA/SoundCloud for SERP consolidation and editorial completeness."
+        },
+        "motion_artwork": {
+          "square_resolution": "3840x3840",
+          "portrait_resolution": "2048x2732",
+          "duration_seconds": "15-35",
+          "format": "Apple ProRes 422 or 4444",
+          "fps": "23.976-30"
+        }
+      },
+      "release_metadata": {
+        "album_artwork": {
+          "resolution": "3000x3000",
+          "format": "JPEG or PNG",
+          "max_file_size_mb": 10,
+          "notes": "Text on artwork must match metadata exactly, including punctuation. No watermarks or misleading content."
+        },
+        "title_rules": [
+          "No version info in standard title (no 'Exclusive', 'Limited Edition', 'Album Version', 'Original Mix')",
+          "No explicit markers in title (no '(Explicit)', '(Dirty)')",
+          "One-track products: album and track titles must match (except '- Single' suffix)",
+          "Specific character limits not publicly documented"
+        ],
+        "review_timeline_days": "5-7 business days (longer if revisions needed)"
+      },
+      "editorial_playlists": {
+        "pitch_method": "Through distributor or Apple Music Partner -- no direct artist pitching",
+        "notes": "Work with your distributor (Symphonic) to pitch releases."
+      },
+      "discovery_algorithm": {
+        "key_signals": [
+          "Play-through rate",
+          "Repeat listens",
+          "Library adds",
+          "Shares",
+          "Shazam counts (strong leading indicator)"
+        ],
+        "pathways": [
+          "Editorial-to-algorithmic: pitch compelling story via distributor to editorial team",
+          "Organic-to-algorithmic: slower path relying on positive user engagement signals"
+        ],
+        "notes": "Shazam spikes are closely monitored by editorial teams as leading indicators. For new releases, editorial gateway is the most effective trigger for algorithmic amplification."
+      },
+      "seo_best_practices": [
+        "Complete all metadata fields accurately (artist names, titles, release dates, track numbers)",
+        "Metadata must match artwork text exactly",
+        "Pitch through Symphonic distributor for editorial consideration",
+        "Shazam recognition drives Apple editorial attention",
+        "Engagement signals (saves, shares, play-through) matter more than raw plays",
+        "Submit motion artwork where possible for enhanced profile presence"
+      ],
+      "image_metadata_handling": {
+        "strips_exif": "Not officially documented",
+        "recommendation": "Strip EXIF/GPS data before submitting artwork to distributor. Maintain sRGB color profile."
+      }
+    },
+    "youtube": {
+      "display_name": "YouTube",
+      "video_fields": {
+        "title": {
+          "max_chars": 100,
+          "truncation": {
+            "desktop_search": 70,
+            "mobile": "50-60",
+            "shorts": 40
+          },
+          "recommended_chars": "50-70",
+          "notes": "Keep most important info in first 50 characters (safe across all surfaces). Aim for 70-100 total.",
+          "music_formats": {
+            "official_music_video": "Artist Name - Song Title (Official Music Video)",
+            "official_audio": "Artist Name - Song Title (Official Audio)",
+            "lyric_video": "Artist Name - Song Title (Official Lyric Video)",
+            "live_performance": "Artist Name - Song Title (Live at Venue/City)",
+            "visualizer": "Artist Name - Song Title (Visualizer)"
+          },
+          "power_words": "'Official Audio' / 'Official Music Video' is the standard music format and helps YouTube Music match uploads to the OAC. No verified click-lift figure exists; the often-quoted ~23% is unsourced (youtube/PLAYBOOK.md section 2).",
+          "ab_testing": "Test & Compare: up to 3 titles and/or thumbnails per video. Winner = WATCH TIME SHARE once statistically significant; runs a few days to 2 weeks; requires advanced features; low-impression videos often end with no winner (support.google.com/youtube/answer/16391400).",
+          "youtube_music_impact": "Title format directly affects YouTube Music categorization. Consistent 'Artist - Title' pattern helps the algorithm associate uploads with your OAC and Art Tracks."
+        },
+        "description": {
+          "max_chars": 5000,
+          "truncation": {
+            "desktop_watch_page": "150-200 chars before 'Show more'",
+            "desktop_search_results": "138-160 chars",
+            "mobile_watch_page": "~100 chars before 'show more'",
+            "google_search_snippets": "150-160 chars"
+          },
+          "recommended_word_count": "150-300 words (sweet spot for SEO without keyword stuffing)",
+          "music_structure": [
+            "Lines 1-2 (HOOK -- first 150 chars): [Song Title] by [Artist Name]. [Genre descriptor] from [EP/album name]. Stream: [primary link]",
+            "Lines 3-8 (DETAILS): 1-2 sentence track description (mood/story). Credits: Produced, mixed and mastered by [name].",
+            "STREAMING LINKS: Spotify, Apple Music, Bandcamp, Beatport, etc.",
+            "SOCIAL LINKS: Instagram, SoundCloud, etc.",
+            "LYRICS (optional but major SEO win -- surfaces video in lyric-search queries)",
+            "HASHTAGS (at the end): #ArtistName #SongTitle #DarkDisco #ElectronicMusic"
+          ],
+          "tips": [
+            "First 150 characters are critical -- include primary keywords (artist name, song title, genre)",
+            "Include full lyrics for SEO -- lets video surface in lyric-search queries",
+            "Avoid dating with 'Out now' or 'New 2026' -- makes content feel stale over time",
+            "Use natural language, not keyword lists -- YouTube AI reads for semantic meaning",
+            "Links do not directly boost ranking but provide context signals and drive cross-platform traffic"
+          ],
+          "timestamps": "Not needed for standard 3-5 min music videos. Highly valuable for longer content (DJ sets, live performances, album playback sessions). AI search engines increasingly cite specific timestamps."
+        },
+        "tags": {
+          "max_chars_per_tag": 30,
+          "max_total_chars": 500,
+          "recommended_count": "5-10",
+          "seo_impact": "Minimal role; '~1%' is not an official figure. YouTube's own docs: 'Tags can be useful if content is commonly misspelled. Otherwise, tags play a minimal role in discovery.' YouTube employees have publicly stated to focus on title, thumbnail, and description instead.",
+          "why_tags_lost_importance": "Since 2015, YouTube shifted to AI-powered content analysis (video frames, speech, audio) making manual tags redundant. Tags were historically abused so YouTube deliberately reduced their weight.",
+          "when_tags_still_help": [
+            "Misspellings of your artist name or genre terms",
+            "Brand new channels where YouTube has zero data about your content",
+            "Long-tail niche terms like 'dark disco Berlin' or 'acid electro EBM'"
+          ],
+          "recommended_strategy": "Fill in but don't spend significant time. 3-5 specific (Inch of Shadow, dark disco, acid electro) + 3-5 category (electronic music, EBM, Berlin techno) + 1-2 broad (music, underground electronic)."
+        },
+        "hashtags_in_description": {
+          "recommended_count": "3-5",
+          "above_title_display": "First 3 hashtags from description appear above the video title",
+          "penalty_threshold": "Beyond ~15 hashtags YouTube may ignore all of them. For Shorts, exceeding 60 causes all to be ignored.",
+          "best_practices": "Place at end of description. Include #ArtistName #SongTitle #Genre. Avoid generic (#viral, #trending) -- attracts irrelevant audiences and hurts retention."
+        }
+      },
+      "shorts": {
+        "algorithm": "Separate recommendation system from long-form (on record since 2023). The 'fully decoupled late 2025' event framing is unsourced blog folklore.",
+        "ranking_signals": [
+          "Swipe-away rate (negative signal)",
+          "Watch-through / completion rate (strong positive signal; no official threshold, the often-quoted 70% is unsourced)",
+          "Loop / replay rate (rewatches carry heavy weight)",
+          "Comments and shares (outweigh likes for distribution)",
+          "First frame and opening seconds matter most (YouTube: the first frame beats a custom thumbnail for Shorts)"
+        ],
+        "youtube_music_integration": "Shorts featuring music show up in both YouTube main feed and YouTube Music. Viewers can tap song title to go to full track. Genuine discovery funnel for music.",
+        "requirement": "For song discovery to work, Art Track and embedded sound recording must be available through distributor with Shorts agreement. Symphonic qualifies.",
+        "engagement_stat": "YouTube for Artists (verified): fans discovered a song on Shorts and consumed it on long-form within a week 700M times. The '34% more engagement' figure is unverified, do not quote.",
+        "optimal_length": {
+          "highest_completion": "15-30 seconds",
+          "higher_total_views": "50-60 seconds",
+          "max_allowed": "3 minutes",
+          "music_sweet_spot": "15-35 seconds for hooks/teasers, 45-60 seconds for fuller clips"
+        },
+        "title_tips": "Front-load in first 40 chars (truncation is aggressive). 4-6 words. Numbers and direct statements outperform vague teasers.",
+        "description_tips": "First 125 chars appear in previews. Include primary keyword naturally. Add #Shorts plus 2-3 niche hashtags.",
+        "captions": "Most Shorts consumed without sound. Burned-in captions improve completion rates and are indexed for search. 2 lines per frame, 32-42 chars per line.",
+        "content_ideas": [
+          "15-second track previews with visual hook",
+          "Behind-the-scenes studio clips",
+          "Live performance snippets",
+          "Sound design breakdowns",
+          "Vinyl/gear footage with track playing"
+        ]
+      },
+      "channel_fields": {
+        "channel_description": {
+          "max_chars": 1000,
+          "notes": "Include genre keywords, artist name, mood descriptors, location. Structure: Who you are, what you make, what listeners can expect, where to find you. Include streaming and social links."
+        },
+        "channel_name": {
+          "notes": "Use official artist name exactly. Avoid 'Official', 'TV', 'Channel', 'YouTube', 'Music', 'Productions'."
+        },
+        "profile_image": {
+          "recommended_resolution": "800x800"
+        },
+        "banner": {
+          "recommended_resolution": "2560x1440"
+        }
+      },
+      "playlists_as_seo": {
+        "impact": "YouTube for Artists (verified): playlists are one of the largest traffic sources for music viewership. The '5+ playlists = 22% more session views' figure is unsourced.",
+        "recommended_strategy": [
+          "By release: each EP/single gets its own playlist",
+          "By mood/vibe: group tracks by listening context (e.g., 'Dark Disco Floor', 'Late Night Acid', 'Downtempo Sessions')",
+          "By content type: official videos, live performances, Shorts compilations, behind-the-scenes",
+          "Optimize each playlist with keyword-relevant title and description"
+        ]
+      },
+      "community_posts": {
+        "notes": "Post when new video publishes -- include thumbnail preview and a question. Community posts appear in subscriber feeds and drive early video traffic. Consistently responding to comments strengthens engagement loops."
+      },
+      "thumbnail": {
+        "resolution": "1280x720",
+        "shorts_resolution": "1080x1920",
+        "aspect_ratio": "16:9 (long-form), 9:16 (Shorts)",
+        "max_file_size_mb": 2,
+        "format": "JPEG, PNG, GIF, BMP",
+        "jpg_quality": "80-90% for optimal file size vs quality",
+        "algorithmic_impact": "Yes -- thumbnails drive CTR which is a primary ranking signal. But high CTR + low watch time (clickbait) is penalized.",
+        "ab_testing": "Test & Compare supports up to 3 thumbnails; winner by watch time share; requires advanced features.",
+   "requires": "Custom thumbnails require advanced features (verified channel).",
+        "design_2026": {
+          "trend": "Simplicity -- one subject, one message, one second to understand",
+          "faces": "Faces can help CTR (practitioner consensus). The '20-30%' figure is unsourced.",
+          "color": "Use complementary color pairs (yellow/violet, red/cyan, blue/orange). Avoid colors that blend with YouTube UI (red, white, black).",
+          "text": "4 words or fewer, for mobile legibility. The '30% higher CTR' figure is unsourced.",
+          "mobile_first": "63% of YouTube watch time is mobile. Design must read at small sizes."
+        },
+        "music_specific": "Album artwork can work as base but often underperforms vs. a video still with added text. Dark/moody aesthetics work if enough contrast to pop at small sizes. Consistency across catalog builds visual brand."
+      },
+      "youtube_music": {
+        "oac_requirements": [
+          "At least one official music release distributed to YouTube through distributor",
+          "Metadata must match precisely: ISRC codes, artist name, album titles consistent between distributor and channel",
+          "OAC requests go through distributor (Symphonic)",
+          "Comply with Community Guidelines, ToS, and Copyright policies"
+        ],
+        "oac_benefits": "Consolidates Topic/Vevo music under your channel. Music Note icon. Search priority: unverified. Better analytics (separate Shorts/long-form/live tracking).",
+        "algorithm_vs_main_youtube": {
+          "primary_signal": "Listening behavior (plays, skips, saves, repeats) vs watch time + satisfaction",
+          "content_understanding": "Audio fingerprinting + metadata (MuLan neural network) vs visual + audio + text",
+          "recommendations": "Sequential user action modeling for music taste profiles vs collaborative filtering across all content",
+          "discovery": "Auto-playlists (My Supermix, genre radios, mood mixes) vs browse/search/suggested"
+        },
+        "metadata_delivery": "Through distributor using YouTube DDEX feed. Critical fields: ISRC, artist name, track title, album title, genre, release date. Name consistency between distributor and channel is essential.",
+        "reaching_auto_playlists": [
+          "Listening completion (listeners not skipping your tracks)",
+          "Engagement from broader YouTube ecosystem (likes, comments on music videos)",
+          "Precise genre/mood classification from audio analysis",
+          "Early momentum during release week (first 48-72 hours)",
+          "Avoid fake views -- poor engagement signals actively harm algorithmic positioning"
+        ]
+      },
+      "comments": {
+        "max_chars": 10000
+      },
+      "algorithm_2026": {
+        "key_changes": [
+          "Satisfaction signals (surveys, returns, session continuation) now WEIGHT watch time. Staff wording: watch time 'is not the golden standard'. Directionally verified; do not overstate as the only signal",
+          "AI topic understanding: deep content analysis through speech recognition, visual analysis, audio fingerprinting. Titles confirm, not solely determine, categorization.",
+          "Fine-grained interest personalization is long-standing and true. The 'Feb 2026 browse feed overhaul' is unsourced blog folklore: do not plan around it",
+          "Shorts run on a separate recommendation system from long-form (on record since 2023). Not a 'late 2025 decoupling' event",
+    "May 2026: YouTube auto-labels undisclosed photorealistic AI content (YouTube Blog)"
+        ],
+        "retention_note": "Behaviour decides spread (satisfaction-weighted watch time, clicks judged together with retention); metadata classifies. The '95% of discovery' figure is unsourced."
+      },
+      "seo_best_practices": [
+        "Title: Artist - Song Title format consistently. Keep important info in first 50 chars. Use A/B testing.",
+        "Description: Front-load first 150 chars with artist, title, genre. Include lyrics for SEO. Streaming links + social profiles. 3-5 hashtags at end.",
+        "Tags: Fill in but don't over-invest (minimal role per YouTube). Focus time on title, thumbnail, and description instead.",
+        "Shorts: 15-35 second music clips, strong first frame, #Shorts not required. Add a related video link to the full track (needs advanced features). Shorts are a genuine YouTube Music discovery funnel.",
+        "Thumbnails: Simple, high-contrast, one subject, 4 words max. Custom thumbnails and A/B tests need advanced features. Mobile-first design.",
+        "Playlists: Create 5+ organized by release, mood, and content type. Drives session time.",
+        "OAC: Set up through Symphonic immediately. Match metadata exactly.",
+        "Posting time and upload frequency are NOT ranking factors (YouTube product lead on record). Optimise what you post, not when",
+        "AI disclosure: properly labeled AI content gets normal distribution; undisclosed AI content faces suppression"
+      ],
+      "image_metadata_handling": {
+        "strips_exif": "Recommended to strip during export",
+        "recommendation": "Strip all non-essential metadata (EXIF, GPS, comments) during thumbnail export for cleaner headers."
+      }
+    },
+    "instagram": {
+      "display_name": "Instagram",
+      "text_fields": {
+        "caption": {
+          "max_chars": 2200,
+          "visible_before_more": 125,
+          "notes": "Front-load the most important message in first 125 chars. Hashtags count toward limit. Emojis count as 2+ characters."
+        },
+        "bio": {
+          "max_chars": 150,
+          "notes": "Include genre, location, link-in-bio service URL. Concise identity statement."
+        },
+        "username": {
+          "max_chars": 30
+        },
+        "name_field": {
+          "max_chars": 30,
+          "notes": "Searchable -- include keywords (e.g., 'Inch of Shadow | Dark Disco')."
+        },
+        "comments": {
+          "max_chars": 2200
+        },
+        "direct_messages": {
+          "max_chars": 1000,
+          "notes": "Approximate limit."
+        },
+        "reels_caption": {
+          "max_chars": 2200,
+          "notes": "Same as feed post caption."
+        },
+        "story_text_sticker": {
+          "notes": "No strict character limit."
+        },
+        "story_question_sticker": {
+          "max_chars": 135
+        },
+        "story_poll_option": {
+          "max_chars": 24
+        },
+        "alt_text": {
+          "max_chars": null,
+          "recommended_chars": 125,
+          "notes": "Platform limit may have been removed, but screen readers may cut off after ~125 chars. Helps algorithm understand image content and improves accessibility."
+        }
+      },
+      "hashtags": {
+        "max_per_post": 30,
+        "recommended_per_post": "3-5",
+        "notes": "As of 2025-2026, hashtags no longer boost reach — they only categorize content for the algorithm (confirmed by Instagram CEO Adam Mosseri). Instagram officially recommends 3-5 highly relevant hashtags. Keyword-rich captions and alt text are now the primary discovery drivers. Posts with 3-5 niche hashtags outperform 10+ generic ones by ~25%. Branded/campaign hashtags still useful for community grouping.",
+        "electronic_music_examples": [
+          "#darkdisco", "#acidhouse", "#electro", "#EBM", "#techno",
+          "#berlinmusic", "#undergroundmusic"
+        ]
+      },
+      "reels_music_promotion": {
+        "recommended_clip_length_seconds": "5-8",
+        "notes": "Use original audio for performance/studio clips -- algorithm rewards original audio with increased visibility. Catchy 5-8 second hooks grab attention. Algorithm rewards longer content that holds attention.",
+        "content_types": [
+          "Performance clips",
+          "Studio/production behind-the-scenes",
+          "Song teasers (5-8 sec hook)",
+          "Mixing technique breakdowns",
+          "Story behind the track"
+        ]
+      },
+      "algorithm_2026": {
+        "summary": "Instagram no longer runs a single 'algorithm' -- separate per-surface ranking systems (Feed, Reels, Stories, Explore). For a small underground act, Reels + Explore drive non-follower reach; Stories/Feed skew to existing followers. Follower count no longer gates reach: each post gets a mixed test pool and expands on strong early watch time and sends. Discovery shifted from hashtags to keyword/search indexing of captions, on-screen text, alt text, bio and name field.",
+        "key_signals_ranked": [
+          "Watch time / completion (first 3s hook decides) -- HIGH (Mosseri-confirmed top Reels signal)",
+          "Sends per reach (DM shares) -- HIGH (Mosseri: slightly more important than likes for non-follower reach; the '3-5x a like' multiplier is FABRICATED)",
+          "Originality (native, non-watermarked, original audio) -- HIGH (the '40-60% more reach' figure is FABRICATED; keep the qualitative rule)",
+          "Keyword/search indexing of captions, on-screen text, alt text, name, bio -- HIGH",
+          "Likes per reach -- MEDIUM (skews to existing followers)",
+          "Reel length (stay <90s; completion can outweigh raw length) -- MEDIUM"
+        ],
+        "busted_myths": [
+          "'Editing a Reel caption after posting kills reach' -- REFUTED by Mosseri. Finalizing pre-publish is fine practice, but edits do not punish reach.",
+          "'Small accounts get an automatic discovery boost' -- CONTESTED. Accurate framing: follower count no longer GATES reach; expect no automatic boost."
+        ],
+        "tools": "Trial Reels (1,000+ follower public accounts): test a Reel on non-followers only, ~24h metrics, auto-share decision ~72h, schedulable since Feb 2026. Use to test hooks on cold audiences before committing."
+      },
+      "image_metadata_handling": {
+        "strips_exif": true,
+        "what_stripped": "GPS coordinates, camera make/model, timestamps, most technical settings",
+        "what_preserved": "Basic image dimensions, color space, JPEG compression parameters",
+        "warning": "Instagram retains original EXIF data (including GPS) on their servers even after stripping from public-facing images.",
+        "dm_behavior": "DMs apply less processing -- some GPS and camera info may survive, especially with original-quality sharing.",
+        "recommendation": "Always strip EXIF/GPS data before upload for privacy."
+      },
+      "seo_best_practices": [
+        "Name field (30 chars) is the single highest-leverage one-time SEO change: append a searched keyword, e.g. 'Inch of Shadow | Dark Disco / EBM' (rotate genre per active EP)",
+        "Engineer for sends (a striking 5s loop, a venue moment, a track-ID tease) -- the cold-reach lever",
+        "Post your own track as original audio (feeds originality; can seed a reusable sound)",
+        "Burn a short genre/context line as on-screen text into every Reel (indexed signal)",
+        "Use Trial Reels to test hooks on cold audiences before committing",
+        "Keyword-rich captions are now the primary discovery driver -- Instagram's AI reads caption text for recommendations",
+        "Front-load key message in first 125 characters of caption",
+        "Use Name field for searchable keywords ('Inch of Shadow | Dark Disco Berlin')",
+        "3-5 highly relevant niche hashtags only -- hashtags categorize content but no longer boost reach (2025+ algorithm)",
+        "Write custom alt text for every image post (SEO + accessibility -- algorithm reads this)",
+        "Use original audio on Reels for algorithmic boost",
+        "Respond to comments quickly -- algorithm detects creator participation",
+        "Post consistently -- sustainable strategy over viral chasing"
+      ]
+    },
+    "beatport": {
+      "display_name": "Beatport",
+      "upload_method": "Through approved distributor only (Symphonic for Inch of Shadow). NOTE: on Symphonic Starter, Beatport is a PAID add-on (not included); Traxsource is Partner-plan only. Confirm Beatport is enabled before timing a release around it.",
+      "artist_profile": {
+        "biography": {
+          "max_chars": 2000,
+          "notes": "Editorial prose for DJ/curator credibility. State identity, sound, scene (Berlin underground, dark disco, EBM, electro, acid) and label context (Indigo Children Records, MM Discos, Stereo Society, NaNa Disc). Beatport advises against putting social links in the bio body. No strong evidence the bio is keyword-indexed for in-store search — write for credibility, not SEO."
+        },
+        "artist_photo": {
+          "resolution": "590x404 minimum, up to 3000x2054",
+          "format": "JPEG or PNG",
+          "notes": "Reuse the consistent press image used on Apple/RA/SoundCloud."
+        },
+        "profile_claim": "Claim via the Artists menu, supply SoundCloud/social links; review ~2-5 business days.",
+        "linked_dj_charts": "Link your own Beatport DJ Charts to surface taste and spotlight a pre-order."
+      },
+      "ranking_model_2026": {
+        "summary": "Beatport charts are a sales-velocity engine, NOT an opaque recommender. Top 100 Genre/Release/Overall charts are driven by paid downloads in a rolling 7-day window, refreshed once daily ~3am Denver (MT) time. Genre/sub-genre choice decides which (often less-crowded) Top 100 you compete in.",
+        "key_levers": [
+          "Pick the narrowest accurate sub-genre; EBM/electro/dark/acid niches are far less crowded than House/Techno",
+          "Pre-order window (up to 28 days): advance sales credit evenly across the first 5 days of release, engineering a week-one spike",
+          "Curation team can reassign your genre; decision is final (request via distributor, cannot overrule)",
+          "Beatport Hype (for labels <$25k trailing-12mo sales, $9.99/mo on a Hype-eligible genre) grants eligibility to submit for feature placement; guarantees nothing. Verified: there is NO Beatport-exclusive requirement for Hype — do not pull from Bandcamp/Traxsource for it.",
+          "Time release Wed-Fri, push during EU afternoon (~12:00-18:00 CET)",
+          "Never self-buy or use chart-placement services — detected and grounds for removal"
+        ],
+        "structural_2026": "Beatsource merger announced March 2026 and still migrating mid-2026 (open-format Top 100 behavior not yet settled); open-format genres added Sept 2025."
+      },
+      "release_metadata": {
+        "track_title": {
+          "max_chars": null,
+          "max_chars_notes": "Specific limit not publicly documented. Follow standard metadata conventions.",
+          "format_rules": [
+            "Include mix type if applicable (e.g., 'Extended Mix', 'Original Mix')",
+            "Do not include 'Beatport Exclusive' -- tagged automatically",
+            "Title must accurately represent the track"
+          ]
+        },
+        "artist_name": {
+          "rules": [
+            "List artists individually (1 per dropdown at track level)",
+            "Never use 'Various Artists' at track level",
+            "Featured artists in separate 'Featuring' field, comma-separated",
+            "Duplicate names: differentiate with 'DJ' prefix or country suffix, e.g., 'ArtistName (UK)'"
+          ]
+        },
+        "release_description": {
+          "max_chars": null,
+          "notes": "Description field availability and limits depend on distributor. Not a primary Beatport metadata field."
+        },
+        "catalog_number": "Required",
+        "isrc": "Required per track",
+        "upc": "Required per release",
+        "release_date": "Required"
+      },
+      "genre_tagging": {
+        "primary_genre": 1,
+        "additional_subgenres": 2,
+        "total_genre_tags": 3,
+        "notes": "Accurate genre tagging is critical for chart placement and discoverability. Each genre has its own chart -- choosing the right genre affects competition level.",
+        "total_genres_available": "36+",
+        "relevant_genres_for_inch_of_shadow": {
+          "electro": "Electro (Classic / Detroit / Modern)",
+          "techno": "Techno (peak time/driving, raw/deep, melodic, hard)",
+          "nu_disco": "Nu Disco",
+          "indie_dance": "Indie Dance",
+          "electronica": "Electronica",
+          "minimal_deep_tech": "Minimal / Deep Tech",
+          "hard_techno": "Hard Techno",
+          "melodic_house_techno": "Melodic House & Techno"
+        },
+        "notes_on_dark_disco": "Dark disco is not a named Beatport genre. Closest options: Nu Disco, Indie Dance, or Electronica depending on BPM and energy."
+      },
+      "artwork": {
+        "resolution": "1400x1400 minimum (3000x3000 recommended)",
+        "format": "JPEG or PNG"
+      },
+      "seo_best_practices": [
+        "Accurate genre/subgenre tagging is the #1 discoverability factor on Beatport",
+        "Choose genres strategically -- less competitive genres offer better chart potential",
+        "Complete all metadata fields through distributor (ISRC, UPC, catalog number)",
+        "Consistent artist name across all releases",
+        "Extended Mix versions are preferred by DJs on Beatport",
+        "Release timing: avoid major label release dates for chart competition"
+      ],
+      "image_metadata_handling": {
+        "strips_exif": "Not documented",
+        "recommendation": "Strip EXIF data before submitting to distributor. Artwork passes through distributor pipeline."
+      }
+    },
+    "bandcamp": {
+      "display_name": "Bandcamp",
+      "text_fields": {
+        "artist_bio": {
+          "max_chars": 400,
+          "notes": "Anything beyond 400 characters gets cut off in display. Include genre, location, sound description."
+        },
+        "album_title": {
+          "max_chars": 200,
+          "notes": "Approximate. Some sources show very long titles are possible but impractical."
+        },
+        "track_title": {
+          "max_chars": 300,
+          "notes": "Confirmed limit from Bandcamp."
+        },
+        "album_description": {
+          "max_chars": null,
+          "notes": "No strict character limit documented for album/release descriptions. Can be lengthy. Use for SEO-rich text: describe theme, mood, production details, influences, collaborators."
+        },
+        "track_description": {
+          "max_chars": null,
+          "notes": "No strict limit documented. Describe song theme, mood, collaborators, and include searchable keywords."
+        }
+      },
+      "tags": {
+        "sources": [
+          "Genre setting on profile page (auto-applied to all releases)",
+          "Genre tags on profile page (auto-applied to all releases)",
+          "Location on profile page",
+          "Tags on individual albums",
+          "Tags on individual tracks"
+        ],
+        "max_per_release": null,
+        "max_per_release_notes": "Exact maximum not publicly documented. Practical limit appears to be around 10-15 tags per release based on community usage.",
+        "best_practices": [
+          "Use exact Bandcamp Discover tag spellings (e.g., 'drum and bass' not 'DnB')",
+          "Check autocomplete for matching existing tags",
+          "Layer: genre tags, subgenre tags, mood tags, instrument tags, location tags",
+          "Profile-level genre tags auto-apply to all releases",
+          "Genre > subgenre > location > mood > instrumentation (priority order)"
+        ],
+        "electronic_music_examples": [
+          "electronic", "dark disco", "acid", "electro", "EBM", "techno",
+          "Berlin", "dark", "underground", "synth", "industrial"
+        ]
+      },
+      "seo_best_practices": [
+        "Tags are the primary discovery mechanism on Bandcamp -- never skip them",
+        "Use Bandcamp Discover-compatible tag spellings (check autocomplete)",
+        "Set profile-level genre tags (they apply to all releases automatically)",
+        "Include location tag (Berlin) for regional discovery",
+        "Album descriptions are indexed by search engines -- write SEO-rich text",
+        "Fill out all metadata fields (genre, mood, instrumentation, language)",
+        "Bandcamp pages rank well in Google -- optimize descriptions with keywords",
+        "Layer tags from broad to specific: electronic > dark disco > acid Berlin"
+      ],
+      "bandcamp_metadata": {
+        "notes": "Bandcamp embeds metadata into downloaded files (FLAC, WAV, MP3). This includes artist name, album title, track title, track number, album art, and any custom tags."
+      },
+      "image_metadata_handling": {
+        "strips_exif": "Not documented",
+        "recommendation": "Strip EXIF data before upload. Bandcamp serves resized/compressed versions of artwork."
+      }
+    },
+    "soundcloud": {
+      "display_name": "SoundCloud",
+      "text_fields": {
+        "track_title": {
+          "max_chars": 100,
+          "notes": "Must be between 1 and 100 characters. Emojis not supported."
+        },
+        "track_description": {
+          "max_chars": 4000,
+          "notes": "Include relevant keywords, streaming links, social links, collaborator credits. Links display as full URLs (no HTML formatting)."
+        },
+        "track_caption": {
+          "max_chars": 140,
+          "notes": "Short text posted with the track to followers. Think of it as the 'tweet' for the upload."
+        },
+        "profile_description": {
+          "max_chars": 4000,
+          "notes": "Same 4000-char limit as track description. No HTML. Links display as full URLs. Include bio, achievements, influences, style."
+        },
+        "playlist_title": {
+          "max_chars": null,
+          "notes": "Limit not documented."
+        },
+        "playlist_description": {
+          "max_chars": null,
+          "notes": "Limit not documented."
+        }
+      },
+      "tags": {
+        "max_per_track": 5,
+        "max_chars_per_tag": 20,
+        "notes": "Only 5 tags allowed -- choose carefully. Aim for 3 abstract/mood tags + 2 genre/subgenre tags.",
+        "strategy": [
+          "Pair broad genre tags with specific descriptors",
+          "Use sub-genre tags for niche discovery",
+          "Include mood descriptors (e.g., 'dark', 'melancholic')",
+          "Instrument-specific tags create niche discovery channels (e.g., 'analog synth')",
+          "Location-based tags if space allows"
+        ],
+        "electronic_music_examples": [
+          "dark disco", "acid", "electro", "techno", "EBM",
+          "analog synth", "underground", "Berlin"
+        ]
+      },
+      "genre_field": {
+        "notes": "Select from predefined list or enter custom genre. Searchable field -- choose accurately. The FIRST tag = the indexed main genre; use SoundCloud's exact chart genre names ('Techno', 'Electro', 'Drum & Bass' not 'DnB'). Wrap multi-word tags in quotes so 'dark disco' / 'acid techno' / 'body music' register as single tags."
+      },
+      "profile": {
+        "bio_max_chars": 4000,
+        "link_slots": 10,
+        "link_priority": ["Linktree hub", "Bandcamp", "Spotify", "Apple Music", "Instagram"],
+        "permalink": "Keep the clean slug soundcloud.com/inch-of-shadow; changing it breaks links.",
+        "notes": "Front-load Berlin + genre stack (dark disco, acid, electro, EBM, techno) keywords; list labels and venues as keyword anchors. No HTML; links display as full URLs."
+      },
+      "algorithm_2026": {
+        "summary": "Two layers. Layer 1: Musiio AI 'listens' to a track's sonic characteristics and recommends it regardless of play count (the engine behind First Fans/Amplify, which surfaces a new upload to ~100 likely fans). Layer 2 (scales reach): the social graph -- reposts, timestamped comments, likes, playlist saves, and especially 'Liked By' discovery. Early play-velocity in the first ~48h, relative to the artist's own baseline, decides whether a track keeps getting tested.",
+        "key_signals_ranked": [
+          "Musiio AI track characteristics (drives 0-play recommendations) -- HIGH",
+          "'Liked By' / social-graph discovery (official 2026 report: ~3x more likely to engage) -- HIGH",
+          "Organic reposts from genre-relevant accounts -- HIGH",
+          "Early play-velocity (first ~48h) + completion -- HIGH",
+          "Buzzing playlists (fan-powered, built to expose smaller artists) -- MEDIUM-HIGH",
+          "Timestamped comments + playlist saves -- MEDIUM",
+          "Genre tag accuracy (first tag = indexed main genre) -- MEDIUM"
+        ],
+        "actionables": [
+          "Opt every release into First Fans/Amplify (Artist Pro = unlimited) -- cheapest legitimate first-100-listeners mechanism",
+          "Upload lossless (WAV/AIFF/FLAC) for cleaner Musiio classification (fidelity, not a proven ranking boost)",
+          "Front-load DJ/peer ORGANIC reposts on day one; never paid repost networks (inflate plays, don't convert)",
+          "Maximize playlist-add breadth across many small genre playlists"
+        ]
+      },
+      "seo_best_practices": [
+        "Track title: include artist name and track name clearly; put a real search keyword in it (e.g. 'Track Name [Dark Disco / Acid]')",
+        "Description: front-load keywords, include label (Indigo Children Records etc.) and streaming/buy links",
+        "All 5 tags should be used -- never leave tags empty; first tag = canonical main genre, multi-word tags in quotes",
+        "Mix genre tags with mood/style descriptors within the 5-tag limit",
+        "Time the release to build 48h velocity; opt into First Fans/Amplify every release",
+        "Organic genre-peer/DJ reposts and 'Liked By' reach drive recommendations; avoid paid repost services",
+        "Instrument-specific tags ('analog synth') create niche discovery channels",
+        "Custom genre field is searchable -- be specific and accurate"
+      ],
+      "image_metadata_handling": {
+        "strips_exif": "Not documented",
+        "recommendation": "Strip EXIF data before uploading artwork."
+      }
+    },
+    "resident_advisor": {
+      "display_name": "Resident Advisor (RA)",
+      "discovery_model": {
+        "summary": "RA has NO social-style content feed and NO track-recommendation algorithm. Discovery is structural: (1) the artist becomes findable by being tagged on an event lineup, (2) fans follow the artist page, (3) when a tagged event is announced, followers IN THAT REGION get an RA Guide push + a 'Just Announced' email. The only ranking system is the event-ranking algorithm (where a party places in local listings), which is the promoter's lever. The RA page is a strong owned SEO asset that often tops the artist-name Google SERP.",
+        "key_signals": [
+          "Lineup tagging -- HIGH (tagged artist is clickable from the event, event shows on the profile, followers get notified). NOTE: the '~5% extra exposure' stat is FABRICATED; keep the three functional benefits only.",
+          "Region-gated follower notifications -- HIGH (only followers in the event's region get the push; local Berlin/EU follower QUALITY matters more than raw count)",
+          "Genre tags (62-genre filter, promoter-applied at event level) -- HIGH",
+          "RA pages rank highly on Google; bio + genre tags improve the page's SEO -- HIGH",
+          "Cross-platform sync -- MEDIUM (a tagged artist's RA events auto-display on the Spotify profile; next 3 RA events pull through to SoundCloud if linked)"
+        ]
+      },
+      "artist_profile": {
+        "bio": {
+          "max_chars": null,
+          "notes": "No published char limit. RA states the bio improves the page's SEO. Front-load Berlin + the genre stack (dark disco, acid, electro, EBM, techno) + label names early. Editor/SEO-read."
+        },
+        "profile_image": {
+          "notes": "Required for approval (72h target if the page is complete). Reuse the consistent press image used on Apple/Beatport/SoundCloud."
+        },
+        "fields": {
+          "residence": "Set to Berlin -- drives region-gated notifications and 'For You' geo-surfacing.",
+          "musical_styles": "Keep aligned to actual output (EBM, electro, acid, techno).",
+          "labels": "List MM Discos, Stereo Society, NaNa Disc, Indigo Children Records -- improves lineup auto-match and adds credibility.",
+          "aliases_pronouns": "Improve auto-match and completeness.",
+          "booking_info": "Converts profile views into gigs.",
+          "external_links": "Link RA from every other profile and link back to SoundCloud, Bandcamp, Discogs, IG -- powers the Spotify/SoundCloud event sync and consolidates the SERP."
+        }
+      },
+      "seo_best_practices": [
+        "Get tagged on every lineup (past + future); share the exact profile URL (ra.co/dj/inchofshadow) so promoters tag the right entity",
+        "Set residence to Berlin",
+        "Push promoters to tag genres (EBM, electro, acid, techno) matched to the actual set",
+        "Link RA both ways with all other profiles to power cross-platform sync and the SERP",
+        "List all labels and aliases to improve lineup auto-match",
+        "Claim/create with a high-quality profile image (missing image delays approval)"
+      ],
+      "busted_myths": [
+        "'You can only get an RA profile via a lineup' -- OUTDATED. Current RA docs let you create a profile directly; lineup tags amplify but are not a prerequisite. Claim it as an owned SEO asset even before gigs.",
+        "'RA has a recommendation algorithm that pushes your tracks' -- MYTH. Only the event-ranking algorithm exists."
+      ]
+    },
+    "symphonic": {
+      "display_name": "Symphonic (distributor)",
+      "is_distributor": true,
+      "critical_fact": "Symphonic STARTER ($19.99/yr, Amir's plan) does NOT include Symphonic-driven DSP editorial pitching -- that is the application-only PARTNER plan. On Starter, the only free editorial lever is the artist's own Spotify for Artists pitch form (and Apple/Amazon equivalents), which Symphonic delivers downstream. Also on Starter: Beatport is a PAID add-on and Traxsource is unavailable (Partner-only).",
+      "what_to_control": {
+        "summary": "Symphonic's 'ranking' is gatekept access to (a) DSP editorial/algorithmic pitching and (b) DJ promo pools. What the artist controls is clean metadata + the self-pitch + first-week engagement.",
+        "key_levers": [
+          "Self-pitch via Spotify for Artists >=7 days before release (the Release Radar floor). Pitch as early as practical; the '14+ days doubles consideration' claim is FABRICATED.",
+          "First-week engagement (saves, low early skip, repeat listens, follower conversion) drives algorithmic amplification -- artist-controlled, independent of Symphonic. Specific %-thresholds are unverifiable single-vendor numbers.",
+          "Realistic independent baseline for ANY editorial add is roughly 1-8% (<1% for flagship lists); ~75% of placements are niche/regional. The '~20%' figure is Spotify's platform-wide/label-inclusive stat, not applicable to a small act.",
+          "DJ promo pools (Carbon, Music Worx, Promo Only) = DJ feedback / scene credibility, NOT a streaming lever.",
+          "Clean ISRC/UPC + legal-name Writer credit required for delivery; bad/missing metadata delays approval and breaks downstream matching.",
+          "Run a free pre-save/SmartLink every release (pre-saves convert to day-one library adds + Release Radar)."
+        ]
+      },
+      "spotify_pitch_form_2026": {
+        "fields": "primary genre + up to 2 sub-genres, up to 3 mood tags, up to 3 style tags, instrumentation, language, up to 3 cultures, 500-char description, song-facts checkboxes, promotional-plans field",
+        "description_500_notes": "High-value field: mood-first description of the sonic world + one concrete release driver; keyword genre/mood naturally (dark disco, EBM, acid, Berlin underground). Do NOT treat it as 'the single most weighted field' -- genre/mood tags drive routing at least as much.",
+        "release_timing": "Set release dates ~5-6 weeks out so the file is in S4A early enough to pitch well before release after Symphonic approval. Observed turnaround: ~24h for ICR-002 'The Deceiver' (submitted 2026-06-12, approved 2026-06-13) -- far faster than the often-quoted 1-5 days; don't assume the slow end."
+      },
+      "busted_myths": [
+        "'Symphonic Starter includes Symphonic-driven editorial pitching' -- MYTH (Partner-plan only).",
+        "'No distributor can guarantee editorial placement; special relationships = overpromising' -- CONFIRMED true.",
+        "'Symphonic Starter includes Beatport/Traxsource' -- FALSE (Beatport paid add-on; Traxsource Partner-only)."
+      ]
+    }
+  },
+  "cross_platform_summary": {
+    "character_limits_quick_reference": {
+      "spotify_pitch": 500,
+      "spotify_bio": 1500,
+      "spotify_artist_pick": 140,
+      "spotify_pitch_optimal_timing": "31-40 days before release (18% acceptance rate)",
+      "apple_music_bio": "Q&A format, limits not documented",
+      "youtube_title": "100 (70 desktop visible, 50-60 mobile, 40 Shorts)",
+      "youtube_description": "5000 (150-200 visible desktop, ~100 mobile)",
+      "youtube_tags_total": "500 (~1% of discovery -- low priority)",
+      "youtube_hashtags": "3-5 recommended, first 3 shown above title",
+      "youtube_channel_description": 1000,
+      "youtube_shorts_title": "100 (~40 visible)",
+      "instagram_caption": "2200 (125 visible)",
+      "instagram_bio": 150,
+      "instagram_hashtags": "3-5 recommended (categorization only, no reach boost)",
+      "beatport_genres": "1 primary + 2 subgenres",
+      "bandcamp_artist_bio": 400,
+      "bandcamp_track_title": 300,
+      "soundcloud_track_title": 100,
+      "soundcloud_track_description": 4000,
+      "soundcloud_tags_max": "5 tags, 20 chars each",
+      "soundcloud_profile_description": 4000,
+      "beatport_artist_bio": 2000,
+      "ra_bio": "no published limit (front-load first sentence; SEO-read)",
+      "symphonic_spotify_pitch_description": 500
+    },
+    "front_load_flags": {
+      "_notes": "Where the first N characters are load-bearing -- the generator must put identity + genre keywords here.",
+      "instagram_caption": "first line / first 125 chars",
+      "instagram_bio": "lead with identity, embed 2-3 searched keywords",
+      "spotify_bio": "first 1-2 sentences (sound + Berlin)",
+      "apple_music_bio": "Q&A answers, scene-grounded, first sentence",
+      "youtube_description": "first 200 chars / 2-3 lines (above 'Show more')",
+      "youtube_channel_description": "first ~100-120 chars",
+      "bandcamp_bio": "first ~400 chars (truncates)",
+      "soundcloud_bio": "first sentence(s)",
+      "ra_bio": "first sentence (Berlin + genre + labels)",
+      "beatport_bio": "first sentence (identity + sound + scene)"
+    },
+    "genre_vocabularies": {
+      "_notes": "Per-platform genre vocabularies differ -- do NOT reuse one shared genre list. Preserve per-release genre flexibility (each EP may differ). 'Dark disco' is NOT a Beatport genre.",
+      "soundcloud": "Use SoundCloud's exact chart genre names ('Techno', 'Electro', 'Drum & Bass'). First tag = indexed main genre. Wrap multi-word tags in quotes: 'dark disco', 'acid techno', 'body music'.",
+      "beatport": "Beatport taxonomy values ONLY -- never put mood/descriptor words in the genre field. Closest fits for IoS: Electro (Classic/Detroit/Modern), Techno (Peak Time/Driving; Raw/Deep/Hypnotic; Melodic), Nu Disco, Indie Dance, Electronica, Minimal/Deep Tech. Dark disco -> Nu Disco / Indie Dance / Electronica by BPM+energy.",
+      "bandcamp": "Autocomplete-matched exact spellings: 'ebm', 'electro', 'acid', 'techno', 'dark disco', 'body music', 'minimal synth'. Always include 'berlin' (+ optionally 'germany'). Tag the album, copy tags down to tracks. 12-16 is a ceiling, not a target.",
+      "spotify_apple": "Precise electronic subgenre over bare 'Electronic' (EBM, electro, acid techno, dark disco). Spotify runs its OWN classifier and can override distributor tags -- accurate tagging reduces wrong-audience skips.",
+      "instagram": "Genre as literal keywords in the first caption line, not a hashtag block: 'dark disco', 'acid', 'EBM', 'Berlin underground techno', 'electro'. 3-5 precise hashtags for classification only."
+    },
+    "artist_image_specs": {
+      "_notes": "Use ONE consistent press image across Apple/Beatport/RA/SoundCloud for SERP consolidation + editorial completeness. Visual consistency across releases is now a discovery input (Spotify co-listening/curation), not just aesthetics -- hold a coherent dark-disco/EBM visual cluster across EPs.",
+      "spotify_avatar": "750x750 min",
+      "spotify_header": "2660x1140 min",
+      "apple_artist_image": "2400x2400 / 72 dpi (800x800 min), no borders/text",
+      "beatport_artist_photo": "590x404 min, up to 3000x2054",
+      "youtube_profile": "800x800",
+      "youtube_banner": "2560x1440",
+      "spotify_canvas": "9:16 MP4, 1080x1920, 3-8s loop, no audio -- a real save/follow lever; reinforces the visual identity that feeds co-listening. Add as a generator/resizer output target.",
+      "reels_on_screen_text": "Burn a short genre/context line into Reel frames (indexed IG signal) + a strong first frame for both IG Reels and YouTube Shorts (no custom Shorts thumbnail needed)."
+    },
+    "image_metadata_universal_recommendation": "Strip all EXIF/IPTC/XMP metadata (especially GPS) before uploading to any platform. Preserve sRGB color profile only. Most platforms strip metadata on their end, but pre-stripping ensures privacy and cleaner file headers.",
+    "metadata_embedding_for_downloads": {
+      "bandcamp": "Embeds metadata into downloaded files (artist, title, track number, artwork, tags)",
+      "beatport": "Files include embedded metadata when purchased",
+      "other_platforms": "Streaming platforms do not provide downloadable files to listeners"
+    }
+  },
+  "genre_examples": {
+    "_notes": "Good vs bad examples tailored for Inch of Shadow's sound: dark disco, acid, electro, EBM, techno — Berlin underground.",
+    "spotify_pitch": {
+      "good": "A slow-burning acid line meets melancholic synths over a hypnotic 4/4 groove. 'Shadow Frequency' draws from late-night Berlin sets and the emotional weight of empty dance floors at dawn. Built around a Roland TB-303 and layered pads, it sits between dark disco and driving techno — made for the hours when the room thins out and the music gets deeper.",
+      "bad": "New single out now! Please add to your playlist. I worked really hard on this track and it's my best work yet. Follow me on Instagram @inch_of_shadow. Stream now!",
+      "why": "Good: sensory, specific (instruments, mood, setting), tells a story, uses genre language editors recognize. Bad: generic, self-promotional, no musical detail, wastes the 500-char limit on calls to action."
+    },
+    "spotify_bio": {
+      "good": "Inch of Shadow is the solo project of Berlin-based producer Amir, channeling dark disco, acid, and electro into tracks built for dim rooms and heavy sound systems. Drawing from EBM, slowmo, and cinematic textures, the sound lives in the space between melancholy and movement — late-night music for people who stay until the lights come on.\n\nAll production, mixing, and mastering handled in-house. Releases span from driving 130 BPM techno to downtempo explorations below 100 BPM.",
+      "bad": "Hi I'm an artist from Berlin making electronic music. I love dark disco and techno. Check out my latest releases on all platforms. Links below!",
+      "why": "Good: establishes identity, genre positioning, sonic palette, production credits — all in authentic voice. Bad: generic, no personality, reads like a template."
+    },
+    "youtube_title": {
+      "good": "Inch of Shadow - Shadow Frequency [Official Audio]",
+      "also_good": "Inch of Shadow - Shadow Frequency (Extended Mix) | Dark Disco",
+      "bad": "NEW DARK DISCO TRACK 2026!! Shadow Frequency by Inch of Shadow | MUST LISTEN Electronic Music Berlin",
+      "why": "Good: clean, searchable, under 70 chars, follows music industry format. Bad: clickbait caps, too long (truncated), keyword-stuffed."
+    },
+    "youtube_description": {
+      "good_structure": [
+        "Listen on Spotify: [link]",
+        "Listen on Apple Music: [link]",
+        "",
+        "'Shadow Frequency' — dark disco meets acid techno. Built around analog synths and a driving 303 bassline. From the forthcoming EP 'Dark Disco Acid' (2026).",
+        "",
+        "Written, produced, mixed and mastered by Inch of Shadow at Ambertone Studios, Berlin.",
+        "BPM: 122 | Key: Am",
+        "",
+        "Follow Inch of Shadow:",
+        "Instagram: [link]",
+        "Bandcamp: [link]",
+        "SoundCloud: [link]",
+        "",
+        "#InchOfShadow #DarkDisco #Acid #ElectronicMusic #Berlin"
+      ],
+      "bad": "Check out my new track! Like and subscribe for more music. Drop a comment below!",
+      "why": "Good: streaming links first (above fold), concise track context, credits, BPM/key for DJs, social links, targeted hashtags. Bad: no track info, no links, generic filler."
+    },
+    "instagram_caption": {
+      "good": "'Shadow Frequency' is out now. Dark disco meeting acid techno — built around a 303 and layered pads for the late hours. From the forthcoming Dark Disco Acid EP.\n\nLink in bio.\n\n#darkdisco #acidtechno #berlinmusic",
+      "bad": "New track out! Go stream it now!! Link in bio!! #music #newmusic #producer #artist #beats #song #love #instagood #photooftheday #trending #viral #followme #like4like",
+      "why": "Good: keyword-rich caption (Instagram AI reads this for recommendations), key info in first 125 chars, only 3 niche hashtags for categorization. Bad: empty caption with no keywords for the algorithm, generic hashtags that don't categorize, engagement-bait tags."
+    },
+    "bandcamp_album_description": {
+      "good": "Dark Disco Acid EP — four tracks bridging dark disco, acid, and electro. Recorded and mixed in Berlin using analog synthesizers, drum machines, and a Roland TB-303.\n\nThe EP moves from slow-burning 110 BPM grooves to driving 130 BPM techno, threaded together by melancholic pads and distorted acid lines. Made for underground sound systems and headphone listening alike.\n\nAll tracks written, produced, mixed and mastered by Inch of Shadow at Ambertone Studios, Berlin.\nCopyright 2026 Inch of Shadow.",
+      "bad": "My new EP. 4 tracks. Hope you enjoy!",
+      "why": "Good: SEO-rich (Bandcamp pages rank in Google), genre keywords, production details, mood, equipment, credits. Bad: zero discoverability, no keywords, wasted opportunity."
+    },
+    "bandcamp_tags": {
+      "good": ["electronic", "dark disco", "acid", "techno", "electro", "EBM", "Berlin", "underground", "synth", "dark"],
+      "bad": ["music", "new", "good", "2026", "EP"],
+      "why": "Good: genre-specific, location, mood — all matching Bandcamp Discover spellings. Bad: too generic to surface in any useful search."
+    },
+    "soundcloud_tags": {
+      "good": ["dark disco", "acid", "techno", "Berlin", "electro"],
+      "bad": ["music", "new track", "electronic music", "good vibes", "follow me"],
+      "why": "Good: 5 specific genre/location tags within 20-char limit. Bad: generic, wasted on non-discovery terms, 'electronic music' is too broad for 5-tag limit."
+    },
+    "soundcloud_description": {
+      "good": "Shadow Frequency — dark disco meets acid techno. 122 BPM, Am.\n\nFrom the Dark Disco Acid EP (2026).\nWritten, produced, mixed and mastered by Inch of Shadow at Ambertone Studios, Berlin.\n\nStream everywhere:\nSpotify: [link]\nApple Music: [link]\nBandcamp: [link]\nBeatport: [link]",
+      "bad": "New track! Please follow and repost!",
+      "why": "Good: track context, BPM/key for DJs, cross-platform links, credits. Bad: no musical info, begging for engagement."
+    },
+    "beatport_genre_selection": {
+      "example_track_dark_disco_122bpm": {
+        "primary": "Nu Disco",
+        "subgenres": ["Indie Dance", "Electronica"],
+        "reasoning": "Dark disco at 122 BPM fits Nu Disco as primary (tempo and disco DNA). Indie Dance and Electronica as subgenres capture the experimental/dark edge. Less competition on Nu Disco charts than Techno."
+      },
+      "example_track_acid_techno_130bpm": {
+        "primary": "Techno (Peak Time / Driving)",
+        "subgenres": ["Electro (Classic / Detroit / Modern)", "Minimal / Deep Tech"],
+        "reasoning": "130 BPM acid-driven track fits Peak Time Techno. Electro subgenre captures the 303/acid element. Minimal/Deep Tech if the groove is stripped back."
+      }
+    }
+  }
+}

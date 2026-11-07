@@ -1,0 +1,66 @@
+/Users/amir/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+=== income-niches 04:28: radar $56.32, est ~$9.10 -> run
+/Users/amir/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+Check income-niches: Keywords: 20 of 20 specific | sources: not checked (rate limit) r/TaxPros, r/VideoEditing, r/photography, r/sysadmin, r/Bookkeeping, r/editors, r/msp, r/EtsySellers
+Collecting for income-niches (Reddit, Stack Exchange, YouTube)...
+  429, waiting 60s
+  reddit r/QuickBooks: 50 total
+  429, waiting 60s
+  reddit r/TaxPros: 100 total
+  429, waiting 60s
+  reddit r/VideoEditing: 150 total
+  429, waiting 60s
+  reddit r/photography: 200 total
+  reddit r/realestateinvesting: 227 total
+  429, waiting 60s
+  reddit r/teaching: 255 total
+  429, waiting 60s
+  reddit r/sysadmin: 305 total
+  429, waiting 60s
+  reddit r/Bookkeeping: 355 total
+  reddit r/Accounting: 405 total
+  429, waiting 60s
+  reddit r/editors: 455 total
+  429, waiting 60s
+  reddit r/msp: 505 total
+  429, waiting 60s
+  reddit r/EtsySellers: 555 total
+  reddit r/weddingphotography: 590 total
+  429, waiting 60s
+  reddit r/podcasting: 640 total
+  429, waiting 60s
+  reddit r/audioengineering: 690 total
+  stackexchange webapps: 0 total
+  stackexchange softwarerecs: 3 total
+  stackexchange video: 3 total
+  stackexchange sound: 3 total
+  stackexchange photo: 3 total
+  stackexchange money: 3 total
+  youtube 'QuickBooks month-end close tutorial': 2 total
+  youtube 'bank reconciliation workflow small business': 17 total
+  youtube 'Lightroom export workflow wedding': 46 total
+  youtube 'report card comments teacher': 47 total
+  youtube 'sysadmin automation script tips': 73 total
+  youtube search 'DaVinci Resolve proxy workflow': HTTPError
+  youtube 'tax preparer workflow software': 95 total
+  balance: reddit 690 -> 98
+Per source: reddit 98, stackexchange 3, youtube 95
+Saved 196 items -> /Users/amir/Desktop/Inch of Shadow/Inchofshadowcode/gap_radar/raw/income-niches/2026-11-06.json
+Report -> /Users/amir/Desktop/Inch of Shadow/Inchofshadowcode/gap_radar/reports/income-niches/2026-11-06.md
+Keyword yield income-niches: 4 of 20 strong | weak/dead: "by hand", "workaround", "copy and paste", "export to CSV", "month-end close", "report card comments", automate export, bulk rename metadata ...
+  1. Broadcast/digital deliverable versioning (end cards × durati: unclear ($0.68)
+  2. Firmware advisory + expiry watcher for small MSPs: unclear ($0.93)
+  3. Bank reconciliation discrepancy finder: crowded ($0.81)
+  4. Edit shot log / contact sheet with thumbnails: crowded ($1.10)
+  5. Wedding gallery delivery and follow-up tracker: crowded ($0.42)
+  6. Tax-prep fee pricing and capacity calculator: unclear ($0.79)
+  7. Instagram export settings tester for photographers: crowded ($0.51)
+  8. Audio-to-video sync without slates (PluralEyes replacement): crowded ($0.52)
+  9. Small nonprofit/church fund accounting template for QBO: crowded ($0.72)
+  10. Narrow tax-return review assistant (where general tax AI fai: unclear ($0.71)
+Report -> /Users/amir/Desktop/Inch of Shadow/Inchofshadowcode/gap_radar/reports/income-niches/2026-11-06.md
+=== income-trades 05:02: radar $63.77, est ~$9.10 -> radar cap: $63.77 spent + ~$9.10 > $70.00
+WAITING FOR AMIR: income-trades ~$9.10 (radar cap: $63.77 spent + ~$9.10 > $70.00)
+=== chain done: radar $63.77 of $70

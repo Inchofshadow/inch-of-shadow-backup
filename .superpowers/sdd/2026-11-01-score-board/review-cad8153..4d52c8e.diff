@@ -1,0 +1,77 @@
+# Review package: cad8153..HEAD
+
+## Commits
+4d52c8e fix(stats): use defined tokens in score board CSS, tighten page test
+
+## Files changed
+ release_manager/static/style.css | 6 +++---
+ tests/test_stats_page.py         | 1 +
+ 2 files changed, 4 insertions(+), 3 deletions(-)
+
+## Diff
+diff --git a/release_manager/static/style.css b/release_manager/static/style.css
+index 7070eec..6870a25 100644
+--- a/release_manager/static/style.css
++++ b/release_manager/static/style.css
+@@ -6296,42 +6296,42 @@ a.promo-target-name:hover {
+ .st-manual-form button { grid-column: 1 / -1; justify-self: start; }
+ 
+ /* Score board */
+ .sb { margin: 6px 0 18px; display: flex; flex-direction: column; gap: 14px; }
+ .sb-score { padding: 14px 18px; background: var(--bg-secondary); border: 1px solid var(--border-light); border-radius: var(--radius-lg); font-family: var(--font-heading); font-size: var(--text-lg); color: var(--text-primary); }
+ .sb-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
+ .sb-card { background: var(--bg-secondary); border: 1px solid var(--border-light); border-radius: var(--radius-lg); padding: 14px 16px 12px; display: flex; flex-direction: column; gap: 8px; }
+ .sb-card-top { display: flex; justify-content: space-between; align-items: center; gap: 8px; }
+ .sb-label { display: inline-flex; align-items: center; gap: 8px; font-size: var(--text-sm); color: var(--text-secondary); }
+ .sb-source { font-family: ui-monospace, Menlo, monospace; font-size: 11px; color: var(--text-secondary); }
+-.sb-light { width: 9px; height: 9px; border-radius: 50%; background: var(--border); flex: none; }
++.sb-light { width: 9px; height: 9px; border-radius: 50%; background: var(--text-secondary); flex: none; }
+ .sb-green .sb-light { background: var(--color-done-text); }
+ .sb-amber .sb-light { background: var(--color-warning-text); }
+ .sb-red .sb-light { background: var(--color-overdue-text); }
+ .sb-card-mid { display: flex; justify-content: space-between; align-items: flex-end; gap: 12px; }
+ .sb-value { font-family: var(--font-heading); font-size: 30px; line-height: 1; color: var(--text-primary); }
+ .sb-unit { font-family: var(--font-main); font-size: var(--text-sm); color: var(--text-secondary); }
+ .sb-spark { width: 120px; height: 32px; color: var(--text-secondary); flex: none; }
+ .sb-green .sb-spark { color: var(--color-done-text); } .sb-amber .sb-spark { color: var(--color-warning-text); } .sb-red .sb-spark { color: var(--color-overdue-text); }
+ .sb-rung { font-size: var(--text-sm); color: var(--text-secondary); }
+ .sb-green .sb-rung { color: var(--color-done-text); } .sb-amber .sb-rung { color: var(--color-warning-text); } .sb-red .sb-rung { color: var(--color-overdue-text); }
+ .sb-bar { height: 3px; background: var(--border-light); border-radius: 2px; overflow: hidden; }
+ .sb-bar span { display: block; height: 100%; background: var(--text-secondary); }
+ .sb-green .sb-bar span { background: var(--color-done-text); } .sb-amber .sb-bar span { background: var(--color-warning-text); } .sb-red .sb-bar span { background: var(--color-overdue-text); }
+ .sb-card-foot { display: flex; justify-content: space-between; gap: 8px; font-size: var(--text-xs); color: var(--text-secondary); flex-wrap: wrap; }
+ .sb-sec-head { display: flex; align-items: baseline; gap: 12px; flex-wrap: wrap; }
+ .sb-h { margin: 0; font-size: var(--text-sm); letter-spacing: .08em; color: var(--text-accent); }
+ .sb-dots { display: flex; flex-wrap: wrap; gap: 8px 18px; margin-top: 8px; }
+ .sb-dot-item { display: inline-flex; align-items: center; gap: 6px; }
+ .sb-dot-item a { color: inherit; text-decoration: none; }
+-.sb-dot { width: 10px; height: 10px; border-radius: 50%; background: var(--border); display: inline-block; flex: none; }
+-.sb-dot.ok { background: var(--color-done-text); } .sb-dot.fail { background: var(--color-overdue-text); } .sb-dot.unknown { background: var(--border); }
++.sb-dot { width: 10px; height: 10px; border-radius: 50%; background: var(--border-color); display: inline-block; flex: none; }
++.sb-dot.ok { background: var(--color-done-text); } .sb-dot.fail { background: var(--color-overdue-text); } .sb-dot.unknown { background: var(--text-secondary); }
+ .sb-dot-label { font-size: var(--text-xs); color: var(--text-secondary); }
+ .sb-ladders { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; }
+ .sb-ladder-box { background: var(--bg-secondary); border: 1px solid var(--border-light); border-radius: var(--radius-lg); padding: 12px 14px; }
+ .sb-ladder-label { font-size: var(--text-sm); color: var(--text-secondary); margin-bottom: 6px; }
+ .sb-ladder-box svg { width: 100%; height: auto; display: block; color: var(--text-primary); }
+ .sb-line { stroke: currentColor; fill: none; stroke-width: 1.5; }
+ .sb-ladder { stroke: var(--text-accent); stroke-dasharray: 4 2; fill: none; }
+ .sb-base { stroke: var(--text-secondary); stroke-dasharray: 1 3; fill: none; }
+ .sb-today { stroke: var(--color-warning-text); }
+ .sb-ladder-box svg text { font-size: 11px; fill: var(--text-secondary); }
+diff --git a/tests/test_stats_page.py b/tests/test_stats_page.py
+index f3c63f8..2de1299 100644
+--- a/tests/test_stats_page.py
++++ b/tests/test_stats_page.py
+@@ -26,10 +26,11 @@ def test_stats_page_renders_the_score_line_and_every_track():
+ 
+ 
+ def test_stats_page_renders_the_score_board():
+     html = app.test_client().get("/stats").get_data(as_text=True)
+     assert 'class="sb-score"' in html and "IG followers" in html and "TikTok followers" in html
+     assert "HEALTH" in html and "LADDER" in html and "the line is reality" in html and "TREND ONLY" in html
+     assert "collecting" in html
+     for track in ("Instagram", "SoundCloud", "YouTube", "Spotify", "Bandcamp"):   # the old grid is still there
+         assert track in html
+     assert "style.css?v=74" in html
++    assert html.count('class="sb-card ') == 6 and html.count('class="sb-dot ') == 8 and "/8 pass" in html

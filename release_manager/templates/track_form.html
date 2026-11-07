@@ -1,0 +1,120 @@
+{% extends "base.html" %}
+{% block title %}{{ "Edit Track " ~ track.number if track else "Add Track" }}{% endblock %}
+
+{% block content %}
+<div class="form-page">
+    <nav class="breadcrumb">
+        <a href="{{ url_for('dashboard') }}">Releases</a>
+        <span class="breadcrumb-sep">/</span>
+        <a href="{{ url_for('release_detail', slug=rel.slug) }}">{{ rel.metadata.title }}</a>
+        <span class="breadcrumb-sep">/</span>
+        <span class="breadcrumb-current">{{ "Edit Track " ~ track.number if track else "Add Track" }}</span>
+    </nav>
+    <h1>{{ "Edit Track " ~ track.number ~ ": " ~ track.title if track else "Add Track" }}</h1>
+
+    <form method="POST" action="{{ url_for('track_edit', slug=rel.slug, num=track.number) if track else url_for('track_new', slug=rel.slug) }}">
+        <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+
+        <div class="form-group">
+            <label for="title">Title *</label>
+            <input type="text" id="title" name="title" required
+                   value="{{ track.title if track else '' }}"
+                   placeholder="Track title">
+        </div>
+
+        <div class="form-row form-row-3">
+            <div class="form-group">
+                <label for="bpm">BPM</label>
+                <input type="number" id="bpm" name="bpm" step="0.1" min="60" max="200"
+                       value="{{ track.bpm if track and track.bpm else '' }}"
+                       placeholder="122">
+            </div>
+
+            <div class="form-group">
+                <label for="key">Key</label>
+                <select id="key" name="key">
+                    <option value="">—</option>
+                    {% for k in VALID_KEYS %}
+                    <option value="{{ k }}" {{ 'selected' if track and track.key == k }}>{{ k }}</option>
+                    {% endfor %}
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="duration">Duration</label>
+                <input type="text" id="duration" name="duration"
+                       value="{{ track.duration if track else '' }}"
+                       placeholder="4:32" pattern="\d{1,2}:\d{2}">
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="form-group">
+                <label for="genre_primary">Genre</label>
+                <input type="text" id="genre_primary" name="genre_primary" list="genre-list"
+                       value="{{ track.genre_primary if track else '' }}"
+                       placeholder="Inherits from release if empty">
+            </div>
+
+            <div class="form-group">
+                <label for="genre_secondary">Secondary Genre</label>
+                <input type="text" id="genre_secondary" name="genre_secondary" list="genre-list"
+                       value="{{ track.genre_secondary if track else '' }}">
+            </div>
+        </div>
+
+        {% if track %}
+        <hr class="form-divider">
+        <h2>Additional</h2>
+
+        <div class="form-group">
+            <label for="isrc">ISRC</label>
+            <input type="text" id="isrc" name="isrc"
+                   value="{{ track.isrc }}"
+                   placeholder="Assigned by distributor">
+        </div>
+
+        <h2>Credits</h2>
+
+        <div class="form-row">
+            <div class="form-group">
+                <label for="producer">Producer</label>
+                <input type="text" id="producer" name="producer"
+                       value="{{ track.get('credits', {}).get('producer', '') }}">
+            </div>
+
+            <div class="form-group">
+                <label for="mixer">Mixer</label>
+                <input type="text" id="mixer" name="mixer"
+                       value="{{ track.get('credits', {}).get('mixer', '') }}">
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="form-group">
+                <label for="mastering">Mastering</label>
+                <input type="text" id="mastering" name="mastering"
+                       value="{{ track.get('credits', {}).get('mastering', '') }}">
+            </div>
+
+            <div class="form-group">
+                <label for="writer">Writer</label>
+                <input type="text" id="writer" name="writer"
+                       value="{{ track.get('credits', {}).get('writer', '') }}">
+            </div>
+        </div>
+        {% endif %}
+
+        <div class="form-actions">
+            <button type="submit" class="btn btn-accent">{{ "Save Changes" if track else "Add Track" }}</button>
+            <a href="{{ url_for('release_detail', slug=rel.slug) }}" class="btn btn-secondary">Cancel</a>
+        </div>
+    </form>
+
+    <datalist id="genre-list">
+        {% for g in saved_genres %}
+        <option value="{{ g }}">
+        {% endfor %}
+    </datalist>
+</div>
+{% endblock %}

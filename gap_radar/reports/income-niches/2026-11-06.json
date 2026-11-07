@@ -1,0 +1,980 @@
+[
+ {
+  "name": "Broadcast/digital deliverable versioning (end cards × durations × aspect ratios)",
+  "pain": "Editors hand-build 40-50+ sequences per campaign to append every end-card variant to every duration and ratio, with a constant risk of putting the wrong end card on a version. Reframing a 4K master into vertical is also done by hand.",
+  "who_pays": "Freelance and agency commercial editors, small post houses doing broadcast/social campaign delivery",
+  "evidence_ids": [
+   62,
+   18
+  ],
+  "pay_signal": "Professional paid campaign work that is repetitive and error-prone. The editor asks if anyone else is 'still doing this manually', which implies they would adopt a tool. No price is named.",
+  "product_idea": "Web tool or Premiere/Resolve extension. Upload the masters and end-card variants, define a matrix (durations × ratios × variants), and get auto-rendered versions plus an XML/EDL for each sequence and a delivery checklist sheet. This could run on the team's existing automated rendering pipeline.",
+  "build_weeks": 6,
+  "fit_for_us": 4,
+  "known_competitors": "Enterprise versioning tools (e.g. Adstream/Peach-type delivery platforms, Frame.io workflows), Resolve/Premiere templates and scripts; no obvious cheap self-serve matrix builder",
+  "check_next": "Post in r/editors and LinkedIn post groups asking how many version matrices people build per month and what they would pay per job or per month; check NLE XML import limits.",
+  "crowding": {
+   "verdict": "unclear",
+   "reason": "No self-serve end-card × duration × ratio tool found and people pay $69-$450+ for nearby AE versioning tools, but the search limit stopped me checking the enterprise delivery platforms and NLE-native panels; vertical reframing is already free in Premiere Auto Reframe.",
+   "competitors": [
+    {
+     "name": "Plainly Videos (After Effects template versioning)",
+     "price": "from $69/month (Explorer $134, Team $259)",
+     "url": "https://www.plainlyvideos.com/blog/video-automation-softwares",
+     "verified": true
+    },
+    {
+     "name": "Dataclay Templater Pro (After Effects plugin)",
+     "price": "from $225.00 (Rig from $80.00, Bot from $450.00)",
+     "url": "https://www.toolfarm.com/buy/dataclay_templater_pro/",
+     "verified": true
+    },
+    {
+     "name": "Nexrender (open-source After Effects automation)",
+     "price": "unknown",
+     "url": "https://www.plainlyvideos.com/blog/video-automation-softwares",
+     "verified": false
+    },
+    {
+     "name": "Duplicate It! (Premiere sequence duplication extension)",
+     "price": "unknown",
+     "url": "https://aescripts.com/duplicate-it/",
+     "verified": false
+    },
+    {
+     "name": "Adobe Premiere Pro Auto Reframe (built-in)",
+     "price": "included with Premiere Pro (subscription price not checked)",
+     "url": "https://helpx.adobe.com/premiere/desktop/add-video-effects/commonly-used-effects/auto-reframe-overview.html",
+     "verified": false
+    }
+   ],
+   "pay_proof": [
+    {
+     "claim": "Plainly charges $69/$134/$259 per month for render-minute plans and lists a 4.8 G2 rating",
+     "url": "https://www.plainlyvideos.com/blog/video-automation-softwares",
+     "verified": true
+    },
+    {
+     "claim": "Dataclay Templater Pro sold from $225.00, Rig from $80.00, Bot from $450.00",
+     "url": "https://www.toolfarm.com/buy/dataclay_templater_pro/",
+     "verified": true
+    },
+    {
+     "claim": "Ad-variant tools are sold at paid prices: Creatify $1,188/yr Pro, Canva $144/yr",
+     "url": "https://www.heygen.com/blog/best-ai-tools-video-ad-variations",
+     "verified": true
+    },
+    {
+     "claim": "Resolve users hit the pain (20 x 4 timeline iterations) and write their own scripts because no product is named",
+     "url": "https://forum.blackmagicdesign.com/viewtopic.php?f=21&t=151745",
+     "verified": true
+    }
+   ],
+   "cost_usd": 0.6849,
+   "web_searches": 8
+  }
+ },
+ {
+  "name": "Firmware advisory + expiry watcher for small MSPs",
+  "pain": "An MSP checks Fortinet and Cisco PSIRT advisories against a spreadsheet of device firmware versions every month and once missed a critical CVE by three weeks. Certificates, secrets and other manual renewals have no built-in reminders.",
+  "who_pays": "Small MSPs and solo IT admins managing FortiGate/Cisco fleets and client certificates",
+  "evidence_ids": [
+   69,
+   72
+  ],
+  "pay_signal": "MSPs already pay for RMM/PSA stacks. The workaround is a monthly manual spreadsheet check, and the missed CVE was a real incident. Neither post names a price.",
+  "product_idea": "Self-serve SaaS. Paste or upload device models and versions, plus cert/secret/domain expiry dates, then get Telegram/email alerts when a new vendor advisory affects a listed version (with the fixed release) or when a renewal is due. This would run on the team's Telegram alert engine, with Claude summarising advisories.",
+  "build_weeks": 4,
+  "fit_for_us": 5,
+  "known_competitors": "Vulnerability scanners (Tenable, Rapid7), RMM add-ons, cert monitors (various SSL expiry checkers); a lightweight vendor-PSIRT-to-inventory matcher seems thin",
+  "check_next": "Search r/msp for other 'PSIRT spreadsheet' and 'renewal tracking' threads; confirm Fortinet and Cisco advisory feeds can be parsed reliably; test a $20-50/mo price with a landing page.",
+  "crowding": {
+   "verdict": "unclear",
+   "reason": "Auvik (major MSP network tool) is adding CVE-to-device matching and OpenCVE offers free/paid vendor CVE alerts with AI summaries; cert monitors, SecAlerts, Lansweeper and vendor-native tools were not checked due to search limits",
+   "competitors": [
+    {
+     "name": "Auvik (CVE monitoring, roadmap Spring 2026)",
+     "price": "quote-based per device; third-party estimate mid-teens to $20+/device/month",
+     "url": "https://www.auvik.com/franklyit/blog/auvik-product-roadmap-spring-2026/",
+     "verified": true
+    },
+    {
+     "name": "OpenCVE Cloud",
+     "price": "Free tier; paid tier prices unknown",
+     "url": "https://www.opencve.io/pricing",
+     "verified": true
+    },
+    {
+     "name": "Liongard",
+     "price": "from $33/month",
+     "url": "https://www.capterra.com/p/187784/Liongard/",
+     "verified": true
+    }
+   ],
+   "pay_proof": [
+    {
+     "claim": "Liongard, which tracks firewall config and SSL cert expiration for MSPs, starts at $33/month",
+     "url": "https://www.getapp.com/it-management-software/a/liongard/",
+     "verified": true
+    },
+    {
+     "claim": "An MSP user reports Auvik costs about 2,500 per year for ~4,000 endpoints",
+     "url": "https://www.peerspot.com/questions/what-is-your-experience-regarding-pricing-and-costs-for-auvik",
+     "verified": true
+    },
+    {
+     "claim": "Domotz charges MSPs $35 per collector/site per month for network monitoring (adjacent, not this exact need)",
+     "url": "https://www.domotz.com/compare/domotz-vs-auvik",
+     "verified": true
+    },
+    {
+     "claim": "OpenCVE sells paid Starter/Pro/Enterprise tiers for CVE monitoring with AI summaries and Slack/webhook alerts",
+     "url": "https://www.opencve.io/pricing",
+     "verified": true
+    }
+   ],
+   "cost_usd": 0.9318,
+   "web_searches": 8
+  }
+ },
+ {
+  "name": "Bank reconciliation discrepancy finder",
+  "pain": "Reconciliations that won't tie out send people hunting line by line or wanting to delete every past rec and restart. Higher volume breaks manual rec, and people build their own Excel automations or Claude prompts and ask others to share them.",
+  "who_pays": "Freelance bookkeepers, small-firm accountants, volunteer church/nonprofit treasurers",
+  "evidence_ids": [
+   49,
+   51,
+   56,
+   116,
+   117,
+   108,
+   113,
+   109
+  ],
+  "pay_signal": "A senior accountant built an Excel process that cut 1.5 days to 1 hour, and their company wants it rebuilt in AI. Viewers of a Claude month-end video ask for the plugin and the sample files. Bookkeepers already pay for QBO.",
+  "product_idea": "Web tool: upload a bank CSV and the QBO/Xero reconciliation or register export. It matches transactions, flags the specific differences (timing items, duplicates, transposed amounts, reconciled items that were later edited), and outputs a rec workpaper. Claude explains any leftover gap. This scope is matching only, not PDF extraction.",
+  "build_weeks": 5,
+  "fit_for_us": 3,
+  "known_competitors": "Built-in QBO/Xero rec, Docyt, Booke.ai, ReconArt, Excel templates sold by creators",
+  "check_next": "Confirm this is distinct enough from the excluded statement-extraction space; interview 5 bookkeepers about how often recs fail to tie out; test a $15-30/mo or pay-per-rec price.",
+  "crowding": {
+   "verdict": "crowded",
+   "reason": "Free QBO Reconciliation Discrepancy report plus 5+ self-serve CSV bank-vs-ledger matchers (Equility $15/mo, ReconcileIQ from £5, Reconciler from $29, free Ledgerler/Cybertronlabs) already ship this exact scope; review quality unconfirmed.",
+   "competitors": [
+    {
+     "name": "QuickBooks Reconciliation Discrepancy report (built-in)",
+     "price": "included with QuickBooks (QBO from ~$35/mo per Milestone)",
+     "url": "https://quickbooks.intuit.com/learn-support/en-us/help-article/bank-transactions/fix-issues-reconciling-quickbooks-desktop/L9dJ0KWR9_US_en_US",
+     "verified": true
+    },
+    {
+     "name": "Equility Bank Reconciliation",
+     "price": "$15/month per QuickBooks company",
+     "url": "https://www.equilityhq.com/bank-reconciliation",
+     "verified": true
+    },
+    {
+     "name": "ReconcileIQ / MatchIQ",
+     "price": "Free 1,000 credits; £5/mo Starter; £15/mo Accountant; up to £398/mo",
+     "url": "https://reconcileiq.com/faq-bank-reconciler",
+     "verified": true
+    },
+    {
+     "name": "Reconciler",
+     "price": "$29-$599/mo (other page says $49/$149/$399)",
+     "url": "https://reconciler.co/bank-reconciliation-software",
+     "verified": true
+    },
+    {
+     "name": "Ledgerler",
+     "price": "free browser tool; paid plans price unknown",
+     "url": "https://www.ledgerler.com/",
+     "verified": true
+    },
+    {
+     "name": "Cybertronlabs Bank Reconciliation tool",
+     "price": "free",
+     "url": "https://cybertronlabs.ai/tool/bank-reconciliation",
+     "verified": true
+    },
+    {
+     "name": "LedgerMatch",
+     "price": "unknown",
+     "url": "https://ledgermatchapp.com/",
+     "verified": true
+    },
+    {
+     "name": "Booke AI",
+     "price": "$129 per business/month (Business plan, per third-party page)",
+     "url": "https://nexoratechnologies.co/guides/best-ai-agent-reconcile-quickbooks-online-accounting-firms.html",
+     "verified": true
+    },
+    {
+     "name": "Docyt",
+     "price": "unknown",
+     "url": "",
+     "verified": false
+    },
+    {
+     "name": "ReconArt",
+     "price": "unknown",
+     "url": "https://reconciler.co/alternatives/reconart",
+     "verified": false
+    }
+   ],
+   "pay_proof": [
+    {
+     "claim": "Equility charges $15/month per QuickBooks company for bank-vs-GL matching with exception categories",
+     "url": "https://www.equilityhq.com/bank-reconciliation",
+     "verified": true
+    },
+    {
+     "claim": "ReconcileIQ sells paid tiers from £5 to £398/month; says Business plan £49.99/mo fits practices",
+     "url": "https://reconcileiq.com/faq-bank-reconciler",
+     "verified": true
+    },
+    {
+     "claim": "Reconciler publishes paid tiers of $29, $89, $239/month billed yearly",
+     "url": "https://reconciler.co/alternatives/numeric",
+     "verified": true
+    },
+    {
+     "claim": "Booke AI lists $129 per business per month for bank-feed matching (third-party read of vendor page)",
+     "url": "https://nexoratechnologies.co/guides/best-ai-agent-reconcile-quickbooks-online-accounting-firms.html",
+     "verified": true
+    },
+    {
+     "claim": "QuickBooks Online Advanced, positioned for built-in reconciliation, typically ~$275/month",
+     "url": "https://ramp.com/blog/accounting-reconciliation-software",
+     "verified": true
+    },
+    {
+     "claim": "Senior accountant's Excel process cut 1.5 days to 1 hour and company wants it rebuilt in AI (from brief, not located)",
+     "url": "",
+     "verified": false
+    }
+   ],
+   "cost_usd": 0.8074,
+   "web_searches": 8
+  }
+ },
+ {
+  "name": "Edit shot log / contact sheet with thumbnails",
+  "pain": "Editors log every cut and timecode by hand for analysis, and can't get a framegrab thumbnail next to its timecode in a Google Sheet; the Avid marker PDF export can't be separated into columns. A 30-year editor built his own media asset manager because the pro options were too expensive.",
+  "who_pays": "Editors, assistant editors, documentary producers, ad/film researchers",
+  "evidence_ids": [
+   19,
+   63,
+   65
+  ],
+  "pay_signal": "An editor built and is shipping a contact-sheet tool. Another built a local media asset manager because the enterprise options gave 'sticker shock', showing an appetite for cheaper tools. No prices are named.",
+  "product_idea": "Web or desktop tool. Drop in a video or an Avid/Premiere marker export, then get scene-cut detection, thumbnails and timecodes exported straight to Google Sheets, Excel or PDF, with optional Claude-written shot descriptions. This reuses the team's video processing pipeline.",
+  "build_weeks": 3,
+  "fit_for_us": 4,
+  "known_competitors": "The tool mentioned in post 19, Kyno, Frame.io comments, PySceneDetect (free/CLI), Blaze MAM",
+  "check_next": "Check whether the product in post 19 has paying users; ask r/editors whether a Sheets export with embedded thumbnails is worth $10-20/mo or $5 per project.",
+  "crowding": {
+   "verdict": "crowded",
+   "reason": "StoryFolder already does video-to-shot-list spreadsheets with thumbnails and AI notes; Resolve and Premiere plugins already export markers with thumbnails; PySceneDetect covers cut detection for free; only an Avid-to-Google-Sheets-with-thumbnails niche is left.",
+   "competitors": [
+    {
+     "name": "StoryFolder",
+     "price": "unknown",
+     "url": "https://storyfolder.com/use-cases/shot-list-from-video",
+     "verified": false
+    },
+    {
+     "name": "ShotList Creator 3 for DaVinci Resolve (aescripts)",
+     "price": "unknown",
+     "url": "https://aescripts.com/shotlist-creator-for-davinci-resolve/",
+     "verified": false
+    },
+    {
+     "name": "Marker Exporter for Premiere Pro",
+     "price": "unknown",
+     "url": "https://exchange.adobe.com/apps/cc/edd8fa87/marker-exporter-for-premiere-pro",
+     "verified": false
+    },
+    {
+     "name": "EditingTools.io Marker Converter",
+     "price": "unknown (perpetual licences, price not shown)",
+     "url": "https://editingtools.io/marker/",
+     "verified": false
+    },
+    {
+     "name": "PySceneDetect",
+     "price": "free",
+     "url": "https://www.scenedetect.com/features/",
+     "verified": true
+    },
+    {
+     "name": "Kyno (Lesspain)",
+     "price": "$159 one-time Standard ($79/yr updates); $349 Premium",
+     "url": "https://lesspain.software/kyno/buy/",
+     "verified": true
+    },
+    {
+     "name": "Frame Array: Video to AI",
+     "price": "$9.99 one-time",
+     "url": "https://apps.apple.com/us/app/frame-array-video-to-ai/id6744052024?l=vi",
+     "verified": true
+    },
+    {
+     "name": "Sequence Pro",
+     "price": "unknown (one-time licence via Gumroad)",
+     "url": "https://sequencepro.app/",
+     "verified": false
+    },
+    {
+     "name": "Apify Video Scene Detection & Shot List",
+     "price": "unknown",
+     "url": "https://apify.com/kantolabs/video-scene-detection/examples/video-shot-list-csv-edl",
+     "verified": false
+    }
+   ],
+   "pay_proof": [
+    {
+     "claim": "Kyno sells a $159 one-time Standard licence with $79 renewals and a $349 Premium licence",
+     "url": "https://lesspain.software/kyno/buy/",
+     "verified": true
+    },
+    {
+     "claim": "Capterra lists Kyno at $159 flat rate, one time",
+     "url": "https://www.capterra.com/p/203547/Kyno/",
+     "verified": true
+    },
+    {
+     "claim": "Frame Array video contact-sheet app sells for $9.99 as a pay-once purchase",
+     "url": "https://apps.apple.com/us/app/frame-array-video-to-ai/id6744052024?l=vi",
+     "verified": true
+    },
+    {
+     "claim": "Sequence Pro video contact-sheet app sells a paid one-time licence via Gumroad",
+     "url": "https://sequencepro.app/",
+     "verified": true
+    },
+    {
+     "claim": "EditingTools offers paid perpetual Single User, Team and Enterprise licences (price shown only at checkout)",
+     "url": "https://storyfolder.com/blog/best-tools-for-turning-a-finished-video-into-a-shot-list",
+     "verified": true
+    },
+    {
+     "claim": "An Avid editor uses EditingTools.io to convert markers and calls attaching thumbnails in the spreadsheet a laborious task",
+     "url": "https://community.avid.com/forums/p/233257/958494.aspx",
+     "verified": true
+    }
+   ],
+   "cost_usd": 1.0987,
+   "web_searches": 8
+  }
+ },
+ {
+  "name": "Wedding gallery delivery and follow-up tracker",
+  "pain": "The handoff sequence (gallery ready, password, expiry, polite nudge) gets lost across Instagram DMs and notes. Photographers see a gap between 'just send a Dropbox link' and expensive all-in-one platforms, and new photographers are overwhelmed choosing one.",
+  "who_pays": "Solo wedding and portrait photographers",
+  "evidence_ids": [
+   81,
+   82,
+   23,
+   83
+  ],
+  "pay_signal": "Photographers already pay for gallery platforms and CRMs and are weighing paid add-ons such as rush delivery. Current workarounds are spreadsheets and Notion.",
+  "product_idea": "Lightweight tracker. Paste a gallery link (Pixieset, Pic-Time, Dropbox) and it schedules client reminders before expiry, upsell nudges for prints or rush delivery, and review requests via email/SMS templates, with Claude drafting personalised messages.",
+  "build_weeks": 3,
+  "fit_for_us": 3,
+  "known_competitors": "Pixieset, Pic-Time, ShootProof (built-in expiry emails), HoneyBook, Dubsado, Studio Ninja",
+  "check_next": "Check how much expiry and reminder automation Pixieset and Pic-Time already include; poll r/weddingphotography on whether people use them or still track by hand.",
+  "crowding": {
+   "verdict": "crowded",
+   "reason": "Expiry reminders and print-upsell sequences are already built into Pic-Time (even on its free plan), Pixieset and ShootProof, and CRMs like HoneyBook and Studio Ninja cover follow-ups, which leaves only Dropbox users, the group least likely to pay.",
+   "competitors": [
+    {
+     "name": "Pic-Time",
+     "price": "Free plan includes gallery expiration automations; paid $7/$21/$42 per month billed annually",
+     "url": "https://www.pic-time.com/features/automation",
+     "verified": true
+    },
+    {
+     "name": "Pixieset",
+     "price": "Free $0; Basic $8/$10; Plus $16/$20; Pro $24/$30 per month (annual/monthly)",
+     "url": "https://christinedammann.com/pixieset-review/",
+     "verified": true
+    },
+    {
+     "name": "ShootProof",
+     "price": "From $5 per feature per month (Capterra); plans based on storage",
+     "url": "https://www.capterra.com/p/210015/ShootProof/pricing/",
+     "verified": true
+    },
+    {
+     "name": "HoneyBook",
+     "price": "Starter $29, Essentials $49, Premium $109 per month",
+     "url": "https://alinathomas.com/honeybook-pricing/",
+     "verified": true
+    },
+    {
+     "name": "Studio Ninja",
+     "price": "$12/month billed monthly (per monday.com comparison)",
+     "url": "https://monday.com/blog/crm-and-sales/crm-for-photographers/",
+     "verified": true
+    }
+   ],
+   "pay_proof": [
+    {
+     "claim": "Pic-Time sells paid plans at $7, $21 and $42 per month billed annually, with marketing automation included",
+     "url": "https://marketing-automation-for-photographers.pic-time.com/",
+     "verified": true
+    },
+    {
+     "claim": "Pixieset sells paid gallery plans from $8 to $30 per month",
+     "url": "https://christinedammann.com/pixieset-review/",
+     "verified": true
+    },
+    {
+     "claim": "ShootProof says galleries with an email campaign (including expiration reminders) earn nearly 40% higher sales",
+     "url": "https://www.shootproof.com/feature-index/",
+     "verified": true
+    },
+    {
+     "claim": "HoneyBook charges $29 to $109 per month for its CRM plans",
+     "url": "https://alinathomas.com/honeybook-pricing/",
+     "verified": true
+    },
+    {
+     "claim": "Pixieset offers automated expiry reminder emails to clients",
+     "url": "https://help.pixieset.com/hc/en-us/articles/115003009131-How-do-I-send-automated-expiry-reminder-emails-to-my-clients",
+     "verified": true
+    }
+   ],
+   "cost_usd": 0.4199,
+   "web_searches": 6
+  }
+ },
+ {
+  "name": "Tax-prep fee pricing and capacity calculator",
+  "pain": "Preparers price returns from ad-hoc Excel sheets (per form? per document type?). Solo CPAs can't work out how others handle 300+ returns or how to price complex returns with rentals, multi-state and crypto.",
+  "who_pays": "Solo and small-firm tax preparers, EAs, CPAs",
+  "evidence_ids": [
+   7,
+   10,
+   12,
+   191
+  ],
+  "pay_signal": "These people already pay for tax software, TaxDome and similar tools. They are building Excel pricing sheets by hand after hearing about them on podcasts, and one solo CPA has billed about $100K year-to-date while struggling with throughput.",
+  "product_idea": "Paid template plus small web app. The preparer picks the forms and schedules on a return, and it outputs a fee from configurable per-form/complexity rates and minimums, a capacity forecast for the season, and an engagement-letter fee table. SEO content can cover 'how to price tax returns'.",
+  "build_weeks": 2,
+  "fit_for_us": 4,
+  "known_competitors": "Ignition, Practice Ignition pricing, Karbon pricing, free Excel templates from coaches (e.g. firm-growth communities)",
+  "check_next": "Search r/taxpros for more 'how do you price' threads; check what coaches charge for pricing templates; test a $49 template or $15/mo calculator.",
+  "crowding": {
+   "verdict": "unclear",
+   "reason": "Only one paid exact-match template (price unseen) plus free benchmark lookups and adjacent proposal tools; no direct proof of purchases of a tax-return pricing/capacity tool, and search budget ran out before checking Karbon, coach templates, capacity tools and forums.",
+   "competitors": [
+    {
+     "name": "Wooten CPA Coaching 1040 Tax Prep Price Calculator (Excel)",
+     "price": "unknown",
+     "url": "https://www.wootencpacoaching.com/1040-price-calc",
+     "verified": false
+    },
+    {
+     "name": "Intuit Accountants Fee Wizard",
+     "price": "free",
+     "url": "https://accountants.intuit.com/fee-wizard/calculate-your-tax-fees/",
+     "verified": true
+    },
+    {
+     "name": "Zarla tax preparation fee calculator",
+     "price": "free",
+     "url": "https://www.zarla.com/guides/tax-preparation-fees",
+     "verified": true
+    },
+    {
+     "name": "Ignition (proposals/payments, not per-form calculator)",
+     "price": "$39-$399/month annual; $49-$499/month monthly",
+     "url": "https://getuku.com/articles/ignition-pricing/",
+     "verified": true
+    },
+    {
+     "name": "TaxDome (proposal packages, not per-form calculator)",
+     "price": "from $800 per user per year",
+     "url": "https://www.softwareadvice.com/accounting/taxdome-profile/",
+     "verified": true
+    }
+   ],
+   "pay_proof": [
+    {
+     "claim": "Ignition AI Price Insights: 3 free, then 200 insights cost $349/year",
+     "url": "https://getuku.com/articles/ignition-review/",
+     "verified": true
+    },
+    {
+     "claim": "Ignition Solo plan $39/month annual for firms under $150K revenue",
+     "url": "https://getuku.com/articles/ignition-pricing/",
+     "verified": true
+    },
+    {
+     "claim": "CPAs pay $500-$3,500 per user per year for tax prep software",
+     "url": "https://unclekam.com/tax-pro-tools/tax-prep-software/tax-prep-software-pricing/",
+     "verified": true
+    },
+    {
+     "claim": "TaxDome starts at $800 per user per year",
+     "url": "https://www.softwareadvice.com/accounting/taxdome-profile/",
+     "verified": true
+    },
+    {
+     "claim": "Wooten CPA Coaching sells a 1040 pricing calculator workbook as a paid product (price not seen)",
+     "url": "https://www.wootencpacoaching.com/1040-price-calc",
+     "verified": false
+    }
+   ],
+   "cost_usd": 0.7897,
+   "web_searches": 8
+  }
+ },
+ {
+  "name": "Instagram export settings tester for photographers",
+  "pain": "Photographers are confused by conflicting Instagram export advice (1080 vs 1440, long edge, quality, HDR, horizontal images, Facebook). One says 'driving me nuts for literally YEARS', and many run their own side-by-side tests.",
+  "who_pays": "Wedding, portrait and landscape photographers posting work on social",
+  "evidence_ids": [
+   122,
+   123,
+   125,
+   133,
+   134,
+   140,
+   142,
+   143,
+   144,
+   137,
+   126
+  ],
+  "pay_signal": "Large repeated comment volume and long-running frustration, from an audience that already pays for Lightroom and presets. No one names a price, so this is a weak pay signal.",
+  "product_idea": "Web tool: upload an image and get exact per-platform export recipes (IG feed, portrait, carousel, HDR, Facebook), a downloadable Lightroom export-preset pack, and a compression preview. Kept current by the SEO content pipeline as platforms change.",
+  "build_weeks": 2,
+  "fit_for_us": 3,
+  "known_competitors": "Free YouTube guides, Lightroom preset sellers, generic image resizers",
+  "check_next": "Check search volume for 'lightroom export settings instagram'; test whether a $9-19 preset pack plus tester sells; verify current IG upload processing behaviour.",
+  "crowding": {
+   "verdict": "crowded",
+   "reason": "Instagram export settings and Lightroom export presets are already given away free by several well-known photography sites and free resizers; the only payment found is for adjacent $1-4 look presets, not export help.",
+   "competitors": [
+    {
+     "name": "SLR Lounge free Lightroom export presets (incl. Instagram, Facebook)",
+     "price": "free",
+     "url": "https://www.slrlounge.com/lightroom-export-settings-for-instagram/",
+     "verified": true
+    },
+    {
+     "name": "Shotkit Instagram Lightroom export preset",
+     "price": "free",
+     "url": "https://shotkit.com/lightroom-export-instagram/",
+     "verified": true
+    },
+    {
+     "name": "Mark Galer Social Media and TV Export Presets",
+     "price": "free",
+     "url": "https://www.markgaler.com/product/social-media-lr-presets",
+     "verified": true
+    },
+    {
+     "name": "Jordan Brittley Lightroom export presets for Instagram",
+     "price": "free",
+     "url": "https://jordanbrittley.com/blog/lightroom-to-instagram-export-settings",
+     "verified": true
+    },
+    {
+     "name": "RevelRaw Instagram export presets",
+     "price": "unknown",
+     "url": "https://revelraw.com/blog/best-export-settings-for-instagram.html",
+     "verified": false
+    },
+    {
+     "name": "Smol (Mac) Instagram export settings",
+     "price": "unknown",
+     "url": "https://smolmac.com/solutions/instagram-creators",
+     "verified": false
+    },
+    {
+     "name": "PixelBatch Instagram Resizer",
+     "price": "free",
+     "url": "https://pixelbatch.io/instagram-resizer",
+     "verified": true
+    },
+    {
+     "name": "Squaready",
+     "price": "free",
+     "url": "https://apps.apple.com/us/app/squaready/id440279995",
+     "verified": true
+    },
+    {
+     "name": "No Crop Resize: Repicture",
+     "price": "free with in-app purchases; paid tier price unknown",
+     "url": "https://apps.apple.com/us/app/no-crop-resize-repicture/id1577015261",
+     "verified": true
+    }
+   ],
+   "pay_proof": [
+    {
+     "claim": "Etsy sells Instagram Lightroom look-preset bundles at about $0.82-$3.58 on sale (adjacent, not export settings)",
+     "url": "https://www.etsy.com/market/instagram_presets_lightroom",
+     "verified": true
+    },
+    {
+     "claim": "PhotoWhoa sells an Instagram Lightroom preset pack for $1 (list $5)",
+     "url": "https://www.photowhoa.com/tools/instagram-lightroom-presets/",
+     "verified": true
+    },
+    {
+     "claim": "Apify no-crop social image resizer charges $0.005 per image",
+     "url": "https://apify.com/bigaceboy/social-image-letterboxer",
+     "verified": true
+    },
+    {
+     "claim": "Repicture offers a paid version by subscription or one-time purchase; price not shown",
+     "url": "https://apps.apple.com/us/app/no-crop-resize-repicture/id1577015261",
+     "verified": true
+    },
+    {
+     "claim": "Instasize keeps resizing free and charges only for AI plans",
+     "url": "https://instasize.com/",
+     "verified": true
+    }
+   ],
+   "cost_usd": 0.512,
+   "web_searches": 8
+  }
+ },
+ {
+  "name": "Audio-to-video sync without slates (PluralEyes replacement)",
+  "pain": "Documentary shooters who can't always slate, and sound editors handed timelines with no synced audio or scratch track, face manual lip-sync and clap alignment. Even multicam clap sync fails to line up.",
+  "who_pays": "Documentary editors, post sound editors, indie filmmakers",
+  "evidence_ids": [
+   64,
+   66,
+   14
+  ],
+  "pay_signal": "Professionals describe hellish manual sync work. PluralEyes was a paid category tool, but these posts contain no explicit pay statement.",
+  "product_idea": "Web or desktop tool that waveform-matches separate audio to camera files, including near-silent or film-sourced scratch tracks, and exports a synced XML/AAF for Premiere, Resolve, Avid and FCP.",
+  "build_weeks": 6,
+  "fit_for_us": 2,
+  "known_competitors": "DaVinci Resolve auto-sync, Premiere merge clips, Tentacle Sync Studio, the discontinued PluralEyes",
+  "check_next": "Verify PluralEyes' status and Tentacle Sync Studio pricing; ask editors where the built-in NLE sync fails (no scratch audio, film footage).",
+  "crowding": {
+   "verdict": "crowded",
+   "reason": "Free waveform sync is built into Premiere, Resolve, FCP and Avid (Maxon's reason for retiring PluralEyes), plus Syncaila and 5+ new dedicated replacements already target this exact gap; only the no-scratch-track lip-sync case looks possibly unserved, and that is unconfirmed.",
+   "competitors": [
+    {
+     "name": "DaVinci Resolve auto sync by waveform",
+     "price": "free (built into the editor)",
+     "url": "https://wavexml.com/blog/best-free-alternatives-to-pluraleyes",
+     "verified": true
+    },
+    {
+     "name": "Premiere Pro Merge Clips / Synchronize by audio",
+     "price": "included with Premiere Pro",
+     "url": "https://filmit.io/blog/pluraleyes-alternatives",
+     "verified": true
+    },
+    {
+     "name": "Syncaila",
+     "price": "$249 (from $236.55 at Toolfarm)",
+     "url": "https://www.toolfarm.com/buy/syncaila/",
+     "verified": true
+    },
+    {
+     "name": "Tentacle Sync Studio",
+     "price": "149,00 EUR excl. VAT",
+     "url": "https://shop.tentaclesync.com/product/tentacle-sync-studio/",
+     "verified": true
+    },
+    {
+     "name": "KlikSync",
+     "price": "unknown (described as one-time, lifetime)",
+     "url": "https://www.video-editor.com/blog/pluraleyes-alternatives",
+     "verified": false
+    },
+    {
+     "name": "CamHeard",
+     "price": "unknown",
+     "url": "https://camheard.com/pluraleyes-alternative",
+     "verified": false
+    },
+    {
+     "name": "Filmit Sync (part of Filmit Studio)",
+     "price": "unknown (7-day free trial)",
+     "url": "https://filmit.io/blog/pluraleyes-alternatives",
+     "verified": false
+    },
+    {
+     "name": "WaveXML",
+     "price": "free beta",
+     "url": "https://wavexml.com/blog/best-free-alternatives-to-pluraleyes",
+     "verified": true
+    },
+    {
+     "name": "align (FedyaLight, open source)",
+     "price": "free",
+     "url": "https://github.com/topics/pluraleyes-alternative",
+     "verified": true
+    },
+    {
+     "name": "PluralEyes (discontinued)",
+     "price": "no longer sold",
+     "url": "https://support.maxon.net/hc/en-us/articles/7389361453340-PluralEyes-Discontinuation-and-Limited-Maintenance",
+     "verified": true
+    }
+   ],
+   "pay_proof": [
+    {
+     "claim": "Syncaila, a standalone waveform sync app, is sold for $249 at Toolfarm",
+     "url": "https://www.toolfarm.com/buy/syncaila/",
+     "verified": true
+    },
+    {
+     "claim": "Tentacle Sync Studio software is sold on its own for 149 EUR excl. VAT",
+     "url": "https://shop.tentaclesync.com/product/tentacle-sync-studio/",
+     "verified": true
+    },
+    {
+     "claim": "Syncaila is listed as Freemium (Pay once)",
+     "url": "https://alternativeto.net/software/syncaila/about/",
+     "verified": true
+    },
+    {
+     "claim": "KlikSync is sold with one-time lifetime pricing (amount not seen)",
+     "url": "https://www.video-editor.com/blog/pluraleyes-alternatives",
+     "verified": true
+    },
+    {
+     "claim": "Filmit Sync is included in paid Filmit Studio with a 7-day free trial (price not seen)",
+     "url": "https://filmit.io/blog/pluraleyes-alternatives",
+     "verified": true
+    }
+   ],
+   "cost_usd": 0.518,
+   "web_searches": 8
+  }
+ },
+ {
+  "name": "Small nonprofit/church fund accounting template for QBO",
+  "pain": "A CPA running a nonprofit does manual journal entries for everything because QBO's nonprofit features are slim. A volunteer CPA rebuilt church books from bank statements and is still struggling with reconciliation and the 990-EZ.",
+  "who_pays": "Volunteer treasurers and CPAs helping small churches/nonprofits, bookkeepers with nonprofit clients",
+  "evidence_ids": [
+   1,
+   51
+  ],
+  "pay_signal": "Both are already paying for QBO and working around its gaps with manual journal entries and reconstruction. There is no explicit price signal.",
+  "product_idea": "Paid template pack: a nonprofit chart of accounts, restricted-fund class setup, JE import sheets for contributions, a 990-EZ mapping workbook, and a Claude-powered checklist explainer.",
+  "build_weeks": 2,
+  "fit_for_us": 2,
+  "known_competitors": "Aplos, ACS/Realm, PowerChurch, QuickBooks Nonprofit setups sold by consultants",
+  "check_next": "Search r/nonprofit and r/Bookkeeping for more posts about 'church treasurer' and 'nonprofit QBO'; check prices of existing nonprofit QBO templates.",
+  "crowding": {
+   "verdict": "crowded",
+   "reason": "QBO church/nonprofit COA+class templates already sell for $7-$30 (Goshen, Accountant Beside You, Etsy), setup courses run $219-$795, and Aplos/PowerChurch cover true fund accounting; only the 990-EZ workbook is a possible untested wedge.",
+   "competitors": [
+    {
+     "name": "Goshen Accounting – QBO Chart of Accounts Template for Churches",
+     "price": "$30 one-time",
+     "url": "https://www.goshenaccountingsvcs.com/shop/qbotrainingfornonprofits-churchcoa",
+     "verified": true
+    },
+    {
+     "name": "Goshen Accounting – QBO Chart of Accounts for General Nonprofits",
+     "price": "$30 one-time",
+     "url": "https://www.goshenaccountingsvcs.com/shop/qbotrainingfornonprofits-generalcoa",
+     "verified": true
+    },
+    {
+     "name": "The Accountant Beside You – Simplified Chart of Accounts for QuickBooks",
+     "price": "$19.95",
+     "url": "https://accountantbesideyou.com/products/simplified-chart-of-accounts-for-quickbooks",
+     "verified": true
+    },
+    {
+     "name": "The Accountant Beside You – How to Setup QuickBooks for a Nonprofit or Church bundle",
+     "price": "$495 (regular $795)",
+     "url": "https://accountantbesideyou.com/products/how-to-setup-quickbooks-for-a-nonprofit-or-church-classes-books-and-resources",
+     "verified": true
+    },
+    {
+     "name": "Church Training Center – Using QuickBooks Effectively",
+     "price": "$499",
+     "url": "https://churchtrainingcenter.com/courses/26982/",
+     "verified": true
+    },
+    {
+     "name": "Etsy – Church Chart of Accounts Template, QuickBooks Online Import",
+     "price": "$6.99",
+     "url": "https://www.etsy.com/market/excel_template_for_church_accounts",
+     "verified": true
+    },
+    {
+     "name": "Aplos",
+     "price": "$79-$229/month",
+     "url": "https://www.getapp.com/nonprofit-software/a/aplos-accounting/",
+     "verified": true
+    },
+    {
+     "name": "PowerChurch Plus",
+     "price": "$359 one-time",
+     "url": "https://www.capterra.com/p/2679/PowerChurch-Plus/",
+     "verified": true
+    },
+    {
+     "name": "Breakwater free QBO nonprofit fund accounting + 990 mapping guide",
+     "price": "free",
+     "url": "https://www.breakwatercorp.com/quickbooks-for-nonprofits/",
+     "verified": true
+    },
+    {
+     "name": "ACS/Realm",
+     "price": "unknown",
+     "url": "",
+     "verified": false
+    }
+   ],
+   "pay_proof": [
+    {
+     "claim": "Church and nonprofit QBO chart-of-accounts templates sell for $30 each",
+     "url": "https://www.goshenaccountingsvcs.com/shop/qbotrainingfornonprofits-churchcoa",
+     "verified": true
+    },
+    {
+     "claim": "Nonprofit/church QuickBooks setup bundle sold at $495 (regular $795)",
+     "url": "https://accountantbesideyou.com/products/how-to-setup-quickbooks-for-a-nonprofit-or-church-classes-books-and-resources",
+     "verified": true
+    },
+    {
+     "claim": "Church QuickBooks training course priced $499",
+     "url": "https://churchtrainingcenter.com/courses/26982/",
+     "verified": true
+    },
+    {
+     "claim": "Etsy church bookkeeping spreadsheet with 222 reviews sells around $6-$11",
+     "url": "https://www.etsy.com/market/church_donation_spreadsheet",
+     "verified": true
+    },
+    {
+     "claim": "Aplos fund accounting starts at $79/month with 190 reviews (4.4) on GetApp",
+     "url": "https://www.getapp.com/nonprofit-software/a/aplos-accounting/",
+     "verified": true
+    },
+    {
+     "claim": "PowerChurch Plus sells at $359 one-time with 187 reviews (4.5) on Capterra",
+     "url": "https://www.capterra.com/p/2679/PowerChurch-Plus/",
+     "verified": true
+    }
+   ],
+   "cost_usd": 0.7151,
+   "web_searches": 8
+  }
+ },
+ {
+  "name": "Narrow tax-return review assistant (where general tax AI fails)",
+  "pain": "A firm spent about $10k on TaxGPT seats; it still flags many false positives, can't read checkboxes, and takes longer to review than to do the work. Practitioners say AI tax tools handle only simple items. Drake prior-year data no longer flows forward.",
+  "who_pays": "Small tax firms and solo preparers",
+  "evidence_ids": [
+   9,
+   195,
+   189,
+   10
+  ],
+  "pay_signal": "$10k already spent on a disappointing paid tool, and preparers are switching software over cost and quality.",
+  "product_idea": "Instead of a general tax agent, a single-purpose checker. Upload this year's and last year's returns as PDF exports, and it flags missing carryforwards (depreciation, NOLs, capital loss, rental items) and year-over-year anomalies, using Claude for the comparison. Each flag cites the line it comes from.",
+  "build_weeks": 6,
+  "fit_for_us": 2,
+  "known_competitors": "TaxGPT, Blue J, Black Ore, built-in diagnostics in Drake/UltraTax/Lacerte",
+  "check_next": "Ask r/taxpros which single review check eats the most time; assess liability and data-security concerns before building.",
+  "crowding": {
+   "verdict": "unclear",
+   "reason": "At least 5 paid AI return-review tools exist (one takes the prior-year return as input, plus free do-it-yourself prompts for general AI chatbots), but whether they catch missing carryforwards well with few false positives could not be confirmed; Blue J, Black Ore, Filed and built-in diagnostics were unchecked.",
+   "competitors": [
+    {
+     "name": "Thomson Reuters Ready to Review",
+     "price": "unknown",
+     "url": "https://tax.thomsonreuters.com/en/products/ready-to-review",
+     "verified": true
+    },
+    {
+     "name": "CPA Pilot (AI Tax Return Review)",
+     "price": "$19-$199/month; $89/user/month professional plan (third-party reviews)",
+     "url": "https://www.cpapilot.com/tools/ai-tax-return-review/",
+     "verified": true
+    },
+    {
+     "name": "Juno",
+     "price": "~$45 per return, decreasing with volume",
+     "url": "https://www.citybiz.co/article/830474/juno-raises-12m-led-by-bonfire-ventures-to-automate-90-of-tax-firm-busy-work/",
+     "verified": true
+    },
+    {
+     "name": "Tax Lens / Tax Lens AI",
+     "price": "$200/month CPA Premium (go.taxlens.ai; link to taxlens.org not confirmed)",
+     "url": "https://go.taxlens.ai/",
+     "verified": true
+    },
+    {
+     "name": "TaxGPT",
+     "price": "custom pricing, demo required",
+     "url": "https://www.taxgpt.com/pricing",
+     "verified": true
+    },
+    {
+     "name": "Filed",
+     "price": "quote only (per comparison site, attribution unclear)",
+     "url": "https://auditfriendly.co/compare/filed-vs-juno",
+     "verified": false
+    },
+    {
+     "name": "Blue J",
+     "price": "unknown",
+     "url": "",
+     "verified": false
+    },
+    {
+     "name": "Black Ore",
+     "price": "unknown",
+     "url": "",
+     "verified": false
+    },
+    {
+     "name": "Drake/UltraTax/Lacerte built-in diagnostics",
+     "price": "unknown",
+     "url": "",
+     "verified": false
+    }
+   ],
+   "pay_proof": [
+    {
+     "claim": "Juno raised a $12M seed round and charges about $45 per return for AI tax automation and review",
+     "url": "https://www.citybiz.co/article/830474/juno-raises-12m-led-by-bonfire-ventures-to-automate-90-of-tax-firm-busy-work/",
+     "verified": true
+    },
+    {
+     "claim": "CPA Pilot sells paid plans from $19 to $199/month ($200-$1999/year)",
+     "url": "https://insights.velocityaipartners.co/tools/cpa-pilot",
+     "verified": true
+    },
+    {
+     "claim": "CPA Pilot standard professional plan at $89/user/month",
+     "url": "https://unclekam.com/tax-pro-tools/ai-tax-tools/cpa-pilot-review/",
+     "verified": true
+    },
+    {
+     "claim": "Tax Lens AI charges $200/month for 1040 amendment finding and related tools",
+     "url": "https://go.taxlens.ai/",
+     "verified": true
+    },
+    {
+     "claim": "A firm spent about $10k on TaxGPT seats (from user's forum notes)",
+     "url": "",
+     "verified": false
+    }
+   ],
+   "cost_usd": 0.7133,
+   "web_searches": 8
+  }
+ }
+]

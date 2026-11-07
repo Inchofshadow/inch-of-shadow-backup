@@ -1,0 +1,371 @@
+{% extends "base.html" %}
+{% block title %}Colours{% endblock %}
+{% block content %}
+{% include "_cover_steps.html" %}
+<style>
+.co-page { max-width: 1700px; }
+.co-head { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 8px 24px; }
+.co-head a { color: var(--text-secondary); }
+.co-bar { display: flex; flex-wrap: wrap; gap: 12px 28px; align-items: center; padding: 8px 0 14px; border-bottom: 1px solid var(--border-light); }
+.co-bar [hidden], .co-pane[hidden] { display: none !important; }
+.co-seg { display: flex; border: 1px solid var(--border-light); flex-wrap: wrap; }
+.co-seg button { background: none; border: 0; color: var(--text-secondary); padding: 8px 14px; cursor: pointer; font: inherit; }
+.co-seg button.on { background: #d8c39a; color: #111; }
+.co-panes { display: grid; grid-template-columns: 1fr 1fr; gap: 22px; margin-top: 16px; }
+@media (max-width: 860px) { .co-panes { grid-template-columns: 1fr; } }
+.co-panes.single { grid-template-columns: 1fr; max-width: min(100%, calc(100vh - 120px)); margin-left: auto; margin-right: auto; }
+.co-pane .top { display: flex; gap: 10px; align-items: center; margin-bottom: 8px; }
+.co-pane .top b { color: #d8c39a; font-size: 22px; }
+.co-pane .top select { flex: 1; min-width: 0; font: inherit; padding: 6px 8px; background: #1a1816; color: inherit; border: 1px solid var(--border-light); }
+.co-pane canvas { width: 100%; aspect-ratio: 1; display: block; background: #000; }
+.co-rows { display: flex; flex-direction: column; gap: 8px; margin-top: 10px; }
+.co-row { display: grid; grid-template-columns: 120px 1fr 40px; align-items: center; gap: 12px; padding: 10px 12px; background: rgba(255,255,255,.03); border: 1px solid var(--border-light); border-radius: 8px; }
+.co-row.locked { border-color: #d8c39a; }
+.co-row .lab { color: var(--text-secondary); font-size: 12px; letter-spacing: .1em; text-transform: uppercase; line-height: 1.3; }
+.co-row .lab b { display: block; color: var(--text-primary, #eee); font-size: 15px; letter-spacing: 0; text-transform: none; font-weight: 500; }
+.co-sw { display: flex; gap: 10px; flex-wrap: wrap; }
+.co-sw button { width: 38px; height: 38px; padding: 3px; border-radius: 50%; border: 2px solid transparent; background: none; cursor: pointer; }
+.co-sw button i { display: block; width: 100%; height: 100%; border-radius: 50%; box-shadow: inset 0 0 0 1px rgba(255,255,255,.28); }
+.co-sw button:hover { border-color: rgba(216,195,154,.5); }
+.co-sw button.on { border-color: #d8c39a; }
+.co-lock { width: 36px; height: 36px; display: grid; place-items: center; background: none; border: 1px solid var(--border-light); border-radius: 50%; color: var(--text-secondary); cursor: pointer; padding: 0; }
+.co-lock svg { width: 16px; height: 16px; }
+.co-lock.on { background: #d8c39a; color: #111; border-color: #d8c39a; }
+.co-copy { display: flex; gap: 8px; }
+.co-act { display: flex; gap: 10px; margin-top: 12px; flex-wrap: wrap; }
+.co-shuffle { font-size: 17px; padding: 8px 18px; }
+.co-meter { margin-top: 8px; font-size: 13px; color: var(--text-secondary); line-height: 1.5; }
+.co-meter b { color: var(--text-primary, #eee); font-weight: 500; }
+.co-rules { font-size: 13px; color: var(--text-secondary); border-left: 2px solid #d8c39a; padding: 4px 0 4px 12px; margin: 8px 0 0; max-width: 980px; }
+.co-kept { display: flex; gap: 12px; overflow-x: auto; padding: 10px 0; }
+.co-kept:empty::before { content: "Press Keep under a picture and it lines up here."; color: var(--text-secondary); }
+.co-kept .k { flex: 0 0 170px; font-size: 13px; color: var(--text-secondary); cursor: pointer; }
+.co-kept canvas { width: 170px; height: 170px; display: block; background: #000; border: 1px solid #d8c39a; }
+.co-note { color: var(--text-secondary); font-size: 13px; }
+.co-sub { margin: 16px 0 0; font-size: 13px; letter-spacing: .1em; text-transform: uppercase; color: #d8c39a; }
+.co-el { display: grid; grid-template-columns: max-content 1fr; gap: 8px 14px; align-items: center; margin-top: 8px; }
+.co-el .lab { color: var(--text-secondary); font-size: 14px; letter-spacing: .06em; text-transform: uppercase; }
+.co-el input[type=range] { width: 100%; max-width: 320px; accent-color: #d8c39a; }
+.co-el .n { color: var(--text-secondary); margin-left: 10px; }
+</style>
+<div class="fonts-page co-page">
+    <div class="co-head">
+        <h1>Colours: {{ rel.metadata.title }} (main artwork)</h1>
+        <span><a href="{{ url_for('playground_elements', slug=rel.slug) }}">← Elements (stage 1)</a> &nbsp; <a href="{{ url_for('playground_wall', slug=rel.slug) }}">Effects wall →</a> &nbsp; <a class="btn btn-primary" href="{{ url_for('playground_iggrid', slug=rel.slug) }}">On my IG grid ▦</a> <a class="btn btn-primary cmp-open" href="{{ url_for('playground_layout', slug=rel.slug) }}">Layout: text + rules ✎</a></span>
+    </div>
+    <p class="co-rules"><b>Smart shuffle</b> uses the rules we collected in the Effects library: <b>60-30-10 colour</b> (one dominant, one secondary, one accent; R-013), <b>value 70/20/10</b> (one tone carries most of the picture, the darkest or lightest bit sits at the focal point), and <b>the accent goes on the focal point</b>, the moon. Plus readability: the moon is never the hill's colour and always reads on the sky, the owl stands out from its moon, the trees read against the hill. Rule of thirds and the golden ratio are about placement, so they come in at the text stage. <b>Shuffle</b> stays fully random.</p>
+    <p class="co-note">Change the elements and their colours on one page. Shuffle = random colours for every element that is not locked. Lock an element to keep its colour while you shuffle the rest.</p>
+    <div class="co-bar">
+        <div class="co-seg" id="mode"><button data-v="side">Side by side</button><button data-v="one">One at a time</button></div>
+        <div class="co-seg" id="ab" hidden><button data-v="0">A</button><button data-v="1">B</button></div>
+        <div class="co-copy"><button type="button" class="btn btn-secondary" id="ab2">📋 Copy A → B</button><button type="button" class="btn btn-secondary" id="ba2">📋 Copy B → A</button></div>
+        <label><input type="checkbox" id="text"> text</label>
+        <label>title size <input type="range" id="tscale" min="50" max="170" value="100"> <span id="tscalen">100%</span></label>
+    </div>
+    <h3>Kept</h3>
+    <div class="co-kept" id="kept"></div>
+    <div class="co-panes" id="panes"></div>
+    <p class="co-note">One at a time: click the picture, or use the arrow keys, to flip A and B.</p>
+</div>
+<script>
+(function () {
+    var SLUG = {{ rel.slug|tojson }}, VER = {{ ver|tojson }}, PICKS = {{ picks|tojson }}, PVER = {{ pver|tojson }};
+    var $ = function (id) { return document.getElementById(id); };
+    var C = {red: '#c12613', hillred: '#891010', purple: '#44214c', ivory: '#e2d6bc', cream: '#decdb2', black: '#0b0a09', gold: '#daaf60'};
+    var NAMES = {red: 'Red', hillred: 'Hill red', purple: 'Purple', ivory: 'Ivory', cream: 'Cream', black: 'Black', gold: 'Gold'};
+    var ELS = [
+        {k: 'hill', label: 'Hill', opts: ['hillred', 'red', 'purple', 'ivory', 'black'], shade: true},
+        {k: 'moon', label: 'Moon', opts: ['cream', 'red', 'purple', 'ivory'], shade: true},
+        {k: 'owl', label: 'Owl', opts: ['black', 'purple', 'red', 'cream'], need: 'owl'},
+        {k: 'trees', label: 'Trees', opts: ['cream', 'ivory', 'red', 'purple'], shade: true},
+        {k: 'stars', label: 'Stars', opts: ['gold', 'cream', 'red', 'purple'], need: 'stars'},
+        {k: 'line', label: 'Cut-paper line', opts: ['ivory', 'cream', 'red', 'purple'], shade: true, need: 'line'}
+    ];
+    var EL = [
+        {k: 'owl', label: 'Owl', opts: [['none', 'None'], ['on', 'On the moon']]},
+        {k: 'stars', label: 'Stars', opts: [['none', 'None'], ['few', 'A few']]},
+        {k: 'tree', label: 'Middle tree', opts: [['keep', 'Keep'], ['remove', 'Remove']]}
+    ];
+    function pickOf(e) { return 'el-red-' + e.owl + '-' + e.stars + '-' + e.tree + '-' + e.line; }
+    function elOf(p) { var m = /^el-[a-z]+-([a-z]+)-([a-z]+)-([a-z]+)-([0-4])$/.exec(p) || []; return {owl: m[1] || 'none', stars: m[2] || 'none', tree: m[3] || 'remove', line: m[4] || '0'}; }
+    function pickWords(p) {
+        var m = /^el-([a-z]+)-([a-z]+)-([a-z]+)-([a-z]+)-([0-4])$/.exec(p); if (!m) return p;
+        return (m[2] === 'on' ? 'owl' : 'no owl') + ' · ' + (m[3] === 'few' ? 'stars' : 'no stars') + ' · ' + (m[4] === 'keep' ? 'middle tree' : 'no middle tree') + ' · ' + (m[5] === '0' ? 'no cut-paper' : 'cut-paper ' + m[5]);
+    }
+    function file(p, f) { return '/playground/' + encodeURIComponent(SLUG) + '/colours/file?p=' + encodeURIComponent(p) + '&f=' + f + '&v=' + (PVER[p] || ''); }
+    // per pick: base pixels, masks, shade, meta (loaded once)
+    var DATA = {};
+    function loadImg(u) { return new Promise(function (res, rej) { var i = new Image(); i.onload = function () { res(i); }; i.onerror = rej; i.src = u; }); }
+    function pix(im, N) { var c = document.createElement('canvas'); c.width = c.height = N; var x = c.getContext('2d', {willReadFrequently: true}); x.drawImage(im, 0, 0, N, N); return x.getImageData(0, 0, N, N).data; }
+    function load(p) {
+        if (DATA[p]) return DATA[p];
+        DATA[p] = fetch(file(p, 'meta.json')).then(function (r) { return r.json(); }).then(function (meta) {
+            var names = ['base.jpg', 'shade.png'].concat(ELS.map(function (e) { return e.k + '.png'; }));
+            return Promise.all(names.map(function (n) { return loadImg(file(p, n)); })).then(function (ims) {
+                var N = ims[0].naturalWidth, d = {meta: meta, N: N, base: pix(ims[0], N), shade: pix(ims[1], N), m: {}};
+                ELS.forEach(function (e, i) { d.m[e.k] = pix(ims[i + 2], N); });
+                return d;
+            });
+        });
+        return DATA[p];
+    }
+    function hex(h) { h = h.replace('#', ''); return [0, 2, 4].map(function (i) { return parseInt(h.substr(i, 2), 16); }); }
+    function present(d, e) { return !e.need || d.meta[e.need]; }
+    function defaults(d) { return {hill: 'hillred', moon: d.meta.moon === 'red' ? 'red' : 'cream', owl: 'black', trees: 'cream', stars: 'gold', line: 'ivory'}; }
+    var TITLE = null;
+    loadImg('/playground/' + encodeURIComponent(SLUG) + '/elements/img?n=el.title.png&v=' + VER).then(function (i) { TITLE = i; drawAll(); }).catch(function () {});
+    var BOX = null;
+    function textBox(ov) {
+        if (BOX) return BOX;
+        var W = 256, c = document.createElement('canvas'); c.width = c.height = W; var x = c.getContext('2d', {willReadFrequently: true});
+        x.drawImage(ov, 0, 0, W, W); var dd = x.getImageData(0, 0, W, W).data, x0 = W, y0 = W, x1 = 0, y1 = 0;
+        for (var i = 3, q = 0; i < dd.length; i += 4, q++) if (dd[i] > 40) { var px = q % W, py = (q / W) | 0; if (px < x0) x0 = px; if (py < y0) y0 = py; if (px > x1) x1 = px; if (py > y1) y1 = py; }
+        BOX = x1 >= x0 ? [x0 / W, y0 / W, (x1 + 1) / W, (y1 + 1) / W] : [0, 0, 1, 1]; return BOX;
+    }
+    // paint: base, then each element in order with its colour x its own paper texture
+    function paint(ctx, size, d, cols) {
+        var N = d.N, out = new ImageData(N, N), o = out.data, b = d.base, sh = d.shade;
+        var L = ELS.filter(function (e) { return present(d, e); }).map(function (e) { return {m: d.m[e.k], c: hex(C[cols[e.k]] || C.cream), s: e.shade}; });
+        for (var p = 0; p < o.length; p += 4) {
+            var r = b[p], g = b[p + 1], bl = b[p + 2], s = sh[p] / 180;
+            for (var j = 0; j < L.length; j++) {
+                var a = L[j].m[p] / 255; if (!a) continue;
+                var f = L[j].s ? s : 1, c = L[j].c;
+                r = r * (1 - a) + c[0] * f * a; g = g * (1 - a) + c[1] * f * a; bl = bl * (1 - a) + c[2] * f * a;
+            }
+            o[p] = r; o[p + 1] = g; o[p + 2] = bl; o[p + 3] = 255;
+        }
+        var t = document.createElement('canvas'); t.width = t.height = N; t.getContext('2d').putImageData(out, 0, 0);
+        ctx.drawImage(t, 0, 0, size, size);
+        if (S.text && TITLE) {
+            var tt = document.createElement('canvas'); tt.width = tt.height = size; var tc = tt.getContext('2d');
+            var k = S.tscale / 100, bx = textBox(TITLE), ow = TITLE.naturalWidth, oh = TITLE.naturalHeight;
+            tc.drawImage(TITLE, bx[0] * ow, bx[1] * oh, (bx[2] - bx[0]) * ow, (bx[3] - bx[1]) * oh, bx[0] * size, bx[1] * size, (bx[2] - bx[0]) * size * k, (bx[3] - bx[1]) * size * k);
+            tc.globalCompositeOperation = 'source-in'; tc.fillStyle = '#e9dfc9'; tc.fillRect(0, 0, size, size);
+            ctx.drawImage(tt, 0, 0);
+        }
+    }
+    var S = {mode: 'side', show: 0, text: true, tscale: 100, a: null, b: null};
+    try { Object.assign(S, JSON.parse(localStorage.getItem('colours-' + SLUG) || '{}')); } catch (e) {}
+    // undo: each picture keeps its own history of element + colour changes (this page load only)
+    var HIST = {a: [], b: []};
+    function snap(key) { HIST[key].push(JSON.stringify(S[key])); if (HIST[key].length > 60) HIST[key].shift(); }
+    function persist() { try { localStorage.setItem('colours-' + SLUG, JSON.stringify(S)); } catch (e) {} }
+    // start from Amir's two kept element picks (11-05), red moon
+    function fresh(p) { return {pick: p, el: elOf(p), cols: null, lock: {}}; }
+    var START = ['el-red-none-few-remove-0', 'el-red-on-few-remove-3'];
+    if (!S.a || !S.a.el || PICKS.indexOf(S.a.pick) < 0) S.a = fresh(PICKS.indexOf(START[0]) >= 0 ? START[0] : PICKS[0]);
+    if (!S.b || !S.b.el || PICKS.indexOf(S.b.pick) < 0) S.b = fresh(PICKS.indexOf(START[1]) >= 0 ? START[1] : PICKS[0]);
+    // kept
+    var KEPT = [];
+    function same(x, y) { return JSON.stringify(x) === JSON.stringify(y); }
+    function isKept(st) { return KEPT.some(function (k) { return k.pick === st.pick && same(k.cols, st.cols); }); }
+    function toggle(st) {
+        return fetch('/api/playground/' + encodeURIComponent(SLUG) + '/colours-kept', {method: 'POST', headers: {'Content-Type': 'application/json'}, body: JSON.stringify({pick: st.pick, cols: st.cols})})
+            .then(function (r) { return r.json(); }).then(function (d) { if (d.kept) { KEPT = d.kept; renderKept(); sync(); } });
+    }
+    function renderKept() {
+        var box = $('kept'); box.innerHTML = '';
+        KEPT.forEach(function (k) {
+            var dv = document.createElement('div'); dv.className = 'k';
+            var cv = document.createElement('canvas'); cv.width = cv.height = 340; dv.appendChild(cv);
+            var t = document.createElement('div'); dv.appendChild(t);
+            dv.title = 'Show in A';
+            dv.onclick = function () { snap('a'); S.a = {pick: k.pick, el: elOf(k.pick), cols: Object.assign({}, k.cols), lock: {}}; persist(); sync(); draw(0); };
+            box.appendChild(dv);
+            load(k.pick).then(function (d) {
+                t.textContent = ELS.filter(function (e) { return present(d, e); }).map(function (e) { return e.label.toLowerCase() + ' ' + NAMES[k.cols[e.k]].toLowerCase(); }).join(' · ');
+                paint(cv.getContext('2d'), 340, d, k.cols);
+            }).catch(function () {});
+        });
+    }
+    // panes
+    var PANES = [];
+    ['a', 'b'].forEach(function (key, i) {
+        var p = document.createElement('div'); p.className = 'co-pane';
+        var top = document.createElement('div'); top.className = 'top';
+        var h = document.createElement('b'); h.textContent = key.toUpperCase();
+        top.append(h); p.appendChild(top);
+        var cv = document.createElement('canvas'); cv.width = cv.height = 1080; p.appendChild(cv);
+        cv.onclick = function () { if (S.mode === 'one') flip(); };
+        var t1 = document.createElement('div'); t1.className = 'co-sub'; t1.textContent = 'Elements';
+        var elb = document.createElement('div'); elb.className = 'co-el';
+        var segs = {};
+        EL.forEach(function (d) {
+            var l = document.createElement('div'); l.className = 'lab'; l.textContent = d.label;
+            var sg = document.createElement('div'); sg.className = 'co-seg';
+            d.opts.forEach(function (o) { var b = document.createElement('button'); b.type = 'button'; b.dataset.v = o[0]; b.textContent = o[1];
+                b.onclick = function () { setEl(i, d.k, o[0]); }; sg.appendChild(b); });
+            segs[d.k] = sg; elb.append(l, sg);
+        });
+        var ll = document.createElement('div'); ll.className = 'lab'; ll.textContent = 'Cut-paper';
+        var lw = document.createElement('div'); lw.innerHTML = '<input type="range" min="0" max="4" step="1"><span class="n"></span>';
+        var lr = lw.querySelector('input'); lr.addEventListener('input', function () { setEl(i, 'line', String(lr.value)); });
+        elb.append(ll, lw);
+        var t2 = document.createElement('div'); t2.className = 'co-sub'; t2.textContent = 'Colours';
+        var rows = document.createElement('div'); rows.className = 'co-rows';
+        p.append(t1, elb, t2, rows);
+        var act = document.createElement('div'); act.className = 'co-act';
+        var sh = document.createElement('button'); sh.type = 'button'; sh.className = 'btn btn-secondary co-shuffle'; sh.textContent = '🎲 Shuffle';
+        sh.onclick = function () { shuffle(i); };
+        var sm = document.createElement('button'); sm.type = 'button'; sm.className = 'btn btn-primary co-shuffle'; sm.textContent = '✨ Smart shuffle';
+        sm.title = '60-30-10 colour, value 70/20/10, accent on the moon, readable contrasts';
+        sm.onclick = function () { smartShuffle(i); };
+        var kb = document.createElement('button'); kb.type = 'button'; kb.className = 'btn btn-secondary';
+        kb.onclick = function () { toggle(S[key]); };
+        var rs = document.createElement('button'); rs.type = 'button'; rs.className = 'btn btn-secondary'; rs.textContent = '🔄 Original colours';
+        rs.onclick = function () { load(S[key].pick).then(function (d) { snap(key); S[key].cols = defaults(d); persist(); sync(); draw(i); }); };
+        var ub = document.createElement('button'); ub.type = 'button'; ub.className = 'btn btn-secondary'; ub.textContent = '↩️ Undo ' + key.toUpperCase();
+        ub.onclick = function () { var h = HIST[key]; if (!h.length) return; S[key] = JSON.parse(h.pop()); persist(); sync(); draw(i); };
+        act.append(sm, sh, ub, kb, rs); p.insertBefore(act, rows);   // Shuffle right under the picture, before the colour rows
+        var meter = document.createElement('div'); meter.className = 'co-meter'; p.insertBefore(meter, act.nextSibling);
+        $('panes').appendChild(p);
+        PANES.push({key: key, meter: meter, el: p, cv: cv, segs: segs, lr: lr, ln: lw.querySelector('.n'), rows: rows, kb: kb});
+    });
+    var LOCK = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg>';
+    var OPEN = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 7.5-2"/></svg>';
+    function buildRows(i, d) {
+        var P = PANES[i], st = S[P.key]; P.rows.innerHTML = '';
+        ELS.filter(function (e) { return present(d, e); }).forEach(function (e) {
+            var row = document.createElement('div'); row.className = 'co-row' + (st.lock[e.k] ? ' locked' : '');
+            var l = document.createElement('div'); l.className = 'lab'; l.textContent = e.label;
+            var cur = document.createElement('b'); cur.textContent = NAMES[st.cols[e.k]] || ''; l.appendChild(cur);
+            var sw = document.createElement('div'); sw.className = 'co-sw';
+            e.opts.forEach(function (o) {
+                var b = document.createElement('button'); b.type = 'button'; b.className = st.cols[e.k] === o ? 'on' : ''; b.title = NAMES[o];
+                b.setAttribute('aria-label', e.label + ' ' + NAMES[o]);
+                var dot = document.createElement('i'); dot.style.background = C[o]; b.appendChild(dot);
+                b.onclick = function () { if (st.cols[e.k] === o) return; snap(P.key); st.cols[e.k] = o; persist(); sync(); draw(i); };
+                sw.appendChild(b);
+            });
+            var lk = document.createElement('button'); lk.type = 'button'; lk.className = 'co-lock' + (st.lock[e.k] ? ' on' : '');
+            lk.innerHTML = st.lock[e.k] ? LOCK : OPEN; lk.title = st.lock[e.k] ? 'Locked: Shuffle keeps this colour' : 'Lock this colour when you shuffle';
+            lk.onclick = function () { snap(P.key); st.lock[e.k] = !st.lock[e.k]; persist(); buildRows(i, d); };
+            row.append(l, sw, lk); P.rows.appendChild(row);
+        });
+    }
+    function setEl(i, k, val) {
+        var key = PANES[i].key; if (S[key].el[k] === val) return; snap(key);
+        var st = S[key]; st.el[k] = val; st.pick = pickOf(st.el);
+        persist(); sync(); draw(i);
+    }
+    // ---- smart shuffle: our collected rules (docs/brand/effects/effects.json: colour-60-30-10, value-70-20-10) ----
+    function lumOf(name) { var c = hex(C[name]); return 0.299 * c[0] + 0.587 * c[1] + 0.114 * c[2]; }
+    function areas(d) {
+        // how much of the picture each element really covers (later layers paint over earlier ones); the rest is the black ink
+        if (d.areas) return d.areas;
+        var ks = ELS.filter(function (e) { return present(d, e); }).map(function (e) { return e.k; });
+        var A = {}, rest = 0, n = 0; ks.forEach(function (k) { A[k] = 0; });
+        var len = d.base.length;
+        for (var p = 0; p < len; p += 4 * 7) {
+            var rem = 1;
+            for (var j = ks.length - 1; j >= 0; j--) { var a = d.m[ks[j]][p] / 255; if (!a) continue; A[ks[j]] += a * rem; rem *= 1 - a; }
+            rest += rem; n++;
+        }
+        ks.forEach(function (k) { A[k] /= n; });
+        d.areas = {A: A, rest: rest / n}; return d.areas;
+    }
+    function measure(d, cols) {
+        var ar = areas(d), share = {black: ar.rest};
+        Object.keys(ar.A).forEach(function (k) { share[cols[k]] = (share[cols[k]] || 0) + ar.A[k]; });
+        var colours = Object.keys(share).map(function (c) { return [c, share[c]]; }).sort(function (x, y) { return y[1] - x[1]; });
+        var val = {dark: 0, mid: 0, light: 0};
+        colours.forEach(function (c) { var l = lumOf(c[0]); val[l < 60 ? 'dark' : l < 150 ? 'mid' : 'light'] += c[1]; });
+        var values = Object.keys(val).map(function (k) { return [k, val[k]]; }).sort(function (x, y) { return y[1] - x[1]; });
+        return {colours: colours, values: values};
+    }
+    function readable(d, cols) {
+        var ar = areas(d).A;
+        if ('moon' in ar) {
+            if (cols.moon === cols.hill) return false;
+            if (Math.abs(lumOf(cols.moon) - lumOf('black')) < 55) return false;      // the moon reads on the black sky
+        }
+        if ('owl' in ar && Math.abs(lumOf(cols.owl) - lumOf(cols.moon)) < 60) return false;
+        if (Math.abs(lumOf(cols.trees) - lumOf(cols.hill)) < 40 && cols.trees !== cols.hill) return false;
+        if (cols.trees === cols.hill) return false;
+        return true;
+    }
+    function score(d, cols) {
+        var m = measure(d, cols), c = m.colours.map(function (x) { return x[1]; }), v = m.values.map(function (x) { return x[1]; });
+        var e = Math.abs((c[0] || 0) - 0.6) + Math.abs((c[1] || 0) - 0.3) + Math.abs((c[2] || 0) - 0.1);
+        for (var k = 3; k < c.length; k++) e += c[k] * 1.5;                                  // more than three colours = noise
+        e += Math.abs((v[0] || 0) - 0.7) + Math.abs((v[1] || 0) - 0.2) + Math.abs((v[2] || 0) - 0.1);
+        var accent = m.colours[2] ? m.colours[2][0] : null;
+        if (accent && accent === cols.moon) e -= 0.15;                                         // the accent sits on the focal point
+        return e;
+    }
+    function smartShuffle(i) {
+        var st = S[PANES[i].key];
+        load(st.pick).then(function (d) {
+            var live = ELS.filter(function (e) { return present(d, e); }), found = [];
+            for (var t = 0; t < 600; t++) {
+                var c = Object.assign({}, st.cols);
+                live.forEach(function (e) { if (!st.lock[e.k]) c[e.k] = e.opts[Math.floor(Math.random() * e.opts.length)]; });
+                if (!readable(d, c)) continue;
+                found.push([score(d, c), c]);
+            }
+            if (!found.length) return;
+            snap(PANES[i].key);
+            found.sort(function (x, y) { return x[0] - y[0]; });
+            var top = found.slice(0, Math.min(8, found.length));                               // one of the best few, so it still varies
+            st.cols = top[Math.floor(Math.random() * top.length)][1];
+            persist(); sync(); draw(i);
+        });
+    }
+    function showMeter(i, d, cols) {
+        var m = measure(d, cols), P = PANES[i];
+        var pc = function (x) { return Math.round(x * 100); };
+        P.meter.innerHTML = '';
+        var a = document.createElement('div'); a.innerHTML = 'Colours (60-30-10): <b></b>';
+        a.querySelector('b').textContent = m.colours.slice(0, 4).map(function (c) { return (NAMES[c[0]] || c[0]) + ' ' + pc(c[1]); }).join(' / ');
+        var b = document.createElement('div'); b.innerHTML = 'Light and dark (70/20/10): <b></b>';
+        b.querySelector('b').textContent = m.values.map(function (v) { return v[0] + ' ' + pc(v[1]); }).join(' / ');
+        var ok = readable(d, cols), acc = m.colours[2] && m.colours[2][0] === cols.moon;
+        var r = document.createElement('div'); r.textContent = (ok ? 'Readable' : 'Something is hard to read (moon, owl or trees)') + (acc ? ' · the accent is on the moon' : '');
+        P.meter.append(a, b, r);
+    }
+    function shuffle(i) {
+        var st = S[PANES[i].key];
+        load(st.pick).then(function (d) {
+            snap(PANES[i].key);
+            ELS.forEach(function (e) { if (!st.lock[e.k]) st.cols[e.k] = e.opts[Math.floor(Math.random() * e.opts.length)]; });
+            persist(); sync(); draw(i);
+        });
+    }
+    function sync() {
+        PANES.forEach(function (P, i) {
+            var st = S[P.key];
+            EL.forEach(function (d) { Array.prototype.forEach.call(P.segs[d.k].children, function (b) { b.classList.toggle('on', b.dataset.v === st.el[d.k]); }); });
+            P.lr.value = +st.el.line; P.ln.textContent = st.el.line === '0' ? 'none' : st.el.line + ' / 4';
+            load(st.pick).then(function (d) { if (!st.cols) st.cols = defaults(d); buildRows(i, d); P.kb.textContent = isKept(st) ? '⭐ Kept' : '☆ Keep'; });
+            P.el.hidden = S.mode === 'one' && i !== S.show;
+        });
+        Array.prototype.forEach.call($('mode').children, function (b) { b.classList.toggle('on', b.dataset.v === S.mode); });
+        Array.prototype.forEach.call($('ab').children, function (b) { b.classList.toggle('on', +b.dataset.v === S.show); });
+        $('ab').hidden = S.mode !== 'one';
+        $('panes').classList.toggle('single', S.mode === 'one');
+        $('text').checked = S.text; $('tscale').value = S.tscale; $('tscalen').textContent = S.tscale + '%';
+    }
+    function draw(i) {
+        var P = PANES[i], st = S[P.key];
+        load(st.pick).then(function (d) { if (!st.cols) st.cols = defaults(d); paint(P.cv.getContext('2d'), 1080, d, st.cols); showMeter(i, d, st.cols); }).catch(function () {});
+    }
+    function drawAll() { draw(0); draw(1); renderKept(); }
+    function flip() { S.show = S.show ? 0 : 1; persist(); sync(); }
+    Array.prototype.forEach.call($('mode').children, function (b) { b.onclick = function () { S.mode = b.dataset.v; persist(); sync(); }; });
+    Array.prototype.forEach.call($('ab').children, function (b) { b.onclick = function () { S.show = +b.dataset.v; persist(); sync(); }; });
+    function copy(from, to) { snap(to); S[to] = JSON.parse(JSON.stringify(S[from])); persist(); sync(); draw(to === 'a' ? 0 : 1); }
+    $('ab2').onclick = function () { copy('a', 'b'); };
+    $('ba2').onclick = function () { copy('b', 'a'); };
+    $('text').onchange = function () { S.text = this.checked; persist(); drawAll(); };
+    var tq = false;
+    $('tscale').addEventListener('input', function () { S.tscale = +this.value; $('tscalen').textContent = S.tscale + '%'; persist(); if (tq) return; tq = true; requestAnimationFrame(function () { tq = false; drawAll(); }); });
+    document.addEventListener('keydown', function (e) {
+        if (e.target && /INPUT|SELECT|TEXTAREA/.test(e.target.tagName)) return;
+        if (S.mode === 'one' && (e.key === 'ArrowLeft' || e.key === 'ArrowRight')) { e.preventDefault(); flip(); }
+    });
+    sync(); draw(0); draw(1);
+    fetch('/api/playground/' + encodeURIComponent(SLUG) + '/colours-kept').then(function (r) { return r.json(); }).then(function (d) { KEPT = d.kept || []; renderKept(); sync(); }).catch(function () {});
+})();
+</script>
+{% endblock %}

@@ -1,0 +1,125 @@
+{% extends "base.html" %}
+{% from "_resizer_parts.html" import source_block, focal_grid, presets_block, sizes_block %}
+{% block title %}Video{% endblock %}
+{% block content %}
+{# Video (RM 2.0 slice 1b): the HyperFrames projects on top, the Video Resizer section below
+   (was video_resizer.html). /video-resizer renders this page and opens on the resizer. #}
+<div class="video-page">
+    <h1>Video</h1>
+    <p class="form-subtitle">The HyperFrames projects in <code>{{ videos_dir }}</code>. A new one starts on brand: the mood's colours, the type sizes, the safe zone and the face already in its first page. The resizer is <a href="#video-resizer">below the projects</a>.</p>
+    {% if message %}<div class="next-deadline-banner">{{ message }}</div>{% endif %}
+
+    <section class="section brand-section">
+        <h2>Start a project</h2>
+        <form method="post" action="{{ url_for('video_start') }}" class="video-start">
+            <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+            <input type="text" name="name" placeholder="song-title-release-reel" pattern="[a-z0-9][a-z0-9-]{1,60}" required>
+            <select name="mood">{% for m in moods %}<option value="{{ m }}" {% if m == 'M2' %}selected{% endif %}>{{ m }}</option>{% endfor %}</select>
+            <select name="canvas">{% for c in canvases %}<option value="{{ c }}">{{ c }}{% if c == 'reel' %} 1080x1920{% elif c == 'wide' %} 1920x1080{% else %} 1080x1080{% endif %}</option>{% endfor %}</select>
+            <button type="submit" class="btn btn-accent btn-sm">Start</button>
+            <span class="brand-muted">takes about a minute (npx hyperframes init)</span>
+        </form>
+    </section>
+
+    {% for p in projects %}
+    <section class="section brand-section video-project">
+        <div class="video-project-head">
+            <h2>{{ p.name }}</h2>
+            <span class="brand-muted">{{ p.created }}{% if p.mood %} &middot; mood {{ p.mood }}{% endif %}{% if p.canvas %} &middot; {{ p.canvas }}{% endif %}</span>
+        </div>
+        <p class="brand-muted">Open in Studio: <code>cd "{{ p.path }}" &amp;&amp; npx hyperframes preview --background</code></p>
+        {% if p.renders %}
+        <div class="video-renders">
+            {% for r in p.renders %}
+            <div class="video-render">
+                <video src="{{ url_for('video_render', project=p.name, filename=r.name) }}" controls preload="metadata"></video>
+                <div class="brand-muted">{{ r.name }} &middot; {{ r.mb }} MB &middot; {{ r.when }}</div>
+            </div>
+            {% endfor %}
+        </div>
+        {% else %}<p class="brand-muted">No render yet.</p>{% endif %}
+    </section>
+    {% endfor %}
+</div>
+
+<div class="resizer-page rz-page" id="video-resizer">
+    <h1>Video Resizer</h1>
+    <p class="form-subtitle">One master video in, every platform size out, to <code>resized_video/</code>. A file that already fits is copied untouched.</p>
+
+    <form method="POST" action="{{ url_for('video_resizer_page') }}" enctype="multipart/form-data" class="section rz-form" id="video-form">
+        <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+        <div class="rz-layout">
+            <div class="rz-main">
+                {{ source_block('video', existing_videos, posted_video, url_for('video_resizer_source', name='x')[:-1]) }}
+                {{ focal_grid('focal-grid-video', 'focal-input-video', focal_points, selected_focal) }}
+                <div class="rz-block rz-frames" id="rz-frames">
+                    <div class="rz-h">Frame by hand <span class="brand-muted">optional</span></div>
+                    <div class="rz-frame-shapes">
+                        {% for sh in ['9:16', '4:5', '1:1', '16:9'] %}<button type="button" class="rz-chip" data-shape="{{ sh }}">{{ sh }}</button>{% endfor %}
+                    </div>
+                    <div class="rz-frame-tools" id="rz-frame-tools" hidden>
+                        <label class="brand-muted">zoom <input type="range" id="rz-zoom" min="25" max="100" value="100"></label>
+                        <button type="button" class="btn btn-secondary btn-sm" id="rz-frame-reset">Back to the focal point</button>
+                        <button type="button" class="btn btn-secondary btn-sm" id="rz-frame-done">Done</button>
+                    </div>
+                    <p class="brand-muted rz-note">Pick a shape, then drag its box on the video and zoom in if you like. Every size of that shape is cut exactly there. Shapes you leave alone follow the focal point. Scrub the video to check the frame works for the whole clip.</p>
+                    <input type="hidden" name="frames" id="rz-frames-input" value="{{ frames_json if frames_json is defined else '' }}">
+                </div>
+            </div>
+
+            <aside class="rz-panel">
+                {{ presets_block(presets) }}
+                <div class="rz-h rz-h-sizes">Sizes <span class="brand-muted" id="rz-total"></span></div>
+                {{ sizes_block(export_groups, picked, 'video') }}
+
+                <div class="rz-block">
+                    <span class="rz-h">Trim</span> <span class="brand-muted">seconds, blank = the whole video; each size is also cut to its platform's maximum</span>
+                    <div class="trim-inputs rz-trim">
+                        <label>from <input type="number" id="trim_start" name="trim_start" min="0" step="0.1" placeholder="0" value="{{ trim[0] if trim is defined else '' }}"></label>
+                        <label>to <input type="number" id="trim_end" name="trim_end" min="0" step="0.1" placeholder="end" value="{{ trim[1] if trim is defined else '' }}"></label>
+                        <button type="button" class="btn btn-secondary btn-sm" id="rz-mark-in" title="Set 'from' to where the preview is">from here</button>
+                        <button type="button" class="btn btn-secondary btn-sm" id="rz-mark-out" title="Set 'to' to where the preview is">to here</button>
+                    </div>
+                </div>
+                {% include "_resizer_metadata.html" %}
+
+                <div class="form-actions rz-go">
+                    <button type="submit" class="btn btn-accent" id="video-submit-btn" data-verb="Make">Make every size</button>
+                    <span class="brand-muted rz-go-note" id="rz-go-note">Nothing ticked makes all of them.</span>
+                </div>
+                <div class="processing-overlay" id="processing-overlay" style="display:none;">
+                    <div class="processing-content">
+                        <div class="processing-spinner"></div>
+                        <p class="processing-title">Encoding...</p>
+                        <p class="processing-detail">Video takes a while: about a minute per size for a long file.</p>
+                        <div class="processing-bar"><div class="processing-bar-fill"></div></div>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </form>
+
+    {% if results %}
+    <section class="section rz-results">
+        <div class="results-header">
+            <h2>{{ results|length }} files made</h2>
+            <span class="results-meta-info">focal <strong>{{ selected_focal }}</strong>{% if frames %} &middot; framed by hand: <strong>{{ frames.keys()|join(', ') }}</strong>{% endif %} &middot; in <code>resized_video/</code></span>
+        </div>
+        {% if warnings %}
+        <div class="alert alert-overdue"><strong>Warnings</strong><ul>{% for w in warnings %}<li>{{ w }}</li>{% endfor %}</ul></div>
+        {% endif %}
+        <div class="results-grid rz-results-grid">
+            {% for r in results %}
+            <div class="result-card rz-result">
+                <div class="result-thumb rz-thumb" style="aspect-ratio: {{ r.width }} / {{ r.height }}"><video src="{{ url_for('serve_resized_video', filename=r.filename) }}" muted playsinline preload="metadata" controls></video></div>
+                <div class="result-info"><span class="result-name">{{ r.filename }}</span>
+                    <span class="result-meta">{{ r.width }}x{{ r.height }}, {{ "%.1f"|format(r.duration) }} s, {% if r.size_kb < 1024 %}{{ r.size_kb }} KB{% else %}{{ "%.1f"|format(r.size_kb / 1024) }} MB{% endif %}</span></div>
+            </div>
+            {% endfor %}
+        </div>
+    </section>
+    {% endif %}
+</div>
+{% if open_resizer %}<script>document.getElementById('video-resizer').scrollIntoView();</script>{% endif %}
+<script src="{{ url_for('static', filename='resizer.js') }}?v=4"></script>
+{% endblock %}

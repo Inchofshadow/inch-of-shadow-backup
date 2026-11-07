@@ -1,0 +1,73 @@
+{% extends "base.html" %}
+{% block title %}{{ r.title }}{% endblock %}
+{% block content %}
+<div class="archive-page archive-detail">
+    <nav class="breadcrumb">
+        <a href="{{ url_for('archive_page') }}">Shadow Archive</a>
+        <span class="breadcrumb-sep">/</span>
+        <span class="breadcrumb-current">{{ r.id }}</span>
+    </nav>
+
+    <div class="archive-detail-head">
+        {% if r.thumb %}<img class="archive-detail-thumb" src="{{ url_for('archive_thumb', rid=r.id) }}" alt="{{ r.title }}">{% endif %}
+        <div>
+            <h1>{{ r.title }}</h1>
+            <div class="brand-muted">{{ r.id }} · {{ r.kind }} · {{ r.source }} · added {{ r.added }} · {{ r.read_level }}</div>
+            <div class="archive-chips">
+                {% if r.origin == 'ours' %}<span class="archive-chip archive-chip-ours">ours</span>{% else %}<span class="archive-chip archive-weight-{{ r.weight|replace(' ', '-') }}">{{ r.weight }}</span>{% endif %}
+                {% for t in r.topics %}<span class="archive-chip">{{ t }}</span>{% endfor %}
+                <span class="archive-chip archive-chip-lane">{{ r.lane }}</span>
+                {% for s in r.releases %}<a class="archive-chip archive-chip-release" href="{{ url_for('release_detail', slug=s) }}">{{ s }}</a>{% endfor %}
+            </div>
+            <div class="archive-links">{% for u in r.urls %}<a href="{{ u }}" target="_blank" rel="noopener">{{ u }}</a>{% endfor %}</div>
+        </div>
+    </div>
+
+    {% if examples %}
+    <section class="section">
+        <div class="section-header"><h2>Examples</h2><span class="brand-muted">{{ examples|length }} picture{{ '' if examples|length == 1 else 's' }}, click one to see it big</span></div>
+        <div class="section-body"><div class="archive-examples" data-lb-group>
+            {% for x in examples %}
+            <a class="archive-example{% if x.mine %} archive-example-mine{% endif %}" href="{{ x.href or x.src }}" data-lb data-lb-src="{{ x.src }}" data-lb-title="{{ x.name }}" data-lb-text="{{ x.what }}"{% if x.href %} data-lb-href="{{ x.href }}"{% endif %}>
+                <img src="{{ x.src }}" alt="{{ x.name }}" loading="lazy">
+                {% if x.name %}<span class="archive-example-name">{% if x.mine %}★ {% endif %}{{ x.name }}</span>{% endif %}
+                {% if x.what %}<span class="archive-example-what">{{ x.what }}</span>{% endif %}
+            </a>
+            {% endfor %}
+        </div></div>
+    </section>
+    {% else %}
+    <p class="brand-muted archive-no-examples">No example pictures for this reference yet.</p>
+    {% endif %}
+
+    {% if r.execution %}
+    <section class="section">
+        <div class="section-header"><h2>Execution</h2><span class="brand-muted">the idea is kept, how it is made is still open</span></div>
+        <div class="section-body"><p>{{ r.execution }}</p>
+        {% if r.related %}<p class="brand-muted">Related: {% for x in r.related %}<a href="{{ url_for('archive_detail', rid=x) }}">{{ x }}</a>{% if not loop.last %}, {% endif %}{% endfor %}</p>{% endif %}</div>
+    </section>
+    {% endif %}
+
+    <section class="section">
+        <div class="section-header"><h2>{% if r.origin == 'ours' %}What Amir said{% else %}Why Amir sent it{% endif %}</h2><span class="brand-muted">his words</span></div>
+        <div class="section-body"><p class="archive-reason">{{ r.amir_reason }}</p>
+        {% if r.release_notes %}<p class="brand-muted">{{ r.release_notes }}</p>{% endif %}
+        {% if r.do_not %}<p><strong>Not for us:</strong> {{ r.do_not }}</p>{% endif %}</div>
+    </section>
+
+    {% if children %}
+    <section class="section">
+        <div class="section-header"><h2>Goes deeper</h2><span class="brand-muted">the big material behind this entry</span></div>
+        <div class="section-body"><ul class="archive-children">
+            {% for c in children %}<li><a href="{{ c.url }}">{{ c.label }}</a> <span class="brand-muted">{{ c.path }}</span></li>{% endfor %}
+        </ul></div>
+    </section>
+    {% endif %}
+
+    <details class="section archive-notes">
+        <summary class="section-header"><h2>Notes</h2><span class="brand-muted">click to read</span></summary>
+        <div class="section-body archive-md">{{ notes_html|safe }}</div>
+    </details>
+</div>
+<script src="{{ url_for('static', filename='lightbox.js') }}?v=1"></script>
+{% endblock %}

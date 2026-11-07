@@ -1,0 +1,20 @@
+sample,ms,body Hz,note,prominence dB,low vs high dB,class
+CC_LSnare,490,91,F#1 -32,31.8,+6.4,clear note
+CC_VSnare,250,129,C2 -25,22.8,-10.4,body leans
+ULTIMATE_CC - clap - 2,1105,287,D3 -42,-9.4,-34.1,noise / no note
+ULTIMATE_CC - clap - 7,469,388,G3 -20,-4.3,-25.3,noise / no note
+ULTIMATE_CC - clap - 9,462,211,G#2 +30,4.5,-19.3,noise / no note
+ULTIMATE_CC - snare - 11,188,397,G3 +22,16.3,-15.0,body leans
+ULTIMATE_CC - snare - 14,480,153,D#2 -24,28.2,-1.7,clear note
+ULTIMATE_CC - snare - 4,136,120,A#1 +47,21.7,-7.4,body leans
+ULTIMATE_CC - snare - 6,135,90,F#1 -44,23.5,-3.1,body leans
+Snare (Alice Practice),140,120,A#1 +47,23.0,-1.2,body leans
+Snare (Birds),171,145,D2 -18,31.2,-2.1,clear note
+Snare (Crimewave),135,90,F#1 -44,23.5,-3.1,body leans
+Snare (Fleece),119,132,C2 +14,34.6,+5.9,clear note
+Snare (Good Time),136,120,A#1 +47,21.7,-7.4,body leans
+Snare (Love And Caring),210,96,G1 -44,31.5,+2.4,clear note
+Snare (Not In Love),341,144,D2 -34,13.5,-13.2,noise / no note
+Snare (Vanished),126,128,C2 -40,21.2,-9.1,body leans
+Clap (Empathy),1105,287,D3 -42,-9.4,-34.1,noise / no note
+✧CRIMEWAVE,135,90,F#1 -44,23.5,-3.1,body leans

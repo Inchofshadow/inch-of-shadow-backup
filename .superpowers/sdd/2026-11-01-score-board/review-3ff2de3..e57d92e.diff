@@ -1,0 +1,362 @@
+# Review package: 3ff2de3..HEAD
+
+## Commits
+e57d92e feat(stats): score board builder with cards, health row and ladder charts
+
+## Files changed
+ release_manager/score_board.py | 292 +++++++++++++++++++++++++++++++++++++++++
+ tests/test_score_board.py      |  47 +++++++
+ 2 files changed, 339 insertions(+)
+
+## Diff
+diff --git a/release_manager/score_board.py b/release_manager/score_board.py
+new file mode 100644
+index 0000000..1d3aed4
+--- /dev/null
++++ b/release_manager/score_board.py
+@@ -0,0 +1,292 @@
++"""Score board data: cards against targets, health row, ladder charts, trends.
++
++Pure data layer. Reads the targets file, the stats snapshots and a few
++read-only automation state files; never raises because a file is missing.
++"""
++from __future__ import annotations
++
++import json
++import math
++from datetime import date, datetime, timedelta
++from pathlib import Path
++from typing import Optional
++
++from release_manager.stats_tracks import sparkline
++from stats import ig_followback, spotify_s4a, storage
++from stats.targets import (
++    current_rung,
++    ladder_value,
++    light_for_floor,
++    light_for_ladder,
++    load_targets,
++    progress_pct,
++)
++
++ROOT = Path(__file__).resolve().parent.parent
++FOLLOWBACK_FILE = ROOT / "stats_snapshots" / "ig_followback.json"
++AUTONOMY_FILE = ROOT / "scene_intelligence" / "autonomy_state.json"
++TARGET_LIST_FILE = ROOT / "scene_intelligence" / "ig_target_list.json"
++DETECTIONS_FILE = ROOT / "scene_intelligence" / "detection_events.json"
++DATA_DIR = ROOT / "data"
++SPARK_DAYS = 90
++
++TRENDS = (
++    ("yt_subscribers", "YouTube subscribers", "snapshot:youtube.subscribers"),
++    ("spotify_followers", "Spotify followers", "s4a:weeks.followers"),
++    ("bandcamp_followers", "Bandcamp followers", "manual:bandcamp.followers"),
++)
++
++
++def _read_json(path: Path):
++    try:
++        return json.loads(Path(path).read_text(encoding="utf-8"))
++    except (OSError, ValueError):
++        return None
++
++
++# ---------------------------------------------------------------- series
++
++def _one_source(source: str) -> list:
++    kind, _, rest = source.partition(":")
++    if kind in ("snapshot", "manual"):
++        platform, _, metric = rest.partition(".")
++        return storage.get_time_series(platform, metric, days=400)
++    if kind == "s4a":
++        field = rest.partition(".")[2]
++        weeks = spotify_s4a.load().get("weeks") or {}
++        return [{"date": end, "value": w[field]} for end, w in sorted(weeks.items())
++                if isinstance(w, dict) and w.get(field) is not None]
++    if kind == "followback":
++        data = _read_json(FOLLOWBACK_FILE) or {}
++        if data.get("export_date") and data.get(rest) is not None:
++            return [{"date": data["export_date"], "value": data[rest]}]
++    return []
++
++
++def series_for(source: str) -> list:
++    """Resolve a source string; '|' lists alternatives, first non-empty wins."""
++    for part in source.split("|"):
++        try:
++            series = _one_source(part.strip())
++        except Exception:
++            series = []
++        if series:
++            return series
++    return []
++
++
++# ----------------------------------------------------------------- cards
++
++def _fmt(v) -> str:
++    if v is None:
++        return ""
++    if float(v).is_integer():
++        return "{:,}".format(int(v))
++    return "{:,.1f}".format(v)
++
++
++def _mon(day: str) -> str:
++    return date.fromisoformat(day).strftime("%b %d").upper()
++
++
++def _recent(series: list, today: date, days: int = SPARK_DAYS) -> list:
++    cut = (today - timedelta(days=days)).isoformat()
++    return [p for p in series if p["date"] >= cut]
++
++
++def _card(key: str, m: dict, period: dict, today: date) -> dict:
++    series = series_for(m.get("source", ""))
++    last = series[-1] if series else None
++    raw = float(last["value"]) if last else None
++    card = {"key": key, "label": m["label"], "source": m.get("source", ""), "unit": m.get("unit", ""),
++            "value": _fmt(raw) if raw is not None else "", "raw": raw,
++            "light": "none", "light_text": "collecting", "rung_line": None, "progress": None,
++            "base_line": None, "as_of": last["date"] if last else None,
++            "points": sparkline(_recent(series, today))}
++    kind = m["kind"]
++    base = (m.get("baseline") or {}).get("value")
++    if kind == "ladder" and base is not None:
++        card["light"], card["light_text"] = light_for_ladder(raw, ladder_value(m, period, today))
++        rung = current_rung(m, today)
++        if rung:
++            card["base_line"] = "%s BASE, %s %s RUNG, %s TARGET" % (
++                _fmt(base), _mon(rung[0]), _fmt(rung[1]), _fmt(m.get("target")))
++            if raw is not None:
++                card["rung_line"] = "%s %s, %s" % (_mon(rung[0]), _fmt(rung[1]), card["light_text"].upper())
++        if raw is not None and m.get("target") is not None:
++            card["progress"] = progress_pct(base, m["target"], raw)
++    elif kind == "floor":
++        card["light"], card["light_text"] = light_for_floor(raw, m["floor"])
++        card["base_line"] = "%s BASE, FLOOR %s" % (_fmt((m.get("baseline") or {}).get("value")), _fmt(m["floor"]))
++        if raw is not None:
++            card["rung_line"] = None
++    return card
++
++
++def _score(cards: list) -> dict:
++    n = {k: sum(1 for c in cards if c["light"] == k) for k in ("green", "amber", "red", "none")}
++    with_data = n["green"] + n["amber"] + n["red"]
++    on_pace = n["green"] >= math.ceil(with_data / 2)
++    parts = ["ON PACE" if on_pace else "BEHIND", "%d/%d GREEN" % (n["green"], with_data)]
++    if n["amber"]:
++        parts.append("%d DRIFTING" % n["amber"])
++    if n["red"]:
++        parts.append("%d BEHIND" % n["red"])
++    if n["none"]:
++        parts.append("%d COLLECTING" % n["none"])
++    return dict(n, on_pace=on_pace, with_data=with_data, line=", ".join(parts))
++
++
++# ---------------------------------------------------------------- health
++
++def _check(key, label, ok, detail, href=None) -> dict:
++    return {"key": key, "label": label, "ok": ok, "detail": detail, "href": href}
++
++
++def _newest_with(snaps: list, platform: str, *fields):
++    for s in snaps:
++        p = (s.get("platforms") or {}).get(platform) or {}
++        if all(p.get(f) is not None for f in fields):
++            return p
++    return None
++
++
++def _days_old(stamp: str, today: date) -> Optional[int]:
++    try:
++        return (today - datetime.fromisoformat(stamp[:19]).date()).days
++    except (TypeError, ValueError):
++        return None
++
++
++def _health(today: date) -> list:
++    try:
++        snaps = storage.list_snapshots()
++    except Exception:
++        snaps = []
++    out = []
++
++    ig = _newest_with(snaps, "instagram", "followers", "following")
++    if ig and ig["following"]:
++        r = ig["followers"] / ig["following"]
++        out.append(_check("ratio", "Followers to following", r >= 1.0, "%.2f, floor 1.0" % r))
++    else:
++        out.append(_check("ratio", "Followers to following", None, "no reading, floor 1.0"))
++
++    auto = _read_json(AUTONOMY_FILE)
++    scores = [e for e in (auto or {}).get("recent", []) if e.get("platform") == "ig" and e.get("score") is not None]
++    if scores:
++        s = scores[-1]["score"]
++        out.append(_check("session_score", "Last IG session score", s >= 8, "%s, min 8" % s))
++    else:
++        out.append(_check("session_score", "Last IG session score", None, "no session, min 8"))
++
++    tl = _read_json(TARGET_LIST_FILE)
++    if tl is not None:
++        n = sum(1 for q in tl.get("queue", []) if q.get("status") == "pending" and q.get("audit_date"))
++        out.append(_check("vetted_pool", "Vetted target pool", n >= 30, "%d, min 30" % n))
++    else:
++        out.append(_check("vetted_pool", "Vetted target pool", None, "no file, min 30"))
++
++    hk = next(((s.get("platforms") or {}).get("hikerapi") for s in snaps if (s.get("platforms") or {}).get("hikerapi")), None)
++    if hk and hk.get("requests") is not None:
++        out.append(_check("hikerapi_balance", "HikerAPI requests left", hk["requests"] > 10000,
++                          "{:,}, min 10,000".format(int(hk["requests"]))))
++    else:
++        out.append(_check("hikerapi_balance", "HikerAPI requests left", None, "no reading, min 10,000"))
++
++    det = _read_json(DETECTIONS_FILE)
++    if det is not None:
++        cut = (today - timedelta(days=7)).isoformat()
++        n = sum(int(e.get("count") or 1) for e in det.get("events", []) if cut <= str(e.get("date", "")) <= today.isoformat())
++        out.append(_check("detections", "Detection events, 7 days", n == 0, "%d, max 0" % n))
++    else:
++        out.append(_check("detections", "Detection events, 7 days", None, "no file, max 0"))
++
++    age = _days_old(snaps[0].get("timestamp", ""), today) if snaps else None
++    out.append(_check("snapshot_age", "Newest stats snapshot", None if age is None else age <= 2,
++                      "no snapshot, max 2 days" if age is None else "%d days, max 2" % age))
++
++    exp = ig_followback.newest_export_dir(DATA_DIR)
++    eage = None
++    if exp:
++        m = ig_followback._EXPORT_RE.match(exp.name)
++        eage = _days_old(m.group(1), today) if m else None
++    out.append(_check("export_age", "Newest IG export", None if eage is None else eage <= 40,
++                      "no export, max 40 days" if eage is None else "%d days, max 40" % eage))
++
++    reads = [w.get("read_at") for w in (spotify_s4a.load().get("weeks") or {}).values() if isinstance(w, dict) and w.get("read_at")]
++    sage = _days_old(max(reads), today) if reads else None
++    out.append(_check("spotify_read_age", "Newest Spotify read", None if sage is None else sage <= 10,
++                      "no read, max 10 days" if sage is None else "%d days, max 10" % sage))
++    return out
++
++
++# ----------------------------------------------------------- ladder chart
++
++def ladder_svg(series: list, m: dict, today: date, period: dict, w: int = 520, h: int = 200) -> str:
++    start, end = date.fromisoformat(period["start"]), date.fromisoformat(period["end"])
++    span = max((end - start).days, 1)
++    base = float(m["baseline"]["value"])
++    rungs = sorted((date.fromisoformat(k), float(v)) for k, v in (m.get("rungs") or {}).items())
++    target = float(m["target"]) if m.get("target") is not None else (rungs[-1][1] if rungs else base)
++    inside = [(date.fromisoformat(p["date"]), float(p["value"])) for p in series
++              if start <= date.fromisoformat(p["date"]) <= end]
++    vals = [v for _, v in inside] + [base, target] + [v for _, v in rungs]
++    lo, hi = min(vals), max(vals)
++    pad = ((hi - lo) or 1) * 0.1
++    lo, hi = lo - pad, hi + pad
++
++    def x(d):
++        return 40 + (d - start).days / span * 460
++
++    def y(v):
++        return 180 - (v - lo) / (hi - lo) * 160
++
++    stair = [(start, base)] + rungs
++    parts = ['<svg viewBox="0 0 %d %d" xmlns="http://www.w3.org/2000/svg" role="img">' % (w, h)]
++    parts.append('<line class="sb-base" x1="40" y1="%.1f" x2="500" y2="%.1f"/>' % (y(base), y(base)))
++    parts.append('<polyline class="sb-ladder" points="%s"/>' % " ".join("%.1f,%.1f" % (x(d), y(v)) for d, v in stair))
++    if len(inside) > 1:
++        parts.append('<polyline class="sb-line" points="%s"/>' % " ".join("%.1f,%.1f" % (x(d), y(v)) for d, v in inside))
++    elif inside:
++        parts.append('<circle class="sb-line" cx="%.1f" cy="%.1f" r="2"/>' % (x(inside[0][0]), y(inside[0][1])))
++    if start <= today <= end:
++        tx = x(today)
++        parts.append('<line class="sb-today" x1="%.1f" y1="20" x2="%.1f" y2="180"/>' % (tx, tx))
++        parts.append('<text class="sb-today-label" x="%.1f" y="14" text-anchor="middle">today</text>' % tx)
++    for d, v in rungs:
++        parts.append('<text x="%.1f" y="%.1f" text-anchor="end">%s</text>' % (x(d), y(v) - 5, _fmt(v)))
++    parts.append('<text x="40" y="%.1f">%s</text>' % (y(base) - 5, _fmt(base)))
++    if rungs and target != rungs[-1][1]:
++        parts.append('<text x="500" y="%.1f" text-anchor="end">%s</text>' % (y(target) - 5, _fmt(target)))
++    tick = date(start.year, start.month, 1)
++    while tick <= end:
++        if tick >= start:
++            parts.append('<text x="%.1f" y="196">%s</text>' % (x(tick), tick.strftime("%b").upper()))
++        tick = date(tick.year + tick.month // 12, tick.month % 12 + 1, 1)
++    parts.append("</svg>")
++    return "".join(parts)
++
++
++# ----------------------------------------------------------------- build
++
++def build(today: Optional[date] = None) -> dict:
++    today = today or date.today()
++    targets = load_targets()
++    period = targets["period"]
++    cards, ladders = [], []
++    for key, m in targets["metrics"].items():
++        cards.append(_card(key, m, period, today))
++        if m["kind"] == "ladder" and (m.get("baseline") or {}).get("value") is not None:
++            ladders.append({"key": key, "label": m["label"],
++                            "svg": ladder_svg(_recent(series_for(m.get("source", "")), today, 120), m, today, period)})
++    health = _health(today)
++    trends = []
++    for key, label, source in TRENDS:
++        s = series_for(source)
++        last = s[-1] if s else None
++        trends.append({"key": key, "label": label, "value": _fmt(last["value"]) if last else "",
++                       "points": sparkline(_recent(s, today)), "as_of": last["date"] if last else None})
++    return {"score": _score(cards), "cards": cards, "health": health,
++            "health_summary": {"pass": sum(1 for h in health if h["ok"] is True), "total": len(health)},
++            "trends": trends, "ladders": ladders}
+diff --git a/tests/test_score_board.py b/tests/test_score_board.py
+new file mode 100644
+index 0000000..03af914
+--- /dev/null
++++ b/tests/test_score_board.py
+@@ -0,0 +1,47 @@
++from datetime import date
++from release_manager import score_board as sb
++
++
++def test_build_has_six_cards_in_targets_order_and_a_score_line():
++    b = sb.build(today=date(2026, 11, 15))
++    assert [c["key"] for c in b["cards"]] == ["ig_followers", "ig_followback_pct", "ig_reach_30d", "sc_followers", "spotify_monthly_active", "tiktok_followers"]
++    assert b["score"]["with_data"] + b["score"]["none"] == 6
++    assert b["score"]["line"].startswith(("ON PACE", "BEHIND"))
++    tiktok = b["cards"][-1]
++    assert tiktok["light"] == "none" and tiktok["light_text"] == "collecting" and tiktok["progress"] is None
++
++
++def test_collecting_metric_is_excluded_from_the_score_and_has_no_ladder(monkeypatch):
++    t = sb.load_targets()
++    t["metrics"]["sc_followers"]["baseline"] = {"value": None, "date": None}
++    monkeypatch.setattr(sb, "load_targets", lambda: t)
++    b = sb.build(today=date(2026, 11, 15))
++    sc = next(c for c in b["cards"] if c["key"] == "sc_followers")
++    assert sc["light"] == "none" and "sc_followers" not in [l["key"] for l in b["ladders"]]
++
++
++def test_missing_platform_in_newest_snapshot_keeps_last_good_reading(monkeypatch):
++    series = [{"date": "2026-11-02", "value": 950}]
++    monkeypatch.setattr(sb, "series_for", lambda source: series if source.startswith("snapshot:instagram") else [])
++    b = sb.build(today=date(2026, 11, 15))
++    ig = next(c for c in b["cards"] if c["key"] == "ig_followers")
++    assert ig["value"] == "950" and ig["as_of"] == "2026-11-02"
++
++
++def test_trend_cards():
++    t = sb.build(today=date(2026, 11, 15))["trends"]
++    assert [x["key"] for x in t] == ["yt_subscribers", "spotify_followers", "bandcamp_followers"]
++
++
++def test_health_row_has_eight_checks():
++    b = sb.build(today=date(2026, 11, 15))
++    h = b["health"]
++    assert [x["key"] for x in h] == ["ratio", "session_score", "vetted_pool", "hikerapi_balance", "detections", "snapshot_age", "export_age", "spotify_read_age"]
++    assert all(x["ok"] in (True, False, None) for x in h)
++    assert b["health_summary"]["total"] == 8
++
++
++def test_ladder_svg_contains_the_rungs_and_today():
++    b = sb.build(today=date(2026, 11, 15))
++    sc = next(l for l in b["ladders"] if l["key"] == "sc_followers")
++    assert sc["svg"].startswith("<svg") and "510" in sc["svg"] and "600" in sc["svg"] and "today" in sc["svg"]

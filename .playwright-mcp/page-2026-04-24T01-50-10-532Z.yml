@@ -1,0 +1,597 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - banner [ref=e3]:
+      - generic [ref=e4]:
+        - generic [ref=e5]:
+          - link "SoundCloud" [ref=e7] [cursor=pointer]:
+            - /url: /
+            - img [ref=e9]
+            - text: SoundCloud
+          - navigation [ref=e11]:
+            - list [ref=e12]:
+              - listitem [ref=e13]:
+                - link "Home" [ref=e14] [cursor=pointer]:
+                  - /url: /discover
+              - listitem [ref=e15]:
+                - link "Feed" [ref=e16] [cursor=pointer]:
+                  - /url: /feed
+              - listitem [ref=e17]:
+                - link "Library" [ref=e18] [cursor=pointer]:
+                  - /url: /you/library
+        - search [ref=e20]:
+          - generic [ref=e21]:
+            - searchbox "Search" [ref=e22]
+            - button "Search" [ref=e23] [cursor=pointer]:
+              - img [ref=e25]
+              - generic [ref=e27]: Search
+        - generic [ref=e28]:
+          - generic [ref=e29]:
+            - button "Sign in" [ref=e30] [cursor=pointer]:
+              - generic: Sign in
+            - button "Create a SoundCloud account" [ref=e31] [cursor=pointer]:
+              - generic: Create account
+          - link "Upload" [ref=e33] [cursor=pointer]:
+            - /url: /upload
+            - generic [ref=e34]: Upload
+          - list [ref=e35]:
+            - listitem [ref=e36]:
+              - button "Settings and more" [ref=e37] [cursor=pointer]:
+                - generic [ref=e38]:
+                  - img [ref=e40]
+                  - generic [ref=e42]: Settings and more
+    - generic [ref=e43]:
+      - generic [ref=e47]:
+        - generic [ref=e51]:
+          - strong [ref=e52]: "Now available:"
+          - text: Get heard by up to 100 listeners on your next upload with Artist or Artist Pro.
+          - link "Learn More" [ref=e53] [cursor=pointer]:
+            - /url: https://checkout.soundcloud.com/artist?ref=t375#planPicker
+        - button "Close" [ref=e54] [cursor=pointer]:
+          - img [ref=e56]
+      - main [ref=e58]:
+        - generic [ref=e59]:
+          - generic [ref=e63]:
+            - generic "Ransom Note’s avatar" [ref=e66] [cursor=pointer]
+            - generic [ref=e67]:
+              - heading "Ransom Note Verified" [level=2] [ref=e68]:
+                - text: Ransom Note
+                - img "Verified" [ref=e71]
+              - heading "London, United Kingdom" [level=3] [ref=e74]
+              - heading "Artist Pro" [level=3] [ref=e75]:
+                - link "Artist Pro" [ref=e76] [cursor=pointer]:
+                  - /url: https://checkout.soundcloud.com/artist?ref=t071
+                  - generic "Artist Pro" [ref=e77]:
+                    - generic [ref=e79]:
+                      - img [ref=e80]
+                      - generic [ref=e82]: Artist Pro
+          - generic [ref=e86]:
+            - list [ref=e88]:
+              - listitem [ref=e89]:
+                - link "All" [ref=e90] [cursor=pointer]:
+                  - /url: /the-ransom-note
+              - listitem [ref=e91]:
+                - link "Popular tracks" [ref=e92] [cursor=pointer]:
+                  - /url: /the-ransom-note/popular-tracks
+              - listitem [ref=e93]:
+                - link "Tracks" [ref=e94]:
+                  - /url: /the-ransom-note/tracks
+              - listitem [ref=e95]:
+                - link "Albums" [ref=e96] [cursor=pointer]:
+                  - /url: /the-ransom-note/albums
+              - listitem [ref=e97]:
+                - link "Playlists" [ref=e98] [cursor=pointer]:
+                  - /url: /the-ransom-note/sets
+              - listitem [ref=e99]:
+                - link "Reposts" [ref=e100] [cursor=pointer]:
+                  - /url: /the-ransom-note/reposts
+            - generic [ref=e102]:
+              - link "Go to station" [ref=e103] [cursor=pointer]:
+                - /url: /discover/sets/artist-stations:3363352
+                - generic:
+                  - img
+                - generic: Station
+              - button "Follow" [ref=e104] [cursor=pointer]:
+                - generic:
+                  - img
+                - generic: Follow
+              - button "Share" [ref=e105] [cursor=pointer]:
+                - generic:
+                  - img
+                - generic: Share
+              - button "More" [ref=e106] [cursor=pointer]:
+                - generic:
+                  - img
+                - generic: More
+          - generic [ref=e107]:
+            - article [ref=e109]:
+              - generic [ref=e110]:
+                - paragraph [ref=e111]:
+                  - text: Show some love for your favourite artists. Follow this link to their own support page.
+                  - link "Learn more" [ref=e112] [cursor=pointer]:
+                    - /url: https://help.soundcloud.com/hc/articles/360045363454
+                - link "Support Ransom Note" [ref=e113] [cursor=pointer]:
+                  - /url: https://gate.sc?url=https%3A%2F%2Fwww.patreon.com%2Fransomnote&token=762ad5-1-1776995410320
+                  - generic:
+                    - img
+                  - generic: Support Ransom Note
+            - article [ref=e114]:
+              - table [ref=e115]:
+                - rowgroup [ref=e116]:
+                  - row "Followers 76K Following 1,306 Tracks 5,114" [ref=e117]:
+                    - cell "Followers 76K" [ref=e118]:
+                      - link "Followers 76K" [ref=e119] [cursor=pointer]:
+                        - /url: /the-ransom-note/followers
+                        - heading "Followers" [level=3] [ref=e120]
+                        - generic [ref=e121]: 76K
+                    - cell "Following 1,306" [ref=e122]:
+                      - link "Following 1,306" [ref=e123] [cursor=pointer]:
+                        - /url: /the-ransom-note/following
+                        - heading "Following" [level=3] [ref=e124]
+                        - generic [ref=e125]: 1,306
+                    - cell "Tracks 5,114" [ref=e126]:
+                      - link "Tracks 5,114" [ref=e127] [cursor=pointer]:
+                        - /url: /the-ransom-note/tracks
+                        - heading "Tracks" [level=3] [ref=e128]
+                        - generic [ref=e129]: 5,114
+              - generic [ref=e131]:
+                - generic [ref=e134]:
+                  - paragraph [ref=e135]: Ransom Note is an online music, arts and culture magazine. We provide a home for readers and writers with boundless enthusiasm, esoteric knowledge, fierce opinions and impeccable taste.
+                  - paragraph [ref=e136]: With our core team immersed in all aspects of dance music, we publish news, articles, and interviews covering the greatest in innovative, underground culture from across the globe. We offer regular, exclusive music and mixtapes from our favourite artists, and publish features shining a light on everything from the freshest new artists to the untold tales from rave history.
+                  - paragraph [ref=e137]: Alongside this we offer musings on film, books, life, and art, generating some context and controversy as an antidote to the reheated PR that clogs up the internet. Our office is fuelled by Tunnock’s Bars, cat memes, hangovers and a ridiculous, never ending love for our culture.
+                  - paragraph [ref=e138]: We're always interested in getting new writers on board – feel free to get in touch if you’ve got a story to tell.
+                  - paragraph [ref=e139]: With love until the grave.
+                - link "Show more" [ref=e140] [cursor=pointer]:
+                  - /url: "#"
+              - list [ref=e142]:
+                - listitem [ref=e143]:
+                  - link "Website" [ref=e145] [cursor=pointer]:
+                    - /url: https://gate.sc?url=http%3A%2F%2Fwww.theransomnote.com%2F&token=3c4bd1-1-1776995410288
+                    - img [ref=e147]
+                    - text: Website
+                - listitem [ref=e149]:
+                  - link "Insta" [ref=e151] [cursor=pointer]:
+                    - /url: https://gate.sc?url=https%3A%2F%2Finstagram.com%2Fthisisransomnote&token=62a64a-1-1776995410288
+                    - img [ref=e153]
+                    - text: Insta
+                - listitem [ref=e156]:
+                  - link "BlueSky" [ref=e158] [cursor=pointer]:
+                    - /url: https://gate.sc?url=https%3A%2F%2Fbsky.app%2Fprofile%2Ftheransomnote.com&token=aa2103-1-1776995410289
+                    - img [ref=e160]
+                    - text: BlueSky
+                - listitem [ref=e162]:
+                  - link "Bandcamp" [ref=e164] [cursor=pointer]:
+                    - /url: https://gate.sc?url=https%3A%2F%2Fransomnoterecords.bandcamp.com%2F&token=73edf4-1-1776995410289
+                    - img [ref=e166]
+                    - text: Bandcamp
+                - listitem [ref=e168]:
+                  - link "Facebook" [ref=e170] [cursor=pointer]:
+                    - /url: https://gate.sc?url=https%3A%2F%2Fwww.facebook.com%2Ftheransomnote&token=ef944d-1-1776995410289
+                    - img [ref=e172]
+                    - text: Facebook
+            - article [ref=e174]:
+              - link "1,611 likes View all" [ref=e175] [cursor=pointer]:
+                - /url: /the-ransom-note/likes
+                - heading "1,611 likes" [level=4] [ref=e176]:
+                  - generic [ref=e177]: 1,611 likes
+                - generic [ref=e178]: View all
+              - list [ref=e181]:
+                - listitem [ref=e182]:
+                  - generic [ref=e183]:
+                    - generic "LIVE AT NYAPI - 03. Chez de Milo _ 17th . Jan . 2026" [ref=e186]
+                    - generic [ref=e187]:
+                      - generic "LIVE AT NYAPI - 03. Chez de Milo _ 17th . Jan . 2026" [ref=e188]:
+                        - generic [ref=e190]:
+                          - link "Chez de Milo" [ref=e192] [cursor=pointer]:
+                            - /url: /nyapi-seoul
+                          - link "LIVE AT NYAPI - 03. Chez de Milo _ 17th . Jan . 2026" [ref=e193] [cursor=pointer]:
+                            - /url: /nyapi-seoul/live-at-nyapi-03-chez-de-milo
+                            - generic [ref=e194]: LIVE AT NYAPI - 03. Chez de Milo _ 17th . Jan . 2026
+                      - list "Track stats" [ref=e195]:
+                        - listitem "754 plays" [ref=e196]:
+                          - generic [ref=e197]:
+                            - img [ref=e199]
+                            - generic [ref=e201]: 754 plays
+                            - text: "754"
+                        - listitem "116 likes" [ref=e202]:
+                          - link "View all likes" [ref=e203] [cursor=pointer]:
+                            - /url: /nyapi-seoul/live-at-nyapi-03-chez-de-milo/likes
+                            - img [ref=e205]
+                            - generic [ref=e207]: View all likes
+                            - text: "116"
+                        - listitem "9 reposts" [ref=e208]:
+                          - link "View all reposts" [ref=e209] [cursor=pointer]:
+                            - /url: /nyapi-seoul/live-at-nyapi-03-chez-de-milo/reposts
+                            - img [ref=e211]
+                            - generic [ref=e214]: View all reposts
+                            - text: "9"
+                        - listitem "7 comments" [ref=e215]:
+                          - link "View all comments" [ref=e216] [cursor=pointer]:
+                            - /url: /nyapi-seoul/live-at-nyapi-03-chez-de-milo/comments
+                            - img [ref=e218]
+                            - generic [ref=e220]: View all comments
+                            - text: "7"
+                - listitem [ref=e221]:
+                  - generic [ref=e222]:
+                    - generic "Morey Cillar | 143" [ref=e225]
+                    - generic [ref=e226]:
+                      - generic "Morey Cillar | 143" [ref=e227]:
+                        - generic [ref=e229]:
+                          - link "Viscera" [ref=e231] [cursor=pointer]:
+                            - /url: /visceramusic
+                          - link "Morey Cillar | 143" [ref=e232] [cursor=pointer]:
+                            - /url: /visceramusic/morey-cillar-143
+                            - generic [ref=e233]: Morey Cillar | 143
+                      - list "Track stats" [ref=e234]:
+                        - listitem "368 plays" [ref=e235]:
+                          - generic [ref=e236]:
+                            - img [ref=e238]
+                            - generic [ref=e240]: 368 plays
+                            - text: "368"
+                        - listitem "26 likes" [ref=e241]:
+                          - link "View all likes" [ref=e242] [cursor=pointer]:
+                            - /url: /visceramusic/morey-cillar-143/likes
+                            - img [ref=e244]
+                            - generic [ref=e246]: View all likes
+                            - text: "26"
+                        - listitem "5 reposts" [ref=e247]:
+                          - link "View all reposts" [ref=e248] [cursor=pointer]:
+                            - /url: /visceramusic/morey-cillar-143/reposts
+                            - img [ref=e250]
+                            - generic [ref=e253]: View all reposts
+                            - text: "5"
+                        - listitem "5 comments" [ref=e254]:
+                          - link "View all comments" [ref=e255] [cursor=pointer]:
+                            - /url: /visceramusic/morey-cillar-143/comments
+                            - img [ref=e257]
+                            - generic [ref=e259]: View all comments
+                            - text: "5"
+                - listitem [ref=e260]:
+                  - generic [ref=e261]:
+                    - 'generic "tia cousins: 8th April ''26" [ref=e264]'
+                    - generic [ref=e265]:
+                      - 'generic "tia cousins: 8th April ''26" [ref=e266]':
+                        - generic [ref=e268]:
+                          - link "Noods Radio" [ref=e270] [cursor=pointer]:
+                            - /url: /noodsradio
+                          - 'link "tia cousins: 8th April ''26" [ref=e271] [cursor=pointer]':
+                            - /url: /noodsradio/tia-cousins-8th-april-26
+                            - generic [ref=e272]: "tia cousins: 8th April '26"
+                      - list "Track stats" [ref=e273]:
+                        - listitem "343 plays" [ref=e274]:
+                          - generic [ref=e275]:
+                            - img [ref=e277]
+                            - generic [ref=e279]: 343 plays
+                            - text: "343"
+                        - listitem "26 likes" [ref=e280]:
+                          - link "View all likes" [ref=e281] [cursor=pointer]:
+                            - /url: /noodsradio/tia-cousins-8th-april-26/likes
+                            - img [ref=e283]
+                            - generic [ref=e285]: View all likes
+                            - text: "26"
+                        - listitem "4 reposts" [ref=e286]:
+                          - link "View all reposts" [ref=e287] [cursor=pointer]:
+                            - /url: /noodsradio/tia-cousins-8th-april-26/reposts
+                            - img [ref=e289]
+                            - generic [ref=e292]: View all reposts
+                            - text: "4"
+                        - listitem "3 comments" [ref=e293]:
+                          - link "View all comments" [ref=e294] [cursor=pointer]:
+                            - /url: /noodsradio/tia-cousins-8th-april-26/comments
+                            - img [ref=e296]
+                            - generic [ref=e298]: View all comments
+                            - text: "3"
+            - article
+            - article [ref=e299]:
+              - link "Fans also like Refresh" [ref=e300] [cursor=pointer]:
+                - /url: "#"
+                - heading "Fans also like" [level=4] [ref=e301]:
+                  - generic [ref=e302]: Fans also like
+                - generic [ref=e303]: Refresh
+              - list [ref=e306]:
+                - listitem [ref=e307]:
+                  - generic [ref=e308]:
+                    - link "Les Yeux Orange’s avatar" [ref=e312] [cursor=pointer]:
+                      - /url: /les-yeux-orange
+                      - generic "Les Yeux Orange’s avatar" [ref=e315]
+                    - generic [ref=e316]:
+                      - heading "Les Yeux Orange Verified" [level=3] [ref=e318]:
+                        - link "Les Yeux Orange" [ref=e319] [cursor=pointer]:
+                          - /url: /les-yeux-orange
+                        - img "Verified" [ref=e322]
+                      - generic "User stats" [ref=e327]:
+                        - list [ref=e328]:
+                          - listitem "106,676 followers" [ref=e329]:
+                            - link "106,676 followers" [ref=e330] [cursor=pointer]:
+                              - /url: /les-yeux-orange/followers
+                              - img [ref=e332]
+                              - generic [ref=e335]: 106,676 followers
+                              - generic [ref=e336]: 106K
+                          - listitem "7,486 tracks" [ref=e337]:
+                            - link "7,486 tracks" [ref=e338] [cursor=pointer]:
+                              - /url: /les-yeux-orange/tracks
+                              - img [ref=e340]
+                              - generic [ref=e342]: 7,486 tracks
+                              - generic [ref=e343]: 7,486
+                    - button "Follow" [ref=e345] [cursor=pointer]:
+                      - generic: Follow
+                - listitem [ref=e346]:
+                  - generic [ref=e347]:
+                    - link "Bolting Bits’s avatar" [ref=e351] [cursor=pointer]:
+                      - /url: /boltingbits
+                      - generic "Bolting Bits’s avatar" [ref=e354]
+                    - generic [ref=e355]:
+                      - heading "Bolting Bits Verified" [level=3] [ref=e357]:
+                        - link "Bolting Bits" [ref=e358] [cursor=pointer]:
+                          - /url: /boltingbits
+                        - img "Verified" [ref=e361]
+                      - generic "User stats" [ref=e366]:
+                        - list [ref=e367]:
+                          - listitem "39,941 followers" [ref=e368]:
+                            - link "39,941 followers" [ref=e369] [cursor=pointer]:
+                              - /url: /boltingbits/followers
+                              - img [ref=e371]
+                              - generic [ref=e374]: 39,941 followers
+                              - generic [ref=e375]: 39.9K
+                          - listitem "2,278 tracks" [ref=e376]:
+                            - link "2,278 tracks" [ref=e377] [cursor=pointer]:
+                              - /url: /boltingbits/tracks
+                              - img [ref=e379]
+                              - generic [ref=e381]: 2,278 tracks
+                              - generic [ref=e382]: 2,278
+                    - button "Follow" [ref=e384] [cursor=pointer]:
+                      - generic: Follow
+                - listitem [ref=e385]:
+                  - generic [ref=e386]:
+                    - link "whypeopledance’s avatar" [ref=e390] [cursor=pointer]:
+                      - /url: /whypeopledance
+                      - generic "whypeopledance’s avatar" [ref=e393]
+                    - generic [ref=e394]:
+                      - heading "whypeopledance Verified" [level=3] [ref=e396]:
+                        - link "whypeopledance" [ref=e397] [cursor=pointer]:
+                          - /url: /whypeopledance
+                        - img "Verified" [ref=e400]
+                      - generic "User stats" [ref=e405]:
+                        - list [ref=e406]:
+                          - listitem "42,457 followers" [ref=e407]:
+                            - link "42,457 followers" [ref=e408] [cursor=pointer]:
+                              - /url: /whypeopledance/followers
+                              - img [ref=e410]
+                              - generic [ref=e413]: 42,457 followers
+                              - generic [ref=e414]: 42.4K
+                          - listitem "3,718 tracks" [ref=e415]:
+                            - link "3,718 tracks" [ref=e416] [cursor=pointer]:
+                              - /url: /whypeopledance/tracks
+                              - img [ref=e418]
+                              - generic [ref=e420]: 3,718 tracks
+                              - generic [ref=e421]: 3,718
+                    - button "Follow" [ref=e423] [cursor=pointer]:
+                      - generic: Follow
+            - article [ref=e424]:
+              - link "1,306 following View all" [ref=e425] [cursor=pointer]:
+                - /url: /the-ransom-note/following
+                - heading "1,306 following" [level=4] [ref=e426]:
+                  - generic [ref=e427]: 1,306 following
+                - generic [ref=e428]: View all
+              - list [ref=e431]:
+                - listitem [ref=e432]:
+                  - generic [ref=e433]:
+                    - link "James Allison’s avatar" [ref=e437] [cursor=pointer]:
+                      - /url: /casinajames
+                      - generic "James Allison’s avatar" [ref=e440]
+                    - generic [ref=e441]:
+                      - heading "James Allison" [level=3] [ref=e443]:
+                        - link "James Allison" [ref=e444] [cursor=pointer]:
+                          - /url: /casinajames
+                      - generic "User stats" [ref=e447]:
+                        - list [ref=e448]:
+                          - listitem "2,277 followers" [ref=e449]:
+                            - link "2,277 followers" [ref=e450] [cursor=pointer]:
+                              - /url: /casinajames/followers
+                              - img [ref=e452]
+                              - generic [ref=e455]: 2,277 followers
+                              - generic [ref=e456]: 2,277
+                          - listitem "16 tracks" [ref=e457]:
+                            - link "16 tracks" [ref=e458] [cursor=pointer]:
+                              - /url: /casinajames/tracks
+                              - img [ref=e460]
+                              - generic [ref=e462]: 16 tracks
+                              - generic [ref=e463]: "16"
+                    - button "Follow" [ref=e465] [cursor=pointer]:
+                      - generic: Follow
+                - listitem [ref=e466]:
+                  - generic [ref=e467]:
+                    - link "Noble Circuit Records’s avatar" [ref=e471] [cursor=pointer]:
+                      - /url: /noblecircuitrecords
+                      - generic "Noble Circuit Records’s avatar" [ref=e474]
+                    - generic [ref=e475]:
+                      - heading "Noble Circuit Records" [level=3] [ref=e477]:
+                        - link "Noble Circuit Records" [ref=e478] [cursor=pointer]:
+                          - /url: /noblecircuitrecords
+                      - generic "User stats" [ref=e481]:
+                        - list [ref=e482]:
+                          - listitem "2,476 followers" [ref=e483]:
+                            - link "2,476 followers" [ref=e484] [cursor=pointer]:
+                              - /url: /noblecircuitrecords/followers
+                              - img [ref=e486]
+                              - generic [ref=e489]: 2,476 followers
+                              - generic [ref=e490]: 2,476
+                          - listitem "181 tracks" [ref=e491]:
+                            - link "181 tracks" [ref=e492] [cursor=pointer]:
+                              - /url: /noblecircuitrecords/tracks
+                              - img [ref=e494]
+                              - generic [ref=e496]: 181 tracks
+                              - generic [ref=e497]: "181"
+                    - button "Follow" [ref=e499] [cursor=pointer]:
+                      - generic: Follow
+                - listitem [ref=e500]:
+                  - generic [ref=e501]:
+                    - link "DAICHI’s avatar" [ref=e505] [cursor=pointer]:
+                      - /url: /daichivy
+                      - generic "DAICHI’s avatar" [ref=e508]
+                    - generic [ref=e509]:
+                      - heading "DAICHI" [level=3] [ref=e511]:
+                        - link "DAICHI" [ref=e512] [cursor=pointer]:
+                          - /url: /daichivy
+                      - generic "User stats" [ref=e515]:
+                        - list [ref=e516]:
+                          - listitem "540 followers" [ref=e517]:
+                            - link "540 followers" [ref=e518] [cursor=pointer]:
+                              - /url: /daichivy/followers
+                              - img [ref=e520]
+                              - generic [ref=e523]: 540 followers
+                              - generic [ref=e524]: "540"
+                          - listitem "9 tracks" [ref=e525]:
+                            - link "9 tracks" [ref=e526] [cursor=pointer]:
+                              - /url: /daichivy/tracks
+                              - img [ref=e528]
+                              - generic [ref=e530]: 9 tracks
+                              - generic [ref=e531]: "9"
+                    - button "Follow" [ref=e533] [cursor=pointer]:
+                      - generic: Follow
+            - article [ref=e534]:
+              - link "Latest Comments View all" [ref=e535] [cursor=pointer]:
+                - /url: /the-ransom-note/comments
+                - heading "Latest Comments" [level=4] [ref=e536]:
+                  - generic [ref=e537]: Latest Comments
+                - generic [ref=e538]: View all
+              - list [ref=e541]:
+                - listitem [ref=e542]:
+                  - generic [ref=e543]:
+                    - generic [ref=e545]:
+                      - text: "on"
+                      - 'link "Sarcus Soundsystem: The ''Shine A Light On'' Mix" [ref=e546] [cursor=pointer]':
+                        - /url: /the-ransom-note/sarcus-soundsystem-the-shine-a
+                    - generic [ref=e547]:
+                      - text: “@
+                      - link "sarcus_soundsystem" [ref=e548] [cursor=pointer]:
+                        - /url: /sarcus_soundsystem
+                      - text: ": <3”"
+                    - time [ref=e550]:
+                      - generic [ref=e551]: Posted 1 month ago
+                      - text: 1 month ago
+                - listitem [ref=e552]:
+                  - generic [ref=e553]:
+                    - generic [ref=e555]:
+                      - text: "on"
+                      - link "Brain Food Radio hosted by Rob Zile/KissFM/01-10-24/#1 ROB ZILE" [ref=e556] [cursor=pointer]:
+                        - /url: /robzile/brain-food-radio-hosted-by-rob-zilekissfm01-10-241-rob-zile
+                    - generic [ref=e557]: “great track! ;)”
+                    - time [ref=e559]:
+                      - generic [ref=e560]: Posted 1 year ago
+                      - text: 1 year ago
+                - listitem [ref=e561]:
+                  - generic [ref=e562]:
+                    - generic [ref=e564]:
+                      - text: "on"
+                      - 'link "PREMIERE: Drox - Denovo [Delphic Iris Records]" [ref=e565] [cursor=pointer]':
+                        - /url: /moskalus/premiere-drox-denovo-delphic-iris-records
+                    - generic [ref=e566]: “grrrreat! :)”
+                    - time [ref=e568]:
+                      - generic [ref=e569]: Posted 1 year ago
+                      - text: 1 year ago
+            - article [ref=e570]:
+              - generic [ref=e571]:
+                - heading "Go mobile" [level=4] [ref=e572]:
+                  - generic [ref=e573]: Go mobile
+                - generic "Dismiss"
+              - generic [ref=e575]:
+                - link "Download on the App Store" [ref=e576] [cursor=pointer]:
+                  - /url: https://itunes.apple.com/us/app/soundcloud/id336353151?mt=8
+                - link "Get it on Google Play" [ref=e577] [cursor=pointer]:
+                  - /url: https://play.google.com/store/apps/details?id=com.soundcloud.android&hl=us&referrer=utm_source%3Dsoundcloud%26utm_medium%3Dweb%26utm_campaign%3Dweb_xsell_user_page
+            - generic [ref=e578]:
+              - link "Legal" [ref=e579] [cursor=pointer]:
+                - /url: /terms-of-use
+              - text: ·
+              - generic [ref=e580]:
+                - link "Verträge hier kündigen" [ref=e581] [cursor=pointer]:
+                  - /url: /pages/signed-out/cancel
+                - text: ⁃
+              - link "Privacy" [ref=e582] [cursor=pointer]:
+                - /url: /pages/privacy
+              - text: ·
+              - link "Cookie Policy" [ref=e583] [cursor=pointer]:
+                - /url: /pages/cookies
+              - text: ·
+              - link "Cookie Manager" [ref=e584] [cursor=pointer]:
+                - /url: "#"
+              - text: ·
+              - link "Imprint" [ref=e585] [cursor=pointer]:
+                - /url: /imprint
+              - text: ·
+              - link "Artist Resources" [ref=e586] [cursor=pointer]:
+                - /url: https://soundcloud.com/getstarted/getheard
+              - text: ·
+              - link "Newsroom" [ref=e587] [cursor=pointer]:
+                - /url: https://soundcloud.com/company/newsroom
+              - text: ·
+              - link "Charts" [ref=e588] [cursor=pointer]:
+                - /url: /charts/top
+              - text: ·
+              - link "Transparency Reports" [ref=e589] [cursor=pointer]:
+                - /url: /transparency-reports
+              - 'button "Language: English (US)" [ref=e591] [cursor=pointer]'
+    - contentinfo "miniplayer" [ref=e592]:
+      - generic [ref=e593]:
+        - generic:
+          - generic:
+            - generic:
+              - generic: Next up
+              - button "Clear"
+              - button "Hide queue":
+                - generic:
+                  - img
+        - generic [ref=e594]:
+          - button "Skip to previous" [ref=e595] [cursor=pointer]:
+            - generic:
+              - img
+            - text: Skip to previous
+          - button "Play current" [ref=e596]:
+            - generic [ref=e597]:
+              - img [ref=e599]
+              - text: Play current
+          - button "Skip to next" [ref=e601]:
+            - generic:
+              - img
+            - text: Skip to next
+          - button "Shuffle" [ref=e603] [cursor=pointer]:
+            - generic:
+              - img
+            - text: Shuffle
+          - button "Repeat track" [ref=e605] [cursor=pointer]:
+            - generic:
+              - generic:
+                - img
+              - text: Repeat track
+          - generic [ref=e608]:
+            - generic [ref=e609]: Volume
+            - button [ref=e611] [cursor=pointer]:
+              - generic:
+                - generic:
+                  - img
+            - slider "Volume"
+  - generic:
+    - dialog "Cookies & Tracking" [ref=e619]:
+      - generic [ref=e621]:
+        - generic [ref=e623]:
+          - heading "Cookies & Tracking" [level=2] [ref=e624]
+          - generic [ref=e625]: When clicking on “I accept”, you agree that we and our 999 partners may store and/or access information on your device, such as unique IDs in cookies to process personal data. You may accept or manage your choices by clicking below, including your right to object where legitimate interest is used. You can withdraw your consent or manage your choices at any time in your settings or the cookie manager. For additional info please refer to our Privacy Policy. Your choices will be signaled to our partners and will not affect browsing data.
+          - generic [ref=e626]:
+            - text: "Where we have your email address, we and The Trade Desk (our advertising partner) will use it to create a unique advertising identifier (the EUID). Your identifier will be encrypted and shared with different sites and advertisers who may, subject to your choices, use it to show you personalized ads. Learn more:"
+            - link "EUID Privacy Notice" [ref=e627] [cursor=pointer]:
+              - /url: https://www.transparentadvertising.eu/privacy
+            - text: . To withdraw consent, please visit
+            - link "EUID Transparency and Control Portal" [ref=e628] [cursor=pointer]:
+              - /url: https://transparentadvertising.eu/
+            - text: .
+            - paragraph
+          - generic [ref=e629]:
+            - heading "Personalized Ads" [level=3] [ref=e630]
+            - paragraph [ref=e632]:
+              - text: Use precise geolocation data. Actively scan device characteristics for identification. Store and/or access information on a device. Personalised advertising and content, advertising and content measurement, audience research and services development.
+              - button "List of Partners" [ref=e633] [cursor=pointer]
+        - generic [ref=e635]:
+          - button "I Accept" [ref=e636] [cursor=pointer]
+          - button "Reject All" [ref=e637] [cursor=pointer]
+          - button "Manage Preferences, Opens the preference center dialog" [ref=e638] [cursor=pointer]: Manage Preferences
+    - text: Filters Manage Preferences

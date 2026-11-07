@@ -1,0 +1,67 @@
+{% extends "base.html" %}
+{% from "_edit_copies.html" import copies_strip %}
+{% block title %}Edit {{ info.label }}{% endblock %}
+{% block content %}
+<div class="ed-page" id="ed" data-preview="{{ url_for('photo_editor_preview', src=info.src) }}" data-src="{{ info.src }}"
+     data-save="{{ url_for('photo_editor_save') }}" data-csrf="{{ csrf_token() }}" data-can-save="{{ 1 if info.full else 0 }}" data-reveal="{{ url_for('photo_editor_reveal') }}" data-delete="{{ url_for('photo_editor_delete') }}">
+    <div class="ed-top">
+        <a class="ed-link" href="{{ info.back }}">&larr; Back</a>
+        <div class="ed-title">Edit a copy of <strong>{{ info.label }}</strong></div>
+        <div class="ed-actions">
+            <button type="button" class="ed-btn" id="ed-compare" title="Hold to see the picture without your changes">Hold to compare</button>
+            <button type="button" class="ed-btn" id="ed-reset">Reset</button>
+            <button type="button" class="ed-btn ed-save" id="ed-save"{% if not info.full %} disabled title="The full-size photo is on the Intenso: connect the drive to save"{% endif %}>Save copy</button>
+        </div>
+    </div>
+
+    <div class="ed-stage" id="ed-stage">
+        <div class="ed-canvas-wrap" id="ed-wrap">
+            <canvas id="ed-canvas"></canvas>
+            <div class="ed-crop" id="ed-crop" hidden>
+                <div class="ed-grid"></div>
+                <span class="ed-h" data-h="nw"></span><span class="ed-h" data-h="ne"></span>
+                <span class="ed-h" data-h="sw"></span><span class="ed-h" data-h="se"></span>
+            </div>
+        </div>
+        <div class="ed-loading" id="ed-loading">Loading the picture...</div>
+    </div>
+
+    <div class="ed-bottom">
+        <div class="ed-tabs">
+            <button type="button" class="ed-tab active" data-mode="crop">Crop</button>
+            <button type="button" class="ed-tab" data-mode="adjust">Adjust</button>
+        </div>
+
+        <div class="ed-panel" data-panel="crop">
+            <div class="ed-row ed-aspects">
+                {% for key, label in [('free', 'Free'), ('original', 'Original'), ('1:1', 'Square'), ('4:5', '4:5'), ('3:4', '3:4'), ('9:16', '9:16'), ('16:9', '16:9'), ('3:2', '3:2')] %}
+                <button type="button" class="ed-chip{% if key == 'free' %} active{% endif %}" data-aspect="{{ key }}">{{ label }}</button>
+                {% endfor %}
+            </div>
+            <div class="ed-row">
+                <button type="button" class="ed-btn" id="ed-rotate" title="Turn 90 degrees to the left">&#8634; Rotate</button>
+                <button type="button" class="ed-btn" id="ed-flip" title="Mirror left to right">&#8646; Mirror</button>
+                <label class="ed-slider">Straighten <input type="range" id="ed-angle" min="-45" max="45" step="0.1" value="0"><output id="ed-angle-v">0&deg;</output></label>
+            </div>
+            <div class="ed-row ed-tags">
+                {% for key, label, asp, colour in tags %}<button type="button" class="ed-tag" data-aspect="{{ asp }}" data-tag="{{ key }}" style="--tc: {{ colour }}" title="{{ label }}: {{ asp|replace(':', ' : ') }}. The saved file carries this name.">{{ label }}</button>{% endfor %}
+            </div>
+        </div>
+
+        <div class="ed-panel" data-panel="adjust" hidden>
+            <div class="ed-row ed-tools">
+                {% for key, label in [('exposure', 'Exposure'), ('contrast', 'Contrast'), ('shadows', 'Shadows'), ('highlights', 'Highlights'), ('saturation', 'Saturation'), ('warmth', 'Warmth')] %}
+                <button type="button" class="ed-tool{% if loop.first %} active{% endif %}" data-tool="{{ key }}"><span class="ed-tool-v" data-v="{{ key }}">0</span><span>{{ label }}</span></button>
+                {% endfor %}
+            </div>
+            <div class="ed-row"><label class="ed-slider ed-slider-wide"><span id="ed-tool-name">Exposure</span> <input type="range" id="ed-value" min="-100" max="100" step="1" value="0"><output id="ed-value-v">0</output></label></div>
+        </div>
+
+        <p class="ed-note" id="ed-note">Live on a {{ 1600 }} px copy. Saving applies the same to the full-size original{% if size %} ({{ size[0] }} x {{ size[1] }}){% endif %} and writes a new file in <code>artwork/edits/</code>; the original is never changed. Local, no AI. Double-click a slider to reset it.</p>
+        {% if not info.full %}<p class="ed-note ed-warn">The full-size photo is on the Intenso. You can try edits now; connect the drive to save.</p>{% endif %}
+        <div class="ed-result" id="ed-result" hidden></div>
+    </div>
+</div>
+{{ copies_strip(copies, 'Copies of this picture') }}
+<script src="{{ url_for('static', filename='photo_editor.js') }}?v=4"></script>
+{% endblock %}

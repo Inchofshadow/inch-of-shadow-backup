@@ -1,0 +1,986 @@
+[
+ {
+  "name": "Vendor and tenant COI expiry tracker for small property managers",
+  "pain": "Property managers track certificates of insurance in hand-updated spreadsheets. Expired COIs go unnoticed until a vendor is on site or a claim lands. Several posters built their own sheet or tool because they couldn't find a decent option.",
+  "who_pays": "Small and mid property management firms and commercial PMs (roughly 20 to 500 units) that can't get NetVendor or afford enterprise compliance tools.",
+  "evidence_ids": [
+   95,
+   107,
+   108,
+   110,
+   112,
+   100
+  ],
+  "pay_signal": "NetVendor, a paid service, brushed off a new PM who wanted to buy (100). Others run the process by spreadsheet and have for years (110, 112). One manager of 200 units says it is driving them crazy but they lack money for big software (107), which suggests a cheap self-serve tier. Two posters started building their own tool (95, 108).",
+  "product_idea": "Self-serve web app. Forward or upload COI PDFs and Claude extracts insurer, coverage limits, additional insured and expiry date. The app emails vendors automatically 30 and 7 days before expiry, sends Telegram or email alerts to the PM, and shows a red/green vendor board with an 'OK to dispatch' check. Flat price around $29–79/month by vendor count.",
+  "build_weeks": 4,
+  "fit_for_us": 5,
+  "known_competitors": "myCOI, TrustLayer, Jones, BCS, PINS, NetVendor, Certificial. Mostly enterprise or sales-led, which leaves room for a cheap self-serve option.",
+  "check_next": "Read the column list in 95. Check pricing and minimums for TrustLayer, myCOI and BCS. Post a free COI-expiry spreadsheet template plus waitlist in r/propertymanagement to measure signups.",
+  "crowding": {
+   "verdict": "crowded",
+   "reason": "Several self-serve AI COI trackers already target small property managers at $0–$79/mo (bcs free to 25 vendors, SubDoc $20/mo for 100 vendors, COI File, COISoftware), at or below the proposed price.",
+   "competitors": [
+    {
+     "name": "bcs",
+     "price": "Free up to 25 vendors; self-service $0.95/vendor/month; full-service $17.80/vendor/year ($10,000 annual minimum)",
+     "url": "https://www.getbcs.com/pricing-and-plans",
+     "verified": true
+    },
+    {
+     "name": "SubDoc",
+     "price": "$20/month for up to 100 vendors; free tier 3 vendors",
+     "url": "https://subdoc.io/solutions/property-management",
+     "verified": true
+    },
+    {
+     "name": "COI File",
+     "price": "$39/$89/$199 per month (another page on the same site says $0/$29/$79)",
+     "url": "https://coifile.com/coi-tracking/best-software/",
+     "verified": true
+    },
+    {
+     "name": "COISoftware",
+     "price": "$49/month Starter, $149/month Plus",
+     "url": "https://coisoftware.com/coi-tracking-software-pricing",
+     "verified": true
+    },
+    {
+     "name": "RealPage Vendor Credentialing (Compliance Depot)",
+     "price": "Vendor pays $99/year on site, $80 off site (per a competitor's page)",
+     "url": "https://coisoftware.com/blog/best-coi-tracking-software-for-property-management",
+     "verified": false
+    },
+    {
+     "name": "myCOI (illumend)",
+     "price": "unknown",
+     "url": "https://www.capterra.co.uk/software/1017144/mycoi",
+     "verified": true
+    },
+    {
+     "name": "TrustLayer",
+     "price": "unknown",
+     "url": "https://coisoftware.com/blog/best-coi-tracking-software-for-property-management",
+     "verified": true
+    },
+    {
+     "name": "Jones",
+     "price": "unknown",
+     "url": "https://coisoftware.com/blog/best-coi-tracking-software-for-property-management",
+     "verified": true
+    }
+   ],
+   "pay_proof": [
+    {
+     "claim": "bcs publishes paid self-service ($0.95/vendor/month) and full-service ($17.80/vendor/year, $10,000 minimum) COI tracking plans",
+     "url": "https://www.getbcs.com/pricing-and-plans",
+     "verified": true
+    },
+    {
+     "claim": "myCOI has 47 Capterra reviews averaging 4.7 with 96% positive sentiment",
+     "url": "https://www.capterra.co.uk/software/1017144/mycoi",
+     "verified": true
+    },
+    {
+     "claim": "SubDoc sells a $20/month Pro plan for up to 100 vendors aimed at GCs and property managers",
+     "url": "https://subdoc.io/blog/affordable-coi-tracking-software",
+     "verified": true
+    },
+    {
+     "claim": "COISoftware sells $49 and $149/month plans to property managers, including tenant COIs",
+     "url": "https://coisoftware.com/blog/best-coi-tracking-software-for-property-management",
+     "verified": true
+    },
+    {
+     "claim": "RealPage Vendor Credentialing charges vendors $80–$99/year to enroll",
+     "url": "https://coisoftware.com/blog/best-coi-tracking-software-for-property-management",
+     "verified": false
+    }
+   ],
+   "cost_usd": 0.3613,
+   "web_searches": 2
+  }
+ },
+ {
+  "name": "Recurring compliance and statutory deadline calendar for landlords and PMs",
+  "pain": "Fire and life-safety inspections (extinguishers, backflow, hood cleaning, alarms) and state legal clocks (deposit return, entry notice, renewal windows) each run on their own cycle. These rules live on state websites or in leases, not in the PM's daily tools. Missed deadlines lead to fines.",
+  "who_pays": "Small PM firms and landlords running several properties, especially across more than one state.",
+  "evidence_ids": [
+   101,
+   113,
+   112
+  ],
+  "pay_signal": "PMs track these today in spreadsheets and calendar reminders, or rely on the vendor to call (101, 112). Missed inspections are described as causing fines (101). One poster says the lookup takes two minutes but turning it into an action is the unsolved part (113).",
+  "product_idea": "Per-property compliance calendar. Pick the state and the asset features (sprinklers, kitchen hood, backflow, etc.) and the app generates every recurring due date plus statutory clocks triggered by events (move-out leads to deposit return deadline). Subscribable iCal feed plus Telegram or email alerts. A state-rules database feeds both the app and SEO pages such as '[state] security deposit return deadline'.",
+  "build_weeks": 5,
+  "fit_for_us": 4,
+  "known_competitors": "Generic PM suites (AppFolio, Buildium) with partial reminders. Facility tools such as BuildingReports and Inspect Point serve vendors rather than PMs. No obvious landlord-focused state-rule calendar.",
+  "check_next": "Check search volume for 'security deposit return deadline [state]' type queries. Ask in r/propertymanagement and r/Landlord which deadlines they missed last year. Estimate the effort to build a 50-state rules table with Claude and then verify it by hand.",
+  "crowding": {
+   "verdict": "unclear",
+   "reason": "Search limit hit after one query; UK has several landlord compliance-calendar tools (one free), but no US multi-state competitors or prices could be checked and no proof of payment was found.",
+   "competitors": [
+    {
+     "name": "Logbook Landlord Compliance Calendar (UK, free tool)",
+     "price": "free",
+     "url": "https://www.logbook.co.uk/landlord-compliance-calendar/",
+     "verified": true
+    },
+    {
+     "name": "LandlordOS (UK)",
+     "price": "unknown",
+     "url": "https://landlord-os.com/landlord-compliance-checklist",
+     "verified": false
+    },
+    {
+     "name": "The Landlord Kit - Compliance tier (UK)",
+     "price": "unknown",
+     "url": "https://www.thelandlordkit.com/c/landlord-compliance-checklist.html",
+     "verified": false
+    },
+    {
+     "name": "LetCompliance (UK)",
+     "price": "unknown",
+     "url": "https://letcompliance.co.uk/",
+     "verified": false
+    },
+    {
+     "name": "Platuni (rental compliance software)",
+     "price": "unknown",
+     "url": "https://www.platuni.com/compliance-academy/articles/rental-compliance-software",
+     "verified": false
+    },
+    {
+     "name": "Jack Jaffa & Associates NYC compliance calendar",
+     "price": "unknown",
+     "url": "https://www.jackjaffa.com/resources/compliance-deadlines",
+     "verified": false
+    },
+    {
+     "name": "Ecesis Compliance Calendar (EHS, not landlord-focused)",
+     "price": "unknown",
+     "url": "https://www.ecesis.net/Compliance-Calendar-Software.aspx",
+     "verified": false
+    }
+   ],
+   "pay_proof": [
+    {
+     "claim": "The Landlord Kit sells a 'Compliance tier' that puts every landlord duty on one calendar (suggests a paid tier; price not seen)",
+     "url": "https://www.thelandlordkit.com/c/landlord-compliance-checklist.html",
+     "verified": false
+    },
+    {
+     "claim": "Vendor blog claims manual systems miss 4-6% of deadlines, each costing $400-$800 (cost of the pain, not proof of willingness to pay)",
+     "url": "https://enterprisedna.co/resources/blog/real-estate-automate-compliance-inspection-tracking/",
+     "verified": true
+    }
+   ],
+   "cost_usd": 0.406,
+   "web_searches": 8
+  }
+ },
+ {
+  "name": "Statement aggregator for small landlords with multiple managers or portals",
+  "pain": "Small landlords copy numbers from property management portals and bank apps into Excel every week. One owner of 9 units counted about 600 hours over 3 years. Others check their bank app every morning to see if rent arrived, and they say PM suites are overkill for under 10 units.",
+  "who_pays": "Landlords and investors with 1–15 units, especially those whose units sit with different property managers.",
+  "evidence_ids": [
+   91,
+   89,
+   97,
+   99,
+   92
+  ],
+  "pay_signal": "The 9-unit owner logs 2–4 hours a week by hand (91). Others built their own tool (89) or ask for shared spreadsheets (92). One poster says software ended up more hassle than it was worth for 1–3 units (97). Another forgets to update spreadsheets and wants automatic late-rent detection (99).",
+  "product_idea": "Owners forward monthly PM statements, PDFs or CSVs to an inbox. Claude parses rent, fees and repairs per unit into one normalized ledger and dashboard. The app sends Telegram or email alerts when expected rent hasn't appeared, plus a year-end Schedule E style export. Priced at about $10–20/month.",
+  "build_weeks": 5,
+  "fit_for_us": 4,
+  "known_competitors": "Stessa, Baselane, TurboTenant, Landlord Studio, RentRedi. They focus on bank feeds or self-managed rentals, and none clearly parses third-party PM owner statements.",
+  "check_next": "Collect 10 real owner-statement PDFs from different PM software (AppFolio, Buildium, Rent Manager) and test how accurately Claude extracts them. Ask the author of 91 whether forwarding statements would replace their weekly sheet.",
+  "crowding": {
+   "verdict": "unclear",
+   "reason": "Rental bookkeeping at $12-35/mo is crowded and Stessa (free tier) already imports AppFolio owner statements; I couldn't check whether other manager systems or emailed PDFs are covered, or find proof anyone pays specifically to combine statements from several managers.",
+   "competitors": [
+    {
+     "name": "Stessa",
+     "price": "Free Essentials; Manage $15/mo; Pro $35/mo (monthly)",
+     "url": "https://www.turbotenant.com/reviews/landlord-studio-vs-stessa/",
+     "verified": true
+    },
+    {
+     "name": "Landlord Studio",
+     "price": "$12-$28/month, free version",
+     "url": "https://www.softwareadvice.com/property/landlord-studio-profile/",
+     "verified": true
+    },
+    {
+     "name": "REI Hub",
+     "price": "Free up to 3 units; from $15/mo",
+     "url": "https://www.reihub.net/pricing/",
+     "verified": true
+    },
+    {
+     "name": "Baselane",
+     "price": "Free Core; Smart $20/mo billed annually",
+     "url": "https://realestatebees.com/software/baselane/rent-collection/",
+     "verified": true
+    },
+    {
+     "name": "Rentastic",
+     "price": "Free; Premium $28/mo or $238/yr",
+     "url": "https://www.getapp.com/finance-accounting-software/a/rentastic/",
+     "verified": true
+    },
+    {
+     "name": "RenterAI",
+     "price": "unknown",
+     "url": "https://www.renterai.app/",
+     "verified": false
+    }
+   ],
+   "pay_proof": [
+    {
+     "claim": "Stessa sells paid tiers above its free plan: Manage $15/mo, Pro $35/mo",
+     "url": "https://www.turbotenant.com/reviews/landlord-studio-vs-stessa/",
+     "verified": true
+    },
+    {
+     "claim": "Landlord Studio starts at $12/mo and is rated 4.9 from 150 reviews",
+     "url": "https://www.softwareadvice.com/property/landlord-studio-profile/",
+     "verified": true
+    },
+    {
+     "claim": "REI Hub charges from $15/mo after trial for rental accounting",
+     "url": "https://www.reihub.net/pricing/",
+     "verified": true
+    },
+    {
+     "claim": "REI Hub testimonial from a user managing 4 LLCs' rentals and 12 accounts",
+     "url": "https://www.reihub.net/",
+     "verified": true
+    },
+    {
+     "claim": "Rentastic Premium is $28/mo, rated 4.8 from 14 reviews",
+     "url": "https://www.softwareadvice.com/real-estate-transaction-manage/rentastic-profile/",
+     "verified": true
+    },
+    {
+     "claim": "Baselane Smart paid plan is $20/mo billed annually",
+     "url": "https://realestatebees.com/software/baselane/rent-collection/",
+     "verified": true
+    }
+   ],
+   "cost_usd": 0.5021,
+   "web_searches": 8
+  }
+ },
+ {
+  "name": "Branded monthly owner report generator for small PMs",
+  "pain": "PMs managing a handful of properties track rent and expenses in spreadsheets, clean them up by hand, reformat them into PDFs and email them to owners every month. The result still looks janky, and they work across Buildium, Gmail and Drive tabs.",
+  "who_pays": "Small and boutique PMs, either too small for AppFolio or wanting nicer reports than their suite produces.",
+  "evidence_ids": [
+   114,
+   115,
+   91
+  ],
+  "pay_signal": "This is a recurring monthly manual chore described as more effort than it should be (114). PMs already pay for suites such as Buildium but still juggle tools (115). On the receiving side, owners copy those portal numbers back into Excel (91).",
+  "product_idea": "Upload the month's spreadsheet or a Buildium export. The tool produces a polished branded PDF and web report per owner, with a Claude-written plain-English summary (occupancy, notable repairs, variance vs last month), and batch-emails it to owners. Priced per owner or per door.",
+  "build_weeks": 3,
+  "fit_for_us": 4,
+  "known_competitors": "Built-in owner statements in AppFolio, Buildium, DoorLoop and Rentvine. Generic report tools such as Databox and Google Looker Studio.",
+  "check_next": "Ask 114 and similar posters what their export format is and what a 'non-janky' report needs. Test whether a Buildium CSV export has enough fields to build the report.",
+  "crowding": {
+   "verdict": "crowded",
+   "reason": "Buildium, DoorLoop and Rentvine already include automated, batch-sent monthly owner reports at prices PMs pay; no proof that anyone pays for a separate prettier or AI-written report on top.",
+   "competitors": [
+    {
+     "name": "Buildium (built-in owner reports, 60+ templates, batch packets, owner portal)",
+     "price": "$65 / $202 / $420 per month",
+     "url": "https://www.buildium.com/pricing/",
+     "verified": true
+    },
+    {
+     "name": "DoorLoop (owner statements included)",
+     "price": "$69 / $149 / $209 per month billed yearly for first 10 units, then $3 per unit (third-party source; sources disagree)",
+     "url": "https://www.usecarly.com/blog/doorloop-pricing/",
+     "verified": true
+    },
+    {
+     "name": "Rentvine",
+     "price": "from $199/month per DoorLoop blog; G2 lists starting at $1.50",
+     "url": "https://www.doorloop.com/blog/rentvine-alternatives-reviews-pricing",
+     "verified": true
+    },
+    {
+     "name": "TenantCloud",
+     "price": "from $16.50/month",
+     "url": "https://www.tenantcloud.com/review/rentvine-vs-tenantcloud",
+     "verified": true
+    },
+    {
+     "name": "HyperWrite Property Management Report Generator (AI)",
+     "price": "unknown",
+     "url": "https://www.hyperwriteai.com/aitools/property-management-report-generator",
+     "verified": false
+    },
+    {
+     "name": "Layer3labs Scoreboard (AI reads PMS data)",
+     "price": "unknown",
+     "url": "https://www.layer3labs.io/guides/property-management-reporting",
+     "verified": false
+    },
+    {
+     "name": "AppFolio built-in owner statements",
+     "price": "unknown",
+     "url": "",
+     "verified": false
+    }
+   ],
+   "pay_proof": [
+    {
+     "claim": "PMs pay Buildium $65-$420/month for a suite that includes owner reporting",
+     "url": "https://www.buildium.com/pricing/",
+     "verified": true
+    },
+    {
+     "claim": "Buildium offers automated monthly owner reports with 60+ pre-built templates",
+     "url": "https://www.buildium.com/blog/how-to-set-up-automated-monthly-reports-for-owners/",
+     "verified": true
+    },
+    {
+     "claim": "DoorLoop charges $69-$209/month (billed yearly) plus $3 per unit, aimed at managers who need owner statements",
+     "url": "https://www.usecarly.com/blog/doorloop-pricing/",
+     "verified": true
+    },
+    {
+     "claim": "People pay for a separate branded or AI-written owner report tool on top of their PM suite",
+     "url": "",
+     "verified": false
+    }
+   ],
+   "cost_usd": 0.5828,
+   "web_searches": 8
+  }
+ },
+ {
+  "name": "Fast move-in and move-out walkthrough report builder",
+  "pain": "Small landlords spend about 20 minutes on site plus 45 minutes at a desk per unit turning walkthrough photos and notes into a finished report. Inspection photos, notes and follow-ups end up scattered across phones, shared folders and spreadsheets.",
+  "who_pays": "Landlords, short-term rental hosts and small PMs doing turnover and periodic inspections.",
+  "evidence_ids": [
+   93,
+   103
+  ],
+  "pay_signal": "One owner of 3 units says paperwork takes hours and asks how managers with 20–50 doors cope (93). Another describes current workarounds of spreadsheets, shared folders and phone camera rolls (103). These are repeated per-turnover chores.",
+  "product_idea": "Mobile web app. Walk room by room, take photos and dictate voice notes. Claude turns them into a structured condition report with item ratings and repair tasks, then outputs a timestamped PDF the tenant can e-sign. It can compare move-in and move-out reports for deposit disputes.",
+  "build_weeks": 5,
+  "fit_for_us": 3,
+  "known_competitors": "RentCheck, zInspector, HappyCo, Inspectify, TurboTenant inspection checklists.",
+  "check_next": "Compare RentCheck and zInspector pricing for small portfolios. Check whether their reviews complain about desk time after the walkthrough, which is the gap a voice-to-report feature would target.",
+  "crowding": {
+   "verdict": "crowded",
+   "reason": "A dominant free option (TurboTenant condition reports with tenant signing), several established paid tools ($1/door to $89/mo) with move-in/move-out comparison, and AI report builders (InspectAI, Oryon, Property Inspect) already exist; small landlords are told free tiers are enough.",
+   "competitors": [
+    {
+     "name": "TurboTenant Condition Reports",
+     "price": "free",
+     "url": "https://www.turbotenant.com/condition-reports/",
+     "verified": true
+    },
+    {
+     "name": "RentCheck",
+     "price": "$1.00 / $1.25 / $1.75 per door per month",
+     "url": "https://www.getrentcheck.com/plan-pricing",
+     "verified": true
+    },
+    {
+     "name": "zInspector",
+     "price": "from $22 per user per month; free version available",
+     "url": "https://www.capterra.com/p/176250/zInspector/",
+     "verified": true
+    },
+    {
+     "name": "HappyCo (Happy Property)",
+     "price": "from $89 per feature per month",
+     "url": "https://www.softwareadvice.com/inspection/happyco-profile/",
+     "verified": true
+    },
+    {
+     "name": "InspectCheck",
+     "price": "from $3 per unit per year ($150/yr minimum); $2,000/yr per user; pay-per-inspection option",
+     "url": "https://inspectcheck.com/pricing/",
+     "verified": true
+    },
+    {
+     "name": "InspectAI",
+     "price": "unknown (free trial offered)",
+     "url": "https://myinspectai.com/",
+     "verified": true
+    },
+    {
+     "name": "Oryon Inspection",
+     "price": "unknown",
+     "url": "https://oryoninspection.com/",
+     "verified": true
+    },
+    {
+     "name": "Property Inspect (Inspect AI)",
+     "price": "unknown",
+     "url": "https://propertyinspect.com/move-in-move-out-inspections/",
+     "verified": true
+    },
+    {
+     "name": "Imfuna Rent",
+     "price": "from $1.00 one time",
+     "url": "https://www.softwareadvice.com/rental/imfuna-rent-profile/",
+     "verified": true
+    },
+    {
+     "name": "Inspectify",
+     "price": "unknown",
+     "url": "",
+     "verified": false
+    }
+   ],
+   "pay_proof": [
+    {
+     "claim": "RentCheck publishes paid tiers of $1.00-$1.75 per door per month for inspection software",
+     "url": "https://www.getrentcheck.com/plan-pricing",
+     "verified": true
+    },
+    {
+     "claim": "Tenant Inspect sells a move-in/out inspection report app for $19.99 (11 ratings, 3.9); a reviewer says they will use it every move",
+     "url": "https://apps.apple.com/us/app/tenant-inspect-rental-report/id6450515110",
+     "verified": true
+    },
+    {
+     "claim": "InspectCheck charges from $3/unit/year with a $150/year minimum, or per inspection",
+     "url": "https://inspectcheck.com/pricing/",
+     "verified": true
+    },
+    {
+     "claim": "zInspector paid plans start at $22 per user per month, 4.7 rating from 10 reviews",
+     "url": "https://www.softwareadvice.com/home-inspections/zinspector-profile/",
+     "verified": true
+    },
+    {
+     "claim": "Imfuna Rent is listed from $1.00 one time with a 4.74 value-for-money score",
+     "url": "https://www.softwareadvice.com/rental/imfuna-rent-profile/",
+     "verified": true
+    }
+   ],
+   "cost_usd": 0.6309,
+   "web_searches": 8
+  }
+ },
+ {
+  "name": "Lease abstraction and key-date extraction for small PMs",
+  "pain": "PMs abstract leases by hand or outsource it. Renewal windows, notice periods and other clauses stay buried in lease PDFs and never reach the PM's spreadsheet or calendar.",
+  "who_pays": "Commercial and residential PMs and small brokerages handling dozens to hundreds of leases.",
+  "evidence_ids": [
+   90,
+   113
+  ],
+  "pay_signal": "One poster asks whether PMs use paid lease abstraction software or a person, in-house or outsourced, which shows existing spend on software or labor (90). Another names the lease-to-workflow gap directly (113).",
+  "product_idea": "Upload lease PDFs. Claude extracts a standard abstract (rent schedule, escalations, renewal and option dates, notice requirements, CAM terms) into a spreadsheet and calendar feed. Per-lease pricing (for example $3–5 per lease) undercuts outsourced abstraction, with deadline alerts via email or Telegram.",
+  "build_weeks": 3,
+  "fit_for_us": 4,
+  "known_competitors": "Prophia, LeaseLens, Docsumo, Kira, MRI/Yardi add-ons, and offshore abstraction services. Mostly sales-led.",
+  "check_next": "Check replies to 90 for what made people drop software. Benchmark Claude extraction accuracy on 5 sample commercial leases. Price-check outsourced per-lease abstraction rates.",
+  "crowding": {
+   "verdict": "crowded",
+   "reason": "Six or more self-serve AI lease abstraction tools already sell at $0-$25 per lease or low monthly plans (Prophia, LeaseLens, Lextract, LeaseAbstracts, LeaseAbstractors, Leasecake), several with free tiers, and some cheap self-serve tools have already gone quiet.",
+   "competitors": [
+    {
+     "name": "Prophia",
+     "price": "from $20 one-time per abstract (Capterra); free basic self-serve tool per one roundup",
+     "url": "https://www.capterra.com/p/240607/Prophia/",
+     "verified": true
+    },
+    {
+     "name": "LeaseLens",
+     "price": "free (homepage); $25 per summary per a third-party listing",
+     "url": "https://leaselens.ai/",
+     "verified": true
+    },
+    {
+     "name": "Lextract",
+     "price": "$15 per lease",
+     "url": "https://lextract.io/resources/articles/how-much-does-lease-abstraction-cost",
+     "verified": true
+    },
+    {
+     "name": "LeaseAbstracts",
+     "price": "Solo $49, Team $149, Firm $399 per month",
+     "url": "https://leaseabstracts.com/blog/ai-lease-abstraction-tools-compared",
+     "verified": true
+    },
+    {
+     "name": "LeaseAbstract AI",
+     "price": "$30, $55 or $95 per lease",
+     "url": "https://leaseabstracts.com/blog/ai-lease-abstraction-tools-compared",
+     "verified": true
+    },
+    {
+     "name": "LeaseAbstractors",
+     "price": "free tier plus usage plans",
+     "url": "https://leaseabstractors.com/best-lease-abstraction-software",
+     "verified": true
+    },
+    {
+     "name": "Leasecake",
+     "price": "about $6-$8 per location per month (per a competitor's page)",
+     "url": "https://leaseabstractors.com/leasecake-alternative",
+     "verified": true
+    },
+    {
+     "name": "Docsumo",
+     "price": "unknown",
+     "url": "https://www.docsumo.com/solutions/documents/lease-agreements",
+     "verified": false
+    },
+    {
+     "name": "LeaseWizard",
+     "price": "unknown",
+     "url": "https://leasewizard.ai/guide/ai-lease-abstraction",
+     "verified": false
+    }
+   ],
+   "pay_proof": [
+    {
+     "claim": "Offshore lease abstraction costs roughly $75 per lease; domestic full-service costs several hundred dollars per lease",
+     "url": "https://www.growthfactor.ai/resources/blog/ai-powered-lease-abstraction",
+     "verified": true
+    },
+    {
+     "claim": "Outsourced BPO abstraction costs $150-$400 per lease; manual in-house work costs $90-$250 per lease",
+     "url": "https://lextract.io/resources/articles/how-much-does-lease-abstraction-cost",
+     "verified": true
+    },
+    {
+     "claim": "Prophia charges from $20 per abstract; Capterra pricing feedback is mixed, with some users wanting lower-fee options",
+     "url": "https://www.capterra.com/p/240607/Prophia/",
+     "verified": true
+    },
+    {
+     "claim": "LeaseAbstracts sells self-serve plans at $49, $149 and $399 per month; LeaseAbstract AI charges $30-$95 per lease",
+     "url": "https://leaseabstracts.com/blog/ai-lease-abstraction-tools-compared",
+     "verified": true
+    },
+    {
+     "claim": "A third-party property manager on G2 uses Leasecake for leases, rent increases and reminders",
+     "url": "https://www.g2.com/products/leasecake",
+     "verified": true
+    }
+   ],
+   "cost_usd": 0.5495,
+   "web_searches": 8
+  }
+ },
+ {
+  "name": "Stem and multitrack QC checker for engineers",
+  "pain": "Assistant engineers drag every stem and multitrack into a DAW just to check sync, missing audio, odd stereo exports, mismatched lengths and sloppy naming before sending or starting a mix. One assistant engineer says they spend way too much time on this basic QC step.",
+  "who_pays": "Mix and assistant engineers, mastering engineers and small studios that already pay for plugins.",
+  "evidence_ids": [
+   22,
+   25
+  ],
+  "pay_signal": "A repeated per-project manual chore is described as overkill and a time sink (22). Engineers are building local browser tools for similar repetitive DAW prep (25), which shows appetite. Pay intent has not been stated outright, so validation is needed.",
+  "product_idea": "Local-only browser tool (Web Audio, nothing uploaded). Drop a folder of stems and it flags sample rate, bit depth or length mismatches, silent or near-silent files, fake stereo, clipping, missing expected instruments and start-offset drift. It also auto-renames to a convention and exports a PDF QC report to send to the client. Freemium with a one-time pro license.",
+  "build_weeks": 3,
+  "fit_for_us": 4,
+  "known_competitors": "Manual checks in the DAW. Pro QC tools such as Sound Radix and iZotope RX batch processing, plus delivery-QC tools for broadcast (Vidchecker, Baton) that are too heavy for this use. No obvious lightweight stem checker.",
+  "check_next": "Read the comments on 22 for the workflows mentioned. Prototype a single-page checker and post it in r/audioengineering to measure usage, then ask what checks they would pay for.",
+  "crowding": {
+   "verdict": "crowded",
+   "reason": "Stem Checker already ships this exact product (macOS app at $3.99/mo or $29.99 lifetime, plus a free browser checker with PDF reports), has been reviewed by Sound On Sound and Production Expert, and your pain quote comes from its own launch thread.",
+   "competitors": [
+    {
+     "name": "Stem Checker (macOS app)",
+     "price": "$3.99/month (first month free) or $29.99 one-time lifetime (listed as going up to $39)",
+     "url": "https://stemchecker.io/",
+     "verified": true
+    },
+    {
+     "name": "Stem Checker on Mac App Store",
+     "price": "Free download; in-app purchase Stem Checker Lifetime $29.99",
+     "url": "https://apps.apple.com/us/app/stem-checker/id6754171408?mt=12",
+     "verified": true
+    },
+    {
+     "name": "Stem Checker Free Online Stem Delivery Checker (browser)",
+     "price": "Free",
+     "url": "https://www.kvraudio.com/product/free-online-stem-delivery-checker-by-stem-checker",
+     "verified": true
+    },
+    {
+     "name": "MonoMate",
+     "price": "$29 intro ($39 regular), per forum post",
+     "url": "https://vi-control.net/community/threads/interesting-audio-utility-application-monomate.172442/",
+     "verified": true
+    },
+    {
+     "name": "StereoMonoizer (Soundizers)",
+     "price": "$49",
+     "url": "https://www.soundizers.com/",
+     "verified": true
+    },
+    {
+     "name": "fedDSP stereo2mono",
+     "price": "£20 intro, £50 regular",
+     "url": "https://www.prosoundweb.com/feddsp-announces-new-stereo2mono-batch-audio-prep-app/",
+     "verified": true
+    },
+    {
+     "name": "Darklight Audio MonoChecker",
+     "price": "unknown",
+     "url": "https://darklightaudio.com/monochecker",
+     "verified": false
+    },
+    {
+     "name": "AudioApollo",
+     "price": "unknown",
+     "url": "https://audioapollo.com/",
+     "verified": false
+    }
+   ],
+   "pay_proof": [
+    {
+     "claim": "Stem Checker sells a $3.99/month plan and a $29.99 one-time lifetime license for stem QC",
+     "url": "https://stemchecker.io/",
+     "verified": true
+    },
+    {
+     "claim": "The Mac App Store lists an in-app purchase 'Stem Checker Lifetime $29.99'",
+     "url": "https://apps.apple.com/us/app/stem-checker/id6754171408?mt=12",
+     "verified": true
+    },
+    {
+     "claim": "KVR lists Stem Checker at $29.99 in its v3.0 news (audio statistics, delivery reports, null test)",
+     "url": "https://www.kvraudio.com/news/stem-checker-updated-to-v3-0---adds-audio-statistics-delivery-reports-null-test-beta-and-more-69079",
+     "verified": true
+    },
+    {
+     "claim": "Sound On Sound published a review of Stem Checker",
+     "url": "https://www.soundonsound.com/reviews/stem-checker",
+     "verified": true
+    },
+    {
+     "claim": "A VI-Control user says they bought MonoMate (dual-mono detection) for $29 and found it worth the cost",
+     "url": "https://vi-control.net/community/threads/interesting-audio-utility-application-monomate.172442/",
+     "verified": true
+    },
+    {
+     "claim": "StereoMonoizer sells for $49, with a quote saying it could have saved 3 hours in mix setup",
+     "url": "https://www.soundizers.com/home-2/",
+     "verified": true
+    },
+    {
+     "claim": "fedDSP stereo2mono multitrack prep app sells at £20 intro / £50 regular",
+     "url": "https://www.prosoundweb.com/feddsp-announces-new-stereo2mono-batch-audio-prep-app/",
+     "verified": true
+    }
+   ],
+   "cost_usd": 0.6116,
+   "web_searches": 8
+  }
+ },
+ {
+  "name": "Offline drive and footage archive catalog for videographers",
+  "pain": "Videographers with 20+ archive SSDs and HDDs can't find which drive holds a project without plugging drives in, and they hand-organize files after each shoot. Audio collectors report that spreadsheets break at scale and existing catalog apps cost money or are poor.",
+  "who_pays": "Wedding and event videographers, small production companies, and audio and sample collectors.",
+  "evidence_ids": [
+   35,
+   37,
+   8,
+   58
+  ],
+  "pay_signal": "One poster asks how others manage this at scale and lists spreadsheets as an option (35). A post-shoot file-transfer post asks whether people organize by hand or use an automated system (37). An agency has recurring logging errors across batched episodes (58). A developer found existing catalogers either cost money or suck, and built one (8).",
+  "product_idea": "Desktop app that indexes each drive when connected, capturing clip metadata, thumbnails, camera and date. It produces a searchable offline catalog of all drives and auto-builds a client/project folder structure on ingest with a naming convention. Optional Claude summaries of clip contents from thumbnails. One-time license around $49.",
+  "build_weeks": 6,
+  "fit_for_us": 3,
+  "known_competitors": "NeoFinder, DiskCatalogMaker, Kyno, Hedge/OffShoot, PostLab, Silverstack.",
+  "check_next": "Read the top comments on 35 for tool names and complaints, especially about NeoFinder and Kyno. Check whether thumbnail-based search would be a differentiator.",
+  "crowding": {
+   "verdict": "crowded",
+   "reason": "NeoFinder and DiskCatalogMaker (~$39 one-time, mature) already catalog drives offline, and Tusk targets videographers with offline file tracking plus ingest at $49-$79, the same price as the proposed product.",
+   "competitors": [
+    {
+     "name": "NeoFinder (Mac)",
+     "price": "$39.99 one-time (Private License, up to 3 Macs); $25.99 upgrade",
+     "url": "https://www.cdfinder.de/store.html",
+     "verified": true
+    },
+    {
+     "name": "abeMeda (Windows sister of NeoFinder)",
+     "price": "unknown",
+     "url": "https://www.copperhound.com/blog/managing-hard-drives",
+     "verified": false
+    },
+    {
+     "name": "DiskCatalogMaker (Mac)",
+     "price": "$38.99 single user / $79.99 family",
+     "url": "https://diskcatalogmaker.macupdate.com/",
+     "verified": true
+    },
+    {
+     "name": "Tusk (Mac)",
+     "price": "$79 one-time; $49 launch offer",
+     "url": "https://tuskbackup.com/blog/hedge-alternatives-mac",
+     "verified": true
+    },
+    {
+     "name": "OffShoot (formerly Hedge)",
+     "price": "$169 / $249 Pro one-time",
+     "url": "https://tuskbackup.com/blog/hedge-vs-shotput-pro-vs-silverstack",
+     "verified": true
+    },
+    {
+     "name": "ShotPut Pro",
+     "price": "$169 one-off per platform",
+     "url": "https://www.lumirastudio.com/stow/notes/shotput-pro-alternatives.html",
+     "verified": true
+    },
+    {
+     "name": "Silverstack XT (Pomfort)",
+     "price": "799 EUR/year",
+     "url": "https://tuskbackup.com/blog/hedge-vs-shotput-pro-vs-silverstack",
+     "verified": true
+    },
+    {
+     "name": "Kyno (Signiant)",
+     "price": "unknown",
+     "url": "https://lesspain.software/kyno/pages/news/",
+     "verified": false
+    }
+   ],
+   "pay_proof": [
+    {
+     "claim": "NeoFinder sells for $39.99 on MacUpdate with 115 reviews and $25.99 upgrade pricing",
+     "url": "https://www.macupdate.com/app/mac/960/neofinder/reviews",
+     "verified": true
+    },
+    {
+     "claim": "A production company manages hundreds of drives with paid NeoFinder/abeMeda licenses",
+     "url": "https://www.copperhound.com/blog/managing-hard-drives",
+     "verified": true
+    },
+    {
+     "claim": "DiskCatalogMaker sells at $38.99 and is still maintained (v9.3.1)",
+     "url": "https://diskcatalogmaker.macupdate.com/",
+     "verified": true
+    },
+    {
+     "claim": "Tusk sells videographer-focused file tracking/backup at $79 one-time ($49 launch)",
+     "url": "https://tuskbackup.com/blog/best-mac-backup-software",
+     "verified": true
+    },
+    {
+     "claim": "Video pros pay $169-$249 for OffShoot and 799 EUR/yr for Silverstack XT for ingest/offload",
+     "url": "https://tuskbackup.com/blog/hedge-vs-shotput-pro-vs-silverstack",
+     "verified": true
+    }
+   ],
+   "cost_usd": 0.6537,
+   "web_searches": 8
+  }
+ },
+ {
+  "name": "Playlist curator growth tracker and indie release admin",
+  "pain": "Playlist curators track follower changes and track adds and removals manually in spreadsheets and can't tell what moved numbers. Indie artists spend about 80% of release time on admin (pitch formatting, spreadsheets, curator follow-ups) across Notion, sheets and reminder texts.",
+  "who_pays": "Independent artists, small managers or labels, and playlist curators who already pay for SubmitHub, Groover and ads.",
+  "evidence_ids": [
+   128,
+   123,
+   124,
+   127,
+   119,
+   120
+  ],
+  "pay_signal": "Artists pay for promo but report wasting about $400 over 8 months (119). They also complain about paid Groover reviews (120). Curators keep manual spreadsheets (128). One artist logged 80% admin time (123). Others ask what tool to use (124) or are building a cheap hub (127).",
+  "product_idea": "Spotify-API-based curator dashboard. It snapshots playlist followers daily, logs adds and removals, correlates follower changes with specific tracks, and sends Telegram alerts (sudden drop, a track removed from a curator's list). An artist mode tracks pitch status per curator, sends follow-up reminders, and alerts when a pitched track lands on a playlist.",
+  "build_weeks": 4,
+  "fit_for_us": 5,
+  "known_competitors": "Chartmetric, Soundcharts, Songstats, Playlist Push, Artist.Tools, SubmitHub.",
+  "check_next": "Check whether follower counts are still exposed for third-party playlists after the Spotify Web API restrictions. Check Artist.Tools and Songstats pricing. DM the poster of 128 and other curators to test willingness to pay $5–10/month.",
+  "crowding": {
+   "verdict": "crowded",
+   "reason": "Playlist follower history and add/remove alerts are already sold by Songstats, artist.tools, Chartmetric, Soundcharts and SpotOnTrack at $10-$15/mo, which artists accept; the curator track-linking and artist pitch-tracker angles are unchecked and a thin wedge.",
+   "competitors": [
+    {
+     "name": "Songstats",
+     "price": "€9.99/month billed annually (Artist Plan, third-party source)",
+     "url": "https://onestowatch.com/live/songstats-competitor-analysis-music-industry/",
+     "verified": true
+    },
+    {
+     "name": "artist.tools",
+     "price": "Free; from $15/month",
+     "url": "https://www.artist.tools/compare/playlisthunter",
+     "verified": true
+    },
+    {
+     "name": "Chartmetric",
+     "price": "Free basic; Artist $10/month ($100/year); Premium $140/month or $1,400/year (third-party sources)",
+     "url": "https://www.getapp.ca/software/2035171/chartmetric",
+     "verified": true
+    },
+    {
+     "name": "Soundcharts",
+     "price": "$10/month to $129/month (third-party source); API $50-$1,700/month",
+     "url": "https://soundcharts.com/en/pricing",
+     "verified": true
+    },
+    {
+     "name": "SpotOnTrack",
+     "price": "unknown",
+     "url": "https://www.artist.tools/compare/spotontrack",
+     "verified": false
+    },
+    {
+     "name": "Viberate Playlist Analyzer",
+     "price": "unknown",
+     "url": "https://www.viberate.com/artist-stats/spotify-tracker/",
+     "verified": false
+    },
+    {
+     "name": "IFTTT Spotify track-added applet",
+     "price": "unknown",
+     "url": "https://ifttt.com/applets/UDj3qeFR-notify-me-when-a-spotify-track-added-to-playlist",
+     "verified": false
+    },
+    {
+     "name": "PlaylistHunter",
+     "price": "$69 lifetime (per artist.tools comparison page)",
+     "url": "https://www.artist.tools/compare/playlisthunter",
+     "verified": true
+    }
+   ],
+   "pay_proof": [
+    {
+     "claim": "Quoted Songstats user pays about $12/month mainly for playlist alerts",
+     "url": "https://resources.onestowatch.com/songstats-vs-spotify-for-artists/",
+     "verified": true
+    },
+    {
+     "claim": "Chartmetric Premium is listed at $140/month or $1,400/year",
+     "url": "https://www.getapp.ca/software/2035171/chartmetric",
+     "verified": true
+    },
+    {
+     "claim": "Chartmetric Artist Plan is listed at $10/month or $100/year",
+     "url": "https://www.saasworthy.com/product/chartmetric/pricing",
+     "verified": true
+    },
+    {
+     "claim": "Soundcharts sells self-serve API plans from $50/month to $1,700/month",
+     "url": "https://developers.soundcharts.com/pricing",
+     "verified": true
+    },
+    {
+     "claim": "artist.tools sells playlist follower-growth analysis at $15/month",
+     "url": "https://www.artist.tools/compare/spotontrack",
+     "verified": true
+    },
+    {
+     "claim": "Songstats paid plan priced at about $13/month for independent artists",
+     "url": "https://resources.onestowatch.com/honest-songstats-reviews-independent-artists/",
+     "verified": true
+    }
+   ],
+   "cost_usd": 0.6041,
+   "web_searches": 8
+  }
+ },
+ {
+  "name": "Gear inventory and job-prep kit lists for videographers",
+  "pain": "Solo videographers spend hours prepping gear for each job, starting from zero each time, and build inventory spreadsheets by hand for insurance and purchase planning.",
+  "who_pays": "Solo and small-crew videographers and photographers carrying insured gear.",
+  "evidence_ids": [
+   56,
+   41,
+   45
+  ],
+  "pay_signal": "One videographer says prep takes hours every job (56). Another is building a gear inventory spreadsheet for insurance, noting the value adds up fast (41). A small production company is investing in carts to speed hauling (45). Explicit software pay intent is not shown, so this is a weaker signal.",
+  "product_idea": "Mobile-friendly app. Add gear once (Claude autofills specs and value from the model name) and build reusable kit templates per job type ('wedding', 'interview'). Check items out and in per job with QR labels, and export an insurance schedule PDF. Freemium, with pro at $5/month.",
+  "build_weeks": 3,
+  "fit_for_us": 3,
+  "known_competitors": "Cheqroom, Sortly, Shelf.nu, Kitsplit, Gear Patrol-style spreadsheet templates.",
+  "check_next": "Read the replies to 56 and 41 for which tools people use. Test demand cheaply with a paid Notion or Sheets gear-and-kit template on Gumroad before building an app.",
+  "crowding": {
+   "verdict": "crowded",
+   "reason": "GearDex already ships nearly the exact feature set (inventory, kits, packing manifests, QR labels, AI price lookup, insurance records) at $3.25-4/mo with a free tier, plus several free apps (MyGearVault, Camera Shelf, onurgear); no sourced proof that solo videographers pay more.",
+   "competitors": [
+    {
+     "name": "GearDex",
+     "price": "Free up to 25 items; Pro US$4/month or $39/year ($3.25/mo yearly)",
+     "url": "https://www.geardex.app/pricing",
+     "verified": true
+    },
+    {
+     "name": "MyGearVault",
+     "price": "Free (per news coverage; current status unknown)",
+     "url": "https://www.dpreview.com/news/9446503741/mygearvault-app-now-available-on-android-track-and-protect-your-gear-on-the-go/",
+     "verified": true
+    },
+    {
+     "name": "Camera Shelf - Gear Tracker",
+     "price": "Free with in-app purchases (IAP price unknown)",
+     "url": "https://apps.apple.com/eg/app/camera-shelf-gear-tracker/id6755641228",
+     "verified": true
+    },
+    {
+     "name": "Gear Inventory (onurgear)",
+     "price": "Free",
+     "url": "https://onurgear.web.app/",
+     "verified": true
+    },
+    {
+     "name": "Cheqroom",
+     "price": "From $184/month (Core), $275 Business, $367 Enterprise",
+     "url": "https://www.capterra.com/p/140824/CHEQROOM/pricing/",
+     "verified": true
+    },
+    {
+     "name": "Sortly",
+     "price": "Free tier; paid from $49/month",
+     "url": "https://www.capterra.com/p/169199/Sortly-Pro/",
+     "verified": true
+    },
+    {
+     "name": "Shelf.nu",
+     "price": "Free tier; paid prices unknown",
+     "url": "https://www.shelf.nu/alternatives/cheqroom",
+     "verified": false
+    }
+   ],
+   "pay_proof": [
+    {
+     "claim": "GearDex sells a Pro subscription for photographers at US$4/month or US$39/year (a pricing page, not proof of buyers)",
+     "url": "https://www.geardex.app/legal/billing",
+     "verified": true
+    },
+    {
+     "claim": "GearDex Pro includes packing manifest, QR labels and market price lookup at $3.25/mo billed yearly",
+     "url": "https://www.geardex.app/pricing",
+     "verified": true
+    },
+    {
+     "claim": "Cheqroom equipment check-out software charges from $184/month and is reviewed on Capterra (teams pay, not solo shooters)",
+     "url": "https://www.capterra.com/p/140824/CHEQROOM/pricing/",
+     "verified": true
+    },
+    {
+     "claim": "Sortly inventory paid plans range from $49 to $119/month",
+     "url": "https://www.trustradius.com/products/sortly/pricing",
+     "verified": true
+    },
+    {
+     "claim": "Camera Shelf gear tracker offers in-app purchases",
+     "url": "https://apps.apple.com/eg/app/camera-shelf-gear-tracker/id6755641228",
+     "verified": true
+    }
+   ],
+   "cost_usd": 0.7109,
+   "web_searches": 8
+  }
+ }
+]

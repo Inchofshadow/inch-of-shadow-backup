@@ -1,0 +1,47 @@
+PROMPT FOR CLAUDE (Cowork Session)
+====================================
+
+CONTEXT:
+You are working inside the Inch of Shadow codebase -- a Python-based music platform for a Berlin-based underground electronic artist (dark disco, acid, electro, EBM, techno). Read CLAUDE.md in the project root for full architecture and rules.
+
+TASK: SoundCloud SEO Optimization Implementation
+
+A full SEO audit of the SoundCloud profile (https://soundcloud.com/inch-of-shadow) has been completed and saved to plans/soundcloud-seo-audit.txt. Read that file first -- it contains the complete audit with all findings, track-by-track corrections, and priority-ranked actions.
+
+YOUR OBJECTIVES:
+
+1. READ THE AUDIT FILE
+   - Read plans/soundcloud-seo-audit.txt thoroughly before doing anything
+   - Understand all 6 sections: ranked actions, track corrections, profile fixes, Pro features checklist, content strategy, description improvements
+
+2. HELP ME IMPLEMENT THE FIXES
+   Work through the audit with me interactively, starting from Tier 1 (highest SEO impact) and moving down. For each action:
+   - Tell me exactly what to change and where in SoundCloud's interface
+   - Provide the corrected text/tags ready to copy-paste
+   - Confirm completion before moving to the next item
+
+3. GENERATE OPTIMIZED CONTENT
+   When we get to profile-level changes:
+   - Draft the expanded bio (~1500 chars) using the template in Section 3 of the audit
+   - Generate differentiated descriptions for each of the 3 Meltscape EP tracks
+   - Draft the About Blank set description (currently 1 sentence -- needs tracklist prompt, genre keywords, venue context)
+
+4. UPDATE THE CODEBASE IF NEEDED -
+   - If any of the SEO findings affect how the Release Manager generates SoundCloud metadata or descriptions, suggest code changes
+   - Check release_manager/seo_platform_specs.json for SoundCloud specs -- update if the audit reveals specs that are wrong or missing
+   - Check if the SEO copy generator (release_manager/seo_copy_generator.py) handles SoundCloud tag formatting correctly
+
+5. UPDATE THE GROWTH PLAN
+   - After implementation, update the memory file or plans as needed to reflect what was done
+   - Flag any items that could not be fixed (e.g., permalink slugs on existing tracks)
+
+RULES:
+- Read CLAUDE.md before starting
+- No emojis
+- Ask before making code changes
+- Work through items in priority order (Tier 1 first)
+- Provide copy-paste ready text for all SoundCloud field updates
+- Flag if anything in the audit seems wrong or outdated
+- ASK ME QUESTIONS when you need more detail for better results -- for example: BPM, key signature, tracklists, specific mood/vibe of a track, or anything else that would make the output more accurate. If you are not sure about something, ask. Do not guess or assume. Accuracy matters more than speed.
+
+START BY: Reading plans/soundcloud-seo-audit.txt, then ask me which tier I want to start with.

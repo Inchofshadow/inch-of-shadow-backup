@@ -1,0 +1,45 @@
+{
+  "name": "ig-hooks",
+  "question": "Which questions, phrases and words repeat in the comments and captions of top posts in the dark disco, EBM, coldwave and darkwave corners of Instagram and YouTube?",
+  "system_extra": "Context: Inch of Shadow is a Berlin artist (Amir): dark dance wave, sitting on dark disco, EBM, coldwave, acid, electro and techno; from 2026 also songs with his own vocals. This feeds IG captions and reel hooks. Return the repeated questions people ask\n(gear, track ID, place, how it was made), the words they use for the feeling, and the opening lines\nthat pull comments. examples = the short phrases as people write them (a few words each, no full\ncomments). use = one hook or caption opener in his restrained voice (no clickbait, no emojis, no\ndouble dashes) that rides on it.",
+  "output_dir": "gap_radar/reports/ig-hooks",
+  "crowding": false,
+  "sources": {
+    "reddit": {
+      "subs": [],
+      "phrases": []
+    },
+    "hn_queries": [],
+    "stackexchange": {
+      "sites": [],
+      "queries": []
+    },
+    "youtube_queries": [
+      "dark disco mix",
+      "EBM techno set",
+      "dark disco boiler room",
+      "new beat mix",
+      "minimal wave mix"
+    ],
+    "github_queries": [],
+    "appstore": {
+      "genres": [],
+      "app_ids": []
+    },
+    "hikerapi": {
+      "hashtags": [
+        "darkdisco",
+        "ebm",
+        "coldwave",
+        "darkwave",
+        "acidtechno",
+        "newbeat",
+        "minimalwave",
+        "industrialtechno",
+        "postpunk"
+      ],
+      "accounts": [],
+      "max_calls": 0
+    }
+  }
+}

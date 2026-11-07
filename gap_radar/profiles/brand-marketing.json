@@ -1,0 +1,49 @@
+{
+  "name": "brand-marketing",
+  "question": "What do listeners of dark, cinematic electronic and post-punk artists (R. Missing, The Cure, Crystal Castles, Boy Harsher and similar) share, love and hate about how artists show up: posts, videos, visuals, merch, live shows, behind the scenes, how artists talk to fans?",
+  "system_extra": "Context: Inch of Shadow is a Berlin artist (Amir): dark dance wave, sitting on dark disco, EBM, coldwave, acid, electro and techno; from 2026 also songs with his own vocals. His voice is cinematic, restrained and declarative: no clickbait, no hype. This\nfeeds his brand and the IG content plan. Return what fans reward or punish in artist content, with the\nconcrete format (e.g. studio clips, tour diaries, lyric posts, visual series), and say in use how an\nartist with this voice could apply it. Skip generic marketing advice anyone knows (post consistently,\nengage with fans); only keep what these listeners specifically say.",
+  "output_dir": "gap_radar/reports/brand-marketing",
+  "crowding": false,
+  "sources": {
+    "reddit": {
+      "subs": [
+        "TheCure",
+        "darkwave",
+        "postpunk",
+        "goth",
+        "coldwave"
+      ],
+      "phrases": [
+        "\"music video\"",
+        "\"live show\"",
+        "\"bandcamp friday\"",
+        "\"tour poster\"",
+        "\"merch table\"",
+        "\"setlist\"",
+        "\"newsletter\"",
+        "\"visualizer\"",
+        "\"no phones\""
+      ]
+    },
+    "hn_queries": [],
+    "stackexchange": {
+      "sites": [],
+      "queries": []
+    },
+    "youtube_queries": [
+      "R. Missing",
+      "Boy Harsher interview",
+      "Boy Harsher live full set"
+    ],
+    "github_queries": [],
+    "appstore": {
+      "genres": [],
+      "app_ids": []
+    },
+    "hikerapi": {
+      "hashtags": [],
+      "accounts": [],
+      "max_calls": 0
+    }
+  }
+}

@@ -1,0 +1,1 @@
+Medium: modulated horizontal scanlines, line thickness follows brightness, like a TV screen.

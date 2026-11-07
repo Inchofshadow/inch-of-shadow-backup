@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!-- DRAFT, not installed, needs the SC chat's ok + Amir's yes.
+     SC discovery refresh, three slots a day (06:30, 07:30, 08:30), replacing the Claude tasks
+     sc-weekly-health, sc-refresh-0730 and sc-refresh-0830 (the SC chat decides whether the
+     08:30 slot moves too; if not, drop the third dict below and the commit stays in that task).
+     Same interpreter as com.inchofshadow.stats-sync.plist (Full Disk Access granted).
+     Install (only after both yeses): cp this file (without .draft) to ~/Library/LaunchAgents/,
+     cp sc_refresh.sh to deploy/launchd/ and chmod +x, then
+       launchctl load ~/Library/LaunchAgents/com.inchofshadow.sc-refresh.plist
+     and disable the three Claude tasks. Undo: launchctl unload the file, delete it, re-enable the tasks. -->
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.inchofshadow.sc-refresh</string>
+    <key>ProgramArguments</key>
+    <array>
+        <string>/bin/bash</string>
+        <string>/Users/amir/Desktop/Inch of Shadow/Inchofshadowcode/deploy/launchd/sc_refresh.sh</string>
+    </array>
+    <key>WorkingDirectory</key>
+    <string>/Users/amir/Desktop/Inch of Shadow/Inchofshadowcode</string>
+    <key>EnvironmentVariables</key>
+    <dict>
+        <key>PATH</key>
+        <string>/usr/bin:/bin:/usr/sbin:/sbin</string>
+        <key>HOME</key>
+        <string>/Users/amir</string>
+    </dict>
+    <key>StartCalendarInterval</key>
+    <array>
+        <dict><key>Hour</key><integer>6</integer><key>Minute</key><integer>30</integer></dict>
+        <dict><key>Hour</key><integer>7</integer><key>Minute</key><integer>30</integer></dict>
+        <dict><key>Hour</key><integer>8</integer><key>Minute</key><integer>30</integer></dict>
+    </array>
+    <key>StandardOutPath</key>
+    <string>/Users/amir/Desktop/Inch of Shadow/Inchofshadowcode/docs/reports/sc-refresh-launchd.log</string>
+    <key>StandardErrorPath</key>
+    <string>/Users/amir/Desktop/Inch of Shadow/Inchofshadowcode/docs/reports/sc-refresh-launchd.log</string>
+</dict>
+</plist>

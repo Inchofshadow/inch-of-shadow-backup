@@ -1,0 +1,3737 @@
+[
+ {
+  "copies": [
+   {
+    "path": "Cluster New Wave/CS-R50e-Live/R-50e/Samples/cs_r50e_rvb_bass_drum.wav",
+    "bytes": 56052,
+    "used_by_path": 56,
+    "songs_using_this_name": [
+     "Emphaty"
+    ]
+   },
+   {
+    "path": "Studio Real Drum Machines/Kawai R-50e & R-100/Kawai R-50e/Kick/Kawai R-50e Gated Kick.wav",
+    "bytes": 56052,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   }
+  ]
+ },
+ {
+  "copies": [
+   {
+    "path": "Cluster New Wave/CS-R50e-Live/R-50e/Samples/cs_r50e_elec_bass_drum.wav",
+    "bytes": 37860,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   },
+   {
+    "path": "Studio Real Drum Machines/Kawai R-50e & R-100/Kawai R-50e/Kick/Kawai R-50e Elec. Kick.wav",
+    "bytes": 37860,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   }
+  ]
+ },
+ {
+  "copies": [
+   {
+    "path": "Cluster New Wave/CS-R50e-Live/R-50e/Samples/cs_r50e_ac_bass_drum.wav",
+    "bytes": 38080,
+    "used_by_path": 265,
+    "songs_using_this_name": [
+     "DONE",
+     "Emphaty",
+     "Night F Dorian 119",
+     "Open F minor 121"
+    ]
+   },
+   {
+    "path": "Studio Real Drum Machines/Kawai R-50e & R-100/Kawai R-50e/Kick/Kawai R-50e Acc. Kick.wav",
+    "bytes": 38080,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   }
+  ]
+ },
+ {
+  "copies": [
+   {
+    "path": "Cluster New Wave/CS-R50e-Live/R-50e/Samples/cs_r50e_timpani.wav",
+    "bytes": 59904,
+    "used_by_path": 163,
+    "songs_using_this_name": [
+     "Emphaty",
+     "Night F Dorian 119",
+     "Open F minor 121"
+    ]
+   },
+   {
+    "path": "Studio Real Drum Machines/Kawai R-50e & R-100/Kawai R-50e/Misc/Kawai R-50e Timpani.wav",
+    "bytes": 59904,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   }
+  ]
+ },
+ {
+  "copies": [
+   {
+    "path": "Cluster New Wave/CS-R50e-Live/R-50e/Samples/cs_r50e_orc_hit_1.wav",
+    "bytes": 218172,
+    "used_by_path": 163,
+    "songs_using_this_name": [
+     "Emphaty",
+     "Night F Dorian 119",
+     "Open F minor 121"
+    ]
+   },
+   {
+    "path": "Studio Real Drum Machines/Kawai R-50e & R-100/Kawai R-50e/Misc/Kawai R-50e Orc. Hit 1.wav",
+    "bytes": 218172,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   }
+  ]
+ },
+ {
+  "copies": [
+   {
+    "path": "Cluster New Wave/CS-R50e-Live/R-50e/Samples/cs_r50e_orc_hit_2.wav",
+    "bytes": 153192,
+    "used_by_path": 107,
+    "songs_using_this_name": [
+     "Emphaty",
+     "Night F Dorian 119",
+     "Open F minor 121"
+    ]
+   },
+   {
+    "path": "Studio Real Drum Machines/Kawai R-50e & R-100/Kawai R-50e/Misc/Kawai R-50e Orc. Hit 2.wav",
+    "bytes": 153192,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   }
+  ]
+ },
+ {
+  "copies": [
+   {
+    "path": "Cluster New Wave/CS-R50e-Live/R-50e/Samples/cs_r50e_normal_ebass.wav",
+    "bytes": 83772,
+    "used_by_path": 56,
+    "songs_using_this_name": [
+     "Emphaty"
+    ]
+   },
+   {
+    "path": "Studio Real Drum Machines/Kawai R-50e & R-100/Kawai R-50e/Misc/Kawai R-50e Normal E.Bass.wav",
+    "bytes": 83772,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   }
+  ]
+ },
+ {
+  "copies": [
+   {
+    "path": "Cluster New Wave/CS-R50e-Live/R-50e/Samples/cs_r50e_click.wav",
+    "bytes": 26692,
+    "used_by_path": 163,
+    "songs_using_this_name": [
+     "Emphaty",
+     "Night F Dorian 119",
+     "Open F minor 121"
+    ]
+   },
+   {
+    "path": "Studio Real Drum Machines/Kawai R-50e & R-100/Kawai R-50e/Misc/Kawai R-50e Click.wav",
+    "bytes": 26692,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   }
+  ]
+ },
+ {
+  "copies": [
+   {
+    "path": "Cluster New Wave/CS-R50e-Live/R-50e/Samples/cs_r50e_funk_ebass.wav",
+    "bytes": 77268,
+    "used_by_path": 56,
+    "songs_using_this_name": [
+     "Emphaty"
+    ]
+   },
+   {
+    "path": "Studio Real Drum Machines/Kawai R-50e & R-100/Kawai R-50e/Misc/Kawai R-50e Funk_E.Bass.wav",
+    "bytes": 77268,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   }
+  ]
+ },
+ {
+  "copies": [
+   {
+    "path": "Cluster New Wave/CS-R50e-Live/R-50e/Samples/cs_r50e_op_hihat.wav",
+    "bytes": 91020,
+    "used_by_path": 185,
+    "songs_using_this_name": [
+     "DONE",
+     "Emphaty",
+     "Night F Dorian 119",
+     "Open F minor 121"
+    ]
+   },
+   {
+    "path": "Studio Real Drum Machines/Kawai R-50e & R-100/Kawai R-50e/Cymbals/Kawai R-50e Open HiHat.wav",
+    "bytes": 91020,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   }
+  ]
+ },
+ {
+  "copies": [
+   {
+    "path": "Cluster New Wave/CS-R50e-Live/R-50e/Samples/cs_r50e_crash_cymbal.wav",
+    "bytes": 168928,
+    "used_by_path": 185,
+    "songs_using_this_name": [
+     "DONE",
+     "Emphaty",
+     "Night F Dorian 119",
+     "Open F minor 121"
+    ]
+   },
+   {
+    "path": "Studio Real Drum Machines/Kawai R-50e & R-100/Kawai R-50e/Cymbals/Kawai R-50e Crash.wav",
+    "bytes": 168928,
+    "used_by_path": 56,
+    "songs_using_this_name": [
+     "DONE"
+    ]
+   }
+  ]
+ },
+ {
+  "copies": [
+   {
+    "path": "Cluster New Wave/CS-R50e-Live/R-50e/Samples/cs_r50e_cl_hihat.wav",
+    "bytes": 32466,
+    "used_by_path": 189,
+    "songs_using_this_name": [
+     "125 bpm Project",
+     "DONE",
+     "Emphaty",
+     "Night F Dorian 119",
+     "Open F minor 121"
+    ]
+   },
+   {
+    "path": "Studio Real Drum Machines/Kawai R-50e & R-100/Kawai R-50e/Cymbals/Kawai R-50e Closed Hihat.wav",
+    "bytes": 32466,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   }
+  ]
+ },
+ {
+  "copies": [
+   {
+    "path": "Cluster New Wave/CS-R50e-Live/R-50e/Samples/cs_r50e_rvb_tom_lo.wav",
+    "bytes": 72490,
+    "used_by_path": 56,
+    "songs_using_this_name": [
+     "Emphaty"
+    ]
+   },
+   {
+    "path": "Studio Real Drum Machines/Kawai R-50e & R-100/Kawai R-50e/Toms/Kawai R-50e Tom Lo.wav",
+    "bytes": 72490,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   }
+  ]
+ },
+ {
+  "copies": [
+   {
+    "path": "Cluster New Wave/CS-R50e-Live/R-50e/Samples/cs_r50e_elec_tom_hi.wav",
+    "bytes": 39640,
+    "used_by_path": 195,
+    "songs_using_this_name": [
+     "Emphaty",
+     "I See Am 75 bpm",
+     "Night F Dorian 119",
+     "Open F minor 121"
+    ]
+   },
+   {
+    "path": "Studio Real Drum Machines/Kawai R-50e & R-100/Kawai R-50e/Toms/Kawai R-50e Elec. Tom Hi.wav",
+    "bytes": 39640,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   }
+  ]
+ },
+ {
+  "copies": [
+   {
+    "path": "Cluster New Wave/CS-R50e-Live/R-50e/Samples/cs_r50e_rvb_tom_hi.wav",
+    "bytes": 80118,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   },
+   {
+    "path": "Studio Real Drum Machines/Kawai R-50e & R-100/Kawai R-50e/Toms/Kawai R-50e Tom Hi.wav",
+    "bytes": 80118,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   }
+  ]
+ },
+ {
+  "copies": [
+   {
+    "path": "Cluster New Wave/CS-R50e-Live/R-50e/Samples/cs_r50e_elec_tom_mid.wav",
+    "bytes": 44194,
+    "used_by_path": 107,
+    "songs_using_this_name": [
+     "Emphaty",
+     "Night F Dorian 119",
+     "Open F minor 121"
+    ]
+   },
+   {
+    "path": "Studio Real Drum Machines/Kawai R-50e & R-100/Kawai R-50e/Toms/Kawai R-50e Elec. Tom Mid.wav",
+    "bytes": 44194,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   }
+  ]
+ },
+ {
+  "copies": [
+   {
+    "path": "Cluster New Wave/CS-R50e-Live/R-50e/Samples/cs_r50e_elec_tom_lo.wav",
+    "bytes": 58132,
+    "used_by_path": 107,
+    "songs_using_this_name": [
+     "Emphaty",
+     "Night F Dorian 119",
+     "Open F minor 121"
+    ]
+   },
+   {
+    "path": "Studio Real Drum Machines/Kawai R-50e & R-100/Kawai R-50e/Toms/Kawai R-50e Elec. Tom Lo.wav",
+    "bytes": 58132,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   }
+  ]
+ },
+ {
+  "copies": [
+   {
+    "path": "Cluster New Wave/CS-R50e-Live/R-50e/Samples/cs_r50e_ac_snare_drum.wav",
+    "bytes": 41368,
+    "used_by_path": 107,
+    "songs_using_this_name": [
+     "Emphaty",
+     "Night F Dorian 119",
+     "Open F minor 121"
+    ]
+   },
+   {
+    "path": "Studio Real Drum Machines/Kawai R-50e & R-100/Kawai R-50e/Snares/Kawai R-50e Ac. Snare.wav",
+    "bytes": 41368,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   }
+  ]
+ },
+ {
+  "copies": [
+   {
+    "path": "Cluster New Wave/CS-R50e-Live/R-50e/Samples/cs_r50e_hand_clap.wav",
+    "bytes": 38604,
+    "used_by_path": 163,
+    "songs_using_this_name": [
+     "Emphaty",
+     "Night F Dorian 119",
+     "Open F minor 121"
+    ]
+   },
+   {
+    "path": "Studio Real Drum Machines/Kawai R-50e & R-100/Kawai R-50e/Snares/Kawai R-50e Clap.wav",
+    "bytes": 38604,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   }
+  ]
+ },
+ {
+  "copies": [
+   {
+    "path": "Cluster New Wave/CS-R50e-Live/R-50e/Samples/cs_r50e_elec_snare_drum.wav",
+    "bytes": 34204,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   },
+   {
+    "path": "Studio Real Drum Machines/Kawai R-50e & R-100/Kawai R-50e/Snares/Kawai R-50e Elec. Snare.wav",
+    "bytes": 34204,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   }
+  ]
+ },
+ {
+  "copies": [
+   {
+    "path": "Cluster New Wave/CS-R50e-Live/R-50e/Samples/cs_r50e_rvb_snare_drum.wav",
+    "bytes": 86908,
+    "used_by_path": 56,
+    "songs_using_this_name": [
+     "Emphaty"
+    ]
+   },
+   {
+    "path": "Studio Real Drum Machines/Kawai R-50e & R-100/Kawai R-50e/Snares/Kawai R-50e Gated Snare 2.wav",
+    "bytes": 86908,
+    "used_by_path": 168,
+    "songs_using_this_name": [
+     "DONE"
+    ]
+   }
+  ]
+ },
+ {
+  "copies": [
+   {
+    "path": "Cluster New Wave/CS-R50e-Live/R-50e/Samples/cs_r50e_rim_shot.wav",
+    "bytes": 35478,
+    "used_by_path": 163,
+    "songs_using_this_name": [
+     "Emphaty",
+     "Night F Dorian 119",
+     "Open F minor 121"
+    ]
+   },
+   {
+    "path": "Studio Real Drum Machines/Kawai R-50e & R-100/Kawai R-50e/Snares/Kawai R-50e Rimshot.wav",
+    "bytes": 35478,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   }
+  ]
+ },
+ {
+  "copies": [
+   {
+    "path": "Cluster New Wave/CS-R50e-Live/R-50e/Samples/cs_r50e_gated_snare_drum.wav",
+    "bytes": 52318,
+    "used_by_path": 56,
+    "songs_using_this_name": [
+     "Emphaty"
+    ]
+   },
+   {
+    "path": "Studio Real Drum Machines/Kawai R-50e & R-100/Kawai R-50e/Snares/Kawai R-50e Gated Snare 1.wav",
+    "bytes": 52318,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   }
+  ]
+ },
+ {
+  "copies": [
+   {
+    "path": "Cluster New Wave/CS-R50e-Live/R-50e/Samples/cs_r50e_finger_snap.wav",
+    "bytes": 31210,
+    "used_by_path": 163,
+    "songs_using_this_name": [
+     "Emphaty",
+     "Night F Dorian 119",
+     "Open F minor 121"
+    ]
+   },
+   {
+    "path": "Studio Real Drum Machines/Kawai R-50e & R-100/Kawai R-50e/Snares/Kawai R-50e Finger Snap.wav",
+    "bytes": 31210,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   }
+  ]
+ },
+ {
+  "copies": [
+   {
+    "path": "Cluster New Wave/CS-RX7-Live/RX7/Samples/cs_rx7_004_jbd.wav",
+    "bytes": 112462,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   },
+   {
+    "path": "Studio Real Drum Machines/Yamaha RX-Series/Yamaha RX7/Kick/Yamaha RX7 jbd.wav",
+    "bytes": 112462,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   }
+  ]
+ },
+ {
+  "copies": [
+   {
+    "path": "Cluster New Wave/CS-RX7-Live/RX7/Samples/cs_rx7_002_bd2.wav",
+    "bytes": 41064,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   },
+   {
+    "path": "Studio Real Drum Machines/Yamaha RX-Series/Yamaha RX7/Kick/Yamaha RX7 bd2.wav",
+    "bytes": 41064,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   }
+  ]
+ },
+ {
+  "copies": [
+   {
+    "path": "Cluster New Wave/CS-RX7-Live/RX7/Samples/cs_rx7_003_bd3.wav",
+    "bytes": 34054,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   },
+   {
+    "path": "Studio Real Drum Machines/Yamaha RX-Series/Yamaha RX7/Kick/Yamaha RX7 bd3.wav",
+    "bytes": 34054,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   }
+  ]
+ },
+ {
+  "copies": [
+   {
+    "path": "Cluster New Wave/CS-RX7-Live/RX7/Samples/cs_rx7_001_bd1.wav",
+    "bytes": 45312,
+    "used_by_path": 118,
+    "songs_using_this_name": [
+     "Night F Dorian 119"
+    ]
+   },
+   {
+    "path": "Studio Real Drum Machines/Yamaha RX-Series/Yamaha RX7/Kick/Yamaha RX7 bd1.wav",
+    "bytes": 45312,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   }
+  ]
+ },
+ {
+  "copies": [
+   {
+    "path": "Cluster New Wave/CS-RX7-Live/RX7/Samples/cs_rx7_006_hbd1.wav",
+    "bytes": 91972,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   },
+   {
+    "path": "Studio Real Drum Machines/Yamaha RX-Series/Yamaha RX7/Kick/Yamaha RX7 hbd1.wav",
+    "bytes": 91972,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   }
+  ]
+ },
+ {
+  "copies": [
+   {
+    "path": "Cluster New Wave/CS-RX7-Live/RX7/Samples/cs_rx7_008_pbd1.wav",
+    "bytes": 66510,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   },
+   {
+    "path": "Studio Real Drum Machines/Yamaha RX-Series/Yamaha RX7/Kick/Yamaha RX7 pbd1.wav",
+    "bytes": 66510,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   }
+  ]
+ },
+ {
+  "copies": [
+   {
+    "path": "Cluster New Wave/CS-RX7-Live/RX7/Samples/cs_rx7_007_hbd2.wav",
+    "bytes": 87492,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   },
+   {
+    "path": "Studio Real Drum Machines/Yamaha RX-Series/Yamaha RX7/Kick/Yamaha RX7 hbd2.wav",
+    "bytes": 87492,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   }
+  ]
+ },
+ {
+  "copies": [
+   {
+    "path": "Cluster New Wave/CS-RX7-Live/RX7/Samples/cs_rx7_009_pbd2.wav",
+    "bytes": 91392,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   },
+   {
+    "path": "Studio Real Drum Machines/Yamaha RX-Series/Yamaha RX7/Kick/Yamaha RX7 pbd2.wav",
+    "bytes": 91392,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   }
+  ]
+ },
+ {
+  "copies": [
+   {
+    "path": "Cluster New Wave/CS-RX7-Live/RX7/Samples/cs_rx7_005_fbd.wav",
+    "bytes": 53364,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   },
+   {
+    "path": "Studio Real Drum Machines/Yamaha RX-Series/Yamaha RX7/Kick/Yamaha RX7 fbd.wav",
+    "bytes": 53364,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   }
+  ]
+ },
+ {
+  "copies": [
+   {
+    "path": "Cluster New Wave/CS-RX7-Live/RX7/Samples/cs_rx7_045_hh_pedal.wav",
+    "bytes": 34020,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   },
+   {
+    "path": "Studio Real Drum Machines/Yamaha RX-Series/Yamaha RX7/Hihat/Yamaha RX7 hh_pedal.wav",
+    "bytes": 34020,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   }
+  ]
+ },
+ {
+  "copies": [
+   {
+    "path": "Cluster New Wave/CS-RX7-Live/RX7/Samples/cs_rx7_066_shaker.wav",
+    "bytes": 42354,
+    "used_by_path": 118,
+    "songs_using_this_name": [
+     "Night F Dorian 119"
+    ]
+   },
+   {
+    "path": "Studio Real Drum Machines/Yamaha RX-Series/Yamaha RX7/Hihat/Yamaha RX7 shaker.wav",
+    "bytes": 42354,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   }
+  ]
+ },
+ {
+  "copies": [
+   {
+    "path": "Cluster New Wave/CS-RX7-Live/RX7/Samples/cs_rx7_042_hh_close.wav",
+    "bytes": 33366,
+    "used_by_path": 122,
+    "songs_using_this_name": [
+     "125 bpm Project",
+     "Night F Dorian 119"
+    ]
+   },
+   {
+    "path": "Studio Real Drum Machines/Yamaha RX-Series/Yamaha RX7/Hihat/Yamaha RX7 hh_close.wav",
+    "bytes": 33366,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   }
+  ]
+ },
+ {
+  "copies": [
+   {
+    "path": "Cluster New Wave/CS-RX7-Live/RX7/Samples/cs_rx7_010_sd1.wav",
+    "bytes": 67324,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   },
+   {
+    "path": "Studio Real Drum Machines/Yamaha RX-Series/Yamaha RX7/Clap & Snare/Yamaha RX7_010_sd1.wav",
+    "bytes": 67324,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   },
+   {
+    "path": "Studio Real Drum Machines/Yamaha RX-Series/Yamaha RX7/Snare/Yamaha RX7 sd1.wav",
+    "bytes": 67324,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   }
+  ]
+ },
+ {
+  "copies": [
+   {
+    "path": "Cluster New Wave/CS-RX7-Live/RX7/Samples/cs_rx7_012_sd3.wav",
+    "bytes": 68134,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   },
+   {
+    "path": "Studio Real Drum Machines/Yamaha RX-Series/Yamaha RX7/Clap & Snare/Yamaha RX7_012_sd3.wav",
+    "bytes": 68134,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   },
+   {
+    "path": "Studio Real Drum Machines/Yamaha RX-Series/Yamaha RX7/Snare/Yamaha RX7 sd3.wav",
+    "bytes": 68134,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   }
+  ]
+ },
+ {
+  "copies": [
+   {
+    "path": "Cluster New Wave/CS-RX7-Live/RX7/Samples/cs_rx7_011_sd2.wav",
+    "bytes": 51270,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   },
+   {
+    "path": "Studio Real Drum Machines/Yamaha RX-Series/Yamaha RX7/Clap & Snare/Yamaha RX7_011_sd2.wav",
+    "bytes": 51270,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   },
+   {
+    "path": "Studio Real Drum Machines/Yamaha RX-Series/Yamaha RX7/Snare/Yamaha RX7 sd2.wav",
+    "bytes": 51270,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   }
+  ]
+ },
+ {
+  "copies": [
+   {
+    "path": "Cluster New Wave/CS-RX7-Live/RX7/Samples/cs_rx7_013_picol_sd.wav",
+    "bytes": 41280,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   },
+   {
+    "path": "Studio Real Drum Machines/Yamaha RX-Series/Yamaha RX7/Clap & Snare/Yamaha RX7_013_picol_sd.wav",
+    "bytes": 41280,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   },
+   {
+    "path": "Studio Real Drum Machines/Yamaha RX-Series/Yamaha RX7/Snare/Yamaha RX7 picol_sd.wav",
+    "bytes": 41280,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   }
+  ]
+ },
+ {
+  "copies": [
+   {
+    "path": "Cluster New Wave/CS-RX7-Live/RX7/Samples/cs_rx7_014_hsd1.wav",
+    "bytes": 89616,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   },
+   {
+    "path": "Studio Real Drum Machines/Yamaha RX-Series/Yamaha RX7/Clap & Snare/Yamaha RX7_014_hsd1.wav",
+    "bytes": 89616,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   },
+   {
+    "path": "Studio Real Drum Machines/Yamaha RX-Series/Yamaha RX7/Snare/Yamaha RX7 hard sd1.wav",
+    "bytes": 89616,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   }
+  ]
+ },
+ {
+  "copies": [
+   {
+    "path": "Cluster New Wave/CS-RX7-Live/RX7/Samples/cs_rx7_016_hsd3.wav",
+    "bytes": 83424,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   },
+   {
+    "path": "Studio Real Drum Machines/Yamaha RX-Series/Yamaha RX7/Clap & Snare/Yamaha RX7_016_hsd3.wav",
+    "bytes": 83424,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   },
+   {
+    "path": "Studio Real Drum Machines/Yamaha RX-Series/Yamaha RX7/Snare/Yamaha RX7 hard sd3.wav",
+    "bytes": 83424,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   }
+  ]
+ },
+ {
+  "copies": [
+   {
+    "path": "Cluster New Wave/CS-RX7-Live/RX7/Samples/cs_rx7_015_hsd2.wav",
+    "bytes": 88168,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   },
+   {
+    "path": "Studio Real Drum Machines/Yamaha RX-Series/Yamaha RX7/Clap & Snare/Yamaha RX7_015_hsd2.wav",
+    "bytes": 88168,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   },
+   {
+    "path": "Studio Real Drum Machines/Yamaha RX-Series/Yamaha RX7/Snare/Yamaha RX7 hard sd2.wav",
+    "bytes": 88168,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   }
+  ]
+ },
+ {
+  "copies": [
+   {
+    "path": "Cluster New Wave/CS-RX7-Live/RX7/Samples/cs_rx7_017_psd1.wav",
+    "bytes": 63828,
+    "used_by_path": 118,
+    "songs_using_this_name": [
+     "Night F Dorian 119"
+    ]
+   },
+   {
+    "path": "Studio Real Drum Machines/Yamaha RX-Series/Yamaha RX7/Clap & Snare/Yamaha RX7_017_psd1.wav",
+    "bytes": 63828,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   },
+   {
+    "path": "Studio Real Drum Machines/Yamaha RX-Series/Yamaha RX7/Snare/Pitched Snare Drums/Yamaha RX7 pitched sd1.wav",
+    "bytes": 63828,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   }
+  ]
+ },
+ {
+  "copies": [
+   {
+    "path": "Cluster New Wave/CS-RX7-Live/RX7/Samples/cs_rx7_018_psd2.wav",
+    "bytes": 58944,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   },
+   {
+    "path": "Studio Real Drum Machines/Yamaha RX-Series/Yamaha RX7/Clap & Snare/Yamaha RX7_018_psd2.wav",
+    "bytes": 58944,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   },
+   {
+    "path": "Studio Real Drum Machines/Yamaha RX-Series/Yamaha RX7/Snare/Pitched Snare Drums/Yamaha RX7 pitched sd2.wav",
+    "bytes": 58944,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   }
+  ]
+ },
+ {
+  "copies": [
+   {
+    "path": "Cluster New Wave/CS-RX7-Live/RX7/Samples/cs_rx7_019_psd3.wav",
+    "bytes": 58390,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   },
+   {
+    "path": "Studio Real Drum Machines/Yamaha RX-Series/Yamaha RX7/Clap & Snare/Yamaha RX7_019_psd3.wav",
+    "bytes": 58390,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   },
+   {
+    "path": "Studio Real Drum Machines/Yamaha RX-Series/Yamaha RX7/Snare/Pitched Snare Drums/Yamaha RX7 pitched sd3.wav",
+    "bytes": 58390,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   }
+  ]
+ },
+ {
+  "copies": [
+   {
+    "path": "Cluster New Wave/CS-RX7-Live/RX7/Samples/cs_rx7_070_bongo_hi.wav",
+    "bytes": 41358,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   },
+   {
+    "path": "Studio Real Drum Machines/Yamaha RX-Series/Yamaha RX7/Perc/Yamaha RX7 bongo hi.wav",
+    "bytes": 41358,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   }
+  ]
+ },
+ {
+  "copies": [
+   {
+    "path": "Cluster New Wave/CS-RX7-Live/RX7/Samples/cs_rx7_080_belltre.wav",
+    "bytes": 312390,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   },
+   {
+    "path": "Studio Real Drum Machines/Yamaha RX-Series/Yamaha RX7/Perc/Yamaha RX7 bell tree.wav",
+    "bytes": 312390,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   }
+  ]
+ },
+ {
+  "copies": [
+   {
+    "path": "Cluster New Wave/CS-RX7-Live/RX7/Samples/cs_rx7_074_agogo_hi.wav",
+    "bytes": 82600,
+    "used_by_path": 118,
+    "songs_using_this_name": [
+     "Night F Dorian 119"
+    ]
+   },
+   {
+    "path": "Studio Real Drum Machines/Yamaha RX-Series/Yamaha RX7/Perc/Yamaha RX7 agogo hi.wav",
+    "bytes": 82600,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   }
+  ]
+ },
+ {
+  "copies": [
+   {
+    "path": "Cluster New Wave/CS-RX7-Live/RX7/Samples/cs_rx7_069_conga_lo.wav",
+    "bytes": 84720,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   },
+   {
+    "path": "Studio Real Drum Machines/Yamaha RX-Series/Yamaha RX7/Perc/Yamaha RX7 conga lo.wav",
+    "bytes": 84720,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   }
+  ]
+ },
+ {
+  "copies": [
+   {
+    "path": "Cluster New Wave/CS-RX7-Live/RX7/Samples/cs_rx7_079_claves.wav",
+    "bytes": 27360,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   },
+   {
+    "path": "Studio Real Drum Machines/Yamaha RX-Series/Yamaha RX7/Perc/Yamaha RX7 claves.wav",
+    "bytes": 27360,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   }
+  ]
+ },
+ {
+  "copies": [
+   {
+    "path": "Cluster New Wave/CS-RX7-Live/RX7/Samples/cs_rx7_077_castnet.wav",
+    "bytes": 28630,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   },
+   {
+    "path": "Studio Real Drum Machines/Yamaha RX-Series/Yamaha RX7/Perc/Yamaha RX7 castnet.wav",
+    "bytes": 28630,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   }
+  ]
+ },
+ {
+  "copies": [
+   {
+    "path": "Cluster New Wave/CS-RX7-Live/RX7/Samples/cs_rx7_078_whistle.wav",
+    "bytes": 32398,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   },
+   {
+    "path": "Studio Real Drum Machines/Yamaha RX-Series/Yamaha RX7/Perc/Yamaha RX7 whistle.wav",
+    "bytes": 32398,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   }
+  ]
+ },
+ {
+  "copies": [
+   {
+    "path": "Cluster New Wave/CS-RX7-Live/RX7/Samples/cs_rx7_081_vibrasl.wav",
+    "bytes": 91108,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   },
+   {
+    "path": "Studio Real Drum Machines/Yamaha RX-Series/Yamaha RX7/Perc/Yamaha RX7 vibraslap.wav",
+    "bytes": 91108,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   }
+  ]
+ },
+ {
+  "copies": [
+   {
+    "path": "Cluster New Wave/CS-RX7-Live/RX7/Samples/cs_rx7_039_fm_prc1.wav",
+    "bytes": 118470,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   },
+   {
+    "path": "Studio Real Drum Machines/Yamaha RX-Series/Yamaha RX7/Perc/Yamaha RX7 fm prc1.wav",
+    "bytes": 118470,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   }
+  ]
+ },
+ {
+  "copies": [
+   {
+    "path": "Cluster New Wave/CS-RX7-Live/RX7/Samples/cs_rx7_073_timbll.wav",
+    "bytes": 82218,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   },
+   {
+    "path": "Studio Real Drum Machines/Yamaha RX-Series/Yamaha RX7/Perc/Yamaha RX7 timbll.wav",
+    "bytes": 82218,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   }
+  ]
+ },
+ {
+  "copies": [
+   {
+    "path": "Cluster New Wave/CS-RX7-Live/RX7/Samples/cs_rx7_040_fm_prc2.wav",
+    "bytes": 85656,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   },
+   {
+    "path": "Studio Real Drum Machines/Yamaha RX-Series/Yamaha RX7/Perc/Yamaha RX7 fm prc2.wav",
+    "bytes": 85656,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   }
+  ]
+ },
+ {
+  "copies": [
+   {
+    "path": "Cluster New Wave/CS-RX7-Live/RX7/Samples/cs_rx7_041_fm_prc3.wav",
+    "bytes": 84450,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   },
+   {
+    "path": "Studio Real Drum Machines/Yamaha RX-Series/Yamaha RX7/Perc/Yamaha RX7 fm prc3.wav",
+    "bytes": 84450,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   }
+  ]
+ },
+ {
+  "copies": [
+   {
+    "path": "Cluster New Wave/CS-RX7-Live/RX7/Samples/cs_rx7_075_agogo_lo.wav",
+    "bytes": 84648,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   },
+   {
+    "path": "Studio Real Drum Machines/Yamaha RX-Series/Yamaha RX7/Perc/Yamaha RX7 agogo lo.wav",
+    "bytes": 84648,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   }
+  ]
+ },
+ {
+  "copies": [
+   {
+    "path": "Cluster New Wave/CS-RX7-Live/RX7/Samples/cs_rx7_067_conga_hm.wav",
+    "bytes": 36712,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   },
+   {
+    "path": "Studio Real Drum Machines/Yamaha RX-Series/Yamaha RX7/Perc/Yamaha RX7 conga hm.wav",
+    "bytes": 36712,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   }
+  ]
+ },
+ {
+  "copies": [
+   {
+    "path": "Cluster New Wave/CS-RX7-Live/RX7/Samples/cs_rx7_068_conga_ho.wav",
+    "bytes": 68416,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   },
+   {
+    "path": "Studio Real Drum Machines/Yamaha RX-Series/Yamaha RX7/Perc/Yamaha RX7 conga ho.wav",
+    "bytes": 68416,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   }
+  ]
+ },
+ {
+  "copies": [
+   {
+    "path": "Cluster New Wave/CS-RX7-Live/RX7/Samples/cs_rx7_072_timblh.wav",
+    "bytes": 81756,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   },
+   {
+    "path": "Studio Real Drum Machines/Yamaha RX-Series/Yamaha RX7/Perc/Yamaha RX7 timblh.wav",
+    "bytes": 81756,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   }
+  ]
+ },
+ {
+  "copies": [
+   {
+    "path": "Cluster New Wave/CS-RX7-Live/RX7/Samples/cs_rx7_071_bongo_lo.wav",
+    "bytes": 48384,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   },
+   {
+    "path": "Studio Real Drum Machines/Yamaha RX-Series/Yamaha RX7/Perc/Yamaha RX7 bongo lo.wav",
+    "bytes": 48384,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   }
+  ]
+ },
+ {
+  "copies": [
+   {
+    "path": "Cluster New Wave/CS-RX7-Live/RX7/Samples/cs_rx7_083_glscsh.wav",
+    "bytes": 84792,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   },
+   {
+    "path": "Studio Real Drum Machines/Yamaha RX-Series/Yamaha RX7/Clap & Snare/Yamaha RX7 Glass Clap.wav",
+    "bytes": 84792,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   },
+   {
+    "path": "Studio Real Drum Machines/Yamaha RX-Series/Yamaha RX7/FX Hit/Yamaha RX7 glscsh.wav",
+    "bytes": 84792,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   },
+   {
+    "path": "Studio Real Drum Machines/Yamaha RX-Series/Yamaha RX7/Perc/Yamaha RX7 glass.wav",
+    "bytes": 84792,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   }
+  ]
+ },
+ {
+  "copies": [
+   {
+    "path": "Cluster New Wave/CS-RX7-Live/RX7/Samples/cs_rx7_076_cuica.wav",
+    "bytes": 42738,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   },
+   {
+    "path": "Studio Real Drum Machines/Yamaha RX-Series/Yamaha RX7/Perc/Yamaha RX7 cuica.wav",
+    "bytes": 42738,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   }
+  ]
+ },
+ {
+  "copies": [
+   {
+    "path": "Cluster New Wave/CS-RX7-Live/RX7/Samples/cs_rx7_064_cowbell.wav",
+    "bytes": 63250,
+    "used_by_path": 118,
+    "songs_using_this_name": [
+     "Night F Dorian 119"
+    ]
+   },
+   {
+    "path": "Studio Real Drum Machines/Yamaha RX-Series/Yamaha RX7/Perc/Yamaha RX7 cowbell.wav",
+    "bytes": 63250,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   }
+  ]
+ },
+ {
+  "copies": [
+   {
+    "path": "Cluster New Wave/CS-RX7-Live/RX7/Samples/cs_rx7_065_tambrn.wav",
+    "bytes": 83766,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   },
+   {
+    "path": "Studio Real Drum Machines/Yamaha RX-Series/Yamaha RX7/Tamborine/Yamaha RX7 tamborine.wav",
+    "bytes": 83766,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   }
+  ]
+ },
+ {
+  "copies": [
+   {
+    "path": "Cluster New Wave/CS-RX7-Live/RX7/Samples/cs_rx7_021_rim2.wav",
+    "bytes": 46542,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   },
+   {
+    "path": "Studio Real Drum Machines/Yamaha RX-Series/Yamaha RX7/Rimshot/Yamaha RX7 rim 2.wav",
+    "bytes": 46542,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   }
+  ]
+ },
+ {
+  "copies": [
+   {
+    "path": "Cluster New Wave/CS-RX7-Live/RX7/Samples/cs_rx7_020_rim1.wav",
+    "bytes": 31378,
+    "used_by_path": 118,
+    "songs_using_this_name": [
+     "Night F Dorian 119"
+    ]
+   },
+   {
+    "path": "Studio Real Drum Machines/Yamaha RX-Series/Yamaha RX7/Rimshot/Yamaha RX7 rim 1.wav",
+    "bytes": 31378,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   }
+  ]
+ },
+ {
+  "copies": [
+   {
+    "path": "Cluster New Wave/CS-RX7-Live/RX7/Samples/cs_rx7_063_timpani.wav",
+    "bytes": 146944,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   },
+   {
+    "path": "Studio Real Drum Machines/Yamaha RX-Series/Yamaha RX7/FX Hit/Yamaha RX7 timpani.wav",
+    "bytes": 146944,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   }
+  ]
+ },
+ {
+  "copies": [
+   {
+    "path": "Cluster New Wave/CS-RX7-Live/RX7/Samples/cs_rx7_099_rvs_tom.wav",
+    "bytes": 65664,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   },
+   {
+    "path": "Studio Real Drum Machines/Yamaha RX-Series/Yamaha RX7/FX Hit/Yamaha RX7 rvs_tom.wav",
+    "bytes": 65664,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   }
+  ]
+ },
+ {
+  "copies": [
+   {
+    "path": "Cluster New Wave/CS-RX7-Live/RX7/Samples/cs_rx7_088_cardoor.wav",
+    "bytes": 56020,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   },
+   {
+    "path": "Studio Real Drum Machines/Yamaha RX-Series/Yamaha RX7/FX Hit/Yamaha RX7 cardoor.wav",
+    "bytes": 56020,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   }
+  ]
+ },
+ {
+  "copies": [
+   {
+    "path": "Cluster New Wave/CS-RX7-Live/RX7/Samples/cs_rx7_085_doorslm.wav",
+    "bytes": 151296,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   },
+   {
+    "path": "Studio Real Drum Machines/Yamaha RX-Series/Yamaha RX7/FX Hit/Yamaha RX7 doorslm.wav",
+    "bytes": 151296,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   }
+  ]
+ },
+ {
+  "copies": [
+   {
+    "path": "Cluster New Wave/CS-RX7-Live/RX7/Samples/cs_rx7_084_gun.wav",
+    "bytes": 140368,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   },
+   {
+    "path": "Studio Real Drum Machines/Yamaha RX-Series/Yamaha RX7/FX Hit/Yamaha RX7 gun.wav",
+    "bytes": 140368,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   }
+  ]
+ },
+ {
+  "copies": [
+   {
+    "path": "Cluster New Wave/CS-RX7-Live/RX7/Samples/cs_rx7_086_camera.wav",
+    "bytes": 38802,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   },
+   {
+    "path": "Studio Real Drum Machines/Yamaha RX-Series/Yamaha RX7/FX Hit/Yamaha RX7 camera.wav",
+    "bytes": 38802,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   }
+  ]
+ },
+ {
+  "copies": [
+   {
+    "path": "Cluster New Wave/CS-RX7-Live/RX7/Samples/cs_rx7_087_punch.wav",
+    "bytes": 85288,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   },
+   {
+    "path": "Studio Real Drum Machines/Yamaha RX-Series/Yamaha RX7/FX Hit/Yamaha RX7 punch.wav",
+    "bytes": 85288,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   }
+  ]
+ },
+ {
+  "copies": [
+   {
+    "path": "Cluster New Wave/CS-RX7-Live/RX7/Samples/cs_rx7_062_claps.wav",
+    "bytes": 47872,
+    "used_by_path": 118,
+    "songs_using_this_name": [
+     "Night F Dorian 119"
+    ]
+   },
+   {
+    "path": "Studio Real Drum Machines/Yamaha RX-Series/Yamaha RX7/Clap & Snare/Yamaha RX7 Clap.wav",
+    "bytes": 47872,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   }
+  ]
+ },
+ {
+  "copies": [
+   {
+    "path": "Cluster New Wave/CS-RX7-Live/RX7/Samples/cs_rx7_049_china.wav",
+    "bytes": 220324,
+    "used_by_path": 118,
+    "songs_using_this_name": [
+     "Night F Dorian 119"
+    ]
+   },
+   {
+    "path": "Studio Real Drum Machines/Yamaha RX-Series/Yamaha RX7/Cymbal/Yamaha RX7 china.wav",
+    "bytes": 220324,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   }
+  ]
+ },
+ {
+  "copies": [
+   {
+    "path": "Cluster New Wave/CS-RX7-Live/RX7/Samples/cs_rx7_097_rvs_edge.wav",
+    "bytes": 186108,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   },
+   {
+    "path": "Studio Real Drum Machines/Yamaha RX-Series/Yamaha RX7/Cymbal/Yamaha RX7 rvs_edge.wav",
+    "bytes": 186108,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   }
+  ]
+ },
+ {
+  "copies": [
+   {
+    "path": "Cluster New Wave/CS-RX7-Live/RX7/Samples/cs_rx7_046_cup.wav",
+    "bytes": 430122,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   },
+   {
+    "path": "Studio Real Drum Machines/Yamaha RX-Series/Yamaha RX7/Cymbal/Yamaha RX7 cup.wav",
+    "bytes": 430122,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   }
+  ]
+ },
+ {
+  "copies": [
+   {
+    "path": "Cluster New Wave/CS-RX7-Live/RX7/Samples/cs_rx7_098_rvs_crsh.wav",
+    "bytes": 243228,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   },
+   {
+    "path": "Studio Real Drum Machines/Yamaha RX-Series/Yamaha RX7/Cymbal/Yamaha RX7 rvs_crsh.wav",
+    "bytes": 243228,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   }
+  ]
+ },
+ {
+  "copies": [
+   {
+    "path": "Cluster New Wave/CS-RX7-Live/RX7/Samples/cs_rx7_043_hh_open.wav",
+    "bytes": 160402,
+    "used_by_path": 118,
+    "songs_using_this_name": [
+     "Night F Dorian 119"
+    ]
+   },
+   {
+    "path": "Studio Real Drum Machines/Yamaha RX-Series/Yamaha RX7/Cymbal/Yamaha RX7 hh_open.wav",
+    "bytes": 160402,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   }
+  ]
+ },
+ {
+  "copies": [
+   {
+    "path": "Cluster New Wave/CS-RX7-Live/RX7/Samples/cs_rx7_047_edge.wav",
+    "bytes": 302470,
+    "used_by_path": 118,
+    "songs_using_this_name": [
+     "Night F Dorian 119"
+    ]
+   },
+   {
+    "path": "Studio Real Drum Machines/Yamaha RX-Series/Yamaha RX7/Cymbal/Yamaha RX7 edge.wav",
+    "bytes": 302470,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   }
+  ]
+ },
+ {
+  "copies": [
+   {
+    "path": "Cluster New Wave/CS-RX7-Live/RX7/Samples/cs_rx7_048_crash.wav",
+    "bytes": 302158,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   },
+   {
+    "path": "Studio Real Drum Machines/Yamaha RX-Series/Yamaha RX7/Cymbal/Yamaha RX7 crash.wav",
+    "bytes": 302158,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   }
+  ]
+ },
+ {
+  "copies": [
+   {
+    "path": "Cluster New Wave/CS-RX7-Live/RX7/Samples/cs_rx7_044_hh_14th_op.wav",
+    "bytes": 72846,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   },
+   {
+    "path": "Studio Real Drum Machines/Yamaha RX-Series/Yamaha RX7/Cymbal/Yamaha RX7 hh_14th_op.wav",
+    "bytes": 72846,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   }
+  ]
+ },
+ {
+  "copies": [
+   {
+    "path": "Studio Real Drum Machines/Yamaha RX-Series/Yamaha RX5/Kick/RX-5 Kick [ReSampled Kit]/Yamaha RX5 [ReSampled] Boom Kick.wav",
+    "bytes": 51280,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   },
+   {
+    "path": "Studio Real Drum Machines/Yamaha RX-Series/Yamaha RX5/Percs/RX-5 Percs [ReSampled Kit]/DM_RX5_ReSampled_BoomKick.wav",
+    "bytes": 51280,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   }
+  ]
+ },
+ {
+  "copies": [
+   {
+    "path": "Studio Real Drum Machines/Yamaha RX-Series/Yamaha RX5/Kick/RX-5 Kick [ReSampled Kit]/Yamaha RX5 [ReSampled] Comp Kick.wav",
+    "bytes": 47584,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   },
+   {
+    "path": "Studio Real Drum Machines/Yamaha RX-Series/Yamaha RX5/Percs/RX-5 Percs [ReSampled Kit]/DM_RX5_ReSampled_CompKick.wav",
+    "bytes": 47584,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   }
+  ]
+ },
+ {
+  "copies": [
+   {
+    "path": "Studio Real Drum Machines/Yamaha RX-Series/Yamaha RX5/Clap & Snare/Yamaha RX5 Glass.wav",
+    "bytes": 48180,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   },
+   {
+    "path": "Studio Real Drum Machines/Yamaha RX-Series/Yamaha RX5/Percs/Yamaha RX5 Glass.wav",
+    "bytes": 48180,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   }
+  ]
+ },
+ {
+  "copies": [
+   {
+    "path": "Studio Real Drum Machines/Yamaha RX-Series/Yamaha RX5/Clap & Snare/Yamaha RX5 Tambourine.wav",
+    "bytes": 115346,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   },
+   {
+    "path": "Studio Real Drum Machines/Yamaha RX-Series/Yamaha RX5/Crash & Ride/Yamaha RX5 Tambourine.wav",
+    "bytes": 115346,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   },
+   {
+    "path": "Studio Real Drum Machines/Yamaha RX-Series/Yamaha RX5/Percs/Yamaha RX-5 Tambourine.wav",
+    "bytes": 115346,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   }
+  ]
+ },
+ {
+  "copies": [
+   {
+    "path": "Studio Real Drum Machines/Yamaha RX-Series/Yamaha RX5/Clap & Snare/Yamaha RX5 Castenet.wav",
+    "bytes": 10284,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   },
+   {
+    "path": "Studio Real Drum Machines/Yamaha RX-Series/Yamaha RX5/Percs/Yamaha RX5 Castenet.wav",
+    "bytes": 10284,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   }
+  ]
+ },
+ {
+  "copies": [
+   {
+    "path": "Studio Real Drum Machines/Yamaha RX-Series/Yamaha RX5/Clap & Snare/Yamaha RX5 FM Perc 2.wav",
+    "bytes": 41650,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   },
+   {
+    "path": "Studio Real Drum Machines/Yamaha RX-Series/Yamaha RX5/Percs/Yamaha RX5 FM Perc 2.wav",
+    "bytes": 41650,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   }
+  ]
+ },
+ {
+  "copies": [
+   {
+    "path": "Studio Real Drum Machines/Yamaha RX-Series/Yamaha RX5/Clap & Snare/Yamaha RX5 FM Perc 1.wav",
+    "bytes": 67628,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   },
+   {
+    "path": "Studio Real Drum Machines/Yamaha RX-Series/Yamaha RX5/Percs/Yamaha RX5 FM Perc 1.wav",
+    "bytes": 67628,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   }
+  ]
+ },
+ {
+  "copies": [
+   {
+    "path": "Studio Real Drum Machines/Yamaha RX-Series/Yamaha RX5/Crash & Ride/Yamaha RX5 HH OP 3.wav",
+    "bytes": 216680,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   },
+   {
+    "path": "Studio Real Drum Machines/Yamaha RX-Series/Yamaha RX5/Crash & Ride/Yamaha RX5 HH OP 5.wav",
+    "bytes": 216680,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   }
+  ]
+ },
+ {
+  "copies": [
+   {
+    "path": "Studio Real Drum Machines/Yamaha RX-Series/Yamaha RX5/Crash & Ride/Yamaha RX5 HH OP 2.wav",
+    "bytes": 216680,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   },
+   {
+    "path": "Studio Real Drum Machines/Yamaha RX-Series/Yamaha RX5/Crash & Ride/Yamaha RX5 HH OP 4.wav",
+    "bytes": 216680,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   }
+  ]
+ },
+ {
+  "copies": [
+   {
+    "path": "Studio Real Drum Machines/Yamaha RX-Series/Yamaha RX5/Clap & Snare/RX-5 Clap & Snares [ReSampled Kit]/Yamaha RX5 Clap 3 [ReSampled].wav",
+    "bytes": 82696,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   },
+   {
+    "path": "Studio Real Drum Machines/Yamaha RX-Series/Yamaha RX5/Clap & Snare/Yamaha RX5 Clap 3 [ReSampled].wav",
+    "bytes": 82696,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   }
+  ]
+ },
+ {
+  "copies": [
+   {
+    "path": "Cluster New Wave/CS-XR-10-Live/XR-10/Samples/cs_xr10_kick_09.wav",
+    "bytes": 67860,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   },
+   {
+    "path": "Studio Real Drum Machines/Akai XR-10/Kick/cs_xr10_kick_09.wav",
+    "bytes": 67860,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   }
+  ]
+ },
+ {
+  "copies": [
+   {
+    "path": "Cluster New Wave/CS-XR-10-Live/XR-10/Samples/cs_xr10_kick_08.wav",
+    "bytes": 55974,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   },
+   {
+    "path": "Studio Real Drum Machines/Akai XR-10/Kick/cs_xr10_kick_08.wav",
+    "bytes": 55974,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   }
+  ]
+ },
+ {
+  "copies": [
+   {
+    "path": "Cluster New Wave/CS-XR-10-Live/XR-10/Samples/cs_xr10_kick_05.wav",
+    "bytes": 45858,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   },
+   {
+    "path": "Studio Real Drum Machines/Akai XR-10/Kick/cs_xr10_kick_05.wav",
+    "bytes": 45858,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   }
+  ]
+ },
+ {
+  "copies": [
+   {
+    "path": "Cluster New Wave/CS-XR-10-Live/XR-10/Samples/cs_xr10_kick_04.wav",
+    "bytes": 66330,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   },
+   {
+    "path": "Studio Real Drum Machines/Akai XR-10/Kick/cs_xr10_kick_04.wav",
+    "bytes": 66330,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   }
+  ]
+ },
+ {
+  "copies": [
+   {
+    "path": "Cluster New Wave/CS-XR-10-Live/XR-10/Samples/cs_xr10_kick_10.wav",
+    "bytes": 59250,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   },
+   {
+    "path": "Studio Real Drum Machines/Akai XR-10/Kick/cs_xr10_kick_10.wav",
+    "bytes": 59250,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   }
+  ]
+ },
+ {
+  "copies": [
+   {
+    "path": "Cluster New Wave/CS-XR-10-Live/XR-10/Samples/cs_xr10_kick_06.wav",
+    "bytes": 52848,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   },
+   {
+    "path": "Studio Real Drum Machines/Akai XR-10/Kick/cs_xr10_kick_06.wav",
+    "bytes": 52848,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   }
+  ]
+ },
+ {
+  "copies": [
+   {
+    "path": "Cluster New Wave/CS-XR-10-Live/XR-10/Samples/cs_xr10_kick_07.wav",
+    "bytes": 46602,
+    "used_by_path": 56,
+    "songs_using_this_name": [
+     "Emphaty"
+    ]
+   },
+   {
+    "path": "Studio Real Drum Machines/Akai XR-10/Kick/cs_xr10_kick_07.wav",
+    "bytes": 46602,
+    "used_by_path": 0,
+    "songs_using_this_name": [
+     "Emphaty"
+    ]
+   }
+  ]
+ },
+ {
+  "copies": [
+   {
+    "path": "Cluster New Wave/CS-XR-10-Live/XR-10/Samples/cs_xr10_kick_03.wav",
+    "bytes": 50818,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   },
+   {
+    "path": "Studio Real Drum Machines/Akai XR-10/Kick/cs_xr10_kick_03.wav",
+    "bytes": 50818,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   }
+  ]
+ },
+ {
+  "copies": [
+   {
+    "path": "Cluster New Wave/CS-XR-10-Live/XR-10/Samples/cs_xr10_kick_02.wav",
+    "bytes": 50922,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   },
+   {
+    "path": "Studio Real Drum Machines/Akai XR-10/Kick/cs_xr10_kick_02.wav",
+    "bytes": 50922,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   }
+  ]
+ },
+ {
+  "copies": [
+   {
+    "path": "Cluster New Wave/CS-XR-10-Live/XR-10/Samples/cs_xr10_kick_01.wav",
+    "bytes": 55968,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   },
+   {
+    "path": "Studio Real Drum Machines/Akai XR-10/Kick/cs_xr10_kick_01.wav",
+    "bytes": 55968,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   }
+  ]
+ },
+ {
+  "copies": [
+   {
+    "path": "Cluster New Wave/CS-XR-10-Live/XR-10/Samples/cs_xr10_tom1_m.wav",
+    "bytes": 198922,
+    "used_by_path": 56,
+    "songs_using_this_name": [
+     "Emphaty"
+    ]
+   },
+   {
+    "path": "Studio Real Drum Machines/Akai XR-10/Tom/cs_xr10_tom1_m.wav",
+    "bytes": 198922,
+    "used_by_path": 0,
+    "songs_using_this_name": [
+     "Emphaty"
+    ]
+   }
+  ]
+ },
+ {
+  "copies": [
+   {
+    "path": "Cluster New Wave/CS-XR-10-Live/XR-10/Samples/cs_xr10_tom1_l.wav",
+    "bytes": 184266,
+    "used_by_path": 56,
+    "songs_using_this_name": [
+     "Emphaty"
+    ]
+   },
+   {
+    "path": "Studio Real Drum Machines/Akai XR-10/Tom/cs_xr10_tom1_l.wav",
+    "bytes": 184266,
+    "used_by_path": 0,
+    "songs_using_this_name": [
+     "Emphaty"
+    ]
+   }
+  ]
+ },
+ {
+  "copies": [
+   {
+    "path": "Cluster New Wave/CS-XR-10-Live/XR-10/Samples/cs_xr10_tom3_l.wav",
+    "bytes": 84108,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   },
+   {
+    "path": "Studio Real Drum Machines/Akai XR-10/Tom/cs_xr10_tom3_l.wav",
+    "bytes": 84108,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   }
+  ]
+ },
+ {
+  "copies": [
+   {
+    "path": "Cluster New Wave/CS-XR-10-Live/XR-10/Samples/cs_xr10_tom3_m.wav",
+    "bytes": 68722,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   },
+   {
+    "path": "Studio Real Drum Machines/Akai XR-10/Tom/cs_xr10_tom3_m.wav",
+    "bytes": 68722,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   }
+  ]
+ },
+ {
+  "copies": [
+   {
+    "path": "Cluster New Wave/CS-XR-10-Live/XR-10/Samples/cs_xr10_tom3_h.wav",
+    "bytes": 60046,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   },
+   {
+    "path": "Studio Real Drum Machines/Akai XR-10/Tom/cs_xr10_tom3_h.wav",
+    "bytes": 60046,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   }
+  ]
+ },
+ {
+  "copies": [
+   {
+    "path": "Cluster New Wave/CS-XR-10-Live/XR-10/Samples/cs_xr10_tom1_h.wav",
+    "bytes": 157620,
+    "used_by_path": 56,
+    "songs_using_this_name": [
+     "Emphaty"
+    ]
+   },
+   {
+    "path": "Studio Real Drum Machines/Akai XR-10/Tom/cs_xr10_tom1_h.wav",
+    "bytes": 157620,
+    "used_by_path": 0,
+    "songs_using_this_name": [
+     "Emphaty"
+    ]
+   }
+  ]
+ },
+ {
+  "copies": [
+   {
+    "path": "Cluster New Wave/CS-XR-10-Live/XR-10/Samples/cs_xr10_tom2_l.wav",
+    "bytes": 90642,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   },
+   {
+    "path": "Studio Real Drum Machines/Akai XR-10/Tom/cs_xr10_tom2_l.wav",
+    "bytes": 90642,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   }
+  ]
+ },
+ {
+  "copies": [
+   {
+    "path": "Cluster New Wave/CS-XR-10-Live/XR-10/Samples/cs_xr10_tom2_m.wav",
+    "bytes": 81030,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   },
+   {
+    "path": "Studio Real Drum Machines/Akai XR-10/Tom/cs_xr10_tom2_m.wav",
+    "bytes": 81030,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   }
+  ]
+ },
+ {
+  "copies": [
+   {
+    "path": "Cluster New Wave/CS-XR-10-Live/XR-10/Samples/cs_xr10_tom4_h.wav",
+    "bytes": 77290,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   },
+   {
+    "path": "Studio Real Drum Machines/Akai XR-10/Tom/cs_xr10_tom4_h.wav",
+    "bytes": 77290,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   }
+  ]
+ },
+ {
+  "copies": [
+   {
+    "path": "Cluster New Wave/CS-XR-10-Live/XR-10/Samples/cs_xr10_tom4_l.wav",
+    "bytes": 97732,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   },
+   {
+    "path": "Studio Real Drum Machines/Akai XR-10/Tom/cs_xr10_tom4_l.wav",
+    "bytes": 97732,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   }
+  ]
+ },
+ {
+  "copies": [
+   {
+    "path": "Cluster New Wave/CS-XR-10-Live/XR-10/Samples/cs_xr10_tom4_m.wav",
+    "bytes": 83398,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   },
+   {
+    "path": "Studio Real Drum Machines/Akai XR-10/Tom/cs_xr10_tom4_m.wav",
+    "bytes": 83398,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   }
+  ]
+ },
+ {
+  "copies": [
+   {
+    "path": "Cluster New Wave/CS-XR-10-Live/XR-10/Samples/cs_xr10_tom2_h.wav",
+    "bytes": 65976,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   },
+   {
+    "path": "Studio Real Drum Machines/Akai XR-10/Tom/cs_xr10_tom2_h.wav",
+    "bytes": 65976,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   }
+  ]
+ },
+ {
+  "copies": [
+   {
+    "path": "Cluster New Wave/CS-XR-10-Live/XR-10/Samples/cs_xr10_hat_cl.wav",
+    "bytes": 37270,
+    "used_by_path": 60,
+    "songs_using_this_name": [
+     "125 bpm Project",
+     "Emphaty"
+    ]
+   },
+   {
+    "path": "Studio Real Drum Machines/Akai XR-10/HiHat/cs_xr10_hat_cl.wav",
+    "bytes": 37270,
+    "used_by_path": 0,
+    "songs_using_this_name": [
+     "125 bpm Project",
+     "Emphaty"
+    ]
+   }
+  ]
+ },
+ {
+  "copies": [
+   {
+    "path": "Cluster New Wave/CS-XR-10-Live/XR-10/Samples/cs_xr10_hat_md.wav",
+    "bytes": 76410,
+    "used_by_path": 56,
+    "songs_using_this_name": [
+     "Emphaty"
+    ]
+   },
+   {
+    "path": "Studio Real Drum Machines/Akai XR-10/HiHat/cs_xr10_hat_md.wav",
+    "bytes": 76410,
+    "used_by_path": 0,
+    "songs_using_this_name": [
+     "Emphaty"
+    ]
+   }
+  ]
+ },
+ {
+  "copies": [
+   {
+    "path": "Cluster New Wave/CS-XR-10-Live/XR-10/Samples/cs_xr10_hat_op.wav",
+    "bytes": 115054,
+    "used_by_path": 56,
+    "songs_using_this_name": [
+     "Emphaty"
+    ]
+   },
+   {
+    "path": "Studio Real Drum Machines/Akai XR-10/HiHat/cs_xr10_hat_op.wav",
+    "bytes": 115054,
+    "used_by_path": 0,
+    "songs_using_this_name": [
+     "Emphaty"
+    ]
+   }
+  ]
+ },
+ {
+  "copies": [
+   {
+    "path": "Cluster New Wave/CS-XR-10-Live/XR-10/Samples/cs_xr10_tamburine.wav",
+    "bytes": 53722,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   },
+   {
+    "path": "Studio Real Drum Machines/Akai XR-10/HiHat/cs_xr10_tamburine.wav",
+    "bytes": 53722,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   }
+  ]
+ },
+ {
+  "copies": [
+   {
+    "path": "Cluster New Wave/CS-XR-10-Live/XR-10/Samples/cs_xr10_snare_08.wav",
+    "bytes": 70912,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   },
+   {
+    "path": "Studio Real Drum Machines/Akai XR-10/Snare/Akai XR-10 snare_08.wav",
+    "bytes": 70912,
+    "used_by_path": 168,
+    "songs_using_this_name": [
+     "DONE"
+    ]
+   }
+  ]
+ },
+ {
+  "copies": [
+   {
+    "path": "Cluster New Wave/CS-XR-10-Live/XR-10/Samples/cs_xr10_snare_09.wav",
+    "bytes": 93382,
+    "used_by_path": 158,
+    "songs_using_this_name": [
+     "DONE"
+    ]
+   },
+   {
+    "path": "Studio Real Drum Machines/Akai XR-10/Snare/Akai XR-10 snare_09.wav",
+    "bytes": 93382,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   }
+  ]
+ },
+ {
+  "copies": [
+   {
+    "path": "Cluster New Wave/CS-XR-10-Live/XR-10/Samples/cs_xr10_snare_01.wav",
+    "bytes": 56106,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   },
+   {
+    "path": "Studio Real Drum Machines/Akai XR-10/Snare/Akai XR-10 snare_01.wav",
+    "bytes": 56106,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   }
+  ]
+ },
+ {
+  "copies": [
+   {
+    "path": "Cluster New Wave/CS-XR-10-Live/XR-10/Samples/cs_xr10_snare_02.wav",
+    "bytes": 71014,
+    "used_by_path": 56,
+    "songs_using_this_name": [
+     "Emphaty"
+    ]
+   },
+   {
+    "path": "Studio Real Drum Machines/Akai XR-10/Snare/Akai XR-10 snare_02.wav",
+    "bytes": 71014,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   }
+  ]
+ },
+ {
+  "copies": [
+   {
+    "path": "Cluster New Wave/CS-XR-10-Live/XR-10/Samples/cs_xr10_snare_03.wav",
+    "bytes": 61188,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   },
+   {
+    "path": "Studio Real Drum Machines/Akai XR-10/Snare/Akai XR-10 snare_03.wav",
+    "bytes": 61188,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   }
+  ]
+ },
+ {
+  "copies": [
+   {
+    "path": "Cluster New Wave/CS-XR-10-Live/XR-10/Samples/cs_xr10_snare_07.wav",
+    "bytes": 44356,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   },
+   {
+    "path": "Studio Real Drum Machines/Akai XR-10/Snare/Akai XR-10 snare_07.wav",
+    "bytes": 44356,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   }
+  ]
+ },
+ {
+  "copies": [
+   {
+    "path": "Cluster New Wave/CS-XR-10-Live/XR-10/Samples/cs_xr10_snare_06.wav",
+    "bytes": 83904,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   },
+   {
+    "path": "Studio Real Drum Machines/Akai XR-10/Snare/Akai XR-10 snare_06.wav",
+    "bytes": 83904,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   }
+  ]
+ },
+ {
+  "copies": [
+   {
+    "path": "Cluster New Wave/CS-XR-10-Live/XR-10/Samples/cs_xr10_snare_04.wav",
+    "bytes": 82650,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   },
+   {
+    "path": "Studio Real Drum Machines/Akai XR-10/Snare/Akai XR-10 snare_04.wav",
+    "bytes": 82650,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   }
+  ]
+ },
+ {
+  "copies": [
+   {
+    "path": "Cluster New Wave/CS-XR-10-Live/XR-10/Samples/cs_xr10_snare_10.wav",
+    "bytes": 59136,
+    "used_by_path": 158,
+    "songs_using_this_name": [
+     "DONE"
+    ]
+   },
+   {
+    "path": "Studio Real Drum Machines/Akai XR-10/Snare/Akai XR-10 snare_10.wav",
+    "bytes": 59136,
+    "used_by_path": 168,
+    "songs_using_this_name": [
+     "DONE"
+    ]
+   }
+  ]
+ },
+ {
+  "copies": [
+   {
+    "path": "Cluster New Wave/CS-XR-10-Live/XR-10/Samples/cs_xr10_snare_05.wav",
+    "bytes": 104220,
+    "used_by_path": 114,
+    "songs_using_this_name": [
+     "Night F Dorian 119"
+    ]
+   },
+   {
+    "path": "Studio Real Drum Machines/Akai XR-10/Snare/Akai XR-10 snare_05.wav",
+    "bytes": 104220,
+    "used_by_path": 279,
+    "songs_using_this_name": [
+     "DONE",
+     "F# minor song 118"
+    ]
+   }
+  ]
+ },
+ {
+  "copies": [
+   {
+    "path": "Cluster New Wave/CS-XR-10-Live/XR-10/Samples/cs_xr10_cabasa.wav",
+    "bytes": 29664,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   },
+   {
+    "path": "Studio Real Drum Machines/Akai XR-10/Perc/cs_xr10_cabasa.wav",
+    "bytes": 29664,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   }
+  ]
+ },
+ {
+  "copies": [
+   {
+    "path": "Cluster New Wave/CS-XR-10-Live/XR-10/Samples/cs_xr10_finger.wav",
+    "bytes": 36454,
+    "used_by_path": 251,
+    "songs_using_this_name": [
+     "Emphaty",
+     "Night F Dorian 119"
+    ]
+   },
+   {
+    "path": "Studio Real Drum Machines/Akai XR-10/Perc/cs_xr10_finger.wav",
+    "bytes": 36454,
+    "used_by_path": 0,
+    "songs_using_this_name": [
+     "Emphaty",
+     "Night F Dorian 119"
+    ]
+   }
+  ]
+ },
+ {
+  "copies": [
+   {
+    "path": "Cluster New Wave/CS-XR-10-Live/XR-10/Samples/cs_xr10_conga_3.wav",
+    "bytes": 31584,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   },
+   {
+    "path": "Studio Real Drum Machines/Akai XR-10/Perc/cs_xr10_conga_3.wav",
+    "bytes": 31584,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   }
+  ]
+ },
+ {
+  "copies": [
+   {
+    "path": "Cluster New Wave/CS-XR-10-Live/XR-10/Samples/cs_xr10_agogo_h.wav",
+    "bytes": 47364,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   },
+   {
+    "path": "Studio Real Drum Machines/Akai XR-10/Perc/cs_xr10_agogo_h.wav",
+    "bytes": 47364,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   }
+  ]
+ },
+ {
+  "copies": [
+   {
+    "path": "Cluster New Wave/CS-XR-10-Live/XR-10/Samples/cs_xr10_conga_2.wav",
+    "bytes": 29472,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   },
+   {
+    "path": "Studio Real Drum Machines/Akai XR-10/Perc/cs_xr10_conga_2.wav",
+    "bytes": 29472,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   }
+  ]
+ },
+ {
+  "copies": [
+   {
+    "path": "Cluster New Wave/CS-XR-10-Live/XR-10/Samples/cs_xr10_timbales_l.wav",
+    "bytes": 60808,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   },
+   {
+    "path": "Studio Real Drum Machines/Akai XR-10/Perc/cs_xr10_timbales_l.wav",
+    "bytes": 60808,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   }
+  ]
+ },
+ {
+  "copies": [
+   {
+    "path": "Cluster New Wave/CS-XR-10-Live/XR-10/Samples/cs_xr10_conga_1.wav",
+    "bytes": 36432,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   },
+   {
+    "path": "Studio Real Drum Machines/Akai XR-10/Perc/cs_xr10_conga_1.wav",
+    "bytes": 36432,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   }
+  ]
+ },
+ {
+  "copies": [
+   {
+    "path": "Cluster New Wave/CS-XR-10-Live/XR-10/Samples/cs_xr10_triangle_h.wav",
+    "bytes": 67050,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   },
+   {
+    "path": "Studio Real Drum Machines/Akai XR-10/Perc/cs_xr10_triangle_h.wav",
+    "bytes": 67050,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   }
+  ]
+ },
+ {
+  "copies": [
+   {
+    "path": "Cluster New Wave/CS-XR-10-Live/XR-10/Samples/cs_xr10_triangle_l.wav",
+    "bytes": 72988,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   },
+   {
+    "path": "Studio Real Drum Machines/Akai XR-10/Perc/cs_xr10_triangle_l.wav",
+    "bytes": 72988,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   }
+  ]
+ },
+ {
+  "copies": [
+   {
+    "path": "Cluster New Wave/CS-XR-10-Live/XR-10/Samples/cs_xr10_timbales_h.wav",
+    "bytes": 67542,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   },
+   {
+    "path": "Studio Real Drum Machines/Akai XR-10/Perc/cs_xr10_timbales_h.wav",
+    "bytes": 67542,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   }
+  ]
+ },
+ {
+  "copies": [
+   {
+    "path": "Cluster New Wave/CS-XR-10-Live/XR-10/Samples/cs_xr10_conga_4.wav",
+    "bytes": 28896,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   },
+   {
+    "path": "Studio Real Drum Machines/Akai XR-10/Perc/cs_xr10_conga_4.wav",
+    "bytes": 28896,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   }
+  ]
+ },
+ {
+  "copies": [
+   {
+    "path": "Cluster New Wave/CS-XR-10-Live/XR-10/Samples/cs_xr10_vibraslap.wav",
+    "bytes": 171780,
+    "used_by_path": 195,
+    "songs_using_this_name": [
+     "Night F Dorian 119"
+    ]
+   },
+   {
+    "path": "Studio Real Drum Machines/Akai XR-10/Perc/cs_xr10_vibraslap.wav",
+    "bytes": 171780,
+    "used_by_path": 0,
+    "songs_using_this_name": [
+     "Night F Dorian 119"
+    ]
+   }
+  ]
+ },
+ {
+  "copies": [
+   {
+    "path": "Cluster New Wave/CS-XR-10-Live/XR-10/Samples/cs_xr10_agogo_l.wav",
+    "bytes": 56616,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   },
+   {
+    "path": "Studio Real Drum Machines/Akai XR-10/Perc/cs_xr10_agogo_l.wav",
+    "bytes": 56616,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   }
+  ]
+ },
+ {
+  "copies": [
+   {
+    "path": "Cluster New Wave/CS-XR-10-Live/XR-10/Samples/cs_xr10_chop.wav",
+    "bytes": 87474,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   },
+   {
+    "path": "Studio Real Drum Machines/Akai XR-10/Perc/cs_xr10_chop.wav",
+    "bytes": 87474,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   }
+  ]
+ },
+ {
+  "copies": [
+   {
+    "path": "Cluster New Wave/CS-XR-10-Live/XR-10/Samples/cs_xr10_clave.wav",
+    "bytes": 16944,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   },
+   {
+    "path": "Studio Real Drum Machines/Akai XR-10/Perc/cs_xr10_clave.wav",
+    "bytes": 16944,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   }
+  ]
+ },
+ {
+  "copies": [
+   {
+    "path": "Cluster New Wave/CS-XR-10-Live/XR-10/Samples/cs_xr10_choke.wav",
+    "bytes": 80316,
+    "used_by_path": 56,
+    "songs_using_this_name": [
+     "Emphaty"
+    ]
+   },
+   {
+    "path": "Studio Real Drum Machines/Akai XR-10/Perc/cs_xr10_choke.wav",
+    "bytes": 80316,
+    "used_by_path": 0,
+    "songs_using_this_name": [
+     "Emphaty"
+    ]
+   }
+  ]
+ },
+ {
+  "copies": [
+   {
+    "path": "Cluster New Wave/CS-XR-10-Live/XR-10/Samples/cs_xr10_whistle.wav",
+    "bytes": 41856,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   },
+   {
+    "path": "Studio Real Drum Machines/Akai XR-10/Perc/cs_xr10_whistle.wav",
+    "bytes": 41856,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   }
+  ]
+ },
+ {
+  "copies": [
+   {
+    "path": "Cluster New Wave/CS-XR-10-Live/XR-10/Samples/cs_xr10_guiro_2.wav",
+    "bytes": 46998,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   },
+   {
+    "path": "Studio Real Drum Machines/Akai XR-10/Perc/cs_xr10_guiro_2.wav",
+    "bytes": 46998,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   }
+  ]
+ },
+ {
+  "copies": [
+   {
+    "path": "Cluster New Wave/CS-XR-10-Live/XR-10/Samples/cs_xr10_guiro_1.wav",
+    "bytes": 73152,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   },
+   {
+    "path": "Studio Real Drum Machines/Akai XR-10/Perc/cs_xr10_guiro_1.wav",
+    "bytes": 73152,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   }
+  ]
+ },
+ {
+  "copies": [
+   {
+    "path": "Cluster New Wave/CS-XR-10-Live/XR-10/Samples/cs_xr10_claps.wav",
+    "bytes": 80550,
+    "used_by_path": 56,
+    "songs_using_this_name": [
+     "Emphaty"
+    ]
+   },
+   {
+    "path": "Studio Real Drum Machines/Akai XR-10/Perc/cs_xr10_claps.wav",
+    "bytes": 80550,
+    "used_by_path": 0,
+    "songs_using_this_name": [
+     "Emphaty"
+    ]
+   }
+  ]
+ },
+ {
+  "copies": [
+   {
+    "path": "Cluster New Wave/CS-XR-10-Live/XR-10/Samples/cs_xr10_crash_2.wav",
+    "bytes": 182116,
+    "used_by_path": 56,
+    "songs_using_this_name": [
+     "Emphaty"
+    ]
+   },
+   {
+    "path": "Studio Real Drum Machines/Akai XR-10/Cymb/Akai XR-10 crash 2.wav",
+    "bytes": 182116,
+    "used_by_path": 156,
+    "songs_using_this_name": [
+     "DONE"
+    ]
+   }
+  ]
+ },
+ {
+  "copies": [
+   {
+    "path": "Cluster New Wave/CS-XR-10-Live/XR-10/Samples/cs_xr10_crash_1.wav",
+    "bytes": 181684,
+    "used_by_path": 56,
+    "songs_using_this_name": [
+     "Emphaty"
+    ]
+   },
+   {
+    "path": "Studio Real Drum Machines/Akai XR-10/Cymb/Akai XR-10 crash 1.wav",
+    "bytes": 181684,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   }
+  ]
+ },
+ {
+  "copies": [
+   {
+    "path": "Cluster New Wave/CS-XR-10-Live/XR-10/Samples/cs_xr10_ride.wav",
+    "bytes": 165376,
+    "used_by_path": 56,
+    "songs_using_this_name": [
+     "Emphaty"
+    ]
+   },
+   {
+    "path": "Studio Real Drum Machines/Akai XR-10/Cymb/Akai XR-10 ride.wav",
+    "bytes": 165376,
+    "used_by_path": 112,
+    "songs_using_this_name": [
+     "DONE"
+    ]
+   }
+  ]
+ },
+ {
+  "copies": [
+   {
+    "path": "Cluster New Wave/CS-XR-10-Live/XR-10/Samples/cs_xr10_rimshot_1.wav",
+    "bytes": 26832,
+    "used_by_path": 56,
+    "songs_using_this_name": [
+     "Emphaty"
+    ]
+   },
+   {
+    "path": "Studio Real Drum Machines/Akai XR-10/Rimshot/cs_xr10_rimshot_1.wav",
+    "bytes": 26832,
+    "used_by_path": 0,
+    "songs_using_this_name": [
+     "Emphaty"
+    ]
+   }
+  ]
+ },
+ {
+  "copies": [
+   {
+    "path": "Cluster New Wave/CS-XR-10-Live/XR-10/Samples/cs_xr10_rimshot_2.wav",
+    "bytes": 72676,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   },
+   {
+    "path": "Studio Real Drum Machines/Akai XR-10/Rimshot/cs_xr10_rimshot_2.wav",
+    "bytes": 72676,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   }
+  ]
+ },
+ {
+  "copies": [
+   {
+    "path": "Cluster New Wave/CS-XR-10-Live/XR-10/Samples/cs_xr10_squeak_h.wav",
+    "bytes": 49588,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   },
+   {
+    "path": "Studio Real Drum Machines/Akai XR-10/FX Hit/cs_xr10_squeak_h.wav",
+    "bytes": 49588,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   }
+  ]
+ },
+ {
+  "copies": [
+   {
+    "path": "Cluster New Wave/CS-XR-10-Live/XR-10/Samples/cs_xr10_squeak_l.wav",
+    "bytes": 56278,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   },
+   {
+    "path": "Studio Real Drum Machines/Akai XR-10/FX Hit/cs_xr10_squeak_l.wav",
+    "bytes": 56278,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   }
+  ]
+ },
+ {
+  "copies": [
+   {
+    "path": "Cluster New Wave/CS-XR-10-Live/XR-10/Samples/cs_xr10_hits.wav",
+    "bytes": 100086,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   },
+   {
+    "path": "Studio Real Drum Machines/Akai XR-10/FX Hit/cs_xr10_hits.wav",
+    "bytes": 100086,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   }
+  ]
+ },
+ {
+  "copies": [
+   {
+    "path": "Cluster New Wave/CS-XR-10-Live/XR-10/Samples/cs_xr10_cowbell.wav",
+    "bytes": 36384,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   },
+   {
+    "path": "Studio Real Drum Machines/Akai XR-10/Cowbell/Akai XR-10 cowbell.wav",
+    "bytes": 36384,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   }
+  ]
+ },
+ {
+  "copies": [
+   {
+    "path": "Eitan Rieter/TRNSNT1 - Electronic Emotion (Eitan Reiter) - Part A/TRNSNT1 Kicks/TRNSNT1 Kick Live 2.wav",
+    "bytes": 344276,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   },
+   {
+    "path": "TRNSNT2 Primal Kicks/TRNSNT1 Kicks (BONUS) [Scaled]/Kick Live 2 G.wav",
+    "bytes": 344276,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   }
+  ]
+ },
+ {
+  "copies": [
+   {
+    "path": "Eitan Rieter/TRNSNT1 - Electronic Emotion (Eitan Reiter) - Part A/TRNSNT1 Kicks/TRNSNT1 Kick Square one.wav",
+    "bytes": 81494,
+    "used_by_path": 0,
+    "songs_using_this_name": [
+     "Double Figure"
+    ]
+   },
+   {
+    "path": "TRNSNT2 Primal Kicks/TRNSNT1 Kicks (BONUS) [Scaled]/Kick Square one F.wav",
+    "bytes": 81494,
+    "used_by_path": 123,
+    "songs_using_this_name": [
+     "Night F Dorian 119",
+     "Open F minor 121"
+    ]
+   }
+  ]
+ },
+ {
+  "copies": [
+   {
+    "path": "Eitan Rieter/TRNSNT1 - Electronic Emotion (Eitan Reiter) - Part A/TRNSNT1 Kicks/TRNSNT1 Kick Psika.wav",
+    "bytes": 128116,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   },
+   {
+    "path": "TRNSNT2 Primal Kicks/TRNSNT1 Kicks (BONUS) [Scaled]/Kick Psika E.wav",
+    "bytes": 128116,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   }
+  ]
+ },
+ {
+  "copies": [
+   {
+    "path": "Eitan Rieter/TRNSNT1 - Electronic Emotion (Eitan Reiter) - Part A/TRNSNT1 Kicks/TRNSNT1 Kick Live 3.wav",
+    "bytes": 344276,
+    "used_by_path": 0,
+    "songs_using_this_name": [
+     "Skelltons* 128 BPM"
+    ]
+   },
+   {
+    "path": "TRNSNT2 Primal Kicks/TRNSNT1 Kicks (BONUS) [Scaled]/Kick Live 3 D#.wav",
+    "bytes": 344276,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   }
+  ]
+ },
+ {
+  "copies": [
+   {
+    "path": "Eitan Rieter/TRNSNT1 - Electronic Emotion (Eitan Reiter) - Part A/TRNSNT1 Kicks/TRNSNT1 Kick Live 1.wav",
+    "bytes": 344276,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   },
+   {
+    "path": "TRNSNT2 Primal Kicks/TRNSNT1 Kicks (BONUS) [Scaled]/Kick Live 1 F.wav",
+    "bytes": 344276,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   }
+  ]
+ },
+ {
+  "copies": [
+   {
+    "path": "Eitan Rieter/TRNSNT1 - Electronic Emotion (Eitan Reiter) - Part A/TRNSNT1 Kicks/TRNSNT1 Kick Pyramid.wav",
+    "bytes": 129156,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   },
+   {
+    "path": "TRNSNT2 Primal Kicks/TRNSNT1 Kicks (BONUS) [Scaled]/Kick Pyramid D#.wav",
+    "bytes": 129156,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   }
+  ]
+ },
+ {
+  "copies": [
+   {
+    "path": "Eitan Rieter/TRNSNT1 - Electronic Emotion (Eitan Reiter) - Part A/TRNSNT1 Kicks/TRNSNT1 Kick Live 4.wav",
+    "bytes": 344276,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   },
+   {
+    "path": "TRNSNT2 Primal Kicks/TRNSNT1 Kicks (BONUS) [Scaled]/Kick Live 4 G#.wav",
+    "bytes": 344276,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   }
+  ]
+ },
+ {
+  "copies": [
+   {
+    "path": "Eitan Rieter/TRNSNT1 - Electronic Emotion (Eitan Reiter) - Part A/TRNSNT1 Kicks/TRNSNT1 Kick 1995.wav",
+    "bytes": 73238,
+    "used_by_path": 0,
+    "songs_using_this_name": [
+     "Double Figure"
+    ]
+   },
+   {
+    "path": "TRNSNT2 Primal Kicks/TRNSNT1 Kicks (BONUS) [Scaled]/Kick 1995 F#.wav",
+    "bytes": 73238,
+    "used_by_path": 33,
+    "songs_using_this_name": [
+     "Open F minor 121"
+    ]
+   }
+  ]
+ },
+ {
+  "copies": [
+   {
+    "path": "Eitan Rieter/TRNSNT1 - Electronic Emotion (Eitan Reiter) - Part A/TRNSNT1 Kicks/TRNSNT1 Kick 1994.wav",
+    "bytes": 134624,
+    "used_by_path": 0,
+    "songs_using_this_name": [
+     "Double Figure"
+    ]
+   },
+   {
+    "path": "TRNSNT2 Primal Kicks/TRNSNT1 Kicks (BONUS) [Scaled]/Kick 1994 G.wav",
+    "bytes": 134624,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   }
+  ]
+ },
+ {
+  "copies": [
+   {
+    "path": "Eitan Rieter/TRNSNT1 - Electronic Emotion (Eitan Reiter) - Part A/TRNSNT1 Kicks/TRNSNT1 Kick Midnight.wav",
+    "bytes": 132380,
+    "used_by_path": 0,
+    "songs_using_this_name": [
+     "DONE",
+     "Egypt Morder Project"
+    ]
+   },
+   {
+    "path": "TRNSNT2 Primal Kicks/TRNSNT1 Kicks (BONUS) [Scaled]/Kick Midnight D#.wav",
+    "bytes": 132380,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   }
+  ]
+ },
+ {
+  "copies": [
+   {
+    "path": "Eitan Rieter/TRNSNT1 - Electronic Emotion (Eitan Reiter) - Part A/TRNSNT1 Kicks/TRNSNT1 Kick Tech.wav",
+    "bytes": 152368,
+    "used_by_path": 0,
+    "songs_using_this_name": [
+     "Egypt Morder Project"
+    ]
+   },
+   {
+    "path": "TRNSNT2 Primal Kicks/TRNSNT1 Kicks (BONUS) [Scaled]/Kick Tech F#.wav",
+    "bytes": 152368,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   }
+  ]
+ },
+ {
+  "copies": [
+   {
+    "path": "Eitan Rieter/TRNSNT1 - Electronic Emotion (Eitan Reiter) - Part A/TRNSNT1 Kicks/TRNSNT1 Kick 1996.wav",
+    "bytes": 75678,
+    "used_by_path": 0,
+    "songs_using_this_name": [
+     "Egypt Morder Project"
+    ]
+   },
+   {
+    "path": "TRNSNT2 Primal Kicks/TRNSNT1 Kicks (BONUS) [Scaled]/Kick 1996 F.wav",
+    "bytes": 75678,
+    "used_by_path": 85,
+    "songs_using_this_name": [
+     "Jam 127"
+    ]
+   }
+  ]
+ },
+ {
+  "copies": [
+   {
+    "path": "Eitan Rieter/TRNSNT1 - Electronic Emotion (Eitan Reiter) - Part A/TRNSNT1 Kicks/TRNSNT1 Kick Alien.wav",
+    "bytes": 286748,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   },
+   {
+    "path": "TRNSNT2 Primal Kicks/TRNSNT1 Kicks (BONUS) [Scaled]/Kick Alien D.wav",
+    "bytes": 286748,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   }
+  ]
+ },
+ {
+  "copies": [
+   {
+    "path": "Eitan Rieter/TRNSNT1 - Electronic Emotion (Eitan Reiter) - Part A/TRNSNT1 Kicks/TRNSNT1 Kick Flanged.wav",
+    "bytes": 75302,
+    "used_by_path": 0,
+    "songs_using_this_name": [
+     "DONE",
+     "Egypt Morder Project"
+    ]
+   },
+   {
+    "path": "TRNSNT2 Primal Kicks/TRNSNT1 Kicks (BONUS) [Scaled]/Kick Flanged F#.wav",
+    "bytes": 75302,
+    "used_by_path": 55,
+    "songs_using_this_name": [
+     "Open F minor 121"
+    ]
+   }
+  ]
+ },
+ {
+  "copies": [
+   {
+    "path": "Eitan Rieter/TRNSNT1 - Electronic Emotion (Eitan Reiter) - Part A/TRNSNT1 Kicks/TRNSNT1 Kick Flat Earth.wav",
+    "bytes": 126080,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   },
+   {
+    "path": "TRNSNT2 Primal Kicks/TRNSNT1 Kicks (BONUS) [Scaled]/Kick Flat Earth F.wav",
+    "bytes": 126080,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   }
+  ]
+ },
+ {
+  "copies": [
+   {
+    "path": "Eitan Rieter/TRNSNT1 - Electronic Emotion (Eitan Reiter) - Part A/TRNSNT1 Kicks/TRNSNT1 Kick Magic.wav",
+    "bytes": 286748,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   },
+   {
+    "path": "TRNSNT2 Primal Kicks/TRNSNT1 Kicks (BONUS) [Scaled]/Kick Magic E.wav",
+    "bytes": 286748,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   }
+  ]
+ },
+ {
+  "copies": [
+   {
+    "path": "Eitan Rieter/TRNSNT1 - Electronic Emotion (Eitan Reiter) - Part A/TRNSNT1 Kicks/TRNSNT1 Kick Eat you A.wav",
+    "bytes": 129158,
+    "used_by_path": 33,
+    "songs_using_this_name": [
+     "ARP JAM",
+     "D Minor 112 BPM",
+     "DONE",
+     "Double Figure",
+     "Egypt Morder Project",
+     "Nothingness 118 BPM",
+     "Secret Sehlls",
+     "Skelltons* 128 BPM",
+     "Smoke Arisen "
+    ]
+   },
+   {
+    "path": "TRNSNT2 Primal Kicks/TRNSNT1 Kicks (BONUS) [Scaled]/Kick Eat you 1D#.wav",
+    "bytes": 129158,
+    "used_by_path": 33,
+    "songs_using_this_name": [
+     "Open F minor 121"
+    ]
+   }
+  ]
+ },
+ {
+  "copies": [
+   {
+    "path": "Eitan Rieter/TRNSNT1 - Electronic Emotion (Eitan Reiter) - Part A/TRNSNT1 Kicks/TRNSNT1 Kick Booarding.wav",
+    "bytes": 256148,
+    "used_by_path": 0,
+    "songs_using_this_name": [
+     "Desert Forest",
+     "Double Figure",
+     "Secret Sehlls",
+     "Skelltons* 128 BPM"
+    ]
+   },
+   {
+    "path": "TRNSNT2 Primal Kicks/TRNSNT1 Kicks (BONUS) [Scaled]/Kick Booarding F.wav",
+    "bytes": 256148,
+    "used_by_path": 123,
+    "songs_using_this_name": [
+     "Night F Dorian 119",
+     "Open F minor 121"
+    ]
+   }
+  ]
+ },
+ {
+  "copies": [
+   {
+    "path": "Eitan Rieter/TRNSNT1 - Electronic Emotion (Eitan Reiter) - Part A/TRNSNT1 Kicks/TRNSNT1 Kick Eat you B.wav",
+    "bytes": 129158,
+    "used_by_path": 0,
+    "songs_using_this_name": [
+     "ARP JAM",
+     "Black Rose 94:135",
+     "DONE",
+     "Desert Forest",
+     "Double Figure",
+     "Egypt Morder Project",
+     "Nothingness 118 BPM",
+     "Secret Sehlls",
+     "Skelltons* 128 BPM"
+    ]
+   },
+   {
+    "path": "TRNSNT2 Primal Kicks/TRNSNT1 Kicks (BONUS) [Scaled]/Kick Eat you 2 D#.wav",
+    "bytes": 129158,
+    "used_by_path": 543,
+    "songs_using_this_name": [
+     "Jam 127",
+     "Open F minor 121"
+    ]
+   }
+  ]
+ },
+ {
+  "copies": [
+   {
+    "path": "Eitan Rieter/TRNSNT1 - Electronic Emotion (Eitan Reiter) - Part A/TRNSNT1 Kicks/TRNSNT1 Kick Stoned.wav",
+    "bytes": 58448,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   },
+   {
+    "path": "TRNSNT2 Primal Kicks/TRNSNT1 Kicks (BONUS) [Scaled]/Kick Stoned F.wav",
+    "bytes": 58448,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   }
+  ]
+ },
+ {
+  "copies": [
+   {
+    "path": "Eitan Rieter/TRNSNT1 - Electronic Emotion (Eitan Reiter) - Part A/TRNSNT1 Kicks/TRNSNT1 Kick Noga.wav",
+    "bytes": 94580,
+    "used_by_path": 0,
+    "songs_using_this_name": [
+     "Black Rose 94:135"
+    ]
+   },
+   {
+    "path": "TRNSNT2 Primal Kicks/TRNSNT1 Kicks (BONUS) [Scaled]/Kick Noga F#.wav",
+    "bytes": 94580,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   }
+  ]
+ },
+ {
+  "copies": [
+   {
+    "path": "Eitan Rieter/TRNSNT1 - Electronic Emotion (Eitan Reiter) - Part A/TRNSNT1 Kicks/TRNSNT1 Kick Jahnun.wav",
+    "bytes": 207612,
+    "used_by_path": 0,
+    "songs_using_this_name": [
+     "Egypt Morder Project"
+    ]
+   },
+   {
+    "path": "TRNSNT2 Primal Kicks/TRNSNT1 Kicks (BONUS) [Scaled]/Kick Jahnun E.wav",
+    "bytes": 207612,
+    "used_by_path": 255,
+    "songs_using_this_name": [
+     "Jam 127"
+    ]
+   }
+  ]
+ },
+ {
+  "copies": [
+   {
+    "path": "Eitan Rieter/TRNSNT1 - Electronic Emotion (Eitan Reiter) - Part A/TRNSNT1 Kicks/TRNSNT1 Kick Lynchesque C.wav",
+    "bytes": 124112,
+    "used_by_path": 0,
+    "songs_using_this_name": [
+     "Double Figure"
+    ]
+   },
+   {
+    "path": "TRNSNT2 Primal Kicks/TRNSNT1 Kicks (BONUS) [Scaled]/Kick Lynchesque 3 D#.wav",
+    "bytes": 124112,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   }
+  ]
+ },
+ {
+  "copies": [
+   {
+    "path": "Eitan Rieter/TRNSNT1 - Electronic Emotion (Eitan Reiter) - Part A/TRNSNT1 Kicks/TRNSNT1 Kick Myst.wav",
+    "bytes": 76224,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   },
+   {
+    "path": "TRNSNT2 Primal Kicks/TRNSNT1 Kicks (BONUS) [Scaled]/Kick Myst G#.wav",
+    "bytes": 76224,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   }
+  ]
+ },
+ {
+  "copies": [
+   {
+    "path": "Eitan Rieter/TRNSNT1 - Electronic Emotion (Eitan Reiter) - Part A/TRNSNT1 Kicks/TRNSNT1 Kick Expection B.wav",
+    "bytes": 132380,
+    "used_by_path": 0,
+    "songs_using_this_name": [
+     "Double Figure"
+    ]
+   },
+   {
+    "path": "TRNSNT2 Primal Kicks/TRNSNT1 Kicks (BONUS) [Scaled]/Kick Expection 2 D.wav",
+    "bytes": 132380,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   }
+  ]
+ },
+ {
+  "copies": [
+   {
+    "path": "Eitan Rieter/TRNSNT1 - Electronic Emotion (Eitan Reiter) - Part A/TRNSNT1 Kicks/TRNSNT1 Kick Lynchesque B.wav",
+    "bytes": 124112,
+    "used_by_path": 0,
+    "songs_using_this_name": [
+     "DONE",
+     "Double Figure",
+     "Egypt Morder Project"
+    ]
+   },
+   {
+    "path": "TRNSNT2 Primal Kicks/TRNSNT1 Kicks (BONUS) [Scaled]/Kick Lynchesque 2 D#.wav",
+    "bytes": 124112,
+    "used_by_path": 255,
+    "songs_using_this_name": [
+     "Jam 127"
+    ]
+   }
+  ]
+ },
+ {
+  "copies": [
+   {
+    "path": "Eitan Rieter/TRNSNT1 - Electronic Emotion (Eitan Reiter) - Part A/TRNSNT1 Kicks/TRNSNT1 Kick Contact.wav",
+    "bytes": 84080,
+    "used_by_path": 0,
+    "songs_using_this_name": [
+     "Egypt Morder Project"
+    ]
+   },
+   {
+    "path": "TRNSNT2 Primal Kicks/TRNSNT1 Kicks (BONUS) [Scaled]/Kick Contact E.wav",
+    "bytes": 84080,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   }
+  ]
+ },
+ {
+  "copies": [
+   {
+    "path": "Eitan Rieter/TRNSNT1 - Electronic Emotion (Eitan Reiter) - Part A/TRNSNT1 Kicks/TRNSNT1 Kick Predator.wav",
+    "bytes": 86836,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   },
+   {
+    "path": "TRNSNT2 Primal Kicks/TRNSNT1 Kicks (BONUS) [Scaled]/Kick Predator F.wav",
+    "bytes": 86836,
+    "used_by_path": 33,
+    "songs_using_this_name": [
+     "Open F minor 121"
+    ]
+   }
+  ]
+ },
+ {
+  "copies": [
+   {
+    "path": "Eitan Rieter/TRNSNT1 - Electronic Emotion (Eitan Reiter) - Part A/TRNSNT1 Kicks/TRNSNT1 Kick Exception A.wav",
+    "bytes": 132380,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   },
+   {
+    "path": "TRNSNT2 Primal Kicks/TRNSNT1 Kicks (BONUS) [Scaled]/Kick Exception 1 F#.wav",
+    "bytes": 132380,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   }
+  ]
+ },
+ {
+  "copies": [
+   {
+    "path": "Eitan Rieter/TRNSNT1 - Electronic Emotion (Eitan Reiter) - Part A/TRNSNT1 Kicks/TRNSNT1 Kick Lynchesque A.wav",
+    "bytes": 124112,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   },
+   {
+    "path": "TRNSNT2 Primal Kicks/TRNSNT1 Kicks (BONUS) [Scaled]/Kick Lynchesque 1 D#.wav",
+    "bytes": 124112,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   }
+  ]
+ },
+ {
+  "copies": [
+   {
+    "path": "Eitan Rieter/TRNSNT1 - Electronic Emotion (Eitan Reiter) - Part A/TRNSNT1 Kicks/TRNSNT1 Kick Imagine.wav",
+    "bytes": 60862,
+    "used_by_path": 0,
+    "songs_using_this_name": [
+     "DONE",
+     "Double Figure",
+     "Egypt Morder Project",
+     "Nothingness 118 BPM"
+    ]
+   },
+   {
+    "path": "TRNSNT2 Primal Kicks/TRNSNT1 Kicks (BONUS) [Scaled]/Kick Imagine F.wav",
+    "bytes": 60862,
+    "used_by_path": 288,
+    "songs_using_this_name": [
+     "Jam 127",
+     "Open F minor 121"
+    ]
+   }
+  ]
+ },
+ {
+  "copies": [
+   {
+    "path": "Eitan Rieter/TRNSNT1 - Electronic Emotion (Eitan Reiter) - Part A/TRNSNT1 Kicks/TRNSNT1 Kick X2.wav",
+    "bytes": 132380,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   },
+   {
+    "path": "TRNSNT2 Primal Kicks/TRNSNT1 Kicks (BONUS) [Scaled]/Kick X2 A#.wav",
+    "bytes": 132380,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   }
+  ]
+ },
+ {
+  "copies": [
+   {
+    "path": "Eitan Rieter/TRNSNT1 - Electronic Emotion (Eitan Reiter) - Part A/TRNSNT1 Kicks/TRNSNT1 Kick X3.wav",
+    "bytes": 64630,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   },
+   {
+    "path": "TRNSNT2 Primal Kicks/TRNSNT1 Kicks (BONUS) [Scaled]/Kick X3 F.wav",
+    "bytes": 64630,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   }
+  ]
+ },
+ {
+  "copies": [
+   {
+    "path": "Eitan Rieter/TRNSNT1 - Electronic Emotion (Eitan Reiter) - Part A/TRNSNT1 Kicks/TRNSNT1 Kick X4 Clone.wav",
+    "bytes": 176492,
+    "used_by_path": 0,
+    "songs_using_this_name": [
+     "Egypt Morder Project"
+    ]
+   },
+   {
+    "path": "TRNSNT2 Primal Kicks/TRNSNT1 Kicks (BONUS) [Scaled]/Kick X4 Clone G#.wav",
+    "bytes": 176492,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   }
+  ]
+ },
+ {
+  "copies": [
+   {
+    "path": "Eitan Rieter/TRNSNT1 - Electronic Emotion (Eitan Reiter) - Part A/TRNSNT1 Kicks/TRNSNT1 Kick Bruce Lee.wav",
+    "bytes": 130214,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   },
+   {
+    "path": "TRNSNT2 Primal Kicks/TRNSNT1 Kicks (BONUS) [Scaled]/Kick Bruce Lee A#.wav",
+    "bytes": 130214,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   }
+  ]
+ },
+ {
+  "copies": [
+   {
+    "path": "Eitan Rieter/TRNSNT1 - Electronic Emotion (Eitan Reiter) - Part A/TRNSNT1 Kicks/TRNSNT1 Kick X1.wav",
+    "bytes": 132380,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   },
+   {
+    "path": "TRNSNT2 Primal Kicks/TRNSNT1 Kicks (BONUS) [Scaled]/Kick X1 A#.wav",
+    "bytes": 132380,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   }
+  ]
+ },
+ {
+  "copies": [
+   {
+    "path": "Eitan Rieter/TRNSNT1 - Electronic Emotion (Eitan Reiter) - Part A/TRNSNT1 Kicks/TRNSNT1 Kick UFO.wav",
+    "bytes": 64850,
+    "used_by_path": 0,
+    "songs_using_this_name": [
+     "ARP JAM",
+     "Double Figure"
+    ]
+   },
+   {
+    "path": "TRNSNT2 Primal Kicks/TRNSNT1 Kicks (BONUS) [Scaled]/Kick UFO E.wav",
+    "bytes": 64850,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   }
+  ]
+ },
+ {
+  "copies": [
+   {
+    "path": "Eitan Rieter/TRNSNT1 - Electronic Emotion (Eitan Reiter) - Part A/TRNSNT1 Kicks/TRNSNT1 Kick Dist.wav",
+    "bytes": 88280,
+    "used_by_path": 0,
+    "songs_using_this_name": [
+     "Nothingness 118 BPM"
+    ]
+   },
+   {
+    "path": "TRNSNT2 Primal Kicks/TRNSNT1 Kicks (BONUS) [Scaled]/Kick Dist A#.wav",
+    "bytes": 88280,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   }
+  ]
+ },
+ {
+  "copies": [
+   {
+    "path": "Eitan Rieter/TRNSNT1 - Electronic Emotion (Eitan Reiter) - Part A/TRNSNT1 Kicks/TRNSNT1 Kick Hypno.wav",
+    "bytes": 109640,
+    "used_by_path": 0,
+    "songs_using_this_name": [
+     "Black Rose 94:135",
+     "DONE",
+     "Double Figure",
+     "Egypt Morder Project"
+    ]
+   },
+   {
+    "path": "TRNSNT2 Primal Kicks/TRNSNT1 Kicks (BONUS) [Scaled]/Kick Hypno F#.wav",
+    "bytes": 109640,
+    "used_by_path": 345,
+    "songs_using_this_name": [
+     "Jam 127",
+     "Night F Dorian 119"
+    ]
+   }
+  ]
+ },
+ {
+  "copies": [
+   {
+    "path": "Eitan Rieter/TRNSNT1 - Electronic Emotion (Eitan Reiter) - Part A/TRNSNT1 Kicks/TRNSNT1 Kick Paint.wav",
+    "bytes": 129156,
+    "used_by_path": 0,
+    "songs_using_this_name": [
+     "Egypt Morder Project",
+     "Skelltons* 128 BPM"
+    ]
+   },
+   {
+    "path": "TRNSNT2 Primal Kicks/TRNSNT1 Kicks (BONUS) [Scaled]/Kick Paint G.wav",
+    "bytes": 129156,
+    "used_by_path": 33,
+    "songs_using_this_name": [
+     "Open F minor 121"
+    ]
+   }
+  ]
+ },
+ {
+  "copies": [
+   {
+    "path": "Eitan Rieter/TRNSNT1 - Electronic Emotion (Eitan Reiter) - Part A/TRNSNT1 Kicks/TRNSNT1 Kick Voodooo.wav",
+    "bytes": 58878,
+    "used_by_path": 0,
+    "songs_using_this_name": [
+     "Black Rose 94:135"
+    ]
+   },
+   {
+    "path": "TRNSNT2 Primal Kicks/TRNSNT1 Kicks (BONUS) [Scaled]/Kick Voodooo E.wav",
+    "bytes": 58878,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   }
+  ]
+ },
+ {
+  "copies": [
+   {
+    "path": "Witch House Samples/Drums/Snares & Claps/Snare (Good Time).wav",
+    "bytes": 48260,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   },
+   {
+    "path": "Witch House Samples/Drums/Snares & Claps/ULTIMATE_CC - snare - 4.wav",
+    "bytes": 371898,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   }
+  ]
+ },
+ {
+  "copies": [
+   {
+    "path": "Witch House Samples/Drums/Snares & Claps/Snare (Crimewave).wav",
+    "bytes": 47880,
+    "used_by_path": 6,
+    "songs_using_this_name": [
+     "Open F minor 121"
+    ]
+   },
+   {
+    "path": "Witch House Samples/Drums/Snares & Claps/ULTIMATE_CC - snare - 6.wav",
+    "bytes": 371490,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   },
+   {
+    "path": "Witch House Samples/Drums/Snares & Claps/\u2727CRIMEWAVE.wav",
+    "bytes": 47880,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   }
+  ]
+ },
+ {
+  "copies": [
+   {
+    "path": "Witch House Samples/Drums/Snares & Claps/Clap (Empathy).wav",
+    "bytes": 389880,
+    "used_by_path": 6,
+    "songs_using_this_name": [
+     "Goth Wich Project",
+     "Open F minor 121"
+    ]
+   },
+   {
+    "path": "Witch House Samples/Drums/Snares & Claps/ULTIMATE_CC - clap - 2.wav",
+    "bytes": 713490,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   }
+  ]
+ },
+ {
+  "copies": [
+   {
+    "path": "Witch House Samples/Drums/Snares & Claps/Snare (Fleece).wav",
+    "bytes": 42120,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   },
+   {
+    "path": "Witch House Samples/Drums/Snares & Claps/\u2727TIGHT.wav",
+    "bytes": 42120,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   }
+  ]
+ },
+ {
+  "copies": [
+   {
+    "path": "Witch House Samples/Drums/Snares & Claps/Snare (Birds).wav",
+    "bytes": 60620,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   },
+   {
+    "path": "Witch House Samples/Drums/Snares & Claps/\u2727DEFAULT.wav",
+    "bytes": 60620,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   }
+  ]
+ },
+ {
+  "copies": [
+   {
+    "path": "Witch House Samples/Drums/Kicks/Kick (Leni) [D#].wav",
+    "bytes": 81936,
+    "used_by_path": 3,
+    "songs_using_this_name": [
+     "D Minor 112 BPM"
+    ]
+   },
+   {
+    "path": "Witch House Samples/Drums/Kicks/\u2727LOW [D#].wav",
+    "bytes": 81936,
+    "used_by_path": 3,
+    "songs_using_this_name": [
+     "D Minor 112 BPM"
+    ]
+   }
+  ]
+ },
+ {
+  "copies": [
+   {
+    "path": "Witch House Samples/Drums/Kicks/Kick (Crimewave) [E].wav",
+    "bytes": 48240,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   },
+   {
+    "path": "Witch House Samples/Drums/Kicks/ULTIMATE_CC - kick - 5 [E].wav",
+    "bytes": 371850,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   },
+   {
+    "path": "Witch House Samples/Drums/Kicks/\u2727WAVE [E].wav",
+    "bytes": 48240,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   }
+  ]
+ },
+ {
+  "copies": [
+   {
+    "path": "Witch House Samples/Vox/CC_VOX_9 @morecalcium [C].wav",
+    "bytes": 6662500,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   },
+   {
+    "path": "Witch House Samples/Vox/misery_vox - 2 @morecalcium [C].wav",
+    "bytes": 6662518,
+    "used_by_path": 0,
+    "songs_using_this_name": []
+   }
+  ]
+ }
+]

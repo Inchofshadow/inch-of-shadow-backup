@@ -1,0 +1,28 @@
+{
+  "_draft": "NOT LIVE. Lines to ADD to Inch of Shadow/.claude/settings.local.json permissions after Amir's yes. 'deny' blocks the action; 'ask' shows him a card every time. Exact Gmail tool names to be checked against the live tool list before applying.",
+  "permissions": {
+    "deny": [
+      "Bash(git push:*)",
+      "Bash(git remote add:*)",
+      "Bash(git remote set-url:*)",
+      "Edit(**/*.fxp)",
+      "Write(**/*.fxp)",
+      "Edit(**/*.serumpreset)",
+      "Write(**/*.serumpreset)"
+    ],
+    "ask": [
+      "Bash(mv:*)",
+      "Bash(rm:*)",
+      "Bash(rsync:*)",
+      "Bash(trash:*)",
+      "mcp__66f02808-1e97-4572-a5ab-786f058cb4b1__search_threads",
+      "mcp__66f02808-1e97-4572-a5ab-786f058cb4b1__get_thread",
+      "mcp__66f02808-1e97-4572-a5ab-786f058cb4b1__get_message"
+    ]
+  },
+  "_notes": [
+    "Checked 2026-11-05: none of the 131 existing allow rules covers mv, rm, rsync, trash, git push/remote or Gmail, so nothing clashes.",
+    "Scheduled SC/IG runs must not hit an 'ask' (they would stall): check their scripts use no mv/rm before applying.",
+    "Judgement rules (scope, verify, taste, archive first, handles, AI on images) stay as text."
+  ]
+}

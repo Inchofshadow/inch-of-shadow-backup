@@ -1,0 +1,5870 @@
+{
+ "raws": {
+  "Outdoor/Outdoor Shoot 10/Raw/DSC_6540.NEF": {
+   "captured": "2026-08-26T20:48:59.400",
+   "orientation": 8,
+   "bytes": 46591020
+  },
+  "Outdoor/Outdoor Shoot 10/Raw/DSC_6544.NEF": {
+   "captured": "2026-08-26T20:51:20.990",
+   "orientation": 8,
+   "bytes": 53549476
+  },
+  "Outdoor/Outdoor Shoot 10/Raw/DSC_6556.NEF": {
+   "captured": "2026-08-26T20:51:53.620",
+   "orientation": 1,
+   "bytes": 47728611
+  },
+  "Outdoor/Outdoor Shoot 10/Raw/DSC_6557.NEF": {
+   "captured": "2026-08-26T20:51:54.200",
+   "orientation": 1,
+   "bytes": 53840574
+  },
+  "Outdoor/Outdoor Shoot 10/Raw/DSC_6561.NEF": {
+   "captured": "2026-08-26T20:52:06.240",
+   "orientation": 8,
+   "bytes": 54465934
+  },
+  "Outdoor/Outdoor Shoot 10/Raw/DSC_6562.NEF": {
+   "captured": "2026-08-26T20:52:07.620",
+   "orientation": 8,
+   "bytes": 55520985
+  },
+  "Outdoor/Outdoor Shoot 10/Raw/DSC_6563.NEF": {
+   "captured": "2026-08-26T20:52:15.710",
+   "orientation": 8,
+   "bytes": 55860148
+  },
+  "Outdoor/Outdoor Shoot 10/Raw/DSC_6565.NEF": {
+   "captured": "2026-08-26T20:52:17.690",
+   "orientation": 8,
+   "bytes": 54967003
+  },
+  "Outdoor/Outdoor Shoot 10/Raw/DSC_6566.NEF": {
+   "captured": "2026-08-26T20:52:19.040",
+   "orientation": 8,
+   "bytes": 53784331
+  },
+  "Outdoor/Outdoor Shoot 10/Raw/DSC_6567.NEF": {
+   "captured": "2026-08-26T20:52:20.240",
+   "orientation": 8,
+   "bytes": 53767155
+  },
+  "Outdoor/Outdoor Shoot 10/Raw/DSC_6568.NEF": {
+   "captured": "2026-08-26T20:52:20.730",
+   "orientation": 8,
+   "bytes": 52764138
+  },
+  "Outdoor/Outdoor Shoot 10/Raw/DSC_6570.NEF": {
+   "captured": "2026-08-26T20:52:23.200",
+   "orientation": 8,
+   "bytes": 53613482
+  },
+  "Outdoor/Outdoor Shoot 10/Raw/DSC_6571.NEF": {
+   "captured": "2026-08-26T20:52:24.190",
+   "orientation": 8,
+   "bytes": 53023483
+  },
+  "Outdoor/Outdoor Shoot 10/Raw/DSC_6576.NEF": {
+   "captured": "2026-08-26T20:52:29.240",
+   "orientation": 8,
+   "bytes": 52677499
+  },
+  "Outdoor/Outdoor Shoot 10/Raw/DSC_6578.NEF": {
+   "captured": "2026-08-26T20:52:33.880",
+   "orientation": 8,
+   "bytes": 53254605
+  },
+  "Outdoor/Outdoor Shoot 10/Raw/DSC_6581.NEF": {
+   "captured": "2026-08-26T20:52:42.430",
+   "orientation": 8,
+   "bytes": 54640884
+  },
+  "Outdoor/Outdoor Shoot 10/Raw/DSC_6583.NEF": {
+   "captured": "2026-08-26T20:52:43.660",
+   "orientation": 8,
+   "bytes": 53610006
+  },
+  "Outdoor/Outdoor Shoot 10/Raw/DSC_6584.NEF": {
+   "captured": "2026-08-26T20:52:44.320",
+   "orientation": 8,
+   "bytes": 53264784
+  },
+  "Outdoor/Outdoor Shoot 10/Raw/DSC_6586.NEF": {
+   "captured": "2026-08-26T20:52:44.950",
+   "orientation": 8,
+   "bytes": 53383549
+  },
+  "Outdoor/Outdoor Shoot 10/Raw/DSC_6587.NEF": {
+   "captured": "2026-08-26T20:52:45.690",
+   "orientation": 8,
+   "bytes": 53692525
+  },
+  "Outdoor/Outdoor Shoot 10/Raw/DSC_6588.NEF": {
+   "captured": "2026-08-26T20:52:46.600",
+   "orientation": 8,
+   "bytes": 53508714
+  },
+  "Outdoor/Outdoor Shoot 10/Raw/DSC_6590.NEF": {
+   "captured": "2026-08-26T20:52:47.790",
+   "orientation": 8,
+   "bytes": 53029530
+  },
+  "Outdoor/Outdoor Shoot 10/Raw/DSC_6593.NEF": {
+   "captured": "2026-08-26T20:52:50.340",
+   "orientation": 8,
+   "bytes": 53326703
+  },
+  "Outdoor/Outdoor Shoot 10/Raw/DSC_6595.NEF": {
+   "captured": "2026-08-26T20:52:55.390",
+   "orientation": 8,
+   "bytes": 52942857
+  },
+  "Outdoor/Outdoor Shoot 10/Raw/DSC_6596.NEF": {
+   "captured": "2026-08-26T20:53:29.690",
+   "orientation": 8,
+   "bytes": 52726029
+  },
+  "Outdoor/Outdoor Shoot 10/Raw/DSC_6599.NEF": {
+   "captured": "2026-08-26T20:53:33.800",
+   "orientation": 8,
+   "bytes": 52328563
+  },
+  "Outdoor/Outdoor Shoot 10/Raw/DSC_6603.NEF": {
+   "captured": "2026-08-26T20:53:42.590",
+   "orientation": 8,
+   "bytes": 52821241
+  },
+  "Outdoor/Outdoor Shoot 10/Raw/DSC_6606.NEF": {
+   "captured": "2026-08-26T20:54:12.900",
+   "orientation": 8,
+   "bytes": 52489562
+  },
+  "Outdoor/Outdoor Shoot 10/Raw/DSC_6607.NEF": {
+   "captured": "2026-08-26T20:54:14.320",
+   "orientation": 8,
+   "bytes": 52743506
+  },
+  "Outdoor/Outdoor Shoot 10/Raw/DSC_6608.NEF": {
+   "captured": "2026-08-26T20:54:16.320",
+   "orientation": 8,
+   "bytes": 51761604
+  },
+  "Outdoor/Outdoor Shoot 10/Raw/DSC_6611.NEF": {
+   "captured": "2026-08-26T20:54:21.980",
+   "orientation": 8,
+   "bytes": 52741095
+  },
+  "Outdoor/Outdoor Shoot 10/Raw/DSC_6617.NEF": {
+   "captured": "2026-08-26T20:54:37.400",
+   "orientation": 8,
+   "bytes": 52131488
+  },
+  "Outdoor/Outdoor Shoot 10/Raw/DSC_6618.NEF": {
+   "captured": "2026-08-26T20:54:38.360",
+   "orientation": 8,
+   "bytes": 51885031
+  },
+  "Outdoor/Outdoor Shoot 10/Raw/DSC_6620.NEF": {
+   "captured": "2026-08-26T20:56:52.990",
+   "orientation": 1,
+   "bytes": 51181401
+  },
+  "Outdoor/Outdoor Shoot 10/Raw/DSC_6622.NEF": {
+   "captured": "2026-08-26T20:57:04.930",
+   "orientation": 1,
+   "bytes": 49307231
+  },
+  "Outdoor/Outdoor Shoot 10/Raw/DSC_6640.NEF": {
+   "captured": "2026-08-26T20:57:48.160",
+   "orientation": 8,
+   "bytes": 53461325
+  },
+  "Outdoor/Outdoor Shoot 10/Raw/DSC_6653.NEF": {
+   "captured": "2026-08-26T20:58:21.140",
+   "orientation": 1,
+   "bytes": 50392381
+  },
+  "Outdoor/Outdoor Shoot 10/Raw/DSC_6657.NEF": {
+   "captured": "2026-08-26T20:58:46.940",
+   "orientation": 8,
+   "bytes": 56589445
+  },
+  "Outdoor/Outdoor Shoot 10/Raw/DSC_6681.NEF": {
+   "captured": "2026-08-26T21:01:36.710",
+   "orientation": 8,
+   "bytes": 58309020
+  },
+  "Outdoor/Outdoor Shoot 10/Raw/DSC_6682.NEF": {
+   "captured": "2026-08-26T21:01:38.340",
+   "orientation": 8,
+   "bytes": 57062929
+  },
+  "Outdoor/Outdoor Shoot 11/Raw/DSC_6489.NEF": {
+   "captured": "2026-08-26T20:45:11.990",
+   "orientation": 8,
+   "bytes": 47276785
+  },
+  "Outdoor/Outdoor Shoot 11/Raw/DSC_6504.NEF": {
+   "captured": "2026-08-26T20:46:19.290",
+   "orientation": 8,
+   "bytes": 47119756
+  },
+  "Outdoor/Outdoor Shoot 11/Raw/DSC_6511.NEF": {
+   "captured": "2026-08-26T20:46:28.990",
+   "orientation": 8,
+   "bytes": 47632132
+  },
+  "Outdoor/Outdoor Shoot 11/Raw/DSC_6513.NEF": {
+   "captured": "2026-08-26T20:46:31.550",
+   "orientation": 8,
+   "bytes": 58237648
+  },
+  "Outdoor/Outdoor Shoot 11/Raw/DSC_6514.NEF": {
+   "captured": "2026-08-26T20:46:35.530",
+   "orientation": 8,
+   "bytes": 57308204
+  },
+  "Outdoor/Outdoor Shoot 11/Raw/DSC_6523.NEF": {
+   "captured": "2026-08-26T20:48:25.480",
+   "orientation": 1,
+   "bytes": 61806742
+  },
+  "Outdoor/Outdoor Shoot 11/Raw/DSC_6524.NEF": {
+   "captured": "2026-08-26T20:48:40.740",
+   "orientation": 8,
+   "bytes": 59578816
+  },
+  "Outdoor/Outdoor Shoot 11/Raw/DSC_6530.NEF": {
+   "captured": "2026-08-26T20:48:49.620",
+   "orientation": 8,
+   "bytes": 55884113
+  },
+  "Outdoor/Outdoor Shoot 11/Raw/DSC_6531.NEF": {
+   "captured": "2026-08-26T20:48:50.990",
+   "orientation": 8,
+   "bytes": 57836175
+  },
+  "Outdoor/Outdoor Shoot 11/Raw/DSC_6533.NEF": {
+   "captured": "2026-08-26T20:48:53.240",
+   "orientation": 8,
+   "bytes": 59563626
+  },
+  "Outdoor/Outdoor Shoot 11/Raw/DSC_6534.NEF": {
+   "captured": "2026-08-26T20:48:54.430",
+   "orientation": 8,
+   "bytes": 58507750
+  },
+  "Outdoor/Outdoor Shoot 11/Raw/DSC_6536.NEF": {
+   "captured": "2026-08-26T20:48:56.740",
+   "orientation": 8,
+   "bytes": 59310692
+  },
+  "Outdoor/Outdoor Shoot 11/Raw/DSC_6537.NEF": {
+   "captured": "2026-08-26T20:48:57.730",
+   "orientation": 8,
+   "bytes": 60328617
+  },
+  "Outdoor/Outdoor Shoot 11/Raw/DSC_6538.NEF": {
+   "captured": "2026-08-26T20:48:58.220",
+   "orientation": 8,
+   "bytes": 46584050
+  },
+  "Outdoor/Outdoor Shoot 11/Raw/DSC_6539.NEF": {
+   "captured": "2026-08-26T20:48:58.800",
+   "orientation": 8,
+   "bytes": 60851534
+  },
+  "Outdoor/Outdoor Shoot 11/Raw/DSC_6542.NEF": {
+   "captured": "2026-08-26T20:49:03.490",
+   "orientation": 8,
+   "bytes": 59813974
+  },
+  "Outdoor/Outdoor Shoot 11/Raw/DSC_6546.NEF": {
+   "captured": "2026-08-26T20:51:24.500",
+   "orientation": 8,
+   "bytes": 53788339
+  },
+  "Outdoor/Outdoor Shoot 11/Raw/DSC_6547.NEF": {
+   "captured": "2026-08-26T20:51:25.890",
+   "orientation": 8,
+   "bytes": 56126360
+  },
+  "Outdoor/Outdoor Shoot 11/Raw/DSC_6549.NEF": {
+   "captured": "2026-08-26T20:51:33.340",
+   "orientation": 8,
+   "bytes": 53644497
+  },
+  "Outdoor/Outdoor Shoot 11/Raw/DSC_6552.NEF": {
+   "captured": "2026-08-26T20:51:48.910",
+   "orientation": 8,
+   "bytes": 55093405
+  },
+  "Outdoor/Outdoor Shoot 11/Raw/DSC_6553.NEF": {
+   "captured": "2026-08-26T20:51:50.490",
+   "orientation": 1,
+   "bytes": 52819894
+  },
+  "Outdoor/Outdoor Shoot 11/Raw/DSC_6554.NEF": {
+   "captured": "2026-08-26T20:51:51.870",
+   "orientation": 1,
+   "bytes": 53565192
+  },
+  "Outdoor/Outdoor Shoot 11/Raw/DSC_6555.NEF": {
+   "captured": "2026-08-26T20:51:53.120",
+   "orientation": 1,
+   "bytes": 53942503
+  },
+  "Outdoor/Outdoor Shoot 11/Raw/DSC_6558.NEF": {
+   "captured": "2026-08-26T20:51:57.690",
+   "orientation": 8,
+   "bytes": 54956000
+  },
+  "Outdoor/Outdoor Shoot 11/Raw/DSC_6559.NEF": {
+   "captured": "2026-08-26T20:51:59.840",
+   "orientation": 8,
+   "bytes": 55226713
+  },
+  "Outdoor/Outdoor Shoot 11/Raw/DSC_6569.NEF": {
+   "captured": "2026-08-26T20:52:21.620",
+   "orientation": 8,
+   "bytes": 55519990
+  },
+  "Outdoor/Outdoor Shoot 11/Raw/DSC_6572.NEF": {
+   "captured": "2026-08-26T20:52:25.160",
+   "orientation": 8,
+   "bytes": 53265069
+  },
+  "Outdoor/Outdoor Shoot 11/Raw/DSC_6573.NEF": {
+   "captured": "2026-08-26T20:52:25.850",
+   "orientation": 8,
+   "bytes": 53010128
+  },
+  "Outdoor/Outdoor Shoot 11/Raw/DSC_6574.NEF": {
+   "captured": "2026-08-26T20:52:27.530",
+   "orientation": 8,
+   "bytes": 52701532
+  },
+  "Outdoor/Outdoor Shoot 11/Raw/DSC_6580.NEF": {
+   "captured": "2026-08-26T20:52:41.740",
+   "orientation": 8,
+   "bytes": 56242061
+  },
+  "Outdoor/Outdoor Shoot 11/Raw/DSC_6582.NEF": {
+   "captured": "2026-08-26T20:52:43.220",
+   "orientation": 8,
+   "bytes": 53536323
+  },
+  "Outdoor/Outdoor Shoot 11/Raw/DSC_6585.NEF": {
+   "captured": "2026-08-26T20:52:44.810",
+   "orientation": 8,
+   "bytes": 53359558
+  },
+  "Outdoor/Outdoor Shoot 11/Raw/DSC_6589.NEF": {
+   "captured": "2026-08-26T20:52:47.420",
+   "orientation": 8,
+   "bytes": 53179163
+  },
+  "Outdoor/Outdoor Shoot 11/Raw/DSC_6592.NEF": {
+   "captured": "2026-08-26T20:52:49.250",
+   "orientation": 8,
+   "bytes": 53491395
+  },
+  "Outdoor/Outdoor Shoot 11/Raw/DSC_6600.NEF": {
+   "captured": "2026-08-26T20:53:34.870",
+   "orientation": 8,
+   "bytes": 51863924
+  },
+  "Outdoor/Outdoor Shoot 11/Raw/DSC_6605.NEF": {
+   "captured": "2026-08-26T20:54:10.900",
+   "orientation": 8,
+   "bytes": 52384130
+  },
+  "Outdoor/Outdoor Shoot 11/Raw/DSC_6627.NEF": {
+   "captured": "2026-08-26T20:57:13.680",
+   "orientation": 8,
+   "bytes": 49263660
+  },
+  "Outdoor/Outdoor Shoot 11/Raw/DSC_6638.NEF": {
+   "captured": "2026-08-26T20:57:39.710",
+   "orientation": 8,
+   "bytes": 53322796
+  },
+  "Outdoor/Outdoor Shoot 11/Raw/DSC_6642.NEF": {
+   "captured": "2026-08-26T20:57:51.350",
+   "orientation": 8,
+   "bytes": 53812802
+  },
+  "Outdoor/Outdoor Shoot 12/Raw/DSC_6452.NEF": {
+   "captured": "2026-08-26T20:38:59.250",
+   "orientation": 8,
+   "bytes": 56197970
+  },
+  "Outdoor/Outdoor Shoot 12/Raw/DSC_6473.NEF": {
+   "captured": "2026-08-26T20:44:38.050",
+   "orientation": 1,
+   "bytes": 62393085
+  },
+  "Outdoor/Outdoor Shoot 12/Raw/DSC_6482.NEF": {
+   "captured": "2026-08-26T20:45:00.420",
+   "orientation": 1,
+   "bytes": 47272205
+  },
+  "Outdoor/Outdoor Shoot 12/Raw/DSC_6484.NEF": {
+   "captured": "2026-08-26T20:45:05.680",
+   "orientation": 8,
+   "bytes": 57874766
+  },
+  "Outdoor/Outdoor Shoot 12/Raw/DSC_6485.NEF": {
+   "captured": "2026-08-26T20:45:07.040",
+   "orientation": 8,
+   "bytes": 47964352
+  },
+  "Outdoor/Outdoor Shoot 12/Raw/DSC_6488.NEF": {
+   "captured": "2026-08-26T20:45:11.480",
+   "orientation": 8,
+   "bytes": 47643487
+  },
+  "Outdoor/Outdoor Shoot 12/Raw/DSC_6492.NEF": {
+   "captured": "2026-08-26T20:45:18.830",
+   "orientation": 8,
+   "bytes": 53177121
+  },
+  "Outdoor/Outdoor Shoot 12/Raw/DSC_6493.NEF": {
+   "captured": "2026-08-26T20:45:28.230",
+   "orientation": 8,
+   "bytes": 54337403
+  },
+  "Outdoor/Outdoor Shoot 12/Raw/DSC_6494.NEF": {
+   "captured": "2026-08-26T20:45:29.720",
+   "orientation": 8,
+   "bytes": 53800387
+  },
+  "Outdoor/Outdoor Shoot 12/Raw/DSC_6495.NEF": {
+   "captured": "2026-08-26T20:45:30.940",
+   "orientation": 8,
+   "bytes": 52871560
+  },
+  "Outdoor/Outdoor Shoot 12/Raw/DSC_6497.NEF": {
+   "captured": "2026-08-26T20:45:55.880",
+   "orientation": 8,
+   "bytes": 55373656
+  },
+  "Outdoor/Outdoor Shoot 12/Raw/DSC_6503.NEF": {
+   "captured": "2026-08-26T20:46:17.730",
+   "orientation": 8,
+   "bytes": 57193793
+  },
+  "Outdoor/Outdoor Shoot 12/Raw/DSC_6506.NEF": {
+   "captured": "2026-08-26T20:46:21.500",
+   "orientation": 8,
+   "bytes": 47599848
+  },
+  "Outdoor/Outdoor Shoot 12/Raw/DSC_6509.NEF": {
+   "captured": "2026-08-26T20:46:26.440",
+   "orientation": 1,
+   "bytes": 53027320
+  },
+  "Outdoor/Outdoor Shoot 12/Raw/DSC_6510.NEF": {
+   "captured": "2026-08-26T20:46:28.230",
+   "orientation": 8,
+   "bytes": 53668111
+  },
+  "Outdoor/Outdoor Shoot 12/Raw/DSC_6512.NEF": {
+   "captured": "2026-08-26T20:46:29.640",
+   "orientation": 8,
+   "bytes": 47705862
+  },
+  "Outdoor/Outdoor Shoot 12/Raw/DSC_6515.NEF": {
+   "captured": "2026-08-26T20:46:41.780",
+   "orientation": 8,
+   "bytes": 57154198
+  },
+  "Outdoor/Outdoor Shoot 12/Raw/DSC_6516.NEF": {
+   "captured": "2026-08-26T20:48:02.830",
+   "orientation": 8,
+   "bytes": 61649451
+  },
+  "Outdoor/Outdoor Shoot 12/Raw/DSC_6517.NEF": {
+   "captured": "2026-08-26T20:48:06.210",
+   "orientation": 1,
+   "bytes": 60753014
+  },
+  "Outdoor/Outdoor Shoot 12/Raw/DSC_6519.NEF": {
+   "captured": "2026-08-26T20:48:16.930",
+   "orientation": 1,
+   "bytes": 61362798
+  },
+  "Outdoor/Outdoor Shoot 12/Raw/DSC_6521.NEF": {
+   "captured": "2026-08-26T20:48:20.330",
+   "orientation": 1,
+   "bytes": 62357168
+  },
+  "Outdoor/Outdoor Shoot 12/Raw/DSC_6525.NEF": {
+   "captured": "2026-08-26T20:48:42.270",
+   "orientation": 8,
+   "bytes": 59712921
+  },
+  "Outdoor/Outdoor Shoot 12/Raw/DSC_6527.NEF": {
+   "captured": "2026-08-26T20:48:44.660",
+   "orientation": 8,
+   "bytes": 58147584
+  },
+  "Outdoor/Outdoor Shoot 12/Raw/DSC_6528.NEF": {
+   "captured": "2026-08-26T20:48:47.140",
+   "orientation": 8,
+   "bytes": 58076154
+  },
+  "Outdoor/Outdoor Shoot 12/Raw/DSC_6529.NEF": {
+   "captured": "2026-08-26T20:48:48.340",
+   "orientation": 8,
+   "bytes": 59022082
+  },
+  "Outdoor/Outdoor Shoot 12/Raw/DSC_6532.NEF": {
+   "captured": "2026-08-26T20:48:52.220",
+   "orientation": 8,
+   "bytes": 58953727
+  },
+  "Outdoor/Outdoor Shoot 12/Raw/DSC_6535.NEF": {
+   "captured": "2026-08-26T20:48:55.500",
+   "orientation": 8,
+   "bytes": 59680498
+  },
+  "Outdoor/Outdoor Shoot 12/Raw/DSC_6541.NEF": {
+   "captured": "2026-08-26T20:49:01.430",
+   "orientation": 8,
+   "bytes": 59528667
+  },
+  "Outdoor/Outdoor Shoot 12/Raw/DSC_6543.NEF": {
+   "captured": "2026-08-26T20:51:19.100",
+   "orientation": 8,
+   "bytes": 53330287
+  },
+  "Outdoor/Outdoor Shoot 12/Raw/DSC_6545.NEF": {
+   "captured": "2026-08-26T20:51:23.340",
+   "orientation": 8,
+   "bytes": 54373589
+  },
+  "Outdoor/Outdoor Shoot 12/Raw/DSC_6548.NEF": {
+   "captured": "2026-08-26T20:51:26.900",
+   "orientation": 8,
+   "bytes": 56608879
+  },
+  "Outdoor/Outdoor Shoot 12/Raw/DSC_6550.NEF": {
+   "captured": "2026-08-26T20:51:34.610",
+   "orientation": 8,
+   "bytes": 53351168
+  },
+  "Outdoor/Outdoor Shoot 12/Raw/DSC_6551.NEF": {
+   "captured": "2026-08-26T20:51:35.570",
+   "orientation": 8,
+   "bytes": 53675063
+  },
+  "Outdoor/Outdoor Shoot 12/Raw/DSC_6560.NEF": {
+   "captured": "2026-08-26T20:52:02.930",
+   "orientation": 8,
+   "bytes": 55212670
+  },
+  "Outdoor/Outdoor Shoot 12/Raw/DSC_6564.NEF": {
+   "captured": "2026-08-26T20:52:16.980",
+   "orientation": 8,
+   "bytes": 54026181
+  },
+  "Outdoor/Outdoor Shoot 12/Raw/DSC_6577.NEF": {
+   "captured": "2026-08-26T20:52:32.860",
+   "orientation": 8,
+   "bytes": 54013668
+  },
+  "Outdoor/Outdoor Shoot 12/Raw/DSC_6579.NEF": {
+   "captured": "2026-08-26T20:52:34.940",
+   "orientation": 8,
+   "bytes": 54596820
+  },
+  "Outdoor/Outdoor Shoot 12/Raw/DSC_6616.NEF": {
+   "captured": "2026-08-26T20:54:36.350",
+   "orientation": 8,
+   "bytes": 52387423
+  },
+  "Outdoor/Outdoor Shoot 13/Raw/DSC_6418.NEF": {
+   "captured": "2026-08-26T20:38:17.930",
+   "orientation": 8,
+   "bytes": 56320636
+  },
+  "Outdoor/Outdoor Shoot 13/Raw/DSC_6421.NEF": {
+   "captured": "2026-08-26T20:38:19.740",
+   "orientation": 8,
+   "bytes": 55649335
+  },
+  "Outdoor/Outdoor Shoot 13/Raw/DSC_6427.NEF": {
+   "captured": "2026-08-26T20:38:23.560",
+   "orientation": 8,
+   "bytes": 56234117
+  },
+  "Outdoor/Outdoor Shoot 13/Raw/DSC_6435.NEF": {
+   "captured": "2026-08-26T20:38:29.990",
+   "orientation": 8,
+   "bytes": 56469249
+  },
+  "Outdoor/Outdoor Shoot 13/Raw/DSC_6440.NEF": {
+   "captured": "2026-08-26T20:38:35.200",
+   "orientation": 8,
+   "bytes": 53474368
+  },
+  "Outdoor/Outdoor Shoot 13/Raw/DSC_6451.NEF": {
+   "captured": "2026-08-26T20:38:58.460",
+   "orientation": 8,
+   "bytes": 56258833
+  },
+  "Outdoor/Outdoor Shoot 13/Raw/DSC_6454.NEF": {
+   "captured": "2026-08-26T20:39:01.780",
+   "orientation": 8,
+   "bytes": 55421020
+  },
+  "Outdoor/Outdoor Shoot 13/Raw/DSC_6455.NEF": {
+   "captured": "2026-08-26T20:39:02.980",
+   "orientation": 8,
+   "bytes": 55573779
+  },
+  "Outdoor/Outdoor Shoot 13/Raw/DSC_6456.NEF": {
+   "captured": "2026-08-26T20:39:03.380",
+   "orientation": 8,
+   "bytes": 56017395
+  },
+  "Outdoor/Outdoor Shoot 13/Raw/DSC_6458.NEF": {
+   "captured": "2026-08-26T20:44:05.650",
+   "orientation": 1,
+   "bytes": 62666523
+  },
+  "Outdoor/Outdoor Shoot 13/Raw/DSC_6459.NEF": {
+   "captured": "2026-08-26T20:44:06.290",
+   "orientation": 1,
+   "bytes": 62989883
+  },
+  "Outdoor/Outdoor Shoot 13/Raw/DSC_6460.NEF": {
+   "captured": "2026-08-26T20:44:12.990",
+   "orientation": 8,
+   "bytes": 61400303
+  },
+  "Outdoor/Outdoor Shoot 13/Raw/DSC_6463.NEF": {
+   "captured": "2026-08-26T20:44:15.900",
+   "orientation": 8,
+   "bytes": 61074706
+  },
+  "Outdoor/Outdoor Shoot 13/Raw/DSC_6464.NEF": {
+   "captured": "2026-08-26T20:44:17.050",
+   "orientation": 8,
+   "bytes": 61111701
+  },
+  "Outdoor/Outdoor Shoot 13/Raw/DSC_6468.NEF": {
+   "captured": "2026-08-26T20:44:27.480",
+   "orientation": 8,
+   "bytes": 60818364
+  },
+  "Outdoor/Outdoor Shoot 13/Raw/DSC_6469.NEF": {
+   "captured": "2026-08-26T20:44:28.780",
+   "orientation": 8,
+   "bytes": 60843778
+  },
+  "Outdoor/Outdoor Shoot 13/Raw/DSC_6470.NEF": {
+   "captured": "2026-08-26T20:44:29.540",
+   "orientation": 8,
+   "bytes": 62526983
+  },
+  "Outdoor/Outdoor Shoot 13/Raw/DSC_6474.NEF": {
+   "captured": "2026-08-26T20:44:38.870",
+   "orientation": 1,
+   "bytes": 61851516
+  },
+  "Outdoor/Outdoor Shoot 13/Raw/DSC_6476.NEF": {
+   "captured": "2026-08-26T20:44:40.690",
+   "orientation": 8,
+   "bytes": 61948290
+  },
+  "Outdoor/Outdoor Shoot 13/Raw/DSC_6477.NEF": {
+   "captured": "2026-08-26T20:44:42.260",
+   "orientation": 8,
+   "bytes": 61439438
+  },
+  "Outdoor/Outdoor Shoot 13/Raw/DSC_6480.NEF": {
+   "captured": "2026-08-26T20:44:55.190",
+   "orientation": 1,
+   "bytes": 56365707
+  },
+  "Outdoor/Outdoor Shoot 13/Raw/DSC_6481.NEF": {
+   "captured": "2026-08-26T20:44:59.330",
+   "orientation": 1,
+   "bytes": 53895332
+  },
+  "Outdoor/Outdoor Shoot 13/Raw/DSC_6483.NEF": {
+   "captured": "2026-08-26T20:45:01.530",
+   "orientation": 1,
+   "bytes": 56803979
+  },
+  "Outdoor/Outdoor Shoot 13/Raw/DSC_6486.NEF": {
+   "captured": "2026-08-26T20:45:08.550",
+   "orientation": 8,
+   "bytes": 57549383
+  },
+  "Outdoor/Outdoor Shoot 13/Raw/DSC_6487.NEF": {
+   "captured": "2026-08-26T20:45:10.530",
+   "orientation": 8,
+   "bytes": 56520015
+  },
+  "Outdoor/Outdoor Shoot 13/Raw/DSC_6490.NEF": {
+   "captured": "2026-08-26T20:45:15.770",
+   "orientation": 8,
+   "bytes": 53371880
+  },
+  "Outdoor/Outdoor Shoot 13/Raw/DSC_6491.NEF": {
+   "captured": "2026-08-26T20:45:17.370",
+   "orientation": 8,
+   "bytes": 54209556
+  },
+  "Outdoor/Outdoor Shoot 13/Raw/DSC_6498.NEF": {
+   "captured": "2026-08-26T20:45:57.400",
+   "orientation": 8,
+   "bytes": 54946858
+  },
+  "Outdoor/Outdoor Shoot 13/Raw/DSC_6499.NEF": {
+   "captured": "2026-08-26T20:45:58.850",
+   "orientation": 8,
+   "bytes": 54820319
+  },
+  "Outdoor/Outdoor Shoot 13/Raw/DSC_6502.NEF": {
+   "captured": "2026-08-26T20:46:03.490",
+   "orientation": 8,
+   "bytes": 53676574
+  },
+  "Outdoor/Outdoor Shoot 13/Raw/DSC_6505.NEF": {
+   "captured": "2026-08-26T20:46:20.070",
+   "orientation": 8,
+   "bytes": 55366475
+  },
+  "Outdoor/Outdoor Shoot 13/Raw/DSC_6508.NEF": {
+   "captured": "2026-08-26T20:46:24.810",
+   "orientation": 1,
+   "bytes": 56367364
+  },
+  "Outdoor/Outdoor Shoot 13/Raw/DSC_6518.NEF": {
+   "captured": "2026-08-26T20:48:09.130",
+   "orientation": 1,
+   "bytes": 60983156
+  },
+  "Outdoor/Outdoor Shoot 13/Raw/DSC_6520.NEF": {
+   "captured": "2026-08-26T20:48:19.480",
+   "orientation": 1,
+   "bytes": 60802339
+  },
+  "Outdoor/Outdoor Shoot 13/Raw/DSC_6522.NEF": {
+   "captured": "2026-08-26T20:48:23.910",
+   "orientation": 1,
+   "bytes": 61330691
+  },
+  "Outdoor/Outdoor Shoot 13/Raw/DSC_6526.NEF": {
+   "captured": "2026-08-26T20:48:43.580",
+   "orientation": 8,
+   "bytes": 59548555
+  },
+  "Outdoor/Outdoor Shoot 13/Raw/DSC_6575.NEF": {
+   "captured": "2026-08-26T20:52:28.740",
+   "orientation": 8,
+   "bytes": 52951728
+  },
+  "Outdoor/Outdoor Shoot 14/Raw/DSC_6402.NEF": {
+   "captured": "2026-08-26T20:37:21.140",
+   "orientation": 8,
+   "bytes": 59171333
+  },
+  "Outdoor/Outdoor Shoot 14/Raw/DSC_6404.NEF": {
+   "captured": "2026-08-26T20:37:29.130",
+   "orientation": 8,
+   "bytes": 56203413
+  },
+  "Outdoor/Outdoor Shoot 14/Raw/DSC_6408.NEF": {
+   "captured": "2026-08-26T20:37:43.160",
+   "orientation": 8,
+   "bytes": 60023893
+  },
+  "Outdoor/Outdoor Shoot 14/Raw/DSC_6411.NEF": {
+   "captured": "2026-08-26T20:37:52.500",
+   "orientation": 1,
+   "bytes": 62681398
+  },
+  "Outdoor/Outdoor Shoot 14/Raw/DSC_6415.NEF": {
+   "captured": "2026-08-26T20:37:57.280",
+   "orientation": 8,
+   "bytes": 57317341
+  },
+  "Outdoor/Outdoor Shoot 14/Raw/DSC_6417.NEF": {
+   "captured": "2026-08-26T20:38:17.320",
+   "orientation": 8,
+   "bytes": 53904774
+  },
+  "Outdoor/Outdoor Shoot 14/Raw/DSC_6419.NEF": {
+   "captured": "2026-08-26T20:38:18.460",
+   "orientation": 8,
+   "bytes": 56263755
+  },
+  "Outdoor/Outdoor Shoot 14/Raw/DSC_6420.NEF": {
+   "captured": "2026-08-26T20:38:19.230",
+   "orientation": 8,
+   "bytes": 55741949
+  },
+  "Outdoor/Outdoor Shoot 14/Raw/DSC_6422.NEF": {
+   "captured": "2026-08-26T20:38:20.230",
+   "orientation": 8,
+   "bytes": 57605940
+  },
+  "Outdoor/Outdoor Shoot 14/Raw/DSC_6424.NEF": {
+   "captured": "2026-08-26T20:38:22.360",
+   "orientation": 8,
+   "bytes": 56703251
+  },
+  "Outdoor/Outdoor Shoot 14/Raw/DSC_6425.NEF": {
+   "captured": "2026-08-26T20:38:22.590",
+   "orientation": 8,
+   "bytes": 56537049
+  },
+  "Outdoor/Outdoor Shoot 14/Raw/DSC_6426.NEF": {
+   "captured": "2026-08-26T20:38:23.110",
+   "orientation": 8,
+   "bytes": 56466821
+  },
+  "Outdoor/Outdoor Shoot 14/Raw/DSC_6431.NEF": {
+   "captured": "2026-08-26T20:38:27.180",
+   "orientation": 8,
+   "bytes": 55284078
+  },
+  "Outdoor/Outdoor Shoot 14/Raw/DSC_6432.NEF": {
+   "captured": "2026-08-26T20:38:27.660",
+   "orientation": 8,
+   "bytes": 56189403
+  },
+  "Outdoor/Outdoor Shoot 14/Raw/DSC_6433.NEF": {
+   "captured": "2026-08-26T20:38:27.870",
+   "orientation": 8,
+   "bytes": 56131743
+  },
+  "Outdoor/Outdoor Shoot 14/Raw/DSC_6434.NEF": {
+   "captured": "2026-08-26T20:38:29.530",
+   "orientation": 8,
+   "bytes": 55767175
+  },
+  "Outdoor/Outdoor Shoot 14/Raw/DSC_6436.NEF": {
+   "captured": "2026-08-26T20:38:30.360",
+   "orientation": 8,
+   "bytes": 56339526
+  },
+  "Outdoor/Outdoor Shoot 14/Raw/DSC_6437.NEF": {
+   "captured": "2026-08-26T20:38:32.500",
+   "orientation": 8,
+   "bytes": 55823541
+  },
+  "Outdoor/Outdoor Shoot 14/Raw/DSC_6438.NEF": {
+   "captured": "2026-08-26T20:38:33.300",
+   "orientation": 8,
+   "bytes": 53235672
+  },
+  "Outdoor/Outdoor Shoot 14/Raw/DSC_6441.NEF": {
+   "captured": "2026-08-26T20:38:45.070",
+   "orientation": 8,
+   "bytes": 56318963
+  },
+  "Outdoor/Outdoor Shoot 14/Raw/DSC_6442.NEF": {
+   "captured": "2026-08-26T20:38:46.040",
+   "orientation": 8,
+   "bytes": 55878264
+  },
+  "Outdoor/Outdoor Shoot 14/Raw/DSC_6443.NEF": {
+   "captured": "2026-08-26T20:38:48.160",
+   "orientation": 8,
+   "bytes": 55939970
+  },
+  "Outdoor/Outdoor Shoot 14/Raw/DSC_6444.NEF": {
+   "captured": "2026-08-26T20:38:49.330",
+   "orientation": 8,
+   "bytes": 55212642
+  },
+  "Outdoor/Outdoor Shoot 14/Raw/DSC_6445.NEF": {
+   "captured": "2026-08-26T20:38:50.540",
+   "orientation": 8,
+   "bytes": 54966528
+  },
+  "Outdoor/Outdoor Shoot 14/Raw/DSC_6446.NEF": {
+   "captured": "2026-08-26T20:38:52.330",
+   "orientation": 8,
+   "bytes": 55809204
+  },
+  "Outdoor/Outdoor Shoot 14/Raw/DSC_6447.NEF": {
+   "captured": "2026-08-26T20:38:53.060",
+   "orientation": 8,
+   "bytes": 56079246
+  },
+  "Outdoor/Outdoor Shoot 14/Raw/DSC_6448.NEF": {
+   "captured": "2026-08-26T20:38:53.360",
+   "orientation": 8,
+   "bytes": 56068275
+  },
+  "Outdoor/Outdoor Shoot 14/Raw/DSC_6449.NEF": {
+   "captured": "2026-08-26T20:38:53.900",
+   "orientation": 8,
+   "bytes": 55056566
+  },
+  "Outdoor/Outdoor Shoot 14/Raw/DSC_6450.NEF": {
+   "captured": "2026-08-26T20:38:54.820",
+   "orientation": 8,
+   "bytes": 56006930
+  },
+  "Outdoor/Outdoor Shoot 14/Raw/DSC_6453.NEF": {
+   "captured": "2026-08-26T20:39:00.480",
+   "orientation": 8,
+   "bytes": 56217826
+  },
+  "Outdoor/Outdoor Shoot 14/Raw/DSC_6461.NEF": {
+   "captured": "2026-08-26T20:44:14.150",
+   "orientation": 8,
+   "bytes": 63223464
+  },
+  "Outdoor/Outdoor Shoot 14/Raw/DSC_6465.NEF": {
+   "captured": "2026-08-26T20:44:19.060",
+   "orientation": 8,
+   "bytes": 62379835
+  },
+  "Outdoor/Outdoor Shoot 14/Raw/DSC_6466.NEF": {
+   "captured": "2026-08-26T20:44:20.130",
+   "orientation": 8,
+   "bytes": 61726969
+  },
+  "Outdoor/Outdoor Shoot 14/Raw/DSC_6471.NEF": {
+   "captured": "2026-08-26T20:44:30.960",
+   "orientation": 8,
+   "bytes": 62891929
+  },
+  "Outdoor/Outdoor Shoot 14/Raw/DSC_6475.NEF": {
+   "captured": "2026-08-26T20:44:40.110",
+   "orientation": 8,
+   "bytes": 60469751
+  },
+  "Outdoor/Outdoor Shoot 14/Raw/DSC_6479.NEF": {
+   "captured": "2026-08-26T20:44:43.890",
+   "orientation": 8,
+   "bytes": 62410559
+  },
+  "Outdoor/Outdoor Shoot 14/Raw/DSC_6496.NEF": {
+   "captured": "2026-08-26T20:45:54.720",
+   "orientation": 8,
+   "bytes": 53789245
+  },
+  "Outdoor/Outdoor Shoot 15/Raw/DSC_6359.NEF": {
+   "captured": "2026-08-26T20:31:23.240",
+   "orientation": 8,
+   "bytes": 60565810
+  },
+  "Outdoor/Outdoor Shoot 15/Raw/DSC_6365.NEF": {
+   "captured": "2026-08-26T20:31:31.650",
+   "orientation": 8,
+   "bytes": 59191799
+  },
+  "Outdoor/Outdoor Shoot 15/Raw/DSC_6374.NEF": {
+   "captured": "2026-08-26T20:33:17.950",
+   "orientation": 1,
+   "bytes": 59067802
+  },
+  "Outdoor/Outdoor Shoot 15/Raw/DSC_6383.NEF": {
+   "captured": "2026-08-26T20:34:09.330",
+   "orientation": 8,
+   "bytes": 63162265
+  },
+  "Outdoor/Outdoor Shoot 15/Raw/DSC_6385.NEF": {
+   "captured": "2026-08-26T20:34:39.330",
+   "orientation": 8,
+   "bytes": 59218682
+  },
+  "Outdoor/Outdoor Shoot 15/Raw/DSC_6387.NEF": {
+   "captured": "2026-08-26T20:34:41.660",
+   "orientation": 8,
+   "bytes": 58850235
+  },
+  "Outdoor/Outdoor Shoot 15/Raw/DSC_6388.NEF": {
+   "captured": "2026-08-26T20:34:45.150",
+   "orientation": 8,
+   "bytes": 57427944
+  },
+  "Outdoor/Outdoor Shoot 15/Raw/DSC_6391.NEF": {
+   "captured": "2026-08-26T20:34:47.700",
+   "orientation": 8,
+   "bytes": 55815407
+  },
+  "Outdoor/Outdoor Shoot 15/Raw/DSC_6392.NEF": {
+   "captured": "2026-08-26T20:34:49.140",
+   "orientation": 8,
+   "bytes": 55256589
+  },
+  "Outdoor/Outdoor Shoot 15/Raw/DSC_6393.NEF": {
+   "captured": "2026-08-26T20:34:49.950",
+   "orientation": 8,
+   "bytes": 56739795
+  },
+  "Outdoor/Outdoor Shoot 15/Raw/DSC_6395.NEF": {
+   "captured": "2026-08-26T20:34:52.210",
+   "orientation": 8,
+   "bytes": 55619494
+  },
+  "Outdoor/Outdoor Shoot 15/Raw/DSC_6396.NEF": {
+   "captured": "2026-08-26T20:34:52.900",
+   "orientation": 8,
+   "bytes": 53886114
+  },
+  "Outdoor/Outdoor Shoot 15/Raw/DSC_6397.NEF": {
+   "captured": "2026-08-26T20:34:54.140",
+   "orientation": 8,
+   "bytes": 60192144
+  },
+  "Outdoor/Outdoor Shoot 15/Raw/DSC_6399.NEF": {
+   "captured": "2026-08-26T20:34:57.320",
+   "orientation": 8,
+   "bytes": 60314721
+  },
+  "Outdoor/Outdoor Shoot 15/Raw/DSC_6400.NEF": {
+   "captured": "2026-08-26T20:37:14.120",
+   "orientation": 8,
+   "bytes": 53048517
+  },
+  "Outdoor/Outdoor Shoot 15/Raw/DSC_6401.NEF": {
+   "captured": "2026-08-26T20:37:18.450",
+   "orientation": 8,
+   "bytes": 50999115
+  },
+  "Outdoor/Outdoor Shoot 15/Raw/DSC_6405.NEF": {
+   "captured": "2026-08-26T20:37:34.990",
+   "orientation": 8,
+   "bytes": 60048508
+  },
+  "Outdoor/Outdoor Shoot 15/Raw/DSC_6406.NEF": {
+   "captured": "2026-08-26T20:37:37.330",
+   "orientation": 8,
+   "bytes": 57616738
+  },
+  "Outdoor/Outdoor Shoot 15/Raw/DSC_6407.NEF": {
+   "captured": "2026-08-26T20:37:41.500",
+   "orientation": 8,
+   "bytes": 58385579
+  },
+  "Outdoor/Outdoor Shoot 15/Raw/DSC_6409.NEF": {
+   "captured": "2026-08-26T20:37:45.580",
+   "orientation": 8,
+   "bytes": 60452600
+  },
+  "Outdoor/Outdoor Shoot 15/Raw/DSC_6410.NEF": {
+   "captured": "2026-08-26T20:37:50.550",
+   "orientation": 1,
+   "bytes": 63605330
+  },
+  "Outdoor/Outdoor Shoot 15/Raw/DSC_6412.NEF": {
+   "captured": "2026-08-26T20:37:52.990",
+   "orientation": 1,
+   "bytes": 63466401
+  },
+  "Outdoor/Outdoor Shoot 15/Raw/DSC_6413.NEF": {
+   "captured": "2026-08-26T20:37:54.090",
+   "orientation": 1,
+   "bytes": 57849878
+  },
+  "Outdoor/Outdoor Shoot 15/Raw/DSC_6414.NEF": {
+   "captured": "2026-08-26T20:37:55.710",
+   "orientation": 8,
+   "bytes": 59499474
+  },
+  "Outdoor/Outdoor Shoot 15/Raw/DSC_6416.NEF": {
+   "captured": "2026-08-26T20:38:09.100",
+   "orientation": 8,
+   "bytes": 54339496
+  },
+  "Outdoor/Outdoor Shoot 15/Raw/DSC_6423.NEF": {
+   "captured": "2026-08-26T20:38:21.040",
+   "orientation": 8,
+   "bytes": 58226629
+  },
+  "Outdoor/Outdoor Shoot 15/Raw/DSC_6428.NEF": {
+   "captured": "2026-08-26T20:38:24.070",
+   "orientation": 8,
+   "bytes": 56166245
+  },
+  "Outdoor/Outdoor Shoot 15/Raw/DSC_6429.NEF": {
+   "captured": "2026-08-26T20:38:24.780",
+   "orientation": 8,
+   "bytes": 56528556
+  },
+  "Outdoor/Outdoor Shoot 15/Raw/DSC_6430.NEF": {
+   "captured": "2026-08-26T20:38:26.950",
+   "orientation": 8,
+   "bytes": 55529933
+  },
+  "Outdoor/Outdoor Shoot 15/Raw/DSC_6439.NEF": {
+   "captured": "2026-08-26T20:38:34.990",
+   "orientation": 8,
+   "bytes": 53301538
+  },
+  "Outdoor/Outdoor Shoot 15/Raw/DSC_6457.NEF": {
+   "captured": "2026-08-26T20:44:03.150",
+   "orientation": 1,
+   "bytes": 67772417
+  },
+  "Outdoor/Outdoor Shoot 15/Raw/DSC_6462.NEF": {
+   "captured": "2026-08-26T20:44:15.410",
+   "orientation": 8,
+   "bytes": 61013561
+  },
+  "Outdoor/Outdoor Shoot 15/Raw/DSC_6467.NEF": {
+   "captured": "2026-08-26T20:44:24.800",
+   "orientation": 8,
+   "bytes": 61926500
+  },
+  "Outdoor/Outdoor Shoot 15/Raw/DSC_6472.NEF": {
+   "captured": "2026-08-26T20:44:36.260",
+   "orientation": 1,
+   "bytes": 62887013
+  },
+  "Outdoor/Outdoor Shoot 15/Raw/DSC_6478.NEF": {
+   "captured": "2026-08-26T20:44:43.140",
+   "orientation": 8,
+   "bytes": 62118739
+  },
+  "Outdoor/Outdoor Shoot 15/Raw/DSC_6507.NEF": {
+   "captured": "2026-08-26T20:46:22.720",
+   "orientation": 8,
+   "bytes": 57775036
+  },
+  "Outdoor/Outdoor Shoot 16/Raw/DSC_6316.NEF": {
+   "captured": "2026-08-26T20:25:39.060",
+   "orientation": 1,
+   "bytes": 53345872
+  },
+  "Outdoor/Outdoor Shoot 16/Raw/DSC_6317.NEF": {
+   "captured": "2026-08-26T20:25:39.600",
+   "orientation": 1,
+   "bytes": 53588254
+  },
+  "Outdoor/Outdoor Shoot 16/Raw/DSC_6326.NEF": {
+   "captured": "2026-08-26T20:26:48.160",
+   "orientation": 8,
+   "bytes": 49475365
+  },
+  "Outdoor/Outdoor Shoot 16/Raw/DSC_6331.NEF": {
+   "captured": "2026-08-26T20:27:14.750",
+   "orientation": 8,
+   "bytes": 53730414
+  },
+  "Outdoor/Outdoor Shoot 16/Raw/DSC_6332.NEF": {
+   "captured": "2026-08-26T20:27:15.700",
+   "orientation": 8,
+   "bytes": 53540730
+  },
+  "Outdoor/Outdoor Shoot 16/Raw/DSC_6340.NEF": {
+   "captured": "2026-08-26T20:27:47.500",
+   "orientation": 8,
+   "bytes": 55321149
+  },
+  "Outdoor/Outdoor Shoot 16/Raw/DSC_6343.NEF": {
+   "captured": "2026-08-26T20:27:52.150",
+   "orientation": 8,
+   "bytes": 55021038
+  },
+  "Outdoor/Outdoor Shoot 16/Raw/DSC_6344.NEF": {
+   "captured": "2026-08-26T20:27:53.170",
+   "orientation": 8,
+   "bytes": 54980073
+  },
+  "Outdoor/Outdoor Shoot 16/Raw/DSC_6346.NEF": {
+   "captured": "2026-08-26T20:27:55.570",
+   "orientation": 8,
+   "bytes": 54921221
+  },
+  "Outdoor/Outdoor Shoot 16/Raw/DSC_6347.NEF": {
+   "captured": "2026-08-26T20:27:56.260",
+   "orientation": 8,
+   "bytes": 55018078
+  },
+  "Outdoor/Outdoor Shoot 16/Raw/DSC_6348.NEF": {
+   "captured": "2026-08-26T20:27:57.050",
+   "orientation": 8,
+   "bytes": 55044975
+  },
+  "Outdoor/Outdoor Shoot 16/Raw/DSC_6349.NEF": {
+   "captured": "2026-08-26T20:27:57.830",
+   "orientation": 8,
+   "bytes": 55039086
+  },
+  "Outdoor/Outdoor Shoot 16/Raw/DSC_6350.NEF": {
+   "captured": "2026-08-26T20:31:00.540",
+   "orientation": 8,
+   "bytes": 59989963
+  },
+  "Outdoor/Outdoor Shoot 16/Raw/DSC_6352.NEF": {
+   "captured": "2026-08-26T20:31:02.940",
+   "orientation": 8,
+   "bytes": 59017664
+  },
+  "Outdoor/Outdoor Shoot 16/Raw/DSC_6354.NEF": {
+   "captured": "2026-08-26T20:31:04.490",
+   "orientation": 8,
+   "bytes": 57277350
+  },
+  "Outdoor/Outdoor Shoot 16/Raw/DSC_6355.NEF": {
+   "captured": "2026-08-26T20:31:05.540",
+   "orientation": 8,
+   "bytes": 58768677
+  },
+  "Outdoor/Outdoor Shoot 16/Raw/DSC_6356.NEF": {
+   "captured": "2026-08-26T20:31:15.360",
+   "orientation": 8,
+   "bytes": 62223457
+  },
+  "Outdoor/Outdoor Shoot 16/Raw/DSC_6358.NEF": {
+   "captured": "2026-08-26T20:31:18.730",
+   "orientation": 8,
+   "bytes": 55753875
+  },
+  "Outdoor/Outdoor Shoot 16/Raw/DSC_6361.NEF": {
+   "captured": "2026-08-26T20:31:26.080",
+   "orientation": 8,
+   "bytes": 60980629
+  },
+  "Outdoor/Outdoor Shoot 16/Raw/DSC_6363.NEF": {
+   "captured": "2026-08-26T20:31:28.640",
+   "orientation": 8,
+   "bytes": 60634113
+  },
+  "Outdoor/Outdoor Shoot 16/Raw/DSC_6366.NEF": {
+   "captured": "2026-08-26T20:31:33.100",
+   "orientation": 8,
+   "bytes": 60308762
+  },
+  "Outdoor/Outdoor Shoot 16/Raw/DSC_6369.NEF": {
+   "captured": "2026-08-26T20:31:38.740",
+   "orientation": 8,
+   "bytes": 59614126
+  },
+  "Outdoor/Outdoor Shoot 16/Raw/DSC_6370.NEF": {
+   "captured": "2026-08-26T20:31:39.870",
+   "orientation": 8,
+   "bytes": 59681561
+  },
+  "Outdoor/Outdoor Shoot 16/Raw/DSC_6372.NEF": {
+   "captured": "2026-08-26T20:32:11.350",
+   "orientation": 8,
+   "bytes": 51463203
+  },
+  "Outdoor/Outdoor Shoot 16/Raw/DSC_6373.NEF": {
+   "captured": "2026-08-26T20:33:11.410",
+   "orientation": 1,
+   "bytes": 50861221
+  },
+  "Outdoor/Outdoor Shoot 16/Raw/DSC_6376.NEF": {
+   "captured": "2026-08-26T20:33:52.890",
+   "orientation": 1,
+   "bytes": 64947263
+  },
+  "Outdoor/Outdoor Shoot 16/Raw/DSC_6377.NEF": {
+   "captured": "2026-08-26T20:33:55.040",
+   "orientation": 8,
+   "bytes": 63695792
+  },
+  "Outdoor/Outdoor Shoot 16/Raw/DSC_6378.NEF": {
+   "captured": "2026-08-26T20:33:56.220",
+   "orientation": 8,
+   "bytes": 63970243
+  },
+  "Outdoor/Outdoor Shoot 16/Raw/DSC_6379.NEF": {
+   "captured": "2026-08-26T20:33:58.160",
+   "orientation": 8,
+   "bytes": 64344413
+  },
+  "Outdoor/Outdoor Shoot 16/Raw/DSC_6381.NEF": {
+   "captured": "2026-08-26T20:34:06.110",
+   "orientation": 8,
+   "bytes": 62492430
+  },
+  "Outdoor/Outdoor Shoot 16/Raw/DSC_6384.NEF": {
+   "captured": "2026-08-26T20:34:12.560",
+   "orientation": 8,
+   "bytes": 63374897
+  },
+  "Outdoor/Outdoor Shoot 16/Raw/DSC_6386.NEF": {
+   "captured": "2026-08-26T20:34:40.670",
+   "orientation": 8,
+   "bytes": 57073255
+  },
+  "Outdoor/Outdoor Shoot 16/Raw/DSC_6389.NEF": {
+   "captured": "2026-08-26T20:34:46.140",
+   "orientation": 8,
+   "bytes": 57538261
+  },
+  "Outdoor/Outdoor Shoot 16/Raw/DSC_6390.NEF": {
+   "captured": "2026-08-26T20:34:47.100",
+   "orientation": 8,
+   "bytes": 56313458
+  },
+  "Outdoor/Outdoor Shoot 16/Raw/DSC_6394.NEF": {
+   "captured": "2026-08-26T20:34:50.960",
+   "orientation": 8,
+   "bytes": 57036599
+  },
+  "Outdoor/Outdoor Shoot 16/Raw/DSC_6398.NEF": {
+   "captured": "2026-08-26T20:34:55.990",
+   "orientation": 8,
+   "bytes": 60382828
+  },
+  "Outdoor/Outdoor Shoot 16/Raw/DSC_6403.NEF": {
+   "captured": "2026-08-26T20:37:24.500",
+   "orientation": 8,
+   "bytes": 61427707
+  },
+  "Outdoor/Outdoor Shoot 17/Raw/DSC_6270.NEF": {
+   "captured": "2026-08-26T20:11:51.860",
+   "orientation": 8,
+   "bytes": 53729424
+  },
+  "Outdoor/Outdoor Shoot 17/Raw/DSC_6277.NEF": {
+   "captured": "2026-08-26T20:12:31.540",
+   "orientation": 8,
+   "bytes": 50570667
+  },
+  "Outdoor/Outdoor Shoot 17/Raw/DSC_6280.NEF": {
+   "captured": "2026-08-26T20:12:48.260",
+   "orientation": 1,
+   "bytes": 50426285
+  },
+  "Outdoor/Outdoor Shoot 17/Raw/DSC_6289.NEF": {
+   "captured": "2026-08-26T20:24:31.390",
+   "orientation": 8,
+   "bytes": 55583531
+  },
+  "Outdoor/Outdoor Shoot 17/Raw/DSC_6296.NEF": {
+   "captured": "2026-08-26T20:24:39.580",
+   "orientation": 1,
+   "bytes": 55631549
+  },
+  "Outdoor/Outdoor Shoot 17/Raw/DSC_6299.NEF": {
+   "captured": "2026-08-26T20:24:43.800",
+   "orientation": 1,
+   "bytes": 55706317
+  },
+  "Outdoor/Outdoor Shoot 17/Raw/DSC_6301.NEF": {
+   "captured": "2026-08-26T20:24:47.080",
+   "orientation": 8,
+   "bytes": 55227859
+  },
+  "Outdoor/Outdoor Shoot 17/Raw/DSC_6302.NEF": {
+   "captured": "2026-08-26T20:24:50.090",
+   "orientation": 8,
+   "bytes": 55081573
+  },
+  "Outdoor/Outdoor Shoot 17/Raw/DSC_6304.NEF": {
+   "captured": "2026-08-26T20:24:54.180",
+   "orientation": 8,
+   "bytes": 54640427
+  },
+  "Outdoor/Outdoor Shoot 17/Raw/DSC_6305.NEF": {
+   "captured": "2026-08-26T20:24:55.380",
+   "orientation": 8,
+   "bytes": 54601432
+  },
+  "Outdoor/Outdoor Shoot 17/Raw/DSC_6309.NEF": {
+   "captured": "2026-08-26T20:25:15.510",
+   "orientation": 6,
+   "bytes": 56023398
+  },
+  "Outdoor/Outdoor Shoot 17/Raw/DSC_6310.NEF": {
+   "captured": "2026-08-26T20:25:16.780",
+   "orientation": 6,
+   "bytes": 56283276
+  },
+  "Outdoor/Outdoor Shoot 17/Raw/DSC_6311.NEF": {
+   "captured": "2026-08-26T20:25:32.040",
+   "orientation": 1,
+   "bytes": 54692183
+  },
+  "Outdoor/Outdoor Shoot 17/Raw/DSC_6313.NEF": {
+   "captured": "2026-08-26T20:25:35.430",
+   "orientation": 1,
+   "bytes": 53559727
+  },
+  "Outdoor/Outdoor Shoot 17/Raw/DSC_6314.NEF": {
+   "captured": "2026-08-26T20:25:36.200",
+   "orientation": 1,
+   "bytes": 53338536
+  },
+  "Outdoor/Outdoor Shoot 17/Raw/DSC_6315.NEF": {
+   "captured": "2026-08-26T20:25:36.950",
+   "orientation": 8,
+   "bytes": 53483572
+  },
+  "Outdoor/Outdoor Shoot 17/Raw/DSC_6319.NEF": {
+   "captured": "2026-08-26T20:25:42.390",
+   "orientation": 8,
+   "bytes": 53295590
+  },
+  "Outdoor/Outdoor Shoot 17/Raw/DSC_6323.NEF": {
+   "captured": "2026-08-26T20:25:58.350",
+   "orientation": 1,
+   "bytes": 51855931
+  },
+  "Outdoor/Outdoor Shoot 17/Raw/DSC_6325.NEF": {
+   "captured": "2026-08-26T20:26:06.510",
+   "orientation": 1,
+   "bytes": 52602387
+  },
+  "Outdoor/Outdoor Shoot 17/Raw/DSC_6328.NEF": {
+   "captured": "2026-08-26T20:27:08.180",
+   "orientation": 8,
+   "bytes": 53222632
+  },
+  "Outdoor/Outdoor Shoot 17/Raw/DSC_6330.NEF": {
+   "captured": "2026-08-26T20:27:10.890",
+   "orientation": 8,
+   "bytes": 54002311
+  },
+  "Outdoor/Outdoor Shoot 17/Raw/DSC_6333.NEF": {
+   "captured": "2026-08-26T20:27:17.080",
+   "orientation": 8,
+   "bytes": 54474816
+  },
+  "Outdoor/Outdoor Shoot 17/Raw/DSC_6334.NEF": {
+   "captured": "2026-08-26T20:27:20.300",
+   "orientation": 8,
+   "bytes": 54886982
+  },
+  "Outdoor/Outdoor Shoot 17/Raw/DSC_6335.NEF": {
+   "captured": "2026-08-26T20:27:21.590",
+   "orientation": 8,
+   "bytes": 54459710
+  },
+  "Outdoor/Outdoor Shoot 17/Raw/DSC_6338.NEF": {
+   "captured": "2026-08-26T20:27:28.610",
+   "orientation": 8,
+   "bytes": 54517379
+  },
+  "Outdoor/Outdoor Shoot 17/Raw/DSC_6339.NEF": {
+   "captured": "2026-08-26T20:27:46.220",
+   "orientation": 8,
+   "bytes": 55205327
+  },
+  "Outdoor/Outdoor Shoot 17/Raw/DSC_6341.NEF": {
+   "captured": "2026-08-26T20:27:49.040",
+   "orientation": 8,
+   "bytes": 55505122
+  },
+  "Outdoor/Outdoor Shoot 17/Raw/DSC_6342.NEF": {
+   "captured": "2026-08-26T20:27:50.700",
+   "orientation": 8,
+   "bytes": 54932269
+  },
+  "Outdoor/Outdoor Shoot 17/Raw/DSC_6345.NEF": {
+   "captured": "2026-08-26T20:27:54.800",
+   "orientation": 8,
+   "bytes": 54900917
+  },
+  "Outdoor/Outdoor Shoot 17/Raw/DSC_6351.NEF": {
+   "captured": "2026-08-26T20:31:02.060",
+   "orientation": 8,
+   "bytes": 59232953
+  },
+  "Outdoor/Outdoor Shoot 17/Raw/DSC_6357.NEF": {
+   "captured": "2026-08-26T20:31:17.440",
+   "orientation": 8,
+   "bytes": 60503296
+  },
+  "Outdoor/Outdoor Shoot 17/Raw/DSC_6360.NEF": {
+   "captured": "2026-08-26T20:31:24.590",
+   "orientation": 8,
+   "bytes": 60800972
+  },
+  "Outdoor/Outdoor Shoot 17/Raw/DSC_6362.NEF": {
+   "captured": "2026-08-26T20:31:27.080",
+   "orientation": 8,
+   "bytes": 60781867
+  },
+  "Outdoor/Outdoor Shoot 17/Raw/DSC_6364.NEF": {
+   "captured": "2026-08-26T20:31:29.320",
+   "orientation": 8,
+   "bytes": 60231050
+  },
+  "Outdoor/Outdoor Shoot 17/Raw/DSC_6367.NEF": {
+   "captured": "2026-08-26T20:31:35.320",
+   "orientation": 8,
+   "bytes": 59003154
+  },
+  "Outdoor/Outdoor Shoot 17/Raw/DSC_6368.NEF": {
+   "captured": "2026-08-26T20:31:36.510",
+   "orientation": 8,
+   "bytes": 59316448
+  },
+  "Outdoor/Outdoor Shoot 17/Raw/DSC_6375.NEF": {
+   "captured": "2026-08-26T20:33:47.930",
+   "orientation": 1,
+   "bytes": 67615950
+  },
+  "Outdoor/Outdoor Shoot 17/Raw/DSC_6382.NEF": {
+   "captured": "2026-08-26T20:34:07.710",
+   "orientation": 8,
+   "bytes": 63240121
+  },
+  "Outdoor/Outdoor Shoot 18/Raw/DSC_6258.NEF": {
+   "captured": "2026-08-26T20:11:17.990",
+   "orientation": 8,
+   "bytes": 53645103
+  },
+  "Outdoor/Outdoor Shoot 18/Raw/DSC_6260.NEF": {
+   "captured": "2026-08-26T20:11:21.310",
+   "orientation": 8,
+   "bytes": 53251501
+  },
+  "Outdoor/Outdoor Shoot 18/Raw/DSC_6263.NEF": {
+   "captured": "2026-08-26T20:11:32.890",
+   "orientation": 8,
+   "bytes": 56197441
+  },
+  "Outdoor/Outdoor Shoot 18/Raw/DSC_6264.NEF": {
+   "captured": "2026-08-26T20:11:34.070",
+   "orientation": 8,
+   "bytes": 56470562
+  },
+  "Outdoor/Outdoor Shoot 18/Raw/DSC_6266.NEF": {
+   "captured": "2026-08-26T20:11:41.680",
+   "orientation": 8,
+   "bytes": 56595823
+  },
+  "Outdoor/Outdoor Shoot 18/Raw/DSC_6268.NEF": {
+   "captured": "2026-08-26T20:11:43.770",
+   "orientation": 8,
+   "bytes": 53681055
+  },
+  "Outdoor/Outdoor Shoot 18/Raw/DSC_6269.NEF": {
+   "captured": "2026-08-26T20:11:44.840",
+   "orientation": 8,
+   "bytes": 53770052
+  },
+  "Outdoor/Outdoor Shoot 18/Raw/DSC_6273.NEF": {
+   "captured": "2026-08-26T20:11:55.280",
+   "orientation": 8,
+   "bytes": 53367888
+  },
+  "Outdoor/Outdoor Shoot 18/Raw/DSC_6274.NEF": {
+   "captured": "2026-08-26T20:11:58.800",
+   "orientation": 8,
+   "bytes": 53937765
+  },
+  "Outdoor/Outdoor Shoot 18/Raw/DSC_6275.NEF": {
+   "captured": "2026-08-26T20:11:59.980",
+   "orientation": 8,
+   "bytes": 55443885
+  },
+  "Outdoor/Outdoor Shoot 18/Raw/DSC_6276.NEF": {
+   "captured": "2026-08-26T20:12:19.760",
+   "orientation": 8,
+   "bytes": 52037556
+  },
+  "Outdoor/Outdoor Shoot 18/Raw/DSC_6278.NEF": {
+   "captured": "2026-08-26T20:12:42.740",
+   "orientation": 1,
+   "bytes": 51013392
+  },
+  "Outdoor/Outdoor Shoot 18/Raw/DSC_6279.NEF": {
+   "captured": "2026-08-26T20:12:47.270",
+   "orientation": 1,
+   "bytes": 50362880
+  },
+  "Outdoor/Outdoor Shoot 18/Raw/DSC_6281.NEF": {
+   "captured": "2026-08-26T20:12:49.060",
+   "orientation": 1,
+   "bytes": 50369510
+  },
+  "Outdoor/Outdoor Shoot 18/Raw/DSC_6282.NEF": {
+   "captured": "2026-08-26T20:12:50.170",
+   "orientation": 1,
+   "bytes": 50429589
+  },
+  "Outdoor/Outdoor Shoot 18/Raw/DSC_6283.NEF": {
+   "captured": "2026-08-26T20:24:16.430",
+   "orientation": 1,
+   "bytes": 57306627
+  },
+  "Outdoor/Outdoor Shoot 18/Raw/DSC_6287.NEF": {
+   "captured": "2026-08-26T20:24:30.040",
+   "orientation": 8,
+   "bytes": 55606027
+  },
+  "Outdoor/Outdoor Shoot 18/Raw/DSC_6288.NEF": {
+   "captured": "2026-08-26T20:24:30.640",
+   "orientation": 8,
+   "bytes": 55539469
+  },
+  "Outdoor/Outdoor Shoot 18/Raw/DSC_6290.NEF": {
+   "captured": "2026-08-26T20:24:32.290",
+   "orientation": 8,
+   "bytes": 55829108
+  },
+  "Outdoor/Outdoor Shoot 18/Raw/DSC_6291.NEF": {
+   "captured": "2026-08-26T20:24:33.070",
+   "orientation": 8,
+   "bytes": 55426649
+  },
+  "Outdoor/Outdoor Shoot 18/Raw/DSC_6294.NEF": {
+   "captured": "2026-08-26T20:24:34.930",
+   "orientation": 8,
+   "bytes": 55641724
+  },
+  "Outdoor/Outdoor Shoot 18/Raw/DSC_6295.NEF": {
+   "captured": "2026-08-26T20:24:35.490",
+   "orientation": 8,
+   "bytes": 55570210
+  },
+  "Outdoor/Outdoor Shoot 18/Raw/DSC_6298.NEF": {
+   "captured": "2026-08-26T20:24:42.370",
+   "orientation": 1,
+   "bytes": 55794218
+  },
+  "Outdoor/Outdoor Shoot 18/Raw/DSC_6300.NEF": {
+   "captured": "2026-08-26T20:24:45.140",
+   "orientation": 1,
+   "bytes": 56043582
+  },
+  "Outdoor/Outdoor Shoot 18/Raw/DSC_6303.NEF": {
+   "captured": "2026-08-26T20:24:51.650",
+   "orientation": 8,
+   "bytes": 55126873
+  },
+  "Outdoor/Outdoor Shoot 18/Raw/DSC_6306.NEF": {
+   "captured": "2026-08-26T20:25:12.170",
+   "orientation": 6,
+   "bytes": 55977825
+  },
+  "Outdoor/Outdoor Shoot 18/Raw/DSC_6307.NEF": {
+   "captured": "2026-08-26T20:25:13.370",
+   "orientation": 6,
+   "bytes": 55211153
+  },
+  "Outdoor/Outdoor Shoot 18/Raw/DSC_6308.NEF": {
+   "captured": "2026-08-26T20:25:14.210",
+   "orientation": 6,
+   "bytes": 55972317
+  },
+  "Outdoor/Outdoor Shoot 18/Raw/DSC_6312.NEF": {
+   "captured": "2026-08-26T20:25:32.910",
+   "orientation": 6,
+   "bytes": 53452123
+  },
+  "Outdoor/Outdoor Shoot 18/Raw/DSC_6318.NEF": {
+   "captured": "2026-08-26T20:25:41.160",
+   "orientation": 8,
+   "bytes": 53716158
+  },
+  "Outdoor/Outdoor Shoot 18/Raw/DSC_6320.NEF": {
+   "captured": "2026-08-26T20:25:43.450",
+   "orientation": 8,
+   "bytes": 53513379
+  },
+  "Outdoor/Outdoor Shoot 18/Raw/DSC_6321.NEF": {
+   "captured": "2026-08-26T20:25:45.640",
+   "orientation": 1,
+   "bytes": 53890548
+  },
+  "Outdoor/Outdoor Shoot 18/Raw/DSC_6322.NEF": {
+   "captured": "2026-08-26T20:25:46.850",
+   "orientation": 1,
+   "bytes": 53890504
+  },
+  "Outdoor/Outdoor Shoot 18/Raw/DSC_6324.NEF": {
+   "captured": "2026-08-26T20:26:05.340",
+   "orientation": 1,
+   "bytes": 51798321
+  },
+  "Outdoor/Outdoor Shoot 18/Raw/DSC_6327.NEF": {
+   "captured": "2026-08-26T20:27:00.910",
+   "orientation": 8,
+   "bytes": 54829284
+  },
+  "Outdoor/Outdoor Shoot 18/Raw/DSC_6329.NEF": {
+   "captured": "2026-08-26T20:27:09.350",
+   "orientation": 8,
+   "bytes": 53127368
+  },
+  "Outdoor/Outdoor Shoot 18/Raw/DSC_6337.NEF": {
+   "captured": "2026-08-26T20:27:27.040",
+   "orientation": 8,
+   "bytes": 54560028
+  },
+  "Outdoor/Outdoor Shoot 18/Raw/DSC_6371.NEF": {
+   "captured": "2026-08-26T20:32:09.620",
+   "orientation": 8,
+   "bytes": 52657710
+  },
+  "Outdoor/Outdoor Shoot 18/Raw/DSC_6380.NEF": {
+   "captured": "2026-08-26T20:34:04.150",
+   "orientation": 1,
+   "bytes": 64066739
+  },
+  "Outdoor/Outdoor Shoot 19/Raw/DSC_6217.NEF": {
+   "captured": "2026-08-26T19:58:22.960",
+   "orientation": 8,
+   "bytes": 47948263
+  },
+  "Outdoor/Outdoor Shoot 19/Raw/DSC_6218.NEF": {
+   "captured": "2026-08-26T19:58:27.610",
+   "orientation": 8,
+   "bytes": 52840787
+  },
+  "Outdoor/Outdoor Shoot 19/Raw/DSC_6220.NEF": {
+   "captured": "2026-08-26T19:58:28.930",
+   "orientation": 8,
+   "bytes": 52729805
+  },
+  "Outdoor/Outdoor Shoot 19/Raw/DSC_6221.NEF": {
+   "captured": "2026-08-26T19:58:29.880",
+   "orientation": 8,
+   "bytes": 52411329
+  },
+  "Outdoor/Outdoor Shoot 19/Raw/DSC_6222.NEF": {
+   "captured": "2026-08-26T19:58:30.280",
+   "orientation": 8,
+   "bytes": 52120851
+  },
+  "Outdoor/Outdoor Shoot 19/Raw/DSC_6223.NEF": {
+   "captured": "2026-08-26T19:58:30.780",
+   "orientation": 8,
+   "bytes": 51335691
+  },
+  "Outdoor/Outdoor Shoot 19/Raw/DSC_6224.NEF": {
+   "captured": "2026-08-26T20:05:10.710",
+   "orientation": 8,
+   "bytes": 52073483
+  },
+  "Outdoor/Outdoor Shoot 19/Raw/DSC_6226.NEF": {
+   "captured": "2026-08-26T20:05:13.940",
+   "orientation": 8,
+   "bytes": 52128054
+  },
+  "Outdoor/Outdoor Shoot 19/Raw/DSC_6230.NEF": {
+   "captured": "2026-08-26T20:06:39.990",
+   "orientation": 8,
+   "bytes": 51586665
+  },
+  "Outdoor/Outdoor Shoot 19/Raw/DSC_6235.NEF": {
+   "captured": "2026-08-26T20:06:53.650",
+   "orientation": 8,
+   "bytes": 51219363
+  },
+  "Outdoor/Outdoor Shoot 19/Raw/DSC_6237.NEF": {
+   "captured": "2026-08-26T20:06:55.510",
+   "orientation": 8,
+   "bytes": 50992540
+  },
+  "Outdoor/Outdoor Shoot 19/Raw/DSC_6238.NEF": {
+   "captured": "2026-08-26T20:06:56.770",
+   "orientation": 8,
+   "bytes": 51256463
+  },
+  "Outdoor/Outdoor Shoot 19/Raw/DSC_6240.NEF": {
+   "captured": "2026-08-26T20:07:15.230",
+   "orientation": 8,
+   "bytes": 50645023
+  },
+  "Outdoor/Outdoor Shoot 19/Raw/DSC_6241.NEF": {
+   "captured": "2026-08-26T20:07:16.340",
+   "orientation": 8,
+   "bytes": 50441411
+  },
+  "Outdoor/Outdoor Shoot 19/Raw/DSC_6242.NEF": {
+   "captured": "2026-08-26T20:07:16.840",
+   "orientation": 8,
+   "bytes": 50015516
+  },
+  "Outdoor/Outdoor Shoot 19/Raw/DSC_6244.NEF": {
+   "captured": "2026-08-26T20:07:22.840",
+   "orientation": 8,
+   "bytes": 50111282
+  },
+  "Outdoor/Outdoor Shoot 19/Raw/DSC_6245.NEF": {
+   "captured": "2026-08-26T20:07:23.670",
+   "orientation": 8,
+   "bytes": 50474417
+  },
+  "Outdoor/Outdoor Shoot 19/Raw/DSC_6246.NEF": {
+   "captured": "2026-08-26T20:07:23.990",
+   "orientation": 8,
+   "bytes": 50332815
+  },
+  "Outdoor/Outdoor Shoot 19/Raw/DSC_6247.NEF": {
+   "captured": "2026-08-26T20:07:24.430",
+   "orientation": 8,
+   "bytes": 49839320
+  },
+  "Outdoor/Outdoor Shoot 19/Raw/DSC_6248.NEF": {
+   "captured": "2026-08-26T20:07:24.750",
+   "orientation": 8,
+   "bytes": 50118524
+  },
+  "Outdoor/Outdoor Shoot 19/Raw/DSC_6249.NEF": {
+   "captured": "2026-08-26T20:07:25.290",
+   "orientation": 8,
+   "bytes": 50274738
+  },
+  "Outdoor/Outdoor Shoot 19/Raw/DSC_6251.NEF": {
+   "captured": "2026-08-26T20:07:26.190",
+   "orientation": 8,
+   "bytes": 50255501
+  },
+  "Outdoor/Outdoor Shoot 19/Raw/DSC_6254.NEF": {
+   "captured": "2026-08-26T20:11:00.550",
+   "orientation": 8,
+   "bytes": 56408386
+  },
+  "Outdoor/Outdoor Shoot 19/Raw/DSC_6255.NEF": {
+   "captured": "2026-08-26T20:11:13.600",
+   "orientation": 8,
+   "bytes": 56871553
+  },
+  "Outdoor/Outdoor Shoot 19/Raw/DSC_6257.NEF": {
+   "captured": "2026-08-26T20:11:16.400",
+   "orientation": 8,
+   "bytes": 53660136
+  },
+  "Outdoor/Outdoor Shoot 19/Raw/DSC_6259.NEF": {
+   "captured": "2026-08-26T20:11:18.870",
+   "orientation": 8,
+   "bytes": 54083911
+  },
+  "Outdoor/Outdoor Shoot 19/Raw/DSC_6261.NEF": {
+   "captured": "2026-08-26T20:11:24.790",
+   "orientation": 8,
+   "bytes": 56540517
+  },
+  "Outdoor/Outdoor Shoot 19/Raw/DSC_6262.NEF": {
+   "captured": "2026-08-26T20:11:28.700",
+   "orientation": 8,
+   "bytes": 56443296
+  },
+  "Outdoor/Outdoor Shoot 19/Raw/DSC_6265.NEF": {
+   "captured": "2026-08-26T20:11:35.060",
+   "orientation": 8,
+   "bytes": 56483625
+  },
+  "Outdoor/Outdoor Shoot 19/Raw/DSC_6267.NEF": {
+   "captured": "2026-08-26T20:11:42.330",
+   "orientation": 8,
+   "bytes": 55388489
+  },
+  "Outdoor/Outdoor Shoot 19/Raw/DSC_6271.NEF": {
+   "captured": "2026-08-26T20:11:53.150",
+   "orientation": 8,
+   "bytes": 53223322
+  },
+  "Outdoor/Outdoor Shoot 19/Raw/DSC_6272.NEF": {
+   "captured": "2026-08-26T20:11:54.430",
+   "orientation": 8,
+   "bytes": 52602270
+  },
+  "Outdoor/Outdoor Shoot 19/Raw/DSC_6284.NEF": {
+   "captured": "2026-08-26T20:24:20.300",
+   "orientation": 1,
+   "bytes": 57194245
+  },
+  "Outdoor/Outdoor Shoot 19/Raw/DSC_6285.NEF": {
+   "captured": "2026-08-26T20:24:26.340",
+   "orientation": 1,
+   "bytes": 56165560
+  },
+  "Outdoor/Outdoor Shoot 19/Raw/DSC_6286.NEF": {
+   "captured": "2026-08-26T20:24:28.730",
+   "orientation": 8,
+   "bytes": 55733159
+  },
+  "Outdoor/Outdoor Shoot 19/Raw/DSC_6292.NEF": {
+   "captured": "2026-08-26T20:24:33.810",
+   "orientation": 8,
+   "bytes": 55332586
+  },
+  "Outdoor/Outdoor Shoot 19/Raw/DSC_6293.NEF": {
+   "captured": "2026-08-26T20:24:34.260",
+   "orientation": 8,
+   "bytes": 55385799
+  },
+  "Outdoor/Outdoor Shoot 19/Raw/DSC_6297.NEF": {
+   "captured": "2026-08-26T20:24:40.700",
+   "orientation": 1,
+   "bytes": 55349596
+  },
+  "Outdoor/Outdoor Shoot 19/Raw/DSC_6336.NEF": {
+   "captured": "2026-08-26T20:27:25.690",
+   "orientation": 8,
+   "bytes": 54381052
+  },
+  "Outdoor/Outdoor Shoot 19/Raw/DSC_6353.NEF": {
+   "captured": "2026-08-26T20:31:03.650",
+   "orientation": 8,
+   "bytes": 58105127
+  },
+  "Outdoor/Outdoor Shoot 20/Raw/DSC_6183.NEF": {
+   "captured": "2026-08-26T19:54:57.460",
+   "orientation": 8,
+   "bytes": 50579577
+  },
+  "Outdoor/Outdoor Shoot 20/Raw/DSC_6184.NEF": {
+   "captured": "2026-08-26T19:55:03.260",
+   "orientation": 8,
+   "bytes": 49974087
+  },
+  "Outdoor/Outdoor Shoot 20/Raw/DSC_6187.NEF": {
+   "captured": "2026-08-26T19:56:17.110",
+   "orientation": 8,
+   "bytes": 48555944
+  },
+  "Outdoor/Outdoor Shoot 20/Raw/DSC_6188.NEF": {
+   "captured": "2026-08-26T19:56:18.520",
+   "orientation": 8,
+   "bytes": 48946638
+  },
+  "Outdoor/Outdoor Shoot 20/Raw/DSC_6189.NEF": {
+   "captured": "2026-08-26T19:56:19.360",
+   "orientation": 8,
+   "bytes": 49107442
+  },
+  "Outdoor/Outdoor Shoot 20/Raw/DSC_6190.NEF": {
+   "captured": "2026-08-26T19:56:19.830",
+   "orientation": 8,
+   "bytes": 48387085
+  },
+  "Outdoor/Outdoor Shoot 20/Raw/DSC_6191.NEF": {
+   "captured": "2026-08-26T19:56:20.950",
+   "orientation": 8,
+   "bytes": 48426213
+  },
+  "Outdoor/Outdoor Shoot 20/Raw/DSC_6192.NEF": {
+   "captured": "2026-08-26T19:56:21.960",
+   "orientation": 8,
+   "bytes": 48735294
+  },
+  "Outdoor/Outdoor Shoot 20/Raw/DSC_6193.NEF": {
+   "captured": "2026-08-26T19:56:23.230",
+   "orientation": 8,
+   "bytes": 48194681
+  },
+  "Outdoor/Outdoor Shoot 20/Raw/DSC_6194.NEF": {
+   "captured": "2026-08-26T19:56:26.950",
+   "orientation": 8,
+   "bytes": 48103760
+  },
+  "Outdoor/Outdoor Shoot 20/Raw/DSC_6196.NEF": {
+   "captured": "2026-08-26T19:56:30.160",
+   "orientation": 8,
+   "bytes": 47987498
+  },
+  "Outdoor/Outdoor Shoot 20/Raw/DSC_6197.NEF": {
+   "captured": "2026-08-26T19:56:31.330",
+   "orientation": 8,
+   "bytes": 48234174
+  },
+  "Outdoor/Outdoor Shoot 20/Raw/DSC_6198.NEF": {
+   "captured": "2026-08-26T19:56:33.370",
+   "orientation": 8,
+   "bytes": 48292233
+  },
+  "Outdoor/Outdoor Shoot 20/Raw/DSC_6200.NEF": {
+   "captured": "2026-08-26T19:56:51.950",
+   "orientation": 8,
+   "bytes": 48384172
+  },
+  "Outdoor/Outdoor Shoot 20/Raw/DSC_6201.NEF": {
+   "captured": "2026-08-26T19:56:53.990",
+   "orientation": 8,
+   "bytes": 48086457
+  },
+  "Outdoor/Outdoor Shoot 20/Raw/DSC_6203.NEF": {
+   "captured": "2026-08-26T19:56:59.120",
+   "orientation": 8,
+   "bytes": 48140889
+  },
+  "Outdoor/Outdoor Shoot 20/Raw/DSC_6204.NEF": {
+   "captured": "2026-08-26T19:57:40.050",
+   "orientation": 8,
+   "bytes": 49240639
+  },
+  "Outdoor/Outdoor Shoot 20/Raw/DSC_6205.NEF": {
+   "captured": "2026-08-26T19:57:40.900",
+   "orientation": 8,
+   "bytes": 48377211
+  },
+  "Outdoor/Outdoor Shoot 20/Raw/DSC_6206.NEF": {
+   "captured": "2026-08-26T19:57:43.330",
+   "orientation": 8,
+   "bytes": 48493331
+  },
+  "Outdoor/Outdoor Shoot 20/Raw/DSC_6208.NEF": {
+   "captured": "2026-08-26T19:57:48.300",
+   "orientation": 8,
+   "bytes": 48208897
+  },
+  "Outdoor/Outdoor Shoot 20/Raw/DSC_6210.NEF": {
+   "captured": "2026-08-26T19:57:50.370",
+   "orientation": 8,
+   "bytes": 48274768
+  },
+  "Outdoor/Outdoor Shoot 20/Raw/DSC_6211.NEF": {
+   "captured": "2026-08-26T19:57:58.290",
+   "orientation": 8,
+   "bytes": 48435615
+  },
+  "Outdoor/Outdoor Shoot 20/Raw/DSC_6212.NEF": {
+   "captured": "2026-08-26T19:58:12.580",
+   "orientation": 8,
+   "bytes": 48306089
+  },
+  "Outdoor/Outdoor Shoot 20/Raw/DSC_6213.NEF": {
+   "captured": "2026-08-26T19:58:14.440",
+   "orientation": 8,
+   "bytes": 48565398
+  },
+  "Outdoor/Outdoor Shoot 20/Raw/DSC_6214.NEF": {
+   "captured": "2026-08-26T19:58:19.990",
+   "orientation": 8,
+   "bytes": 48525620
+  },
+  "Outdoor/Outdoor Shoot 20/Raw/DSC_6215.NEF": {
+   "captured": "2026-08-26T19:58:21.150",
+   "orientation": 8,
+   "bytes": 48455200
+  },
+  "Outdoor/Outdoor Shoot 20/Raw/DSC_6216.NEF": {
+   "captured": "2026-08-26T19:58:22.310",
+   "orientation": 8,
+   "bytes": 48252864
+  },
+  "Outdoor/Outdoor Shoot 20/Raw/DSC_6219.NEF": {
+   "captured": "2026-08-26T19:58:28.070",
+   "orientation": 8,
+   "bytes": 53037385
+  },
+  "Outdoor/Outdoor Shoot 20/Raw/DSC_6225.NEF": {
+   "captured": "2026-08-26T20:05:12.820",
+   "orientation": 8,
+   "bytes": 51800486
+  },
+  "Outdoor/Outdoor Shoot 20/Raw/DSC_6227.NEF": {
+   "captured": "2026-08-26T20:05:17.110",
+   "orientation": 8,
+   "bytes": 51942956
+  },
+  "Outdoor/Outdoor Shoot 20/Raw/DSC_6228.NEF": {
+   "captured": "2026-08-26T20:05:20.320",
+   "orientation": 8,
+   "bytes": 51928886
+  },
+  "Outdoor/Outdoor Shoot 20/Raw/DSC_6229.NEF": {
+   "captured": "2026-08-26T20:06:38.760",
+   "orientation": 8,
+   "bytes": 51257570
+  },
+  "Outdoor/Outdoor Shoot 20/Raw/DSC_6231.NEF": {
+   "captured": "2026-08-26T20:06:40.740",
+   "orientation": 8,
+   "bytes": 50235689
+  },
+  "Outdoor/Outdoor Shoot 20/Raw/DSC_6232.NEF": {
+   "captured": "2026-08-26T20:06:45.250",
+   "orientation": 8,
+   "bytes": 50507322
+  },
+  "Outdoor/Outdoor Shoot 20/Raw/DSC_6234.NEF": {
+   "captured": "2026-08-26T20:06:49.980",
+   "orientation": 8,
+   "bytes": 51584263
+  },
+  "Outdoor/Outdoor Shoot 20/Raw/DSC_6236.NEF": {
+   "captured": "2026-08-26T20:06:54.870",
+   "orientation": 8,
+   "bytes": 51132271
+  },
+  "Outdoor/Outdoor Shoot 20/Raw/DSC_6239.NEF": {
+   "captured": "2026-08-26T20:06:57.100",
+   "orientation": 8,
+   "bytes": 51158051
+  },
+  "Outdoor/Outdoor Shoot 20/Raw/DSC_6243.NEF": {
+   "captured": "2026-08-26T20:07:17.310",
+   "orientation": 8,
+   "bytes": 50139780
+  },
+  "Outdoor/Outdoor Shoot 20/Raw/DSC_6250.NEF": {
+   "captured": "2026-08-26T20:07:25.790",
+   "orientation": 8,
+   "bytes": 50293759
+  },
+  "Outdoor/Outdoor Shoot 20/Raw/DSC_6252.NEF": {
+   "captured": "2026-08-26T20:10:57.720",
+   "orientation": 8,
+   "bytes": 54675584
+  },
+  "Outdoor/Outdoor Shoot 20/Raw/DSC_6253.NEF": {
+   "captured": "2026-08-26T20:10:59.930",
+   "orientation": 8,
+   "bytes": 56471988
+  },
+  "Outdoor/Outdoor Shoot 20/Raw/DSC_6256.NEF": {
+   "captured": "2026-08-26T20:11:15.060",
+   "orientation": 8,
+   "bytes": 55096594
+  },
+  "Outdoor/Outdoor Shoot 21/Raw/DSC_6160.NEF": {
+   "captured": "2026-08-26T19:52:47.370",
+   "orientation": 1,
+   "bytes": 53642659
+  },
+  "Outdoor/Outdoor Shoot 21/Raw/DSC_6161.NEF": {
+   "captured": "2026-08-26T19:53:13.280",
+   "orientation": 8,
+   "bytes": 55024151
+  },
+  "Outdoor/Outdoor Shoot 21/Raw/DSC_6162.NEF": {
+   "captured": "2026-08-26T19:53:17.620",
+   "orientation": 8,
+   "bytes": 55114672
+  },
+  "Outdoor/Outdoor Shoot 21/Raw/DSC_6163.NEF": {
+   "captured": "2026-08-26T19:53:21.150",
+   "orientation": 8,
+   "bytes": 55109717
+  },
+  "Outdoor/Outdoor Shoot 21/Raw/DSC_6164.NEF": {
+   "captured": "2026-08-26T19:53:26.180",
+   "orientation": 8,
+   "bytes": 54557197
+  },
+  "Outdoor/Outdoor Shoot 21/Raw/DSC_6165.NEF": {
+   "captured": "2026-08-26T19:53:29.070",
+   "orientation": 8,
+   "bytes": 56867648
+  },
+  "Outdoor/Outdoor Shoot 21/Raw/DSC_6166.NEF": {
+   "captured": "2026-08-26T19:53:40.200",
+   "orientation": 8,
+   "bytes": 54497003
+  },
+  "Outdoor/Outdoor Shoot 21/Raw/DSC_6167.NEF": {
+   "captured": "2026-08-26T19:53:41.660",
+   "orientation": 8,
+   "bytes": 54821255
+  },
+  "Outdoor/Outdoor Shoot 21/Raw/DSC_6168.NEF": {
+   "captured": "2026-08-26T19:53:55.600",
+   "orientation": 8,
+   "bytes": 52450137
+  },
+  "Outdoor/Outdoor Shoot 21/Raw/DSC_6169.NEF": {
+   "captured": "2026-08-26T19:54:07.250",
+   "orientation": 8,
+   "bytes": 52948334
+  },
+  "Outdoor/Outdoor Shoot 21/Raw/DSC_6170.NEF": {
+   "captured": "2026-08-26T19:54:10.760",
+   "orientation": 8,
+   "bytes": 53008581
+  },
+  "Outdoor/Outdoor Shoot 21/Raw/DSC_6171.NEF": {
+   "captured": "2026-08-26T19:54:11.990",
+   "orientation": 8,
+   "bytes": 53114391
+  },
+  "Outdoor/Outdoor Shoot 21/Raw/DSC_6172.NEF": {
+   "captured": "2026-08-26T19:54:13.510",
+   "orientation": 8,
+   "bytes": 53512564
+  },
+  "Outdoor/Outdoor Shoot 21/Raw/DSC_6173.NEF": {
+   "captured": "2026-08-26T19:54:15.760",
+   "orientation": 8,
+   "bytes": 52385352
+  },
+  "Outdoor/Outdoor Shoot 21/Raw/DSC_6174.NEF": {
+   "captured": "2026-08-26T19:54:31.990",
+   "orientation": 8,
+   "bytes": 49772600
+  },
+  "Outdoor/Outdoor Shoot 21/Raw/DSC_6175.NEF": {
+   "captured": "2026-08-26T19:54:32.750",
+   "orientation": 8,
+   "bytes": 49914831
+  },
+  "Outdoor/Outdoor Shoot 21/Raw/DSC_6176.NEF": {
+   "captured": "2026-08-26T19:54:33.060",
+   "orientation": 8,
+   "bytes": 50027996
+  },
+  "Outdoor/Outdoor Shoot 21/Raw/DSC_6177.NEF": {
+   "captured": "2026-08-26T19:54:33.800",
+   "orientation": 8,
+   "bytes": 49013846
+  },
+  "Outdoor/Outdoor Shoot 21/Raw/DSC_6178.NEF": {
+   "captured": "2026-08-26T19:54:37.280",
+   "orientation": 8,
+   "bytes": 50814532
+  },
+  "Outdoor/Outdoor Shoot 21/Raw/DSC_6179.NEF": {
+   "captured": "2026-08-26T19:54:38.630",
+   "orientation": 8,
+   "bytes": 50709768
+  },
+  "Outdoor/Outdoor Shoot 21/Raw/DSC_6180.NEF": {
+   "captured": "2026-08-26T19:54:42.920",
+   "orientation": 8,
+   "bytes": 50227303
+  },
+  "Outdoor/Outdoor Shoot 21/Raw/DSC_6181.NEF": {
+   "captured": "2026-08-26T19:54:45.600",
+   "orientation": 8,
+   "bytes": 50683825
+  },
+  "Outdoor/Outdoor Shoot 21/Raw/DSC_6182.NEF": {
+   "captured": "2026-08-26T19:54:46.370",
+   "orientation": 8,
+   "bytes": 50447753
+  },
+  "Outdoor/Outdoor Shoot 21/Raw/DSC_6185.NEF": {
+   "captured": "2026-08-26T19:55:05.550",
+   "orientation": 8,
+   "bytes": 50047778
+  },
+  "Outdoor/Outdoor Shoot 21/Raw/DSC_6186.NEF": {
+   "captured": "2026-08-26T19:55:06.680",
+   "orientation": 8,
+   "bytes": 48773326
+  },
+  "Outdoor/Outdoor Shoot 21/Raw/DSC_6195.NEF": {
+   "captured": "2026-08-26T19:56:29.070",
+   "orientation": 8,
+   "bytes": 48142273
+  },
+  "Outdoor/Outdoor Shoot 21/Raw/DSC_6199.NEF": {
+   "captured": "2026-08-26T19:56:36.090",
+   "orientation": 8,
+   "bytes": 48091777
+  },
+  "Outdoor/Outdoor Shoot 21/Raw/DSC_6202.NEF": {
+   "captured": "2026-08-26T19:56:56.610",
+   "orientation": 8,
+   "bytes": 47955942
+  },
+  "Outdoor/Outdoor Shoot 21/Raw/DSC_6207.NEF": {
+   "captured": "2026-08-26T19:57:47.290",
+   "orientation": 8,
+   "bytes": 48179165
+  },
+  "Outdoor/Outdoor Shoot 21/Raw/DSC_6209.NEF": {
+   "captured": "2026-08-26T19:57:48.900",
+   "orientation": 8,
+   "bytes": 48140823
+  },
+  "Outdoor/Outdoor Shoot 21/Raw/DSC_6233.NEF": {
+   "captured": "2026-08-26T20:06:48.620",
+   "orientation": 8,
+   "bytes": 51884860
+  },
+  "Outdoor/Outdoor Shoot 3/Raw/DSC_6822.NEF": {
+   "captured": "2026-08-26T21:27:27.840",
+   "orientation": 8,
+   "bytes": 57794082
+  },
+  "Outdoor/Outdoor Shoot 3/Raw/DSC_6843.NEF": {
+   "captured": "2026-08-26T21:28:11.690",
+   "orientation": 8,
+   "bytes": 57830123
+  },
+  "Outdoor/Outdoor Shoot 3/Raw/DSC_6847.NEF": {
+   "captured": "2026-08-26T21:28:36.990",
+   "orientation": 8,
+   "bytes": 49431598
+  },
+  "Outdoor/Outdoor Shoot 3/Raw/DSC_6849.NEF": {
+   "captured": "2026-08-26T21:28:50.500",
+   "orientation": 1,
+   "bytes": 44096138
+  },
+  "Outdoor/Outdoor Shoot 3/Raw/DSC_6851.NEF": {
+   "captured": "2026-08-26T21:28:53.040",
+   "orientation": 1,
+   "bytes": 48389454
+  },
+  "Outdoor/Outdoor Shoot 3/Raw/DSC_6854.NEF": {
+   "captured": "2026-08-26T21:29:00.120",
+   "orientation": 8,
+   "bytes": 49083480
+  },
+  "Outdoor/Outdoor Shoot 4/Raw/DSC_6772.NEF": {
+   "captured": "2026-08-26T21:15:09.240",
+   "orientation": 1,
+   "bytes": 52630551
+  },
+  "Outdoor/Outdoor Shoot 4/Raw/DSC_6773.NEF": {
+   "captured": "2026-08-26T21:15:11.990",
+   "orientation": 1,
+   "bytes": 52784015
+  },
+  "Outdoor/Outdoor Shoot 4/Raw/DSC_6776.NEF": {
+   "captured": "2026-08-26T21:15:22.220",
+   "orientation": 1,
+   "bytes": 53133221
+  },
+  "Outdoor/Outdoor Shoot 4/Raw/DSC_6780.NEF": {
+   "captured": "2026-08-26T21:15:30.210",
+   "orientation": 1,
+   "bytes": 53142134
+  },
+  "Outdoor/Outdoor Shoot 4/Raw/DSC_6787.NEF": {
+   "captured": "2026-08-26T21:15:56.830",
+   "orientation": 1,
+   "bytes": 53783010
+  },
+  "Outdoor/Outdoor Shoot 4/Raw/DSC_6794.NEF": {
+   "captured": "2026-08-26T21:16:16.880",
+   "orientation": 8,
+   "bytes": 54078696
+  },
+  "Outdoor/Outdoor Shoot 4/Raw/DSC_6795.NEF": {
+   "captured": "2026-08-26T21:16:17.730",
+   "orientation": 8,
+   "bytes": 53931702
+  },
+  "Outdoor/Outdoor Shoot 4/Raw/DSC_6799.NEF": {
+   "captured": "2026-08-26T21:25:07.790",
+   "orientation": 8,
+   "bytes": 56668451
+  },
+  "Outdoor/Outdoor Shoot 4/Raw/DSC_6800.NEF": {
+   "captured": "2026-08-26T21:25:09.800",
+   "orientation": 8,
+   "bytes": 54632085
+  },
+  "Outdoor/Outdoor Shoot 4/Raw/DSC_6801.NEF": {
+   "captured": "2026-08-26T21:25:14.900",
+   "orientation": 8,
+   "bytes": 57224733
+  },
+  "Outdoor/Outdoor Shoot 4/Raw/DSC_6806.NEF": {
+   "captured": "2026-08-26T21:26:04.580",
+   "orientation": 8,
+   "bytes": 52255685
+  },
+  "Outdoor/Outdoor Shoot 4/Raw/DSC_6807.NEF": {
+   "captured": "2026-08-26T21:26:06.360",
+   "orientation": 8,
+   "bytes": 52375638
+  },
+  "Outdoor/Outdoor Shoot 4/Raw/DSC_6808.NEF": {
+   "captured": "2026-08-26T21:26:07.810",
+   "orientation": 8,
+   "bytes": 46015323
+  },
+  "Outdoor/Outdoor Shoot 4/Raw/DSC_6809.NEF": {
+   "captured": "2026-08-26T21:26:10.690",
+   "orientation": 8,
+   "bytes": 52315311
+  },
+  "Outdoor/Outdoor Shoot 4/Raw/DSC_6810.NEF": {
+   "captured": "2026-08-26T21:26:15.150",
+   "orientation": 1,
+   "bytes": 49766757
+  },
+  "Outdoor/Outdoor Shoot 4/Raw/DSC_6813.NEF": {
+   "captured": "2026-08-26T21:27:11.060",
+   "orientation": 8,
+   "bytes": 57726426
+  },
+  "Outdoor/Outdoor Shoot 4/Raw/DSC_6819.NEF": {
+   "captured": "2026-08-26T21:27:24.160",
+   "orientation": 8,
+   "bytes": 58205827
+  },
+  "Outdoor/Outdoor Shoot 4/Raw/DSC_6821.NEF": {
+   "captured": "2026-08-26T21:27:26.660",
+   "orientation": 8,
+   "bytes": 57499837
+  },
+  "Outdoor/Outdoor Shoot 4/Raw/DSC_6823.NEF": {
+   "captured": "2026-08-26T21:27:29.060",
+   "orientation": 8,
+   "bytes": 57478089
+  },
+  "Outdoor/Outdoor Shoot 4/Raw/DSC_6825.NEF": {
+   "captured": "2026-08-26T21:27:30.990",
+   "orientation": 8,
+   "bytes": 57864198
+  },
+  "Outdoor/Outdoor Shoot 4/Raw/DSC_6826.NEF": {
+   "captured": "2026-08-26T21:27:31.900",
+   "orientation": 8,
+   "bytes": 57656855
+  },
+  "Outdoor/Outdoor Shoot 4/Raw/DSC_6827.NEF": {
+   "captured": "2026-08-26T21:27:32.490",
+   "orientation": 8,
+   "bytes": 57667355
+  },
+  "Outdoor/Outdoor Shoot 4/Raw/DSC_6831.NEF": {
+   "captured": "2026-08-26T21:28:00.570",
+   "orientation": 8,
+   "bytes": 58738226
+  },
+  "Outdoor/Outdoor Shoot 4/Raw/DSC_6832.NEF": {
+   "captured": "2026-08-26T21:28:01.760",
+   "orientation": 8,
+   "bytes": 58868482
+  },
+  "Outdoor/Outdoor Shoot 4/Raw/DSC_6835.NEF": {
+   "captured": "2026-08-26T21:28:05.730",
+   "orientation": 8,
+   "bytes": 58217228
+  },
+  "Outdoor/Outdoor Shoot 4/Raw/DSC_6836.NEF": {
+   "captured": "2026-08-26T21:28:06.860",
+   "orientation": 8,
+   "bytes": 58947674
+  },
+  "Outdoor/Outdoor Shoot 4/Raw/DSC_6837.NEF": {
+   "captured": "2026-08-26T21:28:07.360",
+   "orientation": 8,
+   "bytes": 58665762
+  },
+  "Outdoor/Outdoor Shoot 4/Raw/DSC_6838.NEF": {
+   "captured": "2026-08-26T21:28:07.860",
+   "orientation": 8,
+   "bytes": 58904400
+  },
+  "Outdoor/Outdoor Shoot 4/Raw/DSC_6839.NEF": {
+   "captured": "2026-08-26T21:28:08.720",
+   "orientation": 8,
+   "bytes": 58148404
+  },
+  "Outdoor/Outdoor Shoot 4/Raw/DSC_6840.NEF": {
+   "captured": "2026-08-26T21:28:09.330",
+   "orientation": 8,
+   "bytes": 58184286
+  },
+  "Outdoor/Outdoor Shoot 4/Raw/DSC_6841.NEF": {
+   "captured": "2026-08-26T21:28:09.750",
+   "orientation": 8,
+   "bytes": 58113403
+  },
+  "Outdoor/Outdoor Shoot 4/Raw/DSC_6844.NEF": {
+   "captured": "2026-08-26T21:28:13.630",
+   "orientation": 8,
+   "bytes": 56578315
+  },
+  "Outdoor/Outdoor Shoot 4/Raw/DSC_6845.NEF": {
+   "captured": "2026-08-26T21:28:14.360",
+   "orientation": 8,
+   "bytes": 56756918
+  },
+  "Outdoor/Outdoor Shoot 4/Raw/DSC_6848.NEF": {
+   "captured": "2026-08-26T21:28:48.900",
+   "orientation": 1,
+   "bytes": 50034516
+  },
+  "Outdoor/Outdoor Shoot 4/Raw/DSC_6850.NEF": {
+   "captured": "2026-08-26T21:28:51.260",
+   "orientation": 1,
+   "bytes": 48751913
+  },
+  "Outdoor/Outdoor Shoot 4/Raw/DSC_6852.NEF": {
+   "captured": "2026-08-26T21:28:55.570",
+   "orientation": 1,
+   "bytes": 48575792
+  },
+  "Outdoor/Outdoor Shoot 4/Raw/DSC_6853.NEF": {
+   "captured": "2026-08-26T21:28:57.380",
+   "orientation": 1,
+   "bytes": 48052779
+  },
+  "Outdoor/Outdoor Shoot 5/Raw/DSC_6501.NEF": {
+   "captured": "2026-08-26T20:46:02.370",
+   "orientation": 8,
+   "bytes": 52622326
+  },
+  "Outdoor/Outdoor Shoot 5/Raw/DSC_6727.NEF": {
+   "captured": "2026-08-26T21:11:51.660",
+   "orientation": 8,
+   "bytes": 54198994
+  },
+  "Outdoor/Outdoor Shoot 5/Raw/DSC_6740.NEF": {
+   "captured": "2026-08-26T21:12:02.190",
+   "orientation": 8,
+   "bytes": 53958553
+  },
+  "Outdoor/Outdoor Shoot 5/Raw/DSC_6745.NEF": {
+   "captured": "2026-08-26T21:12:26.960",
+   "orientation": 8,
+   "bytes": 53199912
+  },
+  "Outdoor/Outdoor Shoot 5/Raw/DSC_6751.NEF": {
+   "captured": "2026-08-26T21:12:38.390",
+   "orientation": 8,
+   "bytes": 56466462
+  },
+  "Outdoor/Outdoor Shoot 5/Raw/DSC_6755.NEF": {
+   "captured": "2026-08-26T21:12:42.740",
+   "orientation": 8,
+   "bytes": 56263911
+  },
+  "Outdoor/Outdoor Shoot 5/Raw/DSC_6757.NEF": {
+   "captured": "2026-08-26T21:12:44.330",
+   "orientation": 8,
+   "bytes": 55576321
+  },
+  "Outdoor/Outdoor Shoot 5/Raw/DSC_6758.NEF": {
+   "captured": "2026-08-26T21:12:45.160",
+   "orientation": 8,
+   "bytes": 55218472
+  },
+  "Outdoor/Outdoor Shoot 5/Raw/DSC_6761.NEF": {
+   "captured": "2026-08-26T21:12:48.840",
+   "orientation": 8,
+   "bytes": 55615003
+  },
+  "Outdoor/Outdoor Shoot 5/Raw/DSC_6766.NEF": {
+   "captured": "2026-08-26T21:15:03.040",
+   "orientation": 1,
+   "bytes": 53725521
+  },
+  "Outdoor/Outdoor Shoot 5/Raw/DSC_6769.NEF": {
+   "captured": "2026-08-26T21:15:06.310",
+   "orientation": 1,
+   "bytes": 52755818
+  },
+  "Outdoor/Outdoor Shoot 5/Raw/DSC_6771.NEF": {
+   "captured": "2026-08-26T21:15:08.530",
+   "orientation": 1,
+   "bytes": 52800254
+  },
+  "Outdoor/Outdoor Shoot 5/Raw/DSC_6778.NEF": {
+   "captured": "2026-08-26T21:15:25.400",
+   "orientation": 1,
+   "bytes": 53219780
+  },
+  "Outdoor/Outdoor Shoot 5/Raw/DSC_6781.NEF": {
+   "captured": "2026-08-26T21:15:31.860",
+   "orientation": 1,
+   "bytes": 53923741
+  },
+  "Outdoor/Outdoor Shoot 5/Raw/DSC_6782.NEF": {
+   "captured": "2026-08-26T21:15:40.090",
+   "orientation": 1,
+   "bytes": 53699180
+  },
+  "Outdoor/Outdoor Shoot 5/Raw/DSC_6783.NEF": {
+   "captured": "2026-08-26T21:15:42.300",
+   "orientation": 1,
+   "bytes": 53780776
+  },
+  "Outdoor/Outdoor Shoot 5/Raw/DSC_6784.NEF": {
+   "captured": "2026-08-26T21:15:44.230",
+   "orientation": 8,
+   "bytes": 53130613
+  },
+  "Outdoor/Outdoor Shoot 5/Raw/DSC_6785.NEF": {
+   "captured": "2026-08-26T21:15:53.900",
+   "orientation": 1,
+   "bytes": 52949000
+  },
+  "Outdoor/Outdoor Shoot 5/Raw/DSC_6786.NEF": {
+   "captured": "2026-08-26T21:15:55.360",
+   "orientation": 1,
+   "bytes": 52615094
+  },
+  "Outdoor/Outdoor Shoot 5/Raw/DSC_6788.NEF": {
+   "captured": "2026-08-26T21:15:58.200",
+   "orientation": 1,
+   "bytes": 55148691
+  },
+  "Outdoor/Outdoor Shoot 5/Raw/DSC_6789.NEF": {
+   "captured": "2026-08-26T21:15:59.070",
+   "orientation": 1,
+   "bytes": 56063995
+  },
+  "Outdoor/Outdoor Shoot 5/Raw/DSC_6790.NEF": {
+   "captured": "2026-08-26T21:16:00.080",
+   "orientation": 1,
+   "bytes": 55472392
+  },
+  "Outdoor/Outdoor Shoot 5/Raw/DSC_6791.NEF": {
+   "captured": "2026-08-26T21:16:10.900",
+   "orientation": 1,
+   "bytes": 54021456
+  },
+  "Outdoor/Outdoor Shoot 5/Raw/DSC_6792.NEF": {
+   "captured": "2026-08-26T21:16:12.150",
+   "orientation": 1,
+   "bytes": 53940747
+  },
+  "Outdoor/Outdoor Shoot 5/Raw/DSC_6796.NEF": {
+   "captured": "2026-08-26T21:16:20.970",
+   "orientation": 8,
+   "bytes": 53666791
+  },
+  "Outdoor/Outdoor Shoot 5/Raw/DSC_6797.NEF": {
+   "captured": "2026-08-26T21:16:21.570",
+   "orientation": 8,
+   "bytes": 53675725
+  },
+  "Outdoor/Outdoor Shoot 5/Raw/DSC_6803.NEF": {
+   "captured": "2026-08-26T21:25:18.620",
+   "orientation": 8,
+   "bytes": 56084650
+  },
+  "Outdoor/Outdoor Shoot 5/Raw/DSC_6805.NEF": {
+   "captured": "2026-08-26T21:25:54.940",
+   "orientation": 1,
+   "bytes": 55638165
+  },
+  "Outdoor/Outdoor Shoot 5/Raw/DSC_6812.NEF": {
+   "captured": "2026-08-26T21:26:19.980",
+   "orientation": 1,
+   "bytes": 49881614
+  },
+  "Outdoor/Outdoor Shoot 5/Raw/DSC_6814.NEF": {
+   "captured": "2026-08-26T21:27:11.840",
+   "orientation": 8,
+   "bytes": 56667912
+  },
+  "Outdoor/Outdoor Shoot 5/Raw/DSC_6815.NEF": {
+   "captured": "2026-08-26T21:27:13.140",
+   "orientation": 8,
+   "bytes": 58176449
+  },
+  "Outdoor/Outdoor Shoot 5/Raw/DSC_6816.NEF": {
+   "captured": "2026-08-26T21:27:14.660",
+   "orientation": 8,
+   "bytes": 56329814
+  },
+  "Outdoor/Outdoor Shoot 5/Raw/DSC_6817.NEF": {
+   "captured": "2026-08-26T21:27:20.970",
+   "orientation": 8,
+   "bytes": 57378256
+  },
+  "Outdoor/Outdoor Shoot 5/Raw/DSC_6818.NEF": {
+   "captured": "2026-08-26T21:27:22.130",
+   "orientation": 8,
+   "bytes": 57777128
+  },
+  "Outdoor/Outdoor Shoot 5/Raw/DSC_6820.NEF": {
+   "captured": "2026-08-26T21:27:25.400",
+   "orientation": 8,
+   "bytes": 56374920
+  },
+  "Outdoor/Outdoor Shoot 5/Raw/DSC_6829.NEF": {
+   "captured": "2026-08-26T21:27:56.580",
+   "orientation": 8,
+   "bytes": 59044905
+  },
+  "Outdoor/Outdoor Shoot 5/Raw/DSC_6830.NEF": {
+   "captured": "2026-08-26T21:27:59.300",
+   "orientation": 8,
+   "bytes": 58126135
+  },
+  "Outdoor/Outdoor Shoot 5/Raw/DSC_6834.NEF": {
+   "captured": "2026-08-26T21:28:04.760",
+   "orientation": 8,
+   "bytes": 58644439
+  },
+  "Outdoor/Outdoor Shoot 5/Raw/DSC_6842.NEF": {
+   "captured": "2026-08-26T21:28:10.660",
+   "orientation": 8,
+   "bytes": 58873313
+  },
+  "Outdoor/Outdoor Shoot 6/Raw/DSC_6699.NEF": {
+   "captured": "2026-08-26T21:06:48.670",
+   "orientation": 1,
+   "bytes": 49565063
+  },
+  "Outdoor/Outdoor Shoot 6/Raw/DSC_6708.NEF": {
+   "captured": "2026-08-26T21:10:01.210",
+   "orientation": 8,
+   "bytes": 55324632
+  },
+  "Outdoor/Outdoor Shoot 6/Raw/DSC_6709.NEF": {
+   "captured": "2026-08-26T21:10:25.040",
+   "orientation": 8,
+   "bytes": 55242768
+  },
+  "Outdoor/Outdoor Shoot 6/Raw/DSC_6711.NEF": {
+   "captured": "2026-08-26T21:10:39.690",
+   "orientation": 8,
+   "bytes": 55071684
+  },
+  "Outdoor/Outdoor Shoot 6/Raw/DSC_6716.NEF": {
+   "captured": "2026-08-26T21:10:52.940",
+   "orientation": 8,
+   "bytes": 54788372
+  },
+  "Outdoor/Outdoor Shoot 6/Raw/DSC_6717.NEF": {
+   "captured": "2026-08-26T21:10:54.260",
+   "orientation": 8,
+   "bytes": 54578774
+  },
+  "Outdoor/Outdoor Shoot 6/Raw/DSC_6720.NEF": {
+   "captured": "2026-08-26T21:10:58.560",
+   "orientation": 8,
+   "bytes": 55276942
+  },
+  "Outdoor/Outdoor Shoot 6/Raw/DSC_6721.NEF": {
+   "captured": "2026-08-26T21:11:00.090",
+   "orientation": 8,
+   "bytes": 54965467
+  },
+  "Outdoor/Outdoor Shoot 6/Raw/DSC_6723.NEF": {
+   "captured": "2026-08-26T21:11:04.380",
+   "orientation": 8,
+   "bytes": 54787749
+  },
+  "Outdoor/Outdoor Shoot 6/Raw/DSC_6726.NEF": {
+   "captured": "2026-08-26T21:11:50.580",
+   "orientation": 8,
+   "bytes": 54148758
+  },
+  "Outdoor/Outdoor Shoot 6/Raw/DSC_6728.NEF": {
+   "captured": "2026-08-26T21:11:52.150",
+   "orientation": 8,
+   "bytes": 54243709
+  },
+  "Outdoor/Outdoor Shoot 6/Raw/DSC_6729.NEF": {
+   "captured": "2026-08-26T21:11:52.710",
+   "orientation": 8,
+   "bytes": 54374487
+  },
+  "Outdoor/Outdoor Shoot 6/Raw/DSC_6731.NEF": {
+   "captured": "2026-08-26T21:11:54.990",
+   "orientation": 8,
+   "bytes": 54156535
+  },
+  "Outdoor/Outdoor Shoot 6/Raw/DSC_6733.NEF": {
+   "captured": "2026-08-26T21:11:56.750",
+   "orientation": 8,
+   "bytes": 54414134
+  },
+  "Outdoor/Outdoor Shoot 6/Raw/DSC_6734.NEF": {
+   "captured": "2026-08-26T21:11:57.720",
+   "orientation": 8,
+   "bytes": 54430105
+  },
+  "Outdoor/Outdoor Shoot 6/Raw/DSC_6736.NEF": {
+   "captured": "2026-08-26T21:11:59.050",
+   "orientation": 8,
+   "bytes": 53445705
+  },
+  "Outdoor/Outdoor Shoot 6/Raw/DSC_6737.NEF": {
+   "captured": "2026-08-26T21:11:59.860",
+   "orientation": 8,
+   "bytes": 53713423
+  },
+  "Outdoor/Outdoor Shoot 6/Raw/DSC_6741.NEF": {
+   "captured": "2026-08-26T21:12:03.280",
+   "orientation": 8,
+   "bytes": 53861967
+  },
+  "Outdoor/Outdoor Shoot 6/Raw/DSC_6742.NEF": {
+   "captured": "2026-08-26T21:12:04.350",
+   "orientation": 8,
+   "bytes": 53529276
+  },
+  "Outdoor/Outdoor Shoot 6/Raw/DSC_6743.NEF": {
+   "captured": "2026-08-26T21:12:04.990",
+   "orientation": 8,
+   "bytes": 53784175
+  },
+  "Outdoor/Outdoor Shoot 6/Raw/DSC_6744.NEF": {
+   "captured": "2026-08-26T21:12:25.610",
+   "orientation": 8,
+   "bytes": 53168465
+  },
+  "Outdoor/Outdoor Shoot 6/Raw/DSC_6749.NEF": {
+   "captured": "2026-08-26T21:12:36.050",
+   "orientation": 8,
+   "bytes": 53841400
+  },
+  "Outdoor/Outdoor Shoot 6/Raw/DSC_6750.NEF": {
+   "captured": "2026-08-26T21:12:37.220",
+   "orientation": 8,
+   "bytes": 53506793
+  },
+  "Outdoor/Outdoor Shoot 6/Raw/DSC_6752.NEF": {
+   "captured": "2026-08-26T21:12:39.080",
+   "orientation": 8,
+   "bytes": 56716530
+  },
+  "Outdoor/Outdoor Shoot 6/Raw/DSC_6754.NEF": {
+   "captured": "2026-08-26T21:12:41.680",
+   "orientation": 8,
+   "bytes": 55213493
+  },
+  "Outdoor/Outdoor Shoot 6/Raw/DSC_6756.NEF": {
+   "captured": "2026-08-26T21:12:43.280",
+   "orientation": 8,
+   "bytes": 56410248
+  },
+  "Outdoor/Outdoor Shoot 6/Raw/DSC_6759.NEF": {
+   "captured": "2026-08-26T21:12:47.230",
+   "orientation": 8,
+   "bytes": 55688961
+  },
+  "Outdoor/Outdoor Shoot 6/Raw/DSC_6760.NEF": {
+   "captured": "2026-08-26T21:12:47.970",
+   "orientation": 8,
+   "bytes": 55464409
+  },
+  "Outdoor/Outdoor Shoot 6/Raw/DSC_6763.NEF": {
+   "captured": "2026-08-26T21:12:53.640",
+   "orientation": 8,
+   "bytes": 55575576
+  },
+  "Outdoor/Outdoor Shoot 6/Raw/DSC_6767.NEF": {
+   "captured": "2026-08-26T21:15:04.100",
+   "orientation": 1,
+   "bytes": 53316051
+  },
+  "Outdoor/Outdoor Shoot 6/Raw/DSC_6770.NEF": {
+   "captured": "2026-08-26T21:15:07.580",
+   "orientation": 1,
+   "bytes": 52851252
+  },
+  "Outdoor/Outdoor Shoot 6/Raw/DSC_6777.NEF": {
+   "captured": "2026-08-26T21:15:23.830",
+   "orientation": 1,
+   "bytes": 52883290
+  },
+  "Outdoor/Outdoor Shoot 6/Raw/DSC_6779.NEF": {
+   "captured": "2026-08-26T21:15:27.240",
+   "orientation": 1,
+   "bytes": 52874887
+  },
+  "Outdoor/Outdoor Shoot 6/Raw/DSC_6793.NEF": {
+   "captured": "2026-08-26T21:16:15.800",
+   "orientation": 8,
+   "bytes": 54101425
+  },
+  "Outdoor/Outdoor Shoot 6/Raw/DSC_6802.NEF": {
+   "captured": "2026-08-26T21:25:16.710",
+   "orientation": 8,
+   "bytes": 55077986
+  },
+  "Outdoor/Outdoor Shoot 6/Raw/DSC_6811.NEF": {
+   "captured": "2026-08-26T21:26:17.990",
+   "orientation": 1,
+   "bytes": 49962329
+  },
+  "Outdoor/Outdoor Shoot 6/Raw/DSC_6828.NEF": {
+   "captured": "2026-08-26T21:27:53.770",
+   "orientation": 8,
+   "bytes": 58738507
+  },
+  "Outdoor/Outdoor Shoot 6/Raw/DSC_6833.NEF": {
+   "captured": "2026-08-26T21:28:03.220",
+   "orientation": 8,
+   "bytes": 58406026
+  },
+  "Outdoor/Outdoor Shoot 6/Raw/DSC_6846.NEF": {
+   "captured": "2026-08-26T21:28:15.240",
+   "orientation": 8,
+   "bytes": 56990315
+  },
+  "Outdoor/Outdoor Shoot 7/Raw/DSC_6669.NEF": {
+   "captured": "2026-08-26T21:00:17.720",
+   "orientation": 8,
+   "bytes": 49410832
+  },
+  "Outdoor/Outdoor Shoot 7/Raw/DSC_6671.NEF": {
+   "captured": "2026-08-26T21:00:35.880",
+   "orientation": 8,
+   "bytes": 49602900
+  },
+  "Outdoor/Outdoor Shoot 7/Raw/DSC_6673.NEF": {
+   "captured": "2026-08-26T21:00:39.990",
+   "orientation": 8,
+   "bytes": 50079166
+  },
+  "Outdoor/Outdoor Shoot 7/Raw/DSC_6679.NEF": {
+   "captured": "2026-08-26T21:01:32.870",
+   "orientation": 8,
+   "bytes": 59217091
+  },
+  "Outdoor/Outdoor Shoot 7/Raw/DSC_6690.NEF": {
+   "captured": "2026-08-26T21:02:10.390",
+   "orientation": 8,
+   "bytes": 59551913
+  },
+  "Outdoor/Outdoor Shoot 7/Raw/DSC_6695.NEF": {
+   "captured": "2026-08-26T21:02:46.530",
+   "orientation": 8,
+   "bytes": 58416112
+  },
+  "Outdoor/Outdoor Shoot 7/Raw/DSC_6697.NEF": {
+   "captured": "2026-08-26T21:02:53.280",
+   "orientation": 8,
+   "bytes": 56849566
+  },
+  "Outdoor/Outdoor Shoot 7/Raw/DSC_6698.NEF": {
+   "captured": "2026-08-26T21:02:55.370",
+   "orientation": 8,
+   "bytes": 58969021
+  },
+  "Outdoor/Outdoor Shoot 7/Raw/DSC_6700.NEF": {
+   "captured": "2026-08-26T21:07:31.910",
+   "orientation": 8,
+   "bytes": 46163976
+  },
+  "Outdoor/Outdoor Shoot 7/Raw/DSC_6701.NEF": {
+   "captured": "2026-08-26T21:07:38.230",
+   "orientation": 8,
+   "bytes": 45987993
+  },
+  "Outdoor/Outdoor Shoot 7/Raw/DSC_6702.NEF": {
+   "captured": "2026-08-26T21:07:46.370",
+   "orientation": 8,
+   "bytes": 54365485
+  },
+  "Outdoor/Outdoor Shoot 7/Raw/DSC_6704.NEF": {
+   "captured": "2026-08-26T21:09:11.490",
+   "orientation": 8,
+   "bytes": 57297351
+  },
+  "Outdoor/Outdoor Shoot 7/Raw/DSC_6706.NEF": {
+   "captured": "2026-08-26T21:09:54.550",
+   "orientation": 8,
+   "bytes": 55392133
+  },
+  "Outdoor/Outdoor Shoot 7/Raw/DSC_6707.NEF": {
+   "captured": "2026-08-26T21:09:59.250",
+   "orientation": 8,
+   "bytes": 55922536
+  },
+  "Outdoor/Outdoor Shoot 7/Raw/DSC_6712.NEF": {
+   "captured": "2026-08-26T21:10:40.970",
+   "orientation": 8,
+   "bytes": 54960904
+  },
+  "Outdoor/Outdoor Shoot 7/Raw/DSC_6713.NEF": {
+   "captured": "2026-08-26T21:10:47.190",
+   "orientation": 8,
+   "bytes": 55089925
+  },
+  "Outdoor/Outdoor Shoot 7/Raw/DSC_6714.NEF": {
+   "captured": "2026-08-26T21:10:49.960",
+   "orientation": 8,
+   "bytes": 55033783
+  },
+  "Outdoor/Outdoor Shoot 7/Raw/DSC_6715.NEF": {
+   "captured": "2026-08-26T21:10:51.380",
+   "orientation": 8,
+   "bytes": 54959260
+  },
+  "Outdoor/Outdoor Shoot 7/Raw/DSC_6718.NEF": {
+   "captured": "2026-08-26T21:10:55.440",
+   "orientation": 8,
+   "bytes": 54575056
+  },
+  "Outdoor/Outdoor Shoot 7/Raw/DSC_6719.NEF": {
+   "captured": "2026-08-26T21:10:56.960",
+   "orientation": 8,
+   "bytes": 54431712
+  },
+  "Outdoor/Outdoor Shoot 7/Raw/DSC_6722.NEF": {
+   "captured": "2026-08-26T21:11:02.750",
+   "orientation": 8,
+   "bytes": 54491080
+  },
+  "Outdoor/Outdoor Shoot 7/Raw/DSC_6724.NEF": {
+   "captured": "2026-08-26T21:11:05.410",
+   "orientation": 8,
+   "bytes": 54557756
+  },
+  "Outdoor/Outdoor Shoot 7/Raw/DSC_6725.NEF": {
+   "captured": "2026-08-26T21:11:07.100",
+   "orientation": 8,
+   "bytes": 54442627
+  },
+  "Outdoor/Outdoor Shoot 7/Raw/DSC_6732.NEF": {
+   "captured": "2026-08-26T21:11:55.780",
+   "orientation": 8,
+   "bytes": 54368704
+  },
+  "Outdoor/Outdoor Shoot 7/Raw/DSC_6735.NEF": {
+   "captured": "2026-08-26T21:11:58.430",
+   "orientation": 8,
+   "bytes": 53987220
+  },
+  "Outdoor/Outdoor Shoot 7/Raw/DSC_6738.NEF": {
+   "captured": "2026-08-26T21:12:00.370",
+   "orientation": 8,
+   "bytes": 53578553
+  },
+  "Outdoor/Outdoor Shoot 7/Raw/DSC_6739.NEF": {
+   "captured": "2026-08-26T21:12:01.110",
+   "orientation": 8,
+   "bytes": 54123467
+  },
+  "Outdoor/Outdoor Shoot 7/Raw/DSC_6746.NEF": {
+   "captured": "2026-08-26T21:12:31.340",
+   "orientation": 8,
+   "bytes": 54180203
+  },
+  "Outdoor/Outdoor Shoot 7/Raw/DSC_6747.NEF": {
+   "captured": "2026-08-26T21:12:33.220",
+   "orientation": 8,
+   "bytes": 54893971
+  },
+  "Outdoor/Outdoor Shoot 7/Raw/DSC_6748.NEF": {
+   "captured": "2026-08-26T21:12:34.950",
+   "orientation": 8,
+   "bytes": 54720750
+  },
+  "Outdoor/Outdoor Shoot 7/Raw/DSC_6753.NEF": {
+   "captured": "2026-08-26T21:12:39.630",
+   "orientation": 8,
+   "bytes": 57074238
+  },
+  "Outdoor/Outdoor Shoot 7/Raw/DSC_6762.NEF": {
+   "captured": "2026-08-26T21:12:52.050",
+   "orientation": 8,
+   "bytes": 55450455
+  },
+  "Outdoor/Outdoor Shoot 7/Raw/DSC_6764.NEF": {
+   "captured": "2026-08-26T21:13:00.460",
+   "orientation": 8,
+   "bytes": 55265751
+  },
+  "Outdoor/Outdoor Shoot 7/Raw/DSC_6768.NEF": {
+   "captured": "2026-08-26T21:15:05.600",
+   "orientation": 1,
+   "bytes": 52781388
+  },
+  "Outdoor/Outdoor Shoot 7/Raw/DSC_6774.NEF": {
+   "captured": "2026-08-26T21:15:13.270",
+   "orientation": 1,
+   "bytes": 52229093
+  },
+  "Outdoor/Outdoor Shoot 7/Raw/DSC_6775.NEF": {
+   "captured": "2026-08-26T21:15:19.070",
+   "orientation": 1,
+   "bytes": 52970826
+  },
+  "Outdoor/Outdoor Shoot 7/Raw/DSC_6798.NEF": {
+   "captured": "2026-08-26T21:25:01.740",
+   "orientation": 8,
+   "bytes": 55946466
+  },
+  "Outdoor/Outdoor Shoot 7/Raw/DSC_6804.NEF": {
+   "captured": "2026-08-26T21:25:21.250",
+   "orientation": 8,
+   "bytes": 56906671
+  },
+  "Outdoor/Outdoor Shoot 7/Raw/DSC_6824.NEF": {
+   "captured": "2026-08-26T21:27:29.830",
+   "orientation": 8,
+   "bytes": 58092130
+  },
+  "Outdoor/Outdoor Shoot 8/Raw/DSC_6500.NEF": {
+   "captured": "2026-08-26T20:46:01.240",
+   "orientation": 8,
+   "bytes": 52504183
+  },
+  "Outdoor/Outdoor Shoot 8/Raw/DSC_6612.NEF": {
+   "captured": "2026-08-26T20:54:25.270",
+   "orientation": 8,
+   "bytes": 51972774
+  },
+  "Outdoor/Outdoor Shoot 8/Raw/DSC_6628.NEF": {
+   "captured": "2026-08-26T20:57:16.410",
+   "orientation": 8,
+   "bytes": 50435605
+  },
+  "Outdoor/Outdoor Shoot 8/Raw/DSC_6629.NEF": {
+   "captured": "2026-08-26T20:57:18.200",
+   "orientation": 8,
+   "bytes": 48465708
+  },
+  "Outdoor/Outdoor Shoot 8/Raw/DSC_6630.NEF": {
+   "captured": "2026-08-26T20:57:20.440",
+   "orientation": 8,
+   "bytes": 47554463
+  },
+  "Outdoor/Outdoor Shoot 8/Raw/DSC_6631.NEF": {
+   "captured": "2026-08-26T20:57:21.370",
+   "orientation": 8,
+   "bytes": 46413853
+  },
+  "Outdoor/Outdoor Shoot 8/Raw/DSC_6633.NEF": {
+   "captured": "2026-08-26T20:57:24.560",
+   "orientation": 8,
+   "bytes": 50370849
+  },
+  "Outdoor/Outdoor Shoot 8/Raw/DSC_6635.NEF": {
+   "captured": "2026-08-26T20:57:27.760",
+   "orientation": 8,
+   "bytes": 51409024
+  },
+  "Outdoor/Outdoor Shoot 8/Raw/DSC_6636.NEF": {
+   "captured": "2026-08-26T20:57:34.990",
+   "orientation": 8,
+   "bytes": 50203609
+  },
+  "Outdoor/Outdoor Shoot 8/Raw/DSC_6637.NEF": {
+   "captured": "2026-08-26T20:57:37.210",
+   "orientation": 8,
+   "bytes": 50753288
+  },
+  "Outdoor/Outdoor Shoot 8/Raw/DSC_6647.NEF": {
+   "captured": "2026-08-26T20:58:00.060",
+   "orientation": 1,
+   "bytes": 51086102
+  },
+  "Outdoor/Outdoor Shoot 8/Raw/DSC_6648.NEF": {
+   "captured": "2026-08-26T20:58:03.650",
+   "orientation": 8,
+   "bytes": 53886226
+  },
+  "Outdoor/Outdoor Shoot 8/Raw/DSC_6652.NEF": {
+   "captured": "2026-08-26T20:58:19.800",
+   "orientation": 1,
+   "bytes": 50433149
+  },
+  "Outdoor/Outdoor Shoot 8/Raw/DSC_6655.NEF": {
+   "captured": "2026-08-26T20:58:24.130",
+   "orientation": 8,
+   "bytes": 49996710
+  },
+  "Outdoor/Outdoor Shoot 8/Raw/DSC_6656.NEF": {
+   "captured": "2026-08-26T20:58:26.530",
+   "orientation": 8,
+   "bytes": 50495905
+  },
+  "Outdoor/Outdoor Shoot 8/Raw/DSC_6659.NEF": {
+   "captured": "2026-08-26T20:58:49.990",
+   "orientation": 8,
+   "bytes": 45842083
+  },
+  "Outdoor/Outdoor Shoot 8/Raw/DSC_6660.NEF": {
+   "captured": "2026-08-26T20:58:50.600",
+   "orientation": 8,
+   "bytes": 45846491
+  },
+  "Outdoor/Outdoor Shoot 8/Raw/DSC_6661.NEF": {
+   "captured": "2026-08-26T20:58:51.830",
+   "orientation": 8,
+   "bytes": 55350296
+  },
+  "Outdoor/Outdoor Shoot 8/Raw/DSC_6662.NEF": {
+   "captured": "2026-08-26T20:58:56.290",
+   "orientation": 1,
+   "bytes": 52376079
+  },
+  "Outdoor/Outdoor Shoot 8/Raw/DSC_6664.NEF": {
+   "captured": "2026-08-26T20:59:58.370",
+   "orientation": 8,
+   "bytes": 52439375
+  },
+  "Outdoor/Outdoor Shoot 8/Raw/DSC_6665.NEF": {
+   "captured": "2026-08-26T21:00:00.780",
+   "orientation": 8,
+   "bytes": 50904809
+  },
+  "Outdoor/Outdoor Shoot 8/Raw/DSC_6675.NEF": {
+   "captured": "2026-08-26T21:00:48.240",
+   "orientation": 8,
+   "bytes": 50853511
+  },
+  "Outdoor/Outdoor Shoot 8/Raw/DSC_6677.NEF": {
+   "captured": "2026-08-26T21:01:25.670",
+   "orientation": 8,
+   "bytes": 57919037
+  },
+  "Outdoor/Outdoor Shoot 8/Raw/DSC_6678.NEF": {
+   "captured": "2026-08-26T21:01:30.990",
+   "orientation": 8,
+   "bytes": 54246289
+  },
+  "Outdoor/Outdoor Shoot 8/Raw/DSC_6680.NEF": {
+   "captured": "2026-08-26T21:01:34.990",
+   "orientation": 8,
+   "bytes": 58634588
+  },
+  "Outdoor/Outdoor Shoot 8/Raw/DSC_6683.NEF": {
+   "captured": "2026-08-26T21:01:39.370",
+   "orientation": 8,
+   "bytes": 59046175
+  },
+  "Outdoor/Outdoor Shoot 8/Raw/DSC_6684.NEF": {
+   "captured": "2026-08-26T21:01:40.670",
+   "orientation": 8,
+   "bytes": 56351486
+  },
+  "Outdoor/Outdoor Shoot 8/Raw/DSC_6685.NEF": {
+   "captured": "2026-08-26T21:01:41.660",
+   "orientation": 8,
+   "bytes": 58695187
+  },
+  "Outdoor/Outdoor Shoot 8/Raw/DSC_6686.NEF": {
+   "captured": "2026-08-26T21:01:47.670",
+   "orientation": 8,
+   "bytes": 61607845
+  },
+  "Outdoor/Outdoor Shoot 8/Raw/DSC_6689.NEF": {
+   "captured": "2026-08-26T21:02:07.400",
+   "orientation": 8,
+   "bytes": 59733612
+  },
+  "Outdoor/Outdoor Shoot 8/Raw/DSC_6691.NEF": {
+   "captured": "2026-08-26T21:02:29.060",
+   "orientation": 1,
+   "bytes": 59600114
+  },
+  "Outdoor/Outdoor Shoot 8/Raw/DSC_6692.NEF": {
+   "captured": "2026-08-26T21:02:32.530",
+   "orientation": 1,
+   "bytes": 59219007
+  },
+  "Outdoor/Outdoor Shoot 8/Raw/DSC_6693.NEF": {
+   "captured": "2026-08-26T21:02:41.640",
+   "orientation": 8,
+   "bytes": 59036141
+  },
+  "Outdoor/Outdoor Shoot 8/Raw/DSC_6694.NEF": {
+   "captured": "2026-08-26T21:02:43.580",
+   "orientation": 8,
+   "bytes": 59528735
+  },
+  "Outdoor/Outdoor Shoot 8/Raw/DSC_6696.NEF": {
+   "captured": "2026-08-26T21:02:48.740",
+   "orientation": 8,
+   "bytes": 57592744
+  },
+  "Outdoor/Outdoor Shoot 8/Raw/DSC_6703.NEF": {
+   "captured": "2026-08-26T21:07:47.740",
+   "orientation": 8,
+   "bytes": 54338731
+  },
+  "Outdoor/Outdoor Shoot 8/Raw/DSC_6705.NEF": {
+   "captured": "2026-08-26T21:09:52.790",
+   "orientation": 8,
+   "bytes": 55785918
+  },
+  "Outdoor/Outdoor Shoot 8/Raw/DSC_6710.NEF": {
+   "captured": "2026-08-26T21:10:30.930",
+   "orientation": 8,
+   "bytes": 55119643
+  },
+  "Outdoor/Outdoor Shoot 8/Raw/DSC_6730.NEF": {
+   "captured": "2026-08-26T21:11:53.230",
+   "orientation": 8,
+   "bytes": 54270027
+  },
+  "Outdoor/Outdoor Shoot 8/Raw/DSC_6765.NEF": {
+   "captured": "2026-08-26T21:13:02.210",
+   "orientation": 8,
+   "bytes": 55018755
+  },
+  "Outdoor/Outdoor Shoot 9/Raw/DSC_6591.NEF": {
+   "captured": "2026-08-26T20:52:48.610",
+   "orientation": 8,
+   "bytes": 52953814
+  },
+  "Outdoor/Outdoor Shoot 9/Raw/DSC_6594.NEF": {
+   "captured": "2026-08-26T20:52:54.250",
+   "orientation": 8,
+   "bytes": 53185175
+  },
+  "Outdoor/Outdoor Shoot 9/Raw/DSC_6597.NEF": {
+   "captured": "2026-08-26T20:53:31.120",
+   "orientation": 8,
+   "bytes": 52217639
+  },
+  "Outdoor/Outdoor Shoot 9/Raw/DSC_6598.NEF": {
+   "captured": "2026-08-26T20:53:32.400",
+   "orientation": 8,
+   "bytes": 51861513
+  },
+  "Outdoor/Outdoor Shoot 9/Raw/DSC_6601.NEF": {
+   "captured": "2026-08-26T20:53:37.970",
+   "orientation": 8,
+   "bytes": 52335560
+  },
+  "Outdoor/Outdoor Shoot 9/Raw/DSC_6602.NEF": {
+   "captured": "2026-08-26T20:53:40.690",
+   "orientation": 8,
+   "bytes": 52282959
+  },
+  "Outdoor/Outdoor Shoot 9/Raw/DSC_6604.NEF": {
+   "captured": "2026-08-26T20:54:08.520",
+   "orientation": 8,
+   "bytes": 52773260
+  },
+  "Outdoor/Outdoor Shoot 9/Raw/DSC_6609.NEF": {
+   "captured": "2026-08-26T20:54:17.920",
+   "orientation": 8,
+   "bytes": 52198146
+  },
+  "Outdoor/Outdoor Shoot 9/Raw/DSC_6610.NEF": {
+   "captured": "2026-08-26T20:54:19.360",
+   "orientation": 8,
+   "bytes": 52906451
+  },
+  "Outdoor/Outdoor Shoot 9/Raw/DSC_6613.NEF": {
+   "captured": "2026-08-26T20:54:32.870",
+   "orientation": 8,
+   "bytes": 52982933
+  },
+  "Outdoor/Outdoor Shoot 9/Raw/DSC_6614.NEF": {
+   "captured": "2026-08-26T20:54:34.530",
+   "orientation": 8,
+   "bytes": 53292853
+  },
+  "Outdoor/Outdoor Shoot 9/Raw/DSC_6615.NEF": {
+   "captured": "2026-08-26T20:54:35.580",
+   "orientation": 8,
+   "bytes": 51976814
+  },
+  "Outdoor/Outdoor Shoot 9/Raw/DSC_6619.NEF": {
+   "captured": "2026-08-26T20:56:47.100",
+   "orientation": 1,
+   "bytes": 47574072
+  },
+  "Outdoor/Outdoor Shoot 9/Raw/DSC_6621.NEF": {
+   "captured": "2026-08-26T20:57:01.260",
+   "orientation": 1,
+   "bytes": 51708997
+  },
+  "Outdoor/Outdoor Shoot 9/Raw/DSC_6623.NEF": {
+   "captured": "2026-08-26T20:57:06.510",
+   "orientation": 8,
+   "bytes": 46735944
+  },
+  "Outdoor/Outdoor Shoot 9/Raw/DSC_6624.NEF": {
+   "captured": "2026-08-26T20:57:07.370",
+   "orientation": 8,
+   "bytes": 50990349
+  },
+  "Outdoor/Outdoor Shoot 9/Raw/DSC_6625.NEF": {
+   "captured": "2026-08-26T20:57:09.230",
+   "orientation": 8,
+   "bytes": 47492545
+  },
+  "Outdoor/Outdoor Shoot 9/Raw/DSC_6626.NEF": {
+   "captured": "2026-08-26T20:57:10.540",
+   "orientation": 8,
+   "bytes": 46180612
+  },
+  "Outdoor/Outdoor Shoot 9/Raw/DSC_6632.NEF": {
+   "captured": "2026-08-26T20:57:22.700",
+   "orientation": 8,
+   "bytes": 47857320
+  },
+  "Outdoor/Outdoor Shoot 9/Raw/DSC_6634.NEF": {
+   "captured": "2026-08-26T20:57:26.220",
+   "orientation": 8,
+   "bytes": 46652449
+  },
+  "Outdoor/Outdoor Shoot 9/Raw/DSC_6639.NEF": {
+   "captured": "2026-08-26T20:57:47.840",
+   "orientation": 8,
+   "bytes": 54138106
+  },
+  "Outdoor/Outdoor Shoot 9/Raw/DSC_6641.NEF": {
+   "captured": "2026-08-26T20:57:49.430",
+   "orientation": 8,
+   "bytes": 52638158
+  },
+  "Outdoor/Outdoor Shoot 9/Raw/DSC_6643.NEF": {
+   "captured": "2026-08-26T20:57:52.610",
+   "orientation": 8,
+   "bytes": 53742485
+  },
+  "Outdoor/Outdoor Shoot 9/Raw/DSC_6644.NEF": {
+   "captured": "2026-08-26T20:57:55.720",
+   "orientation": 1,
+   "bytes": 53165331
+  },
+  "Outdoor/Outdoor Shoot 9/Raw/DSC_6645.NEF": {
+   "captured": "2026-08-26T20:57:57.560",
+   "orientation": 1,
+   "bytes": 53634299
+  },
+  "Outdoor/Outdoor Shoot 9/Raw/DSC_6646.NEF": {
+   "captured": "2026-08-26T20:57:58.740",
+   "orientation": 1,
+   "bytes": 51509633
+  },
+  "Outdoor/Outdoor Shoot 9/Raw/DSC_6649.NEF": {
+   "captured": "2026-08-26T20:58:06.560",
+   "orientation": 8,
+   "bytes": 53284326
+  },
+  "Outdoor/Outdoor Shoot 9/Raw/DSC_6650.NEF": {
+   "captured": "2026-08-26T20:58:07.270",
+   "orientation": 8,
+   "bytes": 54013591
+  },
+  "Outdoor/Outdoor Shoot 9/Raw/DSC_6651.NEF": {
+   "captured": "2026-08-26T20:58:11.470",
+   "orientation": 8,
+   "bytes": 52622912
+  },
+  "Outdoor/Outdoor Shoot 9/Raw/DSC_6654.NEF": {
+   "captured": "2026-08-26T20:58:21.870",
+   "orientation": 1,
+   "bytes": 50373286
+  },
+  "Outdoor/Outdoor Shoot 9/Raw/DSC_6658.NEF": {
+   "captured": "2026-08-26T20:58:49.130",
+   "orientation": 8,
+   "bytes": 56073872
+  },
+  "Outdoor/Outdoor Shoot 9/Raw/DSC_6663.NEF": {
+   "captured": "2026-08-26T20:59:02.590",
+   "orientation": 1,
+   "bytes": 55540599
+  },
+  "Outdoor/Outdoor Shoot 9/Raw/DSC_6666.NEF": {
+   "captured": "2026-08-26T21:00:02.510",
+   "orientation": 8,
+   "bytes": 50306170
+  },
+  "Outdoor/Outdoor Shoot 9/Raw/DSC_6667.NEF": {
+   "captured": "2026-08-26T21:00:03.960",
+   "orientation": 8,
+   "bytes": 46381478
+  },
+  "Outdoor/Outdoor Shoot 9/Raw/DSC_6668.NEF": {
+   "captured": "2026-08-26T21:00:05.840",
+   "orientation": 8,
+   "bytes": 49923159
+  },
+  "Outdoor/Outdoor Shoot 9/Raw/DSC_6670.NEF": {
+   "captured": "2026-08-26T21:00:20.130",
+   "orientation": 8,
+   "bytes": 49229799
+  },
+  "Outdoor/Outdoor Shoot 9/Raw/DSC_6672.NEF": {
+   "captured": "2026-08-26T21:00:37.220",
+   "orientation": 8,
+   "bytes": 46054239
+  },
+  "Outdoor/Outdoor Shoot 9/Raw/DSC_6674.NEF": {
+   "captured": "2026-08-26T21:00:45.780",
+   "orientation": 8,
+   "bytes": 49102978
+  },
+  "Outdoor/Outdoor Shoot 9/Raw/DSC_6676.NEF": {
+   "captured": "2026-08-26T21:01:23.820",
+   "orientation": 8,
+   "bytes": 59098912
+  },
+  "Outdoor/Outdoor Shoot 9/Raw/DSC_6687.NEF": {
+   "captured": "2026-08-26T21:01:56.990",
+   "orientation": 8,
+   "bytes": 58860984
+  },
+  "Outdoor/Outdoor Shoot 9/Raw/DSC_6688.NEF": {
+   "captured": "2026-08-26T21:01:58.240",
+   "orientation": 8,
+   "bytes": 60503447
+  },
+  "INDOOR/Indoor Shoot/Raw/DSC_4256.NEF": {
+   "captured": "2026-07-08T02:12:40.170",
+   "orientation": 8,
+   "bytes": 49341245
+  },
+  "INDOOR/Indoor Shoot/Raw/DSC_4265.NEF": {
+   "captured": "2026-07-08T02:12:51.240",
+   "orientation": 8,
+   "bytes": 45127913
+  },
+  "INDOOR/Indoor Shoot/Raw/DSC_4268.NEF": {
+   "captured": "2026-07-08T02:12:53.860",
+   "orientation": 8,
+   "bytes": 50171187
+  },
+  "INDOOR/Indoor Shoot/Raw/DSC_4277.NEF": {
+   "captured": "2026-07-08T02:13:02.040",
+   "orientation": 8,
+   "bytes": 49729990
+  },
+  "INDOOR/Indoor Shoot/Raw/DSC_4278.NEF": {
+   "captured": "2026-07-08T02:13:02.780",
+   "orientation": 8,
+   "bytes": 45060376
+  },
+  "INDOOR/Indoor Shoot/Raw/DSC_4280.NEF": {
+   "captured": "2026-07-08T02:13:32.570",
+   "orientation": 8,
+   "bytes": 50492039
+  },
+  "INDOOR/Indoor Shoot/Raw/DSC_4283.NEF": {
+   "captured": "2026-07-08T02:13:41.040",
+   "orientation": 8,
+   "bytes": 45083032
+  },
+  "INDOOR/Indoor Shoot/Raw/DSC_4290.NEF": {
+   "captured": "2026-07-08T02:13:50.510",
+   "orientation": 8,
+   "bytes": 49586612
+  },
+  "INDOOR/Indoor Shoot/Raw/DSC_4293.NEF": {
+   "captured": "2026-07-08T02:13:55.580",
+   "orientation": 8,
+   "bytes": 49840453
+  },
+  "INDOOR/Indoor Shoot/Raw/DSC_4312.NEF": {
+   "captured": "2026-07-08T02:18:27.440",
+   "orientation": 8,
+   "bytes": 47117046
+  },
+  "INDOOR/Indoor Shoot/Raw/DSC_4314.NEF": {
+   "captured": "2026-07-08T02:18:30.370",
+   "orientation": 8,
+   "bytes": 47110933
+  },
+  "INDOOR/Indoor Shoot/Raw/DSC_4317.NEF": {
+   "captured": "2026-07-08T02:18:33.370",
+   "orientation": 8,
+   "bytes": 47069079
+  },
+  "INDOOR/Indoor Shoot/Raw/DSC_4323.NEF": {
+   "captured": "2026-07-08T02:19:22.320",
+   "orientation": 8,
+   "bytes": 47248852
+  },
+  "INDOOR/Indoor Shoot/Raw/DSC_4324.NEF": {
+   "captured": "2026-07-08T02:19:23.690",
+   "orientation": 8,
+   "bytes": 47286084
+  },
+  "INDOOR/Indoor Shoot/Raw/DSC_4334.NEF": {
+   "captured": "2026-07-08T02:20:17.320",
+   "orientation": 8,
+   "bytes": 47719963
+  },
+  "INDOOR/Indoor Shoot/Raw/DSC_4338.NEF": {
+   "captured": "2026-07-08T02:20:27.420",
+   "orientation": 8,
+   "bytes": 47620924
+  },
+  "INDOOR/Indoor Shoot/Raw/DSC_4339.NEF": {
+   "captured": "2026-07-08T02:20:29.040",
+   "orientation": 8,
+   "bytes": 47745587
+  },
+  "INDOOR/Indoor Shoot/Raw/DSC_4340.NEF": {
+   "captured": "2026-07-08T02:20:30.610",
+   "orientation": 8,
+   "bytes": 47484751
+  },
+  "INDOOR/Indoor Shoot/Raw/DSC_4341.NEF": {
+   "captured": "2026-07-08T02:20:31.830",
+   "orientation": 8,
+   "bytes": 47507327
+  },
+  "INDOOR/Indoor Shoot/Raw/DSC_4342.NEF": {
+   "captured": "2026-07-08T02:20:32.880",
+   "orientation": 8,
+   "bytes": 47790901
+  },
+  "INDOOR/Indoor Shoot/Raw/DSC_4343.NEF": {
+   "captured": "2026-07-08T02:20:38.810",
+   "orientation": 8,
+   "bytes": 47569270
+  },
+  "INDOOR/Indoor Shoot/Raw/DSC_4345.NEF": {
+   "captured": "2026-07-08T02:20:46.730",
+   "orientation": 8,
+   "bytes": 47324493
+  },
+  "INDOOR/Indoor Shoot/Raw/DSC_4347.NEF": {
+   "captured": "2026-07-08T02:21:17.540",
+   "orientation": 8,
+   "bytes": 47534059
+  },
+  "INDOOR/Indoor Shoot/Raw/DSC_4349.NEF": {
+   "captured": "2026-07-08T02:22:06.640",
+   "orientation": 8,
+   "bytes": 47761360
+  },
+  "INDOOR/Indoor Shoot/Raw/DSC_4352.NEF": {
+   "captured": "2026-07-08T02:22:41.270",
+   "orientation": 8,
+   "bytes": 44986829
+  },
+  "INDOOR/Indoor Shoot/Raw/DSC_4353.NEF": {
+   "captured": "2026-07-08T02:23:00.200",
+   "orientation": 8,
+   "bytes": 47305678
+  },
+  "INDOOR/Indoor Shoot/Raw/DSC_4356.NEF": {
+   "captured": "2026-07-08T02:23:44.540",
+   "orientation": 8,
+   "bytes": 47458443
+  },
+  "INDOOR/Indoor Shoot/Raw/DSC_4361.NEF": {
+   "captured": "2026-07-08T02:24:59.120",
+   "orientation": 8,
+   "bytes": 47230336
+  },
+  "INDOOR/Indoor Shoot/Raw/DSC_4363.NEF": {
+   "captured": "2026-07-08T02:25:36.590",
+   "orientation": 8,
+   "bytes": 47711925
+  },
+  "INDOOR/Indoor Shoot/Raw/DSC_4364.NEF": {
+   "captured": "2026-07-08T02:25:38.410",
+   "orientation": 8,
+   "bytes": 47825258
+  },
+  "INDOOR/Indoor Shoot/Raw/DSC_4365.NEF": {
+   "captured": "2026-07-08T02:25:39.590",
+   "orientation": 8,
+   "bytes": 47534885
+  },
+  "INDOOR/Indoor Shoot/Raw/DSC_4366.NEF": {
+   "captured": "2026-07-08T02:25:43.500",
+   "orientation": 8,
+   "bytes": 47322001
+  },
+  "INDOOR/Indoor Shoot/Raw/DSC_4367.NEF": {
+   "captured": "2026-07-08T02:26:00.110",
+   "orientation": 8,
+   "bytes": 47261698
+  },
+  "INDOOR/Indoor Shoot/Raw/DSC_4369.NEF": {
+   "captured": "2026-07-08T02:26:31.930",
+   "orientation": 8,
+   "bytes": 47274974
+  },
+  "INDOOR/Indoor Shoot/Raw/DSC_4374.NEF": {
+   "captured": "2026-07-08T02:27:06.220",
+   "orientation": 8,
+   "bytes": 47240752
+  },
+  "INDOOR/Indoor Shoot/Raw/DSC_4375.NEF": {
+   "captured": "2026-07-08T02:27:11.980",
+   "orientation": 8,
+   "bytes": 47295589
+  },
+  "INDOOR/Indoor Shoot/Raw/DSC_4376.NEF": {
+   "captured": "2026-07-08T03:20:03.640",
+   "orientation": 8,
+   "bytes": 48839561
+  },
+  "INDOOR/Indoor Shoot/Raw/DSC_4378.NEF": {
+   "captured": "2026-07-08T03:20:11.730",
+   "orientation": 8,
+   "bytes": 49871997
+  },
+  "INDOOR/Indoor Shoot/Raw/DSC_4379.NEF": {
+   "captured": "2026-07-08T03:20:13.070",
+   "orientation": 8,
+   "bytes": 49740853
+  },
+  "INDOOR/Indoor Shoot/Raw/DSC_4381.NEF": {
+   "captured": "2026-07-08T03:20:15.600",
+   "orientation": 8,
+   "bytes": 50014317
+  },
+  "INDOOR/Indoor Shoot/Raw/DSC_4382.NEF": {
+   "captured": "2026-07-08T03:20:16.290",
+   "orientation": 8,
+   "bytes": 49730523
+  },
+  "INDOOR/Indoor Shoot/Raw/DSC_4383.NEF": {
+   "captured": "2026-07-08T03:20:17.620",
+   "orientation": 8,
+   "bytes": 49928596
+  },
+  "INDOOR/Indoor Shoot/Raw/DSC_4385.NEF": {
+   "captured": "2026-07-08T03:20:34.930",
+   "orientation": 8,
+   "bytes": 49981585
+  },
+  "INDOOR/Indoor Shoot/Raw/DSC_4389.NEF": {
+   "captured": "2026-07-08T03:20:44.280",
+   "orientation": 8,
+   "bytes": 49687087
+  },
+  "INDOOR/Indoor Shoot 10/Raw/DSC_3940.NEF": {
+   "captured": "2026-07-08T01:05:24.340",
+   "orientation": 8,
+   "bytes": 51659734
+  },
+  "INDOOR/Indoor Shoot 10/Raw/DSC_3950.NEF": {
+   "captured": "2026-07-08T01:05:44.990",
+   "orientation": 8,
+   "bytes": 51539353
+  },
+  "INDOOR/Indoor Shoot 10/Raw/DSC_3952.NEF": {
+   "captured": "2026-07-08T01:05:46.990",
+   "orientation": 8,
+   "bytes": 45058396
+  },
+  "INDOOR/Indoor Shoot 10/Raw/DSC_3954.NEF": {
+   "captured": "2026-07-08T01:05:50.630",
+   "orientation": 8,
+   "bytes": 50580450
+  },
+  "INDOOR/Indoor Shoot 10/Raw/DSC_3955.NEF": {
+   "captured": "2026-07-08T01:06:04.040",
+   "orientation": 8,
+   "bytes": 52081523
+  },
+  "INDOOR/Indoor Shoot 10/Raw/DSC_3956.NEF": {
+   "captured": "2026-07-08T01:06:06.130",
+   "orientation": 8,
+   "bytes": 49951491
+  },
+  "INDOOR/Indoor Shoot 10/Raw/DSC_3964.NEF": {
+   "captured": "2026-07-08T01:06:19.580",
+   "orientation": 8,
+   "bytes": 48919329
+  },
+  "INDOOR/Indoor Shoot 10/Raw/DSC_3969.NEF": {
+   "captured": "2026-07-08T01:06:32.220",
+   "orientation": 8,
+   "bytes": 49022753
+  },
+  "INDOOR/Indoor Shoot 10/Raw/DSC_3970.NEF": {
+   "captured": "2026-07-08T01:06:38.190",
+   "orientation": 8,
+   "bytes": 50227337
+  },
+  "INDOOR/Indoor Shoot 10/Raw/DSC_3974.NEF": {
+   "captured": "2026-07-08T01:06:41.100",
+   "orientation": 8,
+   "bytes": 50178920
+  },
+  "INDOOR/Indoor Shoot 10/Raw/DSC_3975.NEF": {
+   "captured": "2026-07-08T01:06:42.570",
+   "orientation": 8,
+   "bytes": 50434790
+  },
+  "INDOOR/Indoor Shoot 10/Raw/DSC_3976.NEF": {
+   "captured": "2026-07-08T01:06:43.860",
+   "orientation": 8,
+   "bytes": 50370917
+  },
+  "INDOOR/Indoor Shoot 10/Raw/DSC_3978.NEF": {
+   "captured": "2026-07-08T01:06:46.210",
+   "orientation": 8,
+   "bytes": 50972671
+  },
+  "INDOOR/Indoor Shoot 10/Raw/DSC_3986.NEF": {
+   "captured": "2026-07-08T01:07:30.210",
+   "orientation": 8,
+   "bytes": 51395576
+  },
+  "INDOOR/Indoor Shoot 10/Raw/DSC_3987.NEF": {
+   "captured": "2026-07-08T01:07:31.440",
+   "orientation": 8,
+   "bytes": 51142703
+  },
+  "INDOOR/Indoor Shoot 10/Raw/DSC_3991.NEF": {
+   "captured": "2026-07-08T01:07:36.040",
+   "orientation": 8,
+   "bytes": 51119685
+  },
+  "INDOOR/Indoor Shoot 10/Raw/DSC_3992.NEF": {
+   "captured": "2026-07-08T01:07:37.190",
+   "orientation": 8,
+   "bytes": 51852465
+  },
+  "INDOOR/Indoor Shoot 10/Raw/DSC_3997.NEF": {
+   "captured": "2026-07-08T01:08:05.620",
+   "orientation": 8,
+   "bytes": 52200840
+  },
+  "INDOOR/Indoor Shoot 10/Raw/DSC_3998.NEF": {
+   "captured": "2026-07-08T01:08:06.770",
+   "orientation": 8,
+   "bytes": 52632729
+  },
+  "INDOOR/Indoor Shoot 10/Raw/DSC_4005.NEF": {
+   "captured": "2026-07-08T01:08:15.940",
+   "orientation": 8,
+   "bytes": 50567160
+  },
+  "INDOOR/Indoor Shoot 10/Raw/DSC_4006.NEF": {
+   "captured": "2026-07-08T01:08:16.940",
+   "orientation": 8,
+   "bytes": 52069215
+  },
+  "INDOOR/Indoor Shoot 10/Raw/DSC_4011.NEF": {
+   "captured": "2026-07-08T01:24:37.560",
+   "orientation": 8,
+   "bytes": 49974579
+  },
+  "INDOOR/Indoor Shoot 10/Raw/DSC_4013.NEF": {
+   "captured": "2026-07-08T01:24:39.500",
+   "orientation": 8,
+   "bytes": 50517416
+  },
+  "INDOOR/Indoor Shoot 10/Raw/DSC_4023.NEF": {
+   "captured": "2026-07-08T01:25:07.990",
+   "orientation": 8,
+   "bytes": 49254265
+  },
+  "INDOOR/Indoor Shoot 10/Raw/DSC_4025.NEF": {
+   "captured": "2026-07-08T01:25:19.990",
+   "orientation": 8,
+   "bytes": 49783191
+  },
+  "INDOOR/Indoor Shoot 10/Raw/DSC_4030.NEF": {
+   "captured": "2026-07-08T01:25:25.530",
+   "orientation": 8,
+   "bytes": 49149240
+  },
+  "INDOOR/Indoor Shoot 10/Raw/DSC_4033.NEF": {
+   "captured": "2026-07-08T01:25:31.540",
+   "orientation": 8,
+   "bytes": 49122698
+  },
+  "INDOOR/Indoor Shoot 10/Raw/DSC_4039.NEF": {
+   "captured": "2026-07-08T01:26:00.670",
+   "orientation": 8,
+   "bytes": 52458919
+  },
+  "INDOOR/Indoor Shoot 10/Raw/DSC_4041.NEF": {
+   "captured": "2026-07-08T01:26:12.040",
+   "orientation": 8,
+   "bytes": 51984390
+  },
+  "INDOOR/Indoor Shoot 10/Raw/DSC_4042.NEF": {
+   "captured": "2026-07-08T01:26:13.150",
+   "orientation": 8,
+   "bytes": 54250546
+  },
+  "INDOOR/Indoor Shoot 10/Raw/DSC_4043.NEF": {
+   "captured": "2026-07-08T01:26:14.560",
+   "orientation": 8,
+   "bytes": 53156593
+  },
+  "INDOOR/Indoor Shoot 10/Raw/DSC_4045.NEF": {
+   "captured": "2026-07-08T01:26:20.330",
+   "orientation": 8,
+   "bytes": 52074719
+  },
+  "INDOOR/Indoor Shoot 10/Raw/DSC_4046.NEF": {
+   "captured": "2026-07-08T01:26:21.360",
+   "orientation": 8,
+   "bytes": 50505653
+  },
+  "INDOOR/Indoor Shoot 10/Raw/DSC_4048.NEF": {
+   "captured": "2026-07-08T01:26:29.740",
+   "orientation": 8,
+   "bytes": 51338692
+  },
+  "INDOOR/Indoor Shoot 10/Raw/DSC_4051.NEF": {
+   "captured": "2026-07-08T01:26:46.120",
+   "orientation": 8,
+   "bytes": 50408130
+  },
+  "INDOOR/Indoor Shoot 10/Raw/DSC_4054.NEF": {
+   "captured": "2026-07-08T01:26:49.840",
+   "orientation": 8,
+   "bytes": 50575272
+  },
+  "INDOOR/Indoor Shoot 10/Raw/DSC_4055.NEF": {
+   "captured": "2026-07-08T01:26:51.130",
+   "orientation": 8,
+   "bytes": 50504338
+  },
+  "INDOOR/Indoor Shoot 10/Raw/DSC_4058.NEF": {
+   "captured": "2026-07-08T01:28:52.230",
+   "orientation": 8,
+   "bytes": 53811605
+  },
+  "INDOOR/Indoor Shoot 10/Raw/DSC_4062.NEF": {
+   "captured": "2026-07-08T01:29:01.040",
+   "orientation": 8,
+   "bytes": 52386638
+  },
+  "INDOOR/Indoor Shoot 10/Raw/DSC_4065.NEF": {
+   "captured": "2026-07-08T01:29:05.460",
+   "orientation": 8,
+   "bytes": 51359895
+  },
+  "INDOOR/Indoor Shoot 10/Raw/DSC_4070.NEF": {
+   "captured": "2026-07-08T01:29:22.710",
+   "orientation": 8,
+   "bytes": 49268930
+  },
+  "INDOOR/Indoor Shoot 11/Raw/DSC_3926.NEF": {
+   "captured": "2026-07-08T01:02:03.420",
+   "orientation": 8,
+   "bytes": 52112235
+  },
+  "INDOOR/Indoor Shoot 11/Raw/DSC_3927.NEF": {
+   "captured": "2026-07-08T01:02:18.360",
+   "orientation": 8,
+   "bytes": 52854014
+  },
+  "INDOOR/Indoor Shoot 11/Raw/DSC_3929.NEF": {
+   "captured": "2026-07-08T01:04:11.990",
+   "orientation": 8,
+   "bytes": 51348675
+  },
+  "INDOOR/Indoor Shoot 11/Raw/DSC_3930.NEF": {
+   "captured": "2026-07-08T01:04:17.790",
+   "orientation": 8,
+   "bytes": 50554047
+  },
+  "INDOOR/Indoor Shoot 11/Raw/DSC_3931.NEF": {
+   "captured": "2026-07-08T01:04:18.720",
+   "orientation": 8,
+   "bytes": 49730765
+  },
+  "INDOOR/Indoor Shoot 11/Raw/DSC_3933.NEF": {
+   "captured": "2026-07-08T01:04:20.610",
+   "orientation": 8,
+   "bytes": 51031844
+  },
+  "INDOOR/Indoor Shoot 11/Raw/DSC_3934.NEF": {
+   "captured": "2026-07-08T01:04:22.640",
+   "orientation": 8,
+   "bytes": 50282926
+  },
+  "INDOOR/Indoor Shoot 11/Raw/DSC_3935.NEF": {
+   "captured": "2026-07-08T01:04:25.170",
+   "orientation": 8,
+   "bytes": 49601202
+  },
+  "INDOOR/Indoor Shoot 11/Raw/DSC_3936.NEF": {
+   "captured": "2026-07-08T01:05:14.540",
+   "orientation": 8,
+   "bytes": 52111058
+  },
+  "INDOOR/Indoor Shoot 11/Raw/DSC_3937.NEF": {
+   "captured": "2026-07-08T01:05:16.210",
+   "orientation": 8,
+   "bytes": 51940908
+  },
+  "INDOOR/Indoor Shoot 11/Raw/DSC_3938.NEF": {
+   "captured": "2026-07-08T01:05:20.410",
+   "orientation": 8,
+   "bytes": 52922982
+  },
+  "INDOOR/Indoor Shoot 11/Raw/DSC_3939.NEF": {
+   "captured": "2026-07-08T01:05:21.930",
+   "orientation": 8,
+   "bytes": 51125391
+  },
+  "INDOOR/Indoor Shoot 11/Raw/DSC_3941.NEF": {
+   "captured": "2026-07-08T01:05:25.940",
+   "orientation": 8,
+   "bytes": 51341843
+  },
+  "INDOOR/Indoor Shoot 11/Raw/DSC_3942.NEF": {
+   "captured": "2026-07-08T01:05:27.600",
+   "orientation": 8,
+   "bytes": 52033402
+  },
+  "INDOOR/Indoor Shoot 11/Raw/DSC_3944.NEF": {
+   "captured": "2026-07-08T01:05:29.920",
+   "orientation": 8,
+   "bytes": 50391435
+  },
+  "INDOOR/Indoor Shoot 11/Raw/DSC_3945.NEF": {
+   "captured": "2026-07-08T01:05:30.860",
+   "orientation": 8,
+   "bytes": 51028642
+  },
+  "INDOOR/Indoor Shoot 11/Raw/DSC_3946.NEF": {
+   "captured": "2026-07-08T01:05:31.790",
+   "orientation": 8,
+   "bytes": 50530157
+  },
+  "INDOOR/Indoor Shoot 11/Raw/DSC_3947.NEF": {
+   "captured": "2026-07-08T01:05:32.720",
+   "orientation": 8,
+   "bytes": 51367987
+  },
+  "INDOOR/Indoor Shoot 11/Raw/DSC_3949.NEF": {
+   "captured": "2026-07-08T01:05:43.690",
+   "orientation": 8,
+   "bytes": 51291636
+  },
+  "INDOOR/Indoor Shoot 11/Raw/DSC_3951.NEF": {
+   "captured": "2026-07-08T01:05:46.360",
+   "orientation": 8,
+   "bytes": 50959597
+  },
+  "INDOOR/Indoor Shoot 11/Raw/DSC_3953.NEF": {
+   "captured": "2026-07-08T01:05:49.320",
+   "orientation": 8,
+   "bytes": 50806446
+  },
+  "INDOOR/Indoor Shoot 11/Raw/DSC_3958.NEF": {
+   "captured": "2026-07-08T01:06:09.250",
+   "orientation": 8,
+   "bytes": 51848981
+  },
+  "INDOOR/Indoor Shoot 11/Raw/DSC_3959.NEF": {
+   "captured": "2026-07-08T01:06:10.550",
+   "orientation": 8,
+   "bytes": 52411982
+  },
+  "INDOOR/Indoor Shoot 11/Raw/DSC_3960.NEF": {
+   "captured": "2026-07-08T01:06:11.400",
+   "orientation": 8,
+   "bytes": 51680034
+  },
+  "INDOOR/Indoor Shoot 11/Raw/DSC_3961.NEF": {
+   "captured": "2026-07-08T01:06:13.110",
+   "orientation": 8,
+   "bytes": 51096746
+  },
+  "INDOOR/Indoor Shoot 11/Raw/DSC_3967.NEF": {
+   "captured": "2026-07-08T01:06:24.560",
+   "orientation": 8,
+   "bytes": 51131480
+  },
+  "INDOOR/Indoor Shoot 11/Raw/DSC_3968.NEF": {
+   "captured": "2026-07-08T01:06:31.390",
+   "orientation": 8,
+   "bytes": 50963842
+  },
+  "INDOOR/Indoor Shoot 11/Raw/DSC_3980.NEF": {
+   "captured": "2026-07-08T01:07:23.740",
+   "orientation": 8,
+   "bytes": 51051708
+  },
+  "INDOOR/Indoor Shoot 11/Raw/DSC_3981.NEF": {
+   "captured": "2026-07-08T01:07:24.920",
+   "orientation": 8,
+   "bytes": 50778352
+  },
+  "INDOOR/Indoor Shoot 11/Raw/DSC_3982.NEF": {
+   "captured": "2026-07-08T01:07:25.940",
+   "orientation": 8,
+   "bytes": 50941962
+  },
+  "INDOOR/Indoor Shoot 11/Raw/DSC_4001.NEF": {
+   "captured": "2026-07-08T01:08:12.110",
+   "orientation": 8,
+   "bytes": 51747967
+  },
+  "INDOOR/Indoor Shoot 11/Raw/DSC_4004.NEF": {
+   "captured": "2026-07-08T01:08:15.180",
+   "orientation": 8,
+   "bytes": 52039884
+  },
+  "INDOOR/Indoor Shoot 11/Raw/DSC_4014.NEF": {
+   "captured": "2026-07-08T01:24:49.720",
+   "orientation": 8,
+   "bytes": 50880229
+  },
+  "INDOOR/Indoor Shoot 11/Raw/DSC_4018.NEF": {
+   "captured": "2026-07-08T01:24:59.410",
+   "orientation": 8,
+   "bytes": 49782477
+  },
+  "INDOOR/Indoor Shoot 11/Raw/DSC_4027.NEF": {
+   "captured": "2026-07-08T01:25:22.360",
+   "orientation": 8,
+   "bytes": 50562251
+  },
+  "INDOOR/Indoor Shoot 11/Raw/DSC_4028.NEF": {
+   "captured": "2026-07-08T01:25:23.880",
+   "orientation": 8,
+   "bytes": 49866859
+  },
+  "INDOOR/Indoor Shoot 11/Raw/DSC_4032.NEF": {
+   "captured": "2026-07-08T01:25:29.870",
+   "orientation": 8,
+   "bytes": 50364544
+  },
+  "INDOOR/Indoor Shoot 11/Raw/DSC_4038.NEF": {
+   "captured": "2026-07-08T01:25:59.620",
+   "orientation": 8,
+   "bytes": 49271486
+  },
+  "INDOOR/Indoor Shoot 11/Raw/DSC_4040.NEF": {
+   "captured": "2026-07-08T01:26:02.530",
+   "orientation": 8,
+   "bytes": 50271173
+  },
+  "INDOOR/Indoor Shoot 11/Raw/DSC_4057.NEF": {
+   "captured": "2026-07-08T01:28:50.670",
+   "orientation": 8,
+   "bytes": 52884551
+  },
+  "INDOOR/Indoor Shoot 11/Raw/DSC_4059.NEF": {
+   "captured": "2026-07-08T01:28:55.990",
+   "orientation": 8,
+   "bytes": 50381987
+  },
+  "INDOOR/Indoor Shoot 12/Raw/DSC_3928.NEF": {
+   "captured": "2026-07-08T01:04:07.910",
+   "orientation": 8,
+   "bytes": 51235462
+  },
+  "INDOOR/Indoor Shoot 12/Raw/DSC_3932.NEF": {
+   "captured": "2026-07-08T01:04:19.670",
+   "orientation": 8,
+   "bytes": 50225860
+  },
+  "INDOOR/Indoor Shoot 12/Raw/DSC_3943.NEF": {
+   "captured": "2026-07-08T01:05:28.670",
+   "orientation": 8,
+   "bytes": 50801496
+  },
+  "INDOOR/Indoor Shoot 12/Raw/DSC_3948.NEF": {
+   "captured": "2026-07-08T01:05:42.490",
+   "orientation": 8,
+   "bytes": 50206102
+  },
+  "INDOOR/Indoor Shoot 12/Raw/DSC_3983.NEF": {
+   "captured": "2026-07-08T01:07:27.110",
+   "orientation": 8,
+   "bytes": 51170563
+  },
+  "INDOOR/Indoor Shoot 12/Raw/DSC_3999.NEF": {
+   "captured": "2026-07-08T01:08:07.540",
+   "orientation": 8,
+   "bytes": 52216391
+  },
+  "INDOOR/Indoor Shoot 2/Raw/DSC_4257.NEF": {
+   "captured": "2026-07-08T02:12:42.520",
+   "orientation": 8,
+   "bytes": 50517142
+  },
+  "INDOOR/Indoor Shoot 2/Raw/DSC_4258.NEF": {
+   "captured": "2026-07-08T02:12:43.320",
+   "orientation": 8,
+   "bytes": 50674867
+  },
+  "INDOOR/Indoor Shoot 2/Raw/DSC_4263.NEF": {
+   "captured": "2026-07-08T02:12:49.730",
+   "orientation": 8,
+   "bytes": 49510060
+  },
+  "INDOOR/Indoor Shoot 2/Raw/DSC_4264.NEF": {
+   "captured": "2026-07-08T02:12:50.670",
+   "orientation": 8,
+   "bytes": 50380540
+  },
+  "INDOOR/Indoor Shoot 2/Raw/DSC_4266.NEF": {
+   "captured": "2026-07-08T02:12:51.800",
+   "orientation": 8,
+   "bytes": 49808000
+  },
+  "INDOOR/Indoor Shoot 2/Raw/DSC_4267.NEF": {
+   "captured": "2026-07-08T02:12:52.620",
+   "orientation": 8,
+   "bytes": 50042302
+  },
+  "INDOOR/Indoor Shoot 2/Raw/DSC_4269.NEF": {
+   "captured": "2026-07-08T02:12:54.950",
+   "orientation": 8,
+   "bytes": 50155949
+  },
+  "INDOOR/Indoor Shoot 2/Raw/DSC_4271.NEF": {
+   "captured": "2026-07-08T02:12:56.530",
+   "orientation": 8,
+   "bytes": 49265829
+  },
+  "INDOOR/Indoor Shoot 2/Raw/DSC_4274.NEF": {
+   "captured": "2026-07-08T02:12:58.700",
+   "orientation": 8,
+   "bytes": 49206464
+  },
+  "INDOOR/Indoor Shoot 2/Raw/DSC_4275.NEF": {
+   "captured": "2026-07-08T02:12:59.760",
+   "orientation": 8,
+   "bytes": 49122580
+  },
+  "INDOOR/Indoor Shoot 2/Raw/DSC_4279.NEF": {
+   "captured": "2026-07-08T02:13:22.880",
+   "orientation": 8,
+   "bytes": 49645653
+  },
+  "INDOOR/Indoor Shoot 2/Raw/DSC_4281.NEF": {
+   "captured": "2026-07-08T02:13:38.990",
+   "orientation": 8,
+   "bytes": 50097455
+  },
+  "INDOOR/Indoor Shoot 2/Raw/DSC_4286.NEF": {
+   "captured": "2026-07-08T02:13:45.260",
+   "orientation": 8,
+   "bytes": 50317717
+  },
+  "INDOOR/Indoor Shoot 2/Raw/DSC_4287.NEF": {
+   "captured": "2026-07-08T02:13:46.990",
+   "orientation": 8,
+   "bytes": 49494973
+  },
+  "INDOOR/Indoor Shoot 2/Raw/DSC_4288.NEF": {
+   "captured": "2026-07-08T02:13:48.400",
+   "orientation": 8,
+   "bytes": 49585649
+  },
+  "INDOOR/Indoor Shoot 2/Raw/DSC_4291.NEF": {
+   "captured": "2026-07-08T02:13:53.470",
+   "orientation": 8,
+   "bytes": 48970720
+  },
+  "INDOOR/Indoor Shoot 2/Raw/DSC_4294.NEF": {
+   "captured": "2026-07-08T02:13:56.790",
+   "orientation": 8,
+   "bytes": 49707338
+  },
+  "INDOOR/Indoor Shoot 2/Raw/DSC_4298.NEF": {
+   "captured": "2026-07-08T02:17:21.250",
+   "orientation": 8,
+   "bytes": 47035318
+  },
+  "INDOOR/Indoor Shoot 2/Raw/DSC_4302.NEF": {
+   "captured": "2026-07-08T02:17:42.390",
+   "orientation": 8,
+   "bytes": 46986189
+  },
+  "INDOOR/Indoor Shoot 2/Raw/DSC_4303.NEF": {
+   "captured": "2026-07-08T02:17:47.990",
+   "orientation": 8,
+   "bytes": 46785816
+  },
+  "INDOOR/Indoor Shoot 2/Raw/DSC_4304.NEF": {
+   "captured": "2026-07-08T02:18:13.990",
+   "orientation": 8,
+   "bytes": 47365662
+  },
+  "INDOOR/Indoor Shoot 2/Raw/DSC_4320.NEF": {
+   "captured": "2026-07-08T02:19:15.820",
+   "orientation": 8,
+   "bytes": 47673555
+  },
+  "INDOOR/Indoor Shoot 2/Raw/DSC_4322.NEF": {
+   "captured": "2026-07-08T02:19:20.990",
+   "orientation": 8,
+   "bytes": 47305361
+  },
+  "INDOOR/Indoor Shoot 2/Raw/DSC_4326.NEF": {
+   "captured": "2026-07-08T02:19:35.820",
+   "orientation": 8,
+   "bytes": 47411377
+  },
+  "INDOOR/Indoor Shoot 2/Raw/DSC_4328.NEF": {
+   "captured": "2026-07-08T02:19:41.970",
+   "orientation": 8,
+   "bytes": 47586412
+  },
+  "INDOOR/Indoor Shoot 2/Raw/DSC_4330.NEF": {
+   "captured": "2026-07-08T02:20:12.230",
+   "orientation": 8,
+   "bytes": 47598721
+  },
+  "INDOOR/Indoor Shoot 2/Raw/DSC_4335.NEF": {
+   "captured": "2026-07-08T02:20:19.340",
+   "orientation": 8,
+   "bytes": 47599779
+  },
+  "INDOOR/Indoor Shoot 2/Raw/DSC_4336.NEF": {
+   "captured": "2026-07-08T02:20:22.130",
+   "orientation": 8,
+   "bytes": 47696928
+  },
+  "INDOOR/Indoor Shoot 2/Raw/DSC_4337.NEF": {
+   "captured": "2026-07-08T02:20:23.610",
+   "orientation": 8,
+   "bytes": 47622938
+  },
+  "INDOOR/Indoor Shoot 2/Raw/DSC_4348.NEF": {
+   "captured": "2026-07-08T02:21:35.360",
+   "orientation": 8,
+   "bytes": 47465410
+  },
+  "INDOOR/Indoor Shoot 2/Raw/DSC_4350.NEF": {
+   "captured": "2026-07-08T02:22:22.750",
+   "orientation": 8,
+   "bytes": 47737535
+  },
+  "INDOOR/Indoor Shoot 2/Raw/DSC_4351.NEF": {
+   "captured": "2026-07-08T02:22:40.960",
+   "orientation": 8,
+   "bytes": 47976579
+  },
+  "INDOOR/Indoor Shoot 2/Raw/DSC_4354.NEF": {
+   "captured": "2026-07-08T02:23:25.720",
+   "orientation": 8,
+   "bytes": 47345046
+  },
+  "INDOOR/Indoor Shoot 2/Raw/DSC_4357.NEF": {
+   "captured": "2026-07-08T02:23:54.990",
+   "orientation": 8,
+   "bytes": 47351149
+  },
+  "INDOOR/Indoor Shoot 2/Raw/DSC_4370.NEF": {
+   "captured": "2026-07-08T02:26:43.920",
+   "orientation": 8,
+   "bytes": 47282454
+  },
+  "INDOOR/Indoor Shoot 2/Raw/DSC_4371.NEF": {
+   "captured": "2026-07-08T02:26:44.990",
+   "orientation": 8,
+   "bytes": 47211642
+  },
+  "INDOOR/Indoor Shoot 2/Raw/DSC_4372.NEF": {
+   "captured": "2026-07-08T02:26:47.920",
+   "orientation": 8,
+   "bytes": 47271344
+  },
+  "INDOOR/Indoor Shoot 2/Raw/DSC_4380.NEF": {
+   "captured": "2026-07-08T03:20:15.270",
+   "orientation": 8,
+   "bytes": 49667544
+  },
+  "INDOOR/Indoor Shoot 2/Raw/DSC_4386.NEF": {
+   "captured": "2026-07-08T03:20:38.220",
+   "orientation": 8,
+   "bytes": 50294351
+  },
+  "INDOOR/Indoor Shoot 2/Raw/DSC_4394.NEF": {
+   "captured": "2026-07-08T03:24:23.260",
+   "orientation": 8,
+   "bytes": 50544527
+  },
+  "INDOOR/Indoor Shoot 2/Raw/DSC_4395.NEF": {
+   "captured": "2026-07-08T03:24:33.210",
+   "orientation": 8,
+   "bytes": 54294652
+  },
+  "INDOOR/Indoor Shoot 2/Raw/DSC_4397.NEF": {
+   "captured": "2026-07-08T03:25:03.060",
+   "orientation": 8,
+   "bytes": 55579372
+  },
+  "INDOOR/Indoor Shoot 2/Raw/DSC_4401.NEF": {
+   "captured": "2026-07-08T03:25:11.690",
+   "orientation": 8,
+   "bytes": 55284602
+  },
+  "INDOOR/Indoor Shoot 3/Raw/DSC_3971.NEF": {
+   "captured": "2026-07-08T01:06:38.900",
+   "orientation": 8,
+   "bytes": 45100243
+  },
+  "INDOOR/Indoor Shoot 3/Raw/DSC_4254.NEF": {
+   "captured": "2026-07-08T02:11:28.810",
+   "orientation": 8,
+   "bytes": 51086072
+  },
+  "INDOOR/Indoor Shoot 3/Raw/DSC_4255.NEF": {
+   "captured": "2026-07-08T02:11:29.880",
+   "orientation": 8,
+   "bytes": 51943172
+  },
+  "INDOOR/Indoor Shoot 3/Raw/DSC_4259.NEF": {
+   "captured": "2026-07-08T02:12:44.130",
+   "orientation": 8,
+   "bytes": 50762296
+  },
+  "INDOOR/Indoor Shoot 3/Raw/DSC_4260.NEF": {
+   "captured": "2026-07-08T02:12:46.510",
+   "orientation": 8,
+   "bytes": 49667229
+  },
+  "INDOOR/Indoor Shoot 3/Raw/DSC_4261.NEF": {
+   "captured": "2026-07-08T02:12:47.540",
+   "orientation": 8,
+   "bytes": 50392373
+  },
+  "INDOOR/Indoor Shoot 3/Raw/DSC_4262.NEF": {
+   "captured": "2026-07-08T02:12:48.880",
+   "orientation": 8,
+   "bytes": 49605940
+  },
+  "INDOOR/Indoor Shoot 3/Raw/DSC_4270.NEF": {
+   "captured": "2026-07-08T02:12:55.690",
+   "orientation": 8,
+   "bytes": 48910694
+  },
+  "INDOOR/Indoor Shoot 3/Raw/DSC_4273.NEF": {
+   "captured": "2026-07-08T02:12:57.990",
+   "orientation": 8,
+   "bytes": 45079925
+  },
+  "INDOOR/Indoor Shoot 3/Raw/DSC_4276.NEF": {
+   "captured": "2026-07-08T02:13:00.990",
+   "orientation": 8,
+   "bytes": 49021804
+  },
+  "INDOOR/Indoor Shoot 3/Raw/DSC_4282.NEF": {
+   "captured": "2026-07-08T02:13:40.470",
+   "orientation": 8,
+   "bytes": 49837357
+  },
+  "INDOOR/Indoor Shoot 3/Raw/DSC_4284.NEF": {
+   "captured": "2026-07-08T02:13:41.800",
+   "orientation": 8,
+   "bytes": 50263658
+  },
+  "INDOOR/Indoor Shoot 3/Raw/DSC_4285.NEF": {
+   "captured": "2026-07-08T02:13:43.570",
+   "orientation": 8,
+   "bytes": 50023047
+  },
+  "INDOOR/Indoor Shoot 3/Raw/DSC_4289.NEF": {
+   "captured": "2026-07-08T02:13:49.580",
+   "orientation": 8,
+   "bytes": 49746381
+  },
+  "INDOOR/Indoor Shoot 3/Raw/DSC_4292.NEF": {
+   "captured": "2026-07-08T02:13:54.410",
+   "orientation": 8,
+   "bytes": 49251368
+  },
+  "INDOOR/Indoor Shoot 3/Raw/DSC_4296.NEF": {
+   "captured": "2026-07-08T02:13:58.990",
+   "orientation": 8,
+   "bytes": 49445647
+  },
+  "INDOOR/Indoor Shoot 3/Raw/DSC_4301.NEF": {
+   "captured": "2026-07-08T02:17:40.920",
+   "orientation": 8,
+   "bytes": 46924754
+  },
+  "INDOOR/Indoor Shoot 3/Raw/DSC_4305.NEF": {
+   "captured": "2026-07-08T02:18:16.810",
+   "orientation": 8,
+   "bytes": 47380176
+  },
+  "INDOOR/Indoor Shoot 3/Raw/DSC_4306.NEF": {
+   "captured": "2026-07-08T02:18:19.110",
+   "orientation": 8,
+   "bytes": 47357207
+  },
+  "INDOOR/Indoor Shoot 3/Raw/DSC_4308.NEF": {
+   "captured": "2026-07-08T02:18:21.990",
+   "orientation": 8,
+   "bytes": 47161278
+  },
+  "INDOOR/Indoor Shoot 3/Raw/DSC_4309.NEF": {
+   "captured": "2026-07-08T02:18:23.500",
+   "orientation": 8,
+   "bytes": 47122323
+  },
+  "INDOOR/Indoor Shoot 3/Raw/DSC_4311.NEF": {
+   "captured": "2026-07-08T02:18:26.210",
+   "orientation": 8,
+   "bytes": 47190953
+  },
+  "INDOOR/Indoor Shoot 3/Raw/DSC_4313.NEF": {
+   "captured": "2026-07-08T02:18:28.580",
+   "orientation": 8,
+   "bytes": 47099461
+  },
+  "INDOOR/Indoor Shoot 3/Raw/DSC_4316.NEF": {
+   "captured": "2026-07-08T02:18:32.410",
+   "orientation": 8,
+   "bytes": 47195573
+  },
+  "INDOOR/Indoor Shoot 3/Raw/DSC_4318.NEF": {
+   "captured": "2026-07-08T02:18:34.390",
+   "orientation": 8,
+   "bytes": 47193517
+  },
+  "INDOOR/Indoor Shoot 3/Raw/DSC_4327.NEF": {
+   "captured": "2026-07-08T02:19:36.990",
+   "orientation": 8,
+   "bytes": 47433524
+  },
+  "INDOOR/Indoor Shoot 3/Raw/DSC_4329.NEF": {
+   "captured": "2026-07-08T02:20:10.350",
+   "orientation": 8,
+   "bytes": 47746450
+  },
+  "INDOOR/Indoor Shoot 3/Raw/DSC_4331.NEF": {
+   "captured": "2026-07-08T02:20:14.380",
+   "orientation": 8,
+   "bytes": 47735860
+  },
+  "INDOOR/Indoor Shoot 3/Raw/DSC_4332.NEF": {
+   "captured": "2026-07-08T02:20:15.200",
+   "orientation": 8,
+   "bytes": 47584416
+  },
+  "INDOOR/Indoor Shoot 3/Raw/DSC_4333.NEF": {
+   "captured": "2026-07-08T02:20:15.990",
+   "orientation": 8,
+   "bytes": 47618679
+  },
+  "INDOOR/Indoor Shoot 3/Raw/DSC_4344.NEF": {
+   "captured": "2026-07-08T02:20:40.510",
+   "orientation": 8,
+   "bytes": 47483042
+  },
+  "INDOOR/Indoor Shoot 3/Raw/DSC_4346.NEF": {
+   "captured": "2026-07-08T02:20:47.130",
+   "orientation": 8,
+   "bytes": 44986338
+  },
+  "INDOOR/Indoor Shoot 3/Raw/DSC_4355.NEF": {
+   "captured": "2026-07-08T02:23:35.660",
+   "orientation": 8,
+   "bytes": 47348451
+  },
+  "INDOOR/Indoor Shoot 3/Raw/DSC_4358.NEF": {
+   "captured": "2026-07-08T02:24:15.230",
+   "orientation": 8,
+   "bytes": 47400881
+  },
+  "INDOOR/Indoor Shoot 3/Raw/DSC_4359.NEF": {
+   "captured": "2026-07-08T02:24:30.920",
+   "orientation": 8,
+   "bytes": 47196277
+  },
+  "INDOOR/Indoor Shoot 3/Raw/DSC_4360.NEF": {
+   "captured": "2026-07-08T02:24:42.620",
+   "orientation": 8,
+   "bytes": 47308448
+  },
+  "INDOOR/Indoor Shoot 3/Raw/DSC_4362.NEF": {
+   "captured": "2026-07-08T02:25:34.480",
+   "orientation": 8,
+   "bytes": 47490258
+  },
+  "INDOOR/Indoor Shoot 3/Raw/DSC_4377.NEF": {
+   "captured": "2026-07-08T03:20:10.790",
+   "orientation": 8,
+   "bytes": 50000303
+  },
+  "INDOOR/Indoor Shoot 3/Raw/DSC_4387.NEF": {
+   "captured": "2026-07-08T03:20:40.540",
+   "orientation": 8,
+   "bytes": 49506273
+  },
+  "INDOOR/Indoor Shoot 3/Raw/DSC_4390.NEF": {
+   "captured": "2026-07-08T03:20:44.830",
+   "orientation": 8,
+   "bytes": 50198904
+  },
+  "INDOOR/Indoor Shoot 3/Raw/DSC_4391.NEF": {
+   "captured": "2026-07-08T03:24:09.150",
+   "orientation": 8,
+   "bytes": 50162812
+  },
+  "INDOOR/Indoor Shoot 3/Raw/DSC_4392.NEF": {
+   "captured": "2026-07-08T03:24:09.760",
+   "orientation": 8,
+   "bytes": 50846540
+  },
+  "INDOOR/Indoor Shoot 3/Raw/DSC_4399.NEF": {
+   "captured": "2026-07-08T03:25:05.470",
+   "orientation": 8,
+   "bytes": 55423458
+  },
+  "INDOOR/Indoor Shoot 3/Raw/DSC_4402.NEF": {
+   "captured": "2026-07-08T03:25:12.810",
+   "orientation": 8,
+   "bytes": 55912284
+  },
+  "INDOOR/Indoor Shoot 4/Raw/DSC_4024.NEF": {
+   "captured": "2026-07-08T01:25:19.110",
+   "orientation": 8,
+   "bytes": 48709922
+  },
+  "INDOOR/Indoor Shoot 4/Raw/DSC_4164.NEF": {
+   "captured": "2026-07-08T01:58:17.150",
+   "orientation": 8,
+   "bytes": 49800239
+  },
+  "INDOOR/Indoor Shoot 4/Raw/DSC_4181.NEF": {
+   "captured": "2026-07-08T01:58:59.760",
+   "orientation": 8,
+   "bytes": 44961944
+  },
+  "INDOOR/Indoor Shoot 4/Raw/DSC_4182.NEF": {
+   "captured": "2026-07-08T01:59:00.510",
+   "orientation": 8,
+   "bytes": 48936805
+  },
+  "INDOOR/Indoor Shoot 4/Raw/DSC_4184.NEF": {
+   "captured": "2026-07-08T01:59:03.990",
+   "orientation": 8,
+   "bytes": 49277173
+  },
+  "INDOOR/Indoor Shoot 4/Raw/DSC_4191.NEF": {
+   "captured": "2026-07-08T01:59:18.780",
+   "orientation": 8,
+   "bytes": 49017437
+  },
+  "INDOOR/Indoor Shoot 4/Raw/DSC_4198.NEF": {
+   "captured": "2026-07-08T01:59:28.990",
+   "orientation": 8,
+   "bytes": 47348912
+  },
+  "INDOOR/Indoor Shoot 4/Raw/DSC_4204.NEF": {
+   "captured": "2026-07-08T01:59:43.920",
+   "orientation": 8,
+   "bytes": 47120823
+  },
+  "INDOOR/Indoor Shoot 4/Raw/DSC_4207.NEF": {
+   "captured": "2026-07-08T01:59:47.630",
+   "orientation": 8,
+   "bytes": 48347211
+  },
+  "INDOOR/Indoor Shoot 4/Raw/DSC_4209.NEF": {
+   "captured": "2026-07-08T01:59:50.340",
+   "orientation": 8,
+   "bytes": 47767605
+  },
+  "INDOOR/Indoor Shoot 4/Raw/DSC_4219.NEF": {
+   "captured": "2026-07-08T02:08:55.310",
+   "orientation": 8,
+   "bytes": 49662140
+  },
+  "INDOOR/Indoor Shoot 4/Raw/DSC_4231.NEF": {
+   "captured": "2026-07-08T02:09:19.770",
+   "orientation": 8,
+   "bytes": 50471904
+  },
+  "INDOOR/Indoor Shoot 4/Raw/DSC_4232.NEF": {
+   "captured": "2026-07-08T02:09:20.920",
+   "orientation": 8,
+   "bytes": 50507490
+  },
+  "INDOOR/Indoor Shoot 4/Raw/DSC_4234.NEF": {
+   "captured": "2026-07-08T02:09:23.640",
+   "orientation": 8,
+   "bytes": 50038926
+  },
+  "INDOOR/Indoor Shoot 4/Raw/DSC_4235.NEF": {
+   "captured": "2026-07-08T02:09:24.300",
+   "orientation": 8,
+   "bytes": 45087300
+  },
+  "INDOOR/Indoor Shoot 4/Raw/DSC_4237.NEF": {
+   "captured": "2026-07-08T02:09:25.620",
+   "orientation": 8,
+   "bytes": 45081954
+  },
+  "INDOOR/Indoor Shoot 4/Raw/DSC_4239.NEF": {
+   "captured": "2026-07-08T02:09:28.130",
+   "orientation": 8,
+   "bytes": 49814921
+  },
+  "INDOOR/Indoor Shoot 4/Raw/DSC_4241.NEF": {
+   "captured": "2026-07-08T02:10:57.980",
+   "orientation": 8,
+   "bytes": 52315282
+  },
+  "INDOOR/Indoor Shoot 4/Raw/DSC_4243.NEF": {
+   "captured": "2026-07-08T02:11:03.510",
+   "orientation": 8,
+   "bytes": 51438964
+  },
+  "INDOOR/Indoor Shoot 4/Raw/DSC_4245.NEF": {
+   "captured": "2026-07-08T02:11:05.260",
+   "orientation": 8,
+   "bytes": 51290638
+  },
+  "INDOOR/Indoor Shoot 4/Raw/DSC_4246.NEF": {
+   "captured": "2026-07-08T02:11:07.820",
+   "orientation": 8,
+   "bytes": 51063563
+  },
+  "INDOOR/Indoor Shoot 4/Raw/DSC_4247.NEF": {
+   "captured": "2026-07-08T02:11:08.770",
+   "orientation": 8,
+   "bytes": 51817505
+  },
+  "INDOOR/Indoor Shoot 4/Raw/DSC_4249.NEF": {
+   "captured": "2026-07-08T02:11:10.540",
+   "orientation": 8,
+   "bytes": 52767509
+  },
+  "INDOOR/Indoor Shoot 4/Raw/DSC_4250.NEF": {
+   "captured": "2026-07-08T02:11:13.410",
+   "orientation": 8,
+   "bytes": 52544161
+  },
+  "INDOOR/Indoor Shoot 4/Raw/DSC_4251.NEF": {
+   "captured": "2026-07-08T02:11:24.240",
+   "orientation": 8,
+   "bytes": 52814068
+  },
+  "INDOOR/Indoor Shoot 4/Raw/DSC_4252.NEF": {
+   "captured": "2026-07-08T02:11:26.470",
+   "orientation": 8,
+   "bytes": 52496188
+  },
+  "INDOOR/Indoor Shoot 4/Raw/DSC_4253.NEF": {
+   "captured": "2026-07-08T02:11:27.780",
+   "orientation": 8,
+   "bytes": 51551303
+  },
+  "INDOOR/Indoor Shoot 4/Raw/DSC_4272.NEF": {
+   "captured": "2026-07-08T02:12:57.370",
+   "orientation": 8,
+   "bytes": 49539667
+  },
+  "INDOOR/Indoor Shoot 4/Raw/DSC_4295.NEF": {
+   "captured": "2026-07-08T02:13:57.730",
+   "orientation": 8,
+   "bytes": 49601263
+  },
+  "INDOOR/Indoor Shoot 4/Raw/DSC_4300.NEF": {
+   "captured": "2026-07-08T02:17:23.980",
+   "orientation": 8,
+   "bytes": 46847243
+  },
+  "INDOOR/Indoor Shoot 4/Raw/DSC_4307.NEF": {
+   "captured": "2026-07-08T02:18:20.040",
+   "orientation": 8,
+   "bytes": 47232636
+  },
+  "INDOOR/Indoor Shoot 4/Raw/DSC_4310.NEF": {
+   "captured": "2026-07-08T02:18:24.780",
+   "orientation": 8,
+   "bytes": 47220284
+  },
+  "INDOOR/Indoor Shoot 4/Raw/DSC_4315.NEF": {
+   "captured": "2026-07-08T02:18:31.290",
+   "orientation": 8,
+   "bytes": 47191480
+  },
+  "INDOOR/Indoor Shoot 4/Raw/DSC_4319.NEF": {
+   "captured": "2026-07-08T02:18:35.430",
+   "orientation": 8,
+   "bytes": 47171391
+  },
+  "INDOOR/Indoor Shoot 4/Raw/DSC_4321.NEF": {
+   "captured": "2026-07-08T02:19:19.470",
+   "orientation": 8,
+   "bytes": 47214505
+  },
+  "INDOOR/Indoor Shoot 4/Raw/DSC_4373.NEF": {
+   "captured": "2026-07-08T02:26:55.140",
+   "orientation": 8,
+   "bytes": 47142421
+  },
+  "INDOOR/Indoor Shoot 4/Raw/DSC_4384.NEF": {
+   "captured": "2026-07-08T03:20:32.950",
+   "orientation": 8,
+   "bytes": 49938209
+  },
+  "INDOOR/Indoor Shoot 4/Raw/DSC_4388.NEF": {
+   "captured": "2026-07-08T03:20:42.620",
+   "orientation": 8,
+   "bytes": 49686962
+  },
+  "INDOOR/Indoor Shoot 4/Raw/DSC_4393.NEF": {
+   "captured": "2026-07-08T03:24:19.480",
+   "orientation": 8,
+   "bytes": 52089309
+  },
+  "INDOOR/Indoor Shoot 4/Raw/DSC_4396.NEF": {
+   "captured": "2026-07-08T03:24:37.380",
+   "orientation": 8,
+   "bytes": 54691341
+  },
+  "INDOOR/Indoor Shoot 4/Raw/DSC_4398.NEF": {
+   "captured": "2026-07-08T03:25:03.990",
+   "orientation": 8,
+   "bytes": 54961857
+  },
+  "INDOOR/Indoor Shoot 4/Raw/DSC_4400.NEF": {
+   "captured": "2026-07-08T03:25:07.360",
+   "orientation": 8,
+   "bytes": 56262537
+  },
+  "INDOOR/Indoor Shoot 4/Raw/DSC_4403.NEF": {
+   "captured": "2026-07-08T03:25:14.320",
+   "orientation": 8,
+   "bytes": 56535007
+  },
+  "INDOOR/Indoor Shoot 5/Raw/DSC_4132.NEF": {
+   "captured": "2026-07-08T01:47:17.760",
+   "orientation": 8,
+   "bytes": 47478943
+  },
+  "INDOOR/Indoor Shoot 5/Raw/DSC_4137.NEF": {
+   "captured": "2026-07-08T01:47:26.380",
+   "orientation": 8,
+   "bytes": 47836326
+  },
+  "INDOOR/Indoor Shoot 5/Raw/DSC_4138.NEF": {
+   "captured": "2026-07-08T01:47:27.960",
+   "orientation": 8,
+   "bytes": 48193218
+  },
+  "INDOOR/Indoor Shoot 5/Raw/DSC_4139.NEF": {
+   "captured": "2026-07-08T01:47:28.800",
+   "orientation": 8,
+   "bytes": 47919635
+  },
+  "INDOOR/Indoor Shoot 5/Raw/DSC_4140.NEF": {
+   "captured": "2026-07-08T01:47:29.580",
+   "orientation": 8,
+   "bytes": 44984032
+  },
+  "INDOOR/Indoor Shoot 5/Raw/DSC_4142.NEF": {
+   "captured": "2026-07-08T01:47:30.860",
+   "orientation": 8,
+   "bytes": 44974153
+  },
+  "INDOOR/Indoor Shoot 5/Raw/DSC_4143.NEF": {
+   "captured": "2026-07-08T01:47:31.370",
+   "orientation": 8,
+   "bytes": 47494433
+  },
+  "INDOOR/Indoor Shoot 5/Raw/DSC_4149.NEF": {
+   "captured": "2026-07-08T01:47:35.340",
+   "orientation": 8,
+   "bytes": 44964518
+  },
+  "INDOOR/Indoor Shoot 5/Raw/DSC_4152.NEF": {
+   "captured": "2026-07-08T01:47:37.920",
+   "orientation": 8,
+   "bytes": 47390333
+  },
+  "INDOOR/Indoor Shoot 5/Raw/DSC_4154.NEF": {
+   "captured": "2026-07-08T01:47:39.790",
+   "orientation": 8,
+   "bytes": 47307792
+  },
+  "INDOOR/Indoor Shoot 5/Raw/DSC_4155.NEF": {
+   "captured": "2026-07-08T01:57:09.730",
+   "orientation": 8,
+   "bytes": 44947761
+  },
+  "INDOOR/Indoor Shoot 5/Raw/DSC_4157.NEF": {
+   "captured": "2026-07-08T01:57:36.720",
+   "orientation": 8,
+   "bytes": 47301821
+  },
+  "INDOOR/Indoor Shoot 5/Raw/DSC_4160.NEF": {
+   "captured": "2026-07-08T01:57:57.270",
+   "orientation": 8,
+   "bytes": 48301287
+  },
+  "INDOOR/Indoor Shoot 5/Raw/DSC_4162.NEF": {
+   "captured": "2026-07-08T01:58:10.560",
+   "orientation": 8,
+   "bytes": 48515650
+  },
+  "INDOOR/Indoor Shoot 5/Raw/DSC_4165.NEF": {
+   "captured": "2026-07-08T01:58:17.910",
+   "orientation": 8,
+   "bytes": 44951117
+  },
+  "INDOOR/Indoor Shoot 5/Raw/DSC_4170.NEF": {
+   "captured": "2026-07-08T01:58:24.760",
+   "orientation": 8,
+   "bytes": 49080018
+  },
+  "INDOOR/Indoor Shoot 5/Raw/DSC_4172.NEF": {
+   "captured": "2026-07-08T01:58:27.210",
+   "orientation": 8,
+   "bytes": 48755426
+  },
+  "INDOOR/Indoor Shoot 5/Raw/DSC_4173.NEF": {
+   "captured": "2026-07-08T01:58:28.470",
+   "orientation": 8,
+   "bytes": 48663659
+  },
+  "INDOOR/Indoor Shoot 5/Raw/DSC_4177.NEF": {
+   "captured": "2026-07-08T01:58:56.150",
+   "orientation": 8,
+   "bytes": 49050003
+  },
+  "INDOOR/Indoor Shoot 5/Raw/DSC_4179.NEF": {
+   "captured": "2026-07-08T01:58:58.280",
+   "orientation": 8,
+   "bytes": 49661994
+  },
+  "INDOOR/Indoor Shoot 5/Raw/DSC_4186.NEF": {
+   "captured": "2026-07-08T01:59:06.460",
+   "orientation": 8,
+   "bytes": 49134151
+  },
+  "INDOOR/Indoor Shoot 5/Raw/DSC_4187.NEF": {
+   "captured": "2026-07-08T01:59:12.570",
+   "orientation": 8,
+   "bytes": 49845794
+  },
+  "INDOOR/Indoor Shoot 5/Raw/DSC_4188.NEF": {
+   "captured": "2026-07-08T01:59:13.360",
+   "orientation": 8,
+   "bytes": 49344957
+  },
+  "INDOOR/Indoor Shoot 5/Raw/DSC_4193.NEF": {
+   "captured": "2026-07-08T01:59:20.410",
+   "orientation": 8,
+   "bytes": 44995945
+  },
+  "INDOOR/Indoor Shoot 5/Raw/DSC_4196.NEF": {
+   "captured": "2026-07-08T01:59:24.200",
+   "orientation": 8,
+   "bytes": 47490828
+  },
+  "INDOOR/Indoor Shoot 5/Raw/DSC_4201.NEF": {
+   "captured": "2026-07-08T01:59:39.980",
+   "orientation": 8,
+   "bytes": 48751609
+  },
+  "INDOOR/Indoor Shoot 5/Raw/DSC_4203.NEF": {
+   "captured": "2026-07-08T01:59:42.580",
+   "orientation": 8,
+   "bytes": 47538897
+  },
+  "INDOOR/Indoor Shoot 5/Raw/DSC_4205.NEF": {
+   "captured": "2026-07-08T01:59:44.990",
+   "orientation": 8,
+   "bytes": 47475302
+  },
+  "INDOOR/Indoor Shoot 5/Raw/DSC_4206.NEF": {
+   "captured": "2026-07-08T01:59:46.440",
+   "orientation": 8,
+   "bytes": 47455270
+  },
+  "INDOOR/Indoor Shoot 5/Raw/DSC_4208.NEF": {
+   "captured": "2026-07-08T01:59:49.440",
+   "orientation": 8,
+   "bytes": 47405351
+  },
+  "INDOOR/Indoor Shoot 5/Raw/DSC_4214.NEF": {
+   "captured": "2026-07-08T02:08:47.990",
+   "orientation": 8,
+   "bytes": 49982032
+  },
+  "INDOOR/Indoor Shoot 5/Raw/DSC_4217.NEF": {
+   "captured": "2026-07-08T02:08:53.360",
+   "orientation": 8,
+   "bytes": 49948971
+  },
+  "INDOOR/Indoor Shoot 5/Raw/DSC_4218.NEF": {
+   "captured": "2026-07-08T02:08:54.480",
+   "orientation": 8,
+   "bytes": 50270377
+  },
+  "INDOOR/Indoor Shoot 5/Raw/DSC_4221.NEF": {
+   "captured": "2026-07-08T02:08:57.380",
+   "orientation": 8,
+   "bytes": 50503674
+  },
+  "INDOOR/Indoor Shoot 5/Raw/DSC_4223.NEF": {
+   "captured": "2026-07-08T02:08:59.610",
+   "orientation": 8,
+   "bytes": 50231362
+  },
+  "INDOOR/Indoor Shoot 5/Raw/DSC_4227.NEF": {
+   "captured": "2026-07-08T02:09:13.840",
+   "orientation": 8,
+   "bytes": 49902417
+  },
+  "INDOOR/Indoor Shoot 5/Raw/DSC_4228.NEF": {
+   "captured": "2026-07-08T02:09:14.990",
+   "orientation": 8,
+   "bytes": 49715138
+  },
+  "INDOOR/Indoor Shoot 5/Raw/DSC_4229.NEF": {
+   "captured": "2026-07-08T02:09:16.570",
+   "orientation": 8,
+   "bytes": 49740348
+  },
+  "INDOOR/Indoor Shoot 5/Raw/DSC_4233.NEF": {
+   "captured": "2026-07-08T02:09:21.960",
+   "orientation": 8,
+   "bytes": 50259289
+  },
+  "INDOOR/Indoor Shoot 5/Raw/DSC_4236.NEF": {
+   "captured": "2026-07-08T02:09:24.970",
+   "orientation": 8,
+   "bytes": 50183585
+  },
+  "INDOOR/Indoor Shoot 5/Raw/DSC_4238.NEF": {
+   "captured": "2026-07-08T02:09:26.970",
+   "orientation": 8,
+   "bytes": 49802041
+  },
+  "INDOOR/Indoor Shoot 5/Raw/DSC_4248.NEF": {
+   "captured": "2026-07-08T02:11:09.580",
+   "orientation": 8,
+   "bytes": 53493173
+  },
+  "INDOOR/Indoor Shoot 5/Raw/DSC_4325.NEF": {
+   "captured": "2026-07-08T02:19:24.990",
+   "orientation": 8,
+   "bytes": 47679292
+  },
+  "INDOOR/Indoor Shoot 5/Raw/DSC_4368.NEF": {
+   "captured": "2026-07-08T02:26:20.640",
+   "orientation": 8,
+   "bytes": 47247114
+  },
+  "INDOOR/Indoor Shoot 6/Raw/DSC_4034.NEF": {
+   "captured": "2026-07-08T01:25:32.710",
+   "orientation": 8,
+   "bytes": 50385675
+  },
+  "INDOOR/Indoor Shoot 6/Raw/DSC_4118.NEF": {
+   "captured": "2026-07-08T01:42:09.960",
+   "orientation": 8,
+   "bytes": 48039473
+  },
+  "INDOOR/Indoor Shoot 6/Raw/DSC_4121.NEF": {
+   "captured": "2026-07-08T01:43:11.990",
+   "orientation": 8,
+   "bytes": 48899678
+  },
+  "INDOOR/Indoor Shoot 6/Raw/DSC_4123.NEF": {
+   "captured": "2026-07-08T01:44:37.130",
+   "orientation": 8,
+   "bytes": 48697871
+  },
+  "INDOOR/Indoor Shoot 6/Raw/DSC_4125.NEF": {
+   "captured": "2026-07-08T01:45:24.850",
+   "orientation": 8,
+   "bytes": 48995732
+  },
+  "INDOOR/Indoor Shoot 6/Raw/DSC_4130.NEF": {
+   "captured": "2026-07-08T01:46:50.610",
+   "orientation": 8,
+   "bytes": 48923532
+  },
+  "INDOOR/Indoor Shoot 6/Raw/DSC_4131.NEF": {
+   "captured": "2026-07-08T01:47:14.440",
+   "orientation": 8,
+   "bytes": 44959307
+  },
+  "INDOOR/Indoor Shoot 6/Raw/DSC_4144.NEF": {
+   "captured": "2026-07-08T01:47:31.870",
+   "orientation": 8,
+   "bytes": 44963560
+  },
+  "INDOOR/Indoor Shoot 6/Raw/DSC_4146.NEF": {
+   "captured": "2026-07-08T01:47:33.230",
+   "orientation": 8,
+   "bytes": 44975898
+  },
+  "INDOOR/Indoor Shoot 6/Raw/DSC_4147.NEF": {
+   "captured": "2026-07-08T01:47:33.830",
+   "orientation": 8,
+   "bytes": 47726286
+  },
+  "INDOOR/Indoor Shoot 6/Raw/DSC_4148.NEF": {
+   "captured": "2026-07-08T01:47:34.730",
+   "orientation": 8,
+   "bytes": 47611777
+  },
+  "INDOOR/Indoor Shoot 6/Raw/DSC_4150.NEF": {
+   "captured": "2026-07-08T01:47:35.920",
+   "orientation": 8,
+   "bytes": 44963950
+  },
+  "INDOOR/Indoor Shoot 6/Raw/DSC_4153.NEF": {
+   "captured": "2026-07-08T01:47:38.990",
+   "orientation": 8,
+   "bytes": 47441948
+  },
+  "INDOOR/Indoor Shoot 6/Raw/DSC_4156.NEF": {
+   "captured": "2026-07-08T01:57:33.130",
+   "orientation": 8,
+   "bytes": 44944408
+  },
+  "INDOOR/Indoor Shoot 6/Raw/DSC_4158.NEF": {
+   "captured": "2026-07-08T01:57:42.160",
+   "orientation": 8,
+   "bytes": 46845808
+  },
+  "INDOOR/Indoor Shoot 6/Raw/DSC_4159.NEF": {
+   "captured": "2026-07-08T01:57:55.820",
+   "orientation": 8,
+   "bytes": 48099883
+  },
+  "INDOOR/Indoor Shoot 6/Raw/DSC_4161.NEF": {
+   "captured": "2026-07-08T01:58:09.520",
+   "orientation": 8,
+   "bytes": 49103690
+  },
+  "INDOOR/Indoor Shoot 6/Raw/DSC_4163.NEF": {
+   "captured": "2026-07-08T01:58:15.760",
+   "orientation": 8,
+   "bytes": 49005177
+  },
+  "INDOOR/Indoor Shoot 6/Raw/DSC_4166.NEF": {
+   "captured": "2026-07-08T01:58:18.680",
+   "orientation": 8,
+   "bytes": 49332928
+  },
+  "INDOOR/Indoor Shoot 6/Raw/DSC_4167.NEF": {
+   "captured": "2026-07-08T01:58:20.990",
+   "orientation": 8,
+   "bytes": 48893166
+  },
+  "INDOOR/Indoor Shoot 6/Raw/DSC_4168.NEF": {
+   "captured": "2026-07-08T01:58:22.290",
+   "orientation": 8,
+   "bytes": 47964396
+  },
+  "INDOOR/Indoor Shoot 6/Raw/DSC_4169.NEF": {
+   "captured": "2026-07-08T01:58:23.630",
+   "orientation": 8,
+   "bytes": 49042971
+  },
+  "INDOOR/Indoor Shoot 6/Raw/DSC_4175.NEF": {
+   "captured": "2026-07-08T01:58:53.700",
+   "orientation": 8,
+   "bytes": 49444311
+  },
+  "INDOOR/Indoor Shoot 6/Raw/DSC_4176.NEF": {
+   "captured": "2026-07-08T01:58:54.860",
+   "orientation": 8,
+   "bytes": 49758172
+  },
+  "INDOOR/Indoor Shoot 6/Raw/DSC_4183.NEF": {
+   "captured": "2026-07-08T01:59:01.570",
+   "orientation": 8,
+   "bytes": 49493422
+  },
+  "INDOOR/Indoor Shoot 6/Raw/DSC_4189.NEF": {
+   "captured": "2026-07-08T01:59:14.240",
+   "orientation": 8,
+   "bytes": 49546562
+  },
+  "INDOOR/Indoor Shoot 6/Raw/DSC_4190.NEF": {
+   "captured": "2026-07-08T01:59:17.700",
+   "orientation": 8,
+   "bytes": 49831664
+  },
+  "INDOOR/Indoor Shoot 6/Raw/DSC_4194.NEF": {
+   "captured": "2026-07-08T01:59:21.260",
+   "orientation": 8,
+   "bytes": 47818941
+  },
+  "INDOOR/Indoor Shoot 6/Raw/DSC_4197.NEF": {
+   "captured": "2026-07-08T01:59:25.260",
+   "orientation": 8,
+   "bytes": 47363597
+  },
+  "INDOOR/Indoor Shoot 6/Raw/DSC_4200.NEF": {
+   "captured": "2026-07-08T01:59:38.770",
+   "orientation": 8,
+   "bytes": 47910350
+  },
+  "INDOOR/Indoor Shoot 6/Raw/DSC_4202.NEF": {
+   "captured": "2026-07-08T01:59:41.170",
+   "orientation": 8,
+   "bytes": 47574115
+  },
+  "INDOOR/Indoor Shoot 6/Raw/DSC_4211.NEF": {
+   "captured": "2026-07-08T02:08:07.810",
+   "orientation": 8,
+   "bytes": 49997151
+  },
+  "INDOOR/Indoor Shoot 6/Raw/DSC_4212.NEF": {
+   "captured": "2026-07-08T02:08:45.540",
+   "orientation": 8,
+   "bytes": 49738411
+  },
+  "INDOOR/Indoor Shoot 6/Raw/DSC_4213.NEF": {
+   "captured": "2026-07-08T02:08:46.890",
+   "orientation": 8,
+   "bytes": 50748953
+  },
+  "INDOOR/Indoor Shoot 6/Raw/DSC_4215.NEF": {
+   "captured": "2026-07-08T02:08:48.790",
+   "orientation": 8,
+   "bytes": 50217633
+  },
+  "INDOOR/Indoor Shoot 6/Raw/DSC_4216.NEF": {
+   "captured": "2026-07-08T02:08:51.370",
+   "orientation": 8,
+   "bytes": 49270466
+  },
+  "INDOOR/Indoor Shoot 6/Raw/DSC_4222.NEF": {
+   "captured": "2026-07-08T02:08:58.660",
+   "orientation": 8,
+   "bytes": 49392212
+  },
+  "INDOOR/Indoor Shoot 6/Raw/DSC_4224.NEF": {
+   "captured": "2026-07-08T02:09:00.660",
+   "orientation": 8,
+   "bytes": 50650804
+  },
+  "INDOOR/Indoor Shoot 6/Raw/DSC_4226.NEF": {
+   "captured": "2026-07-08T02:09:02.760",
+   "orientation": 8,
+   "bytes": 50777066
+  },
+  "INDOOR/Indoor Shoot 6/Raw/DSC_4230.NEF": {
+   "captured": "2026-07-08T02:09:18.990",
+   "orientation": 8,
+   "bytes": 49677601
+  },
+  "INDOOR/Indoor Shoot 6/Raw/DSC_4240.NEF": {
+   "captured": "2026-07-08T02:10:53.860",
+   "orientation": 8,
+   "bytes": 51690658
+  },
+  "INDOOR/Indoor Shoot 6/Raw/DSC_4242.NEF": {
+   "captured": "2026-07-08T02:11:02.390",
+   "orientation": 8,
+   "bytes": 52142529
+  },
+  "INDOOR/Indoor Shoot 6/Raw/DSC_4297.NEF": {
+   "captured": "2026-07-08T02:14:01.440",
+   "orientation": 8,
+   "bytes": 49515627
+  },
+  "INDOOR/Indoor Shoot 6/Raw/DSC_4299.NEF": {
+   "captured": "2026-07-08T02:17:22.630",
+   "orientation": 8,
+   "bytes": 46741638
+  },
+  "INDOOR/Indoor Shoot 7/Raw/DSC_4081.NEF": {
+   "captured": "2026-07-08T01:29:40.040",
+   "orientation": 8,
+   "bytes": 48635539
+  },
+  "INDOOR/Indoor Shoot 7/Raw/DSC_4084.NEF": {
+   "captured": "2026-07-08T01:29:49.670",
+   "orientation": 8,
+   "bytes": 49136839
+  },
+  "INDOOR/Indoor Shoot 7/Raw/DSC_4085.NEF": {
+   "captured": "2026-07-08T01:29:50.970",
+   "orientation": 8,
+   "bytes": 44993005
+  },
+  "INDOOR/Indoor Shoot 7/Raw/DSC_4090.NEF": {
+   "captured": "2026-07-08T01:30:13.990",
+   "orientation": 8,
+   "bytes": 49929079
+  },
+  "INDOOR/Indoor Shoot 7/Raw/DSC_4092.NEF": {
+   "captured": "2026-07-08T01:30:19.570",
+   "orientation": 1,
+   "bytes": 49191849
+  },
+  "INDOOR/Indoor Shoot 7/Raw/DSC_4095.NEF": {
+   "captured": "2026-07-08T01:30:25.870",
+   "orientation": 1,
+   "bytes": 49470700
+  },
+  "INDOOR/Indoor Shoot 7/Raw/DSC_4097.NEF": {
+   "captured": "2026-07-08T01:30:39.410",
+   "orientation": 8,
+   "bytes": 49157612
+  },
+  "INDOOR/Indoor Shoot 7/Raw/DSC_4102.NEF": {
+   "captured": "2026-07-08T01:30:51.990",
+   "orientation": 8,
+   "bytes": 53260447
+  },
+  "INDOOR/Indoor Shoot 7/Raw/DSC_4104.NEF": {
+   "captured": "2026-07-08T01:33:56.370",
+   "orientation": 8,
+   "bytes": 49850049
+  },
+  "INDOOR/Indoor Shoot 7/Raw/DSC_4105.NEF": {
+   "captured": "2026-07-08T01:34:03.910",
+   "orientation": 8,
+   "bytes": 46361112
+  },
+  "INDOOR/Indoor Shoot 7/Raw/DSC_4106.NEF": {
+   "captured": "2026-07-08T01:34:33.530",
+   "orientation": 8,
+   "bytes": 51928482
+  },
+  "INDOOR/Indoor Shoot 7/Raw/DSC_4107.NEF": {
+   "captured": "2026-07-08T01:34:49.640",
+   "orientation": 8,
+   "bytes": 47535959
+  },
+  "INDOOR/Indoor Shoot 7/Raw/DSC_4108.NEF": {
+   "captured": "2026-07-08T01:35:03.610",
+   "orientation": 8,
+   "bytes": 48923803
+  },
+  "INDOOR/Indoor Shoot 7/Raw/DSC_4109.NEF": {
+   "captured": "2026-07-08T01:35:39.640",
+   "orientation": 8,
+   "bytes": 50232902
+  },
+  "INDOOR/Indoor Shoot 7/Raw/DSC_4110.NEF": {
+   "captured": "2026-07-08T01:37:00.990",
+   "orientation": 8,
+   "bytes": 49609832
+  },
+  "INDOOR/Indoor Shoot 7/Raw/DSC_4111.NEF": {
+   "captured": "2026-07-08T01:37:20.450",
+   "orientation": 8,
+   "bytes": 50219463
+  },
+  "INDOOR/Indoor Shoot 7/Raw/DSC_4112.NEF": {
+   "captured": "2026-07-08T01:38:26.990",
+   "orientation": 8,
+   "bytes": 51064288
+  },
+  "INDOOR/Indoor Shoot 7/Raw/DSC_4113.NEF": {
+   "captured": "2026-07-08T01:39:28.640",
+   "orientation": 8,
+   "bytes": 51821771
+  },
+  "INDOOR/Indoor Shoot 7/Raw/DSC_4114.NEF": {
+   "captured": "2026-07-08T01:40:23.990",
+   "orientation": 8,
+   "bytes": 51980003
+  },
+  "INDOOR/Indoor Shoot 7/Raw/DSC_4115.NEF": {
+   "captured": "2026-07-08T01:40:55.530",
+   "orientation": 8,
+   "bytes": 52206995
+  },
+  "INDOOR/Indoor Shoot 7/Raw/DSC_4116.NEF": {
+   "captured": "2026-07-08T01:41:26.280",
+   "orientation": 8,
+   "bytes": 52937222
+  },
+  "INDOOR/Indoor Shoot 7/Raw/DSC_4117.NEF": {
+   "captured": "2026-07-08T01:42:01.520",
+   "orientation": 8,
+   "bytes": 48056336
+  },
+  "INDOOR/Indoor Shoot 7/Raw/DSC_4119.NEF": {
+   "captured": "2026-07-08T01:42:18.330",
+   "orientation": 8,
+   "bytes": 48088171
+  },
+  "INDOOR/Indoor Shoot 7/Raw/DSC_4122.NEF": {
+   "captured": "2026-07-08T01:43:29.340",
+   "orientation": 8,
+   "bytes": 48693595
+  },
+  "INDOOR/Indoor Shoot 7/Raw/DSC_4124.NEF": {
+   "captured": "2026-07-08T01:44:57.990",
+   "orientation": 8,
+   "bytes": 48590689
+  },
+  "INDOOR/Indoor Shoot 7/Raw/DSC_4126.NEF": {
+   "captured": "2026-07-08T01:45:54.120",
+   "orientation": 8,
+   "bytes": 47812432
+  },
+  "INDOOR/Indoor Shoot 7/Raw/DSC_4127.NEF": {
+   "captured": "2026-07-08T01:46:06.630",
+   "orientation": 8,
+   "bytes": 47912798
+  },
+  "INDOOR/Indoor Shoot 7/Raw/DSC_4128.NEF": {
+   "captured": "2026-07-08T01:46:19.990",
+   "orientation": 8,
+   "bytes": 47998046
+  },
+  "INDOOR/Indoor Shoot 7/Raw/DSC_4129.NEF": {
+   "captured": "2026-07-08T01:46:39.240",
+   "orientation": 8,
+   "bytes": 48614769
+  },
+  "INDOOR/Indoor Shoot 7/Raw/DSC_4134.NEF": {
+   "captured": "2026-07-08T01:47:22.980",
+   "orientation": 8,
+   "bytes": 47547558
+  },
+  "INDOOR/Indoor Shoot 7/Raw/DSC_4135.NEF": {
+   "captured": "2026-07-08T01:47:23.940",
+   "orientation": 8,
+   "bytes": 47318406
+  },
+  "INDOOR/Indoor Shoot 7/Raw/DSC_4136.NEF": {
+   "captured": "2026-07-08T01:47:24.910",
+   "orientation": 8,
+   "bytes": 47666877
+  },
+  "INDOOR/Indoor Shoot 7/Raw/DSC_4141.NEF": {
+   "captured": "2026-07-08T01:47:30.170",
+   "orientation": 8,
+   "bytes": 48222043
+  },
+  "INDOOR/Indoor Shoot 7/Raw/DSC_4145.NEF": {
+   "captured": "2026-07-08T01:47:32.640",
+   "orientation": 8,
+   "bytes": 47904742
+  },
+  "INDOOR/Indoor Shoot 7/Raw/DSC_4151.NEF": {
+   "captured": "2026-07-08T01:47:36.640",
+   "orientation": 8,
+   "bytes": 47317372
+  },
+  "INDOOR/Indoor Shoot 7/Raw/DSC_4171.NEF": {
+   "captured": "2026-07-08T01:58:25.960",
+   "orientation": 8,
+   "bytes": 49178538
+  },
+  "INDOOR/Indoor Shoot 7/Raw/DSC_4174.NEF": {
+   "captured": "2026-07-08T01:58:48.190",
+   "orientation": 8,
+   "bytes": 49154051
+  },
+  "INDOOR/Indoor Shoot 7/Raw/DSC_4178.NEF": {
+   "captured": "2026-07-08T01:58:57.320",
+   "orientation": 8,
+   "bytes": 51242912
+  },
+  "INDOOR/Indoor Shoot 7/Raw/DSC_4185.NEF": {
+   "captured": "2026-07-08T01:59:05.330",
+   "orientation": 8,
+   "bytes": 48969975
+  },
+  "INDOOR/Indoor Shoot 7/Raw/DSC_4192.NEF": {
+   "captured": "2026-07-08T01:59:19.660",
+   "orientation": 8,
+   "bytes": 49004533
+  },
+  "INDOOR/Indoor Shoot 7/Raw/DSC_4210.NEF": {
+   "captured": "2026-07-08T02:07:57.830",
+   "orientation": 8,
+   "bytes": 50292030
+  },
+  "INDOOR/Indoor Shoot 7/Raw/DSC_4225.NEF": {
+   "captured": "2026-07-08T02:09:01.640",
+   "orientation": 8,
+   "bytes": 50236852
+  },
+  "INDOOR/Indoor Shoot 7/Raw/DSC_4244.NEF": {
+   "captured": "2026-07-08T02:11:04.280",
+   "orientation": 8,
+   "bytes": 52251063
+  },
+  "INDOOR/Indoor Shoot 8/Raw/DSC_3994.NEF": {
+   "captured": "2026-07-08T01:08:02.440",
+   "orientation": 8,
+   "bytes": 51833482
+  },
+  "INDOOR/Indoor Shoot 8/Raw/DSC_3995.NEF": {
+   "captured": "2026-07-08T01:08:03.690",
+   "orientation": 8,
+   "bytes": 51504130
+  },
+  "INDOOR/Indoor Shoot 8/Raw/DSC_4000.NEF": {
+   "captured": "2026-07-08T01:08:11.160",
+   "orientation": 8,
+   "bytes": 50542556
+  },
+  "INDOOR/Indoor Shoot 8/Raw/DSC_4009.NEF": {
+   "captured": "2026-07-08T01:24:34.140",
+   "orientation": 8,
+   "bytes": 52054070
+  },
+  "INDOOR/Indoor Shoot 8/Raw/DSC_4012.NEF": {
+   "captured": "2026-07-08T01:24:38.670",
+   "orientation": 8,
+   "bytes": 51177357
+  },
+  "INDOOR/Indoor Shoot 8/Raw/DSC_4015.NEF": {
+   "captured": "2026-07-08T01:24:51.140",
+   "orientation": 8,
+   "bytes": 51407178
+  },
+  "INDOOR/Indoor Shoot 8/Raw/DSC_4021.NEF": {
+   "captured": "2026-07-08T01:25:03.520",
+   "orientation": 8,
+   "bytes": 49525969
+  },
+  "INDOOR/Indoor Shoot 8/Raw/DSC_4031.NEF": {
+   "captured": "2026-07-08T01:25:28.510",
+   "orientation": 8,
+   "bytes": 45010723
+  },
+  "INDOOR/Indoor Shoot 8/Raw/DSC_4036.NEF": {
+   "captured": "2026-07-08T01:25:46.810",
+   "orientation": 8,
+   "bytes": 48903516
+  },
+  "INDOOR/Indoor Shoot 8/Raw/DSC_4047.NEF": {
+   "captured": "2026-07-08T01:26:22.460",
+   "orientation": 8,
+   "bytes": 49916624
+  },
+  "INDOOR/Indoor Shoot 8/Raw/DSC_4049.NEF": {
+   "captured": "2026-07-08T01:26:43.910",
+   "orientation": 8,
+   "bytes": 50301353
+  },
+  "INDOOR/Indoor Shoot 8/Raw/DSC_4053.NEF": {
+   "captured": "2026-07-08T01:26:48.690",
+   "orientation": 8,
+   "bytes": 50454153
+  },
+  "INDOOR/Indoor Shoot 8/Raw/DSC_4060.NEF": {
+   "captured": "2026-07-08T01:28:56.840",
+   "orientation": 8,
+   "bytes": 50769159
+  },
+  "INDOOR/Indoor Shoot 8/Raw/DSC_4061.NEF": {
+   "captured": "2026-07-08T01:28:58.350",
+   "orientation": 8,
+   "bytes": 51545369
+  },
+  "INDOOR/Indoor Shoot 8/Raw/DSC_4063.NEF": {
+   "captured": "2026-07-08T01:29:03.350",
+   "orientation": 8,
+   "bytes": 51377393
+  },
+  "INDOOR/Indoor Shoot 8/Raw/DSC_4064.NEF": {
+   "captured": "2026-07-08T01:29:04.420",
+   "orientation": 8,
+   "bytes": 50342071
+  },
+  "INDOOR/Indoor Shoot 8/Raw/DSC_4066.NEF": {
+   "captured": "2026-07-08T01:29:15.520",
+   "orientation": 8,
+   "bytes": 50392963
+  },
+  "INDOOR/Indoor Shoot 8/Raw/DSC_4071.NEF": {
+   "captured": "2026-07-08T01:29:23.480",
+   "orientation": 8,
+   "bytes": 48097740
+  },
+  "INDOOR/Indoor Shoot 8/Raw/DSC_4072.NEF": {
+   "captured": "2026-07-08T01:29:24.530",
+   "orientation": 8,
+   "bytes": 48506393
+  },
+  "INDOOR/Indoor Shoot 8/Raw/DSC_4073.NEF": {
+   "captured": "2026-07-08T01:29:25.260",
+   "orientation": 8,
+   "bytes": 47746927
+  },
+  "INDOOR/Indoor Shoot 8/Raw/DSC_4074.NEF": {
+   "captured": "2026-07-08T01:29:26.360",
+   "orientation": 8,
+   "bytes": 48639753
+  },
+  "INDOOR/Indoor Shoot 8/Raw/DSC_4075.NEF": {
+   "captured": "2026-07-08T01:29:27.300",
+   "orientation": 8,
+   "bytes": 48574294
+  },
+  "INDOOR/Indoor Shoot 8/Raw/DSC_4076.NEF": {
+   "captured": "2026-07-08T01:29:28.680",
+   "orientation": 8,
+   "bytes": 48379049
+  },
+  "INDOOR/Indoor Shoot 8/Raw/DSC_4077.NEF": {
+   "captured": "2026-07-08T01:29:35.930",
+   "orientation": 8,
+   "bytes": 48446313
+  },
+  "INDOOR/Indoor Shoot 8/Raw/DSC_4078.NEF": {
+   "captured": "2026-07-08T01:29:37.140",
+   "orientation": 8,
+   "bytes": 48540804
+  },
+  "INDOOR/Indoor Shoot 8/Raw/DSC_4079.NEF": {
+   "captured": "2026-07-08T01:29:38.180",
+   "orientation": 8,
+   "bytes": 48705548
+  },
+  "INDOOR/Indoor Shoot 8/Raw/DSC_4080.NEF": {
+   "captured": "2026-07-08T01:29:39.230",
+   "orientation": 8,
+   "bytes": 47666811
+  },
+  "INDOOR/Indoor Shoot 8/Raw/DSC_4082.NEF": {
+   "captured": "2026-07-08T01:29:41.180",
+   "orientation": 8,
+   "bytes": 48913902
+  },
+  "INDOOR/Indoor Shoot 8/Raw/DSC_4083.NEF": {
+   "captured": "2026-07-08T01:29:41.990",
+   "orientation": 8,
+   "bytes": 48361552
+  },
+  "INDOOR/Indoor Shoot 8/Raw/DSC_4086.NEF": {
+   "captured": "2026-07-08T01:29:51.800",
+   "orientation": 8,
+   "bytes": 48566581
+  },
+  "INDOOR/Indoor Shoot 8/Raw/DSC_4087.NEF": {
+   "captured": "2026-07-08T01:29:53.400",
+   "orientation": 8,
+   "bytes": 48964157
+  },
+  "INDOOR/Indoor Shoot 8/Raw/DSC_4088.NEF": {
+   "captured": "2026-07-08T01:30:09.990",
+   "orientation": 8,
+   "bytes": 49475762
+  },
+  "INDOOR/Indoor Shoot 8/Raw/DSC_4089.NEF": {
+   "captured": "2026-07-08T01:30:11.390",
+   "orientation": 8,
+   "bytes": 48998832
+  },
+  "INDOOR/Indoor Shoot 8/Raw/DSC_4091.NEF": {
+   "captured": "2026-07-08T01:30:15.540",
+   "orientation": 8,
+   "bytes": 48800392
+  },
+  "INDOOR/Indoor Shoot 8/Raw/DSC_4093.NEF": {
+   "captured": "2026-07-08T01:30:20.990",
+   "orientation": 1,
+   "bytes": 49501805
+  },
+  "INDOOR/Indoor Shoot 8/Raw/DSC_4094.NEF": {
+   "captured": "2026-07-08T01:30:24.270",
+   "orientation": 1,
+   "bytes": 49707473
+  },
+  "INDOOR/Indoor Shoot 8/Raw/DSC_4099.NEF": {
+   "captured": "2026-07-08T01:30:42.180",
+   "orientation": 8,
+   "bytes": 50405939
+  },
+  "INDOOR/Indoor Shoot 8/Raw/DSC_4100.NEF": {
+   "captured": "2026-07-08T01:30:44.520",
+   "orientation": 8,
+   "bytes": 51227242
+  },
+  "INDOOR/Indoor Shoot 8/Raw/DSC_4120.NEF": {
+   "captured": "2026-07-08T01:42:46.270",
+   "orientation": 8,
+   "bytes": 48375095
+  },
+  "INDOOR/Indoor Shoot 8/Raw/DSC_4133.NEF": {
+   "captured": "2026-07-08T01:47:21.600",
+   "orientation": 8,
+   "bytes": 47485176
+  },
+  "INDOOR/Indoor Shoot 8/Raw/DSC_4180.NEF": {
+   "captured": "2026-07-08T01:58:59.040",
+   "orientation": 8,
+   "bytes": 49482688
+  },
+  "INDOOR/Indoor Shoot 8/Raw/DSC_4195.NEF": {
+   "captured": "2026-07-08T01:59:22.620",
+   "orientation": 8,
+   "bytes": 47062004
+  },
+  "INDOOR/Indoor Shoot 8/Raw/DSC_4220.NEF": {
+   "captured": "2026-07-08T02:08:56.450",
+   "orientation": 8,
+   "bytes": 50299151
+  },
+  "INDOOR/Indoor Shoot 9/Raw/DSC_3957.NEF": {
+   "captured": "2026-07-08T01:06:07.310",
+   "orientation": 8,
+   "bytes": 51247716
+  },
+  "INDOOR/Indoor Shoot 9/Raw/DSC_3962.NEF": {
+   "captured": "2026-07-08T01:06:13.990",
+   "orientation": 8,
+   "bytes": 51965699
+  },
+  "INDOOR/Indoor Shoot 9/Raw/DSC_3963.NEF": {
+   "captured": "2026-07-08T01:06:16.380",
+   "orientation": 8,
+   "bytes": 50148679
+  },
+  "INDOOR/Indoor Shoot 9/Raw/DSC_3965.NEF": {
+   "captured": "2026-07-08T01:06:22.570",
+   "orientation": 8,
+   "bytes": 50435914
+  },
+  "INDOOR/Indoor Shoot 9/Raw/DSC_3966.NEF": {
+   "captured": "2026-07-08T01:06:23.520",
+   "orientation": 8,
+   "bytes": 51627269
+  },
+  "INDOOR/Indoor Shoot 9/Raw/DSC_3972.NEF": {
+   "captured": "2026-07-08T01:06:39.690",
+   "orientation": 8,
+   "bytes": 50026329
+  },
+  "INDOOR/Indoor Shoot 9/Raw/DSC_3973.NEF": {
+   "captured": "2026-07-08T01:06:40.420",
+   "orientation": 8,
+   "bytes": 45068185
+  },
+  "INDOOR/Indoor Shoot 9/Raw/DSC_3977.NEF": {
+   "captured": "2026-07-08T01:06:44.940",
+   "orientation": 8,
+   "bytes": 51207747
+  },
+  "INDOOR/Indoor Shoot 9/Raw/DSC_3979.NEF": {
+   "captured": "2026-07-08T01:06:47.220",
+   "orientation": 8,
+   "bytes": 50607708
+  },
+  "INDOOR/Indoor Shoot 9/Raw/DSC_3984.NEF": {
+   "captured": "2026-07-08T01:07:28.110",
+   "orientation": 8,
+   "bytes": 50874669
+  },
+  "INDOOR/Indoor Shoot 9/Raw/DSC_3985.NEF": {
+   "captured": "2026-07-08T01:07:29.180",
+   "orientation": 8,
+   "bytes": 50493942
+  },
+  "INDOOR/Indoor Shoot 9/Raw/DSC_3988.NEF": {
+   "captured": "2026-07-08T01:07:32.470",
+   "orientation": 8,
+   "bytes": 50724745
+  },
+  "INDOOR/Indoor Shoot 9/Raw/DSC_3989.NEF": {
+   "captured": "2026-07-08T01:07:33.990",
+   "orientation": 8,
+   "bytes": 51111381
+  },
+  "INDOOR/Indoor Shoot 9/Raw/DSC_3990.NEF": {
+   "captured": "2026-07-08T01:07:34.890",
+   "orientation": 8,
+   "bytes": 52370709
+  },
+  "INDOOR/Indoor Shoot 9/Raw/DSC_3993.NEF": {
+   "captured": "2026-07-08T01:08:01.680",
+   "orientation": 8,
+   "bytes": 50478041
+  },
+  "INDOOR/Indoor Shoot 9/Raw/DSC_3996.NEF": {
+   "captured": "2026-07-08T01:08:04.670",
+   "orientation": 8,
+   "bytes": 51737543
+  },
+  "INDOOR/Indoor Shoot 9/Raw/DSC_4002.NEF": {
+   "captured": "2026-07-08T01:08:12.920",
+   "orientation": 8,
+   "bytes": 50445334
+  },
+  "INDOOR/Indoor Shoot 9/Raw/DSC_4003.NEF": {
+   "captured": "2026-07-08T01:08:13.840",
+   "orientation": 8,
+   "bytes": 51756177
+  },
+  "INDOOR/Indoor Shoot 9/Raw/DSC_4007.NEF": {
+   "captured": "2026-07-08T01:08:18.170",
+   "orientation": 8,
+   "bytes": 51672675
+  },
+  "INDOOR/Indoor Shoot 9/Raw/DSC_4008.NEF": {
+   "captured": "2026-07-08T01:24:27.440",
+   "orientation": 8,
+   "bytes": 44995918
+  },
+  "INDOOR/Indoor Shoot 9/Raw/DSC_4010.NEF": {
+   "captured": "2026-07-08T01:24:35.470",
+   "orientation": 8,
+   "bytes": 50873778
+  },
+  "INDOOR/Indoor Shoot 9/Raw/DSC_4016.NEF": {
+   "captured": "2026-07-08T01:24:57.230",
+   "orientation": 8,
+   "bytes": 49894877
+  },
+  "INDOOR/Indoor Shoot 9/Raw/DSC_4017.NEF": {
+   "captured": "2026-07-08T01:24:58.490",
+   "orientation": 8,
+   "bytes": 49612406
+  },
+  "INDOOR/Indoor Shoot 9/Raw/DSC_4019.NEF": {
+   "captured": "2026-07-08T01:25:00.670",
+   "orientation": 8,
+   "bytes": 50009376
+  },
+  "INDOOR/Indoor Shoot 9/Raw/DSC_4020.NEF": {
+   "captured": "2026-07-08T01:25:01.990",
+   "orientation": 8,
+   "bytes": 50499280
+  },
+  "INDOOR/Indoor Shoot 9/Raw/DSC_4022.NEF": {
+   "captured": "2026-07-08T01:25:04.530",
+   "orientation": 8,
+   "bytes": 49242571
+  },
+  "INDOOR/Indoor Shoot 9/Raw/DSC_4026.NEF": {
+   "captured": "2026-07-08T01:25:21.450",
+   "orientation": 8,
+   "bytes": 53967011
+  },
+  "INDOOR/Indoor Shoot 9/Raw/DSC_4029.NEF": {
+   "captured": "2026-07-08T01:25:24.750",
+   "orientation": 8,
+   "bytes": 51458202
+  },
+  "INDOOR/Indoor Shoot 9/Raw/DSC_4035.NEF": {
+   "captured": "2026-07-08T01:25:43.560",
+   "orientation": 8,
+   "bytes": 48879728
+  },
+  "INDOOR/Indoor Shoot 9/Raw/DSC_4037.NEF": {
+   "captured": "2026-07-08T01:25:58.260",
+   "orientation": 8,
+   "bytes": 49233733
+  },
+  "INDOOR/Indoor Shoot 9/Raw/DSC_4044.NEF": {
+   "captured": "2026-07-08T01:26:19.210",
+   "orientation": 8,
+   "bytes": 51724176
+  },
+  "INDOOR/Indoor Shoot 9/Raw/DSC_4050.NEF": {
+   "captured": "2026-07-08T01:26:44.960",
+   "orientation": 8,
+   "bytes": 50650240
+  },
+  "INDOOR/Indoor Shoot 9/Raw/DSC_4052.NEF": {
+   "captured": "2026-07-08T01:26:47.360",
+   "orientation": 8,
+   "bytes": 50068038
+  },
+  "INDOOR/Indoor Shoot 9/Raw/DSC_4056.NEF": {
+   "captured": "2026-07-08T01:28:49.190",
+   "orientation": 8,
+   "bytes": 45050670
+  },
+  "INDOOR/Indoor Shoot 9/Raw/DSC_4067.NEF": {
+   "captured": "2026-07-08T01:29:16.780",
+   "orientation": 8,
+   "bytes": 49374744
+  },
+  "INDOOR/Indoor Shoot 9/Raw/DSC_4068.NEF": {
+   "captured": "2026-07-08T01:29:17.980",
+   "orientation": 8,
+   "bytes": 50482595
+  },
+  "INDOOR/Indoor Shoot 9/Raw/DSC_4069.NEF": {
+   "captured": "2026-07-08T01:29:18.820",
+   "orientation": 8,
+   "bytes": 50337121
+  },
+  "INDOOR/Indoor Shoot 9/Raw/DSC_4096.NEF": {
+   "captured": "2026-07-08T01:30:37.460",
+   "orientation": 8,
+   "bytes": 49872326
+  },
+  "INDOOR/Indoor Shoot 9/Raw/DSC_4098.NEF": {
+   "captured": "2026-07-08T01:30:40.990",
+   "orientation": 8,
+   "bytes": 50264195
+  },
+  "INDOOR/Indoor Shoot 9/Raw/DSC_4101.NEF": {
+   "captured": "2026-07-08T01:30:48.160",
+   "orientation": 8,
+   "bytes": 50690038
+  },
+  "INDOOR/Indoor Shoot 9/Raw/DSC_4103.NEF": {
+   "captured": "2026-07-08T01:30:57.320",
+   "orientation": 8,
+   "bytes": 53476267
+  },
+  "INDOOR/Indoor Shoot 9/Raw/DSC_4199.NEF": {
+   "captured": "2026-07-08T01:59:37.570",
+   "orientation": 8,
+   "bytes": 47551119
+  }
+ },
+ "updated": "2026-09-21T02:19:20"
+}

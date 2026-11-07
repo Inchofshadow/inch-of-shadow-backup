@@ -1,0 +1,152 @@
+{# Work page, top section, By number view (?group=metric): open tickets of both boards under the
+   number they move (was tickets_by_metric.html). #}
+<section class="work-section tickets-by-metric" id="metric-section">
+<style>
+    .tickets-by-metric .mhead { display: grid; gap: 4px; align-content: start; }
+    .tickets-by-metric .mhead .name { font-family: var(--font-heading); font-size: 15px; font-weight: 700; }
+    .tickets-by-metric .mhead .num { font-family: var(--font-heading); font-size: 22px; font-weight: 700; line-height: 1.1; }
+    .tickets-by-metric .mhead .num.empty { color: var(--text-secondary); opacity: .6; font-size: 13px; font-weight: 500; }
+    .tickets-by-metric .mhead .rung { font-size: var(--text-xs); color: var(--text-accent); font-family: var(--font-mono); }
+    .tickets-by-metric .mhead .asof, .tickets-by-metric .mhead .needs { font-size: var(--text-xs); color: var(--text-secondary); opacity: .75; font-family: var(--font-mono); }
+    .tickets-by-metric .tcard .shown { font-size: var(--text-xs); color: var(--text-accent); }
+    .tickets-by-metric .tcard .who { font-family: var(--font-mono); font-size: var(--text-xs); color: var(--text-secondary); opacity: .8; }
+    .tickets-by-metric .floor.none-group { background: var(--bg-primary); border-style: dashed; }
+    .tickets-by-metric .bk-now { border-left-color: var(--color-warning-text); }
+    .tickets-by-metric .bk-next { border-left-color: var(--color-warning); }
+    .tickets-by-metric .bk-parked, .tickets-by-metric .bk-routine, .tickets-by-metric .bk- { border-left-color: var(--border-color); }
+</style>
+{% if tickets_error %}
+    <h2>Tickets by number</h2>
+    <div class="board-error"><strong>plans/tickets.json is not valid.</strong><pre>{{ tickets_error }}</pre></div>
+{% else %}
+    <div class="board-top">
+        <div>
+            <h2>Tickets by number</h2>
+            <p class="form-subtitle">Every open ticket of both boards under the number it moves. Numbers and rungs: plans/targets.json.</p>
+        </div>
+        <div class="board-kpis">
+            <div class="board-kpi"><div class="k">Open</div><div class="v">{{ mview.open_count }}</div></div>
+            <div class="board-kpi"><div class="k">Move a number</div><div class="v gold">{{ mview.open_count - mview.none_count }}</div></div>
+            <div class="board-kpi"><div class="k">No number</div><div class="v">{{ mview.none_count }}</div></div>
+        </div>
+    </div>
+
+    <div class="board-filters" id="metric-filters">
+        <button class="chip on" data-filter="hide-empty">Hide empty groups</button>
+        <button class="chip" data-filter="now">Now only</button>
+        <button class="chip" data-filter="who:amir">Amir</button>
+        <button class="chip" data-filter="who:claude">Claude</button>
+    </div>
+
+    <div class="tower">
+    {% for g in mview.groups %}
+        <div class="floor mgroup{% if g.key == 'none' %} none-group{% endif %}" data-group="{{ g.key }}" data-count="{{ g.open_count }}">
+            <div class="floor-label mhead">
+                <div class="name">{{ g.label }}{% if g.proposed %} <span class="pill st-proposed">proposed</span>{% endif %}</div>
+                {% if g.value %}
+                    <div class="num">{{ g.value }}{% if g.unit %} <span class="asof">{{ g.unit }}</span>{% endif %}</div>
+                {% elif g.key != 'none' %}
+                    <div class="num empty">no reading yet</div>
+                {% endif %}
+                {% if g.rung %}<div class="rung">rung {{ g.rung }} by {{ g.rung_date }}</div>
+                {% elif g.floor %}<div class="rung">floor {{ g.floor }}</div>
+                {% elif g.kind == 'collecting' %}<div class="rung">collecting, no rung</div>{% endif %}
+                {% if g.as_of %}<div class="asof">as of {{ g.as_of }}</div>{% endif %}
+                <div class="needs">{{ g.open_count }} open</div>
+            </div>
+            <div class="cards">
+            {% for c in g.tickets %}
+                <button class="tcard bk-{{ c.bucket }}"
+                        data-id="{{ c.id }}" data-bucket="{{ c.bucket }}" data-who="{{ c.who }}" data-board="{{ c.board }}">
+                    <span class="row"><span class="shown">{{ c.shown_as }}</span><span class="pill st-{{ c.status }}">{{ c.status }}</span></span>
+                    <span class="ttitle">{{ c.label or c.title }}</span>
+                    <span class="who">{% if c.bucket %}{{ c.bucket }}{% endif %}{% if c.who %} · {{ c.who }}{% endif %}{% if c.updated %} · {{ c.updated }}{% endif %}</span>
+                    {% if c.metric_note %}<span class="dep">{{ c.metric_note }}</span>{% endif %}
+                </button>
+            {% else %}
+                <div class="tghost">no open ticket moves this number</div>
+            {% endfor %}
+            </div>
+        </div>
+    {% endfor %}
+    </div>
+
+    <section class="tdetail" id="metric-detail" hidden>
+        <div class="head">
+            <div><span class="lanechip" id="d-lane"></span><h2 id="d-title"></h2></div>
+            <span class="pill" id="d-status"></span>
+        </div>
+        <div class="field"><div class="k">Why</div><div class="v" id="d-why"></div></div>
+        <div class="field"><div class="k">How it helps</div><div class="v" id="d-helps"></div></div>
+        <div class="field"><div class="k">Done means</div><div class="v" id="d-done"></div></div>
+        <div class="field"><div class="k">Next step</div><div class="v" id="d-next"></div></div>
+        <div class="field"><div class="k">Waits on</div><div class="v" id="d-blocked"></div></div>
+        <div class="field"><div class="k">Notes</div><div class="v" id="d-notes"></div></div>
+    </section>
+
+    <script id="ticket-data" type="application/json">{{ cards_json|tojson }}</script>
+    <script>
+    (function () {
+        var root = document.getElementById('metric-section');
+        var cards = JSON.parse(document.getElementById('ticket-data').textContent);
+        var byId = {};
+        cards.forEach(function (c) { byId[c.id] = c; });
+
+        var state = { hideEmpty: true, now: false, who: null };
+        function applyFilters() {
+            root.querySelectorAll('.tcard').forEach(function (el) {
+                var show = true;
+                if (state.now && el.dataset.bucket !== 'now') show = false;
+                if (state.who && el.dataset.who !== state.who) show = false;
+                el.hidden = !show;
+            });
+            root.querySelectorAll('.mgroup').forEach(function (g) {
+                var visible = g.querySelectorAll('.tcard:not([hidden])').length;
+                g.hidden = state.hideEmpty && visible === 0;
+            });
+        }
+        document.getElementById('metric-filters').addEventListener('click', function (e) {
+            var b = e.target.closest('button'); if (!b) return;
+            var f = b.dataset.filter;
+            if (f === 'hide-empty') { state.hideEmpty = !state.hideEmpty; b.classList.toggle('on', state.hideEmpty); }
+            else if (f === 'now') { state.now = !state.now; b.classList.toggle('on', state.now); }
+            else if (f.indexOf('who:') === 0) {
+                var who = f.slice(4);
+                state.who = (state.who === who) ? null : who;
+                root.querySelectorAll('[data-filter^="who:"]').forEach(function (x) {
+                    x.classList.toggle('on', x.dataset.filter === 'who:' + state.who);
+                });
+            }
+            applyFilters();
+        });
+
+        function text(id, value) { document.getElementById(id).textContent = value || 'none'; }
+        function list(id, items) {
+            var el = document.getElementById(id); el.textContent = '';
+            if (!items || !items.length) { el.textContent = 'none'; return; }
+            var ul = document.createElement('ul');
+            items.forEach(function (it) { var li = document.createElement('li'); li.textContent = it; ul.appendChild(li); });
+            el.appendChild(ul);
+        }
+        function open(id) {
+            var c = byId[id]; if (!c) return;
+            root.querySelectorAll('.tcard.open').forEach(function (x) { x.classList.remove('open'); });
+            root.querySelector('.tcard[data-id="' + id + '"]').classList.add('open');
+            text('d-lane', c.shown_as + ' · ' + c.id + (c.bucket ? ' · ' + c.bucket : '') + (c.who ? ' · ' + c.who : '') + (c.board === 'control-panel' ? ' · Control Panel' : ''));
+            text('d-title', c.label ? c.label + ': ' + c.title : c.title);
+            var st = document.getElementById('d-status'); st.textContent = c.status; st.className = 'pill st-' + c.status;
+            text('d-why', c.why); text('d-helps', c.helps);
+            text('d-done', c.done_means + (c.done_means_by === 'claude' ? ' (wording by Claude)' : ''));
+            text('d-next', c.next_step); text('d-blocked', c.blocked_on);
+            list('d-notes', c.notes);
+            var d = document.getElementById('metric-detail'); d.hidden = false;
+            d.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        }
+        root.querySelectorAll('.tcard').forEach(function (el) {
+            el.addEventListener('click', function () { open(el.dataset.id); });
+        });
+        applyFilters();
+    })();
+    </script>
+{% endif %}
+</section>

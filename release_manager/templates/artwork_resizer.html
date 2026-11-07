@@ -1,0 +1,71 @@
+{% extends "base.html" %}
+{% from "_resizer_parts.html" import source_block, focal_grid, presets_block, sizes_block %}
+{% block title %}Artwork Resizer{% endblock %}
+
+{% block content %}
+<div class="resizer-page rz-page">
+    <h1>Artwork Resizer</h1>
+    <p class="form-subtitle">One master picture in, every platform size out, to <code>resized/</code>.</p>
+
+    <form method="POST" enctype="multipart/form-data" class="section rz-form" id="artwork-form">
+        <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+        <div class="rz-layout">
+            <div class="rz-main">
+                {{ source_block('image', existing_images, (posted_meta or {}).get('existing_image', '') or request.args.get('pick', ''), url_for('serve_artwork', filename='x')[:-1]) }}
+                <a class="btn btn-secondary btn-sm rz-edit-link" id="rz-edit-link" href="#" hidden data-base="{{ url_for('photo_editor') }}">Edit a copy (crop, straighten, adjust)</a>
+                {{ focal_grid('focal-grid', 'focal-input', focal_points, selected_focal) }}
+            </div>
+
+            <aside class="rz-panel">
+                {{ presets_block(presets) }}
+                <label class="rz-cover" title="The square release cover is never cropped: on a non-square size it sits whole, on a blurred and darkened copy of itself (artwork_resizer.py --cover)">
+                    <input type="checkbox" name="cover_mode" value="1" id="rz-cover"{% if cover_mode %} checked{% endif %}>
+                    <span><strong>Cover mode</strong> <span class="brand-muted">never crop a square cover</span></span>
+                </label>
+                <div class="rz-h rz-h-sizes">Sizes <span class="brand-muted" id="rz-total"></span></div>
+                {{ sizes_block(export_groups, picked, 'image') }}
+
+                <div class="rz-block rz-inline">
+                    <span class="rz-h">Format</span>
+                    <label class="format-option"><input type="radio" name="format" value="jpg" {{ 'checked' if selected_fmt == 'jpg' }}> JPEG, quality 97</label>
+                    <label class="format-option"><input type="radio" name="format" value="png" {{ 'checked' if selected_fmt == 'png' }}> PNG, lossless</label>
+                </div>
+                {% include "_resizer_metadata.html" %}
+
+                <div class="form-actions rz-go">
+                    <button type="submit" class="btn btn-accent" id="artwork-submit-btn" data-verb="Make">Make every size</button>
+                    <span class="brand-muted rz-go-note" id="rz-go-note">Nothing ticked makes all of them.</span>
+                </div>
+                <div class="processing-overlay" id="processing-overlay" style="display:none;">
+                    <div class="processing-content">
+                        <div class="processing-spinner"></div>
+                        <p class="processing-title">Resizing...</p>
+                        <div class="processing-bar"><div class="processing-bar-fill"></div></div>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </form>
+
+    {% if results %}
+    <section class="section rz-results">
+        <div class="results-header">
+            <h2>{{ results|length }} files made</h2>
+            <span class="results-meta-info">focal <strong>{{ selected_focal }}</strong> &middot; {{ selected_fmt|upper }}{% if cover_mode %} &middot; cover mode{% endif %} &middot; in <code>resized/</code></span>
+        </div>
+        <div class="results-grid rz-results-grid">
+            {% for r in results %}
+            <a class="result-card rz-result" href="{{ url_for('serve_resized', filename=r[0]) }}" target="_blank" title="{{ r[0] }}">
+                <div class="result-thumb rz-thumb" style="aspect-ratio: {{ r[1] }} / {{ r[2] }}"><img src="{{ url_for('serve_resized', filename=r[0]) }}" alt="" loading="lazy"></div>
+                <div class="result-info"><span class="result-name">{{ r[0] }}</span><span class="result-meta">{{ r[1] }}x{{ r[2] }}, {{ r[3] }} KB</span></div>
+            </a>
+            {% endfor %}
+        </div>
+        {% if preview_file %}
+        <details class="rz-preview-grid"><summary>Preview sheet</summary><img src="{{ url_for('serve_resized', filename=preview_file) }}" alt="Preview grid" class="preview-grid-img"></details>
+        {% endif %}
+    </section>
+    {% endif %}
+</div>
+<script src="{{ url_for('static', filename='resizer.js') }}?v=3"></script>
+{% endblock %}

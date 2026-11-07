@@ -1,0 +1,86 @@
+- generic [active] [ref=e1]:
+  - link "Skip to content" [ref=e2] [cursor=pointer]:
+    - /url: "#main-content"
+  - navigation "Main navigation" [ref=e3]:
+    - generic [ref=e4]:
+      - generic [ref=e5]:
+        - link "Inch of Shadow" [ref=e6] [cursor=pointer]:
+          - /url: /
+        - generic [ref=e8]: Release Manager
+      - generic [ref=e9]:
+        - link "Autopilot" [ref=e10] [cursor=pointer]:
+          - /url: /autopilot
+        - link "Artwork Resizer" [ref=e11] [cursor=pointer]:
+          - /url: /artwork-resizer
+        - link "Video Resizer" [ref=e12] [cursor=pointer]:
+          - /url: /video-resizer
+        - link "SEO Copy" [ref=e13] [cursor=pointer]:
+          - /url: /seo-copy
+        - link "Engage" [ref=e14] [cursor=pointer]:
+          - /url: /engagement
+        - link "Promote" [ref=e15] [cursor=pointer]:
+          - /url: /promotion
+        - link "Stats" [ref=e16] [cursor=pointer]:
+          - /url: /stats
+        - link "Palette" [ref=e17] [cursor=pointer]:
+          - /url: /palette
+        - link "+ New Release" [ref=e18] [cursor=pointer]:
+          - /url: /release/new
+  - main [ref=e19]:
+    - generic [ref=e20]:
+      - generic [ref=e22]:
+        - heading "Autopilot" [level=1] [ref=e23]
+        - paragraph [ref=e24]: Tuesday, April 07, 2026
+      - generic [ref=e25]:
+        - generic [ref=e26]:
+          - generic [ref=e27]: "!"
+          - heading "Overdue" [level=2] [ref=e28]
+          - generic [ref=e29]: "3"
+        - generic [ref=e30]:
+          - generic [ref=e31]: All credits confirmed
+          - generic [ref=e32]: Farewell
+          - generic [ref=e33]: 22d late
+        - generic [ref=e34]:
+          - generic [ref=e35]: Release submitted to Symphonic
+          - generic [ref=e36]: Farewell
+          - generic [ref=e37]: 8d late
+        - generic [ref=e38]:
+          - generic [ref=e39]: Distributor approved
+          - generic [ref=e40]: Farewell
+          - generic [ref=e41]: 1d late
+      - generic [ref=e42]:
+        - generic [ref=e43]:
+          - heading "Coming Up" [level=2] [ref=e44]
+          - generic [ref=e45]: "1"
+        - generic [ref=e46]:
+          - generic [ref=e47]: Spotify editorial pitch submitted
+          - generic [ref=e48]: Farewell
+          - generic [ref=e49]: 2026-04-10
+      - generic [ref=e50]:
+        - heading "Outreach" [level=2] [ref=e52]
+        - generic [ref=e53]:
+          - generic [ref=e54]: the-deciver-single
+          - generic [ref=e55]: 0 sent / 0 unsent with email / 1 total
+        - generic [ref=e56]:
+          - generic [ref=e57]: farewell-single
+          - generic [ref=e58]: 45 sent / 0 unsent with email / 56 total
+      - generic [ref=e59]:
+        - heading "Stats" [level=2] [ref=e61]
+        - generic [ref=e62]:
+          - generic [ref=e63]:
+            - generic [ref=e64]: SoundCloud
+            - generic [ref=e65]: 104 followers / 509 plays
+          - generic [ref=e66]:
+            - generic [ref=e67]: Instagram
+            - generic [ref=e68]: 779 followers / 8365 reach
+          - generic [ref=e69]:
+            - generic [ref=e70]: YouTube
+            - generic [ref=e71]: 5 subs / 44 views
+        - paragraph [ref=e72]: "Last synced: 2026-04-06 19:29"
+      - generic [ref=e74]: "Bandcamp Friday: 2026-05-01 (23 days)"
+      - generic [ref=e75]:
+        - generic [ref=e76]:
+          - generic [ref=e77]: Farewell
+          - generic [ref=e78]: draft
+          - generic [ref=e79]: 30d to go
+        - generic [ref=e83]: 2/21 (10%)
