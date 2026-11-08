@@ -457,3 +457,11 @@ def test_tickets_route_by_metric_survives_broken_board_file(client, monkeypatch)
     monkeypatch.setattr(w, "CONTROL_PANEL_FILE", Path("/nonexistent/tickets.json"))
     r = client.get("/tickets?group=metric")
     assert r.status_code == 200 and 'data-id="G-12"' in r.data.decode()
+
+
+def test_done_ticket_with_empty_bucket_or_who_is_valid():
+    # Gate review 2026-11-08: '' on a done ticket counts as absent, as _missing already says.
+    errs = validate(doc(ticket(status="done", bucket="", who="")))
+    assert not any("bad bucket" in e or "bad who" in e for e in errs)
+    errs = validate(doc(ticket(bucket="", who="")))
+    assert any("bad bucket" in e for e in errs) or any("missing bucket" in e for e in errs)

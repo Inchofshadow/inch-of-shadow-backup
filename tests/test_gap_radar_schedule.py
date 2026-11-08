@@ -55,3 +55,17 @@ def test_too_soon_waits_after_a_recent_run():
     assert sch.too_soon(st, date(2026, 11, 15), 5) == ""
     assert sch.too_soon({}, date(2026, 11, 8), 5) == ""
     assert sch.too_soon(st, date(2026, 11, 8), 0) == ""
+
+
+def test_second_run_is_refused_while_one_holds_the_lock(tmp_path, monkeypatch, capsys):
+    import fcntl
+    monkeypatch.setattr(sch, "LOCK", tmp_path / "schedule.lock")
+    monkeypatch.setattr(sch, "STATE", tmp_path / "state.json")
+    held = open(sch.LOCK, "w")
+    fcntl.flock(held, fcntl.LOCK_EX | fcntl.LOCK_NB)
+    try:
+        assert sch.main(["--force"]) == 0
+    finally:
+        held.close()
+    assert "Another Gap Radar run is going" in capsys.readouterr().out
+    assert not (tmp_path / "state.json").exists()

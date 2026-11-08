@@ -7,6 +7,7 @@ JSON file I/O for release files in the releases/ directory.
 from __future__ import annotations
 
 import json
+import re
 import sys
 from datetime import datetime
 from pathlib import Path
@@ -23,14 +24,27 @@ def ensure_releases_dir() -> Path:
     return RELEASES_DIR
 
 
+_SAFE_SLUG = re.compile(r"[A-Za-z0-9][A-Za-z0-9._-]{0,150}")
+
+
 def release_path(slug: str) -> Path:
-    """Return the full path for a release JSON file."""
+    """Return the full path for a release JSON file.
+
+    Raises ValueError for a slug that could leave releases/ (a slash, a
+    leading dot, empty). Gate review 2026-11-07: /api/seo-copy/pick took the
+    slug straight from the request body, so '../x' read and overwrote files
+    outside releases/."""
+    if not isinstance(slug, str) or not _SAFE_SLUG.fullmatch(slug) or ".." in slug:
+        raise ValueError("bad release slug")
     return RELEASES_DIR / f"{slug}.json"
 
 
 def release_exists(slug: str) -> bool:
     """Check if a release JSON file exists."""
-    return release_path(slug).exists()
+    try:
+        return release_path(slug).exists()
+    except ValueError:
+        return False
 
 
 def iter_release_paths() -> list[Path]:
@@ -57,8 +71,11 @@ def _migrate_distribution(data: dict) -> None:
 
 
 def load_release(slug: str) -> dict | None:
-    """Load a release JSON file by slug. Returns None if not found."""
-    path = release_path(slug)
+    """Load a release JSON file by slug. Returns None if not found or the slug is unsafe."""
+    try:
+        path = release_path(slug)
+    except ValueError:
+        return None
     if not path.exists():
         return None
     try:
@@ -140,7 +157,10 @@ def find_release(slug_or_partial: str) -> dict | None:
 
 def delete_release(slug: str) -> bool:
     """Delete a release JSON file by slug. Returns True if deleted."""
-    path = release_path(slug)
+    try:
+        path = release_path(slug)
+    except ValueError:
+        return False
     if path.exists():
         path.unlink()
         return True

@@ -18,6 +18,7 @@ A profile is skipped, never cut short, when its estimate would cross a cap.
 from __future__ import annotations
 
 import argparse
+import fcntl
 import json
 import sys
 from datetime import date
@@ -25,7 +26,8 @@ from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
 SCHEDULE = HERE / "schedule.json"
-STATE = HERE / "schedule_state.json"     # {"last_run": "YYYY-MM-DD"}: written after a run that did work
+STATE = HERE / "schedule_state.json"     # {"last_run": "YYYY-MM-DD"}: written after each profile that ran
+LOCK = HERE / "schedule.lock"             # one run at a time (gate review 2026-11-07: 11-06 runs overlapped)
 if str(HERE) not in sys.path:
     sys.path.insert(0, str(HERE))
 
@@ -110,6 +112,14 @@ def main(argv: list | None = None) -> int:
     if wait:
         print(f"Waiting: {wait}. Use --force to run anyway.")
         return 0
+    lock = None
+    if not a.dry_run:
+        lock = open(LOCK, "w")
+        try:
+            fcntl.flock(lock, fcntl.LOCK_EX | fcntl.LOCK_NB)   # released when the process ends, even on a crash
+        except OSError:
+            print("Another Gap Radar run is going. Not starting a second one.")
+            return 0
 
     def ledger() -> dict:
         try:
@@ -144,12 +154,11 @@ def main(argv: list | None = None) -> int:
             if p["crowding"] and crowding_now:
                 gr.check_report(p, md.with_suffix(".json"))
             ran += 1
+            STATE.write_text(json.dumps({"last_run": today.isoformat()}) + "\n")   # paid work is recorded at once
         except SystemExit as e:              # one bad profile never stops the rest
             print(f"  {p['name']} stopped: {e}")
         except Exception as e:  # noqa: BLE001
             print(f"  {p['name']} failed: {type(e).__name__}: {str(e)[:200]}")
-    if ran and not a.dry_run:
-        STATE.write_text(json.dumps({"last_run": today.isoformat()}) + "\n")
     led = ledger()
     print(f"Done: {ran} profiles. Radar this month ${radar_spend(led, ym):.2f}, "
           f"all Claude ${total_spend(led, ym):.2f} of ${claude_api.LIMIT_USD:.0f}.")

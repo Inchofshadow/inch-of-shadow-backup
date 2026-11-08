@@ -106,6 +106,24 @@ def ensure_clips(rel: dict) -> dict:
     return clips
 
 
+def renumber_clips(rel: dict, mapping: dict) -> None:
+    """Move clip blocks with their tracks after a renumber. `mapping` is old track
+    number -> new number; a block whose track is gone is dropped. Mutates rel.
+    Gate review 2026-11-07: track_delete renumbered tracks only, so clip data moved
+    to the wrong track and the last block was lost."""
+    clips = rel.get("clips")
+    if not isinstance(clips, dict):
+        return
+    out = []
+    for b in clips.get("tracks") or []:
+        if not isinstance(b, dict) or "number" not in b:
+            continue
+        new = mapping.get(int(b["number"]))
+        if new is not None:
+            out.append(dict(b, number=new))
+    clips["tracks"] = sorted(out, key=lambda b: b["number"])
+
+
 def track_clips(rel: dict, number: int) -> dict | None:
     """The clip block of one track (None when the track does not exist)."""
     for b in ensure_clips(rel)["tracks"]:

@@ -59,9 +59,18 @@ def test_tracker_states():
 def test_main_writes_only_the_index(tmp_path, monkeypatch):
     for name in ("SI", "BOOKING", "OUTREACH", "IG_TRACKER", "SC_TRACKER"):
         monkeypatch.setattr(ci, name, tmp_path / f"missing_{name}.json")
-    monkeypatch.setattr(ci, "OWN_LISTS_GLOB", str(tmp_path / "none-*.json"))
+    monkeypatch.setattr(ci, "OWN_LISTS_GLOBS", [str(tmp_path / "none-*.json")])
     monkeypatch.setattr(ci, "ROOT", tmp_path)
     monkeypatch.setattr(ci, "OUT", tmp_path / "contact_index.json")
     monkeypatch.setattr("sys.argv", ["contact_index.py"])
     assert ci.main() == 0
     assert [p.name for p in tmp_path.iterdir()] == ["contact_index.json"]
+
+
+def test_newest_own_lists_reads_both_folders_by_name_date(tmp_path):
+    a = tmp_path / "a"; b = tmp_path / "b"; a.mkdir(); b.mkdir()
+    (b / "dj07-own-lists-2026-11-03.json").write_text("{}")
+    (a / "own-lists-2026-11-10.json").write_text("{}")
+    got = ci.newest_own_lists([str(a / "own-lists-*.json"), str(b / "dj07-own-lists-*.json")])
+    assert got.endswith("own-lists-2026-11-10.json")
+    assert ci.newest_own_lists([str(tmp_path / "none-*.json")]) is None

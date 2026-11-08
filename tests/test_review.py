@@ -648,3 +648,14 @@ def test_relative_paths_resolve_without_a_git_call(monkeypatch):
     monkeypatch.setattr(subprocess, "run", no_shell)
     assert review.resolve_path("artwork/x.png") == storage.BASE_DIR / "artwork" / "x.png"
     assert review.resolve_path("/tmp/x.png") == Path("/tmp/x.png")
+
+
+def test_newest_tick_wins_by_time_not_list_order():
+    rel = fixture_release()
+    a = review.submit(rel, review.add_item(rel, text_item("a"))["id"])
+    res = review.import_ticks(rel, [
+        {"tick_id": "a2", "id": a["id"], "action": "drop", "sha256": a["sha256"], "at": "2026-11-06T20:05:00Z"},
+        {"tick_id": "k7", "id": a["id"], "action": "approve", "sha256": a["sha256"], "at": "2026-11-06T20:00:00Z"},
+    ])
+    assert a["proposed"]["action"] == "drop" and a["proposed"]["tick_id"] == "a2"
+    assert res[1][2] is False and res[1][3].startswith("skipped: older")

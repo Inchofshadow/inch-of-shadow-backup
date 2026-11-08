@@ -104,7 +104,13 @@ def _flagged(text: str) -> list:
         for word in DETECTION_WORDS:
             for m in re.finditer(re.escape(word), line, re.I):
                 sentence = re.split(r"[.;:]\s", line[:m.start()])[-1]
-                if not re.search(r"\bno\b", sentence, re.I) and word not in hits:
+                after = line[m.end():]
+                # "No challenge" before the word, or "Challenge: none" / "takeover: 0" after it
+                if re.search(r"\b(no|none|zero)\b", sentence, re.I):
+                    continue
+                if re.match(r"\s*[:=\-]?\s*(none|no|0|zero|false)\b", after, re.I):
+                    continue
+                if word not in hits:
                     hits.append(word)
     return hits
 
@@ -274,7 +280,8 @@ def write_proposals(proposals: list, d: date) -> int:
     if not proposals:
         return 0
     text = _read(HANDOVER) or ""
-    if HANDOVER_SECTION not in text:
+    heading = re.compile(r"^" + re.escape(HANDOVER_SECTION) + r"[ \t]*$", re.M)   # the heading line, not a prose mention
+    if not heading.search(text):
         text = text.rstrip("\n") + f"\n\n{HANDOVER_SECTION}\n" \
             "Written by stats/daily_brief.py when the same 🔴 line shows two days running. " \
             "Each line is a proposal for the System chat to turn into a ticket (or to dismiss).\n"
@@ -282,7 +289,7 @@ def write_proposals(proposals: list, d: date) -> int:
              f"red on {(d - timedelta(days=1)).strftime('%m-%d')} and {d.strftime('%m-%d')}"
              for _, line in proposals]
     # insert at the end of that section (before the next '## ' heading), so later sections stay intact
-    start = text.index(HANDOVER_SECTION)
+    start = heading.search(text).start()
     nxt = re.search(r"^## ", text[start + len(HANDOVER_SECTION):], re.M)
     cut = start + len(HANDOVER_SECTION) + nxt.start() if nxt else len(text)
     head, tail = text[:cut].rstrip("\n"), text[cut:]

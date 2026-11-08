@@ -125,7 +125,8 @@ else:
 # --- 5. Reciprocator churn (must never lose one) ---------------------------
 recips = [x for x in active if x.get("followed_back")]
 hist = tracker.get("unfollowed_history", [])
-churned = [x.get("username") for x in hist if x.get("follow_back") is True]
+churned = [x.get("username") for x in hist
+           if x.get("follow_back") is True or x.get("followed_back") is True]  # Socials 38: both keys
 if churned:
     WARN.append(f"{len(churned)} reciprocators in unfollowed_history (past churn): "
                 f"{churned[:4]}{'...' if len(churned) > 4 else ''}")

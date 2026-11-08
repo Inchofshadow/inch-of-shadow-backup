@@ -95,7 +95,8 @@ def _links(t: dict) -> list[dict]:
         handle = ig.lstrip("@").split("/")[-1] if "instagram.com" not in ig else ig.rstrip("/").split("/")[-1]
         if handle:
             out.append({"label": "instagram @" + handle, "url": "https://www.instagram.com/" + handle + "/",
-                        "unverified": not t.get("instagram_verified", True)})
+                        # unknown is not verified (hard rule 7; gate review 2026-11-07: 14 targets had no key)
+                        "unverified": t.get("instagram_verified") is not True})
     for u in t.get("proof_urls") or []:
         add("proof", u)
     src = t.get("hook_source") or ""

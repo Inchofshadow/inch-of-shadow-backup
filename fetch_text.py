@@ -122,10 +122,26 @@ def fetch_text(url: str) -> dict:
     ctype = r.headers.get("Content-Type", "")
     if "html" not in ctype and "text" not in ctype:
         raise FetchError(f"not a text/html page ({ctype or 'no content type'})")
-    html = body.decode(r.encoding or "utf-8", errors="replace")
+    html = body.decode(page_charset(ctype, body), errors="replace")
     out = html_to_text(html, base_url=r.url)
     out["url"] = r.url
     return out
+
+
+def page_charset(ctype: str, body: bytes) -> str:
+    """The header charset if given, else the page's <meta charset>, else UTF-8.
+    Gate review 2026-11-07: requests falls back to ISO-8859-1 for text/* without a
+    charset, which turned UTF-8 pages into mojibake in saved notes."""
+    import codecs
+    m = re.search(r"charset=[\"']?([\w.:-]+)", ctype or "", re.I)
+    if not m:
+        m = re.search(rb"<meta[^>]+charset=[\"']?([\w.:-]+)", body[:4096], re.I)
+    name = m.group(1) if m else "utf-8"
+    name = name.decode("ascii", "ignore") if isinstance(name, bytes) else name
+    try:
+        return codecs.lookup(name).name
+    except LookupError:
+        return "utf-8"
 
 
 def render(page: dict, with_links: bool) -> str:

@@ -6,6 +6,7 @@ youtube_token.json
 
 # Python
 __pycache__/
+.venv/
 *.pyc
 *.pyo
 .DS_Store
@@ -68,3 +69,14 @@ docs/brand/fonts/trials/
 
 # Private message corpora (phone numbers, addresses, personal threads): local only
 plans/voice-study/*dm-lines*.json
+
+# Password + 2FA inventory (System 70): account list, never in git or any backup
+plans/passwords-2fa/
+
+# Serum preset restore copies (436 .fxp files, 210 MB): stay on disk, never in git (System 68)
+music-tools/drumrack/serum_sort/backups/
+# Own git repo inside music-tools (🎸 Studio 9 decides how it is kept); never a gitlink here
+music-tools/Music Theory Reference/
+
+# Gap Radar run lock (gap_radar/schedule.py)
+gap_radar/schedule.lock

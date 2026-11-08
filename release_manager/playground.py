@@ -278,6 +278,9 @@ def _clean_layout(item: dict) -> dict:
     return out
 
 
+LAYOUTS_MAX = 200
+
+
 def layouts_toggle(project_root: Path, slug: str, item: dict, now: str) -> list:
     """Keep or un-keep one layout (text + moon placement on a colour save). Raises ValueError on bad input."""
     import json as _json
@@ -289,7 +292,9 @@ def layouts_toggle(project_root: Path, slug: str, item: dict, now: str) -> list:
     if same:
         kept = [k for k in kept if k not in same]
     else:
-        kept = (kept + [dict(clean, saved=now)])[-40:]
+        if len(kept) >= LAYOUTS_MAX:   # refuse, never drop old keeps silently (gate review 2026-11-07)
+            raise ValueError("%d layouts kept already: un-keep one first" % LAYOUTS_MAX)
+        kept = kept + [dict(clean, saved=now)]
     f = layouts_file(project_root, slug)
     f.parent.mkdir(parents=True, exist_ok=True)
     f.write_text(_json.dumps({"kept": kept}, indent=1))

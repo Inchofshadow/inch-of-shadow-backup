@@ -64,6 +64,9 @@ from datetime import datetime
 from io import BytesIO
 from pathlib import Path
 
+if __package__ in (None, ""):   # run as `python3 release_manager/review.py ...` (the documented form)
+    sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
+
 from release_manager import storage
 from release_manager.paths import repo_root
 
@@ -999,8 +1002,13 @@ def import_ticks(rel: dict, ticks: list, *, root: Path | None = None) -> list:
         if action == "change" and not note:
             out.append((tick_id, item_id, False, "refused: change needs a note"))
             continue
+        ticked_at = str(t.get("at", "") or "")
+        prev_at = str((item.get("proposed") or {}).get("ticked_at", "") or "")
+        if ticked_at and prev_at and ticked_at < prev_at:   # by tick time, not list order (gate review 2026-11-07)
+            out.append((tick_id, item_id, False, "skipped: older than the current proposal (%s)" % prev_at))
+            continue
         item["proposed"] = {"action": action, "note": note, "by": "phone", "at": now_iso(),
-                            "tick_id": tick_id, "ticked_at": str(t.get("at", "") or "")}
+                            "tick_id": tick_id, "ticked_at": ticked_at}
         out.append((tick_id, item_id, True, "proposed %s, confirm locally" % action))
     block["updated_at"] = now_iso()
     return out

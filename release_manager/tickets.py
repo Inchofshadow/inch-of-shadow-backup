@@ -120,9 +120,10 @@ def _check_loop_fields(tid: str, t: dict, keys: Optional[set] = None) -> list[st
             if _missing(t, f):
                 errors.append(f"{tid}: open ticket missing {f}")
 
-    if "bucket" in t and t["bucket"] not in BUCKETS:
+    # A done ticket needs no bucket/who, so an empty value there counts as absent (gate review 2026-11-08).
+    if "bucket" in t and t["bucket"] not in BUCKETS and (is_open or t["bucket"] != ""):
         errors.append(f"{tid}: bad bucket {t['bucket']!r} (now | next | parked | routine)")
-    if "who" in t and t["who"] not in WHO:
+    if "who" in t and t["who"] not in WHO and (is_open or t["who"] != ""):
         errors.append(f"{tid}: bad who {t['who']!r} (amir | claude | auto)")
 
     if "metric" in t:

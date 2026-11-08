@@ -580,6 +580,7 @@ details.more summary { cursor: pointer; color: var(--text-secondary); font-size:
                 else { t.globalCompositeOperation = 'lighter'; t.globalAlpha = Math.max(0, 1 - T * kk); t.drawImage(c, 0, 0, S, S);
                     mix.forEach(function (e, i) { t.globalAlpha = e.w / 100 * kk; t.drawImage(imgs[i], 0, 0, S, S); }); }
                 ctx.save(); if (st.flip) { ctx.translate(S, 0); ctx.scale(-1, 1); } ctx.drawImage(tmp, 0, 0, S, S); ctx.restore();
+                if (st._notext) return Promise.resolve();   // picture only (the text-blend tests draw the text themselves, 11-07)
                 return drawText(ctx, S, st);
             }
             if (!mix.length) { if (!wait) fxBusy(false); return paint(null); }
@@ -839,7 +840,7 @@ details.more summary { cursor: pointer; color: var(--text-secondary); font-size:
             render(c.getContext('2d'), 300, fromKept(k), true).catch(function () {});
         });
     }
-    window.layoutSnap = {kept: function () { return KEPT; }, now: function () { return D; }, item: item, colsFx: function (cols) { snapH(); D.cols = cols; setMix([]); persist(); sync(); buildStars(); buildCols(); buildFx(); draw(); }, starsUnderText: function (st) { return load(pickFor(st)).then(function (d) { var arr = starsParse(st, d.comps.length);   // stars hidden behind the title or the name (Amir 11-06: the star behind the F)
+    window.layoutSnap = {textOnly: function (ctx, S, st) { return drawText(ctx, S, st); }, masks: function (st) { return artCanvas(st).then(function (c) { return c._masks; }); }, kept: function () { return KEPT; }, now: function () { return D; }, item: item, colsFx: function (cols) { snapH(); D.cols = cols; setMix([]); persist(); sync(); buildStars(); buildCols(); buildFx(); draw(); }, starsUnderText: function (st) { return load(pickFor(st)).then(function (d) { var arr = starsParse(st, d.comps.length);   // stars hidden behind the title or the name (Amir 11-06: the star behind the F)
         d.comps.forEach(function (c, i) { var cx = c.cx + arr[i][0], cy = c.cy + arr[i][1]; if (cx > st.x - 0.04 && cx < st.x + 2.75 * st.size + 0.04 && cy > st.y - 0.06 && cy < st.y + 3.4 * st.size + 0.03) arr[i][2] = 0; }); return starsStr(arr); }); }, start: function (i) { snapH(); D = fromKept(KEPT[i]); setMix([]); persist(); sync(); buildStars(); buildCols(); buildFx(); draw(); }, render: render, fromKept: fromKept, label: keptLabel};   // used to save keeps as pictures for a side page
     function loadKept() { return fetch('/api/playground/' + encodeURIComponent(SLUG) + '/layouts-kept').then(function (r) { return r.json(); }).then(function (d) { KEPT = d.kept || []; renderKept(); markKept(); abFromUrl(); }); }
     $('keep').onclick = function () {
@@ -1050,9 +1051,11 @@ details.more summary { cursor: pointer; color: var(--text-secondary); font-size:
         if (next.length === 1) { T.champ = next[0]; return; }
         var m = tPairs(next), auto = [];
         T.rounds.push({name: tName(m.length), m: m, w: []}); T.cur = T.rounds.length - 1;
-        T.rounds[T.cur].m.forEach(function (mm) { if (mm.length === 1) T.rounds[T.cur].w.push(mm[0]); });   // a bye
+        tByes();
         tAdvance();
     }
+    // a bye wins only when play reaches it: w is positional (w[i] = winner of match i), gate review 2026-11-07
+    function tByes() { var r = T.rounds[T.cur]; while (r && r.w.length < r.m.length && r.m[r.w.length].length === 1) r.w.push(r.m[r.w.length][0]); }
     function tMatch() { var r = T.rounds[T.cur]; return r ? r.m[r.w.length] : null; }
     function tShow() {
         var done = T.champ !== undefined; $('tpanes').hidden = done; $('tchamp').hidden = !done;
@@ -1082,7 +1085,7 @@ details.more summary { cursor: pointer; color: var(--text-secondary); font-size:
     }
     function tPick(i) {
         if (!T || T.champ !== undefined) return; var mm = tMatch(); if (!mm) return;
-        TH.push(JSON.stringify(T)); T.rounds[T.cur].w.push(mm[i]); tAdvance(); tShow();
+        TH.push(JSON.stringify(T)); T.rounds[T.cur].w.push(mm[i]); tByes(); tAdvance(); tShow();
     }
     Array.prototype.forEach.call($('tpanes').querySelectorAll('.ab-pane'), function (p, i) {
         p.querySelector('.tpick').onclick = function () { tPick(i); }; p.querySelector('canvas').onclick = function () { tPick(i); }; });

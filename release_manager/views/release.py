@@ -609,7 +609,9 @@ def track_delete(slug, num):
     if not removed:
         abort(404)
 
-    # Renumber
+    # Renumber (clip blocks follow their tracks)
+    from release_manager.clips import renumber_clips
+    renumber_clips(rel, {int(t["number"]): i + 1 for i, t in enumerate(rel["tracks"])})
     for i, t in enumerate(rel["tracks"]):
         t["number"] = i + 1
 
@@ -943,8 +945,12 @@ def artwork_resizer_page():
             elif cropped_count:
                 focal_note = f" {cropped_count} non-square crop(s) used center focal."
             meta_note = " Metadata embedded." if metadata else ""
-            flash(f"Resized {len(results)} images.{focal_note}{meta_note}", "success")
-            subprocess.Popen(["open", str(RESIZED_DIR)])
+            if not results:   # unreadable or HEIC source: nothing made, say so (gate review 2026-11-07)
+                flash(f"Nothing was made from {source_path.name}: the file could not be read as an image "
+                      "(for example a HEIC photo: export it as JPG or PNG first).", "error")
+            else:
+                flash(f"Resized {len(results)} images.{focal_note}{meta_note}", "success")
+                subprocess.Popen(["open", str(RESIZED_DIR)])
         except Exception as e:
             flash(f"Resize failed: {e}", "error")
 

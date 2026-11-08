@@ -40,6 +40,8 @@ def main(argv):
         return 0
     # Only a real release, by exact slug: page rows are untrusted text (security review 2026-11-07).
     known = {p.stem for p in storage.iter_release_paths()}
+    for ticks in by_slug.values():   # oldest tick first, so the newest one wins
+        ticks.sort(key=lambda t: str(t.get("at", "") or ""))
     for slug, ticks in by_slug.items():
         if not re.fullmatch(r"[a-z0-9][a-z0-9-]{0,80}", slug or "") or slug not in known:
             for t in ticks:

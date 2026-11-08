@@ -45,3 +45,31 @@ def test_video_page_has_frame_by_hand_and_the_route_checks_frames():
     assert 'id="rz-frames"' in html and 'data-shape="9:16"' in html and 'name="frames"' in html
     assert _video_frames('{"9:16": {"cx": 0.2, "cy": 0.5, "z": 0.7}, "7:3": {"cx": 0.5}}') == {"9:16": {"cx": 0.2, "cy": 0.5, "z": 0.7}}
     assert _video_frames("not json") == {} and _video_frames("[1]") == {} and _video_frames("") == {}
+
+
+def test_video_error_page_keeps_frames_trim_and_releases(monkeypatch):
+    """Gate review 2026-11-07: 'No video selected' came back with frames, trim and releases empty."""
+    import json
+    monkeypatch.setitem(app.config, "WTF_CSRF_ENABLED", False)
+    frames = {"9:16": {"cx": 0.3, "cy": 0.5, "z": 0.8}}
+    html = app.test_client().post("/video-resizer", data={
+        "frames": json.dumps(frames), "trim_start": "4.5", "trim_end": "19", "existing_video": ""}).get_data(as_text=True)
+    assert "No video selected" in html
+    assert 'value="4.5"' in html and 'value="19"' in html
+    assert "0.3" in html and "9:16" in html
+
+
+def test_artwork_resizer_says_so_when_nothing_was_made(monkeypatch, tmp_path):
+    """Gate review 2026-11-07: an unreadable source flashed 'Resized 0 images' as success."""
+    from release_manager.views import release as rv
+    art, out = tmp_path / "artwork", tmp_path / "resized"
+    art.mkdir(); out.mkdir()
+    (art / "broken.jpg").write_bytes(b"not an image")
+    monkeypatch.setattr(rv, "ARTWORK_DIR", art)
+    monkeypatch.setattr(rv, "RESIZED_DIR", out)
+    monkeypatch.setitem(app.config, "WTF_CSRF_ENABLED", False)
+    opened = []
+    monkeypatch.setattr(rv.subprocess, "Popen", lambda *a, **k: opened.append(a))
+    html = app.test_client().post("/artwork-resizer", data={"existing_image": "broken.jpg"}).get_data(as_text=True)
+    assert "Nothing was made from broken.jpg" in html and "Resized 0 images" not in html
+    assert opened == []

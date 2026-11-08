@@ -74,6 +74,10 @@ def usable(d: dict) -> tuple[bool, str]:
         want = int(prof.get(count_key) or 0)
         if not d.get(f"{side}_complete"):
             return False, f"{side} list incomplete"
+        if not want:
+            # Socials 39: no profile count = the 97% guard cannot run; an empty
+            # "complete" list would flip every contact to not-following.
+            return False, f"{side}: profile count missing, coverage cannot be checked"
         if want and got < MIN_COVERAGE * want:
             return False, f"{side} list {got} < 97% of profile count {want}"
     return True, "ok"
@@ -138,7 +142,11 @@ def fetch_lists(today: date) -> Path:
         res["error"] = str(exc)
     res["calls"] = p.calls
     LISTS_DIR.mkdir(exist_ok=True)
-    out = LISTS_DIR / f"own-lists-{today.isoformat()}.json"
+    ok = not res.get("error") and res.get("followers_complete") and res.get("following_complete")
+    # Socials 39: a failed/incomplete fetch must not look like today's lists
+    # (lists_age_days would read 0 and the dispatcher would wait 7 days).
+    name = f"own-lists-{today.isoformat()}.json" if ok else f"failed-own-lists-{today.isoformat()}.json"
+    out = LISTS_DIR / name
     out.write_text(json.dumps(res, indent=1, ensure_ascii=False))
     print(f"[FLAGS] fetched {len(res.get('followers') or [])} followers / "
           f"{len(res.get('following') or [])} following in {p.calls} calls -> {out.name}")

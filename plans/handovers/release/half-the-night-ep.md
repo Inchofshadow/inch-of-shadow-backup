@@ -12,6 +12,7 @@ Side chat that stays open: **HTN cover: 90s noir direction** (local_e995e310), t
   - 14 covers (1a / 1c, with and without the tree), colour switch (original, Moonlit wall, two old R. Missing)
   - title size slider, his kept pick S21 Pixel sort on 1a owl moon + stars
   - searchlight-moon idea also logged in noir
+- 2026-11-08 Amir: **release date Fri 2026-12-04** (Bandcamp Friday). Set in releases/pinocchio-single.json; it was 2026-11-06 (backup .bak.20261108_date.json). Cover final by about Nov 12, Symphonic submit by Nov 13.
 - 2026-11-06 late (noir, commit 081126b): the lead direction is ivory trees (#25 / #33 family), with #13 as the fallback. The cover is PAUSED until the font is solved. The purple's exact shade is still open.
 - 2026-11-05 Amir: **1a is the main artwork**; 1c is kept for the campaign later.
 - Noir's next step (waiting for Amir): pick 1-2 covers with Wet at 0% first, then effects on those only.
@@ -88,6 +89,11 @@ Side chat that stays open: **HTN cover: 90s noir direction** (local_e995e310), t
 - 5 parked/amir · chrome false · Downtempo grouping · next: Amir decides how The Piper, In My Dream and others group.
 - 6 parked/claude · chrome false · Song-era label list · next: draft the label list + demo spec when the songs lane opens.
 
+- New 🎵 Release ticket (Amir asked in the cover chat, 2026-11-07): "HTN cover: choose the name font".
+  - Fields: parked/amir · chrome false · HTN name font · next: Amir picks on the picks page, step 2 · Fonts.
+  - The title font is settled: Barlow Cond (free, OFL).
+  - Name candidates: Pirata One, CAT Eckmann, UnifrakturCook (all free), Albertus Nova ($104.99, the brand face). Claude's pick: Eckmann.
+  - Detail: plans/half-the-night-cover-direction-noir.md (last lines).
 - (Merged as 🎵 Release 9) New 🎵 Release ticket: "Half the Night EP: Symphonic submit + release date + Spotify pitch dropdown read", waiting on 🎵 Release 2.
 
 ## Inbox from Amir via ⚙️ System (2026-11-05)

@@ -230,7 +230,10 @@ def migrate_checklist(
 ) -> list[dict]:
     """Migrate an old checklist to the new template, preserving done states.
 
-    New items get added with their due dates.  Removed items are dropped.
+    New items get added with their due dates.  Items no longer in the
+    template are dropped only when they carry nothing: an item that is done
+    or has notes is kept at the end, so history is never lost (gate review
+    2026-11-07: this runs on every release page open and deleted done items).
     """
     done_map: dict[str, dict] = {}
     for item in existing:
@@ -246,6 +249,11 @@ def migrate_checklist(
             item["done"] = done_map[item["id"]]["done"]
             item["done_date"] = done_map[item["id"]]["done_date"]
             item["notes"] = done_map[item["id"]]["notes"]
+    fresh_ids = {item["id"] for item in fresh}
+    for item in existing:
+        if item["id"] not in fresh_ids and (item.get("done") or item.get("notes")):
+            fresh.append(item)
+            fresh_ids.add(item["id"])
     return fresh
 
 

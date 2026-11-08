@@ -85,15 +85,15 @@ def test_targets_confirmed_and_rung_written_with_backup(repo):
 
 def test_ticket_fields_written_on_both_boards_and_updated_set(repo):
     f = decisions_file(repo, D("D2", [
-        W("plans/tickets.json", "G-15.bucket", "now"),
-        W("plans/tickets.json", "G-15.who", "claude"),
+        W("plans/tickets.json", "G-30.bucket", "now"),
+        W("plans/tickets.json", "G-30.who", "claude"),
         W("plans/tickets.json", "R-10.status", "approved"),
         W("plans/control-panel/tickets.json", "Formats-04.bucket", "next"),
     ]))
     wb.run(f, root=repo)
     main = json.loads((repo / "plans" / "tickets.json").read_text(encoding="utf-8"))
-    g15 = next(t for t in main["tickets"] if t["id"] == "G-15")
-    assert g15["bucket"] == "now" and g15["who"] == "claude" and g15["updated"] == "2026-11-09"
+    g30 = next(t for t in main["tickets"] if t["id"] == "G-30")
+    assert g30["bucket"] == "now" and g30["who"] == "claude" and g30["updated"] == "2026-11-09"
     r10 = next(t for t in main["tickets"] if t["id"] == "R-10")
     assert r10["status"] == "approved" and r10["updated"] == "2026-11-09"
     assert main["updated"] == "2026-11-09"

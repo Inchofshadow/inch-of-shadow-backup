@@ -257,3 +257,22 @@ def test_barlowc_layout_font_is_served(client, tmp_path, monkeypatch):
     r = client.get("/playground/pinocchio-single/layout/font?f=barlowc")
     assert r.status_code == 200 and r.mimetype == "font/ttf" and r.get_data() == b"fake-ttf"
     assert client.get("/playground/pinocchio-single/layout/font?f=barlow").status_code == 404
+
+
+def test_layouts_toggle_refuses_when_full_and_keeps_old(tmp_path, monkeypatch):
+    import pytest
+    from release_manager import playground as pg
+    item = {"save": 1, "lines": 3, "x": 0.465, "y": 0.245, "size": 0.105, "lead": 0.18, "track": 0, "nsize": 0.034,
+            "mdx": 0, "mdy": 0, "ms": 1, "font": "futura", "align": "left", "color": "cream", "npos": "under",
+            "name": True, "owl": True, "stars": False,
+            "line": 2, "ntrack": 0.12, "nfont": "marcellus", "ncolor": "cream", "tree": "remove", "starset": "", "flip": False,
+            "nt": True, "ntf": False, "ntx": 0.6, "nty": 0.62, "nts": 0.42, "ntr": "left", "cols": "", "fx": "", "fxw": 40, "os": 1.2, "fxmix": ""}
+    monkeypatch.setattr(pg, "LAYOUTS_MAX", 2)
+    pg.layouts_toggle(tmp_path, "pinocchio-single", {**item, "x": 0.1}, "a")
+    pg.layouts_toggle(tmp_path, "pinocchio-single", {**item, "x": 0.2}, "b")
+    with pytest.raises(ValueError):
+        pg.layouts_toggle(tmp_path, "pinocchio-single", {**item, "x": 0.3}, "c")
+    kept = pg.layouts_kept(tmp_path, "pinocchio-single")
+    assert [k["x"] for k in kept] == [0.1, 0.2]
+    # un-keeping still works when full
+    assert [k["x"] for k in pg.layouts_toggle(tmp_path, "pinocchio-single", {**item, "x": 0.1}, "d")] == [0.2]

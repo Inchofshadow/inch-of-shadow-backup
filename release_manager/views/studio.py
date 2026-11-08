@@ -556,6 +556,23 @@ def video_resizer_page():
     ]
     preselected_release = request.args.get("release", "")
 
+    def page():
+        """Every return keeps what Amir set: frames, trim, source, releases (gate review 2026-11-07)."""
+        posted = request.method == "POST"
+        return _render_video(presets=VIDEO_PRESETS, picked=_picked_templates(),
+            existing_videos=existing_videos,
+            focal_points=VIDEO_FOCAL_POINTS,
+            export_groups=export_groups,
+            results=results,
+            warnings=all_warnings if all_warnings else None,
+            selected_focal=selected_focal,
+            frames=frames, frames_json=json.dumps(frames) if frames else "",
+            posted_video=request.form.get("existing_video", "") if posted else "",
+            trim=(request.form.get("trim_start", ""), request.form.get("trim_end", "")) if posted else ("", ""),
+            release_options=release_options,
+            preselected_release=preselected_release,
+        )
+
     if request.method == "POST":
         focal = request.form.get("focal", "center")
         selected_focal = focal
@@ -578,12 +595,7 @@ def video_resizer_page():
             is_video_mime = mime.startswith("video/")
             if not is_video_ext and not is_video_mime:
                 flash(f"Not a video file ({source_file.filename}). Drop a video from Photos or Finder.", "error")
-                return _render_video(presets=VIDEO_PRESETS, picked=_picked_templates(),
-                    existing_videos=existing_videos,
-                    focal_points=VIDEO_FOCAL_POINTS,
-                    export_groups=export_groups,
-                    results=None, warnings=None,
-                    selected_focal=selected_focal)
+                return page()
             VIDEO_DIR.mkdir(parents=True, exist_ok=True)
             # Ensure saved file has a proper video extension
             if not is_video_ext and is_video_mime:
@@ -603,12 +615,7 @@ def video_resizer_page():
 
         if not source_path or not source_path.exists():
             flash("No video selected.", "error")
-            return _render_video(presets=VIDEO_PRESETS, picked=_picked_templates(),
-                existing_videos=existing_videos,
-                focal_points=VIDEO_FOCAL_POINTS,
-                export_groups=export_groups,
-                results=None, warnings=None,
-                selected_focal=selected_focal)
+            return page()
 
         # Build metadata dict (opt-in)
         metadata = None
@@ -664,19 +671,7 @@ def video_resizer_page():
         except Exception as e:
             flash(f"Video resize failed: {e}", "error")
 
-    return _render_video(presets=VIDEO_PRESETS, picked=_picked_templates(),
-        existing_videos=existing_videos,
-        focal_points=VIDEO_FOCAL_POINTS,
-        export_groups=export_groups,
-        results=results,
-        warnings=all_warnings if all_warnings else None,
-        selected_focal=selected_focal,
-        frames=frames, frames_json=json.dumps(frames) if frames else "",
-        posted_video=request.form.get("existing_video", "") if request.method == "POST" else "",
-        trim=(request.form.get("trim_start", ""), request.form.get("trim_end", "")) if request.method == "POST" else ("", ""),
-        release_options=release_options,
-        preselected_release=preselected_release,
-    )
+    return page()
 
 
 @app.route("/video-resizer/source/<path:name>")

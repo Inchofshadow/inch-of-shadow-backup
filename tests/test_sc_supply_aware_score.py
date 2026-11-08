@@ -7,10 +7,21 @@ day over SESSION_ACTION_STOP gets a pacing WARNING, never a pause.
 """
 from datetime import date
 
+import pytest
+
 import scene_intelligence.close_loops as cl
 
 TODAY = date.today().isoformat()
 EMPTY = {"follows": []}
+
+
+@pytest.fixture(autouse=True)
+def _no_dated_follow_cap(monkeypatch):
+    """These tests assume the standing SESSION_FOLLOWS cap. A dated cap in
+    FOLLOW_CAP_DAYS (e.g. 10/day 2026-11-07..16) would make them depend on
+    today's date, so pin it off (same idea as UNFOLLOW_CATCHUP_DAYS)."""
+    from scene_intelligence import sc_engagement_config as cfg
+    monkeypatch.setattr(cfg, "FOLLOW_CAP_DAYS", {})
 
 
 def test_thin_supply_day_is_not_scored_as_a_shortfall(monkeypatch):

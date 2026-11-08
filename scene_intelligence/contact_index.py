@@ -32,10 +32,18 @@ BOOKING = ROOT / "scene_intelligence" / "booking_targets.json"
 OUTREACH = ROOT / "plans" / "outreach-batches.json"
 IG_TRACKER = ROOT / "scene_intelligence" / "ig_follow_tracker.json"
 SC_TRACKER = ROOT / "scene_intelligence" / "sc_follow_tracker.json"
-OWN_LISTS_GLOB = str(ROOT / "plans" / "outreach-page" / "dj07-own-lists-*.json")
+# Both places si_follow_flags.py reads and writes (gate review 2026-11-08); newest by the date in the name.
+OWN_LISTS_GLOBS = [str(ROOT / "scene_intelligence" / "own_lists" / "own-lists-*.json"),
+                   str(ROOT / "plans" / "outreach-page" / "dj07-own-lists-*.json")]
 OUT = ROOT / "scene_intelligence" / "contact_index.json"
 
 _HANDLE_RE = re.compile(r"^[a-z0-9._]{1,30}$")
+
+
+def newest_own_lists(globs=None):
+    """Newest own-lists file across both folders, by the YYYY-MM-DD at the end of its name."""
+    files = [Path(f) for g in (globs or OWN_LISTS_GLOBS) for f in glob.glob(g)]
+    return str(max(files, key=lambda p: (p.stem[-10:], p.stat().st_mtime))) if files else None
 
 
 # --- normalisers (pure) -------------------------------------------------------
@@ -260,8 +268,7 @@ def main() -> int:
     ap = argparse.ArgumentParser(description="Build the read-only contact index.")
     ap.add_argument("--gaps", action="store_true", help="list booking/outreach rows missing from SI")
     a = ap.parse_args()
-    lists = sorted(glob.glob(OWN_LISTS_GLOB))
-    fol, fwg, lists_name = own_lists(lists[-1] if lists else None)
+    fol, fwg, lists_name = own_lists(newest_own_lists())
     rows = build(si_records(_load(SI, [])), booking_records(_load(BOOKING, {})),
                  outreach_records(_load(OUTREACH, {})), ig_tracker_map(_load(IG_TRACKER, {})),
                  sc_tracker_map(_load(SC_TRACKER, {})), fol, fwg)

@@ -4,10 +4,5 @@
   "tests/test_collect_spotify.py::test_no_token_returns_none": true,
   "tests/test_gap_radar_schedule.py::test_real_schedule_file_is_default_and_capless": true,
   "tests/test_score_board.py::test_score_on_pace_behind_and_collecting": true,
-  "tests/test_sc_day_budget.py::test_below_cap_prints_totals_without_stop": true,
-  "tests/test_sc_supply_aware_score.py::test_thin_supply_day_is_not_scored_as_a_shortfall": true,
-  "tests/test_sc_supply_aware_score.py::test_lazy_session_with_supply_left_is_still_a_shortfall": true,
-  "tests/test_sc_supply_aware_score.py::test_unknown_supply_keeps_the_full_target": true,
-  "tests/test_sc_supply_aware_score.py::test_full_session_with_small_pass_c_pool_scores_10": true,
-  "tests/test_sc_supply_aware_score.py::test_over_the_action_stop_is_a_warning_not_a_pause": true
+  "archive/rm-promotion/test_email_outreach_hardening.py": true
 }

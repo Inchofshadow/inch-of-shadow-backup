@@ -44,3 +44,16 @@ def test_iter_release_paths_sorted_and_complete(tmp_path, monkeypatch):
     a = _write(tmp_path, "a-single.json", "a-single")
     (tmp_path / "a-single.json.bak.20260711_igstats").write_text("{}")
     assert storage.iter_release_paths() == [a, b]
+
+
+def test_unsafe_release_slugs_never_leave_releases_dir():
+    import pytest
+    from release_manager import storage
+    for bad in ("../x", "..", "a/b", "/etc/passwd", ".hidden", "", "a\\b", "x/../../y", None):
+        with pytest.raises(ValueError):
+            storage.release_path(bad)
+        assert storage.load_release(bad) is None
+        assert storage.release_exists(bad) is False
+        assert storage.delete_release(bad) is False
+    assert storage.release_path("pinocchio-single").name == "pinocchio-single.json"
+    assert storage.release_path("farewell-single.bak.20261106_review").parent == storage.RELEASES_DIR

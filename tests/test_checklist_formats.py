@@ -99,3 +99,18 @@ def test_bandcamp_item_has_tooltip_and_skips_finished_releases():
     assert {i["id"] for i in BANDCAMP_CHECKLIST} == BC
     assert all(i["id"] in CHECKLIST_TOOLTIPS for i in BANDCAMP_CHECKLIST)
     assert not BC & expected_ids(None)   # Farewell / The Deceiver carry no lane
+
+
+def test_migrate_keeps_done_or_noted_items_that_left_the_template():
+    old = generate_checklist(TL)
+    old.append({"id": "gone_done", "category": "promotion", "label": "Old step", "done": True,
+                "done_date": "2026-08-01", "due_date": "", "notes": ""})
+    old.append({"id": "gone_noted", "category": "promotion", "label": "Old step 2", "done": False,
+                "done_date": "", "due_date": "", "notes": "asked label"})
+    old.append({"id": "gone_empty", "category": "promotion", "label": "Old step 3", "done": False,
+                "done_date": "", "due_date": "", "notes": ""})
+    new = migrate_checklist(old, TL, lane="light")
+    got = {i["id"]: i for i in new}
+    assert got["gone_done"]["done"] is True and got["gone_done"]["done_date"] == "2026-08-01"
+    assert got["gone_noted"]["notes"] == "asked label"
+    assert "gone_empty" not in got

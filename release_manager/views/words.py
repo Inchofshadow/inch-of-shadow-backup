@@ -194,6 +194,18 @@ def bios_page():
     return _words_page("bios")
 
 
+def latest_out_release(releases: list, today: str | None = None) -> dict | None:
+    """The newest release that is actually out: distribution approved or live and the
+    date reached. Gate review 2026-11-07: releases[-1] picked the largest date, so a
+    planned single with a placeholder date became the bios' 'latest release'."""
+    from datetime import date as _date
+    today = today or _date.today().isoformat()
+    out = [r for r in releases
+           if (r.get("distribution") or {}).get("status") in ("approved", "live")
+           and (r.get("release_date") or "") and r["release_date"] <= today]
+    return out[-1] if out else None
+
+
 @app.route("/api/bios/generate", methods=["POST"])
 def api_bios_generate():
     """Generate bios for all platforms via Claude API."""
@@ -202,7 +214,7 @@ def api_bios_generate():
     if not profile:
         return jsonify({"error": "Artist profile not found."}), 404
     releases = list_releases()
-    latest = releases[-1] if releases else None
+    latest = latest_out_release(releases)
     try:
         result = generate_bios(profile, latest)
         return jsonify({"ok": True, "bios": result})
@@ -221,7 +233,7 @@ def api_bios_generate_both():
     if not profile:
         return jsonify({"error": "Artist profile not found."}), 404
     releases = list_releases()
-    latest = releases[-1] if releases else None
+    latest = latest_out_release(releases)
     out, errors = _write_both(lambda provider: generate_bios(profile, latest, provider=provider))
     if not out:
         return jsonify({"error": " / ".join(errors.values()), "limit_note": _limit_note()}), 502

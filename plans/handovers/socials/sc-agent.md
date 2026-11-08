@@ -97,6 +97,8 @@ For `docs/sc-engagement-sop.md` §6.3 (unfollows), proposed wording, for Amir's 
 
 ## Ticket updates (for the System chat to merge)
 
+- 🎬 Socials 36 · SC status counts: done 11-08 on Amir's go, commit 27f2b76 (get_status counts active follows only: 397, was 1328). Display only. RM restart left to System (its server, pid started 00:47).
+
 - M4 state-file rotation (Batch 4): Amir 11-07 "Yes, as you say" = CHANGE: yes to .bak 14 days -> Trash + .gitignore; no to splitting engagement_log.json for now. enrich_soundcloud.py may move to archive/si-discovery/. Sent to System; System does the moves with dry run + undo.
 
 - 🎬 Socials 26 · unfollow sweep (SC part): sweep run 3/3 on 11-06 16:15 finished; all 47 of Amir's picks are now unfollowed (0 left), plus 8 regular unfollows. 16:15 end: 476 followers / 457 following = 1.04:1. Amir 11-06: keep it open.

@@ -3,7 +3,18 @@
 the loop closer paused SC for a cap violation)."""
 from datetime import date
 
+import pytest
+
 import scene_intelligence.sc_engagement as sc
+
+
+@pytest.fixture(autouse=True)
+def _no_dated_follow_cap(monkeypatch):
+    """These tests assume the standing SESSION_FOLLOWS cap. A dated cap in
+    FOLLOW_CAP_DAYS (e.g. 10/day 2026-11-07..16) would make them depend on
+    today's date, so pin it off (same idea as UNFOLLOW_CATCHUP_DAYS)."""
+    from scene_intelligence import sc_engagement_config as cfg
+    monkeypatch.setattr(cfg, "FOLLOW_CAP_DAYS", {})
 
 
 def _log(n_follow, n_like=0):

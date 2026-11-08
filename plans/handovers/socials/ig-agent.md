@@ -58,6 +58,11 @@ Chat: IG agent (Instagram engagement + SI upkeep on HikerAPI). Written 2026-11-0
 
 ## Ticket updates (for the System chat to merge)
 
+- 🎬 Socials 38 · IG health check churn count: DONE 2026-11-08 (Amir "Yes, fix both"). Reads follow_back and followed_back; churned reciprocators now 51 (was 48, +arale.music, degherlband, labeldiskoduro).
+- 🎬 Socials 39 · SI follow flags guards: DONE 2026-11-08. usable() refuses lists without a profile count; a failed or incomplete fetch is saved as failed-own-lists-DATE.json, so the dispatcher retries next day. Tests: tests/test_si_follow_flags_guards.py.
+
+- 🎬 Socials 37 · IG merge log KeyError: DONE 2026-11-08 (Amir "Yes, fix it"). Counter added in ig_merge_session_log.py + tests/test_ig_merge_keep_pending_skip.py. No session hit it since 08-27 (last such skip 08-26), so no data lost.
+
 - M4 state file rotation (reply 2026-11-07, IG lane): CHANGE. Keep a rolling 90 days in engagement_log.json, not only the current month: IG cooldowns look back up to 65 days (T4 50-65, prominent 60, T2 30-45), so a month cut would re-like people too early. Readers: 11 scripts (ig_engagement, ig_merge_session_log, close_loops, ig_dispatcher, ig_health_check, push_to_sheets + 5 SC scripts; SC side is the SC chat's). .bak.* 14 days + .gitignore: yes for IG. Dry run: IG chat, only after Amir says yes here (engagement state rule).
 - M4 dry run done 2026-11-07 (`plans/state-rotation-dry-run-2026-11-07.md`): 90-day cut = 1.7 MB -> ~0.9 MB. push_to_sheets last_engaged fixed (Amir "Keep existing dates"). Real run still waits on Amir's yes + SC chat OK.
 

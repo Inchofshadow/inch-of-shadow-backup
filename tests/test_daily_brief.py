@@ -235,3 +235,23 @@ def test_main_prints_and_write_flag(env, capsys):
     assert capsys.readouterr().out.startswith("Inch of Shadow · Thu 11-05")
     db.main(["2026-11-05", "--write"])
     assert (env / "docs" / "reports" / "daily-brief-2026-11-05.md").exists()
+
+
+def test_flagged_ignores_none_after_the_word_and_still_flags_real_hits():
+    assert db._flagged("Challenge: none. Throttle: none. Popup / takeover: none.") == []
+    assert db._flagged("No challenge, no popup, no takeover. No detection event written.") == []
+    assert db._flagged("CAPTCHA at follow 12, session stopped.") == ["CAPTCHA"]
+    assert db._flagged("Challenge: yes, phone check") == ["challenge"]
+
+
+def test_write_proposals_uses_the_heading_not_a_prose_mention(tmp_path, monkeypatch):
+    h = tmp_path / "system.md"
+    h.write_text("# System\n\n## Daily brief\nlines go under \"## Proposed from the brief\" below.\n\n"
+                 "## Proposed from the brief\nintro\n\n## Later\nkeep\n", encoding="utf-8")
+    monkeypatch.setattr(db, "HANDOVER", h)
+    assert db.write_proposals([(None, "SC challenge")], D) == 1
+    text = h.read_text(encoding="utf-8")
+    daily = text.split("## Proposed from the brief\nintro")[0]
+    assert "proposed ⚙️ System ticket" not in daily
+    section = text.split("## Proposed from the brief\nintro")[1].split("## Later")[0]
+    assert "proposed ⚙️ System ticket" in section and "keep" in text

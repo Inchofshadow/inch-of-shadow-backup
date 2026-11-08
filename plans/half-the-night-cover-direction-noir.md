@@ -507,3 +507,7 @@ Rows as on the picks page (picks.html ROWS):
 - Font (Amir 11-06 19:15): "the free font is nice, keep it as an option" (Barlow Condensed ExtraBold, OFL, on the Layout page).
   Avenir Next Condensed Heavy: MyFonts sells single styles (from $97.99), no need for the whole family, but $40-100 is too much for him.
   Open question he raised: Pirata One (blackletter) for "Inch of Shadow" long term? Claude: the name belongs to the brand face (frame.md: Albertus Nova, constant core); Pirata is fine as this release's choice; a long-term goth name = the logo round (Look-02), not this cover.
+- TICKET (Amir 11-07): "Name font for Half the Night" parked for later. Candidates on the picks page step 2 · Fonts (cover #36, Barlow title vs Avenir title): Pirata One, CAT Eckmann (OFL, checked 11-07), UnifrakturCook, Albertus Nova (Marcellus stand-in). Title = Barlow Cond (free). Claude's pick: Eckmann.
+- NOW (11-07): making the text blend into the picture (embedded, not on top).
+- Text blend round 1 (11-07, on #36, Barlow title + Pirata name): Amir: text must NOT move; 2 (Xerox grain on the letters) = CHOSEN, keep as is (colour shift from the effect: unsure but keep); from 3 he likes the dark shadow behind the title (Canva calls it Effects > Shadows); 4 name colour = an option later; 5 only if the name sits ON the hill line, not behind it.
+- Round 2 on the picks page: 2+shadow, 2+shadow+red edge, 1+3 combined, 5 redone on the hill line (normal and bigger). All made locally in the RM page (no Canva).

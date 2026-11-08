@@ -1,6 +1,7 @@
 """Move old engagement state backups to the Trash (M4, approved 2026-11-07 by Amir in the SC chat).
 
-Rule: `scene_intelligence/*.bak.*` older than 14 days go to the macOS Trash (never rm).
+Rule: `scene_intelligence/sc_follow_tracker.bak.*` older than 14 days go to the macOS Trash (never rm).
+Only that pattern: other `*.bak.*` files there (the hand-made IG tracker restore points) are never touched.
 `scene_intelligence/backups/` is never touched. Nothing reads these files; only
 `sc_weekly_health.py` writes them.
 
@@ -24,12 +25,13 @@ ROOT = Path(__file__).resolve().parent.parent
 FOLDER = ROOT / "scene_intelligence"
 TRASH = Path.home() / ".Trash"
 KEEP_DAYS = 14
+PATTERN = "sc_follow_tracker.bak.*"   # what sc_weekly_health.py writes; gate review 2026-11-08
 
 
 def candidates(now=None, folder=FOLDER, keep_days=KEEP_DAYS):
     now = now or time.time()
     out = []
-    for p in sorted(folder.glob("*.bak.*")):
+    for p in sorted(folder.glob(PATTERN)):
         if not p.is_file():
             continue
         age_days = (now - p.stat().st_mtime) / 86400
@@ -58,7 +60,7 @@ def main(argv=None):
     listing = reports / ("prune-bak-%s.md" % today)
     total = sum(s for _, _, s in rows)
     lines = ["# prune_bak %s (%s)" % (today, "applied" if args.apply else "dry run"), "",
-             "Rule: scene_intelligence/*.bak.* older than %d days go to the Trash. %d file(s), %.1f MB." % (KEEP_DAYS, len(rows), total / 1e6), "",
+             "Rule: scene_intelligence/%s older than %d days go to the Trash. %d file(s), %.1f MB." % (PATTERN, KEEP_DAYS, len(rows), total / 1e6), "",
              "| File | Age (days) | Size |", "|---|---|---|"]
     lines += ["| %s | %.0f | %.0f KB |" % (p.relative_to(ROOT), age, size / 1024) for p, age, size in rows]
     undo = []

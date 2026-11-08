@@ -318,3 +318,13 @@ def test_route_404_and_400(client):
     assert client.post("/release/clip-pack-test-single/clips/9", data={"action": "save"}).status_code == 404
     assert client.post("/release/clip-pack-test-single/clips/1", data={"action": "nope"}).status_code == 400
     assert client.post("/release/clip-pack-test-single/clips/1", data={"action": "remove_used", "index": "x"}).status_code == 400
+
+
+def test_renumber_clips_keeps_blocks_on_their_tracks_after_a_delete():
+    rel = {"tracks": [{"number": 1}, {"number": 2}, {"number": 3}],
+           "clips": {"tracks": [{"number": 1, "tiktok_start": 10}, {"number": 2, "tiktok_start": 20}, {"number": 3, "tiktok_start": 30}]}}
+    # delete track 2: tracks 1 and 3 remain and become 1 and 2
+    rel["tracks"].pop(1)
+    clips.renumber_clips(rel, {int(t["number"]): i + 1 for i, t in enumerate(rel["tracks"])})
+    assert [(b["number"], b["tiktok_start"]) for b in rel["clips"]["tracks"]] == [(1, 10), (2, 30)]
+    clips.renumber_clips({"tracks": []}, {})   # no clips block: no error

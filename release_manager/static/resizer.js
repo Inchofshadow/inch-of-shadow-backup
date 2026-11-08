@@ -196,7 +196,8 @@
         if (submit) submit.textContent = n ? 'Make ' + n + (n === 1 ? ' size' : ' sizes') : 'Make every size';
     }
     document.addEventListener('change', function (e) { if (e.target.matches('input[name="templates"], .group-toggle')) setTimeout(count, 0); });
-    document.querySelectorAll('.rz-chip').forEach(function (chip) {
+    // size presets only: the video page's Frame-by-hand shape chips share the class (gate review 2026-11-07)
+    document.querySelectorAll('.rz-chip[data-preset]').forEach(function (chip) {
         chip.addEventListener('click', function () {
             var want = chip.dataset.preset ? chip.dataset.preset.split(',') : [];
             var all = want.indexOf('*') >= 0;
@@ -205,7 +206,7 @@
                 if (b.checked) { var d = b.closest('details'); if (d) d.open = true; }
             });
             if (cover) cover.checked = chip.dataset.cover === '1';
-            document.querySelectorAll('.rz-chip').forEach(function (c) { c.classList.toggle('active', c === chip && !!chip.dataset.preset); });
+            document.querySelectorAll('.rz-chip[data-preset]').forEach(function (c) { c.classList.toggle('active', c === chip && !!chip.dataset.preset); });
             count();
         });
     });

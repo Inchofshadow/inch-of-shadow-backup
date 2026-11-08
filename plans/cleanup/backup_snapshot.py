@@ -42,7 +42,7 @@ SECRET_GLOBS = ["*_browser_state.json", ".env.*", "*token*.json", "*recovery-cod
 DM_GLOBS = ["data/instagram-*/your_instagram_activity/messages/*",
             "plans/passwords-2fa/*",  # account list (Amir 11-06): never leaves the Mac
             "plans/voice-study/my-english-dm-lines.json"]
-SKIP_DIRS = {".git"}
+SKIP_DIRS = {".git", ".venv"}  # .venv added 2026-11-08 (System 69): 609 MB, rebuilt from requirements-lock.txt
 SKIP_NAMES = {".DS_Store"}
 REVIEW_PREFIXES = []
 SKIP_PREFIXES = [".claude/worktrees/"]  # other chats' git worktrees = copies of this repo
@@ -54,7 +54,8 @@ MEDIA_EXT = {".png", ".jpg", ".jpeg", ".gif", ".webp", ".heic", ".tif", ".tiff",
              ".mp4", ".mov", ".m4v", ".webm", ".wav", ".mp3", ".aif", ".aiff", ".flac",
              ".m4a", ".ogg", ".pdf", ".zip"}
 SI_ARCHIVE_GLOB = "scene_intelligence/backups/*.tar.gz"
-LOCKED_PREFIXES = ["data/", "plans/outreach-page/", "scene_intelligence/backups/"]
+# docs/reports/ added 2026-11-08: reports carry bare contact handles the marker scan misses (si-cleanup plan).
+LOCKED_PREFIXES = ["data/", "plans/outreach-page/", "scene_intelligence/backups/", "docs/reports/"]
 # Every SI data file (trackers, rosters, logs, contact lists) is locked; only its code goes plain
 LOCKED_UNLESS_CODE_PREFIXES = ["scene_intelligence/"]
 CODE_EXT = {".py", ".sh", ".command"}
