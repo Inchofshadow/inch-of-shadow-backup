@@ -70,7 +70,7 @@ def lists_age_days(today: date) -> int | None:
 def usable(d: dict) -> tuple[bool, str]:
     prof = d.get("profile") or {}
     for side, count_key in (("followers", "follower_count"), ("following", "following_count")):
-        got = len(d.get(side) or [])
+        got = len({str(u.get("username") or "").lower() for u in d.get(side) or []} - {""})
         want = int(prof.get(count_key) or 0)
         if not d.get(f"{side}_complete"):
             return False, f"{side} list incomplete"
@@ -123,6 +123,8 @@ def fetch_lists(today: date) -> Path:
         raise SystemExit("[FLAGS] own profile not returned by the provider")
     res = {"fetched": datetime.now().isoformat(timespec="seconds"), "profile": me}
 
+    seen = {"followers": set(), "following": set()}
+
     def pull(path, side):
         users, max_id = [], None
         while p.calls < FETCH_BUDGET:
@@ -130,9 +132,16 @@ def fetch_lists(today: date) -> Path:
             if max_id:
                 params["max_id"] = max_id
             page, max_id = P._unpack_chunk(p._get(path, **params))
-            users += [P.normalise_follower(u) for u in page]
+            for u in (P.normalise_follower(x) for x in page):
+                # 2026-11-12: the provider repeated 103 rows on 11-10; keep
+                # each username once so counts mean real accounts.
+                key = str(u.get("username") or "").lower()
+                if key and key not in seen[side]:
+                    seen[side].add(key)
+                    users.append(u)
             if not max_id or not page:
-                return users, True
+                want = int(me.get(f"{'follower' if side == 'followers' else 'following'}_count") or 0)
+                return users, bool(want) and len(users) >= MIN_COVERAGE * want
         return users, False
 
     try:

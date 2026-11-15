@@ -1,0 +1,475 @@
+<title>Half the Night Cover Report</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;800&family=Inter:wght@400;500;600&family=Pirata+One&display=swap">
+<style>
+/* Layout: one reading column on warm black like the cover; pictures and tables break wider. Tokens = the cover's own inks. */
+:root {
+  --bg: #0f0d0c; --panel: #181513; --line: #2e2824; --fg: #e9dfc9; --muted: #a49b8f;
+  --ivory: #e2d6bc; --red: #c12613; --wine: #8e1c26; --plum: #2a1330; --gold: #daaf60;
+  --display: "Barlow Condensed", "Arial Narrow", Impact, sans-serif;
+  --body: Inter, system-ui, -apple-system, sans-serif;
+  --name: "Pirata One", "UnifrakturCook", Georgia, serif;
+  color-scheme: dark;
+}
+@media (prefers-color-scheme: light) { :root:not([data-theme="dark"]) {
+  --bg: #f3eee4; --panel: #ebe4d6; --line: #d6ccba; --fg: #1d1714; --muted: #6b6157; --ivory: #1d1714; --red: #a81f10; --wine: #7a1621; --plum: #e4dbe8; --gold: #9a7428; color-scheme: light } }
+:root[data-theme="light"] { --bg: #f3eee4; --panel: #ebe4d6; --line: #d6ccba; --fg: #1d1714; --muted: #6b6157; --ivory: #1d1714; --red: #a81f10; --wine: #7a1621; --plum: #e4dbe8; --gold: #9a7428; color-scheme: light }
+body { background: var(--bg); color: var(--fg); font: 16px/1.6 var(--body); }
+.wrap { max-width: 980px; margin: 0 auto; padding-block: 40px 72px;
+  padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); display: grid; gap: 56px; }
+.read { max-width: 68ch; }
+h1, h2, h3 { font-family: var(--display); font-weight: 800; text-transform: uppercase; letter-spacing: .01em; line-height: .95; margin: 0; text-wrap: balance; }
+h1 { font-size: clamp(48px, 9vw, 96px); }
+h2 { font-size: clamp(30px, 4.6vw, 44px); margin-bottom: 14px; }
+h3 { font-size: 22px; margin: 22px 0 6px; letter-spacing: .02em; }
+p { margin: 0 0 12px; }
+.name { font-family: var(--name); font-size: 26px; color: var(--muted); margin-top: 8px; }
+.lead { font-size: 19px; line-height: 1.55; max-width: 62ch; }
+.eyebrow { font: 600 12px/1 var(--body); letter-spacing: .14em; text-transform: uppercase; color: var(--gold); margin-bottom: 10px; }
+.hero { display: grid; grid-template-columns: minmax(0, 1.05fr) minmax(0, 1fr); gap: 36px; align-items: center; }
+@media (max-width: 760px) { .hero { grid-template-columns: minmax(0, 1fr); } }
+.hero img { width: 100%; display: block; border-radius: 4px; box-shadow: 0 18px 50px rgba(0,0,0,.45); }
+.facts { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 1px; background: var(--line); border: 1px solid var(--line); border-radius: 6px; overflow: hidden; margin-top: 22px; }
+.facts div { background: var(--panel); padding: 14px 16px; min-width: 0; }
+.facts b { display: block; font: 800 34px/1 var(--display); color: var(--ivory); font-variant-numeric: tabular-nums; }
+.facts span { font-size: 13px; color: var(--muted); }
+.strip { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; }
+@media (max-width: 640px) { .strip { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+.strip figure { margin: 0; min-width: 0; }
+.strip img { width: 100%; display: block; aspect-ratio: 1; border-radius: 3px; }
+.strip figcaption { font-size: 13px; color: var(--muted); margin-top: 6px; line-height: 1.4; }
+.strip figcaption b { color: var(--fg); font-weight: 600; }
+.tbl { overflow-x: auto; border: 1px solid var(--line); border-radius: 6px; }
+table { border-collapse: collapse; width: 100%; font-size: 14.5px; min-width: 560px; }
+th, td { text-align: left; padding: 10px 14px; border-bottom: 1px solid var(--line); vertical-align: top; }
+th { font: 600 12px/1.2 var(--body); letter-spacing: .1em; text-transform: uppercase; color: var(--muted); background: var(--panel); }
+tr:last-child td { border-bottom: 0; }
+td.d { white-space: nowrap; font-variant-numeric: tabular-nums; color: var(--gold); }
+ul, ol { margin: 0 0 12px; padding-left: 22px; }
+li { margin: 5px 0; }
+li b, p b { color: var(--ivory); }
+.pipe { display: grid; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); gap: 12px; counter-reset: st; }
+.pipe .s { background: var(--panel); border: 1px solid var(--line); border-radius: 6px; padding: 14px 16px; min-width: 0; position: relative; }
+.pipe .s::before { counter-increment: st; content: counter(st); font: 800 30px/1 var(--display); color: var(--wine); display: block; margin-bottom: 6px; }
+.pipe .s h4 { margin: 0 0 4px; font: 800 19px/1.05 var(--display); text-transform: uppercase; letter-spacing: .02em; }
+.pipe .s p { font-size: 13.5px; color: var(--muted); margin: 0; line-height: 1.45; }
+.pipe .s .tag { display: inline-block; margin-top: 8px; font: 600 11px/1 var(--body); letter-spacing: .08em; text-transform: uppercase; padding: 4px 7px; border-radius: 3px; border: 1px solid var(--line); color: var(--gold); }
+.pipe .s.ai .tag { color: var(--red); border-color: var(--red); }
+.two { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 28px; }
+@media (max-width: 760px) { .two { grid-template-columns: minmax(0, 1fr); } }
+.two > div { min-width: 0; }
+.quote { border-left: 3px solid var(--wine); padding: 4px 0 4px 16px; margin: 14px 0; font-size: 17px; }
+.quote span { display: block; font-size: 13px; color: var(--muted); margin-top: 4px; }
+.box { background: var(--panel); border: 1px solid var(--line); border-radius: 6px; padding: 18px 20px; }
+.box h3 { margin-top: 0; }
+code { font: 13px/1.4 ui-monospace, SFMono-Regular, Menlo, monospace; background: var(--panel); padding: 1px 5px; border-radius: 3px; overflow-wrap: anywhere; }
+.foot { color: var(--muted); font-size: 13px; border-top: 1px solid var(--line); padding-top: 18px; }
+a { color: var(--gold); }
+</style>
+
+<div class="wrap">
+
+<header class="hero">
+  <div>
+    <div class="eyebrow">Inch of Shadow · 🎵 Release · 90s noir · Nov 4 to 9, 2026</div>
+    <h1>Half the Night</h1>
+    <div class="name">a noir cover, and how it was made</div>
+    <p class="lead" style="margin-top:18px">Six days from three AI drafts to a finished 3000 px cover. AI made only the base painting; every choice after that was yours, made by eye, live, in our own Release Manager pages. The cover is done. The method is the thing worth keeping.</p>
+    <div class="facts">
+      <div><b>6</b><span>days, Nov 4 to Nov 9</span></div>
+      <div><b>~20</b><span>AI drafts, about $1 to 2 (approx.)</span></div>
+      <div><b>50</b><span>layouts kept on the Layout page (+13 archived)</span></div>
+      <div><b>~90</b><span>commits on the cover and its tools</span></div>
+      <div><b>$0</b><span>for fonts: both are free</span></div>
+    </div>
+  </div>
+  <img src="final.jpg" alt="The final Half the Night cover: ivory trees with a red and cyan 3D edge, a red moon with a black owl, gold stars, the title in three lines, Inch of Shadow in blackletter, a plum hill lit wine red by the moon.">
+</header>
+
+<section class="read">
+  <h2>The style: 90s noir</h2>
+  <p><b>Noir</b> is the name of this cover's world: 90s noir animation, also called dark deco. It is the look of Batman: The Animated Series, painted on black paper.</p>
+  <ul>
+    <li><b>Flat shapes, few inks:</b> warm black, ivory, one red. Plum came in as your 30%.</li>
+    <li><b>One big disc:</b> the moon is the only hot point.</li>
+    <li><b>Silhouettes, almost no detail,</b> hard shadows, low angles.</li>
+    <li><b>Texture from print,</b> not from detail: grain, Xerox, a torn paper edge.</li>
+  </ul>
+  <p>In prompts, the words that kept noir alive were "1990s dark deco animation style", "painted on black paper" and "hard black shadows". The words that killed it were "minimal" and "flat graphic poster". Every folder of this cover lives under <code>artwork/edits/htn-noir/</code>, and the references are tagged <code>90s-noir</code> in the Shadow Archive, so the next noir release starts from here.</p>
+</section>
+
+<section class="read">
+  <h2>How the cover changed</h2>
+  <p>Four moments carried the whole journey. Each one came from a single decision of yours, not from more options.</p>
+</section>
+<div class="strip">
+  <figure><img src="k13.jpg" alt="Keep 13: black trees, plum hill, red moon"><figcaption><b>Nov 6 · #13.</b> Your colour rule lands: black 60, purple hill 30, red only on the moon 10.</figcaption></figure>
+  <figure><img src="k36.jpg" alt="Keep 36: ivory trees with the 3D edge"><figcaption><b>Nov 6 · #36.</b> Ivory trees with the 3D edge: "it got the movement, it got magic."</figcaption></figure>
+  <figure><img src="k45.jpg" alt="Keep 45: the first final with Barlow title"><figcaption><b>Nov 9 · #45.</b> Barlow title, grain and shadow on the letters. "We're done", at first.</figcaption></figure>
+  <figure><img src="final.jpg" alt="The final pick with red moonlight on the hill"><figcaption><b>Nov 9 · final.</b> Plum hill lit by the moon, plus your grain in Canva. "My vision in the first place."</figcaption></figure>
+</div>
+
+<section>
+  <h2>Your references and what each one gave</h2>
+  <p class="read">You brought the references; each one gave one specific thing, never the whole picture. That is why the cover feels like ours and not a copy.</p>
+  <div class="tbl"><table>
+    <thead><tr><th>Reference</th><th>What you took</th><th>What we left out</th><th>Where it ended up</th></tr></thead>
+    <tbody>
+      <tr><td>Batman: The Animated Series title card (R-022)</td><td>Low angle, dark deco, flat black silhouettes, painted on black paper</td><td>Bat marks, towers, the city</td><td>The silhouette language of the trees; the low-angle draft B</td></tr>
+      <tr><td>Villain skyline poster (R-023)</td><td>Three inks and one big disc: flat red sky, white moon</td><td>The skyline and figures</td><td>One big moon as the only hot point</td></tr>
+      <tr><td>Comic skyline with the moon (R-024)</td><td>Black and white ink, one pale moon, screen-tone sky; the moon size and "minimum stars"</td><td>The buildings</td><td>Moon size (12% of the frame), few stars</td></tr>
+      <tr><td>R. Missing, I Can Feel Your Solar System (R-020)</td><td>Colours only, one hue, light falling off downward</td><td>The concept (figure, chair, wall)</td><td>The palette studies; the light falling off toward the bottom</td></tr>
+      <tr><td>Your three favourite drafts (Nov 3)</td><td>A: the crooked cream trees and red hill. C: the bold condensed title and the red moon</td><td>B's figure and city</td><td>Base painting 1a; the condensed title (Barlow)</td></tr>
+      <tr><td>Cut-paper chat</td><td>Only the torn ivory edge ("only the cuts, that white-ivory line"), gold stars, the crescent</td><td>The colour fills</td><td>The cut line along the hill, the gold stars</td></tr>
+      <tr><td>Polish chat</td><td>The red moon with the owl</td><td>A big moon as the main element</td><td>The owl moon, the cover's focal point</td></tr>
+      <tr><td>Looney Tunes (Marvin), Dragon Ball (Frieza)</td><td>The pink-purple earth, cartoon movement</td><td>Characters</td><td>The purple-plum hill; the 3D movement on the trees</td></tr>
+      <tr><td>Your swan and raven cover (Oct)</td><td>The blackletter name</td><td>Its title font</td><td>Pirata One for "Inch of Shadow"</td></tr>
+    </tbody>
+  </table></div>
+</section>
+
+<section>
+  <h2>Key decisions, in your words</h2>
+  <div class="tbl"><table>
+    <thead><tr><th>Date</th><th>Decision</th><th>Your words</th></tr></thead>
+    <tbody>
+      <tr><td class="d">Nov 9</td><td>Plum hill with calculated red moonlight, ivory cut line</td><td>"kinda my vision in the first place, adds so much depth"</td></tr>
+      <tr><td class="d">Nov 9</td><td>Barlow over Switzer</td><td>"A is the heart, B is the mind"</td></tr>
+      <tr><td class="d">Nov 9</td><td>Red cut line rejected</td><td>"the red cut lines are off"</td></tr>
+      <tr><td class="d">Nov 7</td><td>Grain on the letters, text never moves</td><td>"two is the right one", "keep it as is"</td></tr>
+      <tr><td class="d">Nov 6</td><td>Ivory trees as the direction</td><td>"it got the movement, it got magic"</td></tr>
+      <tr><td class="d">Nov 6</td><td>Colour rule: black 60, purple 30, red only on the moon 10</td><td>"fewer colours", the rule you had from the start</td></tr>
+      <tr><td class="d">Nov 6</td><td>Versions must differ</td><td>"I don't see too much change"</td></tr>
+      <tr><td class="d">Nov 5</td><td>1a = cover, 1c = campaign</td><td>"main artwork will be 1a"</td></tr>
+      <tr><td class="d">Nov 5</td><td>Per-tree tools removed</td><td>"too complex, more decisions for nothing"</td></tr>
+      <tr><td class="d">Nov 4</td><td>Searchlight idea parked</td><td>"the idea is good, the execution is bad, you lost the Batman language"</td></tr>
+    </tbody>
+  </table></div>
+</section>
+
+<section>
+  <h2>Timeline</h2>
+  <div class="tbl"><table>
+    <thead><tr><th>Date</th><th>Phase</th><th>What happened</th></tr></thead>
+    <tbody>
+      <tr><td class="d">Nov 9, night</td><td>Light and final</td><td>Red moonlight calculated from the moon's position, mixed as wine not pink. Plum hill, ivory cut line 22%. 3000 px export, your extra grain in Canva. Files in Releases/Half the Night EP.</td></tr>
+      <tr><td class="d">Nov 9, evening</td><td>Fonts and finish</td><td>7 free title fonts compared; Barlow vs Switzer A/B ("A is the heart, B is the mind"). Grain + shadow made real page settings. Owl and moon fixes, added stars, cut line slider.</td></tr>
+      <tr><td class="d">Nov 7</td><td>Text into the picture</td><td>Five blend ideas, then round 2. Grain on the letters chosen, the shadow behind the title liked, text never moves.</td></tr>
+      <tr><td class="d">Nov 6</td><td>Layout and direction</td><td>Composition shuffle, picks side page as your one working tab, #13 default, then the ivory-tree family. Gold stars, Barlow found as the free title font.</td></tr>
+      <tr><td class="d">Nov 5</td><td>Stages 1 to 4</td><td>1a chosen as the main artwork. Elements builder, colours from masks, Smart colours, text positions, effects cut from 26 to 11, IG grid preview, Layout page born.</td></tr>
+      <tr><td class="d">Nov 4</td><td>Exploration</td><td>AI drafts in 90s noir (trees, half the stars, searchlight moon). Searchlight tried 3 times and parked. Trees chosen. Local looks, fonts, lettering, R. Missing palette, Effects wall.</td></tr>
+    </tbody>
+  </table></div>
+</section>
+
+<section class="read">
+  <h2>How you decide</h2>
+  <p>Reading back six days of picks, the same patterns show up every time. They are what made this fast once the tools were right.</p>
+  <ul>
+    <li><b>By eye, with numbers.</b> You answer "13", "2 + shadow", "A". Vague questions slow you down; real pictures side by side get an answer in seconds.</li>
+    <li><b>You kill directions fast and say why.</b> The searchlight moon: "the idea is good, the execution is bad, you lost the Batman language." One clear sentence saved a day.</li>
+    <li><b>You keep what works and say "as is".</b> Grain on the letters: chosen, keep as is, even with the colour shift. You don't reopen settled things.</li>
+    <li><b>Rules you already had, made visible.</b> 60/30/10 colours, red only on the moon, text never moves, never on the moon. You stated them once and they held to the end.</li>
+    <li><b>References carry the feeling.</b> Batman: The Animated Series, Looney Tunes' Marvin, Dragon Ball's Frieza earth. Each one pointed at something concrete: flat silhouettes, the pink earth, the movement.</li>
+    <li><b>Heart over mind, after checking the mind.</b> Switzer read better on paper. The thumbnail test showed no real difference, so Barlow won on feeling, with a reason behind it.</li>
+    <li><b>Subtle is invisible to you.</b> Versions within 20% of each other got "I don't see too much change." Bold differences got decisions.</li>
+    <li><b>You push back when something is off, and you're often right.</b> The red cut line looked wrong to you before I saw it. The pink moonlight was wrong, and you asked about it.</li>
+    <li><b>The last 10% came from asking "what do you honestly think?"</b> That question found the weak bottom half, and the moonlight came out of it.</li>
+  </ul>
+</section>
+
+<section>
+  <h2>The system we built</h2>
+  <p class="read">One pipeline, each stage its own page in the Release Manager. AI appears once, at the start. Everything after it is local, live, free and reversible.</p>
+  <div class="pipe">
+    <div class="s ai"><h4>Draft wide</h4><p>Short feeling-first prompts, medium quality, about $0.05 each. Exact prompt shown before any render.</p><span class="tag">AI, your go</span></div>
+    <div class="s"><h4>Freeze the base</h4><p>Pick one painting (1a). Local fixes only: moon size, remove a tree, clean stamps.</p><span class="tag">Local</span></div>
+    <div class="s"><h4>Split into layers</h4><p>Masks per element: hill, trees, moon, owl, stars, cut line, paper shade.</p><span class="tag">Local</span></div>
+    <div class="s"><h4>Elements</h4><p>Owl, stars, tree, cut-paper on and off. Moon and owl move and resize, stars move one by one.</p><span class="tag">Live</span></div>
+    <div class="s"><h4>Colours</h4><p>Any colour per element, painted live. Smart colours follow readability rules. Locks and undo.</p><span class="tag">Live</span></div>
+    <div class="s"><h4>Effects</h4><p>Up to 5 effects, each with its own Wet and its own target: trees, moon, hill, all but the moon.</p><span class="tag">Live</span></div>
+    <div class="s"><h4>Text</h4><p>Fonts, lines, size, spacing, guides. Grain and shadow on the letters. Text drawn sharp at any size.</p><span class="tag">Live</span></div>
+    <div class="s"><h4>Light</h4><p>Red moonlight calculated from the moon and the hill's slope, as a wine tint. Cut line strength.</p><span class="tag">Live</span></div>
+    <div class="s"><h4>Pick</h4><p>Keep, A/B, tournament, all keeps gallery. The picks side page as your one working tab.</p><span class="tag">Your call</span></div>
+    <div class="s"><h4>Export and finish</h4><p>3000 px export from the page, last touch in Canva, files into the release folder.</p><span class="tag">Local + Canva</span></div>
+  </div>
+</section>
+
+<section class="two">
+  <div>
+    <h2>What worked</h2>
+    <ul>
+      <li><b>AI only for the base, then local.</b> About 20 drafts total. Every change after that cost nothing and could be undone.</li>
+      <li><b>Live pages, not render rounds.</b> Once the cover lived as layers, a change took 0.1 s instead of a new image round.</li>
+      <li><b>One working tab.</b> The picks side page, newest row on top, tap to zoom and slide, Undo. You stopped getting lost between editor and sheets.</li>
+      <li><b>Stages, one at a time.</b> Elements, colours, text, effects, light. Each one closed before the next opened.</li>
+      <li><b>Everything kept and numbered.</b> 50 keeps plus an archive. Nothing deleted, every decision traceable.</li>
+      <li><b>Decisions written down as they happened.</b> The cover notes file held every pick, so nothing was re-argued.</li>
+      <li><b>Asking for an honest opinion.</b> The best step came from "what do you honestly think?", not from more options.</li>
+      <li><b>Physics as a design tool.</b> The moonlight looked right because it was calculated, not painted.</li>
+    </ul>
+  </div>
+  <div>
+    <h2>What cost us time</h2>
+    <ul>
+      <li><b>Too many tools at once.</b> The 26-effect wall and the per-tree tools were "too complex, more decisions for nothing". Both were cut back.</li>
+      <li><b>Versions too close together.</b> A whole round of 5-20% tweaks got "I don't see the change".</li>
+      <li><b>Numbers shifting.</b> Archiving keeps renumbered them twice, and you had to re-find your picks.</li>
+      <li><b>Font licences checked late.</b> Avenir looked final until its price ($97.99 a style) showed up. Barlow saved it.</li>
+      <li><b>Resolution checked late.</b> The art is 1024 px. Enlarging to 3000 at the very end worked, but it should be planned from day one.</li>
+      <li><b>Bugs found by you, not me.</b> The circle in the circle, the ghost owl, the reappearing stars, the grain that silently failed at 3000 px.</li>
+      <li><b>Shared checkout.</b> Another session's history rewrite dropped the tournament code once, and the server was restarted by other chats.</li>
+      <li><b>No second opinion.</b> Fable's week ran out before the review.</li>
+    </ul>
+  </div>
+</section>
+
+<section class="read">
+  <h2>Next time: the workflow</h2>
+  <p>We planned this one stage by stage, and it held. The next cover should start from this plan, while every stage stays a module you can skip, repeat or reorder.</p>
+  <h3>Before any picture</h3>
+  <ol>
+    <li><b>Check the deadline and size first.</b> Store size (3000 px minimum), release date, and when the cover must be final.</li>
+    <li><b>Pick from free fonts first.</b> Start the font list from what we own and what is free (OFL). Paid fonts only if one wins clearly, and with the price shown up front.</li>
+    <li><b>Render the base at 2048 px or more,</b> or plan the enlargement from the start.</li>
+  </ol>
+  <h3>The modules</h3>
+  <ol>
+    <li><b>Draft wide</b> with AI: 3 to 6 short prompts, clearly different.</li>
+    <li><b>Freeze one base</b> and split it into layers.</li>
+    <li><b>Elements, colours, text, effects, light</b>, as separate stages. Skip any stage that the art doesn't need.</li>
+    <li><b>Pick</b> on the side page, with bold versions only (different at phone size).</li>
+    <li><b>Ask "what do you honestly think?"</b> before calling it final. It found the weak spot here.</li>
+    <li><b>Second opinion</b> (Fable) on the near-final, booked before the weekly limit runs out.</li>
+    <li><b>Export</b> from the page at full size, then Canva only for small touches.</li>
+  </ol>
+  <h3>Tool fixes to make</h3>
+  <ul>
+    <li><b>Make the Layout page work for any release</b>, not only Half the Night. Today it is built around this one picture.</li>
+    <li><b>Give keeps fixed IDs</b> that never shift when others are archived.</li>
+    <li><b>Add an Export button</b> on the page (3000 and 4000 px), so no hand-run scripts are needed.</li>
+    <li><b>Have the picks side page update itself</b> from the keeps, so it never falls behind your editor.</li>
+    <li><b>Run my own check before showing you anything:</b> a zoom at 100% plus the server log, every time.</li>
+  </ul>
+</section>
+
+<section class="read">
+  <h2>When you are in the picture</h2>
+  <p>The same pipeline works for covers with you in them. Only the first module changes, and a few rules get stricter.</p>
+  <div class="box">
+    <h3>What stays the same</h3>
+    <p>Freeze a base, split it into layers, then elements, colours, text, effects and light, live and local. The picks page and the way you decide don't change.</p>
+    <h3>What changes</h3>
+    <ul>
+      <li><b>The base is a real photo, not an AI draft.</b> Start from the shoot catalogue (204 tagged edits) and the photos you like.</li>
+      <li><b>Never AI on your face. No AI change to any of your photos without your go</b>, per image. The subject cutout has to be made locally.</li>
+      <li><b>The layers are different:</b> you, the background, the light, the text. Effects go on the background by default; anything on you is a choice you make on purpose.</li>
+      <li><b>No text over your face.</b> Before placing type, check where your face and head are in each version.</li>
+      <li><b>Light gets harder.</b> The moonlight trick works on a flat hill. On a face it must follow real shape, so relighting you stays subtle and is checked at 100% zoom.</li>
+      <li><b>Credits.</b> The photographer is credited on Instagram only.</li>
+    </ul>
+    <h3>To build when we get there</h3>
+    <ul>
+      <li>A local "split the photo" step: you, background, and the light direction read from the photo.</li>
+      <li>A face-safe zone on the Layout page that text and effects stay out of.</li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <h2>Finishing tools: when each one comes in</h2>
+  <p class="read">The moonlight gave the final touch because it added something real: where light falls. But finishing tools are not one last stage. The corners already changed what you liked on #18, during the colour stage. The rule: <b>see it early, decide it late.</b> Every tool is visible from day one where it affects a decision, and gets tuned or locked at its own moment. Finish stays a real stage: the place where things are tuned and checked, not where they first appear.</p>
+  <div class="tbl"><table>
+    <thead><tr><th>When</th><th>Tool</th><th>What it does</th><th>On this cover</th></tr></thead>
+    <tbody>
+      <tr><td>On from the start, low</td><td>Grain</td><td>One film or print grain over everything, so all layers feel like one print.</td><td>Colours judged with grain on. The final amount is set at Finish (what you did in Canva).</td></tr>
+      <tr><td>On from the start, low</td><td>Corners (vignette)</td><td>Darkens and roughens the edges of the frame.</td><td>You liked them on #18: "more vibe, less computer". Amount set at Finish.</td></tr>
+      <tr><td>With the elements</td><td>Depth (haze)</td><td>Far layers a little paler and softer: a front, middle and back.</td><td>The thin trees on the right sit further back; the big trunk stays in front.</td></tr>
+      <tr><td>With the elements</td><td>Focus</td><td>A slight blur on far layers, sharp in front, like the multiplane camera in old animation.</td><td>Big trunk sharp, back trees softer. The title always sharp.</td></tr>
+      <tr><td>Live once placed, judged when positions lock</td><td>Light</td><td>Calculated from the light source and the shapes it hits.</td><td>The red moonlight. Seen on day two instead of day six, it would have changed the colour picks.</td></tr>
+      <tr><td>Live once placed, judged when positions lock</td><td>Rim light</td><td>A thin edge on the side of each shape facing the light.</td><td>Red edges on the tree sides facing the moon.</td></tr>
+      <tr><td>Finish</td><td>Grade</td><td>One last colour pull over the finished picture.</td><td>A touch of the moon's red in the darks.</td></tr>
+      <tr><td>Finish</td><td>Cast-shadow check</td><td>Checks that shadows fall away from the light. A check, not a choice.</td><td>The tree shadows on the hill against the moon's position.</td></tr>
+      <tr><td>Finish</td><td>Size and sharpness</td><td>Export at full size, sharpened once for that size.</td><td>3000 px for the store, then smaller copies.</td></tr>
+    </tbody>
+  </table></div>
+</section>
+
+<section class="read">
+  <h2>Upgrading the tools: one studio</h2>
+  <p>Today the Shadow Archive, Effects, Fonts and Imagine are four separate pages. On this cover we used them only partly, because opening them meant leaving the work. The upgrade is to bring them to the work.</p>
+  <h3>Bring the libraries into the Layout page</h3>
+  <ul>
+    <li><b>A studio drawer on the side:</b> references from the archive, effects with examples, fonts with licence and price, and Imagine elements. Drag one in, or apply it, without leaving the page.</li>
+    <li><b>One tag list across all four,</b> so one search finds everything for a feeling. For example <code>90s-noir</code>, <code>dark-deco</code>, <code>moon</code>, <code>owl</code>, <code>half-the-night</code>.</li>
+  </ul>
+  <h3>Record as we go, not after</h3>
+  <ul>
+    <li><b>Effects:</b> four new ones from this cover, each with a before/after from Half the Night. Calculated red moonlight, grain + shadow on letters, cut line strength, ink corners.</li>
+    <li><b>Fonts:</b> Barlow Condensed (chosen), Switzer Black, Fraunces Black, CAT Neuzeit Schatten, with licences.</li>
+    <li><b>Shadow Archive:</b> your three noir references (the BTAS title card, the villain skyline poster, the comic skyline with the moon) are only in a build folder now. They belong in the archive, tagged with the reasons you gave: flat black silhouettes, red sky, "the Batman language".</li>
+    <li><b>Imagine:</b> the cover's elements as a reusable set for this release. The red moon with the owl, the trees, the new tree, the crescent, the stars. Plus the prompt that worked (V1a / V1c) as a "90s noir" recipe, so the next AI drafts start from it.</li>
+  </ul>
+</section>
+
+<section class="read">
+  <h2>The AI budget: spend more, earlier</h2>
+  <p>We spent about $1 to 2 on AI for the whole cover. That was too careful. Drafts are cheap, and the weakest part of the final file is the one AI decided: the base painting is only 1024 px.</p>
+  <ul>
+    <li><b>Why 1024 px:</b> our render script is set to 1024 × 1024 for every render. That is why the cover had to be enlarged 3× at the end, and why the owl's edges show steps at 100% zoom.</li>
+    <li><b>Explore wider:</b> 20 to 30 medium drafts (about $0.05 each, so $1 to 1.50) in the first hour, not spread over several days.</li>
+    <li><b>Re-render the finalists at high quality</b> (about $0.21 each) and at the largest size the model offers, before freezing one. A new render is a new painting, so quality has to be chosen before the base is frozen, not after.</li>
+    <li><b>Or upscale the chosen base with AI</b> once it is picked. That is an AI change to your image, so it needs your go first.</li>
+    <li><b>Fix to make:</b> give the render script a size option (today it only does 1024). Check which sizes the model allows before the next cover.</li>
+  </ul>
+</section>
+
+<section>
+  <h2>Our own archive and tools: what we used</h2>
+  <p class="read">Our rule is to search our own archive before anything else. On this cover we used part of the toolkit, and the parts we skipped are a gap to close next time.</p>
+  <div class="tbl"><table>
+    <thead><tr><th>Tool</th><th>Used?</th><th>How, or what we missed</th></tr></thead>
+    <tbody>
+      <tr><td>Style library (print looks)</td><td>Yes</td><td>All 26 looks tested on the art, cut to the 9 effects you kept.</td></tr>
+      <tr><td>Effects library (/effects)</td><td>Partly</td><td>Its colour rules (60/30/10, 70/20/10) drive Smart colours. The new effects we invented here are not recorded there yet: calculated red moonlight, grain + shadow on letters, cut-line strength.</td></tr>
+      <tr><td>Shadow Archive (/archive)</td><td>Once</td><td>R-020 (R. Missing) for the palette study. The opening references came from your screenshots (BTAS, comic skylines), not from the archive. Next time: a reference board from the archive first.</td></tr>
+      <tr><td>Imagine page (/imagine)</td><td>No</td><td>I rendered with the script directly. Next time: render through the Imagine page so prompts, picks and costs are logged in one place.</td></tr>
+      <tr><td>Font library (/fonts)</td><td>Partly</td><td>Name fonts came from your earlier font sessions. Barlow, Switzer, Fraunces, Neuzeit Schatten are not recorded in it yet.</td></tr>
+      <tr><td>Shoot catalogue</td><td>No</td><td>Not needed: no photo of you on this cover. It is the starting point when you are in the picture.</td></tr>
+    </tbody>
+  </table></div>
+</section>
+
+<section class="read">
+  <h2>Why it took six days, and how to stop that</h2>
+  <p>Most of the six days went into building tools, not into deciding. About 30 of the ~90 commits record cover decisions; the rest built or fixed the pages. That was worth it once. It should not happen again.</p>
+  <ul>
+    <li><b>The tools now exist.</b> Elements, colours, effects per element, text with grain and shadow, calculated light, picks page, export. The next cover starts on day one with all of them.</li>
+    <li><b>One job before the next cover:</b> make the Layout page work for any release and any base picture. Do it as its own ticket, not during a cover.</li>
+    <li><b>Tool freeze during a cover:</b> only fixes. A new feature waits on a list unless it blocks a decision you are making that day.</li>
+    <li><b>Time box per stage:</b> drafts and base on day one, stages on day two, finish and export on day three.</li>
+  </ul>
+</section>
+
+<section class="read">
+  <h2>Real photos and photoreal AI images</h2>
+  <p>This cover was easy to work in layers because it is flat ink: a few colours, hard edges, no gradients. A real photo or a photoreal AI image changes what each module can do.</p>
+  <div class="two">
+    <div class="box">
+      <h3>A real photo (you in it)</h3>
+      <ul>
+        <li><b>Layers need a real cutout:</b> you, hair edges, background. Local only, never AI on your face.</li>
+        <li><b>Recolouring becomes grading:</b> we can't repaint a sky like a flat ink. Colour moves become tints, curves and the palette ramps.</li>
+        <li><b>Light is already there.</b> Any added light (like our moonlight) must match the real light direction in the photo, or it looks fake.</li>
+        <li><b>Resolution is an upside:</b> camera files are big, so no enlarging.</li>
+        <li><b>Rules:</b> no text over your face, retouch only with your go per image, photographer credited on Instagram.</li>
+      </ul>
+    </div>
+    <div class="box">
+      <h3>A photoreal AI image</h3>
+      <ul>
+        <li><b>Masks get harder:</b> soft gradients and fine detail, so our colour-by-mask painting won't work cleanly. It needs proper segmentation.</li>
+        <li><b>AI mistakes hide in detail:</b> hands, text, fake stamps, warped edges. Check every finalist at 100% zoom.</li>
+        <li><b>Render at high quality and full size from the start</b>, since the detail is the point.</li>
+        <li><b>Store rules:</b> distributors and stores may ask whether artwork is AI-made. We haven't checked Symphonic's rule yet. That applies to this cover too, since its base is AI.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>The campaign: more than one picture</h2>
+  <p class="read">The cover is one image, but the campaign can use several kinds of images from the same world. They all share the palette, the moon and the grain, so they read as one release without repeating the cover.</p>
+  <div class="tbl"><table>
+    <thead><tr><th>Image type</th><th>What we already have</th><th>Where it fits</th></tr></thead>
+    <tbody>
+      <tr><td>Big moon versions</td><td>The big moon behind the branches (ivory and black trees) and on the early colours (side page "Half the Night Moons").</td><td>Announcement post, YouTube visual, a second track's art.</td></tr>
+      <tr><td>The second painting (1c)</td><td>Big moon, crooked trees. Decided on Nov 5: 1a = cover, 1c = campaign.</td><td>Posts and stories that feel related but new.</td></tr>
+      <tr><td>The cover in motion</td><td>The cover as separate layers (trees, hill, moon, owl, stars, text).</td><td>Spotify Canvas, reels, YouTube: 3D edge shimmer, moon glow, stars on the beat (HyperFrames).</td></tr>
+      <tr><td>Your photos in the cover's grade</td><td>Test on 3 shoot photos: warm black, plum, wine red, ivory. Best: you against the tree (out-098).</td><td>Face posts and stories; the "process, not only product" side of the campaign.</td></tr>
+      <tr><td>Finishes of the cover</td><td>Paper print, bleach bypass, light leak, moon glow (test copies).</td><td>Poster, merch, a story frame. Not the streaming cover.</td></tr>
+      <tr><td>Single elements</td><td>Owl moon, trees, crescent, stars (saved in Imagine).</td><td>Small graphics, stickers, transitions, the countdown.</td></tr>
+    </tbody>
+  </table></div>
+  <p class="read" style="margin-top:12px">Rule from the brand: reused cover art gets no "reveal" post. Novelty comes from the track, the title and the motion.</p>
+</section>
+
+<section class="read">
+  <h2>Squeeze the lemon: the leftovers build the world</h2>
+  <p>A cover round leaves dozens of good images that didn't win. They are not waste. Put in the cover's style, they make the release a world instead of one picture. On this cover, the early big-moon painting (1c) and the low-angle trees (B) came back in one quick pass, local, no AI.</p>
+  <h3>New last step for every cover</h3>
+  <ol>
+    <li><b>I suggest a leftovers check</b> once the cover is final: the strongest unused drafts, side by side.</li>
+    <li><b>You pick fast,</b> like today: yes, no, or "add it to the world".</li>
+    <li><b>I put the picks in the cover's style</b> with a local script, and they go into the campaign folder.</li>
+  </ol>
+  <h3>Where leftovers can live</h3>
+  <ul>
+    <li><b>Back cover</b> and inner art (vinyl, Bandcamp extra images).</li>
+    <li><b>Artist profile images</b> on streaming platforms, so your profile looks like the release.</li>
+    <li><b>Spotify Canvas, reels, YouTube visuals</b> made from a second composition, not the cover again.</li>
+    <li><b>Countdown and announcement posts,</b> stories, press kit, merch, posters.</li>
+    <li><b>The next release:</b> a leftover can open the next chapter of the same world.</li>
+  </ul>
+  <p>Which platform slots exist and their sizes is not checked yet. It is part of the research ticket below.</p>
+</section>
+
+<section class="read">
+  <h2>What this teaches our LLM system</h2>
+  <p>The cover is one release. What the system learned from it should make every next chat faster and better, without you repeating yourself. Here is what moves from this chat into the system, and what should be built.</p>
+  <h3>Already saved</h3>
+  <ul>
+    <li><b>Memory notes:</b> the cover method (layered, live, modular), "see it early, decide it late" for finishing tools, the leftovers check as the last step, and "versions must differ at a glance".</li>
+    <li><b>The decision log:</b> every pick and its reason in the cover notes file. Long chats get compressed, and that file kept the details safe when they did.</li>
+    <li><b>Handover + tickets:</b> what is open sits on the board, not in a chat you have to find again.</li>
+  </ul>
+  <h3>To build</h3>
+  <ul>
+    <li><b>A cover skill.</b> Today the method lives in a report and a memory note. As a skill, any chat that starts a cover loads it on its own: the day-one checks (deadline, store size, free fonts, base resolution), the stages, the picks page, the leftovers step.</li>
+    <li><b>A structured pick log.</b> Every round saved as data: what was shown, what you picked, your words. Over a few releases that becomes a real record of your eye, so my suggestions start closer to your taste. Taste rules still only come from 📌 questions after your read-back.</li>
+    <li><b>Self-check before showing.</b> You found the circle in the circle, the ghost owl and the missing grain before I did. A fixed check (100% zoom, the server log, a before/after diff) runs on every picture before it reaches you.</li>
+    <li><b>Model roles, planned per week.</b> Opus builds, Fable reviews near-final work. This week Fable ran out before the review, so the second-opinion slot gets booked early in the week for anything with a deadline.</li>
+    <li><b>Tools the model can drive.</b> The Canva upload worked through its connector. Editors with an MCP server (PhotoCraft, once it is out of alpha) would let me apply edits by command instead of building pages for them.</li>
+    <li><b>Ask for the honest opinion as a standard step.</b> The best move on this cover came from "what do you honestly think?". It becomes a fixed stage before final, not something you have to ask for.</li>
+  </ul>
+</section>
+
+<section>
+  <h2>The final cover</h2>
+  <div class="tbl"><table>
+    <thead><tr><th>Part</th><th>Setting</th></tr></thead>
+    <tbody>
+      <tr><td>Base art</td><td>AI draft 1a (90s noir, Nov 4), with the moon made smaller locally</td></tr>
+      <tr><td>Colours</td><td>Plum hill · ivory trees · red moon · black owl · gold stars · ivory cut line</td></tr>
+      <tr><td>Moon and owl</td><td>Moon 125% · owl 88% · star next to the name level with it</td></tr>
+      <tr><td>Effects</td><td>Anaglyph 3D 57% on the trees · Xerox 25% on all but the moon</td></tr>
+      <tr><td>Light</td><td>Red moonlight 60% (wine soft-light, calculated) · cut line 22%</td></tr>
+      <tr><td>Title</td><td>Barlow Condensed ExtraBold, 3 lines, ivory, grain + soft shadow (free, OFL)</td></tr>
+      <tr><td>Name</td><td>Pirata One, letter-spacing 4% (free, OFL)</td></tr>
+      <tr><td>Finish</td><td>Your extra grain in Canva · 3000 × 3000 px, JPG for Symphonic</td></tr>
+    </tbody>
+  </table></div>
+  <h3>Where everything lives</h3>
+  <ul class="read">
+    <li><b>Final files:</b> <code>Releases/Half the Night EP/Artwork &amp; Designs/</code> (your JPG and PNG, plus my 3000 px export)</li>
+    <li><b>The editor:</b> Release Manager, Layout page for the release, keep #50</li>
+    <li><b>Every decision:</b> <code>plans/half-the-night-cover-direction-noir.md</code></li>
+    <li><b>Every version:</b> the picks side page, newest row on top</li>
+  </ul>
+</section>
+
+<section class="read">
+  <h2>Sources</h2>
+  <ul>
+    <li><b>Decision log:</b> <code>plans/half-the-night-cover-direction-noir.md</code>, every round, pick and reason, Nov 4 to 9.</li>
+    <li><b>Your references:</b> Shadow Archive R-020, R-022, R-023, R-024 (RM /archive), originals in <code>artwork/edits/half-the-night-build/refs-amir/</code>.</li>
+    <li><b>Every version:</b> the picks side page (<a href="https://claude.ai/artifact/QHj3kfuz3y1dcHPrCw6dY1">Half the Night Picks</a>) and the moon page (<a href="https://claude.ai/artifact/WnY4VUioaHayW7DRrtv8bp">Half the Night Moons</a>); Layout keeps in <code>plans/playground-wall/pinocchio-single-layouts.json</code>.</li>
+    <li><b>Code and commits:</b> git history Nov 4 to 10 (Layout page, playground, export).</li>
+    <li><b>Font prices:</b> MyFonts, checked Nov 6 (Avenir Next from $97.99 a style; Futura, Impact). Licences from the OFL files in <code>docs/brand/fonts/free/</code>.</li>
+    <li><b>Outside tools:</b> <code>plans/research/photocraft-2026-11-09.md</code> (PhotoCraft repo page, PetaPixel, designcompass, techstrong.ai, read Nov 9).</li>
+    <li><b>AI cost:</b> approximate, from the render notes (medium about $0.05, high about $0.21 per render).</li>
+  </ul>
+</section>
+
+<p class="foot">Made from the cover notes, the commit history and the chat, Nov 9, 2026. AI draft count and cost are approximate, taken from the notes.</p>
+</div>

@@ -53,7 +53,7 @@ PHASE_LIMITS = {
     },
     2: {
         "label": "Phase 2 — attribution recipe (2026-09-01): follows are the engine (8.6 followers/hr, 61 of 176 gained), scene likes warm promo only (0 of 235 liked contacts converted in 6 months)",
-        "follows_per_session": 16,    # 2026-11-04 Amir "Yes, run it": 12->16 (HikerAPI follow-back check M-13). RESTORED 2026-10-12 (Amir "you can stop pause the follows"); was 0. Prior note: PAUSED 2026-09-26 (Amir "ok"): 35 follows since 09-16, 0 follow-backs, 60 non-reciprocators stuck behind the export gate -> ratio went ~20 negative. Restore to 12 once the ALL-TIME export unblocks the sweep AND the provider is topped up (real candidates again). Export landed 2026-10-10; the sweep ran 10-11. Vetted pool was 0 at restore time, so follows come from in-browser vets until a queue build runs.
+        "follows_per_session": 10,    # 2026-11-14 Amir "A" + "approve": 16->10 while the IG sweep runs (done ~Sun 11-29); Dec 5 check, back to 16 if ratio >= 1.2. Was: 2026-11-04 Amir "Yes, run it": 12->16 (HikerAPI follow-back check M-13). RESTORED 2026-10-12 (Amir "you can stop pause the follows"); was 0. Prior note: PAUSED 2026-09-26 (Amir "ok"): 35 follows since 09-16, 0 follow-backs, 60 non-reciprocators stuck behind the export gate -> ratio went ~20 negative. Restore to 12 once the ALL-TIME export unblocks the sweep AND the provider is topped up (real candidates again). Export landed 2026-10-10; the sweep ran 10-11. Vetted pool was 0 at restore time, so follows come from in-browser vets until a queue build runs.
         "unfollows_per_session": 8,   # 2026-11-04 Amir: 15->8 (temp 15 ended). Was: TEMP 2026-10-09 to 2026-10-16 (Amir "15"): clear the 53 non-reciprocators faster; the scorer cap follows this value. REVERT TO 8 on 2026-10-16. Unfollows still only via the live "Follows you" check.
         "likes_per_session": 12,      # 2026-11-04 Amir: 6->12. T1/T2 relationship warming only
     },
@@ -483,6 +483,11 @@ FOLLOWBACK_WINDOW_SESSIONS = 3      # rolling window of last 3 session-days
 # actually verified (followback_verified_at present and within
 # FOLLOWBACK_MAX_STALE_DAYS). Unverified == protected, not eligible.
 FOLLOWBACK_REQUIRE_VERIFIED = True
+
+# 2026-11-15 (Fable gate on the combined follower lists, Amir "check each one
+# live"): engine unfollows only after ig_unfollow_precheck.py found the account
+# missing from Amir's followers the same day (dispatcher runs it on session days).
+UNFOLLOW_PRECHECK_REQUIRED = True
 
 # Consecutive failed user_id resolutions that stop the checker. Per SOP 4.3,
 # "could not resolve user ID" is a Class A (IG-signal) event; 26 in one run on

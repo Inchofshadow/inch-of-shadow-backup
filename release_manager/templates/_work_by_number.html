@@ -60,7 +60,7 @@
                         data-id="{{ c.id }}" data-bucket="{{ c.bucket }}" data-who="{{ c.who }}" data-board="{{ c.board }}">
                     <span class="row"><span class="shown">{{ c.shown_as }}</span><span class="pill st-{{ c.status }}">{{ c.status }}</span></span>
                     <span class="ttitle">{{ c.label or c.title }}</span>
-                    <span class="who">{% if c.bucket %}{{ c.bucket }}{% endif %}{% if c.who %} · {{ c.who }}{% endif %}{% if c.updated %} · {{ c.updated }}{% endif %}</span>
+                    <span class="who">{% if c.bucket %}{{ c.bucket_shown or c.bucket }}{% endif %}{% if c.who %} · {{ c.who }}{% endif %}{% if c.updated %} · {{ c.updated }}{% endif %}</span>
                     {% if c.metric_note %}<span class="dep">{{ c.metric_note }}</span>{% endif %}
                 </button>
             {% else %}
@@ -132,7 +132,7 @@
             var c = byId[id]; if (!c) return;
             root.querySelectorAll('.tcard.open').forEach(function (x) { x.classList.remove('open'); });
             root.querySelector('.tcard[data-id="' + id + '"]').classList.add('open');
-            text('d-lane', c.shown_as + ' · ' + c.id + (c.bucket ? ' · ' + c.bucket : '') + (c.who ? ' · ' + c.who : '') + (c.board === 'control-panel' ? ' · Control Panel' : ''));
+            text('d-lane', c.shown_as + ' · ' + c.id + (c.bucket ? ' · ' + (c.bucket_shown || c.bucket) : '') + (c.who ? ' · ' + c.who : '') + (c.board === 'control-panel' ? ' · Control Panel' : ''));
             text('d-title', c.label ? c.label + ': ' + c.title : c.title);
             var st = document.getElementById('d-status'); st.textContent = c.status; st.className = 'pill st-' + c.status;
             text('d-why', c.why); text('d-helps', c.helps);

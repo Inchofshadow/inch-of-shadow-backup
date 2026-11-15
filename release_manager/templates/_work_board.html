@@ -61,9 +61,9 @@
             {% for c in f.tickets %}
                 <button class="tcard cat-{{ c.category_slug if c.lane == 'Control Panel' else 'mkt' }}"
                         data-id="{{ c.id }}" data-status="{{ c.status }}" data-lane="{{ c.lane }}" data-cat="{{ c.category_slug }}">
-                    <span class="row"><span class="tid">{{ c.id }}</span><span class="pill st-{{ c.status }}">{{ c.status }}</span></span>
+                    <span class="row"><span class="tid">{{ c.shown_as or c.id }}</span><span class="pill st-{{ c.status }}">{{ c.status }}</span></span>
                     <span class="ttitle">{{ c.title }}</span>
-                    {% if c.needs %}<span class="dep">needs {{ c.needs|join(", ") }}</span>{% endif %}
+                    {% if c.needs %}<span class="dep">needs {{ (c.needs_shown or c.needs)|join(", ") }}</span>{% endif %}
                 </button>
             {% else %}
                 <div class="tghost">{% if f.n == 5 %}parent added when floor 3 is decided{% elif f.n == 6 %}opens after the Control Panel{% else %}empty{% endif %}</div>
@@ -141,11 +141,11 @@
             root.querySelectorAll('.tcard.open').forEach(function (x) { x.classList.remove('open'); });
             root.querySelector('.tcard[data-id="' + id + '"]').classList.add('open');
             text('b-lane', c.lane + ' · ' + c.category + ' · floor ' + c.floor + (c.size ? ' · size ' + c.size : '') + (c.model ? ' · model ' + c.model : ''));
-            text('b-title', c.id + ' ' + c.title);
+            text('b-title', (c.shown_as || c.id) + ' ' + c.title);
             var st = document.getElementById('b-status'); st.textContent = c.status; st.className = 'pill st-' + c.status;
             text('b-why', c.why); text('b-serves', c.serves); text('b-question', c.question);
             list('b-references', c.references, function (r) { return (r.type ? r.type + ': ' : '') + (r.path_or_url || '') + (r.note ? ' (' + r.note + ')' : ''); });
-            list('b-needs', c.needs); list('b-unblocks', c.unblocks); list('b-outputs', c.outputs);
+            list('b-needs', c.needs_shown || c.needs); list('b-unblocks', c.unblocks_shown || c.unblocks); list('b-outputs', c.outputs);
             text('b-decision', c.decision ? c.decision + (c.decided_on ? ' (' + c.decided_on + ')' : '') : '');
             list('b-notes', c.notes);
             var d = document.getElementById('tdetail'); d.hidden = false;

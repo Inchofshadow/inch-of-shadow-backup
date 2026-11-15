@@ -1,0 +1,259 @@
+<title>Half the Night Banners</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Barlow:wght@400;500&display=swap">
+<style>
+/* Layout: one column of wide cards, each slot shown at its true aspect, tick bar under the image. Single dark look, the cover's night. */
+:root{
+  --ground:#0F0D0C; --panel:#1A1715; --line:#2E2925; --ink:#D6D1C8; --dim:#9A928A;
+  --moon:#D9402A; --star:#E3C27A; --plum:#51374A;
+  --display:"Barlow Condensed","Arial Narrow",Arial,sans-serif;
+  --body:"Barlow",system-ui,-apple-system,sans-serif;
+  color-scheme:dark;
+}
+body{background:var(--ground);color:var(--ink);font-family:var(--body);font-size:15px;line-height:1.5;
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:28px 64px}
+.wrap{max-width:1080px;margin:0 auto;display:flex;flex-direction:column;gap:40px}
+header h1{font-family:var(--display);font-weight:700;font-size:clamp(34px,6vw,56px);letter-spacing:.02em;line-height:1;margin:0;text-transform:uppercase;text-wrap:balance}
+header p{color:var(--dim);max-width:62ch;margin:10px 0 0}
+.group{display:flex;flex-direction:column;gap:18px}
+.group h2{font-family:var(--display);font-weight:600;font-size:22px;letter-spacing:.08em;text-transform:uppercase;margin:0;display:flex;gap:12px;align-items:baseline;flex-wrap:wrap}
+.group h2 small{font-family:var(--body);font-size:13px;letter-spacing:.02em;text-transform:none;color:var(--dim);font-weight:400}
+.cards{display:grid;gap:18px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:6px;overflow:hidden;display:flex;flex-direction:column;min-width:0}
+.card.on{border-color:var(--star);box-shadow:0 0 0 1px var(--star)}
+.shot{position:relative;background:#000}
+.shot img,.shot video{display:block;width:100%;height:auto;max-width:100%}
+.bar{display:flex;gap:12px;align-items:center;flex-wrap:wrap;padding:12px 14px}
+.label{flex:1 1 220px;min-width:0}
+.label b{font-family:var(--display);font-size:19px;letter-spacing:.04em;font-weight:600}
+.label div{color:var(--dim);font-size:13px}
+button{font:inherit;cursor:pointer;border-radius:4px}
+.tick{min-width:64px;height:44px;border:1px solid var(--line);background:transparent;color:var(--ink);font-family:var(--display);font-size:22px;font-weight:700}
+.tick[aria-pressed="true"]{background:var(--star);border-color:var(--star);color:var(--ground)}
+.guide{border:1px solid var(--line);background:transparent;color:var(--dim);height:44px;padding:0 12px;font-size:13px}
+.guide[aria-pressed="true"]{color:var(--ink);border-color:var(--dim)}
+button:focus-visible,input:focus-visible{outline:2px solid var(--star);outline-offset:2px}
+.note{flex:1 1 100%;display:flex}
+.note input{flex:1;min-width:0;background:var(--ground);border:1px solid var(--line);border-radius:4px;color:var(--ink);font:inherit;font-size:14px;padding:9px 10px}
+.cv-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+.facts{color:var(--dim);font-size:14px;margin:0;max-width:62ch}
+.status{font-size:12px;color:var(--dim);padding:0 14px 12px}
+footer{color:var(--dim);font-size:13px;border-top:1px solid var(--line);padding-top:16px}
+.mode{display:flex;gap:8px;margin-top:16px}
+.mode button{height:44px;padding:0 18px;border:1px solid var(--line);background:transparent;color:var(--dim);font-family:var(--display);font-size:18px;font-weight:600;letter-spacing:.06em;text-transform:uppercase}
+.mode button[aria-pressed="true"]{background:var(--ink);border-color:var(--ink);color:var(--ground)}
+.card.hide,.group.hide,.final .tick,.choose{display:none}
+.final .choose{display:inline-block;min-width:96px;height:44px;border:1px solid var(--line);background:transparent;color:var(--ink);font-family:var(--display);font-size:18px;font-weight:600;letter-spacing:.06em;text-transform:uppercase}
+.final .card.on{border-color:var(--line);box-shadow:none}
+.final .card.pick{border-color:var(--star);box-shadow:0 0 0 2px var(--star)}
+.final .card.pick .choose{background:var(--star);border-color:var(--star);color:var(--ground)}
+.final .card.dim{opacity:.45}
+.chosen{color:var(--ink);font-size:14px;margin:12px 0 0}
+.chosen:empty{display:none}
+.fresh{color:var(--star);font-family:var(--display);font-size:14px;letter-spacing:.08em;text-transform:uppercase;margin-left:8px}
+.shot{cursor:zoom-in}
+.zoom{position:fixed;inset:0;z-index:50;background:rgba(5,4,4,.96);display:none;align-items:center;justify-content:center;padding:56px 16px 16px;cursor:zoom-out}
+.zoom.open{display:flex}
+.zoom img,.zoom video{max-width:100%;max-height:100%;width:auto;height:auto;object-fit:contain;display:block}
+.zoom .x{position:absolute;top:10px;right:16px;height:44px;min-width:44px;border:1px solid var(--line);background:var(--panel);color:var(--ink);font-size:20px}
+.zoom .cap{position:absolute;top:18px;left:16px;color:var(--dim);font-size:14px}
+@media (max-width:640px){.cv-grid{grid-template-columns:1fr 1fr}}
+@media (prefers-reduced-motion:reduce){video{display:none}}
+</style>
+
+<div class="wrap">
+  <header>
+    <h1>Half the Night EP · banners</h1>
+    <p>🎵 Release 16. Built locally from the final cover, no AI. "Final round" shows only the versions you ticked (plus the new beat Canvas D and E), none chosen yet: press "Choose" on one per slot. "All" shows every version with your V ticks. "Safe zone" draws the area every device shows. Nothing is uploaded; you upload, and your SoundCloud profile picture stays as it is.</p>
+    <div class="mode" role="group" aria-label="View">
+      <button id="m-picks" aria-pressed="true">Final round</button>
+      <button id="m-all" aria-pressed="false">All</button>
+    </div>
+    <p class="chosen" id="chosen"></p>
+  </header>
+
+  <section class="group">
+    <h2>SoundCloud header <small>2480 × 520 · avatar and name sit on the left, art lives on the right</small></h2>
+    <div class="cards" id="g-sc"></div>
+  </section>
+
+  <section class="group">
+    <h2>YouTube channel banner <small>2560 × 1440 · phones show only the 1546 × 423 centre</small></h2>
+    <div class="cards" id="g-yt"></div>
+  </section>
+
+  <section class="group">
+    <h2>Spotify artist header <small>2660 × 1140 · Spotify allows no text and no release promo</small></h2>
+    <div class="cards" id="g-sp"></div>
+  </section>
+
+  <section class="group">
+    <h2>Spotify Canvas <small>1080 × 1920 · seamless loops · no audio · 5 to 6 MB (limit 8)</small></h2>
+    <div class="cards cv-grid" id="g-cv"></div>
+    <p class="facts">D and E are new: the same scene as A, with the light and the stars on Half the Night's tempo. The loop is 4 bars (16 beats, 7.5 s) and ends exactly where it starts. Spotify starts and loops the Canvas on its own, so it moves at the song's speed but does not lock onto its beats (my understanding, not checked in Spotify's docs).</p>
+  </section>
+
+  <footer>Files: Releases / Half the Night EP / Artwork &amp; Designs / Platform sizes / Banners. Rebuild: artwork/edits/htn-noir/build/platform_slots.py</footer>
+</div>
+
+<script>
+const CARDS = [
+  {id:"sc-a", g:"g-sc", name:"A · title + name", sub:"HALF THE NIGHT beside the moon", img:"img/sc-a.jpg", guide:"img/sc-a-guide.jpg"},
+  {id:"sc-b", g:"g-sc", name:"B · art only", sub:"moon, stars, trees, no type", img:"img/sc-b.jpg", guide:"img/sc-b-guide.jpg"},
+  {id:"yt-a", g:"g-yt", name:"A · title + name", sub:"type in the centre, moon right", img:"img/yt-a.jpg", guide:"img/yt-a-guide.jpg"},
+  {id:"yt-b", g:"g-yt", name:"B · art only", sub:"moon in the centre", img:"img/yt-b.jpg", guide:"img/yt-b-guide.jpg"},
+  {id:"sc-c", g:"g-sc", name:"C · moonrise", sub:"big moon on the horizon, title to its left", img:"img/sc-c.jpg", guide:"img/sc-c-guide.jpg"},
+  {id:"sc-d", g:"g-sc", name:"D · lone tree", sub:"the ivory tree leans in, small moon", img:"img/sc-d.jpg", guide:"img/sc-d-guide.jpg"},
+  {id:"sc-e", g:"g-sc", name:"E · minimal", sub:"moon and stars only, no ground", img:"img/sc-e.jpg", guide:"img/sc-e-guide.jpg"},
+  {id:"yt-c", g:"g-yt", name:"C · moonrise", sub:"moon on the horizon, title left", img:"img/yt-c.jpg", guide:"img/yt-c-guide.jpg"},
+  {id:"yt-d", g:"g-yt", name:"D · framed", sub:"big tree inside the centre, small moon right", img:"img/yt-d.jpg", guide:"img/yt-d-guide.jpg"},
+  {id:"yt-e", g:"g-yt", name:"E · minimal", sub:"night sky, title and moon only", img:"img/yt-e.jpg", guide:"img/yt-e-guide.jpg"},
+  {id:"yt-f", g:"g-yt", name:"F · SoundCloud look", sub:"new: thin ground, lots of night, like SC D", img:"img/yt-f.jpg", guide:"img/yt-f-guide.jpg"},
+  {id:"yt-g", g:"g-yt", name:"G · the painting", sub:"new: the cover itself, title moved to the centre", img:"img/yt-g.jpg", guide:"img/yt-g-guide.jpg"},
+  {id:"sp-d", g:"g-sp", name:"D · the painting", sub:"fixed 11-13: the cut-off twig at the top edge is gone", img:"img/sp-d.jpg?v=2", guide:"img/sp-d-guide.jpg"},
+  {id:"sp-e", g:"g-sp", name:"E · SoundCloud look", sub:"new: thin ground, lots of night", img:"img/sp-e.jpg", guide:"img/sp-e-guide.jpg"},
+  {id:"sp-h", g:"g-sp", name:"A · text-free world", sub:"red box = where the name and buttons sit", img:"img/sp-h.jpg", guide:"img/sp-h-guide.jpg"},
+  {id:"sp-b", g:"g-sp", name:"B · moonrise", sub:"big moon on the horizon between thin trees", img:"img/sp-b.jpg", guide:"img/sp-b-guide.jpg"},
+  {id:"sp-nf", g:"g-sp", fresh:true, name:"F · wide moon", sub:"new direction: a huge moon cut by the right edge, the rest is night", img:"img/sp-nf.jpg", guide:"img/sp-nf-guide.jpg"},
+  {id:"sp-ng", g:"g-sp", fresh:true, name:"G · tree line", sub:"new direction: no moon, thin trees as a low dim band, open starry sky", img:"img/sp-ng.jpg", guide:"img/sp-ng-guide.jpg"},
+  {id:"sp-nh", g:"g-sp", fresh:true, name:"H · grain field", sub:"new direction: the cover's black and grain, one shining star, red haze below", img:"img/sp-nh.jpg", guide:"img/sp-nh-guide.jpg"},
+  {id:"sp-c", g:"g-sp", name:"C · open sky", sub:"small high moon, one big tree, lots of night", img:"img/sp-c.jpg", guide:"img/sp-c-guide.jpg"},
+  {id:"canvas", g:"g-cv", name:"A · night scene", sub:"glow breathes, stars twinkle, trees sway", video:"img/canvas.mp4", poster:"img/canvas-poster.jpg"},
+  {id:"cv-b", g:"g-cv", name:"B · moonrise", sub:"moon rises 70 px and sinks back, slow push-in", video:"img/cv-b.mp4", poster:"img/cv-b-poster.jpg"},
+  {id:"cv-c", g:"g-cv", name:"C · close", sub:"moon fills the frame, stars drift", video:"img/cv-c.mp4", poster:"img/cv-c-poster.jpg"},
+  {id:"cv-d", g:"g-cv", fresh:true, name:"D · beat pulse", sub:"moon glow hits on every beat, bar one strongest; one star glints on each off-beat", video:"img/cv-d.mp4", poster:"img/cv-d-poster.jpg"},
+  {id:"cv-e", g:"g-cv", fresh:true, name:"E · beat shimmer", sub:"moon swells once per bar; stars sparkle on the sixteenths like a hi-hat", video:"img/cv-e.mp4", poster:"img/cv-e-poster.jpg"},
+  {id:"cv-f", g:"g-cv", fresh:true, name:"F · E, calmer", sub:"new: same moon swell, 8 soft sparkles a loop instead of 32, half the flash", video:"img/cv-f.mp4", poster:"img/cv-f-poster.jpg"}
+];
+let mode = "picks";
+const state = {};
+let db = null;
+
+function el(tag, attrs={}, kids=[]){
+  const e=document.createElement(tag);
+  for(const [k,v] of Object.entries(attrs)){ if(k==="text") e.textContent=v; else e.setAttribute(k,v); }
+  for(const k of kids) e.appendChild(k);
+  return e;
+}
+
+function render(){
+  for(const c of CARDS){
+    const s = state[c.id] || {};
+    let card = document.getElementById("card-"+c.id);
+    if(!card){
+      const media = c.video
+        ? el("video",{src:c.video,poster:c.poster,autoplay:"",loop:"",muted:"",playsinline:"","aria-label":c.name})
+        : el("img",{src:c.img,alt:c.name,loading:"lazy",id:"img-"+c.id});
+      if(c.video) media.muted = true;
+      const tick = el("button",{class:"tick",id:"tick-"+c.id,"aria-pressed":"false","aria-label":"Keep "+c.name,text:"V"});
+      tick.addEventListener("click",()=>save(c.id,{v:!(state[c.id]||{}).v}));
+      const nameEl = el("b",{text:c.name});
+      const lab = el("div",{class:"label"},[nameEl]);
+      if(c.fresh) lab.appendChild(el("span",{class:"fresh",text:"new"}));
+      lab.appendChild(el("div",{text:c.sub}));
+      const bar = el("div",{class:"bar"},[lab]);
+      if(c.guide){
+        const gb = el("button",{class:"guide",id:"guide-"+c.id,"aria-pressed":"false",text:"Safe zone"});
+        gb.addEventListener("click",()=>{const on=gb.getAttribute("aria-pressed")!=="true";gb.setAttribute("aria-pressed",String(on));document.getElementById("img-"+c.id).src=on?c.guide:c.img;});
+        bar.appendChild(gb);
+      }
+      bar.appendChild(tick);
+      const ch = el("button",{class:"choose",id:"choose-"+c.id,"aria-pressed":"false",text:"Choose"});
+      ch.addEventListener("click",()=>choose(c.g,c.id));
+      bar.appendChild(ch);
+      const inp = el("input",{id:"note-"+c.id,type:"text",placeholder:"Note (optional): what to change",maxlength:"300"});
+      inp.addEventListener("change",()=>save(c.id,{note:inp.value.trim()}));
+      bar.appendChild(el("label",{class:"note"},[inp]));
+      const shot = el("div",{class:"shot",role:"button",tabindex:"0","aria-label":"Zoom in on "+c.name},[media]);
+      shot.addEventListener("click",()=>openZoom(c));
+      shot.addEventListener("keydown",e=>{if(e.key==="Enter"||e.key===" "){e.preventDefault();openZoom(c);}});
+      card = el("article",{class:"card",id:"card-"+c.id},[shot,bar,el("div",{class:"status",id:"st-"+c.id})]);
+      document.getElementById(c.g).appendChild(card);
+    }
+    card.classList.toggle("on",!!s.v);
+    card.classList.toggle("hide", mode==="picks" && !s.v && !c.fresh);
+    const fp = finals[c.g];
+    card.classList.toggle("pick", fp===c.id);
+    card.classList.toggle("dim", !!fp && fp!==c.id);
+    const cb=document.getElementById("choose-"+c.id);
+    cb.setAttribute("aria-pressed",String(fp===c.id));
+    cb.textContent = fp===c.id ? "Chosen" : "Choose";
+    document.getElementById("tick-"+c.id).setAttribute("aria-pressed",String(!!s.v));
+    const inp=document.getElementById("note-"+c.id);
+    if(document.activeElement!==inp && typeof s.note==="string") inp.value=s.note;
+  }
+  for(const g of document.querySelectorAll(".group")){
+    g.classList.toggle("hide", !g.querySelector(".card:not(.hide)"));
+  }
+  document.body.classList.toggle("final", mode==="picks");
+  const short=id=>{const c=CARDS.find(x=>x.id===id);return c?c.name.split(" · ")[0]:"none yet";};
+  document.getElementById("chosen").textContent = mode==="picks"
+    ? "Chosen: SoundCloud "+short(finals["g-sc"])+" · YouTube "+short(finals["g-yt"])+" · Spotify header "+short(finals["g-sp"])+" · Canvas "+short(finals["g-cv"])
+    : "";
+}
+
+const zoom = el("div",{class:"zoom",role:"dialog","aria-modal":"true","aria-label":"Zoomed view"});
+document.body.appendChild(zoom);
+function closeZoom(){ zoom.classList.remove("open"); zoom.replaceChildren(); }
+function openZoom(c){
+  const guideOn = c.guide && document.getElementById("guide-"+c.id).getAttribute("aria-pressed")==="true";
+  let m;
+  if(c.video){
+    m = el("video",{src:c.video,poster:c.poster,autoplay:"",loop:"",muted:"",playsinline:"",controls:""});
+    m.muted = true;
+  }else{
+    m = el("img",{src:guideOn?c.guide:c.img,alt:c.name});
+  }
+  const x = el("button",{class:"x","aria-label":"Close",text:"✕"});
+  x.addEventListener("click",e=>{e.stopPropagation();closeZoom();});
+  m.addEventListener("click",e=>{ if(c.video) e.stopPropagation(); });
+  zoom.replaceChildren(el("div",{class:"cap",text:c.name}), m, x);
+  zoom.classList.add("open");
+  x.focus();
+}
+zoom.addEventListener("click",closeZoom);
+document.addEventListener("keydown",e=>{ if(e.key==="Escape" && zoom.classList.contains("open")) closeZoom(); });
+
+const finals = {};
+async function choose(g, id){
+  finals[g] = finals[g]===id ? "" : id;
+  render();
+  if(!db) return;
+  try{ await db.collection("final").doc(g).set({slot:g, pick:finals[g], at:new Date().toISOString()}); }catch(e){}
+}
+
+for(const [id,m] of [["m-picks","picks"],["m-all","all"]]){
+  document.getElementById(id).addEventListener("click",()=>{
+    mode=m;
+    document.getElementById("m-picks").setAttribute("aria-pressed",String(m==="picks"));
+    document.getElementById("m-all").setAttribute("aria-pressed",String(m==="all"));
+    render();
+  });
+}
+
+async function save(id, patch){
+  state[id] = Object.assign({}, state[id], patch);
+  render();
+  const st=document.getElementById("st-"+id);
+  if(!db){ st.textContent="Not saved: this view has no shared storage. Tell Claude in chat instead."; return; }
+  try{
+    await db.collection("ticks").doc(id).set({id, v:!!state[id].v, note:state[id].note||"", at:new Date().toISOString()});
+    st.textContent="Saved";
+  }catch(e){ st.textContent="Not saved ("+(e&&e.code||"error")+"). Tell Claude in chat instead."; }
+}
+
+render();
+(async()=>{
+  try{ db = window.claude ? await window.claude.use("db") : null; }catch(e){ db=null; }
+  if(!db) return;
+  db.collection("ticks").onSnapshot(snap=>{
+    for(const d of snap.docs){ const v=d.data(); if(v&&v.id) state[v.id]=v; }
+    render();
+  },()=>{});
+  db.collection("final").onSnapshot(snap=>{
+    for(const d of snap.docs){ const v=d.data(); if(v&&v.slot) finals[v.slot]=v.pick||""; }
+    render();
+  },()=>{});
+})();
+</script>

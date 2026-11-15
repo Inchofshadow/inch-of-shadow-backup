@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-06",
+  "updated": "2026-11-08",
   "deadline": {
     "floors": [
       1,
@@ -84,17 +84,19 @@
         "2026-09-24 V3 shown (references/look02/v3/). MARKS refined, four each: eclipse A as v2, B the shadow rises (disc high, light a thin smile at the bottom), C no ring, a full disc and a hairline crescent like a moon's edge, D the disc pushes through the ring and breaks the circle; inch mark A as v2, B upright wedges like a typographer's prime, C slanted wedges (the real double prime), D the shadow stroke in fine lines. NAMES 20 and 21 each in Impact, Impact with print grit, and Marcellus with print grit (29's look); on 21 the grit is gentler so the thinning lines survive.",
         "2026-09-24 Amir: focus on the MOON. It replaces the o of 'of', or maybe the o of 'Shadow'. Asked for it 'more engraving'. Drawn locally (references/look02/moon/, moon.py): E1 an engraved sphere, curved lines of latitude that thicken into the shadow, lit side bare paper; E2 the engraved eclipse, a fine ring and the shadow disc in concentric lines (it also reads as a record); E3 a crescent of paper, the rest cross-hatched. Set as the o in 'of' and in 'Shadow', in Marcellus and in Impact, with E1 and E2, each also shown small. Honest limit recorded: at small size the engraving closes up into a grey dot, so an engraved logo always needs a flat twin for small uses.",
         "2026-09-25 Amir on the moon round: the moon as the O is 'the obvious', and all the drafts are 'very, very obvious' and need improving; as a FIRST DRAFT it is fine to keep them that way. Family for the name: still undecided. The INCH MARK is removed for now, kept in memory. The moon-O set in the fonts read to him like 'a high-tech brain'. Claude's read: the line engravings (concentric and latitude lines) look like op-art or a tech sphere, and a geometric circle swapped into a letter is the most expected move there is; the obviousness is partly the medium, since code draws exact geometry and a non-obvious mark usually comes from a hand.",
-        "2026-11-06 archive: done dependencies Look-01 no longer listed (done tickets moved to tickets-done-archive.json)"
+        "2026-11-06 archive: done dependencies Look-01 no longer listed (done tickets moved to tickets-done-archive.json)",
+        "2026-11-08 Amir: \"im not sure its relevny anymore after we have the fonts now. we still need to contniue with the logo but im sot rue thats the style anymore\", then \"Yes, tie it\". The September rounds were set in Marcellus as a stand-in, before the font library (10-11) and the HTN fonts (11-07). Still holding: name set the same way every time + one symbol alone; the eclipse kept. Out of date: every wordmark in those sheets and the moon-O drafts. Next round starts from the chosen name font; final mark may be hand drawn.",
+        "2026-11-10 unblocked: the HTN name font is Pirata One (Release 13 done 11-09)."
       ],
       "area": "System",
       "area_no": 16,
-      "bucket": "parked",
-      "who": "amir",
+      "bucket": "next",
+      "who": "claude",
       "label": "Logo mark",
-      "next_step": "Amir picks the next round; moon-O kept only as a first draft",
+      "next_step": "Name font picked (Pirata One, Release 13 done): prepare a fresh logo round set in it, the eclipse redrawn beside it, then a guided round with Amir",
       "chrome": false,
       "metric": "none",
-      "updated": "2026-11-05",
+      "updated": "2026-11-10",
       "metric_note": "brand look, no number moved",
       "done_means": "A logo mark direction is chosen with size and placement rules, and the mark is in the Canva Brand Kit.",
       "done_means_by": "claude"

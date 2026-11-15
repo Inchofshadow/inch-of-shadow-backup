@@ -86,7 +86,7 @@
             var r = el.getBoundingClientRect();
             if (!r.width) return;
             var px = Math.min(max, 100 * w / r.width, 100 * h / r.height);
-            el.style.fontSize = Math.max(12, Math.floor(px)) + 'px';
+            el.style.fontSize = Math.max(13, Math.floor(px)) + 'px';   // 13 px floor
         });
     }
     if (document.fonts) {

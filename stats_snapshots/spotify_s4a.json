@@ -1517,6 +1517,42 @@
           "streams": 12
         }
       ]
+    },
+    "2026-11-07": {
+      "start": "2026-11-01",
+      "end": "2026-11-07",
+      "listeners": 58,
+      "monthly_active": 93,
+      "streams": 78,
+      "streams_per_listener": 1.3,
+      "saves": 6,
+      "playlist_adds": 14,
+      "followers": 69,
+      "changes_pct": {
+        "listeners": -9.4,
+        "monthly_active": -2.1,
+        "streams": -14.3,
+        "streams_per_listener": -5.4,
+        "saves": 500.0,
+        "playlist_adds": -46.2,
+        "followers": 1.5
+      },
+      "read_at": "2026-11-09T08:12:28",
+      "source": "Spotify for Artists, Audience, 7 days",
+      "top_songs": [
+        {
+          "title": "Farewell",
+          "streams": 21
+        },
+        {
+          "title": "The Deceiver",
+          "streams": 19
+        },
+        {
+          "title": "Taka Juno",
+          "streams": 13
+        }
+      ]
     }
   },
   "months": {

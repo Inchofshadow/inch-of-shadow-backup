@@ -2,7 +2,7 @@
   "schema_version": 1,
   "slug": "pinocchio-single",
   "created_at": "2026-09-13T21:59:03",
-  "updated_at": "2026-11-03T20:36:23",
+  "updated_at": "2026-11-11T14:04:16",
   "metadata": {
     "title": "Half the Night",
     "artist": "Inch of Shadow",
@@ -11,21 +11,56 @@
     "genre_secondary": "Dark Disco",
     "catalog_number": "ICR-003",
     "copyright": "2026 Indigo Children Records",
-    "copyright_p": "2026 Inch of Shadow",
-    "description": "",
+    "copyright_p": "2026 Indigo Children Records",
+    "description": "Half the Night is a restless 303 acid line over electro drums and a bass that never lets go, falling deeper into a dark, rolling trance arp. Pinocchio twists its 303 leads through a minimal groove full of echo and smoke. Hypnotic dark disco for the lost hours, from Berlin.",
     "language": "en",
     "explicit": false
   },
-  "release_date": "2026-12-04",
+  "release_date": "2026-12-11",
   "distribution": {
     "distributor": "Symphonic",
-    "distributor_id": "",
-    "upc": "",
-    "status": "draft",
-    "submitted_date": "",
-    "approved_date": "",
+    "distributor_id": "3697587",
+    "upc": "708208624645",
+    "status": "approved",
+    "submitted_date": "2026-11-11",
+    "approved_date": "2026-11-12",
     "live_date": "",
-    "notes": "2026-10-08: lead switched to Misty Night (title not official yet); Pinocchio is track 2. Slug kept as pinocchio-single."
+    "notes": "2026-10-08: lead switched to Misty Night (title not official yet); Pinocchio is track 2. Slug kept as pinocchio-single. | 2026-11-10: Symphonic draft 3697587 created (all metadata, cover, 2 tracks, ISRCs, date 2026-12-04, worldwide, all partners). Audio upload + Submit by Amir. | 2026-11-10 Amir picked clip starts: Half the Night 2:59 (into the drop), Pinocchio 4:48 (into the drop). Not yet set in the Symphonic draft (it still shows 1:15 / 1:48). Symphonic ticket PAUSED by Amir 11-10. | 2026-11-11 SUBMITTED by Amir: UPC 708208624645, release date moved Dec 4 -> Fri 2026-12-11 (Symphonic end-of-year cut-off: Dec 4 needed submit by Nov 6; Dec 5-29 by Nov 20). Clips set 2:59 / 4:48 (Amir, after listening). Credits on both tracks: Composer, Producer, Synthesizer, Mixing Engineer, Mastering Engineer = Amir Miller. Cover Art AI Use = Some, audio AI = None. Partners: all EXCEPT SoundCloud (Amir: self-uploads stay the only SC copies; a delivered copy would be a separate track; can be added later via release availability edit). Beatport For Starter INCLUDED (reverses 'NO Beatport'; $10/mo separate subscription, label shows 'Symphonic Starter', edits don't reach Beatport).",
+    "soundcloud_private": {
+      "half_the_night": "https://soundcloud.com/inch-of-shadow/half-the-night",
+      "status": "2026-11-11 RE-UPLOADED CLEAN (Amir: no label, no date before release, for label pitches). Both tracks PRIVATE: cover, genre Dark Disco, tags (no label tag), approved description without the label line, composer + ISRC, downloads on, clips HTN 2:59 / Pinocchio 4:48 (Amir). No record label, no release date, no P-line. Playlist 'Half the Night' PRIVATE, type Playlist (EP type forces a date), same text + cover. Old 11-10 uploads + old EP deleted by Amir; their secret links are dead. Bandcamp links added 2026-11-13: buy link ?campaign=sc-buy + description line 'Bandcamp: ...?campaign=sc-desc' on both tracks + playlist (checked on the pages).",
+      "pinocchio": "https://soundcloud.com/inch-of-shadow/pinocchio",
+      "ep_playlist": "https://soundcloud.com/inch-of-shadow/sets/half-the-night",
+      "secret_links": {
+        "ep": "https://soundcloud.com/inch-of-shadow/sets/half-the-night/s-cqiK2IkEg0T",
+        "half_the_night": "https://soundcloud.com/inch-of-shadow/half-the-night/s-Z3sb19PLMLe",
+        "pinocchio": "https://soundcloud.com/inch-of-shadow/pinocchio/s-F8dQ5K2RjmT"
+      },
+      "clip_starts": {
+        "half_the_night": "2:59",
+        "pinocchio": "4:48"
+      },
+      "restore_on_release_day": [
+        "playlist type -> EP, release date 2026-12-11",
+        "description line: Indigo Children Records · ICR-003 (tracks + EP)",
+        "tag: Indigo Children Records (tracks + EP)",
+        "record label: Indigo Children Records (tracks + EP)",
+        "release date 2026-12-11 + P-line 2026 Indigo Children Records (tracks)",
+        "UPC 708208624645 (tracks + playlist, if SC offers a field)"
+      ],
+      "public_on": "2026-12-11 (moved from Dec 4, Amir 11-11 in the Symphonic chat)"
+    },
+    "approved_note": "Symphonic approval email, reported by Amir in the main EP chat 11-12. Delivery to stores starts now; Beatport takes no edits after delivery.",
+    "bandcamp_live": {
+      "album": "https://inchofshadow.bandcamp.com/album/half-the-night",
+      "tracks": {
+        "half_the_night": "https://inchofshadow.bandcamp.com/track/half-the-night",
+        "pinocchio": "https://inchofshadow.bandcamp.com/track/pinocchio"
+      },
+      "album_id": "2458881269",
+      "edit_url": "https://inchofshadow.bandcamp.com/edit_album?id=2458881269",
+      "status": "PRE-ORDER PUBLISHED PUBLIC 2026-11-13 by Amir (54 followers notified, no personal note). Release date 2026-12-11, UPC 708208624645, instant track Half the Night. Checked on the live page. Bandcamp does NOT auto-release: on Dec 11 choose 'release pre-order now' + Update."
+    }
   },
   "tracks": [
     {
@@ -36,17 +71,22 @@
       "remix_artist": "",
       "bpm": 127.0,
       "key": "Fm",
-      "duration": "",
-      "isrc": "",
+      "duration": "5:28",
+      "isrc": "QZWDE2693303",
       "genre_primary": "Electronic",
       "genre_secondary": "Dark Disco",
       "credits": {
-        "producer": "Inch of Shadow",
-        "mixer": "Inch of Shadow",
-        "mastering": "Inch of Shadow",
-        "writer": "Amir Miller"
+        "producer": "Amir Miller",
+        "mixer": "Amir Miller",
+        "mastering": "Amir Miller",
+        "writer": "Amir Miller",
+        "synthesizer": "Amir Miller"
       },
-      "notes": "Lead track (Amir 2026-10-08). Title \"Half the Night\" chosen by Amir 2026-10-13 (was Misty Night; before that \"127 Jam (working title)\"). Instrumental (Amir 2026-11-03). Sound: 303 acid melody over a dark rolling trance arp, electro drums, dark disco energy, driving rolling bass, full and driven all the way, ominous."
+      "notes": "Lead track (Amir 2026-10-08). Title \"Half the Night\" chosen by Amir 2026-10-13 (was Misty Night; before that \"127 Jam (working title)\"). Instrumental (Amir 2026-11-03). Sound: 303 acid melody over a dark rolling trance arp, electro drums, dark disco energy, driving rolling bass, full and driven all the way, ominous.",
+      "master_file": "../Inch of Shadow - Half the Night (Indigo Children Records).wav",
+      "master_source_project": "/Users/amir/Desktop/MIXING/Jam 127 F Minor Mix/Half The Night Master Project/Half The Night Master.als",
+      "master_note": "Final master printed 2026-11-10, 24-bit/44.1k stereo, -8.8 LUFS, -0.2 dBTP. Copies: MIXING project folder + ~/Dropbox.",
+      "clip_start": "00:02:59"
     },
     {
       "number": 2,
@@ -56,17 +96,22 @@
       "remix_artist": "",
       "bpm": 126.0,
       "key": "",
-      "duration": "",
-      "isrc": "",
+      "duration": "6:09",
+      "isrc": "QZWDE2693308",
       "genre_primary": "Electronic",
       "genre_secondary": "Dark Disco",
       "credits": {
-        "producer": "Inch of Shadow",
-        "mixer": "Inch of Shadow",
-        "mastering": "Inch of Shadow",
-        "writer": "Amir Miller"
+        "producer": "Amir Miller",
+        "mixer": "Amir Miller",
+        "mastering": "Amir Miller",
+        "writer": "Amir Miller",
+        "synthesizer": "Amir Miller"
       },
-      "notes": "Track 2 since 2026-10-08 (Amir). Instrumental (Amir 2026-11-03). Sound: two 303 leads, groovy, minimal but full of effects, electro drums, driving rolling bass; older than Half the Night."
+      "notes": "Track 2 since 2026-10-08 (Amir). Instrumental (Amir 2026-11-03). Sound: two 303 leads, groovy, minimal but full of effects, electro drums, driving rolling bass; older than Half the Night.",
+      "master_file": "../Inch of Shadow - Pinocchio (Indigo Children Records).wav",
+      "master_source_project": "/Users/amir/Desktop/MIXING/A Liar MIX/Liar MIX Project/A Liar New 1.8.4.als",
+      "master_note": "Final master printed 2026-11-10, 24-bit/44.1k stereo, -8.9 LUFS, -0.1 dBTP. Copies: MIXING project folder + ~/Dropbox.",
+      "clip_start": "00:04:48"
     }
   ],
   "platform_links": {
@@ -74,7 +119,7 @@
     "apple_music": "",
     "beatport": "",
     "traxsource": "",
-    "bandcamp": "",
+    "bandcamp": "https://inchofshadow.bandcamp.com/album/half-the-night",
     "soundcloud": "",
     "audius": "",
     "catalog": "",
@@ -169,7 +214,7 @@
       "category": "metadata",
       "done": true,
       "done_date": "2026-11-03",
-      "due_date": "2026-09-14",
+      "due_date": "2026-10-12",
       "notes": ""
     },
     {
@@ -178,7 +223,7 @@
       "category": "metadata",
       "done": false,
       "done_date": "",
-      "due_date": "2026-09-14",
+      "due_date": "2026-10-12",
       "notes": ""
     },
     {
@@ -214,7 +259,7 @@
       "category": "distribution",
       "done": false,
       "done_date": "",
-      "due_date": "2026-09-28",
+      "due_date": "2026-10-26",
       "notes": ""
     },
     {
@@ -223,7 +268,7 @@
       "category": "distribution",
       "done": false,
       "done_date": "",
-      "due_date": "2026-10-05",
+      "due_date": "2026-11-02",
       "notes": ""
     },
     {
@@ -232,7 +277,7 @@
       "category": "distribution",
       "done": false,
       "done_date": "",
-      "due_date": "2026-10-19",
+      "due_date": "2026-11-16",
       "notes": ""
     },
     {
@@ -241,7 +286,7 @@
       "category": "promotion",
       "done": false,
       "done_date": "",
-      "due_date": "2026-10-09",
+      "due_date": "2026-11-06",
       "notes": ""
     },
     {
@@ -250,7 +295,7 @@
       "category": "promotion",
       "done": false,
       "done_date": "",
-      "due_date": "2026-10-26",
+      "due_date": "2026-11-23",
       "notes": "CTA = FOLLOW on Spotify + pre-save. Hypeddit via SymphonicMS > Marketing, same as The Deceiver."
     },
     {
@@ -268,7 +313,7 @@
       "category": "promotion",
       "done": false,
       "done_date": "",
-      "due_date": "2026-10-12",
+      "due_date": "2026-11-09",
       "notes": "SKIP (light lane, 2026-09-13): no premiere pitching this release."
     },
     {
@@ -277,7 +322,7 @@
       "category": "promotion",
       "done": false,
       "done_date": "",
-      "due_date": "2026-11-02",
+      "due_date": "2026-11-30",
       "notes": "Warm lane only: SC inbox contacts (attach the track natively), curators who added Farewell/The Deceiver, close friends via smart link. Weekdays for night-scene people."
     },
     {
@@ -286,7 +331,7 @@
       "category": "promotion",
       "done": false,
       "done_date": "",
-      "due_date": "2026-11-05",
+      "due_date": "2026-12-03",
       "notes": "SKIP (light lane): no premiere."
     },
     {
@@ -295,8 +340,8 @@
       "category": "post_release",
       "done": false,
       "done_date": "",
-      "due_date": "2026-11-10",
-      "notes": "SKIP (light lane): no DJ wave. Warm SC inbox contacts only, folded into early_links."
+      "due_date": "2026-12-21",
+      "notes": "2026-11-10 Amir (Booking chat): DJs get it AFTER release, public link, 38 DJs Mon 12-07 to Mon 12-14, max 5 IG a day. Before release only 11 show/radio hosts on the private SC link (3 days, max 3 IG a day). Drafts: plans/handovers/booking/htn-dj-promo.md; need his approval in the EP chat. Labels stay earliest. | 2026-11-11: release moved to Dec 11, so the DJ wave moves +7 days (12-14..12-21) unless the DJ promo chat sets other days."
     },
     {
       "id": "platform_links",
@@ -304,7 +349,7 @@
       "category": "post_release",
       "done": false,
       "done_date": "",
-      "due_date": "2026-11-11",
+      "due_date": "2026-12-16",
       "notes": ""
     },
     {
@@ -313,7 +358,7 @@
       "category": "post_release",
       "done": false,
       "done_date": "",
-      "due_date": "2026-11-09",
+      "due_date": "2026-12-14",
       "notes": "Capture from S4A within 7 days this time (Deceiver was captured at D+63). Screenshot is enough."
     },
     {
@@ -322,8 +367,8 @@
       "category": "post_release",
       "done": false,
       "done_date": "",
-      "due_date": "2026-11-17",
-      "notes": "SKIP (light lane)."
+      "due_date": "2026-12-22",
+      "notes": "2026-11-10: follow-up after release, with the public links."
     },
     {
       "id": "charts_check",
@@ -331,8 +376,8 @@
       "category": "post_release",
       "done": false,
       "done_date": "",
-      "due_date": "2026-11-18",
-      "notes": "SKIP: no Beatport delivery on this release."
+      "due_date": "2026-12-23",
+      "notes": "Beatport delivery IS on (Beatport For Starter partner selected at submit 2026-11-11, Amir). Label shows as Symphonic Starter there. Charts check is optional."
     },
     {
       "id": "artist_pick_rotate",
@@ -340,7 +385,7 @@
       "category": "post_release",
       "done": false,
       "done_date": "",
-      "due_date": "2026-11-20",
+      "due_date": "2026-12-25",
       "notes": ""
     },
     {
@@ -349,7 +394,7 @@
       "category": "post_release",
       "done": false,
       "done_date": "",
-      "due_date": "2026-12-01",
+      "due_date": "2027-01-05",
       "notes": ""
     },
     {
@@ -495,7 +540,7 @@
       "short": "Metadata",
       "days_before": 53,
       "weeks_before": 7,
-      "date": "2026-09-14",
+      "date": "2026-10-19",
       "category": "metadata",
       "done": false
     },
@@ -505,7 +550,7 @@
       "short": "Submit",
       "days_before": 39,
       "weeks_before": 5,
-      "date": "2026-09-28",
+      "date": "2026-11-02",
       "category": "distribution",
       "done": false
     },
@@ -515,7 +560,7 @@
       "short": "Approved",
       "days_before": 32,
       "weeks_before": 4,
-      "date": "2026-10-05",
+      "date": "2026-11-09",
       "category": "distribution",
       "done": false
     },
@@ -525,7 +570,7 @@
       "short": "Spotify pitch",
       "days_before": 28,
       "weeks_before": 4,
-      "date": "2026-10-09",
+      "date": "2026-11-13",
       "category": "promotion",
       "done": false
     },
@@ -535,7 +580,7 @@
       "short": "Blog pitch",
       "days_before": 25,
       "weeks_before": 3,
-      "date": "2026-10-12",
+      "date": "2026-11-16",
       "category": "promotion",
       "done": false
     },
@@ -545,7 +590,7 @@
       "short": "Bandcamp",
       "days_before": 18,
       "weeks_before": 2,
-      "date": "2026-10-19",
+      "date": "2026-11-23",
       "category": "distribution",
       "done": false
     },
@@ -555,7 +600,7 @@
       "short": "Pre-save",
       "days_before": 11,
       "weeks_before": 1,
-      "date": "2026-10-26",
+      "date": "2026-11-30",
       "category": "promotion",
       "done": false
     },
@@ -565,7 +610,7 @@
       "short": "Early links",
       "days_before": 4,
       "weeks_before": 0,
-      "date": "2026-11-02",
+      "date": "2026-12-07",
       "category": "promotion",
       "done": false
     },
@@ -575,7 +620,7 @@
       "short": "Premiere",
       "days_before": 1,
       "weeks_before": 0,
-      "date": "2026-11-05",
+      "date": "2026-12-10",
       "category": "promotion",
       "done": false
     },
@@ -585,7 +630,7 @@
       "short": "RELEASE",
       "days_before": 0,
       "weeks_before": 0,
-      "date": "2026-11-06",
+      "date": "2026-12-11",
       "category": "release",
       "done": false
     },
@@ -593,9 +638,9 @@
       "id": "dj_promos_sent",
       "label": "DJ promos sent (bulk)",
       "short": "DJ promos",
-      "days_before": -4,
+      "days_before": -3,
       "weeks_before": 0,
-      "date": "2026-11-10",
+      "date": "2026-12-14",
       "category": "post_release",
       "done": false
     },
@@ -605,7 +650,7 @@
       "short": "Spotify check",
       "days_before": -3,
       "weeks_before": 0,
-      "date": "2026-11-09",
+      "date": "2026-12-14",
       "category": "post_release",
       "done": false
     },
@@ -615,7 +660,7 @@
       "short": "Links",
       "days_before": -5,
       "weeks_before": 0,
-      "date": "2026-11-11",
+      "date": "2026-12-16",
       "category": "post_release",
       "done": false
     },
@@ -625,7 +670,7 @@
       "short": "DJ follow-up",
       "days_before": -11,
       "weeks_before": -1,
-      "date": "2026-11-17",
+      "date": "2026-12-22",
       "category": "post_release",
       "done": false
     },
@@ -635,7 +680,7 @@
       "short": "Charts",
       "days_before": -12,
       "weeks_before": -1,
-      "date": "2026-11-18",
+      "date": "2026-12-23",
       "category": "post_release",
       "done": false
     },
@@ -645,7 +690,7 @@
       "short": "Artist Pick",
       "days_before": -14,
       "weeks_before": -2,
-      "date": "2026-11-20",
+      "date": "2026-12-25",
       "category": "post_release",
       "done": false
     },
@@ -655,7 +700,7 @@
       "short": "Stats review",
       "days_before": -25,
       "weeks_before": -3,
-      "date": "2026-12-01",
+      "date": "2027-01-05",
       "category": "post_release",
       "done": false
     }
@@ -670,9 +715,9 @@
   "brand": {
     "mood": "",
     "accents": [],
-    "title_font": "",
-    "artwork": "",
-    "direction": "2026-10-09 Amir picked 2c: small black 12-inch record centred, art circle = 90% of the record (thin black rim), title + name under it. Mood M4 used in sketches, not confirmed. Art inside the circle not chosen yet. Sketch: artwork/edits/misty-night-direction-2c-sketch.jpg. | 2026-10-13 Amir: cover direction = \"D2\" sketch (round 6, artwork/edits/half-the-night-sketch-round6.jpg) for direction only: warm grey paper, embossed circle with record grooves, his silhouette (out-073) on one horizontal axis with a dithered reflection below, hawk-like ravens crossing from the reflection over his legs and out top right (dithered below the line, solid above), \"inch of shadow\" on the axis, title in wide-spaced serif caps (font not final), small technical text in the corners. Reference: A Perfect Circle \"To Whom It May Concern\". Ravens to be replaced by real ones later (own photos). | 2026-10-14 Amir: elements go AI (inked), composited locally on the D2 layout, no text, no playground filters (he adjusts in the playground later). Picks: ravens = AI final sheet B plus 3 birds from sheet A; swan = black swan B, Amir picked the BLACK swan (B) 2026-10-14; the violet swan is set aside. Out: sun, moon, hourglass, cricket. Exports: artwork/edits/half-the-night-r14-swan-black.png, -swan-violet1.png, -swan-violet2.png (1080 px; r13 had a wrong raven over him, fixed in r14: every bird keeps its draft position and direction, A birds only away from him). AI records: generated_images/imagine/pinocchio-single_20261014-0342*/0343*/0344*.json.",
+    "title_font": "Barlow Condensed (title) + Pirata One (name), both OFL",
+    "artwork": "../Releases/Half the Night EP/Artwork & Designs/Half the ngiht EP.jpg",
+    "direction": "2026-10-09 Amir picked 2c: small black 12-inch record centred, art circle = 90% of the record (thin black rim), title + name under it. Mood M4 used in sketches, not confirmed. Art inside the circle not chosen yet. Sketch: artwork/edits/misty-night-direction-2c-sketch.jpg. | 2026-10-13 Amir: cover direction = \"D2\" sketch (round 6, artwork/edits/half-the-night-sketch-round6.jpg) for direction only: warm grey paper, embossed circle with record grooves, his silhouette (out-073) on one horizontal axis with a dithered reflection below, hawk-like ravens crossing from the reflection over his legs and out top right (dithered below the line, solid above), \"inch of shadow\" on the axis, title in wide-spaced serif caps (font not final), small technical text in the corners. Reference: A Perfect Circle \"To Whom It May Concern\". Ravens to be replaced by real ones later (own photos). | 2026-10-14 Amir: elements go AI (inked), composited locally on the D2 layout, no text, no playground filters (he adjusts in the playground later). Picks: ravens = AI final sheet B plus 3 birds from sheet A; swan = black swan B, Amir picked the BLACK swan (B) 2026-10-14; the violet swan is set aside. Out: sun, moon, hourglass, cricket. Exports: artwork/edits/half-the-night-r14-swan-black.png, -swan-violet1.png, -swan-violet2.png (1080 px; r13 had a wrong raven over him, fixed in r14: every bird keeps its draft position and direction, A birds only away from him). AI records: generated_images/imagine/pinocchio-single_20261014-0342*/0343*/0344*.json. | 2026-11-09 FINAL: 90s noir cover, 1a with red owl moon, ivory trees, purple hill; Amir's Canva version with extra grain, 3000x3000 RGB JPG. Decisions: plans/half-the-night-cover-direction-noir.md.",
     "usage": "2026-10-09 Amir: record cover (2c) = DSPs only (Spotify, Apple Music, all stores via Symphonic). Instagram, other social media and SoundCloud = the art alone, full square, no record. So the art must work full-bleed square AND as the 90% circle.",
     "playground": {
       "base": "artwork/edits/half-the-night-r27-reflection-only.png",
@@ -1058,6 +1103,22 @@
   "paused": {
     "since": "2026-11-02",
     "by": "Amir",
-    "note": "Pinocchio is NOT released on 2026-11-06. Paused, no new date. release_date kept as the old plan for history."
+    "note": "Pinocchio was NOT released on 2026-11-06. Paused 2026-11-02; resumed 2026-11-08 as the Half the Night EP with a new release date, 2026-12-04 (Amir)."
+  },
+  "release_date_history": [
+    "2026-11-11 Amir (Symphonic chat): moved 2026-12-04 -> 2026-12-11. Symphonic's end-of-year cut-off for Dec 4 was Nov 6; Dec 5-29 releases need a submit by Nov 20. Bandcamp Friday dropped (saves <1 EUR on all-time BC numbers). Source: Symphonic help article 'End-of-year deadlines and content cut-off 2026' (2026-10-27) https://support.symdistro.com/hc/en-us/articles/360035571331-End-of-year-deadlines-and-content-cut-off-2026"
+  ],
+  "bandcamp_campaign_links": {
+    "sc-buy": "https://inchofshadow.bandcamp.com/album/half-the-night?campaign=sc-buy",
+    "sc-inbox": "https://inchofshadow.bandcamp.com/album/half-the-night?campaign=sc-inbox",
+    "sc-desc": "https://inchofshadow.bandcamp.com/album/half-the-night?campaign=sc-desc",
+    "sc-mix": "https://inchofshadow.bandcamp.com/album/half-the-night?campaign=sc-mix",
+    "yt-desc": "https://inchofshadow.bandcamp.com/album/half-the-night?campaign=yt-desc",
+    "ig-bio": "https://inchofshadow.bandcamp.com/album/half-the-night?campaign=ig-bio",
+    "ig-story": "https://inchofshadow.bandcamp.com/album/half-the-night?campaign=ig-story",
+    "smartlink": "https://inchofshadow.bandcamp.com/album/half-the-night?campaign=smartlink",
+    "outreach": "https://inchofshadow.bandcamp.com/album/half-the-night?campaign=outreach",
+    "bc-friday": "https://inchofshadow.bandcamp.com/album/half-the-night?campaign=bc-friday",
+    "press": "https://inchofshadow.bandcamp.com/album/half-the-night?campaign=press"
   }
 }

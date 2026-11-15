@@ -69,6 +69,18 @@ def session_path(today: str | None = None, now: datetime | None = None) -> Path:
     return SI_DIR / f"ig_session_{day}.jsonl"
 
 
+SWEEP_ACTIONS = {"ig_unfollow", "ig_unfollow_aborted", "ig_skip",
+                 "session_halt", "session_interrupted"}
+
+
+def sweep_path(today: str | None = None, now: datetime | None = None) -> Path:
+    """Sweep runs (docs/cowork-task-ig-sweep.md) keep their own log, closed by
+    ig_sweep.py close, so an off-day sweep never trips the session merge."""
+    now = now or datetime.now(BERLIN)
+    day = today or now.date().isoformat()
+    return SI_DIR / f"ig_sweep_{day}.jsonl"
+
+
 def next_sequence(path: Path) -> int:
     """One past the highest sequence already in the file (1 on a new file)."""
     if not path.exists():
@@ -181,17 +193,30 @@ def main(argv: list[str] | None = None) -> int:
     g.add_argument("--public", action="store_true", help="profile is public")
     # plumbing
     p.add_argument("--file", help="session log path (default: today's)")
+    p.add_argument("--sweep", action="store_true",
+                   help="sweep run (2026-11): log to ig_sweep_<date>.jsonl, track sweep; "
+                        "only unfollow / unfollow_aborted / skip / halt lines")
     p.add_argument("--sequence", type=int,
                    help="override the auto-incremented sequence")
     args = p.parse_args(argv)
 
     err = validate(args)
+    if not err and args.sweep:
+        if args.action_type not in SWEEP_ACTIONS:
+            err = (f"--sweep logs only {', '.join(sorted(SWEEP_ACTIONS))}; "
+                   f"got {args.action_type!r}")
+        elif args.file:
+            err = "--sweep picks its own file; drop --file"
     if err:
         print(f"[REFUSED] {err}", file=sys.stderr)
         return 2
 
     now = datetime.now(BERLIN)
-    path = Path(args.file) if args.file else session_path(now=now)
+    if args.sweep:
+        args.track = "sweep"
+        path = sweep_path(now=now)
+    else:
+        path = Path(args.file) if args.file else session_path(now=now)
     sequence = args.sequence if args.sequence is not None else next_sequence(path)
     rec = build_record(args, now, sequence)
 

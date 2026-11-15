@@ -94,7 +94,7 @@ def test_view_hides_done_from_counts_but_keeps_cards():
     view = build_view(data)
     assert view["open_count"] == 2
     assert view["p1_count"] == 1
-    assert view["next_due"] == {"date": "2026-09-28", "id": "R-03"}
+    assert view["next_due"] == {"date": "2026-09-28", "id": "R-03", "shown_as": "R-03"}   # no area: falls back to the id
     release = next(s for s in view["sections"] if s["name"] == "Release")
     assert len(release["tickets"]) == 3
     assert release["open_count"] == 2
@@ -260,7 +260,9 @@ def test_seed_has_no_control_panel_tickets():
 
 
 def test_seed_covers_todays_open_release_tickets():
-    ids = {t["id"] for t in load_tickets(SEED)["tickets"]}
+    # Closed tickets move to the archive (R-02, the HTN cover, closed 2026-11-09), so look in both.
+    archive = json.loads((ROOT / "plans" / "tickets-done-archive.json").read_text(encoding="utf-8"))["tickets"]
+    ids = {t["id"] for t in load_tickets(SEED)["tickets"]} | {t["id"] for t in archive}
     assert {"R-01", "R-02", "R-03", "R-04", "R-05", "R-06"} <= ids
 
 
@@ -284,10 +286,15 @@ def test_tickets_route_renders_every_seed_ticket(client):
         assert s in html
 
 
-def test_tickets_route_orders_sections_and_priorities(client):
+def test_tickets_route_orders_area_rooms_and_priorities(client):
+    """Option C rollout (Amir 2026-11-09): By area is one room per area, System first, then file order."""
     html = client.get("/tickets").data.decode()
-    assert html.index('data-section="General"') < html.index('data-section="Release"') < html.index('data-section="Maintenance"')
-    assert html.index('data-id="R-01"') < html.index('data-id="R-05"')
+    data = load_tickets(SEED)
+    keys = [k for k in data["areas"] if any(t.get("area") == k for t in data["tickets"])]
+    order = sorted(keys, key=lambda k: k != "System")
+    pos = [html.index('data-area="%s"' % k.lower()) for k in order]
+    assert pos == sorted(pos) and order[0] == "System"
+    assert 'data-id="R-03"' in html and 'data-id="R-05"' in html   # live board: R-01 closed 11-13; order inside a room is the page's own
 
 
 def test_tickets_route_links_into_control_panel_board(client):
@@ -448,7 +455,7 @@ def test_tickets_route_by_metric_groups_both_boards(client):
 
 def test_tickets_route_default_view_unchanged_and_links_by_number(client):
     html = client.get("/tickets").data.decode()
-    assert 'data-section="General"' in html and 'data-group=' not in html
+    assert 'data-area="system"' in html and 'data-group=' not in html
     assert 'href="/tickets?group=metric"' in html
 
 
@@ -465,3 +472,47 @@ def test_done_ticket_with_empty_bucket_or_who_is_valid():
     assert not any("bad bucket" in e or "bad who" in e for e in errs)
     errs = validate(doc(ticket(bucket="", who="")))
     assert any("bad bucket" in e for e in errs) or any("missing bucket" in e for e in errs)
+
+
+def test_tickets_cards_show_the_area_label_never_the_stored_id(client):
+    """RM check 2026-11-08: the By area cards read 'BC-06 · now · amir' and Next due 'M-01'.
+    Amir's rule: a ticket is shown as '<emoji> <Area> <number>'."""
+    data = load_tickets(SEED)
+    view = build_view(data)
+    areas = data.get("areas") or {}
+    html = client.get("/tickets").data.decode()
+    tickets_part = html.split('id="tickets-section"', 1)[1].split('id="board-section"', 1)[0]
+    for s in view["sections"]:
+        for c in s["tickets"]:
+            if c["status"] != "done" and c["area"] and c["area_no"] not in ("", None):
+                assert c["shown_as"] == "%s %s" % (areas[c["area"]], c["area_no"])
+                assert '<span class="tid">%s ·' % c["id"] not in tickets_part, c["id"]
+    if view["next_due"]:
+        assert '<span class="kpi-sub">%s</span>' % view["next_due"]["shown_as"] in tickets_part
+    assert "\U0001F64B Amir" in tickets_part or "\U0001F383 Claude" in tickets_part
+
+
+def test_a_ticket_waiting_for_a_date_shows_the_date_not_parked():
+    # Amir 2026-11-13: a parked, blocked or waiting ticket with a date shows "📅 5 Jan", never "later"/"parked".
+    from release_manager.tickets import bucket_shown
+    from datetime import date as _d
+    day = _d(2026, 11, 15)
+    assert bucket_shown(ticket(bucket="parked", due="2027-01-05"), today=day) == "\U0001F4C5 5 Jan"
+    assert bucket_shown(ticket(bucket="next", status="waiting", due="2026-12-11"), today=day) == "\U0001F4C5 11 Dec"
+    assert bucket_shown(ticket(bucket="next", status="blocked", due="2026-12-11"), today=day) == "\U0001F4C5 11 Dec"
+    # a date that has passed is not a plan (Fable gate round 2)
+    assert bucket_shown(ticket(bucket="next", status="waiting", due="2026-09-20"), today=day) == "\u26A0\uFE0F overdue since 20 Sep"
+    assert bucket_shown(ticket(bucket="parked", due="2026-11-15"), today=day) == "\U0001F4C5 15 Nov"   # today is still a plan
+    assert bucket_shown(ticket(bucket="parked", due="")) == "parked"
+    assert bucket_shown(ticket(bucket="now", due="2026-11-30")) == "now"     # a deadline on live work stays "now"
+    assert bucket_shown(ticket(bucket="parked", due="soon")) == "parked"
+
+
+def test_tickets_route_shows_the_date_for_a_dated_wait(client):
+    data = load_tickets(SEED)
+    dated = [t for t in data["tickets"] if (t.get("bucket") == "parked" or t.get("status") in ("blocked", "waiting"))
+             and len(str(t.get("due") or "")) == 10]
+    if not dated:
+        pytest.skip("no dated wait on the live board")
+    html = client.get("/tickets").data.decode()
+    assert "\U0001F4C5" in html

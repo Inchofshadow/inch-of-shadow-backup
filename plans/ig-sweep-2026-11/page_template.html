@@ -1,0 +1,201 @@
+<title>Instagram Sweep Picks</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Marcellus&family=Jost:wght@300;400;500&display=swap">
+<style>
+/* Layout: one narrow column, a sticky tally + group chips on top, accounts in sections by account type, thumb-sized Keep / Unfollow per row. */
+:root{
+  --bg:#ECE8E1; --surface:#F7F4EF; --fg:#1A1715; --muted:#6E665F; --line:#D3CCC2;
+  --keep:#2F6B4F; --keep-bg:#DCEBE2; --cut:#9A3B2E; --cut-bg:#F2DDD8; --tag:#E2DBD0;
+  --display:"Marcellus","Cormorant Garamond",Georgia,serif;
+  --body:"Jost","Helvetica Neue",Arial,sans-serif;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#0F0D0C; --surface:#1A1715; --fg:#D6D1C8; --muted:#958C83; --line:#2E2925;
+  --keep:#7FC4A0; --keep-bg:#1D2E25; --cut:#E59383; --cut-bg:#3A221D; --tag:#2A2522; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0F0D0C; --surface:#1A1715; --fg:#D6D1C8; --muted:#958C83; --line:#2E2925;
+  --keep:#7FC4A0; --keep-bg:#1D2E25; --cut:#E59383; --cut-bg:#3A221D; --tag:#2A2522; color-scheme:dark}
+body{background:var(--bg);color:var(--fg);font-family:var(--body);font-weight:300;font-size:15px;line-height:1.45}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--bg)}
+.wrap{max-width:680px;margin:0 auto;padding-block:20px 48px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+h1{font-family:var(--display);font-weight:400;font-size:28px;margin:0 0 6px;text-wrap:balance;letter-spacing:.01em}
+h2{font-family:var(--display);font-weight:400;font-size:20px;margin:26px 0 4px;display:flex;justify-content:space-between;align-items:baseline;gap:12px;flex-wrap:wrap}
+h2 small{font-family:var(--body);font-size:13px;color:var(--muted);font-variant-numeric:tabular-nums}
+.lede{color:var(--muted);margin:0 0 16px;max-width:60ch}
+.bar{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--bg);padding:10px 0;border-bottom:1px solid var(--line);display:flex;flex-direction:column;gap:10px}
+.tally{display:flex;gap:16px;flex-wrap:wrap;font-variant-numeric:tabular-nums;font-weight:400}
+.tally b{font-weight:500}
+.t-cut{color:var(--cut)} .t-keep{color:var(--keep)}
+.filters{display:flex;gap:6px;flex-wrap:wrap}
+.filters button,.bulk button{font:inherit;font-size:13px;border:1px solid var(--line);background:transparent;color:var(--fg);border-radius:999px;padding:5px 12px;cursor:pointer}
+.filters button[aria-pressed="true"]{background:var(--fg);color:var(--bg);border-color:var(--fg)}
+.bulk{display:flex;gap:6px;flex-wrap:wrap;margin:2px 0 6px}
+.bulk button.armed{background:var(--cut-bg);border-color:var(--cut);color:var(--cut)}
+.status{font-size:13px;color:var(--muted)}
+ul{list-style:none;margin:0;padding:0}
+li{display:grid;grid-template-columns:auto 1fr auto;gap:8px 12px;padding:14px 0;border-bottom:1px solid var(--line);align-items:center}
+.who{min-width:0}
+.name{font-weight:500;font-size:16px;color:var(--fg);text-decoration:none;overflow-wrap:anywhere}
+.name:hover,.name:focus-visible{text-decoration:underline}
+.meta{font-size:13px;color:var(--muted);font-variant-numeric:tabular-nums;overflow-wrap:anywhere}
+.bio{font-size:13px;color:var(--muted);margin-top:3px;overflow-wrap:anywhere}
+.tags{display:flex;gap:5px;flex-wrap:wrap;margin-top:5px}
+.tag{font-size:11px;letter-spacing:.04em;text-transform:uppercase;background:var(--tag);border-radius:4px;padding:2px 6px}
+.pick{display:flex;gap:6px}
+.pick button{font:inherit;font-size:14px;font-weight:400;min-width:84px;min-height:42px;border-radius:8px;border:1px solid var(--line);background:var(--surface);color:var(--fg);cursor:pointer}
+.pick button:focus-visible,.filters button:focus-visible,.bulk button:focus-visible{outline:2px solid var(--fg);outline-offset:2px}
+.pick .k[aria-pressed="true"]{background:var(--keep-bg);border-color:var(--keep);color:var(--keep)}
+.pick .u[aria-pressed="true"]{background:var(--cut-bg);border-color:var(--cut);color:var(--cut)}
+li.is-cut .name{color:var(--cut)}
+.pick button.sugg{border-style:dashed}
+li.mini{padding:8px 0}
+li.mini .av{width:40px;height:40px}
+li.mini .pick button{min-height:36px;min-width:72px;font-size:13px}
+h2.plan-unfollow{color:var(--cut)} h2.plan-keep{color:var(--keep)}
+.sug{font-size:11px;color:var(--muted);letter-spacing:.04em;text-transform:uppercase;margin-top:4px}
+.av{width:56px;height:56px;border-radius:50%;object-fit:cover;background:var(--tag);display:block}
+@media (max-width:460px){li{grid-template-columns:auto 1fr}.pick{grid-column:1 / -1}.pick button{flex:1}}
+@media (prefers-reduced-motion:no-preference){.pick button{transition:background .15s,border-color .15s}}
+</style>
+<div class="wrap">
+  <h1>Instagram sweep picks</h1>
+  <p class="lede">Accounts you follow that do not follow you back (__TOTAL__). "Final plan" shows who goes and who stays, A to Z. A dashed button is my suggestion, a solid one is your pick; tap to change. Nothing is unfollowed before your final go, and every account stays saved as a contact.</p>
+  <div class="bar">
+    <div class="tally"><span class="t-cut">Unfollow <b id="n-cut">0</b></span><span class="t-keep">Keep <b id="n-keep">0</b></span><span>Open <b id="n-open">0</b></span></div>
+    <div class="filters" id="groups" role="group" aria-label="Account type"></div>
+    <div class="filters" id="states" role="group" aria-label="Show">
+      <button type="button" id="s-plan" data-s="plan" aria-pressed="true">Final plan</button>
+      <button type="button" id="s-todo" data-s="todo" aria-pressed="false">Not picked by you</button>
+      <button type="button" id="s-mine" data-s="mine" aria-pressed="false">My picks</button>
+      <button type="button" id="s-keep" data-s="keep" aria-pressed="false">Keep list</button>
+      <button type="button" id="s-all" data-s="all" aria-pressed="false">All</button>
+      <button type="button" id="s-cut" data-s="cut" aria-pressed="false">Marked unfollow</button>
+    </div>
+    <div class="status" id="status">Connecting to saved picks…</div>
+  </div>
+  <div id="list"></div>
+</div>
+<script>
+const ROWS = __ROWS__;
+const GROUPS = __GROUPS__;
+const picks = {};
+let gsel = "all", ssel = "plan", db = null, armed = null;
+// Picks that existed when the page opened are hidden in "Not picked by you"; rows tapped now stay on screen (Amir 11-13).
+const pickedAtOpen = new Set(); let firstLoad = true;
+const $ = s => document.querySelector(s);
+const esc = s => String(s).replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+function chips(){
+  const n = {}; ROWS.forEach(r => n[r.g] = (n[r.g]||0)+1);
+  $("#groups").innerHTML = `<button type="button" id="g-all" data-g="all" aria-pressed="${gsel==="all"}">All types</button>` +
+    GROUPS.filter(([g]) => n[g]).map(([g,l]) => `<button type="button" id="g-${g}" data-g="${g}" aria-pressed="${gsel===g}">${esc(l.split(" (")[0])} ${n[g]}</button>`).join("");
+}
+function show(r){
+  const p = eff(r);
+  return (gsel==="all" || r.g===gsel) && (ssel==="all" || (ssel==="todo" && !pickedAtOpen.has(r.id)) || (ssel==="mine" && !!picks[r.id]) || (ssel==="open" && !p) || (ssel==="cut" && p==="unfollow") || (ssel==="keep" && p==="keep"));
+}
+function eff(r){ return picks[r.id] || r.s || ""; }
+function row(r){
+  const p = eff(r), sug = !picks[r.id] && r.s;
+  return `<li class="${p==="unfollow"?"is-cut":""}" data-id="${esc(r.id)}">
+    ${r.img ? `<img class="av" src="${r.img}" alt="" loading="lazy">` : `<span class="av" aria-hidden="true"></span>`}
+    <div class="who">
+      <a class="name" href="https://www.instagram.com/${esc(r.slug)}/" target="_blank" rel="noopener">${esc(r.slug)}</a>
+      ${r.full || r.meta ? `<div class="meta">${esc([r.full, r.meta].filter(Boolean).join(" · "))}</div>` : ""}
+      ${r.bio ? `<div class="bio">${esc(r.bio)}</div>` : ""}
+      ${r.tags.length ? `<div class="tags">${r.tags.map(t=>`<span class="tag">${esc(t)}</span>`).join("")}</div>` : ""}
+      ${sug ? `<div class="sug">Suggested</div>` : ""}
+    </div>
+    <div class="pick">
+      <button type="button" class="k ${sug&&p==="keep"?"sugg":""}" data-v="keep" aria-pressed="${p==="keep"}">Keep</button>
+      <button type="button" class="u ${sug&&p==="unfollow"?"sugg":""}" data-v="unfollow" aria-pressed="${p==="unfollow"}">Unfollow</button>
+    </div></li>`;
+}
+function prow(r){
+  const p = eff(r), mine = !!picks[r.id];
+  return `<li class="mini ${p==="unfollow"?"is-cut":""}" data-id="${esc(r.id)}">
+    ${r.img ? `<img class="av" src="${r.img}" alt="" loading="lazy">` : `<span class="av" aria-hidden="true"></span>`}
+    <div class="who"><a class="name" href="https://www.instagram.com/${esc(r.slug)}/" target="_blank" rel="noopener">${esc(r.slug)}</a>
+      <div class="meta">${esc([r.full, mine ? "your pick" : (p ? "suggested" : "")].filter(Boolean).join(" · "))}</div></div>
+    <div class="pick">
+      <button type="button" class="k ${!mine&&p==="keep"?"sugg":""}" data-v="keep" aria-pressed="${p==="keep"}">Keep</button>
+      <button type="button" class="u ${!mine&&p==="unfollow"?"sugg":""}" data-v="unfollow" aria-pressed="${p==="unfollow"}">Unfollow</button>
+    </div></li>`;
+}
+function render(){
+  let cut=0, keep=0;
+  ROWS.forEach(r => { const p = eff(r); if(p==="unfollow") cut++; else if(p==="keep") keep++; });
+  $("#n-cut").textContent=cut; $("#n-keep").textContent=keep; $("#n-open").textContent=ROWS.length-cut-keep;
+  if(ssel==="plan"){
+    const by = v => ROWS.filter(r => (gsel==="all" || r.g===gsel) && eff(r)===v).sort((a,b) => a.slug.localeCompare(b.slug));
+    const parts = [["unfollow","Going",by("unfollow")],["keep","Staying",by("keep")],["","Not decided yet",by("")]];
+    $("#list").innerHTML = parts.filter(([, , rs]) => rs.length).map(([v,l,rs]) =>
+      `<h2 class="plan-${v||"open"}">${l} <small>${rs.length}</small></h2><ul>${rs.map(prow).join("")}</ul>`).join("") || `<p class="meta">Nothing in this view.</p>`;
+    return;
+  }
+  let out = "";
+  for(const [g,l] of GROUPS){
+    const rs = ROWS.filter(r => r.g===g && show(r)); if(!rs.length) continue;
+    const open = ROWS.filter(r => r.g===g && !eff(r)).length;
+    out += `<h2>${esc(l)} <small>${rs.length} shown · ${open} open</small></h2>`;
+    if(open && g!=="pending") out += `<div class="bulk"><button type="button" id="b-${g}" data-bulk="${g}" class="${armed===g?"armed":""}">${armed===g?`Tap again to mark ${open} as unfollow`:`Mark all ${open} open as unfollow`}</button></div>`;
+    out += `<ul>${rs.map(row).join("")}</ul>`;
+  }
+  $("#list").innerHTML = out || `<p class="meta">Nothing in this view.</p>`;
+}
+async function save(id, next, prev){
+  if(!db){ $("#status").textContent="Picks are not being saved: open this page signed in to claude.ai."; return false; }
+  try {
+    const ref = db.collection("picks").doc(id);
+    if(next) await ref.set({choice:next, at:new Date().toISOString()}); else await ref.delete();
+    return true;
+  } catch(err){
+    if(prev) picks[id]=prev; else delete picks[id];
+    return false;
+  }
+}
+document.querySelector(".bar").addEventListener("click", e => {
+  const b = e.target.closest("button"); if(!b) return;
+  if(b.dataset.g){ gsel = b.dataset.g; chips(); }
+  else if(b.dataset.s){ ssel = b.dataset.s; document.querySelectorAll("#states button").forEach(x => x.setAttribute("aria-pressed", x===b)); }
+  armed = null; render();
+});
+$("#list").addEventListener("click", async e => {
+  const bb = e.target.closest("[data-bulk]");
+  if(bb){
+    const g = bb.dataset.bulk;
+    if(armed!==g){ armed = g; render(); return; }
+    armed = null;
+    const ids = ROWS.filter(r => r.g===g && !eff(r)).map(r => r.id);
+    ids.forEach(id => picks[id]="unfollow"); render();
+    let bad = 0;
+    for(const id of ids){ if(!(await save(id, "unfollow", undefined))) bad++; }
+    render();
+    $("#status").textContent = bad ? `${bad} picks did not save. Tap them again.` : `Saved ${ids.length} picks.`;
+    return;
+  }
+  const b = e.target.closest(".pick button"); if(!b) return;
+  armed = null;
+  const id = b.closest("li").dataset.id, v = b.dataset.v;
+  const prev = picks[id], next = prev===v ? null : v;
+  if(next) picks[id]=next; else delete picks[id];
+  render();
+  const ok = await save(id, next, prev);
+  render();
+  $("#status").textContent = ok ? "Saved." : "Could not save that pick. Check your connection and tap again.";
+});
+chips(); render();
+(async () => {
+  const timer = setTimeout(() => { if(!db) $("#status").textContent="Saved picks did not load. Reload the page to try again."; }, 10000);
+  db = window.claude ? await window.claude.use("db") : null;
+  if(!db){ clearTimeout(timer); $("#status").textContent="Picks are not being saved: open this page signed in to claude.ai."; return; }
+  db.collection("picks").onSnapshot(snap => {
+    clearTimeout(timer);
+    for(const k of Object.keys(picks)) delete picks[k];
+    snap.docs.forEach(d => { const c = d.data()?.choice; if(c==="keep"||c==="unfollow") picks[d.id]=c; });
+    if(firstLoad){ Object.keys(picks).forEach(id => pickedAtOpen.add(id)); firstLoad = false; }
+    $("#status").textContent = "Picks save as you tap.";
+    render();
+  }, () => { clearTimeout(timer); $("#status").textContent="Saved picks did not load. Reload the page to try again."; });
+})();
+</script>

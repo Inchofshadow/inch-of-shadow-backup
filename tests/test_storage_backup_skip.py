@@ -57,3 +57,15 @@ def test_unsafe_release_slugs_never_leave_releases_dir():
         assert storage.delete_release(bad) is False
     assert storage.release_path("pinocchio-single").name == "pinocchio-single.json"
     assert storage.release_path("farewell-single.bak.20261106_review").parent == storage.RELEASES_DIR
+
+
+def test_a_backup_never_loads_as_a_release(tmp_path, monkeypatch):
+    # Fable gate 2026-11-15: a backup carries the live slug, so load + save wrote the old copy over the live file.
+    monkeypatch.setattr(storage, "RELEASES_DIR", tmp_path)
+    _write(tmp_path, "farewell-single.json", "farewell-single")
+    _write(tmp_path, "farewell-single.bak.20261106_review.json", "farewell-single")
+    _write(tmp_path, "renamed-copy.json", "farewell-single")          # no .bak, but another release's slug inside
+    assert storage.load_release("farewell-single")["slug"] == "farewell-single"
+    assert storage.load_release("farewell-single.bak.20261106_review") is None
+    assert storage.load_release("renamed-copy") is None
+    assert storage.find_release("farewell-single.bak.20261106_review") is None

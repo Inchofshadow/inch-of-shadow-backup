@@ -25,7 +25,9 @@ def test_home_shows_the_verdict_line_from_the_score_board(monkeypatch):
 
 def test_home_blocks_appear_in_order():
     html = app.test_client().get("/").get_data(as_text=True)
-    heads = ["<h2>Score board</h2>", "<h2>🔥 Now</h2>", "<h2>Decisions waiting on Amir</h2>",
-             "<h2>Next release</h2>", "<h2>Social Links</h2>"]
+    # the rooms look (2026-11-08) labels the blocks with <h2 class="home-label">
+    heads = ['<h2 class="home-label">Score board</h2>', '<h2 class="home-label">🔥 Now</h2>',
+             '<h2 class="home-label">Decisions waiting on Amir', '<h2 class="home-label">Next release</h2>',
+             "<h2>Social Links</h2>"]
     pos = [html.index(h) for h in heads]
     assert pos == sorted(pos)

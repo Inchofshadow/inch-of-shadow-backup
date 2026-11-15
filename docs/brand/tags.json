@@ -1,0 +1,1832 @@
+{
+ "what": "One shared tag list for the Shadow Archive, Effects, Fonts and Imagine (System 94, T1). Only these tags are used. Edit an item's tags here by hand; new library items get rule tags until listed.",
+ "updated": "2026-11-11",
+ "tags": [
+  {
+   "id": "night",
+   "means": "Night scenes, moonlight, dark sky"
+  },
+  {
+   "id": "daylight",
+   "means": "Sunny, bright, open air (on-brand too)"
+  },
+  {
+   "id": "warm",
+   "means": "Golden, amber, warm light"
+  },
+  {
+   "id": "cold",
+   "means": "Teal, blue, cold light"
+  },
+  {
+   "id": "dark",
+   "means": "Low key, black-heavy, horror edge"
+  },
+  {
+   "id": "dreamy",
+   "means": "Soft, hazy, unreal"
+  },
+  {
+   "id": "romantic",
+   "means": "Tender, intimate, longing"
+  },
+  {
+   "id": "eerie",
+   "means": "Uneasy, ghostly, strange"
+  },
+  {
+   "id": "dramatic",
+   "means": "Hard contrast, big gesture"
+  },
+  {
+   "id": "quiet",
+   "means": "Calm, sparse, pensive"
+  },
+  {
+   "id": "90s-noir",
+   "means": "90s animated noir: Batman TAS title cards, red skies, black shapes"
+  },
+  {
+   "id": "dark-deco",
+   "means": "Tall Art Deco shapes in the dark"
+  },
+  {
+   "id": "gothic",
+   "means": "Gothic romance, witch house, blackletter world"
+  },
+  {
+   "id": "retro-80s",
+   "means": "1980s screens, tape, retro-future"
+  },
+  {
+   "id": "y2k",
+   "means": "Early web, Y2K shine, games"
+  },
+  {
+   "id": "rave",
+   "means": "Rave flyers and neon club"
+  },
+  {
+   "id": "vintage-film",
+   "means": "Old film, sepia, analogue photo"
+  },
+  {
+   "id": "grain",
+   "means": "Film or print grain over the picture"
+  },
+  {
+   "id": "print",
+   "means": "Xerox, halftone, riso, risograph and paper print"
+  },
+  {
+   "id": "ink-drawn",
+   "means": "Engraving, ink, drawn by hand"
+  },
+  {
+   "id": "cut-paper",
+   "means": "Cut paper layers and edges"
+  },
+  {
+   "id": "collage",
+   "means": "Cut-outs and collage"
+  },
+  {
+   "id": "glitch",
+   "means": "Glitch, scan lines, broken screens"
+  },
+  {
+   "id": "neon",
+   "means": "Neon light and colour"
+  },
+  {
+   "id": "chrome",
+   "means": "Chrome, metal, shine"
+  },
+  {
+   "id": "silhouette",
+   "means": "Black shapes against light"
+  },
+  {
+   "id": "glow",
+   "means": "Glow, halation, light bloom"
+  },
+  {
+   "id": "moon",
+   "means": "The moon"
+  },
+  {
+   "id": "owl",
+   "means": "The owl"
+  },
+  {
+   "id": "trees",
+   "means": "Trees and branches"
+  },
+  {
+   "id": "rose",
+   "means": "Roses (one of our motifs)"
+  },
+  {
+   "id": "birds",
+   "means": "Swans, ravens, birds"
+  },
+  {
+   "id": "condensed",
+   "means": "Tall, narrow or heavy condensed letters"
+  },
+  {
+   "id": "blackletter",
+   "means": "Blackletter and textura"
+  },
+  {
+   "id": "serif",
+   "means": "Serif faces"
+  },
+  {
+   "id": "script",
+   "means": "Scripts and handwriting"
+  },
+  {
+   "id": "half-the-night",
+   "means": "Used or saved for the Half the Night cover"
+  }
+ ],
+ "assign": {
+  "archive:R-001": [],
+  "archive:R-002": [],
+  "archive:R-003": [
+   "gothic",
+   "grain"
+  ],
+  "archive:R-004": [
+   "night",
+   "romantic",
+   "collage",
+   "silhouette",
+   "glow",
+   "moon",
+   "half-the-night"
+  ],
+  "archive:R-005": [],
+  "archive:R-006": [
+   "ink-drawn",
+   "chrome"
+  ],
+  "archive:R-007": [
+   "rave",
+   "collage"
+  ],
+  "archive:R-008": [
+   "grain",
+   "chrome"
+  ],
+  "archive:R-009": [],
+  "archive:R-010": [
+   "warm",
+   "print",
+   "moon"
+  ],
+  "archive:R-011": [],
+  "archive:R-012": [
+   "night",
+   "warm",
+   "ink-drawn",
+   "half-the-night"
+  ],
+  "archive:R-013": [
+   "night",
+   "ink-drawn"
+  ],
+  "archive:R-014": [
+   "ink-drawn",
+   "birds"
+  ],
+  "archive:R-015": [
+   "ink-drawn",
+   "collage",
+   "birds"
+  ],
+  "archive:R-016": [
+   "moon"
+  ],
+  "archive:R-017": [],
+  "archive:R-018": [
+   "gothic",
+   "rose"
+  ],
+  "archive:R-019": [
+   "gothic",
+   "retro-80s",
+   "vintage-film",
+   "collage",
+   "glitch",
+   "silhouette",
+   "moon"
+  ],
+  "archive:R-020": [
+   "trees",
+   "half-the-night"
+  ],
+  "archive:R-021": [
+   "dreamy",
+   "eerie",
+   "vintage-film",
+   "rose"
+  ],
+  "archive:R-022": [
+   "90s-noir",
+   "dark-deco",
+   "half-the-night"
+  ],
+  "archive:R-023": [
+   "90s-noir",
+   "dark-deco",
+   "silhouette",
+   "moon",
+   "half-the-night"
+  ],
+  "archive:R-024": [
+   "90s-noir",
+   "dark-deco",
+   "ink-drawn",
+   "moon",
+   "half-the-night"
+  ],
+  "effect:materials-liquid-chrome": [
+   "chrome"
+  ],
+  "effect:materials-byzantine-mosaic": [],
+  "effect:materials-ecorche-engraving": [
+   "ink-drawn"
+  ],
+  "effect:materials-blown-glass": [],
+  "effect:materials-embroidered-linen": [
+   "cut-paper"
+  ],
+  "effect:materials-thermal-imaging": [
+   "ink-drawn"
+  ],
+  "effect:materials-marble-relief": [],
+  "effect:materials-neon-tube": [
+   "ink-drawn",
+   "neon"
+  ],
+  "effect:materials-topographic-contour": [
+   "ink-drawn"
+  ],
+  "effect:materials-ink-in-water": [
+   "ink-drawn",
+   "silhouette"
+  ],
+  "effect:materials-stained-glass": [],
+  "effect:materials-pressed-herbarium": [
+   "cut-paper"
+  ],
+  "effect:materials-cast-bronze": [
+   "chrome"
+  ],
+  "effect:materials-machined-billet": [
+   "chrome"
+  ],
+  "effect:materials-moulded-plastic": [
+   "chrome"
+  ],
+  "effect:materials-woven-rattan": [
+   "cut-paper"
+  ],
+  "effect:materials-carved-limewood": [
+   "cut-paper"
+  ],
+  "effect:materials-folded-origami": [
+   "cut-paper"
+  ],
+  "effect:materials-circuit-board": [
+   "chrome"
+  ],
+  "effect:materials-votive-beeswax": [],
+  "effect:materials-felted-wool": [
+   "cut-paper"
+  ],
+  "effect:materials-tooled-leather": [
+   "cut-paper"
+  ],
+  "effect:materials-grown-mycelium": [],
+  "effect:materials-crystal-growth": [],
+  "effect:scans-light-cage": [
+   "glow"
+  ],
+  "effect:scans-corona": [
+   "silhouette",
+   "glow"
+  ],
+  "effect:scans-ghost-form": [
+   "eerie"
+  ],
+  "effect:scans-cctv-nightwatch": [
+   "night"
+  ],
+  "effect:scans-echo": [
+   "glow"
+  ],
+  "effect:scans-x-ray-bone-light": [],
+  "effect:scans-ultrasound-soft-grain": [
+   "grain"
+  ],
+  "effect:scans-night-vision-phosphor": [
+   "night",
+   "glow"
+  ],
+  "effect:scans-depth-map-near-far": [],
+  "effect:scans-breath": [],
+  "effect:scans-scatter": [
+   "glow"
+  ],
+  "effect:scans-oil-slick": [
+   "glow"
+  ],
+  "effect:scans-mesh": [],
+  "effect:eras-acid-graphics": [
+   "y2k",
+   "rave",
+   "neon",
+   "chrome"
+  ],
+  "effect:eras-y2k-cgi": [
+   "y2k",
+   "chrome"
+  ],
+  "effect:eras-deep-fried": [
+   "rave",
+   "neon"
+  ],
+  "effect:eras-glitter-graphics": [
+   "y2k",
+   "chrome"
+  ],
+  "effect:eras-pixel-art": [
+   "y2k"
+  ],
+  "effect:eras-y2k-chrome": [
+   "y2k",
+   "chrome"
+  ],
+  "effect:eras-frutiger-aero": [
+   "y2k",
+   "chrome"
+  ],
+  "effect:eras-vaporwave": [
+   "rave",
+   "neon"
+  ],
+  "effect:eras-ps1-graphics": [
+   "y2k"
+  ],
+  "effect:eras-old-web": [
+   "y2k"
+  ],
+  "effect:eras-digicam-flash": [
+   "vintage-film",
+   "grain"
+  ],
+  "effect:eras-dreamcore": [
+   "warm",
+   "dreamy"
+  ],
+  "effect:eras-windows-98": [
+   "y2k"
+  ],
+  "effect:eras-vhs": [
+   "retro-80s",
+   "vintage-film",
+   "grain"
+  ],
+  "effect:eras-vector-heart": [
+   "y2k",
+   "chrome"
+  ],
+  "effect:eras-ascii-art": [
+   "y2k"
+  ],
+  "effect:eras-cctv": [
+   "vintage-film",
+   "grain"
+  ],
+  "effect:eras-flash-cartoon": [
+   "y2k"
+  ],
+  "effect:eras-weird-core": [
+   "dreamy"
+  ],
+  "effect:eras-brushed-metal": [
+   "y2k",
+   "chrome"
+  ],
+  "effect:eras-rave-flyer": [
+   "rave",
+   "neon"
+  ],
+  "effect:eras-wireframe": [
+   "rave",
+   "neon",
+   "glow"
+  ],
+  "effect:eras-holo-sticker": [
+   "y2k",
+   "chrome"
+  ],
+  "effect:eras-webcam-2004": [
+   "y2k"
+  ],
+  "effect:eras-outrun": [
+   "rave",
+   "neon"
+  ],
+  "effect:eras-kid-core": [
+   "rave",
+   "neon"
+  ],
+  "effect:eras-rpg-hud": [
+   "y2k"
+  ],
+  "effect:eras-anaglyph-3d": [
+   "glitch"
+  ],
+  "effect:eras-voxel": [
+   "y2k"
+  ],
+  "effect:eras-datamosh": [
+   "glitch"
+  ],
+  "effect:eras-night-vision": [
+   "night",
+   "vintage-film",
+   "grain"
+  ],
+  "effect:eras-street-view": [
+   "y2k"
+  ],
+  "effect:eras-bootleg-dvd": [
+   "vintage-film",
+   "grain"
+  ],
+  "effect:print-risograph-overprint": [
+   "print",
+   "ink-drawn"
+  ],
+  "effect:print-dithered-halftone": [
+   "print",
+   "ink-drawn"
+  ],
+  "effect:print-ascii-dot-matrix": [
+   "print",
+   "ink-drawn"
+  ],
+  "effect:print-scrapbook-archive-collage": [
+   "collage",
+   "glitch"
+  ],
+  "effect:print-chrome-surrealism": [
+   "vintage-film",
+   "chrome"
+  ],
+  "effect:print-cyanotype-blueprint": [
+   "print",
+   "ink-drawn"
+  ],
+  "effect:print-linocut-reduction-print": [
+   "print",
+   "ink-drawn"
+  ],
+  "effect:print-thermal-receipt-print": [
+   "print",
+   "ink-drawn"
+  ],
+  "effect:print-datamosh-glitch": [
+   "collage",
+   "glitch"
+  ],
+  "effect:print-solarised-film-negative": [
+   "vintage-film"
+  ],
+  "effect:print-woodblock-ukiyo-e": [
+   "print",
+   "ink-drawn"
+  ],
+  "effect:print-screenprint-split-fountain": [
+   "print",
+   "ink-drawn",
+   "neon"
+  ],
+  "effect:print-infrared-false-colour": [
+   "vintage-film",
+   "glow"
+  ],
+  "effect:print-brutalist-concrete-poster": [
+   "collage",
+   "glitch"
+  ],
+  "effect:print-xerographic-decay": [
+   "print",
+   "ink-drawn"
+  ],
+  "effect:ai-crt-screen": [
+   "retro-80s",
+   "glitch"
+  ],
+  "effect:halation-glow": [
+   "glow"
+  ],
+  "effect:kill-the-polish": [
+   "grain"
+  ],
+  "effect:variation-flicker": [],
+  "effect:negative-flash": [],
+  "effect:blackout-strobe": [],
+  "effect:brightness-pulse": [],
+  "effect:build-then-drop": [
+   "quiet"
+  ],
+  "effect:odd-image-accent": [],
+  "effect:vertical-triptych": [],
+  "effect:held-shot": [],
+  "effect:letterbox-one-line": [],
+  "effect:rain-close-up": [
+   "neon"
+  ],
+  "effect:hands-macro": [],
+  "effect:still-in-the-chaos": [
+   "birds"
+  ],
+  "effect:look-xerox": [
+   "grain",
+   "print",
+   "half-the-night"
+  ],
+  "effect:look-halftone": [
+   "grain",
+   "print",
+   "half-the-night"
+  ],
+  "effect:look-riso": [
+   "grain",
+   "print"
+  ],
+  "effect:look-engraving": [
+   "grain",
+   "print",
+   "ink-drawn",
+   "half-the-night"
+  ],
+  "effect:look-cyanotype": [
+   "grain",
+   "print"
+  ],
+  "effect:look-solarisation": [
+   "half-the-night"
+  ],
+  "effect:look-pictorialism": [
+   "grain",
+   "print"
+  ],
+  "effect:look-dither": [
+   "warm",
+   "grain",
+   "print",
+   "half-the-night"
+  ],
+  "effect:look-scanlines": [
+   "retro-80s",
+   "glitch",
+   "half-the-night"
+  ],
+  "effect:look-pixel": [
+   "grain",
+   "print"
+  ],
+  "effect:move-micrographics": [],
+  "effect:move-thin-serif-bold-sans": [],
+  "effect:move-torn-photo-spread": [],
+  "effect:move-aggressive-cutouts-and-borders": [
+   "collage"
+  ],
+  "effect:move-empty-space-tiny-type": [],
+  "effect:move-no-ready-made-fonts": [],
+  "effect:move-grid-over-organic": [],
+  "effect:move-repetition": [
+   "collage"
+  ],
+  "effect:move-one-object-in-focus": [],
+  "effect:move-rough-cuts-with-images-behind": [],
+  "effect:move-half-image-half-text": [],
+  "effect:balanced-opposition": [
+   "moon"
+  ],
+  "effect:grade-ag-akira": [
+   "night",
+   "neon",
+   "glow"
+  ],
+  "effect:grade-ag-attack-on-titan": [
+   "warm",
+   "cold",
+   "glow"
+  ],
+  "effect:grade-ag-berserk-eclipse": [
+   "dark",
+   "dramatic",
+   "chrome",
+   "silhouette",
+   "glow"
+  ],
+  "effect:grade-ag-better-call-saul": [
+   "warm",
+   "cold"
+  ],
+  "effect:grade-ag-black-clover": [
+   "daylight",
+   "warm",
+   "dreamy",
+   "chrome"
+  ],
+  "effect:grade-ag-bleach-thousand-year-blood-war": [
+   "dark",
+   "eerie",
+   "trees"
+  ],
+  "effect:grade-ag-bloodborne": [
+   "warm",
+   "dark",
+   "eerie",
+   "gothic",
+   "glow"
+  ],
+  "effect:grade-ag-breaking-bad": [
+   "cold",
+   "vintage-film"
+  ],
+  "effect:grade-ag-call-of-the-night": [
+   "night",
+   "dreamy",
+   "neon"
+  ],
+  "effect:grade-ag-chainsaw-man": [
+   "dark",
+   "eerie",
+   "glow"
+  ],
+  "effect:grade-ag-cyberpunk": [
+   "night",
+   "neon",
+   "glow"
+  ],
+  "effect:grade-ag-cyberpunk-edgerunners": [
+   "night",
+   "neon"
+  ],
+  "effect:grade-ag-dandadan": [
+   "night",
+   "dreamy",
+   "neon"
+  ],
+  "effect:grade-ag-dark-fantasy": [
+   "night",
+   "warm",
+   "neon",
+   "glow",
+   "moon",
+   "trees"
+  ],
+  "effect:grade-ag-death-note": [
+   "cold",
+   "chrome"
+  ],
+  "effect:grade-ag-demon-slayer": [
+   "daylight",
+   "warm",
+   "trees"
+  ],
+  "effect:grade-ag-destiny-2-dreaming-city-edition": [
+   "cold",
+   "dreamy"
+  ],
+  "effect:grade-ag-dragon-ball-z": [
+   "daylight",
+   "trees"
+  ],
+  "effect:grade-ag-elden-ring": [
+   "warm",
+   "cold",
+   "glow",
+   "trees"
+  ],
+  "effect:grade-ag-fall": [
+   "warm",
+   "trees"
+  ],
+  "effect:grade-ag-fight-club": [
+   "dark",
+   "eerie"
+  ],
+  "effect:grade-ag-final-fantasy-vii": [
+   "daylight",
+   "glow"
+  ],
+  "effect:grade-ag-frieren": [
+   "daylight",
+   "quiet",
+   "glow"
+  ],
+  "effect:grade-ag-frutiger-aero": [
+   "daylight",
+   "trees"
+  ],
+  "effect:grade-ag-game-of-thrones": [
+   "cold",
+   "dramatic"
+  ],
+  "effect:grade-ag-gta-6-part-2": [
+   "daylight",
+   "warm",
+   "trees"
+  ],
+  "effect:grade-ag-gta-vi": [
+   "night",
+   "daylight",
+   "neon",
+   "trees"
+  ],
+  "effect:grade-ag-harry-potter-and-the-prisoner-of-azkaban": [
+   "cold",
+   "print"
+  ],
+  "effect:grade-ag-jojo-s-bizarre-adventure": [
+   "daylight",
+   "warm",
+   "glow"
+  ],
+  "effect:grade-ag-jojo-s-bizarre-adventure-steel-ball-run": [
+   "daylight"
+  ],
+  "effect:grade-ag-jojo-s-golden-wind": [
+   "daylight",
+   "warm",
+   "glow"
+  ],
+  "effect:grade-ag-jujutsu-kaisen": [
+   "night",
+   "warm",
+   "dark",
+   "eerie"
+  ],
+  "effect:grade-ag-lanterns": [
+   "warm",
+   "cold",
+   "eerie"
+  ],
+  "effect:grade-ag-minecraft": [
+   "daylight",
+   "trees"
+  ],
+  "effect:grade-ag-moriah-town-from-jojo-s-bizarre-adventure": [
+   "daylight",
+   "trees"
+  ],
+  "effect:grade-ag-naruto": [
+   "daylight",
+   "warm",
+   "trees"
+  ],
+  "effect:grade-ag-neon-genesis-evangelion": [
+   "night",
+   "dramatic",
+   "neon"
+  ],
+  "effect:grade-ag-night-city-from-cyberpunk-2077": [
+   "night",
+   "neon",
+   "glow"
+  ],
+  "effect:grade-ag-no-i-m-not-a-human": [
+   "warm",
+   "dark",
+   "eerie"
+  ],
+  "effect:grade-ag-obsession": [
+   "night",
+   "dark",
+   "eerie",
+   "glow"
+  ],
+  "effect:grade-ag-one-piece": [
+   "daylight",
+   "warm"
+  ],
+  "effect:grade-ag-persona-3-dark-hour-edition": [
+   "night",
+   "neon",
+   "glow",
+   "moon"
+  ],
+  "effect:grade-ag-persona-5": [
+   "night",
+   "neon",
+   "birds"
+  ],
+  "effect:grade-ag-re-zero": [
+   "night",
+   "dreamy",
+   "dramatic",
+   "neon"
+  ],
+  "effect:grade-ag-resident-evil": [
+   "dark",
+   "eerie"
+  ],
+  "effect:grade-ag-solo-leveling": [
+   "night",
+   "neon"
+  ],
+  "effect:grade-ag-spider-man-brand-new-day": [
+   "daylight"
+  ],
+  "effect:grade-ag-stranger-things": [
+   "night",
+   "warm",
+   "cold",
+   "retro-80s",
+   "glow",
+   "trees"
+  ],
+  "effect:grade-ag-supernatural": [
+   "cold",
+   "trees"
+  ],
+  "effect:grade-ag-the-backrooms": [
+   "warm"
+  ],
+  "effect:grade-ag-the-batman": [
+   "warm",
+   "dark",
+   "dramatic",
+   "90s-noir"
+  ],
+  "effect:grade-ag-the-last-of-us": [
+   "cold",
+   "trees"
+  ],
+  "effect:grade-ag-the-odyssey": [
+   "daylight",
+   "warm"
+  ],
+  "effect:grade-ag-tokyo-ghoul": [
+   "night",
+   "dark",
+   "eerie"
+  ],
+  "effect:grade-ag-your-name": [
+   "daylight",
+   "dreamy",
+   "trees"
+  ],
+  "effect:grade-fc-80s": [
+   "warm",
+   "retro-80s",
+   "vintage-film",
+   "grain"
+  ],
+  "effect:grade-fc-cinematic": [
+   "warm",
+   "vintage-film",
+   "grain",
+   "condensed"
+  ],
+  "effect:grade-fc-cozy": [
+   "warm",
+   "quiet",
+   "trees"
+  ],
+  "effect:grade-fc-dark-horror": [
+   "night",
+   "dark",
+   "eerie",
+   "trees"
+  ],
+  "effect:grade-fc-dark-souls": [
+   "dark",
+   "eerie"
+  ],
+  "effect:grade-fc-dreamy": [
+   "warm",
+   "dreamy",
+   "glow",
+   "trees"
+  ],
+  "effect:grade-fc-gothic": [
+   "warm",
+   "gothic",
+   "vintage-film",
+   "grain"
+  ],
+  "effect:grade-fc-gothic-style": [
+   "gothic",
+   "vintage-film",
+   "grain"
+  ],
+  "effect:grade-fc-heavenly": [
+   "warm",
+   "dreamy",
+   "glow",
+   "trees"
+  ],
+  "effect:grade-fc-horror": [
+   "warm",
+   "dark",
+   "eerie",
+   "grain",
+   "chrome"
+  ],
+  "effect:grade-fc-interstellar": [
+   "warm"
+  ],
+  "effect:grade-fc-jaws": [
+   "warm",
+   "vintage-film",
+   "grain"
+  ],
+  "effect:grade-fc-joker": [
+   "retro-80s",
+   "vintage-film",
+   "grain"
+  ],
+  "effect:grade-fc-matrix": [
+   "night",
+   "vintage-film",
+   "grain"
+  ],
+  "effect:grade-fc-melancholy": [
+   "cold",
+   "quiet",
+   "trees"
+  ],
+  "effect:grade-fc-old-money": [
+   "warm",
+   "vintage-film",
+   "grain"
+  ],
+  "effect:grade-fc-old-vibe": [
+   "warm",
+   "vintage-film",
+   "grain"
+  ],
+  "effect:grade-fc-polaroid": [
+   "warm",
+   "vintage-film",
+   "grain"
+  ],
+  "effect:grade-fc-romantic": [
+   "warm",
+   "dreamy",
+   "romantic",
+   "glow"
+  ],
+  "effect:grade-fc-sherlock": [
+   "vintage-film",
+   "grain"
+  ],
+  "effect:grade-fc-stranger-things": [
+   "night",
+   "warm",
+   "cold",
+   "eerie",
+   "chrome",
+   "trees"
+  ],
+  "effect:grade-fc-the-batman": [
+   "night",
+   "cold",
+   "90s-noir"
+  ],
+  "effect:grade-fc-the-dark-knight": [
+   "warm",
+   "cold",
+   "chrome"
+  ],
+  "effect:grade-fc-the-hobbit": [
+   "warm",
+   "glow",
+   "trees"
+  ],
+  "effect:grade-fc-the-last-of-us": [
+   "cold",
+   "quiet",
+   "trees"
+  ],
+  "effect:grade-fc-twilight": [
+   "warm",
+   "cold",
+   "trees"
+  ],
+  "effect:grade-fc-twin-peaks": [
+   "warm",
+   "vintage-film",
+   "grain",
+   "trees"
+  ],
+  "effect:grade-fc-vintage": [
+   "warm",
+   "vintage-film",
+   "grain"
+  ],
+  "effect:grade-fc-wes-anderson": [
+   "vintage-film",
+   "grain"
+  ],
+  "effect:grade-fc-yellowstone": [
+   "warm",
+   "quiet"
+  ],
+  "effect:format-behind-the-scenes-vs-the-shot": [],
+  "effect:format-real-reaction": [
+   "birds"
+  ],
+  "effect:format-three-slide-post": [],
+  "effect:format-movie-scene": [],
+  "effect:format-bts-tease": [],
+  "effect:format-tv-transition": [],
+  "effect:format-clone-effect": [],
+  "effect:format-fixed-camera-performance": [],
+  "effect:format-lyric-clip": [],
+  "effect:format-personality-content": [
+   "night"
+  ],
+  "effect:hook-opening-frame-hook": [],
+  "effect:hook-text-hook": [
+   "quiet"
+  ],
+  "effect:hook-sound-hook": [
+   "quiet"
+  ],
+  "effect:hook-one-emotion": [],
+  "effect:hook-commit-to-the-still-end": [],
+  "effect:hook-connectors": [],
+  "effect:hook-re-hooks": [],
+  "effect:hook-music-changes-screen-changes": [],
+  "effect:hook-open-loop": [],
+  "effect:hook-swap-the-first-two-seconds": [],
+  "effect:lg-backlit-silhouette": [
+   "night",
+   "silhouette"
+  ],
+  "effect:lg-moon-halo": [
+   "night",
+   "silhouette",
+   "moon"
+  ],
+  "effect:lg-glowing-eyes": [
+   "night",
+   "silhouette",
+   "glow"
+  ],
+  "effect:lg-low-horizon": [
+   "night",
+   "silhouette"
+  ],
+  "effect:lg-window-texture": [
+   "night",
+   "grain",
+   "silhouette"
+  ],
+  "effect:lg-two-figures": [
+   "night",
+   "romantic",
+   "silhouette"
+  ],
+  "effect:lg-symbol-swap": [
+   "night",
+   "silhouette"
+  ],
+  "effect:apc-two-crescents": [],
+  "effect:apc-wordmark-axis": [],
+  "effect:apc-one-accent": [],
+  "effect:apc-seal-free-art": [],
+  "effect:look-halation": [
+   "glow",
+   "half-the-night"
+  ],
+  "effect:look-window": [
+   "glow",
+   "half-the-night"
+  ],
+  "effect:look-crt": [
+   "retro-80s",
+   "glitch"
+  ],
+  "effect:look-softclub": [
+   "grain"
+  ],
+  "effect:look-emboss": [
+   "grain",
+   "print"
+  ],
+  "effect:look-ascii": [
+   "grain",
+   "print"
+  ],
+  "effect:look-vhs": [
+   "retro-80s",
+   "glitch"
+  ],
+  "effect:look-anaglyph": [
+   "retro-80s",
+   "glitch",
+   "half-the-night"
+  ],
+  "effect:look-thermal": [
+   "half-the-night"
+  ],
+  "effect:look-nightvision": [
+   "night",
+   "half-the-night"
+  ],
+  "effect:il-engraved-spot-art": [
+   "warm",
+   "ink-drawn"
+  ],
+  "effect:il-acid-sun": [
+   "ink-drawn"
+  ],
+  "effect:il-one-subject-many-hands": [
+   "ink-drawn",
+   "silhouette"
+  ],
+  "effect:il-night-airbrush-figures": [
+   "night",
+   "grain",
+   "ink-drawn",
+   "birds"
+  ],
+  "effect:il-concentric-op-art": [
+   "ink-drawn"
+  ],
+  "effect:il-anime-cel": [
+   "ink-drawn"
+  ],
+  "effect:il-fox-ink-scratch": [
+   "ink-drawn",
+   "silhouette"
+  ],
+  "effect:il-fox-red-wash": [
+   "ink-drawn"
+  ],
+  "effect:il-fox-nervous-pen": [
+   "ink-drawn",
+   "birds"
+  ],
+  "effect:colour-60-30-10": [],
+  "effect:fmt-rule-explainer": [],
+  "effect:comp-rule-of-thirds": [],
+  "effect:comp-golden-ratio": [
+   "warm"
+  ],
+  "effect:comp-never-50-50": [],
+  "effect:value-70-20-10": [],
+  "effect:comp-negative-space": [],
+  "effect:comp-rule-of-odds": [],
+  "effect:type-modular-scale": [],
+  "effect:comp-lead-room": [],
+  "effect:kodam-blown-out-silhouette": [
+   "cut-paper",
+   "collage",
+   "glitch",
+   "silhouette"
+  ],
+  "effect:kodam-pixel-sort-streaks": [
+   "glitch"
+  ],
+  "effect:kodam-chromatic-split-cutout": [
+   "cut-paper",
+   "collage",
+   "glow",
+   "moon"
+  ],
+  "effect:kodam-sticker-cutout-collage": [
+   "cut-paper",
+   "collage",
+   "glitch"
+  ],
+  "effect:kodam-glitch-frame-inset": [
+   "glitch"
+  ],
+  "effect:kodam-periwinkle-wash": [
+   "night",
+   "neon"
+  ],
+  "effect:kodam-screen-record-teaser": [],
+  "effect:look-pixelsort": [
+   "retro-80s",
+   "glitch",
+   "half-the-night"
+  ],
+  "effect:look-blowout": [
+   "silhouette",
+   "glow"
+  ],
+  "effect:look-monotint": [
+   "half-the-night"
+  ],
+  "effect:look-monotintnight": [
+   "night"
+  ],
+  "effect:look-nightflash": [
+   "night",
+   "warm",
+   "glow",
+   "half-the-night"
+  ],
+  "effect:look-camcorder": [
+   "retro-80s",
+   "glitch"
+  ],
+  "effect:kodam-pixel-mosaic": [
+   "cut-paper",
+   "collage"
+  ],
+  "effect:kodam-night-flash-shoot": [
+   "night",
+   "trees"
+  ],
+  "effect:print-film-double-exposure": [
+   "dreamy",
+   "eerie",
+   "vintage-film"
+  ],
+  "effect:looks-calculated-moonlight": [
+   "glow",
+   "moon",
+   "trees"
+  ],
+  "effect:design-moves-grain-shadow-letters": [
+   "grain"
+  ],
+  "effect:design-moves-cut-line-strength": [
+   "cut-paper",
+   "collage"
+  ],
+  "effect:looks-ink-corners": [
+   "grain",
+   "print",
+   "ink-drawn"
+  ],
+  "font:corvinus-skyline": [
+   "dark-deco",
+   "condensed"
+  ],
+  "font:solenizant": [
+   "dark-deco",
+   "condensed"
+  ],
+  "font:mostra-nuova": [
+   "dark-deco",
+   "condensed"
+  ],
+  "font:novel-gothic": [
+   "dark-deco",
+   "gothic",
+   "condensed"
+  ],
+  "font:peignot": [
+   "dark-deco",
+   "condensed"
+  ],
+  "font:itc-fenice-ultra": [
+   "dark-deco",
+   "condensed"
+  ],
+  "font:steile-futura": [
+   "dark-deco",
+   "condensed"
+  ],
+  "font:matthews-thin": [
+   "dark-deco",
+   "condensed"
+  ],
+  "font:gloria": [
+   "warm",
+   "dark-deco",
+   "vintage-film",
+   "condensed"
+  ],
+  "font:ogg": [
+   "warm",
+   "dreamy",
+   "romantic"
+  ],
+  "font:bookman-swash-italic": [
+   "warm",
+   "script"
+  ],
+  "font:oxford-swash": [
+   "warm",
+   "script"
+  ],
+  "font:windsor": [
+   "warm"
+  ],
+  "font:cooper-black": [
+   "warm"
+  ],
+  "font:asoma-v0-1": [
+   "warm"
+  ],
+  "font:melbourne": [
+   "warm"
+  ],
+  "font:editorial-new": [
+   "romantic",
+   "dramatic",
+   "serif"
+  ],
+  "font:apoc": [
+   "night",
+   "dramatic",
+   "gothic",
+   "serif"
+  ],
+  "font:saol-display": [
+   "dramatic",
+   "quiet",
+   "serif"
+  ],
+  "font:reckless": [
+   "romantic",
+   "dramatic",
+   "quiet",
+   "serif"
+  ],
+  "font:migra": [
+   "dreamy",
+   "romantic",
+   "dramatic",
+   "quiet",
+   "serif"
+  ],
+  "font:gt-alpina": [
+   "dramatic",
+   "condensed",
+   "serif"
+  ],
+  "font:harbour": [
+   "dramatic",
+   "serif"
+  ],
+  "font:zangezi": [
+   "dramatic",
+   "serif"
+  ],
+  "font:ktf-prima": [
+   "dramatic",
+   "serif"
+  ],
+  "font:canela-domaine-display-romie": [
+   "dramatic",
+   "serif"
+  ],
+  "font:antikva-margaret": [
+   "serif"
+  ],
+  "font:albertus-nova": [
+   "serif"
+  ],
+  "font:toparcel": [
+   "serif"
+  ],
+  "font:marcellus": [
+   "serif"
+  ],
+  "font:thor": [
+   "romantic",
+   "gothic"
+  ],
+  "font:goudy-text": [
+   "romantic",
+   "gothic"
+  ],
+  "font:bvh-bline": [
+   "romantic",
+   "gothic"
+  ],
+  "font:eckmann-schrift": [
+   "romantic",
+   "gothic"
+  ],
+  "font:conclave": [
+   "night",
+   "romantic",
+   "gothic"
+  ],
+  "font:eurostile-microgramma": [
+   "quiet"
+  ],
+  "font:univers": [
+   "quiet"
+  ],
+  "font:neue-haas-grotesk-display": [
+   "quiet"
+  ],
+  "font:gill-sans": [
+   "quiet"
+  ],
+  "font:antique-olive": [
+   "quiet"
+  ],
+  "font:monotype-grotesque-bold": [
+   "quiet"
+  ],
+  "font:gothic": [
+   "quiet",
+   "gothic"
+  ],
+  "font:futura-itc-franklin-gothic-gill-sans-neuzeit-s": [
+   "quiet",
+   "gothic"
+  ],
+  "font:process": [
+   "quiet"
+  ],
+  "font:bootzy-condensed-tm": [
+   "quiet",
+   "condensed"
+  ],
+  "font:alias-ano-lateral": [
+   "quiet"
+  ],
+  "font:abc-favorit-onlysans-cf-asty": [
+   "quiet"
+  ],
+  "font:mohave": [
+   "night",
+   "quiet"
+  ],
+  "font:jost-light": [
+   "quiet"
+  ],
+  "font:earth": [
+   "retro-80s"
+  ],
+  "font:antique-olive-i": [
+   "retro-80s"
+  ],
+  "font:eurostile": [
+   "retro-80s"
+  ],
+  "font:gemini-computer": [
+   "retro-80s"
+  ],
+  "font:itc-busorama": [
+   "retro-80s"
+  ],
+  "font:impact": [
+   "dramatic",
+   "90s-noir",
+   "condensed"
+  ],
+  "font:futura-condensed-extrabold": [
+   "dramatic",
+   "90s-noir",
+   "condensed"
+  ],
+  "font:unidentified-thin-script": [
+   "romantic",
+   "script"
+  ],
+  "font:signal": [
+   "romantic",
+   "script"
+  ],
+  "font:streamster": [
+   "romantic",
+   "script"
+  ],
+  "font:scriptana-sofia-script-stanford-script": [
+   "romantic",
+   "script"
+  ],
+  "font:a-custom-face-from-one-s-own-handwriting": [
+   "romantic",
+   "script"
+  ],
+  "font:clarendon-stencil-lettering": [
+   "serif"
+  ],
+  "font:hollandse-mediaeval": [
+   "serif"
+  ],
+  "font:sabon": [
+   "serif"
+  ],
+  "font:bembo": [
+   "serif"
+  ],
+  "font:castellar-diotima-italic": [
+   "serif"
+  ],
+  "font:centaur": [
+   "serif"
+  ],
+  "font:century-expanded-primer-melior-bold-condensed": [
+   "condensed",
+   "serif"
+  ],
+  "font:ocr-b-marvin-visions": [
+   "night",
+   "serif"
+  ],
+  "font:henderson-state-fair-birgitta": [
+   "vintage-film",
+   "serif"
+  ],
+  "font:din-condensed-bold": [
+   "quiet",
+   "condensed"
+  ],
+  "font:copperplate": [
+   "serif"
+  ],
+  "font:noe-display-bold": [
+   "dramatic",
+   "serif"
+  ],
+  "font:lyyra-black": [
+   "dramatic",
+   "serif"
+  ],
+  "font:chap-medium": [
+   "warm"
+  ],
+  "font:krana-fat": [
+   "warm"
+  ],
+  "font:gt-sectra-display-bold": [
+   "dramatic",
+   "serif"
+  ],
+  "font:didot": [
+   "dramatic",
+   "serif"
+  ],
+  "font:bodoni-72-bold": [
+   "dramatic",
+   "serif"
+  ],
+  "font:baskerville-italic": [
+   "quiet",
+   "vintage-film",
+   "serif"
+  ],
+  "font:american-typewriter": [
+   "vintage-film",
+   "serif"
+  ],
+  "font:avenir-next-condensed-heavy": [
+   "quiet",
+   "condensed"
+  ],
+  "font:optima": [
+   "eerie",
+   "quiet"
+  ],
+  "font:herculanum": [
+   "romantic",
+   "gothic"
+  ],
+  "font:snell-roundhand": [
+   "romantic",
+   "script"
+  ],
+  "font:cat-eckmann": [
+   "romantic",
+   "gothic",
+   "half-the-night"
+  ],
+  "font:cat-neuzeit": [
+   "quiet",
+   "half-the-night"
+  ],
+  "font:fraunces": [
+   "warm",
+   "half-the-night"
+  ],
+  "font:gloock": [
+   "dramatic",
+   "serif"
+  ],
+  "font:switzer": [
+   "quiet",
+   "half-the-night"
+  ],
+  "font:pirata-one": [
+   "romantic",
+   "gothic",
+   "condensed",
+   "blackletter",
+   "half-the-night"
+  ],
+  "font:manufacturing-consent": [
+   "romantic",
+   "gothic",
+   "condensed",
+   "blackletter"
+  ],
+  "font:unifraktur-maguntia": [
+   "romantic",
+   "gothic",
+   "blackletter"
+  ],
+  "font:unifraktur-cook": [
+   "romantic",
+   "gothic",
+   "blackletter",
+   "half-the-night"
+  ],
+  "font:barlow-condensed": [
+   "dramatic",
+   "condensed",
+   "half-the-night"
+  ],
+  "imagine:free_20261020-044307_1.png": [
+   "night",
+   "romantic",
+   "quiet",
+   "grain",
+   "glow",
+   "rose"
+  ],
+  "imagine:free_20261020-044243_1.png": [
+   "night",
+   "romantic",
+   "quiet",
+   "grain",
+   "glow",
+   "rose"
+  ],
+  "imagine:free_20261020-044220_1.png": [
+   "night",
+   "romantic",
+   "quiet",
+   "grain",
+   "glow",
+   "rose"
+  ],
+  "imagine:pinocchio-single_20261014-141634_3.png": [
+   "warm",
+   "romantic",
+   "quiet",
+   "ink-drawn",
+   "silhouette",
+   "birds",
+   "half-the-night"
+  ],
+  "imagine:pinocchio-single_20261014-141634_2.png": [
+   "warm",
+   "romantic",
+   "quiet",
+   "ink-drawn",
+   "silhouette",
+   "birds",
+   "half-the-night"
+  ],
+  "imagine:pinocchio-single_20261014-141634_4.png": [
+   "warm",
+   "romantic",
+   "quiet",
+   "ink-drawn",
+   "silhouette",
+   "birds",
+   "half-the-night"
+  ],
+  "imagine:pinocchio-single_20261014-141634_1.png": [
+   "warm",
+   "romantic",
+   "quiet",
+   "ink-drawn",
+   "silhouette",
+   "birds",
+   "half-the-night"
+  ],
+  "imagine:pinocchio-single_20261014-034433_2.png": [
+   "romantic",
+   "quiet",
+   "ink-drawn",
+   "birds",
+   "half-the-night"
+  ],
+  "imagine:pinocchio-single_20261014-034433_1.png": [
+   "romantic",
+   "quiet",
+   "ink-drawn",
+   "birds",
+   "half-the-night"
+  ],
+  "imagine:pinocchio-single_20261014-034355_1.png": [
+   "romantic",
+   "quiet",
+   "ink-drawn",
+   "birds",
+   "half-the-night"
+  ],
+  "imagine:pinocchio-single_20261014-034319_1.png": [
+   "romantic",
+   "quiet",
+   "ink-drawn",
+   "silhouette",
+   "birds",
+   "half-the-night"
+  ],
+  "imagine:pinocchio-single_20261014-034240_1.png": [
+   "romantic",
+   "quiet",
+   "ink-drawn",
+   "silhouette",
+   "birds",
+   "half-the-night"
+  ],
+  "imagine:pinocchio-single_20261014-033354_2.png": [
+   "romantic",
+   "quiet",
+   "ink-drawn",
+   "moon",
+   "half-the-night"
+  ],
+  "imagine:pinocchio-single_20261014-033354_1.png": [
+   "romantic",
+   "quiet",
+   "ink-drawn",
+   "moon",
+   "half-the-night"
+  ],
+  "imagine:pinocchio-single_20261014-033343_1.png": [
+   "romantic",
+   "quiet",
+   "ink-drawn",
+   "half-the-night"
+  ],
+  "imagine:pinocchio-single_20261014-033343_2.png": [
+   "romantic",
+   "quiet",
+   "ink-drawn",
+   "half-the-night"
+  ],
+  "imagine:pinocchio-single_20261014-033332_1.png": [
+   "romantic",
+   "quiet",
+   "ink-drawn",
+   "birds",
+   "half-the-night"
+  ],
+  "imagine:pinocchio-single_20261014-033332_2.png": [
+   "romantic",
+   "quiet",
+   "ink-drawn",
+   "birds",
+   "half-the-night"
+  ],
+  "imagine:pinocchio-single_20261014-033321_2.png": [
+   "romantic",
+   "quiet",
+   "ink-drawn",
+   "birds",
+   "half-the-night"
+  ],
+  "imagine:pinocchio-single_20261014-033321_1.png": [
+   "romantic",
+   "quiet",
+   "ink-drawn",
+   "birds",
+   "half-the-night"
+  ],
+  "imagine:pinocchio-single_20261014-033309_2.png": [
+   "romantic",
+   "quiet",
+   "ink-drawn",
+   "silhouette",
+   "birds",
+   "half-the-night"
+  ],
+  "imagine:pinocchio-single_20261014-033309_1.png": [
+   "romantic",
+   "quiet",
+   "ink-drawn",
+   "silhouette",
+   "birds",
+   "half-the-night"
+  ],
+  "imagine:free_20260927-160822_1.png": [
+   "night",
+   "romantic",
+   "quiet",
+   "grain",
+   "glow",
+   "rose"
+  ]
+ }
+}

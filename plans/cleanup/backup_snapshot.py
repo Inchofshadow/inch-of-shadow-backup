@@ -72,16 +72,21 @@ OWN_EMAILS = {b"inchofshadow@gmail.com", b"noreply@anthropic.com"}
 BIG = 50 * 1024 * 1024
 
 
+BINARY_PLAIN_EXT = {".ttf", ".otf", ".woff", ".woff2", ".pyc", ".ico", ".skill"}
+
+
 def has_people_data(path, ext):
     # Scan every file that is not binary (sniff NUL bytes, never trust the extension:
     # "x.json.bak.20261106_reenrich" leaked plain on 11-06/07 because of that)
     try:
         with open(path, "rb") as f:
-            data = f.read(30 * 1024 * 1024)
+            data = f.read(SCAN_CAP)
     except OSError:
         return False
     if b"\x00" in data[:8192]:
-        return False
+        return ext not in (BINARY_PLAIN_EXT | MEDIA_EXT)  # unknown binary: lock it (fail closed, review 2026-11-08)
+    if os.path.getsize(path) > SCAN_CAP:
+        return True                               # not fully scanned: lock it
     if sum(data.count(m) for m in HANDLE_MARKERS) >= HANDLE_LIMIT:
         return True
     for m in EMAIL_RE.finditer(data):
@@ -93,12 +98,35 @@ def has_people_data(path, ext):
     return bool(PHONE_RE.search(data))
 
 
+SCAN_CAP = 30 * 1024 * 1024
+# Secret values in a data file (not code, which only names the keys)
+SECRET_VALUE_RE = re.compile(rb'"(access_token|refresh_token|client_secret|private_key|password|api_key)"\s*:\s*"[^"]{12,}"')
+
+
+def is_secret(name, full, ext):
+    """Secret by name (any case, backup suffixes like credentials.json.bak.1 included) or by a secret value
+    in a data file (security review 2026-11-08)."""
+    low = name.lower()
+    if low in SECRET_NAMES or any(low.startswith(n + ".") for n in SECRET_NAMES):
+        return True
+    if any(fnmatch.fnmatch(low, g) or fnmatch.fnmatch(low, g + ".*") for g in SECRET_GLOBS):
+        return True
+    if ext in CODE_EXT or ext in {".html", ".js", ".css", ".md"}:
+        return False
+    try:
+        with open(full, "rb") as f:
+            data = f.read(SCAN_CAP)
+    except OSError:
+        return False
+    return bool(SECRET_VALUE_RE.search(data))
+
+
 def classify(rel, full):
     name = os.path.basename(rel)
     ext = os.path.splitext(name)[1].lower()
     if name in SKIP_NAMES or any(rel.startswith(p) for p in SKIP_PREFIXES):
         return "SKIP"
-    if name in SECRET_NAMES or any(fnmatch.fnmatch(name, g) for g in SECRET_GLOBS):
+    if is_secret(name, full, ext):
         return "NEVER"
     if any(fnmatch.fnmatch(rel, g) for g in DM_GLOBS) or "/your_instagram_activity/messages/" in rel:
         return "NEVER"
@@ -165,6 +193,54 @@ def sha256(path):
     return h.hexdigest()
 
 
+SECRET_FILES = (".env", "credentials.json", "youtube_token.json", ".sc_user_token.json", ".flask_secret")
+SECRET_KEY_RE = re.compile(rb'"(?:private_key|client_secret|refresh_token|access_token|token)"\s*:\s*"([^"]{12,})"')
+NOT_SECRET_ENV = ("GMAIL_ADDRESS",)        # his public artist address, in many docs on purpose
+
+
+def secret_values(root=None):
+    """Every current secret value on this Mac (never printed): .env values and the token files' key fields.
+    The last guard of a build (Fable gate 2026-11-15): is_secret() reads content only in data files, so a
+    token pasted into a note or a script would otherwise go up readable."""
+    root = root or ROOT
+    vals = set()
+    for name in SECRET_FILES:
+        try:
+            with open(os.path.join(root, name), "rb") as f:
+                data = f.read()
+        except OSError:
+            continue
+        if name == ".env":
+            for line in data.splitlines():
+                line = line.strip()
+                if b"=" not in line or line.startswith(b"#"):
+                    continue
+                k, v = line.split(b"=", 1)
+                v = v.strip().strip(b"\"'")
+                if k.strip().decode("ascii", "ignore") in NOT_SECRET_ENV:
+                    continue
+                if len(v) >= 12 and not v.startswith(b"/") and not v.endswith(b".json"):
+                    vals.add(v)
+        elif name == ".flask_secret":
+            if len(data.strip()) >= 12:
+                vals.add(data.strip())
+        else:
+            vals.update(m.group(1)[:80] for m in SECRET_KEY_RE.finditer(data))
+    return vals
+
+
+def leaked_secret(path, vals):
+    """True when a file about to go up readable holds a current secret value."""
+    if not vals:
+        return False
+    try:
+        with open(path, "rb") as f:
+            data = f.read()
+    except OSError:
+        return False
+    return any(v in data for v in vals)
+
+
 def build(rows, dest, key):
     dest = os.path.abspath(dest)
     if dest == ROOT or dest.startswith(ROOT + os.sep) or ROOT.startswith(dest + os.sep):
@@ -175,19 +251,26 @@ def build(rows, dest, key):
         sys.exit("DEST is not empty and is not a backup snapshot; refusing to delete in it")
     if not os.path.isfile(key):
         sys.exit(f"key file missing: {key}")
+    real_key = os.path.realpath(key)
+    if real_key == ROOT or real_key.startswith(os.path.realpath(ROOT) + os.sep) \
+            or real_key.startswith(dest + os.sep):
+        sys.exit("KEY must live outside the code folder and the snapshot (its state.json sits beside it)")
     state_path = os.path.join(os.path.dirname(os.path.abspath(key)), "state.json")
     state = json.load(open(state_path)) if os.path.exists(state_path) else {}
     os.makedirs(dest, exist_ok=True)
     expected = set()
+    secrets = secret_values()
     copied = encrypted = unchanged = 0
     for r in rows:
         if r["cat"] not in ("PLAIN", "LOCKED"):
             continue
         rel = r["path"]
         src = os.path.join(ROOT, rel)
-        if os.path.basename(rel) in SECRET_NAMES:
+        if is_secret(os.path.basename(rel), src, os.path.splitext(rel)[1].lower()):
             sys.exit(f"STOP: secret sorted as {r['cat']}: {rel}")
         if r["cat"] == "PLAIN":
+            if leaked_secret(src, secrets):
+                sys.exit(f"STOP: a current secret value is inside a file that would go up readable: {rel}")
             out_rel = rel
             out = os.path.join(dest, out_rel)
             st = os.stat(src)

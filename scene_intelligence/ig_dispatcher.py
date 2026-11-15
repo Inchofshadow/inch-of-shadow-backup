@@ -81,6 +81,23 @@ REENRICH_MIN_BATCH = 5       # below this the re-check waits for a roomier day
 FOLLOW_LISTS_MAX_AGE_DAYS = 7   # M-13: weekly, so follow-back verification stays fresh for the sweep (was 30, M-12)
 FOLLOW_FLAGS_CALLS = 85         # = si_follow_flags.FETCH_BUDGET (claim size)
 BACKUPS_KEEP_DAYS = 60      # registry: backups/ retention window
+
+# IG sweep days (Amir 2026-11-15, gate fix 1, "Dispatcher smaller"): the 16:00
+# sweep run needs ~85 provider calls for a fresh follower list. On these six
+# days only, the audit takes SWEEP_DAY_AUDIT_CUT fewer names and the SI contact
+# re-check is skipped. The 300/day cap is unchanged.
+SWEEP_DAYS = ("2026-11-17", "2026-11-19", "2026-11-22",
+              "2026-11-24", "2026-11-26", "2026-11-29")
+SWEEP_DAY_AUDIT_CUT = 60
+
+
+def is_sweep_day(today: date) -> bool:
+    return today.isoformat() in SWEEP_DAYS
+
+
+def sweep_day_audit(today: date, audit: int) -> int:
+    """Audit size after the sweep-day cut (unchanged on any other day)."""
+    return max(0, audit - SWEEP_DAY_AUDIT_CUT) if is_sweep_day(today) else audit
 LOG_ARCHIVE_TRIGGER_KB = 1500  # registry: engagement_log archival trigger
 
 
@@ -375,6 +392,11 @@ def _provider_day(today: date, dry_run: bool) -> int:
     except (OSError, ValueError):
         data = {"queue": []}
     plan = provider_plan(pool, unv, seed_yield(data), list(DEFAULT_SEEDS))
+    if is_sweep_day(today) and plan["audit"]:
+        cut = sweep_day_audit(today, plan["audit"])
+        _log("note", f"IG sweep day: audit {plan['audit']} -> {cut} names "
+                     f"(calls kept for the 16:00 sweep fetch)")
+        plan["audit"] = cut
     # Balance guard (2026-09-14): shrink the day to what is paid for, and say
     # so, instead of dying halfway. 2 calls per audited candidate, ~10 per seed.
     remaining = provider_requests_left()
@@ -390,6 +412,13 @@ def _provider_day(today: date, dry_run: bool) -> int:
             _notify("IG dispatcher", msg)
             _log("notify-amir", msg)
     ran = False
+    # 2026-11-15: live follow-back check of today's unfollow candidates on
+    # session days, FIRST, so the audit cannot take its few calls.
+    if today.strftime("%A") in SESSION_DAYS:
+        pre = _run_job([sys.executable, "scene_intelligence/ig_unfollow_precheck.py", "--apply"],
+                       "unfollow precheck", dry_run)
+        _log("run: unfollow precheck (provider)", "session day — live follow-back check of today's unfollow candidates (~12 calls)", pre)
+        ran = True
     if plan["builder"]:
         why = (f"unchecked names {unv} < floor — builder on best-yield seeds "
                f"{','.join(plan['builder'])} (provider)")
@@ -451,6 +480,10 @@ def _provider_si_upkeep(today: date, dry_run: bool, balance: int | None) -> bool
         _log("run: follow-back verification (from lists)", "fresh follower list -> tracker (0 calls)", rec)
         left -= FOLLOW_FLAGS_CALLS
         ran = True
+    if is_sweep_day(today):
+        _log("skip", "IG sweep day: SI contact re-check skipped "
+                     "(calls kept for the 16:00 sweep fetch)")
+        return ran
     stale = stale_contacts_count(today)
     n = min(REENRICH_BATCH, stale, left)
     if n >= REENRICH_MIN_BATCH:

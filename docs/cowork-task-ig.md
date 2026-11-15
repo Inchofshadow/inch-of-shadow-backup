@@ -25,7 +25,7 @@ Mon/Wed/Fri/Sat at 15:00 Berlin."
 
 == ALLOWED TERMINAL COMMANDS (exactly these patterns, nothing else) ==
 
-1. python3 scene_intelligence/ig_log_action.py --action-type <type> [flags]
+1. .venv/bin/python scene_intelligence/ig_log_action.py --action-type <type> [flags]
    (LOG EVERY CLICK WITH THIS — 2026-09-18. It reads the Berlin clock
    itself, auto-increments `sequence`, and appends the line. You never
    build a timestamp or a JSON string by hand again. `--help` lists the
@@ -36,21 +36,21 @@ Mon/Wed/Fri/Sat at 15:00 Berlin."
    session froze on four of them for ~7 hours and landed 1 follow. This
    command is covered by ONE wildcard allow rule, exactly like SC's
    `sc_engagement.py --log-action`.)
-2. python3 scene_intelligence/ig_engagement.py --plan-only --no-preflight
+2. .venv/bin/python scene_intelligence/ig_engagement.py --plan-only --no-preflight
    (today's plan; local, zero IG API calls)
-3. python3 scene_intelligence/ig_daily_ledger.py --claim ig_session --kind browser
+3. .venv/bin/python scene_intelligence/ig_daily_ledger.py --claim ig_session --kind browser
    (sign today's ledger BEFORE the first click; also `--show` to read it)
-4. python3 scene_intelligence/close_loops.py --platform ig   (final step)
-5. python3 -c "from scene_intelligence.ig_ops_guards import active_detection_cooldown as a; print(a(platform='ig', kind='session'))"
+4. .venv/bin/python scene_intelligence/close_loops.py --platform ig   (final step)
+5. .venv/bin/python -c "from scene_intelligence.ig_ops_guards import active_detection_cooldown as a; print(a(platform='ig', kind='session'))"
    (hard gate 2 — pre-approved 2026-09-11 after it stalled a run on a prompt)
-6a. python3 scene_intelligence/ig_session_state.py
+6a. .venv/bin/python scene_intelligence/ig_session_state.py
    (STATE READ, added 2026-09-18 — tracker, queue depth, builder age,
    promo/release flags. Read-only. Use THIS instead of an inline
    `python3 -c` state script: the improvised one stalled the 09-18 run for
    210 minutes on its approval prompt. Volumes still come from the plan
    file, never from this summary.)
-6. python3 scene_intelligence/ig_session_confirm.py --check
-   and, to wait for it: python3 scene_intelligence/ig_session_confirm.py --wait 900
+6. .venv/bin/python scene_intelligence/ig_session_confirm.py --check
+   and, to wait for it: .venv/bin/python scene_intelligence/ig_session_confirm.py --wait 900
    (pre-confirm flag, added 2026-09-17 — see PRE-CONFIRM FLAG below; local,
    zero API; prints "confirmed <ts>" or "none". Never run it with --set or
    --clear: --set is Amir's yes and only he, or his chat, writes it.)
@@ -85,7 +85,7 @@ At BOTH gates run allowed command #6 first:
   send him the gate's frame text so he sees it, then continue without
   waiting.
 - "none" → wait with ONE command and nothing else (2026-10-07):
-      python3 scene_intelligence/ig_session_confirm.py --wait 900
+      .venv/bin/python scene_intelligence/ig_session_confirm.py --wait 900
   It returns the moment the flag appears (exit 0) or after 15 min (exit 1).
   NEVER write your own `until ... sleep` loop: that is a new command string
   every run, it raised a permission prompt both times on 10-07, and the two
@@ -105,7 +105,7 @@ flag from another day is ignored by --check automatically.
 == HARD STATE GATES (before anything else, no clicks) ==
 
 RUN ALL THREE GATES WITH ONE COMMAND (2026-09-21):
-    python3 scene_intelligence/ig_session_state.py --gates
+    .venv/bin/python scene_intelligence/ig_session_state.py --gates
 It prints the Berlin time, gate 1 (pauses.ig), gate 2 (session detection
 cooldown), gate 3 (ledger), and the pre-confirm flag, then a VERDICT.
 Exit 0 = "gates clear", continue. Exit 3 = "STOP" with the reasons: stop
@@ -122,7 +122,7 @@ before its first gate. The notes below explain what each gate means.
 2. Detection cooldown, SESSION kind (2026-09-06 amendment: API-surface
    throttles such as the 429 do NOT block browser sessions; account-level
    events such as CAPTCHA / action block / login challenge DO). Run:
-     python3 -c "from scene_intelligence.ig_ops_guards import active_detection_cooldown as a; print(a(platform='ig', kind='session'))"
+     .venv/bin/python -c "from scene_intelligence.ig_ops_guards import active_detection_cooldown as a; print(a(platform='ig', kind='session'))"
    (allowed command #5). If it prints anything other than None: STOP and
    tell Amir. Do not read detection_events.json by hand for this gate.
 3. The ledger is NOT claimed here any more (2026-09-11): it is claimed at the
@@ -288,7 +288,7 @@ already cleared on size, ratio and bio and dropped only for a stale post
 
 For each handle log exactly ONE line with allowed command #1, values as
 read on the page:
-  python3 scene_intelligence/ig_log_action.py --action-type ig_vet \
+  .venv/bin/python scene_intelligence/ig_log_action.py --action-type ig_vet \
       --handle <handle> --followers N --following N --posts N \
       --public --last-post-days N --bio "<the bio text, verbatim>"
   (private profile: `--private` and drop the counts)
@@ -350,8 +350,15 @@ as a generic skip). The badge is ground truth over the tracker.
 keep_following. Never reason "keep_following=false so it's OK" (that exact
 reasoning churned 7 reciprocators on 2026-07-15).
 
-Click "Following" → "Unfollow"; verify the button returns to "Follow"
-(retry once; else skip unfollow_did_not_register). Wait 20-40s.
+Click "Following" → "Unfollow", then read the button:
+- "Follow" = done, log ig_unfollow.
+- "Follow Back" = they DO follow Amir (10-09 lesson; added 2026-11-15, Amir
+  "yes, add it" after the Fable gate): click "Follow Back" at once, verify it
+  reads "Following", log
+  .venv/bin/python scene_intelligence/ig_log_action.py --action-type ig_unfollow_aborted --handle <h> --track unfollow --reason follow_back_after_click_refollowed
+  and name every such account in the session report to Amir.
+- still "Following" = retry once; else skip unfollow_did_not_register.
+Wait 20-40s.
 
 == EXECUTION STYLE ==
 
@@ -381,13 +388,13 @@ and prints what it wrote. NEVER hand-write the JSON, the timestamp, or the
 sequence, and never use `echo >> ...jsonl` (2026-09-18: that shape prompted
 on every line and froze the session for hours).
 
-  python3 scene_intelligence/ig_log_action.py --action-type ig_like \
+  .venv/bin/python scene_intelligence/ig_log_action.py --action-type ig_like \
       --handle bovaflux --track reach --pre-warm --post-url <url>
-  python3 scene_intelligence/ig_log_action.py --action-type ig_follow \
+  .venv/bin/python scene_intelligence/ig_log_action.py --action-type ig_follow \
       --handle bovaflux --track reach --source "<seed handles>"
-  python3 scene_intelligence/ig_log_action.py --action-type ig_skip \
+  .venv/bin/python scene_intelligence/ig_log_action.py --action-type ig_skip \
       --handle nervecollect --track scene --reason <why> --tier T2 --category label
-  python3 scene_intelligence/ig_log_action.py --action-type session_halt \
+  .venv/bin/python scene_intelligence/ig_log_action.py --action-type session_halt \
       --reason "safety: <what>"
 
 Types: ig_like · ig_follow · ig_unfollow · ig_skip · ig_like_skipped ·

@@ -179,13 +179,21 @@ def playground_layout(slug):
     if not _pg.SLUG.fullmatch(slug or ""):
         abort(404)
     rel = load_release(slug)
-    saves = _pg.colours_kept(PROJECT_ROOT, slug) if rel else []
-    if not saves:
+    if rel is None:
+        abort(404)
+    saves = _pg.colours_kept(PROJECT_ROOT, slug)
+    base = _pg.base_path(PROJECT_ROOT, rel)
+    # System 92 (2026-11-10): a release without colour layers opens on its own base picture (brand.playground.base),
+    # with the text, effects, finish and keeps; the element tools (moon, owl, stars, trees) need the layers
+    plain = not saves
+    if plain and base is None:
         abort(404)
     picks = _pg.colour_picks(PROJECT_ROOT, slug)
-    return render_template("playground_layout.html", rel=rel, saves=saves, looks=_pg.looks(), hidden=_pg.wall_hidden(PROJECT_ROOT, slug),
+    return render_template("playground_layout.html", rel=rel, saves=saves or [{"pick": "base", "cols": {}}], looks=_pg.looks(),
+                           hidden=_pg.wall_hidden(PROJECT_ROOT, slug),
                            pver={p: _pg.file_version(_pg.colour_path(PROJECT_ROOT, slug, p, "meta.json")) for p in picks},
-                           igfeed=_pg.iggrid_feed(PROJECT_ROOT, slug))
+                           igfeed=_pg.iggrid_feed(PROJECT_ROOT, slug), plain=plain, bver=_pg.file_version(base),
+                           cover_title=_pg.cover_title(rel), has_keeps=bool(_pg.layouts_kept(PROJECT_ROOT, slug)))
 
 
 @app.route("/playground/<slug>/layout/font")
@@ -354,3 +362,121 @@ def playground_version_delete(slug):
         return jsonify({"error": "no such version"}), 404
     save_release(rel)
     return jsonify({"ok": True})
+
+
+# System 97 (2026-11-10): a picture per keep (by its fixed id), the picks page that follows the keeps, Export
+@app.route("/playground/<slug>/layout/keep-snap", methods=["POST"])
+def playground_layout_keep_snap(slug):
+    if not _pg.SLUG.fullmatch(slug or "") or load_release(slug) is None:
+        abort(404)
+    try:
+        kid = int(request.args.get("id") or 0)
+        _pg.keep_snap_save(PROJECT_ROOT, slug, kid, request.get_data(cache=False) or b"")
+    except ValueError as exc:
+        return jsonify({"error": str(exc)}), 400
+    return jsonify({"ok": True})
+
+
+@app.route("/playground/<slug>/layout/keep-img")
+def playground_layout_keep_img(slug):
+    if not _pg.SLUG.fullmatch(slug or "") or not (request.args.get("id") or "").isdigit():
+        abort(404)
+    p = _pg.keep_snap_path(PROJECT_ROOT, slug, int(request.args["id"]))
+    if p is None:
+        abort(404)
+    wpx = request.args.get("w") or ""
+    if wpx.isdigit():
+        return send_file(_pg.sized(p, int(wpx)), mimetype="image/jpeg", max_age=0)
+    return send_file(p, mimetype="image/jpeg", max_age=0)
+
+
+@app.route("/playground/<slug>/picks")
+def playground_picks(slug):
+    if not _pg.SLUG.fullmatch(slug or ""):
+        abort(404)
+    rel = load_release(slug)
+    if rel is None:
+        abort(404)
+    return render_template("playground_picks.html", rel=rel)
+
+
+@app.route("/api/playground/<slug>/picks", methods=["GET", "POST"])
+def playground_picks_api(slug):
+    """The keeps with their ids, picture versions and V ticks; the picks page asks every few seconds."""
+    if not _pg.SLUG.fullmatch(slug or "") or load_release(slug) is None:
+        return jsonify({"error": "unknown release"}), 404
+    if request.method == "POST":
+        try:
+            _pg.picks_toggle(PROJECT_ROOT, slug, (request.get_json(silent=True) or {}).get("id"))
+        except ValueError as exc:
+            return jsonify({"error": str(exc)}), 400
+    kept = _pg.layouts_kept(PROJECT_ROOT, slug)
+    out = [{"id": k["id"], "saved": k.get("saved", ""), "font": k.get("font", ""), "fxmix": k.get("fxmix", ""),
+            "v": _pg.file_version(_pg.keep_snap_path(PROJECT_ROOT, slug, k["id"]))} for k in kept]
+    return jsonify({"kept": out, "ticks": _pg.picks_ticked(PROJECT_ROOT, slug)})
+
+
+@app.route("/playground/<slug>/layout/export", methods=["POST"])
+def playground_layout_export(slug):
+    """Export button: the page sends the cover at 3000 or 4000 px; it is saved, then artwork_resizer --cover
+    makes the platform sizes in resized/."""
+    if not _pg.SLUG.fullmatch(slug or "") or load_release(slug) is None:
+        abort(404)
+    try:
+        px = int(request.args.get("px") or 0)
+        kid = int(request.args.get("id") or 0) or None
+        out = _pg.export_save(PROJECT_ROOT, slug, px, request.get_data(cache=False) or b"",
+                              datetime.now().strftime("%Y%m%d-%H%M%S"), kid)
+    except ValueError as exc:
+        return jsonify({"error": str(exc)}), 400
+    res = {"ok": True, "file": str(out.relative_to(PROJECT_ROOT)), "resized": None}
+    if request.args.get("sizes") == "1":
+        try:
+            res["resized"] = _pg.run_cover_resizer(PROJECT_ROOT, out)
+        except Exception as exc:   # the cover file is saved either way
+            res["resized"] = {"ok": False, "files": [], "tail": str(exc)[:300]}
+    return jsonify(res)
+
+
+# System 94 (2026-11-11, Amir's picks A + T1): the studio drawer on the Layout page. One list of everything in the
+# Shadow Archive, Effects, Fonts and Imagine, with the shared tags (docs/brand/tags.json) and what each can do on the page.
+UNTAGGED = "untagged"   # a drawer-only chip, never stored in docs/brand/tags.json
+
+
+@app.route("/api/playground/<slug>/drawer")
+def playground_drawer(slug):
+    if not _pg.SLUG.fullmatch(slug or "") or load_release(slug) is None:
+        return jsonify({"error": "unknown release"}), 404
+    import re as _re
+    from release_manager import studio_tags as st
+    data = st.load()
+    looks = {l["key"] for l in _pg.looks()}
+    try:
+        fonts = {f["id"]: f for f in _pg.font_choices(_fonts.load(PROJECT_ROOT), _font_file_url)}
+    except Exception:
+        fonts = {}
+    items = []
+    for lib, iid, r in st.library_records():
+        tags = st.tags_for(lib, iid, r, data) or [UNTAGGED]   # nothing hides: 65 items had no tag (Fable gate 2026-11-15)
+        if lib == "archive":
+            items.append({"lib": lib, "id": iid, "name": r.get("title") or iid, "note": (r.get("amir_reason") or r.get("summary") or "")[:220],
+                          "thumb": url_for("archive_thumb", rid=iid) if r.get("thumb") else "", "open": url_for("archive_detail", rid=iid), "tags": tags})
+        elif lib == "effect":
+            key = iid[5:] if iid.startswith("look-") else ""
+            items.append({"lib": lib, "id": iid, "name": r.get("name") or iid, "note": (r.get("what") or "")[:220], "make": r.get("make") or "",
+                          "thumb": url_for("effect_example", eid=iid) if r.get("example") else "", "open": url_for("effect_detail", eid=iid),
+                          "look": key if key in looks else "", "tags": tags})
+        elif lib == "font":
+            f = fonts.get(iid)
+            if not f:   # no file on this Mac and no system face: nothing to draw with
+                continue
+            items.append({"lib": lib, "id": iid, "name": r.get("name") or iid, "note": f.get("badge", ""), "public_ok": bool(f.get("public_ok")),
+                          "key": "l" + _re.sub(r"[^a-z0-9]", "", iid.lower())[:19], "src": f.get("src", ""),
+                          "open": url_for("font_detail", fid=iid), "tags": tags})
+        elif lib == "imagine":
+            items.append({"lib": lib, "id": iid, "name": r.get("subject") or (r.get("kind") or "image").capitalize(), "note": (r.get("release") or ""),
+                          "thumb": url_for("imagine_image", filename=iid), "open": url_for("imagine_page", release=r.get("release") or ""), "tags": tags})
+    tags_out = [{"id": t, "means": m} for t, m in st.TAGS]
+    if any(UNTAGGED in it["tags"] for it in items):
+        tags_out.append({"id": UNTAGGED, "means": "No tag yet: add tags in docs/brand/tags.json"})
+    return jsonify({"tags": tags_out, "items": items})

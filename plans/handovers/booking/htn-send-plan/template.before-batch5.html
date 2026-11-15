@@ -1,0 +1,208 @@
+<title>Half the Night Send Plan</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Marcellus&family=Jost:wght@300;400;500&display=swap">
+<style>
+/* Layout: one narrow column for the phone; a day-by-day ledger, then the drafts to copy. */
+:root{
+  --bg:#D6D1C8; --surface:#E4E0D8; --fg:#0F0D0C; --muted:#5E5650; --line:#B9B2A7;
+  --accent:#4E2E63; --ig:#7A3B5C; --sc:#A4521F; --mail:#2F5566; --warn:#8A5A00; --warnbg:#EFE3C6;
+  --display:"Marcellus","Cormorant Garamond",Georgia,serif;
+  --body:"Jost","Avenir Next","Helvetica Neue",Arial,sans-serif;
+  --mono:ui-monospace,"SF Mono",Menlo,monospace;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#0F0D0C; --surface:#1B1816; --fg:#D6D1C8; --muted:#9C948B; --line:#3A3430;
+  --accent:#BFA3D4; --ig:#E29AB9; --sc:#F0A26B; --mail:#8CC3D6; --warn:#E8C26A; --warnbg:#2B2416; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0F0D0C; --surface:#1B1816; --fg:#D6D1C8; --muted:#9C948B; --line:#3A3430;
+  --accent:#BFA3D4; --ig:#E29AB9; --sc:#F0A26B; --mail:#8CC3D6; --warn:#E8C26A; --warnbg:#2B2416; color-scheme:dark}
+body{background:var(--bg);color:var(--fg);font-family:var(--body);font-size:16px;line-height:1.55;font-weight:400}
+.wrap{max-width:720px;margin:0 auto;padding-block:28px 64px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));display:flex;flex-direction:column;gap:36px}
+h1,h2{font-family:var(--display);font-weight:400;text-wrap:balance;margin:0}
+h1{font-size:2.1rem;line-height:1.15}
+h2{font-size:1.45rem;border-bottom:1px solid var(--line);padding-bottom:6px}
+h3{font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin:0;font-weight:500}
+p{margin:0}
+.kicker{font-size:.8rem;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);font-weight:500}
+.lead{color:var(--muted);max-width:60ch}
+section{display:flex;flex-direction:column;gap:16px}
+.status{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:10px}
+.status div{background:var(--surface);border-radius:6px;padding:12px 14px;display:flex;flex-direction:column;gap:2px;min-width:0}
+.status b{font-weight:500}
+.status span{color:var(--muted);font-size:.9rem}
+.steps{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:0;border-left:2px solid var(--accent)}
+.steps li{padding:10px 0 10px 16px;display:flex;flex-direction:column;gap:2px}
+.steps .who{font-size:.75rem;letter-spacing:.1em;text-transform:uppercase;font-weight:500;color:var(--accent)}
+.steps .who.claude{color:var(--muted)}
+.tw{overflow-x:auto;border:1px solid var(--line);border-radius:6px}
+table{border-collapse:collapse;width:100%;font-size:.93rem;min-width:520px}
+th,td{text-align:left;vertical-align:top;padding:9px 12px;border-bottom:1px solid var(--line)}
+tr:last-child th,tr:last-child td{border-bottom:0}
+thead th{font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);font-weight:500;background:var(--surface)}
+tbody th{font-weight:500;white-space:nowrap;font-variant-numeric:tabular-nums}
+.chan{font-size:.7rem;letter-spacing:.08em;text-transform:uppercase;font-weight:500;padding:2px 7px;border-radius:3px;border:1px solid currentColor;white-space:nowrap}
+.chan.ig{color:var(--ig)} .chan.sc{color:var(--sc)} .chan.email,.chan.form{color:var(--mail)}
+.drafts{display:flex;flex-direction:column;gap:8px}
+details.draft{background:var(--surface);border-radius:6px;padding:0 14px}
+details.draft summary{cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:12px;padding:12px 0}
+details.draft summary::-webkit-details-marker{display:none}
+details.draft summary:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+details.draft .who{font-weight:500;min-width:0}
+details.draft[open] summary{border-bottom:1px solid var(--line)}
+.where{color:var(--muted);font-size:.88rem;padding-top:10px;overflow-wrap:anywhere}
+.flag{background:var(--warnbg);color:var(--warn);font-size:.88rem;padding:8px 10px;border-radius:4px;margin-top:8px}
+pre{font-family:var(--body);white-space:pre-wrap;font-size:.95rem;line-height:1.5;margin:10px 0;padding:12px;border:1px dashed var(--line);border-radius:4px}
+button.copy{font:inherit;font-size:.85rem;font-weight:500;background:var(--fg);color:var(--bg);border:0;border-radius:4px;padding:7px 14px;margin-bottom:14px;cursor:pointer}
+.note{font-size:.9rem;color:var(--muted)}
+.rules{margin:0;padding-left:20px;display:flex;flex-direction:column;gap:4px}
+.stage{display:flex;flex-direction:column;gap:14px;padding-left:16px;border-left:2px solid var(--line)}
+.stage.now{border-left-color:var(--accent)}
+.stagehead{display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 12px}
+.stagehead .n{font-family:var(--display);font-size:1.6rem;color:var(--accent);line-height:1}
+.stagehead .when{font-size:.75rem;letter-spacing:.1em;text-transform:uppercase;font-weight:500;color:var(--muted)}
+.mini{display:flex;flex-direction:column;gap:6px;margin:0;padding:0;list-style:none}
+.mini li{display:flex;flex-wrap:wrap;gap:6px 10px;align-items:baseline}
+.mini .d{font-weight:500;min-width:7.5em;font-variant-numeric:tabular-nums}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+
+<div class="wrap">
+<header style="display:flex;flex-direction:column;gap:10px">
+  <p class="kicker">Half the Night EP · out Fri 4 Dec 2026 · Indigo Children Records</p>
+  <h1>Who sends what, and where</h1>
+  <p class="lead">In the order we work: links ready, drafts approved, labels first, then the show hosts on the private link, release day, then the DJ wave on the public link. You send everything yourself. Nothing has been sent yet.</p>
+</header>
+
+<section class="stage" aria-labelledby="s1">
+  <div class="stagehead"><span class="n">1</span><h2 id="s1">Private links</h2><span class="when">✅ done 10 Nov</span></div>
+  <div class="tw"><table style="min-width:0">
+    <tbody>
+      <tr><th scope="row">EP (in every draft)</th><td style="overflow-wrap:anywhere">https://soundcloud.com/inch-of-shadow/sets/half-the-night/s-cqiK2IkEg0T</td></tr>
+      <tr><th scope="row">Half the Night</th><td style="overflow-wrap:anywhere">https://soundcloud.com/inch-of-shadow/half-the-night/s-Z3sb19PLMLe</td></tr>
+      <tr><th scope="row">Pinocchio</th><td style="overflow-wrap:anywhere">https://soundcloud.com/inch-of-shadow/pinocchio/s-F8dQ5K2RjmT</td></tr>
+    </tbody>
+  </table></div>
+  <p class="note">Secret links, WAV downloads on, all 3 checked. Label name, ICR-003 and the date are off the SoundCloud pages until 4 Dec (because of the label pitches); the links stay the same.</p>
+</section>
+
+<section class="stage" aria-labelledby="s2">
+  <div class="stagehead"><span class="n">2</span><h2 id="s2">Drafts approved</h2><span class="when">✅ done 11 Nov</span></div>
+  <p class="note">You approved the 7 label drafts and the 11 show-host drafts on this page, as written. Label batches 2 and 3 (steps 4 and 6) and the 34 DJ-wave drafts (step 8) are not approved yet.</p>
+</section>
+
+<section class="stage now" aria-labelledby="s3">
+  <div class="stagehead"><span class="n">3</span><h2 id="s3">Labels batch 1 · 7</h2><span class="when">today, Wed 11 Nov</span></div>
+  <ul class="mini">
+    <li><span class="d">Email</span><span>Fabrizio (Slow Motion), Ori (Stereo Society), Phantasy Sound</span></li>
+    <li><span class="d">Instagram</span><span>Prinze (Epicure), Pilatus (Polypiel)</span></li>
+    <li><span class="d">SoundCloud</span><span>Daniel / Daribone (Mechatronica)</span></li>
+    <li><span class="d">Bandcamp form</span><span>Who Is Paula</span></li>
+  </ul>
+  <p class="note">As early as possible, so there is time for an answer before the 27 Nov decision.</p>
+  <div class="drafts">{{LABELS}}</div>
+</section>
+
+<section class="stage now" aria-labelledby="s3n">
+  <div class="stagehead"><span class="n">4</span><h2 id="s3n">Labels batch 4 · people you know · 21</h2><span class="when">needs your OK · 12 to 15 Nov</span></div>
+  <p class="note">From the sweep of all our own files (Scene Intelligence, SoundCloud, IG, rekordbox), checked against your live IG lists: label people and label accounts already in your network. Short personal messages. Alen, Heinrich and The Hacker come off the December DJ wave, so each gets one message.</p>
+  <ul class="mini">
+    <li><span class="d">Ritmo Fatale</span><span>Alen first (he releases there, mutual, said "send me i will play it") with an intro ask to Kendal. Email Kendal directly only if that doesn't work within about 3 days.</span></li>
+    <li><span class="d">Personal</span><span>Heinrich (Minimal Rome), The Hacker (GoodLife, by email), Mario Wavelet (Tensor Norm), Aztronouth (Mechanism), Matthias (Superluminal)</span></li>
+    <li><span class="d">Label accounts (14)</span><span>Orson, Inside Out, Roam, 030303, Analogical Force, Hilltown Disco, Positive Source, Disco Pastors, Crave Tapes, Distant Gaze, Mosaique, Time Passages, Musar, Espacio Cielo</span></li>
+    <li><span class="d">Instagram days</span><span>Thu 12: Alen (with the 3 show hosts and Libertine) · Fri 13: Heinrich, Mario, Aztronouth, Matthias (with Belaria) · Sat 14: 030303, Analogical Force, Hilltown, Positive Source, Disco Pastors · Sun 15: Distant Gaze, Mosaique. Emails any day.</span></li>
+  </ul>
+  <div class="drafts">{{LABELS4}}</div>
+  <div class="tw"><table>
+    <thead><tr><th scope="col">Label</th><th scope="col">Who runs it</th><th scope="col">City, Country</th><th scope="col">In your network</th><th scope="col">Where to send</th></tr></thead>
+    <tbody>{{LABELS4ROWS}}</tbody>
+  </table></div>
+  <p class="note">A web check is running for a few routes: Ritmo Fatale, Distant Gaze, Analogical Force, Espacio Cielo and Time Passages.</p>
+</section>
+
+<section class="stage now" aria-labelledby="s3b">
+  <div class="stagehead"><span class="n">5</span><h2 id="s3b">Labels batch 2 · 28</h2><span class="when">needs your OK · then 11 to 13 Nov</span></div>
+  <p class="note">The bigger push. First every label was checked against your own socials for a boss you already follow, so those get a personal message from you, not a cold one to an inbox. Everyone else gets one shared short message, greeting the boss by name where we know it.</p>
+  <ul class="mini">
+    <li><span class="d">Personal (5)</span><span>Marsman (Pinkman, Italorator, and his radio on intergalactic and operator), Gamma Intel + Identified Patient (Nerve Collect), Dona (Libertine, IG), Andrea (AVANT!), Life And Death</span></li>
+    <li><span class="d">Shared (23)</span><span>Email to most, plus Get Physical on LabelRadar and Exploited by form. About 10 a day spreads them over 3 days.</span></li>
+    <li><span class="d">Moved</span><span>Gamma Intel is off the December DJ wave, so he gets one message only.</span></li>
+    <li><span class="d">Moved to batch 3</span><span>The EBM / industrial-heavy ones: Mannequin, aufnahme + wiedergabe, Ostgut Ton, Dark Entries. Dark disco-heavy labels stay here.</span></li>
+  </ul>
+  <div class="drafts">{{LABELS2}}</div>
+  <div class="tw"><table>
+    <thead><tr><th scope="col">Label</th><th scope="col">Say hi to</th><th scope="col">City, Country</th><th scope="col">Where to send</th><th scope="col">Before</th></tr></thead>
+    <tbody>{{LABELS2ROWS}}</tbody>
+  </table></div>
+  <p class="note">Addresses are from our own files and weren't re-checked today. If one bounces, drop it. Out on purpose: MM Discos, DM-only and no-demo labels, earlier bounces, Tel Aviv labels other than Stereo Society.</p>
+</section>
+
+<section class="stage now" aria-labelledby="s4">
+  <div class="stagehead"><span class="n">6</span><h2 id="s4">Show hosts · 11, private link</h2><span class="when">11 to 13 Nov</span></div>
+  <ul class="mini">
+    <li><span class="d">Wed 11 Nov</span><span>IG: Sharlese, Shia LaBiff, Christophe · SC: Dynamic D, DJ Gerhardt</span></li>
+    <li><span class="d">Thu 12 Nov</span><span>IG: Kat Richmond, yeshe gao, Curses · SC: GANGHAUS, Hypnotic Groove</span></li>
+    <li><span class="d">Fri 13 Nov</span><span>IG: Belaria</span></li>
+  </ul>
+  <p class="note">Radio, show and mix-series people, so the track can be on their show around release. On 11 Nov the two label DMs plus these three make 5 on Instagram, the daily max.</p>
+  <div class="drafts">{{PRE}}</div>
+</section>
+
+<section class="stage" aria-labelledby="s3c">
+  <div class="stagehead"><span class="n">7</span><h2 id="s3c">Labels batch 3 · 29 long shots</h2><span class="when">needs your OK · then 14 to 16 Nov</span></div>
+  <p class="note">The long-shot batch. Big labels outside your style, sent anyway, including the EBM / industrial-heavy ones taken out of batch 2: Ostgut, Northern Electronics, NovaMute, CPU, Dark Entries and the like. All get the same shared message as batch 2, so it costs no writing time. About 10 emails a day.</p>
+  <div class="drafts">{{LABELS3}}</div>
+  <div class="tw"><table>
+    <thead><tr><th scope="col">Label</th><th scope="col">Say hi to</th><th scope="col">City, Country</th><th scope="col">Genre (our file)</th><th scope="col">Where to send</th></tr></thead>
+    <tbody>{{LABELS3ROWS}}</tbody>
+  </table></div>
+</section>
+
+<section class="stage" aria-labelledby="s5">
+  <div class="stagehead"><span class="n">8</span><h2 id="s5">Label decision, then release</h2><span class="when">27 Nov · 4 Dec</span></div>
+  <ul class="mini">
+    <li><span class="d">Fri 27 Nov</span><span>Decide on any label offer. After this the release stays as it is.</span></li>
+    <li><span class="d">Fri 4 Dec</span><span>Release. SoundCloud goes public, label name and date come back on the pages. Claude puts the public link into the DJ-wave drafts.</span></li>
+  </ul>
+</section>
+
+<section class="stage" aria-labelledby="s6">
+  <div class="stagehead"><span class="n">9</span><h2 id="s6">DJ wave · 34, public link</h2><span class="when">7 to 14 Dec</span></div>
+  <p class="note">"Just came out" wording, warm contacts first, 5 Instagram DMs a day at most. Drafts are in the handover file and still need your OK.</p>
+  <div class="tw"><table>
+    <thead><tr><th scope="col">Day</th><th scope="col">Instagram DM</th><th scope="col">SoundCloud DM</th></tr></thead>
+    <tbody>{{POST}}</tbody>
+  </table></div>
+  <p class="note">No follow-up date is set yet for people who don't answer.</p>
+</section>
+
+<section aria-labelledby="claude">
+  <h2 id="claude">Claude, alongside</h2>
+  <ul class="rules">
+    <li>Today after the morning IG runs (about 09:40): the last 2 Instagram checks, Alberto Melloni and Local Suicide. Say "run it" in the 🎧 DJ promo chat.</li>
+    <li>4 Dec: public link into the 34 DJ-wave drafts.</li>
+  </ul>
+</section>
+
+<section aria-labelledby="rules">
+  <h2 id="rules">Sending rules</h2>
+  <ul class="rules">
+    <li>Instagram: 5 a day at most, a few hours apart, never back to back.</li>
+    <li>Sharlese gets one message only. She is also in the booking drafts.</li>
+    <li>Daribone gets one message only: the label one, on SoundCloud.</li>
+    <li>If you send later than planned, the days after move back by the same amount.</li>
+    <li>Tell Claude who you sent to, and when, so the list stays right.</li>
+  </ul>
+</section>
+</div>
+
+<script>
+document.querySelectorAll('button.copy').forEach(function(b){
+  b.addEventListener('click',function(){
+    var pre=b.parentElement.querySelector('pre'); var t=pre.innerText;
+    function done(){b.textContent='Copied';setTimeout(function(){b.textContent='Copy text'},1600)}
+    function fallback(){var r=document.createRange();r.selectNodeContents(pre);var s=window.getSelection();s.removeAllRanges();s.addRange(r);b.textContent='Selected, copy it'}
+    try{navigator.clipboard.writeText(t).then(done,fallback)}catch(e){fallback()}
+  });
+});
+</script>

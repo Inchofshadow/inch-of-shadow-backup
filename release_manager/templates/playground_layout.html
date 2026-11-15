@@ -1,7 +1,9 @@
 {% extends "base.html" %}
 {% block title %}Layout{% endblock %}
 {% block content %}
-{% include "_cover_steps.html" %}
+{% if plain %}<div class="cover-steps plain-steps"><span>🖼 {{ cover_title }} · own base picture, no colour layers yet</span><a href="{{ url_for('playground_picks', slug=rel.slug) }}">✅ Picks page</a></div>
+<style>.plain-steps { display: flex; gap: 14px; align-items: center; flex-wrap: wrap; margin: 0 0 14px; font-size: 13px; color: var(--text-secondary); }</style>
+{% else %}{% include "_cover_steps.html" %}{% endif %}
 <style>
 .main-content main:has(.lay-page) { max-width: none; }   /* this page uses the whole width */
 .lay-page { max-width: none; --gold: #d8c39a; --card: #161412; --line: rgba(216,195,154,.18); }
@@ -19,14 +21,14 @@
 .pill .lbl { color: var(--text-secondary); font-size: 12px; padding: 6px 4px 6px 10px; }
 .tool .ibtn { background: var(--card); border: 1px solid var(--line); color: inherit; border-radius: 999px; padding: 6px 12px; cursor: pointer; font: inherit; font-size: 13px; }
 .tool label { font-size: 13px; color: var(--text-secondary); }
-.lay-stage { position: relative; width: min(calc((100vw - 300px) * 0.5), calc(100vh - 230px)); min-width: 320px; aspect-ratio: 1; border-radius: 6px; overflow: hidden; box-shadow: 0 8px 30px rgba(0,0,0,.45); }
+.lay-stage { position: relative; width: min(calc((100vw - var(--sidebar-w, 280px) - 20px) * 0.5), calc(100vh - 230px)); min-width: 320px; aspect-ratio: 1; border-radius: 6px; overflow: hidden; box-shadow: 0 8px 30px rgba(0,0,0,.45); }
 .lay-stage canvas { position: absolute; inset: 0; width: 100%; height: 100%; display: block; }
 #art { background: #000; }
 .fxbusy { position: absolute; left: 10px; bottom: 10px; background: rgba(15,13,12,.8); color: #d8c39a; font: 12px system-ui; padding: 5px 10px; border-radius: 999px; pointer-events: none; }
 .fxbusy[hidden] { display: none; }
 #guides { cursor: grab; touch-action: none; }
 #guides.drag { cursor: grabbing; }
-.acts { display: flex; gap: 10px; margin: 12px 0 0; flex-wrap: wrap; }
+.acts { display: flex; gap: 10px; margin: 12px 0 0; flex-wrap: wrap; width: 0; min-width: 100%; }   /* wraps to the picture's width; one long button row pushed the right panel off screen (11-08) */
 .acts button { border-radius: 999px; padding: 9px 18px; font-size: 15px; }
 .lay-kept { display: flex; gap: 10px; overflow-x: auto; margin-top: 12px; padding-bottom: 6px; width: 0; min-width: 100%; }   /* never widens its column (it squeezed the controls, 11-06) */
 .lay-kept .k { flex: 0 0 120px; cursor: pointer; font-size: 11px; color: var(--text-secondary); }
@@ -121,8 +123,62 @@ details.more summary { cursor: pointer; color: var(--text-secondary); font-size:
 .ig-box { background: #fff; border-radius: 12px; overflow: hidden; padding-top: 6px; }
 .ig-box .h { color: #111; font: 600 12px system-ui; padding: 0 8px 4px; }
 .ig-box canvas { width: 100%; display: block; }
+/* System 100: phone width (375 px): nothing scrolls sideways; picture first, then the panels; toolbars wrap */
+@media (max-width: 700px) {
+  .pill { flex-wrap: wrap; border-radius: 14px; }
+  .pill button { padding: 6px 9px; }
+  .stagewrap { grid-template-columns: minmax(0, 1fr); }
+  .lay-stage { width: 100%; min-width: 0; }
+  .lay-main { gap: 16px; }
+  .tabp { grid-template-columns: minmax(0, 1fr); }
+  .tabs { flex-wrap: wrap; }
+  .sl { grid-template-columns: 78px minmax(0, 1fr) 3em; }
+  .fxm { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); }
+  .fxm input[type=range] { grid-column: 1 / -1; }
+  .crow { grid-template-columns: 56px minmax(0, 1fr) auto; }
+  .fontb { flex-basis: 140px; }
+  .ab-panes, .ab-panes.single { grid-template-columns: minmax(0, 1fr); max-width: 100%; }
+  .tchamp { grid-template-columns: minmax(0, 1fr); }
+  .galgrid { grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); }
+  .acts button, .acts .btn { padding: 8px 14px; font-size: 14px; }
+}
+/* System 94: studio drawer (Amir's pick A): slides in over the controls on the right; the picture stays */
+.drawer { --gold: #d8c39a; --card: #161412; --line: rgba(216,195,154,.18); position: fixed; top: 0; right: 0; bottom: 0; width: min(600px, 100vw); z-index: 900; background: #141210; border-left: 1px solid var(--gold); box-shadow: -12px 0 40px rgba(0,0,0,.6);
+  display: flex; flex-direction: column; padding: 14px 16px calc(14px + env(safe-area-inset-bottom, 0px)); gap: 10px; transform: translateX(0); transition: transform .18s ease; }
+.drawer[hidden] { display: none; }
+.drawer .dh { display: flex; gap: 10px; align-items: center; }
+.drawer .dh h3 { margin: 0; font-size: 18px; flex: 1; }
+.drawer .dtabs { display: flex; gap: 4px; flex-wrap: wrap; }
+.drawer .dtabs button { background: none; border: 1px solid var(--line); color: var(--text-secondary); border-radius: 999px; padding: 6px 12px; cursor: pointer; font: inherit; font-size: 13px; }
+.drawer .dtabs button.on { background: var(--gold); color: #111; border-color: var(--gold); }
+.drawer input[type=search] { width: 100%; background: #0e0c0b; color: inherit; border: 1px solid var(--line); border-radius: 8px; padding: 8px 10px; font: inherit; }
+.drawer .dchips { display: flex; gap: 5px; flex-wrap: wrap; max-height: 96px; overflow: auto; }
+.drawer .dchips button { background: #0e0c0b; color: var(--gold); border: 1px solid var(--line); border-radius: 999px; padding: 3px 9px; cursor: pointer; font: inherit; font-size: 12px; }
+.drawer .dchips button.on { background: var(--gold); color: #111; }
+.drawer .dchips button i { font-style: normal; opacity: .6; margin-left: 4px; }
+.drawer .dgrid { flex: 1; overflow: auto; display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 10px; align-content: start; grid-auto-rows: max-content; min-height: 0; padding-bottom: 8px; }
+.dcard { background: #0e0c0b; border: 1px solid var(--line); border-radius: 8px; overflow: hidden; display: flex; flex-direction: column; min-width: 0; }
+.dcard .dth { aspect-ratio: 1; width: 100%; object-fit: cover; display: block; background: #1a1714; }
+.dcard .dfont { aspect-ratio: 1; display: flex; align-items: center; justify-content: center; text-align: center; padding: 8px; font-size: 26px; line-height: 1; color: #e9dfc9; background: #1a1714; overflow: hidden; word-break: break-word; }
+.dcard .db { padding: 6px 8px 8px; display: grid; gap: 4px; font-size: 12px; }
+.dcard .db b { font-size: 13px; font-weight: 600; color: var(--text-primary, #eee); overflow-wrap: anywhere; }
+.dcard .db .dn { color: var(--text-secondary); max-height: 3.2em; overflow: hidden; }
+.dcard .db .dt { color: var(--gold); opacity: .8; font-size: 11px; }
+.dcard .da { display: flex; gap: 4px; flex-wrap: wrap; }
+.dcard .da button, .dcard .da a { background: #1f1b17; color: inherit; border: 1px solid var(--line); border-radius: 999px; padding: 3px 8px; font: inherit; font-size: 12px; cursor: pointer; text-decoration: none; }
+.dcard .trial { color: #e0a090; }
+.pins { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 10px; width: 0; min-width: 100%; }
+.pins .pin { width: 150px; background: #0e0c0b; border: 1px solid var(--line); border-radius: 8px; overflow: hidden; position: relative; font-size: 11px; color: var(--text-secondary); }
+.pins .pin img { width: 100%; aspect-ratio: 1; object-fit: cover; display: block; cursor: zoom-in; }
+.pins .pin span { display: block; padding: 4px 6px; overflow-wrap: anywhere; }
+.pins .pin button { position: absolute; top: 4px; right: 4px; width: 22px; height: 22px; border-radius: 50%; border: 0; background: rgba(0,0,0,.7); color: #fff; cursor: pointer; }
+.pins .pin.big { width: min(420px, 100%); }
+/* System 92: a release on its own base picture has no element layers; those tools wait until it has them */
+.lay-page.plain [data-v="moon"], .lay-page.plain [data-v="star"], .lay-page.plain [data-v="newtree"], .lay-page.plain #tabs [data-t="els"],
+.lay-page.plain [data-m="cols"], .lay-page.plain [data-m="smart"], .lay-page.plain [data-m="comp"], .lay-page.plain #colrows,
+.lay-page.plain #colback, .lay-page.plain #colshuf, .lay-page.plain #rimmoon { display: none !important; }
 </style>
-<div class="fonts-page lay-page">
+<div class="fonts-page lay-page{{ " plain" if plain }}">
     <div class="lay-head">
         <h1>Layout</h1>
         <span class="hint">Drag on the picture. Pick what you drag above it.</span>
@@ -130,7 +186,8 @@ details.more summary { cursor: pointer; color: var(--text-secondary); font-size:
     <div class="lay-main">
         <div class="lay-left">
             <div class="tool">
-                <div class="pill" id="dragwhat"><span class="lbl">Drag</span><button data-v="text">✍️ Text</button><button data-v="moon">🌙 Moon</button><button data-v="star">⭐ Star</button><button data-v="newtree">🌳 New tree</button></div>
+                <button type="button" class="ibtn" id="draweropen" title="Archive, Effects, Fonts and Imagine, with one tag list">🗂 Studio</button>
+                <div class="pill" id="dragwhat"><span class="lbl">Drag</span><button data-v="text">✍️ Text</button><button data-v="moon">🌙 Moon</button><button data-v="star">⭐ Star</button><button data-v="newtree">🌳 New tree</button><button data-v="light">💡 Light</button></div>
                 <div class="pill" id="guidesel"><span class="lbl">Guides</span><button data-v="thirds">Thirds</button><button data-v="phi">Golden</button><button data-v="spiral">Spiral</button><button data-v="centre">Centre</button></div>
                 <button type="button" class="ibtn" id="spin" title="Turn the golden spiral">🌀</button>
                 <button type="button" class="ibtn" id="snap" title="Put the text on the nearest strong point">🎯 Snap</button>
@@ -174,6 +231,7 @@ details.more summary { cursor: pointer; color: var(--text-secondary); font-size:
                 <div class="lay-stage" id="stage"><canvas id="art" width="1080" height="1080"></canvas><canvas id="guides" width="1080" height="1080"></canvas><div id="fxbusy" class="fxbusy" hidden>✨ adding the effect…</div></div>
                 <div class="saves" id="saves" title="Your colour saves"></div>
             </div>
+            <div class="pins" id="pins"></div>
             <div class="acts">
                 <button type="button" class="btn btn-primary" id="keep">⭐ Keep</button>
                 <button type="button" class="btn btn-secondary" id="undo">↩️ Undo</button>
@@ -181,13 +239,32 @@ details.more summary { cursor: pointer; color: var(--text-secondary); font-size:
                 <button type="button" class="btn btn-primary" id="abopen">⇄ Compare A / B</button>
                 <button type="button" class="btn btn-primary" id="galopen">🖼 All my keeps</button>
                 <button type="button" class="btn btn-primary" id="touropen">🏆 Tournament (last 10, no twins)</button>
+                <a class="btn btn-secondary" id="picksopen" href="/playground/{{ rel.slug }}/picks" target="_blank" rel="noopener">✅ Picks page</a>
+                <button type="button" class="btn btn-secondary" id="snapsfill" hidden>📸 Pictures for the picks page</button>
+            </div>
+            <div class="acts" id="exportrow">
+                <span class="sub">⬇️ Export what is on the picture now:</span>
+                <button type="button" class="btn btn-primary" data-px="3000">Export 3000 px</button>
+                <button type="button" class="btn btn-secondary" data-px="4000">Export 4000 px</button>
+                <label class="check"><input type="checkbox" id="exsizes" checked> + every platform size (artwork_resizer --cover)</label>
+                <span class="sub" id="exinfo"></span>
             </div>
             <div class="lay-kept" id="kept"></div>
         </div>
         <div class="lay-right">
+            <div class="card" id="finish"><h4>✨ Finish · see it early, decide it late</h4>
+                <label class="sl"><span>🎞 Grain</span><input type="range" id="fgrain" min="0" max="1" step="0.01"><span class="n" id="fgrainn"></span></label>
+                <label class="sl"><span>◼ Corners</span><input type="range" id="fcorner" min="0" max="1" step="0.01"><span class="n" id="fcornern"></span></label>
+                <label class="sl"><span>💡 Rim light</span><input type="range" id="rim" min="0" max="1" step="0.01"><span class="n" id="rimn"></span></label>
+                <div class="row"><span class="sub">Rim colour</span><span class="row" id="rimcols"></span>
+                    <button type="button" class="chip" id="rimdrag">💡 Drag the light</button><button type="button" class="chip" id="rimmoon">🌙 Light at the moon</button></div>
+                <div class="sub">Grain and corners go over the whole cover, text too, one print. A new cover starts them low so every pick is judged with them; set the final amount here at the end. Rim light: a thin edge on the side of each shape that faces the light point.</div>
+            </div>
             <div class="card"><h4>Text group (title + name together)</h4>
                 <label class="sl"><span>Group size</span><input type="range" id="gsize" min="0.03" max="0.3" step="0.001"><span class="n" id="gsizen"></span></label>
-                <div class="sub">Scales "Half the Night" and "Inch of Shadow" together and keeps them as one block. Dragging moves both.</div>
+                <div class="sub">Scales "{{ cover_title }}" and "Inch of Shadow" together and keeps them as one block. Dragging moves both.</div>
+                <label class="check" style="margin-top:8px"><input type="checkbox" id="tgrain"> Grain on the letters</label>
+                <label class="check"><input type="checkbox" id="tshadow"> Soft shadow behind the text</label>
                 <label class="check" style="margin-top:8px"><input type="checkbox" id="showf"> Show removed fonts (<span class="fhn">0</span>)</label>
             </div>
             <div class="card">
@@ -228,6 +305,8 @@ details.more summary { cursor: pointer; color: var(--text-secondary); font-size:
                     <div class="row full" id="starchips"></div>
                     <h4 class="full">✂️ Cut-paper</h4>
                     <div class="row full"><label class="check"><input type="checkbox" id="cutline"> Cut-paper lines (the light edges along the hill and trees)</label></div>
+                    <div class="row full"><label class="sl"><span>Red moonlight</span><input type="range" id="hglow" min="0" max="1" step="0.01"><span class="n" id="hglown"></span></label></div>
+                    <div class="row full"><label class="sl"><span>Cut line strength</span><input type="range" id="lw" min="0" max="1" step="0.01"><span class="n" id="lwn"></span></label></div>
                     <h4 class="full">🌳 New tree</h4>
                     <div class="row full"><div class="pill" id="ntr"><span class="lbl">New tree</span><button data-v="left">instead of the left thin tree</button><button data-v="right">instead of the right small tree</button><button data-v="none">off</button></div></div>
                     <div class="row"><label class="check"><input type="checkbox" id="ntf"> 🪞 Mirror</label></div>
@@ -237,9 +316,17 @@ details.more summary { cursor: pointer; color: var(--text-secondary); font-size:
         </div>
     </div>
 </div>
+<aside class="drawer" id="drawer" hidden aria-label="Studio drawer">
+    <div class="dh"><h3>🗂 Studio</h3><span class="sub" id="dcount"></span><button type="button" class="chip" id="drawerclose">✕ Close (Esc)</button></div>
+    <div class="dtabs" id="dtabs"><button data-l="effect">✨ Effects</button><button data-l="archive">📚 Archive</button><button data-l="font">🔤 Fonts</button><button data-l="imagine">🎨 Imagine</button></div>
+    <input type="search" id="dq" placeholder="Search a feeling, a name, a word…" aria-label="Search the studio">
+    <div class="dchips" id="dchips"></div>
+    <div class="dgrid" id="dgrid"></div>
+</aside>
 <script>
 (function () {
     var LOOKS = {{ looks|tojson }}, FXHID = {{ (hidden or [])|tojson }};
+    var PLAIN = {{ (plain or false)|tojson }}, TITLE = {{ (cover_title or 'HALF THE NIGHT')|tojson }}, BVER = {{ (bver or '')|tojson }};
     var SLUG = {{ rel.slug|tojson }}, SAVES = {{ saves|tojson }}, PVER = {{ pver|tojson }}, IGFEED = {{ (igfeed or [])|tojson }};
     var $ = function (id) { return document.getElementById(id); };
     var C = {red: '#c12613', hillred: '#891010', purple: '#44214c', plum: '#2a1330', ivory: '#e2d6bc', cream: '#decdb2', black: '#0b0a09', gold: '#daaf60'};
@@ -261,7 +348,10 @@ details.more summary { cursor: pointer; color: var(--text-secondary); font-size:
         {k: 'rockwell', g: 2, label: 'Rockwell', src: 'local("Rockwell-Bold"), local("Rockwell Bold")'},
         {k: 'bodoni', g: 2, label: 'Bodoni', src: 'local("BodoniSvtyTwoITCTT-Bold"), local("Bodoni 72 Bold")'},
         {k: 'gloock', g: 2, label: 'Gloock', src: LF('gloock')},
-        {k: 'viking', g: 2, label: 'Viking', src: LF('viking')}
+        {k: 'viking', g: 2, label: 'Viking', src: LF('viking')},
+        {k: 'fraunces', g: 2, label: 'Fraunces Black (free)', src: LF('fraunces')},
+        {k: 'neuzeits', g: 1, label: 'CAT Neuzeit Schatten (free)', src: LF('neuzeits')},
+        {k: 'switzer', g: 1, label: 'Switzer Black (free)', src: LF('switzer')}
     ];
     // name faces (the brand face is Albertus Nova in Canva; Marcellus is only its local stand-in)
     var NFONTS = [
@@ -287,11 +377,14 @@ details.more summary { cursor: pointer; color: var(--text-secondary); font-size:
     });
     NFONTS.forEach(function (f) { fontLoads.push(new FontFace('ln-' + f.k, f.src).load().then(function (x) { document.fonts.add(x); FONTOK['n' + f.k] = true; }).catch(function () { FONTOK['n' + f.k] = false; })); });
     var P1 = {font: 'futura', lines: 3, align: 'left', x: 0.465, y: 0.245, size: 0.105, lead: 0.18, track: 0, color: 'cream', name: true, npos: 'under', nsize: 0.034, nfont: 'marcellus', ncolor: 'cream', ntrack: 0.12};
-    var DEF = Object.assign({save: SAVES.length - 1, mdx: 0, mdy: 0, ms: 1, owl: true, stars: true, flip: false, tree: '', line: -1, starset: '', treeset: '', cols: '', fx: '', fxw: 50, os: 1, nt: false, ntf: false, ntx: 0.6, nty: 0.64, nts: 0.42, ntr: 'none'}, P1);
+    var DEF = Object.assign({save: SAVES.length - 1, mdx: 0, mdy: 0, ms: 1, owl: true, stars: true, flip: false, tree: '', line: -1, starset: '', treeset: '', cols: '', fx: '', fxw: 50, os: 1, lw: 1, hglow: 0, nt: false, ntf: false, ntx: 0.6, nty: 0.64, nts: 0.42, ntr: 'none'}, P1);
+    var FIN0 = {fgrain: 0, fcorner: 0, rim: 0, rimx: 0.75, rimy: 0.2, rimcol: ''};   // finish (System 93): what a keep from before it means
+    var HASKEEPS = {{ (has_keeps or false)|tojson }};   // a release with keeps (Half the Night) opens with no finish; only a new cover starts low (Amir 11-12)
+    Object.assign(DEF, HASKEEPS ? FIN0 : {fgrain: 0.15, fcorner: 0.2, rim: 0, rimx: 0.75, rimy: 0.2}, {rimcol: HASKEEPS ? '' : 'auto'});   // a new cover: grain + corners on, low
     var D = Object.assign({}, DEF);
-    function fromKept(k) { var o = Object.assign({}, DEF); KEYS.forEach(function (q) { if (k[q] !== undefined) o[q] = k[q]; }); return o; }   // a kept layout, complete
+    function fromKept(k) { var o = Object.assign({}, DEF, FIN0); KEYS.forEach(function (q) { if (k[q] !== undefined) o[q] = k[q]; }); return o; }   // a kept layout, complete
     var V = {guides: {}, spin: 0, magnet: true, drag: 'text'};
-    try { var st = JSON.parse(localStorage.getItem('layout-' + SLUG) || '{}'); Object.assign(D, st.d || {}); Object.assign(V, st.v || {}); } catch (e) {}
+    try { var st = JSON.parse(localStorage.getItem('layout-' + SLUG) || '{}'); if (st.d && st.d.fgrain === undefined) Object.assign(D, FIN0); Object.assign(D, st.d || {}); Object.assign(V, st.v || {}); } catch (e) {}
     if (D.save >= SAVES.length) D.save = SAVES.length - 1;
     D.flip = false; D.tree = ''; D.treeset = '';   // only the save's own trees (11-05); the cut-paper line can be switched off (11-06)
     if (D.line !== 0) D.line = -1;
@@ -322,6 +415,11 @@ details.more summary { cursor: pointer; color: var(--text-secondary); font-size:
     var DATA = {};
     function load(p) {
         if (DATA[p]) return DATA[p];
+        if (PLAIN) {   // System 92: the release's own base picture, cut to a square from its middle
+            DATA[p] = loadImg('/playground/' + encodeURIComponent(SLUG) + '/image?v=' + BVER).then(function (im) {
+                var s = Math.min(im.naturalWidth, im.naturalHeight); return {plain: true, im: im, N: Math.min(s, 4000), sx: (im.naturalWidth - s) / 2, sy: (im.naturalHeight - s) / 2, s: s, comps: [], m: {}, meta: {}, mc: [0.5, 0.2]}; });
+            return DATA[p];
+        }
         DATA[p] = fetch(file(p, 'meta.json')).then(function (r) { return r.json(); }).then(function (meta) {
             var names = ['base.jpg', 'shade.png'].concat(ELS.map(function (e) { return e + '.png'; }));
             return Promise.all(names.map(function (n) { return loadImg(file(p, n)).catch(function () { return null; }); })).then(function (ims) {
@@ -357,10 +455,40 @@ details.more summary { cursor: pointer; color: var(--text-secondary); font-size:
         return out;
     }
     function hex(h) { h = h.replace('#', ''); return [0, 2, 4].map(function (i) { return parseInt(h.substr(i, 2), 16); }); }
+    function owlSplit(d) {   // the owl layer also holds the moon's dark rings: the bird = its biggest piece, the rest stays with the moon (Amir 11-09)
+        if (d._owl) return d._owl;
+        var N = d.N, c = document.createElement('canvas'); c.width = c.height = N; var x = c.getContext('2d', {willReadFrequently: true});
+        x.drawImage(d.im.owl, 0, 0, N, N); var src = x.getImageData(0, 0, N, N), a = src.data, seen = new Uint8Array(N * N), best = null;
+        for (var q = 0; q < N * N; q++) { if (seen[q] || a[q * 4] < 60) continue;
+            var stack = [q], pix = []; seen[q] = 1;
+            while (stack.length) { var p0 = stack.pop(), px = p0 % N, py = (p0 / N) | 0; pix.push(p0);
+                for (var dy = -1; dy <= 1; dy++) for (var dx = -1; dx <= 1; dx++) { var xx = px + dx, yy = py + dy; if (xx < 0 || yy < 0 || xx >= N || yy >= N) continue;
+                    var k = yy * N + xx; if (!seen[k] && a[k * 4] >= 60) { seen[k] = 1; stack.push(k); } } }
+            if (!best || pix.length > best.length) best = pix; }
+        var inb = new Uint8Array(N * N); if (best) best.forEach(function (p1) { var px = p1 % N, py = (p1 / N) | 0;   // grow by the soft edge
+            for (var dy = -2; dy <= 2; dy++) for (var dx = -2; dx <= 2; dx++) { var xx = px + dx, yy = py + dy; if (xx >= 0 && yy >= 0 && xx < N && yy < N) inb[yy * N + xx] = 1; } });
+        var bird = new ImageData(N, N), rest = new ImageData(N, N);
+        for (var i = 0; i < N * N; i++) { var t = inb[i] ? bird.data : rest.data; for (var j = 0; j < 4; j++) t[i * 4 + j] = a[i * 4 + j]; }
+        var cb = document.createElement('canvas'), cr = document.createElement('canvas'); cb.width = cb.height = cr.width = cr.height = N;
+        cb.getContext('2d').putImageData(bird, 0, 0); cr.getContext('2d').putImageData(rest, 0, 0);
+        return (d._owl = {bird: cb, rest: cr});
+    }
+    function shadeNoOwl(d, sh) {   // the moon's texture with the big owl's dark shape filled from the moon around it (normalised box blur + a little grain)
+        var N = d.N, bc = owlSplit(d).bird.getContext('2d').getImageData(0, 0, N, N).data, A = new Float32Array(N * N), W = new Float32Array(N * N), hole = new Uint8Array(N * N);
+        for (var i = 0; i < N * N; i++) { hole[i] = bc[i * 4 + 3] > 0 && bc[i * 4] > 10 ? 1 : 0; if (!hole[i]) { W[i] = 1; A[i] = sh[i * 4]; } }
+        function blur(a, r) { var t = new Float32Array(N * N), y, x, acc;
+            for (y = 0; y < N; y++) { acc = 0; for (x = -r; x < N + r; x++) { if (x + r < N && x + r >= 0) acc += a[y * N + x + r]; if (x - r - 1 >= 0 && x - r - 1 < N) acc -= a[y * N + x - r - 1]; if (x >= 0 && x < N) t[y * N + x] = acc; } }
+            for (x = 0; x < N; x++) { acc = 0; for (y = -r; y < N + r; y++) { if (y + r < N && y + r >= 0) acc += t[(y + r) * N + x]; if (y - r - 1 >= 0 && y - r - 1 < N) acc -= t[(y - r - 1) * N + x]; if (y >= 0 && y < N) a[y * N + x] = acc; } } }
+        var r = Math.max(4, Math.round(N * 0.012)); for (var k = 0; k < 3; k++) { blur(A, r); blur(W, r); }
+        var out = new Uint8ClampedArray(sh);
+        for (var q = 0; q < N * N; q++) if (hole[q] && W[q] > 1e-3) { var h = ((q * 2654435761) >>> 0) / 4294967296 - 0.5, v = A[q] / W[q] + h * 10; out[q * 4] = out[q * 4 + 1] = out[q * 4 + 2] = v; }
+        var c = document.createElement('canvas'); c.width = c.height = N; c.getContext('2d').putImageData(new ImageData(out, N, N), 0, 0); return c;
+    }
     function moved(d, key, st) {   // mask of moon/owl moved and scaled around the moon centre
         var N = d.N, c = document.createElement('canvas'); c.width = c.height = N; var x = c.getContext('2d', {willReadFrequently: true});
-        x.translate((d.mc[0] + st.mdx) * N, (d.mc[1] + st.mdy) * N); var k = st.ms * (key === 'owl' ? (st.os || 1) : 1); x.scale(k, k); x.translate(-d.mc[0] * N, -d.mc[1] * N);   // the owl has its own size on top (11-06)
-        x.drawImage(d.im[key], 0, 0, N, N);
+        function put(img, k) { x.save(); x.translate((d.mc[0] + st.mdx) * N, (d.mc[1] + st.mdy) * N); x.scale(k, k); x.translate(-d.mc[0] * N, -d.mc[1] * N); x.drawImage(img, 0, 0, N, N); x.restore(); }
+        if (key === 'owl' && (st.os || 1) !== 1) { var o = owlSplit(d); put(o.rest, st.ms); put(o.bird, st.ms * st.os); }   // only the bird takes the owl size
+        else put(d.im[key], st.ms * (key === 'owl' ? (st.os || 1) : 1));
         return x.getImageData(0, 0, N, N).data;
     }
     var ARTCACHE = {}, ARTC = {}, ARTK = [];   // several pictures cached by state, so kept thumbnails don't evict the main one
@@ -410,7 +538,7 @@ details.more summary { cursor: pointer; color: var(--text-secondary); font-size:
     function colsParse(t) { var o = {}; (t || '').split(';').forEach(function (kv) { var a = kv.split('='); if (a.length === 2 && COLOPTS[a[0]]) o[a[0]] = a[1]; }); return o; }
     function colsStr(o) { return Object.keys(o).map(function (k) { return k + '=' + o[k]; }).join(';'); }
     function colsOf(st) { return Object.assign({}, (SAVES[st.save] || {}).cols || {}, colsParse(st.cols)); }
-    var NTP = loadImg('/playground/' + encodeURIComponent(SLUG) + '/layout/extra?n=tree1.png').catch(function () { return null; });
+    var NTP = PLAIN ? Promise.resolve(null) : loadImg('/playground/' + encodeURIComponent(SLUG) + '/layout/extra?n=tree1.png').catch(function () { return null; });
     function newTreeMask(N, st, im) {   // the new tree, foot at (ntx, nty), height nts of the picture
         var c = document.createElement('canvas'); c.width = c.height = N; var x = c.getContext('2d', {willReadFrequently: true});
         var h = st.nts * N, w = h * im.naturalWidth / im.naturalHeight;
@@ -419,13 +547,20 @@ details.more summary { cursor: pointer; color: var(--text-secondary); font-size:
         return x.getImageData(0, 0, N, N).data;
     }
     function artCanvas(st) {   // the picture without text, cached per save + element state
-        var sv = SAVES[st.save], pk = pickFor(st), key = [st.save, pk, st.mdx, st.mdy, st.ms, st.os, st.owl, st.stars, st.starset, st.nt, st.ntf, st.ntx, st.nty, st.nts, st.ntr, st.cols].join('|');
+        var sv = SAVES[st.save], pk = pickFor(st), key = [st.save, pk, st.mdx, st.mdy, st.ms, st.os, st.owl, st.stars, st.starset, st.starplus, st.lw, st.nt, st.ntf, st.ntx, st.nty, st.nts, st.ntr, st.cols].join('|');
         if (ARTC[key]) { ARTCACHE = {key: key, c: ARTC[key]}; return Promise.resolve(ARTC[key]); }
         return Promise.all([load(pk), NTP]).then(function (r0) { var d = r0[0], ntimg = r0[1];
+            if (d.plain) { var pc = document.createElement('canvas'); pc.width = pc.height = d.N; var px2 = pc.getContext('2d'); px2.imageSmoothingQuality = 'high';
+                px2.drawImage(d.im, d.sx, d.sy, d.s, d.s, 0, 0, d.N, d.N); pc._masks = {}; pc._mc = null; pc._key = key;
+                ARTCACHE = {key: key, c: pc}; ARTC[key] = pc; ARTK.push(key); if (ARTK.length > 12) delete ARTC[ARTK.shift()]; return pc; }
             var N = d.N, out = new ImageData(N, N), o = out.data, b = d.base, sh = d.shade, om = d.m.moon;
             var cv = colsOf(st);
             var TE = null; if (st.nt && st.ntr && st.ntr !== 'none') { var er = treePiece(d, st.ntr); if (er) { TE = liftTree(d, er); b = TE.base; sh = TE.shade; } }
             var mm = moved(d, 'moon', st), owm = d.m.owl ? moved(d, 'owl', st) : null, sk = d.m.stars;
+            var msh = null;   // the moon's texture moves and scales with the moon (it stayed at the old size: a circle in a circle, 11-09)
+            if (st.mdx || st.mdy || st.ms !== 1) { if (!d.im._shade) { var shc = document.createElement('canvas'); shc.width = shc.height = N; shc.getContext('2d').putImageData(new ImageData(new Uint8ClampedArray(sh), N, N), 0, 0); d.im._shade = shc; }
+                if ((st.os || 1) !== 1 && d.im.owl && !d.im._shadeNO) d.im._shadeNO = shadeNoOwl(d, sh);   // a smaller owl: no ghost of the big one in the texture
+                msh = moved(d, (st.os || 1) !== 1 && d.im._shadeNO ? '_shadeNO' : '_shade', Object.assign({}, st, {os: 1})); }
             if (!d.omd) {   // the moon's old place: full inside 1.15 r, fading out to 2 r so its soft glow goes too (a disc showed under effects, 11-06)
                 var cxp = d.mc[0] * N, cyp = d.mc[1] * N, R = d.mr * N, tr0 = d.m.trees, st0 = d.m.stars, sr = 0, sg = 0, sb = 0, sn = 0, sv0 = 0;
                 d.omd = new Uint8ClampedArray(N * N * 4);
@@ -452,7 +587,7 @@ details.more summary { cursor: pointer; color: var(--text-secondary); font-size:
                     if ((tr0 && tr0[t7] > 20) || (st0 && st0[t7] > 20) || (d.m.hill && d.m.hill[t7] > 20)) continue; var v7 = Math.max(-3, Math.min(5, d.base[t7] - d.low[t7])); gs += v7 * v7; gn2++; }
                 d.skyN = gn2 ? Math.sqrt(gs / gn2) : 0; }   // the sky's own grain, so the cleared place is not a flat disc that effects pick out
             var mvd = st.mdx || st.mdy || st.ms !== 1;   // the moon left its place: its cut-paper rim must go too
-            var custom = !!st.starset && sk && d.comps.length, smask = null;
+            var custom = !!(st.starset || st.starplus) && sk && d.comps.length, smask = null;
             if (custom) {   // stars moved or hidden one by one
                 smask = new Uint8ClampedArray(N * N * 4);
                 starsParse(st, d.comps.length).forEach(function (a, i) {
@@ -460,6 +595,10 @@ details.more summary { cursor: pointer; color: var(--text-secondary); font-size:
                     d.comps[i].pix.forEach(function (c) { var x = c % N + ox, y = ((c / N) | 0) + oy; if (x < 0 || y < 0 || x >= N || y >= N) return;
                         var t = (y * N + x) * 4; smask[t] = Math.max(smask[t], sk[c * 4]); });
                 });
+                (st.starplus || '').split(';').forEach(function (t) { var v = t.split(','), src = d.comps[+v[2]]; if (v.length !== 3 || !src) return;   // added stars: a copy of star n, moved (Amir 11-09)
+                    var ox = Math.round(+v[0] * N), oy = Math.round(+v[1] * N);
+                    src.pix.forEach(function (c) { var x = c % N + ox, y = ((c / N) | 0) + oy; if (x < 0 || y < 0 || x >= N || y >= N) return;
+                        var q = (y * N + x) * 4; smask[q] = Math.max(smask[q], sk[c * 4]); }); });
             }
             var L = [];
             ELS.forEach(function (e) {
@@ -490,7 +629,8 @@ details.more summary { cursor: pointer; color: var(--text-secondary); font-size:
                     var a = L[j].m[p] / 255; if (!a) continue;
                     if (L[j].k === 'hill') a *= (1 - (mvd && d.omd[p] === 255 ? 255 : om[p]) / 255);   // the hill mask also caught the old moon (moved: its wider place, or a light rim shows)
                     if (L[j].k === 'line' && mvd) { a *= (1 - d.omd[p] / 255); if (!a) continue; }
-                    var f = L[j].s ? s : 1, c = L[j].c;
+                    if (L[j].k === 'line' && st.lw !== undefined && st.lw < 1) { a *= st.lw; if (!a) continue; }   // cut-line strength slider (11-09)
+                    var f = L[j].s ? ((msh && (L[j].k === 'moon' || L[j].k === 'owl')) ? msh[p] / 180 : s) : 1, c = L[j].c;
                     r = r * (1 - a) + c[0] * f * a; g = g * (1 - a) + c[1] * f * a; bl = bl * (1 - a) + c[2] * f * a;
                 }
                 o[p] = r; o[p + 1] = g; o[p + 2] = bl; o[p + 3] = 255;
@@ -506,12 +646,27 @@ details.more summary { cursor: pointer; color: var(--text-secondary); font-size:
                 for (var q3 = 0, p5 = 0; q3 < N * N; q3++, p5 += 4) { od[p5] = od[p5 + 1] = od[p5 + 2] = 0; od[p5 + 3] = inv ? 255 - arr[q3] : arr[q3]; }
                 mc.getContext('2d').putImageData(id, 0, 0); return mc; }
             c._masks = {trees: maskCanvas(mt), moon: maskCanvas(mmo), hill: maskCanvas(mh), notmoon: maskCanvas(mmo, true)};
+            c._mc = [d.mc[0] + (st.mdx || 0), d.mc[1] + (st.mdy || 0)];   // moon centre, for the red moonlight
             c._key = key; ARTCACHE = {key: key, c: c}; ARTC[key] = c; ARTK.push(key);
             if (ARTK.length > 12) delete ARTC[ARTK.shift()];
             return c;
         });
     }
-    function linesOf(n) { return n === 1 ? ['HALF THE NIGHT'] : n === 2 ? ['HALF THE', 'NIGHT'] : ['HALF', 'THE', 'NIGHT']; }
+    // the title in 1, 2 or 3 lines, split between words so the longest line is as short as it can be (System 92);
+    // Half the Night: HALF THE NIGHT / HALF THE + NIGHT / HALF + THE + NIGHT, as before
+    var LINEC = {};
+    function linesOf(n) {
+        if (LINEC[n]) return LINEC[n];
+        var w = TITLE.split(' ').filter(Boolean), best = null;
+        if (n <= 1 || w.length <= 1) return (LINEC[n] = [w.join(' ')]);
+        n = Math.min(n, w.length);
+        (function cut(start, left, acc) {
+            if (left === 1) { var all = acc.concat([w.slice(start).join(' ')]), m = Math.max.apply(null, all.map(function (x) { return x.length; }));
+                if (!best || m < best.m) best = {m: m, l: all}; return; }
+            for (var e = start + 1; e <= w.length - left + 1; e++) cut(e, left - 1, acc.concat([w.slice(start, e).join(' ')]));
+        })(0, n, []);
+        return (LINEC[n] = best.l);
+    }
     // text: returns the box it used (fractions) so dragging and snapping can use it
     function drawText(ctx, S, st) {
         var px = st.size * S, fam = FONTOK[st.font] === false ? 'sans-serif' : '"lf-' + st.font + '"';
@@ -542,9 +697,36 @@ details.more summary { cursor: pointer; color: var(--text-secondary); font-size:
     // Never wait for the effect: draw at once (with the last effect picture of the same look while the new one is made),
     // ask the server only after 300 ms of calm, then redraw when it arrives (Amir 11-06: "heavy and buggy").
     var FXC = {}, FXR = {}, FXLAST = {}, fxTimer = null;
+    // text treatment (Amir's pick 11-09, "2 + shadow"): grain = the text alone through the Xerox look, clipped to the letters,
+    // over the clean text at 45%; shadow = the letters in black, blurred 7 px, offset -7 / +9 (at 1080), 90%. No red edge.
+    var TGR = {}, TGRC = {};
+    function textLayer(ctx, S, st, wait) {
+        if (!st.tgrain && !st.tshadow) return drawText(ctx, S, st);
+        var T = document.createElement('canvas'); T.width = T.height = S; var box = drawText(T.getContext('2d'), S, st), u = S / 1080;
+        if (st.tshadow) { var sh = document.createElement('canvas'); sh.width = sh.height = S; var sx = sh.getContext('2d');
+            sx.drawImage(T, 0, 0); sx.globalCompositeOperation = 'source-in'; sx.fillStyle = '#000'; sx.fillRect(0, 0, S, S);
+            ctx.save(); ctx.filter = 'blur(' + (7 * u) + 'px)'; ctx.globalAlpha = 0.9; ctx.drawImage(sh, -7 * u, 9 * u); ctx.restore(); }
+        if (!st.tgrain) { ctx.drawImage(T, 0, 0); return box; }
+        var key = S + '|' + KEYS.filter(function (k) { return !/^(cols|fx|fxw|fxmix|tree|starset|owl|stars|mdx|mdy|ms|os|line|flip|tshadow)$/.test(k); }).map(function (k) { return st[k]; }).join('|');
+        function put(g) { ctx.save(); ctx.globalAlpha = 0.45; ctx.drawImage(T, 0, 0); ctx.restore(); ctx.drawImage(g, 0, 0); return box; }
+        if (TGR[key]) return put(TGR[key]);
+        var GS = Math.min(S, 1080);   // the grain is made at 1080 at most (the effect route refuses big pictures) and scaled up: same grain as on screen (11-09)
+        if (!TGRC[key]) TGRC[key] = new Promise(function (res) { var b = document.createElement('canvas'); b.width = b.height = GS; var bx = b.getContext('2d');
+                bx.fillStyle = '#000'; bx.fillRect(0, 0, GS, GS); bx.drawImage(T, 0, 0, GS, GS); b.toBlob(res, 'image/jpeg', 0.95); })
+            .then(function (blob) { return fetch('/playground/' + encodeURIComponent(SLUG) + '/layout/fx?look=xerox', {method: 'POST', body: blob}); })
+            .then(function (r) { if (!r.ok) throw new Error('fx'); return r.blob(); })
+            .then(function (b) { return createImageBitmap(b); })
+            .then(function (im) { var g = document.createElement('canvas'); g.width = g.height = S; var gx = g.getContext('2d');
+                gx.drawImage(im, 0, 0, S, S); gx.globalCompositeOperation = 'destination-in'; gx.drawImage(T, 0, 0); TGR[key] = g; return g; })
+            .catch(function () { delete TGRC[key]; return null; });
+        if (wait) return TGRC[key].then(function (g) { if (g) return put(g); ctx.drawImage(T, 0, 0); return box; });
+        TGRC[key].then(function (g) { if (g && ctx.canvas === $('art')) draw(); });   // clean letters now, grain when it arrives
+        ctx.drawImage(T, 0, 0); return box;
+    }
     function fxImage(c, fx) {
         var k = c._key + '|' + fx; if (FXC[k]) return FXC[k];
-        FXC[k] = new Promise(function (res) { c.toBlob(res, 'image/jpeg', 0.9); }).then(function (blob) {
+        FXC[k] = new Promise(function (res) { var src = c; if (c.width > 1080) { src = document.createElement('canvas'); src.width = src.height = 1080; var sx3 = src.getContext('2d'); sx3.imageSmoothingQuality = 'high'; sx3.drawImage(c, 0, 0, 1080, 1080); }
+            src.toBlob(res, 'image/jpeg', 0.9); }).then(function (blob) {
             return fetch('/playground/' + encodeURIComponent(SLUG) + '/layout/fx?look=' + encodeURIComponent(fx), {method: 'POST', body: blob}); })
             .then(function (r) { if (!r.ok) throw new Error('fx'); return r.blob(); })
             .then(function (b) { return loadImg(URL.createObjectURL(b)); })
@@ -557,14 +739,97 @@ details.more summary { cursor: pointer; color: var(--text-secondary); font-size:
         if (st.fxmix !== undefined && st.fxmix !== null) return st.fxmix.split(';').filter(Boolean).map(function (t) { var a = t.split(':'); return {k: a[0], w: Math.max(0, Math.min(100, +a[1] || 0)), t: WHERE[a[2]] ? a[2] : 'all'}; });
         return st.fx ? [{k: st.fx, w: st.fxw || 0, t: 'all'}] : [];
     }
-    var WHERE = {all: 'Whole picture', trees: 'Trees', moon: 'Moon + owl', hill: 'Hill', notmoon: 'All but the moon'};
+    var WHERE = PLAIN ? {all: 'Whole picture'} : {all: 'Whole picture', trees: 'Trees', moon: 'Moon + owl', hill: 'Hill', notmoon: 'All but the moon'};   // parts need layers (System 92)
     function mixStr(m) { return m.slice(0, 5).map(function (e) { return e.k + ':' + Math.round(e.w) + (e.t && e.t !== 'all' ? ':' + e.t : ''); }).join(';'); }
     function fxBusy(on) { var b = $('fxbusy'); if (b) b.hidden = !on; }
+    // red moonlight on the hill, from the geometry (Amir 11-09: "calculate the direction of the moonlight and where it should hit"):
+    // the moon is up and behind the hill, so its light grazes the crest. Per column of the crest: the crest's normal (from its slope)
+    // against the direction to the moon (Lambert), fading fast down the slope towards us and with the distance along the hill from the moon.
+    var MLC = {}, ML = {op: 'soft-light', col: [150, 22, 30], k: 1.6};   // tint, not light: moonlight warms the plum to wine, it doesn't brighten it (11-09; 'screen' made it neon pink)
+    function moonLight(c, amt) {
+        var hm = c._masks && c._masks.hill; if (!hm || !c._mc) return null;
+        var N = hm.width, key = (c._key || '') + '|' + N + '|' + amt + '|' + ML.col.join(',') + '|' + ML.k; if (MLC[key]) return MLC[key];
+        var hd = hm.getContext('2d').getImageData(0, 0, N, N).data, crest = new Float32Array(N), x, y;
+        for (x = 0; x < N; x++) { crest[x] = -1; for (y = Math.round(0.35 * N); y < N; y++) if (hd[(y * N + x) * 4 + 3] > 128) { crest[x] = y; break; } }
+        var sm = new Float32Array(N), R = Math.round(N * 0.015);
+        for (x = 0; x < N; x++) { var w = []; for (var k = -R; k <= R; k++) { var q = crest[x + k]; if (q > 0) w.push(q); } w.sort(function (a1, b1) { return a1 - b1; }); sm[x] = w.length ? w[w.length >> 1] : -1; }
+        var mx = c._mc[0] * N, my = c._mc[1] * N, lam = new Float32Array(N), D = Math.round(N * 0.006);
+        for (x = 0; x < N; x++) { if (sm[x] < 0) continue; var x0 = Math.max(0, x - D), x1 = Math.min(N - 1, x + D); if (sm[x0] < 0 || sm[x1] < 0) continue;
+            var tx = x1 - x0, ty = sm[x1] - sm[x0], tl = Math.hypot(tx, ty), nx = ty / tl, ny = -tx / tl;   // the crest's normal, pointing up
+            var lx = mx - x, ly = my - sm[x], ll = Math.hypot(lx, ly), dot = (nx * lx + ny * ly) / ll;
+            var along = Math.abs(lx) / (0.45 * N);   // further along the hill from the moon = weaker
+            lam[x] = Math.max(0, dot) / (1 + along * along); }
+        var out = new ImageData(N, N), o = out.data, dk = 0.07 * N, dw = 0.28 * N;
+        for (y = 0; y < N; y++) for (x = 0; x < N; x++) { var p = (y * N + x) * 4, a = hd[p + 3]; if (!a || sm[x] < 0 || !lam[x]) continue;
+            var dd = Math.max(0, y - sm[x]);
+            var I = lam[x] * (0.85 * Math.exp(-dd / dk) + 0.25 * Math.exp(-dd / dw));   // a strong graze on the crest + a faint wash down the slope
+            o[p] = ML.col[0]; o[p + 1] = ML.col[1]; o[p + 2] = ML.col[2]; o[p + 3] = Math.min(255, I * amt * ML.k * (a / 255) * 255); }
+        var gl = document.createElement('canvas'); gl.width = gl.height = N; gl.getContext('2d').putImageData(out, 0, 0);
+        return (MLC[key] = gl);
+    }
+    // --- finish stages (System 93, from the Half the Night report: "see it early, decide it late") ---
+    // grain: one film grain over the whole cover; made once at 1080 and scaled, so a 3000 px export shows what the screen showed
+    var GRAIN = null;
+    function grainTile() {
+        if (GRAIN) return GRAIN; var n = 1080, g = document.createElement('canvas'); g.width = g.height = n;
+        var id = new ImageData(n, n), a = id.data, seed = 1013904223;
+        function rnd() { seed = (seed + 0x6D2B79F5) | 0; var t = Math.imul(seed ^ (seed >>> 15), 1 | seed); t = (t + Math.imul(t ^ (t >>> 7), 61 | t)) ^ t; return ((t ^ (t >>> 14)) >>> 0) / 4294967296; }
+        for (var i = 0; i < a.length; i += 4) { var v = 128 + (rnd() + rnd() - 1) * 110; a[i] = a[i + 1] = a[i + 2] = v; a[i + 3] = 255; }
+        g.getContext('2d').putImageData(id, 0, 0); return (GRAIN = g);
+    }
+    function finish(ctx, S, st) {
+        if (st.fcorner > 0) {   // corners: darker and rougher towards the frame's edge
+            ctx.save(); var gr = ctx.createRadialGradient(S / 2, S / 2, S * 0.32, S / 2, S / 2, S * 0.75);
+            gr.addColorStop(0, 'rgba(0,0,0,0)'); gr.addColorStop(1, 'rgba(0,0,0,' + (0.9 * st.fcorner) + ')');
+            ctx.fillStyle = gr; ctx.fillRect(0, 0, S, S);
+            var rough = document.createElement('canvas'); rough.width = rough.height = 1080; var rx = rough.getContext('2d');
+            rx.drawImage(grainTile(), 0, 0); rx.globalCompositeOperation = 'destination-in';
+            var g2 = rx.createRadialGradient(540, 540, 1080 * 0.38, 540, 540, 1080 * 0.75); g2.addColorStop(0, 'rgba(0,0,0,0)'); g2.addColorStop(1, 'rgba(0,0,0,1)');
+            rx.fillStyle = g2; rx.fillRect(0, 0, 1080, 1080);
+            ctx.globalCompositeOperation = 'overlay'; ctx.globalAlpha = 0.7 * st.fcorner; ctx.drawImage(rough, 0, 0, S, S); ctx.restore();
+        }
+        if (st.fgrain > 0) { ctx.save(); ctx.globalCompositeOperation = 'overlay'; ctx.globalAlpha = 0.6 * st.fgrain; ctx.drawImage(grainTile(), 0, 0, S, S); ctx.restore(); }
+    }
+    // rim light: the side of each shape that faces the light point gets a thin edge. Shapes = the element layers when the
+    // release has them (trees + hill), else the dark shapes of the picture against its lighter sky
+    var RIMC = {}, RIMK = [];
+    var RIMCOL = {red: [193, 38, 19], gold: [218, 175, 96], ivory: [226, 214, 188], cream: [222, 205, 178]};
+    function rimLayer(c, st, big) {
+        var M = Math.min(c.width, big ? 1536 : 768), key = [c._key, M, st.rimx, st.rimy, st.rimcol].join('|');
+        if (RIMC[key]) return RIMC[key];
+        var w = document.createElement('canvas'); w.width = w.height = M; var wx = w.getContext('2d', {willReadFrequently: true}), A = new Float32Array(M * M), i;
+        if (c._masks && c._masks.trees && c._masks.hill) {
+            ['trees', 'hill'].forEach(function (k) { wx.clearRect(0, 0, M, M); wx.drawImage(c._masks[k], 0, 0, M, M); var d = wx.getImageData(0, 0, M, M).data;
+                for (i = 0; i < M * M; i++) A[i] = Math.max(A[i], d[i * 4 + 3] / 255); });
+        } else {
+            wx.drawImage(c, 0, 0, M, M); var d2 = wx.getImageData(0, 0, M, M).data;
+            for (i = 0; i < M * M; i++) { var l = (0.299 * d2[i * 4] + 0.587 * d2[i * 4 + 1] + 0.114 * d2[i * 4 + 2]) / 255; A[i] = Math.max(0, Math.min(1, (0.62 - l) / 0.3)); }
+        }
+        var col = RIMCOL[st.rimcol];
+        if (!col) { wx.drawImage(c, 0, 0, M, M); var lx0 = Math.max(0, Math.min(M - 1, Math.round(st.rimx * M))), ly0 = Math.max(0, Math.min(M - 1, Math.round(st.rimy * M)));
+            var pc = wx.getImageData(lx0, ly0, 1, 1).data; col = (0.299 * pc[0] + 0.587 * pc[1] + 0.114 * pc[2]) > 90 ? [pc[0], pc[1], pc[2]] : RIMCOL.ivory; }   // auto: the colour at the light point
+        var B = new Float32Array(A), T = new Float32Array(M * M), r = Math.max(1, Math.round(M * 0.0025));
+        for (var pass = 0; pass < 2; pass++) {   // a small box blur, twice: the edge gets a width
+            for (var y = 0; y < M; y++) { var acc = 0; for (var x = -r; x < M + r; x++) { if (x + r < M) acc += B[y * M + Math.min(M - 1, x + r)]; if (x - r - 1 >= 0) acc -= B[y * M + x - r - 1]; if (x >= 0) T[y * M + x] = acc / (2 * r + 1); } }
+            for (var x2 = 0; x2 < M; x2++) { var ac2 = 0; for (var y2 = -r; y2 < M + r; y2++) { if (y2 + r < M) ac2 += T[Math.min(M - 1, y2 + r) * M + x2]; if (y2 - r - 1 >= 0) ac2 -= T[(y2 - r - 1) * M + x2]; if (y2 >= 0) B[y2 * M + x2] = ac2 / (2 * r + 1); } }
+        }
+        var out = new ImageData(M, M), o = out.data, Lx = st.rimx * M, Ly = st.rimy * M;
+        for (var yy = 1; yy < M - 1; yy++) for (var xx = 1; xx < M - 1; xx++) {
+            var q = yy * M + xx; if (A[q] < 0.35) continue;   // the lit edge sits on the shape itself
+            var gx = B[q + 1] - B[q - 1], gy = B[q + M] - B[q - M], gm = Math.hypot(gx, gy); if (gm < 0.02) continue;
+            var nx = -gx / gm, ny = -gy / gm, dx = Lx - xx, dy = Ly - yy, dl = Math.hypot(dx, dy) || 1, dot = (nx * dx + ny * dy) / dl; if (dot <= 0) continue;
+            var far = dl / M, I = dot * Math.min(1, gm * r * 1.6) / (1 + far * far * 2.5);
+            var p = q * 4; o[p] = col[0]; o[p + 1] = col[1]; o[p + 2] = col[2]; o[p + 3] = Math.min(255, I * 255); }
+        var rc = document.createElement('canvas'); rc.width = rc.height = M; rc.getContext('2d').putImageData(out, 0, 0);
+        RIMC[key] = rc; RIMK.push(key); if (RIMK.length > 6) delete RIMC[RIMK.shift()];
+        return rc;
+    }
     function render(ctx, S, st, wait) {
         return artCanvas(st).then(function (c) {
             var mix = mixOf(st).filter(function (e) { return e.k && e.w > 0; });
             function paint(imgs) {   // each effect takes its share, the picture keeps the rest (shares over 100% are scaled down)
                 var tmp = document.createElement('canvas'); tmp.width = tmp.height = S; var t = tmp.getContext('2d');
+                t.imageSmoothingQuality = 'high';   // big exports (3000 px) enlarge the 1024 px picture: best local resampling, no AI (11-09)
                 var T = imgs ? mix.reduce(function (a, e) { return a + e.w / 100; }, 0) : 0, kk = T > 1 ? 1 / T : 1;
                 var masked = imgs && mix.some(function (e) { return e.t && e.t !== 'all'; });
                 if (!imgs || !mix.length) t.drawImage(c, 0, 0, S, S);
@@ -579,9 +844,16 @@ details.more summary { cursor: pointer; color: var(--text-secondary); font-size:
                 }
                 else { t.globalCompositeOperation = 'lighter'; t.globalAlpha = Math.max(0, 1 - T * kk); t.drawImage(c, 0, 0, S, S);
                     mix.forEach(function (e, i) { t.globalAlpha = e.w / 100 * kk; t.drawImage(imgs[i], 0, 0, S, S); }); }
+                if (st.hglow > 0 && c._masks && c._masks.hill) {   // red moonlight: the moon's red falls on the hill below it (Amir 11-09)
+                    var gl = moonLight(c, st.hglow);
+                    if (gl) { t.save(); t.globalCompositeOperation = ML.op; t.globalAlpha = 1; t.drawImage(gl, 0, 0, S, S); t.restore(); }
+                }
+                if (st.rim > 0) { var rl = rimLayer(c, st, wait); if (rl) { t.save(); t.globalCompositeOperation = 'screen'; t.globalAlpha = st.rim; t.drawImage(rl, 0, 0, S, S); t.restore(); } }
                 ctx.save(); if (st.flip) { ctx.translate(S, 0); ctx.scale(-1, 1); } ctx.drawImage(tmp, 0, 0, S, S); ctx.restore();
                 if (st._notext) return Promise.resolve();   // picture only (the text-blend tests draw the text themselves, 11-07)
-                return drawText(ctx, S, st);
+                var tb = textLayer(ctx, S, st, wait);
+                if (tb && tb.then) return tb.then(function (b2) { finish(ctx, S, st); return b2; });
+                finish(ctx, S, st); return tb;
             }
             if (!mix.length) { if (!wait) fxBusy(false); return paint(null); }
             var ready = mix.map(function (e) { return FXR[c._key + '|' + e.k]; });
@@ -643,6 +915,8 @@ details.more summary { cursor: pointer; color: var(--text-secondary); font-size:
         }
         guidePoints().forEach(function (p) { if (!V.guides.thirds && !V.guides.phi && !V.guides.spiral && !V.guides.centre) return;
             x.fillStyle = 'rgba(255,255,255,.9)'; x.beginPath(); x.arc(p[0] * S, p[1] * S, 6, 0, Math.PI * 2); x.fill(); });
+        if (D.rim > 0 || V.drag === 'light') { var lxp = D.rimx * S, lyp = D.rimy * S; x.save(); x.strokeStyle = 'rgba(255,220,140,.95)'; x.fillStyle = 'rgba(255,220,140,.35)'; x.lineWidth = 3;
+            x.beginPath(); x.arc(lxp, lyp, 16, 0, Math.PI * 2); x.fill(); x.stroke(); for (var ra = 0; ra < 8; ra++) { var an = ra * Math.PI / 4; x.beginPath(); x.moveTo(lxp + Math.cos(an) * 22, lyp + Math.sin(an) * 22); x.lineTo(lxp + Math.cos(an) * 32, lyp + Math.sin(an) * 32); x.stroke(); } x.restore(); }
         if (BOX && V.drag === 'text') { x.strokeStyle = 'rgba(216,195,154,.6)'; x.setLineDash([8, 6]); x.strokeRect(BOX.all[0] * S - 6, BOX.all[1] * S - 6, (BOX.all[2] - BOX.all[0]) * S + 12, (BOX.all[3] - BOX.all[1]) * S + 12); x.setLineDash([]); }
     }
     // main draw
@@ -713,7 +987,7 @@ details.more summary { cursor: pointer; color: var(--text-secondary); font-size:
     fetch('/api/playground/' + encodeURIComponent(SLUG) + '/fonts-hidden').then(function (r) { return r.json(); }).then(function (d) { FHID = d.hidden || []; applyFHid(); }).catch(function () {});
     FONTS.forEach(function (f) {
         var b = document.createElement('button'); b.type = 'button'; b.className = 'fontb'; b.dataset.v = f.k; b.title = f.note || f.label;
-        var sm = document.createElement('span'); sm.className = 's'; sm.textContent = 'HALF THE NIGHT'; sm.style.fontFamily = '"lf-' + f.k + '", sans-serif';
+        var sm = document.createElement('span'); sm.className = 's'; sm.textContent = TITLE; sm.style.fontFamily = '"lf-' + f.k + '", sans-serif';
         var lb = document.createElement('span'); lb.className = 'l'; lb.textContent = f.label + (f.note ? ' · ' + f.note : ''); b.append(sm, lb);
         b.onclick = function () { snapH(); D.font = f.k; persist(); sync(); draw(); };
         addX(b, 't' + f.k);
@@ -786,7 +1060,7 @@ details.more summary { cursor: pointer; color: var(--text-secondary); font-size:
     function at(e) { var r = G.getBoundingClientRect(); return [(e.clientX - r.left) / r.width, (e.clientY - r.top) / r.height]; }
     G.addEventListener('pointerdown', function (e) {
         var p = at(e); snapH();
-        drag = {p: p, x: D.x, y: D.y, mdx: D.mdx, mdy: D.mdy, star: -1, ntx: D.ntx, nty: D.nty};
+        drag = {p: p, x: D.x, y: D.y, mdx: D.mdx, mdy: D.mdy, star: -1, ntx: D.ntx, nty: D.nty, rimx: D.rimx, rimy: D.rimy};
         if (V.drag === 'star') {   // the star nearest to the click
             var u = D.flip ? 1 - p[0] : p[0];
             load(pickFor(D)).then(function (d) { var arr = starsParse(D, d.comps.length), bi = -1, bd = 0.06;
@@ -798,6 +1072,7 @@ details.more summary { cursor: pointer; color: var(--text-secondary); font-size:
     G.addEventListener('pointermove', function (e) {
         if (!drag) return; var p = at(e), dx = p[0] - drag.p[0], dy = p[1] - drag.p[1], fdx = D.flip ? -dx : dx;
         if (V.drag === 'star') { if (drag.star < 0 || !drag.sarr) return; drag.sarr[drag.star][0] = drag.s0[0] + fdx; drag.sarr[drag.star][1] = drag.s0[1] + dy; D.starset = starsStr(drag.sarr); draw(); return; }
+        if (V.drag === 'light') { D.rimx = Math.max(-0.5, Math.min(1.5, drag.rimx + fdx)); D.rimy = Math.max(-0.5, Math.min(1.5, drag.rimy + dy)); if (!D.rim) { D.rim = 0.5; sync(); } draw(); return; }
         if (V.drag === 'newtree') { if (!D.nt) return; D.ntx = drag.ntx + dx; D.nty = drag.nty + dy; draw(); return; }
         if (V.drag === 'moon') { dx = fdx; D.mdx = Math.max(-0.7, Math.min(0.3, drag.mdx + dx)); D.mdy = Math.max(-0.15, Math.min(0.35, drag.mdy + dy)); draw(); return; }
         D.x = drag.x + dx; D.y = drag.y + dy;
@@ -813,20 +1088,23 @@ details.more summary { cursor: pointer; color: var(--text-secondary); font-size:
     G.addEventListener('pointerup', endDrag); G.addEventListener('pointercancel', endDrag);
     function sync() {
         function on(id, v) { Array.prototype.forEach.call($(id).querySelectorAll('[data-v]'), function (b) { b.classList.toggle('on', String(b.dataset.v) === String(v)); }); }
-        on('nfonts', D.nfont); on('ncolors', D.ncolor); 
+        on('nfonts', D.nfont); on('ncolors', D.ncolor); $('tgrain').checked = !!D.tgrain; $('tshadow').checked = !!D.tshadow;
+        
+        [['fgrain', 'fgrain'], ['fcorner', 'fcorner'], ['rim', 'rim']].forEach(function (q) { $(q[0]).value = D[q[1]] || 0; $(q[0] + 'n').textContent = Math.round((D[q[1]] || 0) * 100) + '%'; });
+        on('rimcols', D.rimcol || 'auto'); $('rimcols').querySelectorAll('.chip').forEach(function (b) { b.classList.toggle('on', (D.rimcol || 'auto') === b.dataset.v); });
         on('lines', D.lines); on('align', D.align); on('npos', D.npos); on('fonts', D.font); on('fonts2', D.font); on('colors', D.color); on('saves', D.save); on('dragwhat', V.drag);
         Array.prototype.forEach.call($('guidesel').querySelectorAll('button'), function (b) { b.classList.toggle('on', !!V.guides[b.dataset.v]); });
         [['gsize', 'size'], ['size', 'size'], ['lead', 'lead'], ['track', 'track'], ['nsize', 'nsize'], ['ms', 'ms'], ['ntrack', 'ntrack'], ['nts', 'nts'], ['os', 'os']].forEach(function (q) { $(q[0]).value = D[q[1]]; $(q[0] + 'n').textContent = pct(D[q[1]]); });
-        $('name').checked = !!D.name; on('ntr', D.nt ? (D.ntr || 'none') : 'none'); $('cutline').checked = lineOf(D) > 0; $('ntf').checked = !!D.ntf; $('owl').checked = !!D.owl; $('stars').checked = !!D.stars; $('magnet').checked = !!V.magnet;
+        $('name').checked = !!D.name; on('ntr', D.nt ? (D.ntr || 'none') : 'none'); $('cutline').checked = lineOf(D) > 0; var lwv = D.lw === undefined ? 1 : D.lw; $('lw').value = lwv; $('lwn').textContent = Math.round(lwv * 100) + '%'; $('hglow').value = D.hglow || 0; $('hglown').textContent = Math.round((D.hglow || 0) * 100) + '%'; $('ntf').checked = !!D.ntf; $('owl').checked = !!D.owl; $('stars').checked = !!D.stars; $('magnet').checked = !!V.magnet;
         markKept();
     }
     // keep
     var KEPT = [];
     var KEYS = ['save', 'lines', 'x', 'y', 'size', 'lead', 'track', 'nsize', 'mdx', 'mdy', 'ms', 'font', 'align', 'color', 'npos', 'name', 'owl', 'stars',
-                'line', 'ntrack', 'nfont', 'ncolor', 'tree', 'starset', 'flip', 'nt', 'ntf', 'ntx', 'nty', 'nts', 'ntr', 'cols', 'fx', 'fxw', 'os', 'fxmix'];
+                'line', 'ntrack', 'nfont', 'ncolor', 'tree', 'starset', 'flip', 'nt', 'ntf', 'ntx', 'nty', 'nts', 'ntr', 'cols', 'fx', 'fxw', 'os', 'fxmix', 'tgrain', 'tshadow', 'starplus', 'lw', 'hglow', 'fgrain', 'fcorner', 'rim', 'rimx', 'rimy', 'rimcol'];
     function item(st) { var o = {}; KEYS.forEach(function (k) { o[k] = typeof st[k] === 'number' && k !== 'save' && k !== 'lines' && k !== 'line' ? Math.round(st[k] * 10000) / 10000 : st[k]; });
         o.tree = treeOf(st); o.line = lineOf(st); o.flip = !!st.flip; o.starset = st.starset || ''; o.nt = !!st.nt; o.ntf = !!st.ntf; o.ntr = st.nt ? (st.ntr || 'none') : 'none'; o.cols = st.cols || ''; var mx = mixOf(st); o.fxmix = mixStr(mx); o.fx = mx.length ? mx[0].k : ''; o.fxw = mx.length ? Math.round(mx[0].w) : 0; return o; }
-    function same(a, b) { return KEYS.every(function (k) { return a[k] === b[k]; }); }
+    function same(a, b) { return KEYS.every(function (k) { return a[k] === b[k] || ((k === 'tgrain' || k === 'tshadow' || k === 'starplus') && !a[k] === !b[k]) || (k === 'lw' && (a[k] === undefined ? 1 : a[k]) === (b[k] === undefined ? 1 : b[k])) || (k === 'hglow' && (a[k] || 0) === (b[k] || 0)) || (FIN0[k] !== undefined && (a[k] === undefined ? FIN0[k] : a[k]) === (b[k] === undefined ? FIN0[k] : b[k])); }); }   // older keeps have no tgrain/tshadow
     function markKept() { var k = KEPT.some(function (x) { return same(x, item(D)); }); $('keep').textContent = k ? '★ Kept' : '☆ Keep'; }
     function renderKept() {
         var box = $('kept'); box.innerHTML = '';
@@ -834,19 +1112,52 @@ details.more summary { cursor: pointer; color: var(--text-secondary); font-size:
         KEPT.forEach(function (k, i) {
             var d = document.createElement('div'); d.className = 'k'; d.title = 'Load this layout';
             var c = document.createElement('canvas'); c.width = c.height = 300; d.appendChild(c);
-            var t = document.createElement('div'); t.textContent = (i + 1) + '. Save ' + (k.save + 1) + ' · ' + k.font + ' · ' + (k.saved || ''); d.appendChild(t);
+            var t = document.createElement('div'); t.textContent = '#' + k.id + ' · Save ' + (k.save + 1) + ' · ' + k.font + ' · ' + (k.saved || ''); d.appendChild(t);
             d.onclick = function () { snapH(); D = fromKept(k); persist(); sync(); buildStars(); buildCols(); buildFx(); draw(); };
             box.appendChild(d);
             render(c.getContext('2d'), 300, fromKept(k), true).catch(function () {});
         });
     }
-    window.layoutSnap = {textOnly: function (ctx, S, st) { return drawText(ctx, S, st); }, masks: function (st) { return artCanvas(st).then(function (c) { return c._masks; }); }, kept: function () { return KEPT; }, now: function () { return D; }, item: item, colsFx: function (cols) { snapH(); D.cols = cols; setMix([]); persist(); sync(); buildStars(); buildCols(); buildFx(); draw(); }, starsUnderText: function (st) { return load(pickFor(st)).then(function (d) { var arr = starsParse(st, d.comps.length);   // stars hidden behind the title or the name (Amir 11-06: the star behind the F)
+    window.layoutSnap = {ml: ML, textOnly: function (ctx, S, st) { return drawText(ctx, S, st); }, masks: function (st) { return artCanvas(st).then(function (c) { return c._masks; }); }, kept: function () { return KEPT; }, now: function () { return D; }, item: item, colsFx: function (cols) { snapH(); D.cols = cols; setMix([]); persist(); sync(); buildStars(); buildCols(); buildFx(); draw(); }, starsUnderText: function (st) { return load(pickFor(st)).then(function (d) { var arr = starsParse(st, d.comps.length);   // stars hidden behind the title or the name (Amir 11-06: the star behind the F)
         d.comps.forEach(function (c, i) { var cx = c.cx + arr[i][0], cy = c.cy + arr[i][1]; if (cx > st.x - 0.04 && cx < st.x + 2.75 * st.size + 0.04 && cy > st.y - 0.06 && cy < st.y + 3.4 * st.size + 0.03) arr[i][2] = 0; }); return starsStr(arr); }); }, start: function (i) { snapH(); D = fromKept(KEPT[i]); setMix([]); persist(); sync(); buildStars(); buildCols(); buildFx(); draw(); }, render: render, fromKept: fromKept, label: keptLabel};   // used to save keeps as pictures for a side page
-    function loadKept() { return fetch('/api/playground/' + encodeURIComponent(SLUG) + '/layouts-kept').then(function (r) { return r.json(); }).then(function (d) { KEPT = d.kept || []; renderKept(); markKept(); abFromUrl(); }); }
+    function loadKept() { return fetch('/api/playground/' + encodeURIComponent(SLUG) + '/layouts-kept').then(function (r) { return r.json(); }).then(function (d) { KEPT = d.kept || []; return libFontsFor(KEPT.map(fromKept)).then(function () { renderKept(); markKept(); abFromUrl(); snapsButton(); }); }); }
     $('keep').onclick = function () {
         fetch('/api/playground/' + encodeURIComponent(SLUG) + '/layouts-kept', {method: 'POST', headers: {'Content-Type': 'application/json'}, body: JSON.stringify(item(D))})
-            .then(function (r) { return r.json(); }).then(function (d) { if (d.kept) { KEPT = d.kept; renderKept(); markKept(); } else alert(d.error || 'Could not keep'); });
+            .then(function (r) { return r.json(); }).then(function (d) { if (d.kept) { var had = KEPT.map(function (k) { return k.id; }); KEPT = d.kept; renderKept(); markKept();
+                KEPT.forEach(function (k) { if (had.indexOf(k.id) < 0) saveKeepSnap(k); }); } else alert(d.error || 'Could not keep'); });
     };
+    // System 97: every keep gets its picture under its fixed id (id-0051.jpg), so the picks page follows the editor
+    function saveKeepSnap(k) {
+        var c = document.createElement('canvas'); c.width = c.height = 1080;
+        return render(c.getContext('2d'), 1080, fromKept(k), true).then(function () { return new Promise(function (res) { c.toBlob(res, 'image/jpeg', 0.9); }); })
+            .then(function (b) { return fetch('/playground/' + encodeURIComponent(SLUG) + '/layout/keep-snap?id=' + k.id, {method: 'POST', body: b}); })
+            .then(function (r) { return r.ok; }).catch(function () { return false; });
+    }
+    function snapsMissing() { return fetch('/api/playground/' + encodeURIComponent(SLUG) + '/picks').then(function (r) { return r.json(); })
+        .then(function (d) { return (d.kept || []).filter(function (k) { return !k.v; }).map(function (k) { return k.id; }); }); }
+    function snapsButton() { snapsMissing().then(function (ids) { var b = $('snapsfill'); b.hidden = !ids.length; b.textContent = '📸 Pictures for the picks page (' + ids.length + ' missing)'; b.dataset.ids = ids.join(','); }).catch(function () {}); }
+    $('snapsfill').onclick = function () {
+        var b = this, ids = (b.dataset.ids || '').split(',').filter(Boolean).map(Number), i = 0; b.disabled = true;
+        (function next() { if (i >= ids.length) { b.disabled = false; snapsButton(); return; }
+            var k = KEPT.find(function (x) { return x.id === ids[i]; }); i++; b.textContent = '📸 ' + i + ' / ' + ids.length + '…';
+            (k ? saveKeepSnap(k) : Promise.resolve()).then(next); })();
+    };
+    // Export: the picture as it is now, square at 3000 or 4000 px, saved in the release's layout folder; then the platform sizes
+    Array.prototype.forEach.call($('exportrow').querySelectorAll('button[data-px]'), function (b) {
+        b.onclick = function () {
+            var px = +b.dataset.px, c = document.createElement('canvas'), info = $('exinfo'), kk = KEPT.find(function (x) { return same(x, item(D)); });
+            c.width = c.height = px; info.textContent = '⏳ drawing ' + px + ' px…';
+            Array.prototype.forEach.call($('exportrow').querySelectorAll('button'), function (x) { x.disabled = true; });
+            render(c.getContext('2d'), px, Object.assign({}, D), true).then(function () { return new Promise(function (res) { c.toBlob(res, 'image/jpeg', 0.97); }); })
+                .then(function (blob) { info.textContent = '⏳ saving' + ($('exsizes').checked ? ' + making the platform sizes…' : '…');
+                    return fetch('/playground/' + encodeURIComponent(SLUG) + '/layout/export?px=' + px + (kk ? '&id=' + kk.id : '') + ($('exsizes').checked ? '&sizes=1' : ''), {method: 'POST', body: blob}); })
+                .then(function (r) { return r.json(); })
+                .then(function (d) { if (d.error) { info.textContent = '❌ ' + d.error; return; }
+                    var rz = d.resized; info.textContent = '✅ ' + d.file + (rz ? (rz.ok ? ' · ' + rz.files.length + ' platform files in resized/' : ' · ⚠️ sizes failed: ' + rz.tail) : ''); })
+                .catch(function (e) { info.textContent = '❌ export failed'; })
+                .then(function () { Array.prototype.forEach.call($('exportrow').querySelectorAll('button'), function (x) { x.disabled = false; }); });
+        };
+    });
     // colour saves: a column beside the picture, as tall as the picture
     function sizeSaves() { if (!$('stage') || !$('saves')) return; sizeSaves2(); }
     function sizeSaves2() {   // the saves fill the free space beside the picture: the column count that gives the biggest thumbnails
@@ -860,7 +1171,8 @@ details.more summary { cursor: pointer; color: var(--text-secondary); font-size:
         Array.prototype.forEach.call(document.querySelectorAll('.tabp'), function (p2) { p2.classList.toggle('on', p2.dataset.t === t); });
         }
     Array.prototype.forEach.call(document.querySelectorAll('#tabs button'), function (b) { b.onclick = function () { showTab(b.dataset.t); }; });
-    showTab(V.tab && V.tab !== 'grid' ? V.tab : 'title');
+    if (PLAIN) $('tabs').querySelector('[data-t="cols"]').textContent = '✨ Effect';
+    showTab(V.tab && V.tab !== 'grid' && !(PLAIN && V.tab === 'els') ? V.tab : 'title');
     function buildCols() {
         var box = $('colrows'); box.innerHTML = ''; var cur = colsOf(D);
         Object.keys(COLOPTS).forEach(function (e) {
@@ -980,11 +1292,11 @@ details.more summary { cursor: pointer; color: var(--text-secondary); font-size:
     var AB = Object.assign({a: 0, b: 1, mode: 'side', show: 0}, V.ab || {});
     var ABP = Array.prototype.slice.call(document.querySelectorAll('#abpanes .ab-pane'));
     function keptLabel(k, i) { var mx = mixOf(fromKept(k)).filter(function (e) { return e.w > 0; });
-        return '#' + (i + 1) + ' · ' + (k.saved || '') + ' · ' + (mx.length ? mx.map(function (e) { var l = LOOKS.find(function (x) { return x.key === e.k; }); return (l ? l.name : e.k) + ' ' + Math.round(e.w) + '%'; }).join(' + ') : 'no effect'); }
+        return '#' + k.id + ' · ' + (k.saved || '') + ' · ' + (mx.length ? mx.map(function (e) { var l = LOOKS.find(function (x) { return x.key === e.k; }); return (l ? l.name : e.k) + ' ' + Math.round(e.w) + '%'; }).join(' + ') : 'no effect'); }
     function abDraw(i) {
         if (!KEPT.length) return; var n = KEPT.length, idx = Math.max(0, Math.min(n - 1, i ? AB.b : AB.a)), p = ABP[i];
         p.querySelector('.lab').textContent = keptLabel(KEPT[idx], idx);
-        var r = p.querySelector('input'); r.max = n - 1; r.value = idx; p.querySelector('.n').textContent = (idx + 1) + ' / ' + n;
+        var r = p.querySelector('input'); r.max = n - 1; r.value = idx; p.querySelector('.n').textContent = '#' + KEPT[idx].id + ' · ' + (idx + 1) + ' / ' + n;
         render(p.querySelector('canvas').getContext('2d'), 1080, fromKept(KEPT[idx]), true).catch(function () {});
     }
     function abSync() {
@@ -1009,9 +1321,10 @@ details.more summary { cursor: pointer; color: var(--text-secondary); font-size:
         $('ab').hidden = false; $('stagewrap').hidden = true; document.querySelector('.lay-main').classList.add('ab-on'); abSync(); abDraw(0); abDraw(1); };
     function abClose() { $('ab').hidden = true; $('stagewrap').hidden = false; document.querySelector('.lay-main').classList.remove('ab-on'); draw(); }
     $('abclose').onclick = abClose;
-    function abFromUrl() {   // ?ab=9,17 opens A / B straight on those two keeps (numbers as shown, from 1)
+    function abFromUrl() {   // ?ab=9,17 opens A / B straight on those two keeps (their fixed ids)
         var m = /[?&]ab=(\d+),(\d+)/.exec(location.search); if (!m || KEPT.length < 2) return;
-        AB.a = Math.max(0, Math.min(KEPT.length - 1, +m[1] - 1)); AB.b = Math.max(0, Math.min(KEPT.length - 1, +m[2] - 1)); AB.mode = 'side';
+        var ia = KEPT.findIndex(function (k) { return k.id === +m[1]; }), ib = KEPT.findIndex(function (k) { return k.id === +m[2]; });   // numbers = fixed keep ids (System 97)
+        if (ia < 0 || ib < 0) return; AB.a = ia; AB.b = ib; AB.mode = 'side';
         $('abopen').click();
     }
     document.addEventListener('keydown', function (e) {
@@ -1077,7 +1390,7 @@ details.more summary { cursor: pointer; color: var(--text-secondary); font-size:
             r.m.forEach(function (mm, mi) {
                 var box = document.createElement('div'); box.className = 'tmatch' + (ri === T.cur && mi === r.w.length && !done ? ' now' : '');
                 mm.forEach(function (id) { var t = document.createElement('div'); t.className = 't' + (mi < r.w.length ? (r.w[mi] === id ? ' win' : ' lose') : '');
-                    t.appendChild(tThumb(id)); var l = document.createElement('div'); l.textContent = '#' + (id + 1); t.appendChild(l); box.appendChild(t); });
+                    t.appendChild(tThumb(id)); var l = document.createElement('div'); l.textContent = '#' + KEPT[id].id; t.appendChild(l); box.appendChild(t); });
                 col.appendChild(box);
             });
             b.appendChild(col);
@@ -1110,7 +1423,7 @@ details.more summary { cursor: pointer; color: var(--text-secondary); font-size:
             var g = document.createElement('div'); g.className = 'g';
             var c = document.createElement('canvas'); c.width = c.height = 540; g.appendChild(c);
             var st = fromKept(k); if (GALMODE === 'this') { st.fxmix = cur; st.fx = ''; }
-            var t = document.createElement('div'); t.textContent = '#' + (i + 1) + ' · ' + (k.saved || '').slice(11); g.appendChild(t);
+            var t = document.createElement('div'); t.textContent = '#' + k.id + ' · ' + (k.saved || '').slice(11); g.appendChild(t);
             g.onclick = function () { snapH(); D = st; persist(); sync(); buildStars(); buildCols(); buildFx(); galClose(); };
             box.appendChild(g);
             render(c.getContext('2d'), 540, st, true).catch(function () {});
@@ -1124,10 +1437,107 @@ details.more summary { cursor: pointer; color: var(--text-secondary); font-size:
     document.addEventListener('keydown', function (e) { if (!$('gal').hidden && e.key === 'Escape') galClose(); });
     $('fxall').checked = !!V.fxall;
     $('fxall').onchange = function () { V.fxall = this.checked; persist(); fxList(); buildFx(); };
+    $('hglow').oninput = function () { D.hglow = +this.value; $('hglown').textContent = Math.round(D.hglow * 100) + '%'; persist(); draw(); };
+    $('hglow').onchange = function () { markKept(); };
+    $('hglow').onpointerdown = function () { snapH(); };
+    $('lw').oninput = function () { D.lw = +this.value; $('lwn').textContent = Math.round(D.lw * 100) + '%'; persist(); draw(); };
+    $('lw').onchange = function () { markKept(); };
+    $('lw').onpointerdown = function () { snapH(); };
     $('cutline').onchange = function () { snapH(); D.line = this.checked ? -1 : 0; persist(); buildStars(); draw(); };   // off = the save's picture without the cut-paper line
     $('showf').onchange = function () { SHOWF = this.checked; applyFHid(); };
+    ['fgrain', 'fcorner', 'rim'].forEach(function (id) {
+        $(id).onpointerdown = function () { snapH(); };
+        $(id).oninput = function () { D[id] = +this.value; $(id + 'n').textContent = Math.round(D[id] * 100) + '%'; persist(); draw(); };
+        $(id).onchange = function () { markKept(); };
+    });
+    [['auto', '🎯 from the light'], ['red', ''], ['gold', ''], ['ivory', ''], ['cream', '']].forEach(function (rc) {
+        var b = document.createElement('button'); b.type = 'button'; b.dataset.v = rc[0];
+        if (rc[1]) { b.className = 'chip'; b.textContent = rc[1]; } else { b.className = 'sw'; b.title = rc[0]; b.style.background = 'rgb(' + RIMCOL[rc[0]].join(',') + ')'; }
+        b.onclick = function () { snapH(); D.rimcol = rc[0]; if (!D.rim) D.rim = 0.5; persist(); sync(); draw(); }; $('rimcols').appendChild(b);
+    });
+    $('rimdrag').onclick = function () { V.drag = 'light'; if (!D.rim) { snapH(); D.rim = 0.5; } persist(); sync(); draw(); };
+    $('rimmoon').onclick = function () { artCanvas(D).then(function (c) { if (!c._mc) return; snapH(); D.rimx = c._mc[0]; D.rimy = c._mc[1]; if (!D.rim) D.rim = 0.5; persist(); sync(); draw(); }); };
+    ['tgrain', 'tshadow'].forEach(function (id) { $(id).onchange = function () { snapH(); D[id] = this.checked; persist(); draw(); markKept(); }; });
+    // --- studio drawer (System 94): one search + one tag list over Archive, Effects, Fonts, Imagine -------------
+    var DRW = {lib: V.dlib || 'effect', q: '', tags: (V.dtags || []).slice(), items: null}, LIBF = {};
+    function ensureLibFont(k) {   // a library font picked in the drawer (key 'l...'): loaded on demand, for the title and the name
+        if (!k || FONTOK[k] !== undefined || !LIBF[k]) return Promise.resolve();
+        return Promise.all([new FontFace('lf-' + k, LIBF[k]).load().then(function (x) { document.fonts.add(x); FONTOK[k] = true; }),
+            new FontFace('ln-' + k, LIBF[k]).load().then(function (x) { document.fonts.add(x); FONTOK['n' + k] = true; })]).catch(function () { FONTOK[k] = false; });
+    }
+    function drawerData() {
+        if (DRW.items) return Promise.resolve(DRW.items);
+        return fetch('/api/playground/' + encodeURIComponent(SLUG) + '/drawer').then(function (r) { return r.json(); }).then(function (d) {
+            DRW.items = d.items || []; DRW.alltags = d.tags || [];
+            DRW.items.forEach(function (it) { if (it.lib === 'font' && it.key) LIBF[it.key] = it.src; });
+            return DRW.items; });
+    }
+    function libFontsFor(list) { return Promise.all(list.map(function (st) { return Promise.all([ensureLibFont(st.font), ensureLibFont(st.nfont)]); })); }
+    function dMatch(it) {
+        if (DRW.tags.some(function (t) { return it.tags.indexOf(t) < 0; })) return false;
+        if (!DRW.q) return true; var q = DRW.q.toLowerCase();
+        return (it.name + ' ' + (it.note || '') + ' ' + it.tags.join(' ')).toLowerCase().indexOf(q) >= 0;
+    }
+    function dPersist() { V.dlib = DRW.lib; V.dtags = DRW.tags; persist(); }
+    function drawerRender() {
+        var all = DRW.items || [], hits = all.filter(dMatch), here = hits.filter(function (it) { return it.lib === DRW.lib; });
+        Array.prototype.forEach.call($('dtabs').querySelectorAll('button'), function (b) {
+            var n = hits.filter(function (it) { return it.lib === b.dataset.l; }).length;
+            b.classList.toggle('on', b.dataset.l === DRW.lib); b.textContent = b.textContent.replace(/ \(\d+\)$/, '') + ' (' + n + ')'; });
+        $('dcount').textContent = hits.length + ' found';
+        // tags: the ones on, then the rest by how often they appear here
+        var cnt = {}; all.filter(function (it) { return it.lib === DRW.lib; }).forEach(function (it) { it.tags.forEach(function (t) { cnt[t] = (cnt[t] || 0) + 1; }); });
+        var ch = $('dchips'); ch.innerHTML = '';
+        (DRW.alltags || []).map(function (t) { return t.id; }).filter(function (t) { return cnt[t] || DRW.tags.indexOf(t) >= 0; })
+            .sort(function (a, b) { return (DRW.tags.indexOf(b) >= 0) - (DRW.tags.indexOf(a) >= 0) || (cnt[b] || 0) - (cnt[a] || 0); })
+            .forEach(function (t) { var b = document.createElement('button'); b.type = 'button'; b.className = DRW.tags.indexOf(t) >= 0 ? 'on' : '';
+                var m = (DRW.alltags.find(function (x) { return x.id === t; }) || {}).means || ''; b.title = m; b.textContent = t;
+                var i = document.createElement('i'); i.textContent = cnt[t] || 0; b.appendChild(i);
+                b.onclick = function () { var k = DRW.tags.indexOf(t); if (k >= 0) DRW.tags.splice(k, 1); else DRW.tags.push(t); dPersist(); drawerRender(); }; ch.appendChild(b); });
+        var g = $('dgrid'); g.innerHTML = '';
+        if (!here.length) { g.innerHTML = '<div class="sub">Nothing here for this search. Take a tag off, or look in another tab.</div>'; return; }
+        here.slice(0, 120).forEach(function (it) {
+            var c = document.createElement('div'); c.className = 'dcard';
+            if (it.lib === 'font') { var f = document.createElement('div'); f.className = 'dfont'; f.textContent = TITLE; c.appendChild(f);
+                if (it.key) ensureLibFont(it.key).then(function () { if (FONTOK[it.key]) f.style.fontFamily = '"lf-' + it.key + '", sans-serif'; }); }
+            else if (it.thumb) { var im = document.createElement('img'); im.className = 'dth'; im.loading = 'lazy'; im.src = it.thumb; im.alt = it.name; c.appendChild(im); }
+            else { var e = document.createElement('div'); e.className = 'dfont'; e.style.fontSize = '13px'; e.textContent = 'no example yet'; c.appendChild(e); }
+            var bd = document.createElement('div'); bd.className = 'db';
+            var nm = document.createElement('b'); nm.textContent = it.name; bd.appendChild(nm);
+            if (it.note) { var no = document.createElement('span'); no.className = 'dn' + (it.lib === 'font' && !it.public_ok ? ' trial' : ''); no.textContent = it.lib === 'font' && !it.public_ok ? it.note + ': not for the release' : it.note; bd.appendChild(no); }
+            if (it.tags.length) { var tg = document.createElement('span'); tg.className = 'dt'; tg.textContent = it.tags.join(' · '); bd.appendChild(tg); }
+            var da = document.createElement('div'); da.className = 'da';
+            function act(label, fn, title) { var b = document.createElement('button'); b.type = 'button'; b.textContent = label; if (title) b.title = title; b.onclick = fn; da.appendChild(b); return b; }
+            if (it.lib === 'effect' && it.look) act('➕ On the cover', function () { var m = mixOf(D); if (m.some(function (x) { return x.k === it.look; })) { this.textContent = '✓ already on'; return; }
+                if (m.length >= 5) { this.textContent = '5 effects already'; return; } snapH(); m.push({k: it.look, w: 25}); setMix(m); buildFx(); draw(); this.textContent = '✓ added at 25%'; }, 'Adds this effect to your mix at 25%');
+            else if (it.lib === 'effect') { var mk = document.createElement('span'); mk.className = 'dn'; mk.textContent = it.make === 'ai' ? 'AI edit: not a page effect' : it.make === 'lightroom' ? 'Lightroom recipe' : 'not a page effect'; bd.appendChild(mk); }
+            if (it.lib === 'font') { act('Title', function () { snapH(); ensureLibFont(it.key).then(function () { D.font = it.key; persist(); sync(); draw(); }); });
+                act('Name', function () { snapH(); ensureLibFont(it.key).then(function () { D.nfont = it.key; persist(); sync(); draw(); }); }); }
+            if (it.lib === 'archive' || it.lib === 'imagine') act('📌 Pin', function () { var pins = V.pins || []; if (!pins.some(function (p) { return p.lib === it.lib && p.id === it.id; })) pins.push({lib: it.lib, id: it.id, name: it.name, thumb: it.thumb, open: it.open}); V.pins = pins.slice(-6); persist(); renderPins(); this.textContent = '📌 pinned'; }, 'Pins it beside the picture to look at');
+            var op = document.createElement('a'); op.href = it.open; op.target = '_blank'; op.rel = 'noopener'; op.textContent = '↗'; op.title = 'Open its own page'; da.appendChild(op);
+            bd.appendChild(da); c.appendChild(bd); g.appendChild(c);
+        });
+    }
+    function renderPins() {
+        var box = $('pins'); box.innerHTML = '';
+        (V.pins || []).forEach(function (p, i) {
+            var d = document.createElement('div'); d.className = 'pin';
+            if (p.thumb) { var im = document.createElement('img'); im.src = p.thumb; im.alt = p.name; im.title = 'Bigger / smaller'; im.onclick = function () { d.classList.toggle('big'); }; d.appendChild(im); }
+            var t = document.createElement('span'); t.textContent = p.name; d.appendChild(t);
+            var x = document.createElement('button'); x.type = 'button'; x.textContent = '✕'; x.title = 'Unpin'; x.onclick = function () { V.pins.splice(i, 1); persist(); renderPins(); }; d.appendChild(x);
+            box.appendChild(d); });
+    }
+    function drawerOpen() { $('drawer').hidden = false; drawerData().then(drawerRender); setTimeout(function () { $('dq').focus(); }, 50); }
+    function drawerClose() { $('drawer').hidden = true; }
+    $('draweropen').onclick = function () { if ($('drawer').hidden) drawerOpen(); else drawerClose(); };
+    $('drawerclose').onclick = drawerClose;
+    Array.prototype.forEach.call($('dtabs').querySelectorAll('button'), function (b) { b.onclick = function () { DRW.lib = b.dataset.l; dPersist(); drawerRender(); }; });
+    var dqT = null; $('dq').addEventListener('input', function () { var v = this.value; clearTimeout(dqT); dqT = setTimeout(function () { DRW.q = v.trim(); drawerRender(); }, 150); });
+    document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && !$('drawer').hidden) drawerClose(); });
+    renderPins();
     sync();
-    Promise.all(fontLoads).then(function () { draw(); loadKept(); buildStars(); buildCols(); buildFx(); });
+    Promise.all(fontLoads).then(function () { return drawerData().then(function () { return libFontsFor([D]); }).catch(function () {}); })
+        .then(function () { draw(); loadKept(); buildStars(); buildCols(); buildFx(); });
 })();
 </script>
 {% endblock %}

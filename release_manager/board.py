@@ -157,6 +157,15 @@ def build_view(data: dict) -> dict:
             unblocks.setdefault(dep, []).append(t["id"])
 
     cards = [_card(t, by_id, unblocks) for t in tickets]
+    # How Amir reads a ticket: "<emoji> <Area> <number>" (root CLAUDE.md), never the stored id;
+    # dependencies too. A ticket without area/area_no falls back to its id.
+    from release_manager.tickets import area_label
+    areas = data.get("areas") or {}
+    shown = {t["id"]: area_label(t, areas) for t in tickets}
+    for c in cards:
+        c["shown_as"] = shown.get(c["id"], c["id"])
+        c["needs_shown"] = [shown.get(d, d) for d in c["needs"]]
+        c["unblocks_shown"] = [shown.get(d, d) for d in c["unblocks"]]
     counts = {s: 0 for s in STATUSES}
     for c in cards:
         counts[c["status"]] += 1

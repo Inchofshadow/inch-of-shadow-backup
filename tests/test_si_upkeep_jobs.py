@@ -49,8 +49,9 @@ def _lists(fol, fwg, complete=True, pf=None, pg=None):
 def test_usable_refuses_short_or_incomplete_lists():
     assert ff.usable(_lists(["a"], ["b"]))[0]
     assert not ff.usable(_lists(["a"], ["b"], complete=False))[0]
-    assert not ff.usable(_lists(["a"] * 90, ["b"], pf=100))[0]      # 90% < 97%
-    assert ff.usable(_lists(["a"] * 98, ["b"], pf=100))[0]
+    assert not ff.usable(_lists([f"a{i}" for i in range(90)], ["b"], pf=100))[0]      # 90% < 97%
+    assert ff.usable(_lists([f"a{i}" for i in range(98)], ["b"], pf=100))[0]
+    assert not ff.usable(_lists(["a"] * 98, ["b"], pf=100))[0]      # duplicates are one account (11-12)
 
 
 def test_apply_sets_flags_keeps_dates_skips_no_handle():

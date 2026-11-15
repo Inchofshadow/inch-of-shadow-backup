@@ -6,7 +6,11 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <title>{% block title %}Release Manager{% endblock %} — Inch of Shadow</title>
     <link rel="icon" type="image/png" href="{{ url_for('favicon') }}">
-    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}?v=88">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}?v=104">
+    <script>
+    /* System 99: the sidebar's open/closed choice, per browser; set before the first paint so a closed sidebar never flashes open */
+    try { if (localStorage.getItem('rm-sidebar') === 'closed') document.documentElement.classList.add('sb-closed'); } catch (e) {}
+    </script>
     {% if theme_overrides %}
     <style>
         :root {
@@ -26,6 +30,12 @@
     <a href="#main-content" class="skip-link">Skip to content</a>
 
     <div class="app-layout">
+        <!-- Phone menu (under 768 px the sidebar slides down from the top; RM check 2026-11-08) -->
+        <button type="button" class="nav-menu-btn" id="nav-menu-btn" aria-controls="sidebar" aria-expanded="false">Menu</button>
+        <!-- Desktop sidebar toggle (System 99): closes and opens the sidebar, remembered per browser; phones keep the Menu button -->
+        <button type="button" class="sidebar-toggle" id="sidebar-toggle" aria-controls="sidebar" aria-expanded="true" aria-label="Close sidebar" title="Close sidebar">
+            <svg viewBox="0 0 20 20" width="18" height="18" aria-hidden="true" focusable="false"><rect x="2.5" y="3.5" width="15" height="13" rx="2" fill="none" stroke="currentColor" stroke-width="1.5"/><line x1="7.5" y1="3.5" x2="7.5" y2="16.5" stroke="currentColor" stroke-width="1.5"/></svg>
+        </button>
         <!-- Sidebar -->
         <nav class="sidebar" id="sidebar" aria-label="Main navigation">
             <a href="{{ url_for('dashboard') }}" class="sidebar-brand">
@@ -72,6 +82,30 @@
 
             </div>
         </nav>
+        <script>
+        (function () {
+            var btn = document.getElementById('nav-menu-btn'), nav = document.getElementById('sidebar');
+            btn.addEventListener('click', function () {
+                var open = nav.classList.toggle('mobile-open');
+                btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+                btn.textContent = open ? 'Close' : 'Menu';
+            });
+            var tog = document.getElementById('sidebar-toggle'), root = document.documentElement;
+            function show() {
+                var closed = root.classList.contains('sb-closed'), label = closed ? 'Open sidebar' : 'Close sidebar';
+                tog.setAttribute('aria-expanded', closed ? 'false' : 'true');
+                tog.setAttribute('aria-label', label);
+                tog.title = label;
+            }
+            show();
+            tog.addEventListener('click', function () {
+                var closed = root.classList.toggle('sb-closed');
+                try { localStorage.setItem('rm-sidebar', closed ? 'closed' : 'open'); } catch (e) {}
+                show();
+                window.dispatchEvent(new Event('resize'));   // pages that size themselves to the window (Layout stage) re-measure
+            });
+        })();
+        </script>
 
         <!-- Main content -->
         <div class="main-content">

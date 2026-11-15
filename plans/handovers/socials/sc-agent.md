@@ -26,6 +26,14 @@ Written 2026-11-05 06:00 by the SC hub chat. This chat runs all SoundCloud work:
 
 ## Decisions made (recent)
 
+- **Will Bloøm (willfuckingbloom, id 1069431259) dropped, 11-13 (Amir "Unfollow, drop from list").** Profile says Jerusalem, Israel (SOP 4.3 rule 13). On ig_blocked_accounts.json (c9ce914), tracker no_longer_engage, unfollowed in Chrome 12:25 (verified Following -> Follow back) and logged. Not on permanently_unfollowed (the logger skips that for this path), but the blocked list keeps discovery from ever re-adding him.
+
+- **Half the Night EP on SC (11-11, from the main EP chat).** Release Fri 2026-12-11 (was 12-04). Symphonic does NOT deliver to SoundCloud: our own uploads (half-the-night, pinocchio, sets/half-the-night) go public 12-11 09:00 and are the only SC copies; stats, Amplify and the pinned track run on them. Beatport via Symphonic from 12-11. On 12-11: the EP link goes to TheTallMan and Owo Barry (promised in the 11-06 replies).
+
+- **11-10 end-step stall fixed (Amir "y" via Socials).** 11-08 and 11-10 runs both stalled on `cd .../scene_intelligence && ls -t sc_session_report_2026110*.md ... | head -3` (not approved, so the scheduled run waited and ended). 11-10 closed from the log: 42 actions, close_loops 10/10. sc-engagement SKILL.md got an "END STEP, NO IMPROVISED SHELL" paragraph after the report line: prev report via the Read/Glob tools, report via Write, Bash only for close_loops / sc_engagement.py. Backup: ~/.claude/scheduled-tasks/sc-engagement/SKILL.md.bak-2026-11-10. Check tomorrow's run writes its report itself.
+
+- **11-08 session closed after the fact (Amir "Yes, close it" via Socials).** The 10:00 run logged 40 actions (12U, 10F, 18L), then stopped about 11:21 at a Bash tool-approval prompt right after its Chrome follower read (the transcript shows only "Request interrupted by user for tool use", not the command). Report written from the log; close_loops 10/10 ("session truncated externally"). Watch: if this repeats, find the un-allowlisted command in the run's last step.
+
 - **Follow cap 10/day 11-07..11-16 (Amir "B", 11-06).** Following stayed ~457 because 20 follows/day refilled what unfollows removed. Goal: following ~376 (476/376 = 1.27:1) by ~11-16. Config FOLLOW_CAP_DAYS, was 20; back to 20 on 11-17 by itself. Check the daily following count against the path (~-6 to -10/day).
 
 - **Anyone in the outreach list stays followed** (Amir 11-03, "if we approach someone i dont wanna remove the follow"), any status including passed. 9 such accounts were removed from the sweep. Personal-network accounts and anyone with an SC inbox thread are also never swept.
@@ -94,6 +102,10 @@ Full per-thread context: `plans/sc-inbox-context-2026-11-06.md`. Amir 11-06: "u 
 For `docs/sc-engagement-sop.md` §6.3 (unfollows), proposed wording, for Amir's OK before anyone edits the SOP:
 
 > **Outreach contacts stay followed (Amir, 2026-11-03).** Never unfollow an account that appears in `plans/outreach-batches.json`, whatever its status (proposed, drafted, needs rewrite, passed, sent). Match on the SoundCloud URL, an email in the bio, or the contact name. The same holds for the personal network list and anyone with a SoundCloud inbox thread. Before any sweep, re-run this check against the current outreach file and drop every match from the batch.
+
+## ⚙️ System 69 · SC tasks to the project venv (DONE 2026-11-11)
+
+- DONE 11-11 21:20 by the System 69 side chat on Amir's "do it now" (no need to do it on Sat 11-14). Record, checks and undo lines: `plans/strategy/system-69-python-switch-2026-11-08.md`, section "IG + SC part moved". Read the first live runs (Thu 11-12 SC 06:30-10:00, dispatcher 09:30; IG Fri 15:00). A run stuck on an approval = add the `.venv/bin/python` prefix rule for that command.
 
 ## Ticket updates (for the System chat to merge)
 

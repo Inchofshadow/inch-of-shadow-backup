@@ -3,7 +3,7 @@
   "configurations": [
     {
       "name": "release-manager",
-      "runtimeExecutable": "python3",
+      "runtimeExecutable": ".venv/bin/python",
       "runtimeArgs": [
         "-m",
         "release_manager.webapp"

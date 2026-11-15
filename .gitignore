@@ -80,3 +80,7 @@ music-tools/Music Theory Reference/
 
 # Gap Radar run lock (gap_radar/schedule.py)
 gap_radar/schedule.lock
+
+# Backup copies made before a change (cleanup 2026-11-09): kept on disk, not in git. Already tracked ones stay tracked.
+*.bak-20*
+*.bak.20*

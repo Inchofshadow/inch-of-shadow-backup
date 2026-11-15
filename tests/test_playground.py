@@ -233,7 +233,7 @@ def test_layout_snap_route_writes_only_into_its_root(client, tmp_path, monkeypat
     buf = BytesIO(); Image.new("RGB", (40, 40), (10, 20, 30)).save(buf, "PNG")
     r = client.post("/playground/my-rel/layout/snap?n=3", data=buf.getvalue())
     assert r.status_code == 200 and r.get_json() == {"ok": True}
-    d = tmp_path / "artwork" / "edits" / "htn-noir" / "layout-snaps" / "my-rel"
+    d = tmp_path / "artwork" / "edits" / "layout-snaps" / "my-rel"   # any release has its own folder (System 97); Half the Night keeps htn-noir/
     assert (d / "keep-03.jpg").is_file()
     assert client.post("/playground/my-rel/layout/snap?n=0", data=buf.getvalue()).status_code == 200
     assert (d / "current.jpg").is_file()
@@ -276,3 +276,30 @@ def test_layouts_toggle_refuses_when_full_and_keeps_old(tmp_path, monkeypatch):
     assert [k["x"] for k in kept] == [0.1, 0.2]
     # un-keeping still works when full
     assert [k["x"] for k in pg.layouts_toggle(tmp_path, "pinocchio-single", {**item, "x": 0.1}, "d")] == [0.2]
+
+
+def test_an_unreadable_keeps_file_is_never_replaced(tmp_path):
+    # Fable gate 2026-11-15: a broken file used to read as "no keeps", so the next Keep saved a file with one keep.
+    import pytest as _pytest
+    from release_manager import playground as pg
+    f = pg.layouts_file(tmp_path, "htn")
+    f.parent.mkdir(parents=True)
+    f.write_text('{"kept": [{"pick": "a"')            # cut off in the middle of a write
+    before = f.read_bytes()
+    with _pytest.raises(ValueError) as e:
+        pg._layouts_for_write(tmp_path, "htn")
+    assert "cannot be read" in str(e.value)
+    assert f.read_bytes() == before                     # untouched
+    f.write_text('[1, 2]')
+    with _pytest.raises(ValueError):
+        pg._layouts_for_write(tmp_path, "htn")
+
+
+def test_keeps_file_is_saved_through_a_temp_file(tmp_path):
+    import json as _json
+    from release_manager import playground as pg
+    pg._layouts_save(tmp_path, "htn", {"kept": [{"id": 1}], "next_id": 2})
+    f = pg.layouts_file(tmp_path, "htn")
+    assert _json.loads(f.read_text()) == {"kept": [{"id": 1}], "next_id": 2}
+    assert [p.name for p in f.parent.iterdir()] == [f.name]      # no temp file left behind
+    assert pg._layouts_for_write(tmp_path, "nothing-yet") == {}  # a release with no keeps file starts empty

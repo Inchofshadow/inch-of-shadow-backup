@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.inchofshadow.evening-reports</string>
+    <key>ProgramArguments</key>
+    <array>
+        <string>/Users/amir/.local/share/uv/python/cpython-3.11.15-macos-aarch64-none/bin/python3.11</string>
+        <string>/Users/amir/Desktop/Inch of Shadow/Inchofshadowcode/stats/evening_reports.py</string>
+    </array>
+    <key>EnvironmentVariables</key>
+    <dict>
+        <key>PYTHONEXECUTABLE</key>
+        <string>/Users/amir/Desktop/Inch of Shadow/Inchofshadowcode/.venv/bin/python3</string>
+    </dict>
+    <key>WorkingDirectory</key>
+    <string>/Users/amir/Desktop/Inch of Shadow/Inchofshadowcode</string>
+    <key>StartCalendarInterval</key>
+    <dict>
+        <key>Hour</key>
+        <integer>19</integer>
+        <key>Minute</key>
+        <integer>55</integer>
+    </dict>
+    <key>StandardOutPath</key>
+    <string>/Users/amir/Library/Logs/InchOfShadow/evening-reports.log</string>
+    <key>StandardErrorPath</key>
+    <string>/Users/amir/Library/Logs/InchOfShadow/evening-reports.log</string>
+</dict>
+</plist>

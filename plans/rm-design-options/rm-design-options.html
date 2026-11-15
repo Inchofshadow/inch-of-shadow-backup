@@ -1,0 +1,333 @@
+<title>Release Manager Looks</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<style>
+/* Layout: one column of three tall option cards; each holds a live phone-size mock of RM Home and a V tick. Zoom shows the same mock at desktop width. */
+@font-face { font-family: "Marcellus"; src: url("fonts/Marcellus-Regular.ttf") format("truetype"); font-display: swap; }
+@font-face { font-family: "Jost"; src: url("fonts/Jost-Variable.ttf") format("truetype"); font-weight: 100 900; font-display: swap; }
+@font-face { font-family: "Inter"; src: url("fonts/Inter-Latin.woff2") format("woff2"); font-weight: 400 700; font-display: swap; }
+
+:root {
+  --bg: #0f0d0c;          /* M2 warm black */
+  --panel: #191615;
+  --fg: #ece8e1;
+  --muted: #a9a39a;
+  --line: #2c2725;
+  --accent: #d6d1c8;      /* M2 platinum */
+  --tick: #9fbf9f;        /* the RM done green */
+  --f-display: "Marcellus", Georgia, serif;
+  --f-label: "Jost", "Futura", "Avenir Next", sans-serif;
+  --f-body: "Inter", -apple-system, "Segoe UI", sans-serif;
+  color-scheme: dark;
+}
+@media (prefers-color-scheme: light) { :root:not([data-theme="dark"]) {
+  --bg: #e9e5de; --panel: #f4f1ec; --fg: #1a1715; --muted: #5d5751; --line: #cfc8bd; --accent: #3a3430; --tick: #3f6b47; color-scheme: light; } }
+:root[data-theme="light"] { --bg: #e9e5de; --panel: #f4f1ec; --fg: #1a1715; --muted: #5d5751; --line: #cfc8bd; --accent: #3a3430; --tick: #3f6b47; color-scheme: light; }
+
+* { box-sizing: border-box; }
+body { background: var(--bg); color: var(--fg); font: 15px/1.55 var(--f-body); margin: 0; }
+.wrap { max-width: 1120px; margin: 0 auto; padding-block: 28px 64px; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+h1 { font: 400 clamp(30px, 5vw, 44px)/1.1 var(--f-display); margin: 0 0 6px; text-wrap: balance; }
+.lede { color: var(--muted); max-width: 64ch; margin: 0 0 22px; }
+.eyebrow { font: 500 13px/1 var(--f-label); letter-spacing: .14em; text-transform: uppercase; color: var(--muted); margin: 0 0 10px; }
+.dated { display: grid; gap: 6px; margin: 0 0 30px; padding: 16px 18px; border: 1px solid var(--line); border-radius: 10px; background: var(--panel); max-width: 760px; }
+.dated ul { margin: 0; padding-left: 18px; display: grid; gap: 4px; }
+.dated li { color: var(--fg); }
+.dated li span { color: var(--muted); }
+
+.options { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 22px; align-items: start; }
+.opt { border: 1px solid var(--line); border-radius: 14px; background: var(--panel); padding: 16px; display: grid; gap: 12px; min-width: 0; }
+.opt.picked { border-color: var(--tick); box-shadow: 0 0 0 1px var(--tick) inset; }
+.opt-head { display: flex; align-items: baseline; justify-content: space-between; gap: 10px; }
+.opt-num { font: 400 30px/1 var(--f-display); color: var(--accent); }
+.opt-name { font: 500 14px/1.2 var(--f-label); letter-spacing: .12em; text-transform: uppercase; }
+.opt-idea { margin: 0; color: var(--fg); }
+.opt ul { margin: 0; padding-left: 18px; color: var(--muted); font-size: 14px; display: grid; gap: 3px; }
+.mockbtn { all: unset; cursor: zoom-in; display: block; border-radius: 22px; outline-offset: 3px; }
+.mockbtn:focus-visible { outline: 2px solid var(--accent); }
+.phone { width: 100%; max-width: 340px; margin: 0 auto; border-radius: 22px; overflow: hidden; border: 1px solid var(--line); height: 560px; container-type: inline-size; }
+.zoomhint { text-align: center; font: 13px var(--f-label); letter-spacing: .08em; color: var(--muted); }
+.tickrow { display: grid; grid-template-columns: auto 1fr; gap: 10px; align-items: center; }
+.vbtn { min-width: 48px; height: 44px; border-radius: 22px; border: 1px solid var(--line); background: transparent; color: var(--fg); font: 600 18px var(--f-body); cursor: pointer; padding: 0 14px; }
+.vbtn[aria-pressed="true"] { background: var(--tick); border-color: var(--tick); color: var(--bg); }
+.vbtn:focus-visible, .note:focus-visible, .park:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.note { width: 100%; min-width: 0; height: 44px; border-radius: 10px; border: 1px solid var(--line); background: var(--bg); color: var(--fg); padding: 0 12px; font: 14px var(--f-body); }
+.status { font-size: 13px; color: var(--muted); min-height: 1.2em; }
+.parkrow { margin-top: 26px; display: flex; flex-wrap: wrap; gap: 12px; align-items: center; }
+.park { height: 44px; border-radius: 22px; border: 1px solid var(--line); background: transparent; color: var(--fg); font: 500 14px var(--f-body); padding: 0 18px; cursor: pointer; }
+.park[aria-pressed="true"] { background: var(--accent); color: var(--bg); border-color: var(--accent); }
+
+/* Zoom: the same mock at desktop width, slide with arrows, keys or swipe */
+.zoom { position: fixed; inset: 0; z-index: 20; background: rgba(8, 7, 6, .92); display: grid; grid-template-rows: auto 1fr; padding: calc(12px + env(safe-area-inset-top, 0px)) max(12px, env(safe-area-inset-right, 0px)) calc(12px + env(safe-area-inset-bottom, 0px)) max(12px, env(safe-area-inset-left, 0px)); }
+.zoom-bar { display: flex; align-items: center; justify-content: space-between; gap: 10px; color: #ece8e1; font: 500 14px var(--f-label); letter-spacing: .1em; text-transform: uppercase; padding-bottom: 10px; }
+.zoom-bar button { height: 40px; min-width: 44px; border-radius: 20px; border: 1px solid #3a3431; background: #1a1716; color: #ece8e1; font: 500 15px var(--f-body); cursor: pointer; padding: 0 14px; }
+.zoom-stage { overflow: auto; min-height: 0; }
+.zoom-frame { width: min(1100px, 100%); margin: 0 auto; border-radius: 14px; overflow: hidden; height: min(720px, calc(100vh - 110px)); container-type: inline-size; border: 1px solid #3a3431; }
+@media (prefers-reduced-motion: no-preference) { .opt { transition: border-color .2s; } }
+
+/* ---------- the mock: one markup, three looks ---------- */
+.mock { height: 100%; overflow: auto; display: grid; grid-template-columns: 1fr; }
+.m-side { display: none; }
+.m-main { padding: 22px 18px 28px; display: grid; gap: 16px; align-content: start; min-width: 0; }
+.m-h1 { margin: 0; }
+.m-areas { display: grid; gap: 14px; }
+.m-row { display: grid; gap: 2px; }
+.m-t b { font-weight: 600; }
+.m-who { display: inline-block; margin-right: 6px; white-space: nowrap; }
+@container (min-width: 640px) {
+  .mock { grid-template-columns: 210px 1fr; }
+  .m-side { display: grid; align-content: start; gap: 4px; padding: 22px 16px; }
+  .m-side .g { margin-top: 12px; }
+  .m-main { padding: 30px 34px; }
+}
+
+/* A Ledger: the Stats board language on every page. Warm black, hairlines, tracked caps, big serif numbers, no boxes */
+.dA { background: #0f0d0c; color: #ece8e1; font: 14px/1.5 var(--f-body); }
+.dA .m-side { border-right: 1px solid #262220; font: 13px var(--f-label); color: #bdb6ac; }
+.dA .m-side .brand { font: 18px var(--f-display); color: #ece8e1; }
+.dA .m-side .g { letter-spacing: .14em; text-transform: uppercase; color: #8d867c; font-size: 13px; }
+.dA .m-side .on { color: #ece8e1; }
+.dA .m-h1 { font: 30px/1 var(--f-display); }
+.dA .m-verdict { border-top: 1px solid #2a2523; border-bottom: 1px solid #2a2523; padding: 14px 0; display: grid; gap: 4px; }
+.dA .m-big { font: 40px/1 var(--f-display); letter-spacing: .02em; }
+.dA .m-sub { font: 13px var(--f-label); letter-spacing: .14em; text-transform: uppercase; color: #a9a39a; }
+.dA .m-label { font: 500 13px var(--f-label); letter-spacing: .16em; text-transform: uppercase; color: #a9a39a; display: flex; justify-content: space-between; border-bottom: 1px solid #2a2523; padding-bottom: 6px; }
+.dA .m-area { display: grid; gap: 10px; }
+.dA .m-row { padding-left: 12px; border-left: 2px solid #3a3431; }
+.dA .m-row.amir { border-left-color: #d4b878; }
+.dA .m-n { color: #a9a39a; font-size: 13px; }
+.dA .m-who { font: 13px var(--f-label); letter-spacing: .06em; color: #d4b878; }
+.dA .m-who.claude { color: #a9a39a; }
+.dA .m-next { display: grid; gap: 2px; border-top: 1px solid #2a2523; padding-top: 12px; }
+.dA .m-next .m-big { font-size: 26px; }
+@container (min-width: 640px) { .dA .m-areas { grid-template-columns: 1fr 1fr; column-gap: 30px; } }
+
+/* B Daylight: platinum paper, warm-black ink, a printed run sheet. Light, flat, black ink tabs */
+.dB { background: #d6d1c8; color: #0f0d0c; font: 14px/1.5 var(--f-body); }
+.dB .m-side { background: #0f0d0c; color: #d6d1c8; font: 13px var(--f-body); }
+.dB .m-side .brand { font: 18px var(--f-display); }
+.dB .m-side .g { font-weight: 700; font-size: 13px; color: #9e9a93; }
+.dB .m-side .on { text-decoration: underline; text-underline-offset: 4px; }
+.dB .m-h1 { font: 44px/1 var(--f-display); letter-spacing: -.01em; }
+.dB .m-verdict { display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px 12px; }
+.dB .m-big { font: 700 15px var(--f-body); background: #0f0d0c; color: #d6d1c8; padding: 4px 10px; border-radius: 3px; letter-spacing: .04em; text-transform: uppercase; }
+.dB .m-sub { font-size: 14px; color: #3a3430; }
+.dB .m-label { font: 700 13px var(--f-body); letter-spacing: .08em; text-transform: uppercase; display: flex; justify-content: space-between; border-bottom: 2px solid #0f0d0c; padding-bottom: 4px; }
+.dB .m-area { display: grid; gap: 0; }
+.dB .m-row { padding: 9px 0; border-bottom: 1px solid #b4ada2; }
+.dB .m-n { color: #3a3430; font-size: 13px; }
+.dB .m-who { font: 700 12.5px var(--f-body); border: 1.5px solid #0f0d0c; border-radius: 3px; padding: 0 5px; font-size: 13px; }
+.dB .m-who.claude { border-style: dashed; }
+.dB .m-next { background: #0f0d0c; color: #d6d1c8; border-radius: 6px; padding: 14px; display: grid; gap: 2px; }
+.dB .m-next .m-big { background: none; padding: 0; font: 26px var(--f-display); text-transform: none; letter-spacing: 0; }
+@container (min-width: 640px) { .dB .m-areas { grid-template-columns: 1fr 1fr; column-gap: 34px; } }
+
+/* C Mood rooms: each area is a room in its own colour mood from frame.md; the area is the first thing you see */
+.dC { background: #0a0a0a; color: #ece8e1; font: 14px/1.5 var(--f-body); }
+.dC .m-side { font: 13px var(--f-body); color: #bdb6ac; }
+.dC .m-side .brand { font: 18px var(--f-display); color: #ece8e1; }
+.dC .m-side .g { color: #7c7873; font-size: 13px; text-transform: uppercase; letter-spacing: .1em; }
+.dC .m-side .on { color: #ece8e1; }
+.dC .m-h1 { font: 30px/1 var(--f-display); }
+.dC .m-verdict { display: flex; gap: 8px; flex-wrap: wrap; }
+.dC .m-big { font: 600 13px var(--f-body); background: #5f7f66; color: #0c120f; border-radius: 99px; padding: 4px 12px; text-transform: uppercase; letter-spacing: .06em; }
+.dC .m-sub { font-size: 13px; color: #a9a39a; align-self: center; }
+.dC .m-area { border-radius: 16px; padding: 16px; display: grid; gap: 10px; }
+.dC .m-label { font: 24px/1 var(--f-display); display: flex; justify-content: space-between; align-items: baseline; }
+.dC .m-label i { font: 600 13px var(--f-body); font-style: normal; opacity: .8; }
+.dC .m-row { padding-top: 10px; border-top: 1px solid rgba(255,255,255,.14); }
+.dC .m-n { opacity: .8; font-size: 13px; }
+.dC .m-who { font: 600 13px var(--f-body); background: rgba(255,255,255,.14); border-radius: 99px; padding: 0 8px; }
+.dC .a-release { background: #1c0f12; color: #d8c39a; }   /* E champagne + oxblood black */
+.dC .a-socials { background: #110d19; color: #c9c2d6; }   /* M3 moon violet + midnight */
+.dC .a-booking { background: #2a1f1a; color: #f3ead3; }   /* C cream + espresso */
+.dC .a-system  { background: #1a1a19; color: #c8c4bd; }   /* M6 pewter */
+.dC .m-next { border: 1px solid #2a2a29; border-radius: 16px; padding: 14px 16px; display: grid; gap: 2px; }
+.dC .m-next .m-big { background: none; color: #ece8e1; padding: 0; font: 24px var(--f-display); text-transform: none; letter-spacing: 0; }
+@container (min-width: 640px) { .dC .m-areas { grid-template-columns: 1fr 1fr; } }
+</style>
+
+<div class="wrap">
+  <p class="eyebrow">Release Manager 2.0 · pick a look</p>
+  <h1>Three looks for the app</h1>
+  <p class="lede">Each card shows the same Home (your real Now list, today) in one direction. Tap a picture to see it at laptop width and slide between them. Tick V on the one to build, or more than one if you want a mix, and add a note.</p>
+
+  <div class="dated">
+    <p class="eyebrow">What looks dated now</p>
+    <ul>
+      <li>Two languages <span>Stats has the new look (tracked caps, big serif numbers); every other page still has the glass cards and monospace ids.</span></li>
+      <li>File paths as captions <span>"in plans/tickets.json", "checklist in releases/pinocchio-single.json" under most lines.</span></li>
+      <li>Home repeats itself <span>Now (7) and Decisions (47) list the same tickets twice.</span></li>
+      <li>Old gold glow <span>the background glow is still the 2025 gold; the accent moved to platinum in September.</span></li>
+      <li>Every page has its own chips <span>Work, Review and Outreach each draw pills and chips differently.</span></li>
+    </ul>
+  </div>
+
+  <div class="options" id="options"></div>
+
+  <div class="parkrow">
+    <button type="button" class="park" id="park" aria-pressed="false">Park the redesign for now</button>
+    <span class="status" id="park-status"></span>
+  </div>
+</div>
+
+<div class="zoom" id="zoom" hidden>
+  <div class="zoom-bar">
+    <button type="button" id="z-prev" aria-label="Previous look">&larr;</button>
+    <span id="z-title"></span>
+    <span style="display:flex;gap:8px"><button type="button" id="z-next" aria-label="Next look">&rarr;</button><button type="button" id="z-close" aria-label="Close">&times;</button></span>
+  </div>
+  <div class="zoom-stage"><div class="zoom-frame" id="z-frame"></div></div>
+</div>
+
+<script>
+(function () {
+  var OPTIONS = [
+    { id: "ledger", num: "1", name: "Ledger", cls: "dA",
+      idea: "The Stats board look on every page. Warm black, thin lines instead of boxes, big serif numbers, tracked capital labels.",
+      points: ["No glass cards, no monospace", "Waiting on you = a champagne line at the left", "File paths move into a small “source” line at the bottom"] },
+    { id: "daylight", num: "2", name: "Daylight", cls: "dB",
+      idea: "A light app: platinum paper and warm-black ink, like a printed run sheet. The dark sidebar stays as the frame.",
+      points: ["Easy to read in daylight and on the phone", "Who is a small ink stamp (dashed for Claude)", "Same brand pair as your M2 mood"] },
+    { id: "rooms", num: "3", name: "Mood rooms", cls: "dC",
+      idea: "Each area is a room in its own colour mood from the brand file, so you see the area before the words.",
+      points: ["Release oxblood, Socials moon violet, Booking espresso, System pewter", "Verdict as one green pill", "Counts per area in the room’s corner"] }
+  ];
+
+  var NOW = [
+    { area: "🎵 Release", key: "release", rows: [
+      { n: "🎵 Release 2", t: "Pinocchio single: artwork final before Symphonic submit", who: "amir", next: "Amir picks effects on 1a on the RM wall; then type + 4000 px export." },
+      { n: "🎵 Release 9", t: "Half the Night EP: Symphonic submit + release date + Spotify pitch", who: "amir", next: "Amir picks the release date (3-4 weeks out), then submit in Symphonic." } ] },
+    { area: "🎬 Socials", key: "socials", rows: [
+      { n: "🎬 Socials 14", t: "Bandcamp Friday follower messages + one free Listening Party", who: "amir", next: "Claude drafts the catalogue message; Amir decides send or skip to Dec 4." },
+      { n: "🎬 Socials 27", t: "Refresh the IG scene like list (7 of 12 targets gone)", who: "claude", next: "Claude checks the targets and proposes a fresh list for Amir’s OK." } ] },
+    { area: "🎧 Booking", key: "booking", rows: [
+      { n: "🎧 Booking 2", t: "Refresh the booking program before any email goes out", who: "amir", next: "Amir approves or flags week 1 and week 2." } ] },
+    { area: "⚙️ System", key: "system", rows: [
+      { n: "⚙️ System 70", t: "Password + 2FA changes across the Chrome profiles", who: "amir", next: "Amir works through the categories in the password side chat." } ] }
+  ];
+  var WHO = { amir: "🙋 Amir", claude: "🎃 Claude", auto: "🤖 auto" };
+
+  function el(tag, cls, text) { var e = document.createElement(tag); if (cls) e.className = cls; if (text != null) e.textContent = text; return e; }
+
+  function mock(o) {
+    var m = el("div", "mock " + o.cls);
+    var side = el("div", "m-side");
+    side.appendChild(el("div", "brand", "Inch of Shadow"));
+    [["Releases", ["Home", "New release"]], ["Work", ["Work", "Review", "Outreach"]], ["Studio", ["Shoot", "Archive", "Fonts", "Cover"]], ["Analytics", ["Stats"]]].forEach(function (g) {
+      side.appendChild(el("div", "g", g[0]));
+      g[1].forEach(function (l) { side.appendChild(el("div", l === "Home" ? "on" : "", l)); });
+    });
+    m.appendChild(side);
+    var main = el("div", "m-main");
+    main.appendChild(el("div", "m-h1", "Home"));
+    var v = el("div", "m-verdict");
+    v.appendChild(el("div", "m-big", "On pace"));
+    v.appendChild(el("div", "m-sub", "5/9 green · 1 drifting · 0 red · 3 collecting"));
+    main.appendChild(v);
+    var areas = el("div", "m-areas");
+    NOW.forEach(function (a) {
+      var box = el("div", "m-area a-" + a.key);
+      var lab = el("div", "m-label");
+      lab.appendChild(el("span", "", a.area));
+      lab.appendChild(el("i", "", a.rows.length + " now"));
+      box.appendChild(lab);
+      a.rows.forEach(function (r) {
+        var row = el("div", "m-row " + r.who);
+        var t = el("div", "m-t"); t.appendChild(el("b", "", r.n + " ")); t.appendChild(document.createTextNode(r.t));
+        row.appendChild(t);
+        var n = el("div", "m-n"); n.appendChild(el("span", "m-who " + r.who, WHO[r.who])); n.appendChild(document.createTextNode(r.next));
+        row.appendChild(n);
+        box.appendChild(row);
+      });
+      areas.appendChild(box);
+    });
+    main.appendChild(areas);
+    var nx = el("div", "m-next");
+    nx.appendChild(el("div", "m-sub", "Next release"));
+    nx.appendChild(el("div", "m-big", "Half the Night"));
+    nx.appendChild(el("div", "m-sub", "2026-12-04 · in 26 days · 1 of 36 done"));
+    main.appendChild(nx);
+    m.appendChild(main);
+    return m;
+  }
+
+  var state = {};          // option id -> {pick, note}
+  var db = null;
+  var host = document.getElementById("options");
+  var cards = {};
+
+  OPTIONS.forEach(function (o, i) {
+    var c = el("section", "opt"); c.id = "opt-" + o.id;
+    var h = el("div", "opt-head");
+    h.appendChild(el("span", "opt-num", o.num));
+    h.appendChild(el("span", "opt-name", o.name));
+    c.appendChild(h);
+    c.appendChild(el("p", "opt-idea", o.idea));
+    var ul = el("ul"); o.points.forEach(function (p) { ul.appendChild(el("li", "", p)); }); c.appendChild(ul);
+    var b = el("button", "mockbtn"); b.type = "button"; b.setAttribute("aria-label", "Open look " + o.num + " at laptop width");
+    var ph = el("div", "phone"); ph.appendChild(mock(o)); b.appendChild(ph);
+    b.addEventListener("click", function () { openZoom(i); });
+    c.appendChild(b);
+    c.appendChild(el("div", "zoomhint", "phone size · tap for laptop size"));
+    var tr = el("div", "tickrow");
+    var v = el("button", "vbtn", "V"); v.type = "button"; v.id = "v-" + o.id; v.setAttribute("aria-pressed", "false"); v.setAttribute("aria-label", "Tick look " + o.num);
+    var note = el("input", "note"); note.id = "note-" + o.id; note.placeholder = "Note (optional): what to change"; note.maxLength = 400;
+    tr.appendChild(v); tr.appendChild(note); c.appendChild(tr);
+    var st = el("div", "status"); st.id = "st-" + o.id; c.appendChild(st);
+    host.appendChild(c);
+    cards[o.id] = { card: c, v: v, note: note, st: st };
+    v.addEventListener("click", function () { save(o.id, { pick: !(state[o.id] && state[o.id].pick), note: note.value.trim() }); });
+    note.addEventListener("change", function () { save(o.id, { pick: !!(state[o.id] && state[o.id].pick), note: note.value.trim() }); });
+  });
+
+  var parkBtn = document.getElementById("park"), parkSt = document.getElementById("park-status");
+  parkBtn.addEventListener("click", function () { save("park", { pick: !(state.park && state.park.pick), note: "" }); });
+
+  function paint() {
+    OPTIONS.forEach(function (o) {
+      var s = state[o.id] || {}, c = cards[o.id];
+      c.v.setAttribute("aria-pressed", s.pick ? "true" : "false");
+      c.card.classList.toggle("picked", !!s.pick);
+      if (document.activeElement !== c.note && typeof s.note === "string") c.note.value = s.note;
+    });
+    parkBtn.setAttribute("aria-pressed", state.park && state.park.pick ? "true" : "false");
+  }
+
+  function save(id, body) {
+    state[id] = body; paint();
+    var st = id === "park" ? parkSt : cards[id].st;
+    if (!db) { st.textContent = "Not saved: this view cannot reach the page store."; return; }
+    st.textContent = "Saving…";
+    db.collection("ticks").doc(id).set({ pick: body.pick, note: body.note || "", at: new Date().toISOString() })
+      .then(function () { st.textContent = body.pick ? "Saved: ticked" : "Saved"; })
+      .catch(function (e) { st.textContent = "Not saved (" + ((e && e.code) || "error") + "). Tell Claude in the chat instead."; });
+  }
+
+  (async function () {
+    try { db = window.claude && window.claude.use ? await window.claude.use("db") : null; } catch (e) { db = null; }
+    if (!db) return;
+    var timer = setTimeout(function () { parkSt.textContent = "Saved ticks can’t be reached yet."; }, 10000);
+    db.collection("ticks").onSnapshot(function (snap) {
+      if (!snap.metadata.fromCache) { clearTimeout(timer); if (parkSt.textContent.indexOf("reached") > -1) parkSt.textContent = ""; }
+      snap.docs.forEach(function (d) { var x = d.data() || {}; state[d.id] = { pick: !!x.pick, note: typeof x.note === "string" ? x.note : "" }; });
+      paint();
+    }, function () { clearTimeout(timer); parkSt.textContent = "Saved ticks can’t be read right now."; });
+  })();
+
+  // Zoom with slide: arrows, left/right keys, swipe
+  var zoom = document.getElementById("zoom"), zf = document.getElementById("z-frame"), zt = document.getElementById("z-title"), cur = 0, lastFocus = null;
+  function show(i) { cur = (i + OPTIONS.length) % OPTIONS.length; var o = OPTIONS[cur]; zt.textContent = o.num + " · " + o.name; zf.textContent = ""; zf.appendChild(mock(o)); }
+  function openZoom(i) { lastFocus = document.activeElement; show(i); zoom.hidden = false; document.getElementById("z-next").focus(); }
+  function closeZoom() { zoom.hidden = true; if (lastFocus) lastFocus.focus(); }
+  document.getElementById("z-prev").addEventListener("click", function () { show(cur - 1); });
+  document.getElementById("z-next").addEventListener("click", function () { show(cur + 1); });
+  document.getElementById("z-close").addEventListener("click", closeZoom);
+  document.addEventListener("keydown", function (e) {
+    if (zoom.hidden) return;
+    if (e.key === "ArrowLeft") show(cur - 1); else if (e.key === "ArrowRight") show(cur + 1); else if (e.key === "Escape") closeZoom();
+  });
+  var sx = null;
+  zoom.addEventListener("touchstart", function (e) { sx = e.touches[0].clientX; }, { passive: true });
+  zoom.addEventListener("touchend", function (e) { if (sx == null) return; var dx = e.changedTouches[0].clientX - sx; if (Math.abs(dx) > 50) show(cur + (dx < 0 ? 1 : -1)); sx = null; });
+})();
+</script>

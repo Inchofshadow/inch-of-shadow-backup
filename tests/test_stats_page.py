@@ -36,7 +36,8 @@ def test_stats_page_renders_the_score_board():
     assert "collecting" in html
     for track in ("Instagram", "SoundCloud", "YouTube", "Spotify", "Bandcamp"):   # the old grid is still there
         assert track in html
-    assert "style.css?v=88" in html
+    import re
+    assert int(re.search(r"style\.css\?v=(\d+)", html).group(1)) >= 88   # the Stats brief's CSS (v88) or later
     assert html.count('class="sb-card ') == 9 and "/8" in html
     for row in ("Spotify followers", "Email list", "Release engagement, day 28"):   # D4 rows, 2026-11-05
         assert row in html

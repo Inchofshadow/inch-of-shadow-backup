@@ -1,47 +1,8 @@
 {% extends "base.html" %}
 {% block title %}Stats{% endblock %}
 {% block content %}
-<div class="st-page">
-    <div class="st-head">
-        <div>
-            <h1>Stats</h1>
-        </div>
-        <div class="st-sync">
-            <span class="brand-muted{% if s.synced_days_ago is not none and s.synced_days_ago > 14 %} st-stale{% endif %}">{% if s.last_synced %}synced {{ s.last_synced }}{% if s.synced_days_ago %} · {{ s.synced_days_ago }} day{{ 's' if s.synced_days_ago != 1 }} ago{% endif %}{% else %}never synced{% endif %}</span>
-            <form method="post" action="{{ url_for('stats_sync_form') }}"><input type="hidden" name="csrf_token" value="{{ csrf_token() }}"><button type="submit" class="btn btn-secondary btn-sm">Sync now</button></form>
-        </div>
-    </div>
-    {% if message %}<div class="next-deadline-banner">{{ message }}</div>{% endif %}
-
-    {% if board is none %}
-    <div class="sb-error">Score board unavailable: {{ board_error }}</div>
-    {% else %}
-    {% set sc = board.score %}
-    {% set head, _, counts = sc.line.partition(', ') %}
-    {% set words = {'green': 'green', 'amber': 'drifting', 'red': 'red'} %}
-    <section class="sb" aria-label="Score board">
-      <div class="sb-top">
-        <div class="sb-verdict sb-v-{{ 'off' if sc.red else ('on' if sc.on_pace else 'none') }}">
-            <div class="sb-score"><span class="sb-score-head">{{ head }}</span>{% if counts %}<span class="sb-score-counts">{{ counts|replace(', ', ' · ') }}</span>{% endif %}</div>
-            {% if board.frozen %}<div class="sb-frozen">Frozen month {{ board.frozen.month }}, as of {{ board.frozen.as_of }}, written {{ board.frozen.frozen_at }}</div>{% endif %}
-            {% if sc.why %}<ul class="sb-why">{% for w in sc.why %}<li>{{ w }}</li>{% endfor %}</ul>{% endif %}
-        </div>
-
-        {% if board.freshness %}
-        <ul class="sb-strip" aria-label="Where every number comes from, and how old it is">
-            {% for f in board.freshness %}
-            <li class="sb-chip{% if f.stale %} is-stale{% elif not f.as_of %} is-empty{% endif %}" title="{{ f.who_text }}{% for m in f.members %} &#10;{{ m.label }}: {% if m.as_of %}as of {{ m.as_of[:16]|replace('T', ' ') }}, {{ m.age }} old, window {{ m.window }}{% if m.stale %}, stale{% endif %}{% else %}no reading yet{% endif %}{% endfor %}">
-                <span class="sb-chip-who" aria-label="{{ f.who_text }}">{{ f.who }}</span>
-                <span class="sb-chip-name">{{ f.name }}</span>
-                {% if f.as_of %}<span class="sb-chip-age">{{ f.as_of[5:10] }} · {{ f.age }} of {{ f.window }}</span>{% else %}<span class="sb-chip-age">collecting</span>{% endif %}
-                {% if f.stale %}<span class="sb-chip-word">stale</span>{% endif %}
-            </li>
-            {% endfor %}
-        </ul>
-        {% endif %}
-
-        <div class="sb-grid">
-            {% for c in board.cards %}
+{% macro score_card(c) %}
+{%- set words = {'green': 'green', 'amber': 'drifting', 'red': 'red'} %}
             <article class="sb-card sb-{{ c.light }}{% if not c.value %} is-collecting{% endif %}{% if c.skipped %} is-skipped{% endif %}">
                 <div class="sb-card-top">
                     <span class="sb-label">{{ c.label }}{% if c.proposed %} <span class="sb-badge" title="Rung proposed by Claude, waiting for Amir's confirm">proposed</span>{% endif %}</span>
@@ -65,6 +26,78 @@
                     {% else %}<span>no reading yet</span><span>from {{ c.source|replace('|', ' or ') }}</span>{% endif %}
                 </div>
             </article>
+{% endmacro %}
+{% macro ratio_section() %}
+    {# System 98 (Amir 2026-11-11); moved under the OFF PACE line, Amir 2026-11-12 ("Yes, move them up"): the evening digest's ratio graph, for SoundCloud and Instagram #}
+    <section class="sb rg" id="ratio" aria-label="Follower ratio">
+        <div class="sb-sec-head"><h2 class="sb-h">RATIO</h2><span class="sb-quiet">followers per following, by day since 09-26</span></div>
+        {% if ratio_error %}<p class="sb-quiet">Ratio graphs could not be drawn: {{ ratio_error }}</p>{% endif %}
+        {% for r in ratios %}
+        {# Amir 2026-11-12: the Now card in the LADDER look: big number + targets on the left, graph beside it #}
+        <div class="sb-ladder-box rg-box{% if r.under_floor %} sb-red{% endif %}" id="ratio-{{ r.key }}">
+            <div class="sb-ladder-side">
+                <span class="sb-ladder-label"><span class="sb-light"></span>{{ r.name }} ratio</span>
+                {% if r.now %}
+                <span class="sb-ladder-now">{{ r.now_text }}</span>
+                <span class="sb-ladder-unit">{{ "{:,}".format(r.now.followers) }} followers / {{ "{:,}".format(r.now.following) }} following, {{ r.now.date.strftime("%m-%d") }}</span>
+                {% else %}<span class="sb-value-none">no data</span>{% endif %}
+                {% if r.dec31 %}<span class="sb-ladder-goal">Goal <strong>{{ r.dec31 }}</strong> by Dec 31</span>
+                {% else %}<span class="sb-ladder-goal">Dec 31 goal not set</span>{% endif %}
+                <span class="sb-ladder-line">{% if r.long_when %}{{ r.long }} by {{ r.long_when }}{% else %}Long run {{ r.long }}, no date{% endif %} · floor 1:1</span>
+            </div>
+            {% if r.now %}
+            <div class="rg-chart">{{ r.wide|safe }}{{ r.narrow|safe }}
+            {% if r.days < 20 %}<p class="rg-note">{{ r.days }} days with both numbers; the line breaks where readings are more than 3 days apart.</p>{% endif %}
+            </div>
+            {% endif %}
+        </div>
+        {% endfor %}
+    </section>
+{% endmacro %}
+<div class="st-page">
+    <div class="st-head">
+        <div>
+            <h1>Stats</h1>
+        </div>
+        <div class="st-sync">
+            <span class="brand-muted{% if s.synced_days_ago is not none and s.synced_days_ago > 14 %} st-stale{% endif %}">{% if s.last_synced %}synced {{ s.last_synced }}{% if s.synced_days_ago %} · {{ s.synced_days_ago }} day{{ 's' if s.synced_days_ago != 1 }} ago{% endif %}{% else %}never synced{% endif %}</span>
+            <form method="post" action="{{ url_for('stats_sync_form') }}"><input type="hidden" name="csrf_token" value="{{ csrf_token() }}"><button type="submit" class="btn btn-secondary btn-sm">Sync now</button></form>
+        </div>
+    </div>
+    {% if message %}<div class="next-deadline-banner">{{ message }}</div>{% endif %}
+
+    {% if board is none %}
+    <div class="sb-error">Score board unavailable: {{ board_error }}</div>
+    {{ ratio_section() }}
+    {% else %}
+    {% set sc = board.score %}
+    {% set head, _, counts = sc.line.partition(', ') %}
+    {% set words = {'green': 'green', 'amber': 'drifting', 'red': 'red'} %}
+    <section class="sb" aria-label="Score board">
+      <div class="sb-top">
+        <div class="sb-verdict sb-v-{{ 'off' if sc.red else ('on' if sc.on_pace else 'none') }}">
+            <div class="sb-score"><span class="sb-score-head">{{ head }}</span>{% if counts %}<span class="sb-score-counts">{{ counts|replace(', ', ' · ') }}</span>{% endif %}</div>
+            {% if board.frozen %}<div class="sb-frozen">Frozen month {{ board.frozen.month }}, as of {{ board.frozen.as_of }}, written {{ board.frozen.frozen_at }}</div>{% endif %}
+            {% if sc.why %}<ul class="sb-why">{% for w in sc.why %}<li>{{ w }}</li>{% endfor %}</ul>{% endif %}
+        </div>
+        {{ ratio_section() }}
+
+        {% if board.freshness %}
+        <ul class="sb-strip" aria-label="Where every number comes from, and how old it is">
+            {% for f in board.freshness %}
+            <li class="sb-chip{% if f.stale %} is-stale{% elif not f.as_of %} is-empty{% endif %}" title="{{ f.who_text }}{% for m in f.members %} &#10;{{ m.label }}: {% if m.as_of %}as of {{ m.as_of[:16]|replace('T', ' ') }}, {{ m.age }} old, window {{ m.window }}{% if m.stale %}, stale{% endif %}{% else %}no reading yet{% endif %}{% endfor %}">
+                <span class="sb-chip-who" aria-label="{{ f.who_text }}">{{ f.who }}</span>
+                <span class="sb-chip-name">{{ f.name }}</span>
+                {% if f.as_of %}<span class="sb-chip-age">{{ f.as_of[5:10] }} · {{ f.age }} of {{ f.window }}</span>{% else %}<span class="sb-chip-age">collecting</span>{% endif %}
+                {% if f.stale %}<span class="sb-chip-word">stale</span>{% endif %}
+            </li>
+            {% endfor %}
+        </ul>
+        {% endif %}
+
+        <div class="sb-grid">
+            {% for c in board.cards %}
+            {{ score_card(c) }}
             {% endfor %}
         </div>
       </div>

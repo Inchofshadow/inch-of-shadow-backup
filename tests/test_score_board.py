@@ -211,7 +211,8 @@ def test_skipped_block_is_not_a_reading_for_the_health_row():
 
 def test_d4_rows_read_their_sources_and_carry_the_proposed_flag():
     # Rungs for spotify_followers and email_list were confirmed by Amir on 2026-11-06; d28 still collects.
-    b = sb.build(today=date(2026, 11, 5))
+    # until= keeps later live reads out (the 11-09 Spotify read made this 69 instead of 68).
+    b = sb.build(today=date(2026, 11, 5), until=date(2026, 11, 5))
     cards = {c["key"]: c for c in b["cards"]}
     sp = cards["spotify_followers"]
     assert sp["value"] == "68" and sp["as_of"] == "2026-10-31" and sp["proposed"] is False    # S4A Monday read

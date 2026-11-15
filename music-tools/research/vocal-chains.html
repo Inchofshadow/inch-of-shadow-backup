@@ -1,0 +1,462 @@
+<title>Vocal Chains Notebook</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Marcellus&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: one reading column, a sticky chip rail of singers, each chain = "what they did" then "your version" rack table */
+:root{
+  --bg:#ECE8E1; --surface:#F6F3EE; --fg:#1A1715; --muted:#6B635C; --line:#D3CCC2;
+  --accent:#7A4E2D; --ok:#2F6B3F; --warn:#9A6A12; --chip:#E1DBD1;
+  --display:"Marcellus","Cormorant Garamond",Georgia,serif;
+  --body:"Inter",-apple-system,"Helvetica Neue",Arial,sans-serif;
+  --mono:"JetBrains Mono",ui-monospace,Menlo,monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#0F0D0C; --surface:#181513; --fg:#D6D1C8; --muted:#9A928A; --line:#2E2925;
+  --accent:#C99A6E; --ok:#7FB98E; --warn:#D9A84A; --chip:#231F1C; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0F0D0C; --surface:#181513; --fg:#D6D1C8; --muted:#9A928A; --line:#2E2925;
+  --accent:#C99A6E; --ok:#7FB98E; --warn:#D9A84A; --chip:#231F1C; color-scheme:dark}
+body{background:var(--bg);color:var(--fg);font-family:var(--body);font-size:15px;line-height:1.6;
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:0 64px}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--bg)}
+.wrap{max-width:760px;margin:0 auto}
+header{padding-block:40px 20px;border-bottom:1px solid var(--line)}
+.eyebrow{font-family:var(--mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+h1{font-family:var(--display);font-weight:400;font-size:clamp(34px,7vw,52px);line-height:1.05;margin:10px 0 12px;text-wrap:balance}
+h2{font-family:var(--display);font-weight:400;font-size:28px;line-height:1.15;margin:0;text-wrap:balance}
+h3{font-family:var(--body);font-size:12px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin:22px 0 8px}
+p{margin:0 0 10px;max-width:65ch}
+a{color:var(--accent);text-underline-offset:3px}
+a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.lede{color:var(--muted);max-width:60ch}
+nav.rail{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--bg);padding-block:12px;border-bottom:1px solid var(--line);
+  display:flex;gap:8px;overflow-x:auto;scrollbar-width:none}
+nav.rail a{flex:none;font-size:13px;text-decoration:none;color:var(--fg);background:var(--chip);border:1px solid var(--line);padding:5px 12px;border-radius:999px;white-space:nowrap}
+nav.rail a.out{border-style:dashed}
+section{padding-block:36px 8px;border-bottom:1px solid var(--line);scroll-margin-top:64px}
+.meta{display:flex;flex-wrap:wrap;gap:6px 14px;margin:8px 0 14px;font-size:13px;color:var(--muted)}
+.tag{font-family:var(--mono);font-size:11px;letter-spacing:.06em;text-transform:uppercase;padding:2px 8px;border-radius:4px;border:1px solid currentColor}
+.tag.eng{color:var(--ok)} .tag.forum{color:var(--warn)} .tag.out{color:var(--accent)}
+ul.did{margin:0;padding-left:18px;max-width:65ch} ul.did li{margin-bottom:6px}
+q{quotes:"\201C" "\201D"} .src{font-size:13px;color:var(--muted)}
+.tbl{overflow-x:auto;border:1px solid var(--line);border-radius:6px;background:var(--surface)}
+table{border-collapse:collapse;width:100%;min-width:480px;font-size:14px}
+th,td{text-align:left;padding:9px 12px;border-bottom:1px solid var(--line);vertical-align:top}
+tr:last-child td{border-bottom:0}
+th{font-family:var(--mono);font-size:11px;font-weight:500;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+td:first-child{color:var(--muted);width:38%}
+.exact{font-family:var(--mono);font-size:10.5px;color:var(--ok);letter-spacing:.06em;text-transform:uppercase;margin-left:6px;white-space:nowrap}
+.unsure{color:var(--warn)}
+.buy{font-size:13px;margin-top:10px;color:var(--muted)}
+.signal{font-family:var(--mono);font-size:13px;line-height:1.9;background:var(--surface);border:1px solid var(--line);border-radius:6px;padding:12px 14px;overflow-x:auto;white-space:nowrap}
+.signal b{font-weight:500;color:var(--fg)} .signal i{font-style:normal;color:var(--muted)}
+.sources{display:grid;gap:10px}
+.source{display:grid;grid-template-columns:28px 1fr;gap:4px 10px;padding:12px 0;border-bottom:1px solid var(--line)}
+.source:last-child{border-bottom:0}
+.rank{font-family:var(--display);font-size:22px;color:var(--accent);line-height:1.2}
+.source div{min-width:0}
+.source strong{font-weight:600}
+.patterns li{margin-bottom:8px}
+footer{padding-top:28px;font-size:13px;color:var(--muted)}
+</style>
+
+<div class="wrap">
+<header>
+  <div class="eyebrow">🎸 Studio 10 · research · 12 Nov 2026</div>
+  <h1>Vocal Chains Notebook</h1>
+  <p class="lede">Documented vocal chains from engineers, and the version you can build today in Live from plug-ins you already own. Nothing on this page needs buying.</p>
+  <div class="meta"><span class="tag eng">engineer says</span> from an interview with the engineer or artist <span class="tag forum">forum guess</span> crowd sites only <span class="unsure">❓ unsure or not checked</span></div>
+</header>
+
+<nav class="rail" aria-label="Singers">
+  <a href="#cure">The Cure</a>
+  <a href="#gahan">Depeche Mode</a>
+  <a href="#protomartyr">Protomartyr</a>
+  <a href="#idles">IDLES</a>
+  <a href="#crystal">Crystal Castles</a>
+  <a href="#cave">Nick Cave</a>
+  <a href="#deftones">Deftones</a>
+  <a href="#lana" class="out">Lana Del Rey</a>
+  <a href="#weeknd" class="out">The Weeknd</a>
+  <a href="#travis" class="out">Travis Scott</a>
+  <a href="#autotune" class="out">Auto-Tune</a>
+  <a href="#wider">Forums &amp; tutorials</a>
+  <a href="#emo" class="out">Midwest emo</a>
+  <a href="#sources">Sources</a>
+</nav>
+
+<section id="cure">
+  <div class="eyebrow">Your neighbourhood</div>
+  <h2>Robert Smith · The Cure</h2>
+  <div class="meta"><span class="tag eng">artist + engineer say</span><span>Smith and Steve Lyon, 1996 · Mike Hedges, 1980</span></div>
+
+  <h3>The voice, in Smith's words (1996)</h3>
+  <ul class="did">
+    <li>He has used an <b>AKG C12</b> since <i>Wish</i>, because it is <q>much more forgiving</q>.</li>
+    <li>His voice has a hard edge <q>which peaks at about 3kHz</q>.</li>
+    <li>The only outboard he knows he used on three albums is a <b>Massenburg 8200 EQ</b>, used for <q>notching out rather than adding</q>.</li>
+    <li>Lyon: he lives with a vocal for 3-4 weeks, then sings it through. The backing vocals take 20-30 minutes because he knows his own voice so well.</li>
+  </ul>
+  <p class="src">Source: <a href="https://www.soundonsound.com/people/cure-recording-wild-mood-swings" target="_blank" rel="noopener">SOS, The Cure: recording Wild Mood Swings</a></p>
+
+  <h3>'A Forest' / Seventeen Seconds (1980), Mike Hedges</h3>
+  <ul class="did">
+    <li>Vocal on a <b>Neumann FET 47</b>. One take; if it was wrong, it was redone. Very little comping.</li>
+    <li>The vocals sit deep in a reverb-heavy mix.</li>
+    <li><b>Stereo tape delay with two times</b>: left into right, both back to the desk, and a fade between the half-speed and double-speed repeats.</li>
+    <li>Up to <b>seven flangers</b> following the envelope of the sound, plus backwards reverb.</li>
+  </ul>
+  <p class="src">Source: <a href="https://www.soundonsound.com/node/4914807" target="_blank" rel="noopener">SOS Classic Tracks: The Cure 'A Forest'</a></p>
+  <h3>Compression, de-esser, distortion?</h3>
+  <p><b>No engineer source names any of them for his voice.</b> I searched both SOS pieces, the <a href="https://hifinews.com/content/cure-faith-production-notes" target="_blank" rel="noopener">Faith production notes</a> (they only say his vocals sounded "too happy" and were finished at Abbey Road) and the Disintegration coverage (no David M. Allen gear interview turned up).</p>
+  <ul class="did">
+    <li>The <i>Wild Mood Swings</i> studio gear list includes a Urei 1178 and a Focusrite Red 3 compressor, but nobody says they were on his voice. <span class="unsure">❓</span></li>
+    <li>His own rule points the other way: notch the 3 kHz edge, don't add.</li>
+    <li>The 1980 grit is in the effects (flangers, tape delay on tape delay, backwards reverb), not in a vocal distortion.</li>
+  </ul>
+  <p class="src unsure">❓ Live 2007: an SM58 for decades, and a Fairchild 660 among the front-of-house vocal plug-ins. This comes from a search snippet only, because the <a href="https://audiotechnology.com/?p=59712" target="_blank" rel="noopener">AudioTechnology page</a> blocked our text fetch.</p>
+
+  <h3>Your version</h3>
+  <div class="tbl"><table>
+    <tr><th>Their step</th><th>In your Live set</th></tr>
+    <tr><td>Notch the 3 kHz edge, don't boost</td><td>Pro-Q 3 dynamic band set to cut only when it spikes, or soothe2</td></tr>
+    <tr><td>Massenburg EQ</td><td>UAD MDWEQ5-3B / 5B <span class="unsure">(UAD-2: needs the Apollo ❓)</span></td></tr>
+    <tr><td>Two-time tape delay</td><td>EchoBoy in Dual mode, or Live Echo with L and R set to different times and modulation on</td></tr>
+    <tr><td>Envelope flangers</td><td>Waves MetaFlanger, UAD ADA Flanger <span class="unsure">(UAD-2 ❓)</span>, or Live Chorus-Ensemble with an Envelope Follower on the rate</td></tr>
+    <tr><td>Backwards reverb</td><td>Reverse the clip, print the reverb, reverse it back</td></tr>
+    <tr><td>Fairchild 660 (live ❓)</td><td>UADx Fairchild 660</td></tr>
+  </table></div>
+</section>
+
+<section id="gahan">
+  <div class="eyebrow">Your neighbourhood</div>
+  <h2>Dave Gahan · Depeche Mode</h2>
+  <div class="meta"><span class="tag eng">engineer says</span><span>Marta Salogni · Memento Mori, 2023</span></div>
+  <h3>Tracking</h3>
+  <div class="signal"><b>Neumann U87</b> <i>→</i> <b>API pre</b> <i>→</i> <b>LA-2A</b> <i>→</i> <b>Massive Passive EQ</b></div>
+  <ul class="did" style="margin-top:12px">
+    <li>He sings into effects that are already set up, some of them <q>quite extreme</q>: tape machines, Eventide H3000, Dimension-D, AMS RMX16, Lexicon.</li>
+    <li>The vocal is recorded <b>dry</b>, and each effect is printed on its own track.</li>
+    <li>The booth was made of rugs and mic stands, and later a heavy curtain booth.</li>
+  </ul>
+  <h3>Mix inserts, in her order</h3>
+  <div class="signal"><b>EQ</b> <i>→</i> <b>comp</b> <i>→</i> <b>EQ</b> <i>→</i> <b>de-esser</b> <i>→</i> <b>EQ</b> <i>→</i> <b>Devil-Loc</b> <i>→</i> <b>Radiator</b> <i>→</i> <b>Soothe</b> <i>→</i> <b>EQ</b> <i>+ Valhalla Delay</i></div>
+  <p style="margin-top:12px">There is a lot of volume automation, including the ends of phrases, so the words cut through. The effects are automated per section.</p>
+  <p class="src">Source: <a href="https://www.soundonsound.com/techniques/inside-track-depeche-mode-memento-mori" target="_blank" rel="noopener">SOS Inside Track: Depeche Mode 'Memento Mori'</a></p>
+  <h3>Your version</h3>
+  <div class="tbl"><table>
+    <tr><th>Their step</th><th>In your Live set</th></tr>
+    <tr><td>API pre</td><td>UADx API Vision Channel Strip</td></tr>
+    <tr><td>LA-2A</td><td>UADx LA-2A Silver or Gray</td></tr>
+    <tr><td>Massive Passive</td><td>UADx Manley Massive Passive EQ</td></tr>
+    <tr><td>EQ / comp / de-ess</td><td>Pro-Q 3, Pro-C 2, Waves DeEsser or RX 11 De-ess</td></tr>
+    <tr><td>Devil-Loc, Radiator, Soothe</td><td>Devil-Loc, Radiator, soothe2 <span class="exact">exact plug-ins</span></td></tr>
+    <tr><td>Valhalla Delay</td><td>ValhallaDelay <span class="exact">exact plug-in</span></td></tr>
+    <tr><td>Sing into effects, record dry</td><td>Monitor through a Return chain, record the dry input, resample the Return onto its own track</td></tr>
+  </table></div>
+</section>
+
+<section id="protomartyr">
+  <div class="eyebrow">Your neighbourhood · post-punk</div>
+  <h2>Joe Casey · Protomartyr</h2>
+  <div class="meta"><span class="tag eng">engineer says</span><span>David Tolomei · Ultimate Success Today, 2020</span></div>
+  <div class="signal"><b>vintage SM7</b> <i>→</i> <b>Neve 1073</b> <i>→</i> <b>fader, ridden by hand</b> <i>→</i> <b>Tube-Tech CL-1A</b> <i>→ split:</i> <b>dry</b> <i>+</i> <b>Blue Stripe 1176 as distortion</b></div>
+  <p style="margin-top:12px">The 1176 copy is blended in so the vocal cuts through heavy guitars. He used few plug-ins and took ambience from room mics instead of digital reverb.</p>
+  <p class="src">Source: <a href="https://vintageking.com/blog/2020/09/protomartyr-ultimate-success-today-tolomei/" target="_blank" rel="noopener">Vintage King: Making Of Protomartyr's Ultimate Success Today</a></p>
+  <h3>Your version: maps one to one</h3>
+  <div class="tbl"><table>
+    <tr><th>Their step</th><th>In your Live set</th></tr>
+    <tr><td>1073</td><td>UADx Neve 1073</td></tr>
+    <tr><td>Fader ride before the comp</td><td>Automate a Utility gain in front of the compressor</td></tr>
+    <tr><td>CL-1A</td><td>Softube Tube-Tech CL 1B / mk II (the later model of the same unit)</td></tr>
+    <tr><td>Split + Blue Stripe 1176</td><td>Audio Effect Rack with 2 chains: dry, plus UADx 1176 Rev A <span class="exact">Rev A = Blue Stripe</span></td></tr>
+  </table></div>
+</section>
+
+<section id="idles">
+  <div class="eyebrow">Your neighbourhood · post-punk</div>
+  <h2>Joe Talbot · IDLES</h2>
+  <div class="meta"><span class="tag eng">engineer says</span><span>Mark Bowen (with Kenny Beats) · Crawler, 2021</span></div>
+  <ul class="did">
+    <li>Loud, barked parts: a hand-held <b>Shure SM7B</b>, so he can move. Soft parts: vintage U67 / U87 (he broke several).</li>
+    <li><b>The Distressor was used a lot</b> because he is <q>hugely dynamic</q>. Vintage Neve preamps went into an SSL.</li>
+    <li>One improvised take was on a Shure 520DX <q>Green Bullet</q> harmonica mic.</li>
+  </ul>
+  <p class="src">Source: <a href="https://www.soundonsound.com/techniques/idles?page=2" target="_blank" rel="noopener">SOS: IDLES, recording Crawler</a></p>
+  <h3>Your version</h3>
+  <div class="tbl"><table>
+    <tr><th>Their step</th><th>In your Live set</th></tr>
+    <tr><td>Neve pre</td><td>UADx Neve 1073</td></tr>
+    <tr><td>Distressor</td><td>UADx Empirical Labs Distressor</td></tr>
+    <tr><td>SSL</td><td>Waves SSL E / G channel</td></tr>
+    <tr><td>Green Bullet colour</td><td>EQ Eight band-pass (about 300 Hz-3 kHz) + Pedal or Roar</td></tr>
+  </table></div>
+</section>
+
+<section id="crystal">
+  <div class="eyebrow">Your neighbourhood</div>
+  <h2>Alice Glass · Crystal Castles</h2>
+  <div class="meta"><span class="tag forum">forum guess</span><span class="tag out">tutorials</span><span>No engineer interview exists; the community recreations are below</span></div>
+  <p>Ethan Kath said the first track was Glass <q>testing her mic</q> over one of their loops (<a href="https://www.gigwise.com/features/41803/words-with-crystal-castles/" target="_blank" rel="noopener">Gigwise</a>). The mic is not named.</p>
+  <p class="unsure">Crowd claims (<a href="https://equipboard.com/band/crystal-castles" target="_blank" rel="noopener">Equipboard</a>): an SM58, a Boss DS-1 distortion, heavy echo, and a Lexicon MX200 in the studio. ❓</p>
+  <h3>What people online do <span class="tag out">tutorials</span></h3>
+  <p><b>billyxo</b>, <a href="https://www.youtube.com/watch?v=1XhsLSp_Dk8" target="_blank" rel="noopener">"how to do crystal castles type vocals"</a> (YouTube, 2024, about 31k views). I read it from the auto-captions and frames:</p>
+  <div class="signal"><b>Auto-Tune retune 0, key set, transpose +1</b> <i>+ a harmony layer under it →</i> <b>gate</b> <i>→</i> <b>comp</b> <i>→</i> <b>multiband, high band only</b> <i>→</i> <b>limiter</b> <i>→</i> <b>EQ</b> <i>→</i> <b>flanger</b> <i>→</i> <b>convolver "ghost"</b> <i>→</i> <b>delay</b> <i>→ sidechain-gated rhythm</i></div>
+  <ul class="did" style="margin-top:12px">
+    <li>The transpose is there <q>to pitch it up, sound more like a female</q>. He sings one note lower so it lands on pitch.</li>
+    <li>The layer vocal uses the same chain, but a reverb instead of the convolver, plus a stereo widener at about 70%.</li>
+  </ul>
+  <p><span class="tag forum">forum guess</span> Gearspace (search summary only ❓): distortion, a <b>short spring reverb on the highs</b>, and upper mids boosted so the yell has presence. One reply says the oldest tracks <b>stack several takes and run the yells through Auto-Tune</b>.</p>
+  <p class="unsure">Weak source: <a href="https://www.internettattoo.com/blog/crystal-castles-vst-plugins-guide" target="_blank" rel="noopener">an affiliate plug-in blog</a> suggests Little AlterBoy for pitch and formant, SketchCassette, Valhalla Delay + VintageVerb, RC-20, and clipping the vocal until it breaks.</p>
+
+  <h3>Your version</h3>
+  <div class="tbl"><table>
+    <tr><th>Step</th><th>In your Live set</th></tr>
+    <tr><td>Auto-Tune retune 0, key, pitch up</td><td>Auto-Tune Artist (retune 0) + Little AlterBoy for pitch and formant <span class="exact">owned</span></td></tr>
+    <tr><td>Harmony layer under the lead</td><td>A duplicate vocal through Little AlterBoy, or Waves Harmony <span class="exact">owned</span></td></tr>
+    <tr><td>Gate → comp → multiband → limiter</td><td>Live Gate → Compressor → Multiband Dynamics (high band only) → Limiter</td></tr>
+    <tr><td>Flanger, convolver "ghost"</td><td>Phaser-Flanger or MetaFlanger, Hybrid Reverb (convolution, short dark IR). A convolver is a convolution reverb (German: Faltungshall): it puts the voice inside a recorded "fingerprint" (impulse response) of a real room or device.</td></tr>
+    <tr><td>Sidechain-gated rhythm</td><td>ShaperBox 3 volume shaper <span class="exact">owned</span></td></tr>
+    <tr><td>DS-1 style clipping, bitcrush</td><td>Pedal, Roar, Redux, Decimort 2, RC-20, on a parallel chain</td></tr>
+    <tr><td>Short spring on the highs</td><td>Waves Magma Springs on a Return, low-cut</td></tr>
+    <tr><td>Echo / Lexicon</td><td>Live Echo, UADx Lexicon 224</td></tr>
+  </table></div>
+</section>
+
+<section id="lana">
+  <div class="eyebrow">Outside your range</div>
+  <h2>Lana Del Rey</h2>
+  <div class="meta"><span class="tag eng">engineer says</span><span>Kieron Menzies + Dean Reid · Lust For Life, 2017 · Laura Sisk · Norman Fucking Rockwell!, 2019</span></div>
+
+  <h3>Lust For Life: tracking</h3>
+  <div class="signal"><b>Shure SM7B</b> <i>→</i> <b>BAE 1073</b> <i>→</i> <b>UREI 1176</b> <i>(+ a flat API 550B <q>just for the sound</q>; no EQ on the way in)</i></div>
+  <ul class="did" style="margin-top:12px">
+    <li>She chose the SM7B after years of looking, because it has <q>the dark aesthetic that she likes</q>.</li>
+    <li>She monitors through the <b>AIR Spring Reverb</b> so she hears herself the way she will sound on the record. Menzies calls that reverb one of the characteristic parts of her vocal sound.</li>
+    <li>She records 3-4 takes, usually keeps take 2 or 3, and there is very little comping. The stacked backing vocals define much of her sound.</li>
+  </ul>
+  <h3>Lust For Life: mix starting point (Reid)</h3>
+  <div class="signal"><b>de-esser</b> <i>→</i> <b>EQ (EQ3 or Waves SSL)</b> <i>→</i> <b>LA-2A / CLA-2A</b> <i>→</i> <b>Waves C4 'Pensado Vocal'</b> <i>→ sends to effects</i></div>
+  <p style="margin-top:12px">Spoken parts get a FutzBox radio sound. A vocoder track runs on Waves Morphoder. Valhalla VintageVerb is used a lot.</p>
+  <p class="src">Source: <a href="https://www.soundonsound.com/techniques/inside-track-lana-del-rey-lust-life" target="_blank" rel="noopener">SOS Inside Track: Lana Del Rey 'Lust For Life'</a></p>
+
+  <h3>Norman Fucking Rockwell!: Laura Sisk</h3>
+  <div class="signal"><b>Wunder CM7 S (U47 copy)</b> <i>→</i> <b>1073</b> <i>→</i> <b>Tube-Tech CL-1B</b> <i>fixed 1 ms / 50 ms, 3-5 dB max</i></div>
+  <p style="margin-top:12px">In the box: barely any EQ, a little more compression, and reverb per song. The mic's dip at 8 kHz helps with sibilance on quiet takes.</p>
+  <p class="src">Source: <a href="https://www.soundonsound.com/people/laura-sisk-engineer" target="_blank" rel="noopener">SOS: Laura Sisk, recording Lana Del Rey's Norman album</a></p>
+
+  <h3>Your version</h3>
+  <div class="tbl"><table>
+    <tr><th>Their step</th><th>In your Live set</th></tr>
+    <tr><td>1073 → 1176</td><td>UADx Neve 1073 → UADx 1176LN Rev E</td></tr>
+    <tr><td>API 550B, flat</td><td>Waves API-550B, all bands at 0</td></tr>
+    <tr><td>Spring reverb to sing with</td><td>Waves Magma Springs on the monitor return. <span class="unsure">You don't own the AIR Spring Reverb.</span></td></tr>
+    <tr><td>CL-1B, fixed 1 ms / 50 ms</td><td>Softube Tube-Tech CL 1B <span class="exact">exact unit</span></td></tr>
+    <tr><td>De-ess → EQ → LA-2A → C4</td><td>Waves DeEsser → Waves SSL channel → UADx LA-2A → Waves C4 <span class="unsure">('Pensado Vocal' preset not checked ❓)</span></td></tr>
+    <tr><td>Radio voice</td><td>EQ Eight band-pass + Pedal, or Waves Retro Fi</td></tr>
+    <tr><td>Vocoder</td><td>Waves Morphoder <span class="exact">exact plug-in</span></td></tr>
+    <tr><td>VintageVerb</td><td>ValhallaVintageVerb <span class="exact">exact plug-in</span></td></tr>
+  </table></div>
+</section>
+
+<section id="weeknd">
+  <div class="eyebrow">Outside your range</div>
+  <h2>The Weeknd</h2>
+  <div class="meta"><span class="tag eng">engineer says</span><span>Carlo 'Illangelo' Montagnese · 'The Hills', 2015 · Ethan Stevens · 'Creepin'', 2022</span></div>
+  <p>He is recorded raw, with no EQ and no compressor, and only checked for clipping. The mic may have been a U67, but <q>it doesn't matter as I ended up treating the vocals so heavily</q>.</p>
+  <h3>'The Hills': verse lead inserts</h3>
+  <div class="signal"><b>Auto-Tune EFX (subtle)</b> <i>→</i> <b>Pro-DS</b> <i>→</i> <b>Pro-Q2 (lo-fi roll-off)</b> <i>→</i> <b>Vocal Rider</b> <i>→</i> <b>API 560 "fuzz"</b> <i>→</i> <b>Pro-MB, pumping</b></div>
+  <ul class="did" style="margin-top:12px">
+    <li><b>Parallel</b>: Little Radiator for overdrive, then a UAD 1176 <q>slamming it</q>, blended under the lead.</li>
+    <li>Five sends: Altiverb with H-Delay pre-delay; Doubler → MicroShift, with the top cut so the doubled esses stay out of the way; long filtered Timeless tape delays.</li>
+    <li>Chorus: the same core plus Reel ADT, Decapitator, Volcano and a flanger. The verse is soft and low and the chorus is screamed high, so <q>it had to sound overdriven</q>.</li>
+    <li>'Creepin'': a long reverb, then mids only, then Saturn 2, then a compressor <b>ducked by the dry vocal</b>, so the tail opens up in the gaps.</li>
+  </ul>
+  <p class="src">Sources: <a href="https://www.soundonsound.com/techniques/inside-track-weeknd" target="_blank" rel="noopener">SOS Inside Track: The Weeknd</a> · <a href="https://www.soundonsound.com/techniques/inside-track-metro-boomin-heroes-villains" target="_blank" rel="noopener">SOS Inside Track: Metro Boomin 'Heroes &amp; Villains'</a></p>
+  <h3>Your version</h3>
+  <div class="tbl"><table>
+    <tr><th>Their step</th><th>In your Live set</th></tr>
+    <tr><td>Subtle Auto-Tune first</td><td>Auto-Tune Artist or UAD Auto-Tune Realtime, light</td></tr>
+    <tr><td>Pro-DS</td><td>Waves DeEsser / Sibilance, RX 11 De-ess <span class="unsure">(no Pro-DS)</span></td></tr>
+    <tr><td>Pro-Q, Pro-MB, Timeless, Volcano, Saturn</td><td>Pro-Q 3, Pro-MB, Timeless 3, Volcano 3, Saturn 2 <span class="exact">owned, newer</span></td></tr>
+    <tr><td>Vocal Rider</td><td>Ride the track gain by hand <span class="unsure">(no Vocal Rider)</span></td></tr>
+    <tr><td>API 560 fuzz</td><td>Waves API-560</td></tr>
+    <tr><td>Parallel Little Radiator → 1176</td><td>Little Radiator → UADx 1176LN on a rack chain <span class="exact">exact pair</span></td></tr>
+    <tr><td>Altiverb</td><td>Live Hybrid Reverb (convolution side), Pro-R or ValhallaRoom</td></tr>
+    <tr><td>H-Delay, Doubler, MicroShift, Reel ADT, Decapitator</td><td>All owned <span class="exact">exact plug-ins</span></td></tr>
+    <tr><td>Ducked reverb</td><td>Live Compressor on the reverb Return, with its sidechain set to the lead vocal</td></tr>
+  </table></div>
+</section>
+
+<section id="travis">
+  <div class="eyebrow">Outside your range</div>
+  <h2>Travis Scott</h2>
+  <div class="meta"><span class="tag eng">engineer says</span><span>Ethan Stevens · tracking only, 2022</span></div>
+  <div class="signal"><b>Sony C-800G</b> <i>→</i> <b>Neve 1073</b> <i>→</i> <b>Tube-Tech CL-1B</b></div>
+  <p style="margin-top:12px">The C-800G is <q>his favorite mic, that he feels comfortable using</q>. I found no SOS piece on <i>Astroworld</i> or <i>Utopia</i>. There is a paid <a href="https://mixwiththemasters.com/videos/tom-elmhirst-travis-scott-my-eyes" target="_blank" rel="noopener">Mix With The Masters video</a> (Tom Elmhirst, 'My Eyes') that I haven't watched <span class="unsure">❓</span>. The "Travis chain" blogs are preset sellers, so treat them as forum grade.</p>
+  <p class="src">Source: <a href="https://www.soundonsound.com/techniques/inside-track-metro-boomin-heroes-villains" target="_blank" rel="noopener">SOS Inside Track: Metro Boomin 'Heroes &amp; Villains'</a></p>
+  <h3>Your version</h3>
+  <div class="tbl"><table>
+    <tr><th>Their step</th><th>In your Live set</th></tr>
+    <tr><td>1073 → CL-1B</td><td>UADx Neve 1073 → Softube Tube-Tech CL 1B <span class="exact">exact pair</span></td></tr>
+  </table></div>
+</section>
+
+<section id="autotune">
+  <div class="eyebrow">Your chain</div>
+  <h2>Where Auto-Tune goes</h2>
+  <div class="meta"><span class="tag eng">engineers say</span><span>SOS 'Vocal Fixes', Oct 2003: an old article, but the methods still apply</span></div>
+  <ul class="did">
+    <li><b>As a colour, in parallel.</b> Josh Binder runs a chromatic Auto-Tune with a mellow response even on singers who are in tune, for a chorus/flanging effect. He prints it and blends it into the comped vocal: <q>It's not there to fix the vocal; it's there to be part of the vocal sound.</q></li>
+    <li><b>On the monitor path while recording.</b> Donal Hodgson (Sting, Counting Crows): it helped one singer stop worrying about pitch and relax. In the mix he automates bypass and response time so only some syllables get fixed.</li>
+    <li><b>On what the singer hears, not on the take.</b> Seth Firkins (Future's engineer, <a href="https://www.soundonsound.com/node/4916478" target="_blank" rel="noopener">SOS 2017</a>) always has it on, but on an aux the singer hears: Auto-Tune → quarter-note delay → room reverb at 12-15% wet with 12 ms pre-delay. <q>His confidence is up, and he can experiment a lot more.</q> He prints the Auto-Tune afterwards. His mix bus order is EQ (top lifted above 5.2 kHz) → de-esser at 5.5 kHz → compressor → effects.</li>
+    <li><b>First and subtle.</b> Illangelo puts Auto-Tune at the top of The Weeknd's chain, before the de-esser and EQ.</li>
+    <li><b>Light, and against the track.</b> Joe Barresi (Queens of the Stone Age) keeps the correction close to the real pitch, nudges the track 2-4 ms earlier to make up for the delay, and tunes while the track plays.</li>
+  </ul>
+  <p class="src">Source: <a href="https://www.soundonsound.com/techniques/vocal-fixes" target="_blank" rel="noopener">SOS: Vocal Fixes, Modern Vocal Processing In Practice</a></p>
+  <p class="unsure">❓ Not found: an engineer-documented chain in your genre or Lana's that names Auto-Tune.</p>
+  <h3>Your version</h3>
+  <div class="tbl"><table>
+    <tr><th>Method</th><th>In your Live set</th></tr>
+    <tr><td>Correction or the effect</td><td>Auto-Tune Artist, UAD Auto-Tune Realtime, Waves Tune Real-Time, Melodyne for graph edits</td></tr>
+    <tr><td>Binder's parallel blend</td><td>Audio Effect Rack: a dry chain + an Auto-Tune chain (chromatic, slow retune), with the chain volume low</td></tr>
+    <tr><td>Hodgson's monitor tune</td><td>Auto-Tune on the monitoring path only, recording the dry input</td></tr>
+    <tr><td>Per-word fixes</td><td>Automate Auto-Tune's bypass + Retune Speed</td></tr>
+  </table></div>
+</section>
+
+<section id="wider">
+  <div class="eyebrow">Beyond the engineers</div>
+  <h2>Forums, tutorials and one big find</h2>
+  <div class="meta"><span class="tag eng">engineer says</span><span class="tag forum">forum guess</span><span class="tag out">tutorial</span><span>tutorial = a magazine or video recreation, not the artist's engineer</span></div>
+  <p class="unsure">What I could reach: Reddit is blocked for my tools and the built-in browser. Gearspace sits behind a Cloudflare check, so I only saw search snippets. YouTube gives no text, so I saw video titles only, not their content.</p>
+
+  <h3>The Weeknd, After Hours: your exact setup <span class="tag eng">engineer says</span></h3>
+  <div class="signal"><b>Shure SM7B</b> <i>→</i> <b>Apollo Twin preamp</b> <i>→ sometimes</i> <b>Manley VOXBOX plug-in</b> <i>→ everything else in plug-ins, in Ableton</i></div>
+  <p style="margin-top:12px">Illangelo: they tried a Sony C800, but the SM7B hit better. He bought a Tube-Tech CL 1B, but the small Apollo + SM7B rig was <q>easier, faster and better</q>. You have the SM7B, the Apollo Twin and UAD Manley VOXBOX <span class="unsure">(Unison, needs the Apollo ❓)</span>.</p>
+  <p class="src">Source: <a href="https://www.mixonline.com/?p=121713" target="_blank" rel="noopener">Mix: Illangelo on producing 'After Hours'</a> (2021)</p>
+
+  <h3>Depeche Mode live, Memento Mori tour <span class="tag eng">engineers say</span></h3>
+  <ul class="did">
+    <li>Front of house: a <b>short plate</b> for depth, with a second, characterful reverb blended in.</li>
+    <li>Monitors: a UAD <b>Manley VoxBox on Dave</b>, and a chain of Shadow Hills pre → tape emulator → API 550A. Mic: an SM58.</li>
+  </ul>
+  <p class="src">Source: <a href="https://www.mixonline.com/?p=143399" target="_blank" rel="noopener">Mix: Mixing Depeche Mode's Memento Mori world tour</a> (2024)</p>
+
+  <h3>Lana Del Rey <span class="tag out">tutorial</span></h3>
+  <div class="signal"><b>EQ: shelf +10k, boost ~5k, cut 1.1k + 272 Hz</b> <i>→</i> <b>comp 4.4:1, low threshold</b> <i>→ send 1:</i> <b>2.5 s plate + 1/4 echo, a bit louder L</b> <i>→ send 2:</i> <b>long reverb, automated up on key lines</b></div>
+  <p style="margin-top:12px">Tuning: no automatic tuner, because it kills her bends. Use Melodyne or the Auto-Tune graph and don't push notes to perfect pitch: <q>Del Rey's style is to sing slightly flat</q>.</p>
+  <p class="src">Source: <a href="https://www.musicradar.com/tuition/tech/how-to-create-drowsy-lana-del-rey-style-vocals-531265" target="_blank" rel="noopener">MusicRadar: drowsy Lana Del Rey-style vocals</a> (2012)</p>
+
+  <h3>The Cure, by ear <span class="tag forum">forum guess</span></h3>
+  <ul class="did">
+    <li>A normal reverb <b>with a good pre-delay</b>, so the tail doesn't run over the voice.</li>
+    <li><b>Heavy compression on a close-miked, breathy vocal</b>. This is the only source anywhere that names compression on Smith, and it's a guess by ear.</li>
+    <li>A long <b>ping-pong delay into reverb</b>, EQ'd thin, about 3 repeats, fully wet.</li>
+  </ul>
+  <p class="src">Source: <a href="https://homerecording.com/bbs/threads/vocals-the-cure-the-killers.175117/" target="_blank" rel="noopener">homerecording.com thread</a></p>
+
+  <h3>The Weeknd and Travis <span class="tag forum">blogs and preset sellers</span></h3>
+  <ul class="did">
+    <li>The Weeknd: retune at about 15-25 ms for natural tuning; a short plate with 30-60 ms pre-delay at 10-15% wet; delays with the highs rolled off; reverb and delay ducked under the voice (<a href="https://rysupaudio.com/blogs/news/how-to-sound-like-the-weeknd" target="_blank" rel="noopener">RysUp</a>).</li>
+    <li>Travis: retune 0, Auto-Tune on the dry vocal first, then delays, then reverb. <q>The delay is doing as much work as the pitch correction</q> (<a href="https://www.antarestech.com/blog/auto-tune-for-rap-hip-hop-how-trap-producers-use-pitch-correction" target="_blank" rel="noopener">Antares blog</a>). A trailing echo on its own track at about 500 ms with 20-30% feedback. The sources disagree on the reverb.</li>
+    <li>Crystal Castles: still no vocal source. Tutorials suggest a parallel bitcrushed copy, filtered narrow, under the clean voice <span class="unsure">❓</span>.</li>
+  </ul>
+
+  <h3>Your version</h3>
+  <div class="tbl"><table>
+    <tr><th>Idea</th><th>In your Live set</th></tr>
+    <tr><td>SM7B → Apollo → VOXBOX (Weeknd)</td><td>Your SM7B + Apollo Twin + UAD Manley VOXBOX <span class="exact">exact</span></td></tr>
+    <tr><td>Short plate + character reverb (Gahan live)</td><td>ValhallaPlate short + UADx Lexicon 224 blended</td></tr>
+    <tr><td>Lana plate + echo</td><td>ValhallaPlate 2.5 s + Live Echo 1/4 on one Return; ValhallaVintageVerb long on a second</td></tr>
+    <tr><td>Pre-delay so the tail clears the word (Cure)</td><td>Valhalla pre-delay up, timed by ear to the tempo</td></tr>
+    <tr><td>Thin ping-pong into reverb, wet only (Cure)</td><td>Live Echo ping-pong + EQ Eight thin + Valhalla, all on one Return</td></tr>
+    <tr><td>Parallel bitcrush (Crystal Castles)</td><td>Live Redux or Decimort 2 on a rack chain + EQ Eight band-pass</td></tr>
+    <tr><td>Retune 0 → delay → reverb (Travis)</td><td>Auto-Tune Artist → Live Echo → Hybrid Reverb, in that order</td></tr>
+  </table></div>
+</section>
+
+<section id="cave">
+  <div class="eyebrow">Nearby</div>
+  <h2>Nick Cave · Push The Sky Away</h2>
+  <div class="meta"><span class="tag eng">engineer says</span><span>Nick Launay, 2013</span></div>
+  <div class="signal"><b>Neumann M49</b> <i>→</i> <b>Neve 1081</b> <i>→</i> <b>Tube-Tech CL1B</b> <i>→ Pro Tools</i></div>
+  <ul class="did" style="margin-top:12px">
+    <li><b>Every vocal is an original take, sung live with the band.</b> Cave plays piano while he sings, so the piano mics sit taped inside the closed piano.</li>
+    <li>Mix: a little <b>spring reverb</b>, an <b>EMT plate</b> or a <b>Roland RE-301 slap</b>: <q>I used the same effects on the vocals</q>.</li>
+    <li>He prefers a Tube-Tech over an 1176 on vocals, because the 1176 brings out the esses. The Tube-Tech <q>sounds very warm and works great on Nick's vocals</q>.</li>
+    <li>Plug-ins: Waves DeEsser, an EQ used for notches, Crystallizer and <b>Devil-Loc</b>: <q>I do a lot of controlled distortion!</q></li>
+  </ul>
+  <p class="src">Source: <a href="https://tingen.org/?p=1171" target="_blank" rel="noopener">Paul Tingen: Nick Cave &amp; The Magical Fabrique</a> (AudioTechnology, 2013)</p>
+  <p class="unsure">❓ Skeleton Tree: no chain found. Launay recorded it at La Frette; a snippet says Cave's vocal mic sits by his piano and the vocals are mostly the performance takes, but no album is named.</p>
+  <h3>Your version</h3>
+  <div class="tbl"><table>
+    <tr><th>Their step</th><th>In your Live set</th></tr>
+    <tr><td>M49 → 1081</td><td>Your TLM or SM7B → UADx Neve 1073</td></tr>
+    <tr><td>Tube-Tech CL1B</td><td>Softube Tube-Tech CL 1B <span class="exact">exact</span></td></tr>
+    <tr><td>Waves DeEsser, notch EQ</td><td>Waves DeEsser <span class="exact">exact</span>, Pro-Q 3</td></tr>
+    <tr><td>Spring / plate / RE-301 slap</td><td>Waves Magma Springs, UADx EMT 140, EchoBoy or UADx Galaxy Tape Echo (UAD RE-201 needs the Apollo <span class="unsure">❓</span>)</td></tr>
+    <tr><td>Devil-Loc, Crystallizer</td><td>Both owned <span class="exact">exact plug-ins</span></td></tr>
+  </table></div>
+</section>
+
+<section id="deftones">
+  <div class="eyebrow">Nearby</div>
+  <h2>Chino Moreno · Deftones</h2>
+  <div class="meta"><span class="tag eng">engineer says, snippet only</span><span>Terry Date · Ohms, 2020</span></div>
+  <ul class="did">
+    <li>Date has a set effects chain of pedals on Chino's vocal, including a <b>RAT distortion</b> for extra aggression and a <b>Strymon Volante</b> tape-style slap.</li>
+    <li><span class="tag forum">forum guess</span> An SM58, with part of the sound from cupping the mic.</li>
+  </ul>
+  <p class="src unsure">Source: <a href="https://audiotechnology.com/?p=55239" target="_blank" rel="noopener">AudioTechnology: Terry Date on Ohms</a>. The page blocked our text fetch, so this comes from the search snippet only ❓</p>
+  <h3>Your version</h3>
+  <div class="tbl"><table>
+    <tr><th>Their step</th><th>In your Live set</th></tr>
+    <tr><td>RAT distortion</td><td>Live Pedal (Distortion) or bx_blackdist2 on a parallel chain, blended</td></tr>
+    <tr><td>Tape slap</td><td>EchoBoy or UADx Galaxy Tape Echo</td></tr>
+    <tr><td>Dreamy parts</td><td>Valhalla Supermassive on a Return</td></tr>
+  </table></div>
+</section>
+
+<section id="emo">
+  <div class="eyebrow">Nearby</div>
+  <h2>Midwest emo · Sunny Day Real Estate, American Football</h2>
+  <div class="meta"><span class="tag forum">band members, not engineers</span><span>No vocal chain documented anywhere</span></div>
+  <ul class="did">
+    <li><b>American Football, LP1 (1999)</b>: tracked live, recorded and mixed in about five days, a take or two each. About 90% of the vocals were finished in the studio at the last session. Mike Kinsella was <q>trying to write songs that sound like Depeche Mode or The Cure</q>.</li>
+    <li><b>Sunny Day Real Estate, Diary (1994)</b>: Jeremy Enigk could <q>scream that was as hardcore as anything</q> and also sing softly. No gear details.</li>
+    <li>🎃 For a chain this means a raw take in a room: little tuning, light compression, little reverb, the emotion left in.</li>
+  </ul>
+  <p class="src">Sources: <a href="https://lifeoftherecord.com/american-football-notes" target="_blank" rel="noopener">Life of the Record: American Football</a> · <a href="https://lifeoftherecord.com/sunny-day-real-estate-notes" target="_blank" rel="noopener">Life of the Record: Diary</a></p>
+  <p class="unsure">❓ I read "Real Estate" as Sunny Day Real Estate, and "Football Party" as American Football.</p>
+</section>
+
+<section id="patterns">
+  <h2>What the chains share</h2>
+  <ul class="did patterns" style="margin-top:12px">
+    <li>A dynamic mic for loud, hard singers (Talbot, Casey, and Lana's SM7B for darkness). Condensers for the soft parts.</li>
+    <li>One colour compressor early (LA-2A, Distressor, CL-1A/1B), often with a dirty copy blended in parallel.</li>
+    <li>Cut the harsh band instead of boosting (Smith at 3 kHz, Salogni with soothe).</li>
+    <li>Effects are part of the performance: Gahan and Lana sing into them.</li>
+    <li>Riding the level by hand matters as much as the plug-ins (Salogni, Tolomei).</li>
+    <li>1073 → CL-1B shows up three times (Lana, Travis, Future). You own both.</li>
+  </ul>
+</section>
+
+<section id="sources">
+  <h2>Where to look next</h2>
+  <div class="sources" style="margin-top:14px">
+    <div class="source"><span class="rank">1</span><div><strong><a href="https://www.soundonsound.com/mix-secrets" target="_blank" rel="noopener">Sound On Sound</a></strong>: Inside Track, Classic Tracks and artist features. It is free and has the most hits for your genre: The Cure, Depeche Mode, IDLES, and Lana.</div></div>
+    <div class="source"><span class="rank">2</span><div><strong><a href="https://vintageking.com/blog/2020/09/protomartyr-ultimate-success-today-tolomei/" target="_blank" rel="noopener">Vintage King "Making Of"</a></strong>: it asks engineers straight out for the vocal chain.</div></div>
+    <div class="source"><span class="rank">3</span><div><strong><a href="https://tapeop.com/interviews/81/john-congleton-1" target="_blank" rel="noopener">Tape Op</a></strong>: long engineer interviews, more about method than settings. Nothing found yet for Interpol, Editors, Molchat Doma or Boy Harsher.</div></div>
+    <div class="source"><span class="rank">4</span><div><strong>Mix magazine, AudioTechnology</strong> (live front-of-house chains), <strong>Pensado's Place</strong>, <strong>Mix With The Masters</strong> (paid). <span class="unsure">Not checked for your genre ❓</span></div></div>
+    <div class="source"><span class="rank">5</span><div><strong>Waves signature plug-ins you already own</strong>: Butch Vig Vocals, JJP Vocals.</div></div>
+    <div class="source"><span class="rank">6</span><div><strong>Gearspace, Equipboard, Reddit</strong>: forum grade only.</div></div>
+  </div>
+</section>
+
+<footer>
+  <p>Your mics: SM7B, Neumann TLM 103, AKG (model ❓). Open question: is the Apollo Twin connected when you mix? The UAD-2 plug-ins need it, the UADx ones don't.</p>
+  <p>Text version: music-tools/research/vocal-chains.md</p>
+</footer>
+</div>

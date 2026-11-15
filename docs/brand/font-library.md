@@ -122,6 +122,7 @@ posters) / **potential** (from his references) / **set aside** / **out as main**
 |---|---|---|---|
 | **Impact** (Geoffrey Lee, 1965) | reference 38, The Cure, a Japanese magazine page about 1985 to 1986: "THECURE" in red, heavy condensed italic on a rising diagonal. Liked by Amir 2026-09-21 when set beside the scan, slanted and turned the same way (`references/fonts-look12/ref38-compare.jpg`). Not the scan's own lettering, which is not identified | on this Mac with macOS (`/System/Library/Fonts/Supplemental/Impact.ttf`); sold by Monotype. **In Canva** (2026-09-21, on the specimen). Licence for a release NOT checked | potential |
 | **Futura Condensed ExtraBold** | the same sheet, the nearest to the scan in weight and in the round C and U. Liked by Amir 2026-09-21 | on this Mac with macOS (`Futura.ttc`, face 4); **NOT in Canva** (2026-09-21: Canva's Futura is normal width only, ExtraBold is the nearest); buying: see Futura in `font-sources.md`. Licence for a release NOT checked | potential |
+| **Barlow Condensed** ExtraBold (Jeremy Tribby) | the Half the Night EP cover title, 2026-11-09: ivory, 3 lines, grain and soft shadow on the letters; chosen over Switzer Black in an A/B ("A is the heart, B is the mind"). Upright, not slanted | free, SIL OFL, on disk (`fonts/free/BarlowCondensed-ExtraBold.ttf`) | potential |
 
 ## G. Scripts and handwriting
 

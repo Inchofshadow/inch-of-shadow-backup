@@ -1,0 +1,3296 @@
+{
+  "what": "The font collection: one record per row of Amir's font research, joined to where to get each face, the files on this Mac and the faces the tools use. Source of truth since 2026-10-11 (Machine-19); font-library.md and font-sources.md keep their prose. The /fonts page reads this file.",
+  "version": 1,
+  "updated": "2026-10-11",
+  "allowed": {
+    "group": {
+      "A": "Tall, narrow, Deco: display capitals with high contrast",
+      "B": "Soft, warm, 1970s: swash and heavy serifs, drawn by hand",
+      "C": "Sharp, high-contrast serifs: editorial and fashion",
+      "D": "Flared and carved capitals",
+      "E": "Gothic romance: uncial, blackletter and Art Nouveau",
+      "F": "Plain partners: the quiet font next to the loud one",
+      "G": "Scripts and handwriting",
+      "H": "Slab, stencil, typewriter and book faces",
+      "I": "Retro-future: 1980s science fiction and machine letters",
+      "J": "Heavy condensed sans, slanted: the loud one"
+    },
+    "status": [
+      "default now",
+      "fallback",
+      "guest",
+      "potential",
+      "idea",
+      "set aside",
+      "out as main",
+      "in the tools"
+    ],
+    "licence": [
+      "owned",
+      "free",
+      "trial",
+      "canva only",
+      "system",
+      "personal use only",
+      "none"
+    ]
+  },
+  "rules": [
+    "A font in Canva is not a font owned: no file, Canva designs only.",
+    "Trial files are for looking at on screen. Nothing made with them goes out.",
+    "Read the logo clause before a face becomes the wordmark.",
+    "Statuses are Amir's. A face enters as potential until he has seen it on his own photos.",
+    "Nothing on disk is moved or renamed by these tools."
+  ],
+  "fonts": [
+    {
+      "id": "corvinus-skyline",
+      "name": "Corvinus Skyline",
+      "group": "A",
+      "status": "potential",
+      "status_note": "",
+      "seen_on": "Madonna, Material Girl: the name, tall and narrow over the photo",
+      "get_hint": "not checked",
+      "canva": "unknown",
+      "canva_note": "",
+      "sources": [
+        {
+          "label": "Corvinus Skyline",
+          "where": "https://www.youworkforthem.com/font/T4838/corvinus-skyline",
+          "price": "not readable",
+          "trial": "unknown. The MyFonts listing is dead, FontHaus 404s. The YWFT page blocks reading, so this is unconfirmed"
+        }
+      ],
+      "licence": "none",
+      "files": [],
+      "system": [],
+      "tags": "",
+      "in_tools_as": [],
+      "releases": [],
+      "archive_refs": [],
+      "notes": ""
+    },
+    {
+      "id": "solenizant",
+      "name": "Solenizant (Laic: Type)",
+      "group": "A",
+      "status": "potential",
+      "status_note": "",
+      "seen_on": "Bass Astral x Igo, Satellite",
+      "get_hint": "laic.pl/solenizant",
+      "canva": "unknown",
+      "canva_note": "",
+      "sources": [
+        {
+          "label": "Solenizant (Laic Type)",
+          "where": "https://laic.pl/product/typefaces/solenizant/",
+          "price": "not readable",
+          "trial": "unknown. One aggregator calls it free; unverified, do not rely on it"
+        }
+      ],
+      "licence": "none",
+      "files": [],
+      "system": [],
+      "tags": "",
+      "in_tools_as": [],
+      "releases": [],
+      "archive_refs": [],
+      "notes": ""
+    },
+    {
+      "id": "mostra-nuova",
+      "name": "Mostra Nuova (Mark Simonson)",
+      "group": "A",
+      "status": "potential",
+      "status_note": "",
+      "seen_on": "typeface page; Italian Art Deco posters of the 1930s, 9 weights, many alternates",
+      "get_hint": "marksimonson.com, Type Network, Fontspring; no trial found",
+      "canva": "no",
+      "canva_note": "NOT in Canva",
+      "sources": [
+        {
+          "label": "Mostra Nuova",
+          "where": "https://www.marksimonson.com/fonts/view/mostra-nuova/",
+          "price": "$24.99 a style, $154.99 for 9",
+          "trial": "no, 30-day money back"
+        }
+      ],
+      "licence": "none",
+      "files": [],
+      "system": [],
+      "tags": "",
+      "in_tools_as": [],
+      "releases": [],
+      "archive_refs": [],
+      "notes": ""
+    },
+    {
+      "id": "novel-gothic",
+      "name": "Novel Gothic (ATF, 1928)",
+      "group": "A",
+      "status": "potential",
+      "status_note": "",
+      "seen_on": "Le Mystere des Voix Bulgares, 1987, AD Carin Goldberg: the title in capitals only, ample letterspacing, over a bright illustration in a broad black frame",
+      "get_hint": "not checked",
+      "canva": "unknown",
+      "canva_note": "",
+      "sources": [],
+      "licence": "none",
+      "files": [],
+      "system": [],
+      "tags": "",
+      "in_tools_as": [],
+      "releases": [],
+      "archive_refs": [],
+      "notes": ""
+    },
+    {
+      "id": "peignot",
+      "name": "Peignot",
+      "group": "A",
+      "status": "potential",
+      "status_note": "",
+      "seen_on": "The Human League, Being Boiled",
+      "get_hint": "Production Type (House of Cassandre)",
+      "canva": "no",
+      "canva_note": "NOT in Canva",
+      "sources": [
+        {
+          "label": "Peignot",
+          "where": "https://productiontype.com/font/house-of-cassandre/peignot",
+          "price": "from EUR 95 a style",
+          "trial": "none. Production Type has held the Cassandre estate rights since 2023; theirs is the only digitisation that also has Peignot Initials"
+        }
+      ],
+      "licence": "none",
+      "files": [],
+      "system": [],
+      "tags": "",
+      "in_tools_as": [],
+      "releases": [],
+      "archive_refs": [],
+      "notes": ""
+    },
+    {
+      "id": "itc-fenice-ultra",
+      "name": "ITC Fenice Ultra",
+      "group": "A",
+      "status": "potential",
+      "status_note": "",
+      "seen_on": "China Crisis (Peter Saville)",
+      "get_hint": "MyFonts",
+      "canva": "unknown",
+      "canva_note": "",
+      "sources": [
+        {
+          "label": "ITC Fenice Ultra",
+          "where": "https://www.myfonts.com/products/pro-ultra-fenice-363382",
+          "price": "from $29.99",
+          "trial": "none"
+        }
+      ],
+      "licence": "none",
+      "files": [],
+      "system": [],
+      "tags": "",
+      "in_tools_as": [],
+      "releases": [],
+      "archive_refs": [],
+      "notes": ""
+    },
+    {
+      "id": "steile-futura",
+      "name": "Steile Futura",
+      "group": "A",
+      "status": "potential",
+      "status_note": "",
+      "seen_on": "China Crisis",
+      "get_hint": "MyFonts",
+      "canva": "unknown",
+      "canva_note": "",
+      "sources": [
+        {
+          "label": "Steile Futura",
+          "where": "nothing is released under that name. The surviving digitisation is URW Topic, Bauer's own export name for it: https://www.myfonts.com/collections/topic-font-urw",
+          "price": "$35 a style, $62.99 for 4",
+          "trial": "none"
+        }
+      ],
+      "licence": "none",
+      "files": [],
+      "system": [],
+      "tags": "",
+      "in_tools_as": [],
+      "releases": [],
+      "archive_refs": [],
+      "notes": ""
+    },
+    {
+      "id": "matthews-thin",
+      "name": "Matthews Thin (Letterhead Fonts)",
+      "group": "A",
+      "status": "guest",
+      "status_note": "",
+      "seen_on": "the bundle on disk; \"beautiful\" (Amir)",
+      "get_hint": "letterheadfonts.com",
+      "canva": "unknown",
+      "canva_note": "",
+      "sources": [
+        {
+          "label": "LHF Matthews Thin",
+          "where": "https://letterheadfonts.com/fonts/matthewsthin",
+          "price": "$15",
+          "trial": "none. On disk"
+        }
+      ],
+      "licence": "trial",
+      "files": [
+        "trials/Letterheadfonts - Letterhead Fonts Foundry Bundle/LHF Matthews Thin™/LHF Matthews Thin.otf"
+      ],
+      "system": [],
+      "tags": "tall deco elegant untouchable monumental",
+      "in_tools_as": [
+        "matthews"
+      ],
+      "releases": [],
+      "archive_refs": [],
+      "notes": ""
+    },
+    {
+      "id": "gloria",
+      "name": "Gloria (Letterhead Fonts)",
+      "group": "A",
+      "status": "guest",
+      "status_note": "",
+      "seen_on": "the bundle on disk; \"beautiful\" (Amir)",
+      "get_hint": "letterheadfonts.com",
+      "canva": "unknown",
+      "canva_note": "",
+      "sources": [
+        {
+          "label": "LHF Gloria",
+          "where": "https://letterheadfonts.com/fonts/gloria",
+          "price": "$29",
+          "trial": "none. On disk"
+        }
+      ],
+      "licence": "trial",
+      "files": [
+        "trials/Letterheadfonts - Letterhead Fonts Foundry Bundle/LHF Gloria™/LHF Gloria Bold.ttf",
+        "trials/Letterheadfonts - Letterhead Fonts Foundry Bundle/LHF Gloria™/LHF Gloria.ttf"
+      ],
+      "system": [],
+      "tags": "warm vintage sunny cheeky playful",
+      "in_tools_as": [
+        "gloria"
+      ],
+      "releases": [],
+      "archive_refs": [],
+      "notes": ""
+    },
+    {
+      "id": "ogg",
+      "name": "Ogg (Sharp Type)",
+      "group": "B",
+      "status": "guest",
+      "status_note": "",
+      "seen_on": "Look-12 renders; was the default for one day, 2026-09-20 to 09-21",
+      "get_hint": "sharptype.co; TRIAL file on disk, no punctuation in it",
+      "canva": "no",
+      "canva_note": "NOT in Canva",
+      "sources": [
+        {
+          "label": "Ogg (Sharp Type)",
+          "where": "https://www.sharptype.co/typefaces/ogg",
+          "price": "$49.99 a style, $299.99 for 10",
+          "trial": "yes, sharptype.co/licensing/trial. On disk"
+        }
+      ],
+      "licence": "trial",
+      "files": [
+        "trials/Sharp Trial Fonts/Ogg/OTF-Mac/Ogg-Bold-Trial.otf",
+        "trials/Sharp Trial Fonts/Ogg/OTF-Mac/Ogg-BoldItalic-Trial.otf",
+        "trials/Sharp Trial Fonts/Ogg/OTF-Mac/Ogg-Italic-Trial.otf",
+        "trials/Sharp Trial Fonts/Ogg/OTF-Mac/Ogg-Light-Trial.otf",
+        "trials/Sharp Trial Fonts/Ogg/OTF-Mac/Ogg-LightItalic-Trial.otf",
+        "trials/Sharp Trial Fonts/Ogg/OTF-Mac/Ogg-Medium-Trial.otf",
+        "trials/Sharp Trial Fonts/Ogg/OTF-Mac/Ogg-MediumItalic-Trial.otf",
+        "trials/Sharp Trial Fonts/Ogg/OTF-Mac/Ogg-Regular-Trial.otf",
+        "trials/Sharp Trial Fonts/Ogg/OTF-Mac/Ogg-Thin-Trial.otf",
+        "trials/Sharp Trial Fonts/Ogg/OTF-Mac/Ogg-ThinItalic-Trial.otf",
+        "trials/Sharp Trial Fonts/Ogg/TTF-Windows/Ogg-Bold-Trial.ttf",
+        "trials/Sharp Trial Fonts/Ogg/TTF-Windows/Ogg-BoldItalic-Trial.ttf",
+        "trials/Sharp Trial Fonts/Ogg/TTF-Windows/Ogg-Italic-Trial.ttf",
+        "trials/Sharp Trial Fonts/Ogg/TTF-Windows/Ogg-Light-Trial.ttf",
+        "trials/Sharp Trial Fonts/Ogg/TTF-Windows/Ogg-LightItalic-Trial.ttf",
+        "trials/Sharp Trial Fonts/Ogg/TTF-Windows/Ogg-Medium-Trial.ttf",
+        "trials/Sharp Trial Fonts/Ogg/TTF-Windows/Ogg-MediumItalic-Trial.ttf",
+        "trials/Sharp Trial Fonts/Ogg/TTF-Windows/Ogg-Regular-Trial.ttf",
+        "trials/Sharp Trial Fonts/Ogg/TTF-Windows/Ogg-Thin-Trial.ttf",
+        "trials/Sharp Trial Fonts/Ogg/TTF-Windows/Ogg-ThinItalic-Trial.ttf"
+      ],
+      "system": [],
+      "tags": "romantic dreamy soft warm intimate gentle",
+      "in_tools_as": [
+        "ogg"
+      ],
+      "releases": [],
+      "archive_refs": [],
+      "notes": ""
+    },
+    {
+      "id": "bookman-swash-italic",
+      "name": "Bookman Swash Italic",
+      "group": "B",
+      "status": "potential",
+      "status_note": "",
+      "seen_on": "Real Estate, Days: the band logo, heavy swash italic, stacked, with a shadow",
+      "get_hint": "several revivals exist; the full Bookmania with its swashes is Mark Simonson's, marksimonson.com",
+      "canva": "unknown",
+      "canva_note": "Canva's Bookmania is NOT this: upright only, no italic, no swash, seen 2026-09-20",
+      "sources": [
+        {
+          "label": "Bookmania (Mark Simonson)",
+          "where": "https://www.marksimonson.com/fonts/view/bookmania/",
+          "price": "$35.99 a style, $237.49 for 10",
+          "trial": "no, 30-day money back"
+        }
+      ],
+      "licence": "none",
+      "files": [],
+      "system": [],
+      "tags": "",
+      "in_tools_as": [],
+      "releases": [],
+      "archive_refs": [],
+      "notes": ""
+    },
+    {
+      "id": "oxford-swash",
+      "name": "Oxford Swash (Lettergraphics, by 1968, from Volta Italic)",
+      "group": "B",
+      "status": "potential",
+      "status_note": "",
+      "seen_on": "Memory of Megan, 1973 gothic paperback: pink swash title on a painting. Swash alternates, single-storey g; the cover's f is modified",
+      "get_hint": "no digital release found. Lead: Volta (Bauer). fontsinuse.com/typefaces/236470/oxford-italic",
+      "canva": "unknown",
+      "canva_note": "",
+      "sources": [
+        {
+          "label": "Oxford Swash (Lettergraphics)",
+          "where": "a real face, see the note below. No digital release found. The lead is Volta Italic (Bauer), which it derives from",
+          "price": "",
+          "trial": ""
+        }
+      ],
+      "licence": "none",
+      "files": [],
+      "system": [],
+      "tags": "",
+      "in_tools_as": [],
+      "releases": [],
+      "archive_refs": [],
+      "notes": ""
+    },
+    {
+      "id": "windsor",
+      "name": "Windsor",
+      "group": "B",
+      "status": "potential",
+      "status_note": "",
+      "seen_on": "The Ghastling",
+      "get_hint": "MyFonts",
+      "canva": "no",
+      "canva_note": "NOT in Canva",
+      "sources": [
+        {
+          "label": "Windsor",
+          "where": "https://www.myfonts.com/collections/windsor-font-urw",
+          "price": "$35.99 a style, $72.99 for 5",
+          "trial": "none. The Elsner+Flake listing is dead; URW is the live one"
+        }
+      ],
+      "licence": "none",
+      "files": [],
+      "system": [],
+      "tags": "",
+      "in_tools_as": [],
+      "releases": [],
+      "archive_refs": [],
+      "notes": ""
+    },
+    {
+      "id": "cooper-black",
+      "name": "Cooper Black",
+      "group": "B",
+      "status": "potential",
+      "status_note": "",
+      "seen_on": "The Doors, L.A. Woman: fat soft capitals, tight, cream on maroon",
+      "get_hint": "everywhere",
+      "canva": "yes",
+      "canva_note": "in Canva as Cooper BT, style Black. The family's default weight is Light and is the wrong face",
+      "sources": [
+        {
+          "label": "Cooper Black",
+          "where": "https://www.myfonts.com/collections/cooper-black-font-linotype/",
+          "price": "$25.99 a style, $51.99 Regular + Italic",
+          "trial": "none. In Canva as Cooper BT Black"
+        }
+      ],
+      "licence": "canva only",
+      "files": [],
+      "system": [],
+      "tags": "",
+      "in_tools_as": [],
+      "releases": [],
+      "archive_refs": [],
+      "notes": ""
+    },
+    {
+      "id": "asoma-v0-1",
+      "name": "Asoma v0.1 (Plattner Type)",
+      "group": "B",
+      "status": "potential",
+      "status_note": "",
+      "seen_on": "TV Girl and The Last Dinner Party poster: outlined, with a long shade",
+      "get_hint": "not checked",
+      "canva": "unknown",
+      "canva_note": "",
+      "sources": [
+        {
+          "label": "Asoma (Plattner Type)",
+          "where": "https://plattnertype.com/fonts/asoma",
+          "price": "$45 per a search result, NOT confirmed on the page",
+          "trial": "none, free PDF specimen"
+        }
+      ],
+      "licence": "none",
+      "files": [],
+      "system": [],
+      "tags": "",
+      "in_tools_as": [],
+      "releases": [],
+      "archive_refs": [],
+      "notes": ""
+    },
+    {
+      "id": "melbourne",
+      "name": "Melbourne (a Milton)",
+      "group": "B",
+      "status": "potential",
+      "status_note": "",
+      "seen_on": "Clockwork Editions book series",
+      "get_hint": "MyFonts",
+      "canva": "unknown",
+      "canva_note": "",
+      "sources": [
+        {
+          "label": "Melbourne",
+          "where": "the name belongs to digital versions of Milton by Tony Geddes, 1968, first called Musketeer. TS Melbourne: https://www.myfonts.com/collections/melbourne-font-typeshop-collection . Melbourne Serial: https://www.fontspring.com/fonts/softmaker/melbourne-serial",
+          "price": "not fetched",
+          "trial": "unknown. Two unrelated faces share the name, so check which is on the Clockwork covers"
+        }
+      ],
+      "licence": "none",
+      "files": [],
+      "system": [],
+      "tags": "",
+      "in_tools_as": [],
+      "releases": [],
+      "archive_refs": [],
+      "notes": ""
+    },
+    {
+      "id": "editorial-new",
+      "name": "Editorial New (Pangram Pangram)",
+      "group": "C",
+      "status": "guest",
+      "status_note": "",
+      "seen_on": "Look-12 renders",
+      "get_hint": "pangrampangram.com, free to try; trial on disk",
+      "canva": "unknown",
+      "canva_note": "",
+      "sources": [
+        {
+          "label": "Editorial New",
+          "where": "https://pangrampangram.com/products/editorial-new",
+          "price": "from $40",
+          "trial": "yes, free. On disk"
+        }
+      ],
+      "licence": "trial",
+      "files": [
+        "trials/PPEditorialNew-Free for personal use/PPEditorialNew-Italic.otf",
+        "trials/PPEditorialNew-Free for personal use/PPEditorialNew-Regular.otf",
+        "trials/PPEditorialNew-Free for personal use/PPEditorialNew-Ultrabold.otf",
+        "trials/PPEditorialNew-Free for personal use/PPEditorialNew-UltraboldItalic.otf",
+        "trials/PPEditorialNew-Free for personal use/PPEditorialNew-Ultralight.otf",
+        "trials/PPEditorialNew-Free for personal use/PPEditorialNew-UltralightItalic.otf"
+      ],
+      "system": [],
+      "tags": "elegant editorial luxury soft romantic confident untouchable dramatic",
+      "in_tools_as": [
+        "editorial_i",
+        "editorial_ub"
+      ],
+      "releases": [],
+      "archive_refs": [],
+      "notes": ""
+    },
+    {
+      "id": "apoc",
+      "name": "Apoc (Blaze Type)",
+      "group": "C",
+      "status": "guest",
+      "status_note": "",
+      "seen_on": "Look-12 renders",
+      "get_hint": "blazetype.eu; trial on disk",
+      "canva": "unknown",
+      "canva_note": "",
+      "sources": [
+        {
+          "label": "Apoc",
+          "where": "https://blazetype.eu/typefaces/apoc/",
+          "price": "$45 a style, $1,170 the family",
+          "trial": "yes, free. On disk"
+        }
+      ],
+      "licence": "trial",
+      "files": [
+        "trials/Blaze Type-Trials/apoc-trial/Apoc-Normal-Trial-Bold.otf",
+        "trials/Blaze Type-Trials/apoc-trial/Apoc-Normal-Trial-BoldItalic.otf",
+        "trials/Blaze Type-Trials/apoc-trial/Apoc-Normal-Trial-Dark.otf",
+        "trials/Blaze Type-Trials/apoc-trial/Apoc-Normal-Trial-DarkItalic.otf",
+        "trials/Blaze Type-Trials/apoc-trial/Apoc-Normal-Trial-Hairline.otf",
+        "trials/Blaze Type-Trials/apoc-trial/Apoc-Normal-Trial-HairlineItalic.otf",
+        "trials/Blaze Type-Trials/apoc-trial/Apoc-Normal-Trial-Light.otf",
+        "trials/Blaze Type-Trials/apoc-trial/Apoc-Normal-Trial-LightItalic.otf",
+        "trials/Blaze Type-Trials/apoc-trial/Apoc-Normal-Trial-Regular.otf",
+        "trials/Blaze Type-Trials/apoc-trial/Apoc-Normal-Trial-RegularItalic.otf",
+        "trials/Blaze Type-Trials/apoc-trial/Apoc-Normal-Trial-UltraBold.otf",
+        "trials/Blaze Type-Trials/apoc-trial/Apoc-Normal-Trial-UltraBoldItalic.otf",
+        "trials/Blaze Type-Trials/apoc-trial/Apoc-Revelations-Trial-Bold.otf",
+        "trials/Blaze Type-Trials/apoc-trial/Apoc-Revelations-Trial-BoldItalic.otf",
+        "trials/Blaze Type-Trials/apoc-trial/Apoc-Revelations-Trial-Dark.otf",
+        "trials/Blaze Type-Trials/apoc-trial/Apoc-Revelations-Trial-DarkItalic.otf",
+        "trials/Blaze Type-Trials/apoc-trial/Apoc-Revelations-Trial-Hairline.otf",
+        "trials/Blaze Type-Trials/apoc-trial/Apoc-Revelations-Trial-HairlineItalic.otf",
+        "trials/Blaze Type-Trials/apoc-trial/Apoc-Revelations-Trial-Light.otf",
+        "trials/Blaze Type-Trials/apoc-trial/Apoc-Revelations-Trial-LightItalic.otf",
+        "trials/Blaze Type-Trials/apoc-trial/Apoc-Revelations-Trial-Regular.otf",
+        "trials/Blaze Type-Trials/apoc-trial/Apoc-Revelations-Trial-RegularItalic.otf",
+        "trials/Blaze Type-Trials/apoc-trial/Apoc-Revelations-Trial-UltraBold.otf",
+        "trials/Blaze Type-Trials/apoc-trial/Apoc-Revelations-Trial-UltraBoldItalic.otf",
+        "trials/Blaze Type-Trials/apoc-trial/Apoc-Sans-Trial-Light.otf",
+        "trials/Blaze Type-Trials/apoc-trial/Apoc-Sans-Trial-LightItalic.otf"
+      ],
+      "system": [],
+      "tags": "gothic dramatic night mysterious caged trapped",
+      "in_tools_as": [
+        "apoc"
+      ],
+      "releases": [],
+      "archive_refs": [],
+      "notes": ""
+    },
+    {
+      "id": "saol-display",
+      "name": "Saol Display (Schick Toikka)",
+      "group": "C",
+      "status": "guest",
+      "status_note": "",
+      "seen_on": "Look-12 renders",
+      "get_hint": "schick-toikka.com; trial on disk",
+      "canva": "unknown",
+      "canva_note": "",
+      "sources": [
+        {
+          "label": "Saol Display",
+          "where": "https://www.schick-toikka.com/saol-display, buy at /saol/buy",
+          "price": "around $111 the family, NOT confirmed on the foundry page",
+          "trial": "yes, schick-toikka.com/trials. On disk"
+        }
+      ],
+      "licence": "trial",
+      "files": [
+        "trials/Schick Toikka Library Trial/Saol Collection Trial/Saol Display Trial/SaolDisplayTrial-Bold.otf",
+        "trials/Schick Toikka Library Trial/Saol Collection Trial/Saol Display Trial/SaolDisplayTrial-BoldItalic.otf",
+        "trials/Schick Toikka Library Trial/Saol Collection Trial/Saol Display Trial/SaolDisplayTrial-Light.otf",
+        "trials/Schick Toikka Library Trial/Saol Collection Trial/Saol Display Trial/SaolDisplayTrial-LightItalic.otf",
+        "trials/Schick Toikka Library Trial/Saol Collection Trial/Saol Display Trial/SaolDisplayTrial-Medium.otf",
+        "trials/Schick Toikka Library Trial/Saol Collection Trial/Saol Display Trial/SaolDisplayTrial-MediumItalic.otf",
+        "trials/Schick Toikka Library Trial/Saol Collection Trial/Saol Display Trial/SaolDisplayTrial-Regular.otf",
+        "trials/Schick Toikka Library Trial/Saol Collection Trial/Saol Display Trial/SaolDisplayTrial-RegularItalic.otf",
+        "trials/Schick Toikka Library Trial/Saol Collection Trial/Saol Display Trial/SaolDisplayTrial-Semibold.otf",
+        "trials/Schick Toikka Library Trial/Saol Collection Trial/Saol Display Trial/SaolDisplayTrial-SemiboldItalic.otf",
+        "trials/Schick Toikka Library Trial/Saol Collection Trial/Saol Display Trial/SaolDisplayTrial-Thin.otf",
+        "trials/Schick Toikka Library Trial/Saol Collection Trial/Saol Display Trial/SaolDisplayTrial-ThinItalic.otf"
+      ],
+      "system": [],
+      "tags": "elegant luxury calm classic tall",
+      "in_tools_as": [
+        "saol"
+      ],
+      "releases": [],
+      "archive_refs": [],
+      "notes": ""
+    },
+    {
+      "id": "reckless",
+      "name": "Reckless (Displaay)",
+      "group": "C",
+      "status": "guest",
+      "status_note": "",
+      "seen_on": "Look-12 renders; liked \"in a certain way\"",
+      "get_hint": "displaay.net; trial on disk",
+      "canva": "unknown",
+      "canva_note": "",
+      "sources": [
+        {
+          "label": "Reckless",
+          "where": "https://displaay.net/typeface/reckless",
+          "price": "EUR 55 one style, EUR 242 uprights, EUR 352 full, EUR 1,744 collection",
+          "trial": "yes, free. On disk"
+        }
+      ],
+      "licence": "trial",
+      "files": [
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Condensed M/RecklessCondensedM-TRIAL-Bold.otf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Condensed M/RecklessCondensedM-TRIAL-Bold.ttf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Condensed M/RecklessCondensedM-TRIAL-BoldItalic.otf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Condensed M/RecklessCondensedM-TRIAL-BoldItalic.ttf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Condensed M/RecklessCondensedM-TRIAL-Book.otf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Condensed M/RecklessCondensedM-TRIAL-Book.ttf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Condensed M/RecklessCondensedM-TRIAL-BookItalic.otf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Condensed M/RecklessCondensedM-TRIAL-BookItalic.ttf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Condensed M/RecklessCondensedM-TRIAL-Heavy.otf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Condensed M/RecklessCondensedM-TRIAL-Heavy.ttf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Condensed M/RecklessCondensedM-TRIAL-HeavyItalic.otf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Condensed M/RecklessCondensedM-TRIAL-HeavyItalic.ttf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Condensed M/RecklessCondensedM-TRIAL-Light.otf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Condensed M/RecklessCondensedM-TRIAL-Light.ttf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Condensed M/RecklessCondensedM-TRIAL-LightItalic.otf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Condensed M/RecklessCondensedM-TRIAL-LightItalic.ttf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Condensed M/RecklessCondensedM-TRIAL-Medium.otf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Condensed M/RecklessCondensedM-TRIAL-Medium.ttf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Condensed M/RecklessCondensedM-TRIAL-MediumItalic.otf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Condensed M/RecklessCondensedM-TRIAL-MediumItalic.ttf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Condensed M/RecklessCondensedM-TRIAL-Regular.otf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Condensed M/RecklessCondensedM-TRIAL-Regular.ttf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Condensed M/RecklessCondensedM-TRIAL-RegularItalic.otf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Condensed M/RecklessCondensedM-TRIAL-RegularItalic.ttf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Condensed M/RecklessCondensedM-TRIAL-SemiBold.otf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Condensed M/RecklessCondensedM-TRIAL-SemiBold.ttf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Condensed M/RecklessCondensedM-TRIAL-SemiBoldItalic.otf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Condensed M/RecklessCondensedM-TRIAL-SemiBoldItalic.ttf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Condensed M/RecklessCondensedM-TRIAL-Thin.otf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Condensed M/RecklessCondensedM-TRIAL-Thin.ttf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Condensed M/RecklessCondensedM-TRIAL-ThinItalic.otf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Condensed M/RecklessCondensedM-TRIAL-ThinItalic.ttf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Condensed S/RecklessCondensedS-TRIAL-Bold.otf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Condensed S/RecklessCondensedS-TRIAL-Bold.ttf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Condensed S/RecklessCondensedS-TRIAL-BoldItalic.otf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Condensed S/RecklessCondensedS-TRIAL-BoldItalic.ttf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Condensed S/RecklessCondensedS-TRIAL-Book.otf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Condensed S/RecklessCondensedS-TRIAL-Book.ttf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Condensed S/RecklessCondensedS-TRIAL-BookItalic.otf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Condensed S/RecklessCondensedS-TRIAL-BookItalic.ttf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Condensed S/RecklessCondensedS-TRIAL-Heavy.otf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Condensed S/RecklessCondensedS-TRIAL-Heavy.ttf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Condensed S/RecklessCondensedS-TRIAL-HeavyItalic.otf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Condensed S/RecklessCondensedS-TRIAL-HeavyItalic.ttf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Condensed S/RecklessCondensedS-TRIAL-Light.otf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Condensed S/RecklessCondensedS-TRIAL-Light.ttf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Condensed S/RecklessCondensedS-TRIAL-LightItalic.otf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Condensed S/RecklessCondensedS-TRIAL-LightItalic.ttf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Condensed S/RecklessCondensedS-TRIAL-Medium.otf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Condensed S/RecklessCondensedS-TRIAL-Medium.ttf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Condensed S/RecklessCondensedS-TRIAL-MediumItalic.otf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Condensed S/RecklessCondensedS-TRIAL-MediumItalic.ttf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Condensed S/RecklessCondensedS-TRIAL-Regular.otf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Condensed S/RecklessCondensedS-TRIAL-Regular.ttf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Condensed S/RecklessCondensedS-TRIAL-RegularItalic.otf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Condensed S/RecklessCondensedS-TRIAL-RegularItalic.ttf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Condensed S/RecklessCondensedS-TRIAL-SemiBold.otf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Condensed S/RecklessCondensedS-TRIAL-SemiBold.ttf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Condensed S/RecklessCondensedS-TRIAL-SemiBoldItalic.otf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Condensed S/RecklessCondensedS-TRIAL-SemiBoldItalic.ttf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Condensed S/RecklessCondensedS-TRIAL-Thin.otf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Condensed S/RecklessCondensedS-TRIAL-Thin.ttf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Condensed S/RecklessCondensedS-TRIAL-ThinItalic.otf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Condensed S/RecklessCondensedS-TRIAL-ThinItalic.ttf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Condensed XL/RecklessCondensedXL-TRIAL-Bold.otf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Condensed XL/RecklessCondensedXL-TRIAL-Bold.ttf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Condensed XL/RecklessCondensedXL-TRIAL-BoldItalic.otf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Condensed XL/RecklessCondensedXL-TRIAL-BoldItalic.ttf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Condensed XL/RecklessCondensedXL-TRIAL-Book.otf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Condensed XL/RecklessCondensedXL-TRIAL-Book.ttf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Condensed XL/RecklessCondensedXL-TRIAL-BookItalic.otf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Condensed XL/RecklessCondensedXL-TRIAL-BookItalic.ttf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Condensed XL/RecklessCondensedXL-TRIAL-Heavy.otf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Condensed XL/RecklessCondensedXL-TRIAL-Heavy.ttf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Condensed XL/RecklessCondensedXL-TRIAL-HeavyItalic.otf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Condensed XL/RecklessCondensedXL-TRIAL-HeavyItalic.ttf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Condensed XL/RecklessCondensedXL-TRIAL-Light.otf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Condensed XL/RecklessCondensedXL-TRIAL-Light.ttf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Condensed XL/RecklessCondensedXL-TRIAL-LightItalic.otf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Condensed XL/RecklessCondensedXL-TRIAL-LightItalic.ttf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Condensed XL/RecklessCondensedXL-TRIAL-Medium.otf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Condensed XL/RecklessCondensedXL-TRIAL-Medium.ttf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Condensed XL/RecklessCondensedXL-TRIAL-MediumItalic.otf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Condensed XL/RecklessCondensedXL-TRIAL-MediumItalic.ttf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Condensed XL/RecklessCondensedXL-TRIAL-Regular.otf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Condensed XL/RecklessCondensedXL-TRIAL-Regular.ttf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Condensed XL/RecklessCondensedXL-TRIAL-RegularItalic.otf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Condensed XL/RecklessCondensedXL-TRIAL-RegularItalic.ttf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Condensed XL/RecklessCondensedXL-TRIAL-SemiBold.otf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Condensed XL/RecklessCondensedXL-TRIAL-SemiBold.ttf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Condensed XL/RecklessCondensedXL-TRIAL-SemiBoldItalic.otf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Condensed XL/RecklessCondensedXL-TRIAL-SemiBoldItalic.ttf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Condensed XL/RecklessCondensedXL-TRIAL-Thin.otf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Condensed XL/RecklessCondensedXL-TRIAL-Thin.ttf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Condensed XL/RecklessCondensedXL-TRIAL-ThinItalic.otf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Condensed XL/RecklessCondensedXL-TRIAL-ThinItalic.ttf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Standard M/RecklessStandardM-TRIAL-Bold.otf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Standard M/RecklessStandardM-TRIAL-Bold.ttf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Standard M/RecklessStandardM-TRIAL-BoldItalic.otf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Standard M/RecklessStandardM-TRIAL-BoldItalic.ttf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Standard M/RecklessStandardM-TRIAL-Book.otf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Standard M/RecklessStandardM-TRIAL-Book.ttf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Standard M/RecklessStandardM-TRIAL-BookItalic.otf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Standard M/RecklessStandardM-TRIAL-BookItalic.ttf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Standard M/RecklessStandardM-TRIAL-Heavy.otf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Standard M/RecklessStandardM-TRIAL-Heavy.ttf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Standard M/RecklessStandardM-TRIAL-HeavyItalic.otf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Standard M/RecklessStandardM-TRIAL-HeavyItalic.ttf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Standard M/RecklessStandardM-TRIAL-Light.otf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Standard M/RecklessStandardM-TRIAL-Light.ttf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Standard M/RecklessStandardM-TRIAL-LightItalic.otf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Standard M/RecklessStandardM-TRIAL-LightItalic.ttf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Standard M/RecklessStandardM-TRIAL-Medium.otf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Standard M/RecklessStandardM-TRIAL-Medium.ttf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Standard M/RecklessStandardM-TRIAL-MediumItalic.otf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Standard M/RecklessStandardM-TRIAL-MediumItalic.ttf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Standard M/RecklessStandardM-TRIAL-Regular.otf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Standard M/RecklessStandardM-TRIAL-Regular.ttf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Standard M/RecklessStandardM-TRIAL-RegularItalic.otf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Standard M/RecklessStandardM-TRIAL-RegularItalic.ttf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Standard M/RecklessStandardM-TRIAL-SemiBold.otf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Standard M/RecklessStandardM-TRIAL-SemiBold.ttf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Standard M/RecklessStandardM-TRIAL-SemiBoldItalic.otf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Standard M/RecklessStandardM-TRIAL-SemiBoldItalic.ttf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Standard M/RecklessStandardM-TRIAL-Thin.otf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Standard M/RecklessStandardM-TRIAL-Thin.ttf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Standard M/RecklessStandardM-TRIAL-ThinItalic.otf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Standard M/RecklessStandardM-TRIAL-ThinItalic.ttf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Standard S/RecklessStandardS-TRIAL-Bold.otf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Standard S/RecklessStandardS-TRIAL-Bold.ttf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Standard S/RecklessStandardS-TRIAL-BoldItalic.otf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Standard S/RecklessStandardS-TRIAL-BoldItalic.ttf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Standard S/RecklessStandardS-TRIAL-Book.otf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Standard S/RecklessStandardS-TRIAL-Book.ttf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Standard S/RecklessStandardS-TRIAL-BookItalic.otf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Standard S/RecklessStandardS-TRIAL-BookItalic.ttf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Standard S/RecklessStandardS-TRIAL-Heavy.otf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Standard S/RecklessStandardS-TRIAL-Heavy.ttf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Standard S/RecklessStandardS-TRIAL-HeavyItalic.otf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Standard S/RecklessStandardS-TRIAL-HeavyItalic.ttf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Standard S/RecklessStandardS-TRIAL-Light.otf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Standard S/RecklessStandardS-TRIAL-Light.ttf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Standard S/RecklessStandardS-TRIAL-LightItalic.otf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Standard S/RecklessStandardS-TRIAL-LightItalic.ttf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Standard S/RecklessStandardS-TRIAL-Medium.otf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Standard S/RecklessStandardS-TRIAL-Medium.ttf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Standard S/RecklessStandardS-TRIAL-MediumItalic.otf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Standard S/RecklessStandardS-TRIAL-MediumItalic.ttf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Standard S/RecklessStandardS-TRIAL-Regular.otf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Standard S/RecklessStandardS-TRIAL-Regular.ttf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Standard S/RecklessStandardS-TRIAL-RegularItalic.otf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Standard S/RecklessStandardS-TRIAL-RegularItalic.ttf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Standard S/RecklessStandardS-TRIAL-SemiBold.otf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Standard S/RecklessStandardS-TRIAL-SemiBold.ttf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Standard S/RecklessStandardS-TRIAL-SemiBoldItalic.otf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Standard S/RecklessStandardS-TRIAL-SemiBoldItalic.ttf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Standard S/RecklessStandardS-TRIAL-Thin.otf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Standard S/RecklessStandardS-TRIAL-Thin.ttf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Standard S/RecklessStandardS-TRIAL-ThinItalic.otf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Standard S/RecklessStandardS-TRIAL-ThinItalic.ttf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Standard XL/RecklessStandardXL-TRIAL-Bold.otf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Standard XL/RecklessStandardXL-TRIAL-Bold.ttf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Standard XL/RecklessStandardXL-TRIAL-BoldItalic.otf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Standard XL/RecklessStandardXL-TRIAL-BoldItalic.ttf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Standard XL/RecklessStandardXL-TRIAL-Book.otf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Standard XL/RecklessStandardXL-TRIAL-Book.ttf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Standard XL/RecklessStandardXL-TRIAL-BookItalic.otf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Standard XL/RecklessStandardXL-TRIAL-BookItalic.ttf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Standard XL/RecklessStandardXL-TRIAL-Heavy.otf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Standard XL/RecklessStandardXL-TRIAL-Heavy.ttf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Standard XL/RecklessStandardXL-TRIAL-HeavyItalic.otf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Standard XL/RecklessStandardXL-TRIAL-HeavyItalic.ttf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Standard XL/RecklessStandardXL-TRIAL-Light.otf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Standard XL/RecklessStandardXL-TRIAL-Light.ttf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Standard XL/RecklessStandardXL-TRIAL-LightItalic.otf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Standard XL/RecklessStandardXL-TRIAL-LightItalic.ttf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Standard XL/RecklessStandardXL-TRIAL-Medium.otf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Standard XL/RecklessStandardXL-TRIAL-Medium.ttf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Standard XL/RecklessStandardXL-TRIAL-MediumItalic.otf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Standard XL/RecklessStandardXL-TRIAL-MediumItalic.ttf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Standard XL/RecklessStandardXL-TRIAL-Regular.otf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Standard XL/RecklessStandardXL-TRIAL-Regular.ttf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Standard XL/RecklessStandardXL-TRIAL-RegularItalic.otf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Standard XL/RecklessStandardXL-TRIAL-RegularItalic.ttf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Standard XL/RecklessStandardXL-TRIAL-SemiBold.otf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Standard XL/RecklessStandardXL-TRIAL-SemiBold.ttf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Standard XL/RecklessStandardXL-TRIAL-SemiBoldItalic.otf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Standard XL/RecklessStandardXL-TRIAL-SemiBoldItalic.ttf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Standard XL/RecklessStandardXL-TRIAL-Thin.otf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Standard XL/RecklessStandardXL-TRIAL-Thin.ttf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Standard XL/RecklessStandardXL-TRIAL-ThinItalic.otf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Standard XL/RecklessStandardXL-TRIAL-ThinItalic.ttf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Wide M/RecklessWideM-TRIAL-Bold.otf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Wide M/RecklessWideM-TRIAL-Bold.ttf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Wide M/RecklessWideM-TRIAL-BoldItalic.otf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Wide M/RecklessWideM-TRIAL-BoldItalic.ttf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Wide M/RecklessWideM-TRIAL-Book.otf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Wide M/RecklessWideM-TRIAL-Book.ttf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Wide M/RecklessWideM-TRIAL-BookItalic.otf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Wide M/RecklessWideM-TRIAL-BookItalic.ttf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Wide M/RecklessWideM-TRIAL-Heavy.otf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Wide M/RecklessWideM-TRIAL-Heavy.ttf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Wide M/RecklessWideM-TRIAL-HeavyItalic.otf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Wide M/RecklessWideM-TRIAL-HeavyItalic.ttf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Wide M/RecklessWideM-TRIAL-Light.otf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Wide M/RecklessWideM-TRIAL-Light.ttf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Wide M/RecklessWideM-TRIAL-LightItalic.otf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Wide M/RecklessWideM-TRIAL-LightItalic.ttf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Wide M/RecklessWideM-TRIAL-Medium.otf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Wide M/RecklessWideM-TRIAL-Medium.ttf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Wide M/RecklessWideM-TRIAL-MediumItalic.otf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Wide M/RecklessWideM-TRIAL-MediumItalic.ttf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Wide M/RecklessWideM-TRIAL-Regular.otf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Wide M/RecklessWideM-TRIAL-Regular.ttf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Wide M/RecklessWideM-TRIAL-RegularItalic.otf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Wide M/RecklessWideM-TRIAL-RegularItalic.ttf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Wide M/RecklessWideM-TRIAL-SemiBold.otf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Wide M/RecklessWideM-TRIAL-SemiBold.ttf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Wide M/RecklessWideM-TRIAL-SemiBoldItalic.otf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Wide M/RecklessWideM-TRIAL-SemiBoldItalic.ttf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Wide M/RecklessWideM-TRIAL-Thin.otf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Wide M/RecklessWideM-TRIAL-Thin.ttf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Wide M/RecklessWideM-TRIAL-ThinItalic.otf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Wide M/RecklessWideM-TRIAL-ThinItalic.ttf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Wide S/RecklessWideS-TRIAL-Bold.otf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Wide S/RecklessWideS-TRIAL-Bold.ttf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Wide S/RecklessWideS-TRIAL-BoldItalic.otf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Wide S/RecklessWideS-TRIAL-BoldItalic.ttf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Wide S/RecklessWideS-TRIAL-Book.otf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Wide S/RecklessWideS-TRIAL-Book.ttf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Wide S/RecklessWideS-TRIAL-BookItalic.otf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Wide S/RecklessWideS-TRIAL-BookItalic.ttf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Wide S/RecklessWideS-TRIAL-Heavy.otf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Wide S/RecklessWideS-TRIAL-Heavy.ttf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Wide S/RecklessWideS-TRIAL-HeavyItalic.otf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Wide S/RecklessWideS-TRIAL-HeavyItalic.ttf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Wide S/RecklessWideS-TRIAL-Light.otf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Wide S/RecklessWideS-TRIAL-Light.ttf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Wide S/RecklessWideS-TRIAL-LightItalic.otf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Wide S/RecklessWideS-TRIAL-LightItalic.ttf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Wide S/RecklessWideS-TRIAL-Medium.otf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Wide S/RecklessWideS-TRIAL-Medium.ttf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Wide S/RecklessWideS-TRIAL-MediumItalic.otf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Wide S/RecklessWideS-TRIAL-MediumItalic.ttf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Wide S/RecklessWideS-TRIAL-Regular.otf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Wide S/RecklessWideS-TRIAL-Regular.ttf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Wide S/RecklessWideS-TRIAL-RegularItalic.otf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Wide S/RecklessWideS-TRIAL-RegularItalic.ttf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Wide S/RecklessWideS-TRIAL-SemiBold.otf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Wide S/RecklessWideS-TRIAL-SemiBold.ttf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Wide S/RecklessWideS-TRIAL-SemiBoldItalic.otf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Wide S/RecklessWideS-TRIAL-SemiBoldItalic.ttf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Wide S/RecklessWideS-TRIAL-Thin.otf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Wide S/RecklessWideS-TRIAL-Thin.ttf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Wide S/RecklessWideS-TRIAL-ThinItalic.otf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Wide S/RecklessWideS-TRIAL-ThinItalic.ttf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Wide XL/RecklessWideXL-TRIAL-Bold.otf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Wide XL/RecklessWideXL-TRIAL-Bold.ttf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Wide XL/RecklessWideXL-TRIAL-BoldItalic.otf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Wide XL/RecklessWideXL-TRIAL-BoldItalic.ttf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Wide XL/RecklessWideXL-TRIAL-Book.otf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Wide XL/RecklessWideXL-TRIAL-Book.ttf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Wide XL/RecklessWideXL-TRIAL-BookItalic.otf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Wide XL/RecklessWideXL-TRIAL-BookItalic.ttf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Wide XL/RecklessWideXL-TRIAL-Heavy.otf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Wide XL/RecklessWideXL-TRIAL-Heavy.ttf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Wide XL/RecklessWideXL-TRIAL-HeavyItalic.otf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Wide XL/RecklessWideXL-TRIAL-HeavyItalic.ttf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Wide XL/RecklessWideXL-TRIAL-Light.otf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Wide XL/RecklessWideXL-TRIAL-Light.ttf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Wide XL/RecklessWideXL-TRIAL-LightItalic.otf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Wide XL/RecklessWideXL-TRIAL-LightItalic.ttf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Wide XL/RecklessWideXL-TRIAL-Medium.otf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Wide XL/RecklessWideXL-TRIAL-Medium.ttf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Wide XL/RecklessWideXL-TRIAL-MediumItalic.otf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Wide XL/RecklessWideXL-TRIAL-MediumItalic.ttf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Wide XL/RecklessWideXL-TRIAL-Regular.otf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Wide XL/RecklessWideXL-TRIAL-Regular.ttf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Wide XL/RecklessWideXL-TRIAL-RegularItalic.otf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Wide XL/RecklessWideXL-TRIAL-RegularItalic.ttf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Wide XL/RecklessWideXL-TRIAL-SemiBold.otf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Wide XL/RecklessWideXL-TRIAL-SemiBold.ttf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Wide XL/RecklessWideXL-TRIAL-SemiBoldItalic.otf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Wide XL/RecklessWideXL-TRIAL-SemiBoldItalic.ttf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Wide XL/RecklessWideXL-TRIAL-Thin.otf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Wide XL/RecklessWideXL-TRIAL-Thin.ttf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Wide XL/RecklessWideXL-TRIAL-ThinItalic.otf",
+        "trials/Displaay Trial (Reckless)/Reckless/Reckless Wide XL/RecklessWideXL-TRIAL-ThinItalic.ttf",
+        "trials/Displaay Trial (Reckless)/Reckless/RecklessCollectionVF-TRIAL.ttf",
+        "trials/Displaay Trial (Reckless)/Reckless/RecklessItalicCollectionVF-TRIAL.ttf"
+      ],
+      "system": [],
+      "tags": "yearning longing romantic cinematic pensive",
+      "in_tools_as": [
+        "reckless"
+      ],
+      "releases": [],
+      "archive_refs": [],
+      "notes": ""
+    },
+    {
+      "id": "migra",
+      "name": "Migra (Pangram Pangram)",
+      "group": "C",
+      "status": "out as main",
+      "status_note": "",
+      "seen_on": "Look-12 renders",
+      "get_hint": "pangrampangram.com; trial on disk",
+      "canva": "yes",
+      "canva_note": "in Canva, the only one of the six trial faces that is",
+      "sources": [
+        {
+          "label": "Migra",
+          "where": "https://pangrampangram.com/products/migra",
+          "price": "from $40",
+          "trial": "yes, free. On disk. Also in Canva"
+        }
+      ],
+      "licence": "trial",
+      "files": [
+        "trials/Migra - Free for Personal Use/Migra-Extrabold.otf",
+        "trials/Migra - Free for Personal Use/Migra-Extrabold.ttf",
+        "trials/Migra - Free for Personal Use/Migra-Extralight.otf",
+        "trials/Migra - Free for Personal Use/Migra-Extralight.ttf",
+        "trials/Migra - Free for Personal Use/MigraItalic-ExtraboldItalic.otf",
+        "trials/Migra - Free for Personal Use/MigraItalic-ExtraboldItalic.ttf",
+        "trials/Migra - Free for Personal Use/MigraItalic-ExtralightItalic.otf",
+        "trials/Migra - Free for Personal Use/MigraItalic-ExtralightItalic.ttf"
+      ],
+      "system": [],
+      "tags": "dreamy romantic vulnerable pensive quiet",
+      "in_tools_as": [
+        "migra_xl"
+      ],
+      "releases": [],
+      "archive_refs": [],
+      "notes": ""
+    },
+    {
+      "id": "gt-alpina",
+      "name": "GT Alpina (Grilli Type)",
+      "group": "C",
+      "status": "out as main",
+      "status_note": "",
+      "seen_on": "Look-12 renders",
+      "get_hint": "grillitype.com; trial on disk",
+      "canva": "unknown",
+      "canva_note": "",
+      "sources": [
+        {
+          "label": "GT Alpina",
+          "where": "https://www.grillitype.com/typeface/gt-alpina",
+          "price": "$75 a style, $945 for 70",
+          "trial": "yes, free. On disk"
+        }
+      ],
+      "licence": "trial",
+      "files": [
+        "trials/Grilli-Type-Trial-Fonts-2026-04/Desktop/GT-Alpina/GT-Alpina-Condensed-Bold-Italic-Trial.otf",
+        "trials/Grilli-Type-Trial-Fonts-2026-04/Desktop/GT-Alpina/GT-Alpina-Condensed-Bold-Trial.otf",
+        "trials/Grilli-Type-Trial-Fonts-2026-04/Desktop/GT-Alpina/GT-Alpina-Condensed-Light-Italic-Trial.otf",
+        "trials/Grilli-Type-Trial-Fonts-2026-04/Desktop/GT-Alpina/GT-Alpina-Condensed-Light-Trial.otf",
+        "trials/Grilli-Type-Trial-Fonts-2026-04/Desktop/GT-Alpina/GT-Alpina-Condensed-Medium-Italic-Trial.otf",
+        "trials/Grilli-Type-Trial-Fonts-2026-04/Desktop/GT-Alpina/GT-Alpina-Condensed-Medium-Trial.otf",
+        "trials/Grilli-Type-Trial-Fonts-2026-04/Desktop/GT-Alpina/GT-Alpina-Condensed-Regular-Italic-Trial.otf",
+        "trials/Grilli-Type-Trial-Fonts-2026-04/Desktop/GT-Alpina/GT-Alpina-Condensed-Regular-Trial.otf",
+        "trials/Grilli-Type-Trial-Fonts-2026-04/Desktop/GT-Alpina/GT-Alpina-Condensed-Thin-Italic-Trial.otf",
+        "trials/Grilli-Type-Trial-Fonts-2026-04/Desktop/GT-Alpina/GT-Alpina-Condensed-Thin-Trial.otf",
+        "trials/Grilli-Type-Trial-Fonts-2026-04/Desktop/GT-Alpina/GT-Alpina-Extended-Bold-Italic-Trial.otf",
+        "trials/Grilli-Type-Trial-Fonts-2026-04/Desktop/GT-Alpina/GT-Alpina-Extended-Bold-Trial.otf",
+        "trials/Grilli-Type-Trial-Fonts-2026-04/Desktop/GT-Alpina/GT-Alpina-Extended-Light-Italic-Trial.otf",
+        "trials/Grilli-Type-Trial-Fonts-2026-04/Desktop/GT-Alpina/GT-Alpina-Extended-Light-Trial.otf",
+        "trials/Grilli-Type-Trial-Fonts-2026-04/Desktop/GT-Alpina/GT-Alpina-Extended-Medium-Italic-Trial.otf",
+        "trials/Grilli-Type-Trial-Fonts-2026-04/Desktop/GT-Alpina/GT-Alpina-Extended-Medium-Trial.otf",
+        "trials/Grilli-Type-Trial-Fonts-2026-04/Desktop/GT-Alpina/GT-Alpina-Extended-Regular-Italic-Trial.otf",
+        "trials/Grilli-Type-Trial-Fonts-2026-04/Desktop/GT-Alpina/GT-Alpina-Extended-Regular-Trial.otf",
+        "trials/Grilli-Type-Trial-Fonts-2026-04/Desktop/GT-Alpina/GT-Alpina-Extended-Thin-Italic-Trial.otf",
+        "trials/Grilli-Type-Trial-Fonts-2026-04/Desktop/GT-Alpina/GT-Alpina-Extended-Thin-Trial.otf",
+        "trials/Grilli-Type-Trial-Fonts-2026-04/Desktop/GT-Alpina/GT-Alpina-Fine-Condensed-Bold-Italic-Trial.otf",
+        "trials/Grilli-Type-Trial-Fonts-2026-04/Desktop/GT-Alpina/GT-Alpina-Fine-Condensed-Bold-Trial.otf",
+        "trials/Grilli-Type-Trial-Fonts-2026-04/Desktop/GT-Alpina/GT-Alpina-Fine-Condensed-Light-Italic-Trial.otf",
+        "trials/Grilli-Type-Trial-Fonts-2026-04/Desktop/GT-Alpina/GT-Alpina-Fine-Condensed-Light-Trial.otf",
+        "trials/Grilli-Type-Trial-Fonts-2026-04/Desktop/GT-Alpina/GT-Alpina-Fine-Condensed-Medium-Italic-Trial.otf",
+        "trials/Grilli-Type-Trial-Fonts-2026-04/Desktop/GT-Alpina/GT-Alpina-Fine-Condensed-Medium-Trial.otf",
+        "trials/Grilli-Type-Trial-Fonts-2026-04/Desktop/GT-Alpina/GT-Alpina-Fine-Condensed-Regular-Italic-Trial.otf",
+        "trials/Grilli-Type-Trial-Fonts-2026-04/Desktop/GT-Alpina/GT-Alpina-Fine-Condensed-Regular-Trial.otf",
+        "trials/Grilli-Type-Trial-Fonts-2026-04/Desktop/GT-Alpina/GT-Alpina-Fine-Condensed-Thin-Italic-Trial.otf",
+        "trials/Grilli-Type-Trial-Fonts-2026-04/Desktop/GT-Alpina/GT-Alpina-Fine-Condensed-Thin-Trial.otf",
+        "trials/Grilli-Type-Trial-Fonts-2026-04/Desktop/GT-Alpina/GT-Alpina-Fine-Extended-Bold-Italic-Trial.otf",
+        "trials/Grilli-Type-Trial-Fonts-2026-04/Desktop/GT-Alpina/GT-Alpina-Fine-Extended-Bold-Trial.otf",
+        "trials/Grilli-Type-Trial-Fonts-2026-04/Desktop/GT-Alpina/GT-Alpina-Fine-Extended-Light-Italic-Trial.otf",
+        "trials/Grilli-Type-Trial-Fonts-2026-04/Desktop/GT-Alpina/GT-Alpina-Fine-Extended-Light-Trial.otf",
+        "trials/Grilli-Type-Trial-Fonts-2026-04/Desktop/GT-Alpina/GT-Alpina-Fine-Extended-Medium-Italic-Trial.otf",
+        "trials/Grilli-Type-Trial-Fonts-2026-04/Desktop/GT-Alpina/GT-Alpina-Fine-Extended-Medium-Trial.otf",
+        "trials/Grilli-Type-Trial-Fonts-2026-04/Desktop/GT-Alpina/GT-Alpina-Fine-Extended-Regular-Italic-Trial.otf",
+        "trials/Grilli-Type-Trial-Fonts-2026-04/Desktop/GT-Alpina/GT-Alpina-Fine-Extended-Regular-Trial.otf",
+        "trials/Grilli-Type-Trial-Fonts-2026-04/Desktop/GT-Alpina/GT-Alpina-Fine-Extended-Thin-Italic-Trial.otf",
+        "trials/Grilli-Type-Trial-Fonts-2026-04/Desktop/GT-Alpina/GT-Alpina-Fine-Extended-Thin-Trial.otf",
+        "trials/Grilli-Type-Trial-Fonts-2026-04/Desktop/GT-Alpina/GT-Alpina-Fine-Standard-Bold-Italic-Trial.otf",
+        "trials/Grilli-Type-Trial-Fonts-2026-04/Desktop/GT-Alpina/GT-Alpina-Fine-Standard-Bold-Trial.otf",
+        "trials/Grilli-Type-Trial-Fonts-2026-04/Desktop/GT-Alpina/GT-Alpina-Fine-Standard-Light-Italic-Trial.otf",
+        "trials/Grilli-Type-Trial-Fonts-2026-04/Desktop/GT-Alpina/GT-Alpina-Fine-Standard-Light-Trial.otf",
+        "trials/Grilli-Type-Trial-Fonts-2026-04/Desktop/GT-Alpina/GT-Alpina-Fine-Standard-Medium-Italic-Trial.otf",
+        "trials/Grilli-Type-Trial-Fonts-2026-04/Desktop/GT-Alpina/GT-Alpina-Fine-Standard-Medium-Trial.otf",
+        "trials/Grilli-Type-Trial-Fonts-2026-04/Desktop/GT-Alpina/GT-Alpina-Fine-Standard-Regular-Italic-Trial.otf",
+        "trials/Grilli-Type-Trial-Fonts-2026-04/Desktop/GT-Alpina/GT-Alpina-Fine-Standard-Regular-Trial.otf",
+        "trials/Grilli-Type-Trial-Fonts-2026-04/Desktop/GT-Alpina/GT-Alpina-Fine-Standard-Thin-Italic-Trial.otf",
+        "trials/Grilli-Type-Trial-Fonts-2026-04/Desktop/GT-Alpina/GT-Alpina-Fine-Standard-Thin-Trial.otf",
+        "trials/Grilli-Type-Trial-Fonts-2026-04/Desktop/GT-Alpina/GT-Alpina-Standard-Bold-Italic-Trial.otf",
+        "trials/Grilli-Type-Trial-Fonts-2026-04/Desktop/GT-Alpina/GT-Alpina-Standard-Bold-Trial.otf",
+        "trials/Grilli-Type-Trial-Fonts-2026-04/Desktop/GT-Alpina/GT-Alpina-Standard-Light-Italic-Trial.otf",
+        "trials/Grilli-Type-Trial-Fonts-2026-04/Desktop/GT-Alpina/GT-Alpina-Standard-Light-Trial.otf",
+        "trials/Grilli-Type-Trial-Fonts-2026-04/Desktop/GT-Alpina/GT-Alpina-Standard-Medium-Italic-Trial.otf",
+        "trials/Grilli-Type-Trial-Fonts-2026-04/Desktop/GT-Alpina/GT-Alpina-Standard-Medium-Trial.otf",
+        "trials/Grilli-Type-Trial-Fonts-2026-04/Desktop/GT-Alpina/GT-Alpina-Standard-Regular-Italic-Trial.otf",
+        "trials/Grilli-Type-Trial-Fonts-2026-04/Desktop/GT-Alpina/GT-Alpina-Standard-Regular-Trial.otf",
+        "trials/Grilli-Type-Trial-Fonts-2026-04/Desktop/GT-Alpina/GT-Alpina-Standard-Thin-Italic-Trial.otf",
+        "trials/Grilli-Type-Trial-Fonts-2026-04/Desktop/GT-Alpina/GT-Alpina-Standard-Thin-Trial.otf",
+        "trials/Grilli-Type-Trial-Fonts-2026-04/Desktop/GT-Alpina/GT-Alpina-Typewriter-Bold-Italic-Trial.otf",
+        "trials/Grilli-Type-Trial-Fonts-2026-04/Desktop/GT-Alpina/GT-Alpina-Typewriter-Bold-Trial.otf",
+        "trials/Grilli-Type-Trial-Fonts-2026-04/Desktop/GT-Alpina/GT-Alpina-Typewriter-Light-Italic-Trial.otf",
+        "trials/Grilli-Type-Trial-Fonts-2026-04/Desktop/GT-Alpina/GT-Alpina-Typewriter-Light-Trial.otf",
+        "trials/Grilli-Type-Trial-Fonts-2026-04/Desktop/GT-Alpina/GT-Alpina-Typewriter-Medium-Italic-Trial.otf",
+        "trials/Grilli-Type-Trial-Fonts-2026-04/Desktop/GT-Alpina/GT-Alpina-Typewriter-Medium-Trial.otf",
+        "trials/Grilli-Type-Trial-Fonts-2026-04/Desktop/GT-Alpina/GT-Alpina-Typewriter-Regular-Italic-Trial.otf",
+        "trials/Grilli-Type-Trial-Fonts-2026-04/Desktop/GT-Alpina/GT-Alpina-Typewriter-Regular-Trial.otf",
+        "trials/Grilli-Type-Trial-Fonts-2026-04/Desktop/GT-Alpina/GT-Alpina-Typewriter-Thin-Italic-Trial.otf",
+        "trials/Grilli-Type-Trial-Fonts-2026-04/Desktop/GT-Alpina/GT-Alpina-Typewriter-Thin-Trial.otf",
+        "trials/Grilli-Type-Trial-Fonts-2026-04/OTvar/GT-Alpina-Italic-VAR-Trial.ttf",
+        "trials/Grilli-Type-Trial-Fonts-2026-04/OTvar/GT-Alpina-Typewriter-Italic-VAR-Trial.ttf",
+        "trials/Grilli-Type-Trial-Fonts-2026-04/OTvar/GT-Alpina-Typewriter-VAR-Trial.ttf",
+        "trials/Grilli-Type-Trial-Fonts-2026-04/OTvar/GT-Alpina-VAR-Trial.ttf"
+      ],
+      "system": [],
+      "tags": "tall narrow cinematic distant lonely",
+      "in_tools_as": [
+        "alpina_c"
+      ],
+      "releases": [],
+      "archive_refs": [],
+      "notes": ""
+    },
+    {
+      "id": "harbour",
+      "name": "Harbour",
+      "group": "C",
+      "status": "potential",
+      "status_note": "",
+      "seen_on": "Mike Ma, Gothic Violence: heavy sharp capitals, white on a black block",
+      "get_hint": "Fontstand",
+      "canva": "unknown",
+      "canva_note": "",
+      "sources": [
+        {
+          "label": "Harbour (Alias)",
+          "where": "https://fontstand.com/fonts/harbour",
+          "price": "rent EUR 4.75 a month one style, EUR 10.75 all three, ex VAT",
+          "trial": "yes, 3 hours free"
+        }
+      ],
+      "licence": "none",
+      "files": [],
+      "system": [],
+      "tags": "",
+      "in_tools_as": [],
+      "releases": [],
+      "archive_refs": [],
+      "notes": ""
+    },
+    {
+      "id": "zangezi",
+      "name": "Zangezi (Daria Cohen)",
+      "group": "C",
+      "status": "potential",
+      "status_note": "",
+      "seen_on": "Yovel, Forthcoming Humanity",
+      "get_hint": "not checked",
+      "canva": "unknown",
+      "canva_note": "",
+      "sources": [
+        {
+          "label": "Zangezi (Daria Cohen)",
+          "where": "https://www.futurefonts.com/daria-cohen/zangezi",
+          "price": "not readable, the site renders in the browser only",
+          "trial": "none. Future Fonts sells the work in progress and gives later versions free"
+        }
+      ],
+      "licence": "none",
+      "files": [],
+      "system": [],
+      "tags": "",
+      "in_tools_as": [],
+      "releases": [],
+      "archive_refs": [],
+      "notes": ""
+    },
+    {
+      "id": "ktf-prima",
+      "name": "KTF Prima (Kyiv Type Foundry)",
+      "group": "C",
+      "status": "potential",
+      "status_note": "",
+      "seen_on": "plaaaato, brightdeathstarr",
+      "get_hint": "not checked",
+      "canva": "unknown",
+      "canva_note": "",
+      "sources": [
+        {
+          "label": "KTF Prima",
+          "where": "https://www.kyivtypefoundry.com/prima",
+          "price": "not shown",
+          "trial": "yes"
+        }
+      ],
+      "licence": "none",
+      "files": [],
+      "system": [],
+      "tags": "",
+      "in_tools_as": [],
+      "releases": [],
+      "archive_refs": [],
+      "notes": ""
+    },
+    {
+      "id": "canela-domaine-display-romie",
+      "name": "Canela, Domaine Display, Romie",
+      "group": "C",
+      "status": "set aside",
+      "status_note": "",
+      "seen_on": "Claude's first list",
+      "get_hint": "commercialtype.com, klim.co.nz, claudetype.com, monotype.com",
+      "canva": "unknown",
+      "canva_note": "",
+      "sources": [
+        {
+          "label": "Canela",
+          "where": "https://commercialtype.com/catalog/canela",
+          "price": "$50 a style, $800 the collection",
+          "trial": "yes"
+        },
+        {
+          "label": "Domaine Display",
+          "where": "https://klim.co.nz/fonts/domaine-display/",
+          "price": "behind klim.co.nz/buy/domaine/",
+          "trial": "yes, test fonts"
+        },
+        {
+          "label": "Romie",
+          "where": "https://claudetype.com/typefaces/romie",
+          "price": "behind the checkout",
+          "trial": "yes, a foundry-wide trial pack"
+        }
+      ],
+      "licence": "none",
+      "files": [],
+      "system": [],
+      "tags": "",
+      "in_tools_as": [],
+      "releases": [],
+      "archive_refs": [],
+      "notes": ""
+    },
+    {
+      "id": "antikva-margaret",
+      "name": "Antikva Margaret (VGC)",
+      "group": "D",
+      "status": "potential",
+      "status_note": "",
+      "seen_on": "A Flock of Seagulls: one tight line of capitals above a painting",
+      "get_hint": "not checked",
+      "canva": "unknown",
+      "canva_note": "",
+      "sources": [
+        {
+          "label": "Antikva Margaret",
+          "where": "no proper digital release. Closest is Olde Megrat NF, a loose interpretation by Nick Curtis: https://www.myfonts.com/collections/olde-megrat-nf-font-nicks-fonts",
+          "price": "$10",
+          "trial": "none"
+        }
+      ],
+      "licence": "none",
+      "files": [],
+      "system": [],
+      "tags": "",
+      "in_tools_as": [],
+      "releases": [],
+      "archive_refs": [],
+      "notes": ""
+    },
+    {
+      "id": "albertus-nova",
+      "name": "Albertus Nova",
+      "group": "D",
+      "status": "default now",
+      "status_note": "default now (2026-09-21)",
+      "seen_on": "Coldplay, A Rush of Blood to the Head: tiny, in a corner, the image does the work. Chosen by Amir out of Clarendon, Bookmania, Albertus Nova and Viking, seen as The Deceiver over Inch of Shadow on warm black",
+      "get_hint": "Monotype via MyFonts, $104.99 for 5 weights. No file owned yet, so the local tools draw Marcellus",
+      "canva": "yes",
+      "canva_note": "in Canva, set on ALL Brand Kit text styles 2026-09-21",
+      "sources": [
+        {
+          "label": "Albertus Nova",
+          "where": "https://www.monotype.com/fonts/albertus-nova , buy https://www.myfonts.com/collections/albertus-nova-font-monotype-imaging",
+          "price": "from $50.99 a style, $104.99 for the 5-font family",
+          "trial": "none. Also in Canva"
+        }
+      ],
+      "licence": "canva only",
+      "files": [],
+      "system": [],
+      "tags": "",
+      "in_tools_as": [],
+      "releases": [],
+      "archive_refs": [],
+      "notes": "Brand face for now (frame.md face block). No file owned; the local tools draw Marcellus until the licence is bought. Read the logo clause before it becomes the wordmark."
+    },
+    {
+      "id": "toparcel",
+      "name": "ToParcel (T-O Supply)",
+      "group": "D",
+      "status": "potential",
+      "status_note": "",
+      "seen_on": "Doan/Lvov, Fraction and Bodas de Sangre EPs, 2019, techno and house: one line of capitals with a middle dot, one ink (orange) on black, above a rough woodcut-style city drawing in the same ink; small flared \"scattered\" serifs, soft ends",
+      "get_hint": "t-o.supply/typefaces/parcel",
+      "canva": "unknown",
+      "canva_note": "",
+      "sources": [
+        {
+          "label": "ToParcel",
+          "where": "https://t-o.supply/typefaces/parcel/",
+          "price": "behind the cart",
+          "trial": "yes"
+        }
+      ],
+      "licence": "none",
+      "files": [],
+      "system": [],
+      "tags": "",
+      "in_tools_as": [],
+      "releases": [],
+      "archive_refs": [],
+      "notes": ""
+    },
+    {
+      "id": "marcellus",
+      "name": "Marcellus",
+      "group": "D",
+      "status": "fallback",
+      "status_note": "fallback, and what every local tool draws until the Albertus Nova file is bought",
+      "seen_on": "the default until 2026-09-20",
+      "get_hint": "free (SIL OFL), file in `fonts/`",
+      "canva": "yes",
+      "canva_note": "in Canva",
+      "sources": [
+        {
+          "label": "Marcellus",
+          "where": "https://fonts.google.com/specimen/Marcellus",
+          "price": "free",
+          "trial": "",
+          "licence_text": "SIL OFL",
+          "on_disk": "`fonts/Marcellus-Regular.ttf`"
+        },
+        {
+          "label": "Marcellus",
+          "where": "see the free table",
+          "price": "free",
+          "trial": ""
+        }
+      ],
+      "licence": "free",
+      "files": [
+        "Marcellus-Regular.ttf"
+      ],
+      "system": [],
+      "tags": "formal cinematic symmetric monumental classic",
+      "in_tools_as": [
+        "marcellus"
+      ],
+      "releases": [],
+      "archive_refs": [],
+      "notes": "Brand fallback; what every local tool draws until the Albertus Nova file is bought."
+    },
+    {
+      "id": "thor",
+      "name": "Thor (VGC)",
+      "group": "E",
+      "status": "potential",
+      "status_note": "",
+      "seen_on": "The Cure, Lovesong: one purple line above a painted face",
+      "get_hint": "page points to a free lookalike, not checked",
+      "canva": "unknown",
+      "canva_note": "",
+      "sources": [
+        {
+          "label": "Viking by Steffmann, the practical Thor stand-in",
+          "where": "https://www.1001fonts.com/viking-font.html",
+          "price": "free",
+          "trial": "",
+          "licence_text": "1001fonts Free For Commercial Use. May not be modified. Copy privately, never sell or publish the file",
+          "on_disk": "`fonts/free/Viking-Steffmann.ttf`"
+        },
+        {
+          "label": "Thor (VGC, Marian Jones, 1973)",
+          "where": "the name is right, and the original was never licensed digitally. Every version around is a redraw. Free: Steffmann's Viking, https://www.1001fonts.com/viking-font.html . Paid: Taranis by Scriptorium, https://www.myfonts.com/collections/taranis-font-scriptorium",
+          "price": "free / $12",
+          "trial": "n/a. Scriptorium shut in 2021, so MyFonts is the only reliable counter"
+        }
+      ],
+      "licence": "free",
+      "files": [
+        "free/Viking-Steffmann.ttf"
+      ],
+      "system": [],
+      "tags": "",
+      "in_tools_as": [],
+      "releases": [],
+      "archive_refs": [],
+      "notes": "Thor itself was never licensed digitally. The free stand-in Viking (Steffmann, 1001fonts, may not be modified) is on disk; the paid redraw is Taranis. Licence 'free' refers to Viking."
+    },
+    {
+      "id": "goudy-text",
+      "name": "Goudy Text",
+      "group": "E",
+      "status": "potential",
+      "status_note": "",
+      "seen_on": "Le Gothique Urbain: blackletter blown up until it is a shape",
+      "get_hint": "p22.com",
+      "canva": "unknown",
+      "canva_note": "",
+      "sources": [
+        {
+          "label": "Goudy Text",
+          "where": "https://p22.com/fonts/goudy-text/ (LTC Goudy Text, Lanston/P22)",
+          "price": "$25 the family, $15 a style",
+          "trial": "none"
+        }
+      ],
+      "licence": "none",
+      "files": [],
+      "system": [],
+      "tags": "",
+      "in_tools_as": [],
+      "releases": [],
+      "archive_refs": [],
+      "notes": ""
+    },
+    {
+      "id": "bvh-bline",
+      "name": "BVH BLine",
+      "group": "E",
+      "status": "potential",
+      "status_note": "",
+      "seen_on": "Le Gothique Urbain: the round title face set against the blackletter",
+      "get_hint": "bvhtype.com",
+      "canva": "unknown",
+      "canva_note": "",
+      "sources": [
+        {
+          "label": "BVH BLine",
+          "where": "https://bvhtype.com/typefaces/bline , rental https://fontstand.com/fonts/bvh-bline",
+          "price": "foundry price only after picking a licence, 30% off the family pack. Rent EUR 4 a month one style, EUR 33.50 complete, ex VAT",
+          "trial": "yes, free trial fonts (full charset, mockups only), and 3 hours free on Fontstand"
+        }
+      ],
+      "licence": "none",
+      "files": [],
+      "system": [],
+      "tags": "",
+      "in_tools_as": [],
+      "releases": [],
+      "archive_refs": [],
+      "notes": ""
+    },
+    {
+      "id": "eckmann-schrift",
+      "name": "Eckmann-Schrift",
+      "group": "E",
+      "status": "potential",
+      "status_note": "potential, seen twice",
+      "seen_on": "Sonic Youth, Daydream Nation, inside the gatefold; and AGAIN on Mort Garson, Music From Patch Cord Productions, his name in capitals on top of the stack",
+      "get_hint": "MyFonts, Linotype cut, from $29.99",
+      "canva": "no",
+      "canva_note": "NOT in Canva",
+      "sources": [
+        {
+          "label": "Eckmann-Schrift",
+          "where": "https://www.myfonts.com/collections/eckmann-font-linotype/",
+          "price": "from $29.99, one style",
+          "trial": "none"
+        }
+      ],
+      "licence": "none",
+      "files": [],
+      "system": [],
+      "tags": "",
+      "in_tools_as": [],
+      "releases": [],
+      "archive_refs": [],
+      "notes": ""
+    },
+    {
+      "id": "conclave",
+      "name": "Conclave (Letterhead Fonts)",
+      "group": "E",
+      "status": "guest",
+      "status_note": "",
+      "seen_on": "the bundle on disk; cliche risk",
+      "get_hint": "letterheadfonts.com",
+      "canva": "unknown",
+      "canva_note": "",
+      "sources": [
+        {
+          "label": "LHF Conclave",
+          "where": "https://letterheadfonts.com/fonts/conclave",
+          "price": "$25, Flat + Round + Sharp",
+          "trial": "none. On disk"
+        }
+      ],
+      "licence": "trial",
+      "files": [
+        "trials/Letterheadfonts - Letterhead Fonts Foundry Bundle/LHF Conclave™/LHF Conclave Flat.otf",
+        "trials/Letterheadfonts - Letterhead Fonts Foundry Bundle/LHF Conclave™/LHF Conclave Round.otf",
+        "trials/Letterheadfonts - Letterhead Fonts Foundry Bundle/LHF Conclave™/LHF Conclave Sharp.otf"
+      ],
+      "system": [],
+      "tags": "gothic corpse night mysterious hidden dark",
+      "in_tools_as": [
+        "conclave"
+      ],
+      "releases": [],
+      "archive_refs": [],
+      "notes": ""
+    },
+    {
+      "id": "eurostile-microgramma",
+      "name": "Eurostile / Microgramma",
+      "group": "F",
+      "status": "potential",
+      "status_note": "",
+      "seen_on": "Fun Boy Three, Human League, Night Shift, OK Computer",
+      "get_hint": "Type Network",
+      "canva": "no",
+      "canva_note": "NOT in Canva",
+      "sources": [
+        {
+          "label": "Eurostile",
+          "where": "https://www.myfonts.com/collections/eurostile-lt-font-linotype/",
+          "price": "from $39 a style, $313.99 for 11",
+          "trial": "none"
+        },
+        {
+          "label": "Microgramma",
+          "where": "https://www.myfonts.com/collections/microgramma-font-urw",
+          "price": "from $35 a style, $51.99 for 2",
+          "trial": "none"
+        },
+        {
+          "label": "Eurostile",
+          "where": "see group F",
+          "price": "",
+          "trial": ""
+        }
+      ],
+      "licence": "none",
+      "files": [],
+      "system": [],
+      "tags": "",
+      "in_tools_as": [],
+      "releases": [],
+      "archive_refs": [],
+      "notes": ""
+    },
+    {
+      "id": "univers",
+      "name": "Univers",
+      "group": "F",
+      "status": "potential",
+      "status_note": "",
+      "seen_on": "Fun Boy Three, The Smiths (title), Human League, OK Computer",
+      "get_hint": "MyFonts",
+      "canva": "yes",
+      "canva_note": "in Canva, + Condensed and Extended",
+      "sources": [
+        {
+          "label": "Univers",
+          "where": "https://www.myfonts.com/collections/univers-font-linotype/",
+          "price": "$42.99 a style, $429.90 for 27",
+          "trial": "none. Univers Next, 63 styles, is included in Creative Cloud: https://fonts.adobe.com/fonts/univers-next . Also in Canva"
+        }
+      ],
+      "licence": "canva only",
+      "files": [],
+      "system": [],
+      "tags": "",
+      "in_tools_as": [],
+      "releases": [],
+      "archive_refs": [],
+      "notes": ""
+    },
+    {
+      "id": "neue-haas-grotesk-display",
+      "name": "Neue Haas Grotesk Display",
+      "group": "F",
+      "status": "potential",
+      "status_note": "",
+      "seen_on": "Rizohm Events, Treviso: all the information on a poster system whose wordmark is custom lettering",
+      "get_hint": "commercialtype.com/catalog/neue_haas_grotesk",
+      "canva": "no",
+      "canva_note": "NOT in Canva, but Helvetica and Helvetica Now are, the same design family",
+      "sources": [],
+      "licence": "none",
+      "files": [],
+      "system": [],
+      "tags": "",
+      "in_tools_as": [],
+      "releases": [],
+      "archive_refs": [],
+      "notes": ""
+    },
+    {
+      "id": "gill-sans",
+      "name": "Gill Sans",
+      "group": "F",
+      "status": "potential",
+      "status_note": "",
+      "seen_on": "OK Computer, China Crisis; also in the Futura row below",
+      "get_hint": "Monotype",
+      "canva": "yes",
+      "canva_note": "in Canva, + Condensed, Display, Shadowed, Extra Condensed, Light",
+      "sources": [
+        {
+          "label": "Gill Sans",
+          "where": "https://www.monotype.com/fonts/gill-sans-nova , buy https://www.myfonts.com/products/bold-gill-sans-nova-345855",
+          "price": "$61.99 a style, around $506.99 for 43",
+          "trial": "none. Gill Sans Nova is included in Creative Cloud: https://fonts.adobe.com/fonts/gill-sans-nova . Also in Canva"
+        }
+      ],
+      "licence": "system",
+      "files": [],
+      "system": [
+        "GillSans",
+        "GillSans-Bold",
+        "GillSans-Light"
+      ],
+      "tags": "",
+      "in_tools_as": [],
+      "releases": [],
+      "archive_refs": [],
+      "notes": "Built into macOS (Gill Sans, 8 styles); also in Canva. Linked 2026-10-14 so the playground and local tools can draw it."
+    },
+    {
+      "id": "antique-olive",
+      "name": "Antique Olive",
+      "group": "F",
+      "status": "potential",
+      "status_note": "",
+      "seen_on": "Star Crystal, the French tagline (also in group I)",
+      "get_hint": "not checked",
+      "canva": "yes",
+      "canva_note": "in Canva",
+      "sources": [
+        {
+          "label": "Antique Olive",
+          "where": "https://www.myfonts.com/collections/antique-olive-font-linotype/",
+          "price": "from $40.99 a style, $246.99 for the 7-font Selection",
+          "trial": "none. Also in Canva"
+        },
+        {
+          "label": "Antique Olive",
+          "where": "see group F",
+          "price": "",
+          "trial": ""
+        }
+      ],
+      "licence": "canva only",
+      "files": [],
+      "system": [],
+      "tags": "",
+      "in_tools_as": [],
+      "releases": [],
+      "archive_refs": [],
+      "notes": ""
+    },
+    {
+      "id": "monotype-grotesque-bold",
+      "name": "Monotype Grotesque Bold",
+      "group": "F",
+      "status": "potential",
+      "status_note": "",
+      "seen_on": "The Smiths: the name, white on blue, spaced wide",
+      "get_hint": "MyFonts",
+      "canva": "unknown",
+      "canva_note": "",
+      "sources": [
+        {
+          "label": "Monotype Grotesque Bold",
+          "where": "https://www.myfonts.com/products/std-bold-grotesque-mt-343218",
+          "price": "$40.99, family pack $394.99",
+          "trial": "none"
+        }
+      ],
+      "licence": "none",
+      "files": [],
+      "system": [],
+      "tags": "",
+      "in_tools_as": [],
+      "releases": [],
+      "archive_refs": [],
+      "notes": ""
+    },
+    {
+      "id": "gothic",
+      "name": "Gothic (Nesbitt)",
+      "group": "F",
+      "status": "potential",
+      "status_note": "potential, Amir wants to check it (2026-09-20)",
+      "seen_on": "Leonard Cohen, Songs of Love and Hate: huge heavy capitals, stacked, white on black. An American WOOD TYPE cut by Edwin Allen, shown in George Nesbitt's 1838 catalogue; also on The Zombies' Odessey and Oracle",
+      "get_hint": "digital versions: Champion Gothic Heavyweight (Hoefler&Co, typography.com, the professional one, drawn 1990 from this very type), Gothic Nesbitt (Wooden Type Fonts, on Fontspring and MyFonts), also Public Notice JNL, Wormwood Gothic. No free trial found",
+      "canva": "unknown",
+      "canva_note": "",
+      "sources": [
+        {
+          "label": "Gothic (Nesbitt), the Cohen face",
+          "where": "Champion Gothic Heavyweight (Hoefler&Co, the professional one): https://www.typography.com/fonts/champion-gothic/styles , via https://www.myfonts.com/collections/champion-font-hoefler-and-co/ . Or Gothic Nesbitt (Wooden Type Fonts): https://www.myfonts.com/collections/gothic-nesbitt-font-wooden-type-fonts/",
+          "price": "Champion $209 for 6, $34.83 a style. Gothic Nesbitt from $20",
+          "trial": "none either way"
+        }
+      ],
+      "licence": "none",
+      "files": [],
+      "system": [],
+      "tags": "",
+      "in_tools_as": [],
+      "releases": [],
+      "archive_refs": [],
+      "notes": ""
+    },
+    {
+      "id": "futura-itc-franklin-gothic-gill-sans-neuzeit-s",
+      "name": "Futura , ITC Franklin Gothic , Gill Sans , Neuzeit S",
+      "group": "F",
+      "status": "potential",
+      "status_note": "",
+      "seen_on": "China Crisis, OK Computer, Fun Boy Three",
+      "get_hint": "Bauer Types, MyFonts",
+      "canva": "no",
+      "canva_note": "in Canva, + Black and Display in Canva as ITC Franklin Gothic LT, + Condensed in Canva, own row above NOT in Canva: \"CAT Neuzeit\" is a different face",
+      "sources": [
+        {
+          "label": "Futura",
+          "where": "https://www.myfonts.com/collections/futura-nd-font-neufville-digital",
+          "price": "from $45.25 a style, $416.50 for 20, Basic Pack $369.24",
+          "trial": "none. Also in Canva"
+        },
+        {
+          "label": "Futura Black",
+          "where": "https://www.myfonts.com/collections/futura-nd-black-font-neufville-digital",
+          "price": "$45.25, one style",
+          "trial": "none"
+        },
+        {
+          "label": "ITC Franklin Gothic",
+          "where": "https://www.myfonts.com/collections/franklin-gothic-font-itc/",
+          "price": "from $57.99 a style, $345.99 for 10",
+          "trial": "none. Adobe CC only carries the Condensed and Compressed, so this one still has to be bought. Also in Canva"
+        },
+        {
+          "label": "Neuzeit S",
+          "where": "https://www.myfonts.com/collections/neuzeit-s-font-linotype/",
+          "price": "from $30.99 a style, $51.99 for 2",
+          "trial": "none"
+        }
+      ],
+      "licence": "system",
+      "files": [],
+      "system": [
+        "Futura-Medium",
+        "Futura-Bold",
+        "Futura-CondensedMedium"
+      ],
+      "tags": "",
+      "in_tools_as": [],
+      "releases": [],
+      "archive_refs": [],
+      "notes": "Futura is built into macOS (Medium, Bold, Condensed); Franklin Gothic and Neuzeit S are not (CAT Neuzeit is the free stand-in). Linked 2026-10-14."
+    },
+    {
+      "id": "process",
+      "name": "Process",
+      "group": "F",
+      "status": "potential",
+      "status_note": "",
+      "seen_on": "Sonic Youth, Daydream Nation: plain bold capitals in a corner of the painting",
+      "get_hint": "not checked",
+      "canva": "unknown",
+      "canva_note": "",
+      "sources": [
+        {
+          "label": "Process",
+          "where": "not researched, the name is too ordinary to search",
+          "price": "",
+          "trial": ""
+        }
+      ],
+      "licence": "none",
+      "files": [],
+      "system": [],
+      "tags": "",
+      "in_tools_as": [],
+      "releases": [],
+      "archive_refs": [],
+      "notes": ""
+    },
+    {
+      "id": "bootzy-condensed-tm",
+      "name": "Bootzy Condensed TM (Type Mania)",
+      "group": "F",
+      "status": "potential",
+      "status_note": "",
+      "seen_on": "Oya Festivalen 2026 poster",
+      "get_hint": "typemania.eu",
+      "canva": "unknown",
+      "canva_note": "",
+      "sources": [
+        {
+          "label": "Bootzy Condensed TM",
+          "where": "https://typemania.eu/products/bootzy-condensed-tm",
+          "price": "EUR 19.99",
+          "trial": "not mentioned"
+        }
+      ],
+      "licence": "none",
+      "files": [],
+      "system": [],
+      "tags": "",
+      "in_tools_as": [],
+      "releases": [],
+      "archive_refs": [],
+      "notes": ""
+    },
+    {
+      "id": "alias-ano-lateral",
+      "name": "Alias Ano, Lateral (Schick Toikka)",
+      "group": "F",
+      "status": "potential",
+      "status_note": "",
+      "seen_on": "Way Out West 2026",
+      "get_hint": "Fontstand, schick-toikka.com",
+      "canva": "unknown",
+      "canva_note": "",
+      "sources": [
+        {
+          "label": "Ano (Alias)",
+          "where": "https://www.myfonts.com/collections/ano-font-alias",
+          "price": "from $125 a style, $735 for 54",
+          "trial": "none listed; Fontstand carries Alias"
+        },
+        {
+          "label": "Lateral (Schick Toikka)",
+          "where": "https://www.schick-toikka.com/lateral/buy",
+          "price": "around $111 a style per search results, unconfirmed",
+          "trial": "yes, schick-toikka.com/trials. Trial already on disk"
+        }
+      ],
+      "licence": "trial",
+      "files": [
+        "trials/Schick Toikka Library Trial/Lateral Trial/LateralTrial-CompressedBlack.otf",
+        "trials/Schick Toikka Library Trial/Lateral Trial/LateralTrial-CompressedBlackItalic.otf",
+        "trials/Schick Toikka Library Trial/Lateral Trial/LateralTrial-CompressedBold.otf",
+        "trials/Schick Toikka Library Trial/Lateral Trial/LateralTrial-CompressedBoldItalic.otf",
+        "trials/Schick Toikka Library Trial/Lateral Trial/LateralTrial-CompressedHeavy.otf",
+        "trials/Schick Toikka Library Trial/Lateral Trial/LateralTrial-CompressedHeavyItalic.otf",
+        "trials/Schick Toikka Library Trial/Lateral Trial/LateralTrial-CompressedLight.otf",
+        "trials/Schick Toikka Library Trial/Lateral Trial/LateralTrial-CompressedLightItalic.otf",
+        "trials/Schick Toikka Library Trial/Lateral Trial/LateralTrial-CompressedMedium.otf",
+        "trials/Schick Toikka Library Trial/Lateral Trial/LateralTrial-CompressedMediumItalic.otf",
+        "trials/Schick Toikka Library Trial/Lateral Trial/LateralTrial-CompressedRegular.otf",
+        "trials/Schick Toikka Library Trial/Lateral Trial/LateralTrial-CompressedRegularItalic.otf",
+        "trials/Schick Toikka Library Trial/Lateral Trial/LateralTrial-CompressedThin.otf",
+        "trials/Schick Toikka Library Trial/Lateral Trial/LateralTrial-CompressedThinItalic.otf",
+        "trials/Schick Toikka Library Trial/Lateral Trial/LateralTrial-CondensedBlack.otf",
+        "trials/Schick Toikka Library Trial/Lateral Trial/LateralTrial-CondensedBlackItalic.otf",
+        "trials/Schick Toikka Library Trial/Lateral Trial/LateralTrial-CondensedBold.otf",
+        "trials/Schick Toikka Library Trial/Lateral Trial/LateralTrial-CondensedBoldItalic.otf",
+        "trials/Schick Toikka Library Trial/Lateral Trial/LateralTrial-CondensedHeavy.otf",
+        "trials/Schick Toikka Library Trial/Lateral Trial/LateralTrial-CondensedHeavyItalic.otf",
+        "trials/Schick Toikka Library Trial/Lateral Trial/LateralTrial-CondensedLight.otf",
+        "trials/Schick Toikka Library Trial/Lateral Trial/LateralTrial-CondensedLightItalic.otf",
+        "trials/Schick Toikka Library Trial/Lateral Trial/LateralTrial-CondensedMedium.otf",
+        "trials/Schick Toikka Library Trial/Lateral Trial/LateralTrial-CondensedMediumItalic.otf",
+        "trials/Schick Toikka Library Trial/Lateral Trial/LateralTrial-CondensedRegular.otf",
+        "trials/Schick Toikka Library Trial/Lateral Trial/LateralTrial-CondensedRegularItalic.otf",
+        "trials/Schick Toikka Library Trial/Lateral Trial/LateralTrial-CondensedThin.otf",
+        "trials/Schick Toikka Library Trial/Lateral Trial/LateralTrial-CondensedThinItalic.otf",
+        "trials/Schick Toikka Library Trial/Lateral Trial/LateralTrial-ExpandedBlack.otf",
+        "trials/Schick Toikka Library Trial/Lateral Trial/LateralTrial-ExpandedBlackItalic.otf",
+        "trials/Schick Toikka Library Trial/Lateral Trial/LateralTrial-ExpandedBold.otf",
+        "trials/Schick Toikka Library Trial/Lateral Trial/LateralTrial-ExpandedBoldItalic.otf",
+        "trials/Schick Toikka Library Trial/Lateral Trial/LateralTrial-ExpandedHeavy.otf",
+        "trials/Schick Toikka Library Trial/Lateral Trial/LateralTrial-ExpandedHeavyItalic.otf",
+        "trials/Schick Toikka Library Trial/Lateral Trial/LateralTrial-ExpandedLight.otf",
+        "trials/Schick Toikka Library Trial/Lateral Trial/LateralTrial-ExpandedLightItalic.otf",
+        "trials/Schick Toikka Library Trial/Lateral Trial/LateralTrial-ExpandedMedium.otf",
+        "trials/Schick Toikka Library Trial/Lateral Trial/LateralTrial-ExpandedMediumItalic.otf",
+        "trials/Schick Toikka Library Trial/Lateral Trial/LateralTrial-ExpandedRegular.otf",
+        "trials/Schick Toikka Library Trial/Lateral Trial/LateralTrial-ExpandedRegularItalic.otf",
+        "trials/Schick Toikka Library Trial/Lateral Trial/LateralTrial-ExpandedThin.otf",
+        "trials/Schick Toikka Library Trial/Lateral Trial/LateralTrial-ExpandedThinItalic.otf",
+        "trials/Schick Toikka Library Trial/Lateral Trial/LateralTrial-ExtendedBlack.otf",
+        "trials/Schick Toikka Library Trial/Lateral Trial/LateralTrial-ExtendedBlackItalic.otf",
+        "trials/Schick Toikka Library Trial/Lateral Trial/LateralTrial-ExtendedBold.otf",
+        "trials/Schick Toikka Library Trial/Lateral Trial/LateralTrial-ExtendedBoldItalic.otf",
+        "trials/Schick Toikka Library Trial/Lateral Trial/LateralTrial-ExtendedHeavy.otf",
+        "trials/Schick Toikka Library Trial/Lateral Trial/LateralTrial-ExtendedHeavyItalic.otf",
+        "trials/Schick Toikka Library Trial/Lateral Trial/LateralTrial-ExtendedLight.otf",
+        "trials/Schick Toikka Library Trial/Lateral Trial/LateralTrial-ExtendedLightItalic.otf",
+        "trials/Schick Toikka Library Trial/Lateral Trial/LateralTrial-ExtendedMedium.otf",
+        "trials/Schick Toikka Library Trial/Lateral Trial/LateralTrial-ExtendedMediumItalic.otf",
+        "trials/Schick Toikka Library Trial/Lateral Trial/LateralTrial-ExtendedRegular.otf",
+        "trials/Schick Toikka Library Trial/Lateral Trial/LateralTrial-ExtendedRegularItalic.otf",
+        "trials/Schick Toikka Library Trial/Lateral Trial/LateralTrial-ExtendedThin.otf",
+        "trials/Schick Toikka Library Trial/Lateral Trial/LateralTrial-ExtendedThinItalic.otf",
+        "trials/Schick Toikka Library Trial/Lateral Trial/LateralTrial-StandardBlack.otf",
+        "trials/Schick Toikka Library Trial/Lateral Trial/LateralTrial-StandardBlackItalic.otf",
+        "trials/Schick Toikka Library Trial/Lateral Trial/LateralTrial-StandardBold.otf",
+        "trials/Schick Toikka Library Trial/Lateral Trial/LateralTrial-StandardBoldItalic.otf",
+        "trials/Schick Toikka Library Trial/Lateral Trial/LateralTrial-StandardHeavy.otf",
+        "trials/Schick Toikka Library Trial/Lateral Trial/LateralTrial-StandardHeavyItalic.otf",
+        "trials/Schick Toikka Library Trial/Lateral Trial/LateralTrial-StandardLight.otf",
+        "trials/Schick Toikka Library Trial/Lateral Trial/LateralTrial-StandardLightItalic.otf",
+        "trials/Schick Toikka Library Trial/Lateral Trial/LateralTrial-StandardMedium.otf",
+        "trials/Schick Toikka Library Trial/Lateral Trial/LateralTrial-StandardMediumItalic.otf",
+        "trials/Schick Toikka Library Trial/Lateral Trial/LateralTrial-StandardRegular.otf",
+        "trials/Schick Toikka Library Trial/Lateral Trial/LateralTrial-StandardRegularItalic.otf",
+        "trials/Schick Toikka Library Trial/Lateral Trial/LateralTrial-StandardThin.otf",
+        "trials/Schick Toikka Library Trial/Lateral Trial/LateralTrial-StandardThinItalic.otf",
+        "trials/Schick Toikka Library Trial/Lateral Trial/LateralTrial-UltraCompressedBlack.otf",
+        "trials/Schick Toikka Library Trial/Lateral Trial/LateralTrial-UltraCompressedBlackItalic.otf",
+        "trials/Schick Toikka Library Trial/Lateral Trial/LateralTrial-UltraCompressedBold.otf",
+        "trials/Schick Toikka Library Trial/Lateral Trial/LateralTrial-UltraCompressedBoldItalic.otf",
+        "trials/Schick Toikka Library Trial/Lateral Trial/LateralTrial-UltraCompressedHeavy.otf",
+        "trials/Schick Toikka Library Trial/Lateral Trial/LateralTrial-UltraCompressedHeavyItalic.otf",
+        "trials/Schick Toikka Library Trial/Lateral Trial/LateralTrial-UltraCompressedLight.otf",
+        "trials/Schick Toikka Library Trial/Lateral Trial/LateralTrial-UltraCompressedLightItalic.otf",
+        "trials/Schick Toikka Library Trial/Lateral Trial/LateralTrial-UltraCompressedMedium.otf",
+        "trials/Schick Toikka Library Trial/Lateral Trial/LateralTrial-UltraCompressedMediumItalic.otf",
+        "trials/Schick Toikka Library Trial/Lateral Trial/LateralTrial-UltraCompressedRegular.otf",
+        "trials/Schick Toikka Library Trial/Lateral Trial/LateralTrial-UltraCompressedRegularItalic.otf",
+        "trials/Schick Toikka Library Trial/Lateral Trial/LateralTrial-UltraCompressedThin.otf",
+        "trials/Schick Toikka Library Trial/Lateral Trial/LateralTrial-UltraCompressedThinItalic.otf",
+        "trials/Schick Toikka Library Trial/Lateral Trial/LateralTrial-UltraWideBlack.otf",
+        "trials/Schick Toikka Library Trial/Lateral Trial/LateralTrial-UltraWideBlackItalic.otf",
+        "trials/Schick Toikka Library Trial/Lateral Trial/LateralTrial-UltraWideBold.otf",
+        "trials/Schick Toikka Library Trial/Lateral Trial/LateralTrial-UltraWideBoldItalic.otf",
+        "trials/Schick Toikka Library Trial/Lateral Trial/LateralTrial-UltraWideHeavy.otf",
+        "trials/Schick Toikka Library Trial/Lateral Trial/LateralTrial-UltraWideHeavyItalic.otf",
+        "trials/Schick Toikka Library Trial/Lateral Trial/LateralTrial-UltraWideLight.otf",
+        "trials/Schick Toikka Library Trial/Lateral Trial/LateralTrial-UltraWideLightItalic.otf",
+        "trials/Schick Toikka Library Trial/Lateral Trial/LateralTrial-UltraWideMedium.otf",
+        "trials/Schick Toikka Library Trial/Lateral Trial/LateralTrial-UltraWideMediumItalic.otf",
+        "trials/Schick Toikka Library Trial/Lateral Trial/LateralTrial-UltraWideRegular.otf",
+        "trials/Schick Toikka Library Trial/Lateral Trial/LateralTrial-UltraWideRegularItalic.otf",
+        "trials/Schick Toikka Library Trial/Lateral Trial/LateralTrial-UltraWideThin.otf",
+        "trials/Schick Toikka Library Trial/Lateral Trial/LateralTrial-UltraWideThinItalic.otf"
+      ],
+      "system": [],
+      "tags": "",
+      "in_tools_as": [],
+      "releases": [],
+      "archive_refs": [],
+      "notes": "Lateral has a trial on disk; Ano has none."
+    },
+    {
+      "id": "abc-favorit-onlysans-cf-asty",
+      "name": "ABC Favorit (Dinamo), Onlysans (Contemporary Type), CF Asty",
+      "group": "F",
+      "status": "potential",
+      "status_note": "",
+      "seen_on": "small text on Satellite, Niceshit, Yovel",
+      "get_hint": "abcdinamo.com; others not checked",
+      "canva": "unknown",
+      "canva_note": "",
+      "sources": [
+        {
+          "label": "ABC Favorit",
+          "where": "https://abcdinamo.com/buy/favorit",
+          "price": "no fixed price. Dinamo quotes by the client company's size, perpetual, one payment",
+          "trial": "yes, abcdinamo.com/form/request-trial-fonts"
+        }
+      ],
+      "licence": "none",
+      "files": [],
+      "system": [],
+      "tags": "",
+      "in_tools_as": [],
+      "releases": [],
+      "archive_refs": [],
+      "notes": ""
+    },
+    {
+      "id": "mohave",
+      "name": "Mohave",
+      "group": "F",
+      "status": "potential",
+      "status_note": "",
+      "seen_on": "Clockwork Editions",
+      "get_hint": "free, open source (GitHub, Tokotype)",
+      "canva": "unknown",
+      "canva_note": "",
+      "sources": [
+        {
+          "label": "Mohave",
+          "where": "https://fonts.google.com/specimen/Mohave",
+          "price": "free",
+          "trial": "",
+          "licence_text": "SIL OFL, source github.com/tokotype/Mohave-Typefaces",
+          "on_disk": "`fonts/free/`, same four weights + variables"
+        }
+      ],
+      "licence": "free",
+      "files": [
+        "free/Mohave-300.ttf",
+        "free/Mohave-400.ttf",
+        "free/Mohave-500.ttf",
+        "free/Mohave-700.ttf",
+        "free/Mohave-Italic-Variable.ttf",
+        "free/Mohave-Variable.ttf"
+      ],
+      "system": [],
+      "tags": "rock street flash tough night cool",
+      "in_tools_as": [
+        "mohave"
+      ],
+      "releases": [],
+      "archive_refs": [],
+      "notes": ""
+    },
+    {
+      "id": "jost-light",
+      "name": "Jost light",
+      "group": "F",
+      "status": "potential",
+      "status_note": "",
+      "seen_on": "noted on 2026-09-14 for the electronic lane",
+      "get_hint": "free (Google Fonts)",
+      "canva": "no",
+      "canva_note": "NOT in Canva",
+      "sources": [
+        {
+          "label": "Jost",
+          "where": "https://fonts.google.com/specimen/Jost",
+          "price": "free",
+          "trial": "",
+          "licence_text": "SIL OFL",
+          "on_disk": "`fonts/free/`, Light 300 + Regular 400 + Medium 500 + Bold 700 + both variables"
+        }
+      ],
+      "licence": "free",
+      "files": [
+        "free/Jost-300.ttf",
+        "free/Jost-400.ttf",
+        "free/Jost-500.ttf",
+        "free/Jost-700.ttf",
+        "free/Jost-Italic-Variable.ttf",
+        "free/Jost-Variable.ttf"
+      ],
+      "system": [],
+      "tags": "calm distant quiet small formal meadow",
+      "in_tools_as": [
+        "jost"
+      ],
+      "releases": [],
+      "archive_refs": [],
+      "notes": "Kept in mind for the electronic lane."
+    },
+    {
+      "id": "earth",
+      "name": "Earth",
+      "group": "I",
+      "status": "potential",
+      "status_note": "",
+      "seen_on": "Star Crystal film poster, 1986: the title in red, wide square letters cut with horizontal speed lines, stacked on two lines at the bottom of a painted poster",
+      "get_hint": "not checked",
+      "canva": "unknown",
+      "canva_note": "",
+      "sources": [
+        {
+          "label": "Earth, the Star Crystal title",
+          "where": "the name was right. https://www.elfring.com/earth.htm",
+          "price": "$99.50 for 4 faces and 4 italics",
+          "trial": "none, 30-day money back"
+        }
+      ],
+      "licence": "none",
+      "files": [],
+      "system": [],
+      "tags": "",
+      "in_tools_as": [],
+      "releases": [],
+      "archive_refs": [],
+      "notes": ""
+    },
+    {
+      "id": "antique-olive-i",
+      "name": "Antique Olive",
+      "group": "I",
+      "status": "potential",
+      "status_note": "",
+      "seen_on": "Star Crystal, the French tagline: heavy rounded sans, white, top left",
+      "get_hint": "not checked",
+      "canva": "unknown",
+      "canva_note": "",
+      "sources": [],
+      "licence": "none",
+      "files": [],
+      "system": [],
+      "tags": "",
+      "in_tools_as": [],
+      "releases": [],
+      "archive_refs": [],
+      "notes": ""
+    },
+    {
+      "id": "eurostile",
+      "name": "Eurostile",
+      "group": "I",
+      "status": "potential",
+      "status_note": "",
+      "seen_on": "Star Crystal credit block (also in group F)",
+      "get_hint": "Type Network",
+      "canva": "unknown",
+      "canva_note": "",
+      "sources": [],
+      "licence": "none",
+      "files": [],
+      "system": [],
+      "tags": "",
+      "in_tools_as": [],
+      "releases": [],
+      "archive_refs": [],
+      "notes": ""
+    },
+    {
+      "id": "gemini-computer",
+      "name": "Gemini Computer",
+      "group": "I",
+      "status": "potential",
+      "status_note": "",
+      "seen_on": "Mort Garson, Patch Cord Productions: the base of the three-face stack, \"one of the earliest cyber typefaces\"",
+      "get_hint": "not checked",
+      "canva": "no",
+      "canva_note": "NOT in Canva",
+      "sources": [],
+      "licence": "none",
+      "files": [],
+      "system": [],
+      "tags": "",
+      "in_tools_as": [],
+      "releases": [],
+      "archive_refs": [],
+      "notes": ""
+    },
+    {
+      "id": "itc-busorama",
+      "name": "ITC Busorama",
+      "group": "I",
+      "status": "potential",
+      "status_note": "",
+      "seen_on": "Mort Garson, Patch Cord Productions: set tiny, in the middle of the stack. A 1970s Deco capitals face",
+      "get_hint": "not checked",
+      "canva": "no",
+      "canva_note": "NOT in Canva",
+      "sources": [],
+      "licence": "none",
+      "files": [],
+      "system": [],
+      "tags": "",
+      "in_tools_as": [],
+      "releases": [],
+      "archive_refs": [],
+      "notes": ""
+    },
+    {
+      "id": "impact",
+      "name": "Impact (Geoffrey Lee, 1965)",
+      "group": "J",
+      "status": "potential",
+      "status_note": "",
+      "seen_on": "reference 38, The Cure, a Japanese magazine page about 1985 to 1986: \"THECURE\" in red, heavy condensed italic on a rising diagonal. Liked by Amir 2026-09-21 when set beside the scan, slanted and turned the same way (`references/fonts-look12/ref38-compare.jpg`). Not the scan's own lettering, which is not identified",
+      "get_hint": "on this Mac with macOS (`/System/Library/Fonts/Supplemental/Impact.ttf`); sold by Monotype. In Canva (2026-09-21, on the specimen). Licence for a release NOT checked",
+      "canva": "unknown",
+      "canva_note": "",
+      "sources": [],
+      "licence": "system",
+      "files": [],
+      "system": [
+        "Impact"
+      ],
+      "tags": "noir rock punk loud flash defiant tough dramatic",
+      "in_tools_as": [
+        "impact"
+      ],
+      "releases": [],
+      "archive_refs": [],
+      "notes": "On this Mac with macOS; a release licence is NOT checked."
+    },
+    {
+      "id": "futura-condensed-extrabold",
+      "name": "Futura Condensed ExtraBold",
+      "group": "J",
+      "status": "potential",
+      "status_note": "",
+      "seen_on": "the same sheet, the nearest to the scan in weight and in the round C and U. Liked by Amir 2026-09-21",
+      "get_hint": "on this Mac with macOS (`Futura.ttc`, face 4); NOT in Canva (2026-09-21: Canva's Futura is normal width only, ExtraBold is the nearest); buying: see Futura in `font-sources.md`. Licence for a release NOT checked",
+      "canva": "unknown",
+      "canva_note": "",
+      "sources": [],
+      "licence": "system",
+      "files": [],
+      "system": [
+        "Futura-CondensedExtraBold"
+      ],
+      "tags": "noir rock loud stark flash street edgy",
+      "in_tools_as": [
+        "futura_xb"
+      ],
+      "releases": [],
+      "archive_refs": [],
+      "notes": "On this Mac with macOS; a release licence is NOT checked."
+    },
+    {
+      "id": "unidentified-thin-script",
+      "name": "unidentified thin script",
+      "group": "G",
+      "status": "potential",
+      "status_note": "",
+      "seen_on": "Madonna, Material Girl: the song title under the tall name",
+      "get_hint": "unknown",
+      "canva": "unknown",
+      "canva_note": "",
+      "sources": [],
+      "licence": "none",
+      "files": [],
+      "system": [],
+      "tags": "",
+      "in_tools_as": [],
+      "releases": [],
+      "archive_refs": [],
+      "notes": ""
+    },
+    {
+      "id": "signal",
+      "name": "Signal (or Sirene, Lettergieterij Amsterdam)",
+      "group": "G",
+      "status": "potential",
+      "status_note": "",
+      "seen_on": "Leonard Cohen lyrics booklet: his name, small, brushy, on kraft paper",
+      "get_hint": "not checked",
+      "canva": "unknown",
+      "canva_note": "",
+      "sources": [
+        {
+          "label": "FDI Lettograph, the Signal / Sirene revival",
+          "where": "https://fdi-type.de/fonts/lettograph/",
+          "price": "free",
+          "trial": "",
+          "licence_text": "FDI Free Font Licence. 3 weights plus a variable",
+          "on_disk": "no. Behind a free account on Ralf Herrmann's own sites, and the licence says every user obtains their own copy. Amir downloads this one"
+        },
+        {
+          "label": "Signal / Sirene",
+          "where": "one design. Amsterdam licensed Berthold's Signal as Sirene. The Berthold digital was withdrawn around 2023, so the answer now is FDI Lettograph, free: https://fdi-type.de/fonts/lettograph/",
+          "price": "free",
+          "trial": "n/a"
+        },
+        {
+          "label": "Signal, a grungier single weight",
+          "where": "https://www.bnicks.com/shop/p/grizzly (BN Grizzly)",
+          "price": "$18, 2 users",
+          "trial": "none, on-site tester"
+        }
+      ],
+      "licence": "free",
+      "files": [],
+      "system": [],
+      "tags": "",
+      "in_tools_as": [],
+      "releases": [],
+      "archive_refs": [],
+      "notes": "Licence 'free' refers to FDI Lettograph, the Signal / Sirene revival. Not on disk: behind a free account, Amir downloads it himself."
+    },
+    {
+      "id": "streamster",
+      "name": "Streamster (Youssef Habchi)",
+      "group": "G",
+      "status": "potential",
+      "status_note": "",
+      "seen_on": "Night Shift: pink neon brush script",
+      "get_hint": "youssef-habchi.com",
+      "canva": "unknown",
+      "canva_note": "",
+      "sources": [
+        {
+          "label": "Streamster",
+          "where": "https://youssef-habchi.com/fonts/streamster",
+          "price": "$39 standard, up to $1,599",
+          "trial": "free for PERSONAL use at https://www.dafont.com/streamster.font"
+        }
+      ],
+      "licence": "personal use only",
+      "files": [],
+      "system": [],
+      "tags": "",
+      "in_tools_as": [],
+      "releases": [],
+      "archive_refs": [],
+      "notes": "Free for PERSONAL use only (dafont), so not for brand work; buy it if wanted."
+    },
+    {
+      "id": "scriptana-sofia-script-stanford-script",
+      "name": "Scriptana, Sofia Script, Stanford Script (Letterhead Fonts)",
+      "group": "G",
+      "status": "guest",
+      "status_note": "",
+      "seen_on": "the bundle on disk",
+      "get_hint": "letterheadfonts.com",
+      "canva": "unknown",
+      "canva_note": "",
+      "sources": [
+        {
+          "label": "LHF Scriptana",
+          "where": "https://letterheadfonts.com/fonts/scriptana",
+          "price": "$19",
+          "trial": "none. On disk"
+        },
+        {
+          "label": "LHF Sofia Script",
+          "where": "https://letterheadfonts.com/fonts/sofiascript",
+          "price": "$29",
+          "trial": "none. On disk"
+        },
+        {
+          "label": "LHF Stanford Script",
+          "where": "https://letterheadfonts.com/fonts/stanfordscript",
+          "price": "$29",
+          "trial": "none. On disk"
+        }
+      ],
+      "licence": "trial",
+      "files": [
+        "trials/Letterheadfonts - Letterhead Fonts Foundry Bundle/LHF Scriptana™/LHF Scriptana Slant.otf",
+        "trials/Letterheadfonts - Letterhead Fonts Foundry Bundle/LHF Scriptana™/LHF Scriptana.otf",
+        "trials/Letterheadfonts - Letterhead Fonts Foundry Bundle/LHF Sofia Script™/LHF Sofia Script.otf",
+        "trials/Letterheadfonts - Letterhead Fonts Foundry Bundle/LHF Stanford Script™/LHF Stanford Script.otf"
+      ],
+      "system": [],
+      "tags": "romantic soft seductive open",
+      "in_tools_as": [
+        "stanford"
+      ],
+      "releases": [],
+      "archive_refs": [],
+      "notes": ""
+    },
+    {
+      "id": "a-custom-face-from-one-s-own-handwriting",
+      "name": "a custom face from one's own handwriting",
+      "group": "G",
+      "status": "idea",
+      "status_note": "",
+      "seen_on": "Niceshit rebrand: drawn from the founders' hands, several shapes per letter",
+      "get_hint": "a lettering artist, or Amir's own hand",
+      "canva": "unknown",
+      "canva_note": "",
+      "sources": [],
+      "licence": "none",
+      "files": [],
+      "system": [],
+      "tags": "",
+      "in_tools_as": [],
+      "releases": [],
+      "archive_refs": [],
+      "notes": ""
+    },
+    {
+      "id": "clarendon-stencil-lettering",
+      "name": "Clarendon + stencil lettering",
+      "group": "H",
+      "status": "potential",
+      "status_note": "",
+      "seen_on": "Picasso catalogue (Elaine Lustig Cohen, 1958): the name as a wall, orange and pink",
+      "get_hint": "many versions",
+      "canva": "yes",
+      "canva_note": "in Canva, + Narrow",
+      "sources": [
+        {
+          "label": "Clarendon, modern text cut",
+          "where": "https://www.canadatype.com/product/clarendon-text-pro/",
+          "price": "not shown",
+          "trial": "free with Creative Cloud: https://fonts.adobe.com/fonts/clarendon-text"
+        },
+        {
+          "label": "Clarendon, classic display cut",
+          "where": "https://www.myfonts.com/collections/clarendon-font-linotype/",
+          "price": "$29.99 a style, $100.99 for 3",
+          "trial": "none. Also in Canva"
+        }
+      ],
+      "licence": "system",
+      "files": [],
+      "system": [
+        "Superclarendon-Regular",
+        "Superclarendon-Bold",
+        "Superclarendon-Black"
+      ],
+      "tags": "",
+      "in_tools_as": [],
+      "releases": [],
+      "archive_refs": [],
+      "notes": "Stand-in: Superclarendon, built into macOS, a modern Clarendon cut, not the original. Clarendon itself is in Canva. Linked 2026-10-14."
+    },
+    {
+      "id": "hollandse-mediaeval",
+      "name": "Hollandse Mediaeval",
+      "group": "H",
+      "status": "potential",
+      "status_note": "",
+      "seen_on": "Leonard Cohen lyrics booklet: the lyrics themselves, letterpress",
+      "get_hint": "not checked",
+      "canva": "unknown",
+      "canva_note": "",
+      "sources": [
+        {
+          "label": "Hollandse Mediaeval",
+          "where": "the revival is Dutch Mediaeval (Canada Type, Hans van Maanen): https://www.myfonts.com/collections/dutch-mediaeval-font-canada-type/",
+          "price": "from $24.95 a style, $199.95 for 15",
+          "trial": "also on Adobe Fonts with CC"
+        }
+      ],
+      "licence": "none",
+      "files": [],
+      "system": [],
+      "tags": "",
+      "in_tools_as": [],
+      "releases": [],
+      "archive_refs": [],
+      "notes": ""
+    },
+    {
+      "id": "sabon",
+      "name": "Sabon (Jan Tschichold)",
+      "group": "H",
+      "status": "potential",
+      "status_note": "potential, a system not a cover",
+      "seen_on": "Sacred Bones Records, the whole LP template since 2008. One face doing everything, the art does the changing",
+      "get_hint": "Monotype, Adobe Fonts with CC",
+      "canva": "unknown",
+      "canva_note": "",
+      "sources": [],
+      "licence": "none",
+      "files": [],
+      "system": [],
+      "tags": "",
+      "in_tools_as": [],
+      "releases": [],
+      "archive_refs": [],
+      "notes": ""
+    },
+    {
+      "id": "bembo",
+      "name": "Bembo",
+      "group": "H",
+      "status": "potential",
+      "status_note": "",
+      "seen_on": "The Metamorphoses of Ovid, 559 pages of text at about 14 point",
+      "get_hint": "Monotype, Adobe Fonts with CC",
+      "canva": "unknown",
+      "canva_note": "",
+      "sources": [],
+      "licence": "none",
+      "files": [],
+      "system": [],
+      "tags": "",
+      "in_tools_as": [],
+      "releases": [],
+      "archive_refs": [],
+      "notes": ""
+    },
+    {
+      "id": "castellar-diotima-italic",
+      "name": "Castellar + Diotima Italic (Gudrun Zapf von Hesse)",
+      "group": "H",
+      "status": "potential",
+      "status_note": "potential, closest yet to A Letter for Listeners",
+      "seen_on": "the Ovid title page, the two set together",
+      "get_hint": "Monotype; Diotima via Linotype / URW",
+      "canva": "unknown",
+      "canva_note": "",
+      "sources": [],
+      "licence": "none",
+      "files": [],
+      "system": [],
+      "tags": "",
+      "in_tools_as": [],
+      "releases": [],
+      "archive_refs": [],
+      "notes": ""
+    },
+    {
+      "id": "centaur",
+      "name": "Centaur (Bruce Rogers)",
+      "group": "H",
+      "status": "potential",
+      "status_note": "",
+      "seen_on": "the Ovid dust jacket, letterspaced",
+      "get_hint": "Monotype, Adobe Fonts with CC",
+      "canva": "unknown",
+      "canva_note": "",
+      "sources": [],
+      "licence": "none",
+      "files": [],
+      "system": [],
+      "tags": "",
+      "in_tools_as": [],
+      "releases": [],
+      "archive_refs": [],
+      "notes": ""
+    },
+    {
+      "id": "century-expanded-primer-melior-bold-condensed",
+      "name": "Century Expanded , Primer , Melior Bold Condensed",
+      "group": "H",
+      "status": "potential",
+      "status_note": "",
+      "seen_on": "The Ghastling, Memory of Megan, Material Girl",
+      "get_hint": "Fontspring, MyFonts",
+      "canva": "no",
+      "canva_note": "in Canva NOT in Canva NOT in Canva",
+      "sources": [
+        {
+          "label": "Century Expanded",
+          "where": "https://www.myfonts.com/collections/century-expanded-lt-font-linotype",
+          "price": "$29.99 a style, $69.99 Roman + Italic",
+          "trial": "none. Also in Canva"
+        },
+        {
+          "label": "Primer",
+          "where": "nothing is sold as \"Primer\". Ruzicka's 1951 face is digital as Century 751 (Bitstream): https://www.myfonts.com/collections/century-751-font-bitstream/",
+          "price": "from $29 a style, $243.99 for 10",
+          "trial": "none"
+        },
+        {
+          "label": "Melior",
+          "where": "https://www.myfonts.com/collections/melior-font-zapf-alphabets/",
+          "price": "$29.99 to $40.99 a style, $83.99 for 4",
+          "trial": "none"
+        },
+        {
+          "label": "Melior Bold Condensed",
+          "where": "cannot be bought. Only Regular, Italic, Bold and Bold Italic are licensable. Berthold's Melior BQ Bold Condensed now appears only on unlicensed sites",
+          "price": "",
+          "trial": ""
+        }
+      ],
+      "licence": "none",
+      "files": [],
+      "system": [],
+      "tags": "",
+      "in_tools_as": [],
+      "releases": [],
+      "archive_refs": [],
+      "notes": ""
+    },
+    {
+      "id": "ocr-b-marvin-visions",
+      "name": "OCR-B, Marvin Visions",
+      "group": "H",
+      "status": "potential",
+      "status_note": "",
+      "seen_on": "OK Computer booklet, Night Shift",
+      "get_hint": "Type Network, readvisions.com",
+      "canva": "unknown",
+      "canva_note": "",
+      "sources": [
+        {
+          "label": "OCR-B, Matthew Skala's cut",
+          "where": "https://tsukurimashou.org/ocr.php.en (the file is at /files/ocr-0.3.1.zip)",
+          "price": "free",
+          "trial": "",
+          "licence_text": "public domain, commercial use fine",
+          "on_disk": "`fonts/free/OCR-B-Regular.otf`"
+        },
+        {
+          "label": "OCR-B",
+          "where": "https://www.myfonts.com/collections/ocr-b-2-font-linotype/ , or free at https://tsukurimashou.org/ocr.php.en",
+          "price": "$40.99 one style, or free",
+          "trial": "none"
+        },
+        {
+          "label": "Marvin Visions",
+          "where": "https://www.readvisions.com/marvin",
+          "price": "GBP 19 a weight, 76 Big, 38 Small, 95 both",
+          "trial": "yes, free trial licence. Big Bold is free for personal use"
+        }
+      ],
+      "licence": "free",
+      "files": [
+        "free/OCR-B-Light.otf",
+        "free/OCR-B-Regular.otf"
+      ],
+      "system": [],
+      "tags": "snapshot night flash machine caught",
+      "in_tools_as": [
+        "ocrb"
+      ],
+      "releases": [],
+      "archive_refs": [],
+      "notes": "Licence 'free' refers to OCR-B (Matthew Skala's cut, on disk). Marvin Visions is paid; Big Bold is free for personal use only."
+    },
+    {
+      "id": "henderson-state-fair-birgitta",
+      "name": "Henderson, State Fair, Birgitta (Letterhead Fonts)",
+      "group": "H",
+      "status": "guest",
+      "status_note": "",
+      "seen_on": "the bundle on disk",
+      "get_hint": "letterheadfonts.com",
+      "canva": "unknown",
+      "canva_note": "",
+      "sources": [
+        {
+          "label": "LHF Henderson",
+          "where": "https://letterheadfonts.com/fonts/henderson",
+          "price": "$19",
+          "trial": "none. On disk"
+        },
+        {
+          "label": "LHF State Fair, 4-font set",
+          "where": "https://letterheadfonts.com/fonts/statefairset",
+          "price": "$29",
+          "trial": "none. On disk"
+        },
+        {
+          "label": "LHF Birgitta",
+          "where": "https://letterheadfonts.com/fonts/birgitta",
+          "price": "$19",
+          "trial": "none. On disk"
+        }
+      ],
+      "licence": "trial",
+      "files": [
+        "trials/Letterheadfonts - Letterhead Fonts Foundry Bundle/LHF Birgitta™/LHF Birgitta.otf",
+        "trials/Letterheadfonts - Letterhead Fonts Foundry Bundle/LHF Henderson/LHF Henderson.otf",
+        "trials/Letterheadfonts - Letterhead Fonts Foundry Bundle/LHF State Fair™/LHF State Fair Light.otf",
+        "trials/Letterheadfonts - Letterhead Fonts Foundry Bundle/LHF State Fair™/LHF State Fair Lined.otf",
+        "trials/Letterheadfonts - Letterhead Fonts Foundry Bundle/LHF State Fair™/LHFState Fair Regular.otf"
+      ],
+      "system": [],
+      "tags": "vintage sepia classic carved",
+      "in_tools_as": [
+        "henderson"
+      ],
+      "releases": [],
+      "archive_refs": [],
+      "notes": ""
+    },
+    {
+      "id": "din-condensed-bold",
+      "name": "DIN Condensed Bold",
+      "group": "F",
+      "status": "in the tools",
+      "status_note": "on the Shoot page's cover ideas; not from Amir's research",
+      "seen_on": "",
+      "get_hint": "",
+      "canva": "unknown",
+      "canva_note": "",
+      "sources": [],
+      "licence": "system",
+      "files": [],
+      "system": [
+        "DINCondensed-Bold"
+      ],
+      "tags": "snapshot street flash cool alert",
+      "in_tools_as": [
+        "din_cond"
+      ],
+      "releases": [],
+      "archive_refs": [],
+      "notes": ""
+    },
+    {
+      "id": "copperplate",
+      "name": "Copperplate",
+      "group": "D",
+      "status": "in the tools",
+      "status_note": "on the Shoot page's cover ideas; not from Amir's research",
+      "seen_on": "",
+      "get_hint": "",
+      "canva": "unknown",
+      "canva_note": "",
+      "sources": [],
+      "licence": "system",
+      "files": [],
+      "system": [
+        "Copperplate"
+      ],
+      "tags": "monumental stone formal untouchable stern",
+      "in_tools_as": [
+        "copperplate"
+      ],
+      "releases": [],
+      "archive_refs": [],
+      "notes": ""
+    },
+    {
+      "id": "noe-display-bold",
+      "name": "Noe Display Bold",
+      "group": "C",
+      "status": "in the tools",
+      "status_note": "on the Shoot page's cover ideas; not from Amir's research",
+      "seen_on": "",
+      "get_hint": "",
+      "canva": "unknown",
+      "canva_note": "",
+      "sources": [],
+      "licence": "trial",
+      "files": [
+        "trials/Schick Toikka Library Trial/Noe Collection Trial/Noe Display Trial/NoeDisplayTrial-Bold.otf"
+      ],
+      "system": [],
+      "tags": "confident editorial cool dramatic",
+      "in_tools_as": [
+        "noe"
+      ],
+      "releases": [],
+      "archive_refs": [],
+      "notes": ""
+    },
+    {
+      "id": "lyyra-black",
+      "name": "Lyyra Black",
+      "group": "C",
+      "status": "in the tools",
+      "status_note": "on the Shoot page's cover ideas; not from Amir's research",
+      "seen_on": "",
+      "get_hint": "",
+      "canva": "unknown",
+      "canva_note": "",
+      "sources": [],
+      "licence": "trial",
+      "files": [
+        "trials/Schick Toikka Library Trial/Lyyra Collection Trial/Lyyra Standard Trial/LyyraStandardTrial-Black.otf"
+      ],
+      "system": [],
+      "tags": "luxury seductive confident",
+      "in_tools_as": [
+        "lyyra"
+      ],
+      "releases": [],
+      "archive_refs": [],
+      "notes": ""
+    },
+    {
+      "id": "chap-medium",
+      "name": "Chap Medium",
+      "group": "B",
+      "status": "in the tools",
+      "status_note": "on the Shoot page's cover ideas; not from Amir's research",
+      "seen_on": "",
+      "get_hint": "",
+      "canva": "unknown",
+      "canva_note": "",
+      "sources": [],
+      "licence": "trial",
+      "files": [
+        "trials/Schick Toikka Library Trial/Chap Trial/ChapTrial-Medium.otf"
+      ],
+      "system": [],
+      "tags": "playful cheeky warm friendly relaxed",
+      "in_tools_as": [
+        "chap"
+      ],
+      "releases": [],
+      "archive_refs": [],
+      "notes": ""
+    },
+    {
+      "id": "krana-fat",
+      "name": "Krana Fat",
+      "group": "B",
+      "status": "in the tools",
+      "status_note": "on the Shoot page's cover ideas; not from Amir's research",
+      "seen_on": "",
+      "get_hint": "",
+      "canva": "unknown",
+      "canva_note": "",
+      "sources": [],
+      "licence": "trial",
+      "files": [
+        "trials/Schick Toikka Library Trial/Krana Fat Trial/KranaFatTrial-A.otf",
+        "trials/Schick Toikka Library Trial/Krana Fat Trial/KranaFatTrial-B.otf"
+      ],
+      "system": [],
+      "tags": "playful cheeky mischievous rock",
+      "in_tools_as": [
+        "krana"
+      ],
+      "releases": [],
+      "archive_refs": [],
+      "notes": ""
+    },
+    {
+      "id": "gt-sectra-display-bold",
+      "name": "GT Sectra Display Bold",
+      "group": "C",
+      "status": "in the tools",
+      "status_note": "on the Shoot page's cover ideas; not from Amir's research",
+      "seen_on": "",
+      "get_hint": "",
+      "canva": "unknown",
+      "canva_note": "",
+      "sources": [],
+      "licence": "trial",
+      "files": [
+        "trials/Grilli-Type-Trial-Fonts-2026-04/Desktop/GT-Sectra/GT-Sectra-Display-Bold-Italic-Trial.otf",
+        "trials/Grilli-Type-Trial-Fonts-2026-04/Desktop/GT-Sectra/GT-Sectra-Display-Bold-Trial.otf"
+      ],
+      "system": [],
+      "tags": "brooding stern intense sharp",
+      "in_tools_as": [
+        "sectra"
+      ],
+      "releases": [],
+      "archive_refs": [],
+      "notes": ""
+    },
+    {
+      "id": "didot",
+      "name": "Didot",
+      "group": "C",
+      "status": "in the tools",
+      "status_note": "on the Shoot page's cover ideas; not from Amir's research",
+      "seen_on": "",
+      "get_hint": "",
+      "canva": "unknown",
+      "canva_note": "",
+      "sources": [],
+      "licence": "system",
+      "files": [],
+      "system": [
+        "Didot"
+      ],
+      "tags": "luxury elegant fashion untouchable",
+      "in_tools_as": [
+        "didot"
+      ],
+      "releases": [],
+      "archive_refs": [],
+      "notes": ""
+    },
+    {
+      "id": "bodoni-72-bold",
+      "name": "Bodoni 72 Bold",
+      "group": "C",
+      "status": "in the tools",
+      "status_note": "on the Shoot page's cover ideas; not from Amir's research",
+      "seen_on": "",
+      "get_hint": "",
+      "canva": "unknown",
+      "canva_note": "",
+      "sources": [],
+      "licence": "system",
+      "files": [],
+      "system": [
+        "BodoniSvtyTwoITCTT-Bold"
+      ],
+      "tags": "dramatic intense classic reaching",
+      "in_tools_as": [
+        "bodoni"
+      ],
+      "releases": [],
+      "archive_refs": [],
+      "notes": ""
+    },
+    {
+      "id": "baskerville-italic",
+      "name": "Baskerville Italic",
+      "group": "H",
+      "status": "in the tools",
+      "status_note": "on the Shoot page's cover ideas; not from Amir's research",
+      "seen_on": "",
+      "get_hint": "",
+      "canva": "unknown",
+      "canva_note": "",
+      "sources": [],
+      "licence": "system",
+      "files": [],
+      "system": [
+        "Baskerville-Italic"
+      ],
+      "tags": "quiet pensive classic lonely vintage",
+      "in_tools_as": [
+        "baskerville"
+      ],
+      "releases": [],
+      "archive_refs": [],
+      "notes": ""
+    },
+    {
+      "id": "american-typewriter",
+      "name": "American Typewriter",
+      "group": "H",
+      "status": "in the tools",
+      "status_note": "on the Shoot page's cover ideas; not from Amir's research",
+      "seen_on": "",
+      "get_hint": "",
+      "canva": "unknown",
+      "canva_note": "",
+      "sources": [],
+      "licence": "system",
+      "files": [],
+      "system": [
+        "AmericanTypewriter"
+      ],
+      "tags": "vintage candid snapshot lost",
+      "in_tools_as": [
+        "typewriter"
+      ],
+      "releases": [],
+      "archive_refs": [],
+      "notes": ""
+    },
+    {
+      "id": "avenir-next-condensed-heavy",
+      "name": "Avenir Next Condensed Heavy",
+      "group": "F",
+      "status": "in the tools",
+      "status_note": "on the Shoot page's cover ideas; not from Amir's research",
+      "seen_on": "",
+      "get_hint": "",
+      "canva": "unknown",
+      "canva_note": "",
+      "sources": [],
+      "licence": "system",
+      "files": [],
+      "system": [
+        "AvenirNextCondensed-Heavy"
+      ],
+      "tags": "cool aloof composed posed",
+      "in_tools_as": [
+        "avenir_c"
+      ],
+      "releases": [],
+      "archive_refs": [],
+      "notes": ""
+    },
+    {
+      "id": "optima",
+      "name": "Optima",
+      "group": "F",
+      "status": "in the tools",
+      "status_note": "on the Shoot page's cover ideas; not from Amir's research",
+      "seen_on": "",
+      "get_hint": "",
+      "canva": "unknown",
+      "canva_note": "",
+      "sources": [],
+      "licence": "system",
+      "files": [],
+      "system": [
+        "Optima-Regular"
+      ],
+      "tags": "calm soft quiet distant eerie",
+      "in_tools_as": [
+        "optima"
+      ],
+      "releases": [],
+      "archive_refs": [],
+      "notes": ""
+    },
+    {
+      "id": "herculanum",
+      "name": "Herculanum",
+      "group": "E",
+      "status": "in the tools",
+      "status_note": "on the Shoot page's cover ideas; not from Amir's research",
+      "seen_on": "",
+      "get_hint": "",
+      "canva": "unknown",
+      "canva_note": "",
+      "sources": [],
+      "licence": "system",
+      "files": [],
+      "system": [
+        "Herculanum"
+      ],
+      "tags": "carved stone weathered ancient",
+      "in_tools_as": [
+        "herculanum"
+      ],
+      "releases": [],
+      "archive_refs": [],
+      "notes": ""
+    },
+    {
+      "id": "snell-roundhand",
+      "name": "Snell Roundhand",
+      "group": "G",
+      "status": "in the tools",
+      "status_note": "on the Shoot page's cover ideas; not from Amir's research",
+      "seen_on": "",
+      "get_hint": "",
+      "canva": "unknown",
+      "canva_note": "",
+      "sources": [],
+      "licence": "system",
+      "files": [],
+      "system": [
+        "SnellRoundhand-Bold"
+      ],
+      "tags": "romantic swash intimate",
+      "in_tools_as": [
+        "snell"
+      ],
+      "releases": [],
+      "archive_refs": [],
+      "notes": ""
+    },
+    {
+      "id": "cat-eckmann",
+      "name": "CAT Eckmann (Peter Wiegel)",
+      "group": "E",
+      "status": "potential",
+      "status_note": "",
+      "seen_on": "free match for Eckmann-Schrift, found 2026-10-13 through @fakeplasticbrands' font sites (R-007)",
+      "get_hint": "free, on disk",
+      "canva": "yes",
+      "canva_note": "uploaded to the Brand Kit 2026-10-13",
+      "sources": [
+        {
+          "label": "CAT Eckmann",
+          "where": "https://uncut.wtf/display/cat-eckmann/ (download: peter-wiegel.de/eckmann.html)",
+          "price": "free",
+          "trial": "",
+          "licence_text": "SIL OFL",
+          "on_disk": "`fonts/free/CAT-Eckmann.ttf`"
+        }
+      ],
+      "licence": "free",
+      "files": [
+        "free/CAT-Eckmann.ttf"
+      ],
+      "system": [],
+      "tags": "art nouveau gothic romance free revival",
+      "in_tools_as": [],
+      "releases": [],
+      "archive_refs": [
+        "R-007"
+      ],
+      "notes": "Free stand-in for Eckmann-Schrift: a free digital revival of the same 1900 face. Compared by Claude on the same text against the originals (trial files where on disk), 2026-10-13. Amir said 'take them if close enough'."
+    },
+    {
+      "id": "cat-neuzeit",
+      "name": "CAT Neuzeit (Peter Wiegel)",
+      "group": "F",
+      "status": "potential",
+      "status_note": "",
+      "seen_on": "free match for Neuzeit S, found 2026-10-13 through @fakeplasticbrands' font sites (R-007)",
+      "get_hint": "free, on disk",
+      "canva": "yes",
+      "canva_note": "uploaded to the Brand Kit 2026-10-13",
+      "sources": [
+        {
+          "label": "CAT Neuzeit",
+          "where": "https://uncut.wtf/sans-serif/cat-neuzeit/ (download: peter-wiegel.de/CAT_Neuzeit.html)",
+          "price": "free",
+          "trial": "",
+          "licence_text": "SIL OFL",
+          "on_disk": "`fonts/free/CATNeuzeit.ttf` + a shadow cut"
+        }
+      ],
+      "licence": "free",
+      "files": [
+        "free/CATNeuzeit.ttf",
+        "free/CATNeuzeit Schatten.ttf"
+      ],
+      "system": [],
+      "tags": "plain geometric partner free revival",
+      "in_tools_as": [],
+      "releases": [],
+      "archive_refs": [
+        "R-007"
+      ],
+      "notes": "Free stand-in for Neuzeit S: a free revival of Neuzeit Grotesk. Compared by Claude on the same text against the originals (trial files where on disk), 2026-10-13. Amir said 'take them if close enough'."
+    },
+    {
+      "id": "fraunces",
+      "name": "Fraunces (Black, Soft)",
+      "group": "B",
+      "status": "potential",
+      "status_note": "",
+      "seen_on": "free match for Cooper Black, found 2026-10-13 through @fakeplasticbrands' font sites (R-007)",
+      "get_hint": "free, on disk",
+      "canva": "yes",
+      "canva_note": "uploaded to the Brand Kit 2026-10-13 (144pt SuperSoft Black + Bold, the Cooper look)",
+      "sources": [
+        {
+          "label": "Fraunces",
+          "where": "https://fonts.google.com/specimen/Fraunces",
+          "price": "free",
+          "trial": "",
+          "licence_text": "SIL OFL",
+          "on_disk": "`fonts/free/Fraunces-Variable.ttf` + italic; set SOFT 100 and weight 900 for the Cooper look"
+        }
+      ],
+      "licence": "free",
+      "files": [
+        "free/Fraunces-Variable.ttf",
+        "free/Fraunces-Italic-Variable.ttf",
+        "free/Fraunces144ptSuperSoft-Black.otf",
+        "free/Fraunces144ptSuperSoft-Bold.otf"
+      ],
+      "system": [],
+      "tags": "soft fat warm 1970s free",
+      "in_tools_as": [],
+      "releases": [],
+      "archive_refs": [
+        "R-007"
+      ],
+      "notes": "Free stand-in for Cooper Black: at Black weight with the Soft axis up it has the same fat, soft serif. Compared by Claude on the same text against the originals (trial files where on disk), 2026-10-13. Amir said 'take them if close enough'."
+    },
+    {
+      "id": "gloock",
+      "name": "Gloock (Duarte Pinto)",
+      "group": "C",
+      "status": "potential",
+      "status_note": "",
+      "seen_on": "free match for Noe Display / Saol Display, found 2026-10-13 through @fakeplasticbrands' font sites (R-007)",
+      "get_hint": "free, on disk",
+      "canva": "yes",
+      "canva_note": "uploaded to the Brand Kit 2026-10-13",
+      "sources": [
+        {
+          "label": "Gloock",
+          "where": "https://fonts.google.com/specimen/Gloock",
+          "price": "free",
+          "trial": "",
+          "licence_text": "SIL OFL",
+          "on_disk": "`fonts/free/Gloock-Regular.ttf`"
+        }
+      ],
+      "licence": "free",
+      "files": [
+        "free/Gloock-Regular.ttf"
+      ],
+      "system": [],
+      "tags": "sharp high-contrast editorial display free",
+      "in_tools_as": [],
+      "releases": [],
+      "archive_refs": [
+        "R-007"
+      ],
+      "notes": "Free stand-in for Noe Display / Saol Display: the same sharp, high-contrast bold display serif. Compared by Claude on the same text against the originals (trial files where on disk), 2026-10-13. Amir said 'take them if close enough'."
+    },
+    {
+      "id": "switzer",
+      "name": "Switzer (Indian Type Foundry)",
+      "group": "F",
+      "status": "potential",
+      "status_note": "",
+      "seen_on": "free match for Neue Haas Grotesk Display / Univers, found 2026-10-13 through @fakeplasticbrands' font sites (R-007)",
+      "get_hint": "free, on disk",
+      "canva": "yes",
+      "canva_note": "uploaded to the Brand Kit 2026-10-13 (Light to Black, 6 weights)",
+      "sources": [
+        {
+          "label": "Switzer",
+          "where": "https://www.fontshare.com/fonts/switzer",
+          "price": "free",
+          "trial": "",
+          "licence_text": "ITF Free Font License (commercial use and logos allowed; the file may not be shared or offered to others, including through an online design tool for third parties)",
+          "on_disk": "`fonts/free/Switzer/`, 9 weights + italics + variable"
+        }
+      ],
+      "licence": "free",
+      "files": [
+        "free/Switzer/Switzer-Thin.otf",
+        "free/Switzer/Switzer-Extralight.otf",
+        "free/Switzer/Switzer-Light.otf",
+        "free/Switzer/Switzer-Regular.otf",
+        "free/Switzer/Switzer-Medium.otf",
+        "free/Switzer/Switzer-Semibold.otf",
+        "free/Switzer/Switzer-Bold.otf",
+        "free/Switzer/Switzer-Extrabold.otf",
+        "free/Switzer/Switzer-Black.otf"
+      ],
+      "system": [],
+      "tags": "plain neo-grotesk partner free",
+      "in_tools_as": [],
+      "releases": [],
+      "archive_refs": [
+        "R-007"
+      ],
+      "notes": "Free stand-in for Neue Haas Grotesk Display / Univers: a clean neo-grotesk in 18 styles. Compared by Claude on the same text against the originals (trial files where on disk), 2026-10-13. Amir said 'take them if close enough'."
+    },
+    {
+      "id": "pirata-one",
+      "name": "Pirata One",
+      "group": "E",
+      "status": "potential",
+      "status_note": "",
+      "seen_on": "free stand-in for the hand-drawn Chateau Royal lettering (R-012), found 2026-10-14",
+      "get_hint": "free, on disk",
+      "canva": "no",
+      "canva_note": "",
+      "sources": [
+        {
+          "label": "Pirata One",
+          "where": "https://fonts.google.com/specimen/Pirata+One",
+          "price": "free",
+          "trial": "",
+          "licence_text": "SIL OFL",
+          "on_disk": "`fonts/free/PirataOne-Regular.ttf`"
+        }
+      ],
+      "licence": "free",
+      "files": [
+        "free/PirataOne-Regular.ttf"
+      ],
+      "system": [],
+      "tags": "blackletter narrow textura free",
+      "in_tools_as": [],
+      "releases": [],
+      "archive_refs": [
+        "R-012"
+      ],
+      "notes": "Closest overall to the Chateau Royal logo: narrow, upright, same rhythm. Compared by Claude on 'château royal' and 'half the night' next to the logo, 2026-10-14. Amir: download similar ones, double check."
+    },
+    {
+      "id": "manufacturing-consent",
+      "name": "Manufacturing Consent",
+      "group": "E",
+      "status": "potential",
+      "status_note": "",
+      "seen_on": "free stand-in for the hand-drawn Chateau Royal lettering (R-012), found 2026-10-14",
+      "get_hint": "free, on disk",
+      "canva": "no",
+      "canva_note": "",
+      "sources": [
+        {
+          "label": "Manufacturing Consent",
+          "where": "https://fonts.google.com/specimen/Manufacturing+Consent",
+          "price": "free",
+          "trial": "",
+          "licence_text": "SIL OFL",
+          "on_disk": "`fonts/free/ManufacturingConsent-Regular.ttf`"
+        }
+      ],
+      "licence": "free",
+      "files": [
+        "free/ManufacturingConsent-Regular.ttf"
+      ],
+      "system": [],
+      "tags": "blackletter rough condensed free",
+      "in_tools_as": [],
+      "releases": [],
+      "archive_refs": [
+        "R-012"
+      ],
+      "notes": "Close: rough, condensed, hand-cut feel like the logo; a bit lighter. Compared 2026-10-14."
+    },
+    {
+      "id": "unifraktur-maguntia",
+      "name": "UnifrakturMaguntia",
+      "group": "E",
+      "status": "potential",
+      "status_note": "",
+      "seen_on": "free stand-in for the hand-drawn Chateau Royal lettering (R-012), found 2026-10-14",
+      "get_hint": "free, on disk",
+      "canva": "no",
+      "canva_note": "",
+      "sources": [
+        {
+          "label": "UnifrakturMaguntia",
+          "where": "https://fonts.google.com/specimen/UnifrakturMaguntia",
+          "price": "free",
+          "trial": "",
+          "licence_text": "SIL OFL",
+          "on_disk": "`fonts/free/UnifrakturMaguntia-Book.ttf`"
+        }
+      ],
+      "licence": "free",
+      "files": [
+        "free/UnifrakturMaguntia-Book.ttf"
+      ],
+      "system": [],
+      "tags": "blackletter fraktur textura free classical",
+      "in_tools_as": [],
+      "releases": [],
+      "archive_refs": [
+        "R-012"
+      ],
+      "notes": "Close in letter shapes: the hooked y and the textura structure, lighter and more classical. Compared 2026-10-14."
+    },
+    {
+      "id": "unifraktur-cook",
+      "name": "UnifrakturCook",
+      "group": "E",
+      "status": "potential",
+      "status_note": "",
+      "seen_on": "free stand-in for the hand-drawn Chateau Royal lettering (R-012), found 2026-10-14",
+      "get_hint": "free, on disk",
+      "canva": "no",
+      "canva_note": "",
+      "sources": [
+        {
+          "label": "UnifrakturCook",
+          "where": "https://fonts.google.com/specimen/UnifrakturCook",
+          "price": "free",
+          "trial": "",
+          "licence_text": "SIL OFL",
+          "on_disk": "`fonts/free/UnifrakturCook-Bold.ttf`"
+        }
+      ],
+      "licence": "free",
+      "files": [
+        "free/UnifrakturCook-Bold.ttf"
+      ],
+      "system": [],
+      "tags": "blackletter fraktur bold free",
+      "in_tools_as": [],
+      "releases": [],
+      "archive_refs": [
+        "R-012"
+      ],
+      "notes": "Heavier, more ornate cousin; the most 'stamp' of the four. Compared 2026-10-14."
+    }
+  ]
+}

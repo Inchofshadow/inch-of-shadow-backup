@@ -64,3 +64,20 @@ def test_good_fetch_is_saved_as_todays_lists(tmp_path, monkeypatch):
     _fake_provider(monkeypatch, pages_fail=False)
     out = f.fetch_lists(date(2026, 11, 8))
     assert out.name == "own-lists-2026-11-08.json"
+
+
+def test_duplicate_rows_do_not_count_toward_coverage():
+    d = _lists(4, 1, ["a", "a", "a", "b"], ["c"])
+    ok, why = f.usable(d)
+    assert not ok and "97%" in why
+
+
+def test_fetch_dedupes_and_marks_short_list_incomplete(tmp_path, monkeypatch):
+    monkeypatch.setattr(f, "LISTS_DIR", tmp_path)
+    _fake_provider(monkeypatch, pages_fail=False)
+    import ig_data_provider as P
+    P.Provider.profile = lambda self, u: {"id": "1", "follower_count": 3, "following_count": 1}
+    out = f.fetch_lists(date(2026, 11, 12))
+    d = json.loads(out.read_text())
+    assert len(d["followers"]) == 1 and d["followers_complete"] is False
+    assert out.name.startswith("failed-")

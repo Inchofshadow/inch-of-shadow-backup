@@ -1,7 +1,7 @@
 {
   "what": "The font collection: one record per row of Amir's font research, joined to where to get each face, the files on this Mac and the faces the tools use. Source of truth since 2026-10-11 (Machine-19); font-library.md and font-sources.md keep their prose. The /fonts page reads this file.",
   "version": 1,
-  "updated": "2026-10-11",
+  "updated": "2026-11-10",
   "allowed": {
     "group": {
       "A": "Tall, narrow, Deco: display capitals with high contrast",
@@ -3048,7 +3048,7 @@
       "archive_refs": [
         "R-007"
       ],
-      "notes": "Free stand-in for Neuzeit S: a free revival of Neuzeit Grotesk. Compared by Claude on the same text against the originals (trial files where on disk), 2026-10-13. Amir said 'take them if close enough'."
+      "notes": "Free stand-in for Neuzeit S: a free revival of Neuzeit Grotesk. Compared by Claude on the same text against the originals (trial files where on disk), 2026-10-13. Amir said 'take them if close enough'. 2026-11-09: CAT Neuzeit Schatten compared on the Half the Night title, not chosen."
     },
     {
       "id": "fraunces",
@@ -3084,7 +3084,7 @@
       "archive_refs": [
         "R-007"
       ],
-      "notes": "Free stand-in for Cooper Black: at Black weight with the Soft axis up it has the same fat, soft serif. Compared by Claude on the same text against the originals (trial files where on disk), 2026-10-13. Amir said 'take them if close enough'."
+      "notes": "Free stand-in for Cooper Black: at Black weight with the Soft axis up it has the same fat, soft serif. Compared by Claude on the same text against the originals (trial files where on disk), 2026-10-13. Amir said 'take them if close enough'. 2026-11-09: compared on the Half the Night title (Fraunces Black), not chosen."
     },
     {
       "id": "gloock",
@@ -3158,7 +3158,7 @@
       "archive_refs": [
         "R-007"
       ],
-      "notes": "Free stand-in for Neue Haas Grotesk Display / Univers: a clean neo-grotesk in 18 styles. Compared by Claude on the same text against the originals (trial files where on disk), 2026-10-13. Amir said 'take them if close enough'."
+      "notes": "Free stand-in for Neue Haas Grotesk Display / Univers: a clean neo-grotesk in 18 styles. Compared by Claude on the same text against the originals (trial files where on disk), 2026-10-13. Amir said 'take them if close enough'. 2026-11-09: compared on the Half the Night title (Switzer Black), not chosen."
     },
     {
       "id": "pirata-one",
@@ -3191,7 +3191,7 @@
       "archive_refs": [
         "R-012"
       ],
-      "notes": "Closest overall to the Chateau Royal logo: narrow, upright, same rhythm. Compared by Claude on 'château royal' and 'half the night' next to the logo, 2026-10-14. Amir: download similar ones, double check."
+      "notes": "Closest overall to the Chateau Royal logo: narrow, upright, same rhythm. Compared by Claude on 'château royal' and 'half the night' next to the logo, 2026-10-14. Amir: download similar ones, double check. 2026-11-09: the Half the Night name font (letter-spacing 4%)."
     },
     {
       "id": "manufacturing-consent",
@@ -3291,6 +3291,37 @@
         "R-012"
       ],
       "notes": "Heavier, more ornate cousin; the most 'stamp' of the four. Compared 2026-10-14."
+    },
+    {
+      "id": "barlow-condensed",
+      "name": "Barlow Condensed",
+      "group": "J",
+      "status": "potential",
+      "status_note": "",
+      "seen_on": "Half the Night EP cover title (ExtraBold, ivory, 3 lines), chosen over Switzer Black 2026-11-09",
+      "get_hint": "free, on disk",
+      "canva": "no",
+      "canva_note": "",
+      "sources": [
+        {
+          "label": "Barlow Condensed",
+          "where": "https://fonts.google.com/specimen/Barlow+Condensed",
+          "price": "free",
+          "trial": "",
+          "licence_text": "SIL OFL",
+          "on_disk": "`fonts/free/BarlowCondensed-ExtraBold.ttf`"
+        }
+      ],
+      "licence": "free",
+      "files": [
+        "free/BarlowCondensed-ExtraBold.ttf"
+      ],
+      "system": [],
+      "tags": "condensed sans bold title free",
+      "in_tools_as": [],
+      "releases": [],
+      "archive_refs": [],
+      "notes": "Half the Night title font. In the A/B against Switzer Black Amir said 'A is the heart, B is the mind' (Barlow = A). Group J for the heavy condensed sans, though it is upright."
     }
   ]
 }

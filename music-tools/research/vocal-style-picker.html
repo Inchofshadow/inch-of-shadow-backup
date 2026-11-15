@@ -1,0 +1,334 @@
+<title>Vocal Style Picker</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Marcellus&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: four full-width direction cards in one column, each with its pick bar at the bottom; a live summary bar on top */
+:root{
+  --bg:#ECE8E1; --surface:#F6F3EE; --fg:#1A1715; --muted:#6B635C; --line:#D3CCC2;
+  --accent:#7A4E2D; --yes:#2F6B3F; --no:#9B3B2E; --maybe:#9A6A12; --chip:#E1DBD1;
+  --display:"Marcellus","Cormorant Garamond",Georgia,serif;
+  --body:"Inter",-apple-system,"Helvetica Neue",Arial,sans-serif;
+  --mono:"JetBrains Mono",ui-monospace,Menlo,monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#0F0D0C; --surface:#181513; --fg:#D6D1C8; --muted:#9A928A; --line:#2E2925;
+  --accent:#C99A6E; --yes:#7FB98E; --no:#E08A7B; --maybe:#D9A84A; --chip:#231F1C; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0F0D0C; --surface:#181513; --fg:#D6D1C8; --muted:#9A928A; --line:#2E2925;
+  --accent:#C99A6E; --yes:#7FB98E; --no:#E08A7B; --maybe:#D9A84A; --chip:#231F1C; color-scheme:dark}
+body{background:var(--bg);color:var(--fg);font-family:var(--body);font-size:15px;line-height:1.6;
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:0 64px}
+.wrap{max-width:760px;margin:0 auto}
+header{padding-block:40px 18px}
+.eyebrow{font-family:var(--mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+h1{font-family:var(--display);font-weight:400;font-size:clamp(34px,7vw,50px);line-height:1.05;margin:10px 0 12px;text-wrap:balance}
+h2{font-family:var(--display);font-weight:400;font-size:30px;line-height:1.1;margin:4px 0 6px;text-wrap:balance}
+h3{font-size:12px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin:20px 0 8px}
+p{margin:0 0 10px;max-width:65ch}
+a{color:var(--accent);text-underline-offset:3px}
+button:focus-visible,a:focus-visible,textarea:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.lede{color:var(--muted);max-width:62ch}
+.summary{display:flex;flex-wrap:wrap;gap:8px;padding:12px 0 4px;border-top:1px solid var(--line);border-bottom:1px solid var(--line);font-size:13px}
+.summary span{background:var(--chip);border:1px solid var(--line);border-radius:999px;padding:3px 10px}
+.summary .st{font-family:var(--mono);font-size:11px;color:var(--muted);flex-basis:100%}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:22px 20px 18px;margin-top:22px}
+.card[data-pick="yes"]{border-color:var(--yes);box-shadow:inset 4px 0 0 var(--yes)}
+.card[data-pick="no"]{opacity:.72}
+.num{font-family:var(--mono);font-size:11px;color:var(--muted);letter-spacing:.08em}
+.feel{font-size:16px;margin-bottom:6px}
+.refs{margin:0;padding-left:18px} .refs li{margin-bottom:4px}
+.note-hyp{font-size:13px;color:var(--muted)}
+.tbl{overflow-x:auto;border:1px solid var(--line);border-radius:6px;background:var(--bg)}
+table{border-collapse:collapse;width:100%;min-width:440px;font-size:14px}
+td{padding:8px 12px;border-bottom:1px solid var(--line);vertical-align:top}
+tr:last-child td{border-bottom:0}
+td:first-child{font-family:var(--mono);font-size:12px;color:var(--muted);width:30%;white-space:nowrap}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.two>div{min-width:0}
+@media (max-width:560px){.two{grid-template-columns:1fr}}
+ul.plain{margin:0;padding-left:18px} ul.plain li{margin-bottom:4px}
+.pickbar{margin-top:18px;padding-top:14px;border-top:1px solid var(--line);display:grid;gap:10px}
+.btns{display:flex;flex-wrap:wrap;gap:8px}
+.btns button{font:600 15px var(--body);padding:9px 18px;border-radius:999px;border:1.5px solid var(--line);background:var(--bg);color:var(--fg);cursor:pointer;min-width:84px}
+.btns button[aria-pressed="true"][data-v="yes"]{background:var(--yes);border-color:var(--yes);color:var(--bg)}
+.btns button[aria-pressed="true"][data-v="maybe"]{background:var(--maybe);border-color:var(--maybe);color:var(--bg)}
+.btns button[aria-pressed="true"][data-v="no"]{background:var(--no);border-color:var(--no);color:var(--bg)}
+textarea{width:100%;box-sizing:border-box;min-height:56px;font:14px var(--body);padding:8px 10px;border-radius:6px;border:1px solid var(--line);background:var(--bg);color:var(--fg);resize:vertical}
+.saveline{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+.saveline button{font:500 14px var(--body);padding:7px 14px;border-radius:6px;border:1px solid var(--accent);background:transparent;color:var(--accent);cursor:pointer}
+.status{font-size:12px;color:var(--muted)}
+.how{margin-top:30px;padding-top:18px;border-top:1px solid var(--line)}
+footer{margin-top:24px;font-size:13px;color:var(--muted)}
+</style>
+
+<div class="wrap">
+<header>
+  <div class="eyebrow">🎸 Studio 10 · your songs · 12 Nov 2026</div>
+  <h1>Vocal Style Picker</h1>
+  <p class="lede">Five directions for the voice on your songs, drawn from the documented chains. Tap <b>V</b>, <b>Maybe</b> or <b>X</b> on each and add a line if you want to mix two. Every chain uses only plug-ins you own.</p>
+  <p class="note-hyp">The chains and reference tracks come from engineer interviews (see the <a href="https://claude.ai/artifact/KoS6fZ23k1cGGhwHo3CbPd" target="_blank" rel="noopener">Vocal Chains Notebook</a>). Lines marked 🎃 are my read on your songs, not facts. 📌 Your pick becomes a taste rule only after you read it back in chat.</p>
+</header>
+
+<div class="summary" id="summary" aria-live="polite"><span class="st" id="st">Loading your picks…</span></div>
+
+<div id="cards"></div>
+
+<section class="how">
+  <h2>Mixing two</h2>
+  <ul class="plain">
+    <li>🎃 Directions can share a song. The documented chains already do this: Illangelo makes the verse small and lo-fi and the chorus open and overdriven; Salogni automates the effects per section.</li>
+    <li>Common pairs: verses 1 with choruses 2 or 4; one chain with section automation like 3.</li>
+    <li>🎃 For 5: verses close like 1 (only on songs where the take is strong enough), hooks tuned and wide like 5.</li>
+    <li>Write the mix in the note field, e.g. "verses 1, choruses 2".</li>
+  </ul>
+  <h2 style="margin-top:22px">Hear it before you decide</h2>
+  <ul class="plain">
+    <li>Take one vocal from one song and put it on 4 tracks, one chain each (Live Audio Effect Racks).</li>
+    <li>Match the loudness by ear. The louder version always sounds better.</li>
+    <li>Listen on the monitors and on the phone, then tick here.</li>
+  </ul>
+</section>
+
+<footer>Text version of the sources: music-tools/research/vocal-chains.md</footer>
+</div>
+
+<script>
+const DIRECTIONS = [
+  { id:"close-dark", n:"1", name:"Close and dark",
+    feel:"Right at your ear. Dry, intimate, a dynamic mic, almost no reverb. Every word lands.",
+    refs:[
+      ["Lana Del Rey, 'Hope Is A Dangerous Thing For A Woman Like Me To Have'","Laura Sisk: you can hear absolutely everything she sings","https://www.soundonsound.com/people/laura-sisk-engineer"],
+      ["Lana Del Rey, Lust For Life (SM7B picked for its dark sound)","SOS Inside Track","https://www.soundonsound.com/techniques/inside-track-lana-del-rey-lust-life"],
+      ["Protomartyr, Ultimate Success Today","David Tolomei, Vintage King","https://vintageking.com/blog/2020/09/protomartyr-ultimate-success-today-tolomei/"],
+      ["Nick Cave, Push The Sky Away (live takes, CL1B, spring + slap)","Nick Launay via Paul Tingen","https://tingen.org/?p=1171"],
+      ["American Football, LP1 (raw live takes, no documented chain)","band members, Life of the Record","https://lifeoftherecord.com/american-football-notes"]
+    ],
+    chain:[
+      ["Mic","SM7B, close"],
+      ["Pre","UADx Neve 1073"],
+      ["Comp","Softube Tube-Tech CL 1B, fixed fast, 3-5 dB"],
+      ["Clean","Waves DeEsser, Pro-Q 3 (cut only)"],
+      ["Parallel","UADx 1176 Rev A pushed hard, blended low"],
+      ["Space","Waves Magma Springs on a Return, low"]
+    ],
+    gives:["Lyrics in front, which suits a poet-first song","Feels personal and present, like you're singing to one person","The SM7B's dark tone fits a dark aesthetic (the reason Lana picked it)","Cuts through 100-120 BPM guitars and synths without much reverb","Quick to set up: one mic, one chain, the same sound every session"],
+    costs:["Shows every pitch and breath, so takes must be strong","Less mystery than classic post-punk","A dry voice leaves the arrangement nowhere to hide","Mouth noise and plosives become audible; expect RX 11 cleanup"],
+    fit:"Songs where the words carry it: verses, confessions, slower parts.",
+    mic:"SM7B (Lana, The Weeknd's After Hours and Protomartyr all used one)",
+    tune:"Light correction only. The close sound shows Auto-Tune quickly. Lana-style: Melodyne by hand, bends left alone, a little flat on purpose."
+  },
+  { id:"far-haunted", n:"2", name:"Far and haunted",
+    feel:"The voice sits inside the room with the band. Tape delays, modulation and a long tail. Mood first, words second.",
+    refs:[
+      ["The Cure, 'A Forest' (1980)","Mike Hedges, SOS Classic Tracks","https://www.soundonsound.com/node/4914807"],
+      ["The Cure, Seventeen Seconds","same source","https://www.soundonsound.com/node/4914807"],
+      ["Deftones, Ohms (RAT distortion + tape slap on the vocal)","Terry Date, snippet only ❓","https://audiotechnology.com/?p=55239"],
+      ["Nick Cave, Skeleton Tree (no chain documented)","listening reference only","https://tingen.org/?p=1171"]
+    ],
+    chain:[
+      ["Mic","Your AKG condenser (Smith: C12, FET 47)"],
+      ["EQ","Pro-Q 3 dynamic notch where your voice gets hard (his is about 3 kHz)"],
+      ["Comp","Tube-Tech CL 1B, gentle"],
+      ["Delay","Live Echo or EchoBoy Dual: two different times, modulated"],
+      ["Mod","Waves MetaFlanger or Chorus-Ensemble on a Return"],
+      ["Space","ValhallaVintageVerb, long, with pre-delay; vocal sits lower in the mix"]
+    ],
+    gives:["The classic post-punk and new wave sound of your references","Forgives rough takes, since the delays and reverb carry the mood","Voice and band blend into one picture, so the song feels like a world","Tape delay rhythms can add a second groove at 100-120 BPM"],
+    costs:["Words get harder to hear","Can sound like a period piece","Long tails can smear fast lyrics; pre-delay and ducking are needed","On phone speakers a buried vocal can disappear"],
+    fit:"Atmospheric songs, choruses that should open up, intros and outros.",
+    mic:"Your AKG condenser (Smith used an AKG C12 from Wish on)",
+    tune:"Auto-Tune mostly hides in the effects; it can stay on, set light."
+  },
+  { id:"into-effects", n:"3", name:"Sung into effects", parked:"Parked for now: you said Depeche Mode feels too complex at the moment. It stays here as an option.",
+    feel:"The effects are part of the performance. You sing into the spaces and react to them, like a live show.",
+    refs:[
+      ["Depeche Mode, 'Ghost Again' (tape slap on the vocal)","Marta Salogni, SOS Inside Track","https://www.soundonsound.com/techniques/inside-track-depeche-mode-memento-mori"],
+      ["Depeche Mode, 'My Cosmos Is Mine' (two-tape effect on Gahan)","same source","https://www.soundonsound.com/techniques/inside-track-depeche-mode-memento-mori"]
+    ],
+    chain:[
+      ["Track","UADx API Vision > UADx LA-2A > UADx Massive Passive"],
+      ["Monitor","Returns you sing into: Galaxy Tape Echo, ValhallaDelay, Lexicon 224"],
+      ["Record","The dry voice, then resample the Returns onto their own tracks"],
+      ["Mix","Pro-Q 3 > Pro-C 2 > Pro-Q 3 > de-ess > Devil-Loc > Radiator > soothe2 > Pro-Q 3"],
+      ["Ride","Heavy volume automation, including the ends of phrases"]
+    ],
+    gives:["Takes come out more alive, because you react to the space (Gahan: 'I can project into these spaces')","Each section can feel different","The dry take stays safe, so every effect can be changed later","Close to how you'd sound on stage"],
+    costs:["Setup before every session","Needs automation work in the mix","Easy to stack too many effects; you need to know when to stop","More tracks to manage (dry + every printed effect)"],
+    fit:"Songs with big sections that need contrast; songs you'll play live.",
+    mic:"Your Neumann TLM 103 (Gahan was recorded on a Neumann U87)",
+    tune:"Can sit in the monitor path like Future's engineer: you hear it, the take stays dry."
+  },
+  { id:"modern-treated", n:"4", name:"Modern and treated",
+    feel:"Subtle Auto-Tune, parallel distortion, doublers. Small, lo-fi verses and choruses that open up and overdrive.",
+    refs:[
+      ["The Weeknd, 'The Hills'","Illangelo, SOS Inside Track","https://www.soundonsound.com/techniques/inside-track-weeknd"],
+      ["Metro Boomin, The Weeknd & 21 Savage, 'Creepin'' (ducked reverb)","Ethan Stevens, SOS Inside Track","https://www.soundonsound.com/techniques/inside-track-metro-boomin-heroes-villains"]
+    ],
+    chain:[
+      ["Tune","Auto-Tune Artist first, subtle"],
+      ["Clean","Waves DeEsser > Pro-Q 3 (low and top rolled off for the verses)"],
+      ["Colour","Waves API-560 > Pro-MB"],
+      ["Parallel","Little Radiator > UADx 1176LN slammed, blended"],
+      ["Width","Waves Doubler > MicroShift; Reel ADT on choruses"],
+      ["Space","Timeless 3 delays; reverb ducked by the dry vocal"]
+    ],
+    gives:["A bridge to your electronic lane","Covers more pitch problems","Verse and chorus can sound like two worlds (Illangelo: low and soft, then screamed and overdriven)","Built in the box, on the rig you already have (SM7B + Apollo, like After Hours)"],
+    costs:["The tuning can be heard, so it can read as pop or R&B","Many parts to manage","Can drift away from the post-punk and new wave of your references","Many plug-ins per track, so CPU and latency while recording"],
+    fit:"Songs closer to synth-pop or the electronic lane; hooks you want to hit hard.",
+    mic:"SM7B (After Hours) or your TLM 103 for a brighter top",
+    tune:"Auto-Tune is part of the sound here, first in the chain."
+  },
+  { id:"tuned-new-wave", n:"5", name:"Tuned new wave", fromYou:true,
+    feel:"From your words: a poppy voice, Auto-Tune you can hear, hip-hop vocal habits, inside a new wave world of chorus, tape delay and grit. Lana as the north star.",
+    refs:[
+      ["Lana Del Rey, Lust For Life (SM7B, spring reverb she sings into)","SOS Inside Track","https://www.soundonsound.com/techniques/inside-track-lana-del-rey-lust-life"],
+      ["The Weeknd, After Hours (SM7B → Apollo Twin, built in Ableton)","Illangelo, Mix","https://www.mixonline.com/?p=121713"],
+      ["Future (Auto-Tune always on, heard while recording)","Seth Firkins, SOS","https://www.soundonsound.com/node/4916478"],
+      ["The Cure, 'A Forest' (two-time tape delay, flangers)","Mike Hedges, SOS","https://www.soundonsound.com/node/4914807"],
+      ["Crystal Castles-type vocals: Auto-Tune retune 0 + pitch up + harmony layer + flanger + 'ghost' convolver + gated rhythm","YouTube tutorial, billyxo","https://www.youtube.com/watch?v=1XhsLSp_Dk8"]
+    ],
+    chain:[
+      ["Mic","SM7B → Apollo Twin pre (the After Hours setup)"],
+      ["Tune","Auto-Tune Artist first, retune fast enough to be heard; monitor through it while recording"],
+      ["Clean","Waves DeEsser → Pro-Q 3 (dynamic cut where your voice gets hard)"],
+      ["Comp","Tube-Tech CL 1B, fixed fast, 3-5 dB"],
+      ["Parallel","Little Radiator or Decapitator → UADx 1176, blended low; or Live Redux for Crystal Castles grit"],
+      ["Layer","A Little AlterBoy pitched-up copy or Waves Harmony, under the lead (the Crystal Castles tutorial)"],
+      ["Mod","Chorus-Ensemble or MicroShift on a Return (the new wave shimmer)"],
+      ["Space","Live Echo with two times, modulated; Magma Springs low; reverb ducked by the dry voice"]
+    ],
+    gives:["Matches how you describe your voice: poppy, with the tuning on show","Hip-hop vocal habits (tuned, doubled, ad-libs) with a new wave colour, so neither lane sounds copied","Auto-Tune in the monitor path makes takes easier and freer (Future's engineer)","Runs on what you own: SM7B, Apollo, Auto-Tune, Soundtoys, Valhalla"],
+    costs:["Two worlds can fight: hard tuning plus long tape delays can turn to mush, so keep the delay filtered and ducked","Audible Auto-Tune dates fast if overused; save the hard retune for hooks","No single artist has documented this blend, so you'll set it by ear","Many effects per track, so CPU and latency while recording"],
+    fit:"Hooks and choruses; songs that sit between the electronic lane and the new songs.",
+    mic:"SM7B (Lana, After Hours)",
+    tune:"Heard on purpose. Fast retune on hooks, slower on verses; automate the retune speed per section."
+  }
+];
+
+const picks = {};
+let db = null;
+
+function el(tag, attrs, ...kids){
+  const e = document.createElement(tag);
+  for (const k in (attrs||{})) { if (k === "text") e.textContent = attrs[k]; else e.setAttribute(k, attrs[k]); }
+  kids.forEach(c => c && e.appendChild(c));
+  return e;
+}
+
+function render(){
+  const host = document.getElementById("cards");
+  host.textContent = "";
+  DIRECTIONS.forEach(d => {
+    const p = picks[d.id] || {};
+    const card = el("article", {class:"card", id:d.id, "data-pick": p.pick || ""});
+    card.appendChild(el("div", {class:"num", text:"Direction " + d.n + " of " + DIRECTIONS.length + (d.fromYou ? " · from your words" : "")}));
+    card.appendChild(el("h2", {text:d.name}));
+    if (d.parked) card.appendChild(el("p", {class:"note-hyp", text:d.parked}));
+    card.appendChild(el("p", {class:"feel", text:d.feel}));
+
+    card.appendChild(el("h3", {text:"Listen to"}));
+    const ul = el("ul", {class:"refs"});
+    d.refs.forEach(r => {
+      const li = el("li");
+      li.appendChild(document.createTextNode(r[0] + " · "));
+      li.appendChild(el("a", {href:r[2], target:"_blank", rel:"noopener", text:r[1]}));
+      ul.appendChild(li);
+    });
+    card.appendChild(ul);
+
+    card.appendChild(el("h3", {text:"Starter chain, your plug-ins"}));
+    const tbl = el("div", {class:"tbl"}); const t = el("table");
+    d.chain.forEach(c => { const tr = el("tr"); tr.appendChild(el("td",{text:c[0]})); tr.appendChild(el("td",{text:c[1]})); t.appendChild(tr); });
+    tbl.appendChild(t); card.appendChild(tbl);
+
+    const two = el("div", {class:"two"});
+    const g = el("div"); g.appendChild(el("h3",{text:"🎃 What it gives your songs"}));
+    const gl = el("ul",{class:"plain"}); d.gives.forEach(x => gl.appendChild(el("li",{text:x}))); g.appendChild(gl);
+    const c = el("div"); c.appendChild(el("h3",{text:"🎃 What it costs"}));
+    const cl = el("ul",{class:"plain"}); d.costs.forEach(x => cl.appendChild(el("li",{text:x}))); c.appendChild(cl);
+    two.appendChild(g); two.appendChild(c); card.appendChild(two);
+
+    card.appendChild(el("h3", {text:"🎃 Best for"}));
+    card.appendChild(el("p", {text:d.fit}));
+    card.appendChild(el("h3", {text:"Your mic"}));
+    card.appendChild(el("p", {text:d.mic}));
+    card.appendChild(el("h3", {text:"Your Auto-Tune here"}));
+    card.appendChild(el("p", {text:d.tune}));
+
+    const bar = el("div", {class:"pickbar"});
+    const btns = el("div", {class:"btns", role:"group", "aria-label":"Pick for " + d.name});
+    [["yes","V"],["maybe","Maybe"],["no","X"]].forEach(([v,label]) => {
+      const b = el("button", {type:"button", "data-v":v, "aria-pressed": String(p.pick === v), text:label});
+      b.addEventListener("click", () => save(d, v, null));
+      btns.appendChild(b);
+    });
+    bar.appendChild(btns);
+    const ta = el("textarea", {id:"note-" + d.id, placeholder:"Optional: e.g. verses like this, choruses like 4"});
+    ta.value = p.note || "";
+    bar.appendChild(ta);
+    const sl = el("div", {class:"saveline"});
+    const sb = el("button", {type:"button", text:"Save note"});
+    sb.addEventListener("click", () => save(d, null, ta.value));
+    sl.appendChild(sb);
+    sl.appendChild(el("span", {class:"status", id:"status-" + d.id, text: p.at ? "Saved " + new Date(p.at).toLocaleString() : ""}));
+    bar.appendChild(sl);
+    card.appendChild(bar);
+    host.appendChild(card);
+  });
+  renderSummary();
+}
+
+function renderSummary(){
+  const s = document.getElementById("summary");
+  const st = document.getElementById("st");
+  s.querySelectorAll("span:not(.st)").forEach(x => x.remove());
+  const label = {yes:"V", maybe:"Maybe", no:"X"};
+  DIRECTIONS.forEach(d => {
+    const p = picks[d.id];
+    if (p && p.pick) s.appendChild(el("span", {text: label[p.pick] + " · " + d.name}));
+  });
+}
+
+async function save(d, pick, note){
+  const cur = Object.assign({}, picks[d.id] || {});
+  if (pick !== null) cur.pick = pick;
+  if (note !== null) cur.note = note.slice(0, 600);
+  if (note === null) { const ta = document.getElementById("note-" + d.id); if (ta) cur.note = ta.value.slice(0, 600); }
+  cur.name = d.name;
+  cur.at = new Date().toISOString();
+  picks[d.id] = cur;
+  render();
+  const status = document.getElementById("status-" + d.id);
+  if (!db) { if (status) status.textContent = "Not saved: open this page signed in to claude.ai to save picks."; return; }
+  try {
+    await db.collection("ticks").doc(d.id).set({name: cur.name, pick: cur.pick || null, note: cur.note || "", at: cur.at});
+    if (status) status.textContent = "Saved " + new Date(cur.at).toLocaleString();
+  } catch (e) {
+    if (status) status.textContent = "Not saved (" + (e && e.code ? e.code : "error") + "). Try again.";
+  }
+}
+
+render();
+
+(async () => {
+  const st = document.getElementById("st");
+  let timer = setTimeout(() => { st.textContent = "Picks could not load. You can still tap; saving may fail."; }, 10000);
+  try {
+    db = window.claude && window.claude.use ? await window.claude.use("db") : null;
+  } catch (e) { db = null; }
+  if (!db) { clearTimeout(timer); st.textContent = "Saving is off in this view (sign in to claude.ai to save picks)."; return; }
+  db.collection("ticks").onSnapshot(snap => {
+    clearTimeout(timer);
+    (snap.docs || []).forEach(doc => {
+      const v = doc.data && doc.data();
+      if (v && DIRECTIONS.some(d => d.id === doc.id)) picks[doc.id] = Object.assign({}, v);
+    });
+    st.textContent = "Your picks (saved to this page)";
+    const active = document.activeElement;
+    if (!(active && active.tagName === "TEXTAREA")) render(); else renderSummary();
+  }, err => {
+    clearTimeout(timer);
+    st.textContent = "Picks could not load (" + (err && err.code ? err.code : "error") + ").";
+  });
+})();
+</script>

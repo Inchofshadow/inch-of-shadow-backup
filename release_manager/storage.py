@@ -71,18 +71,25 @@ def _migrate_distribution(data: dict) -> None:
 
 
 def load_release(slug: str) -> dict | None:
-    """Load a release JSON file by slug. Returns None if not found or the slug is unsafe."""
+    """Load a release JSON file by slug. Returns None if not found or the slug is unsafe.
+
+    A backup copy inside releases/ ("x.bak.20261108_date.json") is never a release:
+    it carries the live release's slug, so any save after loading it would write the
+    old copy over the live file (Fable gate 2026-11-15). Same filter as iter_release_paths."""
     try:
         path = release_path(slug)
     except ValueError:
         return None
-    if not path.exists():
+    if ".bak" in path.name or not path.exists():
         return None
     try:
         with open(path, encoding="utf-8") as f:
             data = json.load(f)
     except (json.JSONDecodeError, OSError) as e:
         print(f"warning: release {slug!r} unreadable, skipping: {e}", file=sys.stderr)
+        return None
+    if isinstance(data, dict) and data.get("slug") not in (None, slug):
+        print(f"warning: {path.name} carries slug {data.get('slug')!r}, not {slug!r}: not loaded", file=sys.stderr)
         return None
     _migrate_distribution(data)
     return data

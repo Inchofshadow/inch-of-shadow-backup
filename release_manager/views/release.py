@@ -117,7 +117,9 @@ def _home_tickets() -> dict:
         tickets = [t for t in data.get("tickets", []) if t.get("status") != "done"]
         labels = data.get("areas") or {}
         now = [t for t in tickets if t.get("bucket") == "now"]
-        for key, label in labels.items():
+        # System first on Home (Amir 2026-11-09: "system should be top"), then the areas in file order
+        order = sorted(labels.items(), key=lambda kv: kv[0] != "System")
+        for key, label in order:
             rows = [t for t in now if (t.get("area") or t.get("section")) == key]
             if rows:
                 out["areas"].append({"label": label, "tickets": rows})

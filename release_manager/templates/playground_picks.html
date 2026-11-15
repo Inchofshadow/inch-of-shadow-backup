@@ -1,0 +1,88 @@
+{% extends "base.html" %}
+{% block title %}Picks{% endblock %}
+{% block content %}
+<style>
+.pk-page { max-width: 1800px; --gold: #d8c39a; --line: rgba(216,195,154,.18); }
+.pk-head { display: flex; gap: 16px; align-items: baseline; flex-wrap: wrap; margin-bottom: 6px; }
+.pk-head h1 { margin: 0; font-size: 26px; }
+.pk-sub { color: var(--text-secondary); font-size: 14px; }
+.pk-bar { display: flex; gap: 10px; align-items: center; flex-wrap: wrap; margin: 10px 0 16px; }
+.pk-bar button { background: #161412; color: inherit; border: 1px solid var(--line); border-radius: 999px; padding: 6px 14px; cursor: pointer; font: inherit; font-size: 13px; }
+.pk-bar button.on { background: var(--gold); color: #111; }
+.pk-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 16px; }
+.pk { position: relative; }
+.pk .img { width: 100%; aspect-ratio: 1; border-radius: 6px; border: 2px solid transparent; background: #0e0c0b; display: block; object-fit: cover; cursor: zoom-in; }
+.pk.ticked .img { border-color: var(--gold); }
+.pk .none { width: 100%; aspect-ratio: 1; border-radius: 6px; border: 1px dashed var(--line); display: flex; align-items: center; justify-content: center; text-align: center; padding: 16px; color: var(--text-secondary); font-size: 13px; box-sizing: border-box; }
+.pk .cap { display: flex; align-items: center; gap: 8px; padding: 6px 2px; font-size: 13px; color: var(--text-secondary); }
+.pk .cap b { color: var(--gold); font-size: 18px; }
+.pk .cap .sp { flex: 1; }
+.vt { width: 40px; height: 40px; border-radius: 50%; border: 2px solid var(--line); background: #161412; color: #777; font: 700 18px system-ui; cursor: pointer; }
+.vt.on { background: var(--gold); border-color: var(--gold); color: #111; }
+.lb { position: fixed; inset: 0; background: rgba(5,4,4,.94); display: flex; flex-direction: column; align-items: center; justify-content: center; z-index: 1000; touch-action: pan-y; }
+.lb[hidden] { display: none; }
+.lb img { max-width: 92vw; max-height: 80vh; border-radius: 6px; }
+.lb .row { display: flex; gap: 14px; align-items: center; margin-top: 12px; color: #ddd; font-size: 15px; }
+.lb .row button { background: #1a1816; color: inherit; border: 1px solid var(--line); font-size: 24px; width: 52px; height: 44px; border-radius: 8px; cursor: pointer; }
+.lb .row .vt { width: 44px; height: 44px; font-size: 20px; }
+</style>
+<div class="fonts-page pk-page">
+    <div class="pk-head">
+        <h1>Picks · {{ (rel.brand.playground.title if rel.brand and rel.brand.playground and rel.brand.playground.title else (rel.metadata.title if rel.metadata else rel.slug)) }}</h1>
+        <a href="{{ url_for('playground_layout', slug=rel.slug) }}">← Layout page</a>
+    </div>
+    <div class="pk-sub" id="info">Every keep from the Layout page, by its fixed number. This page follows the editor by itself.</div>
+    <div class="pk-bar">
+        <button type="button" data-f="all" class="on">All keeps</button>
+        <button type="button" data-f="ticked">Only my V</button>
+        <button type="button" data-f="new">Newest first</button>
+    </div>
+    <div class="pk-grid" id="grid"></div>
+</div>
+<div class="lb" id="lb" hidden>
+    <img id="lbimg" alt="">
+    <div class="row"><button type="button" id="lbprev" aria-label="Previous">‹</button><b id="lbnum"></b><button type="button" class="vt" id="lbv">V</button><button type="button" id="lbnext" aria-label="Next">›</button><button type="button" id="lbx" aria-label="Close">✕</button></div>
+</div>
+<script>
+(function () {
+    var SLUG = {{ rel.slug|tojson }}, API = '/api/playground/' + encodeURIComponent(SLUG) + '/picks';
+    var $ = function (id) { return document.getElementById(id); };
+    document.body.appendChild($('lb'));   // out of the page frame, so the zoom covers the whole window
+    var KEPT = [], TICKS = [], F = 'all', SIG = '', LB = -1;
+    function img(k, w) { return '/playground/' + encodeURIComponent(SLUG) + '/layout/keep-img?id=' + k.id + (w ? '&w=' + w : '') + '&v=' + k.v; }
+    function list() { var l = KEPT.slice(); if (F === 'ticked') l = l.filter(function (k) { return TICKS.indexOf(k.id) >= 0; }); if (F === 'new') l.reverse(); return l; }
+    function tick(id) { return fetch(API, {method: 'POST', headers: {'Content-Type': 'application/json'}, body: JSON.stringify({id: id})}).then(function (r) { return r.json(); }).then(apply); }
+    function draw() {
+        var g = $('grid'); g.innerHTML = ''; var l = list();
+        $('info').textContent = KEPT.length + ' keeps · ' + TICKS.length + ' with your V. This page follows the editor by itself (checks every 4 seconds).';
+        if (!l.length) { g.innerHTML = '<div class="pk-sub">' + (F === 'ticked' ? 'No V yet.' : 'Nothing kept yet. Press Keep on the Layout page.') + '</div>'; return; }
+        l.forEach(function (k, i) {
+            var d = document.createElement('div'); d.className = 'pk' + (TICKS.indexOf(k.id) >= 0 ? ' ticked' : '');
+            if (k.v) { var im = document.createElement('img'); im.className = 'img'; im.loading = 'lazy'; im.src = img(k, 540); im.alt = 'Keep ' + k.id; im.onclick = function () { open(i); }; d.appendChild(im); }
+            else { var n = document.createElement('div'); n.className = 'none'; n.textContent = 'No picture yet. On the Layout page press 📸 Pictures for the picks page.'; d.appendChild(n); }
+            var c = document.createElement('div'); c.className = 'cap';
+            var b = document.createElement('b'); b.textContent = '#' + k.id; var s = document.createElement('span'); s.className = 'sp'; s.textContent = k.saved || '';
+            var v = document.createElement('button'); v.type = 'button'; v.className = 'vt' + (TICKS.indexOf(k.id) >= 0 ? ' on' : ''); v.textContent = 'V'; v.title = 'Tick V to move forward with this one';
+            v.onclick = function () { tick(k.id); };
+            c.append(b, s, v); d.appendChild(c); g.appendChild(d);
+        });
+    }
+    function apply(d) { if (!d || !d.kept) return; KEPT = d.kept; TICKS = d.ticks || []; var sig = JSON.stringify([KEPT, TICKS]); if (sig !== SIG) { SIG = sig; draw(); if (LB >= 0) show(); } }
+    function poll() { fetch(API).then(function (r) { return r.json(); }).then(apply).catch(function () {}); }
+    // zoom: arrows, swipe and left/right keys slide between pictures
+    function open(i) { LB = i; $('lb').hidden = false; show(); }
+    function show() { var l = list().filter(function (k) { return k.v; }); if (!l.length) { close(); return; } LB = (LB + l.length) % l.length; var k = l[LB];
+        $('lbimg').src = img(k, 0); $('lbnum').textContent = '#' + k.id; $('lbv').classList.toggle('on', TICKS.indexOf(k.id) >= 0); $('lbv').dataset.id = k.id; }
+    function close() { LB = -1; $('lb').hidden = true; }
+    $('lbprev').onclick = function () { LB--; show(); }; $('lbnext').onclick = function () { LB++; show(); }; $('lbx').onclick = close;
+    $('lbv').onclick = function () { tick(+this.dataset.id); };
+    document.addEventListener('keydown', function (e) { if (LB < 0) return; if (e.key === 'ArrowLeft') { LB--; show(); } else if (e.key === 'ArrowRight') { LB++; show(); } else if (e.key === 'Escape') close(); });
+    var tx = null; $('lb').addEventListener('touchstart', function (e) { tx = e.touches[0].clientX; }, {passive: true});
+    $('lb').addEventListener('touchend', function (e) { if (tx === null) return; var dx = e.changedTouches[0].clientX - tx; tx = null; if (Math.abs(dx) > 40) { LB += dx < 0 ? 1 : -1; show(); } });
+    $('lb').addEventListener('click', function (e) { if (e.target === $('lb')) close(); });
+    Array.prototype.forEach.call(document.querySelectorAll('.pk-bar button'), function (b) { b.onclick = function () { F = b.dataset.f;
+        Array.prototype.forEach.call(document.querySelectorAll('.pk-bar button'), function (x) { x.classList.toggle('on', x === b); }); LB = -1; $('lb').hidden = true; draw(); }; });
+    poll(); setInterval(poll, 4000);
+})();
+</script>
+{% endblock %}

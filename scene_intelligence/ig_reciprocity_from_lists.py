@@ -36,6 +36,16 @@ sys.path.insert(0, str(SI_DIR))
 TRACKER_FILE = SI_DIR / "ig_follow_tracker.json"
 TOLERANCE = 0.02
 MAX_LIST_AGE_DAYS = 2
+# 2026-11-14 (Amir "we must fix it"): one HikerAPI follower fetch is no longer
+# complete (pages repeat: 876, 286, 689 unique of ~995). Every fetch in the last
+# UNION_WINDOW_DAYS is combined. Presence in ANY list = follows back (safe: at
+# worst an account that unfollowed in between is kept). Absence is trusted only
+# when the combined list is within TOLERANCE of the newest profile count.
+UNION_WINDOW_DAYS = 12
+REPO = SI_DIR.parent
+LIST_GLOBS = ("own_lists/own-lists-*.json", "own_lists/failed-own-lists-*.json",
+              "own_lists/probe-g2-followers-*.json")
+DJ07_GLOB = "plans/outreach-page/dj07-own-lists-*.json"
 
 
 def roster_from(d: dict) -> tuple[set, bool]:
@@ -45,6 +55,44 @@ def roster_from(d: dict) -> tuple[set, bool]:
     trusted = bool(d.get("followers_complete")) and reported > 0 \
         and abs(len(fol) - reported) / reported <= TOLERANCE
     return fol, trusted
+
+
+def _names(followers) -> set:
+    out = set()
+    for u in followers or []:
+        name = u if isinstance(u, str) else (u or {}).get("username")
+        name = str(name or "").strip().lower()
+        if name:
+            out.add(name)
+    return out
+
+
+def recent_lists(today: date, window_days: int = UNION_WINDOW_DAYS) -> list:
+    """-> [(fetch_date, follower_names, profile_follower_count)] for every saved
+    follower list fetched within window_days, newest first."""
+    files = [f for g in LIST_GLOBS for f in SI_DIR.glob(g)] + list(REPO.glob(DJ07_GLOB))
+    out = []
+    for f in files:
+        try:
+            d = json.loads(f.read_text(encoding="utf-8"))
+            fetched = date.fromisoformat(str(d.get("fetched") or "")[:10])
+        except (OSError, ValueError, TypeError):
+            continue
+        if 0 <= (today - fetched).days <= window_days:
+            reported = int((d.get("profile") or {}).get("follower_count") or 0)
+            out.append((fetched, _names(d.get("followers")), reported))
+    out.sort(key=lambda x: x[0], reverse=True)
+    return out
+
+
+def combined_roster(lists: list) -> tuple[set, bool, str]:
+    """-> (union of names, negatives trusted, verification date = newest fetch)."""
+    if not lists:
+        return set(), False, ""
+    union = set().union(*(names for _d, names, _r in lists))
+    newest, _n, reported = lists[0]
+    trusted = reported > 0 and abs(len(union) - reported) / reported <= TOLERANCE
+    return union, trusted, newest.isoformat()
 
 
 def apply_roster(tracker: dict, roster: set, trusted: bool, vdate: str) -> dict:
@@ -75,20 +123,19 @@ def main() -> int:
     ap = argparse.ArgumentParser(description="Follow-back verification from the HikerAPI follower list")
     ap.add_argument("--apply", action="store_true", help="write (default: dry run)")
     a = ap.parse_args()
-    from si_follow_flags import newest_lists
-    src = newest_lists()
-    if not src:
-        raise SystemExit("[RECIP] no own-lists file; run si_follow_flags.py --fetch first")
-    d = json.loads(src.read_text(encoding="utf-8"))
-    vdate = str(d.get("fetched") or "")[:10]
+    lists = recent_lists(date.today())
+    if not lists:
+        raise SystemExit("[RECIP] no follower list in the last "
+                         f"{UNION_WINDOW_DAYS} days; run si_follow_flags.py --fetch first")
+    roster, trusted, vdate = combined_roster(lists)
     age = (date.today() - date.fromisoformat(vdate)).days
     if age > MAX_LIST_AGE_DAYS:
-        print(f"[RECIP] {src.name} is {age} days old (max {MAX_LIST_AGE_DAYS}). Nothing written.")
+        print(f"[RECIP] newest follower list is {age} days old (max {MAX_LIST_AGE_DAYS}). Nothing written.")
         return 2
-    roster, trusted = roster_from(d)
     tracker = json.loads(TRACKER_FILE.read_text(encoding="utf-8"))
     res = apply_roster(tracker, roster, trusted, vdate)
-    print(f"[RECIP] {src.name}: {len(roster)} followers, negatives "
+    print(f"[RECIP] {len(lists)} lists {', '.join(str(d) for d, _n, _r in lists)}: "
+          f"{len(roster)} followers combined vs {lists[0][2]} on the profile, negatives "
           f"{'TRUSTED' if trusted else 'WITHHELD (positives only)'}")
     for k, v in res.items():
         print(f"  {k:24s} {v}")

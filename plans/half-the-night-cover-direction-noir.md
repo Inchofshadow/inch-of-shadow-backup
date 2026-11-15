@@ -511,3 +511,22 @@ Rows as on the picks page (picks.html ROWS):
 - NOW (11-07): making the text blend into the picture (embedded, not on top).
 - Text blend round 1 (11-07, on #36, Barlow title + Pirata name): Amir: text must NOT move; 2 (Xerox grain on the letters) = CHOSEN, keep as is (colour shift from the effect: unsure but keep); from 3 he likes the dark shadow behind the title (Canva calls it Effects > Shadows); 4 name colour = an option later; 5 only if the name sits ON the hill line, not behind it.
 - Round 2 on the picks page: 2+shadow, 2+shadow+red edge, 1+3 combined, 5 redone on the hill line (normal and bigger). All made locally in the RM page (no Canva).
+
+## Title font decision (2026-11-09)
+- Free title fonts compared on #36 with grain (keeps 431-437: Barlow, Mohave, Gloock, Viking, Fraunces Black, CAT Neuzeit Schatten, Switzer Black). A/B: Barlow vs Switzer Black at 93% (438).
+- Thumbnail test (300/120/64 px): both read the same, so readability was no reason for Switzer.
+- Amir: "A is the heart, B is the mind" -> **A, Barlow Condensed ExtraBold (free, OFL)**. Name stays Pirata One.
+- From B he liked the name level with the star: star 3 moved down 0.0278 (starset `0,0,0;0,0,0;0,0,1;0,0.0278,1;0,0,1;0,0,1`), text not moved. Result = keep-439.jpg.
+- Deadline: cover final ~11-12 (Symphonic by 11-13, release 12-04). Still open: name colour, purple on the hill, Fable gate.
+- Amir's PICK (11-09): the chosen layout (keep #39 on the Layout page) + "2 + shadow": grain on the letters + soft dark drop shadow behind the title (blur 7px, offset -7/+9, black 90%, no red edge). Result = keep-440.jpg. Grain + shadow are not Layout page settings: they go on at export, on top of his final edit of #39.
+- 11-09 later: Amir resized moon (120%) + owl (88%) himself (keep #41). Fixes: owl size scales only the bird; moon texture moves/scales with the moon (no circle in a circle). Empty spot under the moon filled by an ADDED star (starplus, copy of star 4) = keep #42 (render keep-453.jpg). No drag button for added stars (his "no"). Current cover = keep #42.
+
+## FINAL (2026-11-09, Amir: "we done")
+Layout keep #45 (render keep-470.jpg): Barlow Cond title, 3 lines; Pirata One name, tracking 4%; grain + soft shadow on the text; moon 125%, owl 88%; colours hill=purple, moon=red, owl=black, trees=ivory, stars=gold, line=ivory; effects Xerox 25% (all but moon) + Anaglyph 3D 57% (trees); cut line 61%; name star level with the name. No added star.
+Next: Fable gate (second opinion), then full-size export (3000/4000 px) + Symphonic by 11-13.
+
+## FINAL v2 (2026-11-09 evening) = Layout keep #50
+Changes on top of #45: hill plum; red moonlight 60% (calculated: crest normal vs moon direction, graze on the crest, fade down the slope and along the hill; mixed as a wine soft-light tint, not screen/pink); ivory cut line 22% (red line looked off; black = no line). Amir: "this was kinda my vision in the first place, adds so much depth".
+Full size: artwork/edits/htn-noir/layout-snaps/pinocchio-single/export-902-3000px.jpg (3000 px, local resampling, no AI; text drawn at full size with grain + shadow). export-901 is OUTDATED (old hill, no text grain).
+Next: Fable gate, then Symphonic by 11-13.
+- FINAL PICK (11-09 22:45): Amir's Canva version of keep #50 with a little extra grain. Files: ~/Desktop/Inch of Shadow/Releases/Half the Night EP/Artwork & Designs/ "Half the ngiht EP.jpg" (3000 px RGB, for Symphonic) + ".png" (RGBA) + a copy of export-902.

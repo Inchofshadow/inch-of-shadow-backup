@@ -190,6 +190,27 @@ def priority_of(t: dict) -> str:
     return BUCKET_PRIORITY.get(t.get("bucket") or "", "P3")
 
 
+MONTHS = ("Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec")
+
+
+def bucket_shown(t: dict, today=None) -> str:
+    """What the card says in place of the bucket. A parked, blocked or waiting ticket with a
+    due date shows that date ("📅 11 Dec"), never "parked" or "later" (Amir 2026-11-13)."""
+    bucket = t.get("bucket", "") or ""
+    due = str(t.get("due", "") or "")
+    waits = bucket == "parked" or t.get("status") in ("blocked", "waiting")
+    if waits and len(due) >= 10 and due[4] == "-" and due[7] == "-":
+        try:
+            label = "%d %s" % (int(due[8:10]), MONTHS[int(due[5:7]) - 1])
+        except (ValueError, IndexError):
+            return bucket
+        today = (today or date.today()).isoformat()
+        if due[:10] < today:   # a date that has passed is not a plan (Fable gate round 2, 2026-11-15)
+            return "\u26A0\uFE0F overdue since %s" % label
+        return "\U0001F4C5 %s" % label
+    return bucket
+
+
 def _card(t: dict) -> dict:
     priority = priority_of(t)
     return {
@@ -209,6 +230,7 @@ def _card(t: dict) -> dict:
         "area": t.get("area", "") or "",
         "area_no": t.get("area_no", ""),
         "bucket": t.get("bucket", "") or "",
+        "bucket_shown": bucket_shown(t),
         "who": t.get("who", "") or "",
         "label": t.get("label", "") or "",
         "next_step": t.get("next_step", "") or "",
@@ -235,7 +257,10 @@ def _sort_key(c: dict):
 
 def build_view(data: dict) -> dict:
     """Shape a validated file into what the template renders."""
+    areas = data.get("areas") or {}
     cards = sorted((_card(t) for t in data.get("tickets", [])), key=_sort_key)
+    for c in cards:
+        c["shown_as"] = area_label(c, areas)      # what Amir reads: "<emoji> <Area> <number>", never the id
     open_cards = [c for c in cards if c["status"] != "done"]
 
     sections = []
@@ -247,16 +272,30 @@ def build_view(data: dict) -> dict:
             "open_count": sum(1 for c in mine if c["status"] != "done"),
         })
 
+    # The By area view (option C rooms, Amir 2026-11-09): one room per area of the file's `areas`,
+    # System first as on Home, then file order; tickets without an area go to an "Other" room.
+    area_rooms = []
+    for key, label in sorted(areas.items(), key=lambda kv: kv[0] != "System"):
+        mine = [c for c in cards if c["area"] == key]
+        if mine:
+            area_rooms.append({"key": key.lower(), "name": label, "tickets": mine,
+                               "open_count": sum(1 for c in mine if c["status"] != "done")})
+    rest = [c for c in cards if c["area"] not in areas]
+    if rest:
+        area_rooms.append({"key": "other", "name": "Other", "tickets": rest,
+                           "open_count": sum(1 for c in rest if c["status"] != "done")})
+
     dated = [c for c in open_cards if c["due"]]
     nxt = min(dated, key=lambda c: c["due"]) if dated else None
     now_count = sum(1 for c in open_cards if c["bucket"] == "now")
 
     return {
         "sections": sections,
+        "areas": area_rooms,
         "open_count": len(open_cards),
         "now_count": now_count,
         "p1_count": now_count,          # old name kept for the template: P1 is the derived view of 'now'
-        "next_due": {"date": nxt["due"], "id": nxt["id"]} if nxt else None,
+        "next_due": {"date": nxt["due"], "id": nxt["id"], "shown_as": nxt["shown_as"]} if nxt else None,
         "updated": data.get("updated", "") or "",
     }
 
@@ -313,7 +352,8 @@ def control_panel_cards(cp_data: dict) -> list:
             "priority": priority, "priority_label": PRIORITY_LABEL[priority], "status": t.get("status", ""),
             "blocked_on": ", ".join(t.get("blocked_on") or []), "due": "", "size": t.get("size", "") or "",
             "notes": t.get("notes", []) or [], "area": t.get("area", "") or "", "area_no": t.get("area_no", ""),
-            "bucket": t.get("bucket", "") or "", "who": t.get("who", "") or "", "label": t.get("label", "") or "",
+            "bucket": t.get("bucket", "") or "", "bucket_shown": t.get("bucket", "") or "",
+            "who": t.get("who", "") or "", "label": t.get("label", "") or "",
             "next_step": t.get("next_step", "") or "", "chrome": bool(t.get("chrome", False)),
             "metric": t.get("metric", "") or "", "metric_note": t.get("metric_note", "") or "",
             "updated": t.get("updated", "") or "",

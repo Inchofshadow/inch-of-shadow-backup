@@ -23,12 +23,12 @@
       }
     },
     "2026-11": {
-      "usd": 70.56051,
-      "calls": 126,
+      "usd": 70.62172,
+      "calls": 128,
       "by": {
         "weekly stats": {
-          "usd": 0.02117,
-          "calls": 1
+          "usd": 0.08238,
+          "calls": 3
         },
         "gap_radar": {
           "usd": 2.06135,
@@ -98,12 +98,11 @@
     }
   },
   "last": {
-    "what": "gap_radar_crowding",
+    "what": "weekly stats",
     "model": "claude-opus-5-5",
-    "made": "2026-11-07T12:18:46",
-    "input_tokens": 140311,
-    "output_tokens": 5827,
-    "cost_usd": 0.75778,
-    "web_searches": 8
+    "made": "2026-11-09T08:45:21",
+    "input_tokens": 2986,
+    "output_tokens": 776,
+    "cost_usd": 0.02746
   }
 }

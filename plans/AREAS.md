@@ -10,7 +10,7 @@ Old ids (R-02, GR-08, Machine-28 ...) stay in the files for code, commits and hi
 | 🎬 Socials | Instagram, SoundCloud, YouTube, Bandcamp (incl. their maintenance) | IG / SC / YT / BC lanes, G-01, G-10, M- on those lanes |
 | 🎧 Booking | DJ outreach, festivals, EPK, mixes | DJ |
 | 💶 Income | +500 EUR work, Gap Radar | GR (+ new Income tickets) |
-| 🎸 Studio | MPC, guitar / music theory, samples, production | new |
+| 🎸 Studio | his music studio, physical and analog: MPC, guitar / music theory, samples, racks, production (not cover or Release Manager tools: those are ⚙️ System, Amir 2026-11-10) | new |
 | ⚙️ System | GitHub, contracts, tokens, API caps, Control Panel board, other upkeep | G, M (other lanes), Machine, Look, Formats, Words, Measure, Mkt |
 
 Fields: each ticket in `plans/tickets.json` and `plans/control-panel/tickets.json` has `area` and `area_no`.

@@ -211,6 +211,9 @@ LAYOUT_FONT_FILES = {
     "eckmann": "docs/brand/fonts/free/CAT-Eckmann.ttf",
     "pirata": "docs/brand/fonts/free/PirataOne-Regular.ttf",
     "barlowc": "docs/brand/fonts/free/BarlowCondensed-ExtraBold.ttf",   # free (OFL) match for Avenir Next Condensed Heavy, 11-06
+    "fraunces": "docs/brand/fonts/free/Fraunces144ptSuperSoft-Black.otf",   # free (OFL), title round 11-09
+    "neuzeits": "docs/brand/fonts/free/CATNeuzeit Schatten.ttf",   # free (OFL), title round 11-09
+    "switzer": "docs/brand/fonts/free/Switzer/Switzer-Black.otf",   # free (ITF FFL, commercial OK), title round 11-09
 }
 
 
@@ -241,22 +244,118 @@ def layouts_file(project_root: Path, slug: str) -> Path:
     return project_root / "plans" / "playground-wall" / f"{slug}-layouts.json"
 
 
-def layouts_kept(project_root: Path, slug: str) -> list:
+def _layouts_raw(project_root: Path, slug: str) -> dict:
     import json as _json
     try:
-        return list(_json.loads(layouts_file(project_root, slug).read_text()).get("kept") or [])
+        d = _json.loads(layouts_file(project_root, slug).read_text())
+        return d if isinstance(d, dict) else {}
     except Exception:
-        return []
+        return {}
+
+
+def _layouts_for_write(project_root: Path, slug: str) -> dict:
+    """The keeps file for a change. A file that exists but cannot be read is NEVER treated as empty:
+    the next save would replace every keep with one (Fable gate 2026-11-15). Raises ValueError instead."""
+    import json as _json
+    f = layouts_file(project_root, slug)
+    if not f.exists():
+        return {}
+    try:
+        d = _json.loads(f.read_text())
+    except Exception:
+        raise ValueError("the keeps file cannot be read (%s): nothing saved, restore it first" % f.name)
+    if not isinstance(d, dict) or not isinstance(d.get("kept", []), list):
+        raise ValueError("the keeps file has an unexpected shape (%s): nothing saved" % f.name)
+    return d
+
+
+def _layouts_save(project_root: Path, slug: str, data: dict) -> None:
+    """Write the keeps file through a temp file, so a crash never leaves it half-written."""
+    import json as _json
+    f = layouts_file(project_root, slug)
+    f.parent.mkdir(parents=True, exist_ok=True)
+    fd, tmp = tempfile.mkstemp(dir=str(f.parent), prefix="." + f.name + ".", suffix=".tmp")
+    try:
+        with os.fdopen(fd, "w") as fh:
+            fh.write(_json.dumps(data, indent=1))
+        os.replace(tmp, f)
+    except BaseException:
+        if os.path.exists(tmp):
+            os.unlink(tmp)
+        raise
+
+
+def with_ids(kept: list, next_id: int = 0) -> tuple[list, int]:
+    """Fixed keep IDs (System 97, 2026-11-10): a keep keeps its number when others come or go.
+    Keeps without an id get the next numbers in list order, so a file from before IDs gets 1..n:
+    exactly the numbers the page showed (Half the Night: #50 stays #50). Returns (keeps, next free id);
+    next_id never goes down, so an un-kept number is never given out again."""
+    used = [k["id"] for k in kept if isinstance(k.get("id"), int) and not isinstance(k.get("id"), bool)]
+    nxt = max([next_id or 0, (max(used) + 1) if used else 1])
+    out, seen = [], set()
+    for k in kept:
+        k = dict(k)
+        if not isinstance(k.get("id"), int) or isinstance(k.get("id"), bool) or k["id"] in seen:
+            k["id"] = nxt
+            nxt += 1
+        seen.add(k["id"])
+        out.append(k)
+    return out, nxt
+
+
+def layouts_kept(project_root: Path, slug: str) -> list:
+    """The kept layouts, each with its fixed id (filled in on read for a file from before IDs; the file
+    itself only changes on the next keep or un-keep, or with migrate_layout_ids)."""
+    d = _layouts_raw(project_root, slug)
+    return with_ids(list(d.get("kept") or []), int(d.get("next_id") or 0))[0]
+
+
+def migrate_layout_ids(project_root: Path, slug: str, dry_run: bool = True) -> dict:
+    """Write the fixed ids into a layouts file once. Nothing but the id (and next_id) is added: order,
+    count and every other field stay as they are. dry_run only reports."""
+    import json as _json
+    d = _layouts_for_write(project_root, slug)
+    before = list(d.get("kept") or [])
+    after, nxt = with_ids(before, int(d.get("next_id") or 0))
+    def bare(k):
+        return {x: v for x, v in k.items() if x != "id"}
+    same = len(before) == len(after) and all(bare(a) == bare(b) for a, b in zip(after, before))
+    if not same:
+        raise RuntimeError("migration would change a keep")
+    report = {"count_before": len(before), "count_after": len(after), "ids": [k["id"] for k in after], "next_id": nxt,
+              "changed": any(b.get("id") != a["id"] for a, b in zip(after, before)) or d.get("next_id") != nxt}
+    if not dry_run and report["changed"]:
+        _layouts_save(project_root, slug, dict(d, kept=after, next_id=nxt))
+    return report
 
 
 _LAYOUT_NUM = {"save": (0, 99), "lines": (1, 3), "x": (-0.5, 1.5), "y": (-0.5, 1.5), "size": (0.01, 0.5), "lead": (-0.5, 1.5),
                "track": (-0.2, 1.0), "nsize": (0.005, 0.2), "mdx": (-1.0, 1.0), "mdy": (-1.0, 1.0), "ms": (0.2, 4.0),
-               "line": (0, 4), "ntrack": (-0.2, 1.0), "ntx": (-0.5, 1.5), "nty": (-0.5, 1.5), "nts": (0.05, 1.5), "fxw": (0, 100), "os": (0.3, 2.0)}
+               "line": (0, 4), "ntrack": (-0.2, 1.0), "ntx": (-0.5, 1.5), "nty": (-0.5, 1.5), "nts": (0.05, 1.5), "fxw": (0, 100), "os": (0.3, 2.0), "lw": (0.0, 1.0), "hglow": (0.0, 1.0),   # lw: cut-line strength (11-09)
+               "fgrain": (0.0, 1.0), "fcorner": (0.0, 1.0), "rim": (0.0, 1.0), "rimx": (-0.5, 1.5), "rimy": (-0.5, 1.5)}   # finish stages (System 93)
 _LAYOUT_STR = {"font": r"[a-z0-9]{1,20}", "align": r"left|center|right", "color": r"[a-z]{1,12}", "npos": r"under|bottom|top",
                "nfont": r"[a-z0-9]{1,20}", "ncolor": r"[a-z]{1,12}", "tree": r"keep|remove",
                "starset": r"(-?[0-9.]{1,7},-?[0-9.]{1,7},[01](;|$)){0,40}", "ntr": r"none|left|right",
-               "cols": r"([a-z]{1,6}=[a-z]{1,8}(;|$)){0,8}", "fx": r"[a-z0-9]{0,30}", "fxmix": r"([a-z0-9]{1,30}:[0-9]{1,3}(:[a-z]{1,8})?(;|$)){0,5}"}
-_LAYOUT_BOOL = ("name", "owl", "stars", "flip", "nt", "ntf")
+               "starplus": r"(-?[0-9.]{1,7},-?[0-9.]{1,7},[0-9]{1,2}(;|$)){0,8}",   # added stars: dx,dy,copy of star n (11-09)
+               "cols": r"([a-z]{1,6}=[a-z]{1,8}(;|$)){0,8}", "rimcol": r"(auto|red|gold|ivory|cream)?", "fx": r"[a-z0-9]{0,30}", "fxmix": r"([a-z0-9]{1,30}:[0-9]{1,3}(:[a-z]{1,8})?(;|$)){0,5}"}
+_LAYOUT_BOOL = ("name", "owl", "stars", "flip", "nt", "ntf", "tgrain", "tshadow")   # tgrain/tshadow: grain + soft shadow on the text (Amir's pick 11-09)
+
+
+# what a keep from before a setting existed means (older pages send none of these): the picture as it was
+_LAYOUT_OPTIONAL = {"lw": 1.0, "hglow": 0.0, "fgrain": 0.0, "fcorner": 0.0, "rim": 0.0, "rimx": 0.75, "rimy": 0.2, "rimcol": ""}
+
+
+def _same_layout(kept: dict, clean: dict) -> bool:
+    """A stored keep equals this layout; a field the keep does not have counts as its old meaning."""
+    for x, v in clean.items():
+        have = kept.get(x, _LAYOUT_OPTIONAL.get(x))
+        if x in _LAYOUT_BOOL:
+            have = bool(have)
+        elif x in _LAYOUT_STR:
+            have = str(have or "")
+        if have != v:
+            return False
+    return True
 
 
 def _clean_layout(item: dict) -> dict:
@@ -264,12 +363,12 @@ def _clean_layout(item: dict) -> dict:
         raise ValueError("bad layout")
     out = {}
     for k, (lo, hi) in _LAYOUT_NUM.items():
-        v = item.get(k)
+        v = item.get(k, _LAYOUT_OPTIONAL.get(k))   # older pages send no lw, finish, ...
         if not isinstance(v, (int, float)) or isinstance(v, bool) or not lo <= v <= hi:
             raise ValueError("bad " + k)
         out[k] = round(float(v), 4) if k not in ("save", "lines", "line") else int(v)
     for k, rx in _LAYOUT_STR.items():
-        v = str(item.get(k) or "")
+        v = str(item.get(k) or _LAYOUT_OPTIONAL.get(k, ""))
         if not re.fullmatch(rx, v):
             raise ValueError("bad " + k)
         out[k] = v
@@ -287,17 +386,17 @@ def layouts_toggle(project_root: Path, slug: str, item: dict, now: str) -> list:
     if not SLUG.fullmatch(slug or ""):
         raise ValueError("bad slug")
     clean = _clean_layout(item)
-    kept = layouts_kept(project_root, slug)
-    same = [k for k in kept if {x: k.get(x) for x in clean} == clean]
+    raw = _layouts_for_write(project_root, slug)
+    kept, nxt = with_ids(list(raw.get("kept") or []), int(raw.get("next_id") or 0))
+    same = [k for k in kept if _same_layout(k, clean)]
     if same:
         kept = [k for k in kept if k not in same]
     else:
         if len(kept) >= LAYOUTS_MAX:   # refuse, never drop old keeps silently (gate review 2026-11-07)
             raise ValueError("%d layouts kept already: un-keep one first" % LAYOUTS_MAX)
-        kept = kept + [dict(clean, saved=now)]
-    f = layouts_file(project_root, slug)
-    f.parent.mkdir(parents=True, exist_ok=True)
-    f.write_text(_json.dumps({"kept": kept}, indent=1))
+        kept = kept + [dict(clean, saved=now, id=nxt)]
+        nxt += 1
+    _layouts_save(project_root, slug, dict(raw, kept=kept, next_id=nxt))
     return kept
 
 
@@ -586,12 +685,143 @@ def layout_snap_save(project_root: Path, slug: str, n: int, data: bytes) -> Path
         im = Image.open(BytesIO(data))
     except Exception:
         raise ValueError("bad image")
-    if im.format not in ("JPEG", "PNG") or max(im.size) > 1600:
+    big = int(n) >= 900   # 900-999 = full-size exports (release cover, 11-09): up to 4000 px, square, best JPEG
+    if im.format not in ("JPEG", "PNG") or max(im.size) > (4000 if big else 1600) or (big and im.size[0] != im.size[1]):
         raise ValueError("bad image")
-    d = project_root / "artwork" / "edits" / "htn-noir" / "layout-snaps" / slug
+    d = snaps_dir(project_root, slug)
     d.mkdir(parents=True, exist_ok=True)
-    out = d / ("current.jpg" if int(n) == 0 else "keep-%02d.jpg" % int(n))   # 0 = what is on the editor now
+    out = d / ("current.jpg" if int(n) == 0 else ("export-%d-%dpx.jpg" % (int(n), im.size[0])) if big else "keep-%02d.jpg" % int(n))   # 0 = what is on the editor now
+    tmp = out.with_suffix(".tmp")
+    if big:
+        im.convert("RGB").save(tmp, "JPEG", quality=95, subsampling=0)
+    else:
+        im.convert("RGB").save(tmp, "JPEG", quality=90)
+    os.replace(tmp, out)
+    return out
+
+
+# --- System 97 (2026-11-10): picture per keep, picks page, Export ---------------------------------------
+def snaps_dir(project_root: Path, slug: str) -> Path:
+    """Where a release's layout pictures live. Half the Night keeps its folder from the cover round."""
+    if not SLUG.fullmatch(slug or ""):
+        raise ValueError("bad slug")
+    if slug == "pinocchio-single":
+        return project_root / "artwork" / "edits" / "htn-noir" / "layout-snaps" / slug
+    return project_root / "artwork" / "edits" / "layout-snaps" / slug
+
+
+def _real_image(data: bytes, max_px: int):
+    from io import BytesIO
+    from PIL import Image
+    if not data or len(data) > 40_000_000:
+        raise ValueError("bad image")
+    try:
+        im = Image.open(BytesIO(data))
+        im.verify()
+        im = Image.open(BytesIO(data))
+    except Exception:
+        raise ValueError("bad image")
+    if im.format not in ("JPEG", "PNG") or max(im.size) > max_px:
+        raise ValueError("bad image")
+    return im
+
+
+def keep_snap_name(kid: int) -> str:
+    return "id-%04d.jpg" % int(kid)
+
+
+def keep_snap_save(project_root: Path, slug: str, kid: int, data: bytes) -> Path:
+    """The picture of one keep, by its fixed id (id-0051.jpg). Separate names from the hand-made
+    keep-NN.jpg files of the Half the Night round, so none of those is ever overwritten."""
+    if not isinstance(kid, int) or not 1 <= kid <= 9999:
+        raise ValueError("bad keep id")
+    if kid not in {k["id"] for k in layouts_kept(project_root, slug)}:
+        raise ValueError("no such keep")
+    im = _real_image(data, 1600)
+    d = snaps_dir(project_root, slug)
+    d.mkdir(parents=True, exist_ok=True)
+    out = d / keep_snap_name(kid)
     tmp = out.with_suffix(".tmp")
     im.convert("RGB").save(tmp, "JPEG", quality=90)
     os.replace(tmp, out)
     return out
+
+
+def keep_snap_path(project_root: Path, slug: str, kid: int) -> Path | None:
+    try:
+        p = snaps_dir(project_root, slug) / keep_snap_name(int(kid))
+    except (ValueError, TypeError):
+        return None
+    return p if p.is_file() else None
+
+
+def picks_file(project_root: Path, slug: str) -> Path:
+    return project_root / "plans" / "playground-wall" / f"{slug}-picks.json"
+
+
+def picks_ticked(project_root: Path, slug: str) -> list:
+    import json as _json
+    try:
+        return [int(x) for x in _json.loads(picks_file(project_root, slug).read_text()).get("ticks") or []]
+    except Exception:
+        return []
+
+
+def picks_toggle(project_root: Path, slug: str, kid) -> list:
+    """V tick on the picks page, by keep id."""
+    import json as _json
+    if not SLUG.fullmatch(slug or "") or not isinstance(kid, int) or isinstance(kid, bool):
+        raise ValueError("bad keep id")
+    if kid not in {k["id"] for k in layouts_kept(project_root, slug)}:
+        raise ValueError("no such keep")
+    t = picks_ticked(project_root, slug)
+    t = [x for x in t if x != kid] if kid in t else t + [kid]
+    f = picks_file(project_root, slug)
+    f.parent.mkdir(parents=True, exist_ok=True)
+    f.write_text(_json.dumps({"ticks": t}, indent=1))
+    return t
+
+
+EXPORT_SIZES = (3000, 4000)   # 3000 = the store size (Symphonic), 4000 = Apple's ask
+
+
+def export_save(project_root: Path, slug: str, px: int, data: bytes, stamp: str, kid: int | None = None) -> Path:
+    """The final cover as the page drew it, square at 3000 or 4000 px, best JPEG. Never overwrites:
+    each export gets its own time stamp (and the keep id when it came from a keep)."""
+    if px not in EXPORT_SIZES or not re.fullmatch(r"[0-9]{8}-[0-9]{6}", stamp or ""):
+        raise ValueError("bad export")
+    im = _real_image(data, 4000)
+    if im.size != (px, px):
+        raise ValueError("the export must be %d x %d px" % (px, px))
+    d = snaps_dir(project_root, slug) / "exports"
+    d.mkdir(parents=True, exist_ok=True)
+    out = d / ("cover-%s%s-%dpx.jpg" % (stamp, ("-k%d" % kid) if kid else "", px))
+    if out.exists():
+        raise ValueError("an export with this time stamp exists")
+    tmp = out.with_suffix(".tmp")
+    im.convert("RGB").save(tmp, "JPEG", quality=95, subsampling=0)
+    os.replace(tmp, out)
+    return out
+
+
+def run_cover_resizer(project_root: Path, src: Path, timeout: int = 300) -> dict:
+    """The existing cover export: artwork_resizer.py <file> --cover, run in the project (it writes resized/)."""
+    import subprocess
+    import sys
+    src = src.resolve()
+    if (project_root / "artwork").resolve() not in src.parents or not src.is_file():
+        raise ValueError("bad export file")
+    p = subprocess.run([sys.executable, str(project_root / "artwork_resizer.py"), str(src), "--cover"],
+                       cwd=str(project_root), capture_output=True, text=True, timeout=timeout)
+    made = [ln.strip()[3:].strip() for ln in p.stdout.splitlines() if ln.strip().startswith("v  ")]
+    return {"ok": p.returncode == 0, "files": made, "tail": "\n".join((p.stdout + p.stderr).strip().splitlines()[-6:])}
+
+
+def cover_title(rel: dict) -> str:
+    """The words on the cover (System 92): brand.playground.title, else the release title in capitals.
+    Half the Night: 'HALF THE NIGHT', as the page always drew it."""
+    pg = ((rel or {}).get("brand") or {}).get("playground") or {}
+    t = str(pg.get("title") or "").strip()
+    if not t:
+        t = str(((rel or {}).get("metadata") or {}).get("title") or (rel or {}).get("title") or (rel or {}).get("slug") or "").strip().upper()
+    return re.sub(r"\s+", " ", t)[:60]

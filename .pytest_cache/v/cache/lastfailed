@@ -4,5 +4,6 @@
   "tests/test_collect_spotify.py::test_no_token_returns_none": true,
   "tests/test_gap_radar_schedule.py::test_real_schedule_file_is_default_and_capless": true,
   "tests/test_score_board.py::test_score_on_pace_behind_and_collecting": true,
-  "archive/rm-promotion/test_email_outreach_hardening.py": true
+  "archive/rm-promotion/test_email_outreach_hardening.py": true,
+  "tests/test_tickets.py::test_tickets_route_orders_sections_and_priorities": true
 }

@@ -32,6 +32,9 @@ The files:
   per-image options (used by image_generator.py).
 - `CONTROL-PANEL.md` - the image studio and how the visual layers work.
 - `mark/` - logo mark drafts (working set, final art to be hand drawn by Amir).
+- `tags.json` (2026-11-11) - the one tag list for the Shadow Archive, Effects, Fonts and Imagine
+  (37 fixed tags + the tags of every item). It is the source: a new effect, font or reference
+  gets its tags here, and only tags from the list are used. The Layout page's Studio drawer reads it.
 - `research/` - reference research done for the sittings. Add to it, do not start over.
 - `CONTROL-PANEL-SETUP-ROADMAP.md`, `VIDEO-BRAND-SESSION-KIT.md` - frozen history from
   the electronic era. Do not take options or wording from them.

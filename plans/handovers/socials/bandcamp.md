@@ -15,9 +15,9 @@ Bandcamp's Acceptable Use Policy bans bots, scripts, scrapers and any automated 
 
 ## Open decisions (Amir)
 
-1. **Bandcamp Friday Nov 6 (tomorrow, 09:00 Fri to 08:59 Sat Berlin):** send a short catalogue message to followers anyway (no new release), or skip and save the follower message for Dec 4. Claude drafts, Amir sends.
+1. **Bandcamp Friday Nov 6 (09:00 Fri to 08:59 Sat Berlin):** catalogue message drafted 2026-11-06 in `plans/bc06-nov6-catalogue-message.md` (Amir's go). SENT 2026-11-06 ~13:25 Berlin to 53 followers by Claude in Amir's Inch of Shadow Chrome, on his word. Check sales under campaign bc-friday at the next export.
 2. **Discography bundle (🎬 Socials 17):** turning it on notifies ALL followers. Was planned for Nov 6 so it would include Half the Night. Options: turn it on tomorrow with the current catalogue (the notice lands on Bandcamp Friday), or wait until Half the Night is public.
-3. **Listening party:** moves to Half the Night release day, or Dec 4 if the release lands near it. Needs the pre-order public first.
+3. **Listening party: SCHEDULED + ANNOUNCED 2026-11-13** by Claude with Amir's yes (given in the Bandcamp chat). "Half the Night Listening Party", Fri 2026-12-11 19:00 Europe/Berlin (page shows 7:00 PM GMT+1), EP only, facts-only description, subscriber-only/supporter chat/moderators off. Bandcamp: 54 fans notified. RSVP page https://inchofshadow.bandcamp.com/merch/half-the-night-listening-party (event id 193890), 0 RSVPs at announce. Plan: `plans/bc-htn-listening-party-2026-12-11.md`. Party texts B/C still wait on Amir's OK in the main EP chat. Pre-order live 11-13 (campaign links in releases/pinocchio-single.json).
 4. **Supporter names (🎬 Socials 18):** waiting for Amir's hand-read names from 3-5 similar releases.
 
 ## Key files
@@ -42,5 +42,6 @@ Done (reference): 🎬 Socials 9 stats exports (BC-01), 10 SC buy links (BC-02),
 
 ## Ticket updates (for the System chat to merge)
 
-- 🎬 Socials 14 (BC-06): note "2026-11-05: Half the Night not released on 11-06 (cover not final, Symphonic not submitted). Nov 6 = Bandcamp Friday without a release; party moves to release day. blocked_on stays."
+- 🎬 Socials 14 (BC-06): note "2026-11-05: Half the Night not released on 11-06 (cover not final, Symphonic not submitted). Nov 6 = Bandcamp Friday without a release; party moves to release day. blocked_on stays." Plus "2026-11-06: catalogue follower message drafted (plans/bc06-nov6-catalogue-message.md, links campaign=bc-friday); Amir sends or skips." Plus "2026-11-06 ~13:25 SENT to 53 followers (Claude, Inch of Shadow Chrome, Amir's word). Next: Dec 4 message; listening party on Half the Night release day."
 - 🎬 Socials 17 (BC-09): note "2026-11-05: bundle timing open again, Half the Night will not be public on 11-06."
+- 🎬 Socials 14: party announced 11-13 by Claude with Amir's yes (event 193890, Fri 12-11 19:00 Berlin, 54 fans notified); texts B/C still wait on his OK in the EP chat.

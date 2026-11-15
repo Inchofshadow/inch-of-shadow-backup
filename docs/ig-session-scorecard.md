@@ -99,3 +99,7 @@ and a one-line verdict citing the rubric items that moved the score. Update the 
 | 2026-11-04 | Wed | **10** (auto) | 16 | 22 | 7 | note: session halted (safety: adblock extension popup over the ig page at scope check; zero clicks, ledger not claimed) -- protocol-compliant stop, volume targets not scored (T-006 rule, precedents 08-07/08-17/08-26/08-28) |
 | 2026-11-06 | Fri | **9** (auto) | 16 | 23 | 2 | -1 shortfall: ig_like 7/11 |
 | 2026-11-07 | Sat | **9** (auto) | 15 | 22 | 0 | -1 shortfall: ig_like 7/11 |
+| 2026-11-09 | Mon | **9** (auto) | 14 | 22 | 0 | -1 shortfall: ig_like 8/12 |
+| 2026-11-11 | Wed | **9** (auto) | 16 | 24 | 0 | -1 shortfall: ig_like 8/11 |
+| 2026-11-13 | Fri | **10** (auto) | 14 | 24 | 0 | clean auto-close |
+| 2026-11-14 | Sat | **10** (auto) | 13 | 23 | 0 | clean auto-close |

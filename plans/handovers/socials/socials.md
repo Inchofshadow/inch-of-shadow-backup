@@ -12,9 +12,14 @@ Written 2026-11-05 by the 🎬 Socials parent chat. Covers Instagram, SoundCloud
 - **Chrome busy windows (automation, Berlin time):** SC session 10:00 (about 1 h), SC retry 13:00 (only if 10:00 did nothing), IG session 15:00 Mon/Wed/Fri/Sat (about 1 h), SC sweep 16:15 (until Fri 11-06), Spotify for Artists read Mon 08:00. Plan 🌐 tasks outside these.
 - **Every evening, when the digest arrives, the parent chat draws the SoundCloud ratio graph under it** (Amir 11-06): followers / following per day from `stats_snapshots/snapshot_*.json` (soundcloud), since 2026-09-26, with the 1:1 floor (dashed) and the targets as FUTURE points, not a band over the past (Amir 11-06): x-axis runs to Dec 31, a dotted path from today's ratio to the Dec 31 target 1.2; the Aug 2027 target 1.4-1.6 shows as a card. The digest ends with the cue line "📈 SC ratio graph below".
 - **Start pings** (Amir 11-06): the IG session, SC session, SC retry (only when it runs) tasks each post "▶️ <run> started HH:MM" into this chat right after their gates pass (START PING line in their SKILL.md; backups SKILL.md.bak-20261106). At the end they post "🏁 <run> finished HH:MM" plus their short report (FINISH REPORT line, Amir 11-06). New IG/SC session tasks get the same lines; SC sweeps get no ping (Amir 11-06).
+- **Session relays show two numbers** (Amir 11-14): Score (loop-closer, execution vs plan) and Growth (follows done/planned + reason for a gap: supply / execution / blocked). Say when the scorer waived a check. Scorer fixes = engagement code, only via IG/SC chats with his yes.
 - Daily digest at about 20:00 posts into the parent chat (`stats/socials_digest.py`, task `socials-daily-digest`). Format A, blank lines between lines, YouTube/Bandcamp only when something ran there, one goals line, one Now line.
 
 ## Priority list (Amir approved 2026-11-05)
+
+_2026-11-11: Half the Night EP release is now **Fri 2026-12-11** (was Dec 4; Amir in the Symphonic chat). "Dec 4" below = Bandcamp Friday, unchanged. Content run-up dates moved +7 days in `htn-ep-content.md`._
+
+_2026-11-11 (main EP chat, Amir): Symphonic does NOT deliver to SoundCloud (unticked). The only SoundCloud copies are our own uploads (half-the-night, pinocchio, sets/half-the-night), public Fri 12-11 09:00. SC stats, Amplify and the pinned track run on those, and no second "official" copy comes. Beatport via Symphonic ($10/mo): the EP is on Beatport from 12-11, so add it to link lists and the smart link._
 
 | | Ticket | Who | 🌐 | Next step / blocker |
 |---|---|---|---|---|
@@ -54,3 +59,7 @@ Values:
 - `chrome`: `true` when the ticket's work happens in Amir's Chrome (the 🌐 column): 29, 2, 17, 4, 13, 18 are `true`; all others `false`
 
 Also add `bucket`, `who`, `next_step`, `label`, `chrome` to the `fields` list, and the rule "max 3 `now` per area" to `area_rule` if the System chat agrees.
+
+- NEW parked ticket (Amir 2026-11-08): "🎬 Socials · Reel lens tool" bucket parked, who amir, chrome false. Idea: when we build a future reel/effects tool, combine the Depth Of Field Simulator (jherr.github.io/depth-of-field, MIT) with the Shadow Archive (/archive) and Effects library (/effects): one lens line (focal length, f-stop, distance, sensor) per reference, effect and shoot. HyperFrames part: in camera first (shallow focus, focus pull e.g. salt lamp -> Amir, slow push-in; no face edits, no AI); in the edit via HyperFrames zooms, punch-ins, Ken Burns, blur keyframes; fake depth blur on existing footage = AI separation, per-image go, face untouched; later option: an RM page that turns a lens line into HyperFrames zoom/blur settings. No build now. Area may fit 🎵 Release or 🎸 Studio better; System decides.
+
+- TARGETS (Amir 2026-11-09, option B): plans/targets.json `ig_followers` rungs -> 2026-11-30: 1030, 2026-12-31: 1110 (was 996 / 1026). Reason: 988 on 11-09, +22 since 11-02 (~3/day) with 4 sessions/week at 14-16 follows; follow-back 26% since HikerAPI (65 follows, 09-14..11-01) vs 21% before (291). Check the Nov cohort follow-back around 11-16. System writes targets.json.

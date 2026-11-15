@@ -301,3 +301,24 @@ def test_seed_control_panel_tickets_pass_the_shared_shape_check():
     for t in data["tickets"]:
         assert _check_loop_fields(t["id"], t, keys) == [], t["id"]
     assert check_now_cap(data["tickets"]) == []
+
+
+def test_board_cards_show_the_area_label_never_the_stored_id(client):
+    """RM check 2026-11-08: Control Panel cards read 'Look-02' and 'needs Formats-04' while Home
+    already showed the same ticket as its area label. Amir's rule: '<emoji> <Area> <number>'."""
+    import json
+    from release_manager.tickets import area_label
+    data = json.loads(SEED.read_text(encoding="utf-8"))
+    areas = data.get("areas") or {}
+    html = client.get("/board").data.decode()
+    board_part = html.split('id="board-section"', 1)[1]
+    for t in data["tickets"]:
+        if t.get("status") == "done" or not t.get("area") or t.get("area_no") in ("", None):
+            continue
+        label = area_label(t, areas)
+        assert '<span class="tid">%s</span>' % label in board_part, t["id"]
+        assert '<span class="tid">%s</span>' % t["id"] not in board_part, t["id"]
+    view = build_view(data)
+    for f in view["floors"]:
+        for c in f["tickets"]:
+            assert len(c["needs_shown"]) == len(c["needs"])

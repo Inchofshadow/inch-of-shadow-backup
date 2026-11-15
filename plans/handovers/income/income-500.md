@@ -171,3 +171,17 @@ Open tickets only (12 + 13 are done above; 8 is done, see `radar-life.md`). 1 no
 - Test kit ready, not run: gap_radar/perplexity_test.py (same rules + URL vetting as crowding.py, stops at $1). Test set = producer-tools/2026-11-06T0320.json (10 ideas, Claude check cost $8.19). Run: add PERPLEXITY_API_KEY to .env, then python3 gap_radar/perplexity_test.py.
 - Amir: "skip for now, an option for the future". Do not raise it again unless he asks.
 - 2026-11-06: Premiere versioning panel DROPPED after own check (details in plans/income-500-options-2026-11-05.md). Night-test list closed; only set bridge (B-) stays.
+
+### Brief v4 (Amir, 2026-11-08)
+- Main lane: "learn then build". Amir and Claude learn a field together (~2 weeks, maybe more), then build our own
+  asset that earns passive income. Ideas are judged on: can we learn it in ~2 weeks, can we build it together, does it earn without clients.
+- Side lane: remote work-from-home jobs are now in scope too (trigger: Citizen Café Hebrew teacher post, 20-25 h/week on Zoom).
+  Amir applies himself; Claude only finds and checks the fit.
+- Radar today only hunts "people asking for a tool" (most crowded signal). Other paths proposed, not built yet:
+  money already moving, search demand, new rules/deadlines, language gap, unmonetized assets.
+- 11-08: Amir picked the App factory (ASO) as the first "learn then build" path. Plan v1: plans/app-factory/PLAN.md
+  (week 1 learn ASO $0, week 2 find 3 keywords, week 3 build app #1). Fable gate pending.
+- 11-09: Amir: WAIT. App factory is NOT decided ("we still not sure about it"). No ticket, no week 1. PLAN.md stays a draft.
+- 11-11: Radar launchd exit 78 fixed by ⚙️ System. launchd couldn't open the log in docs/reports/; the log now lives at
+  ~/Library/Logs/InchOfShadow/gap-radar-launchd.log. Verified: exit 0, 0 profiles, no spend. November cap is used up ($70.54 of $70),
+  so profiles are blocked until 12-01 unless Amir raises the cap.

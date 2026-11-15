@@ -1,0 +1,9 @@
+System 97 keep-ID migration, 2026-11-10
+count before 50, after 50
+same order and content (sha256 per keep without id): True
+ids 1..50 in list order: True
+keep #50 = 2026-11-09 22:36
+
+System 92 check, 2026-11-10: keep #50 drawn by the new page code (1600 px) vs export-902-3000px.jpg (11-09): mean diff per channel 1.48 / 1.15 / 1.37 of 255, 0.22% of pixels off by more than 24 (JPEG + resampling). Same picture.
+
+System 93 check, 2026-11-11: keep #50 drawn by the 93 page code vs the committed 92 code in the same browser: difference 0.0 (identical). Against export-902 today both give mean 3.4/255 (yesterday 1.5): the drift is the browser session, not the code.

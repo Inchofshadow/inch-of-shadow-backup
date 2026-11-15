@@ -231,6 +231,17 @@ def platform_label_filter(key):
     return key.replace("_", " ").title()
 
 
+# How a ticket's who field is shown (root CLAUDE.md, "Who"): raised hand Amir, pumpkin Claude, robot auto.
+WHO_LABELS = {"amir": "\U0001F64B Amir", "claude": "\U0001F383 Claude", "auto": "\U0001F916 auto"}
+
+
+@app.template_filter("who")
+def who_filter(value):
+    """A ticket's who field as Amir reads it: 'amir' -> raised hand + 'Amir'. Unknown values pass through."""
+    v = (value or "").strip()
+    return WHO_LABELS.get(v.lower(), v)
+
+
 # ---------------------------------------------------------------------------
 # Artwork helpers
 # ---------------------------------------------------------------------------

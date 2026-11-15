@@ -42,8 +42,13 @@ def stats_page():
         board = score_board.build(month=month)
     except Exception as e:                       # noqa: BLE001 - bad board data must not take down the page
         board_error = str(e) or type(e).__name__
+    from release_manager import ratio_graph               # System 98: SC + IG followers / following by day
+    try:
+        ratios, ratio_error = ratio_graph.build(), None
+    except Exception as e:                       # noqa: BLE001 - a bad snapshot must not take down the page
+        ratios, ratio_error = [], str(e) or type(e).__name__
     return render_template("stats.html", s=build(), message=request.args.get("m"), weekly=weekly_build(),
-                           board=board, board_error=board_error)
+                           board=board, board_error=board_error, ratios=ratios, ratio_error=ratio_error)
 
 
 @app.route("/stats/thumb/<path:filename>")

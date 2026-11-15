@@ -1,0 +1,227 @@
+<title>Studio Drawer Options</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Marcellus&family=Inter:wght@400;500;600&display=swap">
+<style>
+/* Layout: one column of big option cards, each a drawn mock of the Layout page, V tick in the card corner */
+:root {
+  color-scheme: dark;
+  --bg: #0f0d0c;          /* warm black, the RM room */
+  --card: #171412;
+  --ink: #ece4d6;
+  --muted: #a39a8c;
+  --line: rgba(216,195,154,.2);
+  --gold: #d8c39a;        /* champagne */
+  --night: #1d1a2e;
+  --moon: #c12613;
+  --display: "Marcellus", "Didot", Georgia, serif;
+  --body: "Inter", system-ui, -apple-system, sans-serif;
+}
+* { box-sizing: border-box; }
+body { background: var(--bg); color: var(--ink); font-family: var(--body); font-size: 15px; line-height: 1.5; margin: 0;
+  padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); padding-block: 20px 60px; }
+.wrap { max-width: 1060px; margin: 0 auto; display: grid; gap: 28px; }
+h1 { font-family: var(--display); font-weight: 400; font-size: clamp(28px, 5vw, 40px); margin: 0; text-wrap: balance; }
+h2 { font-family: var(--display); font-weight: 400; font-size: 24px; margin: 0; }
+.lede { color: var(--muted); max-width: 65ch; margin: 6px 0 0; }
+.sec { display: grid; gap: 16px; }
+.sec > .hint { color: var(--muted); font-size: 14px; margin: -6px 0 0; max-width: 65ch; }
+.opt { background: var(--card); border: 2px solid var(--line); border-radius: 12px; padding: 16px; display: grid; gap: 14px; position: relative; }
+.opt.on { border-color: var(--gold); }
+.opt .top { display: flex; gap: 14px; align-items: flex-start; }
+.opt .top > div { flex: 1; min-width: 0; }
+.opt h3 { margin: 0; font-family: var(--display); font-weight: 400; font-size: 22px; }
+.opt h3 b { color: var(--gold); font-weight: 400; margin-right: 8px; }
+.opt p { margin: 4px 0 0; color: var(--muted); max-width: 65ch; }
+.opt ul { margin: 0; padding-left: 18px; color: var(--ink); display: grid; gap: 3px; font-size: 14px; }
+.vt { flex: 0 0 auto; width: 56px; height: 56px; border-radius: 50%; border: 2px solid var(--line); background: #0e0c0b; color: #6d655b; font: 700 24px var(--body); cursor: pointer; }
+.vt.on { background: var(--gold); border-color: var(--gold); color: #111; }
+.vt:focus-visible, button:focus-visible, textarea:focus-visible { outline: 2px solid var(--gold); outline-offset: 2px; }
+.vt[disabled] { opacity: .45; cursor: default; }
+/* the drawn mock: a little Layout page */
+.mock { position: relative; width: 100%; max-width: 100%; aspect-ratio: 16 / 8.2; background: #0b0a09; border: 1px solid var(--line); border-radius: 8px; overflow: hidden; }
+.mock .art { position: absolute; background: linear-gradient(180deg, var(--night), #08070c 70%); border-radius: 4px; overflow: hidden; }
+.mock .art::before { content: ""; position: absolute; width: 22%; aspect-ratio: 1; border-radius: 50%; background: var(--moon); right: 16%; top: 12%; }
+.mock .art::after { content: ""; position: absolute; left: -10%; right: -10%; bottom: -30%; height: 55%; border-radius: 50% 50% 0 0; background: #44214c; }
+.mock .ttl { position: absolute; z-index: 2; font: 700 clamp(7px, 1.6vw, 15px) / 1 "Avenir Next Condensed", "Arial Narrow", sans-serif; color: #e2d6bc; letter-spacing: .02em; }
+.mock .ctl { position: absolute; display: grid; gap: 5%; align-content: start; }
+.mock .ctl i { display: block; height: 7px; border-radius: 4px; background: #242018; }
+.mock .ctl i:nth-child(3n) { width: 70%; }
+.pane { position: absolute; background: #1b1714; border: 1px solid var(--gold); border-radius: 6px; padding: 1.2%; display: grid; gap: 4px; align-content: start; overflow: hidden; box-shadow: 0 6px 24px rgba(0,0,0,.6); }
+.pane .tabs { display: flex; gap: 4px; flex-wrap: wrap; }
+.pane .tabs span, .chips span { font-size: clamp(6px, 1vw, 10px); padding: 1px 6px; border-radius: 999px; border: 1px solid var(--line); color: var(--muted); white-space: nowrap; }
+.pane .tabs span.on { background: var(--gold); color: #111; border-color: var(--gold); }
+.chips { display: flex; gap: 3px; flex-wrap: wrap; }
+.chips span { color: var(--gold); }
+.search { height: 9px; border-radius: 4px; background: #0e0c0b; border: 1px solid var(--line); }
+.tiles { display: grid; gap: 4px; }
+.tile { aspect-ratio: 1; border-radius: 3px; background: #2a2420; position: relative; }
+.tile em { position: absolute; left: 2px; top: 2px; font: 600 clamp(5px, .8vw, 8px) var(--body); font-style: normal; padding: 0 3px; border-radius: 3px; color: #111; }
+.s-a { background: #b8a6d9; } .s-e { background: #d8c39a; } .s-f { background: #9fbf8f; } .s-i { background: #e0a090; }
+.tile.f1 { background: #221d19; } .tile.f2 { background: linear-gradient(135deg, #3a1520, #141018); } .tile.f3 { background: repeating-linear-gradient(45deg, #2a2420 0 3px, #1a1614 3px 6px); }
+.cols { display: grid; grid-template-columns: repeat(4, 1fr); gap: 6px; }
+.cols h6 { margin: 0 0 3px; font: 600 clamp(6px, .9vw, 9px) var(--body); color: var(--gold); text-transform: uppercase; letter-spacing: .08em; }
+.legend { display: flex; gap: 12px; flex-wrap: wrap; font-size: 13px; color: var(--muted); }
+.legend span { display: inline-flex; gap: 6px; align-items: center; }
+.legend i { width: 12px; height: 12px; border-radius: 3px; display: inline-block; }
+.same { border: 1px dashed var(--line); border-radius: 12px; padding: 14px 16px; color: var(--muted); font-size: 14px; display: grid; gap: 6px; }
+.same b { color: var(--ink); font-weight: 600; }
+.tagdemo { display: flex; gap: 6px; flex-wrap: wrap; }
+.tagdemo span { font-size: 13px; padding: 3px 10px; border-radius: 999px; border: 1px solid var(--line); color: var(--gold); }
+.tagdemo span.x { color: var(--muted); text-decoration: line-through; }
+textarea { width: 100%; min-height: 84px; background: var(--card); color: var(--ink); border: 1px solid var(--line); border-radius: 10px; padding: 12px; font: inherit; }
+.status { font-size: 13px; color: var(--muted); min-height: 1.4em; }
+</style>
+
+<div class="wrap">
+  <header>
+    <h1>Studio drawer on the Layout page</h1>
+    <p class="lede">⚙️ System 94. Archive, Effects, Fonts and Imagine inside the Layout page, so nothing on the next cover means leaving the work. Three ways to place it, then two ways to keep the shared tag list. Tick V on one of each. Your words go in the box at the end.</p>
+  </header>
+
+  <div class="same">
+    <b>The same in all three</b>
+    <div>One search and one row of tags finds all four libraries at once. Click a result and it lands on the cover:</div>
+    <div class="legend">
+      <span><i class="s-a"></i>Archive reference: pinned beside the picture to look at</span>
+      <span><i class="s-e"></i>Effect: added to your effect mix at 25%</span>
+      <span><i class="s-f"></i>Font: becomes the title font</span>
+      <span><i class="s-i"></i>Imagine element: shown beside the picture (dropping it in as its own layer comes later)</span>
+    </div>
+  </div>
+
+  <section class="sec" aria-labelledby="h-place">
+    <h2 id="h-place">Where the drawer sits</h2>
+
+    <article class="opt" data-id="A">
+      <div class="top"><div><h3><b>A</b>Side drawer</h3>
+        <p>A panel slides in over the controls on the right. The picture stays big and in place. One tab per library, the tags on top. Close it and the controls are back.</p></div>
+        <button class="vt" type="button" id="vt-A" aria-label="V for option A">V</button></div>
+      <div class="mock" aria-hidden="true">
+        <div class="art" style="left:2%;top:4%;width:47%;height:92%"></div>
+        <div class="ttl" style="left:8%;top:30%">HALF<br>THE<br>NIGHT</div>
+        <div class="ctl" style="left:52%;top:6%;width:16%;height:88%"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+        <div class="pane" style="left:60%;top:3%;width:38%;height:94%">
+          <div class="tabs"><span class="on">Effects</span><span>Archive</span><span>Fonts</span><span>Imagine</span></div>
+          <div class="search"></div>
+          <div class="chips"><span>90s-noir</span><span>moon</span><span>grain</span><span>dark-deco</span></div>
+          <div class="tiles" style="grid-template-columns:repeat(3,1fr)">
+            <div class="tile f2"><em class="s-e">E</em></div><div class="tile f3"><em class="s-e">E</em></div><div class="tile f1"><em class="s-e">E</em></div>
+            <div class="tile f3"><em class="s-e">E</em></div><div class="tile f1"><em class="s-e">E</em></div><div class="tile f2"><em class="s-e">E</em></div>
+          </div>
+        </div>
+      </div>
+      <ul><li>Best for: working fast on one picture, a library at a time</li><li>Cost: hides the controls while it is open</li></ul>
+    </article>
+
+    <article class="opt" data-id="B">
+      <div class="top"><div><h3><b>B</b>Shelf under the picture</h3>
+        <p>A long strip under the picture, always there. All four libraries mixed in one row, each tile marked by its colour. Pick a tag and the strip refills.</p></div>
+        <button class="vt" type="button" id="vt-B" aria-label="V for option B">V</button></div>
+      <div class="mock" aria-hidden="true">
+        <div class="art" style="left:2%;top:4%;width:34%;height:66%"></div>
+        <div class="ttl" style="left:7%;top:20%">HALF<br>THE<br>NIGHT</div>
+        <div class="ctl" style="left:40%;top:6%;width:57%;height:60%"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+        <div class="pane" style="left:2%;top:73%;width:96%;height:24%">
+          <div class="chips"><span>90s-noir</span><span>moon</span><span>owl</span><span>grain</span><span>dark-deco</span><span>half-the-night</span></div>
+          <div class="tiles" style="grid-template-columns:repeat(14,1fr)">
+            <div class="tile f2"><em class="s-a">A</em></div><div class="tile f3"><em class="s-e">E</em></div><div class="tile f1"><em class="s-f">F</em></div><div class="tile f2"><em class="s-i">I</em></div>
+            <div class="tile f1"><em class="s-e">E</em></div><div class="tile f3"><em class="s-a">A</em></div><div class="tile f2"><em class="s-f">F</em></div><div class="tile f1"><em class="s-e">E</em></div>
+            <div class="tile f3"><em class="s-i">I</em></div><div class="tile f2"><em class="s-e">E</em></div><div class="tile f1"><em class="s-a">A</em></div><div class="tile f3"><em class="s-f">F</em></div>
+            <div class="tile f2"><em class="s-e">E</em></div><div class="tile f1"><em class="s-i">I</em></div>
+          </div>
+        </div>
+      </div>
+      <ul><li>Best for: seeing ideas from every library while you work</li><li>Cost: the picture gets smaller to make room</li></ul>
+    </article>
+
+    <article class="opt" data-id="C">
+      <div class="top"><div><h3><b>C</b>Board by feeling</h3>
+        <p>A button opens a full board, like All my keeps. The picture sits small on the left. On the right, four columns side by side for one feeling: Archive, Effects, Fonts, Imagine.</p></div>
+        <button class="vt" type="button" id="vt-C" aria-label="V for option C">V</button></div>
+      <div class="mock" aria-hidden="true">
+        <div class="art" style="left:2%;top:18%;width:22%;height:44%"></div>
+        <div class="ttl" style="left:4%;top:28%;font-size:clamp(5px,.9vw,9px)">HALF<br>THE<br>NIGHT</div>
+        <div class="pane" style="left:27%;top:3%;width:71%;height:94%;border-color:var(--line)">
+          <div class="chips"><span>90s-noir</span><span>moon</span><span>owl</span><span>grain</span></div>
+          <div class="cols">
+            <div><h6>Archive</h6><div class="tiles" style="grid-template-columns:1fr 1fr"><div class="tile f2"><em class="s-a">A</em></div><div class="tile f1"><em class="s-a">A</em></div><div class="tile f3"><em class="s-a">A</em></div></div></div>
+            <div><h6>Effects</h6><div class="tiles" style="grid-template-columns:1fr 1fr"><div class="tile f3"><em class="s-e">E</em></div><div class="tile f2"><em class="s-e">E</em></div><div class="tile f1"><em class="s-e">E</em></div><div class="tile f3"><em class="s-e">E</em></div></div></div>
+            <div><h6>Fonts</h6><div class="tiles" style="grid-template-columns:1fr 1fr"><div class="tile f1"><em class="s-f">F</em></div><div class="tile f2"><em class="s-f">F</em></div></div></div>
+            <div><h6>Imagine</h6><div class="tiles" style="grid-template-columns:1fr 1fr"><div class="tile f2"><em class="s-i">I</em></div><div class="tile f3"><em class="s-i">I</em></div></div></div>
+          </div>
+        </div>
+      </div>
+      <ul><li>Best for: the start of a cover, collecting a world for one feeling</li><li>Cost: a separate view, so you go back and forth</li></ul>
+    </article>
+  </section>
+
+  <section class="sec" aria-labelledby="h-tags">
+    <h2 id="h-tags">The shared tag list</h2>
+    <p class="hint">Today each library tags in its own way: Archive has topics and a few tags (90s-noir on R-022), Fonts has free words, Effects has families only, Imagine has none.</p>
+
+    <article class="opt" data-id="T1">
+      <div class="top"><div><h3><b>T1</b>One fixed list</h3>
+        <p>One file of about 30 tags that every library uses. I tag what is there now from that list. A new tag is added on purpose and shows up for all four at once.</p></div>
+        <button class="vt" type="button" id="vt-T1" aria-label="V for option T1">V</button></div>
+      <div class="tagdemo" aria-hidden="true"><span>90s-noir</span><span>dark-deco</span><span>moon</span><span>owl</span><span>grain</span><span>cut-paper</span><span>daylight</span><span>half-the-night</span></div>
+      <ul><li>Clean search, the same word everywhere</li><li>Cost: one tagging pass over the libraries now</li></ul>
+    </article>
+
+    <article class="opt" data-id="T2">
+      <div class="top"><div><h3><b>T2</b>Each keeps its words, merged</h3>
+        <p>The libraries keep the words they have. The drawer joins the same words (and plain variants like "noir" and "90s-noir") into one list.</p></div>
+        <button class="vt" type="button" id="vt-T2" aria-label="V for option T2">V</button></div>
+      <div class="tagdemo" aria-hidden="true"><span>90s-noir</span><span class="x">noir</span><span>moon</span><span>colour and grade</span><span>tall deco elegant</span><span class="x">Night and neon</span></div>
+      <ul><li>No tagging pass, works today</li><li>Cost: messier list, Effects and Imagine stay hard to find by feeling</li></ul>
+    </article>
+  </section>
+
+  <section class="sec" aria-labelledby="h-words">
+    <h2 id="h-words">Your words</h2>
+    <textarea id="note" placeholder="Anything to change, mix or drop. Saved when you leave the box."></textarea>
+    <div class="status" id="status">Loading your ticks…</div>
+  </section>
+</div>
+
+<script>
+(function () {
+  var IDS = ['A', 'B', 'C', 'T1', 'T2'], db = null, state = {};
+  var status = document.getElementById('status'), note = document.getElementById('note');
+  function paint() {
+    IDS.forEach(function (id) {
+      var on = !!(state[id] && state[id].v);
+      document.getElementById('vt-' + id).classList.toggle('on', on);
+      document.querySelector('.opt[data-id="' + id + '"]').classList.toggle('on', on);
+      document.getElementById('vt-' + id).setAttribute('aria-pressed', on ? 'true' : 'false');
+    });
+  }
+  IDS.forEach(function (id) {
+    var b = document.getElementById('vt-' + id);
+    b.disabled = true;
+    b.onclick = function () {
+      if (!db) return;
+      var v = !(state[id] && state[id].v);
+      state[id] = {v: v}; paint();
+      db.doc('ticks/' + id).set({v: v, at: new Date().toISOString()}).then(function () { status.textContent = 'Saved.'; })
+        .catch(function () { status.textContent = 'That tick did not save. Try once more.'; });
+    };
+  });
+  var timer = setTimeout(function () { status.textContent = 'Ticks are not available in this view.'; }, 10000);
+  claude.use('db').then(function (d) {
+    if (!d) { clearTimeout(timer); status.textContent = 'Ticks need you signed in to claude.ai.'; return; }
+    db = d;
+    IDS.forEach(function (id) { document.getElementById('vt-' + id).disabled = false; });
+    db.collection('ticks').onSnapshot(function (snap) {
+      clearTimeout(timer);
+      (snap.docs || []).forEach(function (doc) { state[doc.id] = doc.data(); });
+      paint(); status.textContent = 'Tap V on the ones to move forward with.';
+    }, function () { clearTimeout(timer); status.textContent = 'Could not load the ticks.'; });
+    db.doc('notes/main').get().then(function (s) { var t = s && s.data && s.data(); if (t && t.text && !note.value) note.value = t.text; }).catch(function () {});
+    note.addEventListener('change', function () {
+      db.doc('notes/main').set({text: note.value.slice(0, 4000), at: new Date().toISOString()})
+        .then(function () { status.textContent = 'Your words are saved.'; }).catch(function () { status.textContent = 'Your words did not save.'; });
+    });
+  });
+})();
+</script>

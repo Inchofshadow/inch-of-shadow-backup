@@ -209,8 +209,9 @@ def test_provider_day_runs_on_a_session_day_despite_ig_cooldown(monkeypatch, tmp
     from datetime import datetime
     rc = d.decide_and_run(datetime(2026, 9, 14, 9, 30), dry_run=False)  # Monday, inside the 429 cooldown
     assert rc == 0
-    assert [j[0] for j in jobs] == ["freshness audit"]
-    assert "--count" in jobs[0][1] and jobs[0][1][-1] == "100"
+    # 2026-11-15: session days start with the live unfollow precheck.
+    assert [j[0] for j in jobs] == ["unfollow precheck", "freshness audit"]
+    assert "--count" in jobs[1][1] and jobs[1][1][-1] == "100"
     assert any("provider" in l[0] for l in logged)
 
 

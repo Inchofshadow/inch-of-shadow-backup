@@ -2,6 +2,34 @@
 
 One section per week, newest first, written on Mondays by stats/weekly_summary.py from the daily snapshots. Numbers come from the snapshots only. SoundCloud and YouTube; Instagram is not collected (direct reads retired).
 
+## Week to 2026-11-09 (vs 2026-11-03)
+
+| Platform | Metric | Last week | This week | Change |
+|---|---|---|---|---|
+| SoundCloud | Followers | 462 | 488 | +26 |
+| SoundCloud | Following | 477 | 450 | -27 |
+| SoundCloud | Plays | 3308 | 3392 | +84 |
+| SoundCloud | Likes | 273 | 281 | +8 |
+| SoundCloud | Reposts | 53 | 55 | +2 |
+| SoundCloud | Comments | 71 | 73 | +2 |
+| YouTube | Subscribers | 5 | 5 | +0 |
+| YouTube | Views | 591 | 606 | +15 |
+| YouTube | Likes | 11 | 12 | +1 |
+| YouTube | Videos | 13 | 13 | +0 |
+| Spotify | Listeners (7 days) | 64 | 58 | -6 |
+| Spotify | Streams (7 days) | 91 | 78 | -13 |
+| Spotify | Saves (7 days) | 1 | 6 | +5 |
+| Spotify | Playlist adds (7 days) | 26 | 14 | -12 |
+| Spotify | Followers | 68 | 69 | +1 |
+
+| SoundCloud ratio | Last week | This week | Floor | Target |
+|---|---|---|---|---|
+| followers : following | 0.97:1 | 1.08:1 | 1:1 | 1.4-1.6:1 |
+
+- **The Deceiver leads SoundCloud with +35 plays.** Pin The Deceiver to the top of your SoundCloud profile this week.
+- **Farewell tops Spotify with 21 streams.** Pitch Farewell to a few independent playlist curators who added you before.
+- **Insomnia DJ Set adds 8 plays.** Add a full tracklist to the Insomnia set description so listeners can find tracks.
+
 ## Week to 2026-11-02 (vs 2026-10-26)
 
 | Platform | Metric | Last week | This week | Change |

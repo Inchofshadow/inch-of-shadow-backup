@@ -133,6 +133,8 @@ def test_sweep_runs_when_export_verification_covers_window():
     today = date(2026, 6, 29)
     tracker = _sweep_tracker("2026-06-28", followed_at="2026-05-15",
                              verified_at="2026-06-28")
+    for e in tracker["active_follows"]:  # 2026-11-15 live precheck gate
+        e["precheck_not_follower_at"] = today.isoformat()
     eligible, rejects = eng.plan_unfollow_sweep(cfg, tracker, set(), set(), _PHASE, today)
     assert len(eligible) == 1
     assert eligible[0].handle == "somedue"
