@@ -1,0 +1,183 @@
+{
+ "release": "pinocchio-single",
+ "mode": "audit",
+ "as_of": "2026-11-16",
+ "source": "SoundCloud + Bandcamp as recorded on disk (plans/htn-upload-pack-sc-bandcamp.md incl. the 11-11 acid disco + 11-15 Bandcamp read, releases/pinocchio-single.json distribution notes); YouTube = yt_release.py draft text generated in memory 11-16 (no file written). Not on record, left out: SC playlist tags, Bandcamp track tags and track abouts.",
+ "bpm_in_copy_ok": false,
+ "fields": [
+  {
+   "platform": "soundcloud",
+   "field": "title",
+   "item": "Half the Night",
+   "text": "Half the Night"
+  },
+  {
+   "platform": "soundcloud",
+   "field": "genre",
+   "item": "Half the Night",
+   "text": "Dark Disco"
+  },
+  {
+   "platform": "soundcloud",
+   "field": "tags",
+   "item": "Half the Night",
+   "tags": [
+    "electro",
+    "dark disco",
+    "acid",
+    "EBM",
+    "italo disco",
+    "Berlin",
+    "127 bpm",
+    "acid disco"
+   ]
+  },
+  {
+   "platform": "soundcloud",
+   "field": "description",
+   "item": "Half the Night",
+   "text": "Half the Night is a restless 303 acid line over electro drums and a bass that never lets go, falling deeper into a dark, rolling trance arp. Pinocchio twists its 303 leads through a minimal groove full of echo and smoke. Hypnotic dark disco for the lost hours, from Berlin.\n\nBandcamp: https://inchofshadow.bandcamp.com/album/half-the-night?campaign=sc-desc",
+   "voice": true,
+   "approved": "2026-11-10 Amir (text), link line 11-13"
+  },
+  {
+   "platform": "soundcloud",
+   "field": "title",
+   "item": "Pinocchio",
+   "text": "Pinocchio"
+  },
+  {
+   "platform": "soundcloud",
+   "field": "genre",
+   "item": "Pinocchio",
+   "text": "Dark Disco"
+  },
+  {
+   "platform": "soundcloud",
+   "field": "tags",
+   "item": "Pinocchio",
+   "tags": [
+    "electro",
+    "dark disco",
+    "acid",
+    "EBM",
+    "italo disco",
+    "Berlin",
+    "126 bpm",
+    "acid disco"
+   ]
+  },
+  {
+   "platform": "soundcloud",
+   "field": "description",
+   "item": "Pinocchio",
+   "text": "Half the Night is a restless 303 acid line over electro drums and a bass that never lets go, falling deeper into a dark, rolling trance arp. Pinocchio twists its 303 leads through a minimal groove full of echo and smoke. Hypnotic dark disco for the lost hours, from Berlin.\n\nBandcamp: https://inchofshadow.bandcamp.com/album/half-the-night?campaign=sc-desc",
+   "voice": true,
+   "approved": "2026-11-10 Amir (text), link line 11-13"
+  },
+  {
+   "platform": "soundcloud",
+   "field": "playlist_title",
+   "item": "EP playlist",
+   "text": "Half the Night"
+  },
+  {
+   "platform": "soundcloud",
+   "field": "playlist_description",
+   "item": "EP playlist",
+   "text": "Half the Night is a restless 303 acid line over electro drums and a bass that never lets go, falling deeper into a dark, rolling trance arp. Pinocchio twists its 303 leads through a minimal groove full of echo and smoke. Hypnotic dark disco for the lost hours, from Berlin.\n\nBandcamp: https://inchofshadow.bandcamp.com/album/half-the-night?campaign=sc-desc",
+   "voice": true,
+   "approved": "2026-11-10 Amir (text), link line 11-13"
+  },
+  {
+   "platform": "bandcamp",
+   "field": "album_title",
+   "item": "album",
+   "text": "Half the Night"
+  },
+  {
+   "platform": "bandcamp",
+   "field": "about",
+   "item": "album",
+   "text": "Half the Night is a restless 303 acid line over electro drums and a bass that never lets go, falling deeper into a dark, rolling trance arp. Pinocchio twists its 303 leads through a minimal groove full of echo and smoke. Hypnotic dark disco for the lost hours, from Berlin.",
+   "voice": true,
+   "approved": "2026-11-10 Amir"
+  },
+  {
+   "platform": "bandcamp",
+   "field": "credits",
+   "item": "album",
+   "text": "Written and produced by Amir Miller. Mixed and mastered by Amir Miller at Ambertone Studio, Berlin. Cover art: Inch of Shadow.",
+   "approved": "2026-11-10 Amir"
+  },
+  {
+   "platform": "bandcamp",
+   "field": "tags",
+   "item": "album",
+   "tags": [
+    "electro",
+    "darkwave",
+    "acid disco",
+    "acid",
+    "berlin",
+    "dark disco",
+    "ebm",
+    "italo disco"
+   ]
+  },
+  {
+   "platform": "youtube",
+   "field": "title",
+   "item": "Half the Night",
+   "text": "Inch of Shadow - Half the Night (Official Audio)"
+  },
+  {
+   "platform": "youtube",
+   "field": "description",
+   "item": "Half the Night",
+   "text": "Half the Night by Inch of Shadow (Indigo Children Records, 2026). [TODO one sentence on how it SOUNDS: genre, tempo 127.0 BPM, the instruments. Never what it means.]\n\nStream / buy: [TODO the smart link or the Bandcamp link]\n\nWritten and produced by Inch of Shadow.\nMixed and mastered by Inch of Shadow at Ambertone Studios.\nAmbertone: https://www.instagram.com/ambertone.studios/\nReleased on Indigo Children Records.\n\nInch of Shadow online:\nSpotify: https://open.spotify.com/artist/5k4SyH7JRPMJe1RHYMI2CT\nApple Music: https://music.apple.com/us/artist/inch-of-shadow/1784503341\nBandcamp: https://inchofshadow.bandcamp.com\nSoundCloud: https://soundcloud.com/inch-of-shadow\nInstagram: https://www.instagram.com/inch_of_shadow/\n\n#Electronic #DarkDisco",
+   "voice": true
+  },
+  {
+   "platform": "youtube",
+   "field": "tags",
+   "item": "Half the Night",
+   "tags": [
+    "inch of shadow",
+    "official audio",
+    "berlin electronic",
+    "electronic",
+    "dark disco",
+    "half the night",
+    "indigo children records"
+   ]
+  },
+  {
+   "platform": "youtube",
+   "field": "title",
+   "item": "Pinocchio",
+   "text": "Inch of Shadow - Pinocchio (Official Audio)"
+  },
+  {
+   "platform": "youtube",
+   "field": "description",
+   "item": "Pinocchio",
+   "text": "Pinocchio by Inch of Shadow (Indigo Children Records, 2026). [TODO one sentence on how it SOUNDS: genre, tempo 126.0 BPM, the instruments. Never what it means.]\n\nStream / buy: [TODO the smart link or the Bandcamp link]\n\nWritten and produced by Inch of Shadow.\nMixed and mastered by Inch of Shadow at Ambertone Studios.\nAmbertone: https://www.instagram.com/ambertone.studios/\nReleased on Indigo Children Records.\n\nInch of Shadow online:\nSpotify: https://open.spotify.com/artist/5k4SyH7JRPMJe1RHYMI2CT\nApple Music: https://music.apple.com/us/artist/inch-of-shadow/1784503341\nBandcamp: https://inchofshadow.bandcamp.com\nSoundCloud: https://soundcloud.com/inch-of-shadow\nInstagram: https://www.instagram.com/inch_of_shadow/\n\n#Electronic #DarkDisco",
+   "voice": true
+  },
+  {
+   "platform": "youtube",
+   "field": "tags",
+   "item": "Pinocchio",
+   "tags": [
+    "inch of shadow",
+    "official audio",
+    "berlin electronic",
+    "electronic",
+    "dark disco",
+    "pinocchio",
+    "indigo children records"
+   ]
+  }
+ ]
+}

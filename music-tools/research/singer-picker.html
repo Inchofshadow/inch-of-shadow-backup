@@ -1,0 +1,152 @@
+<title>Vocal Rack Singers</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Marcellus&family=Inter:wght@400;500;600&display=swap">
+<style>
+/* Layout: one column of genre groups; each group a wrap of tappable singer chips; sticky counter bar */
+:root{
+  --bg:#F2EFEA; --fg:#1A1715; --muted:#6E665F; --line:#D9D3CB; --chip:#FFFFFF;
+  --pick:#1A1715; --pick-fg:#F2EFEA; --done:#7A8B6F; --note:#A2793F;
+  --display:"Marcellus", Georgia, serif; --body:"Inter", system-ui, sans-serif;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#0F0D0C; --fg:#D6D1C8; --muted:#8C847B; --line:#2A2622; --chip:#181513;
+  --pick:#D6D1C8; --pick-fg:#0F0D0C; --done:#9DB08F; --note:#C99A5B; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0F0D0C; --fg:#D6D1C8; --muted:#8C847B; --line:#2A2622; --chip:#181513;
+  --pick:#D6D1C8; --pick-fg:#0F0D0C; --done:#9DB08F; --note:#C99A5B; color-scheme:dark}
+body{background:var(--bg);color:var(--fg);font-family:var(--body);font-size:15px;line-height:1.5}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--bg)}
+.wrap{max-width:980px;margin:0 auto;padding-block:28px 64px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+h1{font-family:var(--display);font-weight:400;font-size:clamp(28px,5vw,40px);margin:0 0 6px;text-wrap:balance}
+.lede{color:var(--muted);max-width:62ch;margin:0 0 18px}
+.legend{display:flex;flex-wrap:wrap;gap:14px;font-size:13px;color:var(--muted);margin-bottom:8px}
+.dot{display:inline-block;width:8px;height:8px;border-radius:50%;margin-right:6px;vertical-align:middle}
+.bar{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--bg);border-bottom:1px solid var(--line);
+  display:flex;flex-wrap:wrap;align-items:center;gap:10px 16px;padding:12px 0;margin-bottom:12px}
+.count{font-family:var(--display);font-size:20px}
+.status{font-size:13px;color:var(--muted)}
+.bar label{font-size:13px;display:flex;align-items:center;gap:6px;cursor:pointer}
+section{padding:18px 0;border-bottom:1px solid var(--line)}
+h2{font-family:var(--display);font-weight:400;font-size:21px;margin:0 0 2px}
+.gnote{color:var(--muted);font-size:13px;margin:0 0 12px}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+button.chip{font:inherit;font-size:14px;text-align:left;background:var(--chip);color:var(--fg);border:1px solid var(--line);
+  border-radius:999px;padding:7px 14px;cursor:pointer;display:flex;gap:8px;align-items:baseline;max-width:100%}
+button.chip small{color:var(--muted);font-size:12px}
+button.chip[aria-pressed="true"]{background:var(--pick);color:var(--pick-fg);border-color:var(--pick)}
+button.chip[aria-pressed="true"] small{color:var(--pick-fg);opacity:.75}
+button.chip:focus-visible{outline:2px solid var(--note);outline-offset:2px}
+button.chip:disabled{cursor:default}
+.tag{font-size:11px;letter-spacing:.06em;text-transform:uppercase;border-radius:999px;padding:1px 7px;border:1px solid currentColor}
+.tag.done{color:var(--done)} .tag.note{color:var(--note)}
+button.chip[aria-pressed="true"] .tag{color:var(--pick-fg)}
+.hidepicked section.empty{display:none}
+.onlypicks button.chip[aria-pressed="false"]{display:none}
+.onlypicks section:not(:has(button.chip[aria-pressed="true"])){display:none}
+@media (prefers-reduced-motion:no-preference){button.chip{transition:background .12s,color .12s}}
+</style>
+
+<div class="wrap">
+  <h1>Vocal Rack Singers</h1>
+  <p class="lede">Tap a singer to pick them for the next vocal racks. Picks save on their own and Claude reads them. Before each rack gets built, its chain is checked against an engineer or artist interview. A singer with no documented chain gets an unverified rack.</p>
+  <div class="legend">
+    <span><span class="dot" style="background:var(--done)"></span>Rack already built</span>
+    <span><span class="dot" style="background:var(--note)"></span>Researched, not built yet</span>
+    <span>No tag: new, needs research</span>
+  </div>
+  <div class="bar">
+    <span class="count" id="count">0 picked</span>
+    <label><input type="checkbox" id="only"> Show my picks only</label>
+    <span class="status" id="status">Connecting…</span>
+  </div>
+  <div id="groups"></div>
+</div>
+
+<script>
+const GROUPS = [
+ ["Dark pop & tuned voice","Close, tuned, modern. Your Lana / Weeknd side.",[
+  ["Lana Del Rey","done"],["The Weeknd","done"],["Billie Eilish"],["Lorde"],["FKA twigs"],["Banks"],["Ethel Cain"],["Caroline Polachek"],["Grimes"],["Sevdaliza"],["Marina"],["Halsey"],["Charli XCX"],["Troye Sivan"],["Rosalía"]]],
+ ["New wave & synth-pop","The 80s, polished and cold.",[
+  ["Dave Gahan (Depeche Mode)","note"],["Tears for Fears"],["New Order (Bernard Sumner)"],["Pet Shop Boys"],["OMD"],["Soft Cell (Marc Almond)"],["Talk Talk (Mark Hollis)"],["Duran Duran"],["Eurythmics (Annie Lennox)"],["Yazoo (Alison Moyet)"],["A-ha (Morten Harket)"],["Human League"],["Gary Numan"],["Ultravox (Midge Ure)"]]],
+ ["Original post-punk & goth","Where the dark voice comes from.",[
+  ["Robert Smith (The Cure)","done"],["Ian Curtis (Joy Division)"],["Siouxsie Sioux"],["Peter Murphy (Bauhaus)"],["Andrew Eldritch (Sisters of Mercy)"],["Ian McCulloch (Echo & the Bunnymen)"],["Morrissey (The Smiths)"],["Liz Fraser (Cocteau Twins)"],["Nico"],["Lydia Lunch"],["Killing Joke (Jaz Coleman)"],["The Chameleons"],["Dead Can Dance (Brendan Perry, Lisa Gerrard)"]]],
+ ["Post-punk now","The current wave, Berlin-adjacent.",[
+  ["IDLES (Joe Talbot)","note"],["Protomartyr (Joe Casey)","note"],["Molchat Doma"],["She Past Away"],["Fontaines D.C."],["Interpol (Paul Banks)"],["The Horrors"],["Editors"],["Viagra Boys"],["Shame"],["Boy Harsher"],["Drab Majesty"],["Black Country, New Road"],["Squid"],["Lebanon Hanover"],["Ultra Sunn"],["Dry Cleaning"],["Preoccupations"]]],
+ ["Witch house & dark electronic","Your electronic lane.",[
+  ["Crystal Castles","done"],["Salem"],["Ritualz"],["HEALTH"],["Ladytron"],["Fever Ray / The Knife"],["Purity Ring"],["Boy Harsher (Jae Matthews)"],["Kontravoid"],["Tropic of Cancer"],["Pictureplane"]]],
+ ["Dream & shoegaze","Far away, washed, hazy.",[
+  ["Deftones (Chino Moreno)","done"],["Beach House"],["Slowdive"],["Mazzy Star (Hope Sandoval)"],["Chelsea Wolfe"],["Zola Jesus"],["Cigarettes After Sex"],["My Bloody Valentine"],["DIIV"],["Wisp"],["Julee Cruise"]]],
+ ["Alt metal & prog","Heavy, dark, layered. The Maynard side.",[
+  ["Tool (Maynard James Keenan)"],["A Perfect Circle (Maynard James Keenan)"],["Puscifer (Maynard James Keenan)"],["Nine Inch Nails (Trent Reznor)"],["Smashing Pumpkins (Billy Corgan)"],["Alice in Chains (Layne Staley)"],["Soundgarden (Chris Cornell)"],["Type O Negative (Peter Steele)"],["Porcupine Tree (Steven Wilson)"],["Katatonia (Jonas Renkse)"],["Chevelle"],["Faith No More (Mike Patton)"]]],
+ ["Hip-hop & alt vocal","Tuned, layered, ad-libs.",[
+  ["Travis Scott","done"],["Kid Cudi"],["Frank Ocean"],["Bladee / Drain Gang"],["Yung Lean"],["Lil Peep"],["Kanye West (808s & Heartbreak)"],["Tyler, the Creator"],["Juice WRLD"],["Playboi Carti"],["Future"],["$uicideboy$"],["Ecco2k"]]],
+ ["Auto-Tune rap & melodic trap","Tuning as the instrument: hard retune, stacked, ad-libs.",[
+  ["T-Pain"],["Young Thug"],["Lil Uzi Vert"],["Don Toliver"],["Gunna"],["Lil Baby"],["Post Malone"],["Swae Lee"],["NAV"],["Trippie Redd"],["XXXTentacion"],["Lil Tecca"],["Iann Dior"],["Destroy Lonely"],["Ken Carson"],["Homixide Gang"],["Yeat"],["Lancey Foux"],["Bryson Tiller"],["PARTYNEXTDOOR"],["6LACK"],["Rod Wave"],["Polo G"],["Chief Keef"],["Lil Durk"],["Quavo"],["Ty Dolla $ign"],["Lil Wayne (Tha Carter III era)"],["Bon Iver x Kanye (Lost in the World)"],["Ufo361"],["Apache 207"],["RIN"],["Luciano"],["Central Cee"],["Yung Hurn"]]],
+ ["Emo & raw indie","Untreated, close, emotion left in.",[
+  ["Sunny Day Real Estate (Jeremy Enigk)"],["American Football"],["Bright Eyes (Conor Oberst)"],["Elliott Smith"],["Phoebe Bridgers"],["Mitski"],["Alex G"],["Duster"],["Cursive"]]],
+ ["Baritone & crooner","Low voice, big room.",[
+  ["Nick Cave","done"],["Matt Berninger (The National)"],["David Bowie (Heroes)"],["Scott Walker"],["Leonard Cohen"],["Tom Waits"],["Ian Astbury (The Cult)"],["Chris Isaak"],["Mark Lanegan"],["Roy Orbison"]]],
+ ["Modern alt & art pop","Treated, experimental, space.",[
+  ["Thom Yorke (Radiohead)"],["Massive Attack"],["Beth Gibbons (Portishead)"],["Bon Iver (Prismizer)"],["James Blake"],["Arca"],["Björk"],["Kate Bush"],["Sufjan Stevens"],["Moses Sumney"],["Perfume Genius"]]]
+];
+const slug = s => s.toLowerCase().replace(/[^a-z0-9]+/g,"-").replace(/^-|-$/g,"");
+const picks = new Map();
+let db = null;
+
+function render(){
+  const host = document.getElementById("groups"); host.textContent = "";
+  for (const [g, note, list] of GROUPS){
+    const sec = document.createElement("section");
+    const h = document.createElement("h2"); h.textContent = g;
+    const p = document.createElement("p"); p.className = "gnote"; p.textContent = note;
+    const wrap = document.createElement("div"); wrap.className = "chips";
+    for (const [name, state] of list){
+      const id = slug(name);
+      const b = document.createElement("button"); b.className = "chip"; b.id = "c-" + id; b.type = "button";
+      b.setAttribute("aria-pressed", picks.has(id) ? "true" : "false");
+      b.append(document.createTextNode(name));
+      if (state){ const t = document.createElement("span"); t.className = "tag " + state; t.textContent = state === "done" ? "built" : "notes"; b.append(t); }
+      b.disabled = !db;
+      b.addEventListener("click", () => toggle(id, name, g, b));
+      wrap.append(b);
+    }
+    sec.append(h, p, wrap); host.append(sec);
+  }
+  document.getElementById("count").textContent = picks.size + " picked";
+}
+
+async function toggle(id, name, group, btn){
+  if (!db) return;
+  const on = btn.getAttribute("aria-pressed") !== "true";
+  btn.setAttribute("aria-pressed", on ? "true" : "false");
+  const st = document.getElementById("status");
+  try {
+    const ref = db.collection("picks").doc(id);
+    if (on) await ref.set({ name, group, pick: true, at: new Date().toISOString() });
+    else await ref.delete();
+    st.textContent = "Saved";
+  } catch (e) {
+    btn.setAttribute("aria-pressed", on ? "false" : "true");
+    st.textContent = "Not saved: " + (e && e.message ? e.message : "try again");
+  }
+}
+
+document.getElementById("only").addEventListener("change", e => {
+  document.body.classList.toggle("onlypicks", e.target.checked);
+});
+
+render();
+(async () => {
+  const st = document.getElementById("status");
+  db = await (window.claude?.use ? window.claude.use("db") : null);
+  if (!db){ st.textContent = "Picks can't be saved here. Open the page in claude.ai, signed in."; render(); return; }
+  const timer = setTimeout(() => { st.textContent = "Still connecting… picks may be out of date."; }, 10000);
+  db.collection("picks").onSnapshot(snap => {
+    if (!snap.fromCache) clearTimeout(timer);
+    picks.clear();
+    for (const d of snap.docs) if (d.exists) picks.set(d.id, d.data());
+    st.textContent = "Picks save automatically";
+    render();
+  }, err => { clearTimeout(timer); st.textContent = "Can't load picks: " + (err && err.message ? err.message : "error"); });
+})();
+</script>

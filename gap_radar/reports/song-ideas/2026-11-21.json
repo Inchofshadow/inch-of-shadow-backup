@@ -1,0 +1,216 @@
+[
+ {
+  "name": "Dancing through the sadness",
+  "insight": "Listeners keep describing the same pull in two directions: the music is dark or sad, and it makes them move. People talk about crying and dancing at once, about euphoric despair, and about goth nerds dancing alone in their rooms. Grief and dance sit together instead of cancelling each other out.",
+  "examples": [
+   "wants to dance inside sadness and dark memories",
+   "cried and danced through the same song at a show",
+   "calls it groovy but sad, a beautiful despair",
+   "goth kids dancing solo in the bedroom"
+  ],
+  "evidence_ids": [
+   195,
+   235,
+   75,
+   80,
+   260,
+   218,
+   88,
+   169
+  ],
+  "use": "Write a verse where the narrator admits the loss plainly, while the chorus refuses to stop moving. The body keeps dancing because stopping would mean feeling it fully.",
+  "strength": 5
+ },
+ {
+  "name": "Alone, and maybe better for it",
+  "insight": "Solitude comes up again and again, and it is ambivalent. It is painful isolation, and also a chosen state that the music makes bearable or even good. People describe being alone in tough times, a cage they built themselves, modern loneliness as a manifesto, and joke that they are better off alone as long as the band comes along.",
+  "examples": [
+   "got through rough stretches alone with this band",
+   "left the city to escape loneliness, which followed anyway",
+   "song read as a manifesto of modern loneliness",
+   "introverts thanking someone for doing the legwork"
+  ],
+  "evidence_ids": [
+   77,
+   66,
+   161,
+   90,
+   76,
+   10,
+   199
+  ],
+  "use": "Write a narrator who can't decide if their solitude is a wound or a refuge. Let the beat argue for refuge while the words keep doubting it.",
+  "strength": 5
+ },
+ {
+  "name": "Song as lifeline and shelter",
+  "insight": "Many listeners say the music holds them up. It gives a 57-year-old a reason to keep living, gets someone through adulthood, and acts as a mental place to retreat to from a brutal system. People return to it whatever happens, and they find it calming, reassuring, at ease.",
+  "examples": [
+   "a reason to keep going at 57",
+   "helping them survive being an adult",
+   "a dissociative refuge from a harsh system",
+   "always coming back here no matter what"
+  ],
+  "evidence_ids": [
+   152,
+   266,
+   257,
+   0,
+   1,
+   213,
+   119,
+   202,
+   77,
+   206
+  ],
+  "use": "Write the song as a hidden room the listener can step into: a few minutes where the outside pressure can't reach them.",
+  "strength": 5
+ },
+ {
+  "name": "Nostalgia for a past never lived",
+  "insight": "Listeners feel homesick for eras and places they barely or never knew. That means the late USSR, Yugoslavia, Cold War childhoods, and the 1980s. The music and images feel like a stolen home or a dream slipping away. Some write as people who lived through it, others as people born too late.",
+  "examples": [
+   "a place that feels like their own home, taken away",
+   "landscapes like a dream of the past fading out",
+   "a Yugoslav kid who sees only nostalgia",
+   "the soul the West supposedly lost"
+  ],
+  "evidence_ids": [
+   30,
+   14,
+   21,
+   15,
+   2,
+   13,
+   32
+  ],
+  "use": "Write about longing for a city you only know from photos and songs, and admit that the memory is borrowed.",
+  "strength": 4
+ },
+ {
+  "name": "Brutalist ruins, sad yet beautiful",
+  "insight": "Concrete blocks, metro stations, decaying Soviet architecture and industrial materials strike people as ugly, sad and gorgeous all at once. Listeners keep reaching for dystopian sci-fi or horror-film framing, and they notice small flashes of human warmth among the concrete.",
+  "examples": [
+   "so sad and ugly yet atmospheric and beautiful",
+   "scenes straight out of a dystopian sci-fi film",
+   "small warm human moments against harsh concrete",
+   "a rave of elites, unaware of the real ruins on screen"
+  ],
+  "evidence_ids": [
+   19,
+   29,
+   39,
+   12,
+   11,
+   26,
+   36,
+   31,
+   22
+  ],
+  "use": "Set the song in a housing block or a cold station at night, and find one tender human detail inside the concrete.",
+  "strength": 4
+ },
+ {
+  "name": "Time-slip back to the 80s",
+  "insight": "The sound throws listeners into layered time travel. People mention being back in 2011 pretending it's 1983, a fever dream of the band playing their 80s college town, older fans hearing their teenage new wave years again, and 80s disco kids who became goths.",
+  "examples": [
+   "2011 pretending to be 1983",
+   "dreaming the band existed back in the 80s",
+   "feeling the heartbeat of their youth again",
+   "disco kids of the 80s who turned goth"
+  ],
+  "evidence_ids": [
+   54,
+   123,
+   136,
+   117,
+   169,
+   65,
+   131
+  ],
+  "use": "Write a nested-memory lyric: a night now that echoes a night then, which was itself imitating an earlier era.",
+  "strength": 4
+ },
+ {
+  "name": "Midnight dark club as sanctuary",
+  "insight": "The club at night is described as a protected room. The world's pain stays outside, a stage becomes a goth club, and specific hours (midnight to 2 am) carry the feeling. Shows are remembered as special nights of drinking, shouting, and a mix of goths and synth heads going wild.",
+  "examples": [
+   "much pain in the world, but none in this room",
+   "alt clubs feel like this between 12 and 2",
+   "a festival stage turned into a goth club",
+   "got drunk, loud, the night ran hot and wild"
+  ],
+  "evidence_ids": [
+   78,
+   94,
+   51,
+   135,
+   103,
+   235,
+   87
+  ],
+  "use": "Write a lyric that clocks the hours inside a club after midnight as a temporary truce with the world outside.",
+  "strength": 4
+ },
+ {
+  "name": "Escape fantasy versus daily grind",
+  "insight": "Listeners hear their own work routines in the songs. That means being stuck in a retail job, commuting before dawn, and wanting to run while accepting routine. The music sits in the gap between dull obligation and the urge to flee.",
+  "examples": [
+   "wanting out yet accepting the routine",
+   "the ultimate stuck-in-a-discount-store-job song",
+   "walking to work in the dark, one bat overhead",
+   "releases arrive more often than they go to work"
+  ],
+  "evidence_ids": [
+   55,
+   56,
+   76,
+   255,
+   266,
+   257
+  ],
+  "use": "Follow a narrator through an early shift whose inner soundtrack is a getaway that never quite happens.",
+  "strength": 3
+ },
+ {
+  "name": "Lost generation's shared anthem",
+  "insight": "Listeners adopt dark songs as a collective voice for a wounded generation. Turkish fans tie a release to the earthquake anniversary and to youth feeling crushed. Fans in other countries then claim the same lost-generation label for themselves, meeting in familiar shadows.",
+  "examples": [
+   "anthem of a lost generation tied to an earthquake date",
+   "young people's mood under pressure put into song",
+   "Colombia's lost generation calling the band back",
+   "meeting again in the shadows they know well"
+  ],
+  "evidence_ids": [
+   150,
+   160,
+   168,
+   177,
+   157,
+   154,
+   170
+  ],
+  "use": "Write from a 'we' rather than an 'I': a generation of night people who recognise each other on the dancefloor without speaking.",
+  "strength": 4
+ },
+ {
+  "name": "Season, weather and night ritual",
+  "insight": "Listeners anchor songs to specific weather and hours. Examples include dark winter releases instead of summer hype, rain and a cozy bed, a pre-dawn walk under a bat, wandering in moonlight, and summertime goth. The setting becomes part of how the song lands.",
+  "examples": [
+   "releasing darkness in the gloom of winter",
+   "rain, a warm bed and a new track",
+   "lonely night wandering under the moon",
+   "a goth mood transplanted into summer"
+  ],
+  "evidence_ids": [
+   148,
+   162,
+   76,
+   199,
+   50,
+   197
+  ],
+  "use": "Build the song around one precise weather-and-hour image, like cold rain at 5 am, and let it carry the emotion without naming it.",
+  "strength": 3
+ }
+]

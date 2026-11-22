@@ -1,0 +1,299 @@
+[
+ {
+  "name": "Goth-scene identity words: vampire music, goth set, elder goth, baby bat",
+  "insight": "This is the most repeated scene vocabulary, and it comes from many different commenters on Book Club Radio sets tagged EBM and darkwave. People call the music \"vampire music\" or \"vampiric\". They call themselves \"elder goth\" or \"baby bat\". They name the space a \"goth industrial dance floor\", recall \"German goth clubs\" and \"Belgian clubs\", and praise a \"batcave feel\". The DJ herself uses \"vampire music\" as a hook.",
+  "examples": [
+   "vampire music",
+   "vampiric music",
+   "goth set",
+   "elder goth",
+   "baby bat heart",
+   "gothy",
+   "goth industrial dance floor",
+   "German goth clubs",
+   "batcave feel",
+   "Gothic Dance & EBM"
+  ],
+  "evidence_ids": [
+   70,
+   71,
+   88,
+   90,
+   97,
+   163,
+   208,
+   209,
+   211,
+   226,
+   73
+  ],
+  "use": "Use in titles and descriptions (e.g. \"vampire music\" or \"goth dance floor\" in a mix or track blurb) and in bio copy for scene positioning. On SoundCloud and Bandcamp, \"goth\" works as a secondary tag. Avoid making it the primary genre tag, because it pulls a guitar-based post-punk crowd.",
+  "strength": 5
+ },
+ {
+  "name": "Stacked slash genre strings and their spelling variants",
+  "insight": "Nearly every dark mix that draws engagement is titled with 3–8 stacked labels. Spelling is inconsistent across channels: Darkwave / Dark wave / DARK WAVE, Coldwave / Cold wave, Post-Punk / Postpunk, Synthwave / Synth wave / dark synth wave. Viewers repeat these strings back, sometimes copy-pasting the full title. Minimal wave and minimal synth appear as companion labels to coldwave.",
+  "examples": [
+   "Dark Techno / EBM / Industrial Bass",
+   "Post-Punk, Darkwave, Coldwave",
+   "Dark Dance, Darkwave, EBM, Synthpop, Postpunk, Industrial",
+   "Dark wave/minimal wave/New wave/Synth wave/Cold wave",
+   "Cold Wave / Minimal synth / Minimal wave",
+   "dark synth wave",
+   "Coldwave Goth Mix"
+  ],
+  "evidence_ids": [
+   130,
+   132,
+   139,
+   147,
+   152,
+   179,
+   217,
+   244,
+   253,
+   340,
+   343
+  ],
+  "use": "Titles and descriptions should cover both spellings (Darkwave and Dark Wave, Coldwave and Cold Wave), because the platforms index them separately. Tags: Darkwave, Coldwave, EBM, Dark Techno, Minimal Wave. Per house rules, normalize \"Synth wave\" or \"dark synth wave\" to \"Synthwave\". \"New wave\" shows up in these stacks but belongs only in bio influence copy, never as a tag.",
+  "strength": 5
+ },
+ {
+  "name": "\"Dark disco\" is a contested search term",
+  "insight": "Searching \"dark disco mix\" returns a mix titled \"dark disco, ebm, italo disco\" alongside a Ukrainian pop single called \"Dark Disco\" (Jerry Heil). The pop single and its studio clip produce dozens of Eurovision and pop-fan comments. \"Dark disco\" also pairs with \"Italo\" in the \"Dark Italo Disco Rework/Remix\" format, where 80s classics are reworked. Those commenters praise the \"dark dance\" feel, the vocoder and new life for old hits.",
+  "examples": [
+   "dark disco, ebm, italo disco mix",
+   "Dark Disco (pop single)",
+   "Dark Italo Disco Rework",
+   "Dark Italo Disco Remix",
+   "dark dance, deep vibes",
+   "vocoder"
+  ],
+  "evidence_ids": [
+   0,
+   4,
+   12,
+   17,
+   24,
+   31,
+   48,
+   396,
+   402,
+   414,
+   437
+  ],
+  "use": "Do not rely on bare \"dark disco\" in YouTube titles or Spotify-facing copy, because the pop crowd dominates it. Pair it instead, e.g. \"dark disco / EBM\" or \"dark disco, coldwave\". Keep \"Dark Disco\" as a Beatport and Bandcamp tag. \"Italo\" is useful in descriptions as an influence word, but a \"Dark Italo rework\" framing pulls a nostalgia-for-80s-hits crowd.",
+  "strength": 5
+ },
+ {
+  "name": "Industrial/EBM legacy names as reference points",
+  "insight": "Commenters on EBM and goth sets light up at classic industrial and EBM acts and name them as their touchstones. The names include Skinny Puppy (several times), Lords of Acid / LOA, Thrill Kill Cult, KMFDM, Crystal Castles, plus Neurotic Fish and VNV Nation on a darkwave mix. Several frame these names as nostalgia (\"taking me back to '93\").",
+  "examples": [
+   "Skinny Puppy",
+   "Lords of Acid",
+   "LOA",
+   "Thrill Kill Cult",
+   "KMFDM",
+   "Crystal Castles",
+   "Neurotic Fish",
+   "NVN nation (sic)"
+  ],
+  "evidence_ids": [
+   71,
+   72,
+   74,
+   82,
+   93,
+   94,
+   236,
+   185
+  ],
+  "use": "Use these for \"for fans of\" lines in Bandcamp and SoundCloud descriptions and bio copy. Crystal Castles and Lords of Acid bridge to younger and acid-leaning listeners. Skinny Puppy and KMFDM signal harder industrial, so use them sparingly if the tracks are more disco than industrial.",
+  "strength": 4
+ },
+ {
+  "name": "Darkwave/post-punk band references, including German-language darkwave",
+  "insight": "Coldwave and darkwave playlist commenters name current post-punk and darkwave bands: Lebanon Hanover, She Past Away, Twin Tribes, The Cure (\"A Forest\"), Bauhaus, Type O Negative, plus Rammstein and Eisbrecher for German-language material. A strong German-speaking cluster says German suits the \"darkest\" darkwave and reminisces about Wave and New Romantics.",
+  "examples": [
+   "Lebanon Hanover",
+   "She Past Away",
+   "Twin Tribes",
+   "The Cure",
+   "Bauhaus",
+   "Ramstein (sic)",
+   "Eisbrecher",
+   "Type O Negative",
+   "German is the perfect language for darkwave",
+   "Wave und New Romantics"
+  ],
+  "evidence_ids": [
+   156,
+   164,
+   170,
+   181,
+   198,
+   204,
+   207,
+   192,
+   200,
+   203,
+   186
+  ],
+  "use": "Use these for comparison lines in descriptions and Spotify pitch copy. For a Berlin artist adding his own vocals from 2026, the German-language darkwave audience is a clear target: use German descriptors (\"düster\", \"Atmosphäre\") in bilingual descriptions. Be careful with Rammstein and Eisbrecher, which pull a Neue Deutsche Härte metal crowd.",
+  "strength": 4
+ },
+ {
+  "name": "\"Dark dance\" / dark electronic dance plus the French electroclash–minimal synth lineage",
+  "insight": "\"Dark Dance\" is used as a lead genre label in Strict Tempo stream titles. A commenter also calls a reworked track \"dark dance\", and a set is called a \"dark electronic dance set\". The same Synth Pop & Darkwave set draws repeated praise for Kompromat (with Vitalic and Rebeka Warrior named), Fischerspooner (twice), Miss Kittin, I-F, La Tour, Red Flag, Mareux, Dina Summer and Book of Love. This is the closest public vocabulary to \"dark dance wave\".",
+  "examples": [
+   "Dark Dance",
+   "dark dance",
+   "dark electronic dance set",
+   "Kompromat",
+   "Vitalic",
+   "Rebeka Warrior",
+   "Fischerspooner",
+   "Miss Kittin",
+   "I-F",
+   "Dina Summer"
+  ],
+  "evidence_ids": [
+   244,
+   253,
+   414,
+   222,
+   241,
+   224,
+   231,
+   213,
+   215
+  ],
+  "use": "\"Dark Dance\" is a natural lead term for titles and bio copy and as a SoundCloud tag. Kompromat, Miss Kittin and I-F are the most on-target \"sounds like\" references for Beatport and Bandcamp descriptions and press bio. They pull the right crossover crowd of electroclash, dark disco and EBM listeners.",
+  "strength": 4
+ },
+ {
+  "name": "Mood/texture words: dark but cozy, sad and groovy, melancholic, atmosphere, cinematic scenes",
+  "insight": "Across coldwave and darkwave mixes, listeners describe the paradox of dark and comforting: \"dark and cozy\", \"dark, sad and groovy\", a dark sound that still feels peaceful. They talk about \"real emotions\" and \"great atmosphere\", say \"Aura/Atmosphäre\", and use gallows humour (\"Pain Zone\", 1.5x speed to \"feel depressed\" faster). Channel titles use \"Melancholic\", \"Doomer Playlist\" and \"Cinematic Darkwave\". Cinematic feelings are voiced through film imagery: Underworld, Blade, a Bond villain's lair, Gus Fring.",
+  "examples": [
+   "dark and cozy",
+   "dark, sad and groovy",
+   "melancholic",
+   "Doomer Playlist",
+   "atmosphere / Atmosphäre",
+   "Cinematic Darkwave",
+   "Underworld movies",
+   "Bond villain's lair",
+   "hypnotic, emotional"
+  ],
+  "evidence_ids": [
+   156,
+   158,
+   159,
+   180,
+   186,
+   152,
+   160,
+   147,
+   179,
+   338,
+   196,
+   76,
+   318,
+   322,
+   261
+  ],
+  "use": "Use these in titles and descriptions (e.g. \"melancholic dark dance\", \"cinematic darkwave\") and in bio copy. \"Doomer\" pulls a meme playlist crowd, so it is fine for YouTube discovery but not for bio. Mood words beat genre words for Spotify playlist pitching.",
+  "strength": 4
+ },
+ {
+  "name": "Acid techno / modern acid / acid house vocabulary",
+  "insight": "Acid searches surface \"acid techno\", \"Modern Acid Techno\", \"Acid Sets\", \"ACIDHOUSE\" and \"Electro & Acid House\". Commenters stress \"hypnotic\", \"heavy beats\" and \"Energetic and Calm\". The word \"acid\" also draws drug jokes and confusion with \"acid jazz\". Some viewers question whether the tracks or visuals are AI-made.",
+  "examples": [
+   "acid techno",
+   "Modern Acid Techno",
+   "Acid Sets",
+   "ACIDHOUSE",
+   "Electro & Acid House",
+   "hypnotic",
+   "acid jazz (mix-up)"
+  ],
+  "evidence_ids": [
+   261,
+   264,
+   280,
+   290,
+   315,
+   331,
+   324,
+   317,
+   323,
+   270,
+   271,
+   267
+  ],
+  "use": "Beatport and Bandcamp tags: \"Acid\", \"Acid Techno\", \"Electro\". In titles, qualify it (\"dark acid\", \"acid / EBM\") so it doesn't attract generic festival acid-techno or drug-humour audiences. Being transparent about human production helps, given the AI suspicion.",
+  "strength": 3
+ },
+ {
+  "name": "Wrong-crowd traps: EBM read as EDM, \"night drive / bass boosted\", \"new beat\" megamixes",
+  "insight": "The search \"EBM techno mix\" returns \"EDM MIX MEGA BASS BOOSTED… NIGHT DRIVE GYM WORKOUT\" uploads, full of generic, reupload and spam comments. Likewise, \"new beat mix\" returns pop remix megamixes and Mexican 90s nostalgia mixes. In those nostalgia mixes, purists complain that most tracks aren't new beat, and one notes that La Tour isn't new beat. One goth commenter explicitly contrasts the scene with \"edm kids\". Note the overlap, though: genuine \"night time highway drive\" use also appears on acid techno.",
+  "examples": [
+   "EDM MIX",
+   "BASS BOOSTED",
+   "NIGHT DRIVE",
+   "GYM WORKOUT",
+   "edm kids",
+   "New Beat 90s",
+   "not new beat"
+  ],
+  "evidence_ids": [
+   100,
+   103,
+   118,
+   120,
+   125,
+   90,
+   347,
+   353,
+   384,
+   390,
+   266
+  ],
+  "use": "Never let \"EBM\" stand alone where autocorrect or the algorithm could read \"EDM\". Pair it with \"industrial\", \"darkwave\" or \"dark disco\". Avoid \"bass boosted\" and \"gym workout\" in titles. \"Night drive\" is acceptable only alongside dark genre words. Use \"new beat\" only as an influence word in bio or description, not as a tag.",
+  "strength": 4
+ },
+ {
+  "name": "Track-ID, tracklist and \"where can I stream it\" requests",
+  "insight": "This is the most frequent request type in every genre bucket. People write \"tracklist plz\", ask for the name of the song at a timestamp, \"need timecodes\", \"put it on Spotify\", \"where can I download\" and \"release as a single\". Uploaders who add timestamps get thanked.",
+  "examples": [
+   "tracklist",
+   "track ID",
+   "what's name of song",
+   "timecodes",
+   "put these on spotify",
+   "where can I download it",
+   "release as a single"
+  ],
+  "evidence_ids": [
+   11,
+   140,
+   142,
+   143,
+   146,
+   150,
+   182,
+   187,
+   219,
+   234,
+   237,
+   249,
+   263,
+   308,
+   392,
+   394,
+   395
+  ],
+  "use": "Every YouTube and SoundCloud mix or upload needs timestamps and a tracklist in the description with artist and track names exactly as on DSPs. Add Bandcamp, Spotify and Beatport links in the first line. This turns ID-seekers into searchers for the artist name.",
+  "strength": 4
+ }
+]

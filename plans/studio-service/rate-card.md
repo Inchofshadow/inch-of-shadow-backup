@@ -52,6 +52,9 @@ What "alt" and "instrumental" are (Amir asked 11-12):
 > Mix / master: within 10 days after the files and the first payment arrive (usually faster).
 > Express: €100 for delivery within 48 hours, up to 4 tracks (when available).
 >
+> **Credit** (added 11-19, approved by Amir 11-19)
+> A mixing / mastering credit for Amir Miller is required in social media posts about the release.
+>
 > **Discounts**
 > Discounts are possible for EPs and albums. Get in touch for a custom quote.
 >

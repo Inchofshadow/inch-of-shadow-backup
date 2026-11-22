@@ -1,0 +1,180 @@
+<title>CV Looks</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Inter:wght@400;500;600;700&family=Marcellus&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: a page of four A4 "sheets", each a different CV look with the same sample content */
+:root{
+  --bg:#ECEAE6; --fg:#1A1715; --muted:#6B645E; --line:#D6D1C8; --accent:#7A5A3A;
+  --paper:#FFFFFF; --ink:#141414; --ink2:#5E5E5E; --rule:#141414;
+  --orange:#E8542A; --warm:#0F0D0C; --plat:#D6D1C8;
+  --ui:"Inter",system-ui,sans-serif;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#121010;--fg:#D6D1C8;--muted:#958D84;--line:#2E2A26;--accent:#C9A27A;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#121010;--fg:#D6D1C8;--muted:#958D84;--line:#2E2A26;--accent:#C9A27A;color-scheme:dark}
+body{background:var(--bg);color:var(--fg);font-family:var(--ui)}
+.wrap{max-width:1180px;margin:0 auto;padding-block:28px 60px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));display:grid;gap:28px}
+header h1{font-family:"Marcellus",Georgia,serif;font-weight:400;font-size:2rem;margin:0}
+header p{color:var(--muted);margin:6px 0 0;max-width:62ch;line-height:1.5}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,520px),1fr));gap:28px}
+.opt{display:grid;gap:10px;min-width:0}
+.opt h2{margin:0;font-size:1.05rem;font-weight:600;display:flex;gap:10px;align-items:baseline;flex-wrap:wrap}
+.opt h2 b{font-family:"Marcellus",Georgia,serif;font-weight:400;font-size:1.5rem;color:var(--accent)}
+.opt .why{color:var(--muted);font-size:.88rem;margin:0}
+/* paper: fixed print colours on purpose, a CV is printed on white */
+.paper{background:var(--paper);color:var(--ink);aspect-ratio:210/297;width:100%;max-width:100%;box-shadow:0 1px 3px rgba(0,0,0,.18);overflow:hidden;font-size:clamp(6.4px,1.18vw,9.6px);line-height:1.38;container-type:inline-size}
+.paper *{box-sizing:border-box}
+.ph{background:#C9C4BC;color:#5E5E5E;display:grid;place-items:center;font-size:.8em;letter-spacing:.08em;text-transform:uppercase}
+.d{color:var(--ink2)}
+
+/* A: Classic+ (his 2024 look, cleaned) */
+.A{font-family:"Lato",sans-serif;padding:7% 8%}
+.A .top{text-align:center}
+.A .nm{font-weight:900;font-size:2.9em;margin:0}
+.A .tt{color:var(--orange);font-weight:700;font-size:1.25em;margin:.2em 0 1em}
+.A .hd{display:flex;justify-content:space-between;gap:4%;align-items:start;margin-bottom:1.4em}
+.A .hd .ph{width:16%;aspect-ratio:3/4}
+.A .ct span{display:block}
+.A .ct .o{color:var(--orange);font-weight:700}
+.A .row{display:grid;grid-template-columns:26% 1fr;gap:3%;padding:1em 0;border-top:1.5px solid var(--rule)}
+.A .lab{font-weight:700;font-size:1.35em}
+.A .it{margin-bottom:.55em}
+.A .it b{font-weight:700}
+
+/* B: Sidebar */
+.B{display:grid;grid-template-columns:34% 1fr;height:100%;font-family:"Inter",sans-serif}
+.B .side{background:#16181D;color:#E9E6E1;padding:9% 9%;display:grid;align-content:start;gap:1.3em}
+.B .side .ph{aspect-ratio:1;border-radius:50%;width:70%;justify-self:center;background:#3A3D44;color:#9A9DA4}
+.B .side h4{margin:0 0 .4em;font-size:.9em;letter-spacing:.14em;text-transform:uppercase;color:#E8542A}
+.B .side p{margin:0}
+.B .bar{height:.35em;background:#3A3D44;border-radius:9px;margin:.25em 0 .5em}
+.B .bar i{display:block;height:100%;background:#E8542A;border-radius:9px}
+.B .main{padding:9% 8%}
+.B .nm{font-size:2.6em;font-weight:700;margin:0;letter-spacing:-.01em}
+.B .tt{font-size:1.1em;color:#E8542A;font-weight:600;margin:.2em 0 1.4em}
+.B h3{font-size:.95em;letter-spacing:.14em;text-transform:uppercase;margin:1.3em 0 .6em;padding-bottom:.3em;border-bottom:1px solid #DDD}
+.B .it{margin-bottom:.6em}
+.B .it b{display:block}
+
+/* C: Modern minimal with numbers row */
+.C{font-family:"Inter",sans-serif;padding:8% 9%}
+.C .nm{font-size:3em;font-weight:700;letter-spacing:-.02em;margin:0}
+.C .tt{font-size:1.15em;margin:.15em 0 .3em;color:#E8542A;font-weight:600}
+.C .ct{color:var(--ink2);margin-bottom:1.2em}
+.C .pro{font-size:1.08em;max-width:90%;margin:0 0 1.2em}
+.C .nums{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1em;padding:1em 0;border-block:1px solid #DDD;margin-bottom:1.2em}
+.C .nums b{display:block;font-size:1.9em;font-weight:700;color:#141414}
+.C .nums span{color:var(--ink2);font-size:.88em}
+.C h3{font-size:.85em;letter-spacing:.16em;text-transform:uppercase;color:var(--ink2);margin:1.1em 0 .5em}
+.C .it{display:grid;grid-template-columns:22% 1fr;gap:3%;margin-bottom:.5em}
+.C .it .d{font-family:"IBM Plex Mono",monospace;font-size:.88em}
+
+/* D: Two-track (music | tech) */
+.D{font-family:"Lato",sans-serif;padding:7% 7%}
+.D .hd{display:grid;grid-template-columns:1fr 15%;gap:4%;align-items:center;border-bottom:3px solid #141414;padding-bottom:1em}
+.D .hd .ph{aspect-ratio:3/4}
+.D .nm{font-weight:900;font-size:2.8em;margin:0}
+.D .tt{font-weight:700;font-size:1.1em;margin:.2em 0}
+.D .tt .m{color:#E8542A}.D .tt .t{color:#2A6FDB}
+.D .pro{margin:1em 0}
+.D .cols{display:grid;grid-template-columns:1fr 1fr;gap:6%}
+.D h3{margin:.4em 0 .7em;font-size:1.1em;padding:.3em .6em;color:#fff}
+.D .cm h3{background:#E8542A}.D .cs h3{background:#2A6FDB}
+.D .it{margin-bottom:.6em}
+.D .it b{display:block}
+.D .foot{margin-top:1.2em;padding-top:.8em;border-top:1.5px solid #141414;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:4%}
+.D .foot b{display:block;margin-bottom:.2em}
+.note{color:var(--muted);font-size:.85rem;margin:0}
+</style>
+
+<div class="wrap">
+<header>
+  <h1>CV Looks</h1>
+  <p>Four ways to lay out the same CV. Sample text is the music &amp; audio version. Pick a letter, or mix ("A with C's numbers row"). The photo box and contact line are placeholders.</p>
+</header>
+
+<div class="grid">
+
+<section class="opt">
+  <h2><b>A</b> Classic+ · your 2024 look, cleaned</h2>
+  <p class="why">Same layout, orange title and label column. Stars removed, tighter lines, a short profile added.</p>
+  <div class="paper A">
+    <div class="top"><p class="nm">Amir Miller</p><p class="tt">Mastering &amp; Mixing Engineer · Music Producer</p></div>
+    <div class="hd"><div class="ct"><span>Berlin, Germany</span><span class="o">email · phone</span><span class="o">inchofshadow · SoundCloud</span></div><div class="ph">photo</div></div>
+    <div class="row"><div class="lab">Profile</div><div>Mastering and mixing engineer and producer with 10+ years in studios, clubs and festivals. BA in music production. Releases on independent labels as Inch of Shadow.</div></div>
+    <div class="row"><div class="lab">Experience</div><div>
+      <div class="it"><b>Inch of Shadow</b> / Producer, Mixing &amp; Mastering<br><span class="d">2015 - Present, Berlin</span></div>
+      <div class="it"><b>Orania</b> / FOH &amp; Audio Engineer<br><span class="d">2023 - Present, Berlin</span></div>
+      <div class="it"><b>Alte Münze &amp; RSO</b> / Audio Engineer<br><span class="d">2023 - Present, Berlin</span></div>
+      <div class="it"><b>Born Studios</b> / Mixing &amp; Mastering Engineer<br><span class="d">2018 - 2019, Tel Aviv</span></div>
+    </div></div>
+    <div class="row"><div class="lab">Education</div><div><div class="it"><b>Rimon School of Music</b> / BA (Hons.) Music Production<br><span class="d">2016 - 2019, Tel Aviv</span></div></div></div>
+    <div class="row"><div class="lab">Languages</div><div>Hebrew (native) · English (fluent) · Spanish (good)</div></div>
+  </div>
+</section>
+
+<section class="opt">
+  <h2><b>B</b> Sidebar · dark side column</h2>
+  <p class="why">Photo, contact, skills and languages live on the left, so jobs get the full right side. Reads fast.</p>
+  <div class="paper B">
+    <div class="side">
+      <div class="ph">photo</div>
+      <div><h4>Contact</h4><p>Berlin, Germany<br>email · phone<br>inchofshadow</p></div>
+      <div><h4>Skills</h4><p>Mastering</p><div class="bar"><i style="width:95%"></i></div><p>Mixing</p><div class="bar"><i style="width:95%"></i></div><p>Production</p><div class="bar"><i style="width:90%"></i></div><p>Live sound (FOH)</p><div class="bar"><i style="width:85%"></i></div></div>
+      <div><h4>Desks</h4><p>Midas · Allen &amp; Heath · Yamaha · DiGiCo</p></div>
+      <div><h4>Languages</h4><p>Hebrew native<br>English fluent<br>Spanish good</p></div>
+    </div>
+    <div class="main">
+      <p class="nm">Amir Miller</p><p class="tt">Mastering &amp; Mixing Engineer · Producer</p>
+      <p>10+ years in studios, clubs and festivals. BA in music production.</p>
+      <h3>Experience</h3>
+      <div class="it"><b>Inch of Shadow · Producer, Mix &amp; Master</b><span class="d">2015 - Present · Berlin</span></div>
+      <div class="it"><b>Orania · FOH &amp; Audio Engineer</b><span class="d">2023 - Present · Berlin</span></div>
+      <div class="it"><b>Alte Münze &amp; RSO · Audio Engineer</b><span class="d">2023 - Present · Berlin</span></div>
+      <div class="it"><b>Born Studios · Mix &amp; Mastering Engineer</b><span class="d">2018 - 2019 · Tel Aviv</span></div>
+      <h3>Education</h3>
+      <div class="it"><b>Rimon School of Music · BA (Hons.)</b><span class="d">2016 - 2019 · Tel Aviv</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="opt">
+  <h2><b>C</b> Modern · numbers first</h2>
+  <p class="why">No photo, one column, a row of 4 big numbers under the name. Strongest for the Gero / Web3 CV, where the numbers are big.</p>
+  <div class="paper C">
+    <p class="nm">Amir Miller</p><p class="tt">Mastering &amp; Mixing Engineer · Producer</p>
+    <p class="ct">Berlin · email · phone · inchofshadow</p>
+    <p class="pro">Mastering and mixing engineer and producer. 10+ years across studios, clubs and festivals, with releases on independent labels.</p>
+    <div class="nums"><div><b>10+</b><span>years producing</span></div><div><b>BA</b><span>music production</span></div><div><b>4</b><span>labels</span></div><div><b>130</b><span>Blank Wave guest mix</span></div></div>
+    <h3>Experience</h3>
+    <div class="it"><span class="d">2015 - now</span><span><b>Inch of Shadow</b> · producer, mix &amp; master</span></div>
+    <div class="it"><span class="d">2023 - now</span><span><b>Orania</b> · FOH &amp; audio engineer</span></div>
+    <div class="it"><span class="d">2023 - now</span><span><b>Alte Münze &amp; RSO</b> · audio engineer</span></div>
+    <div class="it"><span class="d">2018 - 2019</span><span><b>Born Studios</b> · mix &amp; mastering engineer</span></div>
+    <h3>Education</h3>
+    <div class="it"><span class="d">2016 - 2019</span><span><b>Rimon School of Music</b> · BA (Hons.)</span></div>
+  </div>
+</section>
+
+<section class="opt">
+  <h2><b>D</b> Two-track · music | tech side by side</h2>
+  <p class="why">For jobs that want both: music on the left, Gero / Web3 on the right, shared skills at the bottom. Built for the music × tech CV.</p>
+  <div class="paper D">
+    <div class="hd"><div><p class="nm">Amir Miller</p><p class="tt"><span class="m">Mastering Engineer &amp; Producer</span> · <span class="t">CMO, Gero (Web3)</span></p><p class="d">Berlin · email · phone</p></div><div class="ph">photo</div></div>
+    <p class="pro">Engineer and producer who also leads marketing for a Web3 product: sound, story and growth from one person.</p>
+    <div class="cols">
+      <div class="cm"><h3>Music &amp; audio</h3>
+        <div class="it"><b>Inch of Shadow · producer</b><span class="d">2015 - now · releases on 4 labels</span></div>
+        <div class="it"><b>Orania, Alte Münze · FOH</b><span class="d">2023 - now · Berlin</span></div>
+        <div class="it"><b>Born Studios · mastering</b><span class="d">2018 - 2019 · Tel Aviv</span></div></div>
+      <div class="cs"><h3>Marketing &amp; Web3</h3>
+        <div class="it"><b>Gero / A.D. Labs · CMO</b><span class="d">2021 - now · 10,000 Chrome users</span></div>
+        <div class="it"><b>Cardano Shield · SEO</b><span class="d">website and search</span></div>
+        <div class="it"><b>Musicbox NFT · sound director</b><span class="d">music NFTs in the wallet</span></div></div>
+    </div>
+    <div class="foot"><div><b>Education</b>Rimon BA (Hons.)</div><div><b>Languages</b>Hebrew · English · Spanish</div><div><b>Tools</b>Pro desks · SEO suites</div></div>
+  </div>
+</section>
+
+</div>
+<p class="note">Sample text only, not final. Dates and labels come from your 2024 CV and our files. Gero: 10,000 users from the Chrome Web Store.</p>
+</div>

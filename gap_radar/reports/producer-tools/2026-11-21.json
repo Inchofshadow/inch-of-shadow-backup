@@ -1,0 +1,197 @@
+[
+ {
+  "name": "Genre-specific bassline MIDI + synth rack packs (EBM, acid, dark disco)",
+  "pain": "Producers struggle to write convincing driving basslines and actively grab MIDI and preset packs from tutorials. They also ask creators for specific presets.",
+  "who_pays": "Bedroom and intermediate techno/EBM/acid producers on Ableton, Serum or Vital",
+  "evidence_ids": [
+   157,
+   158,
+   160,
+   162,
+   164,
+   165,
+   144,
+   146,
+   147,
+   152,
+   185
+  ],
+  "pay_signal": "A paid rack shop with a discount code sits under an EBM bassline tutorial (157). Free MIDI+preset lead magnets get heavy grateful uptake (158,160,164). One viewer openly struggles to make good bass (162), and others ask for specific presets (185).",
+  "product_idea": "build it: a pack of 50 EBM, dark disco and acid bassline MIDI patterns with Ableton racks and Vital presets, tagged by BPM and groove (Nitzer Ebb-style 16ths, offbeat disco, 303 slides), drawn from Amir's own sessions. Sell on Gumroad or Ko-fi, with a free 5-pattern lead magnet. Also use it in his own studio as a sketch library.",
+  "build_weeks": 3,
+  "fit_for_us": 5,
+  "known_competitors": "Studio Brootle racks, Production Music Live freebies, ADSR/Loopmasters MIDI packs, Ayjin presets",
+  "check_next": "Search Gumroad/ADSR for 'EBM MIDI' and 'dark disco bass' packs and note their sales counts and prices. Post 3 free patterns and measure downloads."
+ },
+ {
+  "name": "Simple, single-purpose Max for Live utilities",
+  "pain": "Many M4L devices are overcomplicated or theory-heavy. Users want small, clear tools, such as silencing audio on stop and macro morphing, that just work.",
+  "who_pays": "Ableton Suite users who are newly upgraded or buying M4L",
+  "evidence_ids": [
+   175,
+   177,
+   182,
+   178,
+   174,
+   180,
+   173,
+   171
+  ],
+  "pay_signal": "Users just upgraded to Suite or bought M4L (174,180) and are hunting device recommendations. Devs of small devices get thanked for daily use (171). Complaints say devices are 'too much' (175).",
+  "product_idea": "build it: a bundle of 3–5 tiny M4L devices aimed at dark club production, e.g. a stop-silencer/panic, a macro morph with snapshots, and an EBM accent/velocity groover. Price at €9–19 on Gumroad or maxforlive.com. Use it too.",
+  "build_weeks": 4,
+  "fit_for_us": 5,
+  "known_competitors": "B.S Macro Morph, Chiastic Slide, Melda free utility, Iftah's free devices, Sting 2",
+  "check_next": "List the top-selling paid devices on maxforlive.com and Gumroad, and ask in r/ableton which 'simple' utility people still miss."
+ },
+ {
+  "name": "Project versioning / anti-work-loss safety net",
+  "pain": "Crashes, missing undo, and cloud sync overwriting newer versions wipe hours of work. This hits sample edits, chops and whole sessions.",
+  "who_pays": "Mobile and desktop producers who sketch ideas on multiple devices",
+  "evidence_ids": [
+   5,
+   10,
+   49,
+   47,
+   12,
+   15,
+   29,
+   39,
+   45
+  ],
+  "pay_signal": "These are paid-app 1–2* reviews: 'wish I knew before spending the money' (5), 'deleted all my WIP 4 times' (47), 'an entire day of work lost' (39).",
+  "product_idea": "both: use it for iOS (export backups manually via AudioShare/Files). Build a small desktop app or script for Ableton that auto-snapshots .als plus collects samples into timestamped versions, with a diff and restore UI. Sell as a cheap utility.",
+  "build_weeks": 4,
+  "fit_for_us": 3,
+  "known_competitors": "Splice Studio (discontinued), git-based Ableton setups, Ableton's own backup folder",
+  "check_next": "Check whether Ableton's backup folder already satisfies users (search forums for 'lost Ableton project'). Gauge interest in a one-click version history."
+ },
+ {
+  "name": "MIDI clock / Link bridging for hardware + iOS rigs",
+  "pain": "Sequencers don't reset on stop/start and there's no MIDI clock input in AUM. Hardware like Roland Aira isn't recognised, so mixed rigs drift or fail.",
+  "who_pays": "Hybrid hardware/iOS users with grooveboxes and Aira gear",
+  "evidence_ids": [
+   4,
+   30,
+   32,
+   35
+  ],
+  "pay_signal": "Users paid $20 and the app failed to connect to a Roland J-6 (35). Others call missing MIDI clock 'outrageous' (32) and 'needs to be fixed' (30).",
+  "product_idea": "use it first: Link-to-MIDI-clock bridges and hardware sync boxes. Building a full bridge is possible but hardware-sensitive, so maybe only a desktop Link↔clock utility with an explicit start/reset behaviour option.",
+  "build_weeks": 5,
+  "fit_for_us": 3,
+  "known_competitors": "midiLink Sync, Link2Midi, E-RM multiclock, Squarp/Blokas Midihub",
+  "check_next": "Test existing Link↔clock apps against a Digitakt/Aira setup in his studio and note what still breaks (reset on stop)."
+ },
+ {
+  "name": "Plugin state recall and stuck-note guard",
+  "pain": "Plugin parameters reset to default on play or reopen, keys get stuck inside instruments, and instruments randomly go silent in DAWs.",
+  "who_pays": "Producers using wrapped or flaky third-party instruments in Ableton, Logic or Studio One",
+  "evidence_ids": [
+   39,
+   74,
+   72,
+   65,
+   70,
+   73
+  ],
+  "pay_signal": "These are complaints about expensive paid instruments ('fairly expensive VI', 72; Moog Model D via paid wrapper, 70,74).",
+  "product_idea": "build it: an M4L device that snapshots chosen plugin parameters per scene and re-applies them on load or play, plus an all-notes-off panic on stop. Use it on his own unstable synths.",
+  "build_weeks": 3,
+  "fit_for_us": 3,
+  "known_competitors": "Ableton rack macros, Melda MUtility, generic MIDI panic devices",
+  "check_next": "Check M4L API limits for reading/writing third-party plugin parameters (only configured params), then prototype."
+ },
+ {
+  "name": "Elektron kits, projects and knowledge archive",
+  "pain": "Elektron owners want ready kits and project files. They ask where kits come from and how to build them, and they archive tutorial info by hand in PDFs.",
+  "who_pays": "Digitakt 2 and Octatrack owners, many new to the box",
+  "evidence_ids": [
+   111,
+   140,
+   114,
+   118,
+   122,
+   136,
+   135,
+   126
+  ],
+  "pay_signal": "Creators sell or give OT projects and loops via Ko-fi (118). Viewers ask whether kits are self-made or found online (111) and request kit-building videos (140). One user maintains their own screenshot/transcript archive (114).",
+  "product_idea": "build it: Digitakt 2 dark disco/EBM kit + project packs, with sounds sampled from his own records and synths. Optionally add a small web 'Elektron recipe book' tool. Fits his studio if he uses Elektron.",
+  "build_weeks": 3,
+  "fit_for_us": 4,
+  "known_competitors": "Elektron sound packs, Ko-fi creators, Elektronauts community packs, Loopop/Cuckoo content",
+  "check_next": "Look at Elektron Sound Pack store pricing and Elektronauts threads asking for EBM/dark kits."
+ },
+ {
+  "name": "Genre arrangement templates and guides (EBM, dark electro, techno)",
+  "pain": "Viewers ask for arrangement tips and full from-scratch series in specific dark or club genres, not just sound design.",
+  "who_pays": "Intermediate producers who can make loops but not finished tracks",
+  "evidence_ids": [
+   155,
+   150,
+   168,
+   151
+  ],
+  "pay_signal": "Requests for EBM arrangement tips (155) and paid courses (Udemy mention, 151). Genre-specific series are requested (150,168).",
+  "product_idea": "build it: Ableton arrangement templates for dark dance wave, EBM and acid built from his own tracks (markers, energy map, locators, stock-only racks). Sell alongside the bassline pack, with a free reference-arrangement web viewer as funnel.",
+  "build_weeks": 2,
+  "fit_for_us": 4,
+  "known_competitors": "PML/Sonic Academy templates, Beatport/ADSR Ableton templates (mostly melodic techno/house)",
+  "check_next": "Count existing EBM or dark disco Ableton templates on ADSR/Gumroad; few means opportunity."
+ },
+ {
+  "name": "Exclusive scene/channel switching from MIDI footswitch and controllers",
+  "pain": "Users can't select one channel exclusively via footswitch, MIDI mappings clash across multiple instances, and they want custom virtual controls.",
+  "who_pays": "Live performers using iOS hosts or DAWs with footswitches/controllers",
+  "evidence_ids": [
+   34,
+   7,
+   31
+  ],
+  "pay_signal": "These are paid AUM/Koala users complaining in 2* reviews about core professional-use mapping failures (7,34).",
+  "product_idea": "build it: an M4L 'exclusive selector' that maps footswitch or MIDI notes to radio-button solo of tracks/chains, with per-instance mapping memory. Also useful for his own live sets.",
+  "build_weeks": 2,
+  "fit_for_us": 3,
+  "known_competitors": "Ableton chain selector racks, ClyphX Pro, Mozaic scripts for AUM",
+  "check_next": "Check ClyphX Pro coverage. If it already does this, market a simpler, cheaper single-purpose device."
+ },
+ {
+  "name": "Mobile sketchpad with step entry and MIDI export to the DAW",
+  "pain": "The paid Ableton Note lacks step entry, MIDI/AU, voice memo import and stable sync. Users start most ideas on the go and need them in the main DAW.",
+  "who_pays": "Producers capturing ideas on phone/iPad who finish in Ableton or on an MPC",
+  "evidence_ids": [
+   10,
+   13,
+   14,
+   23,
+   25,
+   26,
+   12,
+   15
+  ],
+  "pay_signal": "These are paid app complaints ('waste of my money', 27; '90% of my ideas start in Koala', 10; 'no MIDI or AU makes it not a serious tool', 23).",
+  "product_idea": "build it (small): a PWA step sequencer/sketch tool for basslines and drums that exports clean MIDI and stems to Ableton. Use it for his own sketches. Scope must stay tiny to compete.",
+  "build_weeks": 5,
+  "fit_for_us": 2,
+  "known_competitors": "Ableton Note, Koala Sampler, Drambo, Groovebox, Elastic Drums",
+  "check_next": "Survey whether producers would pay for a web-based sketcher versus native iOS. Check MIDI export friction in existing apps."
+ },
+ {
+  "name": "Usable sample preview and quick chop/stem tool",
+  "pain": "Sample previews are too short to judge sounds. Users want simple chop/reverse/pitch/envelope and drum removal in one place.",
+  "who_pays": "Sample-based beatmakers and producers digging through libraries",
+  "evidence_ids": [
+   18,
+   19,
+   9,
+   10
+  ],
+  "pay_signal": "Paid users say they can't use the app at all because of the preview (18). Another calls it a 'waste of money' over failing to remove drums (9).",
+  "product_idea": "use it: existing stem splitters and Ableton Simpler cover most of this. Build it only as a small web sample-browser with full-length preview + chop-to-Simpler export if he wants a free funnel tool.",
+  "build_weeks": 3,
+  "fit_for_us": 2,
+  "known_competitors": "Ableton Simpler, XO, Atlas, LALAL.AI, Koala",
+  "check_next": "Check whether desktop sample managers (ADSR Sample Manager, Sononym) already solve the preview complaint before building anything."
+ }
+]

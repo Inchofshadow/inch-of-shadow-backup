@@ -176,7 +176,7 @@ def test_tag_file_uses_only_the_list_and_covers_every_library():
     from release_manager import studio_tags as st
     d = st.load()
     ids = {t["id"] for t in d["tags"]}
-    assert ids == set(st.TAG_IDS) and 25 <= len(ids) <= 45
+    assert ids == {t for t, _ in st.tag_list(d)} and 25 <= len(ids) <= 45   # the file is the source (Fable gate 11-20)
     assert all(set(v) <= ids for v in d["assign"].values())
     libs = {k.split(":")[0] for k in d["assign"]}
     assert libs == {"archive", "effect", "font", "imagine"}
@@ -247,3 +247,55 @@ def test_drawer_shows_items_without_a_tag_under_an_untagged_chip(client):
     from release_manager import studio_tags as st
     assert "untagged" not in st.TAG_IDS                      # a drawer chip only, never a stored tag
     assert dict(st.TAGS)["rose"] == "Roses (one of our motifs)"
+
+
+# Opus gate 2026-11-15: the tag list itself comes from docs/brand/tags.json, not from the code.
+def test_tag_list_is_read_from_the_file():
+    from release_manager import studio_tags as st
+    data = {"tags": [{"id": "moon", "means": "The moon"}, {"id": "snow", "means": "Snow and frost"}], "assign": {}}
+    assert st.tag_list(data) == [("moon", "The moon"), ("snow", "Snow and frost")]
+    data["assign"]["effect:x"] = ["snow", "night"]                  # night is not in this file's list
+    assert st.tags_for("effect", "x", {}, data) == ["snow"]
+
+
+def test_tag_list_skips_bad_entries_and_falls_back_when_empty():
+    from release_manager import studio_tags as st
+    bad = {"tags": [{"id": "Bad Id"}, {"id": "untagged", "means": "x"}, "moon", {"id": "owl", "means": 5},
+                    {"id": "owl", "means": "again"}, {"id": "<b>x</b>", "means": "y"}]}
+    assert st.tag_list(bad) == [("owl", "")]
+    assert st.tag_list({"tags": []}) == list(st.TAGS)
+    assert st.tag_list({}) == list(st.TAGS)
+    assert st.tag_list({"tags": "moon"}) == list(st.TAGS)
+
+
+def test_drawer_tag_list_matches_the_file(client):
+    from release_manager import studio_tags as st
+    d = client.get("/api/playground/pinocchio-single/drawer").get_json()
+    shown = [(t["id"], t["means"]) for t in d["tags"] if t["id"] != "untagged"]
+    assert shown == st.tag_list(st.load())
+
+
+def test_tag_reader_survives_broken_values():
+    # Fable gate 2026-11-20: a broken tags.json falls back instead of crashing the drawer
+    from release_manager import studio_tags as st
+    for bad in ({"tags": 5}, {"tags": True}, {"tags": "moon"}, {"tags": {"id": "moon"}}, []):
+        assert st.tag_list(bad) == list(st.TAGS)
+    data = {"tags": [{"id": "moon", "means": "The moon"}, {"id": "dark", "means": "Dark"}],
+            "assign": {"effect:a": [["moon"], "moon", 5], "effect:b": "moon", "effect:c": None}}
+    assert st.tags_for("effect", "a", {}, data) == ["moon"]
+    assert st.tags_for("effect", "b", {"group": "Dark and horror"}, data) == ["dark"]   # a string value = not listed: rule tags
+    assert st.tags_for("effect", "c", {}, data) == []
+    assert st.tags_for("effect", "d", {}, {"tags": data["tags"], "assign": 7}) == []
+
+
+def test_new_file_tag_reaches_unlisted_items_through_the_rules():
+    from release_manager import studio_tags as st
+    data = {"tags": [{"id": "zebra", "means": "Stripes"}], "assign": {}}
+    assert st.tags_for("archive", "R-999", {"tags": ["zebra", "moon"]}, data) == ["zebra"]
+    assert st.rule_tags("archive", {"tags": ["zebra"]}) == []   # the first fill still uses the built-in list
+
+
+def test_drawer_drops_saved_tags_that_left_the_list():
+    from pathlib import Path
+    html = (Path(__file__).resolve().parents[1] / "release_manager/templates/playground_layout.html").read_text()
+    assert "a tag renamed or removed in tags.json leaves the filter" in html

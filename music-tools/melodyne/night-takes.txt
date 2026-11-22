@@ -1,0 +1,242 @@
+Lead     M0  main     bars 13-29    Lead 28        notes  33  med 13.3ct  >25ct  27%  avg  -6.0  drift  26  out-key   6%
+Lead     M0  main     bars 29-49    Lead 35        notes  37  med 12.5ct  >25ct  27%  avg +10.8  drift  28  out-key   5%
+Lead     M0  main     bars 49-49    Lead 34        notes   0  (too few to score)
+Lead     M0  main     bars 49-53    Lead 4         notes   0  (too few to score)
+Lead     M0  take 1   bars 2-19     Lead           notes  18  med 24.1ct  >25ct  50%  avg  -4.9  drift  36  out-key  11%
+Lead     M0  take 1   bars 26-33    Lead           notes   0  (too few to score)
+Lead     M0  take 1   bars 35-45    Lead           notes   0  (too few to score)
+Lead     M0  take 2   bars 1-43     Lead 2         notes  70  med 14.4ct  >25ct  31%  avg  -3.6  drift  37  out-key  16%
+Lead     M0  take 3   bars 17-319   Lead 3         notes 151  med 17.3ct  >25ct  34%  avg  +3.6  drift  28  out-key  15%
+Lead     M0  take 4   bars 13-33    Lead 4         notes  25  med 14.3ct  >25ct  32%  avg  +2.9  drift  30  out-key   0%
+Lead     M0  take 4   bars 38-53    Lead 4         notes  32  med 19.7ct  >25ct  31%  avg  -0.2  drift  22  out-key   6%
+Lead     M0  take 5   bars 13-33    Lead 5         notes  26  med 13.9ct  >25ct  19%  avg  -0.0  drift  27  out-key   8%
+Lead     M0  take 5   bars 33-49    Lead 5         notes  19  med 35.4ct  >25ct  68%  avg  +1.6  drift  37  out-key  47%
+Lead     M0  take 6   bars 13-33    Lead 6         notes  26  med 30.5ct  >25ct  62%  avg  -2.7  drift  40  out-key  27%
+Lead     M0  take 7   bars 13-33    Lead 7         notes  29  med 26.9ct  >25ct  55%  avg -11.3  drift  31  out-key  24%
+Lead     M0  take 8   bars 13-33    Lead 8         notes  31  med 21.6ct  >25ct  42%  avg -11.9  drift  38  out-key   6%
+Lead     M0  take 9   bars 13-33    Lead 9         notes  16  med 25.7ct  >25ct  56%  avg -16.0  drift  28  out-key  25%
+Lead     M0  take 10  bars 13-33    Lead 10        notes  35  med 18.1ct  >25ct  40%  avg -10.6  drift  33  out-key  11%
+Lead     M0  take 11  bars 13-33    Lead 11        notes  16  med 26.9ct  >25ct  50%  avg -16.5  drift  33  out-key  25%
+Lead     M0  take 12  bars 13-33    Lead 12        notes  28  med 18.9ct  >25ct  36%  avg  -8.1  drift  28  out-key  14%
+Lead     M0  take 13  bars 13-33    Lead 13        notes  28  med 23.1ct  >25ct  50%  avg  -1.8  drift  33  out-key  29%
+Lead     M0  take 14  bars 13-33    Lead 14        notes  15  med 19.2ct  >25ct  27%  avg -14.5  drift  30  out-key   7%
+Lead     M0  take 15  bars 13-29    Lead 15        notes  17  med 21.9ct  >25ct  47%  avg  -6.9  drift  39  out-key  24%
+Lead     M0  take 15  bars 29-49    Lead 15        notes  61  med 17.3ct  >25ct  30%  avg  +1.0  drift  24  out-key  11%
+Lead     M0  take 16  bars 13-29    Lead 16        notes  15  med 13.3ct  >25ct  40%  avg  -4.9  drift  37  out-key  20%
+Lead     M0  take 16  bars 29-49    Lead 16        notes  75  med 18.4ct  >25ct  40%  avg  -7.5  drift  28  out-key   7%
+Lead     M0  take 17  bars 13-29    Lead 17        notes  30  med 21.6ct  >25ct  40%  avg  +1.0  drift  20  out-key  27%
+Lead     M0  take 17  bars 29-49    Lead 17        notes  73  med 26.2ct  >25ct  52%  avg  +5.2  drift  29  out-key  18%
+Lead     M0  take 18  bars 13-33    Lead 18        notes   1  (too few to score)
+Lead     M0  take 19  bars 13-33    Lead 19        notes  25  med 24.1ct  >25ct  44%  avg -11.2  drift  44  out-key  40%
+Lead     M0  take 20  bars 13-33    Lead 20        notes  27  med 11.6ct  >25ct  33%  avg  -2.6  drift  26  out-key  15%
+Lead     M0  take 21  bars 13-33    Lead 21        notes  33  med 24.1ct  >25ct  42%  avg  -5.4  drift  28  out-key  27%
+Lead     M0  take 22  bars 13-33    Lead 22        notes  35  med 23.9ct  >25ct  46%  avg  -7.3  drift  33  out-key  14%
+Lead     M0  take 23  bars 13-33    Lead 23        notes  27  med 15.7ct  >25ct  37%  avg  -9.9  drift  22  out-key  11%
+Lead     M0  take 24  bars 13-33    Lead 24        notes  32  med 17.7ct  >25ct  31%  avg  -8.3  drift  33  out-key   9%
+Lead     M0  take 25  bars 13-33    Lead 25        notes  29  med 12.2ct  >25ct  31%  avg  -3.8  drift  31  out-key   7%
+Lead     M0  take 26  bars 13-33    Lead 26        notes  31  med 16.3ct  >25ct  29%  avg  -6.9  drift  25  out-key   0%
+Lead     M0  take 27  bars 13-33    Lead 27        notes  34  med 16.7ct  >25ct  29%  avg  +3.9  drift  30  out-key  12%
+Lead     M0  take 28  bars 13-32    Lead 28        notes  33  med 13.3ct  >25ct  27%  avg  -6.0  drift  26  out-key   6%
+Lead     M0  take 29  bars 29-49    Lead 29        notes  63  med 19.8ct  >25ct  40%  avg  +9.6  drift  26  out-key   5%
+Lead     M0  take 30  bars 29-49    Lead 30        notes  47  med 13.5ct  >25ct  30%  avg +11.5  drift  26  out-key   9%
+Lead     M0  take 31  bars 29-49    Lead 31        notes  21  med 13.5ct  >25ct  38%  avg  -2.8  drift  29  out-key   5%
+Lead     M0  take 32  bars 29-49    Lead 32        notes  33  med 17.1ct  >25ct  39%  avg  +8.2  drift  29  out-key   6%
+Lead     M0  take 33  bars 29-49    Lead 33        notes  76  med 18.5ct  >25ct  29%  avg  -4.7  drift  27  out-key   9%
+Lead     M0  take 34  bars 29-49    Lead 34        notes  42  med 27.9ct  >25ct  60%  avg  +6.2  drift  24  out-key  10%
+Lead     M0  take 35  bars 29-49    Lead 35        notes  37  med 12.5ct  >25ct  27%  avg +10.8  drift  28  out-key   5%
+Lead     M1  main     bars 13-29    Lead 28        notes  32  med 11.9ct  >25ct  25%  avg  -7.0  drift  26  out-key   3%
+Lead     M1  main     bars 29-49    Lead 35        notes  36  med 16.8ct  >25ct  31%  avg +11.6  drift  28  out-key   6%
+Lead     M1  main     bars 49-49    Lead 34        notes   0  (too few to score)
+Lead     M1  main     bars 49-53    Lead 4         notes   0  (too few to score)
+Lead     M1  take 1   bars 2-19     Lead           notes  18  med 24.1ct  >25ct  50%  avg  -4.9  drift  36  out-key  11%
+Lead     M1  take 1   bars 26-33    Lead           notes   0  (too few to score)
+Lead     M1  take 1   bars 35-45    Lead           notes   0  (too few to score)
+Lead     M1  take 2   bars 1-43     Lead 2         notes  66  med 15.0ct  >25ct  33%  avg  -3.2  drift  32  out-key  14%
+Lead     M1  take 3   bars 17-319   Lead 3         notes  32  med 21.6ct  >25ct  41%  avg +10.8  drift  27  out-key  22%
+Lead     M1  take 4   bars 13-33    Lead 4         notes  21  med 11.1ct  >25ct  24%  avg  -3.4  drift  21  out-key   0%
+Lead     M1  take 4   bars 38-53    Lead 4         notes  34  med 19.1ct  >25ct  32%  avg  +1.8  drift  21  out-key  15%
+Lead     M1  take 5   bars 13-33    Lead 5         notes  23  med 14.7ct  >25ct  30%  avg  -1.3  drift  22  out-key   9%
+Lead     M1  take 5   bars 33-49    Lead 5         notes  18  med 34.2ct  >25ct  67%  avg  -5.5  drift  42  out-key  44%
+Lead     M1  take 6   bars 13-33    Lead 6         notes  22  med 24.3ct  >25ct  45%  avg  +0.8  drift  40  out-key  18%
+Lead     M1  take 7   bars 13-33    Lead 7         notes  28  med 25.8ct  >25ct  54%  avg -11.1  drift  31  out-key  21%
+Lead     M1  take 8   bars 13-33    Lead 8         notes  31  med 21.9ct  >25ct  45%  avg -14.0  drift  38  out-key   6%
+Lead     M1  take 9   bars 13-33    Lead 9         notes   5  (too few to score)
+Lead     M1  take 10  bars 13-33    Lead 10        notes  31  med 21.2ct  >25ct  39%  avg -15.6  drift  29  out-key   3%
+Lead     M1  take 11  bars 13-33    Lead 11        notes  13  med 24.8ct  >25ct  46%  avg -15.9  drift  31  out-key  15%
+Lead     M1  take 12  bars 13-33    Lead 12        notes  27  med 19.2ct  >25ct  44%  avg  -8.6  drift  29  out-key  11%
+Lead     M1  take 13  bars 13-33    Lead 13        notes  15  med 26.0ct  >25ct  53%  avg -13.4  drift  20  out-key  13%
+Lead     M1  take 14  bars 13-33    Lead 14        notes  17  med 17.6ct  >25ct  29%  avg -12.6  drift  30  out-key   6%
+Lead     M1  take 15  bars 13-29    Lead 15        notes  16  med 20.3ct  >25ct  38%  avg  -8.3  drift  34  out-key  12%
+Lead     M1  take 15  bars 29-49    Lead 15        notes  60  med 13.9ct  >25ct  27%  avg  -1.7  drift  22  out-key  12%
+Lead     M1  take 16  bars 13-29    Lead 16        notes  15  med 14.6ct  >25ct  40%  avg  -5.5  drift  37  out-key  13%
+Lead     M1  take 16  bars 29-49    Lead 16        notes  66  med 18.4ct  >25ct  35%  avg  -7.0  drift  24  out-key   6%
+Lead     M1  take 17  bars 13-29    Lead 17        notes  30  med 21.4ct  >25ct  43%  avg  +2.5  drift  19  out-key  30%
+Lead     M1  take 17  bars 29-49    Lead 17        notes  74  med 25.7ct  >25ct  50%  avg  +6.7  drift  28  out-key  16%
+Lead     M1  take 18  bars 13-33    Lead 18        notes   1  (too few to score)
+Lead     M1  take 19  bars 13-33    Lead 19        notes   8  med 34.5ct  >25ct  62%  avg -18.8  drift  38  out-key  25%
+Lead     M1  take 20  bars 13-33    Lead 20        notes  29  med 20.1ct  >25ct  38%  avg  -3.3  drift  29  out-key  17%
+Lead     M1  take 21  bars 13-33    Lead 21        notes  29  med 22.3ct  >25ct  45%  avg  -7.2  drift  24  out-key  21%
+Lead     M1  take 22  bars 13-33    Lead 22        notes  29  med 24.5ct  >25ct  48%  avg  -8.7  drift  24  out-key  10%
+Lead     M1  take 23  bars 13-33    Lead 23        notes  31  med 16.1ct  >25ct  39%  avg  -5.6  drift  26  out-key  16%
+Lead     M1  take 24  bars 13-33    Lead 24        notes  31  med 19.4ct  >25ct  39%  avg -11.9  drift  30  out-key   3%
+Lead     M1  take 25  bars 13-33    Lead 25        notes  34  med 12.2ct  >25ct  35%  avg  -6.7  drift  31  out-key   6%
+Lead     M1  take 26  bars 13-33    Lead 26        notes  32  med 14.6ct  >25ct  28%  avg  -7.3  drift  26  out-key   0%
+Lead     M1  take 27  bars 13-33    Lead 27        notes  33  med 17.1ct  >25ct  39%  avg  +3.9  drift  31  out-key   9%
+Lead     M1  take 28  bars 13-32    Lead 28        notes  32  med 11.9ct  >25ct  25%  avg  -7.0  drift  26  out-key   3%
+Lead     M1  take 29  bars 29-49    Lead 29        notes  64  med 19.8ct  >25ct  41%  avg  +9.5  drift  29  out-key   5%
+Lead     M1  take 30  bars 29-49    Lead 30        notes  48  med 15.5ct  >25ct  33%  avg +10.4  drift  26  out-key   8%
+Lead     M1  take 31  bars 29-49    Lead 31        notes  21  med 16.7ct  >25ct  38%  avg  -2.9  drift  28  out-key   5%
+Lead     M1  take 32  bars 29-49    Lead 32        notes  31  med 15.6ct  >25ct  35%  avg  +8.9  drift  23  out-key   3%
+Lead     M1  take 33  bars 29-49    Lead 33        notes  69  med 19.0ct  >25ct  28%  avg  -1.9  drift  26  out-key   9%
+Lead     M1  take 34  bars 29-49    Lead 34        notes  39  med 28.4ct  >25ct  62%  avg +11.6  drift  25  out-key   8%
+Lead     M1  take 35  bars 29-49    Lead 35        notes  36  med 16.8ct  >25ct  31%  avg +11.6  drift  28  out-key   6%
+Lead     M0  main     bars 10-13    Lead 36        notes   0  (too few to score)
+Lead     M0  main     bars 13-33    Lead 42        notes  33  med  9.7ct  >25ct  18%  avg  +7.1  drift  26  out-key   9%
+Lead     M0  take 1   bars 2-19     Lead           notes  18  med 24.1ct  >25ct  50%  avg  -4.9  drift  36  out-key  11%
+Lead     M0  take 1   bars 26-33    Lead           notes   0  (too few to score)
+Lead     M0  take 1   bars 35-45    Lead           notes   0  (too few to score)
+Lead     M0  take 2   bars 1-43     Lead 2         notes  70  med 14.4ct  >25ct  31%  avg  -3.6  drift  37  out-key  16%
+Lead     M0  take 3   bars 17-319   Lead 3         notes 151  med 17.3ct  >25ct  34%  avg  +3.6  drift  28  out-key  15%
+Lead     M0  take 4   bars 13-33    Lead 4         notes  25  med 14.3ct  >25ct  32%  avg  +2.9  drift  30  out-key   0%
+Lead     M0  take 4   bars 38-53    Lead 4         notes  32  med 19.7ct  >25ct  31%  avg  -0.2  drift  22  out-key   6%
+Lead     M0  take 5   bars 13-33    Lead 5         notes  26  med 13.9ct  >25ct  19%  avg  -0.0  drift  27  out-key   8%
+Lead     M0  take 5   bars 33-49    Lead 5         notes  19  med 35.4ct  >25ct  68%  avg  +1.6  drift  37  out-key  47%
+Lead     M0  take 6   bars 13-33    Lead 6         notes  26  med 30.5ct  >25ct  62%  avg  -2.7  drift  40  out-key  27%
+Lead     M0  take 7   bars 13-33    Lead 7         notes  29  med 26.9ct  >25ct  55%  avg -11.3  drift  31  out-key  24%
+Lead     M0  take 8   bars 13-33    Lead 8         notes  31  med 21.6ct  >25ct  42%  avg -11.9  drift  38  out-key   6%
+Lead     M0  take 9   bars 13-33    Lead 9         notes  16  med 25.7ct  >25ct  56%  avg -16.0  drift  28  out-key  25%
+Lead     M0  take 10  bars 13-33    Lead 10        notes  35  med 18.1ct  >25ct  40%  avg -10.6  drift  33  out-key  11%
+Lead     M0  take 11  bars 13-33    Lead 11        notes  16  med 26.9ct  >25ct  50%  avg -16.5  drift  33  out-key  25%
+Lead     M0  take 12  bars 13-33    Lead 12        notes  28  med 18.9ct  >25ct  36%  avg  -8.1  drift  28  out-key  14%
+Lead     M0  take 13  bars 13-33    Lead 13        notes  28  med 23.1ct  >25ct  50%  avg  -1.8  drift  33  out-key  29%
+Lead     M0  take 14  bars 13-33    Lead 14        notes  15  med 19.2ct  >25ct  27%  avg -14.5  drift  30  out-key   7%
+Lead     M0  take 15  bars 13-29    Lead 15        notes  17  med 21.9ct  >25ct  47%  avg  -6.9  drift  39  out-key  24%
+Lead     M0  take 15  bars 29-49    Lead 15        notes  61  med 17.3ct  >25ct  30%  avg  +1.0  drift  24  out-key  11%
+Lead     M0  take 16  bars 13-29    Lead 16        notes  15  med 13.3ct  >25ct  40%  avg  -4.9  drift  37  out-key  20%
+Lead     M0  take 16  bars 29-49    Lead 16        notes  75  med 18.4ct  >25ct  40%  avg  -7.5  drift  28  out-key   7%
+Lead     M0  take 17  bars 13-29    Lead 17        notes  30  med 21.6ct  >25ct  40%  avg  +1.0  drift  20  out-key  27%
+Lead     M0  take 17  bars 29-49    Lead 17        notes  73  med 26.2ct  >25ct  52%  avg  +5.2  drift  29  out-key  18%
+Lead     M0  take 18  bars 13-33    Lead 18        notes   1  (too few to score)
+Lead     M0  take 19  bars 13-33    Lead 19        notes  25  med 24.1ct  >25ct  44%  avg -11.2  drift  44  out-key  40%
+Lead     M0  take 20  bars 13-33    Lead 20        notes  27  med 11.6ct  >25ct  33%  avg  -2.6  drift  26  out-key  15%
+Lead     M0  take 21  bars 13-33    Lead 21        notes  33  med 24.1ct  >25ct  42%  avg  -5.4  drift  28  out-key  27%
+Lead     M0  take 22  bars 13-33    Lead 22        notes  35  med 23.9ct  >25ct  46%  avg  -7.3  drift  33  out-key  14%
+Lead     M0  take 23  bars 13-33    Lead 23        notes  27  med 15.7ct  >25ct  37%  avg  -9.9  drift  22  out-key  11%
+Lead     M0  take 24  bars 13-33    Lead 24        notes  32  med 17.7ct  >25ct  31%  avg  -8.3  drift  33  out-key   9%
+Lead     M0  take 25  bars 13-33    Lead 25        notes  29  med 12.2ct  >25ct  31%  avg  -3.8  drift  31  out-key   7%
+Lead     M0  take 26  bars 13-33    Lead 26        notes  31  med 16.3ct  >25ct  29%  avg  -6.9  drift  25  out-key   0%
+Lead     M0  take 27  bars 13-33    Lead 27        notes  34  med 16.7ct  >25ct  29%  avg  +3.9  drift  30  out-key  12%
+Lead     M0  take 28  bars 13-32    Lead 28        notes  33  med 13.3ct  >25ct  27%  avg  -6.0  drift  26  out-key   6%
+Lead     M0  take 29  bars 29-49    Lead 29        notes  63  med 19.8ct  >25ct  40%  avg  +9.6  drift  26  out-key   5%
+Lead     M0  take 30  bars 29-49    Lead 30        notes  47  med 13.5ct  >25ct  30%  avg +11.5  drift  26  out-key   9%
+Lead     M0  take 31  bars 29-49    Lead 31        notes  21  med 13.5ct  >25ct  38%  avg  -2.8  drift  29  out-key   5%
+Lead     M0  take 32  bars 29-49    Lead 32        notes  33  med 17.1ct  >25ct  39%  avg  +8.2  drift  29  out-key   6%
+Lead     M0  take 33  bars 29-49    Lead 33        notes  76  med 18.5ct  >25ct  29%  avg  -4.7  drift  27  out-key   9%
+Lead     M0  take 34  bars 29-49    Lead 34        notes  42  med 27.9ct  >25ct  60%  avg  +6.2  drift  24  out-key  10%
+Lead     M0  take 35  bars 29-49    Lead 35        notes  37  med 12.5ct  >25ct  27%  avg +10.8  drift  28  out-key   5%
+Lead     M0  take 36  bars 10-33    Lead 36        notes  26  med 20.4ct  >25ct  31%  avg  +1.9  drift  31  out-key  15%
+Lead     M0  take 37  bars 13-33    Lead 37        notes  29  med 21.9ct  >25ct  41%  avg  -4.1  drift  34  out-key  21%
+Lead     M0  take 38  bars 13-33    Lead 38        notes  32  med 17.9ct  >25ct  41%  avg  +1.4  drift  25  out-key   9%
+Lead     M0  take 39  bars 13-33    Lead 39        notes  44  med 18.0ct  >25ct  36%  avg  +7.2  drift  28  out-key  11%
+Lead     M0  take 40  bars 13-33    Lead 40        notes  32  med 12.7ct  >25ct  41%  avg  +3.7  drift  29  out-key  12%
+Lead     M0  take 41  bars 13-33    Lead 41        notes  38  med 12.9ct  >25ct  24%  avg  +3.1  drift  28  out-key   8%
+Lead     M0  take 42  bars 13-33    Lead 42        notes  33  med  9.7ct  >25ct  18%  avg  +7.1  drift  26  out-key   9%
+Lead     M0  take 43  bars 13-14    Lead 43        notes   0  (too few to score)
+Lead     M1  main     bars 10-13    Lead 36        notes   0  (too few to score)
+Lead     M1  main     bars 13-33    Lead 42        notes  33  med  9.8ct  >25ct  18%  avg  +7.2  drift  31  out-key   9%
+Lead     M1  take 1   bars 2-19     Lead           notes  18  med 24.1ct  >25ct  50%  avg  -4.9  drift  36  out-key  11%
+Lead     M1  take 1   bars 26-33    Lead           notes   0  (too few to score)
+Lead     M1  take 1   bars 35-45    Lead           notes   0  (too few to score)
+Lead     M1  take 2   bars 1-43     Lead 2         notes  66  med 15.0ct  >25ct  33%  avg  -3.2  drift  32  out-key  14%
+Lead     M1  take 3   bars 17-319   Lead 3         notes  32  med 21.6ct  >25ct  41%  avg +10.8  drift  27  out-key  22%
+Lead     M1  take 4   bars 13-33    Lead 4         notes  21  med 11.1ct  >25ct  24%  avg  -3.4  drift  21  out-key   0%
+Lead     M1  take 4   bars 38-53    Lead 4         notes  34  med 19.1ct  >25ct  32%  avg  +1.8  drift  21  out-key  15%
+Lead     M1  take 5   bars 13-33    Lead 5         notes  23  med 14.7ct  >25ct  30%  avg  -1.3  drift  22  out-key   9%
+Lead     M1  take 5   bars 33-49    Lead 5         notes  18  med 34.2ct  >25ct  67%  avg  -5.5  drift  42  out-key  44%
+Lead     M1  take 6   bars 13-33    Lead 6         notes  22  med 24.3ct  >25ct  45%  avg  +0.8  drift  40  out-key  18%
+Lead     M1  take 7   bars 13-33    Lead 7         notes  28  med 25.8ct  >25ct  54%  avg -11.1  drift  31  out-key  21%
+Lead     M1  take 8   bars 13-33    Lead 8         notes  31  med 21.9ct  >25ct  45%  avg -14.0  drift  38  out-key   6%
+Lead     M1  take 9   bars 13-33    Lead 9         notes   5  (too few to score)
+Lead     M1  take 10  bars 13-33    Lead 10        notes  31  med 21.2ct  >25ct  39%  avg -15.6  drift  29  out-key   3%
+Lead     M1  take 11  bars 13-33    Lead 11        notes  13  med 24.8ct  >25ct  46%  avg -15.9  drift  31  out-key  15%
+Lead     M1  take 12  bars 13-33    Lead 12        notes  27  med 19.2ct  >25ct  44%  avg  -8.6  drift  29  out-key  11%
+Lead     M1  take 13  bars 13-33    Lead 13        notes  15  med 26.0ct  >25ct  53%  avg -13.4  drift  20  out-key  13%
+Lead     M1  take 14  bars 13-33    Lead 14        notes  17  med 17.6ct  >25ct  29%  avg -12.6  drift  30  out-key   6%
+Lead     M1  take 15  bars 13-29    Lead 15        notes  16  med 20.3ct  >25ct  38%  avg  -8.3  drift  34  out-key  12%
+Lead     M1  take 15  bars 29-49    Lead 15        notes  60  med 13.9ct  >25ct  27%  avg  -1.7  drift  22  out-key  12%
+Lead     M1  take 16  bars 13-29    Lead 16        notes  15  med 14.6ct  >25ct  40%  avg  -5.5  drift  37  out-key  13%
+Lead     M1  take 16  bars 29-49    Lead 16        notes  66  med 18.4ct  >25ct  35%  avg  -7.0  drift  24  out-key   6%
+Lead     M1  take 17  bars 13-29    Lead 17        notes  30  med 21.4ct  >25ct  43%  avg  +2.5  drift  19  out-key  30%
+Lead     M1  take 17  bars 29-49    Lead 17        notes  74  med 25.7ct  >25ct  50%  avg  +6.7  drift  28  out-key  16%
+Lead     M1  take 18  bars 13-33    Lead 18        notes   1  (too few to score)
+Lead     M1  take 19  bars 13-33    Lead 19        notes   8  med 34.5ct  >25ct  62%  avg -18.8  drift  38  out-key  25%
+Lead     M1  take 20  bars 13-33    Lead 20        notes  29  med 20.1ct  >25ct  38%  avg  -3.3  drift  29  out-key  17%
+Lead     M1  take 21  bars 13-33    Lead 21        notes  29  med 22.3ct  >25ct  45%  avg  -7.2  drift  24  out-key  21%
+Lead     M1  take 22  bars 13-33    Lead 22        notes  29  med 24.5ct  >25ct  48%  avg  -8.7  drift  24  out-key  10%
+Lead     M1  take 23  bars 13-33    Lead 23        notes  31  med 16.1ct  >25ct  39%  avg  -5.6  drift  26  out-key  16%
+Lead     M1  take 24  bars 13-33    Lead 24        notes  31  med 19.4ct  >25ct  39%  avg -11.9  drift  30  out-key   3%
+Lead     M1  take 25  bars 13-33    Lead 25        notes  34  med 12.2ct  >25ct  35%  avg  -6.7  drift  31  out-key   6%
+Lead     M1  take 26  bars 13-33    Lead 26        notes  32  med 14.6ct  >25ct  28%  avg  -7.3  drift  26  out-key   0%
+Lead     M1  take 27  bars 13-33    Lead 27        notes  33  med 17.1ct  >25ct  39%  avg  +3.9  drift  31  out-key   9%
+Lead     M1  take 28  bars 13-32    Lead 28        notes  32  med 11.9ct  >25ct  25%  avg  -7.0  drift  26  out-key   3%
+Lead     M1  take 29  bars 29-49    Lead 29        notes  64  med 19.8ct  >25ct  41%  avg  +9.5  drift  29  out-key   5%
+Lead     M1  take 30  bars 29-49    Lead 30        notes  48  med 15.5ct  >25ct  33%  avg +10.4  drift  26  out-key   8%
+Lead     M1  take 31  bars 29-49    Lead 31        notes  21  med 16.7ct  >25ct  38%  avg  -2.9  drift  28  out-key   5%
+Lead     M1  take 32  bars 29-49    Lead 32        notes  31  med 15.6ct  >25ct  35%  avg  +8.9  drift  23  out-key   3%
+Lead     M1  take 33  bars 29-49    Lead 33        notes  69  med 19.0ct  >25ct  28%  avg  -1.9  drift  26  out-key   9%
+Lead     M1  take 34  bars 29-49    Lead 34        notes  39  med 28.4ct  >25ct  62%  avg +11.6  drift  25  out-key   8%
+Lead     M1  take 35  bars 29-49    Lead 35        notes  36  med 16.8ct  >25ct  31%  avg +11.6  drift  28  out-key   6%
+Lead     M1  take 36  bars 10-33    Lead 36        notes  26  med 18.8ct  >25ct  38%  avg  +1.2  drift  35  out-key  12%
+Lead     M1  take 37  bars 13-33    Lead 37        notes  31  med 16.4ct  >25ct  39%  avg  -1.9  drift  32  out-key  19%
+Lead     M1  take 38  bars 13-33    Lead 38        notes  31  med 16.1ct  >25ct  35%  avg  +0.8  drift  25  out-key   6%
+Lead     M1  take 39  bars 13-33    Lead 39        notes  45  med 17.3ct  >25ct  38%  avg +10.0  drift  30  out-key  13%
+Lead     M1  take 40  bars 13-33    Lead 40        notes  33  med 14.8ct  >25ct  39%  avg  +4.1  drift  30  out-key  15%
+Lead     M1  take 41  bars 13-33    Lead 41        notes  37  med 13.0ct  >25ct  27%  avg  +0.9  drift  27  out-key   5%
+Lead     M1  take 42  bars 13-33    Lead 42        notes  33  med  9.8ct  >25ct  18%  avg  +7.2  drift  31  out-key   9%
+Lead     M1  take 43  bars 13-14    Lead 43        notes   0  (too few to score)
+BV Pad 1 M0  main     bars 13-31    BV Pad 1 6     notes  31  med 32.4ct  >25ct  61%  avg  +6.4  drift  25  out-key  26%
+BV Pad 1 M0  main     bars 31-33    BV Pad 1 5     notes   2  (too few to score)
+BV Pad 1 M0  take 1   bars 26-33    BV Pad 1       notes   0  (too few to score)
+BV Pad 1 M0  take 2   bars 13-33    BV Pad 1 2     notes  20  med 15.0ct  >25ct  35%  avg +11.3  drift  28  out-key   5%
+BV Pad 1 M0  take 3   bars 13-33    BV Pad 1 3     notes  39  med 25.9ct  >25ct  54%  avg +17.2  drift  27  out-key   5%
+BV Pad 1 M0  take 4   bars 13-33    BV Pad 1 4     notes  39  med 16.5ct  >25ct  28%  avg  +7.1  drift  26  out-key  13%
+BV Pad 1 M0  take 5   bars 13-33    BV Pad 1 5     notes  33  med 15.0ct  >25ct  39%  avg  +4.9  drift  25  out-key  12%
+BV Pad 1 M0  take 6   bars 13-31    BV Pad 1 6     notes  31  med 32.4ct  >25ct  61%  avg  +6.4  drift  25  out-key  26%
+BV Pad 2 M1  main     bars 13-31    BV Pad 2 5     notes  32  med 33.3ct  >25ct  56%  avg  +6.4  drift  27  out-key  31%
+BV Pad 2 M1  main     bars 31-33    BV Pad 2 4     notes   2  (too few to score)
+BV Pad 2 M1  take 1   bars 25-33    BV Pad 2       notes   0  (too few to score)
+BV Pad 2 M1  take 2   bars 13-33    BV Pad 2 2     notes  38  med 28.6ct  >25ct  53%  avg +15.1  drift  26  out-key   8%
+BV Pad 2 M1  take 3   bars 13-33    BV Pad 2 3     notes  38  med 15.6ct  >25ct  29%  avg  +7.5  drift  25  out-key  13%
+BV Pad 2 M1  take 4   bars 13-33    BV Pad 2 4     notes  30  med 13.0ct  >25ct  37%  avg  +4.7  drift  22  out-key  10%
+BV Pad 2 M1  take 5   bars 13-31    BV Pad 2 5     notes  32  med 33.3ct  >25ct  56%  avg  +6.4  drift  27  out-key  31%
+Whisper  M0  main     bars 13-33    Whisper 5      notes   0  (too few to score)
+Whisper  M0  take 1   bars 31-33    Whisper        notes   0  (too few to score)
+Whisper  M0  take 2   bars 13-33    Whisper 2      notes   0  (too few to score)
+Whisper  M0  take 3   bars 13-33    Whisper 3      notes   0  (too few to score)
+Whisper  M0  take 4   bars 13-33    Whisper 4      notes   0  (too few to score)
+Whisper  M0  take 5   bars 13-33    Whisper 5      notes   0  (too few to score)
+Whisper  M0  take 6   bars 13-15    Whisper 6      notes   0  (too few to score)
+Adlib    M0  main     bars 13-13    Adlib          notes   0  (too few to score)
+Adlib    M0  main     bars 13-33    Adlib 9        notes  28  med 16.6ct  >25ct  39%  avg  +5.8  drift  21  out-key  14%
+Adlib    M0  take 1   bars 13-33    Adlib          notes  14  med 26.8ct  >25ct  57%  avg  -6.7  drift  35  out-key  21%
+Adlib    M0  take 2   bars 13-33    Adlib 2        notes  24  med 12.4ct  >25ct  33%  avg  -1.7  drift  32  out-key  21%
+Adlib    M0  take 3   bars 13-33    Adlib 3        notes  15  med 25.8ct  >25ct  53%  avg  +3.7  drift  27  out-key  13%
+Adlib    M0  take 4   bars 13-33    Adlib 4        notes  18  med 24.1ct  >25ct  50%  avg -10.7  drift  28  out-key  22%
+Adlib    M0  take 5   bars 13-33    Adlib 5        notes  23  med 22.4ct  >25ct  43%  avg  +2.9  drift  22  out-key  17%
+Adlib    M0  take 6   bars 13-33    Adlib 6        notes  28  med 14.3ct  >25ct  29%  avg  +2.7  drift  26  out-key  29%
+Adlib    M0  take 7   bars 13-33    Adlib 7        notes  28  med 19.2ct  >25ct  46%  avg  +3.0  drift  27  out-key  18%
+Adlib    M0  take 8   bars 13-33    Adlib 8        notes  13  med 16.7ct  >25ct  38%  avg  -0.1  drift  29  out-key   0%
+Adlib    M0  take 9   bars 13-33    Adlib 9        notes  28  med 16.6ct  >25ct  39%  avg  +5.8  drift  21  out-key  14%
+Adlib    M0  take 10  bars 13-15    Adlib 10       notes   0  (too few to score)
+Adlib    M1  main     bars 13-13    Adlib          notes   0  (too few to score)
+Adlib    M1  main     bars 13-33    Adlib 9        notes  28  med 17.4ct  >25ct  36%  avg  +6.3  drift  22  out-key  14%
+Adlib    M1  take 1   bars 13-33    Adlib          notes  15  med 25.3ct  >25ct  53%  avg  -0.8  drift  32  out-key  27%
+Adlib    M1  take 2   bars 13-33    Adlib 2        notes  24  med 14.0ct  >25ct  38%  avg  -0.8  drift  32  out-key  21%
+Adlib    M1  take 3   bars 13-33    Adlib 3        notes  14  med 24.3ct  >25ct  43%  avg  +6.6  drift  31  out-key  14%
+Adlib    M1  take 4   bars 13-33    Adlib 4        notes  20  med 22.5ct  >25ct  45%  avg -11.1  drift  31  out-key  20%
+Adlib    M1  take 5   bars 13-33    Adlib 5        notes  22  med 23.4ct  >25ct  45%  avg  +2.4  drift  19  out-key  18%
+Adlib    M1  take 6   bars 13-33    Adlib 6        notes  27  med 12.4ct  >25ct  26%  avg  +3.4  drift  25  out-key  22%
+Adlib    M1  take 7   bars 13-33    Adlib 7        notes  27  med 17.2ct  >25ct  41%  avg  +4.1  drift  29  out-key  19%
+Adlib    M1  take 8   bars 13-33    Adlib 8        notes  12  med 15.7ct  >25ct  33%  avg  +2.2  drift  27  out-key   0%
+Adlib    M1  take 9   bars 13-33    Adlib 9        notes  28  med 17.4ct  >25ct  36%  avg  +6.3  drift  22  out-key  14%
+Adlib    M1  take 10  bars 13-15    Adlib 10       notes   0  (too few to score)

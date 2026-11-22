@@ -1,0 +1,224 @@
+[
+ {
+  "name": "Fan-filmed full sets with timestamps become the live archive",
+  "insight": "The most active live content here comes from fans, not the artist: full-set uploads of Boy Harsher shows. Commenters thank uploaders, praise good audio, add song-by-song timestamps, and use the videos to relive a night or catch a show they missed. Audio quality is the first thing people judge.",
+  "examples": [
+   "Commenter posts a full timestamped setlist, including the singer's intro speech and thank-you moment",
+   "Several commenters thank the uploader for recording so they can revisit the night or see a show they missed",
+   "Viewers praise the sound as the best version they could find",
+   "A commenter asks which phone or camera the uploader used"
+  ],
+  "evidence_ids": [
+   93,
+   94,
+   98,
+   107,
+   109,
+   122,
+   128,
+   121
+  ],
+  "use": "After each show, post a well-mixed set excerpt or full set with a plain timestamped tracklist in the caption: date, city, track titles, no adjectives. Repost good fan footage with credit. Treat clean audio as non-negotiable.",
+  "strength": 5
+ },
+ {
+  "name": "Fans hunt live-only versions, song IDs and extended edits",
+  "insight": "Listeners keep asking what a track was, where to find a live-only version, or for longer versions. They point out live parts missing from the album, correct wrong song titles, ask about remixes they heard, and recognise songs that were played live before release.",
+  "examples": [
+   "Two viewers ask the name of the song playing after the set ends",
+   "A fan notes the live 'Modulations' differs heavily from the album version and wants a better-quality copy",
+   "A fan flags an extra live section of 'Hard Beat' as the highlight",
+   "A request for a 15-minute edit of a track; a question about whether a remix heard in an interview is released",
+   "A fan points out a new release was the unreleased song from older live clips"
+  ],
+  "evidence_ids": [
+   40,
+   50,
+   31,
+   95,
+   116,
+   118,
+   120,
+   124,
+   125
+  ],
+  "use": "Use the live set as a teaser lab. Play unreleased tracks and extended edits live, then post short clips captioned only 'unreleased' plus the city. Answer ID questions with one line. Later, release live or extended versions as their own drops and tie them back to the clips.",
+  "strength": 5
+ },
+ {
+  "name": "Cinema references in videos get rewarded",
+  "insight": "Boy Harsher's Hard Beat video drew a cluster of comments that recognised film references (Cronenberg's Crash, Lynch). Commenters described the thrill of spotting a favourite film inside a favourite band's work. They praised the production design and the 90s mood as reasons to become fans.",
+  "examples": [
+   "Lost Highway and Blue Velvet vibes",
+   "Tribute to Crash with Italo disco feel",
+   "Excitement when a favourite band references a favourite movie",
+   "'Cronenberg summer' framing",
+   "Production design and 90s look win an instant fan"
+  ],
+  "evidence_ids": [
+   51,
+   69,
+   74,
+   78,
+   81,
+   90
+  ],
+  "use": "Build visual series around a clear film lineage (Berlin noir, Cronenberg, Lynch, Fassbinder) without naming it outright. Let fans find the reference. A still-frame IG series with stark framing suits a cinematic, declarative voice.",
+  "strength": 4
+ },
+ {
+  "name": "Distinct, slightly surreal recurring imagery in videos",
+  "insight": "R. Missing fans praise each video for being different and unique. They latch onto odd recurring figures (a bunny, a cat, a woman on the ceiling) and joke about them, which drives repeat viewing and comment activity.",
+  "examples": [
+   "Joke about the bunny giving a stock-market presentation",
+   "Not knowing what is going on but liking the cat",
+   "Praise for the drive to make distinct, unique videos",
+   "Asking who the woman on the ceiling is",
+   "Watching three times in a row"
+  ],
+  "evidence_ids": [
+   2,
+   4,
+   6,
+   10,
+   11,
+   12,
+   47
+  ],
+  "use": "Introduce one recurring enigmatic motif (an object, mask or figure) across visualizers and posts and never explain it. It gives fans something to talk about while the artist's voice stays restrained.",
+  "strength": 4
+ },
+ {
+  "name": "Seeing the frontperson styled and lit on camera",
+  "insight": "Fans single out the visible performer's look as a reward: outfits, veil and lighting on the face, a resemblance to a TV character, and simply being glad the singer appears in the new videos. Fans also comment on how she looks on stage.",
+  "examples": [
+   "Enjoying Sharon's outfits across the videos",
+   "Glad to see Jae in the new videos",
+   "Love for the veil and lighting on Jae's face",
+   "Jae looks like a goth Cersei",
+   "Fan notes she looks healthier and happier on stage"
+  ],
+  "evidence_ids": [
+   24,
+   73,
+   86,
+   89,
+   112
+  ],
+  "use": "With Amir's own vocals arriving in 2026, put him on camera deliberately: controlled lighting, consistent styling, close portrait frames in videos and IG. Keep the presence composed and costumed rather than casual vlogging.",
+  "strength": 4
+ },
+ {
+  "name": "High release cadence is noticed and celebrated",
+  "insight": "Fans explicitly praise steady, frequent output. They joke that R. Missing releases more often than they go to work and cheer Boy Harsher 'cooking single after single'. Frequency itself becomes part of the artist's identity, as long as quality holds.",
+  "examples": [
+   "Calling R. Missing the most productive artist they know, and always good",
+   "Joke about new tracks arriving more often than shifts at work",
+   "Noting a sad-but-groovy release roughly every month",
+   "Excitement over single after single ahead of the album"
+  ],
+  "evidence_ids": [
+   16,
+   19,
+   24,
+   27,
+   75,
+   3,
+   63
+  ],
+  "use": "Plan a visible monthly rhythm of singles, each with its own visual, and let the cadence speak. A sober numbered series (e.g. 'Transmission 04') fits the voice better than countdown hype.",
+  "strength": 4
+ },
+ {
+  "name": "Rewarding a return to the dark core sound",
+  "insight": "Fans reward artists for staying in, or returning to, the darker style they are known for. Boy Harsher listeners welcome a 'return to the darkness' and the old roots and say no other band matches that sound. R. Missing fans praise witch-house vibes. Polish is welcome only if the darkness stays.",
+  "examples": [
+   "Feels like a return to the vibe of Yr Body Means Nothing",
+   "Glad they are back in the old roots",
+   "Happy with the return of their known style",
+   "Bringing back the witchhouse vibes",
+   "More polished than older material, yet still loved"
+  ],
+  "evidence_ids": [
+   61,
+   64,
+   80,
+   92,
+   14,
+   77
+  ],
+  "use": "As vocals enter, signal continuity: keep the dark-dance-wave palette in the visuals and frame vocal tracks as an extension of the same world, not a pivot. Captions can name the lineage (coldwave, EBM) plainly.",
+  "strength": 4
+ },
+ {
+  "name": "Live shows as repeat pilgrimages, with routing frustration",
+  "insight": "Fans plan around tours, see the band several times, travel to multiple cities, and loudly regret skipped cities. International fans ask when the band will come to them. Live visuals and human moments on stage get praised. Crowd energy and venue crowding draw criticism.",
+  "examples": [
+   "Triple-dipping: both Chicago shows plus Minneapolis",
+   "Third time seeing them, in Portland",
+   "Disappointment that St. Louis was skipped again",
+   "Hoping for a Columbus date; Brazilian fans rallying for next year",
+   "Analog video-synth glitch visuals and lights praised",
+   "Singer laughing at a fan's reaction remembered fondly",
+   "Complaints of a dead crowd and an overcrowded venue"
+  ],
+  "evidence_ids": [
+   83,
+   85,
+   91,
+   96,
+   97,
+   103,
+   104,
+   106,
+   108,
+   115,
+   117,
+   126,
+   129,
+   130
+  ],
+  "use": "Announce dates in a clean, list-style visual and openly invite cities to ask for shows. Invest in a signature live visual language (analog video, strobes). Post short after-show notes that name the city and the crowd, without hype.",
+  "strength": 4
+ },
+ {
+  "name": "Gear and process talk builds peer connection",
+  "insight": "A gear-focused Boy Harsher interview drew producer-fans who bond over shared synths, recall past live rigs and discuss firmware details. R. Missing fans ask how the music is made and admire the act of realising a sound in your head.",
+  "examples": [
+   "Discussion of AstroLab firmware and its sound-design value",
+   "Fan who shared the same gear for years and recalls the MPC 1000 and Prophet 08 live rig",
+   "Request to be taught how to make music like them",
+   "Remark on how it must feel to create a song exactly as imagined"
+  ],
+  "evidence_ids": [
+   48,
+   49,
+   32,
+   23
+  ],
+  "use": "Run occasional quiet studio posts: one machine, one patch, one sentence on why. Show the live rig before tours. This reaches the producer segment of the dark-disco/EBM audience without breaking the restrained tone.",
+  "strength": 3
+ },
+ {
+  "name": "Music framed as night drive, coldness and refuge",
+  "insight": "Listeners describe the music through settings and states: night driving, staying cold in the heat, escaping a brutal system, getting through adulthood, a song for every mood. They reward artists whose world gives them a place to go.",
+  "examples": [
+   "The perfect song for driving at night",
+   "Loud in the car in Lima",
+   "With rising heat, at least the music stays cold",
+   "Music as a dissociative refuge from the system",
+   "Helping get through adulthood"
+  ],
+  "evidence_ids": [
+   84,
+   110,
+   60,
+   21,
+   30,
+   76,
+   34
+  ],
+  "use": "Caption releases with a single scene line (a time, place or temperature) rather than a sales pitch, e.g. a night-drive visual series through Berlin. This matches the declarative, cinematic voice and the way fans already describe the music.",
+  "strength": 3
+ }
+]

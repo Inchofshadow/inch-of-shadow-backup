@@ -117,3 +117,44 @@ Built on new tracks 41/42 (Untitled set), saved from Live (drag onto User Librar
   CL 1B (Fix) > DeEsser > Pro-Q 3 > Sends: Grit (bx_blackdist2, default; RAT stand-in) | Dry | Slap (EchoBoy, Mix wet, Single Echo, 1/16 note, Studio Tape) | Space (ValhallaSupermassive, Mix 100, rest default).
 - Both unproven until Amir loads them on a fresh track.
 - 11-13 03:16 (Amir: "i prefer valhalla plate"): Nick Cave Plate chain now ValhallaPlate (default: Chrome, 3.0 s, Mix 100%) instead of UADx Pure Plate. Re-saved from Live; previous file to the Trash. (The chain's "BrowserContentPath" still names Pure Plate: that is only Live's note of how the chain was first made, the device is ValhallaPlate per its plug-in UID.)
+
+## 11-15: batch 2 (27 singers researched, 5 racks planned)
+
+- Picks: https://claude.ai/artifact/KNS6mZULRLqUxDJ4waVPYc (db `picks`, 27). Research: `music-tools/research/vocal-chains-batch2/` (README = quality table, grouping, final build spec). 5 Sonnet agents, ~940k tokens.
+- Rule from Amir: new rack only if clearly different (memory racks-only-if-distinct). Fever Ray dropped (overlaps FX - Auto Shift Live Harmonizer). No Live stock devices in racks (Amir).
+- ✅ **FX - Vocal Tool.adg** saved 16:54 (13.6 KB, 11 VST3): Pro-Q 3 > UADx Neve 1073 > UADx 1176 Rev A > DeEsser > Sends [Dirt: UADx Helios 69 > Decapitator E (Punish on, mix wet) > Pro-Q 3 band-pass 300 Hz-4 kHz, -12 | Dry 0 | Octave Down AlterBoy -12 st -14 | Octave Up AlterBoy +12 st -18 | Delay EchoBoy (1/8, mix 100) -14 | Space VintageVerb (Concert Hall 4 s, mix 100) -16]. Built in Amir's open set "D minor 112 BPM voc rec" on a temp track (his OK); temp tracks deleted after.
+- ⚠️ All UADx plug-ins showed "DAW RESTART REQUIRED" (greyed, settings can't be changed). Tool's UADx parts (Neve, 1176, Helios) are at default and unproven until Live restarts.
+- ⏸ Stopped for a Live restart (Amir: "I'll restart Live"). Still to build: Steven Wilson (half built, deleted; rebuild), Bon Iver, Thom Yorke, Dream Wash. Amir's Vocal track devices untouched.
+
+## 11-15 20:00-20:28: batch 2 finished after Live restart
+
+Live was restarted by Amir (crash report 19:49 shown); built in a fresh Untitled set on temp track 38, deleted after. UADx plug-ins worked after the restart. Re-loaded FX - Vocal Tool.adg: all chains and plug-ins came back (Claude's load check, not Amir's).
+- ✅ **FX - Vocal Steven Wilson.adg** (14.6 KB, 10 VST3): Pro-Q 3 > UADx Neve 1073 > UADx 1176LN > DeEsser > Sends [Megaphone: Pro-Q 3 band-pass 600 Hz-3.5 kHz > Decapitator > Retro Fi, -10 | Dry | Slap: UADx Galaxy (Wet Solo on), -12 | Tape Delay: EchoBoy 1/4, mix wet, -16 | Room: ValhallaRoom default, -22].
+- ✅ **FX - Vocal Bon Iver.adg** (59 KB, 11 VST3): Auto-Tune Artist > Pro-Q 3 > Pro-MB > UADx LA-2A Silver > Pro-L 2 > Sends [Messina: Auto-Tune Artist retune 0 > Waves Harmony (Source -Inf = harmony only; play chords via MIDI), -8 | Dry | Fixed Harmony: Quadravox "02 - C Maj +3 +5", mix 100, -10 | Choir: Little AlterBoy "03 Modern Double" mix wet > MicroShift wet, -12 | Chamber: ValhallaRoom default, -14]. Latency ~204 ms (Auto-Tune/Pro-L 2/Pro-MB lookahead): mixing rack, not for tracking.
+- ✅ **FX - Vocal Thom Yorke.adg** (22.9 KB, 8 VST3): UADx 1176 Rev A > UADx Pultec EQP-1A > UADx LA-2A Gray > DeEsser > Sends [Dull Verb: ValhallaRoom decay 3 s, HiCut 2.5 kHz, -12 | Dry | Vocoder: OVox (Voice -Inf), -10 | Granular: Output Portal default, -16 | Reverse: Crystallizer "ReverseSpacious" (from the 06 Echo Reverse folder), mix wet, -16].
+- ✅ **FX - Vocal Dream Wash.adg** (11.1 KB, 8 VST3): UADx LA-2A Silver > Pro-Q 3 > soothe2 > Sends [Hall: VintageVerb Concert Hall 4 s, pre-delay 50 ms, HighCut 6 kHz, -10 | Dry | 224: UADx Lexicon 224 Lg Hall B (2.8 s), SOLO lit, -12 | Plate Shimmer: ValhallaPlate > UADx Brigade Chorus, -14 | Tape Echo: UADx Galaxy (Wet Solo on), -18].
+- ❓ Brigade Chorus: Live shows "Enable: Normal" and its own effect LED looked off; it may be bypassed. Amir to check (click the left "normal/effect" footswitch).
+- ❓ Whether Waves Harmony responds to MIDI inside a rack chain needs a MIDI track routed to it; not tested.
+- Not built: Fever Ray (overlaps FX - Auto Shift Live Harmonizer). All 5 unproven until Amir loads them.
+
+## 11-18 Latency measured in "Vocal Template - Apollo (In 1)" (read only, nothing saved)
+- Hover readouts in Live at 44.1 kHz. Lead monitor-In path = about 490 ms in total.
+- Vocal group, active MBSI rack: Abbey Road TG Mastering 188 ms; UADx Manley / Helios / LA-6176 2 / 2 / 3 ms.
+- Vocal group, off racks: the 4 starting with Auto-Tune Artist 59-63 ms each; the Pro-Q 3 rack 1 ms; the Neve rack 4 ms.
+- Sub-groups LEAD / HARMONY / BVOX / ADLIB: soothe2 (off) 46 ms each. Main: 0 ms.
+- Returns: A about 4 ms; C Little AlterBoy (off) 50 ms; D Quadravox (off) 40 ms; the rest 0-1 ms. E / F / G not measured.
+- Rule: a switched-off plug-in still adds its full latency in Live. Delete it from the path; switching it off does nothing.
+- Amir (11-18): the racks on the Vocal group are a menu. When recording he keeps ONE and deletes the rest himself. Accepted compromise.
+- Open: soothe2 on the sub-groups; Auto-Tune Artist Low Latency mode (not measured).
+
+## 11-18 later: fixes saved into "Vocal Template - Apollo (In 1)"
+- Amir's go: "Yes, save it". Deleted in the set: soothe2 on LEAD/HARMONY/BVOX/ADLIB, Abbey Road TG Mastering in the MBSI rack. Auto-Tune "Use Low Latency" re-ticked in the Weeknd, Nick Cave, Deftones and Crystal Castles racks (read 2.5 ms each before the save).
+- Old template in the Trash as "Vocal Template - Apollo (In 1) (old 11-15).als". New file 11:42, checked on disk: 0 soothe, 0 Abbey Road, 9 vocal tracks on input 1. RME template NOT changed.
+- Slip: a double-click on the template in Live's browser started a rename, and after Escape the NEW file was in the Trash (cause unknown). Put back at once from the Trash (same size/time). Open templates with File > Open, never double-click in the browser.
+- Reload test (File > Open the template): **Low Latency does NOT survive a reload.** The box is still ticked, but Live reads the old values again: Weeknd 62.7, Nick Cave 61.3, Deftones 59.0, Crystal Castles 61.3 ms (Robert Smith 0.8, Lana 4.0 unchanged). Auto-Tune only reports the low value after the box is unticked and ticked again in that session.
+- Fix attempts (Amir: "Yes, try a fix"), in an unsaved set from the template:
+  - Buffer 128 > 256 > back to 128: no change (still ~60 ms). Buffer is back on 128.
+  - Fresh Auto-Tune Artist (VST3) on a test track: "Use Low Latency" is already ticked (it is a global Auto-Tune pref), yet Live reads 58.2 ms. So it is the plug-in reporting the wrong latency on load, not the template. Test track deleted.
+  - The AU version is not available: Live has "Use Audio Units v2" OFF (AU v3 + VST3 ON), and Auto-Tune Artist is AU v2 only. Not changed (global Live setting, needs Amir's go).
+- Working routine for now: in the rack he keeps, untick and re-tick "Use Low Latency" once per session (gear icon in the Auto-Tune window).
+- Amir 11-18: "Keep the re-tick". AU v2 stays OFF; no further Auto-Tune fix work.

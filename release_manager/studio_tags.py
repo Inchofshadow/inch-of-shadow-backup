@@ -16,6 +16,8 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 TAGS_FILE = ROOT / "docs" / "brand" / "tags.json"
 
+# The first-fill list. docs/brand/tags.json holds its own copy ("tags"), and that copy is the one used
+# (tag_list); this one is only the fallback when the file is missing or its list is broken.
 TAGS = [
     # feeling
     ("night", "Night scenes, moonlight, dark sky"), ("daylight", "Sunny, bright, open air (on-brand too)"),
@@ -40,6 +42,26 @@ TAGS = [
     ("half-the-night", "Used or saved for the Half the Night cover"),
 ]
 TAG_IDS = [t for t, _ in TAGS]
+TAG_ID = re.compile(r"^[a-z0-9][a-z0-9-]{0,39}$")
+RESERVED = {"untagged"}   # the drawer's own chip, never a stored tag
+
+
+def tag_list(data: dict | None = None) -> list:
+    """The tag list as (id, means) pairs, read from docs/brand/tags.json (Opus gate 2026-11-15: a tag added
+    or renamed by hand in the file must show). Bad entries are skipped; the built-in TAGS stand in only
+    when the file has no usable list."""
+    data = load() if data is None else data
+    rows = data.get("tags") if isinstance(data, dict) else None
+    out, seen = [], set()
+    for row in rows if isinstance(rows, list) else []:
+        if not isinstance(row, dict):
+            continue
+        tid, means = row.get("id"), row.get("means")
+        if not isinstance(tid, str) or not TAG_ID.fullmatch(tid) or tid in RESERVED or tid in seen:
+            continue
+        out.append((tid, means.strip()[:200] if isinstance(means, str) else ""))
+        seen.add(tid)
+    return out or list(TAGS)
 
 # rules (the first fill; the file wins after that)
 EFFECT_GROUP = {
@@ -76,8 +98,9 @@ def _words(text: str) -> set:
     return {tag for rx, tag in WORDS if re.search(rx, t)}
 
 
-def rule_tags(lib: str, rec: dict) -> list:
-    """The tags the rules give one library record."""
+def rule_tags(lib: str, rec: dict, ids: list | None = None) -> list:
+    """The tags the rules give one library record, kept to `ids` (the file's list; the built-in list by default)."""
+    ids = TAG_IDS if ids is None else ids
     out = set()
     if lib == "effect":
         out |= set(EFFECT_GROUP.get(rec.get("group") or "", [])) | set(EFFECT_FAMILY.get(rec.get("family") or "", []))
@@ -90,7 +113,7 @@ def rule_tags(lib: str, rec: dict) -> list:
         if rec.get("id") in HTN_FONTS or "pinocchio-single" in (rec.get("releases") or []):
             out.add("half-the-night")
     elif lib == "archive":
-        out |= {t for t in (rec.get("tags") or []) if t in TAG_IDS}
+        out |= {t for t in (rec.get("tags") or []) if isinstance(t, str) and t in ids}
         out |= _words(" ".join([rec.get("title") or "", rec.get("summary") or "", rec.get("amir_reason") or ""]))
         if "pinocchio-single" in (rec.get("releases") or []):
             out.add("half-the-night")
@@ -99,7 +122,7 @@ def rule_tags(lib: str, rec: dict) -> list:
         out |= {"ink-drawn"} if rec.get("kind") in ("element", "illustration") else set()
         if rec.get("release") == "pinocchio-single":
             out.add("half-the-night")
-    return [t for t in TAG_IDS if t in out]
+    return [t for t in ids if t in out]
 
 
 def library_records(root: Path = ROOT) -> list:
@@ -140,10 +163,12 @@ def load(path: Path = TAGS_FILE) -> dict:
 def tags_for(lib: str, iid: str, rec: dict, data: dict | None = None) -> list:
     """The item's tags from the file; rule tags for an item the file does not have yet. List tags only."""
     data = load() if data is None else data
-    have = (data.get("assign") or {}).get(f"{lib}:{iid}")
-    if have is None:
-        return rule_tags(lib, rec)
-    return [t for t in have if t in TAG_IDS]
+    ids = [t for t, _ in tag_list(data)]
+    assign = data.get("assign") if isinstance(data, dict) else None
+    have = assign.get(f"{lib}:{iid}") if isinstance(assign, dict) else None
+    if not isinstance(have, list):   # not listed yet, or a broken value: the rules give the tags
+        return rule_tags(lib, rec, ids)
+    return [t for t in have if isinstance(t, str) and t in ids]
 
 
 def build(root: Path = ROOT) -> dict:

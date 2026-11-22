@@ -1,0 +1,65 @@
+[
+ {
+  "key": "037-plain",
+  "ph": "out-037",
+  "a": null,
+  "wa": 0,
+  "b": null,
+  "wb": 0,
+  "label": "No effect"
+ },
+ {
+  "key": "037-riso-soft",
+  "ph": "out-037",
+  "a": "riso",
+  "wa": 68,
+  "b": null,
+  "wb": 0,
+  "label": "Riso 68%"
+ },
+ {
+  "key": "037-riso-flash",
+  "ph": "out-037",
+  "a": "riso",
+  "wa": 80,
+  "b": "nightflash",
+  "wb": 20,
+  "label": "Riso 80% + Night flash 20%"
+ },
+ {
+  "key": "037-riso-blowout",
+  "ph": "out-037",
+  "a": "riso",
+  "wa": 100,
+  "b": "blowout",
+  "wb": 8,
+  "label": "Riso 100% + Blowout 8%"
+ },
+ {
+  "key": "037-lilac",
+  "ph": "out-037",
+  "a": "riso",
+  "wa": 68,
+  "b": "monotint",
+  "wb": 70,
+  "label": "Riso 68% + Monotint 70% (lilac)"
+ },
+ {
+  "key": "037-mono-night",
+  "ph": "out-037",
+  "a": "monotint",
+  "wa": 100,
+  "b": "monotintnight",
+  "wb": 11,
+  "label": "Monotint 100% + Monotint night 11%"
+ },
+ {
+  "key": "037-mono-cyan",
+  "ph": "out-037",
+  "a": "monotint",
+  "wa": 100,
+  "b": "cyanotype",
+  "wb": 21,
+  "label": "Monotint 100% + Cyanotype 21%"
+ }
+]

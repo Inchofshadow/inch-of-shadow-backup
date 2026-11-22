@@ -103,3 +103,7 @@ and a one-line verdict citing the rubric items that moved the score. Update the 
 | 2026-11-11 | Wed | **9** (auto) | 16 | 24 | 0 | -1 shortfall: ig_like 8/11 |
 | 2026-11-13 | Fri | **10** (auto) | 14 | 24 | 0 | clean auto-close |
 | 2026-11-14 | Sat | **10** (auto) | 13 | 23 | 0 | clean auto-close |
+| 2026-11-16 | Mon | **9** (auto) | 9 | 15 | 7 | -1 shortfall: ig_like 6/12 |
+| 2026-11-18 | Wed | **7** (auto) | 9 | 13 | 2 | -3 severe shortfall: ig_like 4/12 |
+| 2026-11-20 | Fri | **9** (auto) | 11 | 20 | 0 | -1 shortfall: ig_like 9/12 |
+| 2026-11-21 | Sat | **9** (auto) | 11 | 19 | 4 | -1 shortfall: ig_like 8/11 |

@@ -1,43 +1,42 @@
 {
   "reds": {
-    "2026-11-07": [
-      "🎬 Socials 2 · YouTube login renewal · Login expired ~2026-10-28",
-      "engagement_log.json at 1682KB > 1500KB · schedule the archival job"
-    ],
-    "2026-11-08": [
-      "SC: no session logged · scene_intelligence/sc_session_report_20261108.md",
-      "🎬 Socials 2 · YouTube login renewal · Login expired ~2026-10-28",
-      "engagement_log.json at 1702KB > 1500KB · schedule the archival job"
-    ],
-    "2026-11-09": [
-      "🎬 Socials 2 · YouTube login renewal · Login expired ~2026-10-28",
-      "engagement_log.json at 1712KB > 1500KB · schedule the archival job"
-    ],
-    "2026-11-10": [
-      "SC: no session logged · scene_intelligence/sc_session_report_20261110.md",
-      "🎬 Socials 2 · YouTube login renewal · Login expired ~2026-10-28",
-      "engagement_log.json at 1733KB > 1500KB · schedule the archival job"
-    ],
-    "2026-11-11": [
-      "🎬 Socials 2 · YouTube login renewal · Login expired ~2026-10-28",
-      "engagement_log.json at 1743KB > 1500KB · schedule the archival job"
-    ],
-    "2026-11-12": [
-      "🎬 Socials 2 · YouTube login renewal · Login expired ~2026-10-28",
-      "engagement_log.json at 1765KB > 1500KB · schedule the archival job"
-    ],
-    "2026-11-13": [
-      "🎬 Socials 2 · YouTube login renewal · Login expired ~2026-10-28",
-      "engagement_log.json at 1773KB > 1500KB · schedule the archival job"
-    ],
     "2026-11-14": [
       "🎬 Socials 2 · YouTube login renewal · Login expired ~2026-10-28",
       "engagement_log.json at 1794KB > 1500KB · schedule the archival job"
+    ],
+    "2026-11-15": [
+      "🎬 Socials 2 · YouTube login renewal · Login expired ~2026-10-28",
+      "engagement_log.json at 1815KB > 1500KB · schedule the archival job"
+    ],
+    "2026-11-16": [
+      "🎬 Socials 2 · YouTube login renewal · Login expired ~2026-10-28",
+      "engagement_log.json at 1823KB > 1500KB · schedule the archival job"
+    ],
+    "2026-11-17": [
+      "🎬 Socials 2 · YouTube login renewal · Login expired ~2026-10-28",
+      "engagement_log.json at 1847KB > 1500KB · schedule the archival job"
+    ],
+    "2026-11-18": [
+      "IG session scored 7/10 · docs/reports/loop-close-ig-2026-11-18.md",
+      "🎬 Socials 2 · YouTube login renewal · Login expired ~2026-10-28",
+      "engagement_log.json at 1859KB > 1500KB · schedule the archival job"
+    ],
+    "2026-11-19": [
+      "🎬 Socials 2 · YouTube login renewal · Login expired ~2026-10-28",
+      "engagement_log.json at 1881KB > 1500KB · schedule the archival job"
+    ],
+    "2026-11-20": [
+      "🎬 Socials 2 · YouTube login renewal · Login expired ~2026-10-28",
+      "engagement_log.json at 1895KB > 1500KB · schedule the archival job"
+    ],
+    "2026-11-21": [
+      "🎬 Socials 2 · YouTube login renewal · Login expired ~2026-10-28",
+      "engagement_log.json at 1911KB > 1500KB · schedule the archival job"
     ]
   },
   "proposed": {
     "🎬 Socials # · YouTube login renewal · Login expired ~#-#-#": "2026-11-06",
     "engagement_log.json at #KB > #KB · schedule the archival job": "2026-11-06"
   },
-  "updated": "2026-11-14"
+  "updated": "2026-11-21"
 }

@@ -2,7 +2,10 @@
 
 Amir's ~181 Unfollow picks (his own older follows that do not follow back) are
 unfollowed in their own browser runs: **Tue 11-17, Thu 11-19, Sun 11-22,
-Tue 11-24, Thu 11-26, Sun 11-29, 16:00 Berlin, 30 per run.** Decided by Amir
+Tue 11-24, Thu 11-26, Sun 11-29, 16:00 Berlin, 30 per run.** Changed: extra
+runs 11-16 and 11-18; Amir 11-19: the last two runs are **Fri 11-20 + Sun
+11-22**, the 11-24/26/29 tasks are disabled. Fri 11-20 got no go before 21:00;
+Amir 11-20: run on **Sat 11-21** instead, Sun 11-22 stays the last run. Decided by Amir
 11-14 ("sweep plan approve", "A", "approve"); build brief
 `plans/ig-sweep-2026-11/BUILD-BRIEF.md`. Each run is one one-time scheduled
 task `ig-sweep-run-N-MMDD` that reads THIS file and runs the BODY.
@@ -19,6 +22,7 @@ close_loops. Its Chrome, scope, popup and click rules apply here unchanged.
 
 1. .venv/bin/python scene_intelligence/ig_sweep.py gates
 2. .venv/bin/python scene_intelligence/ig_sweep.py plan --fetch-if-stale
+   (step 1d only: `plan --fetch-if-stale --rebuild`)
 3. .venv/bin/python scene_intelligence/ig_daily_ledger.py --claim ig_sweep --kind browser
    (and `--show` to read it)
 4. .venv/bin/python scene_intelligence/ig_log_action.py --sweep --action-type <type> --handle <h> [--reason "..."]
@@ -28,7 +32,7 @@ close_loops. Its Chrome, scope, popup and click rules apply here unchanged.
    `plans/ig-sweep-2026-11/picks_live/<today YYYY-MM-DD>` (read only, never write)
 7. Read the plan file `plans/ig-sweep-2026-11/runs/run-<today>.json` with the Read tool.
 Nothing else: no inline `python -c`, no edits to any state file, no --force,
-no --rebuild, no --resume.
+no --resume; --rebuild only in step 1d, before the first click.
 
 == STEP 1: PICKS + PLAN (no Chrome yet) ==
 
@@ -46,8 +50,15 @@ b. Command 2. It fetches the own follower/following lists through HikerAPI
    A blocked plan is replaced the next time command 2 runs (gate fix 4), as
    long as no click is logged; a good plan is kept.
 c. Command 1 (gates). Exit 3 = STOP and tell Amir the reasons. The gates check:
-   a sweep run date, 16:00-21:00 Berlin, pauses.ig, the session detection
+   a sweep run date, 16:00-22:00 Berlin, pauses.ig, the session detection
    cooldown, today not already closed, a plan file with names.
+d. SHOW THE BATCH, THEN WAIT (Amir 11-16: "before a sweep I wanna see the
+   batch names"). Post the run's names as a table (#, handle, group,
+   followers, tap/suggestion) plus the held list, and END THE TURN. No
+   Chrome, no clicks until Amir answers "go" (or similar) in this chat.
+   If he names handles that stay: he taps Keep on the picks page (or says
+   so); then redo step 1a + command 2 with --rebuild (allowed only here,
+   before any click), show the new batch, wait again.
 
 == STEP 2: BROWSER + SCOPE (same as the session playbook) ==
 
@@ -97,7 +108,7 @@ Log right after each click with command 4; never hand-write the JSONL.
   quote it to Amir. Only Amir resumes.
 - 3 skips in a row with the same IG-side reason, or 5 skips in a row of any
   kind: STOP with `session_halt --reason "safety: <n> skips in a row"`.
-- 21:00 Berlin reached: stop with `session_halt --reason "safety: 21:00 cutoff"`.
+- 22:00 Berlin reached (was 21:00 until Amir 11-21): stop with `session_halt --reason "safety: 22:00 cutoff"`.
 - Chrome/connection dies: `session_interrupted --reason "infrastructure: <what>"`.
 
 == STEP 4: CLOSE ==
@@ -124,4 +135,5 @@ pings to the Socials chat for sweeps unless Amir asks.
 Likes, follows (except the instant Follow Back re-follow in step 3.5),
 comments, DMs, stories, settings, /accounts/, Edit profile, Suggested for
 You, any handle not in the plan file, editing state files, --force,
---rebuild, --resume, clearing a pause.
+--rebuild after a click, --resume, clearing a pause, any click before
+Amir's go on the shown batch.

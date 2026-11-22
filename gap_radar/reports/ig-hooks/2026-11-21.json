@@ -1,0 +1,260 @@
+[
+ {
+  "name": "Timestamped track ID questions",
+  "insight": "The most repeated question across mixes and sets is what a specific track is, almost always pinned to a timestamp. Askers write in English and Spanish, and some just wait for the 'tracklist guy'. Other people answer, so these threads build comment volume on their own.",
+  "examples": [
+   "track in the 1:50",
+   "43:42 does someone know this one",
+   "la rola del minuto 17:45",
+   "cual es la cancion del minuto 27:00",
+   "need tracklist guy",
+   "whats the opening track",
+   "track list porfa"
+  ],
+  "evidence_ids": [
+   11,
+   168,
+   212,
+   210,
+   195,
+   142,
+   121,
+   213,
+   108,
+   123
+  ],
+  "use": "The track at 0:38 is unreleased. Ask for it and I will tell you when it comes out.",
+  "strength": 5
+ },
+ {
+  "name": "Timestamps as praise",
+  "insight": "When people love a set, they quote the exact minute that hit, so the timestamp becomes the compliment. One commenter notes that a good set shows up as a comment section full of timestamps. A DJ caption that asked people to drop the timestamp matches this habit.",
+  "examples": [
+   "39min",
+   "energy in the room at 33:53",
+   "8:05 classic banger",
+   "25:25 goes insane every time",
+   "23:50 was a riot in the back",
+   "drop the timestamp"
+  ],
+  "evidence_ids": [
+   65,
+   78,
+   90,
+   91,
+   157,
+   159,
+   140,
+   141,
+   162,
+   160,
+   149,
+   49
+  ],
+  "use": "There is one minute in this set where the room changed. Tell me which one you think it was.",
+  "strength": 5
+ },
+ {
+  "name": "Brings me back: nostalgia for the original club era",
+  "insight": "New beat and older wave mixes pull long memory comments. People name their age, the radio station, the club or the sound system, and the decade. Phrases about remembering youth and the 90s repeat many times, mostly from Mexican listeners in Spanish.",
+  "examples": [
+   "nostalgia pura",
+   "me hace recordar mi juventud",
+   "brings me back",
+   "que tiempos aquellos",
+   "recordar es volver a vivir",
+   "yo las llegué a bailar"
+  ],
+  "evidence_ids": [
+   184,
+   185,
+   186,
+   187,
+   188,
+   190,
+   191,
+   193,
+   194,
+   205,
+   209,
+   196
+  ],
+  "use": "Built on machines older than some of you. Where were you the first time you heard this kind of beat?",
+  "strength": 4
+ },
+ {
+  "name": "Soundtrack to ordinary life",
+  "insight": "Listeners keep reporting where the music plays: at work, during an assignment, at the gym, at an afterparty, while falling asleep, or early in the morning. Some admit the set distracted them from the work entirely. Asking where people listen gets them to share their routine.",
+  "examples": [
+   "while I work (or try to)",
+   "all night long at work",
+   "no work was done",
+   "my gym sessions",
+   "perfect sleeping music",
+   "woke up just to watch this",
+   "at an after party rn"
+  ],
+  "evidence_ids": [
+   4,
+   88,
+   163,
+   60,
+   61,
+   71,
+   220,
+   79,
+   178,
+   180
+  ],
+  "use": "Made for late hours in Berlin. Tell me where it ends up playing for you.",
+  "strength": 4
+ },
+ {
+  "name": "Let the music run",
+  "insight": "Fans strongly resent anything that interrupts the flow. A host talking over a set drew a whole cluster of complaints, and others criticised frequent rewinds and clumsy transitions. The shared value is that the music deserves undivided attention.",
+  "examples": [
+   "kick off the host",
+   "killing the vibe",
+   "the music deserved better",
+   "talking over the music",
+   "calm down with those reloads",
+   "frequent rewind"
+  ],
+  "evidence_ids": [
+   55,
+   56,
+   57,
+   58,
+   59,
+   73,
+   86,
+   106,
+   104
+  ],
+  "use": "No talking, no reloads. Forty minutes left to run as one piece.",
+  "strength": 4
+ },
+ {
+  "name": "New release ritual and the loop",
+  "insight": "Loyal listeners describe hitting play the moment a new mix drops and listening start to finish. Others put a set on loop because they did not want it to end, or leave comments so a later like reminds them to listen again.",
+  "examples": [
+   "instant play",
+   "a new one!",
+   "I've needed a new mix",
+   "beginning to end",
+   "put this on loop",
+   "couldn't accept that it had an end"
+  ],
+  "evidence_ids": [
+   0,
+   1,
+   2,
+   5,
+   7,
+   175,
+   154,
+   164,
+   15
+  ],
+  "use": "New one is out. It is meant to be heard from the first bar to the last.",
+  "strength": 4
+ },
+ {
+  "name": "Greetings from / come to my city",
+  "insight": "Place shows up constantly. People sign off with their country and ask the artist to play their city. Uploaders also ask directly where people are from. This is a reliable comment generator for a touring Berlin artist.",
+  "examples": [
+   "greetings from Spain",
+   "love from the USA",
+   "from Chile",
+   "please come to Germany",
+   "volve a argentina",
+   "playing everywhere but Texas",
+   "where are you from"
+  ],
+  "evidence_ids": [
+   16,
+   23,
+   34,
+   35,
+   36,
+   40,
+   46,
+   66,
+   67,
+   113,
+   176,
+   165
+  ],
+  "use": "Recorded in Berlin. Tell me which city should hear it live next.",
+  "strength": 3
+ },
+ {
+  "name": "Feeling words: losing the body, trance, spell",
+  "insight": "The feeling is described as surrender and being taken over rather than simple happiness. Commenters talk about losing the body to the beat, losing everything but feeling alive, a room put in a trance, mesmerizing or magnetic performances, and a spirit dancing. A dreamlike disbelief shows up too.",
+  "examples": [
+   "lost my body to the beat",
+   "feel alive",
+   "put it in a trance",
+   "mesmerizing",
+   "magnetic",
+   "my spirit is dancing",
+   "am I awake"
+  ],
+  "evidence_ids": [
+   12,
+   143,
+   147,
+   43,
+   24,
+   221,
+   203,
+   75,
+   23
+  ],
+  "use": "Somewhere after the second drop the body stops asking permission.",
+  "strength": 3
+ },
+ {
+  "name": "Visible joy of the performer",
+  "insight": "Viewers repeatedly point out that the artist clearly loves what they do. Smiling and enjoying the job is read as part of the set's energy, and some say seeing it live is the only way to understand it. For dark music this is a useful counterweight: warmth behind the shadow is noticed.",
+  "examples": [
+   "she loves what she does",
+   "happy the whole time",
+   "putting a smile on so many faces",
+   "enjoying what she does for a living",
+   "once you see him live"
+  ],
+  "evidence_ids": [
+   69,
+   72,
+   77,
+   80,
+   118,
+   146
+  ],
+  "use": "Dark music, played with a grin. This is the part of the night I live for.",
+  "strength": 3
+ },
+ {
+  "name": "Genre labels and their policing",
+  "insight": "Titles stack many genre tags, such as dark wave, minimal wave, cold wave and EBM. Commenters push back when the label does not fit, saying tracks are not really new beat or that a set is live rather than DJ. Clear naming of what a track is, and is not, gets noticed and debated.",
+  "examples": [
+   "most of the tracks are not new beat",
+   "no es precisamente new beat",
+   "a live set, not a DJ set",
+   "cinematic darkwave",
+   "dark wave/minimal wave/cold wave"
+  ],
+  "evidence_ids": [
+   202,
+   208,
+   52,
+   189,
+   219,
+   221,
+   53
+  ],
+  "use": "Not quite EBM, not quite coldwave. I call it dark dance wave. You can argue in the comments.",
+  "strength": 3
+ }
+]

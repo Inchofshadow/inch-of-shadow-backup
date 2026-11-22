@@ -214,7 +214,7 @@
   div.card.collapsed > h2 .caret{transform:rotate(-90deg)}
   div.card.collapsed > :not(h2){display:none}
 
-  /* second guitar (alt tuning), collapsed by default */
+  /* second guitar (alt tuning), first under the chords, open by default */
   details.altcard summary{cursor:pointer;font-size:14px;font-weight:600;
     color:var(--muted);letter-spacing:.3px}
   details.altcard summary:hover{color:var(--text)}
@@ -414,12 +414,18 @@
     </div>
   </section>
 </main>
-
-<div class="pianosec">
-  <div class="card" id="pianoCard">
-    <h2>Keyboard <span class="gtune" id="ptune">chord shown as a voicing: bass lowest, the rest stacked above it</span></h2>
-    <div class="piano" id="piano"></div>
-  </div>
+<div class="guitarsec">
+  <details class="card altcard" id="altCard" open>
+    <summary>Second guitar · <span id="altName">F B♭ E♭ A♭ C C</span> <span class="gtune">alternate tuning · click to open</span></summary>
+    <div class="lbl">Tuning</div>
+    <select id="altTuneSel" class="altsel"></select>
+    <div class="lbl">Arpeggio</div>
+    <div class="levels" id="altArpDeg"></div>
+    <div class="levels" id="altArpBar"></div>
+    <div class="posbar"><div class="levels" id="altPosBtns"></div><div class="posinfo" id="altPosInfo"></div></div>
+    <div class="fretwrap"><div class="fretboard" id="altFretboard"></div></div>
+    <div class="shapes" id="altShapes"></div>
+  </details>
 </div>
 
 <div class="guitarsec">
@@ -434,6 +440,13 @@
   <div class="card" id="shapesCard">
     <h2>Chord shapes <span class="gtune">playable voicings for the selected chord, position by position · click a shape to isolate it on the fretboard</span></h2>
     <div class="shapes" id="shapes"></div>
+  </div>
+</div>
+
+<div class="pianosec">
+  <div class="card" id="pianoCard">
+    <h2>Keyboard <span class="gtune" id="ptune">chord shown as a voicing: bass lowest, the rest stacked above it</span></h2>
+    <div class="piano" id="piano"></div>
   </div>
 </div>
 
@@ -454,17 +467,6 @@
     <div class="circlewrap"><svg id="circle" viewBox="0 0 300 300" width="100%"></svg></div>
     <div class="circlehint">Outer = major keys · inner = relative minors · click a key to set the root.</div>
   </div>
-</div>
-
-<div class="guitarsec">
-  <details class="card altcard" id="altCard">
-    <summary>Second guitar · <span id="altName">F B♭ E♭ A♭ C C</span> <span class="gtune">alternate tuning · click to open</span></summary>
-    <div class="lbl">Tuning</div>
-    <select id="altTuneSel" class="altsel"></select>
-    <div class="posbar"><div class="levels" id="altPosBtns"></div><div class="posinfo" id="altPosInfo"></div></div>
-    <div class="fretwrap"><div class="fretboard" id="altFretboard"></div></div>
-    <div class="shapes" id="altShapes"></div>
-  </details>
 </div>
 
 <div class="foot">
@@ -853,7 +855,7 @@
     renderPiano(scale, act.tones, act.bassPC, act.voiced);
     const activeShape=renderShapes(act);
     renderFretboard(scale, act.tones, act.bassPC, activeShape, renderPositions(state.spots.main, TUNING, 'posBtns', 'posInfo', scale, act.tones, activeShape, true));
-    renderAlt(act, scale);
+    renderAlt(act, scale, chordable?chords:null);
     renderCircle(tonic);
     syncURL();
   }
@@ -1210,7 +1212,7 @@
     return active;
   }
 
-  // ---- second guitar: alt tuning F Bb Eb Ab C C, tucked away at the bottom ----
+  // ---- second guitar: alt tuning F Bb Eb Ab C C, first section under the chords ----
   // tunings for the second guitar; `strings` run low to high, the remembered pick survives reloads
   const ALT_TUNINGS=[
     {key:'fbb', label:'F B♭ E♭ A♭ C C', strings:[['F',5],['B♭',10],['E♭',3],['A♭',8],['C',0],['C',0]]},
@@ -1237,8 +1239,31 @@
       state.altShape=null; Object.assign(state.spots.alt,{spot:0,box:null,from:null}); render();
     };
   })();
-  function renderAlt(act, scale){
+  // arpeggio view: pick a scale note (the chord built on it), Triad or 7th, and "Arpeggio only"
+  // hides every other scale note so only the chord tones stay on the neck. Remembered on reload.
+  let ALT_ARP=false; try{ ALT_ARP=localStorage.getItem('mtr_alt_arp')==='1'; }catch(e){}
+  function renderAltArp(chords){
+    const deg=document.getElementById('altArpDeg'), bar=document.getElementById('altArpBar');
+    deg.innerHTML=''; bar.innerHTML='';
+    const mk=(el,label,sub,on,fn,title,cls)=>{
+      const b=document.createElement('button'); b.className='lvbtn'+(cls?' '+cls:'')+(on?' on':'');
+      b.textContent=label;
+      if(sub){ const sm=document.createElement('small'); sm.textContent=sub; b.appendChild(sm); }
+      if(title) b.title=title; b.onclick=fn; el.appendChild(b); return b;
+    };
+    if(chords) chords.forEach((c,i)=>mk(deg, c.root, levelSymbol(c, state.sus?0:Math.min(state.level,1)),
+      i===state.degree, ()=>{ leaveSpot(); state.degree=i; state.inv=0; state.shape=null; state.altShape=null; render(); },
+      'Show the chord built on '+c.root+' ('+c.roman+')', 'spotbtn'));
+    else deg.innerHTML='<div class="noshapes">Pick a 7-note scale to choose a note here.</div>';
+    ['Triad','7th'].forEach((nm,i)=>mk(bar, nm, '', !state.sus && state.level===i,
+      ()=>{ state.level=i; state.sus=null; state.inv=0; state.shape=null; state.altShape=null; render(); }));
+    mk(bar, 'Arpeggio only', '', ALT_ARP, ()=>{ ALT_ARP=!ALT_ARP;
+      try{ localStorage.setItem('mtr_alt_arp', ALT_ARP?'1':'0'); }catch(e){} render(); },
+      'Show only the chord notes on the neck, hide the rest of the scale', 'link');
+  }
+  function renderAlt(act, scale, chords){
     if(!document.getElementById('altCard').open) return;
+    renderAltArp(chords);
     const wrap=document.getElementById('altShapes');
     const tones=(act.tones&&act.tones.length>=3)
       ? act.tones.map(t=>({pc:pcOf(t.note), name:t.name, token:t.token})) : null;
@@ -1261,7 +1286,7 @@
     });
     const box=renderPositions(state.spots.alt, ALT_TUNING, 'altPosBtns', 'altPosInfo', scale, act.tones, active, false);
     renderFretboardTo(document.getElementById('altFretboard'), ALT_TUNING,
-      scale, act.tones||[], act.bassPC, active, box);
+      scale, act.tones||[], act.bassPC, active, box, ALT_ARP && (act.tones||[]).length>0);
   }
 
   // ---- guitar fretboard (string 1 = high E on top, down to string 6 = low E, same order as tab) ----
@@ -1373,7 +1398,7 @@
 
   // generic renderer: `tuning` is the display list, first row = highest string;
   // `box` (optional) limits the dots to one CAGED position
-  function renderFretboardTo(fb, tuning, scale, tones, bassPC, shape, box){
+  function renderFretboardTo(fb, tuning, scale, tones, bassPC, shape, box, onlyChord){
     const scaleByPC=new Map(); scale.notes.forEach(n=>scaleByPC.set(T.pitchClass(n), T.noteName(n)));
     const tonicPC=T.pitchClass(scale.notes[0]);
     const chordByPC=new Map(); tones.forEach(t=>chordByPC.set(pcOf(t.note), t.name));
@@ -1391,11 +1416,11 @@
             if(pc===tonicPC) cls+=' tonic';
             if(gIdx===shape.bassStr) cls+=' bassmark';
             inner='<span class="'+cls+'">'+(shape.names[gIdx]||'')+'</span>';
-          } else if(scaleByPC.has(pc)){
+          } else if(scaleByPC.has(pc) && !onlyChord){
             let cls='dot scale'; if(pc===tonicPC) cls+=' tonic';
             inner='<span class="'+cls+'">'+scaleByPC.get(pc)+'</span>';
           }
-        } else if((scaleByPC.has(pc)||chordByPC.has(pc)) && (!box || box.has(gIdx+':'+f))){
+        } else if((chordByPC.has(pc)||(scaleByPC.has(pc)&&!onlyChord)) && (!box || box.has(gIdx+':'+f))){
           const isChord=chordByPC.has(pc);
           const name=isChord?chordByPC.get(pc):scaleByPC.get(pc);
           let cls='dot '+(isChord?'chord':'scale');

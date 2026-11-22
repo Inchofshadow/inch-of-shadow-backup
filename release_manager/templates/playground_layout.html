@@ -1469,6 +1469,8 @@ details.more summary { cursor: pointer; color: var(--text-secondary); font-size:
         if (DRW.items) return Promise.resolve(DRW.items);
         return fetch('/api/playground/' + encodeURIComponent(SLUG) + '/drawer').then(function (r) { return r.json(); }).then(function (d) {
             DRW.items = d.items || []; DRW.alltags = d.tags || [];
+            var known = DRW.alltags.map(function (t) { return t.id; }), kept = DRW.tags.filter(function (t) { return known.indexOf(t) >= 0; });
+            if (kept.length !== DRW.tags.length) { DRW.tags = kept; dPersist(); }   // a tag renamed or removed in tags.json leaves the filter
             DRW.items.forEach(function (it) { if (it.lib === 'font' && it.key) LIBF[it.key] = it.src; });
             return DRW.items; });
     }

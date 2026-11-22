@@ -35,6 +35,9 @@ The files:
 - `tags.json` (2026-11-11) - the one tag list for the Shadow Archive, Effects, Fonts and Imagine
   (37 fixed tags + the tags of every item). It is the source: a new effect, font or reference
   gets its tags here, and only tags from the list are used. The Layout page's Studio drawer reads it.
+  A new tag goes into its `tags` list (id = small letters, numbers and dashes, plus what it means);
+  the drawer shows it on the next page load. Renaming or removing a tag takes it off every item
+  that carries the old id (those items show as untagged until they get a new tag in `assign`).
 - `research/` - reference research done for the sittings. Add to it, do not start over.
 - `CONTROL-PANEL-SETUP-ROADMAP.md`, `VIDEO-BRAND-SESSION-KIT.md` - frozen history from
   the electronic era. Do not take options or wording from them.

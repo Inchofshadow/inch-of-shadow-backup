@@ -2,6 +2,31 @@
 
 One section per week, newest first, written on Mondays by stats/weekly_summary.py from the daily snapshots. Numbers come from the snapshots only. SoundCloud and YouTube; Instagram is not collected (direct reads retired).
 
+## Week to 2026-11-16 (vs 2026-11-09)
+
+Missing: no Spotify for Artists read for this week.
+
+| Platform | Metric | Last week | This week | Change |
+|---|---|---|---|---|
+| SoundCloud | Followers | 488 | 507 | +19 |
+| SoundCloud | Following | 450 | 405 | -45 |
+| SoundCloud | Plays | 3392 | 3509 | +117 |
+| SoundCloud | Likes | 281 | 294 | +13 |
+| SoundCloud | Reposts | 55 | 61 | +6 |
+| SoundCloud | Comments | 73 | 74 | +1 |
+| YouTube | Subscribers | 5 | 6 | +1 |
+| YouTube | Views | 606 | 701 | +95 |
+| YouTube | Likes | 12 | 12 | +0 |
+| YouTube | Videos | 13 | 13 | +0 |
+
+| SoundCloud ratio | Last week | This week | Floor | Target |
+|---|---|---|---|---|
+| followers : following | 1.08:1 | 1.25:1 | 1:1 | 1.4-1.6:1 |
+
+- **The Deceiver +24 plays, most likes.** Pin The Deceiver to the top of your SoundCloud profile this week.
+- **Insomnia DJ Set +24 plays.** Use the Insomnia set as the reference mix in your next booking pitch.
+- **The Cure +5 views leads YouTube.** Check YouTube Analytics for where the other views came from; Spotify read is missing.
+
 ## Week to 2026-11-09 (vs 2026-11-03)
 
 | Platform | Metric | Last week | This week | Change |

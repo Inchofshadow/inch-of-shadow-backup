@@ -156,3 +156,45 @@ def test_score_sc_day_still_works_without_tracker():
     score, ded, _ = cl.score_sc_day(
         {"sc_like": cl.SC_PASS_A_LIKES, "sc_follow": cl.SC_FOLLOW_TARGET}, "")
     assert score == 10, ded
+
+
+# --- 4. retry day (2026-11-15) ------------------------------------------------
+# 10:00 run stopped (SESSION_INCOMPLETE marker), 13:00 retry ran a real session.
+
+_MORNING = ("# SC session report\n## 10:00 run (superseded by the retry below)\n"
+            "SESSION_INCOMPLETE: pinned Chrome not connected at PASS 0; no clicks taken\n")
+
+
+def test_weak_retry_session_is_scored_on_volume(monkeypatch):
+    monkeypatch.setattr(cl, "_sc_follow_supply", lambda day: 40)
+    t = _tracker(_recip("1", "2026-08-10"))
+    report = _MORNING + "## 13:00 retry run\nRan the session, stopped after 2 pairs.\n"
+    _, ded, _ = cl.score_sc_day(
+        {"sc_like": 2, "sc_follow": 2}, report, tracker=t, day="2026-08-12")
+    assert not any("truncated externally" in d for d in ded), ded
+    assert any("shortfall" in d for d in ded), ded
+
+
+def test_full_retry_session_still_scores_10(monkeypatch):
+    monkeypatch.setattr(cl, "_sc_follow_supply", lambda day: 40)
+    monkeypatch.setattr(cl, "_sc_unfollow_catchup", lambda day: 0)
+    t = _tracker(_recip("1", "2026-08-10"))
+    report = _MORNING + "## 13:00 retry run\nAll lanes done.\n"
+    score, ded, _ = cl.score_sc_day(
+        {"sc_like": cl.SC_PASS_A_LIKES, "sc_follow": cl.SC_FOLLOW_TARGET}, report,
+        tracker=t, day="2026-08-12")
+    assert score == 10, ded
+
+
+def test_retry_that_also_found_no_chrome_keeps_old_behaviour():
+    t = _tracker(_recip("1", "2026-08-10"))
+    report = _MORNING + "## 13:00 retry\nPinned Chrome still not connected at 13:00, no clicks.\n"
+    _, ded, _ = cl.score_sc_day({}, report, tracker=t, day="2026-08-12")
+    assert any("truncated externally" in d for d in ded), ded
+
+
+def test_marker_without_retry_section_still_exempts_volume():
+    t = _tracker(_recip("1", "2026-08-10"))
+    _, ded, _ = cl.score_sc_day(
+        {"sc_like": 2, "sc_follow": 2}, _MORNING, tracker=t, day="2026-08-12")
+    assert any("truncated externally" in d for d in ded), ded

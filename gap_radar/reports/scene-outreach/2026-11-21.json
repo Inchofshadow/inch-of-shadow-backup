@@ -1,0 +1,210 @@
+[
+ {
+  "name": "Book Club Radio",
+  "insight": "YouTube DJ-set channel and party brand (also called BCR or Book Club) that films themed sets, for example a Gothic dance and EBM set by Georgi in a castle setting. Fans call it world-class and play it in heavy rotation. It runs a festival in Brooklyn, USA. Fans in other countries say they envy people who can attend in person.",
+  "examples": [
+   "Fan compares the channel to the 1990s Miami Bass DJ scene and says every DJ on it moves them",
+   "Listener says Book Club makes slow work days better",
+   "Fan on the other side of the world feels FOMO about not having BCR nearby",
+   "Georgi's earlier Book Club set is still in a fan's heavy rotation",
+   "Black-and-red themed Book Club editions are seen as a sign of a good night"
+  ],
+  "evidence_ids": [
+   116,
+   118,
+   127,
+   129,
+   133,
+   135,
+   137,
+   142,
+   145
+  ],
+  "use": "Attend: the channel announced the Book Club Radio Music Festival in Brooklyn on October 2nd and 3rd, with tickets on shotgun.live. For playing or submitting, check the outlet's own page.",
+  "strength": 5
+ },
+ {
+  "name": "VAMPIRA'S FRIDAY PLAYLIST",
+  "insight": "Long-running YouTube radio stream and playlist of darkwave, post-punk, goth and coldwave, branded 'NO AI MUSIC'. Listeners thank it mainly for being human-made music at a time when AI playlists flood YouTube. People use it for studying and for songwriting inspiration. Listeners write in from Mexico and Liverpool, UK.",
+  "examples": [
+   "Listener relieved to find real human-made music",
+   "Another says the number of AI playlists is driving them crazy",
+   "Used to track study time",
+   "A musician plans to use it as an influence",
+   "Complaints about frequent commercials",
+   "One commenter suggests a song for the playlist in the comments"
+  ],
+  "evidence_ids": [
+   67,
+   70,
+   71,
+   72,
+   73,
+   74,
+   75,
+   76,
+   78,
+   80
+  ],
+  "use": "check the outlet's own page",
+  "strength": 4
+ },
+ {
+  "name": "Márian (dark disco, ebm, italo disco mix series)",
+  "insight": "YouTube mix series mixing dark disco, EBM and italo disco, now at mix XV. Loyal fans play each new mix from start to finish the moment it appears, share it with friends and ask for track IDs.",
+  "examples": [
+   "Fan says a new Marian mix is an instant play",
+   "Listener has shown the mixes to many friends",
+   "Mixes used as background while working",
+   "Track ID request for a specific timestamp"
+  ],
+  "evidence_ids": [
+   0,
+   4,
+   7,
+   8,
+   9,
+   11
+  ],
+  "use": "check the outlet's own page",
+  "strength": 4
+ },
+ {
+  "name": "NTS",
+  "insight": "Radio station with YouTube series such as 'THE NTS GUIDE TO…' and guest selections, for example Nabihah Iqbal's post-punk, new wave and no wave set. Fans praise its careful curation and its deep cuts, such as the Brazilian band Mercenárias and Wipers. One fan knows Nabihah from working the door at Bunker Club.",
+  "examples": [
+   "Listener values songs curated with care and attention",
+   "Brazilian fans celebrate Mercenárias being included",
+   "Another 'banger mix' from the NTS guide series",
+   "Fan plans to check out the DJ's own album after the mix"
+  ],
+  "evidence_ids": [
+   153,
+   155,
+   157,
+   164,
+   165,
+   166,
+   169,
+   174,
+   178,
+   179
+  ],
+  "use": "check the outlet's own page",
+  "strength": 3
+ },
+ {
+  "name": "B/A producciones",
+  "insight": "YouTube DJ channel that hosts coldwave, EBM and new beat sets, such as 'It's electric where you find it' with Maggie Rollins. Fans call it the best DJ channel on YouTube and play at least one video a day. It has a strong Latin American audience in Mexico, Peru, Argentina and Brazil.",
+  "examples": [
+   "Viewer found the channel last year and now plays a video daily while working",
+   "Commenter calls it the best DJ channel on YouTube",
+   "Brazilian fan asks the channel to keep going",
+   "Fan says it is always a hit when B/A producciones invites Maggie Rollins"
+  ],
+  "evidence_ids": [
+   180,
+   183,
+   184,
+   185,
+   188,
+   191,
+   192
+  ],
+  "use": "check the outlet's own page",
+  "strength": 3
+ },
+ {
+  "name": "DARK WAVE MIX | BEST PLAYLIST MIX 2026",
+  "insight": "YouTube mix of dark synthwave, goth and coldwave with a 'vamp girl' visual. Many listeners say the thumbnail or an ad brought them in and the music kept them. They keep asking for single tracks on Spotify and YouTube Music. Its own pinned comment points to a DollWave Patreon for album downloads.",
+  "examples": [
+   "Several listeners came for the vamp girl visual and stayed for the music",
+   "Found through an ad or YouTube recommendations",
+   "Requests to put specific songs on Spotify",
+   "Fan glad the set finally came out on YouTube Music as a separate album"
+  ],
+  "evidence_ids": [
+   82,
+   83,
+   86,
+   88,
+   93,
+   96,
+   100,
+   104,
+   105,
+   112
+  ],
+  "use": "check the outlet's own page",
+  "strength": 3
+ },
+ {
+  "name": "Demand for human-made, non-AI music",
+  "insight": "Across darkwave and NTS comments, several listeners explicitly reward channels for featuring real human musicians rather than AI-generated playlists. 'Human-made' works as a recommendation signal in itself.",
+  "examples": [
+   "Thanks for real human-made music",
+   "Annoyed by the flood of AI playlists on YouTube",
+   "Praise for actual human musicians instead of prompts"
+  ],
+  "evidence_ids": [
+   67,
+   70,
+   153
+  ],
+  "use": "check the outlet's own page",
+  "strength": 3
+ },
+ {
+  "name": "Aether Sounds",
+  "insight": "YouTube channel releasing melancholic darkwave, coldwave and minimal wave albums and mixes, for example 'Where the Shapes Dissolve'. Returning fans wait for each new album and go back to older ones such as Midnight Aether.",
+  "examples": [
+   "Fan says a new album helps them get through the dark season",
+   "German-speaking listener follows every album and revisits older ones"
+  ],
+  "evidence_ids": [
+   197,
+   198,
+   199,
+   200
+  ],
+  "use": "check the outlet's own page",
+  "strength": 2
+ },
+ {
+  "name": "Listeners want mix tracks on streaming platforms",
+  "insight": "Fans of YouTube darkwave mixes repeatedly ask for individual tracks or whole sets on Spotify and YouTube Music so they can add them to their own playlists.",
+  "examples": [
+   "Wishes the playlist were on YouTube Music",
+   "Needs specific songs on Spotify",
+   "Says the tracks must go into their Spotify playlist",
+   "Asks daily for one song as a standalone release"
+  ],
+  "evidence_ids": [
+   78,
+   86,
+   96,
+   100,
+   105
+  ],
+  "use": "check the outlet's own page",
+  "strength": 2
+ },
+ {
+  "name": "Club scenes remembered by listeners (Belgian clubs, German goth clubs, Camden, Bunker Club)",
+  "insight": "Older fans link EBM and coldwave sets to physical club scenes they went to: Belgian clubs, German goth clubs, alternative clubs in Camden (UK) and Bunker Club. These are nostalgia references rather than current recommendations.",
+  "examples": [
+   "Fan aged 64 went to Belgian clubs for this music at 18",
+   "Mix recalls German goth clubs of 15–20 years ago",
+   "Brazilian fan danced to this mix of genres in Camden clubs",
+   "Commenter met the DJ at the door of Bunker Club"
+  ],
+  "evidence_ids": [
+   123,
+   138,
+   183,
+   166
+  ],
+  "use": "check the outlet's own page",
+  "strength": 2
+ }
+]

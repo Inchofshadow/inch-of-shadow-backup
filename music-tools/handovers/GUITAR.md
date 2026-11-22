@@ -27,6 +27,17 @@ Old chat: "Guitar learning focus" (2026-10-02 to 10-17). Its transcript is
   On the second guitar only `Pos 1–5 + frets` show, no shape names (the top C string breaks the
   CAGED shapes).
 
+## Page order (11-19, Amir)
+Controls / Scale / Diatonic chords / Chord detail on top, then **Second guitar (open by default)**,
+then Guitar fretboard, Chord shapes, Keyboard, Beatles song, Circle of fifths. Commit 03b68b5,
+phone link republished (version 9).
+
+## Arpeggio view on the second guitar (11-19, built on Amir's yes)
+- New "Arpeggio" rows in the second guitar card: one button per scale note (shows the chord on it),
+  Triad / 7th, and "Arpeggio only", which hides every non-chord note on the neck (remembered on
+  reload). Position buttons still work on top. Checked in Drop C: Cm7 = C E♭ G B♭, Fm = F A♭ C.
+- Names: arpeggio / chord tones; the practice is chord-tone soloing. Commit after 03b68b5.
+
 ## What Amir wants from it
 - To jump positions and know the whole neck while playing, not stay in one pentatonic box.
 - Inspired by a YouTube video, not a copy of it.

@@ -560,6 +560,25 @@ TRUNCATION_MARKERS = (
 SC_LIKE_COOLDOWN_DAYS = getattr(_scc, "LIKE_COOLDOWN_DAYS", 30)
 
 
+_SC_RETRY_RUN_HEADING = re.compile(r"^##\s*13:00 retry run\b", re.IGNORECASE | re.MULTILINE)
+
+
+def _sc_volume_scope_text(report_text: str, day_actions: dict) -> str:
+    """Report text that decides whether volume targets are scored (2026-11-15).
+
+    When the 10:00 run stopped early (SESSION_INCOMPLETE marker) and the 13:00
+    retry ran a real session (its "## 13:00 retry run" section + logged
+    actions), the morning marker must not exempt the retry from the volume
+    check: only the retry section is scanned. A retry that also found no
+    Chrome logs nothing and keeps the old behaviour (whole text scanned).
+    """
+    text = report_text or ""
+    if not sum((day_actions or {}).values()):
+        return text
+    m = _SC_RETRY_RUN_HEADING.search(text)
+    return text[m.start():] if m else text
+
+
 def scan_for_truncation(text: str) -> bool:
     """True if the report says the session was cut short externally.
 
@@ -692,7 +711,7 @@ def score_sc_day(day_actions: dict[str, int], report_text: str,
         # An Amir-approved unfollow catch-up day with no engagement session
         # (2026-09-16): likes/follows were never planned, so no shortfall.
         deductions.append("note: unfollow catch-up day, like/follow targets not scored")
-    elif scan_for_truncation(report_text):
+    elif scan_for_truncation(_sc_volume_scope_text(report_text, day_actions)):
         deductions.append("note: session truncated externally, volume targets not scored")
     else:
         shortfall_counts = dict(day_actions)

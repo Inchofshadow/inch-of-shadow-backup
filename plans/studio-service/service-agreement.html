@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Amir Miller - Mixing and Mastering Service Agreement</title>
+<style>
+  /* Same look as rate-card.html (Warm studio, Amir 11-12): cream ground, soft glow, oxblood Marcellus titles, amber labels, Jost body.
+     Text source: service-agreement.md (the ? notes for Amir are left out here). Three fixed A4 pages. */
+  @font-face { font-family: "Marcellus"; src: url("../../docs/brand/fonts/Marcellus-Regular.ttf"); }
+  @font-face { font-family: "Jost"; font-weight: 300; src: url("../../docs/brand/fonts/free/Jost-300.ttf"); }
+  @font-face { font-family: "Jost"; font-weight: 400; src: url("../../docs/brand/fonts/free/Jost-400.ttf"); }
+  @page { size: A4; margin: 0; }
+  :root { --ground: #FAF4EA; --ink: #2E1A14; --title: #5C1F26; --soft: #B0784A; --gold: #C8923A; }
+  * { box-sizing: border-box; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  html, body { margin: 0; background: var(--ground); }
+  body { color: var(--ink); font-family: "Jost", sans-serif; font-weight: 300; font-size: 10.5pt; line-height: 1.5; }
+  .page { width: 210mm; height: 297mm; padding: 22mm 26mm 18mm; display: flex; flex-direction: column;
+          position: relative; overflow: hidden; page-break-after: always;
+          background: radial-gradient(circle at 90% 4%, rgba(232,190,120,0.55), transparent 44%),
+                      radial-gradient(circle at 6% 96%, rgba(214,150,120,0.40), transparent 40%), #FAF4EA; }
+  .page:last-child { page-break-after: auto; }
+  .body { flex: 1; min-height: 0; }
+
+  .kicker { font-weight: 500; font-size: 8.5pt; letter-spacing: 0.32em; text-transform: uppercase; color: var(--soft); margin: 0; }
+  h1 { font-family: "Marcellus", serif; font-weight: 400; font-size: 34pt; line-height: 1.04; letter-spacing: 0.02em;
+       color: var(--title); margin: 6mm 0 0; }
+  h1 .amp { color: var(--gold); font-style: italic; }
+  .name { font-family: "Marcellus", serif; font-size: 13pt; letter-spacing: 0.06em; color: var(--title); margin: 4mm 0 9mm; }
+
+  section { margin: 0 0 7mm; }
+  h2 { font-family: "Marcellus", serif; font-weight: 400; font-size: 13pt; letter-spacing: 0.04em; color: var(--title); margin: 0 0 2mm; }
+  h2 .no { color: var(--gold); margin-right: 2.5mm; }
+  p { margin: 0 0 1.6mm; }
+  .cl { display: grid; grid-template-columns: 10mm 1fr; }
+  .cl .n { font-weight: 400; font-size: 8.5pt; letter-spacing: 0.08em; color: var(--soft); padding-top: 0.7mm; }
+  ul { margin: 0 0 1.6mm; padding: 0; list-style: none; }
+  ul li { padding-left: 5mm; position: relative; }
+  ul li::before { content: "\00B7"; position: absolute; left: 1.2mm; color: var(--soft); font-weight: 400; }
+  .blank { display: inline-block; min-width: 32mm; border-bottom: 0.25mm solid rgba(46,26,20,0.45); height: 1em; vertical-align: baseline; }
+  .blank.s { min-width: 16mm; }
+  .blank.l { min-width: 62mm; }
+  .blank.m { min-width: 50mm; }
+
+  .sign { margin-top: 12mm; }
+  .sign .place { margin-bottom: 16mm; }
+  .sign .row { display: grid; grid-template-columns: 1fr 1fr; column-gap: 16mm; }
+  .sign .line { border-bottom: 0.25mm solid rgba(46,26,20,0.45); height: 12mm; }
+  .sign .who { font-weight: 500; font-size: 8.5pt; letter-spacing: 0.28em; text-transform: uppercase; color: var(--soft); margin-top: 2.5mm; }
+
+  footer { display: flex; justify-content: space-between; align-items: baseline; margin-top: 6mm; }
+  footer span { font-weight: 500; font-size: 7.5pt; letter-spacing: 0.28em; text-transform: uppercase; color: var(--soft); }
+</style>
+</head>
+<body>
+
+<div class="page">
+  <div class="body">
+    <p class="kicker">Service agreement &middot; Ambertone Studios, Berlin</p>
+    <h1>Mixing <span class="amp">&amp;</span> Mastering<br>Service Agreement</h1>
+    <p class="name">Amir Miller</p>
+
+    <section>
+      <h2><span class="no">1</span>Parties</h2>
+      <p>This agreement is made between:</p>
+      <p>Engineer: Amir Miller, <span class="blank l"></span>, Berlin ("the Engineer")</p>
+      <p>Client: <span class="blank m"></span>, <span class="blank m"></span> ("the Client")</p>
+    </section>
+
+    <section>
+      <h2><span class="no">2</span>Services</h2>
+      <p>The Engineer provides the following services at Ambertone Studios, Forsterstr. 5, Berlin:</p>
+      <ul>
+        <li>Service: <span class="blank l"></span></li>
+        <li>Tracks: <span class="blank l"></span> (number and titles, listed in the quote)</li>
+        <li>Extras: <span class="blank l"></span></li>
+      </ul>
+      <p>The quote no. <span class="blank s"></span> dated <span class="blank"></span> is part of this agreement.</p>
+    </section>
+
+    <section>
+      <h2><span class="no">3</span>Price and payment</h2>
+      <div class="cl"><span class="n">3.1</span><p>The total price is <span class="blank s"></span> EUR. No VAT is charged (Kleinunternehmer).</p></div>
+      <div class="cl"><span class="n">3.2</span><p>The Client pays 50% of the price before the work starts. The work starts once this payment has arrived.</p></div>
+      <div class="cl"><span class="n">3.3</span><p>The Client pays the remaining 50% before the final files are delivered. The Engineer may send preview files (e.g. watermarked or MP3) before the final payment.</p></div>
+      <div class="cl"><span class="n">3.4</span><p>Payment is by bank transfer to the account on the invoice.</p></div>
+    </section>
+
+    <section>
+      <h2><span class="no">4</span>Files from the Client</h2>
+      <div class="cl"><span class="n">4.1</span><p>The Client sends the files as WAV, 24-bit or higher, at the session's sample rate, with clear track names. For mastering: one stereo file per track with headroom (no limiter on the master). For mixing and stem mastering: the stems or multitracks, all starting at the same point.</p></div>
+      <div class="cl"><span class="n">4.2</span><p>The Client sends any reference tracks and notes with the files.</p></div>
+      <div class="cl"><span class="n">4.3</span><p>If the files are missing, damaged or not as described, the Engineer tells the Client, and the delivery time starts again once the right files arrive.</p></div>
+    </section>
+  </div>
+  <footer><span>Mixing &amp; Mastering Service Agreement</span><span>1 / 3</span></footer>
+</div>
+
+<div class="page">
+  <div class="body">
+    <section>
+      <h2><span class="no">5</span>Delivery</h2>
+      <div class="cl"><span class="n">5.1</span><p>The Engineer delivers within 10 days after receiving the right files and the first payment. Express delivery (48 hours, up to 4 tracks) is only when agreed in the quote.</p></div>
+      <div class="cl"><span class="n">5.2</span><p>Final files: WAV 24-bit, plus a 16-bit / 44.1 kHz version if asked. Delivered by download link.</p></div>
+      <div class="cl"><span class="n">5.3</span><p>The Engineer keeps the project files for 90 days after delivery. After that, they may be deleted.</p></div>
+    </section>
+
+    <section>
+      <h2><span class="no">6</span>Revisions</h2>
+      <div class="cl"><span class="n">6.1</span><p>Two (2) rounds of revisions per track are included. One round = one list of changes sent in one message.</p></div>
+      <div class="cl"><span class="n">6.2</span><p>A revision is a change to the delivered mix or master. A new version of the song (new files, new arrangement, new vocal) is not a revision and is quoted as new work.</p></div>
+      <div class="cl"><span class="n">6.3</span><p>Further rounds cost <span class="blank s"></span> EUR per round per track.</p></div>
+      <div class="cl"><span class="n">6.4</span><p>The Client asks for revisions within 14 days after delivery. After that, the work counts as accepted.</p></div>
+    </section>
+
+    <section>
+      <h2><span class="no">7</span>Rights and ownership</h2>
+      <div class="cl"><span class="n">7.1</span><p>The Client confirms that they own or have cleared all rights in the music, recordings, samples and vocals they send.</p></div>
+      <div class="cl"><span class="n">7.2</span><p>The Client owns the final mixes and masters once the full price is paid. The Engineer claims no copyright, master rights, royalties or publishing share in the music.</p></div>
+      <div class="cl"><span class="n">7.3</span><p>The Client holds the Engineer free from any claim by a third party about the rights in the material the Client sent.</p></div>
+    </section>
+
+    <section>
+      <h2><span class="no">8</span>Credit</h2>
+      <div class="cl"><span class="n">8.1</span><p>The Client credits the Engineer where credits are shown (streaming credits, liner notes, release info) as: "Mixed by Amir Miller" and / or "Mastered by Amir Miller", as fits the service.</p></div>
+      <div class="cl"><span class="n">8.2</span><p>The Client also credits the Engineer for mixing and / or mastering in their social media posts about the release.</p></div>
+      <div class="cl"><span class="n">8.3</span><p>The Engineer may name the Client and the release in his list of works and may play short parts of it as a reference, only after the release is public. Before the release, the Engineer keeps the music private.</p></div>
+    </section>
+  </div>
+  <footer><span>Mixing &amp; Mastering Service Agreement</span><span>2 / 3</span></footer>
+</div>
+
+<div class="page">
+  <div class="body">
+    <section>
+      <h2><span class="no">9</span>Cancellation</h2>
+      <div class="cl"><span class="n">9.1</span><p>If the Client cancels before the work starts, the first payment is returned in full.</p></div>
+      <div class="cl"><span class="n">9.2</span><p>If the Client cancels after the work has started, the first payment is kept for the work done.</p></div>
+      <div class="cl"><span class="n">9.3</span><p>If the Engineer cannot deliver (e.g. illness or a studio problem), he tells the Client right away and offers a new date. If the Client does not want a new date, the Engineer returns all money paid for the work not delivered.</p></div>
+    </section>
+
+    <section>
+      <h2><span class="no">10</span>Liability</h2>
+      <div class="cl"><span class="n">10.1</span><p>The Engineer does the work with care and with his best skill. The sound of a mix or master is a matter of taste. The price is not refunded because of taste once the revisions are used.</p></div>
+      <div class="cl"><span class="n">10.2</span><p>The Client keeps their own backup of all files sent. The Engineer is not responsible for loss of the Client's files.</p></div>
+      <div class="cl"><span class="n">10.3</span><p>The Engineer's liability is limited to the price paid under this agreement, except for intent and gross negligence.</p></div>
+    </section>
+
+    <section>
+      <h2><span class="no">11</span>General</h2>
+      <div class="cl"><span class="n">11.1</span><p>This is the complete agreement between the parties. Any changes must be made in writing (<span style="white-space:nowrap">e-mail</span> is enough).</p></div>
+      <div class="cl"><span class="n">11.2</span><p>German law applies. Place of jurisdiction: Berlin.</p></div>
+      <div class="cl"><span class="n">11.3</span><p>If one part of this agreement is not valid, the rest stays valid.</p></div>
+      <div class="cl"><span class="n">11.4</span><p>The agreement is made in two identical copies, one for each party.</p></div>
+    </section>
+
+    <div class="sign">
+      <p class="place">Place and date: <span class="blank l"></span></p>
+      <div class="row">
+        <div><div class="line"></div><p class="who">Amir Miller (Engineer)</p></div>
+        <div><div class="line"></div><p class="who">Client</p></div>
+      </div>
+    </div>
+  </div>
+  <footer><span>Mixing &amp; Mastering Service Agreement</span><span>3 / 3</span></footer>
+</div>
+
+</body>
+</html>

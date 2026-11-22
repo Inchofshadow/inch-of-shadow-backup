@@ -1,0 +1,211 @@
+<title>Income Ideas Board</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Marcellus&family=Inter:wght@400;500;600&display=swap">
+<style>
+/* Layout: one phone column; sticky filter bar; small cards with a big V tick on the right. Same look as Income Map. */
+:root{
+  --bg:#F3F1EE; --card:#FFFFFF; --fg:#1A1715; --muted:#6B645E; --line:#DDD7D0;
+  --accent:#7A5A3A; --ok:#2F7A4A; --wait:#A66A12; --no:#A33A2E; --tick:#2F7A4A; --tickbg:#E6F1EA;
+  --display:"Marcellus",Georgia,serif; --body:"Inter",system-ui,-apple-system,sans-serif;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#0F0D0C; --card:#1A1715; --fg:#D6D1C8; --muted:#958D84; --line:#2E2A26;
+  --accent:#C9A27A; --ok:#6CC08A; --wait:#E0A84A; --no:#E07A6C; --tick:#6CC08A; --tickbg:#1D2C22; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0F0D0C; --card:#1A1715; --fg:#D6D1C8; --muted:#958D84; --line:#2E2A26;
+  --accent:#C9A27A; --ok:#6CC08A; --wait:#E0A84A; --no:#E07A6C; --tick:#6CC08A; --tickbg:#1D2C22; color-scheme:dark}
+body{background:var(--bg);color:var(--fg);font-family:var(--body);font-size:15px;line-height:1.45}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--bg)}
+.wrap{max-width:640px;margin:0 auto;padding-block:22px 60px;
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));
+  display:grid;gap:18px}
+h1{font-family:var(--display);font-weight:400;font-size:1.8rem;margin:0;text-wrap:balance}
+h2{font-family:var(--display);font-weight:400;font-size:1.25rem;margin:10px 0 0;text-wrap:balance;display:flex;gap:8px;align-items:baseline}
+h2 small{font-family:var(--body);font-size:.8rem;color:var(--muted)}
+.sub{color:var(--muted);margin:4px 0 0;font-size:.9rem}
+.rule{font-size:.85rem;background:var(--card);border:1px solid var(--line);border-radius:6px;padding:8px 10px}
+.bar{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--bg);padding-block:8px;display:flex;flex-wrap:wrap;gap:6px}
+.bar button{font:inherit;font-size:.85rem;font-weight:600;padding:7px 12px;border-radius:99px;border:1px solid var(--line);background:var(--card);color:var(--fg);cursor:pointer}
+.bar button[aria-pressed="true"]{background:var(--fg);color:var(--bg);border-color:var(--fg)}
+.bar button:focus-visible,.v:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.save{font-size:.78rem;color:var(--muted);width:100%}
+.list{display:grid;gap:8px}
+.c{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:4px 10px;background:var(--card);border:1px solid var(--line);border-radius:8px;padding:10px 10px 10px 12px}
+.c.done{border-color:var(--tick)}
+.n{font-weight:600;font-size:.98rem;line-height:1.3}
+.w{grid-column:1;font-size:.88rem;color:var(--fg)}
+.m{grid-column:1/-1;display:flex;flex-wrap:wrap;gap:4px 10px;font-size:.8rem;color:var(--muted)}
+.st{grid-column:1/-1;font-size:.84rem;display:flex;gap:6px;align-items:baseline}
+.pill{display:inline-block;font-size:.72rem;font-weight:600;padding:0 7px;border-radius:99px;border:1px solid currentColor;white-space:nowrap}
+.ok{color:var(--ok)} .wait{color:var(--wait)} .no{color:var(--no)}
+.st .why{color:var(--muted);min-width:0}
+.v{grid-row:1/3;grid-column:2;align-self:start;width:44px;height:44px;border-radius:10px;border:2px solid var(--line);background:transparent;color:var(--muted);font:600 1.15rem var(--body);cursor:pointer}
+.v[aria-pressed="true"]{border-color:var(--tick);background:var(--tickbg);color:var(--tick)}
+.v:disabled{opacity:.45;cursor:default}
+a{color:var(--accent)}
+.radar{display:grid;gap:10px}
+.radar summary{cursor:pointer;list-style:none}
+.radar summary::-webkit-details-marker{display:none}
+.radar summary h2{margin:0}
+.radar[open] summary h2::after{content:"▴";font-size:.8rem;color:var(--muted)}
+.radar:not([open]) summary h2::after{content:"▾";font-size:.8rem;color:var(--muted)}
+.rgrid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;margin-top:10px}
+.rk{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:8px 10px;display:grid;gap:2px}
+.rk b{font-family:var(--display);font-weight:400;font-size:1.6rem;color:var(--accent);font-variant-numeric:tabular-nums;line-height:1.1}
+.rk span{font-size:.78rem;color:var(--muted)}
+.rr{display:grid;gap:4px;padding:8px 2px;border-bottom:1px solid var(--line)}
+.rr:last-child{border-bottom:0}
+.empty{color:var(--muted);font-size:.88rem;padding:6px 2px}
+@media (prefers-reduced-motion:no-preference){.v{transition:background .15s,border-color .15s}}
+</style>
+
+<div class="wrap">
+<header>
+  <h1>Income Ideas Board</h1>
+  <p class="sub">💶 Income · the 7 ideas you kept (V) on 16 Nov + the jobs side lane. The other 81 checked ideas stay in plans/income-500-options-2026-11-05.md.</p>
+</header>
+<p class="rule">⚖️ Before 15 Nov, "crowded" meant dropped. Your rule since 15 Nov: crowded only loses points. So a "crowded" card here can come back.</p>
+
+<details class="radar" open>
+  <summary><h2>📡 Where Gap Radar helped <small>Nov 2026 · $70.65 spent</small></h2></summary>
+  <div class="rgrid">
+    <div class="rk"><b>60</b><span>income ideas found and checked for us</span></div>
+    <div class="rk"><b>3</b><span>came back "open": venue blog, set bridge, Overbridge</span></div>
+    <div class="rk"><b>0</b><span>survived: 2 failed my own check, 1 you dropped</span></div>
+  </div>
+  <div class="list">
+    <div class="rr"><div class="n">✅ Ruled out weak ideas fast</div><div class="w">All 60 checked against rivals in 3 days (5-7 Nov). Lesson it gave: broad "people want an app" complaints are always crowded.</div></div>
+    <div class="rr"><div class="n">✅ Found the only 3 candidates</div><div class="w">Venue blog (wedding photographers), set bridge (live Ableton sets), Overbridge templates. None came from guessing.</div></div>
+    <div class="rr"><div class="n">⚠️ Missed a rival once</div><div class="w">It called the venue blog "open". Vowrio already sold the same thing at $29/mo.</div></div>
+    <div class="rr"><div class="n">🎵 Inch of Shadow reports, 6 Nov (~$0.10-0.65 each)</div><div class="w">music-seo: "dark disco" is the most-used label · song-ideas: "3am drives and neon nights" · ig-hooks: fans open with their age/era memories · brand-marketing: fan-shot full live sets get the most thanks · scene-outreach: NTS "Guide To" mixes get shared most.</div>
+      <div class="st"><span class="pill wait">not used yet</span><span class="why">No file shows these feeding tags, songs or captions so far.</span></div></div>
+    <div class="rr"><div class="n">🏠 Life radar (5 profiles, ~$1.58)</div><div class="w">Money-back, deals, free stuff Berlin, before-you-sign, regret check. Reports sit in apartmentcode.</div>
+      <div class="st"><span class="pill wait">not used yet</span><span class="why">No use found in the files.</span></div></div>
+    <div class="rr"><div class="n">💸 Where the money went</div><div class="w">$62.22 of $70.65 (88%) was the rival check. The reading and the ideas themselves cost ~$8.</div></div>
+  </div>
+</details>
+
+<div class="bar" role="group" aria-label="Filter">
+  <button id="f-all" data-f="all" aria-pressed="true">All</button>
+  <button id="f-open" data-f="open" aria-pressed="false">Open</button>
+  <button id="f-dropped" data-f="dropped" aria-pressed="false">Dropped</button>
+  <button id="f-ticked" data-f="ticked" aria-pressed="false">Ticked V</button>
+  <span class="save" id="save">Loading your ticks…</span>
+</div>
+
+<main id="out"></main>
+<p class="sub">Sources: plans/income-500-options-2026-11-05.md · handovers/income/income-500.md · gap_radar/reports (6 income runs + producer-tools) · plans/app-factory/PLAN.md · plans/set-bridge · plans/income-jobs-2026-11-16.md</p>
+</div>
+
+<script>
+/* found: R = radar, O = own research, A = you (Amir). s: open | live | hold | parked | dropped */
+const GROUPS=[
+ ["offer","🧭 Offers we wrote up"],
+ ["lever","🔑 What we already own"],
+ ["radar","📡 Radar ideas"],
+ ["list","🔎 Quick checks, dropped in passing"],
+ ["early","🚫 First rounds, you said no"],
+ ["job","💼 Jobs side lane"]
+];
+const I=[
+// offers
+["o3","offer","Sell raw footage to AI companies","License your unpublished clips as AI training video.","O","One-off ~200-800 EUR","dropped","C: most clips already posted on IG; no steady monthly demand."],
+["o3b","offer","Music to AI (LANDR Fair Trade AI)","License your tracks for AI training.","O","$10/track advance + 25% share","dropped","Too small for 11 tracks."],
+["o13","offer","Venue blog generator (wedding photographers)","Photo selects become an SEO venue blog post.","R","~$19/mo · ~29 subs = 500","dropped","Vowrio already sells the same at $29/mo."],
+// owned leverage
+["l3","lever","Discogs price data","Live used-record prices from the Discogs API.","O","—","dropped","Terms ban commercial use; free alerts exist; vinyl not your world."],
+// radar
+// quick checks
+["q4","list","Grant radar for artists","Alerts for funding calls.","O","—","dropped","Free aggregators exist."],
+["q11","list","Sell Claude Code skills","Paid skill packs for Claude Code.","O","Paid ones ~5-15 EUR","dropped","Market early and small; most are free."],
+["q14","list","Darkwave/post-punk sample packs","Sell packs on Loopmasters/Splice.","O","No income data","dropped","4+ packs already in the niche."],
+// early rounds
+// jobs
+["j1","job","Hebrew teacher, Citizen Café","Teach Hebrew on Zoom (Tel Aviv, Israel).","A","20-25 h/week · pay not listed","open","Good fit. No teaching experience needed. 2-min English video."],
+["j2","job","Mercor Arts & Design pool","Music and lyrics expert work for AI projects.","O","$60-80/h · part-time","open","Good fit. Talent pool: they call when a project starts."],
+["j3","job","Mercor Language & Audio pool","Music production expert for AI projects.","O","$35-50/h · part-time","open","Good fit. Music production counts on its own."],
+["j4","job","OpenTrain music & sound annotation","Label and judge music for AI.","O","$30-45/h · 20+ h/week","open","Good fit. Germany not confirmed."],
+["j5","job","OpenTrain instrument classification","Tag instruments in audio.","O","Pay not listed · 20+ h/week","open","OK. Worldwide."],
+["j6","job","OpenTrain music domain expert","Judge AI answers about music.","O","Not disclosed · 8 weeks","open","OK. Needs music theory/history."],
+["j7","job","OpenTrain instrument evaluator","Short audio evaluation project.","O","$160 fixed · 2 days","open","Small one-off. Worldwide."],
+["j8","job","Alignerr Hebrew language expert","Hebrew AI training.","O","$40-120/h (unconfirmed)","open","Unverified: no official page found."],
+["j9","job","Alignerr audio engineer (AI audio)","Rate AI audio, Berlin/Germany.","O","$40-100/h listed","open","Status unclear (11-05)."],
+["j10","job","Outlier AI music rating","Rate AI music from home.","O","$20-40/h","open","Allows Germany; empty queues for weeks are common."],
+["j11","job","Mercor Music Production (German)","Producer tasks in German.","O","$11.37/task · ~20 h/week","dropped","Out: live German test."],
+["j12","job","TransPerfect freelance SEO","SEO projects for Germany.","O","Not listed","dropped","Out: native German."],
+["j13","job","OpenTrain US-only music trainers","AI music trainer roles.","O","$80-88/h","dropped","Out: United States only."],
+["j14","job","LanguageBird Hebrew instructor","Online Hebrew teaching.","O","—","dropped","Closed 23 Jul; US evening hours."],
+["j15","job","Mercor Hebrew generalist roles","Bilingual Hebrew AI work.","O","—","dropped","Closed."],
+["j16","job","babelforce + NP Digital SEO","SEO roles, Germany.","O","—","dropped","Pages gone (closed)."]
+];
+const FOUND={R:"📡 Radar",O:"🔎 Own research",A:"🙋 Your find"};
+const ST={open:["open","ok"],live:["live","ok"],hold:["on hold","wait"],parked:["parked","wait"],dropped:["dropped","no"]};
+let filter="all"; const ticks=new Set(); let db=null; let busy=new Set();
+const out=document.getElementById("out"), saveEl=document.getElementById("save");
+function isOpen(s){return s!=="dropped"}
+function el(tag,cls,text){const e=document.createElement(tag); if(cls)e.className=cls; if(text!=null)e.textContent=text; return e}
+function show(it){
+  if(filter==="open")return isOpen(it[6]);
+  if(filter==="dropped")return it[6]==="dropped";
+  if(filter==="ticked")return ticks.has(it[0]);
+  return true;
+}
+function card(it){
+  const [id,,name,what,found,earn,s,why]=it, done=ticks.has(id);
+  const c=el("article","c"+(done?" done":""));
+  c.appendChild(el("div","n",name));
+  const b=el("button","v",done?"V":"");
+  b.id="v-"+id; b.setAttribute("aria-pressed",done?"true":"false");
+  b.setAttribute("aria-label",(done?"Untick ":"Tick V on ")+name);
+  b.disabled=!db||busy.has(id);
+  b.addEventListener("click",()=>toggle(id));
+  c.appendChild(b);
+  c.appendChild(el("div","w",what));
+  const m=el("div","m"); m.appendChild(el("span",null,FOUND[found])); m.appendChild(el("span",null,"💶 "+earn)); c.appendChild(m);
+  const st=el("div","st"); const p=el("span","pill "+ST[s][1],ST[s][0]); st.appendChild(p); st.appendChild(el("span","why",why)); c.appendChild(st);
+  return c;
+}
+function render(){
+  out.textContent="";
+  const counts={all:I.length,open:I.filter(i=>isOpen(i[6])).length,dropped:I.filter(i=>i[6]==="dropped").length,ticked:I.filter(i=>ticks.has(i[0])).length};
+  document.querySelectorAll(".bar button").forEach(b=>{const f=b.dataset.f; b.textContent=({all:"All",open:"Open",dropped:"Dropped",ticked:"Ticked V"})[f]+" "+counts[f]; b.setAttribute("aria-pressed",f===filter?"true":"false")});
+  for(const [g,label] of GROUPS){
+    const items=I.filter(i=>i[1]===g&&show(i));
+    const all=I.filter(i=>i[1]===g); if(!all.length) continue;
+    const sec=el("section"); const h=el("h2",null,label); h.appendChild(el("small",null,items.length+" of "+all.length)); sec.appendChild(h);
+    const list=el("div","list");
+    if(!items.length) list.appendChild(el("p","empty","Nothing here for this filter."));
+    items.forEach(i=>list.appendChild(card(i)));
+    sec.appendChild(list); out.appendChild(sec);
+  }
+}
+document.querySelectorAll(".bar button").forEach(b=>b.addEventListener("click",()=>{filter=b.dataset.f; try{localStorage.setItem("iib-filter",filter)}catch(e){} render()}));
+try{const f=localStorage.getItem("iib-filter"); if(f&&["all","open","dropped","ticked"].includes(f))filter=f}catch(e){}
+async function toggle(id){
+  if(!db||busy.has(id))return;
+  busy.add(id); const was=ticks.has(id);
+  if(was)ticks.delete(id); else ticks.add(id); render();
+  try{
+    const ref=db.collection("ticks").doc(id);
+    if(was) await ref.delete(); else await ref.set({v:true,at:new Date().toISOString()});
+    saveEl.textContent="✅ Saved";
+  }catch(e){
+    if(was)ticks.add(id); else ticks.delete(id);
+    saveEl.textContent="⚠️ Not saved: "+((e&&e.message)||"try again");
+  }
+  busy.delete(id); render();
+}
+render();
+(async()=>{
+  const timer=setTimeout(()=>{if(!db)saveEl.textContent="⚠️ Ticks can't load here. Open the page signed in to claude.ai."},10000);
+  let d=null; try{d=await window.claude?.use?.("db")}catch(e){d=null}
+  if(!d){clearTimeout(timer); saveEl.textContent="⚠️ Ticks can't save here. Open the page signed in to claude.ai."; return}
+  db=d;
+  db.collection("ticks").onSnapshot(snap=>{
+    clearTimeout(timer);
+    ticks.clear(); snap.docs.forEach(doc=>{const x=doc.data(); if(x&&x.v)ticks.add(doc.id)});
+    saveEl.textContent="Ticks save as you tap. "+ticks.size+" ticked.";
+    render();
+  },err=>{clearTimeout(timer); saveEl.textContent="⚠️ Ticks can't load: "+((err&&err.message)||"error")});
+})();
+</script>

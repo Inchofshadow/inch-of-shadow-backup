@@ -476,7 +476,7 @@ def playground_drawer(slug):
         elif lib == "imagine":
             items.append({"lib": lib, "id": iid, "name": r.get("subject") or (r.get("kind") or "image").capitalize(), "note": (r.get("release") or ""),
                           "thumb": url_for("imagine_image", filename=iid), "open": url_for("imagine_page", release=r.get("release") or ""), "tags": tags})
-    tags_out = [{"id": t, "means": m} for t, m in st.TAGS]
+    tags_out = [{"id": t, "means": m} for t, m in st.tag_list(data)]   # the list in docs/brand/tags.json
     if any(UNTAGGED in it["tags"] for it in items):
         tags_out.append({"id": UNTAGGED, "means": "No tag yet: add tags in docs/brand/tags.json"})
     return jsonify({"tags": tags_out, "items": items})

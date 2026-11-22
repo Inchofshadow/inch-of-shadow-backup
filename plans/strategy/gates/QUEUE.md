@@ -14,8 +14,12 @@ Empty since 2026-11-15: Fable read all seven queued items on Amir's "gate".
 | Round 2: RM work of 11-08 to 11-13 (keeps, palette, Layout, graphs, small ones) | approve, 6 small fixes | 2026-11-15-round-2-rm-work.md |
 
 New items go below this line (date, what, why the other model).
-| 2026-11-15 | Fable's own fixes of 11-15: storage.py backup filter (2148cbc), backup final secret check (331339a), drawer untagged chip (ca0bc79), stats/evening_reports.py + LaunchAgent + the two task prompts (d85b528), memory index repair | Fable wrote them; Opus reads (the other model) |
-| 2026-11-15 | Fable's round 2 fixes: keeps file safe write (66d9175), RM contrast + 13 px (23b9bc9), overdue date tag + waits-on notes (2d45b82) | Fable wrote them; Opus reads |
+| 2026-11-15 | Fable's own fixes of 11-15: storage.py backup filter (2148cbc), backup final secret check (331339a), drawer untagged chip (ca0bc79), stats/evening_reports.py + LaunchAgent + the two task prompts (d85b528), memory index repair | Fable wrote them; Opus read 11-15: approve (2026-11-15-opus-reads-fable.md) |
+| 2026-11-15 | Fable's round 2 fixes: keeps file safe write (66d9175), RM contrast + 13 px (23b9bc9), overdue date tag + waits-on notes (2d45b82) | Fable wrote them; Opus read 11-15: approve (2026-11-15-opus-reads-fable.md) |
+| 2026-11-15 | Four memory wording fixes from gate part 3: index line of no-key-bpm-in-copy, link in side-chat-lessons-before-delete, story line in check-memory-before-stating-facts, note in side-chat-names-show-kind, plus the fourth kind 🛠 BUILD (Amir "ok") | Fable wrote them; Opus read 11-15: approve (2026-11-15-opus-reads-fable.md) |
+| 2026-11-16 | Tag list read from docs/brand/tags.json (studio_tags.tag_list, drawer, README) | Opus wrote it; Fable read 11-20: approve with 1 must-fix (2026-11-20-fable-reads-105-106-tags.md) |
+| 2026-11-16 | ⚙️ System 102: release-prep strategy/draft/audit modes, release_seo_check.py guard + 40 tests (0743b1a), SKILL.md on disk only (.claude/ is gitignored), note plans/handovers/system/system-102-release-seo.md | Opus wrote it; Fable reads |
+| 2026-11-17 | ⚙️ System 105 + 106: yt_release.py draft prompt (no tempo, 3-5 hashtags; file is outside git) + SC tag numbers marked unverified in seo_platform_specs.json (88a7345), note plans/handovers/system/system-105-106.md | Opus wrote it; Fable read 11-20: both approve (2026-11-20-fable-reads-105-106-tags.md) |
 
 ## Waiting for Fable: lists from the parent chats (2026-11-15, Amir: "send all other parent chats that Fable returned")
 
@@ -40,5 +44,5 @@ New items go below this line (date, what, why the other model).
 | 17 | 🎵 Release | Vinyl frame mark memory | memory vinyl-frame-marks-dance-releases | before 2027-01-05 |
 | 18 | 🎸 Studio | Client service agreement (after Amir's 4 numbers and address) | plans/studio-service/service-agreement.md | a contract clients sign; not ready for the gate yet |
 
-**Read 2026-11-15 (Fable):** items 1 to 3 in `2026-11-15-parent-lists-part-1.md`; items 4 to 13 and 15 in `2026-11-15-parent-lists-part-2.md` (item 6 and the small ones only lightly, as that file says).
-**Still to read:** item 14 (Symphonic checklist + the five rule memories, in full), 16 (small Socials items), 17 (vinyl memory, before 2027-01-05), 18 (Studio service agreement, when it is ready).
+**Read 2026-11-15 (Fable):** items 1 to 3 in `2026-11-15-parent-lists-part-1.md`; items 4 to 13 and 15 in `2026-11-15-parent-lists-part-2.md` (item 6 and the small ones only lightly, as that file says). Items 14 and 16 in full in `2026-11-15-parent-lists-part-3.md`.
+**Still to read:** item 17 (vinyl memory, before 2027-01-05), 18 (Studio service agreement, when it is ready). Item 6 (DJ outreach week 1 + 2 cards) was read lightly only.

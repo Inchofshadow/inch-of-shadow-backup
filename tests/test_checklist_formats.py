@@ -93,6 +93,40 @@ def test_youtube_draft_follows_the_copy_rules():
     assert "[TODO" in text                         # a draft can never be applied as it is
     assert "\u2014" not in text and " -- " not in text
     assert text.split("===== TAGS (copy) =====")[1].strip().startswith("inch of shadow")
+    # System 105: no tempo or key in the description, 3 to 5 hashtags (PLAYBOOK 5.4)
+    desc = text.split("===== DESCRIPTION (copy) =====")[1].split("===== TAGS (copy) =====")[0]
+    assert "bpm" not in desc.lower() and "126" not in desc
+    tags_line = [l for l in desc.splitlines() if l.startswith("#")][-1]
+    assert tags_line == "#Acid #House #ItaloDisco"
+
+
+def _yt_release():
+    import importlib.util, pathlib
+    path = pathlib.Path(__file__).resolve().parents[2] / "youtube" / "tools" / "yt_release.py"
+    if not path.is_file():
+        import pytest; pytest.skip("youtube folder not present")
+    spec = importlib.util.spec_from_file_location("yt_release", path)
+    mod = importlib.util.module_from_spec(spec); spec.loader.exec_module(mod)
+    return mod
+
+
+def test_youtube_hashtags_use_the_locked_list_first_and_stop_at_five():
+    mod = _yt_release()
+    rel = {"platform_tags": {"hashtags": ["darkwave", "darkdisco", "acid", "electro", "ebm", "italodisco", "berlin"]}}
+    assert mod.hashtag_line(rel, ["Electronic", "Dark Disco"]) == "#darkwave #darkdisco #acid #electro #ebm"
+
+
+def test_youtube_hashtags_fill_from_genres_without_duplicates():
+    mod = _yt_release()
+    rel = {"platform_tags": {"hashtags": ["darkdisco", "acid"]}}
+    assert mod.hashtag_line(rel, ["Dark Disco", "Electro"]) == "#darkdisco #acid #Electro"
+
+
+def test_youtube_hashtags_under_three_stay_a_todo():
+    mod = _yt_release()
+    line = mod.hashtag_line({}, ["Electronic", "Dark Disco"])
+    assert line.startswith("#Electronic #DarkDisco ") and "[TODO" in line
+    assert "[TODO" in mod.hashtag_line({"platform_tags": {}}, [])
 
 
 def test_bandcamp_item_has_tooltip_and_skips_finished_releases():

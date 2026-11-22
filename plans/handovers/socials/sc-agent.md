@@ -26,6 +26,11 @@ Written 2026-11-05 06:00 by the SC hub chat. This chat runs all SoundCloud work:
 
 ## Decisions made (recent)
 
+- **Follow cap 10/day extended to 11-23 (Amir "go" 11-15).** 11-15: 506 / 412 = 1.23:1 (11-10 was 1.11). Goal ~376 following; back to 20 on 11-24 by itself (ea12f0a).
+
+- **Retry days scored on volume (Amir "Yes, fix it" 11-15, finding from the System Fable gate).** close_loops: with a "## 13:00 retry run" section + logged actions, only that section decides "truncated externally"; a retry with no Chrome keeps the old path. 11-14 rechecked read-only: still 10/10 on volume.
+
+- **k.meower (/kathibanan, id 73617865) and DJ HYCATA (/dj_hycata, id 1288313491) marked as ghosts, 11-16 (Amir "Yes, mark both").** Both SC profiles are gone ("We can't find that user"). Tracker: no_longer_following + no_longer_engage + marked_dead_at 2026-11-16, same as mono.archive. No unfollow logged. Checked: neither shows up in --plan-unfollows or --pass-c-targets anymore. Backup: scene_intelligence/backups/sc_follow_tracker.before-ghosts-2026-11-16.json.
 - **Will Bloøm (willfuckingbloom, id 1069431259) dropped, 11-13 (Amir "Unfollow, drop from list").** Profile says Jerusalem, Israel (SOP 4.3 rule 13). On ig_blocked_accounts.json (c9ce914), tracker no_longer_engage, unfollowed in Chrome 12:25 (verified Following -> Follow back) and logged. Not on permanently_unfollowed (the logger skips that for this path), but the blocked list keeps discovery from ever re-adding him.
 
 - **Half the Night EP on SC (11-11, from the main EP chat).** Release Fri 2026-12-11 (was 12-04). Symphonic does NOT deliver to SoundCloud: our own uploads (half-the-night, pinocchio, sets/half-the-night) go public 12-11 09:00 and are the only SC copies; stats, Amplify and the pinned track run on them. Beatport via Symphonic from 12-11. On 12-11: the EP link goes to TheTallMan and Owo Barry (promised in the 11-06 replies).
@@ -103,9 +108,9 @@ For `docs/sc-engagement-sop.md` §6.3 (unfollows), proposed wording, for Amir's 
 
 > **Outreach contacts stay followed (Amir, 2026-11-03).** Never unfollow an account that appears in `plans/outreach-batches.json`, whatever its status (proposed, drafted, needs rewrite, passed, sent). Match on the SoundCloud URL, an email in the bio, or the contact name. The same holds for the personal network list and anyone with a SoundCloud inbox thread. Before any sweep, re-run this check against the current outreach file and drop every match from the batch.
 
-## ⚙️ System 69 · SC tasks to the project venv (DONE 2026-11-11)
+## ⚙️ System 69 · SC tasks on the project venv: DONE
 
-- DONE 11-11 21:20 by the System 69 side chat on Amir's "do it now" (no need to do it on Sat 11-14). Record, checks and undo lines: `plans/strategy/system-69-python-switch-2026-11-08.md`, section "IG + SC part moved". Read the first live runs (Thu 11-12 SC 06:30-10:00, dispatcher 09:30; IG Fri 15:00). A run stuck on an approval = add the `.venv/bin/python` prefix rule for that command.
+Already moved 2026-11-11 21:05-21:20 by the System 69 side chat (Amir "do it now"); details + undo in plans/strategy/system-69-python-switch-2026-11-08.md. Checked 11-15: all 7 SC tasks call .venv/bin/python (backups SKILL.md.bak-2026-11-11-python), the .venv allow rules exist, and every run since 11-12 worked (sessions 11-12..11-15, maintenance + weekly report 11-15).
 
 ## Ticket updates (for the System chat to merge)
 

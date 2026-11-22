@@ -49,7 +49,8 @@ The quote no. ___ dated ___ is part of this agreement.
 
 **8. Credit**
 8.1 The Client credits the Engineer where credits are shown (streaming credits, liner notes, release info) as: "Mixed by Amir Miller" and / or "Mastered by Amir Miller", as fits the service.
-8.2 The Engineer may name the Client and the release in his list of works and may play short parts of it as a reference, only after the release is public. Before the release, the Engineer keeps the music private.
+8.2 The Client also credits the Engineer for mixing and / or mastering in their social media posts about the release.
+8.3 The Engineer may name the Client and the release in his list of works and may play short parts of it as a reference, only after the release is public. Before the release, the Engineer keeps the music private.
 
 **9. Cancellation**
 9.1 If the Client cancels before the work starts, the first payment is returned in full.

@@ -32,7 +32,8 @@ def _audit_count(ran):
 
 def test_sweep_days_are_exactly_the_six_run_dates():
     import scene_intelligence.ig_sweep as S
-    assert list(D.SWEEP_DAYS) == S.RUN_DATES
+    # 11-16, 11-18, 11-20 and 11-21 are extra runs added later; the dispatcher keeps the original six.
+    assert list(D.SWEEP_DAYS) == [d for d in S.RUN_DATES if d not in ("2026-11-16", "2026-11-18", "2026-11-20", "2026-11-21")]
     assert D.is_sweep_day(date(2026, 11, 17)) and not D.is_sweep_day(date(2026, 11, 18))
     assert not D.is_sweep_day(date(2026, 12, 1))
 

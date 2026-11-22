@@ -58,7 +58,7 @@
 - [ ] YouTube video published per youtube/PLAYBOOK.md section 5; verify made for kids = No on the live video
 - [ ] Additional Shorts published (1-2)
 - [ ] Bandcamp release live (SEO-rich description, 10-15 tags)
-- [ ] SoundCloud upload (title, description, 5 tags, caption)
+- [ ] SoundCloud upload (title, description, tags, caption)
 - [ ] Instagram release post (keyword caption, 3-5 hashtags, alt text)
 - [ ] Spotify Artist Pick updated (140 chars)
 - [ ] YouTube community post (needs advanced features)
@@ -99,7 +99,6 @@ Stream on Spotify: [link]
 
 Written and produced by Inch of Shadow.
 Mixed and mastered by Inch of Shadow at Ambertone Studios.
-BPM: [X] | Key: [X]
 
 Stream everywhere:
 Spotify: [link]
@@ -145,7 +144,7 @@ electronic, dark disco, acid, techno, electro, EBM, Berlin, underground, [mood],
 ### SoundCloud Description (4,000 chars)
 
 ```
-[Title] -- [genre descriptor]. [BPM], [Key].
+[Title]. [Genre descriptor].
 
 From [EP/album name] ([year]).
 Written, produced, mixed and mastered by Inch of Shadow at Ambertone Studios, Berlin.
@@ -156,7 +155,7 @@ Apple Music: [link]
 Bandcamp: [link]
 ```
 
-### SoundCloud Tags (5 max, 20 chars each)
+### SoundCloud Tags (limits not verified; use the locked tag set in the release JSON)
 
 ```
 dark disco, acid, techno, Berlin, electro

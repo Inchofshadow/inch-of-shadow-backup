@@ -9,7 +9,8 @@
     "unverified_limits": [
       "Apple Music Q&A bio field character limits — not publicly documented, check in Apple Music for Artists dashboard",
       "Beatport track title and description character limits — enforced at distributor level (Symphonic/Greenroom)",
-      "Bandcamp max tags per release — community consensus ~10-15, no official docs"
+      "Bandcamp max tags per release — community consensus ~10-15, no official docs",
+      "SoundCloud tags per track and chars per tag: the old '5 tags, 20 chars' was never verified; live Half the Night tracks carry 8 tags (System 106, 2026-11-17)"
     ]
   },
   "platforms": {
@@ -768,9 +769,10 @@
         }
       },
       "tags": {
-        "max_per_track": 5,
-        "max_chars_per_tag": 20,
-        "notes": "Only 5 tags allowed -- choose carefully. Aim for 3 abstract/mood tags + 2 genre/subgenre tags.",
+        "max_per_track": null,
+        "max_chars_per_tag": null,
+        "unverified": "NOT VERIFIED (System 106, 2026-11-17): this file used to say 5 tags per track, 20 chars per tag. Never checked on SoundCloud, and the live Half the Night tracks carry 8 tags (System 102 audit, 2026-11-16). No number is on record; use the locked tag set in the release JSON.",
+        "notes": "Tag count and tag length limits are not verified (see 'unverified'). Choose tags carefully: genre/subgenre tags plus a few mood or style descriptors.",
         "strategy": [
           "Pair broad genre tags with specific descriptors",
           "Use sub-genre tags for niche discovery",
@@ -814,8 +816,8 @@
       "seo_best_practices": [
         "Track title: include artist name and track name clearly; put a real search keyword in it (e.g. 'Track Name [Dark Disco / Acid]')",
         "Description: front-load keywords, include label (Indigo Children Records etc.) and streaming/buy links",
-        "All 5 tags should be used -- never leave tags empty; first tag = canonical main genre, multi-word tags in quotes",
-        "Mix genre tags with mood/style descriptors within the 5-tag limit",
+        "Never leave tags empty; first tag = canonical main genre, multi-word tags in quotes (tag count limit NOT VERIFIED, see tags.unverified)",
+        "Mix genre tags with mood/style descriptors",
         "Time the release to build 48h velocity; opt into First Fans/Amplify every release",
         "Organic genre-peer/DJ reposts and 'Liked By' reach drive recommendations; avoid paid repost services",
         "Instrument-specific tags ('analog synth') create niche discovery channels",
@@ -916,7 +918,7 @@
       "bandcamp_track_title": 300,
       "soundcloud_track_title": 100,
       "soundcloud_track_description": 4000,
-      "soundcloud_tags_max": "5 tags, 20 chars each",
+      "soundcloud_tags_max": "NOT VERIFIED, no number on record (see platforms.soundcloud.tags.unverified)",
       "soundcloud_profile_description": 4000,
       "beatport_artist_bio": 2000,
       "ra_bio": "no published limit (front-load first sentence; SEO-read)",
@@ -1017,12 +1019,12 @@
     "soundcloud_tags": {
       "good": ["dark disco", "acid", "techno", "Berlin", "electro"],
       "bad": ["music", "new track", "electronic music", "good vibes", "follow me"],
-      "why": "Good: 5 specific genre/location tags within 20-char limit. Bad: generic, wasted on non-discovery terms, 'electronic music' is too broad for 5-tag limit."
+      "why": "Good: specific genre/location tags (SoundCloud tag limits NOT VERIFIED, see platforms.soundcloud.tags.unverified). Bad: generic, wasted on non-discovery terms, 'electronic music' is too broad."
     },
     "soundcloud_description": {
-      "good": "Shadow Frequency — dark disco meets acid techno. 122 BPM, Am.\n\nFrom the Dark Disco Acid EP (2026).\nWritten, produced, mixed and mastered by Inch of Shadow at Ambertone Studios, Berlin.\n\nStream everywhere:\nSpotify: [link]\nApple Music: [link]\nBandcamp: [link]\nBeatport: [link]",
+      "good": "Shadow Frequency. Dark disco meets acid techno.\n\nFrom the Dark Disco Acid EP (2026).\nWritten, produced, mixed and mastered by Inch of Shadow at Ambertone Studios, Berlin.\n\nStream everywhere:\nSpotify: [link]\nApple Music: [link]\nBandcamp: [link]\nBeatport: [link]",
       "bad": "New track! Please follow and repost!",
-      "why": "Good: track context, BPM/key for DJs, cross-platform links, credits. Bad: no musical info, begging for engagement."
+      "why": "Good: track context, cross-platform links, credits (never the key; BPM only in tags). Bad: no musical info, begging for engagement."
     },
     "beatport_genre_selection": {
       "example_track_dark_disco_122bpm": {

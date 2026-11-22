@@ -42,7 +42,7 @@ ISRCs (from the Symphonic draft, use the same everywhere): Half the Night **QZWD
   - UPC: the Symphonic one once it's assigned (optional on Bandcamp)
 - About (approved text):
   > Half the Night is a restless 303 acid line over electro drums and a bass that never lets go, falling deeper into a dark, rolling trance arp. Pinocchio twists its 303 leads through a minimal groove full of echo and smoke. Hypnotic dark disco for the lost hours, from Berlin.
-- Credits: "Written and produced by Amir Miller. Mixed and mastered by Amir Miller at Ambertone Studio, Berlin. Cover art: Inch of Shadow." ✅ Amir 11-10: credits = Amir Miller.
+- Credits: "Written and produced by Amir Miller. Mixed and mastered by Amir Miller at Ambertone Studios, Berlin. Cover art: Inch of Shadow." ✅ Amir 11-10: credits = Amir Miller.
 - Tags: `darkwave` `dark disco` `acid` `electro` `ebm` `italo disco` `berlin` (set 11-03; darkwave first = the bridge to the songs)
 - Price (BC-09): EP **EUR 4**, tracks EUR 1.50, "let fans pay more" ON.
 - Pre-order:
@@ -90,3 +90,22 @@ Change asked: profile techno -> darkwave; add release tag "techno" to Meltscape 
   - Profile "Genre tag(s)": `Electro, Acid, Dark Disco, Darkwave, EBM` (Genre select still Electronic, nothing else touched).
   - HTN album page artist tags: acid, dark disco, darkwave, ebm, electro, electronic. No techno.
   - Meltscape tracks: The Cure `Acid, Trance, Techno, Acid Techno, Rave`; Meltscape `Trance, Underground, Techno, Acid Techno, Hypnotic`; Mind Eaten `Trance, Berlin, Techno, Acid Techno, Analog`. Album tags unchanged (already had techno). The Meltscape and The Cure pages show "techno".
+
+## SoundCloud tag swap: italo disco -> indie dance (Amir 11-17, via the EP chat)
+
+Done 2026-11-17 on the 3 private uploads; only that one tag changed, live tag_list checked after each save.
+
+| Item | Before | After |
+|---|---|---|
+| Half the Night (track) | electro, dark disco, acid, EBM, italo disco, Berlin, 127 bpm, acid disco | electro, dark disco, acid, EBM, Berlin, 127 bpm, acid disco, indie dance |
+| Pinocchio (track) | electro, dark disco, acid, EBM, italo disco, Berlin, 126 bpm, acid disco | electro, dark disco, acid, EBM, Berlin, 126 bpm, acid disco, indie dance |
+| Half the Night (EP set) | electro, dark disco, acid, EBM, italo disco, Berlin, acid disco | electro, dark disco, acid, EBM, Berlin, acid disco, indie dance |
+
+Bandcamp tags unchanged.
+
+## Bandcamp credit: Ambertone Studio -> Ambertone Studios (Amir 11-21 "Yes, change both", via the EP chat)
+
+Done 2026-11-21, only "Studio," -> "Studios," changed; curl check after: HTN 3x Studios / 0 old, The Deceiver 6x Studios / 0 old.
+- Half the Night album credits, before: "Written and produced by Amir Miller. Mixed and mastered by Amir Miller at Ambertone Studio, Berlin."
+- The Deceiver track credits, before: "Written and produced by Amir Miller. / Mixed and mastered at Ambertone Studio, Berlin. / ℗ 2026 Indigo Children Records"
+- The Deceiver track about, before (last line): "Mixed and mastered at Ambertone Studio, Berlin, 2026. The second half of the Farewell pair."

@@ -1,0 +1,132 @@
+{
+ "xerox": {
+  "code": "S1",
+  "name": "Xerox",
+  "what": "photocopy degradation"
+ },
+ "halftone": {
+  "code": "S2",
+  "name": "Halftone",
+  "what": "blown-up newspaper dot"
+ },
+ "riso": {
+  "code": "S3",
+  "name": "Riso",
+  "what": "two inks, off register"
+ },
+ "engraving": {
+  "code": "S4",
+  "name": "Engraving",
+  "what": "line and cross-hatch"
+ },
+ "cyanotype": {
+  "code": "S5",
+  "name": "Cyanotype",
+  "what": "Prussian blue sun print"
+ },
+ "solarisation": {
+  "code": "S6",
+  "name": "Solarisation",
+  "what": "darkroom tone reversal"
+ },
+ "pictorialism": {
+  "code": "S7",
+  "name": "Pictorialism",
+  "what": "soft-focus platinum print"
+ },
+ "dither": {
+  "code": "S8",
+  "name": "Dither",
+  "what": "fine dots, platinum on warm black"
+ },
+ "scanlines": {
+  "code": "S9",
+  "name": "Scanlines",
+  "what": "modulated horizontal lines"
+ },
+ "pixel": {
+  "code": "S10",
+  "name": "Pixel",
+  "what": "big pixels, 12 colours"
+ },
+ "halation": {
+  "code": "S11",
+  "name": "Halation",
+  "what": "red glow from the bright edges"
+ },
+ "window": {
+  "code": "S12",
+  "name": "Dirty window",
+  "what": "through old dirty glass"
+ },
+ "crt": {
+  "code": "S13",
+  "name": "CRT",
+  "what": "phosphor stripes and scanlines"
+ },
+ "softclub": {
+  "code": "S14",
+  "name": "Softclub",
+  "what": "cold blue, soft, archive grain"
+ },
+ "emboss": {
+  "code": "S15",
+  "name": "Emboss",
+  "what": "pressed relief in paper"
+ },
+ "ascii": {
+  "code": "S16",
+  "name": "ASCII",
+  "what": "built from text characters"
+ },
+ "vhs": {
+  "code": "S17",
+  "name": "VHS",
+  "what": "tape colour bleed and tracking"
+ },
+ "anaglyph": {
+  "code": "S18",
+  "name": "Anaglyph 3D",
+  "what": "red and cyan offset"
+ },
+ "thermal": {
+  "code": "S19",
+  "name": "Thermal",
+  "what": "heat camera colours"
+ },
+ "nightvision": {
+  "code": "S20",
+  "name": "Night vision",
+  "what": "green phosphor"
+ },
+ "pixelsort": {
+  "code": "S21",
+  "name": "Pixel sort",
+  "what": "bright runs dragged into stripes"
+ },
+ "blowout": {
+  "code": "S22",
+  "name": "Blowout",
+  "what": "white sky, violet silhouette"
+ },
+ "monotint": {
+  "code": "S23",
+  "name": "Monotint",
+  "what": "one periwinkle wash over all"
+ },
+ "monotintnight": {
+  "code": "S23b",
+  "name": "Monotint night",
+  "what": "one teal hue on deep black"
+ },
+ "nightflash": {
+  "code": "S24",
+  "name": "Night flash",
+  "what": "face blown white, dark falloff"
+ },
+ "camcorder": {
+  "code": "S25",
+  "name": "Camcorder",
+  "what": "milky, cold, light leak"
+ }
+}

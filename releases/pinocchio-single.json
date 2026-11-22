@@ -2,11 +2,13 @@
   "schema_version": 1,
   "slug": "pinocchio-single",
   "created_at": "2026-09-13T21:59:03",
-  "updated_at": "2026-11-11T14:04:16",
+  "updated_at": "2026-11-17T20:24:48",
   "metadata": {
     "title": "Half the Night",
     "artist": "Inch of Shadow",
     "release_type": "Single",
+    "copy_release_type": "EP",
+    "release_type_note": "2026-11-21 Amir: \"we use ep\". Our own copy (Bandcamp, SoundCloud, YouTube, socials, pitches) says Half the Night EP. release_type stays Single = the store type per the Symphonic field sheet (2 tracks, 11:37; stores label it Single). Symphonic not re-read live (profile signed out 11-20).",
     "genre_primary": "Electronic",
     "genre_secondary": "Dark Disco",
     "catalog_number": "ICR-003",
@@ -142,9 +144,45 @@
       ],
       "cultures": [],
       "pitch_submission": {
-        "genres": [],
+        "submitted": true,
+        "submitted_date": "2026-11-17",
+        "submitted_by": "Amir (S4A, his Chrome); his word 'pitched' in the main EP chat",
+        "pitched_song": "Half the Night",
+        "days_before_release": 24,
+        "hometown": "Berlin, State of Berlin, Germany",
+        "currently_based": "Berlin, State of Berlin, Germany",
+        "genres": [
+          "Indie Dance",
+          "Electro",
+          "Darkwave"
+        ],
+        "song_styles": [
+          "None of these"
+        ],
+        "cultures": [
+          "None of these"
+        ],
+        "pitch_moods": [
+          "Energetic"
+        ],
+        "instruments": [
+          "Synthesizer",
+          "Drum Kit"
+        ],
+        "cover": false,
+        "remix": false,
+        "recorded": "Studio",
         "instrumental": true,
-        "genre_note": "Read the real dropdown on pitch day. Wanted: darkwave or cold wave + dark disco + electro. Never trance/psytrance/house/techno."
+        "lyrics_language": "-",
+        "pitch_text": "A red moon, an owl in flight, bare white trees on a dark hill. Half the Night is the sound of that hour: a restless 303 line over electro drums, a rolling bass that never lets go and a dark arpeggio pulling it deeper. 127 BPM of nocturnal dark disco, made, mixed and mastered by me in Berlin, on my own label, Indigo Children Records. Built for late night floors, between electro and darkwave. Release week: Spotify Canvas, a YouTube video, a Bandcamp listening party on Dec 11 and a DJ promo.",
+        "pitch_text_chars": 493,
+        "approval": "Amir, main EP chat 11-17: 'i approve this text but please make fable check before i submit', then 'keep darkwave, use the new line'. Fable gate passed (main chat on Fable). Review screen checked word for word by the main chat.",
+        "genre_note": "No 'Dark Disco' genre in the S4A list (read 11-17). Indie Dance = where dark disco lives (Amir: 'dark disco is inside indie dance'). Darkwave = seed for the songs pivot (Amir: 'the darkwave tag is only about the future with my pivot chnage'). Psychedelic mood left out (psytrance tail from collabs). Never trance/psytrance/techno.",
+        "editorial_targets": "Altar (best fit), metropolis, Electronic Rising. No editorial dark disco or acid playlist exists (checked 11-17).",
+        "research_file": "plans/htn-spotify-pitch-2026-11-17.md",
+        "edits": [
+          "2026-11-17: Drum Kit added to instruments (Amir re-pitched; review screen verified, text and other values unchanged)."
+        ]
       }
     },
     "beatport": {
@@ -172,7 +210,7 @@
         "dark disco",
         "acid",
         "EBM",
-        "italo disco",
+        "indie dance",
         "Berlin"
       ]
     },
@@ -187,6 +225,7 @@
     ],
     "tag_rules": {
       "locked": "2026-11-03 (Amir)",
+      "changes": "2026-11-17 Amir: indie dance is ALLOWED again (dark disco sits inside indie dance; he does not know why he ruled it out). SoundCloud tag italo disco -> indie dance. Amir later 11-17: italo disco can stay on Bandcamp, but indie dance is the main genre word now. Darkwave tag on the Spotify pitch = on purpose, to seed the pivot to the songs so the algorithm follows the shift.",
       "description_words_only": [
         "dark trance atmosphere",
         "rolling bass",
@@ -194,7 +233,6 @@
         "house elements"
       ],
       "never": [
-        "indie dance",
         "alternative dance",
         "trance",
         "psytrance",
@@ -284,10 +322,10 @@
       "id": "spotify_pitch",
       "label": "Spotify editorial pitch submitted",
       "category": "promotion",
-      "done": false,
-      "done_date": "",
+      "done": true,
+      "done_date": "2026-11-17",
       "due_date": "2026-11-06",
-      "notes": ""
+      "notes": "Pitched 2026-11-17 (T-24): Half the Night, Indie Dance / Electro / Darkwave, Energetic, Synthesizer + Drum Kit, instrumental. Release Radar for followers (>7 days out). Text in platform_tags.spotify.pitch_submission."
     },
     {
       "id": "presave_links",
@@ -705,7 +743,7 @@
       "done": false
     }
   ],
-  "notes": "LIGHT LANE (decided 2026-09-13, see plans/strategy v2): the closing electronic chapter before the songs. 2-track acid/italo pair. Date 2026-11-06 may slide one week to 2026-11-13 (Amir). STORES: Symphonic to DSPs, NO Beatport (write-once, files as Techno, irrelevant for the pop phase). Bandcamp + SoundCloud lossless + Amplify (mobile app). Spotify self-pitch with wave-leaning honest tags (Italo Disco / Acid House / Electro), Symphonic genre Electronic with a subgenre other than EBM Techno. CAMPAIGN: 2-3 reels, warm SC inbox contacts, curators who added Farewell/The Deceiver (darkwave/post-punk lists first, per the Spotify neighbourhood plan). CTA everywhere = FOLLOW on Spotify (Release Radar for the first song), not just stream. SKIP: label demos, DJ waves, Reddit ladder, premieres, Discovery Mode. HARD RULE: artwork + metadata 100% final at first submission. Masters: MIXING/DONE/A Liar MIX/EXPORT/Inch of Shadow - Pinocchio Master 1.5 @ 126bpm.wav (verify final version with Amir); 127 Jam in MIXING/Jam 127 F Minor Mix. Track 2 title pending from Amir.",
+  "notes": "CURRENT (2026-11-17): Half the Night EP = Half the Night + Pinocchio, Indigo Children Records ICR-003, UPC 708208624645, release Fri 2026-12-11 (stores list it as a Single with 2 tracks, on purpose). LIGHT LANE: the closing electronic chapter before the songs. STORES: Symphonic to all DSPs incl. Beatport (Beatport For Starter, write-once); SoundCloud = our own uploads only (private until Dec 11 09:00); Bandcamp pre-order live since 11-13. SPOTIFY: pitched 11-17, genres Indie Dance / Electro / Darkwave (Darkwave on purpose, seeds the pivot to the songs). Main genre word = indie dance (Amir 11-17: dark disco sits inside indie dance); italo disco stays on Bandcamp. CAMPAIGN: labels sent 13-17 Nov; show hosts 25-27 Nov (private link); DJ wave after release from Mon 12-14; Pinocchio goes to playlist curators after release (Amir yes 11-17); Bandcamp listening party Dec 11 19:00; Amplify on both tracks. CTA = FOLLOW on Spotify. SKIP: Reddit ladder, Discovery Mode. Vinyl mark parked to 2027-01-05. Day plan: plans/htn-release-day-playbook-2026-12-11.md. | HISTORY (stale, kept for the record): LIGHT LANE (decided 2026-09-13, see plans/strategy v2): the closing electronic chapter before the songs. 2-track acid/italo pair. Date 2026-11-06 may slide one week to 2026-11-13 (Amir). STORES: Symphonic to DSPs, NO Beatport (write-once, files as Techno, irrelevant for the pop phase). Bandcamp + SoundCloud lossless + Amplify (mobile app). Spotify self-pitch with wave-leaning honest tags (Italo Disco / Acid House / Electro), Symphonic genre Electronic with a subgenre other than EBM Techno. CAMPAIGN: 2-3 reels, warm SC inbox contacts, curators who added Farewell/The Deceiver (darkwave/post-punk lists first, per the Spotify neighbourhood plan). CTA everywhere = FOLLOW on Spotify (Release Radar for the first song), not just stream. SKIP: label demos, DJ waves, Reddit ladder, premieres, Discovery Mode. HARD RULE: artwork + metadata 100% final at first submission. Masters: MIXING/DONE/A Liar MIX/EXPORT/Inch of Shadow - Pinocchio Master 1.5 @ 126bpm.wav (verify final version with Amir); 127 Jam in MIXING/Jam 127 F Minor Mix. Track 2 title pending from Amir.",
   "stage": "plan",
   "outcomes": {
     "stats": {},

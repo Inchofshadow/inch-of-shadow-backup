@@ -77,6 +77,30 @@ Not done: layer timing alignment to the lead (rule: max ~50 %). That needs VocAl
   - Both also hold the vocal racks Amir loaded on the Vocal group, and the 5 FX Return tracks (11/12).
   - The open set "D minor 112 BPM voc rec" was not saved; its vocal tracks were set back to input 10 on Amir's yes.
 
+- 11-15 VocAlign sidechains set in the open set (VocAlign stays bypassed; only the Sidechain box changed; Amir: no VocAlign on Lead):
+  - Double L, Harm 3rd L, Harm 5th L, Octave, Whisper -> Lead, Pre FX
+  - BV Pad 2 -> BV Pad 1, Pre FX
+  - BV Pad 1, Adlib: none (leaders / free). Live defaults new sidechains to Post FX; each was switched to Pre FX.
+  - 11-15 14:23/14:24 both templates re-saved with the sidechains (Amir: "update both"); checked on disk RME = 9x input 10, Apollo = 9x input 1. The 11-14 versions are in the Trash as "... (old 11-14).als". Open set back on input 10, not saved. High-pass agreed for the 5 sub-groups only (CPU), not built yet.
+
+- 11-15 RX in the process: Nectar is NOT installed (checked on disk). Amir set RX 11 Audio Editor as Live's Sample Editor himself. Workflow: Consolidate (Cmd+J) the take first, clip view Edit -> RX -> Cmd+S -> Live reloads. Order: record -> comp -> RX -> Melodyne -> VocAlign -> mix. RX Connect not added to the templates.
+
+## 11-19: second song "Night voc rec II com" (119 BPM, key F Dorian per Amir; Live shows A minor)
+- Tracks 10 Lead (Bounce) sm7b and 11 Lead (Bounce) tlm, already transferred by Amir (whole take, Melodic).
+- Both: Correct Pitch 46% / drift 12% on all notes.
+- Hand fixes: t11 A2 grace note (out of key) -> Bb2 -10 ct (~bar 13); t11 G2 -24 -> -10; t10 Bb2 -27 -> -10. Everything else within +-21 ct.
+- Line levels (Melodyne Amplitude, per phrase, from RMS read off the transfer wavs; targets ~-33 dB):
+  - t11: L1 -1, L2 -1, L3 +2, L4 +2, L5 +1, L6 +1, L7 -1 dB (last short phrase untouched)
+  - t10: L1 +2, L3 +2, L4 -3, L5 +3, last -2 dB (L2, L6 untouched)
+- Melodyne ruler shows bars offset by -640 (Live bar 11 = -629); sync fine. Set not saved.
+
+- 11-19 round 2 (Amir: vibrato/drift/transitions/formant/amplitude/attack; TLM sibilants -20%; do 1-4):
+  - t11 (tlm): Sibilant Balance -20% on all notes; breath/scoop blobs before phrases -6 dB.
+  - t10 (sm7b): Formants -10 ct on all notes (so the two takes stack wider); 8 breath blobs -6 dB.
+  - Vibrato (Pitch Modulation), Pitch Drift, transitions, Attack Speed: checked, left as sung (long notes steady; no shaky vibrato found).
+  - Line levels from round 1 re-verified on both tracks after a selection slip (see lessons).
+- Lesson: in Melodyne, SHIFT-click selects a RANGE, not single notes. Use CMD-click to add single notes, and check the selection before typing a value. A shift-click selection pulled whole lines to -6 dB on both tracks; fixed by Undo (t10) and by re-setting each line (t11), all values verified note by note.
+
 ## Lessons / mistakes (for the next Melodyne run)
 - Claude first started a transfer from bar 1 with the loop off; Amir stopped it: only the recorded section (the loop) matters. Ask the range first.
 - One device move first landed on the ORIGINAL Mic 1 (view scrolled after the duplicate); undone at once with Cmd+Z.

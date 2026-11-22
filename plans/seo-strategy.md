@@ -106,7 +106,6 @@ Stream on Spotify: [link]
 
 Written and produced by Inch of Shadow.
 Mixed and mastered by Inch of Shadow at Ambertone Studios.
-BPM: [X] | Key: [X]
 
 Stream everywhere:
 Spotify: [link]
@@ -218,9 +217,9 @@ Each track needs 1 primary + up to 2 subgenres. Genre tagging is the #1 discover
 ## 7. SoundCloud Strategy
 
 - **Title (100 chars):** Include artist name and track name clearly.
-- **Description (4,000 chars):** Front-load keywords. Include BPM/key for DJs. Cross-platform streaming links.
+- **Description (4,000 chars):** Front-load keywords. Cross-platform streaming links. Never the key; BPM only in tags.
 - **Caption (140 chars):** Short "tweet" for the upload. Hook + genre.
-- **Tags (5 max, 20 chars each):** Choose carefully. Example: dark disco, acid, techno, Berlin, electro.
+- **Tags (count and length limits not verified, no number on record (see `release_manager/seo_platform_specs.json`); use the locked tag set in the release JSON):** Choose carefully. Example: dark disco, acid, techno, Berlin, electro.
 - **Custom genre field:** Searchable. Be specific.
 
 ---
@@ -244,7 +243,7 @@ Each track needs 1 primary + up to 2 subgenres. Genre tagging is the #1 discover
 - [ ] Prepare 2-3 Shorts clips (15-35 sec each)
 - [ ] Write Bandcamp album/track descriptions (SEO-rich)
 - [ ] Select Bandcamp tags (10-15)
-- [ ] Prepare SoundCloud upload (title, description, 5 tags, caption)
+- [ ] Prepare SoundCloud upload (title, description, tags, caption)
 
 **Release week:**
 - [ ] Publish YouTube video + Shorts
@@ -278,7 +277,7 @@ Each track needs 1 primary + up to 2 subgenres. Genre tagging is the #1 discover
 | Instagram | Bio | 150 chars | -- |
 | Beatport | Via distributor | Not documented | 1 primary + 2 sub |
 | Bandcamp | Artist bio | 400 chars | 10-15 tags per release |
-| SoundCloud | Title | 100 chars | 5 tags, 20 chars each |
+| SoundCloud | Title | 100 chars | Tag limits not verified |
 | SoundCloud | Description | 4,000 chars | -- |
 
 ---

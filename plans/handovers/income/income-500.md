@@ -185,3 +185,73 @@ Open tickets only (12 + 13 are done above; 8 is done, see `radar-life.md`). 1 no
 - 11-11: Radar launchd exit 78 fixed by ⚙️ System. launchd couldn't open the log in docs/reports/; the log now lives at
   ~/Library/Logs/InchOfShadow/gap-radar-launchd.log. Verified: exit 0, 0 profiles, no spend. November cap is used up ($70.54 of $70),
   so profiles are blocked until 12-01 unless Amir raises the cap.
+- 11-16: Income Map page published (https://claude.ai/artifact/WMKM6SsiFbU7pJWQQYQ4Rp, source plans/income-overview/index.html).
+  First real remote-job search done ($0, web only): plans/income-jobs-2026-11-16.md. 6 open (Citizen Café, 2 Mercor pools good fit;
+  Mercor German + TransPerfect SEO only with native German; Alignerr unverified), 5 closed.
+- 11-16: Income Ideas Board published (https://claude.ai/artifact/HYBBXcGdjNU5MKL8G4uCde, source plans/income-ideas/index.html).
+  104 cards, one per idea: 15 offers, 4 owned levers, 50 radar ideas (6 income runs, duplicates merged, + set bridge/Overbridge),
+  15 quick checks, 4 first-round no's, 16 jobs. 25 open/live/parked/on hold, 79 dropped. Each card has a V tick saved in the
+  artifact db, collection `ticks` (doc id = card id, {v, at}; only the owner can write). Read his ticks: ArtifactData list `ticks`.
+  Unclear radar ideas never checked by hand: r17 statement aggregator, r40 party list/conflict check, r43 nonprofit policy manual.
+  No "his friend" source found in the files; Citizen Café is marked "🙋 Your find". radar-expansion-ideas are radar features, not income ideas: not on the board.
+
+### Ticket updates (Income Ideas Board, 11-16)
+- New 💶 Income ticket: "Income Ideas Board" · status done · who claude · note "page live, ticks in db `ticks`; read them back before the next idea review".
+- 11-16: board v3 adds "📡 Where Gap Radar helped" (top of page): 60 income ideas from 6 runs, 3 "open", 0 survived;
+  Inch of Shadow insight reports (11-06) + Life radar: no use found in any file yet. Nov spend $70.65, crowding $62.22 (88%), from stats_snapshots/claude_spend.json.
+- 11-16: Amir ticked 7 ideas to keep (l3 Discogs, o3 footage to AI, o3b music to AI, o13 venue blog, q4 grant radar, q11 Claude Code skills,
+  q14 darkwave sample packs) and said delete the rest (jobs stay). Board v4 shows only those 7 + jobs; the other 81 stay in the md files.
+  Backup of v3 page: scratchpad only (wiped on reboot); the full list is in this file's sources.
+- 11-16: Amir asked to use the radar reports for the Half the Night tags. That is 🎵 Release work: brief at plans/handovers/release/htn-tags-from-radar-brief.md.
+
+### Ticket updates (11-16, second batch)
+- New 🎵 Release ticket: "HTN tags from radar words" · bucket now · who claude · next_step "side chat under 🎵 Release runs the brief; Symphonic edits by 2026-11-20".
+
+## Income +500 chat: lessons before delete (2026-11-16)
+**What this chat did**
+- Built 💶 Income 5: weekly radar schedule (schedule.py, caps 70/80, 5-day guard, monthly crowding), tests, plist draft; live since 11-06.
+- Built then removed RM /radar on Amir's word (5282305). Expansion ideas file (8 ideas).
+- Checks that dropped ideas: venue blog, owned-leverage, Premiere versioning panel; night test (income-niches tuned + new income-trades profile).
+- Set bridge: found as B-, feasibility kit made (plans/set-bridge/FEASIBILITY.md + local test wav).
+- Perplexity as a cheaper crowding check: test kit (gap_radar/perplexity_test.py), parked by Amir.
+- income-trades run 11-07 (cap moved to $80 for it, on Amir's yes).
+
+**Mistakes and what to do next time**
+- Handover was stale (said "0 open"); fix = read the options file + reports on disk before reporting status.
+- Duplicate monthly run overlapped the parent's: $9.43 wasted. Fix = check pgrep + the ledger before any paid run, one radar run at a time.
+- Wrong commit hash in a recap. Fix = copy the hash from git log output, never type it.
+- Tried to `git add` a gitignored wav. Fix = check .gitignore for binaries; say "local only".
+- Raising the radar cap to $80 also cut the Inch of Shadow reserve ($150 - $80 < $80). Fix = say that side effect in the question, before the yes.
+- Dropped ideas on "crowded" alone; brief v4 (11-08) makes crowding minus points, not a veto.
+
+**Still open (not elsewhere in this file or the options file)**
+- income-trades results (11-07, report gap_radar/reports/income-trades/2026-11-07.md, log docs/reports/gap-radar-income-trades-2026-11-07.log) are not recorded in the options file: 8 crowded, 2 unclear (paralegal party list + conflict check; nonprofit policy manual builder). Amir said stop before own checks. Not rescored on the v4 questions.
+- Report files above are uncommitted.
+- Security note (not Income): archive/si-discovery/fetch_youtube_subs.py writes the YouTube token without 0600 permissions; flagged for ⚙️ System, untouched.
+
+## v4 score of Amir's 7 kept ideas (2026-11-16, $0, from the notes on disk only)
+Scale: learn in ~2 weeks 0-2 · build together 0-2 · earns without clients 0-2 · money proof 0-2 · crowding minus 0 to -2.
+| Idea | Learn | Build | No clients | Proof | Crowd | Total |
+|---|---|---|---|---|---|---|
+| Claude Code skills (q11) | 2 | 2 | 2 | 1 (paid ones 5-15 EUR) | -1 | 6 |
+| Raw footage to AI (o3) | 2 | 1 (Amir films) | 2 | 1 (Troveo, $1-4/min) | 0 | 6, one-off 200-800 EUR only |
+| Music to AI, LANDR (o3b) | 2 | 0 | 2 | 1 | 0 | 5, ~$110 for 11 tracks |
+| Darkwave sample packs (q14) | 1 | 1 | 2 | 0 (no income data) | -1 | 3 |
+| Venue blog generator (o13) | 2 | 2 | 2 | 0 (Vowrio has no payers yet) | -2 | 4 |
+| Grant radar for artists (q4) | 2 | 2 | 1 | 0 | -1 | 4 |
+| Discogs price data (l3) | 2 | 2 | 0 (ToS) | 0 | -1 | 3 |
+Best monthly lane = Claude Code skills; none reaches 500/month alone on the 11-05 data. Next = a fresh $0 web check of the skills market (data is from 11-05).
+- 11-16: LANDR Fair Trade AI PARKED on Amir's word ("lets remember this one"): his idea = AI-built tracks from his own sounds, ~6/day. $5 advance per approved track (paid back out of the pool), store release via LANDR needed. Open questions + facts: memory landr-fair-trade-ai-idea.md. Next: Mercor applications.
+- 11-16: Mercor apply pack written: plans/income-jobs-mercor-apply.md (both pools, CV = Music and Audio PDF from the CV chat). Amir applies himself.
+- 11-17 (💶 parent): crypto/Web3 job search with the new CV. Open: Monetaz (full-time, exclusive), Blockstream content (partial fit). Closed: Vultisig, Gyld (part-time shape), AtlasOra, Yeah! Global. Kraken OUT (no Germany). Notes in plans/income-jobs-2026-11-16.md; Income Map v5.
+
+### Track 3 "build & sell" (side chat, 2026-11-17, $0 API, web search only)
+- File: plans/income-track3-build-sell-2026-11.md (inventory, ranked list with proof, notes, 9 pitch targets + 1 draft).
+- Ranked: 1 KSK application builder (6, no tool found, humans paid "a few hundred euros", RDG/Smartlaw line to check)
+  · 2 music skills pack (6) · 3 release asset exporter in the browser (6) · 4 Chrome ext paid tier (6) · 5 Framer music templates (5, best money proof).
+- Blocks found: Gero code = NDA/IP (know-how only); sample library = 3rd-party sounds, no resale.
+- Nothing built, bought or signed up for. Pitch draft waits for Amir's approval in the main chat.
+
+### Ticket updates (Track 3, 11-17)
+- New 💶 Income ticket: "Track 3 build & sell research" · status done · who claude · note "plans/income-track3-build-sell-2026-11.md".
+- Proposed 💶 Income ticket: "KSK builder: learn week" · bucket next · who amir · next_step "Amir picks A (KSK), B (skills + exporter) or C (pitches)".
